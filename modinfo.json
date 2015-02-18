@@ -1,0 +1,18 @@
+{
+    "context": "server",
+    "identifier": "com.pa.brokenalliance",
+    "display_name": "Broken Alliance",
+    "description": "Super secret something something",
+    "author": "Nicb1",
+    "version": "0.01",
+    "build": "75539",
+    "date": "2015/1/04",
+    "signature": "not yet implemented",
+    "category": [
+        "in-game",
+        "server-mod"
+    ],
+    "forum": "",
+    "icon": "http://pamods.github.io/icons/bBoomBotWars.png",
+    "enabled": true
+}
