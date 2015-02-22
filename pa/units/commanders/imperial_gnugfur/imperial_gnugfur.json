@@ -1,0 +1,81 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        12.2
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
+  "description": "Imperial Gnugfur Commander.",
+  "display_name": "Gnugfur Commander",
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0.0,
+        -1.7,
+        1.9
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "offset": [
+        0.0,
+        -3.305,
+        0.565
+      ],
+      "radius": 2.0
+    },
+    {
+      "bone": "bone_leftElbow",
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.07,
+        -3.85,
+        0.2
+      ],
+      "radius": 4.0
+    }
+  ],
+  "model": {
+    "filename": "/pa/units/commanders/imperial_gnugfur/imperial_gnugfur.papa"
+  }
+}

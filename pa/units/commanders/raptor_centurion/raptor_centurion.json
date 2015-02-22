@@ -1,0 +1,86 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        -0.5,
+        10.6
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/commanders/raptor_base/raptor_base.json",
+  "description": "Raptor Centurion Commander",
+  "display_name": "Centurion Commander",
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0,
+        -2.149,
+        1.488
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "offset": [
+        0,
+        -2.149,
+        1.488
+      ],
+      "radius": 2.0
+    },
+    {
+      "bone": "bone_leftShoulder",
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.4,
+        3.46,
+        -1.1
+      ],
+      "radius": 4.0
+    }
+  ],
+  "mesh_bounds": [
+    11.7,
+    8.71255,
+    11.1
+  ],
+  "model": {
+    "filename": "/pa/units/commanders/raptor_centurion/raptor_centurion.papa"
+  }
+}

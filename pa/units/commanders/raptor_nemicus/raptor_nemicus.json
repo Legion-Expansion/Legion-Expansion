@@ -1,0 +1,86 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        -0.2,
+        12.8
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/commanders/raptor_base/raptor_base.json",
+  "description": "Raptor Nemicus Commander",
+  "display_name": "Nemicus Commander",
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0.29,
+        -3.27,
+        4.45
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "offset": [
+        0.29,
+        -3.27,
+        4.45
+      ],
+      "radius": 2.0
+    },
+    {
+      "bone": "bone_leftShoulder",
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.4,
+        3.46,
+        -1.1
+      ],
+      "radius": 4.0
+    }
+  ],
+  "mesh_bounds": [
+    11.2,
+    8.71255,
+    13.4
+  ],
+  "model": {
+    "filename": "/pa/units/commanders/raptor_nemicus/raptor_nemicus.papa"
+  }
+}

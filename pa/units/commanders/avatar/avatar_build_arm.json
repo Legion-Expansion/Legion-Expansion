@@ -1,0 +1,10 @@
+{
+  "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+  "construction_demand": {
+    "energy": 0,
+    "metal": 10000
+  },
+  "max_range": 10000,
+  "pitch_rate": 3600,
+  "yaw_rate": 3600
+}

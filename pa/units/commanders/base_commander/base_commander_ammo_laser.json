@@ -1,0 +1,18 @@
+{
+  "base_spec": "/pa/units/commanders/base_commander/base_commander_ammo.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/laser_blast",
+      "effect_specs": "/pa/effects/specs/default_proj_explosion.pfx"
+    },
+    "spawned": {
+      "audio_cue": "/SE/Weapons/commander/Commander_gun_fire_laser"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/effects/specs/laser_blast_proj_trail.pfx"
+  },
+  "model": {
+    "filename": ""
+  }
+}

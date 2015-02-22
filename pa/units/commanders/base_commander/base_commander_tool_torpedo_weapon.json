@@ -1,0 +1,25 @@
+{
+  "ammo_id": [
+    {
+      "id": "/pa/units/commanders/base_commander/base_commander_torpedo_ammo.json",
+      "layer": "WL_Seafloor"
+    }
+  ],
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "max_range": 160,
+  "pitch_range": 40,
+  "pitch_rate": 360,
+  "rate_of_fire": 1.0,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Seafloor",
+    "WL_Underwater"
+  ],
+  "target_priorities": [
+    "Mobile"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 360
+}

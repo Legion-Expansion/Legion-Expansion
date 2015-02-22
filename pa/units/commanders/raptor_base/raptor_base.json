@@ -1,0 +1,32 @@
+{
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/commander/Commander_move_loop_raptor",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+  "description": "Raptor Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "display_name": "Raptor Class Commander",
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/commanders/raptor_base/raptor_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/raptor_base/raptor_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/raptor_base/raptor_base_anim_idle01.papa",
+      "walk": "/pa/units/commanders/raptor_base/raptor_base_anim_walk01.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_anim_tree.json",
+    "filename": "/pa/units/commanders/raptor_nemicus/raptor_nemicus.papa",
+    "walk_speed": 4.93
+  }
+}

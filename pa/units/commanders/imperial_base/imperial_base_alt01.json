@@ -1,0 +1,72 @@
+{
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/fab_air_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/commander"
+    }
+  },
+  "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
+  "description": "Imperial Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "display_name": "Imperial Class Commander",
+  "fx_offsets": [
+    {
+      "bone": "bone_leftAnkle",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+      "offset": [
+        -0.232,
+        -0.228,
+        -0.189
+      ],
+      "orientation": [
+        90,
+        30,
+        225
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_rightAnkle",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+      "offset": [
+        -0.232,
+        -0.228,
+        0.187
+      ],
+      "orientation": [
+        90,
+        -30,
+        225
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle02.papa",
+      "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk02.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_anim_tree.json",
+    "filename": "/pa/units/commanders/imperial_delta/imperial_delta.papa",
+    "walk_speed": 5.0
+  }
+}

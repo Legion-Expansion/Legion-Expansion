@@ -1,0 +1,16 @@
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 80,
+  "events": {
+    "spawned": {
+      "audio_cue": "/SE/Weapons/commander/Commander_gun_fire"
+    }
+  },
+  "flight_type": "Ballistic",
+  "initial_velocity": 125.0,
+  "lifetime": 2,
+  "max_velocity": 125.0,
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "turn_rate": 180
+}

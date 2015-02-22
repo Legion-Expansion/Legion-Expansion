@@ -1,0 +1,118 @@
+{
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0.8,
+        12
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/commanders/quad_base/quad_base.json",
+  "description": "Quadruped Xinthar Commander",
+  "display_name": "Xinthar Commander",
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0.0,
+        -1.2,
+        4.3
+      ],
+      "orientation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 5.0,
+      "offset": [
+        0.0,
+        -1.2,
+        4.3
+      ],
+      "radius": 2.0
+    },
+    {
+      "bone": "bone_leftShoulder",
+      "color": [
+        0.4,
+        1.0,
+        0.01
+      ],
+      "intensity": 2.0,
+      "offset": [
+        0.0,
+        -5.672,
+        1.33
+      ],
+      "radius": 4.0
+    }
+  ],
+  "mesh_bounds": [
+    11,
+    10.5,
+    11.8
+  ],
+  "model": {
+    "filename": "/pa/units/commanders/quad_xinthar/quad_xinthar.papa"
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_missile_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/uber_cannon/uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }
+  ]
+}

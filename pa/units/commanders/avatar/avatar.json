@@ -1,0 +1,59 @@
+{
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/avatar_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/air/fabrication_aircraft/fabrication_aircraft.json",
+  "build_metal_cost": 1,
+  "buildable_types": "Structure & Basic | Structure & Advanced | FabBuild | FabAdvBuild | FabOrbBuild",
+  "description": "For debugging purposes",
+  "display_name": "Avatar Commander",
+  "max_health": 200000,
+  "navigation": {
+    "acceleration": 700,
+    "aggressive_Height": 25.0,
+    "aggressive_behavior": "circle",
+    "aggressive_distance": 25.0,
+    "brake": 0,
+    "hover_time": -1,
+    "move_speed": 500,
+    "turn_speed": 1080,
+    "type": "air",
+    "vertical_speed": 50,
+    "wobble_factor": 0.0,
+    "wobble_speed": 0.0
+  },
+  "production": {
+    "energy": 100000,
+    "metal": 100000
+  },
+  "storage": {
+    "energy": 100000,
+    "metal": 10000
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "spec_id": "/pa/units/commanders/avatar/avatar_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Debug",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile"
+  ]
+}
