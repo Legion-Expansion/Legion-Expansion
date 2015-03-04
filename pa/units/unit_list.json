@@ -84,6 +84,7 @@
     "/pa/units/land/bot_sniper/bot_sniper.json",
     "/pa/units/land/bot_spider_adv/bot_spider_adv.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile.json",
+	"/pa/units/land/bvf_IL/bvf_IL.json",
     "/pa/units/land/control_module/control_module.json",
     "/pa/units/land/energy_plant/energy_plant.json",
     "/pa/units/land/energy_plant_adv/energy_plant_adv.json",

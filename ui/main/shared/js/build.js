@@ -22,6 +22,7 @@ function BuildHotkeyModel() {
             "/pa/units/air/air_factory_adv/air_factory_adv.json": ["factory", 7],
             "/pa/units/land/bot_factory_adv/bot_factory_adv.json": ["factory", 8],
             "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json": ["factory", 9],
+	    "/pa/units/land/bvf_IL/bvf_IL.json": ["factory IL", 14],
             "/pa/units/orbital/orbital_launcher/orbital_launcher.json": ["factory", 10],
             "/pa/units/sea/naval_factory/naval_factory.json": ["factory", 11],       
             "/pa/units/air/air_factory/air_factory.json": ["factory", 12],
