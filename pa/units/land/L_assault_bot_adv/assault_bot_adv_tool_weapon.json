@@ -1,0 +1,1 @@
+{"base_spec":"/pa/tools/base_bot_weapon/base_bot_weapon.json","ammo_id":[{"layer":"WL_AnyLand","id":"/pa/units/land/assault_bot_adv/assault_bot_adv_ammo.json"}],"rate_of_fire":4.0,"idle_aim_delay":1.0,"max_range":110,"yaw_rate":360,"pitch_rate":360,"yaw_range":180,"pitch_range":40,"auto_attack":true,"target_layers":["WL_LandHorizontal","WL_WaterSurface"]}

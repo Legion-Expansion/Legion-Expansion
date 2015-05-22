@@ -1,0 +1,1 @@
+{"base_spec":"/pa/ammo/base_bullet/base_bullet.json","fx_trail":{"filename":"/pa/units/land/assault_bot_adv/assault_bot_adv_ammo_trail.pfx"},"damage":100,"splash_damage":0,"splash_radius":0,"initial_velocity":150.0,"max_velocity":150.0,"lifetime":2}
