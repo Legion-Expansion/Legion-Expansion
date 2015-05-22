@@ -12,6 +12,8 @@ function BuildHotkeyModel() {
             "/pa/units/land/radar/radar.json": ["utility", 7],          
             "/pa/units/land/energy_plant/energy_plant.json": ["utility", 8],
             "/pa/units/land/metal_extractor/metal_extractor.json": ["utility", 9],
+            "/pa/units/land/L_mex/L_mex.json": ["utility", 15]
+            "/pa/units/land/L_mex_adv/L_mex_adv.json": ["utility", 16]
             "/pa/units/land/land_barrier/land_barrier.json": ["utility", 10],
             "/pa/units/land/teleporter/teleporter.json": ["utility", 11],
             "/pa/units/orbital/deep_space_radar/deep_space_radar.json": ["utility", 12],
