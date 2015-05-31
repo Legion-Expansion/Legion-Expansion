@@ -1,0 +1,116 @@
+{
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "display_name": "!LOC(units:boom.message):POW!",
+    "description": "Bomb bot- Equipped with Self Destruction mechanism.",
+    "max_health": 10,
+    "build_metal_cost": 45,
+    "wreckage_health_frac": 0,
+    "spawn_layers": "WL_LandHorizontal",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                1.8
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Offense"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 400,
+        "brake": 400,
+        "move_speed": 40,
+        "turn_speed": 720
+    },
+    "physics": {
+        "radius": 2.25,
+        "push_class": 2,
+        "allow_pushing": true
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 20
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 20
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa",
+        "animations": {
+            "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
+            "idle": "/pa/units/land/bot_bomb/bot_bomb_anim_idle.papa",
+            "walk": "/pa/units/land/bot_bomb/bot_bomb_anim_run.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+        "walk_speed": 40
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/bot_bomb/bot_bomb_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": ""
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot_bomb",
+            "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx",
+            "effect_scale": 1
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/bot_bomb"
+        }
+    },
+    "TEMP_texelinfo": 6.38702,
+    "mesh_bounds": [
+        3.8,
+        4.5,
+        3.2
+    ]
+}
