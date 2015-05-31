@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "!LOC(units:inferno.message):Maul",
+    "display_name": "Maul",
     "description": "Close range shotgun tank that deals heavy damage to targets close by, but targets far away are hard to hit.",
     "max_health": 1000,
     "build_metal_cost": 225,
@@ -182,7 +182,7 @@
         },
         "fired": {
 			"audio_cue":"/SE/Weapons/bot/artillery_fire",
-            "effect_spec": "/pa/units/land/tank_armor/tank_armor_muzzle_flame.pfx socket_muzzle"
+            "effect_spec": ""
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",
