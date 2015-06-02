@@ -96,6 +96,7 @@
     "/pa/units/land/fabrication_bot_combat/fabrication_bot_combat.json",
     "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv.json",
     "/pa/units/land/fabrication_vehicle/fabrication_vehicle.json",
+    "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json",
     "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json",
     "/pa/units/land/land_barrier/land_barrier.json",
     "/pa/units/land/land_mine/land_mine.json",
