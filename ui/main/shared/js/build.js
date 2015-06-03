@@ -8,6 +8,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json": ["utility", 4],
             "/pa/units/orbital/delta_v_engine/delta_v_engine.json": ["utility", 6],
             "/pa/units/land/radar/radar.json": ["utility", 7],
+            "/pa/units/land/L_radar/L_radar.json": ["utility", 0],
             "/pa/units/land/energy_plant/energy_plant.json": ["utility", 8],
             "/pa/units/land/metal_extractor/metal_extractor.json": ["utility", 9],
             "/pa/units/land/L_mex/L_mex.json": ["utility", 15],

@@ -114,6 +114,7 @@
     "/pa/units/land/metal_storage/metal_storage.json",
     "/pa/units/land/nuke_launcher/nuke_launcher.json",
     "/pa/units/land/radar/radar.json",
+    "/pa/units/land/L_radar/L_radar.json",
     "/pa/units/land/radar_adv/radar_adv.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json",
     "/pa/units/land/tank_amphibious_adv/tank_amphibious_adv.json",
