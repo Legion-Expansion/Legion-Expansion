@@ -69,6 +69,7 @@
     "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher.json",
     "/pa/units/land/artillery_long/artillery_long.json",
     "/pa/units/land/artillery_short/artillery_short.json",
+    "/pa/units/land/L_artillery_short/L_artillery_short.json",
     "/pa/units/land/assault_bot/assault_bot.json",
     "/pa/units/land/assault_bot_adv/assault_bot_adv.json",
     "/pa/units/land/avatar_factory/avatar_factory.json",

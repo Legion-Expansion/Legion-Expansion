@@ -2,7 +2,7 @@ function BuildHotkeyModel() {
     var self = this;
 
     self.SpecIdToGridMap = ko.observable({
-        "/pa/units/land/control_module/control_module.json": ["utility", 1],
+            "/pa/units/land/control_module/control_module.json": ["utility", 1],
             "/pa/units/land/radar_adv/radar_adv.json": ["utility", 2],
             "/pa/units/land/energy_plant_adv/energy_plant_adv.json": ["utility", 3],
             "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json": ["utility", 4],
@@ -11,13 +11,13 @@ function BuildHotkeyModel() {
             "/pa/units/land/energy_plant/energy_plant.json": ["utility", 8],
             "/pa/units/land/metal_extractor/metal_extractor.json": ["utility", 9],
             "/pa/units/land/L_mex/L_mex.json": ["utility", 15],
-            //"/pa/units/land/L_mex_adv/L_mex_adv.json": ["utility", --TODO],
+            "/pa/units/land/L_mex_adv/L_mex_adv.json": ["utility", 16],
             "/pa/units/land/land_barrier/land_barrier.json": ["utility", 10],
             "/pa/units/land/teleporter/teleporter.json": ["utility", 11],
             "/pa/units/orbital/deep_space_radar/deep_space_radar.json": ["utility", 12],
             "/pa/units/land/energy_storage/energy_storage.json": ["utility", 13],
-            //"/pa/units/land/L_energy_storage/L_energy_storage.json": ["utility", --TODO ],
             "/pa/units/land/metal_storage/metal_storage.json": ["utility", 14],
+            "/pa/units/land/L_energy_storage/L_energy_storage.json": ["utility", 17],
 
             "/pa/units/sea/naval_factory_adv/naval_factory_adv.json": ["factory", 6],
             "/pa/units/air/air_factory_adv/air_factory_adv.json": ["factory", 7],
@@ -44,10 +44,11 @@ function BuildHotkeyModel() {
             "/pa/units/land/artillery_short/artillery_short.json": ["combat", 12],
             "/pa/units/sea/torpedo_launcher/torpedo_launcher.json": ["combat", 13],
             "/pa/units/orbital/ion_defense/ion_defense.json": ["combat", 14],
+            "/pa/units/land/L_artillery_short/L_artillery_short.json": ["combat", 1],
 
 
             "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json": ["vehicle", 5],
-            "/pa/units/land/tank_shank/tank_shank.json": ["vehicle", 9],
+            //"/pa/units/land/tank_shank/tank_shank.json": ["vehicle", 9],
             "/pa/units/land/tank_laser_adv/tank_laser_adv.json": ["vehicle", 6],
             "/pa/units/land/tank_heavy_armor/tank_heavy_armor.json": ["vehicle", 7],
             "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.json": ["vehicle", 8],

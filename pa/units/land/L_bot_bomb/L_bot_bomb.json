@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "!LOC(units:boom.message):POW!",
+    "display_name": "POW!",
     "description": "Bomb bot- Equipped with Self Destruction mechanism.",
     "max_health": 10,
     "build_metal_cost": 45,
