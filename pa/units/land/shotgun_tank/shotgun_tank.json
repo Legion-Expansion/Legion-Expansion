@@ -62,7 +62,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/shotgun_tank/shotgun_tank.papa",
+        "filename": "/pa/units/land/shotgun_tank/L_shotgun_tank.papa",
         "animtree": "/pa/anim/anim_trees/tank_armor_anim_tree.json",
         "arrows": 5
     },
