@@ -90,6 +90,7 @@
 	"/pa/units/land/bvf_IL/bvf_IL.json",
     "/pa/units/land/control_module/control_module.json",
     "/pa/units/land/energy_plant/energy_plant.json",
+    "/pa/units/land/L_energy_plant/L_energy_plant.json",
     "/pa/units/land/energy_plant_adv/energy_plant_adv.json",
     "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json",
     "/pa/units/land/energy_storage/energy_storage.json",
