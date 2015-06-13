@@ -1,1 +1,88 @@
-{"base_spec":"/pa/units/land/base_structure/base_structure.json","display_name":"!LOC(units:galata_turret.message):Galata Turret","description":"!LOC(units:basic_turret_equipped_with_anti_air_missiles.message):Basic turret- Equipped with anti-air missiles.","max_health":1000,"build_metal_cost":225,"atrophy_rate":5,"atrophy_cool_down":15,"spawn_layers":"WL_AnyHorizontalGroundOrWaterSurface","area_build_separation":18,"unit_types":["UNITTYPE_Structure","UNITTYPE_Basic","UNITTYPE_Land","UNITTYPE_AirDefense","UNITTYPE_Defense","UNITTYPE_CmdBuild","UNITTYPE_FabBuild","UNITTYPE_FabAdvBuild","UNITTYPE_CombatFabAdvBuild"],"command_caps":["ORDER_Attack"],"guard_layer":"WL_Air","recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":155},{"layer":"underwater","channel":"sight","shape":"capsule","radius":155}]}},"model":[{"layer":"WL_LandHorizontal","filename":"/pa/units/land/air_defense/air_defense.papa","animtree":"/pa/anim/anim_trees/fabrication_turret_anim_tree.json","skirt_decal":"/pa/effects/specs/skirt_defense.json"},{"layer":"WL_WaterSurface","filename":"/pa/units/sea/air_defense/air_defense.papa","animtree":"/pa/anim/anim_trees/fabrication_turret_anim_tree.json"}],"nearby_target_tick_update_interval":2,"tools":[{"spec_id":"/pa/units/land/air_defense/air_defense_tool_weapon.json","aim_bone":"bone_pitch","muzzle_bone":["socket_rightMuzzle","socket_leftMuzzle"]}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/structure_small"},"fired":{"audio_cue":"/SE/Weapons/structure/air_defense_fire","effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"},"died":{"audio_cue":"/SE/Death/structure_small","effect_scale":0.5}},"mesh_bounds":[5,5,9],"TEMP_texelinfo":9.4493}
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "!LOC(units:galata_turret.message):Galata Turret",
+    "description": "!LOC(units:basic_turret_equipped_with_anti_air_missiles.message):Basic turret- Equipped with anti-air missiles.",
+    "max_health": 1000,
+    "build_metal_cost": 225,
+    "atrophy_rate": 5,
+    "atrophy_cool_down": 15,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_separation": 18,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Land",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Defense",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+        "UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_Air",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 155
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 155
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/air_defense/air_defense.papa",
+            "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+        },
+        {
+            "layer": "WL_WaterSurface",
+            "filename": "/pa/units/sea/air_defense/air_defense.papa",
+            "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
+        }
+    ],
+    "nearby_target_tick_update_interval": 2,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/air_defense/air_defense_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": [
+                "socket_rightMuzzle",
+                "socket_leftMuzzle"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/air_defense_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.5
+        }
+    },
+    "mesh_bounds": [
+        5,
+        5,
+        9
+    ],
+    "TEMP_texelinfo": 9.4493
+}
