@@ -1,1 +1,113 @@
-{"base_spec":"/pa/units/land/base_vehicle/base_vehicle.json","display_name":"!LOC(units:spinner.message):Spinner","description":"!LOC(units:combat_vehicle_equipped_with_basic_anti_air_missiles.message):Combat vehicle- Equipped with basic anti-air missiles.","max_health":160,"build_metal_cost":150,"attachable":{"offsets":{"root":[0,0,0],"head":[0,1,4.1]}},"unit_types":["UNITTYPE_Tank","UNITTYPE_Mobile","UNITTYPE_AirDefense","UNITTYPE_Land","UNITTYPE_Basic","UNITTYPE_FactoryBuild","UNITTYPE_CannonBuildable","UNITTYPE_Offense"],"transportable":{"size":1},"guard_layer":"WL_Air","navigation":{"type":"land-small","acceleration":100,"brake":100,"move_speed":10,"turn_speed":180},"physics":{"radius":3.5,"push_class":55},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":100},{"layer":"underwater","channel":"sight","shape":"capsule","radius":100}]}},"model":{"filename":"/pa/units/land/aa_missile_vehicle/aa_missile_vehicle.papa","animations":{"run":"/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_anim_run.papa"},"walk_speed":7,"animtree":"/pa/anim/anim_trees/aa_missile_vehicle_anim_tree.json"},"nearby_target_tick_update_interval":3,"tools":[{"spec_id":"/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_tool_weapon.json","aim_bone":"bone_pivot","muzzle_bone":"bone_pivot"}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/veh"},"fired":{"audio_cue":"/SE/Weapons/veh/aa_missile_vehicle_fire","effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"},"died":{"audio_cue":"/SE/Death/Veh","effect_scale":1.0}},"audio":{"loops":{"move":{"cue":"/SE/Movement/veh/aa_missile_vehicle_loop","flag":"vel_changed","should_start_func":"is_moving","should_stop_func":"is_not_moving"}},"selection_response":{"cue":"/SE/Selection/veh/aa_missile_vehicle"}},"TEMP_texelinfo":6.12932,"mesh_bounds":[3.8,5,5]}
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "!LOC(units:spinner.message):Spinner",
+    "description": "!LOC(units:combat_vehicle_equipped_with_basic_anti_air_missiles.message):Combat vehicle- Equipped with basic anti-air missiles.",
+    "max_health": 160,
+    "build_metal_cost": 150,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                1,
+                4.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Custom1"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_Air",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 10,
+        "turn_speed": 180
+    },
+    "physics": {
+        "radius": 3.5,
+        "push_class": 55
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/aa_missile_vehicle/aa_missile_vehicle.papa",
+        "animations": {
+            "run": "/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_anim_run.papa"
+        },
+        "walk_speed": 7,
+        "animtree": "/pa/anim/anim_trees/aa_missile_vehicle_anim_tree.json"
+    },
+    "nearby_target_tick_update_interval": 3,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_tool_weapon.json",
+            "aim_bone": "bone_pivot",
+            "muzzle_bone": "bone_pivot"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/aa_missile_vehicle_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/aa_missile_vehicle_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/aa_missile_vehicle"
+        }
+    },
+    "TEMP_texelinfo": 6.12932,
+    "mesh_bounds": [
+        3.8,
+        5,
+        5
+    ]
+}
