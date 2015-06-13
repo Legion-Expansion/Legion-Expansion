@@ -124,6 +124,7 @@
     "/pa/units/land/tank_heavy_armor/tank_heavy_armor.json",
     "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json",
     "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.json",
+    "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
     "/pa/units/land/tank_hover/tank_hover.json",
     "/pa/units/land/tank_laser_adv/tank_laser_adv.json",
     "/pa/units/land/tank_light_laser/tank_light_laser.json",

@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:vehicle_factory.message):Vehicle Factory",
-    "description": "!LOC(units:basic_manufacturing_builds_land_vehicles.message):Basic manufacturing- Builds land vehicles.",
+    "display_name": "Legion Vehicle Factory",
+    "description": "Basic manufacturing- Builds Legion land vehicles.",
     "max_health": 6000,
     "build_metal_cost": 600,
     "atrophy_rate": 10,
@@ -23,6 +23,7 @@
     "factory_cooldown_time": 4,
     "unit_types": [
         "UNITTYPE_Factory",
+		"UNITTYPE_Custom1",
         "UNITTYPE_Construction",
         "UNITTYPE_Land",
         "UNITTYPE_Tank",
@@ -31,8 +32,7 @@
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Important",
-		"UNITTYPE_Custom1"
+        "UNITTYPE_Important"
     ],
     "command_caps": [
         "ORDER_Move",

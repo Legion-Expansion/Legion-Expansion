@@ -4,7 +4,7 @@
     "description": "!LOC(units:basic_fabricator_wired_to_build_structures.message):Basic fabricator- Wired to build structures.",
     "max_health": 50,
     "build_metal_cost": 200,
-    "buildable_types": "Custom1 | Custom2 | Custom3 | Custom4",
+    "buildable_types": "(Structure & Custom2 & FabBuild & Basic) | (Structure & Custom2 & FabBuild & Basic & CmdBuild)",
     "attachable": {
         "offsets": {
             "root": [
@@ -20,14 +20,9 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Fabber",
-        "UNITTYPE_Construction",
         "UNITTYPE_Tank",
-        "UNITTYPE_Mobile",
         "UNITTYPE_Basic",
-        "UNITTYPE_Land",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_CannonBuildable"
+		"UNITTYPE_Custom1"
     ],
     "command_caps": [
         "ORDER_Move",

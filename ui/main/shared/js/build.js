@@ -53,6 +53,7 @@ function BuildHotkeyModel() {
 
             "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.json": ["vehicle", 5],
             "/pa/units/land/tank_shank/tank_shank.json": ["vehicle", 9],
+            "/pa/units/land/L_mortar_tank/L_mortar_tank.json": ["vehicle", 1],
             "/pa/units/land/tank_laser_adv/tank_laser_adv.json": ["vehicle", 6],
             "/pa/units/land/tank_heavy_armor/tank_heavy_armor.json": ["vehicle", 7],
             "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json": ["vehicle", 2],

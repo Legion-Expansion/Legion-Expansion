@@ -12,7 +12,11 @@
         "energy": 600
     },
     "unit_types": [
-        "UNITTYPE_Custom1"
+        "UNITTYPE_Structure",
+		"UNITTYPE_Basic",
+		"UNITTYPE_FabBuild",
+		"UNITTYPE_CmdBuild",
+		"UNITTYPE_Custom2"
     ],
     "recon": {
         "observer": {
