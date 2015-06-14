@@ -2,7 +2,7 @@
   "base_spec":"/pa/tools/base_bot_weapon/base_bot_weapon.json",
   "ammo_id":"/pa/units/land/shotgun_tank/shotgun_tool_ammo.json",
   "rate_of_fire":1,
-  "max_range":110,
+  "max_range":50,
   "yaw_rate":360,
   "pitch_rate":360,
   "yaw_range":180,

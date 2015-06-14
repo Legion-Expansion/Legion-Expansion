@@ -3,7 +3,7 @@
     "display_name": "Deathmark",
     "description": "Light tank- Equipped with basic anti-land and anti-ship guns.",
     "max_health": 250,
-    "build_metal_cost": 150,
+    "build_metal_cost": 700,
     "attachable": {
         "offsets": {
             "root": [

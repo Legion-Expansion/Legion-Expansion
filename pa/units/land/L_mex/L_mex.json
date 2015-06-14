@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:metal_extractor.message):Legion Metal Extractor",
-    "description": "!LOC(units:basic_manufacturing_produces_metal_can_only_be_placed_on_metal_deposits.message):Basic manufacturing- Produces metal, can only be placed on metal deposits.",
+    "display_name": "Legion Metal Extractor",
+    "description": "Legion metal extractors produce more metal but cost more to build.",
     "max_health": 1000,
-    "build_metal_cost": 170,
+    "build_metal_cost": 240,
     "atrophy_rate": 2.5,
     "atrophy_cool_down": 15,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -12,7 +12,7 @@
     ],
     "area_build_type": "Sphere",
     "production": {
-        "metal": 7
+        "metal": 9
     },
     "consumption": {
         "energy": 0
