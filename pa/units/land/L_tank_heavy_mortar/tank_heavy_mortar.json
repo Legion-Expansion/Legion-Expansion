@@ -1,1 +1,107 @@
-{"base_spec":"/pa/units/land/base_vehicle/base_vehicle.json","display_name":"!LOC(units:sheller.message):Sheller","description":"!LOC(units:mortar_tank_equipped_with_advanced_mobile_artillery.message):Mortar tank- Equipped with advanced mobile artillery.","max_health":125,"build_metal_cost":1200,"influence_radius":400,"attachable":{"offsets":{"root":[0,0,0],"head":[0,0,3.1]}},"unit_types":["UNITTYPE_Tank","UNITTYPE_Mobile","UNITTYPE_Offense","UNITTYPE_Land","UNITTYPE_Artillery","UNITTYPE_Advanced","UNITTYPE_FactoryBuild"],"transportable":{"size":1},"guard_layer":"WL_AnySurface","navigation":{"type":"land-small","acceleration":100,"brake":100,"move_speed":10,"turn_speed":60,"group_preference":"back"},"physics":{"radius":6,"push_class":60},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":100},{"layer":"underwater","channel":"sight","shape":"capsule","radius":100}]}},"model":{"filename":"/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.papa","animtree":"/pa/anim/anim_trees/turret_anim_tree.json","arrows":5},"nearby_target_tick_update_interval":15,"tools":[{"spec_id":"/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_tool_weapon.json","aim_bone":"socket_aim","muzzle_bone":"socket_muzzle"}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/veh"},"fired":{"audio_cue":"/SE/Weapons/veh/tank_T2_sheller"},"died":{"audio_cue":"/SE/Death/Veh","effect_scale":1.4}},"audio":{"loops":{"move":{"cue":"/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2","flag":"vel_changed","should_start_func":"is_moving","should_stop_func":"is_not_moving"}}},"TEMP_texelinfo":9.31488,"mesh_bounds":[7,7.5,3.8]}
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "!LOC(units:sheller.message):Sheller",
+    "description": "!LOC(units:mortar_tank_equipped_with_advanced_mobile_artillery.message):Mortar tank- Equipped with advanced mobile artillery.",
+    "max_health": 125,
+    "build_metal_cost": 1200,
+    "influence_radius": 400,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 10,
+        "turn_speed": 60,
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 6,
+        "push_class": 60
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.papa",
+        "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+        "arrows": 5
+    },
+    "nearby_target_tick_update_interval": 15,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_tool_weapon.json",
+            "aim_bone": "socket_aim",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.4
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "TEMP_texelinfo": 9.31488,
+    "mesh_bounds": [
+        7,
+        7.5,
+        3.8
+    ]
+}

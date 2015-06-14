@@ -1,1 +1,105 @@
-{"base_spec":"/pa/units/land/base_vehicle/base_vehicle.json","display_name":"!LOC(units:leveler.message):Leveler","description":"!LOC(units:laser_tank_equipped_with_advanced_anti_land_and_anti_ship_guns.message):Laser tank- Equipped with advanced anti-land and anti-ship guns.","max_health":1500,"build_metal_cost":600,"attachable":{"offsets":{"root":[0,0,0],"head":[0,0,3.4]}},"unit_types":["UNITTYPE_Tank","UNITTYPE_Mobile","UNITTYPE_Offense","UNITTYPE_Land","UNITTYPE_Advanced","UNITTYPE_FactoryBuild"],"transportable":{"size":1},"guard_layer":"WL_LandHorizontal","navigation":{"type":"land-small","acceleration":100,"brake":100,"move_speed":10,"turn_speed":60},"physics":{"radius":5,"push_class":70},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":100}]}},"model":{"filename":"/pa/units/land/tank_laser_adv/tank_laser_adv.papa","animtree":"/pa/anim/anim_trees/tank_laser_adv_anim_tree.json","arrows":5},"tools":[{"spec_id":"/pa/units/land/tank_laser_adv/tank_laser_adv_tool_weapon.json","aim_bone":"socket_aim","projectiles_per_fire":2,"muzzle_bone":["socket_leftMuzzle","socket_rightMuzzle"]}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/veh"},"fired":{"audio_cue":"/SE/Weapons/veh/tank_T2_leveler","effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"},"died":{"audio_cue":"/SE/Death/Veh","effect_scale":1.6}},"audio":{"loops":{"move":{"cue":"/SE/Movement/veh/tank_leveler_loop_T2","flag":"vel_changed","should_start_func":"is_moving","should_stop_func":"is_not_moving"}},"selection_response":{"cue":"/SE/Selection/veh/tank_leveler_T2"}},"TEMP_texelinfo":10.3794,"mesh_bounds":[6.8,7.5,3.6]}
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "!LOC(units:leveler.message):Leveler",
+    "description": "!LOC(units:laser_tank_equipped_with_advanced_anti_land_and_anti_ship_guns.message):Laser tank- Equipped with advanced anti-land and anti-ship guns.",
+    "max_health": 1500,
+    "build_metal_cost": 600,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                3.4
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 10,
+        "turn_speed": 60
+    },
+    "physics": {
+        "radius": 5,
+        "push_class": 70
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv.papa",
+        "animtree": "/pa/anim/anim_trees/tank_laser_adv_anim_tree.json",
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_tool_weapon.json",
+            "aim_bone": "socket_aim",
+            "projectiles_per_fire": 2,
+            "muzzle_bone": [
+                "socket_leftMuzzle",
+                "socket_rightMuzzle"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.6
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_leveler_T2"
+        }
+    },
+    "TEMP_texelinfo": 10.3794,
+    "mesh_bounds": [
+        6.8,
+        7.5,
+        3.6
+    ]
+}

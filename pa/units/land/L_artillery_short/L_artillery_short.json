@@ -9,9 +9,11 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
         "UNITTYPE_Structure",
-		"UNITTYPE_Basic",
-		"UNITTYPE_FabBuild",
-		"UNITTYPE_Custom2"
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Defense",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Basic",
+		"UNITTYPE_Custom1"
     ],
     "command_caps": [
         "ORDER_Attack"

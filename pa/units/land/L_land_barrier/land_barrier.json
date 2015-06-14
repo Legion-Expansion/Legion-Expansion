@@ -1,1 +1,98 @@
-{"base_spec":"/pa/units/land/base_structure/base_structure.json","display_name":"!LOC(units:wall.message):Wall","description":"!LOC(units:basic_defense_no_weapon_high_health.message):Basic defense- No weapon, high health.","max_health":3000,"build_metal_cost":50,"atrophy_rate":20.0,"atrophy_cool_down":0.5,"wreckage_health_frac":0.0,"spawn_layers":"WL_AnyHorizontalGroundOrWaterSurface","mesh_bounds":[5,5,14],"placement_size":[4,4],"area_build_separation":0.5,"unit_types":["UNITTYPE_Structure","UNITTYPE_Basic","UNITTYPE_Wall","UNITTYPE_FabBuild","UNITTYPE_FabAdvBuild","UNITTYPE_CmdBuild","UNITTYPE_CombatFabAdvBuild"],"physics":{"type":"Structure","shape":"Box","collision_layers":"WL_AnyHorizontalGroundOrWaterSurface","radius":1,"push_class":255,"air_friction":1.0,"allow_pushing":false,"push_sideways":false,"allow_underground":false,"ignore_collisions":false},"recon":{"observer":{"items":[{"layer":"surface_and_air","channel":"sight","shape":"capsule","radius":1}]}},"model":[{"layer":"WL_LandHorizontal","filename":"/pa/units/land/land_barrier/land_barrier.papa","animations":{"deploy":"/pa/units/land/land_barrier/land_barrier_anim_deploy.papa","idle":"/pa/units/land/land_barrier/land_barrier_anim_idle.papa"},"animtree":"/pa/anim/anim_trees/land_barrier_anim_tree.json"},{"layer":"WL_WaterSurface","filename":"/pa/units/sea/sea_barrier/sea_barrier.papa","animations":{"deploy":"/pa/units/land/land_barrier/land_barrier_anim_deploy.papa","idle":"/pa/units/land/land_barrier/land_barrier_anim_idle.papa"},"animtree":"/pa/anim/anim_trees/land_barrier_anim_tree.json"}],"fx_offsets":[{"type":"idle","bone":"bone_shield","filename":"/pa/units/land/land_barrier/land_barrier_wall.pfx","offset":[0,0,0]}],"events":{"build_complete":{"audio_cue":"/SE/Build_Complete/barrier"},"died":{"audio_cue":"/SE/Death/barrier","effect_spec":"/pa/effects/specs/default_explosion.pfx","effect_scale":1.25}},"TEMP_texelinfo":7.58193}
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "!LOC(units:wall.message):Wall",
+    "description": "!LOC(units:basic_defense_no_weapon_high_health.message):Basic defense- No weapon, high health.",
+    "max_health": 3000,
+    "build_metal_cost": 50,
+    "atrophy_rate": 20,
+    "atrophy_cool_down": 0.5,
+    "wreckage_health_frac": 0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "mesh_bounds": [
+        5,
+        5,
+        14
+    ],
+    "placement_size": [
+        4,
+        4
+    ],
+    "area_build_separation": 0.5,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Wall",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+		"UNITTYPE_Custom1"
+    ],
+    "physics": {
+        "type": "Structure",
+        "shape": "Box",
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "radius": 1,
+        "push_class": 255,
+        "air_friction": 1,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false,
+        "ignore_collisions": false
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 1
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/land_barrier/land_barrier.papa",
+            "animations": {
+                "deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
+                "idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/land_barrier_anim_tree.json"
+        },
+        {
+            "layer": "WL_WaterSurface",
+            "filename": "/pa/units/sea/sea_barrier/sea_barrier.papa",
+            "animations": {
+                "deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
+                "idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/land_barrier_anim_tree.json"
+        }
+    ],
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "bone": "bone_shield",
+            "filename": "/pa/units/land/land_barrier/land_barrier_wall.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/barrier"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/barrier",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx",
+            "effect_scale": 1.25
+        }
+    },
+    "TEMP_texelinfo": 7.58193
+}

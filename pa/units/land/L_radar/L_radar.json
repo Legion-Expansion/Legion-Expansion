@@ -18,7 +18,8 @@
         "UNITTYPE_Structure",
         "UNITTYPE_Basic",
         "UNITTYPE_FabBuild",
-        "UNITTYPE_Recon"
+        "UNITTYPE_Recon",
+		"UNITTYPE_Custom1"
     ],
     "physics": {
         "collision_layers": "WL_AnySurface"

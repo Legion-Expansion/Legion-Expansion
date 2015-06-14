@@ -16,7 +16,8 @@
         "UNITTYPE_EnergyProduction",
         "UNITTYPE_Advanced",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Economy"
+        "UNITTYPE_Economy",
+		"UNITTYPE_Custom1"
     ],
     "recon": {
         "observer": {

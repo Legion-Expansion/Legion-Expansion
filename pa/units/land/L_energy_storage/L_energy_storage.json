@@ -17,7 +17,8 @@
         "UNITTYPE_CmdBuild",
         "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Economy"
+        "UNITTYPE_Economy",
+		"UNITTYPE_Custom1"
     ],
     "recon": {
         "observer": {

@@ -13,10 +13,12 @@
     },
     "unit_types": [
         "UNITTYPE_Structure",
-		"UNITTYPE_Basic",
-		"UNITTYPE_FabBuild",
-		"UNITTYPE_CmdBuild",
-		"UNITTYPE_Custom2"
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Economy",
+		"UNITTYPE_Custom1"
     ],
     "recon": {
         "observer": {

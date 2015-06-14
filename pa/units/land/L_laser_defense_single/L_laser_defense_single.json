@@ -15,7 +15,8 @@
         "UNITTYPE_Defense",
         "UNITTYPE_FabBuild",
         "UNITTYPE_CmdBuild",
-        "UNITTYPE_CombatFabAdvBuild"
+        "UNITTYPE_CombatFabAdvBuild",
+		"UNITTYPE_Custom1"
     ],
     "command_caps": [
         "ORDER_Attack"

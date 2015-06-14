@@ -4,7 +4,7 @@
     "description": "!LOC(units:basic_fabricator_wired_to_build_structures.message):Basic fabricator- Wired to build structures.",
     "max_health": 50,
     "build_metal_cost": 200,
-    "buildable_types": "(Structure & Custom2 & FabBuild & Basic & Custom1) | (Structure & Custom2 & FabBuild & Basic & CmdBuild & Custom1)",
+    "buildable_types": "(Structure & FabBuild & Basic) | (Structure & FabBuild & Basic & CmdBuild ) & Custom1",
     "attachable": {
         "offsets": {
             "root": [
