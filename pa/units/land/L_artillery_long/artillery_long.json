@@ -1,104 +1,104 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:holkins.message):Holkins",
-    "description": "!LOC(units:advanced_artillery_equipped_with_long_range_anti_land_and_anti_ship_gun.message):Advanced artillery- Equipped with long range anti-land, and anti-ship gun.",
-    "max_health": 5000,
-    "build_metal_cost": 9600,
-    "atrophy_rate": 240,
-    "atrophy_cool_down": 15,
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "unit_types": [
-        "UNITTYPE_Land",
-        "UNITTYPE_Structure",
-        "UNITTYPE_Defense",
-        "UNITTYPE_Artillery",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Important",
-		"UNITTYPE_Custom1"
-    ],
-    "command_caps": [
-        "ORDER_Attack"
-    ],
-    "guard_layer": "WL_AnySurface",
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                }
-            ]
-        }
+  "TEMP_texelinfo": 26.6522,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 240,
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/artillery"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 9600,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "description": "!LOC(units:advanced_artillery_equipped_with_long_range_anti_land_and_anti_ship_gun.message):Advanced artillery- Equipped with long range anti-land, and anti-ship gun.",
+  "display_name": "!LOC(units:holkins.message):Holkins",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
     },
-    "model": [
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 1
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "lamps": [
+    {
+      "bone": "bone_pitch",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 2,
+      "offset": [
+        0,
+        -11.21,
+        3.69
+      ],
+      "radius": 4
+    }
+  ],
+  "max_health": 5000,
+  "mesh_bounds": [
+    13,
+    30.8,
+    15.0376
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
+      "filename": "/pa/units/land/artillery_long/artillery_long.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
+      "filename": "/pa/units/sea/artillery_long/artillery_long.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "nearby_target_tick_update_interval": 30,
+  "recon": {
+    "observer": {
+      "items": [
         {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/artillery_long/artillery_long.papa",
-            "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
         },
         {
-            "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/artillery_long/artillery_long.papa",
-            "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json"
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
         }
-    ],
-    "nearby_target_tick_update_interval": 30,
-    "tools": [
-        {
-            "spec_id": "/pa/units/land/artillery_long/artillery_long_tool_weapon.json",
-            "aim_bone": "socket_aim",
-            "muzzle_bone": "socket_muzzle"
-        }
-    ],
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/structure_small"
-        },
-        "fired": {
-            "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/structure_small",
-            "effect_scale": 1
-        }
-    },
-    "audio": {
-        "selection_response": {
-            "cue": "/SE/Selection/structure/artillery"
-        }
-    },
-    "lamps": [
-        {
-            "offset": [
-                0,
-                -11.21,
-                3.69
-            ],
-            "radius": 4,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 2,
-            "bone": "bone_pitch"
-        }
-    ],
-    "mesh_bounds": [
-        13,
-        30.8,
-        15.0376
-    ],
-    "TEMP_texelinfo": 26.6522
+      ]
+    }
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "socket_aim",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/artillery_long/artillery_long_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Land",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important",
+    "UNITTYPE_Custom1"
+  ]
 }

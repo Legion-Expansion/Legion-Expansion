@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "display_name": "!LOC(units:vanguard.message):Vanguard",
-    "description": "!LOC(units:heavy_tank_advanced_short_range_heavily_armored_vehicle.message):Heavy tank- Advanced short range, heavily armored vehicle.",
+    "display_name": "Hammer",
+    "description": "Heavy Laser Tank- Destroys Anything Within Range.",
     "max_health": 5000,
     "build_metal_cost": 1500,
     "attachable": {
