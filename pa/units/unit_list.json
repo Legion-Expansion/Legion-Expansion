@@ -110,6 +110,8 @@
     "/pa/units/land/laser_defense_adv/laser_defense_adv.json",
     "/pa/units/land/laser_defense_single/laser_defense_single.json",
     "/pa/units/land/L_laser_defense_single/L_laser_defense_single.json",
+    "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json",
+    "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json",
     "/pa/units/land/metal_extractor/metal_extractor.json",
     "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
     "/pa/units/land/L_mex/L_mex.json",
