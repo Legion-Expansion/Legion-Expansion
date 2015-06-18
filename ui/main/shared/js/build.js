@@ -100,7 +100,9 @@ function BuildHotkeyModel() {
             "/pa/units/air/bomber_adv/bomber_adv.json": ["air", 8],
             "/pa/units/air/fabrication_aircraft/fabrication_aircraft.json": ["air", 10],
             "/pa/units/air/fighter/fighter.json": ["air", 11],
+            "/pa/units/air/L_fighter/L_fighter.json": ["air", 4],
             "/pa/units/air/bomber/bomber.json": ["air", 12],
+            "/pa/units/air/L_bomber/L_bomber.json": ["air", 3],
             "/pa/units/air/air_scout/air_scout.json": ["air", 13],
             "/pa/units/air/transport/transport.json": ["air", 14],
 
