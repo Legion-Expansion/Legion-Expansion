@@ -1,10 +1,10 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:single_laser_defense_tower.message):Single Laser Defense Tower",
+    "display_name": "Laser Defense Tower",
     "description": "!LOC(units:basic_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
-    "max_health": 350,
-    "build_metal_cost": 225,
-    "atrophy_rate": 5,
+    "max_health": 1500,
+    "build_metal_cost": 350,
+    "atrophy_rate": 7.5,
     "atrophy_cool_down": 15,
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "unit_types": [
@@ -14,14 +14,12 @@
         "UNITTYPE_SurfaceDefense",
         "UNITTYPE_Defense",
         "UNITTYPE_FabBuild",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_CombatFabAdvBuild",
 		"UNITTYPE_Custom1"
     ],
     "command_caps": [
         "ORDER_Attack"
     ],
-    "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+    "guard_layer": "WL_AnySurface",
     "recon": {
         "observer": {
             "items": [
@@ -43,22 +41,23 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/L_laser_defense_single/L_laser_defense_single.papa",
-            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+            "filename": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.papa",
+            "animtree": "/pa/anim/anim_trees/defense_turret_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_defense.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/floating_laser_single/floating_laser_single.papa",
-            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json"
+            "filename": "/pa/units/sea/floating_laser/floating_laser.papa",
+            "animtree": "/pa/anim/anim_trees/defense_turret_anim_tree.json"
         }
     ],
     "tools": [
         {
-            "spec_id": "/pa/units/land/L_laser_defense_single/L_laser_defense_single_tool_weapon.json",
+            "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv_tool_weapon.json",
             "aim_bone": "bone_pitch",
             "muzzle_bone": [
-                "socket_muzzle"
+                "socket_rightMuzzle",
+                "socket_leftMuzzle"
             ]
         }
     ],
@@ -67,19 +66,19 @@
             "audio_cue": "/SE/Build_Complete/structure_small"
         },
         "fired": {
-            "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+            "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
         },
         "died": {
             "audio_cue": "/SE/Death/structure_small",
-            "effect_scale": 0.55
+            "effect_scale": 0.6
         }
     },
     "mesh_bounds": [
-        6.8,
-        5.76558,
-        14.6
+        6,
+        6,
+        17.2
     ],
-    "area_build_separation": 18,
-    "TEMP_texelinfo": 10.2184
+    "TEMP_texelinfo": 10.2184,
+    "area_build_separation": 18
 }
