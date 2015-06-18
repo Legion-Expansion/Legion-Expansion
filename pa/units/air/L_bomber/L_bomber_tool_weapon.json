@@ -1,0 +1,30 @@
+{
+    "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+    "ammo_id": "/pa/units/air/L_bomber/L_bomber_ammo.json",
+    "ammo_source": "energy",
+    "rate_of_fire": 7.5,
+    "ammo_capacity": 425,
+    "ammo_demand": 100,
+    "ammo_per_shot": 75,
+    "max_range": 10,
+    "yaw_rate": 3600,
+    "pitch_rate": 3600,
+    "yaw_range": 180,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "spread_fire": false,
+    "carpet_fire": true,
+    "firing_standard_deviation": 10,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Seafloor",
+        "WL_Underwater"
+    ],
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/shell_artillery",
+            "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+        }
+    }
+}
