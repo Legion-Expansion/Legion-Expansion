@@ -132,6 +132,7 @@
     "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
     "/pa/units/land/tank_hover/tank_hover.json",
     "/pa/units/land/tank_laser_adv/tank_laser_adv.json",
+    "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json",
     "/pa/units/land/tank_light_laser/tank_light_laser.json",
     "/pa/units/land/tank_shank/tank_shank.json",
     "/pa/units/land/teleporter/teleporter.json",
