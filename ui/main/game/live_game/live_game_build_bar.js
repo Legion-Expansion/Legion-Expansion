@@ -3,8 +3,8 @@ var handlers = {};
 
 $(document).ready(function () {
     
-    var ITEMS_PER_ROW = 5;
-    var ROWS_PER_TAB = 3;
+    var ITEMS_PER_ROW = 6;
+    var ROWS_PER_TAB = 5;
     var ITEMS_PER_TAB = ITEMS_PER_ROW * ROWS_PER_TAB;
     
     function BuildItem(params) {
