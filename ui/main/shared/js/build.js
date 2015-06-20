@@ -24,8 +24,6 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json": ["legion vehicle", 3],
             "/pa/units/land/tank_shank/tank_shank.json": ["legion vehicle", 4],
             "/pa/units/land/shotgun_tank/shotgun_tank.json": ["legion vehicle", 5],
-            "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json": ["legion vehicle", 6],
-
                   //legion bot
             "/pa/units/land/L_bot_bomb/L_bot_bomb.json": ["legion bot", 0],
                   //legion air
