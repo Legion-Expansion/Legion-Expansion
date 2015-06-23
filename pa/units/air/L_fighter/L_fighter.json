@@ -1,107 +1,107 @@
 {
-    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "display_name": "Todo",
-    "description": "!LOC(units:fighter_equipped_with_basic_anti_air_missiles.message):Fighter- Equipped with basic anti-air missiles.",
-    "max_health": 150,
-    "build_metal_cost": 180,
-    "unit_types": [
-        "UNITTYPE_Fighter",
-        "UNITTYPE_Air",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Offense",
-        "UNITTYPE_Basic",
-        "UNITTYPE_FactoryBuild",
-		"UNITTYPE_Custom1"
-    ],
-    "guard_layer": "WL_Air",
-    "navigation": {
-        "type": "air",
-        "acceleration": 90,
-        "brake": 90,
-        "move_speed": 90,
-        "turn_speed": 270,
-        "aggressive_distance": 50,
-        "bank_factor": 10
+  "TEMP_texelinfo": 6.1803,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_fighter_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
     },
-    "physics": {
-        "radius": 6,
-        "gravity_scalar": 1,
-        "push_class": 2
+    "selection_response": {
+      "cue": "/SE/Selection/air/fighter"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 180,
+  "description": "!LOC(units:fighter_equipped_with_basic_anti_air_missiles.message):Fighter- Equipped with basic anti-air missiles.",
+  "display_name": "Todo",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
     },
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 150
-                }
-            ]
-        }
+    "died": {
+      "audio_cue": "/SE/Death/Air"
     },
-    "model": {
-        "filename": "/pa/units/air/L_fighter/L_fighter.papa",
-        "arrows": 5
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/fighter_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/air/fighter/fighter_jets.pfx",
+      "muzzle_bone": "socket_leftThruster",
+      "type": "moving_forward"
     },
-    "tools": [
+    {
+      "filename": "/pa/units/air/fighter/fighter_jets.pfx",
+      "muzzle_bone": "socket_rightThruster",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_Air",
+  "max_health": 150,
+  "mesh_bounds": [
+    9,
+    6.5,
+    3.1
+  ],
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/air/L_fighter/L_fighter.papa"
+  },
+  "navigation": {
+    "acceleration": 90,
+    "aggressive_distance": 50,
+    "bank_factor": 10,
+    "brake": 90,
+    "move_speed": 90,
+    "turn_speed": 270,
+    "type": "air"
+  },
+  "physics": {
+    "gravity_scalar": 1,
+    "push_class": 2,
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
         {
-            "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "muzzle_bone": "socket_leftMuzzle"
-        },
-        {
-            "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "muzzle_bone": "socket_rightMuzzle"
-        }
-    ],
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/air"
-        },
-        "fired": {
-            "audio_cue": "/SE/Weapons/air/fighter_fire"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Air"
-        }
-    },
-    "audio": {
-        "loops": {
-            "move": {
-                "cue": "/SE/Movement/air/air_fighter_loop",
-                "flag": "vel_changed",
-                "should_start_func": "is_moving",
-                "should_stop_func": "is_not_moving"
-            }
-        },
-        "selection_response": {
-            "cue": "/SE/Selection/air/fighter"
-        }
-    },
-    "fx_offsets": [
-        {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/fighter/fighter_jets.pfx",
-            "muzzle_bone": "socket_leftThruster"
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
         },
         {
-            "type": "moving_forward",
-            "filename": "/pa/units/air/fighter/fighter_jets.pfx",
-            "muzzle_bone": "socket_rightThruster"
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
         }
-    ],
-    "TEMP_texelinfo": 6.1803,
-    "mesh_bounds": [
-        9,
-        6.5,
-        3.1
-    ]
+      ]
+    }
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "socket_leftMuzzle",
+      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "socket_rightMuzzle",
+      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

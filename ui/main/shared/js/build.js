@@ -13,10 +13,10 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json": ["legion factory", 0],
             "/pa/units/land/bvf_IL/bvf_IL.json": ["legion factory", 1],
                   //legion combat
-            "/pa/units/land/L_laser_defense_single/L_laser_defense_single.json": ["legion combat", 0],
             "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json": ["legion combat", 1],
             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json": ["legion combat", 2],
             "/pa/units/land/L_artillery_short/L_artillery_short.json": ["legion combat", 3],
+            "/pa/units/land/L_artillery_long/L_artillery_long.json": ["legion combat", 0],
                   //legion vehcile
             "/pa/units/land/L_mortar_tank/L_mortar_tank.json": ["legion vehicle", 0],
             "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json": ["legion vehicle", 1],
@@ -25,7 +25,6 @@ function BuildHotkeyModel() {
             "/pa/units/land/tank_shank/tank_shank.json": ["legion vehicle", 4],
             "/pa/units/land/shotgun_tank/shotgun_tank.json": ["legion vehicle", 5],
             "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json": ["legion vehicle", 6],
-
                   //legion bot
             "/pa/units/land/L_bot_bomb/L_bot_bomb.json": ["legion bot", 0],
                   //legion air
