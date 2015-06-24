@@ -5,7 +5,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+      "effect_spec": "/pa/effects/specs/awesome_explosion.pfx"
     }
   },
   "full_damage_splash_radius": 5,
@@ -20,9 +20,6 @@
   "influence_radius": 900,
   "initial_velocity": 200.0,
   "lifetime": 30,
-  "model": {
-    "filename": "/pa/units/air/shell_large/shell_large.papa"
-  },
   "physics": {
     "add_to_spatial_db": false,
     "gravity_scalar": 10,
