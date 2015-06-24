@@ -84,7 +84,7 @@
             "audio_cue": "/SE/Build_Complete/veh"
         },
         "fired": {
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+            "effect_spec": "/pa/effects/specs/dense_sparks_muzzle.pfx socket_muzzle"
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",

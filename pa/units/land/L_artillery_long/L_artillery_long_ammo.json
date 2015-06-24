@@ -10,7 +10,7 @@
   },
   "full_damage_splash_radius": 5,
   "fx_trail": {
-    "filename": "/pa/effects/specs/shell_artillery_large_proj_trail.pfx",
+    "filename": "/pa/effects/specs/plasma_ball_with_sparks_long.pfx",
     "offset": [
       0.0,
       1.0,
