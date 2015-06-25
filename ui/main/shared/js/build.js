@@ -12,6 +12,8 @@ function BuildHotkeyModel() {
                   //Legion factories
             "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json": ["legion factory", 0],
             "/pa/units/land/bvf_IL/bvf_IL.json": ["legion factory", 1],
+            "/pa/units/land/L_bot_factory/L_bot_factory.json": ["legion factory", 2],
+            "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json": ["legion factory", 3],
                   //legion combat
             "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json": ["legion combat", 1],
             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json": ["legion combat", 2],
