@@ -1,0 +1,201 @@
+{
+    "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+    "display_name": "!LOC(units:orbital_factory.message):Orbital Factory",
+    "description": "!LOC(units:advanced_manufacturing_builds_orbital_satellites.message):Advanced manufacturing- Builds orbital satellites.",
+    "max_health": 9000,
+    "build_metal_cost": 5400,
+    "atrophy_rate": 90,
+    "atrophy_cool_down": 15,
+    "wreckage_health_frac": 0,
+    "buildable_types": "Orbital & FactoryBuild & Custom1",
+    "enable_orbital_shell": true,
+    "rolloff_dirs": [
+        [
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0
+        ]
+    ],
+    "spawn_layers": "WL_Orbital",
+    "wait_to_rolloff_time": 0,
+    "factory_cooldown_time": 4,
+    "unit_types": [
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Orbital",
+        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Important",
+		"UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_FactoryBuild",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Attack",
+        "ORDER_Assist"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 250
+                }
+            ]
+        }
+    },
+    "physics": {
+        "radius": 20,
+        "push_class": 15,
+        "collision_layers": "WL_Orbital",
+        "ignore_gravity": true
+    },
+    "model": [
+        {
+            "layer": "WL_Orbital",
+            "filename": "/pa/units/orbital/orbital_factory/orbital_factory.papa",
+            "animations": {
+                "build_start": "/pa/units/orbital/orbital_factory/orbital_factory_anim_start.papa",
+                "build_loop": "/pa/units/orbital/orbital_factory/orbital_factory_anim_build.papa",
+                "build_end": "/pa/units/orbital/orbital_factory/orbital_factory_anim_end.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/factory_anim_tree.json"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory_build_arm.json",
+            "aim_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Death/orbital",
+            "effect_scale": 2.5
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_orbital",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_centerHalo",
+            "offset": [
+                17,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_centerHalo",
+            "offset": [
+                -17,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                -90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_frontHalo",
+            "offset": [
+                9.5,
+                0,
+                9.5
+            ],
+            "orientation": [
+                0,
+                0,
+                135
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_frontHalo",
+            "offset": [
+                -9.5,
+                0,
+                -9.5
+            ],
+            "orientation": [
+                0,
+                0,
+                -135
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_backHalo",
+            "offset": [
+                9.5,
+                0,
+                9.5
+            ],
+            "orientation": [
+                0,
+                0,
+                135
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_backHalo",
+            "offset": [
+                -9.5,
+                0,
+                -9.5
+            ],
+            "orientation": [
+                0,
+                0,
+                -135
+            ]
+        }
+    ],
+    "mesh_bounds": [
+        45,
+        40,
+        24
+    ],
+    "placement_size": [
+        100,
+        100
+    ],
+    "area_build_separation": 7,
+    "TEMP_texelinfo": 65.6074
+}

@@ -14,6 +14,10 @@ function BuildHotkeyModel() {
             "/pa/units/land/bvf_IL/bvf_IL.json": ["legion factory", 1],
             "/pa/units/land/L_bot_factory/L_bot_factory.json": ["legion factory", 2],
             "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json": ["legion factory", 3],
+            "/pa/units/air/L_air_factory/L_air_factory.json": ["legion factory", 12],
+            "/pa/units/air/L_air_factory_adv/L_air_factory_adv.json": ["legion factory", 7],
+            "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json": ["legion factory", 6],
+            "/pa/units/sea/L_naval_factory/L_naval_factory.json": ["legion factory", 11],
                   //legion combat
             "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json": ["legion combat", 1],
             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json": ["legion combat", 2],
@@ -29,9 +33,13 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json": ["legion vehicle", 6],
                   //legion bot
             "/pa/units/land/L_bot_bomb/L_bot_bomb.json": ["legion bot", 0],
+            "/pa/units/land/L_riot_bot/L_riot_bot.json": ["legion bot", 1],
                   //legion air
             "/pa/units/air/L_fighter/L_fighter.json": ["legion air", 0],
             "/pa/units/air/L_bomber/L_bomber.json": ["legion air", 1],
+                  //legion orbital
+            "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json": ["legion orbital", 9],
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                   //Vanilla Utility
             "/pa/units/land/control_module/control_module.json": ["utility", 1],
             "/pa/units/land/radar_adv/radar_adv.json": ["utility", 2],

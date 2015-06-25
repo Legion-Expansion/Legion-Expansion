@@ -1,9 +1,9 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "!LOC(units:grenadier.message):Grenadier",
+    "display_name": "Armored Riot Bot",
     "description": "!LOC(units:grenadier_basic_assault_weapons_dealing_area_effect_damage.message):Grenadier- Basic assault weapons dealing area effect damage.",
-    "max_health": 80,
-    "build_metal_cost": 100,
+    "max_health": 700,
+    "build_metal_cost": 1300,
     "attachable": {
         "offsets": {
             "root": [
@@ -27,7 +27,7 @@
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",
         "UNITTYPE_CannonBuildable",
-		"UNITTYPE_Custom1"
+        "UNITTYPE_Custom1"
     ],
     "transportable": {
         "size": 1
@@ -63,7 +63,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/bot_grenadier/bot_grenadier.papa",
+        "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
         "animations": {
             "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
             "walk": "/pa/units/land/bot_grenadier/bot_grenadier_anim_run.papa",
@@ -74,14 +74,34 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/land/bot_grenadier/bot_grenadier_tool_weapon.json",
-            "aim_bone": "bone_leftRecoil",
-            "muzzle_bone": "socket_leftMuzzle"
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_leftAmmo",
+            "muzzle_bone": "socket_leftMuzzle01"
         },
         {
-            "spec_id": "/pa/units/land/bot_grenadier/bot_grenadier_tool_weapon.json",
-            "aim_bone": "bone_rightRecoil",
-            "muzzle_bone": "socket_rightMuzzle"
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_leftAmmo",
+            "muzzle_bone": "socket_leftMuzzle02"
+        },
+        {
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_leftAmmo",
+            "muzzle_bone": "socket_leftMuzzle03"
+        },
+        {
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_rightAmmo",
+            "muzzle_bone": "socket_rightMuzzle01"
+        },
+        {
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_rightAmmo",
+            "muzzle_bone": "socket_rightMuzzle02"
+        },
+        {
+            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+            "aim_bone": "bone_rightAmmo",
+            "muzzle_bone": "socket_rightMuzzle03"
         }
     ],
     "events": {
@@ -90,7 +110,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle"
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle03"
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",
