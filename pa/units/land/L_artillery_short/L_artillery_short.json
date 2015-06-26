@@ -93,11 +93,6 @@
   "tools": [
     {
       "aim_bone": "socket_aim",
-      "muzzle_bone": "socket_muzzle_a",
-      "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short_tool_weapon.json"
-    },
-    {
-      "aim_bone": "socket_aim",
       "muzzle_bone": "socket_muzzle_b",
       "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short_tool_weapon.json"
     }
