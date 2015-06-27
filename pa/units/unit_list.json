@@ -139,6 +139,7 @@
     "/pa/units/land/tank_light_laser/tank_light_laser.json",
     "/pa/units/land/tank_shank/tank_shank.json",
     "/pa/units/land/teleporter/teleporter.json",
+    "/pa/units/land/L_teleporter/L_teleporter.json",
     "/pa/units/land/unit_cannon/unit_cannon.json",
     "/pa/units/land/vehicle_factory/vehicle_factory.json",
     "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json",

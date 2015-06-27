@@ -1,0 +1,542 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "Space Bridge",
+    "description": "Teleports units across the solar system.",
+    "max_health": 9750,
+    "build_metal_cost": 800,
+    "atrophy_rate": 6.66667,
+    "atrophy_cool_down": 15,
+    "spawn_layers": "WL_LandHorizontal",
+    "area_build_type": "Line",
+    "energy_efficiency_requirement": 1,
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Teleporter",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CombatFabAdvBuild",
+        "UNITTYPE_CombatFabBuild",
+        "UNITTYPE_FabOrbBuild",
+		"UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/L_teleporter/L_teleporter.papa",
+        "animations": {
+            "start": "/pa/units/land/teleporter/teleporter_anim_start.papa",
+            "loop": "/pa/units/land/teleporter/teleporter_anim_loop.papa",
+            "end": "/pa/units/land/teleporter/teleporter_anim_end.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+        "skirt_decal": "/pa/effects/specs/skirt_teleporter.json"
+    },
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "enabled": {
+            "audio_cue": "/SE/Buildings/teleporter_enabled"
+        },
+        "disabled": {
+            "audio_cue": "/SE/Buildings/teleporter_disabled"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 1.5
+        }
+    },
+    "audio": {
+        "loops": {
+            "enabled": {
+                "cue": "/SE/Buildings/teleporter_loop",
+                "flag": "enable_changed",
+                "should_start_func": "is_enabled",
+                "should_stop_func": "is_disabled"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_wall_glow.pfx",
+            "bone": "socket_entry",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone001",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone002",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone003",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone004",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone005",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone006",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone007",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_energy_field_poly.pfx",
+            "bone": "Bone008",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_point_stick.pfx",
+            "bone": "socket_topStickGlow",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_point_stick.pfx",
+            "bone": "socket_bottomStickGlow",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_indent_glow01.pfx",
+            "bone": "socket_glow01",
+            "offset": [
+                0,
+                0,
+                1.0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_indent_glow02.pfx",
+            "bone": "socket_glow02",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.001.pfx",
+            "bone": "socket_entry.001",
+            "offset": [
+                0,
+                0,
+                0.55
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.002.pfx",
+            "bone": "socket_entry.002",
+            "offset": [
+                0,
+                0,
+                0.45
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.003.pfx",
+            "bone": "socket_entry.003",
+            "offset": [
+                0,
+                0,
+                0.35
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.004.pfx",
+            "bone": "socket_entry.004",
+            "offset": [
+                0,
+                0,
+                0.45
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.005.pfx",
+            "bone": "socket_entry.005",
+            "offset": [
+                0,
+                0,
+                0.30
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.006.pfx",
+            "bone": "socket_entry.006",
+            "offset": [
+                0,
+                0.05,
+                0.68
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.007.pfx",
+            "bone": "socket_entry.007",
+            "offset": [
+                0,
+                0,
+                0.45
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.008.pfx",
+            "bone": "socket_entry.008",
+            "offset": [
+                0,
+                0,
+                0.45
+            ],
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.009.pfx",
+            "bone": "socket_entry.009",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.010.pfx",
+            "bone": "socket_entry.010",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.011.pfx",
+            "bone": "socket_entry.011",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.012.pfx",
+            "bone": "socket_entry.012",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.013.pfx",
+            "bone": "socket_entry.013",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.014.pfx",
+            "bone": "socket_entry.014",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.015.pfx",
+            "bone": "socket_entry.015",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/land/L_teleporter/teleporter_base_light.016.pfx",
+            "bone": "socket_entry.016",
+            "offset": [
+                0,
+                0.05,
+                0.40
+            ],
+            "orientation": [
+                180,
+                180,
+                0
+            ]
+        }
+    ],
+    "orders": {
+        "handler_type": "inert"
+    },
+    "teleporter": {
+        "energy_demand": 1000
+    },
+    "useable": {
+        "type": "teleporter",
+        "range": 30
+    },
+    "mesh_bounds": [
+        42.4,
+        30,
+        34
+    ],
+    "placement_size": [
+        50,
+        75
+    ],
+    "TEMP_texelinfo": 55.7884
+}
