@@ -527,7 +527,7 @@
     },
     "useable": {
         "type": "teleporter",
-        "range": 30
+        "range": 100
     },
     "mesh_bounds": [
         42.4,
