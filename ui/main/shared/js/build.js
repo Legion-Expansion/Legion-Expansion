@@ -24,6 +24,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json": ["legion combat", 2],
             "/pa/units/land/L_artillery_short/L_artillery_short.json": ["legion combat", 3],
             "/pa/units/land/L_artillery_long/L_artillery_long.json": ["legion combat", 0],
+            "/pa/units/land/L_air_defense/L_air_defense.json": ["legion combat", 11],
                   //legion vehcile
             "/pa/units/land/L_mortar_tank/L_mortar_tank.json": ["legion vehicle", 0],
             "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json": ["legion vehicle", 1],

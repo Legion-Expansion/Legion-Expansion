@@ -8,8 +8,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:basic_turret_equipped_with_anti_air_missiles.message):Basic turret- Equipped with anti-air missiles.",
-  "display_name": "!LOC(units:galata_turret.message):Galata Turret",
+  "description": "Basic AA Turret- Equipped With a Light Machine Gun.",
+  "display_name": "Sloth",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -33,7 +33,7 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/land/air_defense/air_defense.papa",
+      "filename": "/pa/units/land/L_air_defense/L_air_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
@@ -66,11 +66,8 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_rightMuzzle",
-        "socket_leftMuzzle"
-      ],
-      "spec_id": "/pa/units/land/air_defense/air_defense_tool_weapon.json"
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/L_air_defense/L_air_defense_tool_weapon.json"
     }
   ],
   "unit_types": [
@@ -82,6 +79,7 @@
     "UNITTYPE_CmdBuild",
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_CombatFabAdvBuild"
+    "UNITTYPE_CombatFabAdvBuild",
+	"UNITTYPE_Custom1"
   ]
 }
