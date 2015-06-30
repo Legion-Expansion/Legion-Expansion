@@ -11,8 +11,7 @@
     },
     "events": {
         "died": {
-            "audio_cue": "/SE/Impacts/cannon_uber",
-            "effect_spec": "/pa/effects/specs/uber_proj_explosion.pfx"
+            "effect_spec": "/pa/effects/specs/electric_shock_explosion.pfx"
         }
     },
     "flight_type": "Seeking",

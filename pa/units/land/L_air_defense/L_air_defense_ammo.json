@@ -1,13 +1,13 @@
 {
   "base_spec":"/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage":20,
+  "damage":22,
   "splash_damage":0,
   "splash_radius":3,
-  "initial_velocity":130,
-  "max_velocity":130,
+  "initial_velocity":160,
+  "max_velocity":160,
   "lifetime":2.8,
   "fx_trail":{
-    "filename":"/pa/effects/specs/bullet.pfx",
+    "filename":"/pa/effects/specs/long_bullet.pfx",
     "offset":[
       0.0,
       0.4,
