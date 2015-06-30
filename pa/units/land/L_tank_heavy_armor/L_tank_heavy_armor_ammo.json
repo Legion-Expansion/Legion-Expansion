@@ -11,7 +11,7 @@
     },
     "events": {
         "died": {
-            "effect_spec": "/pa/effects/specs/electric_shock_explosion.pfx"
+            "effect_spec": "/pa/effects/specs/electric_shock_explosion(small).pfx"
         }
     },
     "flight_type": "Seeking",
