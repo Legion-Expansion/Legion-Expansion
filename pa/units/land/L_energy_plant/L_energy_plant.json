@@ -50,7 +50,7 @@
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/sea_energy_plant/sea_energy_plant.papa",
+            "filename": "/pa/units/land/L_energy_plant/L_energy_plant_sea.papa",
             "animations": {
                 "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
             },

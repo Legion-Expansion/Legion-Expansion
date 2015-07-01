@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "!LOC(units:energy_storage.message):Energy Storage",
+    "display_name": "Storage",
     "description": "!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.",
     "max_health": 7500,
     "build_metal_cost": 450,
@@ -9,7 +9,8 @@
     "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
     "area_build_type": "Sphere",
     "storage": {
-        "energy": 100000
+        "energy": 100000,
+		"metal": 18500
     },
     "unit_types": [
         "UNITTYPE_Structure",
@@ -41,12 +42,12 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/L_energy_storage/L_energy_storage.papa",
+            "filename": "/pa/units/land/L_storage/L_storage.papa",
             "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
         },
         {
             "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/sea_energy_storage/sea_energy_storage.papa"
+            "filename": "/pa/units/land/L_storage/L_storage_sea.papa"
         }
     ],
     "events": {

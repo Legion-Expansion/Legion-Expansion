@@ -39,7 +39,7 @@
     },
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/sea/air_defense/air_defense.papa",
+      "filename": "/pa/units/land/L_air_defense/L_air_defense_sea.papa",
       "layer": "WL_WaterSurface"
     }
   ],
