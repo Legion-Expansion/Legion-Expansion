@@ -66,7 +66,7 @@
         "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
         "animations": {
             "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
-            "walk": "/pa/units/land/bot_grenadier/bot_grenadier_anim_run.papa",
+            "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa",
             "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",

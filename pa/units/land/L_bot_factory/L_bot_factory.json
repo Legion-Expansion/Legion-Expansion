@@ -65,10 +65,10 @@
     "model": {
         "filename": "/pa/units/land/L_bot_factory/L_bot_factory.papa",
         "animations": {
-            "idle": "/pa/units/land/bot_factory/bot_factory_anim_build.papa",
-            "build_start": "/pa/units/land/bot_factory/bot_factory_anim_start.papa",
-            "build_loop": "/pa/units/land/bot_factory/bot_factory_anim_build.papa",
-            "build_end": "/pa/units/land/bot_factory/bot_factory_anim_end.papa"
+            "idle": "/pa/units/land/L_bot_factory/L_bot_factory_idle.papa",
+            "build_start": "/pa/units/land/L_bot_factory/L_bot_factory_start.papa",
+            "build_loop": "/pa/units/land/L_bot_factory/L_bot_factory_build.papa",
+            "build_end": "/pa/units/land/L_bot_factory/L_bot_factory_end.papa"
         },
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
         "skirt_decal": "/pa/effects/specs/skirt_bot.json"
@@ -76,7 +76,7 @@
     "tools": [
         {
             "spec_id": "/pa/units/land/L_bot_factory/L_bot_factory_build_arm.json",
-            "aim_bone": "bone_root"
+            "aim_bone": "bone_platform"
         }
     ],
     "events": {
@@ -98,7 +98,7 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_muzzle01",
+            "bone": "muzzle_middleArm01",
             "offset": [
                 0,
                 0,
@@ -113,7 +113,37 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_muzzle02",
+            "bone": "muzzle_middleArm02",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_muzzle01",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "bone_muzzle02",
             "offset": [
                 0,
                 0,
