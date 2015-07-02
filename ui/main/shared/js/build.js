@@ -8,7 +8,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_energy_plant/L_energy_plant.json": ["legion utility", 2],
             "/pa/units/land/L_storage/L_storage.json": ["legion utility", 3],
             "/pa/units/land/L_teleporter/L_teleporter.json": ["legion utility", 11],
-            //"/pa/units/land/L_mex/L_mex.json": ["legion utility", 4],
+            "/pa/units/land/L_mex/L_mex.json": ["legion utility", 4],
             //"/pa/units/land/L_mex_adv/L_mex_adv.json": ["legion utility", 5],
                   //Legion factories
             "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json": ["legion factory", 0],

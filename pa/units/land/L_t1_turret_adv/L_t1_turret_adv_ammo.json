@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-    "damage": 75,
+    "damage": 80,
     "initial_velocity": 500,
     "max_velocity": 500,
     "lifetime": 2,

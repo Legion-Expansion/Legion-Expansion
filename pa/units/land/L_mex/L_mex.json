@@ -49,15 +49,7 @@
             "layer": "WL_LandHorizontal",
             "filename": "/pa/units/land/L_mex/L_mex.papa",
             "animations": {
-                "idle": "/pa/units/land/L_mex/L_mex_anim_work.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
-        },
-        {
-            "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/L_sea_mex/L_sea_mex.papa",
-            "animations": {
-                "idle": "/pa/units/sea/L_sea_mex/L_sea_mex_anim_work.papa"
+                "idle": "/pa/units/land/L_mex/L_mex_idle.papa"
             },
             "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
         }
