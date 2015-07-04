@@ -116,16 +116,16 @@
     "fx_offsets": [
         {
             "type": "energy",
-            "filename": "/pa/units/land/radar/radar_on.pfx",
+            "filename": "/pa/units/land/L_radar/radar_on.pfx",
             "bone": "bone_rotator",
             "offset": [
                 0,
-                0.145,
-                1.425
+                0,
+                0
             ],
             "orientation": [
                 0,
-                -45,
+                0,
                 0
             ]
         }

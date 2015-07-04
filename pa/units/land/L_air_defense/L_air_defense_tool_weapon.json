@@ -9,7 +9,7 @@
   "pitch_range":90,
   "auto_attack":true,
   "idle_aim_delay":0,
-  "firing_standard_deviation": 1,
+  "firing_standard_deviation": 0,
   "spread_fire": false,
   "target_layers":[
     "WL_Air"

@@ -62,10 +62,12 @@
             "audio_cue": "/SE/Build_Complete/energy"
         },
         "enabled": {
-            "audio_cue": "/SE/Buildings/teleporter_enabled"
+            "audio_cue": "/SE/Buildings/teleporter_enabled",
+            "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx bone_entry"
         },
         "disabled": {
-            "audio_cue": "/SE/Buildings/teleporter_disabled"
+            "audio_cue": "/SE/Buildings/teleporter_disabled",
+            "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx bone_entry"
         },
         "died": {
             "audio_cue": "/SE/Death/Factory",
