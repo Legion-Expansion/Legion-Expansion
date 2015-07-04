@@ -70,7 +70,7 @@
             "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
-        "walk_speed": 5
+        "walk_speed": 3
     },
     "tools": [
         {
