@@ -36,6 +36,7 @@ function BuildHotkeyModel() {
                   //legion bot
             "/pa/units/land/L_bot_bomb/L_bot_bomb.json": ["legion bot", 0],
             "/pa/units/land/L_riot_bot/L_riot_bot.json": ["legion bot", 1],
+            "/pa/units/land/L_artillery_bot/L_artillery_bot.json": ["legion bot", 2],
                   //legion air
             "/pa/units/air/L_fighter/L_fighter.json": ["legion air", 0],
             "/pa/units/air/L_bomber/L_bomber.json": ["legion air", 1],

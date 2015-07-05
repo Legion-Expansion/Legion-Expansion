@@ -1,0 +1,28 @@
+{
+    "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+    "ammo_id": "/pa/units/land/L_artillery_bot/L_artillery_bot_ammo.json",
+    "max_firing_velocity": 88,
+    "min_firing_velocity": 85,
+    "rate_of_fire": 0.5,
+    "idle_aim_delay": 1,
+    "max_range": 125,
+    "yaw_rate": 360,
+    "pitch_rate": 360,
+    "yaw_range": 180,
+    "pitch_range": 90,
+    "auto_attack": true,
+    "arc_type": "ARC_Low",
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_Seafloor",
+        "WL_WaterSurface"
+    ],
+    "target_priorities": [
+        "Structure & SurfaceDefense",
+        "Structure & Defense",
+        "Commander",
+        "Mobile - Air",
+        "Structure - Wall",
+        "Wall"
+    ]
+}
