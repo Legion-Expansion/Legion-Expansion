@@ -18,7 +18,7 @@
     "model": {
         "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
     },
-    "splash_damage": 400,
+    "splash_damage": 100,
     "splash_radius": 15,
     "damage": 400,
     "splash_damages_allies": false,
