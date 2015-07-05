@@ -1,117 +1,132 @@
 {
-  "TEMP_texelinfo": 6.38702,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        1.8
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/bot/bot_bomb"
-    }
-  },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 45,
-  "description": "Bomb bot- Equipped with Self Destruction mechanism.",
-  "display_name": "POW!",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot_bomb",
-      "effect_scale": 1,
-      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
-    },
-    "fired": {
-      "audio_cue": "",
-      "effect_spec": ""
-    }
-  },
-  "guard_layer": "WL_LandHorizontal",
-  "max_health": 10,
-  "mesh_bounds": [
-    3.8,
-    4.5,
-    3.2
-  ],
-  "model": {
-    "animations": {
-      "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
-      "idle": "/pa/units/land/bot_bomb/bot_bomb_anim_idle.papa",
-      "walk": "/pa/units/land/L_bot_bomb/L_bot_bomb_walk.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa",
-    "walk_speed": 20
-  },
-  "navigation": {
-    "acceleration": 400,
-    "brake": 400,
-    "move_speed": 40,
-    "turn_speed": 720,
-    "type": "land-small"
-  },
-  "physics": {
-    "allow_pushing": true,
-    "push_class": 2,
-    "radius": 2.25
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 20,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 20,
-          "shape": "capsule"
+    "TEMP_texelinfo": 6.38702,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                1.8
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
         }
-      ]
-    }
-  },
-  "spawn_layers": "WL_LandHorizontal",
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/land/bot_bomb/bot_bomb_tool_weapon.json"
-    }
-  ],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/T2_bot_bomb_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/bot_bomb"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 45,
+    "description": "Rocket Spider- Super fast suicide bot that ",
+    "display_name": "Rocket Purger",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot_bomb"
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": ""
+        }
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "max_health": 10,
+    "mesh_bounds": [
+        3.8,
+        4.5,
+        3.2
+    ],
+    "model": {
+        "animations": {
+            "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
+            "idle": "/pa/units/land/L_bot_bomb/L_bot_bomb_idle.papa",
+            "walk": "/pa/units/land/L_bot_bomb/L_bot_bomb_walk.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
+        "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa",
+        "walk_speed": 2
+    },
+    "navigation": {
+        "acceleration": 400,
+        "brake": 400,
+        "move_speed": 40,
+        "turn_speed": 720,
+        "type": "land-small"
+    },
+    "fx_offsets": [
+        {
+            "type": "moving",
+            "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "physics": {
+        "allow_pushing": true,
+        "push_class": 2,
+        "radius": 2.25
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 20,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 20,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_fuse",
+            "spec_id": "/pa/units/land/L_bot_bomb/L_bot_bomb_tool_weapon.json"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Custom1"
+    ],
+    "wreckage_health_frac": 0
 }
