@@ -76,9 +76,9 @@
         }
     },
     "mesh_bounds": [
-        6.8,
-        5.76558,
-        14.6
+        11.9,
+        16.5,
+        12.1
     ],
     "area_build_separation": 18,
     "TEMP_texelinfo": 10.2184
