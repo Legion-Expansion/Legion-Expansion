@@ -78,14 +78,7 @@
             "aim_bone": "bone_turret",
             "record_index": 0,
             "fire_event": "fired0",
-            "muzzle_bone": "socket_muzzle"
-        },
-        {
-            "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_anti_tool_weapon.json",
-			"aim_bone": "bone_turret",
-            "record_index": 1,
-            "fire_event": "fired1",
-            "muzzle_bone": "socket_antiMissile"
+            "muzzle_bone": "bone_root"
         }
     ],
     "events": {
@@ -93,10 +86,7 @@
             "audio_cue": "/SE/Build_Complete/veh"
         },
         "fired0": {
-            "effect_spec": "/pa/effects/specs/dense_sparks_muzzle.pfx socket_muzzle"
-        },
-        "fired1": {
-            "effect_spec": "/pa/effects/specs/BFG_radial_dome.pfx socket_antiMissile"
+            "effect_spec": "/pa/effects/specs/BFG_shockwave.pfx bone_root"
         },
         "died": {
             "audio_cue": "/SE/Death/Veh",

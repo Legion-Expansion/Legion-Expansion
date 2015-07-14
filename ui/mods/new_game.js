@@ -5,6 +5,9 @@ legionFaction.newCommanders = [
     "TODO2"
     //etc
 ]
+var performLockdown = function() {
+    
+}
 if (self.toggleShareArmy()) {
     
 }
