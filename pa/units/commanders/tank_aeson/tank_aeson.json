@@ -14,7 +14,16 @@
     }
   },
   "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
-  "buildable_types": "CmdBuild & Custom1 & Basic",
+  "buildable_types": "CmdBuild & Custom1 & Basic",  
+   "unit_types":[
+      "UNITTYPE_Commander",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_NoBuild",
+      "UNITTYPE_Custom1"
+   ],
   "description": "Tank Aeson Commander ",
   "display_name": "Aeson Commander",
   "headlights": [
