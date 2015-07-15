@@ -1,6 +1,6 @@
 {
    "unit_map":{
-      "LegionAirFactory":{
+      "LegionBasicAirFactory":{
          "spec_id":"/pa/units/air/L_air_factory/L_air_factory.json"
       },
 	  "LegionAdvancedAirFactory":{
