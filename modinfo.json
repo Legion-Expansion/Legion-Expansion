@@ -15,7 +15,7 @@
     "forum": "",
     "scenes": {
         "new_game": [
-            "coui://ui/mods/com.pa.brokenalliance/ui/mods/thing.js"
+            "coui://ui/mods/new_game.js"
         ]
     },
     "icon": "",
