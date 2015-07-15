@@ -15,8 +15,8 @@
   },
   "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
   "buildable_types": "CmdBuild & Custom1 & Basic",
-  "description": "Tank Aeson Commander ",
-  "display_name": "Aeson Commander",
+  "description": "Legion Commander 1 ",
+  "display_name": "TODO",
   "headlights": [
     {
       "bone": "bone_spine",
