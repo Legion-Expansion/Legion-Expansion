@@ -227,7 +227,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/vehicle_factory/vehicle_factory_build_arm.json"
+      "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_build_arm.json"
     }
   ],
   "unit_types": [

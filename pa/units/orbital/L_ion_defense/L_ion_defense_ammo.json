@@ -1,0 +1,14 @@
+{
+    "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+    "flight_type": "Seeking",
+    "damage": 150,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "initial_velocity": 1000,
+    "max_velocity": 1000,
+    "lifetime": 3,
+    "turn_rate": 45,
+    "fx_trail": {
+        "filename": "/pa/units/orbital/ion_defense/ion_defense_proj_trail.pfx"
+    }
+}
