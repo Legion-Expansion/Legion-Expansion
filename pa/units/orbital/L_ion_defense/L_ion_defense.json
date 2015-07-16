@@ -1,0 +1,83 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "Tola Anti Orbital Beam Cannon",
+    "description": "Shoots orbital and shit",
+    "max_health": 350,
+    "build_metal_cost": 225,
+    "atrophy_rate": 5,
+    "atrophy_cool_down": 15,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Defense",
+        "UNITTYPE_OrbitalDefense",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_FabAdvBuild",
+		"UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 130
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
+            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
+        },
+        {
+            "layer": "WL_WaterSurface",
+            "filename": "/pa/units/sea/floating_laser_single/floating_laser_single.papa",
+            "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "muzzle_bone": [
+                "socket_muzzle"
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/orb/umbrella_laser_fire",
+            "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.55
+        }
+    },
+    "mesh_bounds": [
+        6.8,
+        5.76558,
+        14.6
+    ],
+    "area_build_separation": 18,
+    "TEMP_texelinfo": 10.2184
+}
