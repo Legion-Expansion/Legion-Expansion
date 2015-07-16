@@ -17,6 +17,15 @@
   "buildable_types": "CmdBuild & Custom1 & Basic",
   "description": "Tank Aeson Commander ",
   "display_name": "Aeson Commander",
+  "unit_types":[
+      "UNITTYPE_Commander",
+      "UNITTYPE_Construction",
+      "UNITTYPE_Mobile",
+      "UNITTYPE_Offense",
+      "UNITTYPE_Land",
+      "UNITTYPE_NoBuild",
+      "UNITTYPE_Custom1"
+   ],
   "headlights": [
     {
       "bone": "bone_spine",
