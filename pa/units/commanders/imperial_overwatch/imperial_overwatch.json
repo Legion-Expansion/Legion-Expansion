@@ -1,0 +1,99 @@
+{
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                15.6
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
+    "buildable_types": "CmdBuild & Custom1 & Basic",
+    "description": "Legion Commander 1 ",
+    "display_name": "Imperial Overwatch",
+    "headlights": [
+        {
+            "bone": "bone_spine",
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "far_distance": 30,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 6,
+            "near_distance": 3,
+            "near_height": 5,
+            "near_width": 5,
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "orientation": [
+                0,
+                45,
+                0
+            ],
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "bone": "bone_spine",
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "radius": 2
+        },
+        {
+            "bone": "bone_leftShoulder",
+            "color": [
+                0.4,
+                1,
+                0.01
+            ],
+            "intensity": 2,
+            "offset": [
+                0.4,
+                -4.06,
+                -1.1
+            ],
+            "radius": 4
+        }
+    ],
+    "mesh_bounds": [
+        11.1,
+        9.8,
+        15.4
+    ],
+    "model": {
+        "filename": "/pa/units/commanders/imperial_overwatch/imperial_overwatch.papa"
+    },
+    "scrolling_uv": {
+        "scroll_rate": -0.21,
+        "uv_split": 0.9
+    },
+    "catalog_object_name": "TEST",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_imperial_alpha.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_imperial_alpha_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_imperial_alpha.png"
+        }
+    }
+}

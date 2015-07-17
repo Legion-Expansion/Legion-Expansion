@@ -1,0 +1,87 @@
+{
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "display_name": "!LOC(units:piranha.message):Piranha",
+    "description": "!LOC(units:scout_light_weaponry_fast_speed.message):Gunboat- Light weaponry, fast speed",
+    "max_health": 175,
+    "build_metal_cost": 150,
+    "spawn_layers": "WL_WaterSurface",
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Scout",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom1"
+    ],
+    "navigation": {
+        "type": "deepwater",
+        "acceleration": 75,
+        "brake": 200,
+        "move_speed": 20,
+        "turn_speed": 180,
+        "turn_in_place": false
+    },
+    "physics": {
+        "radius": 6,
+        "push_class": 2
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa",
+        "animtree": "/pa/anim/anim_trees/turret_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_tool_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/sea/sea_scout_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea",
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx",
+            "effect_scale": 1.25
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/sea_scout_ship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "TEMP_texelinfo": 4.24257,
+    "mesh_bounds": [
+        4,
+        11,
+        4
+    ]
+}

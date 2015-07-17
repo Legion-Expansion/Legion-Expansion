@@ -43,6 +43,8 @@ function BuildHotkeyModel() {
             "/pa/units/air/L_bomber/L_bomber.json": ["legion air", 1],
                   //legion orbital
             "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json": ["legion orbital", 9],
+                  //legion sea
+            "/pa/units/sea/L_sea_scout/L_sea_scout.json": ["legion sea", 14],
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                   //Vanilla Utility
             "/pa/units/land/control_module/control_module.json": ["utility", 1],

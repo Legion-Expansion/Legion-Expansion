@@ -70,15 +70,15 @@
     },
     "model": {
         "filename": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.papa",
-        "animtree": "/pa/anim/anim_trees/tank_armor_anim_tree.json"
+        "animtree": "/pa/anim/anim_trees/L_tank_heavy_armor_anim_tree.json"
     },
     "tools": [
         {
             "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_tool_weapon.json",
-            "aim_bone": "bone_turret",
+            "aim_bone": "bone_root",
             "record_index": 0,
             "fire_event": "fired0",
-            "muzzle_bone": "bone_root"
+            "muzzle_bone": "socket_muzzle"
         }
     ],
     "events": {
