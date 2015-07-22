@@ -77,7 +77,6 @@
     "UNITTYPE_Defense", 
     "UNITTYPE_OrbitalDefense", 
     "UNITTYPE_FabBuild", 
-    "UNITTYPE_FabAdvBuild", 
-    "UNITTYPE_Custom1"
+    "UNITTYPE_FabAdvBuild"
   ]
 }

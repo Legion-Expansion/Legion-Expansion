@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "blend_root": {
     "type": "bind_pose"
   }, 
@@ -31,4 +32,38 @@
       "unit_event": "fired"
     }
   ]
+=======
+    "blend_root": {
+        "type": "bind_pose"
+    },
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret",
+                "rotation_axis": "z",
+                "weapon_index": 0
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch",
+                "rotation_axis": "x",
+                "weapon_index": 0
+            }
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil",
+            "recoil_dist": 1.8,
+            "restore_time": 0.75,
+            "unit_event": "fired"
+        }
+    ]
+>>>>>>> origin/master
 }
