@@ -1,0 +1,14 @@
+{
+  "base_spec": "/pa/units/land/bot_sniper/bot_sniper.json", 
+  "display_name": "Legion Miniman", 
+  "unit_types": [
+    "UNITTYPE_Bot", 
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Offense", 
+    "UNITTYPE_Land", 
+    "UNITTYPE_Artillery", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Custom1"
+  ]
+}

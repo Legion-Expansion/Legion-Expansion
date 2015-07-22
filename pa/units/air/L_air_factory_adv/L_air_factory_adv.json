@@ -1,407 +1,407 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Legion Advanced Air Factory",
-    "description": "!LOC(units:advanced_manufacturing_builds_air_units.message):Advanced manufacturing- Builds air units.",
-    "max_health": 30000,
-    "build_metal_cost": 4800,
-    "atrophy_rate": 80,
-    "atrophy_cool_down": 15,
-    "buildable_types": "Air & Mobile & FactoryBuild & Custom1",
-    "rolloff_dirs": [
-        [
-            1,
-            0,
-            0
-        ],
-        [
-            -1,
-            0,
-            0
-        ],
-        [
-            0,
-            1,
-            0
-        ],
-        [
-            0,
-            -1,
-            0
-        ]
-    ],
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "wait_to_rolloff_time": 0,
-    "factory_cooldown_time": 2,
-    "unit_types": [
-        "UNITTYPE_Factory",
-        "UNITTYPE_Construction",
-        "UNITTYPE_Air",
-        "UNITTYPE_Structure",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_Important",
-		"UNITTYPE_Custom1"
-    ],
-    "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_FactoryBuild",
-        "ORDER_Reclaim",
-        "ORDER_Repair",
-        "ORDER_Attack",
-        "ORDER_Assist"
-    ],
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                }
-            ]
-        }
-    },
-    "model": [
-        {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/air/air_factory_adv/air_factory_adv.papa",
-            "animations": {
-                "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa",
-                "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa",
-                "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_air_adv.json"
-        },
-        {
-            "layer": "WL_WaterSurface",
-            "filename": "/pa/units/sea/air_factory_adv/air_factory_adv.papa",
-            "animations": {
-                "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa",
-                "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa",
-                "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/factory_anim_tree.json"
-        }
-    ],
-    "tools": [
-        {
-            "spec_id": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_build_arm.json",
-            "aim_bone": "bone_root"
-        }
-    ],
-    "events": {
-        "died": {
-            "effect_scale": 2
-        }
-    },
-    "audio": {
-        "loops": {
-            "build": {
-                "cue": "/SE/Construction/Factory_contruction_loop_air",
-                "flag": "build_target_changed",
-                "should_start_func": "has_build_target",
-                "should_stop_func": "no_build_target"
-            }
-        }
-    },
-    "fx_offsets": [
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle01",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle02",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle03",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle04",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle05",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle06",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle07",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "socket_nozzle08",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
-    ],
-    "headlights": [
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                9.5,
-                9.5,
-                2.5
-            ],
-            "orientation": [
-                -35,
-                31,
-                0
-            ],
-            "near_width": 3,
-            "near_height": 3,
-            "near_distance": 1,
-            "far_distance": 20,
-            "color": [
-                1.5,
-                1.52,
-                1.6
-            ],
-            "intensity": 3,
-            "bone": "bone_platform"
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                9.5,
-                -9.5,
-                2.5
-            ],
-            "orientation": [
-                -35,
-                -31,
-                0
-            ],
-            "near_width": 3,
-            "near_height": 3,
-            "near_distance": 1,
-            "far_distance": 20,
-            "color": [
-                1.5,
-                1.52,
-                1.6
-            ],
-            "intensity": 3,
-            "bone": "bone_platform"
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                -9.5,
-                9.5,
-                2.5
-            ],
-            "orientation": [
-                35,
-                31,
-                0
-            ],
-            "near_width": 3,
-            "near_height": 3,
-            "near_distance": 1,
-            "far_distance": 20,
-            "color": [
-                1.5,
-                1.52,
-                1.6
-            ],
-            "intensity": 3,
-            "bone": "bone_platform"
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                -9.5,
-                -9.5,
-                2.5
-            ],
-            "orientation": [
-                35,
-                -31,
-                0
-            ],
-            "near_width": 3,
-            "near_height": 3,
-            "near_distance": 1,
-            "far_distance": 20,
-            "color": [
-                1.5,
-                1.52,
-                1.6
-            ],
-            "intensity": 3,
-            "bone": "bone_platform"
-        }
-    ],
-    "lamps": [
-        {
-            "offset": [
-                8.02,
-                -20.88,
-                12.04
-            ],
-            "radius": 8,
-            "color": [
-                0.1,
-                1,
-                0.1
-            ],
-            "intensity": 2
-        },
-        {
-            "offset": [
-                0,
-                -20.88,
-                12.04
-            ],
-            "radius": 8,
-            "color": [
-                0.1,
-                1,
-                0.1
-            ],
-            "intensity": 2
-        },
-        {
-            "offset": [
-                -8.02,
-                -20.88,
-                12.04
-            ],
-            "radius": 8,
-            "color": [
-                0.1,
-                1,
-                0.1
-            ],
-            "intensity": 2
-        },
-        {
-            "offset": [
-                -4,
-                -23.79,
-                8.44
-            ],
-            "radius": 4,
-            "color": [
-                1,
-                0,
-                0
-            ],
-            "intensity": 2
-        }
-    ],
-    "mesh_bounds": [
-        50,
-        50,
-        25
-    ],
-    "placement_size": [
-        60,
-        60
-    ],
-    "area_build_separation": 2,
-    "TEMP_texelinfo": 65.6074,
-    "physics": {
-        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  "TEMP_texelinfo": 65.6074, 
+  "area_build_separation": 2, 
+  "atrophy_cool_down": 15, 
+  "atrophy_rate": 80, 
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_air", 
+        "flag": "build_target_changed", 
+        "should_start_func": "has_build_target", 
+        "should_stop_func": "no_build_target"
+      }
     }
+  }, 
+  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
+  "build_metal_cost": 4800, 
+  "buildable_types": "Custom1 & ( Air & Mobile & FactoryBuild )", 
+  "command_caps": [
+    "ORDER_Move", 
+    "ORDER_Patrol", 
+    "ORDER_FactoryBuild", 
+    "ORDER_Reclaim", 
+    "ORDER_Repair", 
+    "ORDER_Attack", 
+    "ORDER_Assist"
+  ], 
+  "description": "!LOC(units:advanced_manufacturing_builds_air_units.message):Advanced manufacturing- Builds air units.", 
+  "display_name": "Legion Advanced Air Factory", 
+  "events": {
+    "died": {
+      "effect_scale": 2
+    }
+  }, 
+  "factory_cooldown_time": 2, 
+  "fx_offsets": [
+    {
+      "bone": "socket_nozzle01", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle02", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle03", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle04", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle05", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle06", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle07", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }, 
+    {
+      "bone": "socket_nozzle08", 
+      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "offset": [
+        0, 
+        0, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        0, 
+        0
+      ], 
+      "type": "build"
+    }
+  ], 
+  "headlights": [
+    {
+      "bone": "bone_platform", 
+      "color": [
+        1.5, 
+        1.52, 
+        1.6
+      ], 
+      "far_distance": 20, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 3, 
+      "near_distance": 1, 
+      "near_height": 3, 
+      "near_width": 3, 
+      "offset": [
+        9.5, 
+        9.5, 
+        2.5
+      ], 
+      "orientation": [
+        -35, 
+        31, 
+        0
+      ]
+    }, 
+    {
+      "bone": "bone_platform", 
+      "color": [
+        1.5, 
+        1.52, 
+        1.6
+      ], 
+      "far_distance": 20, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 3, 
+      "near_distance": 1, 
+      "near_height": 3, 
+      "near_width": 3, 
+      "offset": [
+        9.5, 
+        -9.5, 
+        2.5
+      ], 
+      "orientation": [
+        -35, 
+        -31, 
+        0
+      ]
+    }, 
+    {
+      "bone": "bone_platform", 
+      "color": [
+        1.5, 
+        1.52, 
+        1.6
+      ], 
+      "far_distance": 20, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 3, 
+      "near_distance": 1, 
+      "near_height": 3, 
+      "near_width": 3, 
+      "offset": [
+        -9.5, 
+        9.5, 
+        2.5
+      ], 
+      "orientation": [
+        35, 
+        31, 
+        0
+      ]
+    }, 
+    {
+      "bone": "bone_platform", 
+      "color": [
+        1.5, 
+        1.52, 
+        1.6
+      ], 
+      "far_distance": 20, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 3, 
+      "near_distance": 1, 
+      "near_height": 3, 
+      "near_width": 3, 
+      "offset": [
+        -9.5, 
+        -9.5, 
+        2.5
+      ], 
+      "orientation": [
+        35, 
+        -31, 
+        0
+      ]
+    }
+  ], 
+  "lamps": [
+    {
+      "color": [
+        0.1, 
+        1, 
+        0.1
+      ], 
+      "intensity": 2, 
+      "offset": [
+        8.02, 
+        -20.88, 
+        12.04
+      ], 
+      "radius": 8
+    }, 
+    {
+      "color": [
+        0.1, 
+        1, 
+        0.1
+      ], 
+      "intensity": 2, 
+      "offset": [
+        0, 
+        -20.88, 
+        12.04
+      ], 
+      "radius": 8
+    }, 
+    {
+      "color": [
+        0.1, 
+        1, 
+        0.1
+      ], 
+      "intensity": 2, 
+      "offset": [
+        -8.02, 
+        -20.88, 
+        12.04
+      ], 
+      "radius": 8
+    }, 
+    {
+      "color": [
+        1, 
+        0, 
+        0
+      ], 
+      "intensity": 2, 
+      "offset": [
+        -4, 
+        -23.79, 
+        8.44
+      ], 
+      "radius": 4
+    }
+  ], 
+  "max_health": 30000, 
+  "mesh_bounds": [
+    50, 
+    50, 
+    25
+  ], 
+  "model": [
+    {
+      "animations": {
+        "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa", 
+        "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa", 
+        "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa"
+      }, 
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json", 
+      "filename": "/pa/units/air/air_factory_adv/air_factory_adv.papa", 
+      "layer": "WL_LandHorizontal", 
+      "skirt_decal": "/pa/effects/specs/skirt_air_adv.json"
+    }, 
+    {
+      "animations": {
+        "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa", 
+        "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa", 
+        "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa"
+      }, 
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json", 
+      "filename": "/pa/units/sea/air_factory_adv/air_factory_adv.papa", 
+      "layer": "WL_WaterSurface"
+    }
+  ], 
+  "physics": {
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  }, 
+  "placement_size": [
+    60, 
+    60
+  ], 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
+          "shape": "capsule"
+        }
+      ]
+    }
+  }, 
+  "rolloff_dirs": [
+    [
+      1, 
+      0, 
+      0
+    ], 
+    [
+      -1, 
+      0, 
+      0
+    ], 
+    [
+      0, 
+      1, 
+      0
+    ], 
+    [
+      0, 
+      -1, 
+      0
+    ]
+  ], 
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  "tools": [
+    {
+      "aim_bone": "bone_root", 
+      "spec_id": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_build_arm.json"
+    }
+  ], 
+  "unit_types": [
+    "UNITTYPE_Factory", 
+    "UNITTYPE_Construction", 
+    "UNITTYPE_Air", 
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_Important", 
+    "UNITTYPE_Custom1"
+  ], 
+  "wait_to_rolloff_time": 0
 }

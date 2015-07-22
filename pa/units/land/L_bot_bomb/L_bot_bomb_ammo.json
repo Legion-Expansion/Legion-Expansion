@@ -1,38 +1,38 @@
 {
-    "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 10
-                }
-            ]
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json", 
+  "damage": 400, 
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/bomb_bot_plasma", 
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+    }
+  }, 
+  "fx_trail": {
+    "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
+  }, 
+  "impact_decals": [
+    "/pa/effects/specs/scorch_a_01.json"
+  ], 
+  "initial_velocity": 100, 
+  "lifetime": 30, 
+  "max_velocity": 150, 
+  "min_velocity": 40, 
+  "model": {
+    "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 10, 
+          "shape": "capsule"
         }
-    },
-    "fx_trail": {
-        "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
-    },
-    "model": {
-        "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
-    },
-    "splash_damage": 100,
-    "splash_radius": 15,
-    "damage": 400,
-    "splash_damages_allies": false,
-    "min_velocity": 40,
-    "initial_velocity": 100,
-    "max_velocity": 150,
-    "lifetime": 30,
-    "events": {
-        "died": {
-            "audio_cue": "/SE/Impacts/bomb_bot_plasma",
-            "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
-        }
-    },
-    "impact_decals": [
-        "/pa/effects/specs/scorch_a_01.json"
-    ]
+      ]
+    }
+  }, 
+  "splash_damage": 100, 
+  "splash_damages_allies": false, 
+  "splash_radius": 15
 }

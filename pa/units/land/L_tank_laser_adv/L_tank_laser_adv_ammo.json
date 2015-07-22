@@ -1,19 +1,19 @@
 {
-    "base_spec": "/pa/ammo/base_shell/base_shell.json",
-    "damage": 300,
-    "splash_damage": 300,
-    "splash_radius": 3,
-    "full_damage_splash_radius": 1,
-    "splash_damages_allies": false,
-  "fx_trail":{
-    "filename":"/pa/units/land/L_tank_laser_adv/trail.pfx",
-    "offset":[
-      0.0,
-      0.5,
+  "base_spec": "/pa/ammo/base_shell/base_shell.json", 
+  "damage": 300, 
+  "full_damage_splash_radius": 1, 
+  "fx_trail": {
+    "filename": "/pa/units/land/L_tank_laser_adv/trail.pfx", 
+    "offset": [
+      0.0, 
+      0.5, 
       0.0
     ]
-  },
-    "initial_velocity": 150,
-    "max_velocity": 150,
-    "lifetime": 2
+  }, 
+  "initial_velocity": 150, 
+  "lifetime": 2, 
+  "max_velocity": 150, 
+  "splash_damage": 300, 
+  "splash_damages_allies": false, 
+  "splash_radius": 3
 }

@@ -1,225 +1,225 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Storage",
-    "description": "!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.",
-    "max_health": 7500,
-    "build_metal_cost": 450,
-    "atrophy_rate": 7.5,
-    "atrophy_cool_down": 15,
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "area_build_type": "Sphere",
-    "storage": {
-        "energy": 100000,
-		"metal": 18500
-    },
-    "unit_types": [
-        "UNITTYPE_Structure",
-        "UNITTYPE_Basic",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_FabBuild",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Economy",
-		"UNITTYPE_Custom1"
-    ],
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                }
-            ]
+  "TEMP_texelinfo": 26.4567, 
+  "area_build_type": "Sphere", 
+  "atrophy_cool_down": 15, 
+  "atrophy_rate": 7.5, 
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/energy"
+    }
+  }, 
+  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
+  "build_metal_cost": 450, 
+  "description": "!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.", 
+  "display_name": "Legion OmniSilo Storage", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/energy"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/Factory", 
+      "effect_scale": 0.8
+    }
+  }, 
+  "headlights": [
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "far_distance": 25, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 1, 
+      "near_distance": 2.5, 
+      "near_height": 5.5, 
+      "near_width": 5.5, 
+      "offset": [
+        6.2, 
+        6.2, 
+        8.6
+      ], 
+      "orientation": [
+        26.33, 
+        -23.93, 
+        -50.68
+      ]
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "far_distance": 25, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 1, 
+      "near_distance": 2.5, 
+      "near_height": 5.5, 
+      "near_width": 5.5, 
+      "offset": [
+        -6.2, 
+        6.2, 
+        8.6
+      ], 
+      "orientation": [
+        -26.34, 
+        -23.93, 
+        50.67
+      ]
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "far_distance": 25, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 1, 
+      "near_distance": 2.5, 
+      "near_height": 5.5, 
+      "near_width": 5.5, 
+      "offset": [
+        6.2, 
+        -6.2, 
+        8.6
+      ], 
+      "orientation": [
+        26.33, 
+        23.92, 
+        -129.32
+      ]
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "far_distance": 25, 
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
+      "intensity": 1, 
+      "near_distance": 2.5, 
+      "near_height": 5.5, 
+      "near_width": 5.5, 
+      "offset": [
+        -6.2, 
+        -6.2, 
+        8.6
+      ], 
+      "orientation": [
+        -26.34, 
+        23.92, 
+        129.31
+      ]
+    }
+  ], 
+  "lamps": [
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 1, 
+      "offset": [
+        6.2, 
+        6.2, 
+        8.6
+      ], 
+      "radius": 3
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 1, 
+      "offset": [
+        -6.2, 
+        6.2, 
+        8.6
+      ], 
+      "radius": 3
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 1, 
+      "offset": [
+        6.2, 
+        -6.2, 
+        8.6
+      ], 
+      "radius": 3
+    }, 
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 1, 
+      "offset": [
+        -6.2, 
+        -6.2, 
+        8.6
+      ], 
+      "radius": 3
+    }
+  ], 
+  "max_health": 7500, 
+  "mesh_bounds": [
+    19, 
+    20, 
+    14.2
+  ], 
+  "model": [
+    {
+      "filename": "/pa/units/land/L_storage/L_storage.papa", 
+      "layer": "WL_LandHorizontal", 
+      "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+    }, 
+    {
+      "filename": "/pa/units/land/L_storage/L_storage_sea.papa", 
+      "layer": "WL_WaterSurface"
+    }
+  ], 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
+          "shape": "capsule"
         }
-    },
-    "model": [
-        {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/L_storage/L_storage.papa",
-            "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
-        },
-        {
-            "layer": "WL_WaterSurface",
-            "filename": "/pa/units/land/L_storage/L_storage_sea.papa"
-        }
-    ],
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/energy"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Factory",
-            "effect_scale": 0.8
-        }
-    },
-    "audio": {
-        "selection_response": {
-            "cue": "/SE/Selection/structure/energy"
-        }
-    },
-    "headlights": [
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                6.2,
-                6.2,
-                8.6
-            ],
-            "orientation": [
-                26.33,
-                -23.93,
-                -50.68
-            ],
-            "near_width": 5.5,
-            "near_height": 5.5,
-            "near_distance": 2.5,
-            "far_distance": 25,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                -6.2,
-                6.2,
-                8.6
-            ],
-            "orientation": [
-                -26.34,
-                -23.93,
-                50.67
-            ],
-            "near_width": 5.5,
-            "near_height": 5.5,
-            "near_distance": 2.5,
-            "far_distance": 25,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                6.2,
-                -6.2,
-                8.6
-            ],
-            "orientation": [
-                26.33,
-                23.92,
-                -129.32
-            ],
-            "near_width": 5.5,
-            "near_height": 5.5,
-            "near_distance": 2.5,
-            "far_distance": 25,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                -6.2,
-                -6.2,
-                8.6
-            ],
-            "orientation": [
-                -26.34,
-                23.92,
-                129.31
-            ],
-            "near_width": 5.5,
-            "near_height": 5.5,
-            "near_distance": 2.5,
-            "far_distance": 25,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        }
-    ],
-    "lamps": [
-        {
-            "offset": [
-                6.2,
-                6.2,
-                8.6
-            ],
-            "radius": 3,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "offset": [
-                -6.2,
-                6.2,
-                8.6
-            ],
-            "radius": 3,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "offset": [
-                6.2,
-                -6.2,
-                8.6
-            ],
-            "radius": 3,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        },
-        {
-            "offset": [
-                -6.2,
-                -6.2,
-                8.6
-            ],
-            "radius": 3,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
-        }
-    ],
-    "mesh_bounds": [
-        19,
-        20,
-        14.2
-    ],
-    "TEMP_texelinfo": 26.4567
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  "storage": {
+    "energy": 100000, 
+    "metal": 18500
+  }, 
+  "unit_types": [
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Basic", 
+    "UNITTYPE_CmdBuild", 
+    "UNITTYPE_FabBuild", 
+    "UNITTYPE_FabAdvBuild", 
+    "UNITTYPE_Economy", 
+    "UNITTYPE_Custom1"
+  ]
 }

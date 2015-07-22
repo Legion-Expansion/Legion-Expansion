@@ -1,116 +1,116 @@
 {
-  "TEMP_texelinfo": 26.6522,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 240,
+  "TEMP_texelinfo": 26.6522, 
+  "atrophy_cool_down": 15, 
+  "atrophy_rate": 240, 
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/artillery"
     }
-  },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 9600,
+  }, 
+  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
+  "build_metal_cost": 9600, 
   "command_caps": [
     "ORDER_Attack"
-  ],
-  "description": "Magnetic Accelerator Cannon- Fires high damage projectiles in a mild arc to decimate structures.",
-  "display_name": "Type-38 MAC",
+  ], 
+  "description": "Magnetic Accelerator Cannon- Fires high damage projectiles in a mild arc to decimate structures.", 
+  "display_name": "Legion Gustav Long Range Artillery", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
-    },
+    }, 
     "died": {
-      "audio_cue": "/SE/Death/structure_small",
+      "audio_cue": "/SE/Death/structure_small", 
       "effect_scale": 1
-    },
+    }, 
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
+      "audio_cue": "/SE/Weapons/structure/artillery_long_fire", 
       "effect_spec": "/pa/effects/specs/ring_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
     }
-  },
+  }, 
   "fx_offsets": [
     {
-      "bone": "bone_recoil",
-      "filename": "/pa/units/land/unit_cannon/unit_cannon_idle.pfx",
+      "bone": "bone_recoil", 
+      "filename": "/pa/units/land/unit_cannon/unit_cannon_idle.pfx", 
       "offset": [
-        0,
-        0,
+        0, 
+        0, 
         0
-      ],
+      ], 
       "type": "energy"
     }
-  ],
-  "guard_layer": "WL_AnySurface",
+  ], 
+  "guard_layer": "WL_AnySurface", 
   "lamps": [
     {
-      "bone": "bone_pitch",
+      "bone": "bone_pitch", 
       "color": [
-        1,
-        1,
+        1, 
+        1, 
         1
-      ],
-      "intensity": 2,
+      ], 
+      "intensity": 2, 
       "offset": [
-        0,
-        -11.21,
+        0, 
+        -11.21, 
         3.69
-      ],
+      ], 
       "radius": 4
     }
-  ],
-  "max_health": 5000,
+  ], 
+  "max_health": 5000, 
   "mesh_bounds": [
-    13,
-    30.8,
+    13, 
+    30.8, 
     15.0376
-  ],
+  ], 
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_long/L_artillery_long.papa",
-      "layer": "WL_LandHorizontal",
+      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json", 
+      "filename": "/pa/units/land/L_artillery_long/L_artillery_long.papa", 
+      "layer": "WL_LandHorizontal", 
       "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
-    },
+    }, 
     {
-      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_long/L_artillery_long_sea.papa",
+      "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json", 
+      "filename": "/pa/units/land/L_artillery_long/L_artillery_long_sea.papa", 
       "layer": "WL_WaterSurface"
     }
-  ],
-  "nearby_target_tick_update_interval": 30,
+  ], 
+  "nearby_target_tick_update_interval": 30, 
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
           "shape": "capsule"
-        },
+        }, 
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
           "shape": "capsule"
         }
       ]
     }
-  },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  }, 
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
   "tools": [
     {
-      "aim_bone": "socket_aim",
-      "muzzle_bone": "socket_muzzle",
+      "aim_bone": "socket_aim", 
+      "muzzle_bone": "socket_muzzle", 
       "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long_tool_weapon.json"
     }
-  ],
+  ], 
   "unit_types": [
-    "UNITTYPE_Land",
-    "UNITTYPE_Structure",
-    "UNITTYPE_Defense",
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Important",
+    "UNITTYPE_Land", 
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Defense", 
+    "UNITTYPE_Artillery", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FabAdvBuild", 
+    "UNITTYPE_Important", 
     "UNITTYPE_Custom1"
   ]
 }

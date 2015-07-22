@@ -1,0 +1,175 @@
+{
+  "TEMP_texelinfo": 16.9774, 
+  "area_build_separation": 200, 
+  "area_build_type": "Sphere", 
+  "atrophy_cool_down": 15, 
+  "atrophy_rate": 80, 
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/radar"
+    }
+  }, 
+  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
+  "build_metal_cost": 2400, 
+  "consumption": {
+    "energy": 4000
+  }, 
+  "description": "!LOC(units:advanced_radar_detects_nearby_enemy_land_sea_and_air_units.message):Advanced radar- Detects nearby enemy land, sea, and air units.", 
+  "display_name": "Legion Advanced Radar", 
+  "energy_efficiency_requirement": 0.9, 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/radar"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/radar", 
+      "effect_scale": 0.9
+    }
+  }, 
+  "fx_offsets": [
+    {
+      "bone": "bone_rotator", 
+      "filename": "/pa/units/land/radar_adv/radar_adv_top_on.pfx", 
+      "offset": [
+        0, 
+        0.145, 
+        1.425
+      ], 
+      "orientation": [
+        0, 
+        -45, 
+        0
+      ], 
+      "type": "energy"
+    }, 
+    {
+      "bone": "bone_dish01", 
+      "filename": "/pa/units/land/radar_adv/radar_adv_dish01_on.pfx", 
+      "offset": [
+        0, 
+        -0.264, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        -90, 
+        0
+      ], 
+      "type": "energy"
+    }, 
+    {
+      "bone": "bone_dish02", 
+      "filename": "/pa/units/land/radar_adv/radar_adv_dish02_on.pfx", 
+      "offset": [
+        0, 
+        -0.264, 
+        0
+      ], 
+      "orientation": [
+        0, 
+        -90, 
+        0
+      ], 
+      "type": "energy"
+    }
+  ], 
+  "lamps": [
+    {
+      "bone": "bone_elbow", 
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 2, 
+      "offset": [
+        0, 
+        1.24, 
+        0.05
+      ], 
+      "radius": 3
+    }
+  ], 
+  "max_health": 1500, 
+  "mesh_bounds": [
+    8.58559, 
+    7.71255, 
+    29
+  ], 
+  "model": [
+    {
+      "animations": {
+        "end": "/pa/units/land/radar_adv/radar_adv_anim_end.papa", 
+        "loop": "/pa/units/land/radar_adv/radar_adv_anim_loop.papa", 
+        "start": "/pa/units/land/radar_adv/radar_adv_anim_start.papa"
+      }, 
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json", 
+      "filename": "/pa/units/land/radar_adv/radar_adv.papa", 
+      "layer": "WL_LandHorizontal", 
+      "skirt_decal": "/pa/effects/specs/skirt_radar_adv.json"
+    }, 
+    {
+      "animations": {
+        "end": "/pa/units/land/radar_adv/radar_adv_anim_end.papa", 
+        "loop": "/pa/units/land/radar_adv/radar_adv_anim_loop.papa", 
+        "start": "/pa/units/land/radar_adv/radar_adv_anim_start.papa"
+      }, 
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json", 
+      "filename": "/pa/units/sea/radar_adv/radar_adv.papa", 
+      "layer": "WL_WaterSurface"
+    }
+  ], 
+  "physics": {
+    "collision_layers": "WL_AnySurface"
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 300, 
+          "shape": "capsule", 
+          "uses_energy": true
+        }, 
+        {
+          "channel": "radar", 
+          "layer": "surface_and_air", 
+          "radius": 900, 
+          "shape": "capsule", 
+          "uses_energy": true
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 1200, 
+          "shape": "capsule", 
+          "uses_energy": true
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 300, 
+          "shape": "capsule", 
+          "uses_energy": true
+        }, 
+        {
+          "channel": "radar", 
+          "layer": "underwater", 
+          "radius": 900, 
+          "shape": "capsule", 
+          "uses_energy": true
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_AnySurface", 
+  "unit_types": [
+    "UNITTYPE_Land", 
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_Recon", 
+    "UNITTYPE_FabAdvBuild", 
+    "UNITTYPE_Custom1"
+  ]
+}
