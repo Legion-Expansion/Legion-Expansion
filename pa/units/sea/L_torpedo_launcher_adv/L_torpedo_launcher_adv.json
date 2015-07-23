@@ -83,7 +83,7 @@
     "UNITTYPE_Advanced", 
     "UNITTYPE_Naval", 
     "UNITTYPE_Defense", 
-    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_FabAdvBuild", 
     "UNITTYPE_Custom1"
   ]
 }

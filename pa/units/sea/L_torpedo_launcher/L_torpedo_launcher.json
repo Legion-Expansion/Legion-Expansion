@@ -81,7 +81,7 @@
     "UNITTYPE_Defense", 
     "UNITTYPE_CmdBuild", 
     "UNITTYPE_FabBuild", 
-    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_CombatFabAdvBuild", 
     "UNITTYPE_Custom1"
   ]
 }

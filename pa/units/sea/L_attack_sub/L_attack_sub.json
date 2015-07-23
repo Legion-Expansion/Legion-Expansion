@@ -83,7 +83,7 @@
     "UNITTYPE_Offense", 
     "UNITTYPE_Basic", 
     "UNITTYPE_Sub", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }
