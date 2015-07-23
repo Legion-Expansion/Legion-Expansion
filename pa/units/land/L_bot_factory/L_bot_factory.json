@@ -97,7 +97,7 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
             "bone": "muzzle_middleArm01",
             "offset": [
                 0,
@@ -112,7 +112,7 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
             "bone": "muzzle_middleArm02",
             "offset": [
                 0,
@@ -127,7 +127,7 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
             "bone": "bone_muzzle01",
             "offset": [
                 0,
@@ -142,7 +142,7 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
             "bone": "bone_muzzle02",
             "offset": [
                 0,

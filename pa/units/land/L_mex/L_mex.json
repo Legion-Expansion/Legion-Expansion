@@ -1,100 +1,100 @@
 {
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "display_name": "Legion Metal Extractor",
-    "description": "Legion metal extractors produce more metal but cost more to build.",
-    "max_health": 1000,
-    "build_metal_cost": 240,
-    "atrophy_rate": 2.5,
-    "atrophy_cool_down": 15,
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "feature_requirements": [
-        "metal_spot"
-    ],
-    "area_build_type": "Sphere",
-    "production": {
-        "metal": 9
-    },
-    "consumption": {
-        "energy": 0
-    },
-    "unit_types": [
-        "UNITTYPE_Structure",
-        "UNITTYPE_Basic",
-        "UNITTYPE_MetalProduction",
-        "UNITTYPE_CmdBuild",
-        "UNITTYPE_FabBuild",
-        "UNITTYPE_Economy",
-		"UNITTYPE_Custom1"
-    ],
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 100
-                }
-            ]
-        }
-    },
-    "model": [
+  "TEMP_texelinfo": 15.0973, 
+  "area_build_type": "Sphere", 
+  "atrophy_cool_down": 15, 
+  "atrophy_rate": 2.5, 
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/metal"
+    }
+  }, 
+  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
+  "build_metal_cost": 240, 
+  "consumption": {
+    "energy": 0
+  }, 
+  "description": "Legion metal extractors produce more metal but cost more to build.", 
+  "display_name": "Legion Metal Extractor", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/metal"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/Factory", 
+      "effect_scale": 0.75
+    }
+  }, 
+  "feature_requirements": [
+    "metal_spot"
+  ], 
+  "lamps": [
+    {
+      "color": [
+        1, 
+        1, 
+        1
+      ], 
+      "intensity": 1, 
+      "offset": [
+        -0.72, 
+        -1.922, 
+        6.515
+      ], 
+      "radius": 2
+    }
+  ], 
+  "max_health": 1000, 
+  "mesh_bounds": [
+    9.2, 
+    10.0407, 
+    23.5
+  ], 
+  "model": [
+    {
+      "animations": {
+        "idle": "/pa/units/land/L_mex/L_mex_idle.papa"
+      }, 
+      "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json", 
+      "filename": "/pa/units/land/L_mex/L_mex.papa", 
+      "layer": "WL_LandHorizontal"
+    }
+  ], 
+  "placement_size": [
+    20, 
+    16
+  ], 
+  "production": {
+    "metal": 9
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
         {
-            "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/land/L_mex/L_mex.papa",
-            "animations": {
-                "idle": "/pa/units/land/L_mex/L_mex_idle.papa"
-            },
-            "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json"
-        }
-    ],
-    "replaceable_units": [
-        "/pa/units/land/L_mex_adv/L_mex_adv.json"
-    ],
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/metal"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Factory",
-            "effect_scale": 0.75
-        }
-    },
-    "audio": {
-        "selection_response": {
-            "cue": "/SE/Selection/structure/metal"
-        }
-    },
-    "lamps": [
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
+          "shape": "capsule"
+        }, 
         {
-            "offset": [
-                -0.72,
-                -1.922,
-                6.515
-            ],
-            "radius": 2,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 1
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
+          "shape": "capsule"
         }
-    ],
-    "mesh_bounds": [
-        9.2,
-        10.0407,
-        23.5
-    ],
-    "placement_size": [
-        20,
-        16
-    ],
-    "TEMP_texelinfo": 15.0973
+      ]
+    }
+  }, 
+  "replaceable_units": [
+    "/pa/units/land/L_mex_adv/L_mex_adv.json"
+  ], 
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  "unit_types": [
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Basic", 
+    "UNITTYPE_MetalProduction", 
+    "UNITTYPE_CmdBuild", 
+    "UNITTYPE_FabBuild", 
+    "UNITTYPE_Economy", 
+    "UNITTYPE_Custom1"
+  ]
 }

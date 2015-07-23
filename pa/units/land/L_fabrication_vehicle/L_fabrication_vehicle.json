@@ -81,7 +81,7 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/land/fabrication_vehicle/fabrication_vehicle_build_arm.json",
+            "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle_build_arm.json",
             "aim_bone": "bone_root"
         }
     ],
@@ -116,12 +116,12 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_pitch",
+            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+            "bone": "socket_muzzle",
             "offset": [
                 0,
-                -4.198,
-                0.381
+                0,
+                0
             ],
             "orientation": [
                 0,

@@ -74,11 +74,11 @@
     "model": [
         {
             "layer": "WL_LandHorizontal",
-            "filename": "/pa/units/air/air_factory/air_factory.papa",
+            "filename": "/pa/units/air/L_air_factory/L_air_factory.papa",
             "animations": {
-                "build_start": "/pa/units/air/air_factory/air_factory_anim_start.papa",
-                "build_loop": "/pa/units/air/air_factory/air_factory_anim_build.papa",
-                "build_end": "/pa/units/air/air_factory/air_factory_anim_end.papa"
+                "build_start": "/pa/units/air/L_air_factory/L_air_factory_start.papa",
+                "build_loop": "/pa/units/air/L_air_factory/L_air_factory_build.papa",
+                "build_end": "/pa/units/air/L_air_factory/L_air_factory_end.papa"
             },
             "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
             "skirt_decal": "/pa/effects/specs/skirt_air.json"
@@ -118,62 +118,62 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "socket_lathe01",
             "offset": [
-                -6.45,
-                6.45,
+                0,
+                0,
                 0
             ],
             "orientation": [
                 0,
                 0,
-                -45
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "socket_lathe02",
             "offset": [
-                6.45,
-                6.45,
+                0,
+                0,
                 0
             ],
             "orientation": [
                 0,
                 0,
-                45
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "socket_lathe03",
             "offset": [
-                6.45,
-                -6.45,
+                0,
+                0,
                 0
             ],
             "orientation": [
                 0,
                 0,
-                135
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "socket_lathe04",
             "offset": [
-                -6.45,
-                -6.45,
+                0,
+                0,
                 0
             ],
             "orientation": [
                 0,
                 0,
-                -135
+                0
             ]
         }
     ],

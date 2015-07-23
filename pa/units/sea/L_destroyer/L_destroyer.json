@@ -1,0 +1,118 @@
+{
+  "TEMP_texelinfo": 22.1895, 
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/sea/destroyer_loop", 
+        "flag": "vel_changed", 
+        "should_start_func": "is_moving", 
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  }, 
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json", 
+  "build_metal_cost": 600, 
+  "description": "!LOC(units:destroyer_basic_anti_land_and_anti_ship_guns.message):Destroyer- Basic anti-land and anti-ship guns.", 
+  "display_name": "Legion Bowhead Destoryer", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large", 
+      "effect_scale": 1.0
+    }, 
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire", 
+      "effect_scale": 5.0, 
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle01"
+    }, 
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire", 
+      "effect_scale": 5.0, 
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle02"
+    }, 
+    "fired2": {
+      "audio_cue": "/SE/Weapons/sea/torpedo_fire", 
+      "effect_scale": 5.0, 
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
+    }
+  }, 
+  "guard_layer": "WL_AnySurface", 
+  "max_health": 1500, 
+  "mesh_bounds": [
+    4, 
+    24, 
+    7
+  ], 
+  "model": {
+    "animtree": "/pa/anim/anim_trees/destroyer_anim_tree.json", 
+    "filename": "/pa/units/sea/destroyer/destroyer.papa"
+  }, 
+  "navigation": {
+    "acceleration": 30, 
+    "brake": 90, 
+    "move_speed": 9, 
+    "park_stamp_cost": 20, 
+    "park_stamp_type": "box", 
+    "turn_speed": 45, 
+    "type": "deepwater"
+  }, 
+  "nearby_target_tick_update_interval": 15, 
+  "physics": {
+    "push_class": 2, 
+    "radius": 3, 
+    "shape": "sphere"
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 180, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 180, 
+          "shape": "capsule"
+        }
+      ]
+    }
+  }, 
+  "spawn_layers": "WL_DeepWater", 
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01", 
+      "fire_event": "fired0", 
+      "muzzle_bone": [
+        "socket_leftMuzzle01", 
+        "socket_rightMuzzle01"
+      ], 
+      "projectiles_per_fire": 2, 
+      "record_index": 0, 
+      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+    }, 
+    {
+      "aim_bone": "bone_pitch02", 
+      "fire_event": "fired1", 
+      "muzzle_bone": [
+        "socket_leftMuzzle02", 
+        "socket_rightMuzzle02"
+      ], 
+      "projectiles_per_fire": 2, 
+      "record_index": 1, 
+      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+    }
+  ], 
+  "unit_types": [
+    "UNITTYPE_Naval", 
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Offense", 
+    "UNITTYPE_Basic", 
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}
