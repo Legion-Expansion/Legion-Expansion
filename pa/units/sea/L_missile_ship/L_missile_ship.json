@@ -120,7 +120,7 @@
     "UNITTYPE_Offense", 
     "UNITTYPE_Advanced", 
     "UNITTYPE_Tactical", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

@@ -1,28 +1,28 @@
 {
-    "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels",
-    "build": "83796",
-    "category":
-    [
-        "in-game",
-        "server-mod",
-        "faction",
-        "new units"
-    ],
-    "context": "server",
-    "date": "2015/07/23",
-    "description": "Super secret something something",
-    "display_name": "Legion Faction TEST",
-    "enabled": true,
-    "forum": "",
-    "scenes":
-    {
-        "new_game":
-        [
-            "https://palobby.com/mods/legionfaction/ui/mods/new_game.js"
-        ]
-    },
-    "icon": "",
-    "identifier": "com.pa.legionfaction-TEST",
-    "signature": "not yet implemented",
-    "version": "0.5"
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels", 
+  "build": "83796", 
+  "category": [
+    "in-game", 
+    "server-mod", 
+    "faction", 
+    "units"
+  ], 
+  "context": "server", 
+  "date": "2015/07/23", 
+  "dependencies": [
+    "com.pa.legionfaction.client"
+  ], 
+  "description": "Super secret something something", 
+  "display_name": "Legion Faction", 
+  "enabled": true, 
+  "forum": "", 
+  "icon": "", 
+  "identifier": "com.pa.legionfaction.server", 
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/com.pa.legionfaction/new_game.js"
+    ]
+  }, 
+  "signature": "not yet implemented", 
+  "version": "0.5"
 }

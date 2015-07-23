@@ -100,7 +100,7 @@
     "UNITTYPE_Orbital", 
     "UNITTYPE_LaserPlatform", 
     "UNITTYPE_Advanced", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

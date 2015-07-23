@@ -121,7 +121,7 @@
     "UNITTYPE_Defense", 
     "UNITTYPE_OrbitalDefense", 
     "UNITTYPE_Advanced", 
-    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_FabOrbBuild", 
     "UNITTYPE_Custom1"
   ], 
   "wreckage_health_frac": 0.0

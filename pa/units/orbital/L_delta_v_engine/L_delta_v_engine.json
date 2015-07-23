@@ -362,7 +362,7 @@
     "UNITTYPE_PlanetEngine", 
     "UNITTYPE_Advanced", 
     "UNITTYPE_FabAdvBuild", 
-    "UNITTYPE_Important",
+    "UNITTYPE_Important", 
     "UNITTYPE_Custom1"
   ]
 }

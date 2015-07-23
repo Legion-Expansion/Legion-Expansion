@@ -21,7 +21,7 @@
     "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_orbitalpbaoe.json"
   }, 
   "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.", 
-  "display_name": "Legion Jig", 
+  "display_name": "Legion Scaffold Jig", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital_platform"
@@ -208,7 +208,7 @@
     "UNITTYPE_EnergyProduction", 
     "UNITTYPE_MetalProduction", 
     "UNITTYPE_Structure", 
-    "UNITTYPE_Economy",
+    "UNITTYPE_Economy", 
     "UNITTYPE_Custom1"
   ]
 }

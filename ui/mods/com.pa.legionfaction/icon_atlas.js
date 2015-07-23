@@ -114,4 +114,3 @@ if ( ! legionFactionLoaded )
         console.log(JSON.stringify(e));
     }
 }
-            

@@ -13,7 +13,7 @@
     "ORDER_Attack"
   ], 
   "description": "!LOC(units:tactical_missile_launcher_equipped_with_advanced_long_range_anti_land_missile_launcher.message):Tactical missile launcher- Equipped with advanced long range anti-land missile launcher.", 
-  "display_name": "!LOC(units:catapult.message):Catapult", 
+  "display_name": "Legion Catapult", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"

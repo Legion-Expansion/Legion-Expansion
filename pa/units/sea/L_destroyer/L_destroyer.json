@@ -112,7 +112,7 @@
     "UNITTYPE_Mobile", 
     "UNITTYPE_Offense", 
     "UNITTYPE_Basic", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

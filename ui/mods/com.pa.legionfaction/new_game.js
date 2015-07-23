@@ -14,7 +14,7 @@ if ( ! legionFactionLoaded )
     
         console.log(patchName + ' on ' + buildVersion + ' last tested on 83796');
         
-        var commanderObjectNameToHack = 'ImperialFiveleafclover'
+        var commanderObjectNameToHack = 'ImperialFiveleafclover';
         
         var commanderIdToHack = '/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json';
         
