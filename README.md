@@ -51,6 +51,9 @@ Add to ui/main/game/live_game/img/build_bar/units/:
 - #FFFF00 mask
 - PNG32
 
+A client mod is still currently required for strategic icons.
+
+
 ### Build Bar Images
 
 Ideally these should be the same blue tint as existing images to avoid UI clutter.
@@ -99,3 +102,21 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 - add packaging script
 - restrict shared team games to single faction
 - submit server-script changes for updating AI commander to Uber
+
+
+## Manual Install
+
+### Server Mod
+
+- copy entire folder to server-mods
+- delete art
+- delete client
+- if you want quicker uploads / downloads then:
+ - delete ui/main/atlas
+ - delete ui/mods/com.pa.legionfaction/icon_atlas.js
+
+### Client Mod
+
+- copy entire folder to mods
+- delete art
+- replace modinfo.json with client/modinfo.json and delete client
