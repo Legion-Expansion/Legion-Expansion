@@ -141,6 +141,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json": ["factory", 14],
 
             "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json": ["combat", 0],                   
+            "/pa/units/land/L_tactical_missile_launcher/L_tactical_missile_launcher.json": ["combat", 2],
             "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json": ["combat", 4],
             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json" : ["combat", 5], // double laser
             "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json": ["combat", 6],
@@ -174,7 +175,7 @@ function BuildHotkeyModel() {
             "/pa/units/land/L_sniper_tank/L_sniper_tank.json": ["vehicle", 8], // sheller
             "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json": ["vehicle", 10],                        
             "/pa/units/land/L_tank_shank/L_tank_shank.json": ["vehicle", 11], // bolo
-            "/pa/units/land/L_shotgun_tank_/L_shotgun_tank.json": ["vehicle", 12], // flame tank
+            "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json": ["vehicle", 12], // flame tank
             "/pa/units/land/L_land_scout/L_land_scout.json": ["vehicle", 13], // skitter
             "/pa/units/land/L_mortar_tank/L_mortar_tank.json": ["vehicle", 14], // spinner
     
