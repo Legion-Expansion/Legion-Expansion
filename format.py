@@ -86,7 +86,7 @@ def validateJSON(filename):
     return
     
   fp = open(filename, 'w')
-  fp.write(json.dumps(data, indent=2, sort_keys=True))
+  fp.write(json.dumps(data, indent=2, sort_keys=True) + "\n")
   fp.close()
 
   if "display_name" in data:
