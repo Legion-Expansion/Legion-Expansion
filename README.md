@@ -55,18 +55,24 @@ Ideally these should be the same blue tint as existing images to avoid UI clutte
 - 60px x 60px
 - PNG32
 
+Once mixed factions in shared teams is possible we can look at changing the background colour of build bar images.
+
 ### Projecticles
 
 - if you're changing projectiles and anti-projectiles remember to update anti_entity_targets eg nukes
 
-
 ### Commanders
 
-Currently commanders need to hijack an existing commander.
+Currently commanders need to hijack an existing commander as commander_list.json cannot be shadowed.
 
 ImperialFiveleafclover is currently used as it's not available for resale.
 
 Nothing is used from the custom commander... it's just a placeholder which can be shadowed.
+
+
+## AI
+
+Currently the AI cannot use the Legion Faction without server-script modifications.
 
 
 ## Known Issues
@@ -86,4 +92,4 @@ Nothing is used from the custom commander... it's just a placeholder which can b
 - add script to check vanilla units against current build
 - add packaging script
 - restrict shared team games to single faction
-- submit server-script changes to update AI commander to Uber
+- submit server-script changes for updating AI commander to Uber
