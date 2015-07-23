@@ -2,25 +2,21 @@
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels", 
   "build": "83796", 
   "category": [
-    "in-game", 
-    "server-mod", 
+    "icons", 
     "faction", 
     "units"
   ], 
-  "context": "server", 
+  "context": "client", 
   "date": "2015/07/23", 
-  "dependencies": [
-    "com.pa.legionfaction.client"
-  ], 
   "description": "Super secret something something", 
-  "display_name": "Legion Faction", 
+  "display_name": "Legion Faction Strategic Icons", 
   "enabled": true, 
   "forum": "", 
   "icon": "", 
-  "identifier": "com.pa.legionfaction.server", 
+  "identifier": "com.pa.legionfaction.client", 
   "scenes": {
-    "new_game": [
-      "coui://ui/mods/com.pa.legionfaction/new_game.js"
+    "icon_atlas": [
+      "coui://ui/mods/com.pa.legionfaction/icon_atlas.js"
     ]
   }, 
   "signature": "not yet implemented", 
