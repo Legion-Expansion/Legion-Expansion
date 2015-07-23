@@ -11,7 +11,7 @@ Please remove all unncessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art.... rename that if needed)
 
-Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into mod.
+Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
 Use a copy of format.py update with your PA_PATH.
 
@@ -22,7 +22,7 @@ All vanilla units with buildable_types have been cloned to exclude legion units 
 
 - "buildable_types": "( existing_buildable_types ) - Custom1"
 
-These units need to be checked when a new build is release by Uber.
+These units need to be checked when a new build is released by Uber.
 
 When working with legion units please:
 
@@ -49,7 +49,7 @@ If replacing existing vanilla units:
 
 ### Build Bar Images
 
-ideally these should be the same blue tint as existing images to avoid UI clutter:
+Ideally these should be the same blue tint as existing images to avoid UI clutter:
 
 - add to ui/main/game/live_game/img/build_bar/units/
 - 60px x 60px
@@ -64,12 +64,14 @@ ideally these should be the same blue tint as existing images to avoid UI clutte
 
 Currently commanders need to hijack an existing commander.
 
-ImperialFiveleafclover is currently used as not available for resale.
+ImperialFiveleafclover is currently used as it's not available for resale.
+
+Nothing is used from the custom commander... it's just a placeholder which can be shadowed.
 
 
 ## Known Issues
 
-- mixed factions in shared team games are not currently possible and should be disabled
+- mixed factions in shared team games are not currently possible and should be disabled by the server mod
 - AI cannot use Legion Faction
 
 
@@ -81,6 +83,7 @@ ImperialFiveleafclover is currently used as not available for resale.
 
 ### Mod
 
+- add script to check vanilla units against current build
 - add packaging script
 - restrict shared team games to single faction
 - submit server-script changes to update AI commander to Uber
