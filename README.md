@@ -1,4 +1,4 @@
-# Legion Faction Server Mod
+# Legion Faction Server & Client Mods
 
 Please do not commit untested or broken files to the master branch :-)
 
@@ -42,24 +42,30 @@ If replacing existing vanilla units:
 
 ### Strategic Icons
 
-- add to ui/main/game/live_game/img/build_bar/units/
+Ideally these resemble existing strategic icons for similar units.
+
+Add to ui/main/game/live_game/img/build_bar/units/:
+
+- filename format: icon_si_L_unit.png
 - 52px x 52px
 - #FFFF00 mask
 - PNG32
 
 ### Build Bar Images
 
-Ideally these should be the same blue tint as existing images to avoid UI clutter:
+Ideally these should be the same blue tint as existing images to avoid UI clutter.
 
-- add to ui/main/game/live_game/img/build_bar/units/
+Add to ui/main/game/live_game/img/build_bar/units/:
+
+- filename format: L_unit.png
 - 60px x 60px
 - PNG32
 
-Once mixed factions in shared teams is possible we can look at changing the background colour of build bar images.
+Once mixed factions in shared teams is possible we can look at changing the background colour of build bar images in the server mod.
 
 ### Projecticles
 
-- if you're changing projectiles and anti-projectiles remember to update anti_entity_targets eg nukes
+If you're changing projectiles and anti-projectiles remember to update anti_entity_targets eg nukes
 
 ### Commanders
 
