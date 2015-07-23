@@ -197,7 +197,7 @@
     "UNITTYPE_Mobile", 
     "UNITTYPE_Transport", 
     "UNITTYPE_Basic", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ], 
   "usable": true, 

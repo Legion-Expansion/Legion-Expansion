@@ -140,7 +140,7 @@
     "UNITTYPE_Orbital", 
     "UNITTYPE_Basic", 
     "UNITTYPE_Recon", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

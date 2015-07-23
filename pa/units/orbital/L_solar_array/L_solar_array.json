@@ -80,7 +80,7 @@
     "UNITTYPE_EnergyProduction", 
     "UNITTYPE_Economy", 
     "UNITTYPE_Advanced", 
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

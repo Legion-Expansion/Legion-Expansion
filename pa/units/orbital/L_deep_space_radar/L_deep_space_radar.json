@@ -134,7 +134,7 @@
     "UNITTYPE_Recon", 
     "UNITTYPE_FabBuild", 
     "UNITTYPE_FabAdvBuild", 
-    "UNITTYPE_Important",
+    "UNITTYPE_Important", 
     "UNITTYPE_Custom1"
   ]
 }

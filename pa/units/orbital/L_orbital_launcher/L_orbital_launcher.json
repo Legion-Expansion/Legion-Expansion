@@ -377,7 +377,7 @@
     "UNITTYPE_FabBuild", 
     "UNITTYPE_FabAdvBuild", 
     "UNITTYPE_Basic", 
-    "UNITTYPE_Important",
+    "UNITTYPE_Important", 
     "UNITTYPE_Custom1"
   ], 
   "wait_to_rolloff_time": 3
