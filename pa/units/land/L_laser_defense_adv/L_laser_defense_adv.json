@@ -1,85 +1,104 @@
 {
-  "TEMP_texelinfo": 15.3609, 
-  "area_build_separation": 18, 
-  "atrophy_cool_down": 15, 
-  "atrophy_rate": 15, 
-  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
-  "build_metal_cost": 900, 
-  "command_caps": [
-    "ORDER_Attack"
-  ], 
-  "description": "!LOC(units:advanced_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.", 
-  "display_name": "Legion Grey Wizard Massive Defence", 
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/structure_small"
-    }, 
-    "died": {
-      "audio_cue": "/SE/Death/structure_small", 
-      "effect_scale": 0.75
-    }, 
-    "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire", 
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_centerMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
-    }
-  }, 
-  "guard_layer": "WL_AnySurface", 
-  "max_health": 4000, 
-  "mesh_bounds": [
-    8, 
-    8, 
-    23
-  ], 
-  "model": [
-    {
-      "animtree": "/pa/anim/anim_trees/defense_turret_adv_anim_tree.json", 
-      "filename": "/pa/units/land/laser_defense_adv/laser_defense_adv.papa", 
-      "layer": "WL_LandHorizontal", 
-      "skirt_decal": "/pa/effects/specs/skirt_defense_adv.json"
-    }, 
-    {
-      "animtree": "/pa/anim/anim_trees/defense_turret_adv_anim_tree.json", 
-      "filename": "/pa/units/sea/floating_laser_adv/floating_laser_adv.papa", 
-      "layer": "WL_WaterSurface"
-    }
-  ], 
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 130, 
-          "shape": "capsule"
-        }, 
-        {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 130, 
-          "shape": "capsule"
+    "TEMP_texelinfo": 15.3609,
+    "area_build_separation": 18,
+    "atrophy_cool_down": 15,
+    "atrophy_rate": 15,
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 900,
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "description": "!LOC(units:advanced_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.",
+    "display_name": "Legion Grey Wizard Massive Defence",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/structure_small"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/structure_small",
+            "effect_scale": 0.75
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_centerMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
         }
-      ]
-    }
-  }, 
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
-  "tools": [
-    {
-      "aim_bone": "bone_pitch", 
-      "muzzle_bone": [
-        "socket_rightMuzzle", 
-        "socket_centerMuzzle", 
-        "socket_leftMuzzle"
-      ], 
-      "spec_id": "/pa/units/land/laser_defense_adv/laser_defense_adv_tool_weapon.json"
-    }
-  ], 
-  "unit_types": [
-    "UNITTYPE_Structure", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_Land", 
-    "UNITTYPE_SurfaceDefense", 
-    "UNITTYPE_Defense", 
-    "UNITTYPE_FabAdvBuild", 
-    "UNITTYPE_Custom1"
-  ]
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 4000,
+    "mesh_bounds": [
+        8,
+        8,
+        23
+    ],
+    "model": [
+        {
+            "animtree": "/pa/anim/anim_trees/L_defense_turret_adv_anim_tree.json",
+            "filename": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.papa",
+            "layer": "WL_LandHorizontal",
+            "skirt_decal": "/pa/effects/specs/skirt_defense_adv.json"
+        },
+        {
+            "animtree": "/pa/anim/anim_trees/L_defense_turret_adv_anim_tree.json",
+            "filename": "/pa/units/sea/floating_laser_adv/floating_laser_adv.papa",
+            "layer": "WL_WaterSurface"
+        }
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 130,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 130,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "tools": [
+        {
+            "aim_bone": "socket_aimBottom",
+            "muzzle_bone": [
+                "socket_muzzleBottomRight",
+                "socket_muzzleBottomLeft"
+            ],
+			"record_index": 1,
+			"fire_event": "fired01",
+            "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_bottom.json"
+        },
+        {
+            "aim_bone": "socket_aimMiddle",
+            "muzzle_bone": [
+                "socket_muzzleMiddle"
+            ],
+			"record_index": 2,
+			"fire_event": "fired02",
+            "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_middle.json"
+        },
+        {
+            "aim_bone": "socket_aimTop",
+            "muzzle_bone": [
+                "socket_muzzleTop"
+            ],
+			"record_index": 3,
+			"fire_event": "fired03",
+            "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_top.json"
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Land",
+        "UNITTYPE_SurfaceDefense",
+        "UNITTYPE_Defense",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom1"
+    ]
 }

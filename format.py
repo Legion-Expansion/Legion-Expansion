@@ -4,7 +4,7 @@ import json
 
 from os.path import join
 
-PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/PTE/PA.app/Contents/Resources/media"
+PA_PATH = "E:\Eoin\New folder\GitHub\Broken_Alliance_IL\pa\effects"
 
 def walkObject(data,source):
 
