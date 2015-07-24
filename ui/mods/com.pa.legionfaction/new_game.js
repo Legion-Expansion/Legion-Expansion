@@ -41,10 +41,8 @@ if ( ! legionFactionLoaded )
         
         model.selectedCommander.subscribe( function( selectedCommander )
         {
-            
-            localStorage.setItem( 'legionFactionSelected', selectedCommander == commanderIdToHack );
-           
-        } );
+			localStorage.setItem( 'legionFactionSelected', buildVersion == 83796 ? selectedCommander.ObjectName == commanderObjectNameToHack : selectedCommander == commanderIdToHack );
+		});
     }
     
     try

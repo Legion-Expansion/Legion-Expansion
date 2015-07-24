@@ -47,7 +47,7 @@
       "open": "/pa/units/orbital/orbital_laser/orbital_laser_anim_open.papa"
     }, 
     "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json", 
-    "filename": "/pa/units/orbital/orbital_laser/orbital_laser.papa"
+    "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
   }, 
   "navigation": {
     "acceleration": 25, 

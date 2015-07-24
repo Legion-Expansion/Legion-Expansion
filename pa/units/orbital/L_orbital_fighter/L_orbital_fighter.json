@@ -58,11 +58,10 @@
   ], 
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa", 
-      "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa"
+      "loop": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter_idle.papa"
     }, 
     "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json", 
-    "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa"
+    "filename": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.papa"
   }, 
   "navigation": {
     "acceleration": 50, 
@@ -99,7 +98,7 @@
     {
       "aim_bone": "bone_body", 
       "muzzle_bone": "bone_recoil01", 
-      "spec_id": "/pa/units/orbital/orbital_fighter/orbital_fighter_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter_tool_weapon.json"
     }
   ], 
   "unit_types": [
