@@ -38,21 +38,24 @@
             "bone": "bone_recoilBottomRight",
             "recoil_dist": 1.5,
             "restore_time": 0.5,
-            "unit_event": "fired01"
+            "unit_event": "fired01",
+            "weapon_index": 1
         },
         {
             "type": "recoil",
             "bone": "bone_recoilBottomLeft",
             "recoil_dist": 1.5,
             "restore_time": 0.5,
-            "unit_event": "fired01"
+            "unit_event": "fired01",
+            "weapon_index": 1
         },
         {
             "type": "recoil",
             "bone": "bone_recoilMiddle",
             "recoil_dist": 1.5,
             "restore_time": 0.5,
-            "unit_event": "fired02"
+            "unit_event": "fired02",
+            "weapon_index": 2
         }
     ]
 }

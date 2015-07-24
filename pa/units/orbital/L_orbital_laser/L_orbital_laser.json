@@ -58,7 +58,7 @@
     "type": "orbital"
   }, 
   "physics": {
-    "gravity_scalar": 0.001, 
+    "gravity_scalar": 1, 
     "push_class": 15, 
     "radius": 10
   }, 
