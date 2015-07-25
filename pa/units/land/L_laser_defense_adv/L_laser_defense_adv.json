@@ -18,9 +18,17 @@
             "audio_cue": "/SE/Death/structure_small",
             "effect_scale": 0.75
         },
-        "fired": {
+        "fired01": {
             "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_centerMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottomRight /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottomLeft"
+        },
+        "fired02": {
+            "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle"
+        },
+        "fired03": {
+            "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop"
         }
     },
     "guard_layer": "WL_AnySurface",
@@ -69,8 +77,8 @@
                 "socket_muzzleBottomRight",
                 "socket_muzzleBottomLeft"
             ],
-			"record_index": 1,
-			"fire_event": "fired01",
+            "record_index": 1,
+            "fire_event": "fired01",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_bottom.json"
         },
         {
@@ -78,8 +86,8 @@
             "muzzle_bone": [
                 "socket_muzzleMiddle"
             ],
-			"record_index": 2,
-			"fire_event": "fired02",
+            "record_index": 2,
+            "fire_event": "fired02",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_middle.json"
         },
         {
@@ -87,8 +95,8 @@
             "muzzle_bone": [
                 "socket_muzzleTop"
             ],
-			"record_index": 3,
-			"fire_event": "fired03",
+            "record_index": 3,
+            "fire_event": "fired03",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_top.json"
         }
     ],
