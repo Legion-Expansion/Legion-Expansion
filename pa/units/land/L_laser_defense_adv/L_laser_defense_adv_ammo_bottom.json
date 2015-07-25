@@ -9,7 +9,7 @@
     "lifetime": 5,
     "model": null,
     "fx_trail": {
-        "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
+        "filename": "/pa/effects/specs/fire_pellet_trail.pfx",
         "offset": [
             0,
             0,
