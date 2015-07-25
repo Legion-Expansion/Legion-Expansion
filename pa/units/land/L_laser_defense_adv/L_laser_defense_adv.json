@@ -100,6 +100,23 @@
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_top.json"
         }
     ],
+    "fx_offsets": [
+        {
+            "type": "energy",
+            "filename": "/pa/units/land/L_laser_defense_adv/top_electricity_puff.pfx",
+            "bone": "socket_muzzleTop",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
     "unit_types": [
         "UNITTYPE_Structure",
         "UNITTYPE_Advanced",
