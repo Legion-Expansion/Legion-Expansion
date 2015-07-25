@@ -1,0 +1,8 @@
+Some FBX models here have been modified in blender and exported directly as a .papa file. This list shows these models:
+-Teleporter
+-Bot factory
+-Energy storage
+-Riot bot
+-T1 AA (very slightly)
+-t1 pgen
+-T2 pgen
