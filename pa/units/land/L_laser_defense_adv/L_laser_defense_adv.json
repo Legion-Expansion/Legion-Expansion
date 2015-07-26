@@ -18,15 +18,15 @@
             "audio_cue": "/SE/Death/structure_small",
             "effect_scale": 0.75
         },
-        "fired01": {
+        "fired1": {
             "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
             "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottomRight /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottomLeft"
         },
-        "fired02": {
+        "fired2": {
             "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
             "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle"
         },
-        "fired03": {
+        "fired3": {
             "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
             "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop"
         }
@@ -78,7 +78,7 @@
                 "socket_muzzleBottomLeft"
             ],
             "record_index": 1,
-            "fire_event": "fired01",
+            "fire_event": "fired1",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_bottom.json"
         },
         {
@@ -87,7 +87,7 @@
                 "socket_muzzleMiddle"
             ],
             "record_index": 2,
-            "fire_event": "fired02",
+            "fire_event": "fired2",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_middle.json"
         },
         {
@@ -96,7 +96,7 @@
                 "socket_muzzleTop"
             ],
             "record_index": 3,
-            "fire_event": "fired03",
+            "fire_event": "fired3",
             "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_top.json"
         }
     ],

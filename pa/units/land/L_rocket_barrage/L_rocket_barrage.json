@@ -24,15 +24,15 @@
         },
         "fired1": {
             "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx"
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom01 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents01 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke01"
         },
         "fired2": {
             "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx"
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom02 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents02 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke02"
         },
         "fired3": {
             "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx"
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom03 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents03 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke03"
         }
     },
     "guard_layer": "WL_AnySurface",
@@ -83,7 +83,7 @@
                 "socket_muzzleBottom01"
             ],
             "projectiles_per_fire": 3,
-            "fired_event": "fired1",
+            "fire_event": "fired1",
             "record_index": 1,
             "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon01.json"
         },
@@ -95,7 +95,7 @@
                 "socket_muzzleBottom02"
             ],
             "projectiles_per_fire": 3,
-            "fired_event": "fired2",
+            "fire_event": "fired2",
             "record_index": 2,
             "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon02.json"
         },
@@ -107,7 +107,7 @@
                 "socket_muzzleBottom03"
             ],
             "projectiles_per_fire": 3,
-            "fired_event": "fired3",
+            "fire_event": "fired3",
             "record_index": 3,
             "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon03.json"
         }

@@ -3,7 +3,7 @@
     "ammo_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_ammo_top.json",
     "rate_of_fire": 14,
     "idle_aim_delay": 3,
-    "max_range": 100,
+    "max_range": 85,
     "yaw_rate": 45,
     "pitch_rate": 0,
     "yaw_range": 180,

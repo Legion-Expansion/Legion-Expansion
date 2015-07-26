@@ -1,6 +1,7 @@
 {
     "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
     "ammo_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_ammo_bottom.json",
+	"spread_fire": true,
     "max_firing_velocity": 130,
     "min_firing_velocity": 120,
     "rate_of_fire": 1,

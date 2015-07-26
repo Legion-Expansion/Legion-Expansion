@@ -36,25 +36,25 @@
         {
             "type": "recoil",
             "bone": "bone_recoilBottomRight",
-            "recoil_dist": 1.5,
-            "restore_time": 0.5,
-            "unit_event": "fired01",
+            "recoil_dist": 2,
+            "restore_time": 0.7,
+            "unit_event": "fired1",
             "weapon_index": 1
         },
         {
             "type": "recoil",
             "bone": "bone_recoilBottomLeft",
-            "recoil_dist": 1.5,
-            "restore_time": 0.5,
-            "unit_event": "fired01",
+            "recoil_dist": 2,
+            "restore_time": 0.7,
+            "unit_event": "fired1",
             "weapon_index": 1
         },
         {
             "type": "recoil",
             "bone": "bone_recoilMiddle",
-            "recoil_dist": 1.5,
-            "restore_time": 0.5,
-            "unit_event": "fired02",
+            "recoil_dist": 3.5,
+            "restore_time": 2,
+            "unit_event": "fired2",
             "weapon_index": 2
         }
     ]
