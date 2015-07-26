@@ -28,7 +28,7 @@ When working with legion units please:
 
 - prefix all legion units directories and filenames with L_
 - follow uber naming conventions ie L_type_unit_adv (although some are different eg dox)
-- for all legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
+- for all legion units that can build change buildable_types to "Custom1 & ( existing_buildable_types )"
 - add to pa/units/unit_list.json
 - add to ui/main/shared/js/builds.js
 - add a build bar image 
