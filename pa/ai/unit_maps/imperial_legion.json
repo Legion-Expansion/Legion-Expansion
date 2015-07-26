@@ -1,5 +1,20 @@
 {
     "unit_map": {
+	  "LegionCommander":{
+         "unit_types":"Commander & Custom1"
+      },
+      "AnyLegionBasicFactory":{
+         "unit_types":"Factory & Basic & Custom1"
+      },
+      "AnyLegionAdvancedFactory":{
+         "unit_types":"Factory & Advanced & Custom1"
+      },
+      "AnyLegionBasicFabber":{
+         "unit_types":"(Fabber & (Basic | Debug) & Custom1) - Orbital"
+      },
+      "AnyLegionAdvancedFabber":{
+         "unit_types":"(Fabber & (Advanced | Debug) & Custom1) - Orbital"
+      },
         "LegionAdvancedAirDefense": {
             "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json"
         },
