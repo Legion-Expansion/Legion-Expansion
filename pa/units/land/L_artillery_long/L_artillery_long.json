@@ -33,7 +33,7 @@
       "filename": "/pa/units/land/unit_cannon/unit_cannon_idle.pfx", 
       "offset": [
         0, 
-        0, 
+        -12.65, 
         0
       ], 
       "type": "energy"
@@ -51,7 +51,7 @@
       "intensity": 2, 
       "offset": [
         0, 
-        -11.21, 
+         -11.21, 
         3.69
       ], 
       "radius": 4
