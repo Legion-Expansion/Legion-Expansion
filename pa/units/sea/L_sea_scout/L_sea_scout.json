@@ -29,9 +29,9 @@
   }, 
   "max_health": 175, 
   "mesh_bounds": [
-    4, 
-    11, 
-    4
+    4.401, 
+    12.124, 
+    4.762
   ], 
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json", 
