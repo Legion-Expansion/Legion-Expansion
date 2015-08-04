@@ -32,7 +32,7 @@
         ]
     },
     "description": "Basic manufacturing- Builds Legion land vehicles.",
-    "display_name": "Legion Vehicle Factory",
+    "display_name": "Armour Foundry",
     "events": {
         "died": {
             "effect_scale": 1

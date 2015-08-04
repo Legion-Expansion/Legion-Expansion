@@ -32,7 +32,7 @@
     ]
   }, 
   "description": "!LOC(units:basic_manufacturing_builds_bots.message):Basic manufacturing- Builds bots.", 
-  "display_name": "Legion Bot Factory", 
+  "display_name": "Walker Foundry", 
   "events": {
     "died": {
       "effect_scale": 1
