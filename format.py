@@ -7,8 +7,12 @@ from os.path import join
 # change this to your PA path
 
 PA_PATH = "%PROGRAMFILES%\PA\Planetary Annihilation\stable\media"
-#PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
+PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
 
+def validateBuildableTypes(value,source):
+
+  print value
+  
 def walkObject(data,source):
 
   if isinstance(data,(str, unicode)):
@@ -28,8 +32,15 @@ def walkObject(data,source):
       value = value.split(" ")[0]
          
 #    print value, key, "(%s)" % type(value)
-  
-    walkObject(value,source + " " + key )
+    
+    new_source = source + " " + key
+    
+    if key == "buildable_types":
+    
+      validateBuildableTypes(value,new_source)
+      return
+      
+    walkObject(value,new_source)
 
   elif isinstance(data, (set)):
 
@@ -38,19 +49,17 @@ def walkObject(data,source):
 
 def validateFile(filename):
 
-#    filename = filename.lower()
-
   if not os.path.isfile(filename):
   
     filename2 = PA_PATH + filename[1:]
     
-    if os.path.isfile(filename2):
+    if not os.path.isfile(filename2):
     
-      print filename
+#      print filename
 
-    else:
+#    else:
 
-      print "\n\nMISSING FILE", filename, filename2, "\n\n"
+      print "\nMISSING FILE", filename, filename2, "\n"
       
     return;
 
@@ -68,14 +77,14 @@ def validateJSON(filename):
     fp = open(filename)
   except IOError:
 
-   print "\n\nERROR", filename, "\n\n"
+   print "\nERROR", filename, "\n"
      
    return
   
   try:
       data = json.load(fp)
   except ValueError:
-    print("\n\nINVALID %s\n\n" % filename)
+    print("\nINVALID %s\n" % filename)
     return
   finally:
     fp.close()
@@ -93,10 +102,11 @@ def validateJSON(filename):
   fp.close()
 
   if "display_name" in data:
-    print("%s" % data["display_name"])
+    print "\n%s" % data["display_name"]
+    print filename
 
-  if len(data) == 1:
-     print filename
+#  if len(data) == 1:
+#     print filename
    
   walkObject(data,filename)
     
