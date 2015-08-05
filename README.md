@@ -33,19 +33,33 @@ These units need to be checked when a new build is released by Uber.
 
 When working with legion units please:
 
+- update the google doc
 - prefix all legion units directories and filenames with L_
 - follow uber naming conventions ie L_type_unit_adv (although some are different eg dox)
 - for all legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
-- add to pa/units/unit_list.json
-- add to ui/main/shared/js/builds.js
+- check area builds ie area_build_separation
+- create sea versions when needed in pa/units/sea/
+- update pa/units/unit_list.json
+- update ui/main/shared/js/builds.js
+- update ui/mods/icon_atlas.js
 - add a build bar image 
 - add a strategic icon
 
 If replacing existing vanilla units:
 
+- update the google doc
 - use the same naming conventions for directories and files as the vanilla units
 - set the base_spec to the vanila unit to reduce copy / paste of duplicate information in unit json files
 - add only changed properties to unit json files (everything else will inherit from the base_spec)
+
+If you rename a unit directory:
+
+- update the google doc
+- reanme in pa/units/unit_list.json
+- reanme in ui/main/shared/js/builds.js
+- reanme in ui/mods/icon_atlas.js
+- rename the build bar image
+- rename the strategic icon
 
 ### Strategic Icons
 
