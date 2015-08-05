@@ -13,7 +13,14 @@ Only server mod files that will be uploaded to the server belong in the pa and u
 
 Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
-Use a copy of format.py update with your PA_PATH.
+Update format.py updated with your PA_PATH (and don't commit your changes).
+
+
+## Commiting
+
+1. Don't commit broken stuff to MASTER... develop, text and fix in your local, a branch or your own fork.
+2. Run format.py on your files with correct PA_PATH so you don't commit unnecessary white spaces changes
+3. Fix any MISSING FILE refernces in the format.py output
 
 
 ## Units
