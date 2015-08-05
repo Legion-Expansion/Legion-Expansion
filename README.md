@@ -129,7 +129,9 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 
 Run install.py with correct PA_PATH to backup existing and install.
 
-Backups of the existing mod folders will be
+Existing mod folders will be automatically backed up.
+
+Manual install instructions...
 
 ### Server Mod
 
