@@ -32,7 +32,7 @@
     ]
   }, 
   "description": "Basic manufacturing- Builds Legion land vehicles.", 
-  "display_name": "Legion Vehicle Factory", 
+  "display_name": "Armour Foundry", 
   "events": {
     "died": {
       "effect_scale": 1
@@ -41,62 +41,62 @@
   "factory_cooldown_time": 4, 
   "fx_offsets": [
     {
-      "bone": "bone_bar001", 
-      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "bone": "socket_topMuzzle01", 
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx", 
       "offset": [
-        5.509, 
-        2.718, 
+        0, 
+        0, 
         0
       ], 
       "orientation": [
         0, 
         0, 
-        135
+        0
       ], 
       "type": "build"
     }, 
     {
-      "bone": "bone_bar001", 
-      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "bone": "socket_topMuzzle02", 
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx", 
       "offset": [
-        -5.51, 
-        2.718, 
+        0, 
+        0, 
         0
       ], 
       "orientation": [
         0, 
         0, 
-        -135
+        0
       ], 
       "type": "build"
     }, 
     {
-      "bone": "bone_bar002", 
-      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "bone": "socket_sideMuzzle01", 
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx", 
       "offset": [
-        5.509, 
-        2.718, 
+        0, 
+        0, 
         0
       ], 
       "orientation": [
         0, 
         0, 
-        135
+        0
       ], 
       "type": "build"
     }, 
     {
-      "bone": "bone_bar002", 
-      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "bone": "socket_sideMuzzle02", 
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx", 
       "offset": [
-        -5.51, 
-        2.718, 
+        0, 
+        0, 
         0
       ], 
       "orientation": [
         0, 
         0, 
-        -135
+        0
       ], 
       "type": "build"
     }
@@ -172,19 +172,19 @@
   ], 
   "max_health": 6000, 
   "mesh_bounds": [
-    30, 
-    30, 
-    15
+    32.37, 
+    32.772, 
+    17
   ], 
   "model": {
     "animations": {
-      "build_end": "/pa/units/land/vehicle_factory/vehicle_factory_anim_end.papa", 
-      "build_loop": "/pa/units/land/vehicle_factory/vehicle_factory_anim_build.papa", 
-      "build_start": "/pa/units/land/vehicle_factory/vehicle_factory_anim_start.papa", 
+      "build_end": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_end.papa", 
+      "build_loop": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_build.papa", 
+      "build_start": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_start.papa", 
       "idle": "/pa/units/land/vehicle_factory/vehicle_factory_anim_build.papa"
     }, 
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json", 
-    "filename": "/pa/units/land/vehicle_factory/vehicle_factory.papa", 
+    "filename": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.papa", 
     "skirt_decal": "/pa/effects/specs/skirt_01.json"
   }, 
   "physics": {
@@ -226,7 +226,8 @@
   ], 
   "tools": [
     {
-      "aim_bone": "bone_root", 
+      "aim_bone": "bone_platform", 
+      "muzzle_bone": "bone_platform", 
       "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_build_arm.json"
     }
   ], 

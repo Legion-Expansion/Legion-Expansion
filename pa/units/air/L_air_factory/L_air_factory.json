@@ -31,7 +31,7 @@
     ]
   }, 
   "description": "!LOC(units:basic_manufacturing_builds_air_units.message):Basic manufacturing- Builds air units.", 
-  "display_name": "Legion Air Factory", 
+  "display_name": "Flyer Foundry", 
   "events": {
     "died": {
       "effect_scale": 1
@@ -244,9 +244,9 @@
   ], 
   "max_health": 6000, 
   "mesh_bounds": [
-    30, 
-    30, 
-    15
+    28.843, 
+    32.762, 
+    20.695
   ], 
   "model": [
     {

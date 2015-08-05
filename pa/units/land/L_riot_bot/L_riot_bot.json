@@ -47,9 +47,9 @@
   "guard_layer": "WL_AnySurface", 
   "max_health": 700, 
   "mesh_bounds": [
-    5, 
-    5, 
-    4.7
+    9.125, 
+    9.623, 
+    8.808
   ], 
   "model": {
     "animations": {
@@ -92,32 +92,32 @@
   }, 
   "tools": [
     {
-      "aim_bone": "bone_leftAmmo", 
+      "aim_bone": "bone_leftArm", 
       "muzzle_bone": "left_muzzle01", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }, 
     {
-      "aim_bone": "bone_leftAmmo", 
+      "aim_bone": "bone_leftArm", 
       "muzzle_bone": "left_muzzle02", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }, 
     {
-      "aim_bone": "bone_leftAmmo", 
+      "aim_bone": "bone_leftArm", 
       "muzzle_bone": "left_muzzle03", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }, 
     {
-      "aim_bone": "bone_rightAmmo", 
+      "aim_bone": "bone_rightArm", 
       "muzzle_bone": "right_muzzle01", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }, 
     {
-      "aim_bone": "bone_rightAmmo", 
+      "aim_bone": "bone_rightArm", 
       "muzzle_bone": "right_muzzle02", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }, 
     {
-      "aim_bone": "bone_rightAmmo", 
+      "aim_bone": "bone_rightArm", 
       "muzzle_bone": "right_muzzle03", 
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }

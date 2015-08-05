@@ -1,16 +1,20 @@
 {
-  "ammo_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_ammo_middle.json",
+  "ammo_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_ammo_middle.json", 
+  "arc_type": "Low", 
   "auto_attack": true, 
-  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json", 
-  "max_range": 120, 
-  "pitch_range": 90, 
-  "pitch_rate": 180, 
-  "rate_of_fire": 3.0, 
+  "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json", 
+  "idle_aim_delay": 10, 
+  "max_range": 150, 
+  "pitch_range": 89, 
+  "pitch_rate": 30, 
+  "rate_of_fire": 0.25, 
+  "spread_fire": true, 
   "target_layers": [
     "WL_LandHorizontal", 
     "WL_Seafloor", 
-    "WL_WaterSurface"
+    "WL_WaterSurface", 
+    "WL_Underwater"
   ], 
   "yaw_range": 180, 
-  "yaw_rate": 60
+  "yaw_rate": 30
 }

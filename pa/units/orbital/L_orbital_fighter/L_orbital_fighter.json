@@ -59,10 +59,11 @@
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa", 
-      "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa"
+      "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa", 
+      "open": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter_open.papa"
     }, 
     "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json", 
-    "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter.papa"
+    "filename": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.papa"
   }, 
   "navigation": {
     "acceleration": 50, 

@@ -18,7 +18,7 @@ if ( ! legionFactionLoaded )
         
         var commanderIdToHack = '/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json';
         
-       if ( buildVersion == 83796 )
+       if ( buildVersion == 85138 )
        {
             var catalog = model.extendedCatalog();
             
@@ -41,8 +41,10 @@ if ( ! legionFactionLoaded )
         
         model.selectedCommander.subscribe( function( selectedCommander )
         {
-			localStorage.setItem( 'legionFactionSelected', buildVersion == 83796 ? selectedCommander.ObjectName == commanderObjectNameToHack : selectedCommander == commanderIdToHack );
-		});
+            
+            localStorage.setItem( 'legionFactionSelected', selectedCommander == commanderIdToHack );
+           
+        } );
     }
     
     try

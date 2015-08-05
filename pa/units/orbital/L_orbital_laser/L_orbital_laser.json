@@ -44,10 +44,10 @@
     "animations": {
       "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa", 
       "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa", 
-      "open": "/pa/units/orbital/orbital_laser/orbital_laser_anim_open.papa"
+      "open": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_open.papa"
     }, 
     "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json", 
-    "filename": "/pa/units/orbital/orbital_laser/orbital_laser.papa"
+    "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
   }, 
   "navigation": {
     "acceleration": 25, 
@@ -89,9 +89,9 @@
   "spawn_layers": "WL_Orbital", 
   "tools": [
     {
-      "aim_bone": "bone_recoil", 
+      "aim_bone": "bone_tusks", 
       "muzzle_bone": "socket_muzzle", 
-      "spec_id": "/pa/units/orbital/orbital_laser/orbital_laser_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_tool_weapon.json"
     }
   ], 
   "unit_types": [

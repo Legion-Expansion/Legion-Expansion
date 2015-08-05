@@ -46,9 +46,9 @@
   "guard_layer": "WL_LandHorizontal", 
   "max_health": 5000, 
   "mesh_bounds": [
-    7.5, 
-    8.2, 
-    6.2
+    7.792, 
+    8.354, 
+    7.277
   ], 
   "model": {
     "animtree": "/pa/anim/anim_trees/L_tank_heavy_armor_anim_tree.json", 

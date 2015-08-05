@@ -33,7 +33,7 @@
       "filename": "/pa/units/land/unit_cannon/unit_cannon_idle.pfx", 
       "offset": [
         0, 
-        0, 
+        -12.65, 
         0
       ], 
       "type": "energy"
@@ -59,9 +59,9 @@
   ], 
   "max_health": 5000, 
   "mesh_bounds": [
-    13, 
-    30.8, 
-    15.0376
+    22.227, 
+    35.329, 
+    14.856
   ], 
   "model": [
     {

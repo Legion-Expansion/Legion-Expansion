@@ -1,5 +1,17 @@
 {
   "unit_map": {
+    "AnyLegionAdvancedFabber": {
+      "unit_types": "(Fabber & (Advanced | Debug) & Custom1) - Orbital"
+    }, 
+    "AnyLegionAdvancedFactory": {
+      "unit_types": "Factory & Advanced & Custom1"
+    }, 
+    "AnyLegionBasicFabber": {
+      "unit_types": "(Fabber & (Basic | Debug) & Custom1) - Orbital"
+    }, 
+    "AnyLegionBasicFactory": {
+      "unit_types": "Factory & Basic & Custom1"
+    }, 
     "LegionAdvancedAirDefense": {
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json"
     }, 
@@ -55,10 +67,13 @@
       "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json"
     }, 
     "LegionAdvancedTML": {
-      "spec_id": "/pa/units/land/L_tactical_missile_launcher/L_tactical_missile_launcher.json"
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json"
     }, 
     "LegionAdvancedTacticalBot": {
       "spec_id": "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.json"
+    }, 
+    "LegionAdvancedTurret": {
+      "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
     }, 
     "LegionAdvancedVehicleFactory": {
       "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
@@ -140,6 +155,9 @@
     }, 
     "LegionBasicVehicleFactory": {
       "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
+    }, 
+    "LegionCommander": {
+      "unit_types": "Commander & Custom1"
     }, 
     "LegionMine": {
       "spec_id": "/pa/units/land/L_land_mine/L_land_mine.json"
