@@ -13,7 +13,7 @@
     "ORDER_Attack"
   ], 
   "description": "Medium Range Rocket Pods", 
-  "display_name": "Doom", 
+  "display_name": "Legion Omega Decimator Rocket Pods", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"
