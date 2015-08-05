@@ -1,119 +1,119 @@
 {
-    "TEMP_texelinfo": 9.04444,
-    "attachable": {
-        "offsets": {
-            "head": [
-                0,
-                -0.5,
-                6.1
-            ],
-            "root": [
-                0,
-                0,
-                0
-            ]
-        }
-    },
-    "audio": {
-        "loops": {
-            "move": {
-                "cue": "/SE/Movement/veh/tank_vagaurd_loop_T2",
-                "flag": "vel_changed",
-                "should_start_func": "is_moving",
-                "should_stop_func": "is_not_moving"
-            }
-        },
-        "selection_response": {
-            "cue": "/SE/Selection/veh/tank_vagaurd_T2"
-        }
-    },
-    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 1500,
-    "description": "Heavy Laser Tank- Destroys Anything Within Range.",
-    "display_name": "Earthshaker",
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/veh"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Veh",
-            "effect_scale": 2
-        },
-        "fired0": {
-            "effect_spec": "/pa/effects/specs/BFG_shockwave.pfx bone_root"
-        }
-    },
-    "guard_layer": "WL_LandHorizontal",
-    "max_health": 5000,
-    "mesh_bounds": [
-        7.792,
-        8.354,
-        7.277
-    ],
-    "model": {
-        "animtree": "/pa/anim/anim_trees/L_tank_heavy_armor_anim_tree.json",
-        "filename": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.papa"
-    },
-    "navigation": {
-        "acceleration": 100,
-        "brake": 100,
-        "group_preference": "front",
-        "move_speed": 10,
-        "turn_speed": 180,
-        "type": "land-small"
-    },
-    "physics": {
-        "push_class": 90,
-        "radius": 6
-    },
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "channel": "sight",
-                    "layer": "surface_and_air",
-                    "radius": 100,
-                    "shape": "capsule"
-                },
-                {
-                    "channel": "radar",
-                    "layer": "surface_and_air",
-                    "radius": 150,
-                    "shape": "capsule"
-                },
-                {
-                    "channel": "sight",
-                    "layer": "underwater",
-                    "radius": 100,
-                    "shape": "capsule"
-                }
-            ]
-        }
-    },
-    "scrolling_uv": {
-        "scroll_rate": 0.58,
-        "uv_split": 0.855
-    },
-    "tools": [
+  "TEMP_texelinfo": 9.04444, 
+  "attachable": {
+    "offsets": {
+      "head": [
+        0, 
+        -0.5, 
+        6.1
+      ], 
+      "root": [
+        0, 
+        0, 
+        0
+      ]
+    }
+  }, 
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_vagaurd_loop_T2", 
+        "flag": "vel_changed", 
+        "should_start_func": "is_moving", 
+        "should_stop_func": "is_not_moving"
+      }
+    }, 
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_vagaurd_T2"
+    }
+  }, 
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json", 
+  "build_metal_cost": 1500, 
+  "description": "Heavy Laser Tank- Destroys Anything Within Range.", 
+  "display_name": "Earthshaker", 
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    }, 
+    "died": {
+      "audio_cue": "/SE/Death/Veh", 
+      "effect_scale": 2
+    }, 
+    "fired0": {
+      "effect_spec": "/pa/effects/specs/BFG_shockwave.pfx bone_root"
+    }
+  }, 
+  "guard_layer": "WL_LandHorizontal", 
+  "max_health": 5000, 
+  "mesh_bounds": [
+    7.792, 
+    8.354, 
+    7.277
+  ], 
+  "model": {
+    "animtree": "/pa/anim/anim_trees/L_tank_heavy_armor_anim_tree.json", 
+    "filename": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.papa"
+  }, 
+  "navigation": {
+    "acceleration": 100, 
+    "brake": 100, 
+    "group_preference": "front", 
+    "move_speed": 10, 
+    "turn_speed": 180, 
+    "type": "land-small"
+  }, 
+  "physics": {
+    "push_class": 90, 
+    "radius": 6
+  }, 
+  "recon": {
+    "observer": {
+      "items": [
         {
-            "aim_bone": "bone_root",
-            "fire_event": "fired0",
-            "muzzle_bone": "socket_muzzle",
-            "record_index": 0,
-            "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_tool_weapon.json"
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "radar", 
+          "layer": "surface_and_air", 
+          "radius": 150, 
+          "shape": "capsule"
+        }, 
+        {
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
+          "shape": "capsule"
         }
-    ],
-    "transportable": {
-        "size": 1
-    },
-    "unit_types": [
-        "UNITTYPE_Tank",
-        "UNITTYPE_Heavy",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Offense",
-        "UNITTYPE_Land",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Custom1"
-    ]
+      ]
+    }
+  }, 
+  "scrolling_uv": {
+    "scroll_rate": 0.58, 
+    "uv_split": 0.855
+  }, 
+  "tools": [
+    {
+      "aim_bone": "bone_root", 
+      "fire_event": "fired0", 
+      "muzzle_bone": "socket_muzzle", 
+      "record_index": 0, 
+      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_tool_weapon.json"
+    }
+  ], 
+  "transportable": {
+    "size": 1
+  }, 
+  "unit_types": [
+    "UNITTYPE_Tank", 
+    "UNITTYPE_Heavy", 
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Offense", 
+    "UNITTYPE_Land", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Custom1"
+  ]
 }

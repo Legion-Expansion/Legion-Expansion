@@ -1,10 +1,10 @@
 {
-    "base_spec": "/pa/ammo/base_beam/base_beam.json",
-    "damage": 400,
-    "splash_damage": 0,
-    "splash_radius": 0,
-    "collision_check": "target",
-    "collision_response": "impact",
-    "fx_beam_spec": "/pa/effects/specs/gauss_cannon_green.pfx",
-    "fx_collision_spec": "/pa/effects/specs/gauss_explosion_green.pfx"
+  "base_spec": "/pa/ammo/base_beam/base_beam.json", 
+  "collision_check": "target", 
+  "collision_response": "impact", 
+  "damage": 400, 
+  "fx_beam_spec": "/pa/effects/specs/gauss_cannon_green.pfx", 
+  "fx_collision_spec": "/pa/effects/specs/gauss_explosion_green.pfx", 
+  "splash_damage": 0, 
+  "splash_radius": 0
 }

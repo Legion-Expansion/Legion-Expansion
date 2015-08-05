@@ -1,178 +1,178 @@
 {
-    "unit_map": {
-	  "LegionCommander":{
-         "unit_types":"Commander & Custom1"
-      },
-      "AnyLegionBasicFactory":{
-         "unit_types":"Factory & Basic & Custom1"
-      },
-      "AnyLegionAdvancedFactory":{
-         "unit_types":"Factory & Advanced & Custom1"
-      },
-      "AnyLegionBasicFabber":{
-         "unit_types":"(Fabber & (Basic | Debug) & Custom1) - Orbital"
-      },
-      "AnyLegionAdvancedFabber":{
-         "unit_types":"(Fabber & (Advanced | Debug) & Custom1) - Orbital"
-      },
-        "LegionAdvancedAirDefense": {
-            "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json"
-        },
-        "LegionAdvancedAirFactory": {
-            "spec_id": "/pa/units/air/L_air_factory_adv/L_air_factory_adv.json"
-        },
-        "LegionAdvancedArmorVehicle": {
-            "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
-        },
-        "LegionAdvancedArtillery": {
-            "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long.json"
-        },
-        "LegionAdvancedArtilleryBot": {
-            "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
-        },
-        "LegionAdvancedAssaultBot": {
-            "spec_id": "/pa/units/land/L_assault_bot_adv/L_assault_bot_adv.json"
-        },
-        "LegionAdvancedBotFactory": {
-            "spec_id": "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json"
-        },
-        "LegionAdvancedCombatFabberBot": {
-            "spec_id": "/pa/units/land/L_fabrication_bot_combat_adv/L_fabrication_bot_combat_adv.json"
-        },
-        "LegionAdvancedEnergyPlant": {
-            "spec_id": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json"
-        },
-        "LegionAdvancedFabberVehicle": {
-            "spec_id": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.json"
-        },
-        "LegionAdvancedFabricationBot": {
-            "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"
-        },
-        "LegionAdvancedLaserVehicle": {
-            "spec_id": "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json"
-        },
-        "LegionAdvancedMetalExtractor": {
-            "spec_id": "/pa/units/land/L_mex_adv/L_mex_adv.json"
-        },
-        "LegionAdvancedNavalFactory": {
-            "spec_id": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json"
-        },
-        "LegionAdvancedOrbitalFactory": {
-            "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json"
-        },
-        "LegionAdvancedRadar": {
-            "spec_id": "/pa/units/land/L_radar_adv/L_radar_adv.json"
-        },
-        "LegionAdvancedSniperVehicle": {
-            "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank.json"
-        },
-        "LegionAdvancedT1LaserDefense": {
-            "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json"
-        },
-        "LegionAdvancedTML": {
-            "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json"
-        },
-        "LegionAdvancedTacticalBot": {
-            "spec_id": "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.json"
-        },
-        "LegionAdvancedVehicleFactory": {
-            "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
-        },
-        "LegionAntiNukeSilo": {
-            "spec_id": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.json"
-        },
-        "LegionBasicAABot": {
-            "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa.json"
-        },
-        "LegionBasicAirDefense": {
-            "spec_id": "/pa/units/land/L_air_defense/L_air_defense.json"
-        },
-        "LegionBasicAirFactory": {
-            "spec_id": "/pa/units/air/L_air_factory/L_air_factory.json"
-        },
-        "LegionBasicArtillery": {
-            "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short.json"
-        },
-        "LegionBasicArtilleryBot": {
-            "spec_id": "/pa/units/land/L_artillery_bot/L_artillery_bot.json"
-        },
-        "LegionBasicAssaultBot": {
-            "spec_id": "/pa/units/land/L_assault_bot/L_assault_bot.json"
-        },
-        "LegionBasicBombBot": {
-            "spec_id": "/pa/units/land/L_bot_bomb/L_bot_bomb.json"
-        },
-        "LegionBasicBomber": {
-            "spec_id": "/pa/units/air/L_bomber/L_bomber.json"
-        },
-        "LegionBasicBotFactory": {
-            "spec_id": "/pa/units/land/L_bot_factory/L_bot_factory.json"
-        },
-        "LegionBasicCombatFabberBot": {
-            "spec_id": "/pa/units/land/L_fabrication_bot_combat/L_fabrication_bot_combat.json"
-        },
-        "LegionBasicEnergyPlant": {
-            "spec_id": "/pa/units/land/L_energy_plant/L_energy_plant.json"
-        },
-        "LegionBasicFabberVehicle": {
-            "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
-        },
-        "LegionBasicFabricationBot": {
-            "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.json"
-        },
-        "LegionBasicFighter": {
-            "spec_id": "/pa/units/air/L_fighter/L_fighter.json"
-        },
-        "LegionBasicHoverVehicle": {
-            "spec_id": "/pa/units/land/tank_hover/tank_hover.json"
-        },
-        "LegionBasicMetalExtractor": {
-            "spec_id": "/pa/units/land/L_mex/L_mex.json"
-        },
-        "LegionBasicMortarVehicle": {
-            "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
-        },
-        "LegionBasicNavalFactory": {
-            "spec_id": "/pa/units/sea/L_naval_factory/L_naval_factory.json"
-        },
-        "LegionBasicRadar": {
-            "spec_id": "/pa/units/land/L_radar/L_radar.json"
-        },
-        "LegionBasicRiotBot": {
-            "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot.json"
-        },
-        "LegionBasicShankVehicle": {
-            "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
-        },
-        "LegionBasicShotgunVehicle": {
-            "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
-        },
-        "LegionBasicStorage": {
-            "spec_id": "/pa/units/land/L_storage/L_storage.json"
-        },
-        "LegionBasicT1LaserDefense": {
-            "spec_id": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json"
-        },
-        "LegionBasicVehicleFactory": {
-            "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
-        },
-        "LegionMine": {
-            "spec_id": "/pa/units/land/L_land_mine/L_land_mine.json"
-        },
-        "LegionNukeSilo": {
-            "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json"
-        },
-        "LegionScoutVehicle": {
-            "spec_id": "/pa/units/land/L_land_scout/L_land_scout.json"
-        },
-        "LegionTeleporter": {
-            "spec_id": "/pa/units/land/L_teleporter/L_teleporter.json"
-        },
-        "LegionWall": {
-            "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier.json"
-        },
-        "LegionAdvancedTurret": {
-            "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
-        }
+  "unit_map": {
+    "AnyLegionAdvancedFabber": {
+      "unit_types": "(Fabber & (Advanced | Debug) & Custom1) - Orbital"
+    }, 
+    "AnyLegionAdvancedFactory": {
+      "unit_types": "Factory & Advanced & Custom1"
+    }, 
+    "AnyLegionBasicFabber": {
+      "unit_types": "(Fabber & (Basic | Debug) & Custom1) - Orbital"
+    }, 
+    "AnyLegionBasicFactory": {
+      "unit_types": "Factory & Basic & Custom1"
+    }, 
+    "LegionAdvancedAirDefense": {
+      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json"
+    }, 
+    "LegionAdvancedAirFactory": {
+      "spec_id": "/pa/units/air/L_air_factory_adv/L_air_factory_adv.json"
+    }, 
+    "LegionAdvancedArmorVehicle": {
+      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
+    }, 
+    "LegionAdvancedArtillery": {
+      "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long.json"
+    }, 
+    "LegionAdvancedArtilleryBot": {
+      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
+    }, 
+    "LegionAdvancedAssaultBot": {
+      "spec_id": "/pa/units/land/L_assault_bot_adv/L_assault_bot_adv.json"
+    }, 
+    "LegionAdvancedBotFactory": {
+      "spec_id": "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json"
+    }, 
+    "LegionAdvancedCombatFabberBot": {
+      "spec_id": "/pa/units/land/L_fabrication_bot_combat_adv/L_fabrication_bot_combat_adv.json"
+    }, 
+    "LegionAdvancedEnergyPlant": {
+      "spec_id": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json"
+    }, 
+    "LegionAdvancedFabberVehicle": {
+      "spec_id": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.json"
+    }, 
+    "LegionAdvancedFabricationBot": {
+      "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"
+    }, 
+    "LegionAdvancedLaserVehicle": {
+      "spec_id": "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json"
+    }, 
+    "LegionAdvancedMetalExtractor": {
+      "spec_id": "/pa/units/land/L_mex_adv/L_mex_adv.json"
+    }, 
+    "LegionAdvancedNavalFactory": {
+      "spec_id": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json"
+    }, 
+    "LegionAdvancedOrbitalFactory": {
+      "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json"
+    }, 
+    "LegionAdvancedRadar": {
+      "spec_id": "/pa/units/land/L_radar_adv/L_radar_adv.json"
+    }, 
+    "LegionAdvancedSniperVehicle": {
+      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank.json"
+    }, 
+    "LegionAdvancedT1LaserDefense": {
+      "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json"
+    }, 
+    "LegionAdvancedTML": {
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json"
+    }, 
+    "LegionAdvancedTacticalBot": {
+      "spec_id": "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.json"
+    }, 
+    "LegionAdvancedTurret": {
+      "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
+    }, 
+    "LegionAdvancedVehicleFactory": {
+      "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
+    }, 
+    "LegionAntiNukeSilo": {
+      "spec_id": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.json"
+    }, 
+    "LegionBasicAABot": {
+      "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa.json"
+    }, 
+    "LegionBasicAirDefense": {
+      "spec_id": "/pa/units/land/L_air_defense/L_air_defense.json"
+    }, 
+    "LegionBasicAirFactory": {
+      "spec_id": "/pa/units/air/L_air_factory/L_air_factory.json"
+    }, 
+    "LegionBasicArtillery": {
+      "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short.json"
+    }, 
+    "LegionBasicArtilleryBot": {
+      "spec_id": "/pa/units/land/L_artillery_bot/L_artillery_bot.json"
+    }, 
+    "LegionBasicAssaultBot": {
+      "spec_id": "/pa/units/land/L_assault_bot/L_assault_bot.json"
+    }, 
+    "LegionBasicBombBot": {
+      "spec_id": "/pa/units/land/L_bot_bomb/L_bot_bomb.json"
+    }, 
+    "LegionBasicBomber": {
+      "spec_id": "/pa/units/air/L_bomber/L_bomber.json"
+    }, 
+    "LegionBasicBotFactory": {
+      "spec_id": "/pa/units/land/L_bot_factory/L_bot_factory.json"
+    }, 
+    "LegionBasicCombatFabberBot": {
+      "spec_id": "/pa/units/land/L_fabrication_bot_combat/L_fabrication_bot_combat.json"
+    }, 
+    "LegionBasicEnergyPlant": {
+      "spec_id": "/pa/units/land/L_energy_plant/L_energy_plant.json"
+    }, 
+    "LegionBasicFabberVehicle": {
+      "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
+    }, 
+    "LegionBasicFabricationBot": {
+      "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.json"
+    }, 
+    "LegionBasicFighter": {
+      "spec_id": "/pa/units/air/L_fighter/L_fighter.json"
+    }, 
+    "LegionBasicHoverVehicle": {
+      "spec_id": "/pa/units/land/tank_hover/tank_hover.json"
+    }, 
+    "LegionBasicMetalExtractor": {
+      "spec_id": "/pa/units/land/L_mex/L_mex.json"
+    }, 
+    "LegionBasicMortarVehicle": {
+      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
+    }, 
+    "LegionBasicNavalFactory": {
+      "spec_id": "/pa/units/sea/L_naval_factory/L_naval_factory.json"
+    }, 
+    "LegionBasicRadar": {
+      "spec_id": "/pa/units/land/L_radar/L_radar.json"
+    }, 
+    "LegionBasicRiotBot": {
+      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot.json"
+    }, 
+    "LegionBasicShankVehicle": {
+      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
+    }, 
+    "LegionBasicShotgunVehicle": {
+      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
+    }, 
+    "LegionBasicStorage": {
+      "spec_id": "/pa/units/land/L_storage/L_storage.json"
+    }, 
+    "LegionBasicT1LaserDefense": {
+      "spec_id": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json"
+    }, 
+    "LegionBasicVehicleFactory": {
+      "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
+    }, 
+    "LegionCommander": {
+      "unit_types": "Commander & Custom1"
+    }, 
+    "LegionMine": {
+      "spec_id": "/pa/units/land/L_land_mine/L_land_mine.json"
+    }, 
+    "LegionNukeSilo": {
+      "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json"
+    }, 
+    "LegionScoutVehicle": {
+      "spec_id": "/pa/units/land/L_land_scout/L_land_scout.json"
+    }, 
+    "LegionTeleporter": {
+      "spec_id": "/pa/units/land/L_teleporter/L_teleporter.json"
+    }, 
+    "LegionWall": {
+      "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier.json"
     }
+  }
 }

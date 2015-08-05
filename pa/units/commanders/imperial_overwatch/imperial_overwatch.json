@@ -90,15 +90,15 @@
     15.4
   ], 
   "model": {
-    "filename": "/pa/units/commanders/imperial_overwatch/imperial_overwatch.papa",
-        "animations": {
-            "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa",
-            "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle.papa",
-            "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/commander_anim_tree.json",
-        "walk_speed": 5
+    "animations": {
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa", 
+      "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa", 
+      "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle.papa", 
+      "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa"
+    }, 
+    "animtree": "/pa/anim/anim_trees/commander_anim_tree.json", 
+    "filename": "/pa/units/commanders/imperial_overwatch/imperial_overwatch.papa", 
+    "walk_speed": 5
   }, 
   "scrolling_uv": {
     "scroll_rate": -0.21, 
