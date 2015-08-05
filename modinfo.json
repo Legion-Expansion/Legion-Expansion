@@ -1,14 +1,15 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH", 
-  "build": "83796", 
+  "build": "85138", 
   "category": [
-    "in-game", 
     "server-mod", 
-    "faction", 
-    "units"
+    "lobby",
+    "in-game",
+    "units",
+    "faction" 
   ], 
   "context": "server", 
-  "date": "2015/07/23", 
+  "date": "2015/08/05", 
   "dependencies": [
     "com.pa.legionfaction.client"
   ], 
@@ -24,5 +25,6 @@
     ]
   }, 
   "signature": "not yet implemented", 
-  "version": "0.5"
+  "version": "0.5",
+  "dependencies":["com.pa.legionfaction.client"]
 }

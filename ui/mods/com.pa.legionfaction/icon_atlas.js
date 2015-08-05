@@ -12,7 +12,7 @@ if ( ! legionFactionLoaded )
     
         var patchName = 'legionFaction icon_atlas.js';
     
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 83796');
+        console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
                     
         model.strategicIcons( _.union( model.strategicIcons(), 
         [
@@ -90,7 +90,7 @@ if ( ! legionFactionLoaded )
             'L_storage',
             'L_t1_turret_adv',
             'L_t1_turret',
-            'L_tactical_missile_launcher',
+            'L_rocket_barrage',
             'L_tank_laser_adv',
             'L_tank_shank',
             'L_teleporter',
