@@ -7,7 +7,7 @@ from os.path import join
 # change this to your PA path
 
 PA_PATH = "%PROGRAMFILES%\PA\Planetary Annihilation\stable\media"
-PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
+#PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
 
 def validateBuildableTypes(value,source):
 
