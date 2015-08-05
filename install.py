@@ -2,6 +2,7 @@
 import os
 import json
 import shutil
+import sys
 from datetime import datetime
 
 from os.path import join
@@ -24,8 +25,8 @@ NOW = datetime.today()
 BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat(' ') )
 
 if not os.path.isdir(PA_PATH):
-  print "Check your PA_PATH: " + PA_PATH
-  exit
+  print "\nCheck your PA_PATH: " + PA_PATH + "\n"
+  sys.exit()
   
 
 # server mod
