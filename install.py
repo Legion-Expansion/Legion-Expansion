@@ -7,9 +7,9 @@ from datetime import datetime
 
 from os.path import join
 
-# change this to your PA path
+# change this to your PA data path
 
-PA_PATH = "%PROGRAMFILES%\PA\Planetary Annihilation"
+PA_PATH = "%LOCALAPPDATA%\\Uber Entertainmen\\Planetary Annihilation"
 #PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation"
 
 MOD_NAME = "com.pa.legionfaction"
