@@ -23,6 +23,8 @@ if ( ! legionFactionLoaded )
             commanders.push( commanderIdToHack );
         });
         
+        localStorage.setItem( 'legionFactionSelected', false );
+        
         model.selectedCommander.subscribe( function( selectedCommander )
         {
             
