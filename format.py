@@ -11,7 +11,7 @@ PA_PATH = "%PROGRAMFILES%\PA\Planetary Annihilation\stable\media"
 
 def validateBuildableTypes(value,source):
 
-  print value
+  print(value)
   
 def walkObject(data,source):
 
@@ -31,7 +31,7 @@ def walkObject(data,source):
     
       value = value.split(" ")[0]
          
-#    print value, key, "(%s)" % type(value)
+#    print(value, key, "(%s)" % type(value))
     
     new_source = source + " " + key
     
@@ -44,7 +44,7 @@ def walkObject(data,source):
 
   elif isinstance(data, (set)):
 
-    print "\n\nSET\n\n"
+    print("\n\nSET\n\n")
 
 
 def validateFile(filename):
@@ -55,11 +55,11 @@ def validateFile(filename):
     
     if not os.path.isfile(filename2):
     
-#      print filename
+#      print(filename)
 
 #    else:
 
-      print "\nMISSING FILE", filename, filename2, "\n"
+      print("\nMISSING FILE", filename, filename2, "\n")
       
     return;
 
@@ -77,7 +77,7 @@ def validateJSON(filename):
     fp = open(filename)
   except IOError:
 
-   print "\nERROR", filename, "\n"
+   print("\nERROR", filename, "\n")
      
    return
   
@@ -102,11 +102,11 @@ def validateJSON(filename):
   fp.close()
 
   if "display_name" in data:
-    print "\n%s" % data["display_name"]
-    print filename
+    print("\n%s" % data["display_name"])
+    print(filename)
 
 #  if len(data) == 1:
-#     print filename
+#     print(filename)
    
   walkObject(data,filename)
     

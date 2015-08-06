@@ -24,8 +24,10 @@ NOW = datetime.today()
 
 BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat(' ') )
 
+print(BACKUPS_PATH,"\n")
+
 if not os.path.isdir(PA_PATH):
-  print "\nCheck your PA_PATH: " + PA_PATH + "\n"
+  print("\nCheck your PA_PATH: " + PA_PATH + "\n")
   sys.exit()
   
 
@@ -35,20 +37,20 @@ def serverModFilter(directory,ignore):
 
   if directory == "./ui/main":
     ignore = ['atlas']
-    print directory, "skipping", ignore
+    print(directory, "skipping", ignore)
     return ignore
 
   if directory == "./ui/mods/com.pa.legionfaction":
     ignore = ['icon_atlas.js']
-    print directory, "skipping", ignore
+    print(directory, "skipping", ignore)
     return ignore
 
-  print directory
+  print(directory)
   
   return []
 
-print BACKUPS_PATH
-print SERVER_MOD_PATH
+print(BACKUPS_PATH)
+print(SERVER_MOD_PATH)
 
 if os.path.isdir(SERVER_MOD_PATH):
   shutil.move(SERVER_MOD_PATH,BACKUPS_PATH)
@@ -67,14 +69,14 @@ def clientModFilter(directory,ignore):
   if directory == "./ui/main":
     ignore=list(ignore)
     ignore.remove("atlas")
-    print directory, "skipping", ignore
+    print(directory, "skipping", ignore)
     return ignore
     
-  print directory
+  print(directory)
   
   return []
 
-print CLIENT_MOD_PATH
+print(CLIENT_MOD_PATH)
 
 if os.path.isdir(CLIENT_MOD_PATH):
   shutil.move(CLIENT_MOD_PATH,BACKUPS_PATH)
@@ -85,4 +87,4 @@ shutil.copy("./client/modinfo.json",CLIENT_MOD_PATH)
 
 shutil.copytree( "./ui", os.path.join(CLIENT_MOD_PATH, "ui"),ignore=clientModFilter)
 
-print "\nREFRESH PAMM and RESTART PA\n"
+print("\nREFRESH PAMM and RESTART PA\n")
