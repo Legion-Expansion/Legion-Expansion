@@ -15,7 +15,7 @@ def validateBuildableTypes(value,source):
   
 def walkObject(data,source):
 
-  if isinstance(data,(str, unicode)):
+  if isinstance(data,(str)):
    
     if data[:3] == "/pa":
 
