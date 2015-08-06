@@ -22,7 +22,7 @@ CLIENT_MOD_PATH = os.path.join(PA_PATH,"mods",CLIENT_MOD_NAME,"")
 
 NOW = datetime.today()
 
-BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat(' ') )
+BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat("-") ).replace(":","-")
 
 print(BACKUPS_PATH,"\n")
 
