@@ -1,90 +1,90 @@
 {
-  "TEMP_texelinfo": 5.39039,
+  "TEMP_texelinfo": 5.39039, 
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/air/air_scout_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
+        "cue": "/SE/Movement/air/air_scout_loop", 
+        "flag": "vel_changed", 
+        "should_start_func": "is_moving", 
         "should_stop_func": "is_not_moving"
       }
-    },
+    }, 
     "selection_response": {
       "cue": "/SE/Selection/air/air"
     }
-  },
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 60,
+  }, 
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json", 
+  "build_metal_cost": 60, 
   "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
+    "ORDER_Move", 
+    "ORDER_Patrol", 
     "ORDER_Assist"
-  ],
-  "description": "!LOC(units:scout_weak_fast_speed.message):Scout- Weak, fast speed.",
-  "display_name": "Legion Cub Scout",
+  ], 
+  "description": "!LOC(units:scout_weak_fast_speed.message):Scout- Weak, fast speed.", 
+  "display_name": "Legion Cub Scout", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
-    },
+    }, 
     "died": {
-      "audio_cue": "/SE/Death/Air",
-      "effect_scale": 0.25,
+      "audio_cue": "/SE/Death/Air", 
+      "effect_scale": 0.25, 
       "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
-    },
+    }, 
     "fired": {
       "audio_cue": "/SE/Weapons/air/air_scout_fire"
     }
-  },
-  "max_health": 20,
+  }, 
+  "max_health": 20, 
   "mesh_bounds": [
-    11.5,
-    8,
+    11.5, 
+    8, 
     2
-  ],
+  ], 
   "model": {
-    "arrows": 5,
+    "arrows": 5, 
     "filename": "/pa/units/air/air_scout/air_scout.papa"
-  },
+  }, 
   "navigation": {
-    "acceleration": 90,
-    "brake": 90,
-    "dodge_multiplier": 1.0,
-    "dodge_radius": 10,
-    "move_speed": 90,
-    "turn_speed": 180,
-    "type": "air",
-    "wobble_factor": 0.1,
+    "acceleration": 90, 
+    "brake": 90, 
+    "dodge_multiplier": 1.0, 
+    "dodge_radius": 10, 
+    "move_speed": 90, 
+    "turn_speed": 180, 
+    "type": "air", 
+    "wobble_factor": 0.1, 
     "wobble_speed": 0.2
-  },
+  }, 
   "physics": {
-    "gravity_scalar": 1,
-    "push_class": 2,
+    "gravity_scalar": 1, 
+    "push_class": 2, 
     "radius": 6
-  },
+  }, 
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 250,
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 250, 
           "shape": "capsule"
-        },
+        }, 
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 250,
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 250, 
           "shape": "capsule"
         }
       ]
     }
-  },
+  }, 
   "unit_types": [
-    "UNITTYPE_Scout",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Air",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Scout", 
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Air", 
+    "UNITTYPE_Basic", 
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

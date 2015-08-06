@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-  "base_spec": "/pa/tools/factory_build_arm_adv/factory_build_arm_adv.json",
-  "construction_demand": {
-    "energy": 2025,
-=======
   "base_spec": "/pa/tools/factory_build_arm_adv/factory_build_arm_adv.json", 
   "construction_demand": {
     "energy": 2025, 
->>>>>>> 0062131486d3b6c663cc8a6bdbd9e33b1fd15769
     "metal": 60
   }
 }

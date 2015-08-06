@@ -1,76 +1,76 @@
 {
-  "TEMP_texelinfo": 2.37699,
-  "area_build_separation": 1,
-  "area_build_type": "Sphere",
-  "build_metal_cost": 20,
-  "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
-  "display_name": "Legion Land Mine",
+  "TEMP_texelinfo": 2.37699, 
+  "area_build_separation": 1, 
+  "area_build_type": "Sphere", 
+  "build_metal_cost": 20, 
+  "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.", 
+  "display_name": "Legion Land Mine", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
-    },
+    }, 
     "died": {
-      "audio_cue": "/SE/Death/barrier",
+      "audio_cue": "/SE/Death/barrier", 
       "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
     }
-  },
-  "max_health": 5,
+  }, 
+  "max_health": 5, 
   "mesh_bounds": [
-    4,
-    4,
+    4, 
+    4, 
     1
-  ],
+  ], 
   "model": [
     {
-      "filename": "/pa/units/land/land_mine/land_mine.papa",
+      "filename": "/pa/units/land/land_mine/land_mine.papa", 
       "layer": "WL_LandHorizontal"
-    },
+    }, 
     {
-      "filename": "/pa/units/sea/sea_mine/sea_mine.papa",
+      "filename": "/pa/units/sea/sea_mine/sea_mine.papa", 
       "layer": "WL_WaterSurface"
     }
-  ],
+  ], 
   "physics": {
-    "allow_pushing": false,
-    "allow_underground": false,
-    "ignore_collisions": true,
-    "push_class": 255,
-    "push_sideways": false,
-    "radius": 1,
-    "shape": "Box",
+    "allow_pushing": false, 
+    "allow_underground": false, 
+    "ignore_collisions": true, 
+    "push_class": 255, 
+    "push_sideways": false, 
+    "radius": 1, 
+    "shape": "Box", 
     "type": "Structure"
-  },
+  }, 
   "recon": {
     "observable": {
       "layer": "mine"
-    },
+    }, 
     "observer": {
       "items": [
         {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 2,
+          "channel": "radar", 
+          "layer": "surface_and_air", 
+          "radius": 2, 
           "shape": "sphere"
         }
       ]
     }
-  },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "strategic_icon_priority": 3,
+  }, 
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  "strategic_icon_priority": 3, 
   "tools": [
     {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "bone_root",
+      "aim_bone": "bone_root", 
+      "muzzle_bone": "bone_root", 
       "spec_id": "/pa/units/land/L_land_mine/L_land_mine_tool_weapon.json"
     }
-  ],
+  ], 
   "unit_types": [
-    "UNITTYPE_Basic",
-    "UNITTYPE_Land",
-    "UNITTYPE_Defense",
-    "UNITTYPE_CombatFabBuild",
-    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Basic", 
+    "UNITTYPE_Land", 
+    "UNITTYPE_Defense", 
+    "UNITTYPE_CombatFabBuild", 
+    "UNITTYPE_CombatFabAdvBuild", 
     "UNITTYPE_Custom1"
-  ],
+  ], 
   "wreckage_health_frac": 0
 }

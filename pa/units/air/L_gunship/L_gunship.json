@@ -2,152 +2,152 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/air/air_gunship_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
+        "cue": "/SE/Movement/air/air_gunship_loop", 
+        "flag": "vel_changed", 
+        "should_start_func": "is_moving", 
         "should_stop_func": "is_not_moving"
       }
-    },
+    }, 
     "selection_response": {
       "cue": "/SE/Selection/air/gunship"
     }
-  },
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 600,
-  "description": "!LOC(units:gunship_equipped_with_strong_anti_ground_no_anti_air_capabilities.message):Gunship- Equipped with strong anti-ground. No anti-air capabilities.",
-  "display_name": "Legion Lockheed Gunship",
+  }, 
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json", 
+  "build_metal_cost": 600, 
+  "description": "!LOC(units:gunship_equipped_with_strong_anti_ground_no_anti_air_capabilities.message):Gunship- Equipped with strong anti-ground. No anti-air capabilities.", 
+  "display_name": "Legion Lockheed Gunship", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
-    },
+    }, 
     "died": {
-      "audio_cue": "/SE/Death/Air",
+      "audio_cue": "/SE/Death/Air", 
       "effect_scale": 0.75
-    },
+    }, 
     "fired": {
-      "audio_cue": "/SE/Weapons/air/gunship_fire",
+      "audio_cue": "/SE/Weapons/air/gunship_fire", 
       "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle"
     }
-  },
+  }, 
   "fx_offsets": [
     {
-      "bone": "bone_turret",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "bone": "bone_turret", 
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx", 
       "offset": [
-        0,
-        -1.25,
+        0, 
+        -1.25, 
         -1.062
-      ],
+      ], 
       "orientation": [
-        0,
-        90,
+        0, 
+        90, 
         0
-      ],
+      ], 
       "type": "moving"
-    },
+    }, 
     {
-      "bone": "bone_leftWing",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "bone": "bone_leftWing", 
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx", 
       "offset": [
-        1.449,
-        0,
+        1.449, 
+        0, 
         -1.536
-      ],
+      ], 
       "orientation": [
-        0,
-        90,
+        0, 
+        90, 
         0
-      ],
+      ], 
       "type": "moving"
-    },
+    }, 
     {
-      "bone": "bone_rightWing",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "bone": "bone_rightWing", 
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx", 
       "offset": [
-        -1.449,
-        0,
+        -1.449, 
+        0, 
         -1.536
-      ],
+      ], 
       "orientation": [
-        0,
-        90,
+        0, 
+        90, 
         0
-      ],
+      ], 
       "type": "moving"
     }
-  ],
-  "guard_layer": "WL_Anysurface",
-  "max_health": 350,
+  ], 
+  "guard_layer": "WL_Anysurface", 
+  "max_health": 350, 
   "mesh_bounds": [
-    8.5,
-    11.5,
+    8.5, 
+    11.5, 
     3.6193
-  ],
+  ], 
   "model": {
     "animations": {
-      "aim_down": "/pa/units/air/gunship/gunship_anim_aimDown.papa",
-      "aim_up": "/pa/units/air/gunship/gunship_anim_aimUp.papa",
+      "aim_down": "/pa/units/air/gunship/gunship_anim_aimDown.papa", 
+      "aim_up": "/pa/units/air/gunship/gunship_anim_aimUp.papa", 
       "fly": "/pa/units/air/gunship/gunship_anim_fly.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/gunship_anim_tree.json",
+    }, 
+    "animtree": "/pa/anim/anim_trees/gunship_anim_tree.json", 
     "filename": "/pa/units/air/gunship/gunship.papa"
-  },
+  }, 
   "navigation": {
-    "acceleration": 60,
-    "aggressive_behavior": "circle",
-    "aggressive_distance": 75.0,
-    "bank_factor": 1,
-    "brake": 60,
-    "circle_max_time": 2.0,
-    "circle_min_time": 1.0,
-    "hover_time": -1.0,
-    "move_speed": 60,
-    "turn_speed": 120,
-    "type": "air",
+    "acceleration": 60, 
+    "aggressive_behavior": "circle", 
+    "aggressive_distance": 75.0, 
+    "bank_factor": 1, 
+    "brake": 60, 
+    "circle_max_time": 2.0, 
+    "circle_min_time": 1.0, 
+    "hover_time": -1.0, 
+    "move_speed": 60, 
+    "turn_speed": 120, 
+    "type": "air", 
     "vertical_speed": 50
-  },
+  }, 
   "physics": {
-    "push_class": 2,
+    "push_class": 2, 
     "radius": 6
-  },
+  }, 
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
+          "channel": "sight", 
+          "layer": "surface_and_air", 
+          "radius": 100, 
           "shape": "capsule"
-        },
+        }, 
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
+          "channel": "sight", 
+          "layer": "underwater", 
+          "radius": 100, 
           "shape": "capsule"
         }
       ]
     }
-  },
-  "spawn_layers": "WL_Air",
+  }, 
+  "spawn_layers": "WL_Air", 
   "tools": [
     {
-      "aim_bone": "bone_rightRecoil",
-      "muzzle_bone": "socket_rightMuzzle",
+      "aim_bone": "bone_rightRecoil", 
+      "muzzle_bone": "socket_rightMuzzle", 
       "spec_id": "/pa/units/air/gunship/gunship_tool_weapon.json"
-    },
+    }, 
     {
-      "aim_bone": "bone_leftRecoil",
-      "muzzle_bone": "socket_leftMuzzle",
+      "aim_bone": "bone_leftRecoil", 
+      "muzzle_bone": "socket_leftMuzzle", 
       "spec_id": "/pa/units/air/gunship/gunship_tool_weapon.json"
     }
-  ],
+  ], 
   "unit_types": [
-    "UNITTYPE_Gunship",
-    "UNITTYPE_Air",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Gunship", 
+    "UNITTYPE_Air", 
+    "UNITTYPE_Mobile", 
+    "UNITTYPE_Offense", 
+    "UNITTYPE_Advanced", 
+    "UNITTYPE_FactoryBuild", 
     "UNITTYPE_Custom1"
   ]
 }

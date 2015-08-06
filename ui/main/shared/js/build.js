@@ -147,7 +147,7 @@ if ( ! legionFactionLoaded )
 				"/pa/units/land/L_vehicle_factory/L_vehicle_factory.json": ["factory", 14],
 
 				"/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json": ["combat", 0],                   
-   				"/pa/units/land/L_rocket_barrage/L_rocket_barrage.json": ["combat", 2],
+   				"/pa/units/land/L_rocket_barrage/L_rocket_barrage.json": ["combat", 2], // catapult
 				"/pa/units/land/L_nuke_launcher/L_nuke_launcher.json": ["combat", 4],
 				"/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json" : ["combat", 5], // double laser
 				"/pa/units/land/L_air_defense_adv/L_air_defense_adv.json": ["combat", 6],

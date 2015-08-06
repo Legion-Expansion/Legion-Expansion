@@ -13,7 +13,9 @@ Only server mod files that will be uploaded to the server belong in the pa and u
 
 Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
-Update format.py updated with your PA_PATH (and don't commit your changes).
+Update format.py and install.py with your PA_PATH (don't commit your changes).
+
+Python 2.7 or 3.x is required.
 
 
 ## Commiting
@@ -125,7 +127,13 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 - submit server-script changes for updating AI commander to Uber
 
 
-## Manual Install
+## Install
+
+Run install.py with correct PA_PATH to backup existing and install.
+
+Existing mod folders will be automatically backed up.
+
+Manual install instructions...
 
 ### Server Mod
 

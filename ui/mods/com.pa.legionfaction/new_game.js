@@ -12,32 +12,16 @@ if ( ! legionFactionLoaded )
     
         var patchName = 'legionFaction new_game.js';
     
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 83796');
+        console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
         
         var commanderObjectNameToHack = 'ImperialFiveleafclover';
         
         var commanderIdToHack = '/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json';
         
-       if ( buildVersion == 85138 )
-       {
-            var catalog = model.extendedCatalog();
-            
-            var commanderToHack = _.find( catalog, { ObjectName: commanderObjectNameToHack } );
-            
-            commanderToHack.IsFree = true;
-            
-            commanderToHack.DisplayName = "Legion Commander";
-            
-            model.extendedCatalog( catalog );
-                
-        }
-        else
+        model.commanders.subscribe( function( commanders )
         {
-            model.commanders.subscribe( function( commanders )
-            {
-                commanders.push( commanderIdToHack );
-            });
-        }
+            commanders.push( commanderIdToHack );
+        });
         
         model.selectedCommander.subscribe( function( selectedCommander )
         {

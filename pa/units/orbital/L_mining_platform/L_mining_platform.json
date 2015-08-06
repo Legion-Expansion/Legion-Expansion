@@ -1,214 +1,214 @@
 {
-  "TEMP_texelinfo": 72.293,
-  "area_build_separation": 100,
-  "area_build_type": "Sphere",
-  "atrophy_cool_down": 15.0,
-  "atrophy_rate": 50.0,
+  "TEMP_texelinfo": 72.293, 
+  "area_build_separation": 100, 
+  "area_build_type": "Sphere", 
+  "atrophy_cool_down": 15.0, 
+  "atrophy_rate": 50.0, 
   "audio": {
     "loops": {
       "enabled": {
-        "cue": "/SE/Celestial/Planet_Engines_Loop",
-        "flag": "enable_changed",
-        "should_start_func": "is_enabled",
+        "cue": "/SE/Celestial/Planet_Engines_Loop", 
+        "flag": "enable_changed", 
+        "should_start_func": "is_enabled", 
         "should_stop_func": "is_disabled"
       }
     }
-  },
-  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "build_metal_cost": 3000,
-  "build_restrictions": "Terrainless",
+  }, 
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json", 
+  "build_metal_cost": 3000, 
+  "build_restrictions": "Terrainless", 
   "death_weapon": {
     "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_orbitalpbaoe.json"
-  },
-  "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.",
-  "display_name": "Legion Scaffold Jig",
+  }, 
+  "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.", 
+  "display_name": "Legion Scaffold Jig", 
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital_platform"
-    },
+    }, 
     "died": {
-      "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 1.0,
+      "audio_cue": "/SE/Death/orbital", 
+      "effect_scale": 1.0, 
       "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
     }
-  },
+  }, 
   "fx_offsets": [
     {
-      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle.pfx",
+      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle.pfx", 
       "offset": [
-        0,
-        0,
+        0, 
+        0, 
         15.875
-      ],
+      ], 
       "type": "idle"
-    },
+    }, 
     {
-      "bone": "bone_hose07",
-      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle_tip.pfx",
+      "bone": "bone_hose07", 
+      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle_tip.pfx", 
       "offset": [
-        0,
-        0,
+        0, 
+        0, 
         52.5
-      ],
+      ], 
       "type": "idle"
     }
-  ],
+  ], 
   "lamps": [
     {
-      "bone": "bone_rotator02",
+      "bone": "bone_rotator02", 
       "color": [
-        1.0,
-        1.0,
+        1.0, 
+        1.0, 
         1.0
-      ],
-      "intensity": 1.0,
+      ], 
+      "intensity": 1.0, 
       "offset": [
-        0.0,
-        -4.15,
+        0.0, 
+        -4.15, 
         0.0
-      ],
+      ], 
       "radius": 4.5
-    },
+    }, 
     {
-      "bone": "bone_rotator02",
+      "bone": "bone_rotator02", 
       "color": [
-        1.0,
-        1.0,
+        1.0, 
+        1.0, 
         1.0
-      ],
-      "intensity": 1.0,
+      ], 
+      "intensity": 1.0, 
       "offset": [
-        -3.59,
-        2.08,
+        -3.59, 
+        2.08, 
         0.0
-      ],
+      ], 
       "radius": 4.5
-    },
+    }, 
     {
-      "bone": "bone_rotator02",
+      "bone": "bone_rotator02", 
       "color": [
-        1.0,
-        1.0,
+        1.0, 
+        1.0, 
         1.0
-      ],
-      "intensity": 1.0,
+      ], 
+      "intensity": 1.0, 
       "offset": [
-        3.59,
-        2.08,
+        3.59, 
+        2.08, 
         0.0
-      ],
+      ], 
       "radius": 4.5
-    },
+    }, 
     {
       "color": [
-        1.0,
-        0.0,
+        1.0, 
+        0.0, 
         0.0
-      ],
-      "intensity": 2.0,
+      ], 
+      "intensity": 2.0, 
       "offset": [
-        0.0,
-        7.43,
+        0.0, 
+        7.43, 
         24.87
-      ],
+      ], 
       "radius": 4.0
-    },
+    }, 
     {
       "color": [
-        1.0,
-        0.0,
+        1.0, 
+        0.0, 
         0.0
-      ],
-      "intensity": 2.0,
+      ], 
+      "intensity": 2.0, 
       "offset": [
-        0.0,
-        17.87,
+        0.0, 
+        17.87, 
         22.0
-      ],
+      ], 
       "radius": 4.0
-    },
+    }, 
     {
       "color": [
-        1.0,
-        1.0,
+        1.0, 
+        1.0, 
         1.0
-      ],
-      "intensity": 1.0,
+      ], 
+      "intensity": 1.0, 
       "offset": [
-        20.5,
-        0.0,
+        20.5, 
+        0.0, 
         0.6
-      ],
+      ], 
       "radius": 6.0
-    },
+    }, 
     {
       "color": [
-        1.0,
-        1.0,
+        1.0, 
+        1.0, 
         1.0
-      ],
-      "intensity": 1.0,
+      ], 
+      "intensity": 1.0, 
       "offset": [
-        -20.5,
-        0.0,
+        -20.5, 
+        0.0, 
         0.6
-      ],
+      ], 
       "radius": 6.0
     }
-  ],
-  "max_health": 500,
+  ], 
+  "max_health": 500, 
   "mesh_bounds": [
-    50,
-    50,
+    50, 
+    50, 
     50
-  ],
+  ], 
   "model": {
     "animations": {
-      "end": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa",
-      "loop": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa",
+      "end": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa", 
+      "loop": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa", 
       "start": "/pa/units/orbital/mining_platform/mining_platform_anim_start.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json",
+    }, 
+    "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json", 
     "filename": "/pa/units/orbital/mining_platform/mining_platform.papa"
-  },
+  }, 
   "physics": {
-    "collision_layers": "WL_Orbital",
-    "ignore_gravity": true,
-    "push_class": 15,
+    "collision_layers": "WL_Orbital", 
+    "ignore_gravity": true, 
+    "push_class": 15, 
     "radius": 20
-  },
+  }, 
   "placement_size": [
-    100,
+    100, 
     100
-  ],
+  ], 
   "production": {
-    "energy": 9000,
+    "energy": 9000, 
     "metal": 36
-  },
+  }, 
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight",
-          "layer": "orbital",
-          "radius": 250,
+          "channel": "sight", 
+          "layer": "orbital", 
+          "radius": 250, 
           "shape": "sphere"
         }
       ]
     }
-  },
-  "spawn_layers": "WL_Orbital",
+  }, 
+  "spawn_layers": "WL_Orbital", 
   "storage": {
-    "energy": 50000,
+    "energy": 50000, 
     "metal": 10000
-  },
+  }, 
   "unit_types": [
-    "UNITTYPE_Orbital",
-    "UNITTYPE_FabOrbBuild",
-    "UNITTYPE_EnergyProduction",
-    "UNITTYPE_MetalProduction",
-    "UNITTYPE_Structure",
-    "UNITTYPE_Economy",
+    "UNITTYPE_Orbital", 
+    "UNITTYPE_FabOrbBuild", 
+    "UNITTYPE_EnergyProduction", 
+    "UNITTYPE_MetalProduction", 
+    "UNITTYPE_Structure", 
+    "UNITTYPE_Economy", 
     "UNITTYPE_Custom1"
   ]
 }
