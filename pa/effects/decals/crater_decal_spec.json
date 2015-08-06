@@ -1,5 +1,5 @@
 {
-    "diffuse": "/pa/effects/textures/scorch/red_crater_texture_diffuse.papa",
-    "normal": "/pa/effects/textures/scorch/red_crater_texture_normal.papa",
-    "material": "/pa/effects/textures/scorch/scorch_a_01_material.papa"
+  "diffuse": "/pa/effects/textures/scorch/red_crater_texture_diffuse.papa",
+  "material": "/pa/effects/textures/scorch/scorch_a_01_material.papa",
+  "normal": "/pa/effects/textures/scorch/red_crater_texture_normal.papa"
 }

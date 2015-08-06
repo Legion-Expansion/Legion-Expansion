@@ -1,106 +1,106 @@
 {
-  "TEMP_texelinfo": 31.6199, 
+  "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
-  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json", 
-  "build_metal_cost": 6000, 
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 6000,
   "command_caps": [
-    "ORDER_Move", 
-    "ORDER_Patrol", 
+    "ORDER_Move",
+    "ORDER_Patrol",
     "ORDER_Attack"
-  ], 
-  "description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.", 
-  "display_name": "Legion Black Knight", 
+  ],
+  "description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
+  "display_name": "Legion Black Knight",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/orbital", 
+      "audio_cue": "/SE/Death/orbital",
       "effect_scale": 2
-    }, 
+    },
     "fired": {
-      "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire", 
-      "effect_scale": 3, 
+      "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+      "effect_scale": 3,
       "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle"
     }
-  }, 
-  "gravwell_velocity_multiplier": 6.0, 
-  "guard_layer": "WL_AnySurface", 
-  "max_health": 1600, 
+  },
+  "gravwell_velocity_multiplier": 6.0,
+  "guard_layer": "WL_AnySurface",
+  "max_health": 1600,
   "mesh_bounds": [
-    38, 
-    38, 
+    38,
+    38,
     40
-  ], 
+  ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa", 
-      "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa", 
+      "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa",
+      "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa",
       "open": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_open.papa"
-    }, 
-    "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json", 
+    },
+    "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
-  }, 
+  },
   "navigation": {
-    "acceleration": 25, 
-    "brake": 25, 
-    "hover_time": -1.0, 
-    "move_speed": 25, 
-    "turn_speed": 90, 
+    "acceleration": 25,
+    "brake": 25,
+    "hover_time": -1.0,
+    "move_speed": 25,
+    "turn_speed": 90,
     "type": "orbital"
-  }, 
+  },
   "physics": {
-    "gravity_scalar": 0.001, 
-    "push_class": 15, 
+    "gravity_scalar": 0.001,
+    "push_class": 15,
     "radius": 10
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "orbital", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 100,
           "shape": "sphere"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
-  "spawn_layers": "WL_Orbital", 
+  },
+  "spawn_layers": "WL_Orbital",
   "tools": [
     {
-      "aim_bone": "bone_tusks", 
-      "muzzle_bone": "socket_muzzle", 
+      "aim_bone": "bone_tusks",
+      "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_tool_weapon.json"
     }
-  ], 
+  ],
   "unit_types": [
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Offense", 
-    "UNITTYPE_Orbital", 
-    "UNITTYPE_LaserPlatform", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_LaserPlatform",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json", 
-  "damage": 50, 
+  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+  "damage": 50,
   "fx_trail": {
     "filename": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic_ammo_trail.pfx"
-  }, 
-  "initial_velocity": 500, 
-  "lifetime": 2, 
-  "max_velocity": 500, 
-  "splash_damage": 0, 
+  },
+  "initial_velocity": 500,
+  "lifetime": 2,
+  "max_velocity": 500,
+  "splash_damage": 0,
   "splash_radius": 0
 }

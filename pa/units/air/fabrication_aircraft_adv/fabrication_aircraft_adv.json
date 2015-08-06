@@ -1,168 +1,168 @@
 {
-  "TEMP_texelinfo": 7.54279, 
+  "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
       "head": [
-        0, 
-        0, 
+        0,
+        0,
         2.7
-      ], 
+      ],
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
+  },
   "audio": {
     "loops": {
       "build": {
-        "cue": "/SE/Construction/Fab_contruction_beam_loop", 
-        "flag": "build_target_changed", 
-        "should_start_func": "has_build_target", 
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
         "should_stop_func": "no_build_target"
-      }, 
+      },
       "move": {
-        "cue": "/SE/Movement/air/fab_air_loop_T2", 
-        "flag": "vel_changed", 
-        "should_start_func": "is_moving", 
+        "cue": "/SE/Movement/air/fab_air_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    }, 
+    },
     "selection_response": {
       "cue": "/SE/Selection/air/fabber_T2"
     }
-  }, 
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json", 
-  "build_metal_cost": 2100, 
-  "buildable_types": "(Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild ) - Custom1", 
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 2100,
+  "buildable_types": "(Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild ) - Custom1",
   "command_caps": [
-    "ORDER_Move", 
-    "ORDER_Patrol", 
-    "ORDER_Build", 
-    "ORDER_Reclaim", 
-    "ORDER_Repair", 
-    "ORDER_Assist", 
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
     "ORDER_Use"
-  ], 
-  "description": "!LOC(units:advanced_fabricator_wired_to_build_structures.message):Advanced fabricator- Wired to build structures.", 
-  "display_name": "!LOC(units:advanced_fab_aircraft.message):Advanced Fab Aircraft", 
+  ],
+  "description": "!LOC(units:advanced_fabricator_wired_to_build_structures.message):Advanced fabricator- Wired to build structures.",
+  "display_name": "!LOC(units:advanced_fab_aircraft.message):Advanced Fab Aircraft",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
-    }, 
+    },
     "died": {
       "audio_cue": "/SE/Death/Air"
     }
-  }, 
+  },
   "fx_offsets": [
     {
-      "bone": "socket_muzzle", 
-      "filename": "/pa/effects/specs/fab_spray.pfx", 
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
-        0, 
-        0, 
+        0,
+        0,
         0
-      ], 
+      ],
       "orientation": [
-        0, 
-        0, 
+        0,
+        0,
         0
-      ], 
+      ],
       "type": "build"
-    }, 
+    },
     {
-      "bone": "bone_rightWing", 
-      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx", 
+      "bone": "bone_rightWing",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
       "offset": [
-        1.386, 
-        0, 
+        1.386,
+        0,
         -1.139
-      ], 
+      ],
       "orientation": [
-        0, 
-        90, 
+        0,
+        90,
         0
-      ], 
+      ],
       "type": "moving"
-    }, 
+    },
     {
-      "bone": "bone_leftWing", 
-      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx", 
+      "bone": "bone_leftWing",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
       "offset": [
-        -1.386, 
-        0, 
+        -1.386,
+        0,
         -1.139
-      ], 
+      ],
       "orientation": [
-        0, 
-        90, 
+        0,
+        90,
         0
-      ], 
+      ],
       "type": "moving"
     }
-  ], 
-  "guard_layer": "WL_LandHorizontal", 
-  "max_health": 100, 
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 100,
   "mesh_bounds": [
-    10.5, 
-    7.52258, 
+    10.5,
+    7.52258,
     3.9
-  ], 
+  ],
   "model": {
     "animations": {
       "fly": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_anim_fly.papa"
-    }, 
-    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_adv_anim_tree.json", 
+    },
+    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_adv_anim_tree.json",
     "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa"
-  }, 
+  },
   "navigation": {
-    "acceleration": 35, 
-    "aggressive_behavior": "circle", 
-    "brake": 35, 
-    "circle_max_time": 3, 
-    "circle_min_time": 1, 
-    "move_speed": 35, 
-    "turn_speed": 180, 
+    "acceleration": 35,
+    "aggressive_behavior": "circle",
+    "brake": 35,
+    "circle_max_time": 3,
+    "circle_min_time": 1,
+    "move_speed": 35,
+    "turn_speed": 180,
     "type": "air"
-  }, 
+  },
   "physics": {
-    "gravity_scalar": 1, 
+    "gravity_scalar": 1,
     "radius": 4
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
+  },
   "tools": [
     {
-      "aim_bone": "bone_turret", 
+      "aim_bone": "bone_turret",
       "spec_id": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_build_arm.json"
     }
-  ], 
+  ],
   "transportable": {
     "size": 1
-  }, 
+  },
   "unit_types": [
-    "UNITTYPE_Air", 
-    "UNITTYPE_Fabber", 
-    "UNITTYPE_Construction", 
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Advanced", 
+    "UNITTYPE_Air",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild"
   ]
 }

@@ -1,143 +1,143 @@
 {
-  "TEMP_texelinfo": 22.7385, 
+  "TEMP_texelinfo": 22.7385,
   "attachable": {
     "offsets": {
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
+  },
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/orbital/radar"
     }
-  }, 
-  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json", 
-  "build_metal_cost": 4800, 
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 4800,
   "command_caps": [
-    "ORDER_Move", 
-    "ORDER_Patrol", 
+    "ORDER_Move",
+    "ORDER_Patrol",
     "ORDER_Assist"
-  ], 
+  ],
   "consumption": {
     "energy": 9000
-  }, 
-  "description": "!LOC(units:advanced_radar_satellite_detects_a_vast_area_for_enemy_land_sea_and_air_units.message):Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.", 
-  "display_name": "Legion Advanced Radar Satellite", 
-  "energy_efficiency_requirement": 0.9, 
+  },
+  "description": "!LOC(units:advanced_radar_satellite_detects_a_vast_area_for_enemy_land_sea_and_air_units.message):Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.",
+  "display_name": "Legion Advanced Radar Satellite",
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/orbital", 
+      "audio_cue": "/SE/Death/orbital",
       "effect_scale": 1.5
-    }, 
+    },
     "fired": {
       "audio_cue": "/SE/Weapons/air/bomber_fire"
     }
-  }, 
+  },
   "fx_offsets": [
     {
-      "bone": "bone_radarPivot01", 
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish01_on.pfx", 
+      "bone": "bone_radarPivot01",
+      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish01_on.pfx",
       "type": "energy"
-    }, 
+    },
     {
-      "bone": "bone_radarPivot02", 
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish02_on.pfx", 
+      "bone": "bone_radarPivot02",
+      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish02_on.pfx",
       "type": "energy"
-    }, 
+    },
     {
-      "bone": "bone_antenna01", 
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx", 
+      "bone": "bone_antenna01",
+      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx",
       "type": "energy"
-    }, 
+    },
     {
-      "bone": "bone_antenna02", 
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx", 
+      "bone": "bone_antenna02",
+      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx",
       "type": "energy"
     }
-  ], 
-  "gravwell_velocity_multiplier": 6.0, 
-  "max_health": 5000, 
+  ],
+  "gravwell_velocity_multiplier": 6.0,
+  "max_health": 5000,
   "mesh_bounds": [
-    25, 
-    15, 
+    25,
+    15,
     15
-  ], 
+  ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_closed.papa", 
-      "deploy": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_deploy.papa", 
+      "closed": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_closed.papa",
+      "deploy": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_deploy.papa",
       "open": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_open.papa"
-    }, 
-    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json", 
+    },
+    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
     "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.papa"
-  }, 
+  },
   "navigation": {
-    "acceleration": 10, 
-    "brake": 10, 
-    "hover_time": -1.0, 
-    "move_speed": 10, 
-    "turn_speed": 90, 
+    "acceleration": 10,
+    "brake": 10,
+    "hover_time": -1.0,
+    "move_speed": 10,
+    "turn_speed": 90,
     "type": "orbital"
-  }, 
+  },
   "physics": {
-    "gravity_scalar": 0.001, 
-    "push_class": 15, 
+    "gravity_scalar": 0.001,
+    "push_class": 15,
     "radius": 5
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "radar", 
-          "layer": "surface_and_air", 
-          "radius": 1000, 
-          "shape": "capsule", 
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 1000,
+          "shape": "capsule",
           "uses_energy": true
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 600, 
-          "shape": "capsule", 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 600,
+          "shape": "capsule",
           "uses_energy": true
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "orbital", 
-          "radius": 1200, 
-          "shape": "capsule", 
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 1200,
+          "shape": "capsule",
           "uses_energy": true
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 600, 
-          "shape": "capsule", 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 600,
+          "shape": "capsule",
           "uses_energy": true
-        }, 
+        },
         {
-          "channel": "radar", 
-          "layer": "underwater", 
-          "radius": 1000, 
-          "shape": "capsule", 
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 1000,
+          "shape": "capsule",
           "uses_energy": true
         }
       ]
     }
-  }, 
-  "spawn_layers": "WL_Orbital", 
+  },
+  "spawn_layers": "WL_Orbital",
   "unit_types": [
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Orbital", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_Recon", 
-    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Recon",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

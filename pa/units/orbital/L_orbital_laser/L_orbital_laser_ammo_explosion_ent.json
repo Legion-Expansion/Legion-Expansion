@@ -1,13 +1,13 @@
 {
-    "recon": {
-        "observable": {
-            "layer": "surface_and_air",
-            "sphere_radius": 5,
-            "ignore_radar": true,
-            "always_visible": true
-        }
-    },
-    "spawn_response": {
-        "effect_spec": "/pa/effects/specs/terrain_burst.pfx"
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
     }
+  },
+  "spawn_response": {
+    "effect_spec": "/pa/effects/specs/terrain_burst.pfx"
+  }
 }
