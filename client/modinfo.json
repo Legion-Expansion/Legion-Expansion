@@ -18,6 +18,9 @@
   "scenes": {
     "icon_atlas": [
       "coui://ui/mods/com.pa.legionfaction/icon_atlas.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legionfaction/new_game.js"
     ]
   }, 
   "signature": "not yet implemented", 
