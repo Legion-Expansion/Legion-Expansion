@@ -1,127 +1,127 @@
 {
-  "TEMP_texelinfo": 5.47132, 
+  "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {
       "head": [
-        0, 
-        -1.1, 
+        0,
+        -1.1,
         9.2
-      ], 
+      ],
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
+  },
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/bot/tactical_missile_bot", 
-        "flag": "vel_changed", 
-        "should_start_func": "is_moving", 
+        "cue": "/SE/Movement/bot/tactical_missile_bot",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    }, 
+    },
     "selection_response": {
       "cue": "/SE/Selection/bot/tactical_missile_bot"
     }
-  }, 
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json", 
-  "build_metal_cost": 1200, 
-  "description": "!LOC(units:tactical_missile_bot_medium_range_advanced_artillery_bot.message):Tactical missile bot- Medium range advanced artillery bot.", 
-  "display_name": "Legion Bot Tactical", 
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 1200,
+  "description": "!LOC(units:tactical_missile_bot_medium_range_advanced_artillery_bot.message):Tactical missile bot- Medium range advanced artillery bot.",
+  "display_name": "Legion Bot Tactical",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/bot", 
+      "audio_cue": "/SE/Death/bot",
       "effect_scale": 1.5
-    }, 
+    },
     "fired": {
-      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire", 
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
     }
-  }, 
-  "guard_layer": "WL_AnySurface", 
-  "max_health": 200, 
+  },
+  "guard_layer": "WL_AnySurface",
+  "max_health": 200,
   "mesh_bounds": [
-    8.2, 
-    7, 
+    8.2,
+    7,
     9.6
-  ], 
+  ],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_death01.papa", 
-      "fire": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_fire.papa", 
-      "idle": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_idle.papa", 
+      "death01": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_death01.papa",
+      "fire": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_fire.papa",
+      "idle": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_idle.papa",
       "run": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_anim_run.papa"
-    }, 
-    "animtree": "/pa/anim/anim_trees/bot_tactical_missile_anim_tree.json", 
-    "filename": "/pa/units/land/bot_tactical_missile/bot_tactical_missile.papa", 
+    },
+    "animtree": "/pa/anim/anim_trees/bot_tactical_missile_anim_tree.json",
+    "filename": "/pa/units/land/bot_tactical_missile/bot_tactical_missile.papa",
     "walk_speed": 12
-  }, 
+  },
   "navigation": {
-    "acceleration": 120, 
-    "brake": 120, 
-    "group_preference": "back", 
-    "move_speed": 12, 
-    "turn_speed": 720, 
+    "acceleration": 120,
+    "brake": 120,
+    "group_preference": "back",
+    "move_speed": 12,
+    "turn_speed": 720,
     "type": "land-small"
-  }, 
-  "nearby_target_tick_update_interval": 3, 
+  },
+  "nearby_target_tick_update_interval": 3,
   "physics": {
-    "push_class": 2, 
+    "push_class": 2,
     "radius": 3.5
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
+  },
   "tools": [
     {
-      "aim_bone": "socket_rightMuzzle", 
+      "aim_bone": "socket_rightMuzzle",
       "muzzle_bone": [
-        "socket_rightMuzzle", 
+        "socket_rightMuzzle",
         "socket_leftMuzzle"
-      ], 
+      ],
       "spec_id": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_tool_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "socket_rightMuzzle", 
+      "aim_bone": "socket_rightMuzzle",
       "muzzle_bone": [
-        "socket_rightMuzzle", 
+        "socket_rightMuzzle",
         "socket_leftMuzzle"
-      ], 
+      ],
       "spec_id": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_tool_antidrop.json"
     }
-  ], 
+  ],
   "transportable": {
     "size": 1
-  }, 
+  },
   "unit_types": [
-    "UNITTYPE_Bot", 
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Offense", 
-    "UNITTYPE_Land", 
-    "UNITTYPE_Tactical", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

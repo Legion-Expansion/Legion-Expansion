@@ -1,0 +1,22 @@
+{
+  "base_spec": "/pa/effects/specs/dynamic_decal_base.json",
+  "bias": 200,
+  "count": 1,
+  "layer": 1,
+  "lifetime": 300,
+  "material_spec": "/pa/effects/decals/crater_decal_spec.json",
+  "pos_range": [
+    0,
+    0
+  ],
+  "scale": [
+    300,
+    300,
+    1
+  ],
+  "scale_range": 0,
+  "simplex_range": [
+    0,
+    1
+  ]
+}

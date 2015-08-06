@@ -1,301 +1,301 @@
 {
-  "TEMP_texelinfo": 32.6108, 
-  "area_build_type": "Line", 
-  "atrophy_cool_down": 15, 
-  "atrophy_rate": 45, 
+  "TEMP_texelinfo": 32.6108,
+  "area_build_type": "Line",
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 45,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/energy"
     }
-  }, 
-  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
-  "build_metal_cost": 3700, 
-  "description": "Nuclear Fusion Reactor: Produces High Amounts of Energy", 
-  "display_name": "Legion Advanced Energy Plant", 
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 3700,
+  "description": "Nuclear Fusion Reactor: Produces High Amounts of Energy",
+  "display_name": "Legion Advanced Energy Plant",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/Factory", 
+      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 1.25
     }
-  }, 
+  },
   "fx_offsets": [
     {
-      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_idle.pfx", 
+      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_idle.pfx",
       "offset": [
-        0, 
-        0, 
+        0,
+        0,
         6.7
-      ], 
+      ],
       "type": "idle"
     }
-  ], 
+  ],
   "headlights": [
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 25, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2, 
-      "near_height": 4.4, 
-      "near_width": 4.4, 
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2,
+      "near_height": 4.4,
+      "near_width": 4.4,
       "offset": [
-        7.25, 
-        7.25, 
+        7.25,
+        7.25,
         8
-      ], 
+      ],
       "orientation": [
-        35.25, 
-        -30, 
+        35.25,
+        -30,
         125.25
       ]
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 25, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2, 
-      "near_height": 4.4, 
-      "near_width": 4.4, 
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2,
+      "near_height": 4.4,
+      "near_width": 4.4,
       "offset": [
-        7.25, 
-        -7.25, 
+        7.25,
+        -7.25,
         8
-      ], 
+      ],
       "orientation": [
-        35.25, 
-        30, 
+        35.25,
+        30,
         54.75
       ]
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 25, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2, 
-      "near_height": 4.4, 
-      "near_width": 4.4, 
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2,
+      "near_height": 4.4,
+      "near_width": 4.4,
       "offset": [
-        -7.25, 
-        -7.25, 
+        -7.25,
+        -7.25,
         8
-      ], 
+      ],
       "orientation": [
-        -35.25, 
-        30, 
+        -35.25,
+        30,
         -54.75
       ]
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 25, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2, 
-      "near_height": 4.4, 
-      "near_width": 4.4, 
+      ],
+      "far_distance": 25,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2,
+      "near_height": 4.4,
+      "near_width": 4.4,
       "offset": [
-        -7.25, 
-        7.25, 
+        -7.25,
+        7.25,
         8
-      ], 
+      ],
       "orientation": [
-        -35.25, 
-        -30, 
+        -35.25,
+        -30,
         -125.25
       ]
     }
-  ], 
+  ],
   "lamps": [
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        7.25, 
-        7.25, 
+        7.25,
+        7.25,
         8
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        7.25, 
-        -7.25, 
+        7.25,
+        -7.25,
         8
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        -7.25, 
-        -7.25, 
+        -7.25,
+        -7.25,
         8
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        -7.25, 
-        7.25, 
+        -7.25,
+        7.25,
         8
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
-      "bone": "bone_rotor02", 
+      "bone": "bone_rotor02",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        0, 
-        -4.15, 
+        0,
+        -4.15,
         2.3
-      ], 
+      ],
       "radius": 4.5
-    }, 
+    },
     {
-      "bone": "bone_rotor02", 
+      "bone": "bone_rotor02",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        -3.59, 
-        2.08, 
+        -3.59,
+        2.08,
         2.3
-      ], 
+      ],
       "radius": 4.5
-    }, 
+    },
     {
-      "bone": "bone_rotor02", 
+      "bone": "bone_rotor02",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        3.59, 
-        2.08, 
+        3.59,
+        2.08,
         2.3
-      ], 
+      ],
       "radius": 4.5
-    }, 
+    },
     {
       "color": [
-        1, 
-        0, 
+        1,
+        0,
         0
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        0, 
-        7.43, 
+        0,
+        7.43,
         22.97
-      ], 
+      ],
       "radius": 4
     }
-  ], 
-  "max_health": 5000, 
+  ],
+  "max_health": 5000,
   "mesh_bounds": [
-    25.942, 
-    22.932, 
+    25.942,
+    22.932,
     26.147
-  ], 
+  ],
   "model": [
     {
       "animations": {
         "idle": "/pa/units/land/energy_plant_adv/energy_plant_adv_anim_work.papa"
-      }, 
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json", 
-      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.papa", 
-      "layer": "WL_LandHorizontal", 
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.papa",
+      "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
-    }, 
+    },
     {
       "animations": {
         "idle": "/pa/units/land/energy_plant_adv/energy_plant_adv_anim_work.papa"
-      }, 
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json", 
-      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_sea.papa", 
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_sea.papa",
       "layer": "WL_WaterSurface"
     }
-  ], 
+  ],
   "production": {
     "energy": 8600
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
-    "UNITTYPE_Structure", 
-    "UNITTYPE_EnergyProduction", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_FabAdvBuild", 
-    "UNITTYPE_Economy", 
+    "UNITTYPE_Structure",
+    "UNITTYPE_EnergyProduction",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Economy",
     "UNITTYPE_Custom1"
   ]
 }
