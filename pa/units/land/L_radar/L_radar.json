@@ -84,7 +84,7 @@
         "start": "/pa/units/land/radar/radar_anim_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-      "filename": "/pa/units/sea/radar/radar.papa",
+      "filename": "/pa/units/land/L_radar/L_radar_sea.papa",
       "layer": "WL_WaterSurface"
     }
   ],
