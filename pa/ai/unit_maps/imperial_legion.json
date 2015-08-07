@@ -173,6 +173,9 @@
     },
     "LegionWall": {
       "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier.json"
+    },
+    "LegionDestroyer": {
+      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer.json"
     }
   }
 }
