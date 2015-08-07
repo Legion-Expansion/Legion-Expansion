@@ -242,7 +242,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/effects/specs/default_explosion.pfx",
+      "filename": "/pa/units/land/L_teleporter/tele_ring_square1.pfx",
       "offset": [
         0,
         0,

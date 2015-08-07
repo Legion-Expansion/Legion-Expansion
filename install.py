@@ -7,9 +7,10 @@ from datetime import datetime
 
 from os.path import join
 
-# change this to your PA path
+# change this to your PA data path
 
-PA_PATH = "%PROGRAMFILES%\PA\Planetary Annihilation"
+PA_PATH = "C:/Users/Eoin/AppData/Local/Uber Entertainment/Planetary Annihilation"
+#PA_PATH = "%LOCALAPPDATA%\\Uber Entertainmen\\Planetary Annihilation"
 #PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation"
 
 MOD_NAME = "com.pa.legionfaction"
@@ -22,7 +23,7 @@ CLIENT_MOD_PATH = os.path.join(PA_PATH,"mods",CLIENT_MOD_NAME,"")
 
 NOW = datetime.today()
 
-BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat(' ') )
+BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups", NOW.isoformat("-") ).replace(":","-")
 
 print(BACKUPS_PATH,"\n")
 

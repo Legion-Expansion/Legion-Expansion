@@ -92,7 +92,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_small_pitch_right",
@@ -102,7 +102,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch_main",
@@ -112,7 +112,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 2,
-      "spec_id": "/pa/units/sea/destroyer/destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
     }
   ],
   "unit_types": [
