@@ -37,11 +37,11 @@
     },
     "disabled": {
       "audio_cue": "/SE/Buildings/teleporter_disabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx bone_entry"
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx bone_root"
     },
     "enabled": {
       "audio_cue": "/SE/Buildings/teleporter_enabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx bone_entry"
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx bone_root"
     }
   },
   "fx_offsets": [
@@ -236,6 +236,21 @@
       "orientation": [
         0,
         90,
+        0
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/land/L_teleporter/tele_ring_square1.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
         0
       ],
       "type": "enabled"

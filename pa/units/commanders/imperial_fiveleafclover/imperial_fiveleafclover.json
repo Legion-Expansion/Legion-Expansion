@@ -1,3 +1,35 @@
 {
-  "base_spec": "/pa/units/commanders/imperial_overwatch/imperial_overwatch.json"
+  "base_spec": "/pa/units/commanders/tank_rockteeth/tank_rockteeth.json",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/L_uber_cannon/L_uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }
+  ]
 }

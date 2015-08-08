@@ -89,9 +89,9 @@
   "spawn_layers": "WL_Orbital",
   "tools": [
     {
-      "aim_bone": "bone_recoil",
+      "aim_bone": "bone_tusks",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/orbital/orbital_laser/orbital_laser_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_tool_weapon.json"
     }
   ],
   "unit_types": [
