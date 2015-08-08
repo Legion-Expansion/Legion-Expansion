@@ -11,20 +11,20 @@
   "context": "server", 
   "date": "2015/08/05", 
   "dependencies": [
-    "com.pa.legionfaction.client"
+    "com.pa.legion-expansion.client"
   ], 
   "description": "Super secret something something", 
-  "display_name": "Legion Faction", 
+  "display_name": "Legion Expansion", 
   "enabled": true, 
   "forum": "", 
   "icon": "", 
-  "identifier": "com.pa.legionfaction.server", 
+  "identifier": "com.pa.legion-expansion.server", 
   "scenes": {
     "new_game": [
-      "coui://ui/mods/com.pa.legionfaction/new_game.js"
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
   }, 
   "signature": "not yet implemented", 
   "version": "0.5",
-  "dependencies":["com.pa.legionfaction.client"]
+  "dependencies":["com.pa.legion-expansion.client"]
 }

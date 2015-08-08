@@ -1,16 +1,16 @@
-var legionFactionLoaded;
+var legionExpansionLoaded;
 
-if ( ! legionFactionLoaded )
+if ( ! legionExpansionLoaded )
 {
 
-    legionFactionLoaded = true;
+    legionExpansionLoaded = true;
 
-    function legionFaction()
+    function legionExpansion()
     {
     
         var buildVersion = decode( sessionStorage.build_version );
     
-        var patchName = 'legionFaction icon_atlas.js';
+        var patchName = 'legionExpansion icon_atlas.js';
     
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
                     
@@ -106,7 +106,7 @@ if ( ! legionFactionLoaded )
     
     try
     {
-        legionFaction();
+        legionExpansion();
     }
     catch (e)
     {
