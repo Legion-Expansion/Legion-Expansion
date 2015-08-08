@@ -7,43 +7,40 @@ from datetime import datetime
 
 from os.path import join
 
-# change this to your PA data path
+# update papaths.py with your paths
+from papaths import PA_DATA_PATH
 
-PA_PATH = "%LOCALAPPDATA%\\Uber Entertainmen\\Planetary Annihilation"
-#PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation"
-
+if not os.path.isdir(PA_DATA_PATH):
+  print("\nCheck your PA_DATA_PATH in papaths.py: " + PA_DATA_PATH + "\n")
+  sys.exit()
+  
 MOD_NAME = "com.pa.legion-expansion"
 
 SERVER_MOD_NAME = MOD_NAME + ".server"
 CLIENT_MOD_NAME = MOD_NAME + ".client"
 
-SERVER_MOD_PATH = os.path.join(PA_PATH,"server_mods",SERVER_MOD_NAME,"")
-CLIENT_MOD_PATH = os.path.join(PA_PATH,"mods",CLIENT_MOD_NAME,"")
+SERVER_MOD_PATH = os.path.join(PA_DATA_PATH,"server_mods",SERVER_MOD_NAME,"")
+CLIENT_MOD_PATH = os.path.join(PA_DATA_PATH,"mods",CLIENT_MOD_NAME,"")
 
 OLD_MOD_NAME = "com.pa.legionfaction"
 
 OLD_SERVER_MOD_NAME = OLD_MOD_NAME + ".server"
 OLD_CLIENT_MOD_NAME = OLD_MOD_NAME + ".client"
 
-OLD_SERVER_MOD_PATH = os.path.join(PA_PATH,"server_mods",OLD_SERVER_MOD_NAME,"")
-OLD_CLIENT_MOD_PATH = os.path.join(PA_PATH,"mods",OLD_CLIENT_MOD_NAME,"")
+OLD_SERVER_MOD_PATH = os.path.join(PA_DATA_PATH,"server_mods",OLD_SERVER_MOD_NAME,"")
+OLD_CLIENT_MOD_PATH = os.path.join(PA_DATA_PATH,"mods",OLD_CLIENT_MOD_NAME,"")
 
 NOW = datetime.today()
 
-BACKUPS_PATH = os.path.join(PA_PATH,"legion-expansion-backups")
+BACKUPS_PATH = os.path.join(PA_DATA_PATH,"legion-expansion-backups")
 BACKUPS_NOW_PATH = os.path.join(BACKUPS_PATH, NOW.isoformat("-") ).replace(":","-")
-OLD_BACKUPS_PATH = os.path.join(PA_PATH,"legion-faction-backups")
+OLD_BACKUPS_PATH = os.path.join(PA_DATA_PATH,"legion-faction-backups")
 
 print(BACKUPS_PATH,"\n")
 
 if os.path.isdir(OLD_BACKUPS_PATH):
   shutil.move(OLD_BACKUPS_PATH,BACKUPS_PATH)
   
-if not os.path.isdir(PA_PATH):
-  print("\nCheck your PA_PATH: " + PA_PATH + "\n")
-  sys.exit()
-  
-
 # server mod
 
 def serverModFilter(directory,ignore):

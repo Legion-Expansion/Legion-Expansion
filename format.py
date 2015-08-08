@@ -1,14 +1,17 @@
 #!/usr/bin/python
 import os
 import json
+import sys
 
 from os.path import join
 
-# change this to your PA media install path
+# update papaths.py with your paths
+from papaths import PA_MEDIA_PATH
 
-PA_PATH = "%PROGRAMFILES%/PA/Planetary Annihilation/stable/media"
-#PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
-
+if not os.path.isdir(PA_MEDIA_PATH):
+  print("\nCheck your PA_MEDIA_PATH in papaths.py: " + PA_MEDIA_PATH + "\n")
+  sys.exit()
+  
 def validateBuildableTypes(value,source):
 
   print(value)
@@ -51,7 +54,7 @@ def validateFile(filename):
 
   if not os.path.isfile(filename):
   
-    filename2 = PA_PATH + filename[1:]
+    filename2 = PA_MEDIA_PATH + filename[1:]
     
     if not os.path.isfile(filename2):
     
@@ -93,7 +96,7 @@ def validateJSON(filename):
     print("EMPTY %s" % filename)
     return
 
-  if filename.startswith(PA_PATH):
+  if filename.startswith(PA_MEDIA_PATH):
     print("PA %s" % filename)
     return
     
