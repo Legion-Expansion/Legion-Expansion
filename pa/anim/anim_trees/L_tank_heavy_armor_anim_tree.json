@@ -1,26 +1,13 @@
 {
   "blend_root": {
-    "nodes": {
-      "being_built": {
-        "type": "bind_pose"
-      },
-      "dead": {
-        "type": "bind_pose"
-      },
-      "ghost": {
-        "type": "bind_pose"
-      },
-      "living": {
-        "type": "bind_pose"
-      }
-    },
-    "type": "unit_state"
+    "type": "bind_pose"
   },
   "skeleton_controls": [
     {
       "bone": "bone_hammer",
-      "recoil_dist": -2,
+      "recoil_dist": 2,
       "restore_time": 5,
+      "weapon_index": 0,
       "type": "recoil"
     }
   ]
