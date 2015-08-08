@@ -10,17 +10,17 @@
   "context": "client", 
   "date": "2015/08/05", 
   "description": "Super secret something something", 
-  "display_name": "Legion Faction Strategic Icons", 
+  "display_name": "Legion Expansion Strategic Icons", 
   "enabled": true, 
   "forum": "", 
   "icon": "", 
-  "identifier": "com.pa.legionfaction.client", 
+  "identifier": "com.pa.legion-expansion.client", 
   "scenes": {
     "icon_atlas": [
-      "coui://ui/mods/com.pa.legionfaction/icon_atlas.js"
+      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
     ],
     "new_game": [
-      "coui://ui/mods/com.pa.legionfaction/new_game.js"
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
   }, 
   "signature": "not yet implemented", 

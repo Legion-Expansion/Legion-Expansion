@@ -1,8 +1,8 @@
-var legionFactionLoaded;
+var legionExpansionLoaded;
 
-if ( ! legionFactionLoaded )
+if ( ! legionExpansionLoaded )
 {
-	legionFactionLoaded = true;
+	legionExpansionLoaded = true;
 	
 	function BuildHotkeyModel() {
 		var self = this;
@@ -111,7 +111,7 @@ if ( ! legionFactionLoaded )
 
 	// keep above the same for easy diff with PA source
 	
-		if ( decode( localStorage.getItem( 'legionFactionSelected' ) ) )
+		if ( decode( localStorage.getItem( 'legionExpansionSelected' ) ) )
 		{
 
 			self.SpecIdToGridMap(

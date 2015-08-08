@@ -1,4 +1,4 @@
-# Legion Faction Server & Client Mods
+# Legion Expansion Server & Client Mods
 
 Please do not commit untested or broken files to the master branch :-)
 
@@ -111,7 +111,7 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 
 - mixed factions in shared team games are not currently possible and should be disabled by the server mod
 - AI cannot use Legion Faction
-
+- legion commander is no longer selectable on Uber servers (test with local until updated)
 
 ## TO DO
 
