@@ -92,32 +92,32 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_leftAmmo",
+      "aim_bone": "bone_leftArm",
       "muzzle_bone": "left_muzzle01",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_leftAmmo",
+      "aim_bone": "bone_leftArm",
       "muzzle_bone": "left_muzzle02",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_leftAmmo",
+      "aim_bone": "bone_leftArm",
       "muzzle_bone": "left_muzzle03",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_rightAmmo",
+      "aim_bone": "bone_rightArm",
       "muzzle_bone": "right_muzzle01",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_rightAmmo",
+      "aim_bone": "bone_rightArm",
       "muzzle_bone": "right_muzzle02",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_rightAmmo",
+      "aim_bone": "bone_rightArm",
       "muzzle_bone": "right_muzzle03",
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }

@@ -1,0 +1,46 @@
+{
+  "ammo_type": "Projectile",
+  "armor_damage_map": {
+    "AT_Commander": 0.25,
+    "AT_Structure": 0.25
+  },
+  "audio_loop": "/SE/Weapons/commander/Commander_uber_cannon_fire",
+  "burn_damage": 200,
+  "burn_radius": 15,
+  "damage": 700,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/cannon_uber",
+      "effect_spec": "/pa/effects/specs/uber_proj_explosion_legion.pfx"
+    }
+  },
+  "flight_type": "Seeking",
+  "full_damage_splash_radius": 5,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/uber_proj_trail_legion.pfx",
+    "offset": [
+      0,
+      0.8,
+      0
+    ]
+  },
+  "initial_velocity": 100,
+  "lifetime": 5,
+  "max_velocity": 100,
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "ignore_gravity": false,
+    "push_class": 1,
+    "radius": 10
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 700,
+  "splash_radius": 20,
+  "turn_rate": 180
+}
