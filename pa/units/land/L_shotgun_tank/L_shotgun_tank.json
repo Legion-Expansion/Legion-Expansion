@@ -1,216 +1,216 @@
 {
-  "TEMP_texelinfo": 8.06901, 
+  "TEMP_texelinfo": 8.06901,
   "attachable": {
     "offsets": {
       "head": [
-        0, 
-        0, 
+        0,
+        0,
         4.3
-      ], 
+      ],
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
+  },
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/veh/tank_inferno_loop", 
-        "flag": "vel_changed", 
-        "should_start_func": "is_moving", 
+        "cue": "/SE/Movement/veh/tank_inferno_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    }, 
+    },
     "selection_response": {
       "cue": "/SE/Selection/veh/tank_inferno"
     }
-  }, 
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json", 
-  "build_metal_cost": 225, 
-  "description": "Close range shotgun tank that deals heavy damage to targets close by, but targets far away are hard to hit.", 
-  "display_name": "Legion Maul Shotgun Tank", 
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 225,
+  "description": "Close range shotgun tank that deals heavy damage to targets close by, but targets far away are hard to hit.",
+  "display_name": "Legion Maul Shotgun Tank",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/Veh", 
+      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 1.4
-    }, 
+    },
     "fired": {
-      "audio_cue": "/SE/Weapons/bot/artillery_fire", 
+      "audio_cue": "/SE/Weapons/bot/artillery_fire",
       "effect_spec": ""
     }
-  }, 
-  "guard_layer": "WL_LandHorizontal", 
-  "max_health": 1000, 
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 1000,
   "mesh_bounds": [
-    7, 
-    7, 
+    7,
+    7,
     4.5
-  ], 
+  ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/tank_armor_anim_tree.json", 
-    "arrows": 5, 
+    "animtree": "/pa/anim/anim_trees/tank_armor_anim_tree.json",
+    "arrows": 5,
     "filename": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.papa"
-  }, 
+  },
   "navigation": {
-    "acceleration": 100, 
-    "brake": 100, 
-    "group_preference": "front", 
-    "move_speed": 10, 
-    "turn_speed": 180, 
+    "acceleration": 100,
+    "brake": 100,
+    "group_preference": "front",
+    "move_speed": 10,
+    "turn_speed": 180,
     "type": "land-small"
-  }, 
+  },
   "physics": {
-    "push_class": 80, 
+    "push_class": 80,
     "radius": 4.5
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
+  },
   "scrolling_uv": {
-    "scroll_rate": 0.71, 
+    "scroll_rate": 0.71,
     "uv_split": 0.881
-  }, 
+  },
   "tools": [
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    }, 
+    },
     {
-      "aim_bone": "bone_turret", 
-      "muzzle_bone": "socket_muzzle", 
-      "primary_weapon": true, 
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     }
-  ], 
+  ],
   "transportable": {
     "size": 1
-  }, 
+  },
   "unit_types": [
-    "UNITTYPE_Tank", 
-    "UNITTYPE_Heavy", 
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Offense", 
-    "UNITTYPE_Land", 
-    "UNITTYPE_Basic", 
-    "UNITTYPE_FactoryBuild", 
+    "UNITTYPE_Tank",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

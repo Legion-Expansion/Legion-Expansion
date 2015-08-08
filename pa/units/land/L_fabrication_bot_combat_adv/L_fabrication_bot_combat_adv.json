@@ -1,151 +1,151 @@
 {
-  "TEMP_texelinfo": 6.38702, 
+  "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
       "head": [
-        0, 
-        0, 
+        0,
+        0,
         6.8
-      ], 
+      ],
       "root": [
-        0, 
-        0, 
+        0,
+        0,
         0
       ]
     }
-  }, 
+  },
   "audio": {
     "loops": {
       "build": {
-        "cue": "/SE/Construction/Fab_contruction_beam_loop", 
-        "flag": "build_target_changed", 
-        "should_start_func": "has_build_target", 
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
         "should_stop_func": "no_build_target"
-      }, 
+      },
       "move": {
-        "cue": "/SE/Movement/bot/T2_fab_combat_loop", 
-        "flag": "vel_changed", 
-        "should_start_func": "is_moving", 
+        "cue": "/SE/Movement/bot/T2_fab_combat_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    }, 
+    },
     "selection_response": {
       "cue": "/SE/Selection/bot/T2_fab_combat"
     }
-  }, 
-  "base_spec": "/pa/units/land/base_bot/base_bot.json", 
-  "build_metal_cost": 2500, 
-  "buildable_types": "Custom1 & CombatFabAdvBuild", 
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 2500,
+  "buildable_types": "Custom1 & CombatFabAdvBuild",
   "command_caps": [
-    "ORDER_Move", 
-    "ORDER_Patrol", 
-    "ORDER_Build", 
-    "ORDER_Reclaim", 
-    "ORDER_Repair", 
-    "ORDER_Assist", 
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
     "ORDER_Use"
-  ], 
-  "description": "!LOC(units:advanced_fabricator_combatant_wired_to_repair_units_and_build_battlefield_structures_can_only_build_units_for_which_it_has_a_blueprint.message):Advanced fabricator combatant- Wired to repair units and build battlefield structures. Can only build units for which it has a blueprint.", 
-  "display_name": "Legion Advanced Combat Fabrication Bot", 
+  ],
+  "description": "!LOC(units:advanced_fabricator_combatant_wired_to_repair_units_and_build_battlefield_structures_can_only_build_units_for_which_it_has_a_blueprint.message):Advanced fabricator combatant- Wired to repair units and build battlefield structures. Can only build units for which it has a blueprint.",
+  "display_name": "Legion Advanced Combat Fabrication Bot",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/Bot", 
+      "audio_cue": "/SE/Death/Bot",
       "effect_scale": 1.5
     }
-  }, 
+  },
   "fx_offsets": [
     {
-      "bone": "socket_muzzleBack", 
-      "filename": "/pa/effects/specs/fab_combat_spray.pfx", 
+      "bone": "socket_muzzleBack",
+      "filename": "/pa/effects/specs/fab_combat_spray.pfx",
       "offset": [
-        0, 
-        0, 
+        0,
+        0,
         0
-      ], 
+      ],
       "orientation": [
-        0, 
-        0, 
+        0,
+        0,
         0
-      ], 
+      ],
       "type": "build"
     }
-  ], 
-  "guard_layer": "WL_LandHorizontal", 
-  "max_health": 150, 
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 150,
   "mesh_bounds": [
-    4.4, 
-    7.5, 
+    4.4,
+    7.5,
     10
-  ], 
+  ],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_death01.papa", 
-      "idle": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_idle.papa", 
+      "death01": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_death01.papa",
+      "idle": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_idle.papa",
       "walk": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_run.papa"
-    }, 
-    "animtree": "/pa/anim/anim_trees/fabrication_bot_combat_adv_anim_tree.json", 
-    "arrows": 5, 
-    "filename": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv.papa", 
+    },
+    "animtree": "/pa/anim/anim_trees/fabrication_bot_combat_adv_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv.papa",
     "walk_speed": 12
-  }, 
+  },
   "navigation": {
-    "acceleration": 120, 
-    "brake": 120, 
-    "group_preference": "back", 
-    "move_speed": 12, 
-    "turn_speed": 720, 
+    "acceleration": 120,
+    "brake": 120,
+    "group_preference": "back",
+    "move_speed": 12,
+    "turn_speed": 720,
     "type": "amphibious"
-  }, 
+  },
   "physics": {
-    "allow_pushing": true, 
-    "push_class": 2, 
+    "allow_pushing": true,
+    "push_class": 2,
     "radius": 4
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "mine", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
-  "spawn_layers": "WL_LandHorizontal", 
+  },
+  "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {
-      "aim_bone": "bone_turretBack", 
+      "aim_bone": "bone_turretBack",
       "spec_id": "/pa/units/land/L_fabrication_bot_combat_adv/L_fabrication_bot_combat_adv_build_arm.json"
     }
-  ], 
+  ],
   "transportable": {
     "size": 1
-  }, 
+  },
   "unit_types": [
-    "UNITTYPE_Construction", 
-    "UNITTYPE_Bot", 
-    "UNITTYPE_Mobile", 
-    "UNITTYPE_Land", 
-    "UNITTYPE_Advanced", 
-    "UNITTYPE_FactoryBuild", 
-    "UNITTYPE_CannonBuildable", 
+    "UNITTYPE_Construction",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
     "UNITTYPE_Custom1"
   ]
 }

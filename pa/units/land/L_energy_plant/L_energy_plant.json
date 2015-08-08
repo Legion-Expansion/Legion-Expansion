@@ -1,270 +1,270 @@
 {
-  "TEMP_texelinfo": 15.8224, 
-  "area_build_type": "Line", 
-  "atrophy_cool_down": 15, 
-  "atrophy_rate": 7.5, 
+  "TEMP_texelinfo": 15.8224,
+  "area_build_type": "Line",
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 7.5,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/energy"
     }
-  }, 
-  "base_spec": "/pa/units/land/base_structure/base_structure.json", 
-  "build_metal_cost": 400, 
-  "description": "!LOC(units:basic_manufacturing_produces_energy.message):Basic manufacturing- Produces energy.", 
-  "display_name": "Legion Energy Plant", 
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 400,
+  "description": "!LOC(units:basic_manufacturing_produces_energy.message):Basic manufacturing- Produces energy.",
+  "display_name": "Legion Energy Plant",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
-    }, 
+    },
     "died": {
-      "audio_cue": "/SE/Death/Factory", 
+      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 0.5
     }
-  }, 
+  },
   "fx_offsets": [
     {
-      "filename": "/pa/units/land/energy_plant/energy_plant_idle.pfx", 
+      "filename": "/pa/units/land/energy_plant/energy_plant_idle.pfx",
       "offset": [
-        0, 
-        0, 
+        0,
+        0,
         5
-      ], 
+      ],
       "type": "idle"
     }
-  ], 
+  ],
   "headlights": [
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 15, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2.5, 
-      "near_height": 5.5, 
-      "near_width": 5.5, 
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2.5,
+      "near_height": 5.5,
+      "near_width": 5.5,
       "offset": [
-        5.25, 
-        0, 
+        5.25,
+        0,
         6.75
-      ], 
+      ],
       "orientation": [
-        35, 
-        0, 
+        35,
+        0,
         0
       ]
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 15, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2.5, 
-      "near_height": 5.5, 
-      "near_width": 5.5, 
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2.5,
+      "near_height": 5.5,
+      "near_width": 5.5,
       "offset": [
-        -5.25, 
-        0, 
+        -5.25,
+        0,
         6.75
-      ], 
+      ],
       "orientation": [
-        -35, 
-        0, 
+        -35,
+        0,
         0
       ]
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "far_distance": 15, 
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa", 
-      "intensity": 1, 
-      "near_distance": 2.5, 
-      "near_height": 5.5, 
-      "near_width": 5.5, 
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1,
+      "near_distance": 2.5,
+      "near_height": 5.5,
+      "near_width": 5.5,
       "offset": [
-        0, 
-        -5.25, 
+        0,
+        -5.25,
         6.75
-      ], 
+      ],
       "orientation": [
-        0, 
-        35, 
+        0,
+        35,
         0
       ]
     }
-  ], 
+  ],
   "lamps": [
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        5.25, 
-        0, 
+        5.25,
+        0,
         6.75
-      ], 
+      ],
       "radius": 2
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        -5.25, 
-        0, 
+        -5.25,
+        0,
         6.75
-      ], 
+      ],
       "radius": 2
-    }, 
+    },
     {
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        0, 
-        -5.25, 
+        0,
+        -5.25,
         6.75
-      ], 
+      ],
       "radius": 2
-    }, 
+    },
     {
-      "bone": "bone_rotor", 
+      "bone": "bone_rotor",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        0, 
-        -2.71, 
+        0,
+        -2.71,
         1.1
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
-      "bone": "bone_1", 
+      "bone": "bone_1",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 2, 
+      ],
+      "intensity": 2,
       "offset": [
-        0, 
-        0, 
+        0,
+        0,
         0
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
-      "bone": "bone_rotor", 
+      "bone": "bone_rotor",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        -2.44, 
-        1.34, 
+        -2.44,
+        1.34,
         1.1
-      ], 
+      ],
       "radius": 3
-    }, 
+    },
     {
-      "bone": "bone_rotor", 
+      "bone": "bone_rotor",
       "color": [
-        1, 
-        1, 
+        1,
+        1,
         1
-      ], 
-      "intensity": 1, 
+      ],
+      "intensity": 1,
       "offset": [
-        2.44, 
-        1.34, 
+        2.44,
+        1.34,
         1.1
-      ], 
+      ],
       "radius": 3
     }
-  ], 
-  "max_health": 1000, 
+  ],
+  "max_health": 1000,
   "mesh_bounds": [
-    9.426, 
-    9.426, 
+    9.426,
+    9.426,
     9.764
-  ], 
+  ],
   "model": [
     {
       "animations": {
         "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
-      }, 
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json", 
-      "filename": "/pa/units/land/L_energy_plant/L_energy_plant.papa", 
-      "layer": "WL_LandHorizontal", 
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_energy_plant/L_energy_plant.papa",
+      "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
-    }, 
+    },
     {
       "animations": {
         "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
-      }, 
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json", 
-      "filename": "/pa/units/land/L_energy_plant/L_energy_plant_sea.papa", 
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_energy_plant/L_energy_plant_sea.papa",
       "layer": "WL_WaterSurface"
     }
-  ], 
+  ],
   "placement_size": [
-    12, 
+    12,
     12
-  ], 
+  ],
   "production": {
     "energy": 600
-  }, 
+  },
   "recon": {
     "observer": {
       "items": [
         {
-          "channel": "sight", 
-          "layer": "surface_and_air", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
           "shape": "capsule"
-        }, 
+        },
         {
-          "channel": "sight", 
-          "layer": "underwater", 
-          "radius": 100, 
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
-  }, 
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface", 
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
-    "UNITTYPE_Structure", 
-    "UNITTYPE_EnergyProduction", 
-    "UNITTYPE_Basic", 
-    "UNITTYPE_CmdBuild", 
-    "UNITTYPE_FabBuild", 
-    "UNITTYPE_Economy", 
+    "UNITTYPE_Structure",
+    "UNITTYPE_EnergyProduction",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_Economy",
     "UNITTYPE_Custom1"
   ]
 }
