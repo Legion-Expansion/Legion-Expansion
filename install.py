@@ -9,8 +9,7 @@ from os.path import join
 
 # change this to your PA data path
 
-PA_PATH = "C:/Users/Eoin/AppData/Local/Uber Entertainment/Planetary Annihilation"
-#PA_PATH = "%LOCALAPPDATA%\\Uber Entertainmen\\Planetary Annihilation"
+PA_PATH = "%LOCALAPPDATA%\\Uber Entertainmen\\Planetary Annihilation"
 #PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation"
 
 MOD_NAME = "com.pa.legion-expansion"

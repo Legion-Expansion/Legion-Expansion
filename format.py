@@ -4,10 +4,9 @@ import json
 
 from os.path import join
 
-# change this to your PA path
+# change this to your PA media install path
 
-#PA_PATH = "%PROGRAMFILES%/PA/Planetary Annihilation/stable/media"
-PA_PATH = "E:\Games\Planetary Annihilation\Planetary Annihilation\stable\media"
+PA_PATH = "%PROGRAMFILES%/PA/Planetary Annihilation/stable/media"
 #PA_PATH = "/Users/mike/Library/Application Support/Uber Entertainment/Planetary Annihilation/data/streams/stable/PA.app/Contents/Resources/media"
 
 def validateBuildableTypes(value,source):
