@@ -142,7 +142,7 @@ Manual install instructions...
 - delete client
 - if you want quicker uploads / downloads then:
  - delete ui/main/atlas
- - delete ui/mods/com.pa.legionfaction/icon_atlas.js
+ - delete ui/mods/com.pa.legion-expansion/icon_atlas.js
 
 ### Client Mod
 
