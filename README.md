@@ -15,7 +15,7 @@ Javascript and JSON are formatted for readability with 2 space indent and sorted
 
 Update format.py and install.py with your PA_PATH (don't commit your changes).
 
-Python 2.7 or 3.x is required.
+Lastest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
 
 ## Commiting
