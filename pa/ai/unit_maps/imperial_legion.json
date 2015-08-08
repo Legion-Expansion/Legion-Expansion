@@ -159,6 +159,9 @@
     "LegionCommander": {
       "unit_types": "Commander & Custom1"
     },
+    "LegionDestroyer": {
+      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer.json"
+    },
     "LegionMine": {
       "spec_id": "/pa/units/land/L_land_mine/L_land_mine.json"
     },
@@ -173,9 +176,6 @@
     },
     "LegionWall": {
       "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier.json"
-    },
-    "LegionDestroyer": {
-      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer.json"
     }
   }
 }
