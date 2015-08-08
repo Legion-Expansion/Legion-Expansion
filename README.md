@@ -13,7 +13,7 @@ Only server mod files that will be uploaded to the server belong in the pa and u
 
 Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
-Update format.py and install.py with your PA_PATH (don't commit your changes).
+Update papaths.py with your PA_DATA_PATH and PA_MEDIA_PATH then add papaths.py to $GIT_DIR/info/exclude so you don't commit your changes.
 
 Lastest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
@@ -21,7 +21,7 @@ Lastest Python 3.x is required. Please do not use Python 2.x as whitespace forma
 ## Commiting
 
 1. Don't commit broken stuff to MASTER... develop, text and fix in your local, a branch or your own fork.
-2. Run format.py on your files with correct PA_PATH so you don't commit unnecessary white spaces changes
+2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE refernces in the format.py output
 
 
@@ -129,7 +129,7 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 
 ## Install
 
-Run install.py with correct PA_PATH to backup existing and install.
+Run install.py with your PA_DATA_PATH in papaths.py to backup existing and install a clean copy from source for testing.
 
 Existing mod folders will be automatically backed up.
 
