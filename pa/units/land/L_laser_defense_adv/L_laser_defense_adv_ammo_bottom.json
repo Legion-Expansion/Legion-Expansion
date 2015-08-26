@@ -10,7 +10,7 @@
   },
   "full_damage_splash_radius": 5,
   "fx_trail": {
-    "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
+    "filename": "/pa/effects/specs/fire_pellet_trail.pfx",
     "offset": [
       0,
       0,

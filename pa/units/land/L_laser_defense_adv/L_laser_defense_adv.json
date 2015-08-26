@@ -89,7 +89,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "socket_aimBottom",
+      "aim_bone": "bone_pitch01",
       "fire_event": "fired1",
       "muzzle_bone": [
         "socket_muzzleBottomRight",
@@ -99,7 +99,7 @@
       "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_bottom.json"
     },
     {
-      "aim_bone": "socket_aimMiddle",
+      "aim_bone": "bone_pitch02",
       "fire_event": "fired2",
       "muzzle_bone": [
         "socket_muzzleMiddle"
@@ -108,7 +108,7 @@
       "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv_tool_weapon_middle.json"
     },
     {
-      "aim_bone": "socket_aimTop",
+      "aim_bone": "bone_turret03",
       "fire_event": "fired3",
       "muzzle_bone": [
         "socket_muzzleTop"

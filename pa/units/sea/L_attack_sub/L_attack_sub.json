@@ -10,6 +10,28 @@
       }
     }
   },
+    "fx_offsets": [
+        {
+            "bone": "bone_rotor", 
+            "filename": "/pa/effects/specs/naval_trail_sub.pfx", 
+            "offset": [
+                0, 
+                0, 
+                0
+            ], 
+            "type": "moving"
+        },
+        {
+            "bone": "bone_root", 
+            "filename": "/pa/effects/specs/naval_bubbles_sub.pfx", 
+            "offset": [
+                0, 
+                0, 
+                0
+            ], 
+            "type": "idle"
+        }
+	],
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 500,
   "description": "!LOC(units:submarine_class_anti_sub_and_anti_ship_torpedoes.message):Submarine Class: Anti-sub and anti-ship torpedoes",
@@ -24,7 +46,8 @@
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
+      "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
+       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx"
     }
   },
   "guard_layer": "WL_AnyWater",
@@ -36,7 +59,7 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/sea/attack_sub/attack_sub.papa"
+    "filename": "/pa/units/sea/L_attack_sub/L_attack_sub.papa"
   },
   "navigation": {
     "acceleration": 40,
@@ -72,9 +95,9 @@
   "spawn_layers": "WL_Underwater",
   "tools": [
     {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/sea/attack_sub/attack_sub_tool_weapon.json"
+      "aim_bone": "socket_muzzle",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/sea/L_attack_sub/L_attack_sub_tool_weapon.json"
     }
   ],
   "unit_types": [
