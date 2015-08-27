@@ -15,7 +15,7 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 4800,
-  "description": "!LOC(units:battleship_long_range_advanced_anti_ship_and_anti_land_guns.message):Battleship- Long range advanced anti-ship, and anti-land guns.",
+  "description": "Battleship- Long range advanced anti-ship, and anti-land guns.",
   "display_name": "Legion Epoch Battleship",
   "events": {
     "build_complete": {
@@ -28,23 +28,13 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle05 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle06 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle04"
-    },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle08 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle09 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle07"
-    },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle11 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle12 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle10"
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02"
     }
   },
   "guard_layer": "WL_LandHorizontal",
@@ -55,8 +45,8 @@
     12
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/battleship_anim_tree.json",
-    "filename": "/pa/units/sea/battleship/battleship.papa"
+    "animtree": "/pa/anim/anim_trees/L_battleship_anim_tree.json",
+    "filename": "/pa/units/sea/L_battleship/L_battleship.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -94,12 +84,21 @@
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch01",
+      "aim_bone": "bone_turret01",
       "fire_event": "fired0",
       "muzzle_bone": [
         "socket_muzzle01"
       ],
       "record_index": 0,
+      "spec_id": "/pa/units/sea/L_battleship/L_battleship_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret02",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_muzzle02"
+      ],
+      "record_index": 1,
       "spec_id": "/pa/units/sea/L_battleship/L_battleship_tool_weapon.json"
     }
   ],
