@@ -1,6 +1,6 @@
 {
   "TEMP_texelinfo": 32.6108,
-  "area_build_type": "Line",
+  "area_build_type": "Circle",
   "atrophy_cool_down": 15,
   "atrophy_rate": 45,
   "audio": {
@@ -23,11 +23,12 @@
   },
   "fx_offsets": [
     {
-      "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_idle.pfx",
+      "filename": "/pa/units/land/L_energy_plant_adv/black_hole.pfx",
+            "bone": "black_hole",
       "offset": [
         0,
         0,
-        6.7
+        0
       ],
       "type": "idle"
     }
@@ -126,133 +127,10 @@
       ]
     }
   ],
-  "lamps": [
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        7.25,
-        7.25,
-        8
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        7.25,
-        -7.25,
-        8
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        -7.25,
-        -7.25,
-        8
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        -7.25,
-        7.25,
-        8
-      ],
-      "radius": 3
-    },
-    {
-      "bone": "bone_rotor02",
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        0,
-        -4.15,
-        2.3
-      ],
-      "radius": 4.5
-    },
-    {
-      "bone": "bone_rotor02",
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        -3.59,
-        2.08,
-        2.3
-      ],
-      "radius": 4.5
-    },
-    {
-      "bone": "bone_rotor02",
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        3.59,
-        2.08,
-        2.3
-      ],
-      "radius": 4.5
-    },
-    {
-      "color": [
-        1,
-        0,
-        0
-      ],
-      "intensity": 2,
-      "offset": [
-        0,
-        7.43,
-        22.97
-      ],
-      "radius": 4
-    }
-  ],
-  "max_health": 5000,
-  "mesh_bounds": [
-    25.942,
-    22.932,
-    26.147
-  ],
   "model": [
     {
       "animations": {
-        "idle": "/pa/units/land/energy_plant_adv/energy_plant_adv_anim_work.papa"
+        "idle": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.papa",
@@ -261,7 +139,7 @@
     },
     {
       "animations": {
-        "idle": "/pa/units/land/energy_plant_adv/energy_plant_adv_anim_work.papa"
+        "idle": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "filename": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv_sea.papa",
