@@ -228,7 +228,7 @@
         "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "filename": "/pa/units/land/L_energy_plant/L_energy_plant_sea.papa",
+      "filename": "/pa/units/land/L_energy_plant/sea/L_energy_plant.papa",
       "layer": "WL_WaterSurface"
     }
   ],
