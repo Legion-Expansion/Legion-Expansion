@@ -25,136 +25,96 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:advanced_manufacturing_builds_air_units.message):Advanced manufacturing- Builds air units.",
-  "display_name": "Legion Advanced Air Factory",
+  "description": "Null",
+  "display_name": "Legion Advanced Flyer Foundry",
   "events": {
     "died": {
       "effect_scale": 2
     }
   },
   "factory_cooldown_time": 2,
-  "fx_offsets": [
-    {
-      "bone": "socket_nozzle01",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle02",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle03",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle04",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle05",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle06",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle07",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "socket_nozzle08",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    }
-  ],
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "muzzle01",
+            "orientation": [
+                0,
+                0,
+                90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "muzzle02",
+            "orientation": [
+                0,
+                0,
+                90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "muzzle03",
+            "orientation": [
+                0,
+                0,
+                90
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "muzzle04",
+            "orientation": [
+                0,
+                0,
+                90
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
+            "bone": "platformA",
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
+            "bone": "platformA",
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
+            "bone": "platformB",
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
+            "bone": "platformB",
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        }
+    ],
   "headlights": [
     {
       "bone": "bone_platform",
@@ -317,29 +277,29 @@
     50,
     25
   ],
-  "model": [
-    {
-      "animations": {
-        "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa",
-        "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa",
-        "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/air/air_factory_adv/air_factory_adv.papa",
-      "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_air_adv.json"
-    },
-    {
-      "animations": {
-        "build_end": "/pa/units/air/air_factory_adv/air_factory_adv_anim_end.papa",
-        "build_loop": "/pa/units/air/air_factory_adv/air_factory_adv_anim_build.papa",
-        "build_start": "/pa/units/air/air_factory_adv/air_factory_adv_anim_start.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/sea/air_factory_adv/air_factory_adv.papa",
-      "layer": "WL_WaterSurface"
-    }
-  ],
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/air/L_air_factory_adv/L_air_factory_adv.papa",
+            "animations": {
+                "build_start": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_start.papa",
+                "build_loop": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_build.papa",
+                "build_end": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_end.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_air_adv.json"
+        },
+        {
+            "layer": "WL_WaterSurface",
+            "filename": "/pa/units/air/L_air_factory_adv/sea/L_air_factory_adv.papa",
+            "animations": {
+                "build_start": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_start.papa",
+                "build_loop": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_build.papa",
+                "build_end": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_end.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/factory_anim_tree.json"
+        }
+    ],
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },

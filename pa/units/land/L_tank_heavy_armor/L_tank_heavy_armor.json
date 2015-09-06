@@ -40,7 +40,8 @@
       "effect_scale": 2
     },
     "fired0": {
-      "effect_spec": "/pa/effects/specs/BFG_shockwave.pfx bone_root"
+      "effect_spec": "/pa/units/land/titan_bot/titan_bot_attack.pfx bone_root",
+	  "effect_scale": 0.1
     }
   },
   "guard_layer": "WL_LandHorizontal",

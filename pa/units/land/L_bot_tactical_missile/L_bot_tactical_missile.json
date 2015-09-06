@@ -59,7 +59,7 @@
     },
     "animtree": "/pa/anim/anim_trees/L_bot_tactical_missile_anim_tree.json",
     "filename": "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.papa",
-    "walk_speed": 2
+    "walk_speed": 1
   },
   "navigation": {
     "acceleration": 50,

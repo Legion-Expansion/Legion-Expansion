@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 5.11028,
+    "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {
       "head": [
@@ -59,57 +59,29 @@
       "effect_scale": 0.8
     }
   },
-  "fx_offsets": [
-    {
-      "bone": "bone_rightElbow",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        -1.891,
-        -0.11
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "bone_leftElbow",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        -1.891,
-        -0.11
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    }
-  ],
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "muzzle00"
+        }
+    ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 50,
-  "mesh_bounds": [
-    4,
-    3.8,
-    4
-  ],
-  "model": {
-    "animations": {
-      "aim_down": "/pa/units/land/fabrication_bot/fabrication_bot_anim_aimDown.papa",
-      "aim_up": "/pa/units/land/fabrication_bot/fabrication_bot_anim_aimUp.papa",
-      "death01": "/pa/units/land/fabrication_bot/fabrication_bot_anim_death01.papa",
-      "idle": "/pa/units/land/fabrication_bot/fabrication_bot_anim_idle.papa",
-      "walk": "/pa/units/land/fabrication_bot/fabrication_bot_anim_run.papa"
+    "mesh_bounds": [
+        3,
+        2,
+        4.5
+    ],
+    "model": {
+        "filename": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.papa",
+        "animations": {
+            "idle": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_idle.papa",
+            "walk": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_walk.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/one_turret_walk_idle.json",
+        "walk_speed": 3
     },
-    "animtree": "/pa/anim/anim_trees/fabrication_bipedal_mech_anim_tree.json",
-    "filename": "/pa/units/land/fabrication_bot/fabrication_bot.papa",
-    "walk_speed": 12
-  },
   "navigation": {
     "acceleration": 120,
     "brake": 120,
@@ -141,12 +113,12 @@
       ]
     }
   },
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/fabrication_bot/fabrication_bot_build_arm.json"
-    }
-  ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_build_arm.json",
+            "aim_bone": "turret00"
+        }
+    ],
   "transportable": {
     "size": 1
   },
