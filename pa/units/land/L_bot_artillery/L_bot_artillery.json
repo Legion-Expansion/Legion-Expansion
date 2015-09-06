@@ -116,7 +116,7 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Artillery",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
+    "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_CannonBuildable",
     "UNITTYPE_Custom1"
