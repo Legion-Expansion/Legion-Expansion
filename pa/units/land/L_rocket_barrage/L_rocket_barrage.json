@@ -123,7 +123,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "socket_aim01",
+      "aim_bone": "bone_pitch01",
       "fire_event": "fired1",
       "muzzle_bone": [
         "socket_muzzleTop01",
@@ -135,7 +135,7 @@
       "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon01.json"
     },
     {
-      "aim_bone": "socket_aim02",
+      "aim_bone": "bone_pitch02",
       "fire_event": "fired2",
       "muzzle_bone": [
         "socket_muzzleTop02",
@@ -147,7 +147,7 @@
       "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon02.json"
     },
     {
-      "aim_bone": "socket_aim03",
+      "aim_bone": "bone_pitch03",
       "fire_event": "fired3",
       "muzzle_bone": [
         "socket_muzzleTop03",
