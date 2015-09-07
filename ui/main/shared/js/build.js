@@ -304,9 +304,9 @@ if (!legionExpansionLoaded) {
                             "/pa/units/land/L_energy_plant/L_energy_plant.json": ["utility", 8],
                             "/pa/units/land/L_mex/L_mex.json": ["utility", 9],
                             "/pa/units/land/L_land_barrier/L_land_barrier.json": ["utility", 10],
-                            "/pa/units/land/L_teleporter/L_teleporter.json": ["utility", 11],
-                            "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json": ["utility", 12],
-                            "/pa/units/land/L_storage/L_storage.json": ["utility", 13], // energy storage
+                            "/pa/units/land/L_teleporter/L_teleporter.json": ["utility", 12],
+                            "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json": ["utility", 13],
+                            "/pa/units/land/L_storage/L_storage.json": ["utility", 14], // energy storage
                         //            "/pa/units/land/L_unit/L_unit.json" ]: ["utility", 14], // metal storage spare
 
 
