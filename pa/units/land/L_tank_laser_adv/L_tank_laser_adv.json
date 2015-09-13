@@ -98,7 +98,7 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv_tool_weapon.json"

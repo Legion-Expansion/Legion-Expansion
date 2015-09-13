@@ -86,7 +86,7 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
     }

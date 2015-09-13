@@ -18,6 +18,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
+	  "effect_spec": "/pa/units/land/L_energy_plant_adv/black_hole_implosion.pfx",
       "effect_scale": 1.25
     }
   },
