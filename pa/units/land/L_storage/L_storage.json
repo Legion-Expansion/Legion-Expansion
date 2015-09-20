@@ -21,163 +21,33 @@
       "effect_scale": 0.8
     }
   },
-  "headlights": [
+  "fx_offsets": [
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2.5,
-      "near_height": 5.5,
-      "near_width": 5.5,
-      "offset": [
-        6.2,
-        6.2,
-        8.6
-      ],
-      "orientation": [
-        26.33,
-        -23.93,
-        -50.68
-      ]
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
+      "bone": "shield01",
+      "type": "idle"
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2.5,
-      "near_height": 5.5,
-      "near_width": 5.5,
-      "offset": [
-        -6.2,
-        6.2,
-        8.6
-      ],
-      "orientation": [
-        -26.34,
-        -23.93,
-        50.67
-      ]
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
+      "bone": "shield02",
+      "type": "idle"
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2.5,
-      "near_height": 5.5,
-      "near_width": 5.5,
-      "offset": [
-        6.2,
-        -6.2,
-        8.6
-      ],
-      "orientation": [
-        26.33,
-        23.92,
-        -129.32
-      ]
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
+      "bone": "shield03",
+      "type": "idle"
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2.5,
-      "near_height": 5.5,
-      "near_width": 5.5,
-      "offset": [
-        -6.2,
-        -6.2,
-        8.6
-      ],
-      "orientation": [
-        -26.34,
-        23.92,
-        129.31
-      ]
-    }
-  ],
-  "lamps": [
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        6.2,
-        6.2,
-        8.6
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        -6.2,
-        6.2,
-        8.6
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        6.2,
-        -6.2,
-        8.6
-      ],
-      "radius": 3
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        -6.2,
-        -6.2,
-        8.6
-      ],
-      "radius": 3
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
+      "bone": "shield04",
+      "type": "idle"
     }
   ],
   "max_health": 7500,
   "mesh_bounds": [
-    26.361,
-    26.54,
-    24.606
+    28,
+    28,
+    25
   ],
   "model": [
     {
@@ -186,7 +56,7 @@
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     },
     {
-      "filename": "/pa/units/land/L_storage/L_storage_sea.papa",
+      "filename": "/pa/units/land/L_storage/sea/L_storage.papa",
       "layer": "WL_WaterSurface"
     }
   ],
