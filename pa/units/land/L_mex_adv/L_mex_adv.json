@@ -52,11 +52,11 @@
   "model": [
     {
       "animations": {
-        "idle": "/pa/units/land/metal_extractor_adv/metal_extractor_adv_anim_work.papa"
+        "idle": "/pa/units/land/L_mex_adv/L_mex_adv_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "arrows": 10,
-      "filename": "/pa/units/land/metal_extractor_adv/metal_extractor_adv.papa",
+      "filename": "/pa/units/land/L_mex_adv/L_mex_adv.papa",
       "layer": "WL_LandHorizontal"
     },
     {

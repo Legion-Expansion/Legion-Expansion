@@ -1,11 +1,11 @@
 {
   "TEMP_texelinfo": 7.58193,
-  "area_build_separation": 0.5,
+  "area_build_separation": 0.8,
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 50,
-  "description": "!LOC(units:basic_defense_no_weapon_high_health.message):Basic defense- No weapon, high health.",
+  "description": "Armoured wall with an anti entity weapon. Best used for low ROF units.",
   "display_name": "Legion Barrier",
   "events": {
     "build_complete": {
@@ -29,6 +29,13 @@
       "type": "idle"
     }
   ],
+  "tools": [
+    {
+      "aim_bone": "socket_muzzle",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier_tool_weapon.json"
+    }
+  ],
   "max_health": 3000,
   "mesh_bounds": [
     5,
@@ -37,21 +44,11 @@
   ],
   "model": [
     {
-      "animations": {
-        "deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
-        "idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/land_barrier_anim_tree.json",
-      "filename": "/pa/units/land/land_barrier/land_barrier.papa",
+      "filename": "/pa/units/land/L_land_barrier/L_land_barrier.papa",
       "layer": "WL_LandHorizontal"
     },
     {
-      "animations": {
-        "deploy": "/pa/units/land/land_barrier/land_barrier_anim_deploy.papa",
-        "idle": "/pa/units/land/land_barrier/land_barrier_anim_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/land_barrier_anim_tree.json",
-      "filename": "/pa/units/sea/sea_barrier/sea_barrier.papa",
+      "filename": "/pa/units/land/L_land_barrier/sea/L_land_barrier.papa",
       "layer": "WL_WaterSurface"
     }
   ],

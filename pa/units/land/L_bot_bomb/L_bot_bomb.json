@@ -75,7 +75,7 @@
     },
     "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
     "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa",
-    "walk_speed": 3
+    "walk_speed": 1
   },
   "navigation": {
     "acceleration": 400,
