@@ -49,16 +49,13 @@
     15.741,
     17.386
   ],
-  "model": [
-    {
-      "animations": {
-        "idle": "/pa/units/land/L_mex/L_mex_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
-      "filename": "/pa/units/land/L_mex/L_mex.papa",
-      "layer": "WL_LandHorizontal"
-    }
-  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/L_mex/L_metal_extractor_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+    "filename": "/pa/units/land/L_mex/L_metal_extractor.papa"
+  },
   "placement_size": [
     20,
     16

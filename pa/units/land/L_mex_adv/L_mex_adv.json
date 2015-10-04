@@ -49,26 +49,13 @@
     13.3685,
     23.2
   ],
-  "model": [
-    {
-      "animations": {
-        "idle": "/pa/units/land/L_mex_adv/L_mex_adv_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "arrows": 10,
-      "filename": "/pa/units/land/L_mex_adv/L_mex_adv.papa",
-      "layer": "WL_LandHorizontal"
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/L_mex_adv/L_metal_extractor_adv_idle.papa"
     },
-    {
-      "animations": {
-        "idle": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv_anim_work.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "arrows": 10,
-      "filename": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv.papa",
-      "layer": "WL_WaterSurface"
-    }
-  ],
+    "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+    "filename": "/pa/units/land/L_mex_adv/L_metal_extractor_adv.papa"
+  },
   "placement_size": [
     20,
     16
