@@ -10,13 +10,13 @@
     "pitch_range": 180,
     "spread_fire": true,
     "auto_attack": true,
-    "manual_fire": true,
     "auto_task_type": "anti_entity",
     "anti_entity_targets_units": false,
     "anti_entity_targets": [
         "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
         "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
-        "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json"
+        "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
+        "/pa/units/land/L_riot_bot/L_riot_bot_ammo.json"
     ],
     "target_layers": [
         "WL_Air",

@@ -347,8 +347,7 @@ if (!legionExpansionLoaded) {
                         "/pa/units/land/L_bot_artillery/L_bot_artillery.json": ["bot", 11], // grenadier
                         "/pa/units/land/L_fabrication_bot_combat/L_fabrication_bot_combat.json": ["bot", 13],
                             "/pa/units/land/L_bot_bomb/L_bot_bomb.json": ["bot", 14], // boom
-
-                        //             "pa/units/land/L_bot_aa/L_bot_aa.json": ["bot",?], AA unknown
+                            "/pa/units/land/L_bot_aa/L_bot_aa.json": ["bot", 16], // aa
 
                         "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.json": ["vehicle", 6],
                             "/pa/units/land/L_tank_laser_adv/L_tank_laser_adv.json": ["vehicle", 7], // leveler
