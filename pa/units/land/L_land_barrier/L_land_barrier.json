@@ -72,5 +72,15 @@
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_Custom1"
   ],
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier_tool_weapon.json"
+    }
+  ],
   "wreckage_health_frac": 0
 }
