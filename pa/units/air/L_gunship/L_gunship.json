@@ -77,7 +77,7 @@
     }
   ],
   "guard_layer": "WL_Anysurface",
-  "max_health": 350,
+  "max_health": 1500,
   "mesh_bounds": [
     8.5,
     11.5,
@@ -85,26 +85,24 @@
   ],
   "model": {
     "animations": {
-      "aim_down": "/pa/units/air/gunship/gunship_anim_aimDown.papa",
-      "aim_up": "/pa/units/air/gunship/gunship_anim_aimUp.papa",
-      "fly": "/pa/units/air/gunship/gunship_anim_fly.papa"
+      "fly": "/pa/units/air/L_gunship/L_gunship_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/gunship_anim_tree.json",
-    "filename": "/pa/units/air/gunship/gunship.papa"
+    "animtree": "/pa/anim/anim_trees/L_gunship_anim_tree.json",
+    "filename": "/pa/units/air/L_gunship/L_gunship.papa"
   },
   "navigation": {
-    "acceleration": 60,
+    "acceleration": 20,
     "aggressive_behavior": "circle",
-    "aggressive_distance": 75.0,
+    "aggressive_distance": 50,
     "bank_factor": 1,
-    "brake": 60,
+    "brake": 25,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
     "hover_time": -1.0,
-    "move_speed": 60,
-    "turn_speed": 120,
+    "move_speed": 40,
+    "turn_speed": 60,
     "type": "air",
-    "vertical_speed": 50
+    "vertical_speed": 30
   },
   "physics": {
     "push_class": 2,
@@ -131,14 +129,39 @@
   "spawn_layers": "WL_Air",
   "tools": [
     {
-      "aim_bone": "bone_rightRecoil",
-      "muzzle_bone": "socket_rightMuzzle",
-      "spec_id": "/pa/units/air/gunship/gunship_tool_weapon.json"
+      "aim_bone": "bone_picth",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_main_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_leftRecoil",
-      "muzzle_bone": "socket_leftMuzzle",
-      "spec_id": "/pa/units/air/gunship/gunship_tool_weapon.json"
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket01",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket02",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket03",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket04",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket05",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rocket06",
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
     }
   ],
   "unit_types": [

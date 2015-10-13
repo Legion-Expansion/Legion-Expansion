@@ -1,0 +1,67 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "aim_blend",
+                "aim_bone_root": "bone_root",
+                "node_aim_down": {
+                    "type": "playback",
+                    "anim_name": "aim_down"
+                },
+                "node_aim_neutral": {
+                    "type": "bind_pose"
+                },
+                "node_aim_up": {
+                    "type": "playback",
+                    "anim_name": "aim_up"
+                },
+                "child": {
+                    "type": "fly",
+                    "node_idle": {
+                        "type": "bind_pose"
+                    },
+                    "node_fly": {
+                        "type": "playback",
+                        "anim_name": "fly"
+                    }
+                }
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "recoil",
+            "bone": "bone_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.25
+        },
+        {
+            "type": "fader",
+            "lerp_func": "not_being_built",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_turret01",
+                "rotation_axis": "z"
+            }
+        },
+        {
+            "type": "fader",
+            "lerp_func": "not_being_built",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_pitch",
+                "rotation_axis": "x"
+            }
+        }
+    ]
+}
