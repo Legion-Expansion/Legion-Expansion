@@ -1,6 +1,6 @@
 {
   "TEMP_texelinfo": 7.58193,
-  "area_build_separation": 0.5,
+  "area_build_separation": 1.2,
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
@@ -82,5 +82,5 @@
       "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier_tool_weapon.json"
     }
   ],
-  "wreckage_health_frac": 0
+  "wreckage_health_frac": 0.2
 }
