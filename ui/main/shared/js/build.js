@@ -316,10 +316,10 @@ if (!legionExpansionLoaded) {
                             "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json": ["factory", 8],
                             "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json": ["factory", 9],
                             "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.json": ["factory", 10],
-                            "/pa/units/sea/L_naval_factory/L_naval_factory.json": ["factory", 11],
-                            "/pa/units/air/L_air_factory/L_air_factory.json": ["factory", 12],
-                            "/pa/units/land/L_bot_factory/L_bot_factory.json": ["factory", 13],
-                            "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json": ["factory", 14],
+                            "/pa/units/sea/L_naval_factory/L_naval_factory.json": ["factory", 12],
+                            "/pa/units/air/L_air_factory/L_air_factory.json": ["factory", 13],
+                            "/pa/units/land/L_bot_factory/L_bot_factory.json": ["factory", 14],
+                            "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json": ["factory", 15],
 
                             "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json": ["combat", 0],
                             "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json": ["combat", 2], // catapult
