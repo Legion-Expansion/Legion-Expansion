@@ -307,6 +307,7 @@ if (!legionExpansionLoaded) {
                             "/pa/units/land/L_teleporter/L_teleporter.json": ["utility", 12],
                             "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json": ["utility", 13],
                             "/pa/units/land/L_storage/L_storage.json": ["utility", 14], // energy storage
+                            "/pa/units/land/L_shield_gen/L_shield_gen.json": ["utility", 15],
                         //            "/pa/units/land/L_unit/L_unit.json" ]: ["utility", 14], // metal storage spare
 
 
@@ -321,7 +322,7 @@ if (!legionExpansionLoaded) {
                             "/pa/units/land/L_bot_factory/L_bot_factory.json": ["factory", 14],
                             "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json": ["factory", 15],
 
-                            "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json": ["combat", 0],
+                            "/pa/units/land/L_flame_turret/L_flame_turret.json": ["combat", 0],
                             "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json": ["combat", 2], // catapult
                         "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json": ["combat", 4],
                             "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json": ["combat", 1], // double laser
