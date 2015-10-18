@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 1500,
+  "build_metal_cost": 2500,
   "description": "Heavy Laser Tank- Destroys Anything Within Range.",
   "display_name": "Earthshaker",
   "events": {
@@ -44,7 +44,7 @@
     }
   },
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 5000,
+  "max_health": 7000,
   "mesh_bounds": [
     7.792,
     8.354,

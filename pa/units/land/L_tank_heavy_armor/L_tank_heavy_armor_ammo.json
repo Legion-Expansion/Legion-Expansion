@@ -1,12 +1,11 @@
 {
     "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
-    "damage": 75,
+    "damage": 700,
     "damage_volume": {
-        "burnable_remove_radius": 50,
-        "delay": 0,
-        "initial_radius": 0,
-        "radius_accel": -30,
-        "radius_velocity": 20
+        "initial_radius": 5,
+        "radius_velocity": 80,
+        "radius_accel": 0,
+        "delay": 0.1
     },
     "death": {
         "decals": [
@@ -18,7 +17,7 @@
             "effect_spec": "/pa/effects/specs/none.pfx"
         }
     },
-    "full_damage_splash_radius": 1,
+    "full_damage_splash_radius": 5,
     "fx_trail": {
         "effect_spec": "/pa/effects/specs/none.pfx"
     },
@@ -26,6 +25,6 @@
     "lifetime": 3,
     "max_velocity": 15,
     "model": {},
-    "splash_damage": 75,
-    "splash_radius": 30
+    "splash_damage": 700,
+    "splash_radius": 35
 }

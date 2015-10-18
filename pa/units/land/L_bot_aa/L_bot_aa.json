@@ -50,16 +50,12 @@
     ],
     "model": {
         "animations": {
-            "aim_down": "/pa/units/land/bot_aa/bot_aa_anim_aimDown.papa",
-            "aim_up": "/pa/units/land/bot_aa/bot_aa_anim_aimUp.papa",
-            "death01": "/pa/units/land/bot_aa/bot_aa_anim_death01.papa",
-            "idle": "/pa/units/land/bot_aa/bot_aa_anim_idle.papa",
-            "walk": "/pa/units/land/bot_aa/bot_aa_anim_run.papa"
+            "idle": "/pa/units/land/L_bot_aa/L_bot_aa_idle.papa",
+            "walk": "/pa/units/land/L_bot_aa/L_bot_aa_walk.papa"
         },
         "animtree": "/pa/anim/anim_trees/bot_aa_anim_tree.json",
-        "arrows": 5,
         "filename": "/pa/units/land/L_bot_aa/L_bot_aa.papa",
-        "walk_speed": 11.2
+        "walk_speed": 3
     },
     "navigation": {
         "acceleration": 120,
