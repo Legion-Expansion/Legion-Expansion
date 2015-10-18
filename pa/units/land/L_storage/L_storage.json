@@ -1,6 +1,7 @@
 {
   "TEMP_texelinfo": 26.4567,
   "area_build_type": "Sphere",
+  "energy_efficiency_requirement": 0.9,  
   "atrophy_cool_down": 15,
   "atrophy_rate": 7.5,
   "audio": {
@@ -22,6 +23,16 @@
     }
   },
   "fx_offsets": [
+    {
+      "filename": "/pa/units/land/L_storage/black_hole.pfx",
+      "bone": "bone_root",	  
+      "offset": [
+        0,
+        0,
+        20
+      ],
+      "type": "energy"
+    }, 
     {
       "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield01",
