@@ -24,25 +24,19 @@
       "effect_scale": 0.75
     }
   },
+	"fx_offsets": [{
+		"type": "idle",
+		"filename": "/pa/units/land/L_mex/L_mex.pfx",
+		"offset": [0,
+		0,
+		5]
+	}],  
   "feature_requirements": [
     "metal_spot"
   ],
-  "lamps": [
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 1,
-      "offset": [
-        -0.72,
-        -1.922,
-        6.515
-      ],
-      "radius": 2
-    }
-  ],
+	"selection_icon": {
+		"diameter": 24
+	},    
   "max_health": 1000,
   "mesh_bounds": [
     7.218,
