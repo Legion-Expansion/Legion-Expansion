@@ -24,6 +24,11 @@
       "effect_scale": 0.75
     }
   },
+	"audio": {
+		"selection_response": {
+			"cue": "/SE/Selection/structure/metal"
+		}
+	},  
   "feature_requirements": [
     "metal_spot"
   ],
@@ -43,6 +48,9 @@
       "radius": 2
     }
   ],
+	"selection_icon": {
+		"diameter": 21
+	},    
   "max_health": 1000,
   "mesh_bounds": [
     7.218,
@@ -57,7 +65,7 @@
     "filename": "/pa/units/land/L_mex/L_metal_extractor.papa"
   },
   "placement_size": [
-    20,
+    22.5,
     16
   ],
   "production": {
