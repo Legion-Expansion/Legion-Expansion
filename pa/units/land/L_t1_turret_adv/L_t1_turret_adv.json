@@ -19,10 +19,12 @@
       "effect_scale": 0.6
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire"
     }
   },
+	"selection_icon": {
+		"diameter": 22
+	},     
   "guard_layer": "WL_AnySurface",
   "max_health": 1500,
   "mesh_bounds": [
