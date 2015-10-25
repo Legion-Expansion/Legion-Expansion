@@ -31,12 +31,12 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_turret",
+      "bone": "engines_back",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
       "offset": [
+        -2.5,
         0,
-        -1.25,
-        -1.062
+        -3.1
       ],
       "orientation": [
         0,
@@ -46,12 +46,12 @@
       "type": "moving"
     },
     {
-      "bone": "bone_leftWing",
+      "bone": "engines_back",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
       "offset": [
-        1.449,
+        2.5,
         0,
-        -1.536
+        -3.1
       ],
       "orientation": [
         0,
@@ -61,12 +61,27 @@
       "type": "moving"
     },
     {
-      "bone": "bone_rightWing",
+      "bone": "engines_front",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
       "offset": [
-        -1.449,
+        -4.6,
         0,
-        -1.536
+        -3.3
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "engines_front",
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "offset": [
+        4.6,
+        0,
+        -3.3
       ],
       "orientation": [
         0,
