@@ -52,15 +52,8 @@
     4
   ],
   "model": {
-    "animations": {
-      "aim_down": "/pa/units/land/assault_bot/assault_bot_anim_aim_dwn.papa",
-      "aim_up": "/pa/units/land/assault_bot/assault_bot_anim_aim_up.papa",
-      "death01": "/pa/units/land/assault_bot/assault_bot_anim_death01.papa",
-      "idle": "/pa/units/land/assault_bot/assault_bot_anim_idle.papa",
-      "walk": "/pa/units/land/assault_bot/assault_bot_anim_run.papa"
-    },
     "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
-    "filename": "/pa/units/land/assault_bot/assault_bot.papa",
+    "filename": "/pa/units/land/L_assault_bot/L_assault_bot.papa",
     "walk_speed": 20
   },
   "navigation": {
@@ -94,13 +87,12 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_rightArm",
       "muzzle_bone": [
-        "socket_leftMuzzle",
-        "socket_rightMuzzle"
+        "socket_muzzle"
       ],
-      "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/land/assault_bot/assault_bot_tool_weapon.json"
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/land/L_assault_bot/L_assault_bot_tool_weapon.json"
     }
   ],
   "transportable": {

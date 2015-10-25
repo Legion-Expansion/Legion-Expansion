@@ -1,7 +1,7 @@
 {
   "ammo_id": [
     {
-      "id": "/pa/units/land/assault_bot/assault_bot_ammo.json",
+      "id": "/pa/units/land/L_assault_bot/L_assault_bot_ammo.json",
       "layer": "WL_AnyLand"
     }
   ],

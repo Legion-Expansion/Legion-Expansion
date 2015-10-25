@@ -359,6 +359,7 @@ if (!legionExpansionLoaded) {
                         "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json": ["vehicle", 14], // flame tank
                         "/pa/units/land/L_land_scout/L_land_scout.json": ["vehicle", 15], // skitter
                         "/pa/units/land/L_mortar_tank/L_mortar_tank.json": ["vehicle", 16], // spinner
+                        "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv.json": ["vehicle", 17], //hover
 
                         "/pa/units/orbital/L_solar_array/L_solar_array.json": ["orbital", 1],
                             "/pa/units/orbital/L_orbital_laser/L_orbital_laser.json": ["orbital", 6],

@@ -25,9 +25,6 @@
     ],
     "model": [
         {
-            "animations": {
-                "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
-            },
             "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
             "layer": "WL_LandHorizontal",
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
@@ -64,7 +61,7 @@
                 {
                     "channel": "sight",
                     "layer": "surface_and_air",
-                    "radius": 1,
+                    "radius": 35,
                     "shape": "capsule"
                 }
             ]
@@ -98,10 +95,9 @@
     ],
     "tools": [
         {
-            "aim_bone": "bone_root",
-            "muzzle_bone": [
-                "bone_void"
-            ],
+            "aim_bone": "bone_void",
+            "record_index": 1,
+            "fire_event": "fired0",
             "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_tool_weapon.json"
         }
     ],
