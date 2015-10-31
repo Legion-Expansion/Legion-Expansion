@@ -94,9 +94,7 @@
     "model": {
         "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
         "animations": {
-            "build_start": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_start.papa",
-            "build_loop": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa",
-            "build_end": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_end.papa"
+            "build_loop": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa"
         },
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
         "skirt_decal": "/pa/effects/specs/skirt_02.json"
@@ -136,7 +134,8 @@
   ],
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_platform",
+      "muzzle_bone": "bone_platform",
       "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build_arm.json"
     }
   ],

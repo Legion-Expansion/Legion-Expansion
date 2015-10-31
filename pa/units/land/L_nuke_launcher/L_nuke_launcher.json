@@ -1,229 +1,221 @@
 {
-  "TEMP_texelinfo": 19.5004,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 240,
-  "audio": {
-    "loops": {
-      "build": {
-        "cue": "/SE/Construction/Factory_contruction_loop_nuke",
-        "flag": "build_target_changed",
-        "should_start_func": "has_build_target",
-        "should_stop_func": "no_build_target"
-      }
+    "TEMP_texelinfo": 19.5004,
+    "atrophy_cool_down": 15,
+    "atrophy_rate": 240,
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_nuke",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/structure/nuke"
+        }
     },
-    "selection_response": {
-      "cue": "/SE/Selection/structure/nuke"
-    }
-  },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 14400,
-  "buildable_projectiles": [
-    "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json"
-  ],
-  "command_caps": [
-    "ORDER_FactoryBuild",
-    "ORDER_Attack"
-  ],
-  "description": "!LOC(units:nuclear_missile_launcher_equipped_with_advanced_long_range_large_area_damage_nuclear_missile.message):Nuclear missile launcher- Equipped with advanced long range, large area damage, nuclear missile.",
-  "display_name": "Legion Glassmaker Nuclear Missile Launcher",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/factory"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Factory"
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/structure/nuke_launcher_fire",
-      "effect_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_launch.pfx"
-    }
-  },
-  "factory": {
-    "default_build_stance": "Continuous",
-    "initial_build_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json",
-    "spawn_points": [
-      "bone_missile01"
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 14400,
+    "buildable_projectiles": [
+        "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json"
     ],
-    "store_units": true
-  },
-  "fx_offsets": [
-    {
-      "bone": "socket_muzzle01",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    }
-  ],
-  "lamps": [
-    {
-      "bone": "bone_armBase",
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
-      "intensity": 2,
-      "offset": [
-        0.06,
-        1.06,
-        -0.01
-      ],
-      "radius": 2
+    "command_caps": [
+        "ORDER_FactoryBuild",
+        "ORDER_Attack"
+    ],
+    "description": "!LOC(units:nuclear_missile_launcher_equipped_with_advanced_long_range_large_area_damage_nuclear_missile.message):Nuclear missile launcher- Equipped with advanced long range, large area damage, nuclear missile.",
+    "display_name": "Legion Glassmaker Nuclear Missile Launcher",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/factory"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/nuke_launcher_fire",
+            "effect_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_launch.pfx"
+        }
     },
-    {
-      "bone": "bone_armElbow",
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
-      "intensity": 2,
-      "offset": [
-        -2.36,
-        0,
-        -1.78
-      ],
-      "radius": 4
+    "factory": {
+        "default_build_stance": "Continuous",
+        "initial_build_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json",
+        "spawn_points": [
+            "bone_missile01"
+        ],
+        "store_units": true
     },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 5,
-      "offset": [
-        2.8,
-        2.8,
-        5.6
-      ],
-      "radius": 3.5
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 5,
-      "offset": [
-        2.8,
-        -2.8,
-        5.6
-      ],
-      "radius": 3.5
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 5,
-      "offset": [
-        -2.8,
-        2.8,
-        5.6
-      ],
-      "radius": 3.5
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 5,
-      "offset": [
-        -2.8,
-        -2.8,
-        5.6
-      ],
-      "radius": 3.5
-    }
-  ],
-  "max_health": 1500,
-  "mesh_bounds": [
-    14,
-    14,
-    18
-  ],
-  "model": [
-    {
-      "animations": {
-        "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-        "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-        "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-        "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa",
-        "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-        "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json",
-      "filename": "/pa/units/land/nuke_launcher/nuke_launcher.papa",
-      "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_nuke.json"
-    },
-    {
-      "animations": {
-        "build_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildEnd.papa",
-        "build_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildLoop.papa",
-        "build_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_buildStart.papa",
-        "fire_end": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireEnd.papa",
-        "fire_loop": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireLoop.papa",
-        "fire_start": "/pa/units/land/nuke_launcher/nuke_launcher_anim_fireStart.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json",
-      "filename": "/pa/units/sea/nuke_launcher/nuke_launcher.papa",
-      "layer": "WL_WaterSurface"
-    }
-  ],
-  "recon": {
-    "observer": {
-      "items": [
+    "fx_offsets": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
+            "bone": "socket_muzzle01",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        }
+    ],
+    "lamps": [
+        {
+            "bone": "bone_armBase",
+            "color": [
+                0.1,
+                1,
+                0.1
+            ],
+            "intensity": 2,
+            "offset": [
+                0.06,
+                1.06,
+                -0.01
+            ],
+            "radius": 2
         },
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
+            "bone": "bone_armElbow",
+            "color": [
+                0.1,
+                1,
+                0.1
+            ],
+            "intensity": 2,
+            "offset": [
+                -2.36,
+                0,
+                -1.78
+            ],
+            "radius": 4
+        },
+        {
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "offset": [
+                2.8,
+                2.8,
+                5.6
+            ],
+            "radius": 3.5
+        },
+        {
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "offset": [
+                2.8,
+                -2.8,
+                5.6
+            ],
+            "radius": 3.5
+        },
+        {
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "offset": [
+                -2.8,
+                2.8,
+                5.6
+            ],
+            "radius": 3.5
+        },
+        {
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "offset": [
+                -2.8,
+                -2.8,
+                5.6
+            ],
+            "radius": 3.5
         }
-      ]
-    }
-  },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_tool_weapon.json"
+    ],
+    "max_health": 1500,
+    "mesh_bounds": [
+        14,
+        14,
+        18
+    ],
+    "model": [
+        {
+            "animations": {
+                "build_end": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_end.papa",
+                "build_loop": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_build.papa",
+                "build_start": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_start.papa"
+            },
+            "filename": "/pa/units/land/L_nuke_launcher/L_nuke_launcher.papa",
+            "layer": "WL_LandHorizontal",
+            "skirt_decal": "/pa/effects/specs/skirt_nuke.json"
+        },
+        {
+            "animations": {
+                "build_end": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_end.papa",
+                "build_loop": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_build.papa",
+                "build_start": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_start.papa"
+            },
+            "filename": "/pa/units/sea/L_nuke_launcher/L_nuke_launcher.papa",
+            "layer": "WL_WaterSurface"
+        }
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
     },
-    {
-      "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_build_arm.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Land",
-    "UNITTYPE_Structure",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_Nuke",
-    "UNITTYPE_Factory",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Important",
-    "UNITTYPE_Custom1"
-  ]
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_tool_weapon.json"
+        },
+        {
+            "aim_bone": "bone_root",
+            "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_build_arm.json"
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Nuke",
+        "UNITTYPE_Factory",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Important",
+        "UNITTYPE_Custom1"
+    ]
 }
