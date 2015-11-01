@@ -37,42 +37,42 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "armD01",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser01",
             "orientation": [
                 0,
                 0,
-                90
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "armD02",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser02",
             "orientation": [
                 0,
                 0,
-                90
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "armD03",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser3",
             "orientation": [
                 0,
                 0,
-                90
+                0
             ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "armD04",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser4",
             "orientation": [
                 0,
                 0,
-                90
+                0
             ]
         }
     ],

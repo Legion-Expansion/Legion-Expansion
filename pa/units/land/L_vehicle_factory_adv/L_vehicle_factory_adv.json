@@ -1,58 +1,98 @@
 {
-  "area_build_separation": 7,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 80,
-  "audio": {
-    "loops": {
-      "build": {
-        "cue": "/SE/Construction/Factory_contruction_loop_veh",
-        "flag": "build_target_changed",
-        "should_start_func": "has_build_target",
-        "should_stop_func": "no_build_target"
-      }
-    }
-  },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 4800,
-  "buildable_types": "Custom1 & ( Mobile & Tank & FactoryBuild )",
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_FactoryBuild",
-    "ORDER_Reclaim",
-    "ORDER_Repair",
-    "ORDER_Attack",
-    "ORDER_Assist",
-    "ORDER_Use"
-  ],
-  "description": "Advanced manufacturing- Builds Legion land vehicles.",
-  "display_name": "Legion Advanced Armour Foundry",
-  "events": {
-    "died": {
-      "effect_scale": 1.5
-    }
-  },
-  "factory_cooldown_time": 4,
+    "area_build_separation": 7,
+    "atrophy_cool_down": 15,
+    "atrophy_rate": 80,
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_veh",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 4800,
+    "buildable_types": "Custom1 & ( Mobile & Tank & FactoryBuild )",
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_FactoryBuild",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "description": "Advanced manufacturing- Builds Legion land vehicles.",
+    "display_name": "Legion Advanced Armour Foundry",
+    "events": {
+        "died": {
+            "effect_scale": 1.5
+        }
+    },
+    "factory_cooldown_time": 4,
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "muzzle01"
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser01",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "muzzle02"
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser02",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "muzzle03"
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser03",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
-            "bone": "muzzle04"
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser04",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser05",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser06",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         }
     ],
     "death": {
@@ -90,7 +130,7 @@
         65
     ],
     "TEMP_texelinfo": 65,
-  "max_health": 30000,
+    "max_health": 30000,
     "model": {
         "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
         "animations": {
@@ -99,55 +139,55 @@
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
         "skirt_decal": "/pa/effects/specs/skirt_02.json"
     },
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
+    "physics": {
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
         }
-      ]
-    }
-  },
-  "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
+    },
+    "rolloff_dirs": [
+        [
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0
+        ]
     ],
-    [
-      0,
-      -1,
-      0
-    ]
-  ],
-  "tools": [
-    {
-      "aim_bone": "bone_platform",
-      "muzzle_bone": "bone_platform",
-      "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build_arm.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Factory",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Land",
-    "UNITTYPE_Tank",
-    "UNITTYPE_Structure",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_Important",
-    "UNITTYPE_Custom1"
-  ],
-  "wait_to_rolloff_time": 0
+    "tools": [
+        {
+            "aim_bone": "bone_platform",
+            "muzzle_bone": "bone_platform",
+            "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build_arm.json"
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Land",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Important",
+        "UNITTYPE_Custom1"
+    ],
+    "wait_to_rolloff_time": 0
 }
