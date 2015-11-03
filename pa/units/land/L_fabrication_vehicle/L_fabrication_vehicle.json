@@ -60,16 +60,6 @@
     {
       "bone": "socket_muzzle",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
       "type": "build"
     }
   ],
@@ -115,6 +105,10 @@
         }
       ]
     }
+  },
+  "scrolling_uv": {
+    "scroll_rate": 0.5,
+    "uv_split": 0.875
   },
   "tools": [
     {

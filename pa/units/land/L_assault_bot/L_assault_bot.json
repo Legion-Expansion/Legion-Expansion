@@ -41,7 +41,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle"
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -52,9 +52,13 @@
     4
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/bipedal_mech_anim_tree.json",
+    "animations": {
+      "idle": "/pa/units/land/L_assault_bot/L_assault_bot_idle.papa",
+      "walk": "/pa/units/land/L_assault_bot/L_assault_bot_walk.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
     "filename": "/pa/units/land/L_assault_bot/L_assault_bot.papa",
-    "walk_speed": 20
+    "walk_speed": 3
   },
   "navigation": {
     "acceleration": 50,
