@@ -40,7 +40,7 @@ model.LegionCommander = function (index) {
     model.targetAIArmyIndex(index);
     model.targetAISlotIndex(0);
     model.addAI();
-    setTimeout(model.CheckLegionCommander, 2000, index);
+    setTimeout(model.CheckLegionCommander, 200, index);
 };
 model.CheckLegionCommander = function (index) {
     if (model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/tank_aeson/tank_aeson.json") {
