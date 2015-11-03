@@ -1,0 +1,184 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Flying Armored Teleporter",
+    "description": "idk",
+    "max_health": 2400,
+    "build_metal_cost": 7000,
+    "atrophy_rate": 200,
+    "atrophy_cool_down": 15,
+    "wreckage_health_frac": 0,
+    "energy_efficiency_requirement": 1,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Air",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack"
+    ],
+  "guard_layer": "WL_Anysurface",
+    "navigation": {
+        "acceleration": 10,
+        "aggressive_behavior": "circle",
+        "aggressive_distance": 50,
+        "bank_factor": 1,
+        "brake": 10,
+        "hover_time": -1,
+        "move_speed": 25,
+        "turn_speed": 20,
+        "circle_max_time": 2,
+        "circle_min_time": 1,
+        "type": "air",
+        "vertical_speed": 10
+    },
+    "physics": {
+        "push_class": 2,
+        "radius": 8
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa",
+        "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+    },
+    "teleporter": {
+        "energy_demand": 1000,
+        "type": "orbital",
+        "spawn_radius": 1
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired1",
+            "muzzle_bone": "rocket001"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired2",
+            "muzzle_bone": "rocket002"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired3",
+            "muzzle_bone": "rocket003"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired4",
+            "muzzle_bone": "rocket004"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired5",
+            "muzzle_bone": "rocket005"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired6",
+            "muzzle_bone": "rocket006"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired7",
+            "muzzle_bone": "rocket007"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired8",
+            "muzzle_bone": "rocket008"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired9",
+            "muzzle_bone": "rocket009"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired10",
+            "muzzle_bone": "rocket010"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired11",
+            "muzzle_bone": "rocket011"
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired12",
+            "muzzle_bone": "rocket012"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/orbital"
+        },
+        "enabled": {
+            "audio_cue": "/SE/Buildings/teleporter_enabled",
+            "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx event_horizon"
+        },
+        "disabled": {
+            "audio_cue": "/SE/Buildings/teleporter_disabled",
+            "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx event_horizon"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/orbital",
+            "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx",
+            "effect_scale": 1
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
+        }
+    },
+    "selection_icon": {
+        "diameter": 40,
+        "vertical_offset": 0
+    },
+    "mesh_bounds": [
+        35,
+        40,
+        15
+    ],
+    "TEMP_texelinfo": 6
+}

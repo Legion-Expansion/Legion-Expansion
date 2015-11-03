@@ -381,6 +381,7 @@ if (!legionExpansionLoaded) {
                             "/pa/units/air/L_bomber/L_bomber.json": ["air", 14],
                             "/pa/units/air/L_air_scout/L_air_scout.json": ["air", 15],
                             "/pa/units/air/L_transport/L_transport.json": ["air", 16],
+                              "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json": ["air", 17],
 
                             "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.json": ["sea", 6],
                             "/pa/units/sea/L_battleship/L_battleship.json": ["sea", 7],

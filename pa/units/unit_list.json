@@ -23,6 +23,7 @@
     "/pa/units/air/L_gunship/L_gunship.json",
     "/pa/units/air/transport/transport.json",
     "/pa/units/air/L_transport/L_transport.json",
+    "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
     "/pa/units/commanders/avatar/avatar.json",
     "/pa/units/commanders/base_commander/base_commander.json",
     "/pa/units/commanders/imperial_able/imperial_able.json",
