@@ -68,8 +68,12 @@
         }
     },
     "model": {
+        "animations": {
+			"fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
+            "idle": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_idle.papa"
+        },
         "filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa",
-        "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+        "animtree": "/pa/anim/anim_trees/L_flying_teleporter_anim_tree.json"
     },
     "teleporter": {
         "energy_demand": 1000,
@@ -78,76 +82,18 @@
     },
     "tools": [
         {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
+            "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "fire_event": "fired0",
+			"projectiles_per_fire": 6,
+            "muzzle_bone": ["rocket001","rocket002","rocket003","rocket004","rocket005","rocket006"]
+        },
+        {
+            "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
             "aim_bone": "bone_root",
             "fire_event": "fired1",
-            "muzzle_bone": "rocket001"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired2",
-            "muzzle_bone": "rocket002"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired3",
-            "muzzle_bone": "rocket003"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired4",
-            "muzzle_bone": "rocket004"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired5",
-            "muzzle_bone": "rocket005"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired6",
-            "muzzle_bone": "rocket006"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired7",
-            "muzzle_bone": "rocket007"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired8",
-            "muzzle_bone": "rocket008"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired9",
-            "muzzle_bone": "rocket009"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired10",
-            "muzzle_bone": "rocket010"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired11",
-            "muzzle_bone": "rocket011"
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_tele/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired12",
-            "muzzle_bone": "rocket012"
+			"projectiles_per_fire": 6,
+            "muzzle_bone": ["rocket007","rocket008","rocket009","rocket010","rocket011","rocket012"]
         }
     ],
     "events": {
@@ -180,5 +126,5 @@
         40,
         15
     ],
-    "TEMP_texelinfo": 6
+    "TEMP_texelinfo": 32.6108
 }
