@@ -30,7 +30,7 @@
         "ORDER_Patrol",
         "ORDER_Attack"
     ],
-  "guard_layer": "WL_Anysurface",
+    "guard_layer": "WL_Anysurface",
     "navigation": {
         "acceleration": 10,
         "aggressive_behavior": "circle",
@@ -69,7 +69,7 @@
     },
     "model": {
         "animations": {
-			"fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
+            "fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
             "idle": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_idle.papa"
         },
         "filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa",
@@ -85,15 +85,121 @@
             "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
             "aim_bone": "bone_root",
             "fire_event": "fired0",
-			"projectiles_per_fire": 6,
-            "muzzle_bone": ["rocket001","rocket002","rocket003","rocket004","rocket005","rocket006"]
+            "projectiles_per_fire": 6,
+            "muzzle_bone": [
+                "rocket001",
+                "rocket002",
+                "rocket003",
+                "rocket004",
+                "rocket005",
+                "rocket006"
+            ]
         },
         {
             "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
             "aim_bone": "bone_root",
             "fire_event": "fired1",
-			"projectiles_per_fire": 6,
-            "muzzle_bone": ["rocket007","rocket008","rocket009","rocket010","rocket011","rocket012"]
+            "projectiles_per_fire": 6,
+            "muzzle_bone": [
+                "rocket007",
+                "rocket008",
+                "rocket009",
+                "rocket010",
+                "rocket011",
+                "rocket012"
+            ]
+        }
+    ],
+    "fx_offsets": [
+        {
+            "bone": "thrust_leftWing",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "bone": "thrust_rightWing",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "bone": "thrust_back01",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "bone": "thrust_back02",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "bone": "thrust_back03",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "bone": "thrust_back04",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "type": "moving",
+            "orientation": [
+                0,
+                180,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/L_flying_teleporter/dust.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "enabled",
+            "filename": "/pa/units/air/L_flying_teleporter/event_horizon.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
         }
     ],
     "events": {
