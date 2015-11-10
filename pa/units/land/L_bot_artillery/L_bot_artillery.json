@@ -54,12 +54,12 @@
   "model": {
     "animations": {
       "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
-      "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
-      "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
+      "idle": "/pa/units/land/L_bot_artillery/L_artillery_bot_idle.papa",
+      "walk": "/pa/units/land/L_bot_artillery/L_artillery_bot_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_artillery/L_bot_artillery.papa",
-    "walk_speed": 3.5
+    "filename": "/pa/units/land/L_bot_artillery/L_artillery_bot.papa",
+    "walk_speed": 3
   },
   "navigation": {
     "acceleration": 120,
@@ -92,17 +92,17 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_recoil01",
+      "aim_bone": "bone_pitch01",
       "muzzle_bone": "socket_muzzle01",
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_recoil02",
+      "aim_bone": "bone_pitch02",
       "muzzle_bone": "socket_muzzle02",
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_recoil03",
+      "aim_bone": "bone_pitch03",
       "muzzle_bone": "socket_muzzle03",
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
     }
@@ -116,7 +116,7 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Artillery",
     "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
+    "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_CannonBuildable",
     "UNITTYPE_Custom1"
