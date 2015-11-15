@@ -1,181 +1,197 @@
 {
-  "TEMP_texelinfo": 5.32966,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        7.4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/sniper_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
+    "TEMP_texelinfo": 5.32966,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                7.4
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
     },
-    "selection_response": {
-      "cue": "/SE/Selection/bot/sniper"
-    }
-  },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 1200,
-  "description": "!LOC(units:sniper_long_range_advanced_anti_land_and_anti_ship_bot.message):Sniper- Long range advanced anti-land, and anti-ship bot.",
-  "display_name": "Legion Sniper",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/sniper_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/sniper"
+        }
     },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1.5
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 1200,
+    "description": "!LOC(units:sniper_long_range_advanced_anti_land_and_anti_ship_bot.message):Sniper- Long range advanced anti-land, and anti-ship bot.",
+    "display_name": "Legion Sniper",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 1.5
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/bot/sniper_fire",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+            "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_muzzle02"
+        }
     },
-    "fired0": {
-      "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
-    },
-    "fired1": {
-      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
-      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_muzzle02"
-    }
-  },
-  "guard_layer": "WL_AnySurface",
-  "headlights": [
-    {
-      "bone": "bone_head",
-      "color": [
-        0.75,
-        1,
-        1
-      ],
-      "far_distance": 20,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1.4,
-      "near_distance": 1,
-      "near_height": 1.5,
-      "near_width": 1.5,
-      "offset": [
-        0,
-        -0.7,
-        0
-      ],
-      "orientation": [
-        0,
-        35,
-        0
-      ]
-    }
-  ],
-  "lamps": [
-    {
-      "bone": "bone_head",
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        0,
-        -0.6,
-        0
-      ],
-      "radius": 1
-    },
-    {
-      "bone": "bone_weapon",
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        2,
-        -0.9,
-        0.625
-      ],
-      "radius": 1.5
-    }
-  ],
-  "max_health": 200,
-  "mesh_bounds": [
-    6.5,
-    7,
-    7.6
-  ],
-  "model": {
-    "animations": {
-      "aimDown": "/pa/units/land/bot_sniper/bot_sniper_anim_aimDown.papa",
-      "aimUp": "/pa/units/land/bot_sniper/bot_sniper_anim_aimUp.papa",
-      "death": "/pa/units/land/bot_sniper/bot_sniper_anim_death.papa",
-      "idle": "/pa/units/land/bot_sniper/bot_sniper_anim_idle.papa",
-      "walk": "/pa/units/land/bot_sniper/bot_sniper_anim_walk.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/bot_sniper_anim_tree.json",
-    "filename": "/pa/units/land/bot_sniper/bot_sniper.papa",
-    "walk_speed": 12
-  },
-  "navigation": {
-    "acceleration": 120,
-    "brake": 120,
-    "group_preference": "back",
-    "move_speed": 12,
-    "turn_speed": 720,
-    "type": "land-small"
-  },
-  "nearby_target_tick_update_interval": 15,
-  "physics": {
-    "push_class": 2,
-    "radius": 3.5
-  },
-  "recon": {
-    "observer": {
-      "items": [
+    "guard_layer": "WL_AnySurface",
+    "headlights": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 180,
-          "shape": "capsule"
+            "bone": "bone_head",
+            "color": [
+                0.75,
+                1,
+                1
+            ],
+            "far_distance": 20,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 1.4,
+            "near_distance": 1,
+            "near_height": 1.5,
+            "near_width": 1.5,
+            "offset": [
+                0,
+                -0.7,
+                0
+            ],
+            "orientation": [
+                0,
+                35,
+                0
+            ]
+        }
+    ],
+    "lamps": [
+        {
+            "bone": "bone_head",
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 2,
+            "offset": [
+                0,
+                -0.6,
+                0
+            ],
+            "radius": 1
         },
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 180,
-          "shape": "capsule"
+            "bone": "bone_weapon",
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 2,
+            "offset": [
+                2,
+                -0.9,
+                0.625
+            ],
+            "radius": 1.5
         }
-      ]
-    }
-  },
-  "tools": [
-    {
-      "aim_bone": "bone_turret",
-      "fire_event": "fired0",
-      "muzzle_bone": "socket_muzzle01",
-      "record_index": 0,
-      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_tool_weapon.json"
-    }
-  ],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ]
+    ],
+    "max_health": 200,
+    "mesh_bounds": [
+        6.5,
+        7,
+        7.6
+    ],
+    "model": {
+        "animations": {},
+        "animtree": "/pa/anim/anim_trees/L_bot_artillery_adv_anim_tree.json",
+        "filename": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.papa",
+        "walk_speed": 12
+    },
+    "navigation": {
+        "acceleration": 120,
+        "brake": 120,
+        "group_preference": "back",
+        "move_speed": 8,
+        "turn_speed": 50,
+        "type": "land-small"
+    },
+    "nearby_target_tick_update_interval": 15,
+    "physics": {
+        "push_class": 2,
+        "radius": 3.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 180,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 180,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_turret",
+            "fire_event": "fired0",
+            "muzzle_bone": "socket_muzzleMain",
+            "record_index": 0,
+            "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_tool_weapon.json"
+        },
+        {
+            "aim_bone": "bone_recoilRight01",
+            "fire_event": "fired1",
+            "muzzle_bone": [
+                "socket_muzzleRight01",
+                "socket_muzzleRight02"
+            ],
+            "projectiles_per_fire": 2,
+            "record_index": 1,
+            "spec_id": "/pa/units/land/L_bot_artillery_adv/light_weapon.json"
+        },
+        {
+            "aim_bone": "bone_recoilLeft01",
+            "fire_event": "fired2",
+            "muzzle_bone": [
+                "socket_muzzleLeft01",
+                "socket_muzzleLeft02"
+            ],
+            "projectiles_per_fire": 2,
+            "record_index": 2,
+            "spec_id": "/pa/units/land/L_bot_artillery_adv/light_weapon.json"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom1"
+    ]
 }

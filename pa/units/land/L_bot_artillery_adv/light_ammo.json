@@ -1,0 +1,1 @@
+{"base_spec":"/pa/ammo/base_bullet/base_bullet.json","fx_trail":{"filename":"/pa/units/air/gunship/gunship_ammo_trail.pfx"},"flight_type":"Direct","physics":{"type":"Projectile","radius":1,"ignore_gravity":true,"add_to_spatial_db":false,"allow_underground":true},"damage":20,"splash_damage":0,"splash_radius":0,"initial_velocity":150.0,"max_velocity":150.0,"lifetime":2}
