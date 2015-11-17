@@ -25,14 +25,19 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01b"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02b"
     },
     "fired2": {
+      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+      "effect_scale": 0.5,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03b"
+    },
+    "fired3": {
       "audio_cue": "/SE/Weapons/sea/torpedo_fire",
       "effect_scale": 5.0,
       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
@@ -46,8 +51,8 @@
     8
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/frigate_anim_tree.json",
-    "filename": "/pa/units/sea/frigate/frigate.papa"
+    "animtree": "/pa/anim/anim_trees/L_frigate_anim_tree.json",
+    "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -84,28 +89,39 @@
   "tools": [
     {
       "aim_bone": "bone_pitch01",
-      "fire_event": "fired0",
+      "fire_event": "fired2",
       "muzzle_bone": [
-        "socket_muzzle01"
+        "socket_muzzle01a",
+        "socket_muzzle01b"
       ],
       "record_index": 0,
-      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_shell.json"
+      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
     },
     {
       "aim_bone": "bone_pitch02",
-      "fire_event": "fired1",
+      "fire_event": "fired2",
       "muzzle_bone": [
-        "socket_rightMuzzle02",
-        "socket_leftMuzzle02"
+        "socket_muzzle02a",
+        "socket_muzzle02b"
       ],
       "record_index": 1,
-      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_aa.json"
+      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+    },
+    {
+      "aim_bone": "bone_pitch03",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "socket_muzzle03a",
+        "socket_muzzle03b"
+      ],
+      "record_index": 2,
+      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
     },
     {
       "aim_bone": "bone_root",
-      "fire_event": "fired2",
+      "fire_event": "fired3",
       "muzzle_bone": "bone_root",
-      "record_index": 2,
+      "record_index": 3,
       "show_range": false,
       "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json"
     }

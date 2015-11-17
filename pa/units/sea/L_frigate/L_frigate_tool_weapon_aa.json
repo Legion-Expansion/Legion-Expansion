@@ -1,0 +1,19 @@
+{
+    "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+    "ammo_id": "/pa/units/sea/L_frigate/L_frigate_ammo_aa.json",
+    "rate_of_fire": 5,
+    "max_range": 170,
+    "yaw_rate": 720,
+    "pitch_rate": 720,
+    "yaw_range": 180,
+    "pitch_range": 180,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_Air"
+    ],
+    "target_priorities": [
+        "Air & Bomber",
+        "Air & Gunship",
+        "Air & Mobile"
+    ]
+}
