@@ -1,0 +1,99 @@
+{
+    "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
+    "display_name": "Aeson Commander",
+    "buildable_types": "CmdBuild & Custom1",
+    "description": "Tank Aeson Commander ",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                15.6
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+    },
+    "scrolling_uv": {
+        "scroll_rate": -0.21,
+        "uv_split": 0.9
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "orientation": [
+                0,
+                45,
+                0
+            ],
+            "near_width": 5,
+            "near_height": 5,
+            "near_distance": 3,
+            "far_distance": 30,
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 6,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "radius": 2,
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 5,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.4,
+                -4.06,
+                -1.1
+            ],
+            "radius": 4,
+            "color": [
+                0.4,
+                1,
+                0.01
+            ],
+            "intensity": 2,
+            "bone": "bone_leftShoulder"
+        }
+    ],
+    "mesh_bounds": [
+        11.1,
+        9.8,
+        15.4
+    ],
+    "catalog_object_name": "TankAeson",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_tank_aeson.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_tank_aeson_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_tank_aeson.png"
+        }
+    }
+}
