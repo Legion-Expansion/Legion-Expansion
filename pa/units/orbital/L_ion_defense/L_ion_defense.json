@@ -64,7 +64,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "ring03",
       "muzzle_bone": [
         "socket_muzzle"
       ],

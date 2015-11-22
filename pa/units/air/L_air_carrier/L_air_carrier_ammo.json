@@ -1,0 +1,68 @@
+{
+    "ammo_type": "AMMO_Projectile",
+    "flight_type": "Staged",
+    "spawn_layers": "WL_Air",
+    "damage": 0,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "cruise_height": 80,
+    "full_damage_splash_radius": 0,
+    "initial_velocity": 110,
+    "max_velocity": 110,
+    "turn_rate": 720,
+    "lifetime": 5,
+    "model": {
+        "filename": "/pa/units/sea/drone_carrier/drone/drone.papa"
+    },
+    "fx_trail": {
+        "filename": "/pa/units/sea/drone_carrier/carrier/carrier_ammo_trail.pfx",
+        "offset": [
+            0,
+            0.727,
+            0.42
+        ]
+    },
+    "spawn_unit_on_death": "/pa/units/air/L_air_carrier/L_air_drone/drone.json",
+    "spawn_unit_on_death_with_velocity": true,
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 5,
+        "ignore_gravity": true,
+        "allow_underground": true
+    },
+    "recon": {
+        "observable": {
+            "ignore_radar": true
+        }
+    },
+    "stages": [
+        {
+            "ignores_gravity": true,
+            "ignores_LOS": true,
+            "stage_duration": 500,
+            "stage_turn_rate": 0,
+            "rotates_to_velocity": true
+        },
+        {
+            "ignores_gravity": true,
+            "apply_thrust": true,
+            "ignores_LOS": true,
+            "stage_turn_rate": 270,
+            "stage_change_height": 25,
+            "stage_change_range": 50,
+            "rotates_to_velocity": true
+        },
+        {
+            "die_here": true
+        }
+    ],
+    "armor_damage_map": {
+        "AT_Vehicle": 0,
+        "AT_Bot": 0,
+        "AT_Naval": 0,
+        "AT_Orbital": 0,
+        "AT_Commander": 0,
+        "AT_Hover": 0,
+        "AT_Structure": 0
+    }
+}
