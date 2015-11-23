@@ -43,22 +43,6 @@ if os.path.isdir(OLD_BACKUPS_PATH):
   
 # server mod
 
-def serverModFilter(directory,ignore):
-
-  if directory == "./ui/main":
-    ignore = ['atlas']
-    print(directory, "skipping", ignore)
-    return ignore
-
-  if directory == "./ui/mods/com.pa.legion-expansion":
-    ignore = ['icon_atlas.js']
-    print(directory, "skipping", ignore)
-    return ignore
-
-  print(directory)
-  
-  return []
-
 print(SERVER_MOD_PATH)
 
 if os.path.isdir(OLD_SERVER_MOD_PATH):
@@ -72,21 +56,9 @@ os.mkdir(SERVER_MOD_PATH)
 shutil.copy("./modinfo.json",SERVER_MOD_PATH)
 
 shutil.copytree( "./pa", os.path.join(SERVER_MOD_PATH, "pa"))
-shutil.copytree( "./ui", os.path.join(SERVER_MOD_PATH, "ui"),ignore=serverModFilter)
+shutil.copytree( "./ui", os.path.join(SERVER_MOD_PATH, "ui"))
 
 # client mod
-
-def clientModFilter(directory,ignore):
-
-  if directory == "./ui/main":
-    ignore=list(ignore)
-    ignore.remove("atlas")
-    print(directory, "skipping", ignore)
-    return ignore
-    
-  print(directory)
-  
-  return []
 
 print(CLIENT_MOD_PATH)
 
@@ -95,11 +67,5 @@ if os.path.isdir(OLD_CLIENT_MOD_PATH):
 
 if os.path.isdir(CLIENT_MOD_PATH):
   shutil.move(CLIENT_MOD_PATH,BACKUPS_NOW_PATH)
-
-os.mkdir(CLIENT_MOD_PATH)
-
-shutil.copy("./client/modinfo.json",CLIENT_MOD_PATH)
-
-shutil.copytree( "./ui", os.path.join(CLIENT_MOD_PATH, "ui"),ignore=clientModFilter)
 
 print("\nREFRESH PAMM and RESTART PA\n")

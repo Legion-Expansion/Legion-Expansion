@@ -10,12 +10,14 @@ if ( ! legionExpansionLoaded )
     
         var buildVersion = decode( sessionStorage.build_version );
     
-        var patchName = 'legionExpansion icon_atlas.js';
+        var patchName = 'legionExpansion live_game.js';
     
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
                     
-        model.strategicIcons( _.union( model.strategicIcons(), 
-        [
+
+        if ( ! atlasMessage ) return
+
+        atlasMessage.message('icon_atlas', 'request_icons', [
             'L_air_defense_adv',
             'L_air_defense',
             'L_air_factory_adv',
@@ -101,7 +103,7 @@ if ( ! legionExpansionLoaded )
             'L_unit_cannon',
             'L_vehicle_factory_adv',
             'L_vehicle_factory'
-        ]));    
+        ]);
     }
     
     try

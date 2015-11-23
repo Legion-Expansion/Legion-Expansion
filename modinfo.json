@@ -11,7 +11,8 @@
   "context": "server", 
   "date": "2015/08/05", 
   "dependencies": [
-    "com.pa.legion-expansion.client"
+    "com.wondible.pa.icon_extensions",
+    "com.wondible.pa.icon_reloader"
   ], 
   "description": "Super secret something something", 
   "display_name": "Legion Expansion", 
@@ -20,11 +21,13 @@
   "icon": "", 
   "identifier": "com.pa.legion-expansion.server", 
   "scenes": {
+    "live_game": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
+    ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
   }, 
   "signature": "not yet implemented", 
-  "version": "0.5",
-  "dependencies":["com.pa.legion-expansion.client"]
+  "version": "0.5"
 }
