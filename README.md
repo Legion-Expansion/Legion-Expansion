@@ -13,7 +13,7 @@ Only server mod files that will be uploaded to the server belong in the pa and u
 
 Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
-Update papaths.py with your PA_DATA_PATH and PA_MEDIA_PATH then add papaths.py to $GIT_DIR/info/exclude so you don't commit your changes.
+Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
 
 Lastest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
