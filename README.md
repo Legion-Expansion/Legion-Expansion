@@ -43,7 +43,7 @@ When working with legion units please:
 - create sea versions when needed in pa/units/sea/
 - update pa/units/unit_list.json
 - update ui/main/shared/js/builds.js
-- update ui/mods/icon_atlas.js
+- update ui/mods/live_game.js
 - add a build bar image 
 - add a strategic icon
 
@@ -59,7 +59,7 @@ If you rename a unit directory:
 - update the google doc
 - reanme in pa/units/unit_list.json
 - reanme in ui/main/shared/js/builds.js
-- reanme in ui/mods/icon_atlas.js
+- reanme in ui/mods/live_game.js
 - rename the build bar image
 - rename the strategic icon
 
@@ -67,15 +67,12 @@ If you rename a unit directory:
 
 Ideally these resemble existing strategic icons for similar units.
 
-Add to ui/main/game/live_game/img/build_bar/units/:
+Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 - filename format: icon_si_L_unit.png
 - 52px x 52px
 - #FFFF00 mask
 - PNG32
-
-A client mod is still currently required for strategic icons.
-
 
 ### Build Bar Images
 
@@ -139,13 +136,3 @@ Manual install instructions...
 
 - copy entire folder to server-mods
 - delete art
-- delete client
-- if you want quicker uploads / downloads then:
- - delete ui/main/atlas
- - delete ui/mods/com.pa.legion-expansion/icon_atlas.js
-
-### Client Mod
-
-- copy entire folder to mods
-- delete art
-- replace modinfo.json with client/modinfo.json and delete client
