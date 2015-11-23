@@ -11,11 +11,7 @@ if (!legionExpansionLoaded) {
 
             if (_.size(match) < 2) return FALLBACK_ICON;
 
-            if (decode(localStorage.getItem('legionExpansionSelected'))) {
-                return 'coui:/' + match[1] + '.png';
-            } else {
-                return 'coui:/' + match[1] + '_icon_buildbar.png';
-            }
+            return 'coui:/' + match[1] + '_icon_buildbar.png';
         };
 
         var iconForUnit = function (unit) {

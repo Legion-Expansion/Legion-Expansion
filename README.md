@@ -69,7 +69,7 @@ Ideally these resemble existing strategic icons for similar units.
 
 Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
-- filename format: icon_si_L_unit.png
+- filename format: `icon_si_L_unit.png`
 - 52px x 52px
 - #FFFF00 mask
 - PNG32
@@ -78,9 +78,9 @@ Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 Ideally these should be the same blue tint as existing images to avoid UI clutter.
 
-Add to ui/main/game/live_game/img/build_bar/units/:
+Add to the same path as the unit's json file:
 
-- filename format: L_unit.png
+- filename format: `L_unit_icon_buildbar.png`
 - 60px x 60px
 - PNG32
 
