@@ -24,6 +24,9 @@
     "live_game": [
       "coui://ui/mods/com.pa.legion-expansion/live_game.js"
     ],
+    "live_game_build_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
+    ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
