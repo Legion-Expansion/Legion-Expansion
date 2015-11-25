@@ -12,7 +12,8 @@
   "date": "2015/08/05", 
   "dependencies": [
     "com.wondible.pa.icon_extensions",
-    "com.wondible.pa.icon_reloader"
+    "com.wondible.pa.icon_reloader",
+    "com.wondible.pa.xenophobia"
   ], 
   "description": "Super secret something something", 
   "display_name": "Legion Expansion", 

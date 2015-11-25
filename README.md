@@ -27,11 +27,7 @@ Lastest Python 3.x is required. Please do not use Python 2.x as whitespace forma
 
 ## Units
 
-All vanilla units with buildable_types have been cloned to exclude legion units with:
-
-- "buildable_types": "( existing_buildable_types ) - Custom1"
-
-These units need to be checked when a new build is released by Uber.
+Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`. This is provided by the Xenophobia mod.
 
 When working with legion units please:
 
