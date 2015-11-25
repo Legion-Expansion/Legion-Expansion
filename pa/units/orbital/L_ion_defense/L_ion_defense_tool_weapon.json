@@ -12,6 +12,6 @@
   "target_priorities": [
     "Orbital"
   ],
-  "yaw_range": 180,
+  "yaw_range": 360,
   "yaw_rate": 60
 }
