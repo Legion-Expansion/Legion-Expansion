@@ -364,7 +364,7 @@ if (!legionExpansionLoaded) {
                 "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.json": ["L_air", 12],
                 "/pa/units/air/L_fighter/L_fighter.json": ["L_air", 13],
                 "/pa/units/air/L_bomber/L_bomber.json": ["L_air", 14],
-                "/pa/units/air/L_air_scout/L_air_scout.json": ["L_air", 15],
+                "/pa/units/air/L_air_scout_adv/L_air_scout_adv.json": ["L_air", 10],
                 "/pa/units/air/L_transport/L_transport.json": ["L_air", 16],
                 "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json": ["L_air", 17],
 
