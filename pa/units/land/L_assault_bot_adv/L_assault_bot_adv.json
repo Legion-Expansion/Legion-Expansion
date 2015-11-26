@@ -92,6 +92,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 14
+  },
   "tools": [
     {
       "aim_bone": "bone_turret",

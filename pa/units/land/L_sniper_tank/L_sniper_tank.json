@@ -103,6 +103,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 14
+  },
   "tools": [
     {
       "aim_bone": "socket_aim",

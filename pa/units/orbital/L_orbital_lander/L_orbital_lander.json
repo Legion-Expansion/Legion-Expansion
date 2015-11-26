@@ -185,6 +185,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 39
+  },
   "system_velocity_multiplier": 10.0,
   "transporter": {
     "capacity": 1,

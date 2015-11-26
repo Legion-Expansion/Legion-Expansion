@@ -145,6 +145,9 @@
       0
     ]
   ],
+  "selection_icon": {
+    "diameter": 63
+  },
   "spawn_layers": "WL_DeepWater",
   "tools": [
     {

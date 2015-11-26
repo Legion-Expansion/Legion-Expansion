@@ -116,6 +116,9 @@
     }
   },
   "spawn_layers": "WL_LandHorizontal",
+    "selection_icon": {
+        "diameter": 10
+    },
     "tools": [
         {
             "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_build_arm.json",

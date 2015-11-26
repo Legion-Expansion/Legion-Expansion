@@ -84,6 +84,9 @@
   "replaceable_units": [
     "/pa/units/land/L_mex/L_mex.json"
   ],
+  "selection_icon": {
+    "diameter": 28
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "strategic_icon_priority": 5,
   "unit_types": [

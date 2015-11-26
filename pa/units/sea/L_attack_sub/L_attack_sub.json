@@ -92,6 +92,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 24
+  },
   "spawn_layers": "WL_Underwater",
   "tools": [
     {

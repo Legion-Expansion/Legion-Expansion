@@ -61,6 +61,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 9
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Structure",

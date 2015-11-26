@@ -107,6 +107,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 9
+  },
   "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {

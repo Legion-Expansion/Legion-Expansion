@@ -129,6 +129,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 24
+  },
   "transporter": {
     "capacity": 1,
     "transportable_attach_offset": "head",

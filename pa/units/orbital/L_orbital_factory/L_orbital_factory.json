@@ -179,6 +179,9 @@
       0
     ]
   ],
+  "selection_icon": {
+    "diameter": 67
+  },
   "spawn_layers": "WL_Orbital",
   "tools": [
     {

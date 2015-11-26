@@ -197,6 +197,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 83
+  },
   "spawn_layers": "WL_Orbital",
   "storage": {
     "energy": 50000,

@@ -89,6 +89,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 8
+  },
   "tools": [
     {
       "aim_bone": "bone_rightArm",

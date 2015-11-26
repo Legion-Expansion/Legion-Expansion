@@ -531,6 +531,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 59
+  },
   "spawn_layers": "WL_LandHorizontal",
   "teleporter": {
     "energy_demand": 1000

@@ -84,6 +84,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 11
+  },
   "tools": [
     {
       "aim_bone": "bone_pitch",

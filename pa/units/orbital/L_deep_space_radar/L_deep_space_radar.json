@@ -125,6 +125,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 47
+  },
   "spawn_layers": "WL_AnySurface",
   "unit_types": [
     "UNITTYPE_Orbital",

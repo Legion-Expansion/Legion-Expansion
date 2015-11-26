@@ -113,6 +113,9 @@
       ]
     }
   },
+    "selection_icon": {
+        "diameter": 8
+    },
     "tools": [
         {
             "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_build_arm.json",

@@ -99,6 +99,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 10
+  },
   "transportable": {
     "size": 1
   },
