@@ -11,6 +11,7 @@
   "context": "server", 
   "date": "2015/08/05", 
   "dependencies": [
+    "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia"
@@ -22,8 +23,8 @@
   "icon": "", 
   "identifier": "com.pa.legion-expansion.server", 
   "scenes": {
-    "live_game": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
+    "global_mod_list": [
+      "coui://ui/mods/com.pa.legion-expansion/global.js"
     ],
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
