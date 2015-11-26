@@ -32,10 +32,41 @@
   "fx_offsets": [
     {
       "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+      "bone": "thrust01",
       "offset": [
         0,
-        4.35,
-        0.836
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+      "bone": "thrust02",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+      "bone": "thrust03",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+      "bone": "thrust04",
+      "offset": [
+        0,
+        0,
+        0
       ],
       "type": "moving_forward"
     }
@@ -48,13 +79,12 @@
     9.2,
     4
   ],
+   "selection_icon": {
+    "diameter": 15
+  },
   "model": {
-    "animations": {
-      "closed": "/pa/units/air/fighter_adv/fighter_adv_anim_closed.papa",
-      "deploy": "/pa/units/air/fighter_adv/fighter_adv_anim_deploy.papa"
-    },
     "animtree": "/pa/anim/anim_trees/fighter_adv_anim_tree.json",
-    "filename": "/pa/units/air/fighter_adv/fighter_adv.papa"
+    "filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
   },
   "navigation": {
     "acceleration": 80,
@@ -90,18 +120,22 @@
       ]
     }
   },
-  "selection_icon": {
-    "diameter": 15
-  },
   "system_velocity_multiplier": 15.0,
   "tools": [
     {
       "aim_bone": "bone_root",
       "muzzle_bone": [
-        "socket_leftMuzzle",
-        "socket_rightMuzzle"
+        "gun01",
+        "gun02",
+        "gun03",
+        "gun04",
+        "gun05",
+        "gun06",
+        "gun07",
+        "gun08"
       ],
-      "spec_id": "/pa/units/air/fighter_adv/fighter_adv_tool_weapon.json"
+	  "projectiles_per_fire": 8,
+      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
     }
   ],
   "unit_types": [
