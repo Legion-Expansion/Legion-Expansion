@@ -239,6 +239,9 @@
       0
     ]
   ],
+  "selection_icon": {
+    "diameter": 49
+  },
   "tools": [
     {
       "aim_bone": "bone_platform",

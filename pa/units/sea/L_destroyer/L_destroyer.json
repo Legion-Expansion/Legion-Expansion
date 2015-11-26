@@ -13,7 +13,7 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 600,
   "description": "!LOC(units:destroyer_basic_anti_land_and_anti_ship_guns.message):Destroyer- Basic anti-land and anti-ship guns.",
-  "display_name": "Legion Bowhead Destoryer",
+  "display_name": "Legion Bowhead Destroyer",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"
@@ -81,6 +81,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": 28
   },
   "spawn_layers": "WL_DeepWater",
   "tools": [

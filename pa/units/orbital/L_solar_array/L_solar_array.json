@@ -73,6 +73,10 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 34.0, 
+    "vertical_offset": -3.0
+  }, 
   "spawn_layers": "WL_Orbital",
   "unit_types": [
     "UNITTYPE_Mobile",

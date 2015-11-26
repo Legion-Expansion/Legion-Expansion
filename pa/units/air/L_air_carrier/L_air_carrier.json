@@ -147,6 +147,9 @@
             ]
         }
     },
+    "selection_icon": {
+        "diameter": 34
+    },
     "unit_types": [
         "UNITTYPE_Scout",
         "UNITTYPE_Mobile",

@@ -92,6 +92,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 20
+  },
   "tools": [
     {
       "aim_bone": "bone_top_pitch",

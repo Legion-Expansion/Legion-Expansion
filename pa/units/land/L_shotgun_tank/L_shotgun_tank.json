@@ -90,6 +90,9 @@
     "scroll_rate": 0.71,
     "uv_split": 0.875
   },
+  "selection_icon": {
+    "diameter": 13
+  },
   "tools": [
     {
       "aim_bone": "bone_turret",

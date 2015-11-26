@@ -128,6 +128,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 13
+  },
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {

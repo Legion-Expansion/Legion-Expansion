@@ -90,6 +90,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 18
+  },
   "tools": [
     {
       "aim_bone": "bone_pitch01",

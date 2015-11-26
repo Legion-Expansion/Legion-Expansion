@@ -90,6 +90,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 15
+  },
   "system_velocity_multiplier": 15.0,
   "tools": [
     {

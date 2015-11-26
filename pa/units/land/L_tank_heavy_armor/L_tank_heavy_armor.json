@@ -94,6 +94,9 @@
     "scroll_rate": 0.58,
     "uv_split": 0.855
   },
+  "selection_icon": {
+    "diameter": 14
+  },
   "tools": [
     {
       "aim_bone": "bone_root",

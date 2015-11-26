@@ -120,6 +120,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": 27
+  },
   "spawn_layers": "WL_Orbital",
   "system_velocity_multiplier": 15.0,
   "tools": [
