@@ -221,6 +221,16 @@
                 preferred_builds: [["L_vehicle", 9]], // sheller
             },
             {
+                spec_id: "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv.json",
+                si_fallback: ["tank_hover"],
+                preferred_builds: [["L_vehicle", 10]], //hover
+            },            
+            {
+                spec_id: "/pa/units/land/L_tank_swarm/L_tank_swarm.json",
+                si_fallback: ["tank_flak"],
+                preferred_builds: [["L_vehicle", 11]],
+            },
+            {
                 spec_id: "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json",
                 si_fallback: ["fabrication_vehicle"],
                 preferred_builds: [["L_vehicle", 12]],
@@ -244,11 +254,6 @@
                 spec_id: "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
                 si_fallback: ["tank_heavy_mortar"],
                 preferred_builds: [["L_vehicle", 16]], // spinner
-            },
-            {
-                spec_id: "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv.json",
-                si_fallback: ["tank_hover"],
-                preferred_builds: [["L_vehicle", 17]], //hover
             },
 
 
