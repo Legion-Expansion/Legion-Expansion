@@ -38,8 +38,7 @@ When working with legion units please:
 - check area builds ie area_build_separation
 - create sea versions when needed in pa/units/sea/
 - update pa/units/unit_list.json
-- update ui/main/shared/js/builds.js
-- update ui/mods/live_game.js
+- update ui/mods/com.pa.legion-expansion/global.js
 - add a build bar image 
 - add a strategic icon
 
@@ -54,8 +53,7 @@ If you rename a unit directory:
 
 - update the google doc
 - reanme in pa/units/unit_list.json
-- reanme in ui/main/shared/js/builds.js
-- reanme in ui/mods/live_game.js
+- rename in ui/mods/com.pa.legion-expansion/global.js
 - rename the build bar image
 - rename the strategic icon
 
