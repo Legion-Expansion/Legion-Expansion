@@ -1,0 +1,190 @@
+{
+	"base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+	"display_name": "Helios",
+	"description": "!LOC:Invasion Titan- Can link with a teleporter and send units directly to a planet's surface. Attacks everything.",
+	"max_health": 13000,
+	"build_metal_cost": 30000,
+	"atrophy_rate": 200.0,
+	"atrophy_cool_down": 15.0,
+	"spawn_layers": "WL_Orbital",
+	"gravwell_velocity_multiplier": 6.0,
+	"wreckage_health_frac": 0.0,
+	"energy_efficiency_requirement": 1.0,
+	"attachable": {
+		"offsets": {
+			"root": [0, 0, 0]
+		}
+	},
+	"unit_types": ["UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Orbital", "UNITTYPE_LaserPlatform", "UNITTYPE_Advanced", "UNITTYPE_Titan", "UNITTYPE_FabOrbBuild", "UNITTYPE_Important", "UNITTYPE_Custom1"],
+	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack"],
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "orbital",
+		"acceleration": 25,
+		"brake": 25,
+		"move_speed": 25,
+		"turn_speed": 90,
+		"hover_time": -1.0
+	},
+	"physics": {
+		"radius": 10,
+		"gravity_scalar": 0.001
+	},
+	"recon": {
+		"observable": {
+			"always_visible": true
+		},
+		"observer": {
+			"items": [{
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200
+			}, {
+				"layer": "orbital",
+				"channel": "sight",
+				"shape": "sphere",
+				"radius": 600
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200
+			}]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital.papa",
+		"animations": {
+			"idle": "/pa/units/orbital/titan_orbital/titan_orbital_anim_idle.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+	},
+	"teleporter": {
+		"energy_demand": 1000,
+		"type": "orbital",
+		"spawn_radius": 20
+	},
+	"tools": [{
+		"spec_id": "/pa/units/orbital/titan_orbital/titan_orbital_tool_weapon_orbital.json",
+		"aim_bone": "socket_muzzle02",
+		"fire_event": "fired",
+		"projectiles_per_fire": 1,
+		"muzzle_bone": ["socket_muzzle01", "socket_muzzle02", "socket_muzzle03", "socket_muzzle04"]
+	}, {
+		"spec_id": "/pa/units/orbital/titan_orbital/titan_orbital_tool_weapon_orbital.json",
+		"aim_bone": "socket_muzzle06",
+		"fire_event": "fired",
+		"projectiles_per_fire": 1,
+		"muzzle_bone": ["socket_muzzle05", "socket_muzzle06", "socket_muzzle07", "socket_muzzle08"]
+	}],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/orbital"
+		},
+		"enabled": {
+			"audio_cue": "/SE/Buildings/teleporter_enabled",
+			"effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx bone_root"
+		},
+		"disabled": {
+			"audio_cue": "/SE/Buildings/teleporter_disabled",
+			"effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx bone_root"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/orbital",
+			"effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx",
+			"effect_scale": 1.0
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
+		}
+	},
+	"audio": {
+		"loops": {
+			"enabled": {
+				"cue": "/SE/Buildings/helios_teleporter_loop",
+				"flag": "enable_changed",
+				"should_start_func": "is_enabled",
+				"should_stop_func": "is_disabled"
+			}
+		}
+	},
+	"fx_offsets": [{
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_rotator_top_idle.pfx",
+		"bone": "bone_rotatorTop"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_rotator_bottom_idle.pfx",
+		"bone": "bone_rotatorBottom"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle01"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle02"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle03"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle04"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle05"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle06"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle07"
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/orbital/titan_orbital/titan_orbital_muzzle_idle.pfx",
+		"bone": "socket_muzzle08"
+	}, {
+		"type": "enabled",
+		"filename": "/pa/units/orbital/titan_orbital/teleporter_event_horizon.pfx",
+		"bone": "bone_root",
+		"offset": [0, 0, 0],
+		"orientation": [0, 0, 0]
+	}],
+	"lamps": [{
+		"offset": [17.0, 17.0, 6.0],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_rotatorTop"
+	}, {
+		"offset": [-17.0, 17.0, 6.0],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_rotatorTop"
+	}, {
+		"offset": [17.0, -17.0, 6.0],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_rotatorTop"
+	}, {
+		"offset": [-17.0, -17.0, 6.0],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_rotatorTop"
+	}],
+	"selection_icon": {
+		"diameter": 122.0,
+		"vertical_offset": -10
+	},
+	"mesh_bounds": [85, 85, 20],
+	"TEMP_texelinfo": 32.0
+}

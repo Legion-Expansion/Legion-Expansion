@@ -1,0 +1,79 @@
+{
+	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"display_name": "Ragnarok",
+	"description": "!LOC:Doomsday Titan- Destroys the planet it's built on once finished.",
+	"max_health": 15000,
+	"build_metal_cost": 60000,
+	"atrophy_rate": 650,
+	"atrophy_cool_down": 15.0,
+	"has_death_effects": true,
+	"unit_types": ["UNITTYPE_Structure", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_SelfDestruct", "UNITTYPE_FabAdvBuild", "UNITTYPE_Important", "UNITTYPE_Custom1"],
+	"recon": {
+		"observable": {
+			"always_visible": true
+		},
+		"observer": {
+			"items": [{
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 110
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 110
+			}]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/land/titan_structure/titan_structure.papa",
+		"animations": {
+			"start": "/pa/units/land/titan_structure/titan_structure_anim_start.papa",
+			"loop": "/pa/units/land/titan_structure/titan_structure_anim_loop.papa",
+			"end": "/pa/units/land/titan_structure/titan_structure_anim_end.papa",
+			"death": "/pa/units/land/titan_structure/titan_structure_anim_death.papa",
+			"dead": "/pa/units/land/titan_structure/titan_structure_anim_dead.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/titan_structure_anim_tree.json",
+		"skirt_decal": "/pa/effects/specs/skirt_titan_structure.json"
+	},
+	"physics": {
+		"collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+	},
+	"tools": [{
+		"spec_id": "/pa/units/land/titan_structure/titan_structure_tool_weapon.json",
+		"aim_bone": "bone_root"
+	}],
+	"audio": {
+		"loops": {
+			"enabled": {
+				"cue": "/SE/Celestial/Ragnarock_charge_loop",
+				"flag": "weapon_current_ammo_changed",
+				"should_start_func": "is_charging",
+				"should_stop_func": "is_not_charging",
+				"interplanetary": true
+			}
+		}
+	},
+	"events": {
+		"fired": {
+			"audio_cue": ""
+		},
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/delta_v"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/delta_v",
+			"effect_spec": ""
+		}
+	},
+	"death": {
+		"decals": ["/pa/effects/specs/scorch_titan_01.json"]
+	},
+	"selection_icon": {
+		"diameter": 98.0
+	},
+	"mesh_bounds": [50.0454, 50.0306, 43],
+	"TEMP_texelinfo": 32.0
+}

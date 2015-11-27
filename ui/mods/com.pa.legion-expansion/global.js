@@ -481,32 +481,33 @@
                 spec_id: "/pa/units/land/L_unit/L_unit.json" ]],
                 si_fallback: ["unit"],
                 preferred_builds: [["L_utility", 14]], // metal storage spare
-            },
+            },*/
             {
-                spec_id: "/pa/units/air/titan_air/titan_air.json",
+                spec_id: "/pa/units/air/L_titan_air/titan_air.json",
                 si_fallback: ["titan_air"],
                 preferred_builds: [["L_factory", 2]],
             },
             {
-                spec_id: "/pa/units/land/titan_bot/titan_bot.json",
+                spec_id: "/pa/units/land/L_titan_bot/titan_bot.json",
                 si_fallback: ["titan_bot"],
                 preferred_builds: [["L_factory", 3]],
             },
             {
-                spec_id: "/pa/units/land/titan_vehicle/titan_vehicle.json",
+                spec_id: "/pa/units/land/L_titan_vehicle/titan_vehicle.json",
                 si_fallback: ["titan_vehicle"],
                 preferred_builds: [["L_factory", 4]],
             },
             {
-                spec_id: "/pa/units/orbital/titan_orbital/titan_orbital.json",
+                spec_id: "/pa/units/orbital/L_titan_orbital/titan_orbital.json",
                 si_fallback: ["titan_orbital"],
                 preferred_builds: [["L_orbital_structure", 6]],
             },
             {
-                spec_id: "/pa/units/land/titan_structure/titan_structure.json",
+                spec_id: "/pa/units/land/L_titan_structure/titan_structure.json",
                 si_fallback: ["titan_structure"],
                 preferred_builds: [["L_utility", 0]],
-            },
+            }
+            /*
             {
                 spec_id: "/pa/units/land/bot_tesla/bot_tesla.json",
                 si_fallback: ["bot_tesla"],
