@@ -114,6 +114,7 @@
     "/pa/units/land/bot_grenadier/bot_grenadier.json",
     "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
     "/pa/units/land/bot_sniper/bot_sniper.json",
+    "/pa/units/land/L_sniper_bot/L_sniper_bot.json",
     "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json",
     "/pa/units/land/bot_spider_adv/bot_spider_adv.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile.json",

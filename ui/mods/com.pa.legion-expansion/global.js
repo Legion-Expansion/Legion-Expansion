@@ -288,29 +288,29 @@
                 preferred_builds: [["L_bot", 12]],
             },
             {
-                spec_id: "/pa/units/land/L_assault_bot/L_assault_bot.json",
-                si_fallback: ["assault_bot"],
-                preferred_builds: [["L_bot", 15]], // dox
-            },
-            {
-                spec_id: "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
-                si_fallback: ["bot_grenadier"],
-                preferred_builds: [["L_bot", 11]], // grenadier
-            },
-            {
-                spec_id: "/pa/units/land/L_fabrication_bot_combat/L_fabrication_bot_combat.json",
-                si_fallback: ["fabrication_bot_combat"],
+                spec_id: "/pa/units/land/L_sniper_bot/L_sniper_bot.json",
+                si_fallback: ["bot_sniper"],
                 preferred_builds: [["L_bot", 13]],
             },
             {
                 spec_id: "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
                 si_fallback: ["bot_bomb"],
                 preferred_builds: [["L_bot", 14]], // boom
+            },            
+            {
+                spec_id: "/pa/units/land/L_assault_bot/L_assault_bot.json",
+                si_fallback: ["assault_bot"],
+                preferred_builds: [["L_bot", 15]], // dox
             },
             {
                 spec_id: "/pa/units/land/L_bot_aa/L_bot_aa.json",
                 si_fallback: ["aa_missile_vehicle"],
                 preferred_builds: [["L_bot", 16]], // aa
+            },           
+            {
+                spec_id: "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
+                si_fallback: ["bot_grenadier"],
+                preferred_builds: [["L_bot", 17]], // grenadier
             },
 
 
