@@ -1,0 +1,36 @@
+{
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "bind_pose"
+			},
+			"living": {
+				"type": "playback",
+				"anim_name": "idle"
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"type": "recoil",
+		"bone": "bone_push",
+		"recoil_dist": 4.0,
+		"restore_time": 3.0,
+		"unit_event": "fired0"
+	},
+{
+		"type": "fader",
+		"lerp_func": "not_being_built",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turret",
+			"rotation_axis": "z"
+		}
+	}]
+}

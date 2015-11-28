@@ -1,92 +1,98 @@
 {
-  "TEMP_texelinfo": 14.1009,
-  "area_build_separation": 18,
-  "atrophy_cool_down": 15.0,
-  "atrophy_rate": 30.0,
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 1000,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
-  "description": "!LOC(units:torpedo_launcher_advanced_anti_ship_defense.message):Torpedo Launcher- Advanced anti-ship defense.",
-  "display_name": "Legion Advanced Torpedo Launcher",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Sea",
-      "effect_scale": 0.75
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/sea/torpedo_fire"
-    }
-  },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 4000,
-  "mesh_bounds": [
-    15,
-    9,
-    5
-  ],
-  "model": {
-    "animations": {
-      "idle": "/pa/units/sea/torpedo_launcher/torpedo_launcher_anim_idle.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/torpedo_launcher_adv_anim_tree.json",
-    "filename": "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv.papa"
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 200,
-          "shape": "capsule"
-        },
-        {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 210,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 200,
-          "shape": "capsule"
-        },
-        {
-          "channel": "radar",
-          "layer": "underwater",
-          "radius": 210,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": 30
-  },
-  "spawn_layers": "WL_WaterSurface",
-  "tools": [
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": [
-        "socket_rightMuzzle",
-        "socket_centerMuzzle",
-        "socket_leftMuzzle"
-      ],
-      "spec_id": "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_tool_weapon.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Structure",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_Naval",
-    "UNITTYPE_Defense",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Custom1"
-  ]
+	"TEMP_texelinfo": 10.4007,
+	"area_build_separation": 18,
+	"atrophy_cool_down": 15.0,
+	"atrophy_rate": 10.0,
+	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+	"build_metal_cost": 800,
+	"command_caps": [
+		"ORDER_Attack"
+	],
+	"description": "!LOC(units:torpedo_launcher_basic_anti_ship_defense.message):Torpedo Launcher- Basic anti-ship defense.",
+	"display_name": "Legion Advanced Torpedo Launcher",
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea",
+			"effect_scale": 0.5
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/sea/torpedo_fire"
+		}
+	},
+	"guard_layer": "WL_WaterSurface",
+	"max_health": 2000,
+	"mesh_bounds": [
+		12,
+		6,
+		5
+	],
+	"model": {
+		"animations": {
+			"idle": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_idle.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/L_torpedo_launcher_adv_anim_tree.json",
+		"filename": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.papa"
+	},
+	"recon": {
+		"observer": {
+			"items": [{
+				"channel": "sight",
+				"layer": "surface_and_air",
+				"radius": 100,
+				"shape": "capsule"
+			}, {
+				"channel": "radar",
+				"layer": "surface_and_air",
+				"radius": 200,
+				"shape": "capsule"
+			}, {
+				"channel": "radar",
+				"layer": "underwater",
+				"radius": 200,
+				"shape": "capsule"
+			}, {
+				"channel": "sight",
+				"layer": "underwater",
+				"radius": 100,
+				"shape": "capsule"
+			}]
+		}
+	},
+	"selection_icon": {
+		"diameter": 17
+	},
+	"spawn_layers": "WL_WaterSurface",
+	"tools": [{
+		"aim_bone": "socket_aim",
+		"muzzle_bone": ["gun01", "gun02", "gun03"],
+		"projectiles_per_fire": 3,
+		"record_index": 0,
+		"fire_event": "fired0",
+		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon.json"
+	}, {
+		"aim_bone": "socket_aim",
+		"muzzle_bone": ["gun04", "gun05", "gun06"],
+		"projectiles_per_fire": 3,
+		"record_index": 1,
+		"fire_event": "fired1",
+		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon.json"
+	}, {
+		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon_underwater.json",
+		"aim_bone": "bone_turret",
+		"record_index": 2,
+		"fire_event": "fired2",
+		"muzzle_bone": ["socket_muzzle01", "socket_muzzle02", "socket_muzzle03"]
+	}],
+	"unit_types": [
+		"UNITTYPE_Structure",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Naval",
+		"UNITTYPE_Defense",
+		"UNITTYPE_FabAdvBuild",
+		"UNITTYPE_CombatFabAdvBuild",
+		"UNITTYPE_Custom1"
+	]
 }
