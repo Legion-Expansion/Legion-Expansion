@@ -5,6 +5,6 @@
 	"splash_radius": 0,
 	"collision_check": "target",
 	"collision_response": "impact",
-	"fx_beam_spec": "/pa/units/land/L_bot_sniper/beam_trail.pfx",
+	"fx_beam_spec": "/pa/units/land/L_sniper_bot/beam_trail.pfx",
 	"fx_collision_spec": "/pa/effects/specs/default_proj_explosion.pfx"
 }
