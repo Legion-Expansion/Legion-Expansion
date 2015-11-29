@@ -1,0 +1,19 @@
+{
+   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+   "ammo_id":"/pa/units/orbital/hammerhead/hammerhead_ammo.json",
+   "rate_of_fire":2.5,
+   "max_range":200,
+   "yaw_range":150,
+   "pitch_range":45,
+   "firing_arc_yaw":150,
+   "firing_arc_pitch":150,
+   "spread_fire":true,
+   "auto_attack":true,
+   "height_range":400,
+   "target_layers":[
+      "WL_Orbital"
+   ],
+   "target_priorities":[
+      "Orbital"
+   ]
+}

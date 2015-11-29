@@ -1,0 +1,146 @@
+{
+    "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+    "display_name": "Wraith",
+    "description": "Advanced orbital scout - has decent orbital and ground vision, equipped with radar stealth.",
+    "build_metal_cost": 410,
+    "max_health": 1600,
+    "gravwell_velocity_multiplier": 6,
+    "wreckage_health_frac": 0,
+    "consumption":{
+      "energy":1500
+    },
+    "spawn_layers": "WL_Orbital",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Mobile",
+		"UNITTYPE_Basic",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Orbital",
+        "UNITTYPE_Fighter",
+        "UNITTYPE_FactoryBuild",
+	    "UNITTYPE_Custom1"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack",
+        "ORDER_Assist"
+    ],
+    "guard_layer": "WL_Orbital",
+    "navigation": {
+        "type": "orbital",
+        "acceleration": 180,
+        "brake": 180,
+        "move_speed": 280,
+        "turn_speed": 90,
+        "dodge_radius": 15,
+        "dodge_multiplier": 6,
+        "aggressive_distance": 30,
+        "aggressive_behavior": "line",
+        "hover_time": 1,
+        "bank_factor": 10,
+        "vertical_speed": 200
+    },
+    "physics": {
+        "radius": 15,
+        "push_class": 15,
+        "gravity_scalar": 0.001
+    },
+    "recon": {
+        "observable": {
+            "layer": "orbital",
+            "ignore_radar": true,
+            "uses_energy":true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius":300
+                },
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+				{
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 220
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/orbital/wraith/wraith.papa",
+        "animations": {
+            "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa",
+            "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_fire01"
+        },
+		{
+            "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_fire02"
+        },
+        {
+            "spec_id": "/pa/units/land/tesla/tesla_anti_tac.json",
+            "aim_bone": "bone_pitch01",
+            "muzzle_bone": "bone_muzzle01"
+        }
+    ],
+    "fx_offsets": [
+        {
+            "type": "moving",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "bone_body",
+            "offset": [
+                0.5,
+                10.2,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/orbital"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_fire01"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/orbital"
+        }
+    },
+    "mesh_bounds": [
+        9.4,
+        21.4,
+        16.6
+    ],
+    "TEMP_texelinfo": 17.7177
+}
