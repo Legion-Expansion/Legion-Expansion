@@ -28,7 +28,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_rotator",
+      "bone": "effect",
       "filename": "/pa/units/land/L_radar/L_radar_on.pfx",
       "offset": [
         0,
@@ -69,7 +69,7 @@
     {
       "animations": {
         "end": "/pa/units/land/radar/radar_anim_end.papa",
-        "loop": "/pa/units/land/radar/radar_anim_loop.papa",
+        "loop": "/pa/units/land/L_radar/L_radar_idle.papa",
         "start": "/pa/units/land/radar/radar_anim_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
