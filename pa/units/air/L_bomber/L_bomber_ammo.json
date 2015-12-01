@@ -6,5 +6,11 @@
   "lifetime": 7,
   "max_velocity": 15.0,
   "splash_damage": 75,
-  "splash_radius": 10
+  "splash_radius": 10,
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/shell_artillery",
+			"effect_spec": "/pa/effects/specs/t1_bomber_effect.pfx"
+		}
+	}
 }
