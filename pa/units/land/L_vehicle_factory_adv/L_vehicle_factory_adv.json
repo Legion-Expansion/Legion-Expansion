@@ -129,7 +129,7 @@
         50,
         65
     ],
-    "TEMP_texelinfo": 65,
+    "TEMP_texelinfo": 42,
     "max_health": 30000,
     "model": {
         "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
