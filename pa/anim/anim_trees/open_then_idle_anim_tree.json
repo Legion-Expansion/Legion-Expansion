@@ -1,0 +1,79 @@
+{
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"living": {
+				"type": "sequence",
+				"entries": [{
+					"type": "sequence_entry",
+					"name": "attached",
+					"node": {
+						"type": "playback",
+						"anim_name": "closed",
+						"looping": false
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "not_attached",
+							"target": "deploy"
+						},
+						"transition_reverse": {
+							"func": "not_attached",
+							"target": "deploy"
+						}
+					}],
+					"reset": "playback_reset"
+				}, {
+					"type": "sequence_entry",
+					"name": "deploy",
+					"node": {
+						"type": "playback",
+						"anim_name": "deploy",
+						"looping": false
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "anim_complete",
+							"target": "idle"
+						},
+						"transition_reverse": {
+							"func": "anim_complete",
+							"target": "idle"
+						}
+					}],
+					"reset": "playback_reset"
+				}, {
+					"type": "sequence_entry",
+					"name": "idle",
+					"node": {
+						"type": "playback",
+						"anim_name": "open",
+						"looping": true
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "is_attached",
+							"target": "attached"
+						},
+						"transition_reverse": {
+							"func": "is_attached",
+							"target": "attached"
+						}
+					}],
+					"reset": "playback_reset"
+				}],
+				"transition_seek": {
+					"func": "is_attached",
+					"true_target": "attached",
+					"false_target": "idle"
+				}
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	}
+}
