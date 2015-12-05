@@ -1,3 +1,3 @@
 cd C:\Program Files (x86)\Steam\SteamApps\common\Planetary Annihilation Titans\bin_x64\tools\
-papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\L_flame_turret.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\L_flame_turret.fbx"
+papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\L_anti_nuke_launcher.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\L_anti_nuke_launcher.fbx"
 pause

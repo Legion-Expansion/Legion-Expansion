@@ -250,6 +250,7 @@
     "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv.json",
     "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json",
     "/pa/units/land/titan_bot/titan_bot.json",
+    "/pa/units/land/L_titan_bot/L_titan_bot.json",
         "/pa/units/air/titan_air/titan_air.json",
         "/pa/units/land/titan_vehicle/titan_vehicle.json",
         "/pa/units/orbital/titan_orbital/titan_orbital.json",

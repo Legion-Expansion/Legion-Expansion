@@ -4,7 +4,7 @@
     try {
         var buildVersion = decode(sessionStorage.build_version);
 
-        var patchName = 'legionExpansion glboal.js';
+        var patchName = 'legionExpansion global.js';
 
         //console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
 
@@ -612,7 +612,7 @@
                 ["L_factory", 2]
             ]
         }, {
-            spec_id: "/pa/units/land/L_titan_bot/titan_bot.json",
+            spec_id: "/pa/units/land/L_titan_bot/L_titan_bot.json",
             si_fallback: ["titan_bot"],
             preferred_builds: [
                 ["L_factory", 3]
