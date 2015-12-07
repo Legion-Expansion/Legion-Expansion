@@ -783,8 +783,7 @@
 			"rotation_axis": "z",
 			"weapon_index": 0
 		}
-	}, 
-{
+	}, {
 		"type": "fader",
 		"lerp_func": "is_active",
 		"child": {
@@ -793,7 +792,7 @@
 			"rotation_axis": "z",
 			"weapon_index": 1
 		}
-	},{
+	}, {
 		"type": "fader",
 		"lerp_func": "is_active",
 		"child": {

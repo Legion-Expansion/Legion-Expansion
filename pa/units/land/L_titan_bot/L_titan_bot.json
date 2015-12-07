@@ -73,9 +73,10 @@
 		"filename": "/pa/units/land/L_titan_bot/L_titan_bot.papa",
 		"animations": {
 			"walk": "/pa/units/land/L_titan_bot/L_titan_bot_walk.papa",
-			"idle": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa"
+			"idle": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa",
+			"deploy": "/pa/units/land/L_titan_bot/L_titan_bot_deploy.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_titan_bot_anim_tree.json",
 		"walk_speed": 12
 	},
 	"tools": [{
