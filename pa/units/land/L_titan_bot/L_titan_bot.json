@@ -73,15 +73,24 @@
 		"filename": "/pa/units/land/L_titan_bot/L_titan_bot.papa",
 		"animations": {
 			"walk": "/pa/units/land/L_titan_bot/L_titan_bot_walk.papa",
-			"idlee": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa"
+			"idle": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa"
 		},
 		"animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
-		"walk_speed": 7
+		"walk_speed": 12
 	},
 	"tools": [{
-		"spec_id": "/pa/units/land/titan_bot/titan_bot_tool_weapon_stomp.json",
+		"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_left_weapon_01.json",
 		"aim_bone": "bone_root",
-		"muzzle_bone": "bone_root"
+		"muzzle_bone": ["socket_muzzleLeftBottom", "socket_muzzleLeftTop"],
+		"projectiles_per_fire": 2,
+		"record_index": 0,
+		"fire_event": "fired0"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_left_weapon_02.json",
+		"aim_bone": "bone_root",
+		"muzzle_bone": "socket_rightMuzzle",
+		"record_index": 1,
+		"fire_event": "fired1"
 	}],
 	"attack_range_frac": 0.3,
 	"teleportable": null,
