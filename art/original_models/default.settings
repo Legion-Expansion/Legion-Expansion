@@ -1,3 +1,0 @@
-texture-format-noalpha: dxt1
-texture-format-alpha: dxt5
-srgb-texname-expression: .*(.*).*
