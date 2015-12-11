@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 225,
+  "build_metal_cost": 350,
   "description": "Close range shotgun tank that deals heavy damage to targets close by, but targets far away are hard to hit.",
   "display_name": "Legion Maul Shotgun Tank",
   "events": {
@@ -57,7 +57,7 @@
     "filename": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.papa"
   },
   "navigation": {
-    "acceleration": 100,
+    "acceleration": 75,
     "brake": 100,
     "group_preference": "front",
     "move_speed": 10,

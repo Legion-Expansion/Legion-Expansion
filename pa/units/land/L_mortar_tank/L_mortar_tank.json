@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 450,
+  "build_metal_cost": 550,
   "description": "Light mortar tank equipped with basic lava pellets.",
   "display_name": "Lobber",
   "events": {
@@ -54,10 +54,10 @@
     "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
   },
   "navigation": {
-    "acceleration": 100,
+    "acceleration": 75,
     "brake": 100,
     "group_preference": "back",
-    "move_speed": 10,
+    "move_speed": 7,
     "turn_speed": 60,
     "type": "land-small"
   },
@@ -72,13 +72,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 100,
+          "radius": 50,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 100,
+          "radius": 50,
           "shape": "capsule"
         }
       ]
