@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 400,
+  "damage": 275,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bomb_bot_plasma",
