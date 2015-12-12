@@ -4,9 +4,10 @@
     "atrophy_cool_down": 0.5,
     "atrophy_rate": 20,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 500,
+    "build_metal_cost": 900,
     "description": "Shield Defense",
     "display_name": "Legion Shield",
+    "energy_efficiency_requirement": 1,
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/barrier"

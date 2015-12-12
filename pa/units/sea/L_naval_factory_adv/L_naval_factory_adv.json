@@ -17,7 +17,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 4800,
+  "build_metal_cost": 4200,
   "buildable_types": "Custom1 & ( Naval & Mobile & FactoryBuild )",
   "command_caps": [
     "ORDER_Move",

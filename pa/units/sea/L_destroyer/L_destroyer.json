@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 600,
+  "build_metal_cost": 650,
   "description": "!LOC(units:destroyer_basic_anti_land_and_anti_ship_guns.message):Destroyer- Basic anti-land and anti-ship guns.",
   "display_name": "Legion Bowhead Destroyer",
   "events": {
@@ -39,7 +39,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 1500,
+  "max_health": 1700,
   "mesh_bounds": [
     4,
     24,
@@ -52,7 +52,7 @@
   "navigation": {
     "acceleration": 30,
     "brake": 90,
-    "move_speed": 9,
+    "move_speed": 11,
     "park_stamp_cost": 20,
     "park_stamp_type": "box",
     "turn_speed": 45,
@@ -70,13 +70,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 180,
+          "radius": 160,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 180,
+          "radius": 140,
           "shape": "capsule"
         }
       ]

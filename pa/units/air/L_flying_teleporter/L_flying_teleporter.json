@@ -21,9 +21,9 @@
         "UNITTYPE_Mobile",
         "UNITTYPE_Air",
         "UNITTYPE_Advanced",
-        "UNITTYPE_FabBuild",
         "UNITTYPE_Offense",
-        "UNITTYPE_Custom1"
+        "UNITTYPE_Custom1",
+		"UNITTYPE_Custom2"
     ],
     "command_caps": [
         "ORDER_Move",

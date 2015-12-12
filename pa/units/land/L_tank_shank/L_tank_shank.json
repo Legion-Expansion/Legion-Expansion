@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 300,
+  "build_metal_cost": 325,
   "description": "Light tank- Equipped with basic anti-land and anti-ship guns.",
   "display_name": "Legion Shank Tank",
   "events": {

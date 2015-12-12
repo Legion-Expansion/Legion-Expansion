@@ -103,7 +103,7 @@
             "audio_cue": "/SE/Weapons/air/air_scout_fire"
         }
     },
-    "max_health": 600,
+    "max_health": 1000,
     "mesh_bounds": [
         17,
         23,
@@ -118,7 +118,7 @@
         "brake": 30,
         "dodge_multiplier": 1,
         "dodge_radius": 10,
-        "move_speed": 35,
+        "move_speed": 30,
         "turn_speed": 40,
         "type": "air",
         "wobble_factor": 0.2,

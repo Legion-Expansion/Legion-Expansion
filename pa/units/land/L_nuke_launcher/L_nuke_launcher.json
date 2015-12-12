@@ -42,14 +42,179 @@
         "default_build_stance": "Continuous",
         "initial_build_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json",
         "spawn_points": [
-            "bone_missile01"
+            "missile"
         ],
         "store_units": true
     },
     "fx_offsets": [
         {
-            "bone": "socket_muzzle01",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "laser_a_01",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_a_03",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_a_05",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_a_07",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_b_01",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_b_03",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_b_05",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_b_07",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_c_01",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_c_03",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_c_05",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "build"
+        },
+        {
+            "bone": "laser_c_07",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
             "offset": [
                 0,
                 0,
@@ -166,7 +331,8 @@
             },
             "filename": "/pa/units/land/L_nuke_launcher/L_nuke_launcher.papa",
             "layer": "WL_LandHorizontal",
-            "skirt_decal": "/pa/effects/specs/skirt_nuke.json"
+            "skirt_decal": "/pa/effects/specs/skirt_nuke.json",
+		"animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json"
         },
         {
             "animations": {
@@ -174,8 +340,9 @@
                 "build_loop": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_build.papa",
                 "build_start": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_start.papa"
             },
-            "filename": "/pa/units/sea/L_nuke_launcher/L_nuke_launcher.papa",
-            "layer": "WL_WaterSurface"
+            "filename": "/pa/units/L_nuke_launcher/sea/L_nuke_launcher.papa",
+            "layer": "WL_WaterSurface",
+		"animtree": "/pa/anim/anim_trees/missile_launcher_anim_tree.json"
         }
     ],
     "recon": {

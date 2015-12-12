@@ -1,6 +1,6 @@
 cd C:\Program Files (x86)\Steam\SteamApps\common\Planetary Annihilation Titans\bin_x64\tools\
 
-set unit=L_tank_shank_
+set unit=L_nuke_launcher_
 set diffuse=%unit%diffuse
 set material=%unit%material
 set mask=%unit%mask

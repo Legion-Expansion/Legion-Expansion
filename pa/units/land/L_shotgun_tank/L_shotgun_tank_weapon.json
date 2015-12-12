@@ -4,7 +4,7 @@
   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
   "firing_standard_deviation": 3.6,
   "idle_aim_delay": 0,
-  "max_range": 50,
+  "max_range": 35,
   "pitch_range": 40,
   "pitch_rate": 360,
   "rate_of_fire": 1,
@@ -12,8 +12,7 @@
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
-    "WL_WaterSurface",
-    "WL_Air"
+    "WL_WaterSurface"
   ],
   "target_priorities": [
     "Mobile - Air",
