@@ -16,7 +16,7 @@
 			"idle": "/pa/units/commanders/imperial_delta/imperial_delta_idle.papa"
 		},
 		"animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
-		"walk_speed": 6
+		"walk_speed": 6.25
 	},
 	"headlights": [{
 		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
