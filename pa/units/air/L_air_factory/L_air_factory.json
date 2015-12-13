@@ -262,12 +262,12 @@
     },
     {
       "animations": {
-        "build_end": "/pa/units/air/air_factory/air_factory_anim_end.papa",
-        "build_loop": "/pa/units/air/air_factory/air_factory_anim_build.papa",
-        "build_start": "/pa/units/air/air_factory/air_factory_anim_start.papa"
+        "build_end": "/pa/units/air/L_air_factory/L_air_factory_end.papa",
+        "build_loop": "/pa/units/air/L_air_factory/L_air_factory_build.papa",
+        "build_start": "/pa/units/air/L_air_factory/L_air_factory_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/sea/air_factory/air_factory.papa",
+      "filename": "/pa/units/air/L_air_factory/sea/L_air_factory.papa",
       "layer": "WL_WaterSurface"
     }
   ],

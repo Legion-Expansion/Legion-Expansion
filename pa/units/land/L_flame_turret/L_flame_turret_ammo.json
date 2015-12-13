@@ -4,7 +4,7 @@
   "fx_trail": {
     "filename": "/pa/units/land/L_flame_turret/fire.pfx"
   },
-  "initial_velocity": 500,
+  "initial_velocity": 50,
   "lifetime": 5,
-  "max_velocity": 200
+  "max_velocity": 70
 }

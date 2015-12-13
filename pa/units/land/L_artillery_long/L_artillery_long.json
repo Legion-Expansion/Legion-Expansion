@@ -72,7 +72,7 @@
     },
     {
       "animtree": "/pa/anim/anim_trees/artillery_building_long_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_long/L_artillery_long_sea.papa",
+      "filename": "/pa/units/land/L_artillery_long/sea/L_artillery_long.papa",
       "layer": "WL_WaterSurface"
     }
   ],

@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 550,
+  "build_metal_cost": 450,
   "description": "Light mortar tank equipped with basic lava pellets.",
   "display_name": "Lobber",
   "events": {
