@@ -1,6 +1,6 @@
 {
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-	"ammo_id": "/pa/units/land/L_titan_bot/L_titan_bot_ammo_left.json",
+	"ammo_id": "/pa/units/land/L_titan_bot/mega_laser_ammo.json",
 	"rate_of_fire": 1,
 	"idle_aim_delay": 2,
 	"max_range": 400,

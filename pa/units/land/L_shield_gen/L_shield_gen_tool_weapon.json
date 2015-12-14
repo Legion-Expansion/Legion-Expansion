@@ -113,7 +113,8 @@
 		"/pa/units/land/tank_heavy_artillery/tank_heavy_artillery_ammo.json",
 		"/pa/units/land/tank_hover/tank_hover_ammo.json",
 		"/pa/units/land/titan_bot/titan_bot_ammo.json",
-		"/pa/units/land/titan_vehicle/titan_vehicle_ammo.json"
+		"/pa/units/land/titan_vehicle/titan_vehicle_ammo.json",
+		"/pa/units/land/L_titan_bot/rocket_ammo.json"
 	],
 	"target_layers": [
 		"WL_Air",

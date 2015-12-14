@@ -73,8 +73,7 @@
 		"filename": "/pa/units/land/L_titan_bot/L_titan_bot.papa",
 		"animations": {
 			"walk": "/pa/units/land/L_titan_bot/L_titan_bot_walk.papa",
-			"idle": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa",
-			"deploy": "/pa/units/land/L_titan_bot/L_titan_bot_deploy.papa"
+			"idle": "/pa/units/land/L_titan_bot/L_titan_bot_idle.papa"
 		},
 		"animtree": "/pa/anim/anim_trees/L_titan_bot_anim_tree.json",
 		"walk_speed": 12
@@ -87,11 +86,41 @@
 		"record_index": 0,
 		"fire_event": "fired0"
 	}, {
-		"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_left_weapon_02.json",
+		"spec_id": "/pa/units/land/L_titan_bot/mega_laser.json",
 		"aim_bone": "bone_root",
 		"muzzle_bone": "socket_rightMuzzle",
 		"record_index": 1,
 		"fire_event": "fired1"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket003",
+		"muzzle_bone": "rocket003",
+		"fire_event": "firedRocket003"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket004",
+		"muzzle_bone": "rocket004",
+		"fire_event": "firedRocket004"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket005",
+		"muzzle_bone": "rocket005",
+		"fire_event": "firedRocket005"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket013",
+		"muzzle_bone": "rocket013",
+		"fire_event": "firedRocket013"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket014",
+		"muzzle_bone": "rocket014",
+		"fire_event": "firedRocket014"
+	}, {
+		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
+		"aim_bone": "rocket015",
+		"muzzle_bone": "rocket015",
+		"fire_event": "firedRocket015"
 	}],
 	"attack_range_frac": 0.3,
 	"teleportable": null,
@@ -107,8 +136,39 @@
 			"audio_cue": "",
 			"effect_spec": "",
 			"effect_scale": 1.0
+		},
+		"firedRocket003": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket003"
+		},
+		"firedRocket004": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket004"
+		},
+		"firedRocket005": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket005"
+		},
+		"firedRocket013": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket013"
+		},
+		"firedRocket014": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket014"
+		},
+		"firedRocket015": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket015"
 		}
 	},
+  "fx_offsets": [
+    {
+      "bone": "socket_rightMuzzle",
+      "filename": "/pa/effects/specs/electricity_field.pfx",
+      "type": "idle"
+    }
+  ],
 	"audio": {
 		"loops": {
 			"move": {
@@ -128,6 +188,6 @@
 	"selection_icon": {
 		"diameter": 68.0
 	},
-	"mesh_bounds": [35, 35, 35],
-	"TEMP_texelinfo": 113.291
+	"mesh_bounds": [53, 52, 60],
+	"TEMP_texelinfo": 105
 }
