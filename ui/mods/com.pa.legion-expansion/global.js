@@ -334,12 +334,6 @@
                 ["L_bot", 9]
             ]
         }, {
-            spec_id: "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.json",
-            si_fallback: ["bot_tactical_missile"],
-            preferred_builds: [
-                ["L_bot", 10]
-            ] // bluehawk
-        }, {
             spec_id: "/pa/units/land/L_fabrication_bot/L_fabrication_bot.json",
             si_fallback: ["fabrication_bot"],
             preferred_builds: [
@@ -371,9 +365,9 @@
             ] // aa
         }, {
             spec_id: "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
-            si_fallback: ["bot_grenadier"],
+            si_fallback: ["bluehawk"],
             preferred_builds: [
-                ["L_bot", 17]
+                ["L_bot", 10]
             ] // grenadier
         },
 
