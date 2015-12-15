@@ -1,0 +1,18 @@
+{
+	"base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+	"ammo_id": [{
+		"layer": "WL_AnyLand",
+		"id": "/pa/units/air/L_fighter_adv/L_fighter_adv_ammo.json"
+	}],
+	"rate_of_fire": 2,
+	"idle_aim_delay": 0,
+	"max_range": 90,
+	"yaw_rate": 360,
+	"pitch_rate": 360,
+	"yaw_range": 0,
+	"pitch_range": 0,
+	"firing_arc_pitch": 30,
+	"firing_arc_yaw": 30,
+	"auto_attack": true,
+	"target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface", "WL_Air"]
+}

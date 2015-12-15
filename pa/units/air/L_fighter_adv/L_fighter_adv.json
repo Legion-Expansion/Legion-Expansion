@@ -1,150 +1,147 @@
 {
-  "TEMP_texelinfo": 7.96209,
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/air/air_fighter_loop_advanced",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/air/fighter"
-    }
-  },
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 720,
-  "description": "Interplanetary Fighter- Stronger fighter, can move between planets.",
-  "display_name": "Legion Firebird Interstellar Fighter",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Air",
-      "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/air/fighter_fire_advanced"
-    }
-  },
-  "fx_offsets": [
-    {
-      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
-      "bone": "thrust01",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
-      "bone": "thrust02",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
-      "bone": "thrust03",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "moving_forward"
-    },
-    {
-      "filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
-      "bone": "thrust04",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "moving_forward"
-    }
-  ],
-  "gravwell_velocity_multiplier": 6.0,
-  "guard_layer": "WL_Air",
-  "max_health": 300,
-  "mesh_bounds": [
-    4.5,
-    9.2,
-    4
-  ],
-   "selection_icon": {
-    "diameter": 15
-  },
-  "model": {
-    "animtree": "/pa/anim/anim_trees/fighter_adv_anim_tree.json",
-    "filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
-  },
-  "navigation": {
-    "acceleration": 80,
-    "aggressive_distance": 50.0,
-    "bank_factor": 10,
-    "brake": 80,
-    "inter_planetary_type": "system",
-    "move_speed": 80,
-    "turn_speed": 270,
-    "type": "air",
-    "vertical_speed": 50
-  },
-  "physics": {
-    "gravity_scalar": 1,
-    "push_class": 2,
-    "radius": 6
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 150,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 150,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "system_velocity_multiplier": 15.0,
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "gun01",
-        "gun02",
-        "gun03",
-        "gun04",
-        "gun05",
-        "gun06",
-        "gun07",
-        "gun08"
-      ],
-	  "projectiles_per_fire": 8,
-      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Fighter",
-    "UNITTYPE_Air",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ]
+	"TEMP_texelinfo": 7.96209,
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/air_fighter_loop_advanced",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/fighter"
+		}
+	},
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"build_metal_cost": 720,
+	"description": "Interplanetary Fighter- Stronger fighter, can move between planets.",
+	"display_name": "Legion Firebird Interstellar Fighter",
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/air/fighter_fire_advanced"
+		}
+	},
+	"fx_offsets": [{
+		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"bone": "thrust001",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"bone": "thrust002",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"bone": "thrust003",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}],
+	"gravwell_velocity_multiplier": 6.0,
+	"guard_layer": "WL_Air",
+	"max_health": 300,
+	"mesh_bounds": [
+		10,
+		13,
+		5
+	],
+	"selection_icon": {
+		"diameter": 15
+	},
+	"model": {
+		"animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json",
+		"filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
+	},
+	"navigation": {
+		"acceleration": 80,
+		"aggressive_distance": 50.0,
+		"bank_factor": 10,
+		"brake": 80,
+		"inter_planetary_type": "system",
+		"move_speed": 80,
+		"turn_speed": 270,
+		"type": "air",
+		"vertical_speed": 50
+	},
+	"physics": {
+		"gravity_scalar": 1,
+		"push_class": 2,
+		"radius": 6
+	},
+	"recon": {
+		"observer": {
+			"items": [{
+				"channel": "sight",
+				"layer": "surface_and_air",
+				"radius": 150,
+				"shape": "capsule"
+			}, {
+				"channel": "sight",
+				"layer": "underwater",
+				"radius": 150,
+				"shape": "capsule"
+			}]
+		}
+	},
+	"system_velocity_multiplier": 15.0,
+	"tools": [{
+		"aim_bone": "bone_root",
+		"muzzle_bone": "muzzle_right",
+		"fire_event": "fired0",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+	}, {
+		"aim_bone": "bone_root",
+		"muzzle_bone": "muzzle_left",
+		"fire_event": "fired1",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+	}, {
+		"aim_bone": "bone_root",
+		"muzzle_bone": "missile001",
+		"fire_event": "fired2",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+	}, {
+		"aim_bone": "bone_root",
+		"muzzle_bone": "missile002",
+		"fire_event": "fired3",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+	}, {
+		"aim_bone": "bone_root",
+		"muzzle_bone": "missile003",
+		"fire_event": "fired4",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+	}, {
+		"aim_bone": "bone_root",
+		"muzzle_bone": "missile004",
+		"fire_event": "fired5",
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+	}],
+	"unit_types": [
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Air",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+	]
 }
