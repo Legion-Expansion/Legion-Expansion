@@ -78,17 +78,16 @@
 			}
 		}
 	},
-	"skeleton_controls": [  {
+	"skeleton_controls": [{
 		"type": "recoil",
 		"bone": "recoil_right",
 		"recoil_dist": 1.5,
-		"unit_event": "fired0"
+		"unit_event": "fired0",
 		"restore_time": 1.0
-	},
-{
+	}, {
 		"type": "recoil",
 		"bone": "recoil_left",
-		"unit_event": "fired1"
+		"unit_event": "fired1",
 		"recoil_dist": 1.5,
 		"restore_time": 1.0
 	}]
