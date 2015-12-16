@@ -120,7 +120,7 @@
     "UNITTYPE_Artillery",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryAdvBuild",
+    "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]
 }

@@ -1,8 +1,8 @@
 {
     "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
-    "display_name": "Aeson Commander",
+    "display_name": "Rockteeth Commander",
     "buildable_types": "CmdBuild & Custom1",
-    "description": "Tank Aeson Commander ",
+    "description": "Tank Rockteeth Commander ",
     "attachable": {
         "offsets": {
             "root": [
@@ -17,13 +17,31 @@
             ]
         }
     },
-    "model": {
-        "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+  "fx_offsets": [
+    {
+      "bone": "bone_laser",
+      "filename": "/pa/effects/specs/laser_beam.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
     },
-    "scrolling_uv": {
-        "scroll_rate": -0.21,
-        "uv_split": 0.9
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "model": {
+      "animations": {
+      "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa"
     },
+    "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+  },
     "headlights": [
         {
             "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
@@ -95,5 +113,30 @@
             "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_tank_aeson_thumb.png",
             "profile_image": "/ui/main/shared/img/commanders/profiles/profile_tank_aeson.png"
         }
+    },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/uber_cannon/uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
     }
+  ]
 }
