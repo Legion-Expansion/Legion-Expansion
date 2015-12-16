@@ -34,11 +34,11 @@
         "vertical_speed": 300,
         "hover_time": -1
     },
-    "physics": {
-        "radius": 30,
-        "gravity_scalar": 1,
-        "push_class": 2
-    },
+  "physics": {
+    "gravity_scalar": 0.001,
+    "push_class": 15,
+    "radius": 10
+  },
     "recon": {
         "observer": {
             "items": [

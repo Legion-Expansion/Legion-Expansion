@@ -41,7 +41,7 @@
   "fx_offsets": [
     {
       "bone": "socket_lathe01",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -56,7 +56,7 @@
     },
     {
       "bone": "socket_lathe02",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -71,7 +71,7 @@
     },
     {
       "bone": "socket_lathe03",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -86,7 +86,7 @@
     },
     {
       "bone": "socket_lathe04",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
