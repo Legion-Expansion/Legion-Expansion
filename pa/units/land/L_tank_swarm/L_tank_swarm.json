@@ -42,7 +42,7 @@
 		}
 	},
 	"model": {
-		"filename": "/pa/units/land/tank_flak/tank_flak.papa",
+		"filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa",
 		"animtree": "/pa/anim/anim_trees/tank_flak_anim_tree.json",
 		"arrows": 5
 	},
@@ -50,7 +50,7 @@
 	"tools": [{
 		"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json",
 		"aim_bone": "socket_aim",
-		"muzzle_bone": ["socket_muzzle01"]
+		"muzzle_bone": ["gun001", "gun002", "gun003", "gun004", "gun005", "gun006"]
 	}],
 	"events": {
 		"build_complete": {
@@ -76,10 +76,10 @@
 			}
 		}
 	},
-	"scrolling_uv": {
-		"scroll_rate": -3.0,
-		"uv_split": 0.899
-	},
+  "scrolling_uv": {
+    "scroll_rate": 0.5,
+    "uv_split": 0.9
+  },
 	"selection_icon": {
 		"diameter": 14.0
 	},
