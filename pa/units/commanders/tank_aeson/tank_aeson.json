@@ -114,6 +114,10 @@
             "profile_image": "/ui/main/shared/img/commanders/profiles/profile_tank_aeson.png"
         }
     },
+  "scrolling_uv": {
+    "scroll_rate": 0.4,
+    "uv_split": 0.8
+  },
   "tools": [
     {
       "aim_bone": "bone_turret",
