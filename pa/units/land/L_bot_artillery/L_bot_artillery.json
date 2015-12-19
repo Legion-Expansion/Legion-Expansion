@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 4.07719,
+  "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
       "head": [
@@ -113,6 +113,29 @@
   "transportable": {
     "size": 1
   },
+	"headlights": [{
+		"bone": "bone_root",
+		"color": [
+			0.75,
+			1,
+			1
+		],
+		"far_distance": 20,
+		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+		"intensity": 1.4,
+		"near_distance": 1,
+		"near_height": 1.5,
+		"near_width": 1.5,
+		"offset": [
+			0, 0,
+			0
+		],
+		"orientation": [
+			0,
+			0,
+			0
+		]
+	}],
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",

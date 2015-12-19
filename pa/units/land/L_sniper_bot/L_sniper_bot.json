@@ -85,31 +85,6 @@
 			"cue": "/SE/Selection/bot/sniper"
 		}
 	},
-	"headlights": [{
-		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-		"offset": [0.0, -0.7, 0.0],
-		"orientation": [0.0, 35.0, 0.0],
-		"near_width": 1.5,
-		"near_height": 1.5,
-		"near_distance": 1.0,
-		"far_distance": 20.0,
-		"color": [0.75, 1.0, 1.0],
-		"intensity": 1.4,
-		"bone": "bone_head"
-	}],
-	"lamps": [{
-		"offset": [0.0, -0.6, 0.0],
-		"radius": 1.0,
-		"color": [1.0, 1.0, 1.0],
-		"intensity": 2.0,
-		"bone": "bone_head"
-	}, {
-		"offset": [2.0, -0.9, 0.625],
-		"radius": 1.5,
-		"color": [1.0, 1.0, 1.0],
-		"intensity": 2.0,
-		"bone": "bone_weapon"
-	}],
 	"selection_icon": {
 		"diameter": 11.0
 	},

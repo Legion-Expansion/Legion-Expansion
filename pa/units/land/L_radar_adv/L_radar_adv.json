@@ -28,62 +28,23 @@
 	},
 	"fx_offsets": [{
 		"bone": "bone_slideTip",
-		"filename": "/pa/units/land/radar_adv/radar_adv_top_on.pfx",
+		"filename": "/pa/units/land/L_radar_adv/L_radar_adv_top_on.pfx",
 		"offset": [
 			0,
-			0.145,
-			1.425
-		],
-		"orientation": [
-			0, -45,
-			0
-		],
-		"type": "energy"
-	}, {
-		"bone": "bone_dish01",
-		"filename": "/pa/units/land/radar_adv/radar_adv_dish01_on.pfx",
-		"offset": [
-			0, -0.264,
-			0
-		],
-		"orientation": [
-			0, -90,
-			0
-		],
-		"type": "energy"
-	}, {
-		"bone": "bone_dish02",
-		"filename": "/pa/units/land/radar_adv/radar_adv_dish02_on.pfx",
-		"offset": [
-			0, -0.264,
-			0
-		],
-		"orientation": [
-			0, -90,
-			0
-		],
-		"type": "energy"
-	}],
-	"lamps": [{
-		"bone": "bone_elbow",
-		"color": [
-			1,
-			1,
-			1
-		],
-		"intensity": 2,
-		"offset": [
 			0,
-			1.24,
-			0.05
+			0
 		],
-		"radius": 3
+		"orientation": [
+			0, 0,
+			0
+		],
+		"type": "energy"
 	}],
 	"max_health": 1500,
 	"mesh_bounds": [
-		8.58559,
-		7.71255,
-		29
+		24,
+		22,
+		20
 	],
 	"model": [{
 		"animations": {

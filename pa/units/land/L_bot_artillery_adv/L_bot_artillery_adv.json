@@ -1,5 +1,5 @@
 {
-	"TEMP_texelinfo": 5.32966,
+	"TEMP_texelinfo": 25,
 	"attachable": {
 		"offsets": {
 			"head": [
@@ -46,7 +46,7 @@
 	},
 	"guard_layer": "WL_AnySurface",
 	"headlights": [{
-		"bone": "bone_head",
+		"bone": "bone_turret",
 		"color": [
 			0.75,
 			1,
@@ -59,12 +59,12 @@
 		"near_height": 1.5,
 		"near_width": 1.5,
 		"offset": [
-			0, -0.7,
+			0, 0,
 			0
 		],
 		"orientation": [
 			0,
-			35,
+			0,
 			0
 		]
 	}],
@@ -97,9 +97,9 @@
 	}],
 	"max_health": 200,
 	"mesh_bounds": [
-		6.5,
-		7,
-		7.6
+		10,
+		12,
+		13
 	],
 	"model": {
 		"animations": {
