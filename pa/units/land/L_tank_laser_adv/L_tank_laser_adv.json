@@ -30,7 +30,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 600,
   "description": "!LOC(units:laser_tank_equipped_with_advanced_anti_land_and_anti_ship_guns.message):Laser tank- Equipped with advanced anti-land and anti-ship guns.",
-  "display_name": "BroadSword",
+  "display_name": "Scorpion",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"
@@ -41,7 +41,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/L_tank_laser_adv/muzzle_flash.pfx socket_muzzle"
     }
   },
   "fx_offsets": [

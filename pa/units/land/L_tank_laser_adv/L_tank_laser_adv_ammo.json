@@ -3,13 +3,14 @@
   "damage": 300,
   "full_damage_splash_radius": 1,
   "fx_trail": {
-    "filename": "/pa/units/land/L_tank_laser_adv/trail.pfx",
-    "offset": [
-      0.0,
-      0.5,
-      0.0
-    ]
+    "filename": "/pa/units/land/L_tank_laser_adv/trail.pfx"
   },
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/cannon_uber",
+			"effect_spec": "/pa/effects/specs/AOE_shock_explosion_v2.pfx"
+		}
+	},
   "initial_velocity": 150,
   "lifetime": 2,
   "max_velocity": 150,
