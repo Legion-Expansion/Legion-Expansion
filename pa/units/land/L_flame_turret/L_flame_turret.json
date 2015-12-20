@@ -19,7 +19,8 @@
       "effect_scale": 0.6
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/veh/tank_flame"
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+	  "effect_spec":"/pa/units/land/L_flame_turret/fire.pfx socket_muzzleLeft /pa/units/land/L_flame_turret/fire.pfx socket_muzzleRight"
     }
   },
   "guard_layer": "WL_AnySurface",

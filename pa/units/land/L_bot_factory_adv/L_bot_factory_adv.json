@@ -190,9 +190,9 @@
   ],
   "max_health": 30000,
     "mesh_bounds": [
-        50,
-        50,
-        23
+        48,
+        48,
+        34
     ],
     "placement_size": [
         50,
