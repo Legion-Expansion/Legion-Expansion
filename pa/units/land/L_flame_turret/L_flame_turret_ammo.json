@@ -1,9 +1,14 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 80,
+  "damage": 140,
   "fx_trail": {
     "filename": "/pa/units/land/L_flame_turret/fire.pfx"
   },
+	"events": {
+		"died": {
+			"effect_specs": "/pa/effects/specs/none.pfx"
+		}
+	},
   "initial_velocity": 50,
   "lifetime": 5,
   "max_velocity": 70

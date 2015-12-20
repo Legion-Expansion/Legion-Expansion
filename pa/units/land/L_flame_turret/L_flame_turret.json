@@ -19,8 +19,7 @@
       "effect_scale": 0.6
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle"
+      "audio_cue": "/SE/Weapons/veh/tank_flame"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -67,10 +66,10 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "muzzle_bone": [
-        "socket_rightMuzzle",
-        "socket_leftMuzzle"
+        "socket_muzzleRight",
+        "socket_muzzleLeft"
       ],
       "spec_id": "/pa/units/land/L_flame_turret/L_flame_turret_tool_weapon.json"
     }
@@ -79,30 +78,12 @@
         {
             "bone": "bone_fireRight",
             "filename": "/pa/units/land/L_flame_turret/flame.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
+			"type": "idle"
         },
         {
             "bone": "bone_fireLeft",
             "filename": "/pa/units/land/L_flame_turret/flame.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
+			"type": "idle"
         }
     ],
   "unit_types": [
