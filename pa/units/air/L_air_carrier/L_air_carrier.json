@@ -44,47 +44,47 @@
     "fx_offsets": [
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "thrust01"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "thrust02"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "thrust03"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "thrust04"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "thrust05"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "hole_frontLeft"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "hole_frontRight"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "hole_backLeft"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 			"bone": "hole_backRight"
         }
     ],

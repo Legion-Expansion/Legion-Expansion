@@ -4,9 +4,9 @@
   "fx_trail": {
     "filename": "/pa/units/air/L_fighter/trail.pfx"
   },
-  "initial_velocity": 500,
+  "initial_velocity": 300,
   "lifetime": 2,
-  "max_velocity": 500,
+  "max_velocity": 300,
   "splash_damage": 0,
   "splash_radius": 0
 }

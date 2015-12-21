@@ -47,12 +47,12 @@
 		"animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json"
 	},
 	"tools": [{
-		"aim_bone": "bone_root",
+		"aim_bone": "recoil_right",
 		"muzzle_bone": "muzzle_right",
 		"fire_event": "fired0",
 		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
 	}, {
-		"aim_bone": "bone_root",
+		"aim_bone": "recoil_left",
 		"muzzle_bone": "muzzle_left",
 		"fire_event": "fired1",
 		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
@@ -81,7 +81,13 @@
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/air"
 		},
-		"fired": {
+		"fired0": {
+			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
+		},	
+		"fired1": {
+			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
+		},	
+		"fired2": {
 			"audio_cue": "/SE/Weapons/air/fighter_fire_advanced"
 		},
 		"died": {
@@ -100,7 +106,7 @@
 		],
 		"type": "moving_forward"
 	}, {
-		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 		"bone": "thrust002",
 		"offset": [
 			0,
@@ -109,7 +115,7 @@
 		],
 		"type": "moving_forward"
 	}, {
-		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
 		"bone": "thrust003",
 		"offset": [
 			0,
