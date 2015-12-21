@@ -39,7 +39,7 @@
     },
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_anim_tree.json",
-      "filename": "/pa/units/sea/floating_laser/floating_laser.papa",
+      "filename": "/pa/units/land/L_flame_turret/L_flame_turret.papa",
       "layer": "WL_WaterSurface"
     }
   ],

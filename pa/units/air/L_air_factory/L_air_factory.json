@@ -267,7 +267,7 @@
         "build_start": "/pa/units/air/L_air_factory/L_air_factory_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/air/L_air_factory/sea/L_air_factory.papa",
+      "filename": "/pa/units/air/L_air_factory/L_air_factory.papa",
       "layer": "WL_WaterSurface"
     }
   ],

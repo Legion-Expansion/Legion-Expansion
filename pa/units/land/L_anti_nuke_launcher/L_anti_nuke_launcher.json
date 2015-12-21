@@ -143,7 +143,7 @@
 		"build_start_4": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_start04.papa"
       },
       "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json",
-      "filename": "/pa/units/land/L_anti_nuke_launcher/sea/L_anti_nuke_launcher.papa",
+      "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
       "layer": "WL_WaterSurface"
     }
   ],
