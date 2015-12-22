@@ -154,7 +154,7 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "spec_id": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_build_arm.json"
+      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
     }
   ],
   "transportable": {

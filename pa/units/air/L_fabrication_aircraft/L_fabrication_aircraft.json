@@ -124,7 +124,7 @@
 	},
 	"tools": [{
 		"aim_bone": "bone_pitch",
-		"spec_id": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_build_arm.json"
+		"spec_id": "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft_build_arm.json"
 	}],
 	"transportable": {
 		"size": 1
