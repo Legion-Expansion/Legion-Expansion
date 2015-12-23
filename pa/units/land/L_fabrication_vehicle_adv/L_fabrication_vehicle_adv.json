@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 6.38729,
+  "TEMP_texelinfo": 12,
   "attachable": {
     "offsets": {
       "head": [
@@ -60,7 +60,12 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "muzzle00"
+            "bone": "socket_latheRight"
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+            "bone": "socket_latheLeft"
         }
     ],
   "guard_layer": "WL_LandHorizontal",
@@ -72,7 +77,7 @@
     ],
     "model": {
         "filename": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.papa",
-        "animtree": "/pa/anim/anim_trees/one_turret.json"
+        "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
     },
   "navigation": {
     "acceleration": 120,
@@ -110,7 +115,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_pitch",
       "spec_id": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv_build_arm.json"
     }
   ],
@@ -130,6 +135,6 @@
   ],
     "scrolling_uv": {
         "scroll_rate": 0.6,
-        "uv_split": 0.875
+        "uv_split": 0.85
     }
 }
