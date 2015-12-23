@@ -13,6 +13,7 @@
     "/pa/units/air/L_air_carrier/L_air_carrier.json",
     "/pa/units/air/L_bomber_adv/L_bomber_adv.json",
     "/pa/units/air/fabrication_aircraft/fabrication_aircraft.json",
+    "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json",
     "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.json",
     "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.json",
     "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.json",

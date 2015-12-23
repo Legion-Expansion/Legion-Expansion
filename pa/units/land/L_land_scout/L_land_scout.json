@@ -62,12 +62,13 @@
     },
     "animtree": "/pa/anim/anim_trees/land_scout_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/land/land_scout/land_scout.papa"
+    "filename": "/pa/units/land/land_scout/land_scout.papa",
+	"walk_speed": 10
   },
   "navigation": {
     "acceleration": 250,
     "brake": 250,
-    "move_speed": 25,
+    "move_speed": 30,
     "turn_speed": 360,
     "type": "land-small"
   },

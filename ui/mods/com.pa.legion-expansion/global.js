@@ -307,6 +307,13 @@
                 ["L_vehicle", 16]
             ] // spinner
         },
+{
+            spec_id: "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json",
+            si_fallback: ["tank_heavy_mortar"],
+            preferred_builds: [
+                ["L_vehicle", 17]
+            ] // spinner
+        },
 
 
         {
