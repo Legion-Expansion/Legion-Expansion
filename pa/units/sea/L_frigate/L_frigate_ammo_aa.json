@@ -4,8 +4,8 @@
     "splash_damage": 0,
     "splash_radius": 0,
     "model": null,
-    "initial_velocity": 150,
-    "max_velocity": 150,
+    "initial_velocity": 175,
+    "max_velocity": 175,
     "lifetime": 3,
     "fx_trail": {
         "filename": "/pa/units/sea/battleship/battleship_shell_proj_trail.pfx",

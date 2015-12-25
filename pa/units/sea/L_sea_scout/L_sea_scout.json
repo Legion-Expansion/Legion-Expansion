@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 150,
+  "build_metal_cost": 80,
   "description": "!LOC(units:scout_light_weaponry_fast_speed.message):Gunboat- Light weaponry, fast speed",
   "display_name": "Legion Dogfish Scout",
   "events": {
@@ -38,9 +38,9 @@
     "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
   },
   "navigation": {
-    "acceleration": 75,
+    "acceleration": 90,
     "brake": 200,
-    "move_speed": 20,
+    "move_speed": 22,
     "turn_in_place": false,
     "turn_speed": 180,
     "type": "deepwater"
@@ -55,13 +55,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 170,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 170,
           "shape": "capsule"
         }
       ]
