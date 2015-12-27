@@ -64,7 +64,7 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/bot/sniper_fire",
-			"effect_spec": "/pa/effects/specs/muzzle_flash_medium.pfx socket_muzzle"
+			"effect_spec": "/pa/units/land/L_sniper_bot/muzzle_effect.pfx socket_muzzle"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Bot",
