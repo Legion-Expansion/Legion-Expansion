@@ -370,7 +370,14 @@
             preferred_builds: [
                 ["L_bot", 16]
             ] // aa
-        }, {
+        }, 
+{
+            spec_id: "/pa/units/land/L_scout_bot/L_scout_bot.json",
+            si_fallback: ["aa_missile_vehicle"],
+            preferred_builds: [
+                ["L_bot", 17]
+            ] // aa
+        },{
             spec_id: "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
             si_fallback: ["bluehawk"],
             preferred_builds: [
