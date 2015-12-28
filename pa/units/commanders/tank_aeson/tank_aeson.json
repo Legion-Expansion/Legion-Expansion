@@ -38,7 +38,8 @@
       "animations": {
       "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
       "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
-      "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa"
+      "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
+"walk": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa"
     },
     "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
   },
