@@ -21,6 +21,9 @@ SERVER_SUFFIX = '-Server'
 
 EXCLUDE_DIRECTORIES = ('.', '.git', 'art')
 
+CLIENT_MODINFO = './modinfo/client/modinfo.json'
+SERVER_MODINFO = './modinfo/server/modinfo.json'
+
 ################# Not configuration section :P
 
 # makes directory, doesn't care if it exists already
@@ -33,6 +36,9 @@ def mkdir_p(path):
 
 root_folder = os.path.realpath(ROOT_PATH)
 print ('Mod folder: ' + root_folder)
+
+shutil.copyfile(os.path.join(root_folder, CLIENT_MODINFO), os.path.join(root_folder + CLIENT_SUFFIX, 'modinfo.json'))
+shutil.copyfile(os.path.join(root_folder, SERVER_MODINFO), os.path.join(root_folder + SERVER_SUFFIX, 'modinfo.json'))
 
 # iterate over all files
 for root, dirs, files in os.walk(ROOT_PATH):
