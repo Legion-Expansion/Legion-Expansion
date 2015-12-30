@@ -43,7 +43,7 @@ model.LegionCommander = function (index) {
     setTimeout(model.CheckLegionCommander, 200, index);
 };
 model.CheckLegionCommander = function (index) {
-    if (model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/tank_aeson/tank_aeson.json") {
+    if ((model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/tank_aeson/tank_aeson.json") && (model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/imperial_invictus/imperial_invictus.json")) {
         console.log(model.armies()[index].slots()[0].commander());
         model.kickUser(index);
         model.LegionCommander(index);
