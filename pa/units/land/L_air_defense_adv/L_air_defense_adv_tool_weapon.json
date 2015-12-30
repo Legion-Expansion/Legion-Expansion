@@ -1,20 +1,20 @@
 {
   "ammo_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_ammo.json",
+  "arc_type": "High",
   "auto_attack": true,
-  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
-  "max_range": 100,
-  "pitch_range": 89,
-  "pitch_rate": 3600,
-  "rate_of_fire": 1.0,
+  "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
+  "firing_arc_pitch": 10,
+  "firing_arc_yaw": 10,
+  "firing_standard_deviation": 25,
+  "max_range": 240,
+  "pitch_range": 180,
+  "pitch_rate": 70,
+  "rate_of_fire": 1,
   "spread_fire": true,
   "target_layers": [
     "WL_Air"
   ],
-  "target_priorities": [
-    "Air & Bomber",
-    "Air & Gunship",
-    "Air & Mobile"
-  ],
-  "yaw_range": 360,
-  "yaw_rate": 3600
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 70
 }

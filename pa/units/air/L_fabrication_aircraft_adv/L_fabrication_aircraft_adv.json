@@ -57,48 +57,43 @@
   },
   "fx_offsets": [
     {
-      "bone": "socket_muzzle",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "lathe_left",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     },
     {
-      "bone": "bone_rightWing",
-      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
-      "offset": [
-        1.386,
-        0,
-        -1.139
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
+      "bone": "lathe_right",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "thrust001",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
     },
     {
-      "bone": "bone_leftWing",
-      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
-      "offset": [
-        -1.386,
-        0,
-        -1.139
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
+      "bone": "thrust002",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "thrust003",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "thrust004",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "thrust_backTop",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "thrust_backBottom",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
     }
   ],
@@ -111,10 +106,10 @@
   ],
   "model": {
     "animations": {
-      "fly": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_anim_fly.papa"
+      "fly": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_adv_anim_tree.json",
-    "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa"
+    "animtree": "/pa/anim/anim_trees/L_fabrication_aircraft_adv_anim_tree.json",
+    "filename": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.papa"
   },
   "navigation": {
     "acceleration": 35,
@@ -153,7 +148,11 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "turret_right",
+      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
+    },
+    {
+      "aim_bone": "turret_left",
       "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
     }
   ],

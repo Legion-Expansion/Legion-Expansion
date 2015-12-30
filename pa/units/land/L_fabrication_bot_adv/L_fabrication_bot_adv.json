@@ -59,12 +59,12 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
             "bone": "muzzle01"
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
             "bone": "muzzle02"
         }
     ],
@@ -82,7 +82,7 @@
             "walk": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_walk.papa"
         },
         "animtree": "/pa/anim/anim_trees/Bfab11_at.json",
-        "walk_speed": 5
+        "walk_speed": 4.5
     },
   "navigation": {
     "acceleration": 120,

@@ -62,7 +62,7 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
             "bone": "muzzle00"
         }
     ],

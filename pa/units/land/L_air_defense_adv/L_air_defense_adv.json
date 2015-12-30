@@ -18,28 +18,40 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.5
     },
-    "fired": {
-      "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle01"
+    "fired0": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket005"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket006"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket007"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket008"
     }
   },
   "guard_layer": "WL_Air",
   "max_health": 2000,
   "mesh_bounds": [
-    7,
-    7,
-    9.4
+    16.6,
+    16.6,
+    12.1
   ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
-      "filename": "/pa/units/land/air_defense_adv/air_defense_adv.papa",
+      "filename": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_air_defense_adv.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/sea/air_defense_adv/air_defense_adv.papa",
+      "filename": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -69,12 +81,26 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_rightMuzzle01",
-        "socket_leftMuzzle01",
-        "socket_rightMuzzle02",
-        "socket_leftMuzzle02"
-      ],
+      "muzzle_bone": "rocket001",
+	  "fire_event": "fired0",
+      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "rocket002",
+	  "fire_event": "fired1",
+      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "rocket003",
+	  "fire_event": "fired2",
+      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "rocket004",
+	  "fire_event": "fired3",
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     }
   ],
