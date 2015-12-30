@@ -1,0 +1,22 @@
+{
+  "author": "Nicb1,KillerKiwiJuice,Crembels",
+  "build": "89755",
+  "category": [
+    "Units",
+    "Faction"
+  ],
+  "context": "client",
+  "date": "2015/12/29",
+  "dependencies": [
+    "com.pa.legion-expansion.server"
+  ],
+  "description": "A somewhat secret project",
+  "display_name": "Legion Expansion Client Alpha",
+  "enabled": true,
+  "forum": "https://forums.uberent.com/threads/soon.70525/",
+  "icon": "http://i.imgur.com/g8m0AAg.png?1",
+  "identifier": "com.pa.legion-expansion.client",
+  "priority": 100,
+  "signature": "(not yet implemented)",
+  "version": "Pre-Alpha"
+}

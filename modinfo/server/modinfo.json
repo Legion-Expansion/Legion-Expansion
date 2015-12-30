@@ -1,0 +1,42 @@
+{
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
+  "build": "85138", 
+  "category": [
+    "server-mod", 
+    "lobby",
+    "in-game",
+    "units",
+    "faction" 
+  ], 
+  "context": "server", 
+  "date": "2015/12/29", 
+  "dependencies": [
+    "com.wondible.pa.hodgepodge",
+    "com.wondible.pa.icon_extensions",
+    "com.wondible.pa.icon_reloader",
+    "com.wondible.pa.xenophobia",
+	"com.pa.legion-expansion.client"
+  ], 
+  "description": "Super secret something something", 
+  "display_name": "Legion Expansion", 
+  "enabled": true, 
+  "forum": "", 
+  "icon": "", 
+  "identifier": "com.pa.legion-expansion.server", 
+  "scenes": {
+    "global_mod_list": [
+      "coui://ui/mods/com.pa.legion-expansion/global.js"
+    ],
+    "live_game_build_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
+    ],
+    "live_game_sandbox": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
+    ]
+  }, 
+  "signature": "not yet implemented", 
+  "version": "Pre-Alpha"
+}
