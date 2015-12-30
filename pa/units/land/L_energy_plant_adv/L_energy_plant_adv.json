@@ -1,7 +1,6 @@
 {
   "TEMP_texelinfo": 32.6108,
-  "area_build_type": "Circle",
-  "area_build_separation": 10,
+  "area_build_type": "Sphere",
   "atrophy_cool_down": 15,
   "atrophy_rate": 45,
   "audio": {
@@ -170,8 +169,13 @@
     }
   },
   "selection_icon": {
-    "diameter": 42
+    "diameter": 55
   },
+   "mesh_bounds": [
+    30,
+    30,
+    17
+  ],
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Structure",

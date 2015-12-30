@@ -82,7 +82,7 @@
             "walk": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_walk.papa"
         },
         "animtree": "/pa/anim/anim_trees/Bfab11_at.json",
-        "walk_speed": 4.5
+        "walk_speed": 4
     },
   "navigation": {
     "acceleration": 120,

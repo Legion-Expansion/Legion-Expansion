@@ -42,7 +42,7 @@
   "fx_offsets": [
     {
       "bone": "socket_topMuzzle01",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -51,13 +51,13 @@
       "orientation": [
         0,
         0,
-        0
+        180
       ],
       "type": "build"
     },
     {
       "bone": "socket_topMuzzle02",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -66,13 +66,13 @@
       "orientation": [
         0,
         0,
-        0
+        180
       ],
       "type": "build"
     },
     {
       "bone": "socket_sideMuzzle01",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -87,7 +87,7 @@
     },
     {
       "bone": "socket_sideMuzzle02",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -98,6 +98,21 @@
         0,
         0
       ],
+      "type": "build"
+    },
+    {
+      "bone": "stacks01",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "stacks02",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "stacks03",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
       "type": "build"
     }
   ],

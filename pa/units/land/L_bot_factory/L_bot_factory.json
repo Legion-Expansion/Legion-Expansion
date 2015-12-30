@@ -99,6 +99,16 @@
         0
       ],
       "type": "build"
+    },
+    {
+      "bone": "bone_stack01",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_stack02",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
     }
   ],
   "headlights": [
