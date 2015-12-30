@@ -21,7 +21,7 @@
   "display_name": "Legion Expansion", 
   "enabled": true, 
   "forum": "", 
-  "icon": "", 
+  "icon": "http://i.imgur.com/oyn18ZG.png", 
   "identifier": "com.pa.legion-expansion.server", 
   "scenes": {
     "global_mod_list": [
