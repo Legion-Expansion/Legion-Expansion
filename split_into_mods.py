@@ -19,10 +19,10 @@ CLIENT_FILES = ('.png', '.papa')
 CLIENT_SUFFIX = '-Client'
 SERVER_SUFFIX = '-Server'
 
-EXCLUDE_DIRECTORIES = ('.', '.git', 'art')
+EXCLUDE_DIRECTORIES = ('.', '.git', 'art', 'modinfo')
 
-CLIENT_MODINFO = './modinfo/client/modinfo.json'
-SERVER_MODINFO = './modinfo/server/modinfo.json'
+CLIENT_MODINFO = 'modinfo/client/modinfo.json'
+SERVER_MODINFO = 'modinfo/server/modinfo.json'
 
 ################# Not configuration section :P
 
@@ -37,9 +37,6 @@ def mkdir_p(path):
 root_folder = os.path.realpath(ROOT_PATH)
 print ('Mod folder: ' + root_folder)
 
-shutil.copyfile(os.path.join(root_folder, CLIENT_MODINFO), os.path.join(root_folder + CLIENT_SUFFIX, 'modinfo.json'))
-shutil.copyfile(os.path.join(root_folder, SERVER_MODINFO), os.path.join(root_folder + SERVER_SUFFIX, 'modinfo.json'))
-
 # iterate over all files
 for root, dirs, files in os.walk(ROOT_PATH):
     base_dir = os.path.normpath(root)
@@ -50,16 +47,18 @@ for root, dirs, files in os.walk(ROOT_PATH):
     client_dir = os.path.join(root_folder + CLIENT_SUFFIX, base_dir)
     server_dir = os.path.join(root_folder + SERVER_SUFFIX, base_dir)
 
-    mkdir_p(client_dir)
-    mkdir_p(server_dir)
-
     for f in files:
         base_path = os.path.join(base_dir, f)
 
         if base_path.endswith(CLIENT_FILES):
             full_path = os.path.join(client_dir, f)
+            mkdir_p(client_dir)
         else:
             full_path = os.path.join(server_dir, f)
+            mkdir_p(server_dir)
 
         print ('Copying: ' + os.path.normpath(full_path))
         shutil.copyfile(base_path, full_path)
+
+shutil.copyfile(os.path.join(root_folder, CLIENT_MODINFO), os.path.join(root_folder + CLIENT_SUFFIX, 'modinfo.json'))
+shutil.copyfile(os.path.join(root_folder, SERVER_MODINFO), os.path.join(root_folder + SERVER_SUFFIX, 'modinfo.json'))
