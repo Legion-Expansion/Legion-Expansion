@@ -42,84 +42,64 @@
   "factory_cooldown_time": 6,
   "fx_offsets": [
     {
-      "bone": "socket_muzzle01",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_lathe001",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
     },
     {
-      "bone": "socket_muzzle02",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_lathe002",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
     },
     {
-      "bone": "socket_muzzle03",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_lathe003",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
     },
     {
-      "bone": "socket_muzzle04",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_lathe004",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "smoke001",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "smoke002",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "smoke003",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "smoke004",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
       "type": "build"
     }
   ],
   "max_health": 30000,
   "mesh_bounds": [
-    25,
-    50,
-    15
+    70,
+    48,
+    21
   ],
   "model": {
     "animations": {
-      "build_end": "/pa/units/sea/naval_factory_adv/naval_factory_adv_anim_end.papa",
-      "build_loop": "/pa/units/sea/naval_factory_adv/naval_factory_adv_anim_build.papa",
-      "build_start": "/pa/units/sea/naval_factory_adv/naval_factory_adv_anim_start.papa"
+      "build_end": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv_end.papa",
+      "build_loop": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv_build.papa",
+      "build_start": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-    "filename": "/pa/units/sea/naval_factory_adv/naval_factory_adv.papa"
+    "filename": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.papa"
   },
   "placement_size": [
-    50,
-    125
+    75,
+    65
   ],
   "recon": {
     "observer": {
@@ -146,7 +126,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 63
+    "diameter": 75
   },
   "spawn_layers": "WL_DeepWater",
   "tools": [

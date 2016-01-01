@@ -339,7 +339,7 @@
 			"build_start": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_start.papa"
 		},
 		"animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-		"filename": "/pa/units/orbital/L_orbital_launcher/sea/L_orbital_launcher.papa",
+		"filename": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.papa",
 		"layer": "WL_WaterSurface"
 	}],
 	"physics": {

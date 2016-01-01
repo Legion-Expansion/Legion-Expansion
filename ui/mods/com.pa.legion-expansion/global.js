@@ -335,7 +335,7 @@
                 ["L_bot", 8]
             ] // sniper
         }, {
-            spec_id: "/pa/units/land/L_fabrication_bot_combat_adv/L_fabrication_bot_combat_adv.json",
+            spec_id: "/pa/units/land/L_turtle_bot_adv/L_turtle_bot_adv.json",
             si_fallback: ["fabrication_bot_combat_adv"],
             preferred_builds: [
                 ["L_bot", 9]
