@@ -90,7 +90,12 @@
 		"aim_bone": "bone_root",
 		"muzzle_bone": "socket_rightMuzzle",
 		"record_index": 1,
-		"fire_event": "fired1"
+		"fire_event": "fired1",
+      "offset": [
+        0,
+        -20,
+        0
+      ]			
 	}, {
 		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
 		"aim_bone": "rocket003",
@@ -166,8 +171,33 @@
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/effects/specs/electricity_field.pfx",
-      "type": "idle"
-    }
+      "type": "idle",
+      "offset": [
+        0,
+        -3,
+        0
+      ]	  
+    },
+    {
+      "bone": "socket_rightMuzzle",
+      "filename": "/pa/units/land/L_titan_bot/back_smoke.pfx",
+      "type": "idle",
+      "offset": [
+        20,
+        35.5,
+        15
+      ]	
+	},
+    {
+      "bone": "socket_rightMuzzle",
+      "filename": "/pa/units/land/L_titan_bot/back_fire.pfx",
+      "type": "moving_forward",
+      "offset": [
+        20,
+        36.5,
+        15
+      ]		  
+    }	
   ],
 	"audio": {
 		"loops": {
