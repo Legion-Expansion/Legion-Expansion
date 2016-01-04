@@ -1,0 +1,79 @@
+{
+	"base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "TEMP_texelinfo": 2.37699,
+  "area_build_separation": 1,
+  "area_build_type": "Sphere",
+  "build_metal_cost": 20,
+  "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
+  "display_name": "Legion Sea Mine",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+    }
+  },
+  "max_health": 5,
+  "mesh_bounds": [
+    4,
+    4,
+    1
+  ],
+  "model": [
+    {
+      "filename": "/pa/units/sea/L_sea_mine/L_sea_mine.papa",
+		"animations": {
+			"idle": "/pa/units/sea/L_sea_mine/L_sea_mine_float.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+    }
+  ],
+  "physics": {
+    "allow_pushing": false,
+    "allow_underground": false,
+    "ignore_collisions": true,
+    "push_class": 255,
+    "push_sideways": false,
+    "radius": 1,
+    "shape": "Box",
+    "type": "Structure"
+  },
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 2,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 7
+  },
+  "spawn_layers": "WL_WaterSurface",
+  "strategic_icon_priority": 3,
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/land/L_sea_mine/L_sea_mine_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Basic",
+    "UNITTYPE_Water",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CombatFabBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 0
+}

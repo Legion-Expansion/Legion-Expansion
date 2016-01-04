@@ -448,6 +448,7 @@
             ]
         },
 
+
         {
             spec_id: "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.json",
             si_fallback: ["fabrication_ship_adv"],
@@ -471,6 +472,13 @@
             si_fallback: ["nuclear_sub"],
             preferred_builds: [
                 ["L_sea", 9]
+            ]
+        },        
+        {
+            spec_id: "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json",
+            si_fallback: ["fabrication_ship_adv"],
+            preferred_builds: [
+                ["L_sea", 10]
             ]
         }, {
             spec_id: "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json",
@@ -592,6 +600,13 @@
             si_fallback: ["land_mine"],
             preferred_builds: [
                 ["L_ammo", 10]
+            ]
+        },
+        {
+            spec_id: "/pa/units/sea/L_sea_mine/L_sea_mine.json",
+            si_fallback: ["land_mine"],
+            preferred_builds: [
+                ["L_ammo", 12]
             ]
         }, {
             spec_id: "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo.json",
