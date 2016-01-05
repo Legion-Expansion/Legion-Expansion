@@ -1,109 +1,109 @@
 {
-  "TEMP_texelinfo": 26.4567,
-  "area_build_type": "Sphere",
-  "energy_efficiency_requirement": 0.9,  
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 7.5,
-  "audio": {
-    "selection_response": {
-      "cue": "/SE/Selection/structure/energy"
-    }
+ "TEMP_texelinfo":26.4567,
+ "area_build_type":"Sphere",
+ "atrophy_cool_down":15,
+ "atrophy_rate":7.5,
+ "audio":{
+  "selection_response":{
+   "cue":"/SE/Selection/structure/energy"
+  }
+ },
+ "base_spec":"/pa/units/land/base_structure/base_structure.json",
+ "build_metal_cost":450,
+ "description":"!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.",
+ "display_name":"Legion OmniSilo Storage",
+ "energy_efficiency_requirement":0.9,
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/energy"
   },
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 450,
-  "description": "!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.",
-  "display_name": "Legion OmniSilo Storage",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/energy"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 0.8
-    }
+  "died":{
+   "audio_cue":"/SE/Death/Factory",
+   "effect_scale":0.8
+  }
+ },
+ "fx_offsets":[
+  {
+   "bone":"bone_root",
+   "filename":"/pa/units/land/L_storage/black_hole.pfx",
+   "offset":[
+    0,
+    0,
+    20
+   ],
+   "type":"energy"
   },
-  "fx_offsets": [
-    {
-      "filename": "/pa/units/land/L_storage/black_hole.pfx",
-      "bone": "bone_root",	  
-      "offset": [
-        0,
-        0,
-        20
-      ],
-      "type": "energy"
-    }, 
-    {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
-      "bone": "shield01",
-      "type": "idle"
-    },
-    {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
-      "bone": "shield02",
-      "type": "idle"
-    },
-    {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
-      "bone": "shield03",
-      "type": "idle"
-    },
-    {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
-      "bone": "shield04",
-      "type": "idle"
-    }
-  ],
-  "max_health": 7500,
-  "mesh_bounds": [
-    28,
-    28,
-    25
-  ],
-  "model": [
-    {
-      "filename": "/pa/units/land/L_storage/L_storage.papa",
-      "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
-    },
-    {
-      "filename": "/pa/units/land/L_storage/sea/L_storage.papa",
-      "layer": "WL_WaterSurface"
-    }
-  ],
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
-        }
-      ]
-    }
+  {
+   "bone":"shield01",
+   "filename":"/pa/units/land/L_storage/storage_shield.pfx",
+   "type":"idle"
   },
-  "selection_icon": {
-    "diameter": 40
+  {
+   "bone":"shield02",
+   "filename":"/pa/units/land/L_storage/storage_shield.pfx",
+   "type":"idle"
   },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "storage": {
-    "energy": 100000,
-    "metal": 18500
+  {
+   "bone":"shield03",
+   "filename":"/pa/units/land/L_storage/storage_shield.pfx",
+   "type":"idle"
   },
-  "unit_types": [
-    "UNITTYPE_Structure",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_CmdBuild",
-    "UNITTYPE_FabBuild",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Economy",
-    "UNITTYPE_Custom1"
-  ]
+  {
+   "bone":"shield04",
+   "filename":"/pa/units/land/L_storage/storage_shield.pfx",
+   "type":"idle"
+  }
+ ],
+ "max_health":7500,
+ "mesh_bounds":[
+  28,
+  28,
+  25
+ ],
+ "model":[
+  {
+   "filename":"/pa/units/land/L_storage/L_storage.papa",
+   "layer":"WL_LandHorizontal",
+   "skirt_decal":"/pa/effects/specs/skirt_energy_adv.json"
+  },
+  {
+   "filename":"/pa/units/land/L_storage/sea/L_storage.papa",
+   "layer":"WL_WaterSurface"
+  }
+ ],
+ "recon":{
+  "observer":{
+   "items":[
+    {
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":100,
+     "shape":"capsule"
+    },
+    {
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":100,
+     "shape":"capsule"
+    }
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":40
+ },
+ "spawn_layers":"WL_AnyHorizontalGroundOrWaterSurface",
+ "storage":{
+  "energy":100000,
+  "metal":18500
+ },
+ "unit_types":[
+  "UNITTYPE_Structure",
+  "UNITTYPE_Advanced",
+  "UNITTYPE_CmdBuild",
+  "UNITTYPE_FabBuild",
+  "UNITTYPE_FabAdvBuild",
+  "UNITTYPE_Economy",
+  "UNITTYPE_Custom1"
+ ]
 }

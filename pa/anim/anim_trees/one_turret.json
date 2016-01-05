@@ -1,1 +1,25 @@
-{"blend_root":{"type":"bind_pose"},"skeleton_controls":[{"type":"fader","lerp_func":"is_active","child":{"type":"procedural_aim","rotation_bone":"turret00","rotation_axis":"z"}},{"type":"fader","lerp_func":"is_active","child":{"type":"procedural_aim","rotation_bone":"pitch00","rotation_axis":"x"}}]}
+{
+ "blend_root":{
+  "type":"bind_pose"
+ },
+ "skeleton_controls":[
+  {
+   "child":{
+    "rotation_axis":"z",
+    "rotation_bone":"turret00",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"is_active",
+   "type":"fader"
+  },
+  {
+   "child":{
+    "rotation_axis":"x",
+    "rotation_bone":"pitch00",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"is_active",
+   "type":"fader"
+  }
+ ]
+}

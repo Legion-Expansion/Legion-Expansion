@@ -1,12 +1,12 @@
 {
-  "base_spec": "/pa/units/land/control_module/control_module.json",
-  "display_name": "Legion Catalyst",
-  "unit_types": [
-    "UNITTYPE_Structure",
-    "UNITTYPE_ControlModule",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Important",
-    "UNITTYPE_Custom1"
-  ]
+ "base_spec":"/pa/units/land/control_module/control_module.json",
+ "display_name":"Legion Catalyst",
+ "unit_types":[
+  "UNITTYPE_Structure",
+  "UNITTYPE_ControlModule",
+  "UNITTYPE_Advanced",
+  "UNITTYPE_FabAdvBuild",
+  "UNITTYPE_Important",
+  "UNITTYPE_Custom1"
+ ]
 }

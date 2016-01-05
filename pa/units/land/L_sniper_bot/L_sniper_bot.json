@@ -1,93 +1,118 @@
 {
-	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Lancer",
-	"description": "!LOC:Sniper- Long-range. High damage. Slow rate of fire. Intercepts missiles. Attacks land, air and sea targets.",
-	"max_health": 75,
-	"build_metal_cost": 400,
-	"attachable": {
-		"offsets": {
-			"root": [0, 0, 0],
-			"head": [0, 0, 7.4]
-		}
-	},
-	"unit_types": ["UNITTYPE_Bot", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Basic", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
-	"guard_layer": "WL_AnySurface",
-	"navigation": {
-		"type": "land-small",
-		"acceleration": 120,
-		"brake": -1,
-		"move_speed": 12,
-		"turn_speed": 720,
-		"group_preference": "back"
-	},
-	"transportable": {
-		"size": 1
-	},
-	"physics": {
-		"radius": 3.5
-	},
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 140
-			}, {
-				"layer": "underwater",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 140
-			}]
-		}
-	},
-	"model": {
-		"animations": {
-			"idle": "/pa/units/land/L_sniper_bot/L_sniper_bot_idle.papa",
-			"walk": "/pa/units/land/L_sniper_bot/L_sniper_bot_walk.papa"
-		},
-		"filename": "/pa/units/land/L_sniper_bot/L_sniper_bot.papa",
-		"animtree": "/pa/anim/anim_trees/L_sniper_bot_anim_tree.json",
-		"walk_speed": 3
-	},
-	"nearby_target_tick_update_interval": 15,
-	"tools": [{
-		"spec_id": "/pa/units/land/L_sniper_bot/L_sniper_bot_tool_weapon.json",
-		"aim_bone": "bone_turret",
-		"record_index": 0,
-		"fire_event": "fired0",
-		"muzzle_bone": "socket_muzzle"
-	}],
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/bot"
-		},
-		"fired0": {
-			"audio_cue": "/SE/Weapons/bot/sniper_fire",
-			"effect_spec": "/pa/effects/specs/muzzle_flash_medium.pfx socket_muzzle"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Bot",
-			"effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-			"effect_scale": 1.2
-		}
-	},
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/bot/sniper_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/bot/sniper"
-		}
-	},
-	"selection_icon": {
-		"diameter": 11.0
-	},
-	"mesh_bounds": [3, 6.3, 4.8],
-	"TEMP_texelinfo": 15
+ "TEMP_texelinfo":15,
+ "attachable":{
+  "offsets":{
+   "head":[
+    0,
+    0,
+    7.4
+   ],
+   "root":[
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "audio":{
+  "loops":{
+   "move":{
+    "cue":"/SE/Movement/bot/sniper_loop",
+    "flag":"vel_changed",
+    "should_start_func":"is_moving",
+    "should_stop_func":"is_not_moving"
+   }
+  },
+  "selection_response":{
+   "cue":"/SE/Selection/bot/sniper"
+  }
+ },
+ "base_spec":"/pa/units/land/base_bot/base_bot.json",
+ "build_metal_cost":400,
+ "description":"!LOC:Sniper- Long-range. High damage. Slow rate of fire. Intercepts missiles. Attacks land, air and sea targets.",
+ "display_name":"Lancer",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/bot"
+  },
+  "died":{
+   "audio_cue":"/SE/Death/Bot",
+   "effect_scale":1.2,
+   "effect_spec":"/pa/effects/specs/default_explosion_bot_t2.pfx"
+  },
+  "fired0":{
+   "audio_cue":"/SE/Weapons/bot/sniper_fire",
+   "effect_spec":"/pa/effects/specs/muzzle_flash_medium.pfx socket_muzzle"
+  }
+ },
+ "guard_layer":"WL_AnySurface",
+ "max_health":75,
+ "mesh_bounds":[
+  3,
+  6.3,
+  4.8
+ ],
+ "model":{
+  "animations":{
+   "idle":"/pa/units/land/L_sniper_bot/L_sniper_bot_idle.papa",
+   "walk":"/pa/units/land/L_sniper_bot/L_sniper_bot_walk.papa"
+  },
+  "animtree":"/pa/anim/anim_trees/L_sniper_bot_anim_tree.json",
+  "filename":"/pa/units/land/L_sniper_bot/L_sniper_bot.papa",
+  "walk_speed":3
+ },
+ "navigation":{
+  "acceleration":120,
+  "brake":-1,
+  "group_preference":"back",
+  "move_speed":12,
+  "turn_speed":720,
+  "type":"land-small"
+ },
+ "nearby_target_tick_update_interval":15,
+ "physics":{
+  "radius":3.5
+ },
+ "recon":{
+  "observer":{
+   "items":[
+    {
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":140,
+     "shape":"capsule"
+    },
+    {
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":140,
+     "shape":"capsule"
+    }
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":11.0
+ },
+ "tools":[
+  {
+   "aim_bone":"bone_turret",
+   "fire_event":"fired0",
+   "muzzle_bone":"socket_muzzle",
+   "record_index":0,
+   "spec_id":"/pa/units/land/L_sniper_bot/L_sniper_bot_tool_weapon.json"
+  }
+ ],
+ "transportable":{
+  "size":1
+ },
+ "unit_types":[
+  "UNITTYPE_Bot",
+  "UNITTYPE_Mobile",
+  "UNITTYPE_Offense",
+  "UNITTYPE_Land",
+  "UNITTYPE_Basic",
+  "UNITTYPE_FactoryBuild",
+  "UNITTYPE_Custom1"
+ ]
 }

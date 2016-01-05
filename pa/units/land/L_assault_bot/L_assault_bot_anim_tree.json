@@ -1,53 +1,53 @@
 {
-    "blend_root": {
-        "type": "unit_state",
-        "nodes": {
-            "being_built": {
-                "type": "bind_pose"
-            },
-            "living": {
-                "type": "walk",
-                "node_idle": {
-                    "type": "playback",
-                    "anim_name": "idle"
-                },
-                "node_walk": {
-                    "type": "playback",
-                    "anim_name": "walk"
-                }
-            },
-            "dead": {
-                "type": "bind_pose"
-            },
-            "ghost": {
-                "type": "bind_pose"
-            }
-        }
+ "blend_root":{
+  "nodes":{
+   "being_built":{
+    "type":"bind_pose"
+   },
+   "dead":{
+    "type":"bind_pose"
+   },
+   "ghost":{
+    "type":"bind_pose"
+   },
+   "living":{
+    "node_idle":{
+     "anim_name":"idle",
+     "type":"playback"
     },
-    "skeleton_controls": [
-        {
-            "type": "fader",
-            "lerp_func": "is_active",
-            "child": {
-                "type": "procedural_aim",
-                "rotation_bone": "bone_turret",
-                "rotation_axis": "z"
-            }
-        },
-        {
-            "type": "fader",
-            "lerp_func": "is_active",
-            "child": {
-                "type": "procedural_aim",
-                "rotation_bone": "bone_pitch",
-                "rotation_axis": "x"
-            }
-        },
-        {
-            "type": "recoil",
-            "bone": "socket_muzzle",
-            "recoil_dist": 0.5,
-            "restore_time": 0.2
-        }
-    ]
+    "node_walk":{
+     "anim_name":"walk",
+     "type":"playback"
+    },
+    "type":"walk"
+   }
+  },
+  "type":"unit_state"
+ },
+ "skeleton_controls":[
+  {
+   "child":{
+    "rotation_axis":"z",
+    "rotation_bone":"bone_turret",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"is_active",
+   "type":"fader"
+  },
+  {
+   "child":{
+    "rotation_axis":"x",
+    "rotation_bone":"bone_pitch",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"is_active",
+   "type":"fader"
+  },
+  {
+   "bone":"socket_muzzle",
+   "recoil_dist":0.5,
+   "restore_time":0.2,
+   "type":"recoil"
+  }
+ ]
 }

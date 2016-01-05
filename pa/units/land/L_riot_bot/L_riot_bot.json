@@ -1,142 +1,142 @@
 {
-  "TEMP_texelinfo": 4.07719,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+ "TEMP_texelinfo":4.07719,
+ "attachable":{
+  "offsets":{
+   "head":[
+    0,
+    0,
+    4
+   ],
+   "root":[
+    0,
+    0,
+    0
+   ]
+  }
+ },
+ "audio":{
+  "loops":{
+   "move":{
+    "cue":"/SE/Movement/bot/grenadier_loop",
+    "flag":"vel_changed",
+    "should_start_func":"is_moving",
+    "should_stop_func":"is_not_moving"
+   }
+  },
+  "selection_response":{
+   "cue":"/SE/Selection/bot/grenadier"
+  }
+ },
+ "base_spec":"/pa/units/land/base_bot/base_bot.json",
+ "build_metal_cost":1300,
+ "description":"!LOC(units:grenadier_basic_assault_weapons_dealing_area_effect_damage.message):Grenadier- Basic assault weapons dealing area effect damage.",
+ "display_name":"Legion Armored Riot Bot",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/bot"
+  },
+  "died":{
+   "audio_cue":"/SE/Death/Bot",
+   "effect_scale":1
+  },
+  "fired":{
+   "audio_cue":"/SE/Weapons/bot/grenadier_fire",
+   "effect_spec":"/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/L_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/L_riot_bot/bullet_shells_left.pfx bone_pivot"
+  }
+ },
+ "guard_layer":"WL_AnySurface",
+ "max_health":700,
+ "mesh_bounds":[
+  9.125,
+  9.623,
+  8.808
+ ],
+ "model":{
+  "animations":{
+   "death01":"/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
+   "idle":"/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
+   "walk":"/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
+  },
+  "animtree":"/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
+  "filename":"/pa/units/land/L_riot_bot/L_riot_bot.papa",
+  "walk_speed":3
+ },
+ "navigation":{
+  "acceleration":120,
+  "brake":120,
+  "move_speed":12,
+  "turn_speed":720,
+  "type":"land-small"
+ },
+ "physics":{
+  "push_class":2,
+  "radius":2
+ },
+ "recon":{
+  "observer":{
+   "items":[
+    {
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":130,
+     "shape":"capsule"
+    },
+    {
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":130,
+     "shape":"capsule"
     }
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":15
+ },
+ "tools":[
+  {
+   "aim_bone":"bone_leftArm",
+   "muzzle_bone":"left_muzzle01",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
   },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/grenadier_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/bot/grenadier"
-    }
+  {
+   "aim_bone":"bone_leftArm",
+   "muzzle_bone":"left_muzzle02",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
   },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 1300,
-  "description": "!LOC(units:grenadier_basic_assault_weapons_dealing_area_effect_damage.message):Grenadier- Basic assault weapons dealing area effect damage.",
-  "display_name": "Legion Armored Riot Bot",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/L_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/L_riot_bot/bullet_shells_left.pfx bone_pivot"
-    }
+  {
+   "aim_bone":"bone_leftArm",
+   "muzzle_bone":"left_muzzle03",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
   },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 700,
-  "mesh_bounds": [
-    9.125,
-    9.623,
-    8.808
-  ],
-  "model": {
-    "animations": {
-      "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
-      "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
-      "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
-    "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
-    "walk_speed": 3
+  {
+   "aim_bone":"bone_rightArm",
+   "muzzle_bone":"right_muzzle01",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
   },
-  "navigation": {
-    "acceleration": 120,
-    "brake": 120,
-    "move_speed": 12,
-    "turn_speed": 720,
-    "type": "land-small"
+  {
+   "aim_bone":"bone_rightArm",
+   "muzzle_bone":"right_muzzle02",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
   },
-  "physics": {
-    "push_class": 2,
-    "radius": 2
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 130,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 130,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": 15
-  },
-  "tools": [
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle01",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle02",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle03",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle01",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle02",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle03",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    }
-  ],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
-  ]
+  {
+   "aim_bone":"bone_rightArm",
+   "muzzle_bone":"right_muzzle03",
+   "spec_id":"/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
+  }
+ ],
+ "transportable":{
+  "size":1
+ },
+ "unit_types":[
+  "UNITTYPE_Bot",
+  "UNITTYPE_Mobile",
+  "UNITTYPE_Offense",
+  "UNITTYPE_Artillery",
+  "UNITTYPE_Land",
+  "UNITTYPE_Advanced",
+  "UNITTYPE_FactoryBuild",
+  "UNITTYPE_CannonBuildable",
+  "UNITTYPE_Custom1"
+ ]
 }

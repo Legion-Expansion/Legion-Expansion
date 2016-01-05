@@ -1,52 +1,52 @@
 {
-    "blend_root": {
-        "type": "unit_state",
-        "nodes": {
-            "being_built": {
-                "type": "bind_pose"
-            },
-            "living": {
-                "type": "fly",
-                "node_idle": {
-                    "type": "bind_pose"
-                },
-                "node_fly": {
-                    "type": "playback",
-                    "anim_name": "fly"
-                }
-            },
-            "dead": {
-                "type": "bind_pose"
-            },
-            "ghost": {
-                "type": "bind_pose"
-            }
-        }
+ "blend_root":{
+  "nodes":{
+   "being_built":{
+    "type":"bind_pose"
+   },
+   "dead":{
+    "type":"bind_pose"
+   },
+   "ghost":{
+    "type":"bind_pose"
+   },
+   "living":{
+    "node_fly":{
+     "anim_name":"fly",
+     "type":"playback"
     },
-    "skeleton_controls": [
-        {
-            "type": "recoil",
-            "bone": "bone_recoil",
-            "recoil_dist": 0.75,
-            "restore_time": 0.25
-        },
-        {
-            "type": "fader",
-            "lerp_func": "not_being_built",
-            "child": {
-                "type": "procedural_aim",
-                "rotation_bone": "bone_turret",
-                "rotation_axis": "z"
-            }
-        },
-        {
-            "type": "fader",
-            "lerp_func": "not_being_built",
-            "child": {
-                "type": "procedural_aim",
-                "rotation_bone": "bone_pitch",
-                "rotation_axis": "x"
-            }
-        }
-    ]
+    "node_idle":{
+     "type":"bind_pose"
+    },
+    "type":"fly"
+   }
+  },
+  "type":"unit_state"
+ },
+ "skeleton_controls":[
+  {
+   "bone":"bone_recoil",
+   "recoil_dist":0.75,
+   "restore_time":0.25,
+   "type":"recoil"
+  },
+  {
+   "child":{
+    "rotation_axis":"z",
+    "rotation_bone":"bone_turret",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"not_being_built",
+   "type":"fader"
+  },
+  {
+   "child":{
+    "rotation_axis":"x",
+    "rotation_bone":"bone_pitch",
+    "type":"procedural_aim"
+   },
+   "lerp_func":"not_being_built",
+   "type":"fader"
+  }
+ ]
 }

@@ -1,87 +1,87 @@
 {
-  "TEMP_texelinfo": 25,
-  "area_build_separation": 18,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 5,
-  "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 225,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
-  "description": "Shoots orbital and shit",
-  "display_name": "Legion Tola Anti Orbital Beam Cannon",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/structure_small"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/structure_small",
-      "effect_scale": 0.55
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/orb/umbrella_laser_fire",
-      "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
-    }
+ "TEMP_texelinfo":25,
+ "area_build_separation":18,
+ "atrophy_cool_down":15,
+ "atrophy_rate":5,
+ "base_spec":"/pa/units/land/base_structure/base_structure.json",
+ "build_metal_cost":225,
+ "command_caps":[
+  "ORDER_Attack"
+ ],
+ "description":"Shoots orbital and shit",
+ "display_name":"Legion Tola Anti Orbital Beam Cannon",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/structure_small"
   },
-  "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 350,
-  "mesh_bounds": [
-    18.162,
-    18.162,
-    32.964
-  ],
-  "model": [
+  "died":{
+   "audio_cue":"/SE/Death/structure_small",
+   "effect_scale":0.55
+  },
+  "fired":{
+   "audio_cue":"/SE/Weapons/orb/umbrella_laser_fire",
+   "effect_spec":"/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
+  }
+ },
+ "guard_layer":"WL_AnyHorizontalGroundOrWaterSurface",
+ "max_health":350,
+ "mesh_bounds":[
+  18.162,
+  18.162,
+  32.964
+ ],
+ "model":[
+  {
+   "animtree":"/pa/anim/anim_trees/L_ion_defense_anim_tree.json",
+   "filename":"/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
+   "layer":"WL_LandHorizontal",
+   "skirt_decal":"/pa/effects/specs/skirt_ion_defense.json"
+  },
+  {
+   "animtree":"/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+   "filename":"/pa/units/land/L_ion_defense/L_ion_defense.papa",
+   "layer":"WL_WaterSurface"
+  }
+ ],
+ "recon":{
+  "observer":{
+   "items":[
     {
-      "animtree": "/pa/anim/anim_trees/L_ion_defense_anim_tree.json",
-      "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
-      "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":130,
+     "shape":"capsule"
     },
     {
-      "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/land/L_ion_defense/L_ion_defense.papa",
-      "layer": "WL_WaterSurface"
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":130,
+     "shape":"capsule"
     }
-  ],
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 130,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 130,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": 32
-  },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-  "tools": [
-    {
-      "aim_bone": "ring03",
-      "muzzle_bone": [
-        "socket_muzzle"
-      ],
-      "record_index": 0,
-      "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Structure",
-    "UNITTYPE_Basic",
-    "UNITTYPE_Defense",
-    "UNITTYPE_OrbitalDefense",
-    "UNITTYPE_FabBuild",
-    "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Custom1"
-  ]
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":32
+ },
+ "spawn_layers":"WL_AnyHorizontalGroundOrWaterSurface",
+ "tools":[
+  {
+   "aim_bone":"ring03",
+   "muzzle_bone":[
+    "socket_muzzle"
+   ],
+   "record_index":0,
+   "spec_id":"/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json"
+  }
+ ],
+ "unit_types":[
+  "UNITTYPE_Structure",
+  "UNITTYPE_Basic",
+  "UNITTYPE_Defense",
+  "UNITTYPE_OrbitalDefense",
+  "UNITTYPE_FabBuild",
+  "UNITTYPE_FabAdvBuild",
+  "UNITTYPE_Custom1"
+ ]
 }

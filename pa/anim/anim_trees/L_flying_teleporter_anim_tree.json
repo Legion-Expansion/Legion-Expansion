@@ -1,27 +1,27 @@
 {
-    "blend_root": {
-        "type": "unit_state",
-        "nodes": {
-            "being_built": {
-                "type": "bind_pose"
-            },
-            "living": {
-                "type": "fly",
-                "node_idle": {
-                    "type": "playback",
-                    "anim_name": "idle"
-                },
-                "node_fly": {
-                    "type": "playback",
-                    "anim_name": "fly"
-                }
-            },
-            "dead": {
-                "type": "bind_pose"
-            },
-            "ghost": {
-                "type": "bind_pose"
-            }
-        }
-    }
+ "blend_root":{
+  "nodes":{
+   "being_built":{
+    "type":"bind_pose"
+   },
+   "dead":{
+    "type":"bind_pose"
+   },
+   "ghost":{
+    "type":"bind_pose"
+   },
+   "living":{
+    "node_fly":{
+     "anim_name":"fly",
+     "type":"playback"
+    },
+    "node_idle":{
+     "anim_name":"idle",
+     "type":"playback"
+    },
+    "type":"fly"
+   }
+  },
+  "type":"unit_state"
+ }
 }

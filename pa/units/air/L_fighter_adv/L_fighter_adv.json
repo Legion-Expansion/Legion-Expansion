@@ -1,146 +1,172 @@
 {
-	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-	"display_name": "Pheonix",
-	"description": "!LOC:Interplanetary Fighter- Stronger fighter. Can move between planets. Can only attack air targets.",
-	"build_metal_cost": 720,
-	"max_health": 300,
-	"system_velocity_multiplier": 15.0,
-	"gravwell_velocity_multiplier": 6.0,
-	"unit_types": ["UNITTYPE_Fighter", "UNITTYPE_Air", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
-	"guard_layer": "WL_Air",
-	"navigation": {
-		"type": "air",
-		"inter_planetary_type": "system",
-		"acceleration": 80,
-		"brake": 80,
-		"move_speed": 80,
-		"turn_speed": 270,
-		"aggressive_distance": 50.0,
-		"bank_factor": 10,
-		"vertical_speed": 50
-	},
-	"physics": {
-		"radius": 6,
-		"gravity_scalar": 1
-	},
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 150
-			}, {
-				"layer": "underwater",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 150
-			}]
-		}
-	},
-	"model": {
-		"filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa",
-		"animations": {
-			"closed": "/pa/units/air/fighter_adv/fighter_adv_anim_closed.papa",
-			"deploy": "/pa/units/air/fighter_adv/fighter_adv_anim_deploy.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json"
-	},
-	"tools": [{
-		"aim_bone": "recoil_right",
-		"muzzle_bone": "muzzle_right",
-		"fire_event": "fired0",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
-	}, {
-		"aim_bone": "recoil_left",
-		"muzzle_bone": "muzzle_left",
-		"fire_event": "fired1",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile001",
-		"fire_event": "fired2",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile002",
-		"fire_event": "fired3",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile003",
-		"fire_event": "fired4",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile004",
-		"fire_event": "fired5",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}],
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/air"
-		},
-		"fired0": {
-			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
-		},	
-		"fired1": {
-			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
-		},	
-		"fired2": {
-			"audio_cue": "/SE/Weapons/air/fighter_fire_advanced"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Air",
-			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
-			"effect_scale": 0.85
-		}
-	},
-	"fx_offsets": [{
-		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
-		"bone": "thrust001",
-		"offset": [
-			0,
-			0,
-			0
-		],
-		"type": "moving_forward"
-	}, {
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-		"bone": "thrust002",
-		"offset": [
-			0,
-			0,
-			0
-		],
-		"type": "moving_forward"
-	}, {
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-		"bone": "thrust003",
-		"offset": [
-			0,
-			0,
-			0
-		],
-		"type": "moving_forward"
-	}],
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/air/air_fighter_loop_advanced",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving_laterally",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/air/fighter"
-		}
-	},
-	"selection_icon": {
-		"diameter": 20.0,
-		"vertical_offset": -2.0
-	},
-	"TEMP_texelinfo": 7.96209,
-	"mesh_bounds": [4.5, 9.2, 4]
+ "TEMP_texelinfo":7.96209,
+ "audio":{
+  "loops":{
+   "move":{
+    "cue":"/SE/Movement/air/air_fighter_loop_advanced",
+    "flag":"vel_changed",
+    "should_start_func":"is_moving_laterally",
+    "should_stop_func":"is_not_moving"
+   }
+  },
+  "selection_response":{
+   "cue":"/SE/Selection/air/fighter"
+  }
+ },
+ "base_spec":"/pa/units/air/base_flyer/base_flyer.json",
+ "build_metal_cost":720,
+ "description":"!LOC:Interplanetary Fighter- Stronger fighter. Can move between planets. Can only attack air targets.",
+ "display_name":"Pheonix",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/air"
+  },
+  "died":{
+   "audio_cue":"/SE/Death/Air",
+   "effect_scale":0.85,
+   "effect_spec":"/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+  },
+  "fired0":{
+   "audio_cue":"/SE/Weapons/structure/laser_defense_single_fire"
+  },
+  "fired1":{
+   "audio_cue":"/SE/Weapons/structure/laser_defense_single_fire"
+  },
+  "fired2":{
+   "audio_cue":"/SE/Weapons/air/fighter_fire_advanced"
+  }
+ },
+ "fx_offsets":[
+  {
+   "bone":"thrust001",
+   "filename":"/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+   "offset":[
+    0,
+    0,
+    0
+   ],
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust002",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "offset":[
+    0,
+    0,
+    0
+   ],
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust003",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "offset":[
+    0,
+    0,
+    0
+   ],
+   "type":"moving_forward"
+  }
+ ],
+ "gravwell_velocity_multiplier":6.0,
+ "guard_layer":"WL_Air",
+ "max_health":300,
+ "mesh_bounds":[
+  4.5,
+  9.2,
+  4
+ ],
+ "model":{
+  "animations":{
+   "closed":"/pa/units/air/fighter_adv/fighter_adv_anim_closed.papa",
+   "deploy":"/pa/units/air/fighter_adv/fighter_adv_anim_deploy.papa"
+  },
+  "animtree":"/pa/anim/anim_trees/L_fighter_adv_anim_tree.json",
+  "filename":"/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
+ },
+ "navigation":{
+  "acceleration":80,
+  "aggressive_distance":50.0,
+  "bank_factor":10,
+  "brake":80,
+  "inter_planetary_type":"system",
+  "move_speed":80,
+  "turn_speed":270,
+  "type":"air",
+  "vertical_speed":50
+ },
+ "physics":{
+  "gravity_scalar":1,
+  "radius":6
+ },
+ "recon":{
+  "observer":{
+   "items":[
+    {
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":150,
+     "shape":"capsule"
+    },
+    {
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":150,
+     "shape":"capsule"
+    }
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":20.0,
+  "vertical_offset":-2.0
+ },
+ "system_velocity_multiplier":15.0,
+ "tools":[
+  {
+   "aim_bone":"recoil_right",
+   "fire_event":"fired0",
+   "muzzle_bone":"muzzle_right",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+  },
+  {
+   "aim_bone":"recoil_left",
+   "fire_event":"fired1",
+   "muzzle_bone":"muzzle_left",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+  },
+  {
+   "aim_bone":"bone_root",
+   "fire_event":"fired2",
+   "muzzle_bone":"missile001",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+  },
+  {
+   "aim_bone":"bone_root",
+   "fire_event":"fired3",
+   "muzzle_bone":"missile002",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+  },
+  {
+   "aim_bone":"bone_root",
+   "fire_event":"fired4",
+   "muzzle_bone":"missile003",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+  },
+  {
+   "aim_bone":"bone_root",
+   "fire_event":"fired5",
+   "muzzle_bone":"missile004",
+   "spec_id":"/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+  }
+ ],
+ "unit_types":[
+  "UNITTYPE_Fighter",
+  "UNITTYPE_Air",
+  "UNITTYPE_Mobile",
+  "UNITTYPE_Offense",
+  "UNITTYPE_Advanced",
+  "UNITTYPE_FactoryBuild",
+  "UNITTYPE_Custom1"
+ ]
 }

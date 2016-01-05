@@ -1,79 +1,79 @@
 {
-  "TEMP_texelinfo": 10.3794,
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    }
+ "TEMP_texelinfo":10.3794,
+ "audio":{
+  "loops":{
+   "move":{
+    "cue":"/SE/Movement/veh/tank_heavy_mortar_loop",
+    "flag":"vel_changed",
+    "should_start_func":"is_moving",
+    "should_stop_func":"is_not_moving"
+   }
+  }
+ },
+ "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
+ "build_metal_cost":225,
+ "description":"!LOC(units:advanced_tank_anti_land_and_anti_ship_guns.message):Advanced Tank: Anti-land and anti-ship guns",
+ "display_name":"!LOC(units:flux.message):Flux",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/veh"
   },
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 225,
-  "description": "!LOC(units:advanced_tank_anti_land_and_anti_ship_guns.message):Advanced Tank: Anti-land and anti-ship guns",
-  "display_name": "!LOC(units:flux.message):Flux",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.6
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/veh/tank_heavy_mortar_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"
-    }
+  "died":{
+   "audio_cue":"/SE/Death/Veh",
+   "effect_scale":1.6
   },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 625,
-  "model": {
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
-    "arrows": 5,
-    "filename": "/pa/units/land/tank_amphibious_adv/tank_amphibious_adv.papa"
-  },
-  "navigation": {
-    "acceleration": 2,
-    "brake": 70,
-    "dodge_multiplier": 1,
-    "dodge_radius": 15,
-    "move_speed": 6,
-    "turn_speed": 60,
-    "type": "amphibious",
-    "wobble_factor": 0.1,
-    "wobble_speed": 0.2
-  },
-  "physics": {
-    "push_class": 2,
-    "radius": 5
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "tools": [
+  "fired":{
+   "audio_cue":"/SE/Weapons/veh/tank_heavy_mortar_fire",
+   "effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"
+  }
+ },
+ "guard_layer":"WL_AnySurface",
+ "max_health":625,
+ "model":{
+  "animtree":"/pa/anim/anim_trees/turret_anim_tree.json",
+  "arrows":5,
+  "filename":"/pa/units/land/tank_amphibious_adv/tank_amphibious_adv.papa"
+ },
+ "navigation":{
+  "acceleration":2,
+  "brake":70,
+  "dodge_multiplier":1,
+  "dodge_radius":15,
+  "move_speed":6,
+  "turn_speed":60,
+  "type":"amphibious",
+  "wobble_factor":0.1,
+  "wobble_speed":0.2
+ },
+ "physics":{
+  "push_class":2,
+  "radius":5
+ },
+ "recon":{
+  "observer":{
+   "items":[
     {
-      "aim_bone": "socket_aim",
-      "muzzle_bone": "socket_leftMuzzle",
-      "spec_id": "/pa/units/land/tank_amphibious_adv/tank_amphibious_adv_tool_weapon.json"
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":100,
+     "shape":"capsule"
     }
-  ],
-  "unit_types": [
-    "UNITTYPE_Tank",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 1
+   ]
+  }
+ },
+ "tools":[
+  {
+   "aim_bone":"socket_aim",
+   "muzzle_bone":"socket_leftMuzzle",
+   "spec_id":"/pa/units/land/tank_amphibious_adv/tank_amphibious_adv_tool_weapon.json"
+  }
+ ],
+ "unit_types":[
+  "UNITTYPE_Tank",
+  "UNITTYPE_Mobile",
+  "UNITTYPE_Offense",
+  "UNITTYPE_Land",
+  "UNITTYPE_Custom1"
+ ],
+ "wreckage_health_frac":1
 }

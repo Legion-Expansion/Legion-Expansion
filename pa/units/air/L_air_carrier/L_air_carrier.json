@@ -1,161 +1,161 @@
 {
-    "TEMP_texelinfo": 5.39039,
-    "audio": {
-        "loops": {
-            "move": {
-                "cue": "/SE/Movement/air/air_scout_loop",
-                "flag": "vel_changed",
-                "should_start_func": "is_moving",
-                "should_stop_func": "is_not_moving"
-            }
-        },
-        "selection_response": {
-            "cue": "/SE/Selection/air/air"
-        }
+ "TEMP_texelinfo":5.39039,
+ "audio":{
+  "loops":{
+   "move":{
+    "cue":"/SE/Movement/air/air_scout_loop",
+    "flag":"vel_changed",
+    "should_start_func":"is_moving",
+    "should_stop_func":"is_not_moving"
+   }
+  },
+  "selection_response":{
+   "cue":"/SE/Selection/air/air"
+  }
+ },
+ "base_spec":"/pa/units/air/base_flyer/base_flyer.json",
+ "build_metal_cost":1900,
+ "command_caps":[
+  "ORDER_Move",
+  "ORDER_Patrol",
+  "ORDER_Assist",
+  "ORDER_Attack"
+ ],
+ "description":"Spits out drones and stuff",
+ "display_name":"Legion Air Carrier",
+ "events":{
+  "build_complete":{
+   "audio_cue":"/SE/Build_Complete/air"
+  },
+  "died":{
+   "audio_cue":"/SE/Death/Air",
+   "effect_scale":0.25,
+   "effect_spec":"/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
+  },
+  "fired":{
+   "audio_cue":"/SE/Weapons/air/air_scout_fire"
+  }
+ },
+ "fx_offsets":[
+  {
+   "bone":"thrust01",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust02",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust03",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust04",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"moving_forward"
+  },
+  {
+   "bone":"thrust05",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"moving_forward"
+  },
+  {
+   "bone":"hole_frontLeft",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"idle"
+  },
+  {
+   "bone":"hole_frontRight",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"idle"
+  },
+  {
+   "bone":"hole_backLeft",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"idle"
+  },
+  {
+   "bone":"hole_backRight",
+   "filename":"/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+   "type":"idle"
+  }
+ ],
+ "max_health":1000,
+ "mesh_bounds":[
+  17,
+  23,
+  7
+ ],
+ "model":{
+  "arrows":5,
+  "filename":"/pa/units/air/L_air_carrier/L_air_carrier.papa"
+ },
+ "navigation":{
+  "acceleration":30,
+  "brake":30,
+  "dodge_multiplier":1,
+  "dodge_radius":10,
+  "move_speed":30,
+  "turn_speed":40,
+  "type":"air",
+  "wobble_factor":0.2,
+  "wobble_speed":0.1
+ },
+ "physics":{
+  "gravity_scalar":1,
+  "push_class":2,
+  "radius":6
+ },
+ "recon":{
+  "observer":{
+   "items":[
+    {
+     "channel":"sight",
+     "layer":"surface_and_air",
+     "radius":250,
+     "shape":"capsule"
     },
-    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "build_metal_cost": 1900,
-    "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_Assist",
-		"ORDER_Attack"
-    ],
-    "tools": [
-        {
-            "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json",
-            "aim_bone": "socket_muzzleLeft",
-            "record_index": 0,
-            "fire_event": "fired",
-            "muzzle_bone": [
-                "socket_muzzleLeft"
-            ]
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json",
-            "aim_bone": "socket_muzzleRight",
-            "record_index": 1,
-            "fire_event": "fired1",
-            "muzzle_bone": [
-                "socket_muzzleRight"
-            ]
-        }
-    ],
-    "fx_offsets": [
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust01"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust02"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust03"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust04"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust05"
-        },
-        {
-            "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_frontLeft"
-        },
-        {
-            "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_frontRight"
-        },
-        {
-            "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_backLeft"
-        },
-        {
-            "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_backRight"
-        }
-    ],
-    "description": "Spits out drones and stuff",
-    "display_name": "Legion Air Carrier",
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/air"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Air",
-            "effect_scale": 0.25,
-            "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
-        },
-        "fired": {
-            "audio_cue": "/SE/Weapons/air/air_scout_fire"
-        }
-    },
-    "max_health": 1000,
-    "mesh_bounds": [
-        17,
-        23,
-        7
-    ],
-    "model": {
-        "arrows": 5,
-        "filename": "/pa/units/air/L_air_carrier/L_air_carrier.papa"
-    },
-    "navigation": {
-        "acceleration": 30,
-        "brake": 30,
-        "dodge_multiplier": 1,
-        "dodge_radius": 10,
-        "move_speed": 30,
-        "turn_speed": 40,
-        "type": "air",
-        "wobble_factor": 0.2,
-        "wobble_speed": 0.1
-    },
-    "physics": {
-        "gravity_scalar": 1,
-        "push_class": 2,
-        "radius": 6
-    },
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "channel": "sight",
-                    "layer": "surface_and_air",
-                    "radius": 250,
-                    "shape": "capsule"
-                },
-                {
-                    "channel": "sight",
-                    "layer": "underwater",
-                    "radius": 250,
-                    "shape": "capsule"
-                }
-            ]
-        }
-    },
-    "selection_icon": {
-        "diameter": 34
-    },
-    "unit_types": [
-        "UNITTYPE_Scout",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Air",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Custom1"
-    ]
+    {
+     "channel":"sight",
+     "layer":"underwater",
+     "radius":250,
+     "shape":"capsule"
+    }
+   ]
+  }
+ },
+ "selection_icon":{
+  "diameter":34
+ },
+ "tools":[
+  {
+   "aim_bone":"socket_muzzleLeft",
+   "fire_event":"fired",
+   "muzzle_bone":[
+    "socket_muzzleLeft"
+   ],
+   "record_index":0,
+   "spec_id":"/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json"
+  },
+  {
+   "aim_bone":"socket_muzzleRight",
+   "fire_event":"fired1",
+   "muzzle_bone":[
+    "socket_muzzleRight"
+   ],
+   "record_index":1,
+   "spec_id":"/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json"
+  }
+ ],
+ "unit_types":[
+  "UNITTYPE_Scout",
+  "UNITTYPE_Mobile",
+  "UNITTYPE_Air",
+  "UNITTYPE_Advanced",
+  "UNITTYPE_FactoryBuild",
+  "UNITTYPE_Custom1"
+ ]
 }
