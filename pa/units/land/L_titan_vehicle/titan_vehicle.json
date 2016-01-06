@@ -1,411 +1,249 @@
 {
- "TEMP_texelinfo":31.0,
- "armor_type":"AT_Hover",
- "atrophy_cool_down":15.0,
- "atrophy_rate":200.0,
- "attachable":{
-  "offsets":{
-   "head":[
-    0,
-    0,
-    3.4
-   ],
-   "root":[
-    0,
-    0,
-    0
-   ]
-  }
- },
- "audio":{
-  "loops":{
-   "move":{
-    "cue":"/SE/Movement/titan/hover_tank_titan_loop",
-    "flag":"vel_changed",
-    "should_start_func":"is_moving",
-    "should_stop_func":"is_not_moving"
-   }
-  },
-  "selection_response":{
-   "cue":"/SE/Selection/titan/hover_tank"
-  }
- },
- "base_spec":"/pa/units/land/base_vehicle/base_vehicle.json",
- "build_metal_cost":30000,
- "command_caps":[
-  "ORDER_Move",
-  "ORDER_Patrol",
-  "ORDER_Attack",
-  "ORDER_Assist"
- ],
- "death":{
-  "decals":[
-   "/pa/effects/specs/scorch_titan_01.json"
-  ]
- },
- "death_weapon":{
-  "ground_ammo_spec":"/pa/units/land/titan_vehicle/titan_vehicle_ammo_death.json"
- },
- "description":"!LOC:Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
- "display_name":"Ares",
- "events":{
-  "build_complete":{
-   "audio_cue":"/SE/Build_Complete/Titan_Complete"
-  },
-  "died":{
-   "audio_cue":"",
-   "effect_scale":1.0,
-   "effect_spec":""
-  },
-  "fired":{
-   "audio_cue":"",
-   "effect_spec":""
-  },
-  "fired0":{
-   "audio_cue":"/SE/Weapons/sea/T2_battleship_fire",
-   "effect_spec":"/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx bone_main_recoil"
-  },
-  "fired1":{
-   "audio_cue":"/SE/Weapons/sea/destroyer_fire",
-   "effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle02"
-  },
-  "fired2":{
-   "audio_cue":"/SE/Weapons/sea/destroyer_fire",
-   "effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle02"
-  },
-  "fired3":{
-   "audio_cue":"/SE/Weapons/sea/destroyer_fire",
-   "effect_spec":"/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle02"
-  }
- },
- "fx_offsets":[
-  {
-   "bone":"bone_root",
-   "filename":"/pa/units/land/titan_vehicle/titan_vehicle_idle.pfx",
-   "type":"idle"
-  }
- ],
- "guard_layer":"WL_AnyHorizontalGroundOrWaterSurface",
- "has_death_effects":true,
- "headlights":[
-  {
-   "bone":"bone_spine",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "far_distance":45.0,
-   "gobo":"/pa/effects/textures/gobo/spotlight_gobo.papa",
-   "intensity":4.0,
-   "near_distance":1.5,
-   "near_height":6.0,
-   "near_width":7.0,
-   "offset":[
-    6.118,
-    -20.125,
-    8.122
-   ],
-   "orientation":[
-    0.0,
-    35.0,
-    0.0
-   ],
-   "shadow_resolution":128
-  },
-  {
-   "bone":"bone_spine",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "far_distance":45.0,
-   "gobo":"/pa/effects/textures/gobo/spotlight_gobo.papa",
-   "intensity":4.0,
-   "near_distance":1.5,
-   "near_height":6.0,
-   "near_width":7.0,
-   "offset":[
-    -6.118,
-    -20.125,
-    8.122
-   ],
-   "orientation":[
-    0.0,
-    35.0,
-    0.0
-   ],
-   "shadow_resolution":128
-  }
- ],
- "lamps":[
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":3.0,
-   "offset":[
-    8.342,
-    -21.125,
-    8.122
-   ],
-   "radius":1.5
-  },
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":3.0,
-   "offset":[
-    3.893,
-    -21.125,
-    8.122
-   ],
-   "radius":1.5
-  },
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":3.0,
-   "offset":[
-    -3.893,
-    -21.125,
-    8.122
-   ],
-   "radius":1.5
-  },
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":3.0,
-   "offset":[
-    -8.342,
-    -21.125,
-    8.122
-   ],
-   "radius":1.5
-  },
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":5.0,
-   "offset":[
-    3.253,
-    25.394,
-    11.712
-   ],
-   "radius":2.0
-  },
-  {
-   "bone":"bone_root",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":5.0,
-   "offset":[
-    -3.253,
-    25.394,
-    11.712
-   ],
-   "radius":2.0
-  },
-  {
-   "bone":"bone_main_turret",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":5.0,
-   "offset":[
-    5.509,
-    -5.127,
-    2.932
-   ],
-   "radius":3.0
-  },
-  {
-   "bone":"bone_main_turret",
-   "color":[
-    1.0,
-    1.0,
-    1.0
-   ],
-   "intensity":5.0,
-   "offset":[
-    -5.509,
-    -5.127,
-    2.932
-   ],
-   "radius":3.0
-  }
- ],
- "max_health":80000,
- "mesh_bounds":[
-  40,
-  40,
-  25
- ],
- "model":{
-  "animations":{
-   "dead":"/pa/units/land/titan_vehicle/titan_vehicle_anim_dead.papa",
-   "death":"/pa/units/land/titan_vehicle/titan_vehicle_anim_death.papa",
-   "hover":"/pa/units/land/titan_vehicle/titan_vehicle_anim_hover.papa"
-  },
-  "animtree":"/pa/anim/anim_trees/titan_vehicle_anim_tree.json",
-  "filename":"/pa/units/land/titan_vehicle/titan_vehicle.papa"
- },
- "navigation":{
-  "acceleration":100,
-  "brake":100,
-  "move_speed":10,
-  "park_stamp":{
-   "cost":10,
-   "shape":"sphere",
-   "type_data":[
-    {
-     "move_type":"land-small",
-     "stamp_type":"structure"
-    },
-    {
-     "move_type":"amphibious",
-     "stamp_type":"structure"
-    },
-    {
-     "move_type":"amphibious-large",
-     "stamp_type":"simple"
-    },
-    {
-     "move_type":"hover",
-     "stamp_type":"structure"
-    },
-    {
-     "move_type":"hover-large",
-     "stamp_type":"simple"
-    },
-    {
-     "move_type":"deepwater",
-     "stamp_type":"structure"
-    },
-    {
-     "move_type":"underwater",
-     "stamp_type":"structure"
-    }
-   ]
-  },
-  "turn_accel":15,
-  "turn_in_place":true,
-  "turn_speed":30,
-  "type":"hover-large"
- },
- "physics":{
-  "orient_interp_rate":90.0,
-  "radius":10
- },
- "recon":{
-  "observer":{
-   "items":[
-    {
-     "channel":"sight",
-     "layer":"surface_and_air",
-     "radius":250,
-     "shape":"capsule"
-    }
-   ]
-  }
- },
- "selection_icon":{
-  "diameter":68.0
- },
- "teleportable":null,
- "tools":[
-  {
-   "aim_bone":"socket_main_aim",
-   "fire_event":"fired0",
-   "muzzle_bone":[
-    "socket_main_muzzle01",
-    "socket_main_muzzle02",
-    "socket_main_muzzle03",
-    "socket_main_muzzle04"
-   ],
-   "projectiles_per_fire":4,
-   "record_index":0,
-   "spec_id":"/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_main.json"
-  },
-  {
-   "aim_bone":"socket_left_aim",
-   "fire_event":"fired1",
-   "muzzle_bone":[
-    "socket_left_muzzle01",
-    "socket_left_muzzle02"
-   ],
-   "projectiles_per_fire":2,
-   "record_index":1,
-   "spec_id":"/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json"
-  },
-  {
-   "aim_bone":"socket_right_aim",
-   "fire_event":"fired2",
-   "muzzle_bone":[
-    "socket_right_muzzle01",
-    "socket_right_muzzle02"
-   ],
-   "projectiles_per_fire":2,
-   "record_index":2,
-   "spec_id":"/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json"
-  },
-  {
-   "aim_bone":"socket_rear_aim",
-   "fire_event":"fired3",
-   "muzzle_bone":[
-    "socket_rear_muzzle01",
-    "socket_rear_muzzle02"
-   ],
-   "projectiles_per_fire":2,
-   "record_index":3,
-   "spec_id":"/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json"
-  },
-  {
-   "aim_bone":"bone_root",
-   "fire_event":"fired",
-   "muzzle_bone":"bone_root",
-   "projectiles_per_fire":1,
-   "record_index":-1,
-   "spec_id":"/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_stomp.json"
-  }
- ],
- "unit_types":[
-  "UNITTYPE_Tank",
-  "UNITTYPE_Mobile",
-  "UNITTYPE_Offense",
-  "UNITTYPE_Land",
-  "UNITTYPE_Advanced",
-  "UNITTYPE_Titan",
-  "UNITTYPE_Hover",
-  "UNITTYPE_Important",
-  "UNITTYPE_FabOrbBuild",
-  "UNITTYPE_Custom1"
- ],
- "wreckage_health_frac":0.7
+	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+	"display_name": "Ares",
+	"description": "!LOC:Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
+	"max_health": 80000,
+	"build_metal_cost": 30000,
+	"armor_type": "AT_Hover",
+	"atrophy_rate": 200.0,
+	"atrophy_cool_down": 15.0,
+	"wreckage_health_frac": 0.7,
+	"has_death_effects": true,
+	"attachable": {
+		"offsets": {
+			"root": [0, 0, 0],
+			"head": [0, 0, 3.4]
+		}
+	},
+	"unit_types": ["UNITTYPE_Tank", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_Titan", "UNITTYPE_Hover", "UNITTYPE_Important", "UNITTYPE_FabOrbBuild", "UNITTYPE_Custom1"],
+	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist"],
+	"guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+	"navigation": {
+		"turn_in_place": true,
+		"type": "hover-large",
+		"acceleration": 100,
+		"brake": 100,
+		"move_speed": 10,
+		"turn_speed": 30,
+		"turn_accel": 15,
+		"park_stamp": {
+			"shape": "sphere",
+			"cost": 10,
+			"type_data": [{
+				"move_type": "land-small",
+				"stamp_type": "structure"
+			}, {
+				"move_type": "amphibious",
+				"stamp_type": "structure"
+			}, {
+				"move_type": "amphibious-large",
+				"stamp_type": "simple"
+			}, {
+				"move_type": "hover",
+				"stamp_type": "structure"
+			}, {
+				"move_type": "hover-large",
+				"stamp_type": "simple"
+			}, {
+				"move_type": "deepwater",
+				"stamp_type": "structure"
+			}, {
+				"move_type": "underwater",
+				"stamp_type": "structure"
+			}]
+		}
+	},
+	"physics": {
+		"radius": 10,
+		"orient_interp_rate": 90.0
+	},
+	"recon": {
+		"observer": {
+			"items": [{
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 250
+			}]
+		}
+	},
+	"death_weapon": {
+		"ground_ammo_spec": "/pa/units/land/titan_vehicle/titan_vehicle_ammo_death.json"
+	},
+	"model": {
+		"filename": "/pa/units/land/titan_vehicle/titan_vehicle.papa",
+		"animations": {
+			"hover": "/pa/units/land/titan_vehicle/titan_vehicle_anim_hover.papa",
+			"death": "/pa/units/land/titan_vehicle/titan_vehicle_anim_death.papa",
+			"dead": "/pa/units/land/titan_vehicle/titan_vehicle_anim_dead.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/titan_vehicle_anim_tree.json"
+	},
+	"tools": [{
+		"spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_main.json",
+		"aim_bone": "socket_main_aim",
+		"record_index": 0,
+		"fire_event": "fired0",
+		"projectiles_per_fire": 4,
+		"muzzle_bone": ["socket_main_muzzle01", "socket_main_muzzle02", "socket_main_muzzle03", "socket_main_muzzle04"]
+	}, {
+		"spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json",
+		"aim_bone": "socket_left_aim",
+		"record_index": 1,
+		"fire_event": "fired1",
+		"projectiles_per_fire": 2,
+		"muzzle_bone": ["socket_left_muzzle01", "socket_left_muzzle02"]
+	}, {
+		"spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json",
+		"aim_bone": "socket_right_aim",
+		"record_index": 2,
+		"fire_event": "fired2",
+		"projectiles_per_fire": 2,
+		"muzzle_bone": ["socket_right_muzzle01", "socket_right_muzzle02"]
+	}, {
+		"spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_side.json",
+		"aim_bone": "socket_rear_aim",
+		"record_index": 3,
+		"fire_event": "fired3",
+		"projectiles_per_fire": 2,
+		"muzzle_bone": ["socket_rear_muzzle01", "socket_rear_muzzle02"]
+	}, {
+		"spec_id": "/pa/units/land/titan_vehicle/titan_vehicle_tool_weapon_stomp.json",
+		"record_index": -1,
+		"fire_event": "fired",
+		"projectiles_per_fire": 1,
+		"aim_bone": "bone_root",
+		"muzzle_bone": "bone_root"
+	}],
+	"teleportable": null,
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/Titan_Complete"
+		},
+		"fired": {
+			"audio_cue": "",
+			"effect_spec": ""
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
+			"effect_spec": "/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx bone_main_recoil"
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle02"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle02"
+		},
+		"fired3": {
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle02"
+		},
+		"died": {
+			"audio_cue": "",
+			"effect_spec": "",
+			"effect_scale": 1.0
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/titan/hover_tank_titan_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/titan/hover_tank"
+		}
+	},
+	"fx_offsets": [{
+		"type": "idle",
+		"filename": "/pa/units/land/titan_vehicle/titan_vehicle_idle.pfx",
+		"bone": "bone_root"
+	}],
+	"headlights": [{
+		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+		"offset": [6.118, -20.125, 8.122],
+		"orientation": [0.0, 35.0, 0.0],
+		"near_width": 7.0,
+		"near_height": 6.0,
+		"near_distance": 1.5,
+		"far_distance": 45.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 4.0,
+		"bone": "bone_spine",
+		"shadow_resolution": 128
+	}, {
+		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+		"offset": [-6.118, -20.125, 8.122],
+		"orientation": [0.0, 35.0, 0.0],
+		"near_width": 7.0,
+		"near_height": 6.0,
+		"near_distance": 1.5,
+		"far_distance": 45.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 4.0,
+		"bone": "bone_spine",
+		"shadow_resolution": 128
+	}],
+	"lamps": [{
+		"offset": [8.342, -21.125, 8.122],
+		"radius": 1.5,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [3.893, -21.125, 8.122],
+		"radius": 1.5,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [-3.893, -21.125, 8.122],
+		"radius": 1.5,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [-8.342, -21.125, 8.122],
+		"radius": 1.5,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 3.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [3.253, 25.394, 11.712],
+		"radius": 2.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 5.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [-3.253, 25.394, 11.712],
+		"radius": 2.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 5.0,
+		"bone": "bone_root"
+	}, {
+		"offset": [5.509, -5.127, 2.932],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 5.0,
+		"bone": "bone_main_turret"
+	}, {
+		"offset": [-5.509, -5.127, 2.932],
+		"radius": 3.0,
+		"color": [1.0, 1.0, 1.0],
+		"intensity": 5.0,
+		"bone": "bone_main_turret"
+	}],
+	"death": {
+		"decals": ["/pa/effects/specs/scorch_titan_01.json"]
+	},
+	"selection_icon": {
+		"diameter": 68.0
+	},
+	"mesh_bounds": [40, 40, 25],
+	"TEMP_texelinfo": 31.0
 }

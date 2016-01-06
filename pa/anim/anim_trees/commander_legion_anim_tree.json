@@ -1,194 +1,164 @@
 {
- "blend_root":{
-  "nodes":{
-   "being_built":{
-    "type":"bind_pose"
-   },
-   "dead":{
-    "type":"bind_pose"
-   },
-   "ghost":{
-    "type":"bind_pose"
-   },
-   "living":{
-    "aim_bone_root":"turret",
-    "child":{
-     "entries":[
-      {
-       "name":"idle",
-       "node":{
-        "anim_name":"idle",
-        "events":[],
-        "looping":true,
-        "type":"playback"
-       },
-       "reset":"playback_reset",
-       "transitions":[
-        {
-         "transition_forward":{
-          "duration":0.2,
-          "func":"is_moving",
-          "target":"walking"
-         },
-         "transition_reverse":{
-          "duration":0.2,
-          "func":"is_moving",
-          "target":"walking"
-         }
-        }
-       ],
-       "type":"item"
-      },
-      {
-       "name":"walking",
-       "node":{
-        "anim_name":"walk",
-        "events":[
-         {
-          "parameters":{
-           "cue":"/SE/Movement/commander/Commander_step"
-          },
-          "time":0.46,
-          "type":"audio"
-         },
-         {
-          "parameters":{
-           "bone":"foot02",
-           "bone_offset":[
-            0.0,
-            0.0,
-            0.0
-           ],
-           "effect_scale":1.0,
-           "spec":"/pa/effects/specs/commander_step.pfx"
-          },
-          "time":0.46,
-          "type":"effect"
-         },
-         {
-          "parameters":{
-           "cue":"/SE/Movement/commander/Commander_step"
-          },
-          "time":1.26,
-          "type":"audio"
-         },
-         {
-          "parameters":{
-           "bone":"foot01",
-           "bone_offset":[
-            0.0,
-            0.0,
-            0.0
-           ],
-           "effect_scale":1.0,
-           "spec":"/pa/effects/specs/commander_step.pfx"
-          },
-          "time":1.26,
-          "type":"effect"
-         }
-        ],
-        "looping":true,
-        "type":"playback"
-       },
-       "reset":"playback_reset",
-       "scale_to_move_speed":true,
-       "transitions":[
-        {
-         "transition_forward":{
-          "duration":0.4,
-          "func":"not_moving",
-          "target":"walk_stop"
-         },
-         "transition_reverse":{
-          "duration":0.4,
-          "func":"not_moving",
-          "target":"walk_stop"
-         }
-        }
-       ],
-       "type":"item"
-      },
-      {
-       "name":"walk_stop",
-       "node":{
-        "anim_name":"walk_stop",
-        "events":[
-         {
-          "parameters":{
-           "cue":"/SE/Movement/commander/Commander_step"
-          },
-          "time":0.36,
-          "type":"audio"
-         },
-         {
-          "parameters":{
-           "cue":"/SE/Movement/commander/Commander_step"
-          },
-          "time":0.95,
-          "type":"audio"
-         },
-         {
-          "parameters":{
-           "cue":"/SE/Movement/commander/Commander_step"
-          },
-          "time":1.33,
-          "type":"audio"
-         }
-        ],
-        "looping":false,
-        "type":"playback"
-       },
-       "reset":"playback_reset",
-       "transitions":[
-        {
-         "transition_forward":{
-          "func":"anim_complete",
-          "target":"idle"
-         },
-         "transition_reverse":{
-          "func":"anim_complete",
-          "target":"idle"
-         }
-        },
-        {
-         "transition_forward":{
-          "duration":0.2,
-          "func":"is_moving",
-          "target":"walking"
-         },
-         "transition_reverse":{
-          "duration":0.2,
-          "func":"is_moving",
-          "target":"walking"
-         }
-        }
-       ],
-       "type":"item"
-      }
-     ],
-     "type":"sequence"
-    },
-    "node_aim_down":{
-     "anim_name":"aim_down",
-     "type":"playback"
-    },
-    "node_aim_neutral":{
-     "type":"bind_pose"
-    },
-    "node_aim_up":{
-     "anim_name":"aim_up",
-     "type":"playback"
-    },
-    "type":"aim_blend"
-   }
-  },
-  "type":"unit_state"
- },
- "skeleton_controls":[
-  {
-   "rotation_axis":"z",
-   "rotation_bone":"turret",
-   "type":"procedural_aim"
-  }
- ]
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "bind_pose"
+			},
+			"living": {
+				"type": "aim_blend",
+				"aim_bone_root": "turret",
+				"node_aim_down": {
+					"type": "playback",
+					"anim_name": "aim_down"
+				},
+				"node_aim_neutral": {
+					"type": "bind_pose"
+				},
+				"node_aim_up": {
+					"type": "playback",
+					"anim_name": "aim_up"
+				},
+				"child": {
+					"type": "sequence",
+					"entries": [{
+						"type": "item",
+						"name": "idle",
+						"node": {
+							"type": "playback",
+							"anim_name": "idle",
+							"looping": true,
+							"events": []
+						},
+						"transitions": [{
+							"transition_forward": {
+								"func": "is_moving",
+								"target": "walking",
+								"duration": 0.2
+							},
+							"transition_reverse": {
+								"func": "is_moving",
+								"target": "walking",
+								"duration": 0.2
+							}
+						}],
+						"reset": "playback_reset"
+					}, {
+						"type": "item",
+						"name": "walking",
+						"scale_to_move_speed": true,
+						"node": {
+							"type": "playback",
+							"anim_name": "walk",
+							"looping": true,
+							"events": [{
+								"time": 0.46,
+								"type": "audio",
+								"parameters": {
+									"cue": "/SE/Movement/commander/Commander_step"
+								}
+							}, {
+								"time": 0.46,
+								"type": "effect",
+								"parameters": {
+									"bone": "foot02",
+									"spec": "/pa/effects/specs/commander_step.pfx",
+									"effect_scale": 1.0,
+									"bone_offset": [0.0, 0.0, 0.0]
+								}
+							}, {
+								"time": 1.26,
+								"type": "audio",
+								"parameters": {
+									"cue": "/SE/Movement/commander/Commander_step"
+								}
+							}, {
+								"time": 1.26,
+								"type": "effect",
+								"parameters": {
+									"bone": "foot01",
+									"spec": "/pa/effects/specs/commander_step.pfx",
+									"effect_scale": 1.0,
+									"bone_offset": [0.0, 0.0, 0.0]
+								}
+							}]
+						},
+						"transitions": [{
+							"transition_forward": {
+								"func": "not_moving",
+								"target": "walk_stop",
+								"duration": 0.4
+							},
+							"transition_reverse": {
+								"func": "not_moving",
+								"target": "walk_stop",
+								"duration": 0.4
+							}
+						}],
+						"reset": "playback_reset"
+					}, {
+						"type": "item",
+						"name": "walk_stop",
+						"node": {
+							"type": "playback",
+							"anim_name": "walk_stop",
+							"looping": false,
+							"events": [{
+								"time": 0.36,
+								"type": "audio",
+								"parameters": {
+									"cue": "/SE/Movement/commander/Commander_step"
+								}
+							}, {
+								"time": 0.95,
+								"type": "audio",
+								"parameters": {
+									"cue": "/SE/Movement/commander/Commander_step"
+								}
+							}, {
+								"time": 1.33,
+								"type": "audio",
+								"parameters": {
+									"cue": "/SE/Movement/commander/Commander_step"
+								}
+							}]
+						},
+						"transitions": [{
+							"transition_forward": {
+								"func": "anim_complete",
+								"target": "idle"
+							},
+							"transition_reverse": {
+								"func": "anim_complete",
+								"target": "idle"
+							}
+						}, {
+							"transition_forward": {
+								"func": "is_moving",
+								"target": "walking",
+								"duration": 0.2
+							},
+							"transition_reverse": {
+								"func": "is_moving",
+								"target": "walking",
+								"duration": 0.2
+							}
+						}],
+						"reset": "playback_reset"
+					}]
+				}
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"type": "procedural_aim",
+		"rotation_bone": "turret",
+		"rotation_axis": "z"
+	}]
 }

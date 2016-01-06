@@ -1,1 +1,64 @@
-{"base_spec":"/pa/ammo/base_missiles/base_missile_tactical.json","damage":1000,"splash_damage":0,"splash_radius":0,"cruise_height":75,"initial_velocity":80.0,"max_velocity":80.0,"turn_rate":45,"lifetime":15,"influence_radius":400,"model":{"filename":"/pa/units/air/atoa_missile/atoa_missile.papa"},"fx_trail":{"filename":"/pa/units/air/missile_tactical/missile_tactical_trail.pfx","offset":[0.0,4.6,0.0]},"events":{"died":{"audio_cue":"/SE/Impacts/missile_catapult","effect_spec":"/pa/effects/specs/default_proj_area_explosion.pfx"}},"audio_loop":"/SE/Movement/missile/catapult_missile_fly_loop","physics":{"radius":1,"gravity_scalar":5,"ignore_gravity":true,"add_to_spatial_db":true},"armor_damage_map":{"AT_Orbital":0.5},"flight_type":"Staged","stages":[{"ignores_gravity":true,"ignores_LOS":true,"stage_duration":450,"stage_turn_rate":0,"rotates_to_velocity":true},{"ignores_gravity":true,"ignores_LOS":true,"stage_duration":0,"stage_turn_rate":120,"stage_change_range":80,"rotates_to_velocity":true},{"ignores_gravity":false,"ignores_LOS":false,"stage_duration":5000,"stage_turn_rate":360,"rotates_to_velocity":true}]}
+{
+  "armor_damage_map": {
+    "AT_Orbital": 0.5
+  },
+  "audio_loop": "/SE/Movement/missile/catapult_missile_fly_loop",
+  "base_spec": "/pa/ammo/base_missiles/base_missile_tactical.json",
+  "cruise_height": 75,
+  "damage": 1000,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_catapult",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+    }
+  },
+  "flight_type": "Staged",
+  "fx_trail": {
+    "filename": "/pa/units/air/missile_tactical/missile_tactical_trail.pfx",
+    "offset": [
+      0.0,
+      4.6,
+      0.0
+    ]
+  },
+  "influence_radius": 400,
+  "initial_velocity": 80.0,
+  "lifetime": 15,
+  "max_velocity": 80.0,
+  "model": {
+    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
+    "radius": 1
+  },
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 450,
+      "stage_turn_rate": 0
+    },
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_change_range": 80,
+      "stage_duration": 0,
+      "stage_turn_rate": 120
+    },
+    {
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 5000,
+      "stage_turn_rate": 360
+    }
+  ],
+  "turn_rate": 45
+}

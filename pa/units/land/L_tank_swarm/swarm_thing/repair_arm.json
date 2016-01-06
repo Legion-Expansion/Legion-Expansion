@@ -1,11 +1,11 @@
 {
- "auto_repair":true,
- "base_spec":"/pa/tools/engineer_build_arm/engineer_build_arm.json",
- "construction_demand":{
-  "energy":300,
-  "metal":10
- },
- "max_range":20,
- "pitch_rate":360,
- "yaw_rate":360
+	"base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
+	"yaw_rate": 360,
+	"pitch_rate": 360,
+	"max_range": 20,
+	"auto_repair": true,
+	"construction_demand": {
+		"energy": 300,
+		"metal": 10
+	}
 }

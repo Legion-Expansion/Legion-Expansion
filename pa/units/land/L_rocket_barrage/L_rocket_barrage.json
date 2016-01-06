@@ -1,175 +1,175 @@
 {
- "TEMP_texelinfo":15.8261,
- "atrophy_cool_down":15,
- "atrophy_rate":30,
- "audio":{
-  "selection_response":{
-   "cue":"/SE/Selection/structure/artillery"
-  }
- },
- "base_spec":"/pa/units/land/base_structure/base_structure.json",
- "build_metal_cost":1800,
- "command_caps":[
-  "ORDER_Attack"
- ],
- "description":"Medium Range Rocket Pods",
- "display_name":"Legion Omega Decimator Rocket Pods",
- "events":{
-  "build_complete":{
-   "audio_cue":"/SE/Build_Complete/factory"
+  "TEMP_texelinfo": 15.8261,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 30,
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/artillery"
+    }
   },
-  "died":{
-   "audio_cue":"/SE/Death/Factory",
-   "effect_scale":0.5
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 1800,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "description": "Medium Range Rocket Pods",
+  "display_name": "Legion Omega Decimator Rocket Pods",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/factory"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 0.5
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom01 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents01 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke01"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom02 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents02 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke02"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom03 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents03 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke03"
+    }
   },
-  "fired1":{
-   "audio_cue":"/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-   "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom01 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents01 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke01"
-  },
-  "fired2":{
-   "audio_cue":"/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-   "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom02 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents02 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke02"
-  },
-  "fired3":{
-   "audio_cue":"/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-   "effect_spec":"/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleMiddle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom03 /pa/units/land/L_rocket_barrage/vent_smoke.pfx vents03 /pa/units/land/L_rocket_barrage/back_smoke.pfx back_smoke03"
-  }
- },
- "fx_offsets":[
-  {
-   "bone":"laser01",
-   "filename":"/pa/effects/specs/laser_beam.pfx",
-   "offset":[
-    0,
-    0,
-    0
-   ],
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"idle"
-  },
-  {
-   "bone":"laser02",
-   "filename":"/pa/effects/specs/laser_beam.pfx",
-   "offset":[
-    0,
-    0,
-    0
-   ],
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"idle"
-  },
-  {
-   "bone":"laser03",
-   "filename":"/pa/effects/specs/laser_beam.pfx",
-   "offset":[
-    0,
-    0,
-    0
-   ],
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"idle"
-  }
- ],
- "guard_layer":"WL_AnySurface",
- "max_health":1500,
- "mesh_bounds":[
-  19.561,
-  20.497,
-  15.962
- ],
- "model":[
-  {
-   "animtree":"/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
-   "filename":"/pa/units/land/L_rocket_barrage/L_rocket_barrage.papa",
-   "layer":"WL_LandHorizontal",
-   "skirt_decal":"/pa/effects/specs/skirt_08.json"
-  },
-  {
-   "animtree":"/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
-   "filename":"/pa/units/sea/tactical_missile_launcher/tactical_missile_launcher.papa",
-   "layer":"WL_WaterSurface"
-  }
- ],
- "recon":{
-  "observer":{
-   "items":[
+  "fx_offsets": [
     {
-     "channel":"sight",
-     "layer":"surface_and_air",
-     "radius":100,
-     "shape":"capsule"
+      "bone": "laser01",
+      "filename": "/pa/effects/specs/laser_beam.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
     },
     {
-     "channel":"sight",
-     "layer":"underwater",
-     "radius":100,
-     "shape":"capsule"
+      "bone": "laser02",
+      "filename": "/pa/effects/specs/laser_beam.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "laser03",
+      "filename": "/pa/effects/specs/laser_beam.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
     }
-   ]
-  }
- },
- "selection_icon":{
-  "diameter":30
- },
- "spawn_layers":"WL_AnyHorizontalGroundOrWaterSurface",
- "tools":[
-  {
-   "aim_bone":"bone_pitch01",
-   "fire_event":"fired1",
-   "muzzle_bone":[
-    "socket_muzzleTop01",
-    "socket_muzzleMiddle01",
-    "socket_muzzleBottom01"
-   ],
-   "projectiles_per_fire":3,
-   "record_index":1,
-   "spec_id":"/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon01.json"
+  ],
+  "guard_layer": "WL_AnySurface",
+  "max_health": 1500,
+  "mesh_bounds": [
+    19.561,
+    20.497,
+    15.962
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
+      "filename": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_08.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
+      "filename": "/pa/units/sea/tactical_missile_launcher/tactical_missile_launcher.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
   },
-  {
-   "aim_bone":"bone_pitch02",
-   "fire_event":"fired2",
-   "muzzle_bone":[
-    "socket_muzzleTop02",
-    "socket_muzzleMiddle02",
-    "socket_muzzleBottom02"
-   ],
-   "projectiles_per_fire":3,
-   "record_index":2,
-   "spec_id":"/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon02.json"
+  "selection_icon": {
+    "diameter": 30
   },
-  {
-   "aim_bone":"bone_pitch03",
-   "fire_event":"fired3",
-   "muzzle_bone":[
-    "socket_muzzleTop03",
-    "socket_muzzleMiddle03",
-    "socket_muzzleBottom03"
-   ],
-   "projectiles_per_fire":3,
-   "record_index":3,
-   "spec_id":"/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon03.json"
-  }
- ],
- "unit_types":[
-  "UNITTYPE_Land",
-  "UNITTYPE_Structure",
-  "UNITTYPE_Tactical",
-  "UNITTYPE_Defense",
-  "UNITTYPE_Advanced",
-  "UNITTYPE_FabAdvBuild",
-  "UNITTYPE_Important",
-  "UNITTYPE_Custom1"
- ]
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_muzzleTop01",
+        "socket_muzzleMiddle01",
+        "socket_muzzleBottom01"
+      ],
+      "projectiles_per_fire": 3,
+      "record_index": 1,
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon01.json"
+    },
+    {
+      "aim_bone": "bone_pitch02",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "socket_muzzleTop02",
+        "socket_muzzleMiddle02",
+        "socket_muzzleBottom02"
+      ],
+      "projectiles_per_fire": 3,
+      "record_index": 2,
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon02.json"
+    },
+    {
+      "aim_bone": "bone_pitch03",
+      "fire_event": "fired3",
+      "muzzle_bone": [
+        "socket_muzzleTop03",
+        "socket_muzzleMiddle03",
+        "socket_muzzleBottom03"
+      ],
+      "projectiles_per_fire": 3,
+      "record_index": 3,
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon03.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Land",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important",
+    "UNITTYPE_Custom1"
+  ]
 }

@@ -1,206 +1,206 @@
 {
- "TEMP_texelinfo":42,
- "area_build_separation":7,
- "atrophy_cool_down":15,
- "atrophy_rate":80,
- "audio":{
-  "loops":{
-   "build":{
-    "cue":"/SE/Construction/Factory_contruction_loop_veh",
-    "flag":"build_target_changed",
-    "should_start_func":"has_build_target",
-    "should_stop_func":"no_build_target"
-   }
-  }
- },
- "base_spec":"/pa/units/land/base_structure/base_structure.json",
- "build_metal_cost":4200,
- "buildable_types":"Custom1 & ( Mobile & Tank & FactoryBuild )",
- "command_caps":[
-  "ORDER_Move",
-  "ORDER_Patrol",
-  "ORDER_FactoryBuild",
-  "ORDER_Reclaim",
-  "ORDER_Repair",
-  "ORDER_Attack",
-  "ORDER_Assist",
-  "ORDER_Use"
- ],
- "death":{
-  "decals":[
-   "/pa/effects/specs/scorch_c_01.json"
-  ]
- },
- "description":"Advanced manufacturing- Builds Legion land vehicles.",
- "display_name":"Legion Advanced Armour Foundry",
- "events":{
-  "died":{
-   "effect_scale":1.5
-  }
- },
- "factory_cooldown_time":4,
- "fx_offsets":[
-  {
-   "bone":"laser01",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"laser02",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"laser03",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"laser04",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"laser05",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"laser06",
-   "filename":"/pa/effects/specs/legion_factory_spray.pfx",
-   "orientation":[
-    0,
-    0,
-    0
-   ],
-   "type":"build"
-  },
-  {
-   "bone":"smoke001",
-   "filename":"/pa/effects/specs/factory_smoke.pfx",
-   "type":"build"
-  },
-  {
-   "bone":"smoke002",
-   "filename":"/pa/effects/specs/factory_smoke.pfx",
-   "type":"build"
-  }
- ],
- "headlights":[
-  {
-   "color":[
-    1.5,
-    1.52,
-    1.6
-   ],
-   "far_distance":30,
-   "gobo":"/pa/effects/textures/gobo/spotlight_gobo.papa",
-   "intensity":2,
-   "near_distance":10,
-   "near_height":20,
-   "near_width":20,
-   "offset":[
-    0,
-    0,
-    20
-   ]
-  }
- ],
- "max_health":30000,
- "mesh_bounds":[
-  57,
-  64,
-  28.6
- ],
- "model":{
-  "animations":{
-   "build_loop":"/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa"
-  },
-  "animtree":"/pa/anim/anim_trees/factory_anim_tree.json",
-  "filename":"/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
-  "skirt_decal":"/pa/effects/specs/skirt_02.json"
- },
- "physics":{
-  "collision_layers":"WL_AnyHorizontalGroundOrWaterSurface"
- },
- "placement_size":[
-  50,
-  65
- ],
- "recon":{
-  "observer":{
-   "items":[
+    "area_build_separation": 7,
+    "atrophy_cool_down": 15,
+    "atrophy_rate": 80,
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Factory_contruction_loop_veh",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            }
+        }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 4200,
+    "buildable_types": "Custom1 & ( Mobile & Tank & FactoryBuild )",
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_FactoryBuild",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Attack",
+        "ORDER_Assist",
+        "ORDER_Use"
+    ],
+    "description": "Advanced manufacturing- Builds Legion land vehicles.",
+    "display_name": "Legion Advanced Armour Foundry",
+    "events": {
+        "died": {
+            "effect_scale": 1.5
+        }
+    },
+    "factory_cooldown_time": 4,
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser01",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser02",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser03",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser04",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser05",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "laser06",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
     {
-     "channel":"sight",
-     "layer":"surface_and_air",
-     "radius":100,
-     "shape":"capsule"
+      "bone": "smoke001",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
     },
     {
-     "channel":"sight",
-     "layer":"underwater",
-     "radius":100,
-     "shape":"capsule"
+      "bone": "smoke002",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "build"
     }
-   ]
-  }
- },
- "rolloff_dirs":[
-  [
-   0,
-   1,
-   0
-  ],
-  [
-   0,
-   -1,
-   0
-  ]
- ],
- "selection_icon":{
-  "diameter":78
- },
- "tools":[
-  {
-   "aim_bone":"bone_platform",
-   "muzzle_bone":"bone_platform",
-   "spec_id":"/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build_arm.json"
-  }
- ],
- "unit_types":[
-  "UNITTYPE_Factory",
-  "UNITTYPE_Construction",
-  "UNITTYPE_Land",
-  "UNITTYPE_Tank",
-  "UNITTYPE_Structure",
-  "UNITTYPE_Advanced",
-  "UNITTYPE_Important",
-  "UNITTYPE_Custom1"
- ],
- "wait_to_rolloff_time":0
+    ],
+    "death": {
+        "decals": [
+            "/pa/effects/specs/scorch_c_01.json"
+        ]
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                0,
+                20
+            ],
+            "near_width": 20,
+            "near_height": 20,
+            "near_distance": 10,
+            "far_distance": 30,
+            "color": [
+                1.5,
+                1.52,
+                1.6
+            ],
+            "intensity": 2
+        }
+    ],
+    "mesh_bounds": [
+        57,
+        64,
+        28.6
+    ],
+    "placement_size": [
+        50,
+        65
+    ],
+    "TEMP_texelinfo": 42,
+    "max_health": 30000,
+    "model": {
+        "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
+        "animations": {
+            "build_loop": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+        "skirt_decal": "/pa/effects/specs/skirt_02.json"
+    },
+    "physics": {
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "rolloff_dirs": [
+        [
+            0,
+            1,
+            0
+        ],
+        [
+            0,
+            -1,
+            0
+        ]
+    ],
+    "selection_icon": {
+        "diameter": 78
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_platform",
+            "muzzle_bone": "bone_platform",
+            "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build_arm.json"
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Land",
+        "UNITTYPE_Tank",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Important",
+        "UNITTYPE_Custom1"
+    ],
+    "wait_to_rolloff_time": 0
 }

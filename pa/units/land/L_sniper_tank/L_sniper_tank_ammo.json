@@ -1,20 +1,20 @@
 {
- "base_spec":"/pa/ammo/base_shell/base_shell.json",
- "damage":450,
- "fx_trail":{
-  "filename":"/pa/units/land/L_sniper_tank/trail.pfx",
-  "offset":[
-   0,
-   15,
-   0
-  ]
- },
- "initial_velocity":500,
- "lifetime":2,
- "max_velocity":500,
- "model":{
-  "filename":""
- },
- "splash_damage":450,
- "splash_radius":3
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "damage": 450,
+  "fx_trail": {
+    "filename": "/pa/units/land/L_sniper_tank/trail.pfx",
+    "offset": [
+      0,
+      15,
+      0
+    ]
+  },
+  "initial_velocity": 500,
+  "lifetime": 2,
+  "max_velocity": 500,
+  "model": {
+    "filename": ""
+  },
+  "splash_damage": 450,
+  "splash_radius": 3
 }

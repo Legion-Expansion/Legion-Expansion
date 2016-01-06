@@ -1,4 +1,4 @@
-var legionExpansionLoaded;
+var legionExpansionLoaded, vanillaLock;
 
 if (!legionExpansionLoaded) {
 
@@ -51,4 +51,5 @@ model.CheckLegionCommander = function (index) {
         console.log("FUCK YEAH");
     }
 };
+
 $('.army-button.btn_add_ai').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.isEmpty(),click: function() { model.LegionCommander(army.index());}">Add Legion AI</div>');

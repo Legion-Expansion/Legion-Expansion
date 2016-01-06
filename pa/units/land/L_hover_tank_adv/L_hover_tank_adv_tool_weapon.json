@@ -1,33 +1,27 @@
 {
- "ammo_capacity":2,
- "ammo_demand":1,
- "ammo_id":"/pa/units/land/L_hover_tank_adv/L_hover_tank_adv_ammo.json",
- "ammo_per_shot":2,
- "ammo_source":"time",
- "auto_attack":true,
- "base_spec":"/pa/tools/base_artillery_turret/base_artillery_turret.json",
- "firing_arc_pitch":5,
- "firing_arc_yaw":5,
- "firing_standard_deviation":10,
- "max_firing_velocity":150,
- "max_range":260,
- "min_firing_velocity":100,
- "physics":{
-  "add_to_spatial_db":false,
-  "gravity_scalar":1,
-  "radius":1
- },
- "pitch_range":89.9,
- "pitch_rate":50,
- "rate_of_fire":1,
- "spread_fire":true,
- "target_layers":[
-  "WL_LandHorizontal",
-  "WL_Seafloor",
-  "WL_WaterSurface",
-  "WL_Underwater",
-  "WL_air"
- ],
- "yaw_range":180,
- "yaw_rate":50
+	"base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",
+    "ammo_id": "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv_ammo.json",
+	"rate_of_fire": 1,
+	"max_firing_velocity": 150,
+	"min_firing_velocity": 100,
+	"ammo_source": "time",
+	"ammo_capacity": 2,
+	"ammo_demand": 1,
+	"ammo_per_shot": 2,
+	"max_range": 260,
+	"yaw_rate": 50,
+	"pitch_rate": 50,
+	"yaw_range": 180,
+	"pitch_range": 89.9,
+	"firing_arc_yaw": 5,
+	"firing_arc_pitch": 5,
+	"auto_attack": true,
+	"spread_fire": true,
+	"firing_standard_deviation": 10,
+	"physics": {
+		"radius": 1,
+		"gravity_scalar": 1,
+		"add_to_spatial_db": false
+	},
+	"target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface", "WL_Underwater", "WL_air"]
 }

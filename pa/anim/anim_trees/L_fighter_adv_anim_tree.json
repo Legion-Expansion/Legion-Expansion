@@ -1,107 +1,94 @@
 {
- "blend_root":{
-  "nodes":{
-   "being_built":{
-    "anim_name":"closed",
-    "type":"playback"
-   },
-   "dead":{
-    "type":"bind_pose"
-   },
-   "ghost":{
-    "type":"bind_pose"
-   },
-   "living":{
-    "entries":[
-     {
-      "name":"attached",
-      "node":{
-       "anim_name":"closed",
-       "looping":false,
-       "type":"playback"
-      },
-      "reset":"playback_reset",
-      "transitions":[
-       {
-        "transition_forward":{
-         "func":"not_attached",
-         "target":"deploy"
-        },
-        "transition_reverse":{
-         "func":"not_attached",
-         "target":"deploy"
-        }
-       }
-      ],
-      "type":"sequence_entry"
-     },
-     {
-      "name":"deploy",
-      "node":{
-       "anim_name":"deploy",
-       "looping":false,
-       "type":"playback"
-      },
-      "reset":"playback_reset",
-      "transitions":[
-       {
-        "transition_forward":{
-         "func":"anim_complete",
-         "target":"idle"
-        },
-        "transition_reverse":{
-         "func":"anim_complete",
-         "target":"idle"
-        }
-       }
-      ],
-      "type":"sequence_entry"
-     },
-     {
-      "name":"idle",
-      "node":{
-       "type":"bind_pose"
-      },
-      "reset":"playback_reset",
-      "transitions":[
-       {
-        "transition_forward":{
-         "func":"is_attached",
-         "target":"attached"
-        },
-        "transition_reverse":{
-         "func":"is_attached",
-         "target":"attached"
-        }
-       }
-      ],
-      "type":"sequence_entry"
-     }
-    ],
-    "transition_seek":{
-     "false_target":"idle",
-     "func":"is_attached",
-     "true_target":"attached"
-    },
-    "type":"sequence"
-   }
-  },
-  "type":"unit_state"
- },
- "skeleton_controls":[
-  {
-   "bone":"recoil_right",
-   "recoil_dist":1.5,
-   "restore_time":1.0,
-   "type":"recoil",
-   "unit_event":"fired0"
-  },
-  {
-   "bone":"recoil_left",
-   "recoil_dist":1.5,
-   "restore_time":1.0,
-   "type":"recoil",
-   "unit_event":"fired1"
-  }
- ]
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "playback",
+				"anim_name": "closed"
+			},
+			"living": {
+				"type": "sequence",
+				"entries": [{
+					"type": "sequence_entry",
+					"name": "attached",
+					"node": {
+						"type": "playback",
+						"anim_name": "closed",
+						"looping": false
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "not_attached",
+							"target": "deploy"
+						},
+						"transition_reverse": {
+							"func": "not_attached",
+							"target": "deploy"
+						}
+					}],
+					"reset": "playback_reset"
+				}, {
+					"type": "sequence_entry",
+					"name": "deploy",
+					"node": {
+						"type": "playback",
+						"anim_name": "deploy",
+						"looping": false
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "anim_complete",
+							"target": "idle"
+						},
+						"transition_reverse": {
+							"func": "anim_complete",
+							"target": "idle"
+						}
+					}],
+					"reset": "playback_reset"
+				}, {
+					"type": "sequence_entry",
+					"name": "idle",
+					"node": {
+						"type": "bind_pose"
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "is_attached",
+							"target": "attached"
+						},
+						"transition_reverse": {
+							"func": "is_attached",
+							"target": "attached"
+						}
+					}],
+					"reset": "playback_reset"
+				}],
+				"transition_seek": {
+					"func": "is_attached",
+					"true_target": "attached",
+					"false_target": "idle"
+				}
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"type": "recoil",
+		"bone": "recoil_right",
+		"recoil_dist": 1.5,
+		"unit_event": "fired0",
+		"restore_time": 1.0
+	}, {
+		"type": "recoil",
+		"bone": "recoil_left",
+		"unit_event": "fired1",
+		"recoil_dist": 1.5,
+		"restore_time": 1.0
+	}]
 }

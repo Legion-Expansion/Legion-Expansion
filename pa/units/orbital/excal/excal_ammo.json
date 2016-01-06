@@ -1,18 +1,18 @@
 {
- "base_spec":"/pa/ammo/base_laser_blast/base_laser_blast.json",
- "damage":2000,
- "events":{
-  "died":{
-   "audio_cue":"/SE/Impacts/missile_artillery_long_holkins",
-   "effect_spec":"/pa/units/orbital/excal/Orbital_hit_explosion.pfx"
-  }
- },
- "fx_trail":{
-  "filename":"/pa/units/orbital/excal/excalibur_railgun_trail.pfx"
- },
- "initial_velocity":800.0,
- "lifetime":5,
- "max_velocity":800.0,
- "splash_damage":0,
- "splash_radius":0
+   "base_spec":"/pa/ammo/base_laser_blast/base_laser_blast.json",
+   "damage":2000,
+   "splash_damage":0,
+   "splash_radius":0,
+   "initial_velocity":800.0,
+   "max_velocity":800.0,
+   "lifetime":5,
+   "fx_trail":{
+      "filename":"/pa/units/orbital/excal/excalibur_railgun_trail.pfx"
+   },
+   "events": {
+       "died": {
+            "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+            "effect_spec": "/pa/units/orbital/excal/Orbital_hit_explosion.pfx"
+       }
+   }
 }

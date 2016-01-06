@@ -1,21 +1,21 @@
 {
- "ammo_id":"/pa/units/land/L_sniper_tank/L_sniper_tank_ammo.json",
- "auto_attack":true,
- "base_spec":"/pa/tools/base_shell_turret/base_shell_turret.json",
- "fx_trail":{
-  "filename":"/pa/units/land/L_sniper_tank/trail.pfx"
- },
- "idle_aim_delay":3,
- "max_range":200,
- "pitch_range":40,
- "pitch_rate":60,
- "rate_of_fire":0.5,
- "spread_fire":true,
- "target_layers":[
-  "WL_LandHorizontal",
-  "WL_Seafloor",
-  "WL_WaterSurface"
- ],
- "yaw_range":180,
- "yaw_rate":60
+  "ammo_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "fx_trail": {
+    "filename": "/pa/units/land/L_sniper_tank/trail.pfx"
+  },
+  "idle_aim_delay": 3,
+  "max_range": 200,
+  "pitch_range": 40,
+  "pitch_rate": 60,
+  "rate_of_fire": 0.5,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 60
 }
