@@ -3,5 +3,10 @@
   "impact_decals": [
     "/pa/effects/specs/scorch_b_01.json"
   ],
-  "sim_fire_effect": "/pa/units/sea/L_sea_mine/L_sea_mine_ammo_explosion_ent.json"
+ 	"damage": 1500,
+	"splash_radius": 25,
+  "sim_fire_effect": "/pa/units/sea/L_sea_mine/L_sea_mine_ammo_explosion_ent.json",
+	"damage_volume": {
+		"initial_radius": 25
+	}
 }

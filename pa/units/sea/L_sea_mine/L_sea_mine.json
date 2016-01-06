@@ -3,7 +3,7 @@
   "TEMP_texelinfo": 2.37699,
   "area_build_separation": 1,
   "area_build_type": "Sphere",
-  "build_metal_cost": 20,
+  "build_metal_cost": 80,
   "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
   "display_name": "Legion Sea Mine",
   "events": {
@@ -12,14 +12,14 @@
     },
     "died": {
       "audio_cue": "/SE/Death/barrier",
-      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+	  "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx"
     }
   },
   "max_health": 5,
   "mesh_bounds": [
-    4,
-    4,
-    1
+    10,
+    10,
+    10
   ],
   "model": [
     {
@@ -64,7 +64,7 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_sea_mine/L_sea_mine_tool_weapon.json"
+      "spec_id": "/pa/units/sea/L_sea_mine/L_sea_mine_tool_weapon.json"
     }
   ],
   "unit_types": [

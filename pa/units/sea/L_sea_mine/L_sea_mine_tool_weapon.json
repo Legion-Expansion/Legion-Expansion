@@ -4,13 +4,13 @@
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,
   "idle_aim_delay": 0,
-  "max_range": 5,
+  "max_range": 20,
   "pitch_range": 0,
   "pitch_rate": 0,
   "rate_of_fire": 5,
   "self_destruct": true,
   "target_layers": [
-    "WL_WaterSurface"
+    "WL_AnyWater"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
