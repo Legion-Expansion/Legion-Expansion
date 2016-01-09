@@ -445,10 +445,10 @@
           ["L_air", 10]
         ]
       }, {
-        spec_id: "/pa/units/air/L_transport/L_transport.json",
+        spec_id: "/pa/units/air/L_firestarter/L_firestarter.json",
         si_fallback: ["transport"],
         preferred_builds: [
-          ["L_air", 16]
+          ["L_air", 11]
         ]
       },
 

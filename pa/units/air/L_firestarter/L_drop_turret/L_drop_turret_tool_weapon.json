@@ -1,0 +1,16 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_ammo.json",
+  "auto_attack": true,
+  "max_range": 100,
+  "pitch_range": 90,
+  "pitch_rate": 180,
+  "rate_of_fire": 2,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 80
+}

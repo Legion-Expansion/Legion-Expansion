@@ -1,0 +1,12 @@
+{
+  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+  "damage": 25,
+  "fx_trail": {
+    "filename": "/pa/units/air/L_firestarter/L_drop_turret/ammo_trail.pfx"
+  },
+  "initial_velocity": 500,
+  "lifetime": 2,
+  "max_velocity": 500,
+  "splash_damage": 0,
+  "splash_radius": 0
+}
