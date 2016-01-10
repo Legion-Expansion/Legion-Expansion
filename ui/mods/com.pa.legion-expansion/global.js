@@ -301,11 +301,11 @@
             ["L_vehicle", 14]
           ] // flame tank
       }, {
-        spec_id: "/pa/units/land/L_land_scout/L_land_scout.json",
-        si_fallback: ["land_scout"],
+        spec_id: "/pa/units/land/L_hover_tank/L_hover_tank.json",
+        si_fallback: ["tank_hover"],
         preferred_builds: [
             ["L_vehicle", 15]
-          ] // skitter
+          ] // hover tank
       }, {
         spec_id: "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
         si_fallback: ["tank_heavy_mortar"],

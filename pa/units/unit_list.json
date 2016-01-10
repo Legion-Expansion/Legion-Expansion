@@ -265,6 +265,7 @@
         "/pa/units/land/bot_nanoswarm/bot_nanoswarm.json",
         "/pa/units/land/bot_support_commander/bot_support_commander.json",
         "/pa/units/land/tank_hover/tank_hover.json",
+        "/pa/units/land/L_hover_tank/L_hover_tank.json",
         "/pa/units/land/tank_flak/tank_flak.json",
         "/pa/units/land/L_tank_swarm/L_tank_swarm.json",
         "/pa/units/land/tank_nuke/tank_nuke.json",
