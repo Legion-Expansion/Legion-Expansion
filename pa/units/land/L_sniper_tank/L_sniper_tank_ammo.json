@@ -5,16 +5,19 @@
     "filename": "/pa/units/land/L_sniper_tank/trail.pfx",
     "offset": [
       0,
-      15,
+      0,
       0
     ]
   },
-  "initial_velocity": 500,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+      "effect_spec": "/pa/units/land/L_sniper_tank/hit.pfx"
+    }
+  },  
+  "initial_velocity": 210,
   "lifetime": 2,
-  "max_velocity": 500,
-  "model": {
-    "filename": ""
-  },
+  "max_velocity": 210,
   "splash_damage": 450,
   "splash_radius": 3
 }
