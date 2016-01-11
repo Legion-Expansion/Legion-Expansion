@@ -10,6 +10,6 @@
 	"pitch_range": 20,
 	"spread_fire": true,
 	"auto_attack": true,
-	"firing_standard_deviation": 0.25,
+	"firing_standard_deviation": 0.15,
 	"target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"]
 }
