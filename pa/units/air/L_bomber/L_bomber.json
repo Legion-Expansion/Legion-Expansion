@@ -34,11 +34,47 @@
       "filename": "/pa/units/air/bomber/bomber_jets.pfx",
       "offset": [
         0,
-        2.32,
-        1.393
+        5,
+        1.5
       ],
       "type": "moving_forward"
-    }
+    },
+    {
+      "filename": "/pa/units/air/L_bomber/bomber_lines.pfx",
+      "offset": [
+        5.6,
+        2.5,
+        0.3
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_bomber/bomber_lines.pfx",
+      "offset": [
+        -5.6,
+        2.5,
+        0.3
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_bomber/bomber_lines_thrust.pfx",
+      "offset": [
+        -2.1,
+        4.0,
+        1.0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_bomber/bomber_lines_thrust.pfx",
+      "offset": [
+        2.1,
+        4.0,
+        1.0
+      ],
+      "type": "moving_forward"
+    }	
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 120,
