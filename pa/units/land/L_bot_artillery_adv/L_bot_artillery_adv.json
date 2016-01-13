@@ -1,5 +1,5 @@
 {
-	"TEMP_texelinfo": 25,
+	"TEMP_texelinfo": 18,
 	"attachable": {
 		"offsets": {
 			"head": [
@@ -95,7 +95,7 @@
 		],
 		"radius": 1.5
 	}],
-	"max_health": 200,
+	"max_health": 800,
 	"mesh_bounds": [
 		10,
 		12,

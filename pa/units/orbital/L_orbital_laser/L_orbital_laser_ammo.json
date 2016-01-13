@@ -16,7 +16,7 @@
     ]
   },
   "impact_decals": [
-    "/pa/effects/specs/crater_decal.json"
+    "/pa/effects/specs/nuke_scorch_01.json"
   ],
   "initial_velocity": 150,
   "lifetime": 5,

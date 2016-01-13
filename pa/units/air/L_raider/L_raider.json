@@ -60,27 +60,31 @@
     "animtree": "/pa/anim/anim_trees/L_raider_anim_tree.json",
     "filename": "/pa/units/air/L_raider/L_raider.papa"
   },
-  "navigation": {
-    "acceleration": 75,
-    "aggressive_distance": 50,
-    "aggressive_height": 100,
-    "brake": 20,
-    "dodge_multiplier": 0,
-    "dodge_radius": 0,
-    "move_speed": 75,
-    "turn_speed": 110,
-    "type": "air",
-    "wobble_factor": 0.05,
-    "wobble_speed": 0.1
-  },
-  "physics": {
-    "air_friction": 1,
-    "allow_pushing": false,
-    "gravity_scalar": 1,
-    "push_class": 2,
-    "push_sideways": false,
-    "radius": 6
-  },
+	"navigation": {
+		"type": "air",
+		"acceleration": 45,
+		"brake": 45,
+		"move_speed": 60,
+		"turn_speed": 135,
+		"dodge_radius": 0,
+		"dodge_multiplier": 0.0,
+		"aggressive_distance": 180.0,
+		"aggressive_height": 100.0,
+		"aggressive_behavior": "circle",
+		"circle_min_time": 2.0,
+		"circle_max_time": 4.0,
+		"hover_time": -1.0,
+		"bank_factor": 1,
+		"wobble_factor": 0.05,
+		"wobble_speed": 0.1
+	},
+	"physics": {
+		"radius": 9,
+		"gravity_scalar": 1,
+		"push_sideways": false,
+		"allow_pushing": false,
+		"air_friction": 1.0
+	},
   "recon": {
     "observer": {
       "items": [
