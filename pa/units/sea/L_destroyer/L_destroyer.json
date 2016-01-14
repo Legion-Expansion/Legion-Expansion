@@ -50,7 +50,7 @@
     "filename": "/pa/units/sea/L_destroyer/L_destroyer.papa"
   },
   "navigation": {
-    "acceleration": 30,
+    "acceleration": 50,
     "brake": 90,
     "move_speed": 12,
     "park_stamp_cost": 20,
