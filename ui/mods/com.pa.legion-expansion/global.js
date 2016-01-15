@@ -438,6 +438,13 @@
         preferred_builds: [
           ["L_air", 15]
         ]
+      },
+ {
+        spec_id: "/pa/units/air/L_transport/L_transport.json",
+        si_fallback: ["transport"],
+        preferred_builds: [
+          ["L_air", 16]
+        ]
       }, {
         spec_id: "/pa/units/air/L_air_scout_adv/L_air_scout_adv.json",
         si_fallback: ["air_scout"],
@@ -631,7 +638,7 @@
               preferred_builds: [["L_utility", 14]], // metal storage spare
           },*/
       {
-        spec_id: "/pa/units/air/L_titan_air/titan_air.json",
+        spec_id: "/pa/units/air/L_titan_air/L_titan_air.json",
         si_fallback: ["titan_air"],
         preferred_builds: [
           ["L_factory", 2]

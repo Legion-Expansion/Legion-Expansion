@@ -280,7 +280,7 @@
         "/pa/units/orbital/orbital_battleship/orbital_battleship.json",
         "/pa/units/orbital/orbital_railgun/orbital_railgun.json",
         "/pa/units/land/artillery_unit_launcher/artillery_unit_launcher.json",
-        "/pa/units/air/L_titan_air/titan_air.json",
+        "/pa/units/air/L_titan_air/L_titan_air.json",
         "/pa/units/land/L_titan_vehicle/titan_vehicle.json",
         "/pa/units/orbital/L_titan_orbital/titan_orbital.json",
         "/pa/units/orbital/excal/excal.json",

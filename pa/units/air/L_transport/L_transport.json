@@ -50,58 +50,38 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_leftWing",
+      "bone": "thrust_side001",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-      "offset": [
-        0,
-        0,
-        -1.686
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
       "type": "idle"
     },
     {
-      "bone": "bone_rightWing",
+      "bone": "thrust_side002",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-      "offset": [
-        0,
-        0,
-        -1.686
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
       "type": "idle"
     },
     {
-      "bone": "bone_turret",
-      "filename": "/pa/units/air/transport/transport_jets.pfx",
-      "offset": [
-        0,
-        1.418,
-        0.5
-      ],
+      "bone": "thrust_back001",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_back002",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving_forward"
     }
   ],
   "max_health": 40,
   "mesh_bounds": [
-    13.5,
-    13.5,
-    4.7
+    13.42,
+    22.2,
+    7.561
   ],
   "model": {
     "animations": {
-      "fly": "/pa/units/air/transport/transport_anim_fly.papa"
+      "fly": "/pa/units/air/L_transport/L_transport_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/transport_anim_tree.json",
-    "filename": "/pa/units/air/transport/transport.papa"
+    "animtree": "/pa/anim/anim_trees/L_transport_anim_tree.json",
+    "filename": "/pa/units/air/L_transport/L_transport.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -136,7 +116,7 @@
     "capacity": 1,
     "transportable_attach_offset": "head",
     "transportable_unit_types": "Mobile & Land - Commander",
-    "transporter_attach_bone": "bone_payload"
+    "transporter_attach_bone": "bone_attach"
   },
   "unit_types": [
     "UNITTYPE_Air",

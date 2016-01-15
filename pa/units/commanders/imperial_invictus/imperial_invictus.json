@@ -13,7 +13,8 @@
 		"filename": "/pa/units/commanders/imperial_invictus/imperial_invictus.papa",
 		"animations": {
 			"walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa",
-			"idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa"
+			"idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa",
+			"walk_stop": ""
 		},
 		"animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
 		"walk_speed": 6.25

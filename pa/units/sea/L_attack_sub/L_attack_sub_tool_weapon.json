@@ -3,7 +3,7 @@
     "ammo_id": "/pa/units/sea/L_attack_sub/L_attack_sub_ammo.json",
     "spawn_layers": "WL_Underwater",
     "rate_of_fire": 0.6,
-    "max_range": 150,
+    "max_range": 140,
     "yaw_rate": 180,
     "pitch_rate": 180,
     "yaw_range": 2,
