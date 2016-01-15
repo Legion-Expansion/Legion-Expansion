@@ -20,7 +20,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",

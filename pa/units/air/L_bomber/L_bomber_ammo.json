@@ -6,7 +6,7 @@
   "lifetime": 7,
   "max_velocity": 50.0,
   "splash_damage": 125,
-  "splash_radius": 15,
+  "splash_radius": 25,
 	"events": {
 		"died": {
 			"audio_cue": "/SE/Impacts/shell_artillery",

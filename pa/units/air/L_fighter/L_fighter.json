@@ -58,26 +58,6 @@
         3.2,
         1.3
       ]	  
-    },
-    {
-      "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
-      "muzzle_bone": "socket_leftThruster",
-      "type": "moving_forward",
-      "offset": [
-        -2.6,
-        1.2,
-        0.2
-      ]	  
-    },
-    {
-      "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
-      "muzzle_bone": "socket_leftThruster",
-      "type": "moving_forward",
-      "offset": [
-        2.6,
-        1.2,
-        0.2
-      ]	  
     }	
   ],
   "guard_layer": "WL_Air",
@@ -92,12 +72,12 @@
     "filename": "/pa/units/air/L_fighter/L_fighter.papa"
   },
   "navigation": {
-    "acceleration": 90,
+    "acceleration": 70,
     "aggressive_distance": 50,
-    "bank_factor": 10,
-    "brake": 90,
+    "bank_factor": 5,
+    "brake": 50,
     "move_speed": 90,
-    "turn_speed": 270,
+    "turn_speed": 110,
     "type": "air"
   },
   "physics": {

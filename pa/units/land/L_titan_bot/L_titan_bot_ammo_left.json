@@ -16,7 +16,7 @@
 		"filename": "/pa/units/air/shell_large/shell_large.papa"
 	},
 	"fx_trail": {
-		"filename": "/pa/units/land/titan_vehicle/titan_vehicle_ammo_main_proj_trail.pfx",
+		"filename": "/pa/units/land/L_titan_bot/left_trail.pfx",
 		"offset": [0.0, 1.0, 0.0]
 	},
 	"audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",

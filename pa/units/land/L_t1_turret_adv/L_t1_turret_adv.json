@@ -19,7 +19,8 @@
       "effect_scale": 0.6
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire"
+      "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
+			"effect_spec": "/pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleRight /pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleLeft"  
     }
   },
 	"selection_icon": {
