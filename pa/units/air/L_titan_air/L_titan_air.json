@@ -61,31 +61,24 @@
 		"animtree": "/pa/anim/anim_trees/L_titan_air_anim_tree.json"
 	},
 	"tools": [{
-		"spec_id": "/pa/units/air/L_titan_air/titan_air_tool_weapon.json",
-		"aim_bone": "bone_FPitchL",
+		"spec_id": "/pa/units/air/L_titan_air/L_titan_air_main_tool_weapon.json",
+		"aim_bone": "bone_root",
 		"record_index": 0,
-		"fire_event": 0,
-		"projectiles_per_fire": 2,
-		"muzzle_bone": ["bone_FLRRecoil", "bone_FLLRecoil"]
+		"fire_event": "fired0",
+		"projectiles_per_fire": 4,
+		"muzzle_bone": ["socket_muzzle001", "socket_muzzle002", "socket_muzzle003", "socket_muzzle004"]
 	}, {
-		"spec_id": "/pa/units/air/L_titan_air/titan_air_tool_weapon.json",
-		"aim_bone": "bone_FPitchR",
-		"record_index": 1,
-		"fire_event": 1,
-		"projectiles_per_fire": 2,
-		"muzzle_bone": ["bone_FRLRecoil", "bone_FRRRecoil"]
-	}, {
-		"spec_id": "/pa/units/air/L_titan_air/titan_air_tool_weapon.json",
-		"aim_bone": "socket_alt_muzzle001",
+		"spec_id": "/pa/units/air/L_titan_air/L_titan_air_side_tool_weapon.json",
+		"aim_bone": "bone_pitch_side_left",
 		"record_index": 2,
-		"fire_event": 2,
+		"fire_event": "fired2",
 		"projectiles_per_fire": 4,
 		"muzzle_bone": ["socket_alt_muzzle001", "socket_alt_muzzle002", "socket_alt_muzzle003", "socket_alt_muzzle004"]
 	}, {
-		"spec_id": "/pa/units/air/L_titan_air/titan_air_tool_weapon.json",
-		"aim_bone": "socket_alt_muzzle005",
+		"spec_id": "/pa/units/air/L_titan_air/L_titan_air_side_tool_weapon.json",
+		"aim_bone": "bone_pitch_side_right",
 		"record_index": 3,
-		"fire_event": 3,
+		"fire_event": "fired3",
 		"projectiles_per_fire": 4,
 		"muzzle_bone": ["socket_alt_muzzle005", "socket_alt_muzzle006", "socket_alt_muzzle007", "socket_alt_muzzle008"]
 	}],
@@ -93,9 +86,17 @@
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/Titan_Complete"
 		},
-		"fired": {
+		"fired0": {
 			"audio_cue": "/SE/Weapons/air/titan_air_fire",
-			"effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle_center"
+			"effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle001 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle002 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle003 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle004"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/air/titan_air_fire",
+			"effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle001 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle002 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle003 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle004"
+		},
+		"fired3": {
+			"audio_cue": "/SE/Weapons/air/titan_air_fire",
+			"effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle005 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle006 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle007 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_alt_muzzle008"
 		},
 		"died": {
 			"audio_cue": "",
