@@ -1,0 +1,42 @@
+{
+	"blend_root": {
+		"type": "aim_blend",
+		"aim_bone_root": "bone_turret",
+		"node_aim_down": {
+			"type": "bind_pose"
+		},
+		"node_aim_neutral": {
+			"type": "bind_pose"
+		},
+		"node_aim_up": {
+			"type": "playback",
+			"anim_name": "aim_up"
+		},
+		"child": {
+			"type": "bind_pose"
+		}
+	},
+	"skeleton_controls": [{
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turret",
+			"rotation_axis": "z"
+		}
+	},
+{
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_pitch",
+			"rotation_axis": "x"
+		}
+	},	{
+		"type": "recoil",
+		"bone": "bone_recoil",
+		"recoil_dist": 3.5,
+		"restore_time": 2.5
+	}]
+}

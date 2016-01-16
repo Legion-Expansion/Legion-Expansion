@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 12.901,
+  "TEMP_texelinfo": 23.48734,
   "atrophy_cool_down": 15,
   "atrophy_rate": 25,
   "audio": {
@@ -24,7 +24,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/artillery_short_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx bone_root"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -53,19 +53,13 @@
   ],
   "model": [
     {
-      "animations": {
-        "aim_up": "/pa/units/land/artillery_short/artillery_short_anim_aimUp.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/artillery_building_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/L_artillery_anim_tree.json",
       "filename": "/pa/units/land/L_artillery_short/L_artillery_short.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_short.json"
     },
     {
-      "animations": {
-        "aim_up": "/pa/units/sea/artillery_short/artillery_short_anim_aimUp.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/artillery_building_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/L_artillery_anim_tree.json",
       "filename": "/pa/units/land/L_artillery_short/L_artillery_short.papa",
       "layer": "WL_WaterSurface"
     }
@@ -95,8 +89,8 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "socket_aim",
-      "muzzle_bone": "socket_muzzle_b",
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short_tool_weapon.json"
     }
   ],
