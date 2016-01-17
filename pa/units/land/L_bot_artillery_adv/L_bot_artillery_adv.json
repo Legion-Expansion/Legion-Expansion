@@ -29,8 +29,8 @@
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"build_metal_cost": 1200,
-	"description": "!LOC(units:sniper_long_range_advanced_anti_land_and_anti_ship_bot.message):Monostrosity- Long range advanced anti-land, anti-ship, anti bot.",
-	"display_name": "Monostrosity",
+	"description": "!LOC(units:sniper_long_range_advanced_anti_land_and_anti_ship_bot.message):Monstrosity- Long range advanced anti-land, and anti-ship bot.",
+	"display_name": "Monstrosity",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/bot"
