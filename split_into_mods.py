@@ -55,6 +55,9 @@ for root, dirs, files in os.walk(ROOT_PATH):
                 if any(t in base_path for t in TEXTURES):
                     full_path = os.path.join(client_dir, f)
                     mkdir_p(client_dir)
+                elif "effects/specs" in base_path:
+                    full_path = os.path.join(client_dir, f)
+                    mkdir_p(client_dir)
                 else:
                     full_path = os.path.join(server_dir, f)
                     mkdir_p(server_dir)
