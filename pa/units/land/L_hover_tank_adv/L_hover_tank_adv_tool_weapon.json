@@ -17,7 +17,7 @@
 	"firing_arc_pitch": 5,
 	"auto_attack": true,
 	"spread_fire": true,
-	"firing_standard_deviation": 10,
+	"firing_standard_deviation": 3,
 	"physics": {
 		"radius": 1,
 		"gravity_scalar": 1,

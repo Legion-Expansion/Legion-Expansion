@@ -59,6 +59,6 @@
 		"type": "recoil",
 		"bone": "bone_recoil",
 		"recoil_dist": 2.5,
-		"restore_time": 2
+		"restore_time": 1
 	}]
 }
