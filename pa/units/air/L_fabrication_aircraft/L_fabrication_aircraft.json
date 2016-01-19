@@ -57,7 +57,7 @@
 	},
 	"fx_offsets": [{
 		"bone": "muzzle",
-		"filename": "/pa/effects/specs/legion_fab_spray.pfx",
+		"filename": "/pa/effects/specs/legion_air_fab_spray.pfx",
 		"type": "build"
 	}, {
 		"bone": "thrust001",
