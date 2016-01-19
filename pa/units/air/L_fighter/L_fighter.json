@@ -40,6 +40,16 @@
       "type": "moving_forward"
     },
     {
+      "filename": "/pa/units/air/L_fighter/fighter_jets.pfx",
+      "bone": "thrust_right",
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_fighter/fighter_jets.pfx",
+      "bone": "thrust_left",
+      "type": "moving_forward"
+    },	
+    {
       "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
       "bone": "thrust_left",
       "type": "moving_forward",
@@ -70,12 +80,12 @@
     "filename": "/pa/units/air/L_fighter/L_fighter.papa"
   },
   "navigation": {
-    "acceleration": 70,
+    "acceleration": 150,
     "aggressive_distance": 50,
     "bank_factor": 5,
-    "brake": 50,
-    "move_speed": 90,
-    "turn_speed": 110,
+    "brake": 13,
+    "move_speed": 190,
+    "turn_speed": 70,
     "type": "air"
   },
   "physics": {

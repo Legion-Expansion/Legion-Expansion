@@ -31,20 +31,45 @@
   },
   "fx_offsets": [
     {
-      "filename": "/pa/units/air/bomber/bomber_jets.pfx",
+      "filename": "/pa/units/air/L_raider/raider_jets.pfx",
 	  "bone": "extake001",
       "type": "moving_forward"
     },
     {
-      "filename": "/pa/units/air/bomber/bomber_jets.pfx",
+      "filename": "/pa/units/air/L_raider/raider_jets.pfx",
 	  "bone": "extake002",
       "type": "moving_forward"
     },
     {
-      "filename": "/pa/units/air/bomber/bomber_jets.pfx",
+      "filename": "/pa/units/air/L_raider/raider_jets.pfx",
 	  "bone": "extake003",
       "type": "moving_forward"
-    }
+    },
+    {
+      "filename": "/pa/units/air/L_raider/raider_lines_thrust.pfx",
+	  "bone": "extake001",
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_raider/raider_lines_thrust.pfx",
+	  "bone": "extake002",
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_raider/raider_lines_thrust.pfx",
+	  "bone": "extake003",
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_raider/raider_lines.pfx",
+	  "bone": "fin002",
+      "type": "moving_forward"
+    },
+    {
+      "filename": "/pa/units/air/L_raider/raider_lines.pfx",
+	  "bone": "fin003",
+      "type": "moving_forward"
+    }	
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 120,
@@ -107,20 +132,16 @@
     "diameter": 19
   },
   "tools": [
-    {
-      "aim_bone": "bone_rightPitch",
-      "muzzle_bone": "right_muzzle",
-      "spec_id": "/pa/units/air/L_raider/L_raider_tool_weapon.json",
+  {
+		"aim_bone": "bone_rightPitch bone_leftPitch",
+		"fire_event": "fired0",
+		"muzzle_bone": [
+			"right_muzzle",
+			"left_muzzle"		
+		],
 		"record_index": 0,
-		"fire_event": "fired0"
-    },
-    {
-      "aim_bone": "bone_leftPitch",
-      "muzzle_bone": "left_muzzle",
-      "spec_id": "/pa/units/air/L_raider/L_raider_tool_weapon.json",
-		"record_index": 1,
-		"fire_event": "fired1"
-    }
+		"spec_id": "/pa/units/air/L_raider/L_raider_tool_weapon.json"
+	}
   ],
   "unit_types": [
     "UNITTYPE_Bomber",

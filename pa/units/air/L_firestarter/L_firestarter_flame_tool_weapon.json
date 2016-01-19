@@ -15,7 +15,7 @@
 	"events": {
 		"died": {
 			"audio_cue": "/SE/Impacts/shell_artillery",
-			"effect_spec": "/pa/effects/specs/none.pfx"
+			"effect_spec": "/pa/units/air/L_firestarter/none.pfx"
 		}
 	}
 }

@@ -9,7 +9,7 @@
 	"max_velocity": 5,
 	"lifetime": 15,
 	"fx_trail": {
-		"filename": "/pa/effects/specs/none.pfx"
+		"filename": "/pa/units/air/L_firestarter/none.pfx"
 	},
 	"turn_rate": 0,
 	"stages": [{

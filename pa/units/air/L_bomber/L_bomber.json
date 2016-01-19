@@ -30,14 +30,6 @@
 		}
 	},
 	"fx_offsets": [{
-		"filename": "/pa/units/air/L_bomber/bomber_jets.pfx",
-		"offset": [
-			0,
-			5,
-			1.5
-		],
-		"type": "moving_forward"
-	}, {
 		"filename": "/pa/units/air/L_bomber/bomber_lines.pfx",
 		"bone": "lines_left",
 		"type": "moving_forward"
@@ -51,6 +43,14 @@
 		"type": "moving_forward"
 	}, {
 		"filename": "/pa/units/air/L_bomber/bomber_lines_thrust.pfx",
+		"bone": "thrust002",
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_bomber/bomber_jets.pfx",
+		"bone": "thrust001",
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_bomber/bomber_jets.pfx",
 		"bone": "thrust002",
 		"type": "moving_forward"
 	}],
