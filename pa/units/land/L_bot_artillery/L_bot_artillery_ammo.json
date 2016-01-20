@@ -4,13 +4,13 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_scale": 0.4,
-      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/units/land/L_bot_artillery/leveler_proj_exp.pfx"
     }
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
+    "filename": "/pa/units/land/L_bot_artillery/trail.pfx",
     "offset": [
       0,
       0,
