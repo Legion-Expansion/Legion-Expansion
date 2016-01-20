@@ -29,7 +29,7 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 1300,
-  "description": "!LOC(units:grenadier_basic_assault_weapons_dealing_area_effect_damage.message):Grenadier- Basic assault weapons dealing area effect damage.",
+  "description": "!LOC(units:grenadier_basic_assault_weapons_dealing_area_effect_damage.message):Good in crowd control.",
   "display_name": "Legion Armored Riot Bot",
   "events": {
     "build_complete": {
@@ -94,35 +94,18 @@
     "diameter": 15
   },
   "tools": [
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle01",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle02",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_leftArm",
-      "muzzle_bone": "left_muzzle03",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle01",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle02",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_rightArm",
-      "muzzle_bone": "right_muzzle03",
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
+  {
+		"aim_bone": "bone_leftArm bone_rightArm",
+		"fire_event": "fired",
+		"spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",		
+		"muzzle_bone": [
+			"left_muzzle01",
+			"right_muzzle01",
+			"left_muzzle02",
+			"right_muzzle02",
+			"left_muzzle03",
+			"right_muzzle04"			
+		] 
     }
   ],
   "transportable": {

@@ -3,13 +3,19 @@
   "damage": 20,
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/effects/specs/bullet_proj_trail.pfx",
+    "filename": "/pa/units/land/L_riot_bot/ammo_trail.pfx",
     "offset": [
       0,
       0,
       0
     ]
   },
+		"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/shell_bullet",
+			"effect_spec": "/pa/units/land/L_riot_bot/riot_proj_explosion.pfx"
+		}
+	}, 
   "initial_velocity": 50,
   "lifetime": 5,
   "max_velocity": 50,
