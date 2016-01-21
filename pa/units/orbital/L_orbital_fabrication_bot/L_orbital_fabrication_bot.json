@@ -1,9 +1,9 @@
 {
-  "TEMP_texelinfo": 7.54279,
+  "TEMP_texelinfo": 38.253,
   "attachable": {
     "offsets": {
       "root": [
-        0,
+        45,
         0,
         0
       ]
@@ -49,18 +49,13 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_nozzle",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        1.755,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        -90
-      ],
+      "bone": "socket_muzzle001",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "socket_muzzle002",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     }
   ],
@@ -74,12 +69,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_closed.papa",
-      "deploy": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_deploy.papa",
-      "open": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_open.papa"
+      "closed": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_closed.papa",
+      "deploy": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_deploy.papa",
+      "open": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/orbital_fabrication_bot_anim_tree.json",
-    "filename": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.papa"
+    "animtree": "/pa/anim/anim_trees/L_orbital_fabrication_bot_anim_tree.json",
+    "filename": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -127,7 +122,7 @@
   "system_velocity_multiplier": 15.0,
   "tools": [
     {
-      "aim_bone": "bone_shoulder",
+      "aim_bone": "bone_pitch",
       "spec_id": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_build_arm.json"
     }
   ],
