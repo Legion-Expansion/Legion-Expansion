@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 84,
+  "damage": 150,
   "fx_trail": {
     "filename": "/pa/effects/specs/flare_tail.pfx",
     "offset": [

@@ -97,109 +97,81 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "primary_weapon": true,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
     }
   ],

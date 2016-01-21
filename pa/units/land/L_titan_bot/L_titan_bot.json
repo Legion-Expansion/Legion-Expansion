@@ -135,7 +135,7 @@
 		},
 		"fired1": {
 			"audio_cue": "",
-			"effect_spec": "/pa/units/land/L_titan_bot/muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/artillery_muzzle_ground.pfx bone_root"
+			"effect_spec": "/pa/units/land/L_titan_bot/muzzle_flash.pfx socket_rightMuzzle"
 		},
 		"died": {
 			"audio_cue": "",

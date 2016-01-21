@@ -95,8 +95,7 @@
   },
   "tools": [
   {
-		"aim_bone": "bone_leftArm bone_rightArm",
-		"fire_event": "fired",
+		"aim_bone": "bone_pitch",
 		"spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",		
 		"muzzle_bone": [
 			"left_muzzle01",

@@ -17,7 +17,7 @@
 		}
 	}, 
   "initial_velocity": 50,
-  "lifetime": 5,
+  "lifetime": 3,
   "max_velocity": 50,
   "model": null,
   "splash_damage": 20,
