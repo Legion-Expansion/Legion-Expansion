@@ -12,8 +12,8 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 450,
-  "description": "!LOC(units:frigate_basic_anti_air_missiles_and_anti_ship_guns.message):Frigate- Basic anti-air missiles and anti-ship guns.",
-  "display_name": "Legion Talos Frigate",
+  "description": "Medium Range AA. Attacks Air.",
+  "display_name": "Talos",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

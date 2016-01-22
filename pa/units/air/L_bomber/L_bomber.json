@@ -15,8 +15,8 @@
 	},
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
 	"build_metal_cost": 280,
-	"description": "!LOC(units:bomber_equipped_with_basic_anti_land_and_anti_naval_bombs.message):Bomber- Equipped with basic anti-land and anti-naval bombs.",
-	"display_name": "Legion Dauntless Bomber",
+	"description": "Plasma Bomber. High Damage. Attacks Land and Naval.",
+	"display_name": "Dauntless",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/air"

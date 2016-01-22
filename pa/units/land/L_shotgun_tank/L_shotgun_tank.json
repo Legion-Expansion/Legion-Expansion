@@ -29,8 +29,8 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 350,
-  "description": "Close range shotgun tank that deals heavy damage to targets close by, but targets far away are hard to hit.",
-  "display_name": "Legion Maul Shotgun Tank",
+  "description": "Close Rage Support. Attacks Land and Naval.",
+  "display_name": "Maul",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"

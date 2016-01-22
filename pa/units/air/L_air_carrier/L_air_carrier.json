@@ -88,8 +88,8 @@
 			"bone": "hole_backRight"
         }
     ],
-    "description": "Spits out drones and stuff",
-    "display_name": "Legion Air Carrier",
+    "description": "Launches Flyer Drones. Strong.",
+    "display_name": "Comet",
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/air"

@@ -41,8 +41,8 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:advanced_fabricator_wired_to_build_naval_structures.message):Advanced fabricator- Wired to build naval structures.",
-  "display_name": "Legion Advanced Fabrication Ship",
+  "description": "Places Sea Mines and Repairs Friendly Units. Lightly Armored.",
+  "display_name": "Mermaid",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

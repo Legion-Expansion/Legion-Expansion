@@ -45,8 +45,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "!LOC(units:basic_fabricator_wired_to_build_structures.message):Basic fabricator- Wired to build structures.",
-  "display_name": "Legion Fabrication Vehicle",
+  "description": "Builds Basic Structures. Can Build Exclusive Vehicle Units.",
+  "display_name": "Armour Fabricator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

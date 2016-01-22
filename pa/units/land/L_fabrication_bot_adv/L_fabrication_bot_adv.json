@@ -45,8 +45,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "!LOC(units:advanced_fabricator_wired_to_build_structures.message):Advanced fabricator- Wired to build structures.",
-  "display_name": "Legion Advanced Fabrication Bot",
+  "description": "Builds Advanced Structures. Can Build Exclusive Walker Units.",
+  "display_name": "Advanced Fabrication Walker",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

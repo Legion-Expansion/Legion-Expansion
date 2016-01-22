@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "!LOC:Drifter",
-	"description": "!LOC:Hover Tank- Fast. Can cross water and lava. Attacks land and sea targets.",
+	"display_name": "Ennet",
+	"description": "Hover tank. Equipped with fast-firing light projectiles.",
 	"max_health": 250,
 	"build_metal_cost": 225,
 	"armor_type": "AT_Hover",

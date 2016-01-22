@@ -26,7 +26,7 @@
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "build_metal_cost": 90,
-    "description": "!LOC(units:combat_bot_equipped_with_basic_anti_air_missiles.message):Combat bot- Equipped with basic anti-air missiles.",
+    "description": "Advanced Mobile AA. Medium Range. Attacks Air.",
     "display_name": "Orbweaver",
     "events": {
         "build_complete": {

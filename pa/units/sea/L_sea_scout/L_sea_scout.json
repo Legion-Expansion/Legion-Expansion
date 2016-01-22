@@ -12,8 +12,8 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 80,
-  "description": "!LOC(units:scout_light_weaponry_fast_speed.message):Gunboat- Light weaponry, fast speed",
-  "display_name": "Legion Dogfish Scout",
+  "description": "Light Scout. Fast. Attacks Land and Sea.",
+  "display_name": "Dogfish",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

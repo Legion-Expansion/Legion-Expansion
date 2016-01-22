@@ -29,7 +29,7 @@
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"build_metal_cost": 90,
-	"description": "!LOC(units:assault_bot_equipped_with_basic_anti_land_and_anti_ship_lasers.message):Assault bot- Equipped with basic anti-land and anti-ship lasers.",
+	"description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
 	"display_name": "Scout Bot",
 	"events": {
 		"build_complete": {

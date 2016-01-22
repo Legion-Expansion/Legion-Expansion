@@ -31,8 +31,8 @@
     "ORDER_Load",
     "ORDER_Unload"
   ],
-  "description": "!LOC(units:air_transport_load_a_land_unit_for_rapid_long_distance_travel.message):Air Transport- Load a land unit for rapid long distance travel.",
-  "display_name": "Legion Seagull Transport",
+  "description": "Unit Transport. Quick. Unarmed and Weak.",
+  "display_name": "Seagull",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

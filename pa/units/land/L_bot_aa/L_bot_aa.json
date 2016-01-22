@@ -26,8 +26,8 @@
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
     "build_metal_cost": 90,
-    "description": "!LOC(units:combat_bot_equipped_with_basic_anti_air_missiles.message):Combat bot- Equipped with basic anti-air missiles.",
-    "display_name": "Stinger",
+    "description": "Anti-Air Walker. Short range. Attacks Air.",
+    "display_name": "Patriot",
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/bot"

@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "!LOC:Drifter",
-	"description": "!LOC:Hover Tank- Fast. Can cross water and lava. Attacks land and sea targets.",
+	"display_name": "Panzerwerfer",
+	"description": "Medium Range Rocket Barrage Tank. Attacks Land and Naval",
 	"max_health": 410,
 	"build_metal_cost": 680,
 	"armor_type": "AT_Hover",

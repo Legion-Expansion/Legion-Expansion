@@ -21,8 +21,8 @@
         "ORDER_Assist",
 		"ORDER_Attack"
     ],
-    "description": "Armored medium range air scout.  Slowly regenerates health.",
-    "display_name": "Legion Cub Scout",
+    "description": "Advanced Mobile Radar and Vision. Quick.",
+    "display_name": "Cub",
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/air"

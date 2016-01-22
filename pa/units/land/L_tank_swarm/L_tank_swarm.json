@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Swarm Tank",
-	"description": "Deploys swarms",
+	"display_name": "Sloth",
+	"description": "Deploys swarm bevies. Targets land and sea.",
 	"max_health": 300,
 	"build_metal_cost": 750,
 	"attachable": {

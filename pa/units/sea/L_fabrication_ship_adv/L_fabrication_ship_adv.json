@@ -41,8 +41,8 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:advanced_fabricator_wired_to_build_naval_structures.message):Advanced fabricator- Wired to build naval structures.",
-  "display_name": "Legion Advanced Fabrication Ship",
+  "description": "Builds Advanced Strcutures. Can Build Exclusive Water Units.",
+  "display_name": "Advanced Fabrication Barge",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

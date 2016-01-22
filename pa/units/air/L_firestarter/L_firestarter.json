@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-	"display_name": "Pheonix",
-	"description": "!LOC:Interplanetary Fighter- Stronger fighter. Can move between planets. Can only attack air targets.",
+	"display_name": "Sky Castle",
+	"description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
 	"build_metal_cost": 720,
 	"max_health": 1200,
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist", "ORDER_Use", "ORDER_FireSecondaryWeapon"],

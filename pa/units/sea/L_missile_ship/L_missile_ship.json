@@ -15,8 +15,8 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 3200,
-  "description": "!LOC(units:artillery_ship_long_range_advanced_guided_missiles.message):Artillery ship- Long range advanced guided missiles.",
-  "display_name": "Legion Manta Ray Missile Ship",
+  "description": "All-Purpose Armored Vessel. Attacks Land, Air, and Sea Targets.",
+  "display_name": "Manta",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

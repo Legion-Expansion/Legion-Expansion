@@ -29,7 +29,7 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 2500,
-  "description": "Heavy Laser Tank- Destroys Anything Within Range.",
+  "description": "Area of Effect Crowd Control. Attacks Land.",
   "display_name": "Earthshaker",
   "events": {
     "build_complete": {

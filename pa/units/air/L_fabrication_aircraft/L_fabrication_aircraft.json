@@ -45,8 +45,8 @@
 		"ORDER_Assist",
 		"ORDER_Use"
 	],
-	"description": "!LOC(units:basic_fabricator_wired_to_build_structures.message):Basic fabricator- Wired to build structures.",
-	"display_name": "Legion Fabrication Aircraft",
+	"description": "Builds Basic Structures. Fast. Can Build Exclusive Flyer Units.",
+	"display_name": "Fabrication Flyer",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/fab"
