@@ -93,7 +93,7 @@
 		"fire_event": "fired1",
       "offset": [
         0,
-        -20,
+        0,
         0
       ]			
 	}, {
@@ -170,7 +170,7 @@
   "fx_offsets": [
     {
       "bone": "socket_rightMuzzle",
-      "filename": "/pa/effects/specs/electricity_field.pfx",
+      "filename": "/pa/units/land/L_titan_bot/electricity_field.pfx",
       "type": "idle",
       "offset": [
         0,
