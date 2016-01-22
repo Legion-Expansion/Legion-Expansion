@@ -1,7 +1,7 @@
 cd C:\Program Files (x86)\Steam\SteamApps\common\Planetary Annihilation Titans\bin_x64\tools\
-set unit_to_convert=L_orbital_fabrication_bot
+set unit_to_convert=L_titan_bot
 papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%.fbx"
-papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_open.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_open.fbx"
+papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_walk.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_walk.fbx"
 papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_deploy.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_deploy.fbx"
 papatran --texture-mode strip -o "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_closed.papa" "C:\Users\Eoin\AppData\Local\Uber Entertainment\Planetary Annihilation\server_mods\com.pa.legion-expansion.server\art\original_models\%unit_to_convert%_closed.fbx"
 pause
