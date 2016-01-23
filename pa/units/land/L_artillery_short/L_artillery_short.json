@@ -12,8 +12,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Medium Anti-Ship, Anti-Land Railgun with Very High Damage and Low AoE. Requires Energy to Fire.",
-  "display_name": "Legion Theodor Artillery",
+  "description": "Medium Anti-Ship, Anti-Land Railgun. Requires Energy to Fire.",
+  "display_name": "Theodor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

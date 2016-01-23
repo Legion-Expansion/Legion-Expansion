@@ -28,8 +28,8 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:advanced_manufacturing_builds_naval_units.message):Advanced manufacturing- Builds naval units.",
-  "display_name": "Legion Advanced Naval Factory",
+  "description": "Advanced Manufacturing- Builds Legion Naval Units.",
+  "display_name": "Advanced Ship Foundry",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

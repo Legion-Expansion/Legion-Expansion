@@ -14,8 +14,8 @@
   "consumption": {
     "energy": 4000
   },
-  "description": "!LOC(units:advanced_radar_detects_nearby_enemy_land_sea_and_air_units.message):Advanced radar- Detects nearby enemy land, sea, and air units.",
-  "display_name": "Legion Advanced Radar",
+  "description": "Advanced Radar. Unveils Units within a Large Radius.",
+  "display_name": "Overseer",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

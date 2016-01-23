@@ -10,8 +10,8 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 400,
-  "description": "!LOC(units:basic_manufacturing_produces_energy.message):Basic manufacturing- Produces energy.",
-  "display_name": "Legion Energy Plant",
+  "description": "Basic Economy- Generates Power.",
+  "display_name": "E-32B Power Catalyst",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"

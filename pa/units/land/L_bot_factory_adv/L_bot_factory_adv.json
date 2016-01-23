@@ -26,8 +26,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Null",
-  "display_name": "Legion Advanced Bot Foundry",
+  "description": "Advanced Manufacturing- Builds Legion Bots.",
+  "display_name": "Advanced Walker Foundry",
   "events": {
     "died": {
       "effect_scale": 1.5

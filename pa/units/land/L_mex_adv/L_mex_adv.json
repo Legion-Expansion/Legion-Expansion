@@ -13,8 +13,8 @@
   "consumption": {
     "energy": 0
   },
-  "description": "!LOC(units:advanced_manufacturing_produces_metal_can_only_be_placed_on_metal_deposits.message):Advanced manufacturing- Produces metal, can only be placed on metal deposits.",
-  "display_name": "Legion Advanced Metal Extractor",
+  "description": "Basic Economy. Extracts Mass to Produce a Metal Income.",
+  "display_name": "M-48A Advanced Mass Extractor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"

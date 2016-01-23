@@ -12,8 +12,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Medium Range Rocket Pods",
-  "display_name": "Legion Omega Decimator Rocket Pods",
+  "description": "Medium Range Heavy Rocket Pods. Attacks Land and Naval Targets.",
+  "display_name": "Omega Decimator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"

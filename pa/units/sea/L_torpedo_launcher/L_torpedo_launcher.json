@@ -8,8 +8,8 @@
 	"command_caps": [
 		"ORDER_Attack"
 	],
-	"description": "!LOC(units:torpedo_launcher_basic_anti_ship_defense.message):Torpedo Launcher- Basic anti-ship defense.",
-	"display_name": "Legion Torpedo Launcher",
+	"description": "Wave Maker and Torpedo Launcher. Attacks Naval Targets.",
+	"display_name": "Ripple",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/sea"

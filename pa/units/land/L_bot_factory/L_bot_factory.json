@@ -31,7 +31,7 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "!LOC(units:basic_manufacturing_builds_bots.message):Basic manufacturing- Builds bots.",
+  "description": "Basic Manufacturing- Builds Legion Bots.",
   "display_name": "Walker Foundry",
   "events": {
     "died": {

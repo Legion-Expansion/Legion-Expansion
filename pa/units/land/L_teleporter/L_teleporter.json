@@ -24,8 +24,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Teleports units across the solar system.",
-  "display_name": "Legion Space Bridge",
+  "description": "Teleporter. Use to Teleport Units.",
+  "display_name": "Space Bridge",
   "energy_efficiency_requirement": 1,
   "events": {
     "build_complete": {

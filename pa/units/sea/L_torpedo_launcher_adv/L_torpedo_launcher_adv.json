@@ -8,8 +8,8 @@
 	"command_caps": [
 		"ORDER_Attack"
 	],
-	"description": "!LOC(units:torpedo_launcher_basic_anti_ship_defense.message):Torpedo Launcher- Basic anti-ship defense.",
-	"display_name": "Legion Advanced Torpedo Launcher",
+	"description": "Heavy Anti-Ship Defense. Attacks Naval Targets.",
+	"display_name": "Tsunami",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/sea"

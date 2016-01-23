@@ -11,8 +11,8 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 900,
-  "description": "!LOC(units:manufacturing_increases_maximum_energy_storage_capacity.message):Manufacturing- Increases maximum energy storage capacity.",
-  "display_name": "Legion OmniSilo Storage",
+  "description": "Significantly Increases Storage Capacity of Metal and Energy Production.",
+  "display_name": "OmniSilo Storage Device",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"

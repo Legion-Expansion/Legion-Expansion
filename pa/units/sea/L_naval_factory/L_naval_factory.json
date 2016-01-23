@@ -28,8 +28,8 @@
 		"ORDER_Attack",
 		"ORDER_Assist"
 	],
-	"description": "!LOC(units:basic_manufacturing_builds_naval_units.message):Basic manufacturing- Builds naval units.",
-	"display_name": "Legion Naval Factory",
+	"description": "Basic Manufacturing- Builds Legion Naval Units.",
+	"display_name": "Ship Foundry",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/sea"

@@ -25,8 +25,8 @@
         "ORDER_Assist",
         "ORDER_Use"
     ],
-    "description": "Advanced manufacturing- Builds Legion land vehicles.",
-    "display_name": "Legion Advanced Armour Foundry",
+    "description": "Advanced Manufacturing- Builds Legion Land Vehicles.",
+    "display_name": "Advanced Armor Foundry",
     "events": {
         "died": {
             "effect_scale": 1.5

@@ -14,7 +14,7 @@
     "energy": 0
   },
   "description": "Legion metal extractors produce more metal but cost more to build.",
-  "display_name": "Legion Metal Extractor",
+  "display_name": "M-42B Mass Extractor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"

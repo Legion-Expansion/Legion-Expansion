@@ -30,7 +30,7 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "description": "!LOC(units:basic_manufacturing_builds_air_units.message):Basic manufacturing- Builds air units.",
+  "description": "Basic Manufacturing- Builds Legion Air Units.",
   "display_name": "Flyer Foundry",
   "events": {
     "died": {

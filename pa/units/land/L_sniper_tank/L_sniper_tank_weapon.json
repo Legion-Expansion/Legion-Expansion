@@ -5,12 +5,11 @@
   "fx_trail": {
     "filename": "/pa/units/land/L_sniper_tank/trail.pfx"
   },
-  "idle_aim_delay": 3,
+  "idle_aim_delay": 0,
   "max_range": 200,
-  "pitch_range": 40,
+  "pitch_range": 60,
   "pitch_rate": 60,
   "rate_of_fire": 0.5,
-  "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",

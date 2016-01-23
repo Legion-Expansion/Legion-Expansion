@@ -8,8 +8,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:advanced_turret_equipped_with_anti_air_turret.message):Advanced turret- Equipped with anti-air turret.",
-  "display_name": "Legion Flakturm-G Flak Tower",
+  "description": "Advanced Anti Air Tower. Long Range. Attacks Air Units.",
+  "display_name": "Flakturm-G",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

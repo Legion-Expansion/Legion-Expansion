@@ -25,8 +25,8 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Null",
-  "display_name": "Legion Advanced Flyer Foundry",
+  "description": "Advanced Manufacturing- Builds Legion Air Units.",
+  "display_name": "Advanced Flyer Foundry",
   "events": {
     "died": {
       "effect_scale": 2

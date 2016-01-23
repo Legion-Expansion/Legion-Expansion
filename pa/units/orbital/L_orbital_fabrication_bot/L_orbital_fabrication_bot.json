@@ -37,8 +37,8 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "!LOC(units:advanced_fabricator_builds_orbital_satellites_and_ships.message):Advanced fabricator- Builds orbital satellites and ships.",
-  "display_name": "Legion Orbital Fabrication Bot",
+  "description": "Advanced fabricator- Builds Legion Orbital Satellites and Ships. ",
+  "display_name": "Bumble Bee",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab_orbital"

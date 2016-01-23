@@ -9,7 +9,7 @@
     "ORDER_Attack"
   ],
   "description": "Basic AA Turret- Equipped With a Light Machine Gun.",
-  "display_name": "Legion Sloth Anti-Air Turret",
+  "display_name": "Bofors II",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

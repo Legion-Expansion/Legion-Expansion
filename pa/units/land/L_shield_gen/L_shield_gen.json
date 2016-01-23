@@ -6,7 +6,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "build_metal_cost": 900,
     "description": "Shield Defense",
-    "display_name": "Legion Shield",
+    "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
     "energy_efficiency_requirement": 1,
     "events": {
         "build_complete": {

@@ -1,6 +1,7 @@
 {
   "TEMP_texelinfo": 32.6108,
   "area_build_type": "Sphere",
+  "build_separation": 10,
   "atrophy_cool_down": 15,
   "atrophy_rate": 45,
   "audio": {
@@ -10,8 +11,8 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 3700,
-  "description": "Nuclear Fusion Reactor: Produces High Amounts of Energy",
-  "display_name": "Legion Advanced Energy Plant",
+  "description": "Fabricates Black Holes and Harnesses Their Energy. Very Unstable. You Might Want to Spread these Things Out.",
+  "display_name": "Black Hole Generator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
@@ -168,6 +169,9 @@
       ]
     }
   },
+	"death_weapon": {
+		"ground_ammo_spec": "/pa/units/land/L_energy_plant_adv/death_weapon.json"
+	},
   "selection_icon": {
     "diameter": 55
   },

@@ -24,8 +24,8 @@
         "ORDER_FactoryBuild",
         "ORDER_Attack"
     ],
-    "description": "!LOC(units:nuclear_missile_launcher_equipped_with_advanced_long_range_large_area_damage_nuclear_missile.message):Nuclear missile launcher- Equipped with advanced long range, large area damage, nuclear missile.",
-    "display_name": "Legion Glassmaker Nuclear Missile Launcher",
+    "description": "Long Range Ballistic Nuclear Launcher. High Damage and High AoE.",
+    "display_name": "Glassmaker & Supernova",
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/factory"

@@ -8,8 +8,8 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Shoots orbital and shit",
-  "display_name": "Legion Tola Anti Orbital Beam Cannon",
+  "description": "Anti Orbital Ion Cannon. Attacks Orbital Units.",
+  "display_name": "Tola",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

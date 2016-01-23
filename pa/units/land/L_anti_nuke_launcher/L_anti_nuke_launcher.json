@@ -25,8 +25,8 @@
   "command_caps": [
     "ORDER_FactoryBuild"
   ],
-  "description": "!LOC(units:anti_nuke_launcher_equipped_with_advanced_anti_nuclear_missile_weapon.message):Anti-nuke launcher- Equipped with advanced anti-nuclear missile weapon.",
-  "display_name": "Legion Iron Dome Anti-Nuke Launcher",
+  "description": "Nuke Defense. Intercepts Nuclear Missiles.",
+  "display_name": "Iron Dome",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"
