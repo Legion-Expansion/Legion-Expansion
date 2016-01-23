@@ -1,7 +1,7 @@
 {
   "TEMP_texelinfo": 32.6108,
-  "area_build_type": "Sphere",
-  "build_separation": 10,
+  "area_build_type": "Line",
+  "area_build_separation": 50,
   "atrophy_cool_down": 15,
   "atrophy_rate": 45,
   "audio": {
@@ -9,6 +9,7 @@
       "cue": "/SE/Selection/structure/energy"
     }
   },
+  "max_health": 700,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 3700,
   "description": "Fabricates Black Holes and Harnesses Their Energy. Very Unstable. You Might Want to Spread these Things Out.",
