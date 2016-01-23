@@ -62,7 +62,7 @@
 	},
 	"tools": [{
 		"spec_id": "/pa/units/air/L_titan_air/L_titan_air_main_tool_weapon.json",
-		"aim_bone": "bone_root",
+		"aim_bone": "bone_turret_main",
 		"record_index": 0,
 		"fire_event": "fired0",
 		"projectiles_per_fire": 4,
