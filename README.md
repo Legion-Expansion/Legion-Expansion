@@ -41,6 +41,7 @@ When working with legion units please:
 - update ui/mods/com.pa.legion-expansion/global.js
 - add a build bar image 
 - add a strategic icon
+- update pa/ai/unit_maps/imperial_legion.json"
 
 If replacing existing vanilla units:
 
@@ -95,7 +96,7 @@ Nothing is used from the custom commander... it's just a placeholder which can b
 
 ## AI
 
-Currently the AI cannot use the Legion Faction without server-script modifications.
+Queller will provide AI support
 
 
 ## Known Issues
