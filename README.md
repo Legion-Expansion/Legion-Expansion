@@ -104,6 +104,7 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 - AI cannot use Legion Faction
 - legion commander is no longer selectable on Uber servers (test with local until updated)
 
+
 ## TO DO
 
 ### Units
@@ -120,13 +121,24 @@ Currently the AI cannot use the Legion Faction without server-script modificatio
 
 ## Install
 
-Run install.py with your PA_DATA_PATH in papaths.py to backup existing and install a clean copy from source for testing.
-
-Existing mod folders will be automatically backed up.
-
-Manual install instructions...
-
-### Server Mod
-
-- copy entire folder to server-mods
-- delete art
+1. Download a copy of the master branch
+2. If you have Legion-Expansion-Server and Legion-Expansion-Client folders from a previous install then delete them now
+2. Run split_into_mods.py in the root directory of the branch
+ * You will need Python 3.x installed on your system
+3. Enter the parent directory of the master branch
+4. Copy Legion-Expansion-Server to your server_mods folder
+ * Setting up a symlink in place of copying will make updates more painless
+5. Copy Legion-Expansion-Client to your client_mods folder (mods on older PAMM installations)
+ * Setting up a symlink in place of copying will make updates more painless
+6. The following steps are only necessary if this is the first time you've installed Legion Expansion
+7. Open PAMM
+8. Download the following client mods
+ * Icon Extensions
+9. Download the following server mods
+ * HodgePodge
+ * Icon Reloader
+ * Xenophobia
+10. Enable the Legion Expansion server mod
+ * This will enable all dependencies automatically
+ * Non-Legion dependencies will not be disabled when you disable the Legion mod
+11. Run Planetary Annihilation: TITANS
