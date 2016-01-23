@@ -57,11 +57,11 @@
     "LegionBotAdvancedArtillery": {
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery.json"
     },
+    "LegionBotAdvancedAssault": {
+      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot.json"
+    },
     "LegionBotAdvancedFabber": {
       "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"
-    },
-    "LegionBotAdvancedRiot": {
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot.json"
     },
     "LegionBotAdvancedTactical": {
       "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
