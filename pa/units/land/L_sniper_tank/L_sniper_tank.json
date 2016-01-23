@@ -40,7 +40,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
     }
   },
   "guard_layer": "WL_LandHorizontal",
@@ -108,11 +108,20 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_weapon.json"
     }
   ],
+	"fx_offsets": [{
+		"bone": "bone_turret",
+		"offset": [
+		0,
+		0,
+		0],
+		"filename": "/pa/units/land/L_sniper_tank/energy_rods.pfx",
+		"type": "idle"
+	}],
   "transportable": {
     "size": 1
   },
