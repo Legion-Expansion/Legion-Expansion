@@ -1,4 +1,4 @@
-	{
+{
   "unit_map": {
     "AnyLegionFabberAdvanced": {
       "unit_types": "(Fabber & (Advanced | Debug) & Custom1) - Orbital"
@@ -90,21 +90,27 @@
     "LegionDefenseAdvancedAntiNukeSilo": {
       "spec_id": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.json"
     },
+    "LegionDefenseAdvancedAntiNuke": {
+      "spec_id": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo.json"
+    },
     "LegionDefenseAdvancedArtillery": {
       "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long.json"
     },
     "LegionDefenseAdvancedLand": {
       "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
     },
-		"LegionDefenseAdvancedNaval": {
-			"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json"
-		},
+    "LegionDefenseAdvancedNaval": {
+    	"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json"
+    },
     "LegionDefenseAdvancedNukeSilo": {
       "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json"
     },
-		"LegionDefenseAdvancedShield": {
-			"spec_id": "/pa/units/land/L_shield_gen/L_shield_gen.json"
-		},
+    "LegionDefenseAdvancedNuke": {
+      "spec_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo.json"
+    },
+    "LegionDefenseAdvancedShield": {
+      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen.json"
+    },
     "LegionDefenseAdvancedTactical": {
       "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json"
     },
@@ -120,12 +126,12 @@
     "LegionDefenseBasicLandII": {
       "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json"
     },
-		"LegionDefenseBasicNaval": {
-			"spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher.json"
-		},		
-		"LegionBasicDefenseOrbital": {
-			"spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense.json"
-		},
+    "LegionDefenseBasicNaval": {
+      "spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher.json"
+    },
+    "LegionBasicDefenseOrbital": {
+      "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense.json"
+    },
     "LegionEcoAdvancedEnergyPlant": {
       "spec_id": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json"
     },
@@ -222,9 +228,6 @@
     "LegionTitanAdvancedVehicle": {
       "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle.json"
     },
-    "LegionVehicleAdvancedArmor": {
-      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
-    },
     "LegionVehicleAdvancedAA": {
       "spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm.json"
     },
@@ -243,17 +246,20 @@
     "LegionVehicleBasicFabber": {
       "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
     },
+    "LegionVehicleBasicArmor": {
+      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
+    },
     "LegionVehicleBasicHover": {
       "spec_id": "/pa/units/land/L_hover_tank/L_hover_tank.json"
+    },
+    "LegionVehicleBasicLaser": {
+      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
     },
     "LegionVehicleBasicMortar": {
       "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
     },
     "LegionVehicleBasicScout": {
       "spec_id": "/pa/units/land/L_land_scout/L_land_scout.json"
-    },
-    "LegionVehicleBasicShank": {
-      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
     },
     "LegionVehicleBasicShotgun": {
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
