@@ -129,7 +129,7 @@
     "LegionDefenseBasicNaval": {
       "spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher.json"
     },
-    "LegionBasicDefenseOrbital": {
+    "LegionDefenseBasicOrbital": {
       "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense.json"
     },
     "LegionEcoAdvancedEnergyPlant": {
@@ -192,11 +192,11 @@
     "LegionNavalAdvancedTactical": {
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship.json"
     },
-    "LegionNavalBasicFabber": {
-      "spec_id": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json"
-    },
     "LegionNavalBasicAA": {
       "spec_id": "/pa/units/sea/L_frigate/L_frigate.json"
+    },
+    "LegionNavalBasicFabber": {
+      "spec_id": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json"
     },
     "LegionNavalBasicDestroyer": {
       "spec_id": "/pa/units/sea/L_destroyer/L_destroyer.json"
@@ -228,11 +228,11 @@
     "LegionTitanAdvancedVehicle": {
       "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle.json"
     },
-    "LegionVehicleAdvancedArmor": {
-      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
-    },
     "LegionVehicleAdvancedAA": {
       "spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm.json"
+    },
+    "LegionVehicleAdvancedArmor": {
+      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.json"
     },
     "LegionVehicleAdvancedFabber": {
       "spec_id": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.json"
