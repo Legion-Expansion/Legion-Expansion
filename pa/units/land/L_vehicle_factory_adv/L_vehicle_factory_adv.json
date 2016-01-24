@@ -36,8 +36,8 @@
     "fx_offsets": [
         {
             "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser01",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "bone": "bone_laser001",
             "orientation": [
                 0,
                 0,
@@ -46,8 +46,8 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser02",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "bone": "bone_laser002",
             "orientation": [
                 0,
                 0,
@@ -56,8 +56,8 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser03",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "bone": "bone_laser003",
             "orientation": [
                 0,
                 0,
@@ -66,28 +66,8 @@
         },
         {
             "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser04",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser05",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser06",
+            "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
+            "bone": "bone_laser004",
             "orientation": [
                 0,
                 0,
@@ -103,7 +83,15 @@
       "bone": "smoke002",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
       "type": "build"
-    }
+    },
+ {
+		"bone": "bone_root",
+		"filename": "/pa/units/land/radar/radar_on.pfx",
+		"type": "idle",
+		"orientation": [
+			90, 0, 0
+		]
+	}
     ],
     "death": {
         "decals": [
@@ -131,20 +119,22 @@
         }
     ],
     "mesh_bounds": [
-        57,
-        64,
-        28.6
+        52.532,
+        56.955,
+        28.88
     ],
     "placement_size": [
         50,
         65
     ],
-    "TEMP_texelinfo": 42,
+    "TEMP_texelinfo": 41.0812,
     "max_health": 30000,
     "model": {
         "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
         "animations": {
-            "build_loop": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa"
+            "build_start": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_start.papa",
+            "build_loop": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_build.papa",
+            "build_end": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv_end.papa"
         },
         "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
         "skirt_decal": "/pa/effects/specs/skirt_02.json"
