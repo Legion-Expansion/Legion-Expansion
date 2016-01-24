@@ -86,7 +86,7 @@
     },
  {
 		"bone": "bone_root",
-		"filename": "/pa/units/land/radar/radar_on.pfx",
+		"filename": "/pa/units/land/L_vehicle_factory_adv/energy_platform_adv.pfx",
 		"type": "idle",
 		"orientation": [
 			90, 0, 0
