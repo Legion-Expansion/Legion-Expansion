@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 90,
+  "build_metal_cost": 50,
   "description": "Rocket Spider- Super fast suicide bot that homes in on its prey.",
   "display_name": "Purger",
   "events": {

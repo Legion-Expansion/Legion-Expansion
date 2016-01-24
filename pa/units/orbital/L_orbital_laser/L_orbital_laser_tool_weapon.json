@@ -13,8 +13,7 @@
   "target_layers": [
     "WL_LandHorizontal",
     "WL_WaterSurface",
-    "WL_Seafloor",
-    "WL_Air"
+    "WL_Seafloor"
   ],
   "target_priorities": [
     "Structure - Wall",

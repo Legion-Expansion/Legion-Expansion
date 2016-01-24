@@ -46,8 +46,8 @@
     "type": "Structure"
   },
   "placement_size": [
-    4,
-    4
+    3,
+    3
   ],
   "recon": {
     "observer": {

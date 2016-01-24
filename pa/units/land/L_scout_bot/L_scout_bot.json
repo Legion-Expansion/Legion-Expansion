@@ -74,15 +74,20 @@
 	"recon": {
 		"observer": {
 			"items": [{
+				"layer": "surface_and_air",				
 				"channel": "sight",
-				"layer": "surface_and_air",
-				"radius": 130,
-				"shape": "capsule"
+				"shape": "capsule",
+				"radius": 200
 			}, {
+				"layer": "underwater",				
 				"channel": "sight",
-				"layer": "underwater",
-				"radius": 130,
-				"shape": "capsule"
+				"shape": "capsule",
+				"radius": 200
+			}, {
+				"layer": "mine",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200
 			}]
 		}
 	},
