@@ -1,22 +1,31 @@
 {
-    "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
-    "display_name": "Rockteeth Commander",
-    "buildable_types": "CmdBuild & Custom1",
-    "description": "Tank Rockteeth Commander ",
-    "attachable": {
-        "offsets": {
-            "root": [
-                0,
-                0,
-                0
-            ],
-            "head": [
-                0,
-                0,
-                15.6
-            ]
-        }
-    },
+  "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
+  "display_name": "Rockteeth Commander",
+  "unit_types":[
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild",
+		"UNITTYPE_Custom1"
+  ],
+  "buildable_types": "CmdBuild & Custom1",
+  "description": "Tank Rockteeth Commander ",
+  "attachable": {
+      "offsets": {
+          "root": [
+              0,
+              0,
+              0
+          ],
+          "head": [
+              0,
+              0,
+              15.6
+          ]
+      }
+  },
   "fx_offsets": [
     {
       "bone": "bone_laser",
