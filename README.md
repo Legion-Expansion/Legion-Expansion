@@ -143,3 +143,16 @@ Queller will provide AI support
  * This will enable all dependencies automatically
  * Non-Legion dependencies will not be disabled when you disable the Legion mod
 11. Run Planetary Annihilation: TITANS
+
+
+## AI Support
+
+The AI is a work-in-progress
+
+1. Install the UI mod Queller AI Personalities
+ * This will install the Queller AI as well but we won't be using the release version
+ * Ensure both mods are **disabled**
+2. Download/Sync the [feature-imperial-legion](https://github.com/Quitch/Queller-AI/tree/feature-imperial-legion) branch of the Queller AI to your server-mods folder
+3. Enable the server mod Queller AI DEV LEGION
+ * This should also enable Queller AI Personalities
+4. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
