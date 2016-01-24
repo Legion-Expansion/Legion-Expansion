@@ -85,7 +85,7 @@
     "bank_factor": 5,
     "brake": 50,
     "move_speed": 90,
-    "turn_speed": 70,
+    "turn_speed": 85,
     "type": "air"
   },
   "physics": {
