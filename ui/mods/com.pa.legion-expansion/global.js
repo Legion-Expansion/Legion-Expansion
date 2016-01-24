@@ -13,61 +13,61 @@
         spec_id: "/pa/units/land/L_unit_cannon/L_unit_cannon.json",
         si_fallback: ["unit_cannon"],
         preferred_builds: [
-          ["L_factory", 0]
+          ["L_factory", 6]
         ]
       }, {
         spec_id: "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json",
         si_fallback: ["naval_factory_adv"],
         preferred_builds: [
-          ["L_factory", 6]
+          ["L_factory", 7]
         ]
       }, {
         spec_id: "/pa/units/air/L_air_factory_adv/L_air_factory_adv.json",
         si_fallback: ["air_factory_adv"],
         preferred_builds: [
-          ["L_factory", 7]
+          ["L_factory", 8]
         ]
       }, {
         spec_id: "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json",
         si_fallback: ["bot_factory_adv"],
         preferred_builds: [
-          ["L_factory", 8]
+          ["L_factory", 9]
         ]
       }, {
         spec_id: "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json",
         si_fallback: ["vehicle_factory_adv"],
         preferred_builds: [
-          ["L_factory", 9]
+          ["L_factory", 10]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.json",
         si_fallback: ["orbital_launcher"],
         preferred_builds: [
-          ["L_factory", 10]
+          ["L_factory", 12]
         ]
       }, {
         spec_id: "/pa/units/sea/L_naval_factory/L_naval_factory.json",
         si_fallback: ["naval_factory"],
         preferred_builds: [
-          ["L_factory", 12]
+          ["L_factory", 13]
         ]
       }, {
         spec_id: "/pa/units/air/L_air_factory/L_air_factory.json",
         si_fallback: ["air_factory"],
         preferred_builds: [
-          ["L_factory", 13]
+          ["L_factory", 14]
         ]
       }, {
         spec_id: "/pa/units/land/L_bot_factory/L_bot_factory.json",
         si_fallback: ["bot_factory"],
         preferred_builds: [
-          ["L_factory", 14]
+          ["L_factory", 15]
         ]
       }, {
         spec_id: "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json",
         si_fallback: ["vehicle_factory"],
         preferred_builds: [
-          ["L_factory", 15]
+          ["L_factory", 16]
         ]
       },
 
@@ -78,11 +78,23 @@
         preferred_builds: [
           ["L_combat", 0]
         ]
+      },  {
+        spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
+        si_fallback: ["teleporter"],
+        preferred_builds: [
+          ["L_combat", 1]
+        ]
+      }, {
+        spec_id: "/pa/units/land/L_artillery_long/L_artillery_long.json",
+        si_fallback: ["artillery_long"],
+        preferred_builds: [
+          ["L_combat", 2]
+        ]
       }, {
         spec_id: "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json",
         si_fallback: ["tactical_missile_launcher"],
         preferred_builds: [
-            ["L_combat", 2]
+            ["L_combat", 3]
           ] // catapult
       }, {
         spec_id: "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json",
@@ -94,25 +106,19 @@
         spec_id: "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.json",
         si_fallback: ["laser_defense"],
         preferred_builds: [
-            ["L_combat", 1]
+            ["L_combat", 6]
           ] // double laser
       }, {
         spec_id: "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json",
         si_fallback: ["air_defense_adv"],
         preferred_builds: [
-          ["L_combat", 6]
-        ]
-      }, {
-        spec_id: "/pa/units/land/L_artillery_long/L_artillery_long.json",
-        si_fallback: ["artillery_long"],
-        preferred_builds: [
           ["L_combat", 7]
         ]
-      }, {
+      },  {
         spec_id: "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json",
         si_fallback: ["torpedo_launcher_adv"],
         preferred_builds: [
-          ["L_combat", 8]
+          ["L_combat", 9]
         ]
       },
 
@@ -120,43 +126,37 @@
         spec_id: "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.json",
         si_fallback: ["anti_nuke_launcher"],
         preferred_builds: [
-          ["L_combat", 9]
+          ["L_combat", 10]
         ]
       }, {
         spec_id: "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json",
         si_fallback: ["laser_defense_single"],
         preferred_builds: [
-            ["L_combat", 10]
+            ["L_combat", 12]
           ] // single laser
       }, {
         spec_id: "/pa/units/land/L_air_defense/L_air_defense.json",
         si_fallback: ["air_defense"],
         preferred_builds: [
-          ["L_combat", 12]
+          ["L_combat", 13]
         ]
-      }, {
+      },  {
         spec_id: "/pa/units/land/L_artillery_short/L_artillery_short.json",
         si_fallback: ["artillery_short"],
         preferred_builds: [
-          ["L_combat", 13]
+          ["L_combat", 14]
         ]
-      }, {
+      },  {
         spec_id: "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher.json",
         si_fallback: ["torpedo_launcher"],
         preferred_builds: [
-          ["L_combat", 14]
+          ["L_combat", 15]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_ion_defense/L_ion_defense.json",
         si_fallback: ["ion_defense"],
         preferred_builds: [
-          ["L_combat", 15]
-        ]
-      }, {
-        spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
-        si_fallback: ["teleporter"],
-        preferred_builds: [
-          ["L_combat", 17]
+          ["L_combat", 16]
         ]
       },
 
@@ -166,12 +166,6 @@
         si_fallback: ["control_module"],
         preferred_builds: [
           ["L_utility", 1]
-        ]
-      }, {
-        spec_id: "/pa/units/land/L_radar_adv/L_radar_adv.json",
-        si_fallback: ["radar_adv"],
-        preferred_builds: [
-          ["L_utility", 2]
         ]
       }, {
         spec_id: "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json",
@@ -185,63 +179,65 @@
         preferred_builds: [
           ["L_utility", 4]
         ]
-      },
-
-      {
-        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json",
-        si_fallback: ["delta_v_engine"],
+      }, {
+        spec_id: "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json",
+        si_fallback: ["deep_space_radar"],
         preferred_builds: [
           ["L_utility", 6]
         ]
-      },
-
-      {
-        spec_id: "/pa/units/land/L_radar/L_radar.json",
-        si_fallback: ["radar"],
+      }, {
+        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json",
+        si_fallback: ["delta_v_engine"],
         preferred_builds: [
           ["L_utility", 7]
+        ]
+      }, {
+        spec_id: "/pa/units/land/L_radar_adv/L_radar_adv.json",
+        si_fallback: ["radar_adv"],
+        preferred_builds: [
+          ["L_utility", 8]
         ]
       }, {
         spec_id: "/pa/units/land/L_energy_plant/L_energy_plant.json",
         si_fallback: ["energy_plant"],
         preferred_builds: [
-          ["L_utility", 8]
+          ["L_utility", 9]
         ]
       }, {
         spec_id: "/pa/units/land/L_mex/L_mex.json",
         si_fallback: ["metal_extractor"],
         preferred_builds: [
-          ["L_utility", 9]
+          ["L_utility", 10]
         ]
       }, {
         spec_id: "/pa/units/land/L_land_barrier/L_land_barrier.json",
         si_fallback: ["land_barrier"],
         preferred_builds: [
-          ["L_utility", 10]
+          ["L_utility", 12]
         ]
       }, {
         spec_id: "/pa/units/land/L_teleporter/L_teleporter.json",
         si_fallback: ["teleporter"],
         preferred_builds: [
-          ["L_utility", 12]
+          ["L_utility", 13]
         ]
       }, {
-        spec_id: "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json",
-        si_fallback: ["deep_space_radar"],
+        spec_id: "/pa/units/land/L_radar/L_radar.json",
+        si_fallback: ["radar"],
         preferred_builds: [
-          ["L_utility", 13]
+          ["L_utility", 14]
         ]
       }, {
         spec_id: "/pa/units/land/L_storage/L_storage.json",
         si_fallback: ["metal_storage"],
         preferred_builds: [
-            ["L_utility", 14]
+            ["L_utility", 15]
           ] // energy storage
       }, {
         spec_id: "/pa/units/land/L_shield_gen/L_shield_gen.json",
         si_fallback: ["deep_space_radar"],
         preferred_builds: [
-          ["L_utility", 15]
+          ["L_utility", 16]
         ]
       },
 
@@ -365,11 +361,11 @@
             ["L_bot", 12]
           ] //botfab
       }, {
-        spec_id: "/pa/units/land/L_sniper_bot/L_sniper_bot.json",
-        si_fallback: ["bot_sniper"],
+        spec_id: "/pa/units/land/L_assault_bot/L_assault_bot.json",
+        si_fallback: ["assault_bot"],
         preferred_builds: [
             ["L_bot", 13]
-          ] //lancer
+          ] // dox
       }, {
         spec_id: "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
         si_fallback: ["bot_bomb"],
@@ -377,11 +373,11 @@
             ["L_bot", 14]
           ] // boom
       }, {
-        spec_id: "/pa/units/land/L_assault_bot/L_assault_bot.json",
-        si_fallback: ["assault_bot"],
+        spec_id: "/pa/units/land/L_sniper_bot/L_sniper_bot.json",
+        si_fallback: ["bot_sniper"],
         preferred_builds: [
             ["L_bot", 15]
-          ] // dox
+          ] //lancer
       }, {
         spec_id: "/pa/units/land/L_bot_aa/L_bot_aa.json",
         si_fallback: ["aa_missile_vehicle"],

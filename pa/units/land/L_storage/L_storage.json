@@ -1,6 +1,6 @@
 {
   "TEMP_texelinfo": 26.4567,
-  "area_build_type": "Sphere",
+  "area_build_type": "Line",
   "energy_efficiency_requirement": 0.9,  
   "atrophy_cool_down": 15,
   "atrophy_rate": 7.5,
