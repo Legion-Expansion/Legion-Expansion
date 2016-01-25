@@ -1,149 +1,152 @@
 {
-  "TEMP_texelinfo": 10,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/grenadier_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
+    "TEMP_texelinfo": 10,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                4
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
     },
-    "selection_response": {
-      "cue": "/SE/Selection/bot/grenadier"
-    }
-  },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 100,
-  "description": "Walking Artillery. Long Range. Attacks Land and Naval.",
-  "display_name": "Miniman",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/grenadier_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/grenadier"
+        }
     },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 100,
+    "description": "Walking Artillery. Long Range. Attacks Land and Naval.",
+    "display_name": "Miniman",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 1
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/grenadier_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle03"
+        }
     },
-    "fired": {
-      "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle03"
-    }
-  },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 80,
-  "mesh_bounds": [
-    5,
-    5,
-    4.7
-  ],
-  "model": {
-    "animations": {
-      "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
-      "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
-      "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
+    "guard_layer": "WL_AnySurface",
+    "max_health": 80,
+    "mesh_bounds": [
+        5,
+        5,
+        4.7
+    ],
+    "model": {
+        "animations": {
+            "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
+            "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
+            "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
+        "filename": "/pa/units/land/L_bot_artillery/L_bot_artillery.papa",
+        "walk_speed": 3
     },
-    "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_artillery/L_bot_artillery.papa",
-    "walk_speed": 3
-  },
-  "navigation": {
-    "acceleration": 120,
-    "brake": 120,
-    "move_speed": 8,
-    "turn_speed": 720,
-    "type": "land-small"
-  },
-  "physics": {
-    "push_class": 2,
-    "radius": 2
-  },
-  "recon": {
-    "observer": {
-      "items": [
+    "navigation": {
+        "acceleration": 120,
+        "brake": 120,
+        "move_speed": 8,
+        "turn_speed": 720,
+        "type": "land-small"
+    },
+    "physics": {
+        "push_class": 2,
+        "radius": 2
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 130,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 130,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": -18
+    },
+    "tools": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 130,
-          "shape": "capsule"
+            "aim_bone": "bone_pitch01",
+            "muzzle_bone": "socket_muzzle01",
+            "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
         },
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 130,
-          "shape": "capsule"
+            "aim_bone": "bone_pitch02",
+            "muzzle_bone": "socket_muzzle02",
+            "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
+        },
+        {
+            "aim_bone": "bone_pitch03",
+            "muzzle_bone": "socket_muzzle03",
+            "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
         }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": 18
-  },
-  "tools": [
-    {
-      "aim_bone": "bone_pitch01",
-      "muzzle_bone": "socket_muzzle01",
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
+    ],
+    "transportable": {
+        "size": 1
     },
-    {
-      "aim_bone": "bone_pitch02",
-      "muzzle_bone": "socket_muzzle02",
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch03",
-      "muzzle_bone": "socket_muzzle03",
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
-    }
-  ],
-  "transportable": {
-    "size": 1
-  },
-	"headlights": [{
-		"bone": "bone_root",
-		"color": [
-			0.75,
-			1,
-			1
-		],
-		"far_distance": 20,
-		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-		"intensity": 1.4,
-		"near_distance": 1,
-		"near_height": 1.5,
-		"near_width": 1.5,
-		"offset": [
-			0, 0,
-			0
-		],
-		"orientation": [
-			0,
-			0,
-			0
-		]
-	}],
-  "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ]
+    "headlights": [
+        {
+            "bone": "bone_root",
+            "color": [
+                0.75,
+                1,
+                1
+            ],
+            "far_distance": 20,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 1.4,
+            "near_distance": 1,
+            "near_height": 1.5,
+            "near_width": 1.5,
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom1"
+    ]
 }

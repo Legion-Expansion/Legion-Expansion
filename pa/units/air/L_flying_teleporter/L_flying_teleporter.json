@@ -18,14 +18,14 @@
         }
     },
     "unit_types": [
-		"UNITTYPE_Air",	
-		"UNITTYPE_Teleporter",		
-		"UNITTYPE_Mobile",
+        "UNITTYPE_Air",
+        "UNITTYPE_Teleporter",
+        "UNITTYPE_Mobile",
         "UNITTYPE_Advanced",
-        "UNITTYPE_FabAdvBuild",	
-		"UNITTYPE_CombatFabAdvBuild",		
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_CombatFabAdvBuild",
         "UNITTYPE_Important",
-			"UNITTYPE_Custom1"		
+        "UNITTYPE_Custom1"
     ],
     "command_caps": [
         "ORDER_Move",
@@ -226,7 +226,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 40,
+        "diameter": -40,
         "vertical_offset": 0
     },
     "mesh_bounds": [

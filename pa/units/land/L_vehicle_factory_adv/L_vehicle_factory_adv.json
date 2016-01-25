@@ -74,24 +74,26 @@
                 0
             ]
         },
-    {
-      "bone": "smoke001",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
-    },
-    {
-      "bone": "smoke002",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
-    },
- {
-		"bone": "bone_root",
-		"filename": "/pa/units/land/L_vehicle_factory_adv/energy_platform_adv.pfx",
-		"type": "idle",
-		"orientation": [
-			90, 0, 0
-		]
-	}
+        {
+            "bone": "smoke001",
+            "filename": "/pa/effects/specs/factory_smoke.pfx",
+            "type": "build"
+        },
+        {
+            "bone": "smoke002",
+            "filename": "/pa/effects/specs/factory_smoke.pfx",
+            "type": "build"
+        },
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/land/L_vehicle_factory_adv/energy_platform_adv.pfx",
+            "type": "idle",
+            "orientation": [
+                90,
+                0,
+                0
+            ]
+        }
     ],
     "death": {
         "decals": [
@@ -173,7 +175,7 @@
         ]
     ],
     "selection_icon": {
-        "diameter": -78
+        "diameter": 78
     },
     "tools": [
         {

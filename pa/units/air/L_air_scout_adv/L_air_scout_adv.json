@@ -15,14 +15,14 @@
     },
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
     "build_metal_cost": 2300,
-	"consumption": {
-		"energy": 350
-	},	
+    "consumption": {
+        "energy": 350
+    },
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
         "ORDER_Assist",
-		"ORDER_Attack"
+        "ORDER_Attack"
     ],
     "description": "Advanced Mobile Radar and Vision. Quick.",
     "display_name": "Cub",
@@ -145,28 +145,28 @@
     "fx_offsets": [
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust01"
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "thrust01"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust02"
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "thrust02"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust03"
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "thrust03"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust04"
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "bone": "thrust04"
         }
     ],
     "passive_health_regen": 20,
     "selection_icon": {
-        "diameter": 33
+        "diameter": -33
     },
     "unit_types": [
         "UNITTYPE_Scout",

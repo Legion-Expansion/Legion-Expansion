@@ -1,183 +1,184 @@
 {
-
-  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 600,
-  "description": "Heavily armored gunship equipped with seeking missiles and a light machine gun.",
-  "display_name": "Lockheed",
-  "unit_types": [
-    "UNITTYPE_Gunship",
-    "UNITTYPE_Air",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ], 
-  "navigation": {
-    "acceleration": 20,
-    "aggressive_behavior": "circle",
-    "aggressive_distance": 50,
-    "bank_factor": 1,
-    "brake": 25,
-    "circle_max_time": 2.0,
-    "circle_min_time": 1.0,
-    "hover_time": -1.0,
-    "move_speed": 40,
-    "turn_speed": 60,
-    "type": "air",
-    "vertical_speed": 30
-  },  
-  "physics": {
-    "push_class": 2,
-    "radius": 6
-  },  
-  "recon": {
-    "observer": {
-      "items": [
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 600,
+    "description": "Heavily armored gunship equipped with seeking missiles and a light machine gun.",
+    "display_name": "Lockheed",
+    "unit_types": [
+        "UNITTYPE_Gunship",
+        "UNITTYPE_Air",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom1"
+    ],
+    "navigation": {
+        "acceleration": 20,
+        "aggressive_behavior": "circle",
+        "aggressive_distance": 50,
+        "bank_factor": 1,
+        "brake": 25,
+        "circle_max_time": 2.0,
+        "circle_min_time": 1.0,
+        "hover_time": -1.0,
+        "move_speed": 40,
+        "turn_speed": 60,
+        "type": "air",
+        "vertical_speed": 30
+    },
+    "physics": {
+        "push_class": 2,
+        "radius": 6
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "model": {
+        "animations": {
+            "fly": "/pa/units/air/L_gunship/L_gunship_fly.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/L_gunship_anim_tree.json",
+        "filename": "/pa/units/air/L_gunship/L_gunship.papa"
+    },
+    "tools": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
+            "spec_id": "/pa/units/air/L_gunship/L_gunship_main_tool_weapon.json",
+            "aim_bone": "bone_pitch",
+            "record_index": 0,
+            "fire_event": "fired0",
+            "muzzle_bone": "socket_muzzle"
         },
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
+            "spec_id": "/pa/units/air/L_gunship/nuclear_sub_tool_weapon_missile.json",
+            "aim_bone": "bone_turret",
+            "record_index": 1,
+            "fire_event": "fired1",
+            "muzzle_bone": [
+                "socket_rocket01",
+                "socket_rocket02",
+                "socket_rocket03",
+                "socket_rocket04",
+                "socket_rocket05",
+                "socket_rocket06"
+            ]
         }
-      ]
-    }
-  },  
-  "model": {
-    "animations": {
-      "fly": "/pa/units/air/L_gunship/L_gunship_fly.papa"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/air/gunship_fire",
+            "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle",
+            "effect_scale": 5.0
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_scale": 0.75
+        }
     },
-    "animtree": "/pa/anim/anim_trees/L_gunship_anim_tree.json",
-    "filename": "/pa/units/air/L_gunship/L_gunship.papa"
-  },  
-  "tools": [
-    {
-		"spec_id": "/pa/units/air/L_gunship/L_gunship_main_tool_weapon.json",		
-		"aim_bone": "bone_pitch",
-		"record_index": 0,
-		"fire_event": "fired0",	
-		"muzzle_bone": "socket_muzzle"	
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_gunship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/gunship"
+        }
     },
-    {
-		"spec_id": "/pa/units/air/L_gunship/nuclear_sub_tool_weapon_missile.json",
-		"aim_bone": "bone_turret",
-		"record_index": 1,
-		"fire_event": "fired1",	  
-		"muzzle_bone": ["socket_rocket01",
-		"socket_rocket02",
-		"socket_rocket03",
-		"socket_rocket04",
-		"socket_rocket05", 
-		"socket_rocket06"]		
-
-    }],  
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/air"
-		},
-		"fired0": {
-			"audio_cue": "/SE/Weapons/air/gunship_fire",
-			"effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle",
-			"effect_scale": 5.0
-		},
-		"fired1": {
-			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire"
-		},	
-		"died": {
-			"audio_cue": "/SE/Death/Air",
-			"effect_scale": 0.75
-    }
-  },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/air/air_gunship_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
+    "fx_offsets": [
+        {
+            "bone": "engines_back",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "offset": [
+                -2.5,
+                0,
+                -3.1
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ],
+            "type": "moving"
+        },
+        {
+            "bone": "engines_back",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "offset": [
+                2.5,
+                0,
+                -3.1
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ],
+            "type": "moving"
+        },
+        {
+            "bone": "engines_front",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "offset": [
+                -4.6,
+                0,
+                -3.3
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ],
+            "type": "moving"
+        },
+        {
+            "bone": "engines_front",
+            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+            "offset": [
+                4.6,
+                0,
+                -3.3
+            ],
+            "orientation": [
+                0,
+                90,
+                0
+            ],
+            "type": "moving"
+        }
+    ],
+    "guard_layer": "WL_Anysurface",
+    "max_health": 1500,
+    "mesh_bounds": [
+        8.5,
+        11.5,
+        3.6193
+    ],
+    "selection_icon": {
+        "diameter": -16.0
     },
-    "selection_response": {
-      "cue": "/SE/Selection/air/gunship"
-    }
-  },  
-  "fx_offsets": [
-    {
-      "bone": "engines_back",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        -2.5,
-        0,
-        -3.1
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
-      "type": "moving"
-    },
-    {
-      "bone": "engines_back",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        2.5,
-        0,
-        -3.1
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
-      "type": "moving"
-    },
-    {
-      "bone": "engines_front",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        -4.6,
-        0,
-        -3.3
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
-      "type": "moving"
-    },
-    {
-      "bone": "engines_front",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        4.6,
-        0,
-        -3.3
-      ],
-      "orientation": [
-        0,
-        90,
-        0
-      ],
-      "type": "moving"
-    }
-  ],
-  "guard_layer": "WL_Anysurface",
-  "max_health": 1500,
-  "mesh_bounds": [
-    8.5,
-    11.5,
-    3.6193
-  ],
-	"selection_icon": {
-		"diameter": 16.0
-	},  
-  "spawn_layers": "WL_Air"
+    "spawn_layers": "WL_Air"
 }
