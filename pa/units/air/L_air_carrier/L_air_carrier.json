@@ -19,7 +19,7 @@
         "ORDER_Move",
         "ORDER_Patrol",
         "ORDER_Assist",
-		"ORDER_Attack"
+        "ORDER_Attack"
     ],
     "tools": [
         {
@@ -44,48 +44,48 @@
     "fx_offsets": [
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust01"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "thrust01"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust02"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "thrust02"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust03"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "thrust03"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust04"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "thrust04"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "thrust05"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "thrust05"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_frontLeft"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "hole_frontLeft"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_frontRight"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "hole_frontRight"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_backLeft"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "hole_backLeft"
         },
         {
             "type": "idle",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-			"bone": "hole_backRight"
+            "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+            "bone": "hole_backRight"
         }
     ],
     "description": "Launches Flyer Drones. Strong.",
@@ -148,7 +148,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 34
+        "diameter": -34
     },
     "unit_types": [
         "UNITTYPE_Scout",

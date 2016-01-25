@@ -1,110 +1,114 @@
 {
-	"TEMP_texelinfo": 4.07719,
-	"attachable": {
-		"offsets": {
-			"head": [
-				0,
-				0,
-				3.5
-			],
-			"root": [
-				0,
-				0,
-				0
-			]
-		}
-	},
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/bot/assault_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/bot/assault"
-		}
-	},
-	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"build_metal_cost": 90,
-	"description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
-	"display_name": "Scout Bot",
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/bot"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Bot",
-			"effect_scale": 1
-		},
-		"fired": {
-			"audio_cue": "/SE/Weapons/bot/assault_fire",
-			"effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
-		}
-	},
-	"guard_layer": "WL_AnySurface",
-	"max_health": 120,
-	"mesh_bounds": [
-		4,
-		2,
-		4
-	],
-	"model": {
-		"animations": {
-			"idle": "/pa/units/land/L_scout_bot/L_scout_bot_idle.papa",
-			"walk": "/pa/units/land/L_scout_bot/L_scout_bot_walk.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
-		"filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa",
-		"walk_speed": 2.75
-	},
-	"navigation": {
-		"acceleration": 350,
-		"brake": 250,
-		"move_speed": 23,
-		"turn_speed": 720,
-		"type": "amphibious"
-	},
-	"physics": {
-		"push_class": 2,
-		"radius": 2
-	},
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",				
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200
-			}, {
-				"layer": "underwater",				
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200
-			}, {
-				"layer": "mine",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200
-			}]
-		}
-	},
-	"selection_icon": {
-		"diameter": 8
-	},
-	"transportable": {
-		"size": 1
-	},
-	"unit_types": [
-		"UNITTYPE_Bot",
-		"UNITTYPE_Mobile",
-		"UNITTYPE_Offense",
-		"UNITTYPE_Land",
-		"UNITTYPE_Basic",
-		"UNITTYPE_FactoryBuild",
-		"UNITTYPE_CannonBuildable",
-		"UNITTYPE_Custom1"
-	]
+    "TEMP_texelinfo": 4.07719,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                3.5
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/assault_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/assault"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 90,
+    "description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
+    "display_name": "Scout Bot",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 1
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/assault_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
+        }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 120,
+    "mesh_bounds": [
+        4,
+        2,
+        4
+    ],
+    "model": {
+        "animations": {
+            "idle": "/pa/units/land/L_scout_bot/L_scout_bot_idle.papa",
+            "walk": "/pa/units/land/L_scout_bot/L_scout_bot_walk.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
+        "filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa",
+        "walk_speed": 2.75
+    },
+    "navigation": {
+        "acceleration": 350,
+        "brake": 250,
+        "move_speed": 23,
+        "turn_speed": 720,
+        "type": "amphibious"
+    },
+    "physics": {
+        "push_class": 2,
+        "radius": 2
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 200
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": -8
+    },
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Custom1"
+    ]
 }

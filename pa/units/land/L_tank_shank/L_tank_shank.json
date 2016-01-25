@@ -1,129 +1,129 @@
 {
-  "TEMP_texelinfo": 5.84968,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        2.7
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/veh/tank_light_laser_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/veh/tank_light_laser"
-    }
-  },
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 325,
-  "description": "Main Battle Tank. Attacks Land and Naval.",
-  "display_name": "Shank",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh"
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/veh/tank_light_fire",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
-    }
-  },
-  "guard_layer": "WL_LandHorizontal",
-  "headlights": [
-    {
-      "color": [
-        0.9,
-        0.92,
-        1.0
-      ],
-      "far_distance": 20.0,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1.4,
-      "near_distance": 1.2,
-      "near_height": 2.0,
-      "near_width": 2.0,
-      "offset": [
-        0.0,
-        -1.0,
-        1.5
-      ],
-      "orientation": [
-        0.0,
-        65.0,
-        0.0
-      ]
-    }
-  ],
-  "max_health": 325,
-  "mesh_bounds": [
-    4.941,
-    6.102,
-    2.464
-  ],
-  "model": {
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
-    "arrows": 5,
-    "filename": "/pa/units/land/L_tank_shank/L_tank_shank.papa"
-  },
-  "navigation": {
-    "acceleration": 100,
-    "brake": 100,
-    "move_speed": 8,
-    "turn_speed": 90,
-    "type": "land-small"
-  },
-  "physics": {
-    "push_class": 60,
-    "radius": 4
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
+    "TEMP_texelinfo": 5.84968,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                2.7
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
         }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": -11
-  },
-  "tools": [
-    {
-      "aim_bone": "socket_aim",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank_weapon.json"
-    }
-  ],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Tank",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
-  ]
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/tank_light_laser_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/tank_light_laser"
+        }
+    },
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "build_metal_cost": 325,
+    "description": "Main Battle Tank. Attacks Land and Naval.",
+    "display_name": "Shank",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/tank_light_fire",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
+        }
+    },
+    "guard_layer": "WL_LandHorizontal",
+    "headlights": [
+        {
+            "color": [
+                0.9,
+                0.92,
+                1.0
+            ],
+            "far_distance": 20.0,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 1.4,
+            "near_distance": 1.2,
+            "near_height": 2.0,
+            "near_width": 2.0,
+            "offset": [
+                0.0,
+                -1.0,
+                1.5
+            ],
+            "orientation": [
+                0.0,
+                65.0,
+                0.0
+            ]
+        }
+    ],
+    "max_health": 325,
+    "mesh_bounds": [
+        4.941,
+        6.102,
+        2.464
+    ],
+    "model": {
+        "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+        "arrows": 5,
+        "filename": "/pa/units/land/L_tank_shank/L_tank_shank.papa"
+    },
+    "navigation": {
+        "acceleration": 100,
+        "brake": 100,
+        "move_speed": 8,
+        "turn_speed": 90,
+        "type": "land-small"
+    },
+    "physics": {
+        "push_class": 60,
+        "radius": 4
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 11
+    },
+    "tools": [
+        {
+            "aim_bone": "socket_aim",
+            "muzzle_bone": "socket_muzzle",
+            "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank_weapon.json"
+        }
+    ],
+    "transportable": {
+        "size": 1
+    },
+    "unit_types": [
+        "UNITTYPE_Tank",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Custom1"
+    ]
 }

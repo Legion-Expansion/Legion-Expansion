@@ -82,7 +82,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 8
+        "diameter": -8
     },
     "tools": [
         {
@@ -93,7 +93,7 @@
                 "socket_muzzle003",
                 "socket_muzzle004"
             ],
-			"projectiles_per_fire": 4,
+            "projectiles_per_fire": 4,
             "spec_id": "/pa/units/land/L_bot_aa_adv/L_bot_aa_adv_tool_weapon.json"
         }
     ],
@@ -101,14 +101,14 @@
         "size": 1
     },
     "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-	"UNITTYPE_AirDefense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
-  ]
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Custom1"
+    ]
 }

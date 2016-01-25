@@ -1,141 +1,141 @@
 {
-  "TEMP_texelinfo": 21.4,
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/sea/frigate_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    }
-  },
-  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 450,
-  "description": "Medium Range AA. Attacks Air.",
-  "display_name": "Talos",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
+    "TEMP_texelinfo": 21.4,
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/sea/frigate_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
     },
-    "died": {
-      "audio_cue": "/SE/Death/Sea_large",
-      "effect_scale": 0.75
+    "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+    "build_metal_cost": 450,
+    "description": "Medium Range AA. Attacks Air.",
+    "display_name": "Talos",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea_large",
+            "effect_scale": 0.75
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+            "effect_scale": 0.5,
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01b"
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+            "effect_scale": 0.5,
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02b"
+        },
+        "fired2": {
+            "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
+            "effect_scale": 0.5,
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03b"
+        },
+        "fired3": {
+            "audio_cue": "/SE/Weapons/sea/torpedo_fire",
+            "effect_scale": 5.0,
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
+        }
     },
-    "fired0": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01b"
+    "guard_layer": "WL_AnySurface",
+    "max_health": 750,
+    "mesh_bounds": [
+        6,
+        15,
+        8
+    ],
+    "model": {
+        "animtree": "/pa/anim/anim_trees/L_frigate_anim_tree.json",
+        "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
     },
-    "fired1": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02b"
+    "navigation": {
+        "acceleration": 30,
+        "brake": 90,
+        "move_speed": 9,
+        "turn_speed": 60,
+        "type": "deepwater"
     },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03b"
+    "nearby_target_tick_update_interval": 3,
+    "physics": {
+        "push_class": 2,
+        "radius": 3,
+        "shape": "sphere"
     },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/sea/torpedo_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
-    }
-  },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 750,
-  "mesh_bounds": [
-    6,
-    15,
-    8
-  ],
-  "model": {
-    "animtree": "/pa/anim/anim_trees/L_frigate_anim_tree.json",
-    "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
-  },
-  "navigation": {
-    "acceleration": 30,
-    "brake": 90,
-    "move_speed": 9,
-    "turn_speed": 60,
-    "type": "deepwater"
-  },
-  "nearby_target_tick_update_interval": 3,
-  "physics": {
-    "push_class": 2,
-    "radius": 3,
-    "shape": "sphere"
-  },
-  "recon": {
-    "observer": {
-      "items": [
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 180,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "underwater",
+                    "radius": 180,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": -22
+    },
+    "spawn_layers": "WL_WaterSurface",
+    "tools": [
         {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 180,
-          "shape": "capsule"
+            "aim_bone": "bone_pitch01",
+            "fire_event": "fired2",
+            "muzzle_bone": [
+                "socket_muzzle01a",
+                "socket_muzzle01b"
+            ],
+            "record_index": 0,
+            "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
         },
         {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 180,
-          "shape": "capsule"
+            "aim_bone": "bone_pitch02",
+            "fire_event": "fired2",
+            "muzzle_bone": [
+                "socket_muzzle02a",
+                "socket_muzzle02b"
+            ],
+            "record_index": 1,
+            "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+        },
+        {
+            "aim_bone": "bone_pitch03",
+            "fire_event": "fired2",
+            "muzzle_bone": [
+                "socket_muzzle03a",
+                "socket_muzzle03b"
+            ],
+            "record_index": 2,
+            "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+        },
+        {
+            "aim_bone": "bone_root",
+            "fire_event": "fired3",
+            "muzzle_bone": "bone_root",
+            "record_index": 3,
+            "show_range": false,
+            "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json"
         }
-      ]
-    }
-  },
-  "selection_icon": {
-    "diameter": 22
-  },
-  "spawn_layers": "WL_WaterSurface",
-  "tools": [
-    {
-      "aim_bone": "bone_pitch01",
-      "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle01a",
-        "socket_muzzle01b"
-      ],
-      "record_index": 0,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
-    },
-    {
-      "aim_bone": "bone_pitch02",
-      "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle02a",
-        "socket_muzzle02b"
-      ],
-      "record_index": 1,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
-    },
-    {
-      "aim_bone": "bone_pitch03",
-      "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle03a",
-        "socket_muzzle03b"
-      ],
-      "record_index": 2,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "fire_event": "fired3",
-      "muzzle_bone": "bone_root",
-      "record_index": 3,
-      "show_range": false,
-      "spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json"
-    }
-  ],
-  "unit_types": [
-    "UNITTYPE_Naval",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Basic",
-    "UNITTYPE_AirDefense",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Basic",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom1"
+    ]
 }

@@ -82,7 +82,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 8
+        "diameter": -8
     },
     "tools": [
         {
@@ -100,14 +100,14 @@
         "size": 1
     },
     "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-	"UNITTYPE_AirDefense",
-    "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
-  ]
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Custom1"
+    ]
 }
