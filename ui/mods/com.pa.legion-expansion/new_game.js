@@ -40,6 +40,7 @@ model.LegionCommander = function (index) {
     model.targetAIArmyIndex(index);
     model.targetAISlotIndex(0);
     model.addAI();
+    console.log(index);
     setTimeout(model.CheckLegionCommander, 200, index);
 };
 model.CheckLegionCommander = function (index) {
