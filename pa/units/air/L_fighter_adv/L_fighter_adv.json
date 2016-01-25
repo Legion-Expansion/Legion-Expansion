@@ -138,7 +138,7 @@
 		}
 	},
 	"selection_icon": {
-		"diameter": 20.0,
+		"diameter": -20.0,
 		"vertical_offset": -2.0
 	},
 	"TEMP_texelinfo": 7.96209,

@@ -9,7 +9,7 @@ in float v_PixelScale;
 
 out vec4 out_FragColor;
 
-void main() 
+void main()
 {
     float color_b = abs(v_Color.b);
 
@@ -18,7 +18,7 @@ void main()
     float ring_thickness_base = mix(0.1, 0.03, clamp(color_b / 80.0, 0.0, 1.0));
 
     vec2 dxy = 2.0 * v_TexCoord.xy - 1.0;
-    
+
     float d = sqrt(dot(dxy, dxy));
 
     vec3 ring_color1 = vec3(0.0, 0.702, 1.0);
@@ -31,7 +31,7 @@ void main()
 
         ring_color1 = vec3(1, 0, 0);
         ring_color2 = vec3(1, 0.15, 0.1);
-        
+
         float x = dxy.x;
         float y = dxy.y;
 
@@ -45,7 +45,7 @@ void main()
         vec2 dir1 = vec2(px, py) + vec2(1, 0);
         vec2 dir2 = vec2(px, -py) + vec2(1, 0);
 
-        if (domain == 0) {  
+        if (domain == 0) {
             d = abs(dot(dxy, normalize(dir1))) / py;
         }
 
@@ -70,4 +70,5 @@ void main()
     vec3 color = mix(vec3(0.0), ring_color1, black_edge);
     color = mix(color, ring_color2, inside_falloff);
     out_FragColor = vec4(color, alpha);
-} 
+}
+

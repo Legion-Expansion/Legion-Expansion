@@ -226,7 +226,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 40,
+        "diameter": -40,
         "vertical_offset": 0
     },
     "mesh_bounds": [

@@ -174,7 +174,7 @@
 		"ground_ammo_spec": "/pa/units/land/L_energy_plant_adv/death_weapon.json"
 	},
   "selection_icon": {
-    "diameter": 55
+    "diameter": -55
   },
    "mesh_bounds": [
     30,

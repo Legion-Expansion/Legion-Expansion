@@ -211,7 +211,7 @@
 		"intensity": 1.4
 	}],
 	"selection_icon": {
-		"diameter": 14
+		"diameter": -14
 	},
 	"mesh_bounds": [
 		4.93769,

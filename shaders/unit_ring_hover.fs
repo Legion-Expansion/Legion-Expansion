@@ -9,7 +9,7 @@ in float v_PixelScale;
 
 out vec4 out_FragColor;
 
-void main() 
+void main()
 {
     float color_b = abs(v_Color.b);
 
@@ -44,7 +44,7 @@ void main()
         vec2 dir1 = vec2(px, py) + vec2(1, 0);
         vec2 dir2 = vec2(px, -py) + vec2(1, 0);
 
-        if (domain == 0) {  
+        if (domain == 0) {
             d = abs(dot(dxy, normalize(dir1))) / py;
         }
 
@@ -81,3 +81,4 @@ void main()
 
     out_FragColor = vec4(color, alpha * 0.85);
 }
+

@@ -348,7 +348,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 79
+    "diameter": -79
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [

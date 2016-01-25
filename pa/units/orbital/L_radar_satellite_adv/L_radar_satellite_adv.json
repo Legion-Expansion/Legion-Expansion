@@ -132,7 +132,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 33
+    "diameter": -33
   },
   "spawn_layers": "WL_Orbital",
   "unit_types": [

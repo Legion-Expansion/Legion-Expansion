@@ -91,7 +91,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 15
+    "diameter": -15
   },
   "tools": [
   {
