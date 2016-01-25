@@ -14,8 +14,7 @@ ROOT_PATH = './' # this expects the script to reside and be executed from within
 
 # this is regex, use it to select the files which you want to be in the client mod
 # this assumes that everything else is for the server mod
-CLIENT_FILES = ('.papa', '.fs')
-TEXTURES = ['diffuse', 'mask', 'material']
+CLIENT_FILES = ('.png', '_mask.papa', '_diffuse.papa', '_material.papa', '.fs', '.pfx')
 
 CLIENT_SUFFIX = '-Client'
 SERVER_SUFFIX = '-Server'
@@ -52,15 +51,8 @@ for root, dirs, files in os.walk(ROOT_PATH):
         base_path = os.path.join(base_dir, f)
         #print (base_path)
         if base_path.endswith(CLIENT_FILES):
-                if any(t in base_path for t in TEXTURES):
-                    full_path = os.path.join(client_dir, f)
-                    mkdir_p(client_dir)
-                elif "effects/specs" in base_path:
-                    full_path = os.path.join(client_dir, f)
-                    mkdir_p(client_dir)
-                else:
-                    full_path = os.path.join(server_dir, f)
-                    mkdir_p(server_dir)
+            full_path = os.path.join(client_dir, f)
+            mkdir_p(client_dir)
         else:
             full_path = os.path.join(server_dir, f)
             mkdir_p(server_dir)
