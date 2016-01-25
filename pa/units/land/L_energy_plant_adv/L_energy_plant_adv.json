@@ -1,7 +1,7 @@
 {
   "TEMP_texelinfo": 32.6108,
   "area_build_type": "Line",
-  "area_build_separation": 20,
+  "area_build_separation": 2,
   "atrophy_cool_down": 15,
   "atrophy_rate": 45,
   "audio": {
