@@ -136,7 +136,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 35
+    "diameter": -35
   },
   "unit_types": [
     "UNITTYPE_Mobile",

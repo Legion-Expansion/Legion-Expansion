@@ -104,7 +104,7 @@
 		}
 	},
 	"selection_icon": {
-		"diameter": 19
+		"diameter": -19
 	},
 	"tools": [{
 		"aim_bone": "bone_root",

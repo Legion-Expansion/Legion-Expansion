@@ -198,7 +198,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 83
+    "diameter": -83
   },
   "spawn_layers": "WL_Orbital",
   "storage": {

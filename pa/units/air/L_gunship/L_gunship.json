@@ -177,7 +177,7 @@
     3.6193
   ],
 	"selection_icon": {
-		"diameter": 16.0
+		"diameter": -16.0
 	},  
   "spawn_layers": "WL_Air"
 }

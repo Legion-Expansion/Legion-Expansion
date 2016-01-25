@@ -35,7 +35,7 @@
     "metal_spot"
   ],
 	"selection_icon": {
-		"diameter": 24
+		"diameter": -24
 	},    
   "max_health": 1000,
   "mesh_bounds": [

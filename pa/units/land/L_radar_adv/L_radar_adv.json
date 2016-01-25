@@ -117,7 +117,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 29
+    "diameter": -29
   },
   "spawn_layers": "WL_AnySurface",
   "unit_types": [

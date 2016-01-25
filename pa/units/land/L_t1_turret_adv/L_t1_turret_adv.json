@@ -24,7 +24,7 @@
     }
   },
 	"selection_icon": {
-		"diameter": 22
+		"diameter": -22
 	},     
   "guard_layer": "WL_AnySurface",
   "max_health": 1600,

@@ -148,7 +148,7 @@
         }
     },
     "selection_icon": {
-        "diameter": 34
+        "diameter": -34
     },
     "unit_types": [
         "UNITTYPE_Scout",

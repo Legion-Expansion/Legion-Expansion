@@ -166,7 +166,7 @@
     ],
     "passive_health_regen": 20,
     "selection_icon": {
-        "diameter": 33
+        "diameter": -33
     },
     "unit_types": [
         "UNITTYPE_Scout",

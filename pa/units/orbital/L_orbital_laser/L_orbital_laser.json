@@ -87,7 +87,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 64
+    "diameter": -64
   },
   "spawn_layers": "WL_Orbital",
   "tools": [

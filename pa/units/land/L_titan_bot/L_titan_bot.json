@@ -171,7 +171,7 @@
 		"decals": ["/pa/effects/specs/scorch_titan_01.json"]
 	},
 	"selection_icon": {
-		"diameter": 68.0
+		"diameter": -68.0
 	},
 	"mesh_bounds": [53, 52, 60],
 	"TEMP_texelinfo": 44.2973
