@@ -246,7 +246,7 @@
     "LegionVehicleAdvancedSniper": {
       "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank.json"
     },
-    "LegionVehicleBasicAA": {
+    "LegionVehicleBasicArtillery": {
       "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
     },
     "LegionVehicleBasicFabber": {
