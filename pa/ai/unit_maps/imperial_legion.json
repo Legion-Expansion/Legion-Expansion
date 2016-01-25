@@ -99,6 +99,9 @@
     "LegionDefenseAdvancedLand": {
       "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
     },
+    "LegionDefenseAdvancedLandII": {
+      "spec_id": "/pa/units/land/L_flame_turret/L_flame_turret.json"
+    },
     "LegionDefenseAdvancedNaval": {
       "spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json"
     },
