@@ -29,12 +29,12 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 1,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01"
+      "effect_spec": "/pa/units/sea/L_battleship/t2_muzzle_flash.pfx socket_muzzle01"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
       "effect_scale": 1,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02"
+      "effect_spec": "/pa/units/sea/L_battleship/t2_muzzle_flash.pfx socket_muzzle02"
     }
   },
   "guard_layer": "WL_LandHorizontal",
