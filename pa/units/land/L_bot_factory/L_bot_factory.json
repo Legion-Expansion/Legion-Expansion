@@ -1,6 +1,5 @@
 {
   "TEMP_texelinfo": 38.3936,
-  "area_build_separation": 10,
   "atrophy_cool_down": 15,
   "atrophy_rate": 10,
   "audio": {
@@ -216,9 +215,10 @@
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
   "placement_size": [
-    30,
+    47,
     55
   ],
+  "area_build_separation": 2,  
   "recon": {
     "observer": {
       "items": [

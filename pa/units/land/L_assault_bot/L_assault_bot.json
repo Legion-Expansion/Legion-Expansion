@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 90,
+  "build_metal_cost": 55,
   "description": "Assault Walker. Attacks Land and Naval.",
   "display_name": "Peacekeeper",
   "events": {

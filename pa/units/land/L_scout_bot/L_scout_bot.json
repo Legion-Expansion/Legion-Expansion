@@ -61,9 +61,9 @@
 		"walk_speed": 2.75
 	},
 	"navigation": {
-		"acceleration": 50,
-		"brake": 50,
-		"move_speed": 18,
+		"acceleration": 350,
+		"brake": 250,
+		"move_speed": 23,
 		"turn_speed": 720,
 		"type": "amphibious"
 	},

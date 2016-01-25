@@ -10,6 +10,12 @@
 
     // the build groups are ordered to match the build bar tab order
     HodgePodge.addUnits([{
+        spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
+        si_fallback: ["teleporter"],
+        preferred_builds: [
+          ["L_factory", 0]
+        ]
+      }, {
         spec_id: "/pa/units/land/L_unit_cannon/L_unit_cannon.json",
         si_fallback: ["unit_cannon"],
         preferred_builds: [
@@ -77,12 +83,6 @@
         si_fallback: ["laser_defense_adv"],
         preferred_builds: [
           ["L_combat", 0]
-        ]
-      },  {
-        spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
-        si_fallback: ["teleporter"],
-        preferred_builds: [
-          ["L_combat", 1]
         ]
       }, {
         spec_id: "/pa/units/land/L_artillery_long/L_artillery_long.json",

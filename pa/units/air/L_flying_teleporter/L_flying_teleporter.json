@@ -18,12 +18,14 @@
         }
     },
     "unit_types": [
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Air",
+		"UNITTYPE_Air",	
+		"UNITTYPE_Teleporter",		
+		"UNITTYPE_Mobile",
         "UNITTYPE_Advanced",
-        "UNITTYPE_Offense",
-        "UNITTYPE_Custom1",
-		"UNITTYPE_Custom2"
+        "UNITTYPE_FabAdvBuild",	
+		"UNITTYPE_CombatFabAdvBuild",		
+        "UNITTYPE_Important",
+			"UNITTYPE_Custom1"		
     ],
     "command_caps": [
         "ORDER_Move",
