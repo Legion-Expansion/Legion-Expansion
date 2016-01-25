@@ -14,7 +14,7 @@ ROOT_PATH = './' # this expects the script to reside and be executed from within
 
 # this is regex, use it to select the files which you want to be in the client mod
 # this assumes that everything else is for the server mod
-CLIENT_FILES = ('.papa')
+CLIENT_FILES = ('.papa', '.fs')
 TEXTURES = ['diffuse', 'mask', 'material']
 
 CLIENT_SUFFIX = '-Client'
