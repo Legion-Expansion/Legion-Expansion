@@ -147,7 +147,7 @@ Queller will provide AI support
 
 ## AI Support
 
-The AI is a work-in-progress
+The AI is a work-in-progress. Bugs, suggestions, etc. should be raised as issues on the [Queller AI repository](https://github.com/Quitch/Queller-AI).
 
 1. Install the server mod AI Mod Compatibility Patch and its dependency
 2. Download/Sync the [feature-imperial-legion](https://github.com/Quitch/Queller-AI/tree/feature-imperial-legion) branch of the Queller AI to your server-mods folder
