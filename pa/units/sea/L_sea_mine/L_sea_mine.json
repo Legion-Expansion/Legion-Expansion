@@ -69,7 +69,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Basic",
-    "UNITTYPE_Water",
+    "UNITTYPE_Naval",
     "UNITTYPE_Defense",
     "UNITTYPE_CombatFabBuild",
     "UNITTYPE_CombatFabAdvBuild",
