@@ -99,6 +99,7 @@
 	},
 	"unit_types": [
 		"UNITTYPE_Bot",
+		"UNITTYPE_Scout",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
 		"UNITTYPE_Land",
