@@ -6,6 +6,7 @@
   "pitch_range": 85,
   "pitch_rate": 3600,
   "rate_of_fire": 2.0,
+  "idle_aim_delay": 3,
   "spread_fire": true,
   "target_layers": [
     "WL_Air"

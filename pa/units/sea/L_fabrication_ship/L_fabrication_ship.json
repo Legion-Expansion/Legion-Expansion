@@ -55,45 +55,20 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_pitch",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0.585,
-        -2.948,
-        -0.236
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "bone_pitch",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        -0.585,
-        -2.948,
-        -0.236
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     }
   ],
   "max_health": 100,
   "mesh_bounds": [
     4,
-    10,
-    5
+    12,
+    4.8
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-    "filename": "/pa/units/sea/fabrication_ship/fabrication_ship.papa"
+    "filename": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.papa"
   },
   "navigation": {
     "acceleration": 100,
@@ -135,7 +110,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/sea/fabrication_ship/fabrication_ship_build_arm.json"
+      "spec_id": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship_build_arm.json"
     }
   ],
   "transportable": {
