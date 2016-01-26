@@ -10,5 +10,5 @@
 	"pitch_range": 120,
 	"spread_fire": true,
 	"auto_attack": true,
-	"target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"]
+	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface"]
 }
