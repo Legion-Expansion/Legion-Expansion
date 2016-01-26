@@ -108,7 +108,7 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_aim",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank_weapon.json"
     }

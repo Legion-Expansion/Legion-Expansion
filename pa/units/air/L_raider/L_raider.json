@@ -133,7 +133,7 @@
   },
   "tools": [
   {
-		"aim_bone": "bone_rightPitch bone_leftPitch",
+		"aim_bone": "bone_root",
 		"fire_event": "fired0",
 		"muzzle_bone": [
 			"right_muzzle",

@@ -123,7 +123,7 @@
 		"diameter": -15
 	},
 	"tools": [{
-		"aim_bone": "bone_pitch",
+		"aim_bone": "turret",
 		"spec_id": "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft_build_arm.json"
 	}],
 	"transportable": {
