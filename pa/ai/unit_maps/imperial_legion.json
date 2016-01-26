@@ -249,6 +249,9 @@
     "LegionVehicleAdvancedSniper": {
       "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank.json"
     },
+    "LegionVehicleBasicArmor": {
+      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
+    },
     "LegionVehicleBasicArtillery": {
       "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
     },
@@ -263,9 +266,6 @@
     },
     "LegionVehicleBasicLaser": {
       "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
-    },
-    "LegionVehicleBasicShotgun": {
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
     }
   }
 }
