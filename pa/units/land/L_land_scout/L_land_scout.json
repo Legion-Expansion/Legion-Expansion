@@ -68,9 +68,9 @@
   "navigation": {
     "acceleration": 250,
     "brake": 250,
-    "move_speed": 30,
+    "move_speed": 35,
     "turn_speed": 360,
-    "type": "land-small"
+    "type": "amphibious"
   },
   "physics": {
     "push_class": 50,

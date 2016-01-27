@@ -3,7 +3,7 @@
     "display_name": "Comet",
     "description": "Advanced Mobile Teleporter. Can Travel Between Local Solar Bodies.",
     "max_health": 3200,
-    "build_metal_cost": 7500,
+    "build_metal_cost": 4500,
     "atrophy_rate": 200,
     "atrophy_cool_down": 15,
     "wreckage_health_frac": 0,

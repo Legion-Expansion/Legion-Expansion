@@ -9,9 +9,9 @@
       "cue": "/SE/Selection/structure/energy"
     }
   },
-  "max_health": 700,
+  "max_health": 4200,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 3700,
+  "build_metal_cost": 2000,
   "description": "Fabricates Black Holes and Harnesses Their Energy. Very Unstable. You Might Want to Spread these Things Out.",
   "display_name": "Black Hole Generator",
   "events": {
