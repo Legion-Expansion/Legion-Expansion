@@ -48,7 +48,7 @@
     "lifetime": 0,
     "max_velocity": 75,
     "model": {
-        "filename": "/pa/units/air/missile_nuke/missile_nuke.papa"
+        "filename": "/pa/units/land/L_nuke_launcher/missile/L_nuclear_missile.papa"
     },
     "physics": {
         "add_to_spatial_db": true,

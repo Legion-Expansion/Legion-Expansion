@@ -50,31 +50,6 @@ if ( ! legionExpansionLoaded )
             if (locked)
                 model.activeBuildGroupLocked(locked);
         };
-
-        $( ".span_build_bar_tab" ).css( "color", "#FF0000" );
-        $( ".span_build_bar_tab" ).css( "text-shadow", "0px 0px 30px #FF0000" );
-        $( ".div_build_bar_menu_cont" ).css( "border-image", "url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground.png) 35 35 23 35 fill" );
-        $( ".div_build_bar_page, .div_short_build_bar_page" ).css( "box-shadow", "0px 0px 30px rgba(30,122,161,0.6)" );
-        $( ".div_build_bar_page, .div_short_build_bar_page" ).css( "border-top", "1px solid rgba(255, 255, 255, 0.34)" );
-        $( ".div_build_bar_page, .div_short_build_bar_page" ).css( "border-left", "1px solid rgba(255, 255, 255, 0.34)" );
-        $( ".div_build_item" ).css( "border", "none" );
-        $( ".div_build_item" ).css( "border-right", "1px solid rgba(255, 255, 255, 0.34)" );
-        $( ".div_build_item" ).css( "border-bottom", "1px solid rgba(255, 255, 255, 0.34)" );
-        /*$( ".div_build_item, .receiveMouse" ).hover(function() {
-          $(this).css({
-            'background': 'rgba(255, 0, 0, 0.65)',
-            'border': '1px solid #FF9191',
-            'box-shadow': 'inset 0px 0px 20px #FF9191',
-            'z-index': '1000',
-            '-webkit-animation': 'none',
-            '-webkit-transition': 'none'
-          });})*/
-        $( ".div_build_item, .receiveMouse" ).mousedown(function() {
-          $(this).css({
-            'background': 'rgba(255, 0, 0, 0.9)',
-            'border': '1px solid #FF9191',
-            'box-shadow': '0px 0px 30px #FF9191'
-          });})
     }
 
     try

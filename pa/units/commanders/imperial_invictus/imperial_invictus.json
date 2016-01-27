@@ -26,7 +26,7 @@
 			"walk_stop": ""
 		},
 		"animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
-		"walk_speed": 6.25
+		"walk_speed": 6
 	},
 	"headlights": [{
 		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
