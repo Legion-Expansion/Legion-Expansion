@@ -7,7 +7,7 @@
 		"filename": "/pa/units/sea/drone_carrier/drone/drone_ammo_trail.pfx",
 		"offset": [0.0, 0.0, 0.0]
 	},
-	"damage": 20,
+	"damage": 10,
 	"initial_velocity": 150.0,
 	"max_velocity": 150.0,
 	"turn_rate": 360,
