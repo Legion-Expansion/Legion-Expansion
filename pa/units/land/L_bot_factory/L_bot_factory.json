@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 38.3936,
+  "TEMP_texelinfo": 36.4936,
   "atrophy_cool_down": 15,
   "atrophy_rate": 10,
   "audio": {
@@ -40,8 +40,8 @@
   "factory_cooldown_time": 3,
   "fx_offsets": [
     {
-      "bone": "muzzle_middleArm01",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "bone": "laser001",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -55,8 +55,8 @@
       "type": "build"
     },
     {
-      "bone": "muzzle_middleArm02",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "bone": "laser002",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -70,8 +70,8 @@
       "type": "build"
     },
     {
-      "bone": "bone_muzzle01",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "bone": "rail_muzzle001",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -85,8 +85,8 @@
       "type": "build"
     },
     {
-      "bone": "bone_muzzle02",
-      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "bone": "rail_muzzle002",
+      "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
       "offset": [
         0,
         0,
@@ -98,107 +98,13 @@
         0
       ],
       "type": "build"
-    },
-    {
-      "bone": "bone_stack01",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
-    },
-    {
-      "bone": "bone_stack02",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
-    }
-  ],
-  "headlights": [
-    {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
-      "debug": false,
-      "far_distance": 20,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 2,
-      "near_distance": 5,
-      "near_height": 12,
-      "near_width": 12,
-      "offset": [
-        -8.1,
-        0,
-        10.58
-      ],
-      "orientation": [
-        45,
-        0,
-        0
-      ]
-    }
-  ],
-  "lamps": [
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        -8.1,
-        0,
-        10
-      ],
-      "radius": 4
-    },
-    {
-      "color": [
-        1,
-        1,
-        1
-      ],
-      "intensity": 2,
-      "offset": [
-        -8.1,
-        0,
-        11.4
-      ],
-      "radius": 4
-    },
-    {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
-      "intensity": 2,
-      "offset": [
-        12.63,
-        0,
-        9.15
-      ],
-      "radius": 8
-    },
-    {
-      "color": [
-        1,
-        0,
-        0
-      ],
-      "intensity": 2,
-      "offset": [
-        -15.47,
-        0,
-        9.94
-      ],
-      "radius": 4
     }
   ],
   "max_health": 6000,
   "mesh_bounds": [
-    42.014,
-    32.229,
-    23.548
+    35.9,
+    27.9,
+    21.7
   ],
   "model": {
     "animations": {
