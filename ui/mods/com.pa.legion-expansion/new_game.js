@@ -12,14 +12,14 @@ if (!legionExpansionLoaded) {
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
 
-        var commanderObjectNameToHack = 'ImperialFiveleafclover';
+        /*var commanderObjectNameToHack = 'ImperialFiveleafclover';
 
         var commanderIdToHack = '/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json';
 
         model.commanders.subscribe(function (commanders) {
             commanders.push(commanderIdToHack);
         });
-
+        */
         localStorage.setItem('legionExpansionSelected', false);
 
         model.selectedCommander.subscribe(function (selectedCommander) {
