@@ -96,7 +96,24 @@ Nothing is used from the custom commander... it's just a placeholder which can b
 
 ## AI
 
-Queller will provide AI support
+The AI is a work-in-progress. Bugs, suggestions, etc. should be raised as issues on the [Queller AI repository](https://github.com/Quitch/Queller-AI).
+
+1. Install the server mod AI Mod Compatibility Patch and its dependency
+2. Download/Sync the [feature-imperial-legion](https://github.com/Quitch/Queller-AI/tree/feature-imperial-legion) branch of the Queller AI to your server-mods folder
+3. Download/Sync the [develop](https://github.com/Quitch/Queller-AI-Personalities/tree/develop) branch of the Queller AI Personalities to your client-mods folder
+ * On older installations of PAMM this folder will be called mods
+3. Open PAMM
+4. Enable the server mod Queller AI DEV LEGION
+ * This should also enable Queller AI Personalities DEV and AI Mod Compatibility Patch
+5. Load PA
+6. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
+
+
+## Screenshots & Video
+
+The Legion should always use a primary/secondary colour setup of red/black
+
+Vanilla should should always use a primary/secondary colour setup of light blue/orange
 
 
 ## Known Issues
@@ -143,18 +160,3 @@ Queller will provide AI support
  * This will enable all dependencies automatically
  * Non-Legion dependencies will not be disabled when you disable the Legion mod
 11. Run Planetary Annihilation: TITANS
-
-
-## AI Support
-
-The AI is a work-in-progress. Bugs, suggestions, etc. should be raised as issues on the [Queller AI repository](https://github.com/Quitch/Queller-AI).
-
-1. Install the server mod AI Mod Compatibility Patch and its dependency
-2. Download/Sync the [feature-imperial-legion](https://github.com/Quitch/Queller-AI/tree/feature-imperial-legion) branch of the Queller AI to your server-mods folder
-3. Download/Sync the [develop](https://github.com/Quitch/Queller-AI-Personalities/tree/develop) branch of the Queller AI Personalities to your client-mods folder
- * On older installations of PAMM this folder will be called mods
-3. Open PAMM
-4. Enable the server mod Queller AI DEV LEGION
- * This should also enable Queller AI Personalities DEV and AI Mod Compatibility Patch
-5. Load PA
-6. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
