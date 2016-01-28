@@ -94,7 +94,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_rightArm",
+      "aim_bone": "bone_turret",
       "muzzle_bone": [
         "socket_muzzle"
       ],

@@ -1,89 +1,17 @@
 {
-  "TEMP_texelinfo": 5,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0.25,
-        4.5
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  "audio": {
-    "loops": {
-      "build": {
-        "cue": "/SE/Construction/Fab_contruction_beam_loop",
-        "flag": "build_target_changed",
-        "should_start_func": "has_build_target",
-        "should_stop_func": "no_build_target"
-      },
-      "move": {
-        "cue": "/SE/Movement/bot/T2_fab_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/bot/T2_fab"
-    }
-  },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 2100,
-  "buildable_types": "(Custom1 & ( Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild )) | Custom2",
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Build",
-    "ORDER_Reclaim",
-    "ORDER_Repair",
-    "ORDER_Assist",
-    "ORDER_Use"
-  ],
-  "description": "Builds Advanced Structures. Can Build Exclusive Walker Units.",
-  "display_name": "Advanced Fabrication Walker",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/fab"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1
-    }
-  },
-    "fx_offsets": [
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "muzzle01"
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "muzzle02"
-        }
-    ],
-  "guard_layer": "WL_LandHorizontal",
-  "max_health": 150,
-  "mesh_bounds": [
-        4,
-        3,
-        4
-    ],
-    "model": {
-        "filename": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.papa",
-        "animations": {
-            "idle": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_idle.papa",
-            "walk": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_walk.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/Bfab11_at.json",
-        "walk_speed": 4
-    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+	"display_name": "Advanced Fabrication Bot",
+	"description": "Advanced Fabrication Walker- Builds Advanced Strcutures and Exclusive Walker Units.",
+	"max_health": 80,
+	"build_metal_cost": 600,
+	"attachable": {
+		"offsets": {
+			"head": [0, 0, 3.6]
+		}
+	},
+	"buildable_types": "((FabBuild & Factory & (Bot | (Orbital & Land) | NukeDefense | Nuke)) | (FabBuild - Factory)) & Custom1",
+	"unit_types": ["UNITTYPE_Fabber", "UNITTYPE_Construction", "UNITTYPE_Bot", "UNITTYPE_Mobile", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
+	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Build", "ORDER_Reclaim", "ORDER_Repair", "ORDER_Assist", "ORDER_Use"],
   "navigation": {
     "acceleration": 120,
     "brake": 120,
@@ -97,46 +25,62 @@
     "push_class": 101,
     "radius": 4
   },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "spawn_layers": "WL_LandHorizontal",
+	"model": {
+		"filename": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.papa",
+		"animations": {
+			"idle": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_idle.papa",
+			"walk": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_walk.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/L_fabrication_bot_adv_anim_tree.json",
+		"walk_speed": 3
+	},
+	"tools": [{
+		"spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_build_arm.json",
+		"aim_bone": "bone_root"
+	}],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/fab"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Bot",
+			"effect_scale": 0.8
+		}
+	},
+	"audio": {
+		"loops": {
+			"build": {
+				"cue": "/SE/Construction/Fab_bot_contruction_beam_loop",
+				"flag": "build_target_changed",
+				"should_start_func": "has_build_target",
+				"should_stop_func": "no_build_target"
+			},
+			"move": {
+				"cue": "/SE/Movement/bot/fab_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/bot/fab"
+		},
+		"command_response": {
+			"cue": "/SE/Confirmation/bot/fab"
+		}
+	},
     "selection_icon": {
-        "diameter": -10
+      "diameter": -9
     },
-    "tools": [
-        {
-            "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv_build_arm.json",
-            "aim_bone": "turret00"
-        }
-    ],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Fabber",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Bot",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Land",
-    "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
-  ]
+	"fx_offsets": [{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_fab_spray.pfx",
+		"bone": "muzzle01"
+	}, {
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_fab_spray.pfx",
+		"bone": "muzzle02"
+	}],
+	"TEMP_texelinfo": 5,
+	"mesh_bounds": [4, 2, 5]
 }
