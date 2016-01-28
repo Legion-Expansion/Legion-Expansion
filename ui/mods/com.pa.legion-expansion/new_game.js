@@ -12,23 +12,37 @@ if (!legionExpansionLoaded) {
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
 
-        /*var commanderObjectNameToHack = 'ImperialFiveleafclover';
+/*      var commanderObjectNameToHack = 'ImperialFiveleafclover';
 
         var commanderIdToHack = '/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json';
 
         model.commanders.subscribe(function (commanders) {
             commanders.push(commanderIdToHack);
         });
-        */
+        
         localStorage.setItem('legionExpansionSelected', false);
 
         model.selectedCommander.subscribe(function (selectedCommander) {
 
             localStorage.setItem('legionExpansionSelected', selectedCommander == commanderIdToHack);
 
-        });
-    }
+        }); 
 
+    model.legionCommanderSelected = ko.observable(false);
+
+    $("#join.btn-std").click(function(){model.checkLegionCommanderIsSelected(army.index())});
+
+    model.checkLegionCommanderIsSelected = function(index) {
+        if ((model.armies()[index].slots()[0].commander() == "/pa/units/commanders/tank_aeson/tank_aeson.json") && (model.armies()[index].slots()[0].commander() == "/pa/units/commanders/imperial_invictus/imperial_invictus.json")) {
+            localStorage.setItem('legionCommanderSelected', encode( model.legionCommanderSelected(true) ));
+        }
+        else {
+            localStorage.setItem('legionCommanderSelected', encode( model.legionCommanderSelected(false) ));
+        }
+    }
+*/
+    }
+     
     try {
         legionExpansion();
     } catch (e) {

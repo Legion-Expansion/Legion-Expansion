@@ -23,5 +23,5 @@
 		"gravity_scalar": 1,
 		"add_to_spatial_db": false
 	},
-	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_air"]
+	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"]
 }

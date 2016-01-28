@@ -50,6 +50,10 @@ if ( ! legionExpansionLoaded )
             if (locked)
                 model.activeBuildGroupLocked(locked);
         };
+
+        /*if (decode(localStorage.getItem('legionCommanderSelected')) {
+            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'coui://ui/mods/com.pa.legion-expansion/css/live_game_build_bar_legion_red.css') );
+        }*/
     }
 
     try
