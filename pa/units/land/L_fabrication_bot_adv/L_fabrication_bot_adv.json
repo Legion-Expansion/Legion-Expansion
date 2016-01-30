@@ -9,7 +9,7 @@
 			"head": [0, 0, 3.6]
 		}
 	},
-	"buildable_types": "((FabBuild & Factory & (Bot | (Orbital & Land) | NukeDefense | Nuke)) | (FabBuild - Factory)) & Custom1",
+	"buildable_types": "(Custom1 & ( Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild )) | Custom2",
 	"unit_types": ["UNITTYPE_Fabber", "UNITTYPE_Construction", "UNITTYPE_Bot", "UNITTYPE_Mobile", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Build", "ORDER_Reclaim", "ORDER_Repair", "ORDER_Assist", "ORDER_Use"],
   "navigation": {
