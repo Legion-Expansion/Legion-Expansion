@@ -41,7 +41,7 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/bot/sniper_fire",
-			"effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/artillery_muzzle_ground.pfx bone_root"
+			"effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain"
 		}
 	},
 	"guard_layer": "WL_AnySurface",
