@@ -1,114 +1,117 @@
 {
-	"base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
-	"display_name": "Overwatch Commander",
-	"description": "Legion Overwatch Commander",
-	"attachable": {
-		"offsets": {
-			"root": [0, 0, 0],
-			"head": [0, 0, 12.2]
-		}
-	},
-  "unit_types":[
-    "UNITTYPE_Commander",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_NoBuild",
-		"UNITTYPE_Custom1"
-  ],
-	"buildable_types": "CmdBuild & Custom1",
-	"model": {
-		"filename": "/pa/units/commanders/imperial_invictus/imperial_invictus.papa",
-		"animations": {
-			"walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa",
-			"idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa",
-			"walk_stop": ""
-		},
-		"animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
-		"walk_speed": 6
-	},
-	"headlights": [{
-		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-		"offset": [0.0, -1.7, 1.9],
-		"orientation": [0.0, 0.0, 0.0],
-		"near_width": 5.0,
-		"near_height": 5.0,
-		"near_distance": 3.0,
-		"far_distance": 30.0,
-		"color": [1.0, 1.0, 1.0],
-		"intensity": 6.0,
-		"bone": "bone_turret",
-		"shadow_resolution": 128
-	}],
-	"lamps": [{
-		"offset": [0.0, -1.7, 1.9],
-		"radius": 2.0,
-		"color": [1.0, 1.0, 1.0],
-		"intensity": 5.0,
-		"bone": "bone_spine"
-	}, {
-		"offset": [0.07, -3.85, 0.2],
-		"radius": 4.0,
-		"color": [0.4, 1.0, 0.01],
-		"intensity": 2.0,
-		"bone": "bone_leftElbow"
-	}, {
-		"offset": [-1.754, 0.022, 1.272],
-		"radius": 4.0,
-		"color": [1.0, 0.0, 0.0],
-		"intensity": 1.0,
-		"bone": "bone_rightPad"
-	}, {
-		"offset": [1.753, 0.022, 1.272],
-		"radius": 4.0,
-		"color": [1.0, 0.0, 0.0],
-		"intensity": 1.0,
-		"bone": "bone_leftPad"
-	}],
-	"events": {
-		"fired": {
-			"effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle"
-		}
-	},
-	"fx_offsets": [{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_commander_spray.pfx",
-		"bone": "lathe"
-	}],
-	"tools": [{
-		"spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
-		"aim_bone": "turret"
-	}, {
-		"spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
-		"aim_bone": "turret",
-		"muzzle_bone": "muzzle",
-		"primary_weapon": true
-	}, {
-		"spec_id": "/pa/units/commanders/L_uber_cannon.json",
-		"aim_bone": "turret",
-		"muzzle_bone": "muzzle",
-		"secondary_weapon": true
-	}, {
-		"spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
-		"aim_bone": "turret",
-		"muzzle_bone": "muzzle",
-		"primary_weapon": false,
-		"show_range": false
-	}, {
-		"spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
-		"aim_bone": "turret",
-		"muzzle_bone": "muzzle",
-		"primary_weapon": false,
-		"show_range": false
-	}],
-	"mesh_bounds": [12.6, 6, 15.6193],
-	"catalog_object_name": "InvictusCommander",
-	"client": {
-		"ui": {
-			"image": "/ui/main/shared/img/commanders/overwatch_image.png",
-			"thumb_image": "/ui/main/shared/img/commanders/thumbs/img_imperial_invictus_thumb.png",
-			"profile_image": "/ui/main/shared/img/commanders/profiles/profile_overwatch.png"
-		}
-	}
+    "base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
+    "display_name": "Overwatch Commander",
+    "description": "Legion Overwatch Commander",
+    "attachable": {
+        "offsets": {
+            "root": [0, 0, 0],
+            "head": [0, 0, 12.2]
+        }
+    },
+    "unit_types":[
+        "UNITTYPE_Commander",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom1"
+    ],
+    "buildable_types": "CmdBuild & Custom1",
+    "model": {
+        "filename": "/pa/units/commanders/imperial_invictus/imperial_invictus.papa",
+        "animations": {
+            "walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa",
+            "idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa",
+            "walk_stop": ""
+        },
+        "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
+        "walk_speed": 6
+    },
+    "headlights": [{
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [0.0, -1.7, 1.9],
+        "orientation": [0.0, 0.0, 0.0],
+        "near_width": 5.0,
+        "near_height": 5.0,
+        "near_distance": 3.0,
+        "far_distance": 30.0,
+        "color": [1.0, 1.0, 1.0],
+        "intensity": 6.0,
+        "bone": "bone_turret",
+        "shadow_resolution": 128
+    }],
+    "lamps": [{
+        "offset": [0.0, -1.7, 1.9],
+        "radius": 2.0,
+        "color": [1.0, 1.0, 1.0],
+        "intensity": 5.0,
+        "bone": "bone_spine"
+    }, {
+        "offset": [0.07, -3.85, 0.2],
+        "radius": 4.0,
+        "color": [0.4, 1.0, 0.01],
+        "intensity": 2.0,
+        "bone": "bone_leftElbow"
+    }, {
+        "offset": [-1.754, 0.022, 1.272],
+        "radius": 4.0,
+        "color": [1.0, 0.0, 0.0],
+        "intensity": 1.0,
+        "bone": "bone_rightPad"
+    }, {
+        "offset": [1.753, 0.022, 1.272],
+        "radius": 4.0,
+        "color": [1.0, 0.0, 0.0],
+        "intensity": 1.0,
+        "bone": "bone_leftPad"
+    }],
+    "events": {
+        "fired": {
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle"
+        }
+    },
+    "fx_offsets": [{
+        "type": "build",
+        "filename": "/pa/effects/specs/legion_commander_spray.pfx",
+        "bone": "lathe"
+    }],
+    "tools": [{
+        "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+        "aim_bone": "turret"
+    }, {
+    "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+    "aim_bone": "turret",
+    "muzzle_bone": "muzzle",
+    "primary_weapon": true
+    }, {
+    "spec_id": "/pa/units/commanders/L_uber_cannon.json",
+    "aim_bone": "turret",
+    "muzzle_bone": "muzzle",
+    "secondary_weapon": true
+    }, {
+    "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+    "aim_bone": "turret",
+    "muzzle_bone": "muzzle",
+    "primary_weapon": false,
+    "show_range": false
+    }, {
+    "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+    "aim_bone": "turret",
+    "muzzle_bone": "muzzle",
+    "primary_weapon": false,
+    "show_range": false
+    }],
+    "selection_icon": {
+        "diameter": -16.6
+    },
+    "mesh_bounds": [12.6, 6, 15.6193],
+    "catalog_object_name": "InvictusCommander",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/overwatch_image.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_imperial_invictus_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_overwatch.png"
+        }
+    }
 }

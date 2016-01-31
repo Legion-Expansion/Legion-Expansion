@@ -1,117 +1,74 @@
 {
-  "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
-  "display_name": "Rockteeth Commander",
-  "unit_types":[
-    "UNITTYPE_Commander",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_NoBuild",
-		"UNITTYPE_Custom1"
-  ],
-  "buildable_types": "CmdBuild & Custom1",
-  "description": "Tank Rockteeth Commander ",
-  "attachable": {
-      "offsets": {
-          "root": [
-              0,
-              0,
-              0
-          ],
-          "head": [
-              0,
-              0,
-              15.6
-          ]
-      }
-  },
-  "fx_offsets": [
-    {
-      "bone": "bone_laser",
-      "filename": "/pa/effects/specs/laser_beam.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "idle"
-    },
-    {
-      "bone": "socket_leftMuzzle",
-      "filename": "/pa/effects/specs/legion_commander_spray.pfx",
-      "type": "build"
-    }
-  ],
-  "model": {
-      "animations": {
-      "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
-      "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
-      "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
-"walk": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
-			"walk_stop": ""
-    },
-    "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
-  },
-    "headlights": [
-        {
-            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-            "offset": [
-                0,
-                -2.215,
-                3.802
-            ],
-            "orientation": [
-                0,
-                45,
-                0
-            ],
-            "near_width": 5,
-            "near_height": 5,
-            "near_distance": 3,
-            "far_distance": 30,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 6,
-            "bone": "bone_spine",
-            "shadow_resolution": 128
-        }
+    "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
+    "display_name": "Rockteeth Commander",
+    "unit_types":[
+        "UNITTYPE_Commander",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Land",
+        "UNITTYPE_NoBuild",
+        "UNITTYPE_Custom1"
     ],
-    "lamps": [
-        {
-            "offset": [
-                0,
-                -2.215,
-                3.802
-            ],
-            "radius": 2,
-            "color": [
-                1,
-                1,
-                1
-            ],
-            "intensity": 5,
-            "bone": "bone_spine"
+    "buildable_types": "CmdBuild & Custom1",
+    "description": "Tank Rockteeth Commander ",
+    "attachable": {
+        "offsets": {
+            "root": [ 0, 0, 0 ],
+            "head": [ 0, 0, 15.6 ]
+        }
+    },
+    "fx_offsets": [{
+        "bone": "bone_laser",
+        "filename": "/pa/effects/specs/laser_beam.pfx",
+        "offset": [ 0, 0, 0 ],
+        "type": "idle"
+    },
+    {
+        "bone": "socket_leftMuzzle",
+        "filename": "/pa/effects/specs/legion_commander_spray.pfx",
+        "type": "build"
+    }],
+    "model": {
+        "animations": {
+            "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
+            "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
+            "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
+            "walk": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
+            "walk_stop": ""
         },
-        {
-            "offset": [
-                0.4,
-                -4.06,
-                -1.1
-            ],
-            "radius": 4,
-            "color": [
-                0.4,
-                1,
-                0.01
-            ],
-            "intensity": 2,
-            "bone": "bone_leftShoulder"
-        }
-    ],
+        "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+    },
+    "headlights": [{
+        "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+        "offset": [ 0, -2.215, 3.802 ],
+        "orientation": [ 0, 45, 0 ],
+        "near_width": 5,
+        "near_height": 5,
+        "near_distance": 3,
+        "far_distance": 30,
+        "color": [ 1, 1, 1 ],
+        "intensity": 6,
+        "bone": "bone_spine",
+        "shadow_resolution": 128
+    }],
+    "lamps": [{
+        "offset": [ 0, -2.215, 3.802 ],
+        "radius": 2,
+        "color": [ 1, 1, 1 ],
+        "intensity": 5,
+        "bone": "bone_spine"
+    },
+    {
+        "offset": [ 0.4, -4.06, -1.1 ],
+        "radius": 4,
+        "color": [ 0.4, 1, 0.01 ],
+        "intensity": 2,
+        "bone": "bone_leftShoulder"
+    }],
+    "selection_icon": {
+        "diameter": -16.6
+    },
     "mesh_bounds": [
         11.1,
         9.8,
@@ -125,33 +82,31 @@
             "profile_image": "/ui/main/shared/img/commanders/profiles/profile_rockteeth.png"
         }
     },
-  "scrolling_uv": {
-    "scroll_rate": 0.4,
-    "uv_split": 0.8
-  },
-  "tools": [
-    {
-      "aim_bone": "bone_turret",
-      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    "scrolling_uv": {
+        "scroll_rate": 0.4,
+        "uv_split": 0.8
+    },
+    "tools": [{
+        "aim_bone": "bone_turret",
+        "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
     },
     {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
-      "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_rightMuzzle",
+        "secondary_weapon": true,
+        "spec_id": "/pa/units/commanders/L_uber_cannon.json"
     },
     {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
-      "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tool_weapon.json"
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_rightMuzzle",
+        "projectiles_per_fire": 1,
+        "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
-      "primary_weapon": false,
-      "show_range": false,
-      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
-    }
-  ]
+        "aim_bone": "bone_turret",
+        "muzzle_bone": "socket_rightMuzzle",
+        "primary_weapon": false,
+        "show_range": false,
+        "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }]
 }
