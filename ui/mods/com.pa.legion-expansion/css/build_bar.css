@@ -1,0 +1,11 @@
+.div_build_bar_menu_cont.legion {
+    height: auto;
+    min-width: 600px;
+    display:block;
+    margin: -2px 39px -20px;
+    background: none;
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground.png) 35 35 23 35 fill;
+    border-width: 35px 35px 23px 35px;
+    z-index: 2;
+    text-align: center;
+}

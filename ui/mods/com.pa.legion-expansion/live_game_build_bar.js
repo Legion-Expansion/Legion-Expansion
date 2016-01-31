@@ -51,9 +51,6 @@ if ( ! legionExpansionLoaded )
                 model.activeBuildGroupLocked(locked);
         };
 
-        /*if (decode(localStorage.getItem('legionCommanderSelected')) {
-            $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'coui://ui/mods/com.pa.legion-expansion/css/live_game_build_bar_legion_red.css') );
-        }*/
     }
 
     try
@@ -66,3 +63,33 @@ if ( ! legionExpansionLoaded )
         console.log(JSON.stringify(e));
     }
 }
+
+//LOAD CUSTOM LEGION NEW GAME CSS
+loadCSS("coui://ui/mods/com.pa.legion-expansion/css/build_bar.css");
+loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
+
+//see global.js
+var legionspecids = legionglobal.builders;
+
+model.isLegion = function (data){
+  haslegionunit = false;
+  try{
+    var selectedspecs = data.buildSet().selectedSpecs();
+    
+    _.forOwn(selectedspecs, function(value, key){
+      if(_.includes(legionspecids, key)){
+        haslegionunit = true;
+        return haslegionunit;
+      }
+    });
+  }
+  catch(e){
+  }
+
+  return haslegionunit;
+};
+
+
+
+//ADD legion class to build_bar_menu
+$('.div_build_bar_menu_cont').attr("data-bind","css: {legion: model.isLegion($data)}");

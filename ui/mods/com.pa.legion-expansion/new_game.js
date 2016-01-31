@@ -52,8 +52,9 @@ if (!legionExpansionLoaded) {
 }
 //LOAD CUSTOM LEGION NEW GAME CSS
 loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");
+loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-var legioncommanders = ["/pa/units/commanders/tank_aeson/tank_aeson.json","/pa/units/commanders/imperial_invictus/imperial_invictus.json"];
+var legioncommanders = legionglobal.commanders;
 var vanillacommanders = ["/pa/units/commanders/quad_osiris/quad_osiris.json","/pa/units/commanders/imperial_delta/imperial_delta.json"];
 
 model.isNotLegion = function(commander){
