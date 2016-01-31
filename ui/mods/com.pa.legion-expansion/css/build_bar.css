@@ -1,4 +1,4 @@
-.div_build_bar_menu_cont.legion {
+.div_build_bar_menu_cont.legion_menu_cont {
     height: auto;
     min-width: 600px;
     display:block;
@@ -8,4 +8,49 @@
     border-width: 35px 35px 23px 35px;
     z-index: 2;
     text-align: center;
+}
+.div_build_bar_page.div_short_build_bar_page.legion_build_bar_page {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-left: 1px solid #970000;
+    border-top: 1px solid #970000;
+    margin: 0 10px;
+    padding: 0 0 1px 0;
+    box-shadow: 0px 0px 50px rgba(158, 0, 0, 0.5);
+}
+.div_build_item.legion_build_item {
+    height: 62px;
+    width: 62px;
+    border: 1px solid transparent;
+    border-right: 1px solid #970000;
+    border-bottom: 1px solid #970000;
+    margin: 0px -1px -1px 0px;
+    display: block;
+    flex-shrink: 0;
+    position: relative;
+    -webkit-animation: fadeout;
+    -webkit-transition: .3s ease-out;
+    /*z-index: -1;*/
+}
+.span_build_bar_tab.legion_span_bb_tab {
+    background: none;
+    font-size: 14px;
+    color: #FF0000;
+    text-shadow: 0px 0px 30px #FF0000;
+    font-family: 'Sansation Bold';
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    border-right-color:#333;
+    border-left-color:#333;
+    border-bottom-color:#444;
+    background: #1D1D1D;
+    -webkit-animation: fadeout;
+    -webkit-transition: .3s ease-out;
+    display: block;
+    width: 180px;
+    position: relative;
 }
