@@ -64,7 +64,7 @@ model.isNotLegion = function(commander){
 $('.div-commander-picker-item.btn_std_ix').attr("data-bind","css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'");
 
 //Style Slot Legion
-$('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander()), legionslotReady: isReady, loading: isLoading}");
+$('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander()), ready: isReady, loading: isLoading}");
 
 
 model.changeLegionAI = function(playerid){
