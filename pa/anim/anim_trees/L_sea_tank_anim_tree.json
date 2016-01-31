@@ -1,0 +1,62 @@
+{
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "bind_pose"
+			},
+			"living": {
+				"type": "playback",
+				"anim_name": "idle"
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"bone": "bone_recoilLeft",
+		"recoil_dist": 1.5,
+		"restore_time": 1,
+		"type": "recoil",
+		"unit_event": "fired0"
+	}, {
+		"bone": "bone_recoilRight",
+		"recoil_dist": 1.5,
+		"restore_time": 1,
+		"type": "recoil",
+		"unit_event": "fired1"
+	}, {
+		"bone": "bone_torpedoRecoil",
+		"recoil_dist": 1.5,
+		"restore_time": 1,
+		"type": "recoil",
+		"unit_event": "fired2"
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_pitchLeft",
+			"rotation_axis": "x",
+			"weapon_index": 0
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_pitchRight",
+			"rotation_axis": "x",
+			"weapon_index": 1
+		}
+	}, {
+		"type": "procedural_aim",
+		"rotation_bone": "bone_torpedoTurret",
+		"rotation_axis": "z",
+		"weapon_index": 2
+	}]
+}

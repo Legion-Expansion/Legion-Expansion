@@ -1,0 +1,134 @@
+{
+	"TEMP_texelinfo": 24.7645,
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/sea/nuclear_sub_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
+	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
+	"build_metal_cost": 3800,
+	"description": "Stealth Sea Tank - Short Range Cannon Blasters. Undetectable by radar.",
+	"display_name": "Billy",
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/sea"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Sea_sub",
+			"effect_scale": 1.5,
+			"effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
+			"effect_scale": 2.0,
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_torpedoMuzzle"
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+			"effect_scale": 2.0,
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle001 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle002 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle003 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle004"
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+			"effect_scale": 2.0,
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle005 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle006 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle007 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle008"
+		}
+	},
+	"max_health": 8000,
+	"mesh_bounds": [
+		15.396,
+		35.345,
+		17.576
+	],
+	"fx_offsets": [{
+		"type": "moving_forward",
+		"filename": "/pa/units/sea/battleship/battleship_wake.pfx"
+	}],
+	"model": {
+		"animations": {
+			"idle": "/pa/units/sea/L_sea_tank/L_sea_tank_idle.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/L_sea_tank_anim_tree.json",
+		"filename": "/pa/units/sea/L_sea_tank/L_sea_tank.papa"
+	},
+  "navigation": {
+    "acceleration": 30,
+    "brake": 80,
+    "move_speed": 8,
+    "turn_speed": 20,
+    "type": "deepwater"
+  },
+  "physics": {
+    "push_class": 2,
+    "radius": 3,
+    "shape": "sphere"
+  },
+	"recon": {
+		"observable": {
+			"ignore_radar": true,
+			"layer": "underwater"
+		},
+		"observer": {
+			"items": [{
+				"channel": "sight",
+				"layer": "surface_and_air",
+				"radius": 200,
+				"shape": "capsule"
+			}, {
+				"channel": "sight",
+				"layer": "underwater",
+				"radius": 200,
+				"shape": "capsule"
+			}]
+		}
+	},
+	"selection_icon": {
+		"diameter": -44
+	},
+  "spawn_layers": "WL_WaterSurface",
+	"tools": [{
+		"aim_bone": "bone_pitchLeft",
+		"fire_event": "fired0",
+		"muzzle_bone": [
+			"socket_muzzle001",
+			"socket_muzzle002",
+			"socket_muzzle003",
+			"socket_muzzle004"
+		],
+		"projectiles_per_fire": 4,
+		"record_index": 0,
+		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+	}, {
+		"aim_bone": "bone_pitchRight",
+		"fire_event": "fired1",
+		"muzzle_bone": [
+			"socket_muzzle005",
+			"socket_muzzle006",
+			"socket_muzzle007",
+			"socket_muzzle008"
+		],
+		"projectiles_per_fire": 4,
+		"record_index": 1,
+		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+	}, {
+		"aim_bone": "bone_torpedoTurret",
+		"fire_event": "fired2",
+		"muzzle_bone": "bone_torpedoMuzzle",
+		"record_index": 2,
+		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_torpedo_weapon.json"
+	}],
+	"unit_types": [
+		"UNITTYPE_Naval",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Advanced",
+        "UNITTYPE_Tactical",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+	]
+}

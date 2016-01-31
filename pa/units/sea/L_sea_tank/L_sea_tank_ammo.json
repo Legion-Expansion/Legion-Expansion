@@ -1,0 +1,26 @@
+{
+	"base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+	"damage": 200,
+	"splash_damage": 200,
+	"splash_radius": 7,
+	"full_damage_splash_radius": 2,
+	"initial_velocity": 110.0,
+	"max_velocity": 110.0,
+	"splash_damages_allies": false,
+	"influence_radius": 900,
+	"lifetime": 1,
+	"audio_loop": "/SE/Movement/missile/battleship_fly_loop",
+	"model": {
+		"filename": "/pa/units/air/shell/shell.papa"
+	},
+	"fx_trail": {
+		"filename": "/pa/units/sea/battleship/battleship_shell_proj_trail.pfx",
+		"offset": [0.0, 0.7, 0.0]
+	},
+	"events": {
+		"died": {
+			"audio_cue": "/SE/Impacts/battleship",
+			"effect_spec": "/pa/effects/specs/default_explosion.pfx"
+		}
+	}
+}

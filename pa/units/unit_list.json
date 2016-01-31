@@ -238,6 +238,7 @@
 		"/pa/units/sea/naval_factory_adv/naval_factory_adv.json",
 		"/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json",
 		"/pa/units/sea/nuclear_sub/nuclear_sub.json",
+		"/pa/units/sea/L_sea_tank/L_sea_tank.json",
 		"/pa/units/sea/L_nuclear_sub/L_nuclear_sub.json",
 		"/pa/units/sea/sea_mine/sea_mine.json",
 		"/pa/units/sea/sea_scout/sea_scout.json",
