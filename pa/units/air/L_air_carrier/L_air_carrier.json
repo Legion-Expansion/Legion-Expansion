@@ -44,29 +44,54 @@
     "fx_offsets": [
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"filename": "/pa/units/air/L_air_carrier/carrier_jets_big.pfx",
 			"bone": "thrust01"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
 			"bone": "thrust02"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
 			"bone": "thrust03"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
 			"bone": "thrust04"
         },
         {
             "type": "moving_forward",
-			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+			"filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
 			"bone": "thrust05"
         },
+        {
+            "type": "moving_forward",
+			"filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust_big.pfx",
+			"bone": "thrust01"
+        },
+        {
+            "type": "moving_forward",
+			"filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+			"bone": "thrust02"
+        },
+        {
+            "type": "moving_forward",
+			"filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+			"bone": "thrust03"
+        },
+        {
+            "type": "moving_forward",
+			"filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+			"bone": "thrust04"
+        },
+        {
+            "type": "moving_forward",
+			"filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+			"bone": "thrust05"
+        },		
         {
             "type": "idle",
 			"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",

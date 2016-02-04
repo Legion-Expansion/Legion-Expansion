@@ -97,7 +97,7 @@
 		}
 	},
 	"fx_offsets": [{
-		"filename": "/pa/units/air/fighter_adv/fighter_adv_jets.pfx",
+		"filename": "/pa/units/air/L_fighter_adv/fighter_jets_big.pfx",
 		"bone": "thrust001",
 		"offset": [
 			0,
@@ -106,7 +106,16 @@
 		],
 		"type": "moving_forward"
 	}, {
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+		"filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+		"bone": "thrust001",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_fighter_adv/fighter_jets.pfx",
 		"bone": "thrust002",
 		"offset": [
 			0,
@@ -115,11 +124,47 @@
 		],
 		"type": "moving_forward"
 	}, {
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+		"filename": "/pa/units/air/L_fighter_adv/fighter_jets.pfx",
 		"bone": "thrust003",
 		"offset": [
 			0,
 			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+		"bone": "thrust002",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+		"bone": "thrust003",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_fighter_adv/fighter_lines.pfx",
+		"bone": "muzzle_left",
+		"offset": [
+			0.5,
+			8.5,
+			0
+		],
+		"type": "moving_forward"
+	}, {
+		"filename": "/pa/units/air/L_fighter_adv/fighter_lines.pfx",
+		"bone": "muzzle_right",
+		"offset": [
+			-0.5,
+			8.5,
 			0
 		],
 		"type": "moving_forward"
