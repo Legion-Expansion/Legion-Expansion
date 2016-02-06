@@ -98,7 +98,7 @@
     },
     {
       "animtree": "/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
-      "filename": "/pa/units/sea/tactical_missile_launcher/tactical_missile_launcher.papa",
+      "filename": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.papa",
       "layer": "WL_WaterSurface"
     }
   ],

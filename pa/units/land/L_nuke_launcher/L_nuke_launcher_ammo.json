@@ -31,11 +31,7 @@
     "full_damage_splash_radius": 125,
     "fx_trail": {
         "filename": "/pa/units/air/missile_nuke/missile_nuke_trail.pfx",
-        "offset": [
-            0,
-            12,
-            0
-        ]
+		"bone": "socket_exhaust001"
     },
     "gravwell_velocity_multiplier": 10,
     "has_notifications": true,
