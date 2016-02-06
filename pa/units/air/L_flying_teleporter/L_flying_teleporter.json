@@ -1,238 +1,227 @@
 {
-    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "display_name": "Comet",
-    "description": "Advanced Mobile Teleporter. Can Travel Between Local Solar Bodies.",
-    "max_health": 3200,
-    "build_metal_cost": 4500,
-    "atrophy_rate": 200,
-    "atrophy_cool_down": 15,
-    "wreckage_health_frac": 0,
-    "energy_efficiency_requirement": 1,
-    "attachable": {
-        "offsets": {
-            "root": [
-                0,
-                0,
-                0
-            ]
-        }
-    },
-    "unit_types": [
-		"UNITTYPE_Air",	
-		"UNITTYPE_Teleporter",		
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"display_name": "Comet",
+	"description": "Advanced Mobile Teleporter. Can Travel Between Local Solar Bodies.",
+	"max_health": 3200,
+	"build_metal_cost": 4500,
+	"atrophy_rate": 200,
+	"atrophy_cool_down": 15,
+	"system_velocity_multiplier": 15.0,
+	"gravwell_velocity_multiplier": 6.0,
+	"wreckage_health_frac": 0,
+	"energy_efficiency_requirement": 1,
+	"attachable": {
+		"offsets": {
+			"root": [
+				0,
+				0,
+				0
+			]
+		}
+	},
+	"unit_types": [
+		"UNITTYPE_Air",
+		"UNITTYPE_Teleporter",
 		"UNITTYPE_Mobile",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FabAdvBuild",	
-		"UNITTYPE_CombatFabAdvBuild",		
-        "UNITTYPE_Important",
-			"UNITTYPE_Custom1"		
-    ],
-    "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_Attack"
-    ],
-    "guard_layer": "WL_Anysurface",
-    "navigation": {
-        "acceleration": 10,
-        "aggressive_behavior": "circle",
-        "aggressive_distance": 50,
-        "bank_factor": 1,
-        "brake": 10,
-        "hover_time": -1,
-        "move_speed": 25,
-        "turn_speed": 20,
-        "circle_max_time": 2,
-        "circle_min_time": 1,
-        "type": "air",
-        "vertical_speed": 10
-    },
-    "physics": {
-        "push_class": 2,
-        "radius": 8
-    },
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "channel": "sight",
-                    "layer": "surface_and_air",
-                    "radius": 100,
-                    "shape": "capsule"
-                },
-                {
-                    "channel": "sight",
-                    "layer": "underwater",
-                    "radius": 100,
-                    "shape": "capsule"
-                }
-            ]
-        }
-    },
-    "model": {
-        "animations": {
-            "fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
-            "idle": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_idle.papa"
-        },
-        "filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa",
-        "animtree": "/pa/anim/anim_trees/L_flying_teleporter_anim_tree.json"
-    },
-    "teleporter": {
-        "energy_demand": 1000,
-        "type": "orbital",
-        "spawn_radius": 1
-    },
-    "tools": [
-        {
-            "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired0",
-            "projectiles_per_fire": 6,
-            "muzzle_bone": [
-                "rocket001",
-                "rocket002",
-                "rocket003",
-                "rocket004",
-                "rocket005",
-                "rocket006"
-            ]
-        },
-        {
-            "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "fire_event": "fired1",
-            "projectiles_per_fire": 6,
-            "muzzle_bone": [
-                "rocket007",
-                "rocket008",
-                "rocket009",
-                "rocket010",
-                "rocket011",
-                "rocket012"
-            ]
-        }
-    ],
-    "fx_offsets": [
-        {
-            "bone": "thrust_leftWing",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                180,
-                0
-            ]
-        },
-        {
-            "bone": "thrust_rightWing",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                90,
-                0
-            ]
-        },
-        {
-            "bone": "thrust_back01",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                180,
-                0
-            ]
-        },
-        {
-            "bone": "thrust_back02",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                180,
-                0
-            ]
-        },
-        {
-            "bone": "thrust_back03",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                180,
-                0
-            ]
-        },
-        {
-            "bone": "thrust_back04",
-            "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-            "type": "moving",
-            "orientation": [
-                0,
-                180,
-                0
-            ]
-        },
-        {
-            "type": "idle",
-            "filename": "/pa/units/air/L_flying_teleporter/dust.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "enabled",
-            "filename": "/pa/units/air/L_flying_teleporter/event_horizon.pfx",
-            "bone": "bone_root",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
-    ],
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/orbital"
-        },
-        "enabled": {
-            "audio_cue": "/SE/Buildings/teleporter_enabled",
-            "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx event_horizon"
-        },
-        "disabled": {
-            "audio_cue": "/SE/Buildings/teleporter_disabled",
-            "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx event_horizon"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/orbital",
-            "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx",
-            "effect_scale": 1
-        },
-        "fired": {
-            "audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
-        }
-    },
-    "selection_icon": {
-        "diameter": -40,
-        "vertical_offset": 0
-    },
-    "mesh_bounds": [
-        35,
-        40,
-        15
-    ],
-    "TEMP_texelinfo": 23.6108
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FabAdvBuild",
+		"UNITTYPE_CombatFabAdvBuild",
+		"UNITTYPE_Important",
+		"UNITTYPE_Custom1"
+	],
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Attack"
+	],
+	"guard_layer": "WL_Anysurface",
+	"navigation": {
+		"acceleration": 10,
+		"aggressive_behavior": "circle",
+		"inter_planetary_type": "system",
+		"aggressive_distance": 50,
+		"bank_factor": 1,
+		"brake": 10,
+		"hover_time": -1,
+		"move_speed": 25,
+		"turn_speed": 20,
+		"circle_max_time": 2,
+		"circle_min_time": 1,
+		"type": "air",
+		"vertical_speed": 10
+	},
+	"physics": {
+		"push_class": 2,
+		"radius": 8,
+		"gravity_scalar": 1
+	},
+	"recon": {
+		"observer": {
+			"items": [{
+				"channel": "sight",
+				"layer": "surface_and_air",
+				"radius": 100,
+				"shape": "capsule"
+			}, {
+				"channel": "sight",
+				"layer": "underwater",
+				"radius": 100,
+				"shape": "capsule"
+			}]
+		}
+	},
+	"model": {
+		"animations": {
+			"fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
+			"idle": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_idle.papa"
+		},
+		"filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa",
+		"animtree": "/pa/anim/anim_trees/L_flying_teleporter_anim_tree.json"
+	},
+	"teleporter": {
+		"energy_demand": 1000,
+		"type": "orbital",
+		"spawn_radius": 1
+	},
+	"tools": [{
+		"spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
+		"aim_bone": "bone_root",
+		"fire_event": "fired0",
+		"projectiles_per_fire": 3,
+		"muzzle_bone": [
+			"rocket001",
+			"rocket002",
+			"rocket003",
+			"rocket004",
+			"rocket005",
+			"rocket006"
+		]
+	}, {
+		"spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json",
+		"aim_bone": "bone_root",
+		"fire_event": "fired1",
+		"projectiles_per_fire": 3,
+		"muzzle_bone": [
+			"rocket007",
+			"rocket008",
+			"rocket009",
+			"rocket010",
+			"rocket011",
+			"rocket012"
+		]
+	}],
+	"fx_offsets": [{
+		"bone": "thrust_leftWing",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			180,
+			0
+		]
+	}, {
+		"bone": "thrust_rightWing",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			90,
+			0
+		]
+	}, {
+		"bone": "thrust_back01",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			180,
+			0
+		]
+	}, {
+		"bone": "thrust_back02",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			180,
+			0
+		]
+	}, {
+		"bone": "thrust_back03",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			180,
+			0
+		]
+	}, {
+		"bone": "thrust_back04",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"type": "moving",
+		"orientation": [
+			0,
+			180,
+			0
+		]
+	}, {
+		"type": "idle",
+		"filename": "/pa/units/air/L_flying_teleporter/dust.pfx",
+		"bone": "bone_root",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"orientation": [
+			0,
+			0,
+			0
+		]
+	}, {
+		"type": "enabled",
+		"filename": "/pa/units/air/L_flying_teleporter/event_horizon.pfx",
+		"bone": "bone_root",
+		"offset": [
+			0,
+			0,
+			0
+		],
+		"orientation": [
+			0,
+			0,
+			0
+		]
+	}],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/orbital"
+		},
+		"enabled": {
+			"audio_cue": "/SE/Buildings/teleporter_enabled",
+			"effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx event_horizon"
+		},
+		"disabled": {
+			"audio_cue": "/SE/Buildings/teleporter_disabled",
+			"effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx event_horizon"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/orbital",
+			"effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx",
+			"effect_scale": 1
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
+		}
+	},
+	"selection_icon": {
+		"diameter": -40,
+		"vertical_offset": 0
+	},
+	"mesh_bounds": [
+		35,
+		40,
+		15
+	],
+	"TEMP_texelinfo": 23.6108
 }
