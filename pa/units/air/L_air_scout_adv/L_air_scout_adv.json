@@ -1,179 +1,181 @@
 {
-    "TEMP_texelinfo": 17,
-    "audio": {
-        "loops": {
-            "move": {
-                "cue": "/SE/Movement/air/air_scout_loop",
-                "flag": "vel_changed",
-                "should_start_func": "is_moving",
-                "should_stop_func": "is_not_moving"
-            }
-        },
-        "selection_response": {
-            "cue": "/SE/Selection/air/air"
-        }
-    },
-    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "build_metal_cost": 800,
+	"TEMP_texelinfo": 17,
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/air_scout_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/air"
+		}
+	},
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"build_metal_cost": 800,
 	"consumption": {
 		"energy": 1550
-	},	
-    "command_caps": [
-        "ORDER_Move",
-        "ORDER_Patrol",
-        "ORDER_Assist",
+	},
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Assist",
 		"ORDER_Attack"
-    ],
-    "description": "Advanced Mobile Radar and Vision. Quick.",
-    "display_name": "Cub",
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/air"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/Air",
-            "effect_scale": 0.25,
-            "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
-        },
-        "fired": {
-            "audio_cue": "/SE/Weapons/air/air_scout_fire"
-        }
-    },
-    "max_health": 1000,
-    "mesh_bounds": [
-        23.7,
-        17.7,
-        5.7
-    ],
-    "model": {
-        "arrows": 5,
-        "filename": "/pa/units/air/L_air_scout_adv/L_air_scout_adv.papa",
-        "animations": {
-            "idle": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_idle.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
-    },
-    "navigation": {
-        "acceleration": 50,
-        "brake": 50,
-        "dodge_multiplier": 1,
-        "dodge_radius": 10,
-        "move_speed": 65,
-        "turn_speed": 90,
-        "type": "air",
-        "wobble_factor": 0.15,
-        "wobble_speed": 0.1
-    },
-    "physics": {
-        "gravity_scalar": 1,
-        "push_class": 2,
-        "radius": 6
-    },
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "layer": "surface_and_air",
-                    "channel": "radar",
-                    "shape": "capsule",
-                    "radius": 500,
-                    "uses_energy": true
-                },
-                {
-                    "layer": "surface_and_air",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 200,
-                    "uses_energy": true
-                },
-                {
-                    "layer": "orbital",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 200,
-                    "uses_energy": true
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "sight",
-                    "shape": "capsule",
-                    "radius": 200,
-                    "uses_energy": true
-                },
-                {
-                    "layer": "underwater",
-                    "channel": "radar",
-                    "shape": "capsule",
-                    "radius": 500,
-                    "uses_energy": true
-                }
-            ]
-        }
-    },
-    "tools": [
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun01",
-            "muzzle_bone": "gun01"
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun02",
-            "muzzle_bone": "gun02"
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun03",
-            "muzzle_bone": "gun03"
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun04",
-            "muzzle_bone": "gun04"
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun05",
-            "muzzle_bone": "gun05"
-        },
-        {
-            "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-            "aim_bone": "gun06",
-            "muzzle_bone": "gun06"
-        }
-    ],
-    "fx_offsets": [
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust01"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust02"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust03"
-        },
-        {
-            "type": "moving_forward",
-			"filename": "/pa/units/air/gunship/gunship_jets.pfx",
-			"bone": "thrust04"
-        }
-    ],
-    "passive_health_regen": 20,
-    "selection_icon": {
-        "diameter": -33
-    },
-    "unit_types": [
-        "UNITTYPE_Scout",
-        "UNITTYPE_Mobile",
-        "UNITTYPE_Air",
-        "UNITTYPE_Advanced",
-        "UNITTYPE_FactoryBuild",
-        "UNITTYPE_Custom1"
-    ]
+	],
+	"description": "Advanced Mobile Radar and Vision. Quick.",
+	"display_name": "Cub",
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_scale": 0.25,
+			"effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/air/air_scout_fire"
+		}
+	},
+	"max_health": 1000,
+	"mesh_bounds": [
+		23.7,
+		17.7,
+		5.7
+	],
+	"model": {
+		"arrows": 5,
+		"filename": "/pa/units/air/L_air_scout_adv/L_air_scout_adv.papa",
+		"animations": {
+			"idle": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_idle.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+	},
+	"navigation": {
+		"acceleration": 50,
+		"brake": 50,
+		"dodge_multiplier": 1,
+		"dodge_radius": 10,
+		"move_speed": 65,
+		"turn_speed": 90,
+		"type": "air",
+		"wobble_factor": 0.15,
+		"wobble_speed": 0.1
+	},
+	"physics": {
+		"gravity_scalar": 1,
+		"push_class": 2,
+		"radius": 6
+	},
+	"recon": {
+		"observer": {
+			"items": [{
+				"layer": "surface_and_air",
+				"channel": "radar",
+				"shape": "capsule",
+				"radius": 500,
+				"uses_energy": true
+			}, {
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200,
+				"uses_energy": true
+			}, {
+				"layer": "orbital",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200,
+				"uses_energy": true
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 200,
+				"uses_energy": true
+			}, {
+				"layer": "underwater",
+				"channel": "radar",
+				"shape": "capsule",
+				"radius": 500,
+				"uses_energy": true
+			}]
+		}
+	},
+	"tools": [{
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun01",
+		"muzzle_bone": "gun01"
+	}, {
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun02",
+		"muzzle_bone": "gun02"
+	}, {
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun03",
+		"muzzle_bone": "gun03"
+	}, {
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun04",
+		"muzzle_bone": "gun04"
+	}, {
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun05",
+		"muzzle_bone": "gun05"
+	}, {
+		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+		"aim_bone": "gun06",
+		"muzzle_bone": "gun06"
+	}],
+	"fx_offsets": [{
+		"type": "moving_forward",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"orientation": [
+			0,
+			0,
+			180
+		],
+		"bone": "thrust01"
+	}, {
+		"type": "moving_forward",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"orientation": [
+			0,
+			0,
+			180
+		],
+		"bone": "thrust02"
+	}, {
+		"type": "moving_forward",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"orientation": [
+			0,
+			0,
+			180
+		],
+		"bone": "thrust03"
+	}, {
+		"type": "moving_forward",
+		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
+		"orientation": [
+			0,
+			0,
+			180
+		],
+		"bone": "thrust04"
+	}],
+	"passive_health_regen": 20,
+	"selection_icon": {
+		"diameter": -33
+	},
+	"unit_types": [
+		"UNITTYPE_Scout",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Air",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+	]
 }

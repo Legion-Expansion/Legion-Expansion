@@ -1,0 +1,230 @@
+{
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "bind_pose"
+			},
+			"living": {
+				"type": "playback",
+				"anim_name": "hover"
+			},
+			"dead": {
+				"type": "sequence",
+				"entries": [{
+					"type": "item",
+					"name": "death",
+					"node": {
+						"type": "playback",
+						"anim_name": "death",
+						"looping": false,
+						"events": [{
+							"time": 0,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_main_turret",
+								"spec": "/pa/units/land/titan_vehicle/titan_vehicle_death.pfx",
+								"effect_scale": 1.0,
+								"attached": true,
+								"death_effect": true,
+								"bone_offset": [0, 0, 0]
+							}
+						}, {
+							"label": "death",
+							"time": 0.1,
+							"type": "audio",
+							"parameters": {
+								"cue": "/SE/Death/Titan_Bot"
+							}
+						}, {
+							"label": "death",
+							"time": 2.1,
+							"type": "audio",
+							"parameters": {
+								"cue": "/SE/Death/Titan_2"
+							}
+						}, {
+							"label": "death",
+							"time": 3.0,
+							"type": "audio",
+							"parameters": {
+								"cue": "/SE/Death/Titan_3"
+							}
+						}, {
+							"time": 0,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_root",
+								"spec": "/pa/units/land/titan_vehicle/titan_vehicle_death_world.pfx",
+								"effect_scale": 1.0,
+								"attached": false,
+								"death_effect": true,
+								"bone_offset": [0, 0, 20]
+							}
+						}, {
+							"time": 2,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_left_turret",
+								"spec": "/pa/effects/specs/titan_smoke_01.pfx",
+								"effect_scale": 1.2,
+								"attached": true,
+								"death_effect": true,
+								"bone_offset": [2, -0.68, 0.88]
+							}
+						}, {
+							"time": 2.6,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_main_turret",
+								"spec": "/pa/effects/specs/titan_smoke_01.pfx",
+								"effect_scale": 1.4,
+								"attached": true,
+								"death_effect": true,
+								"bone_offset": [2.63, 0.96, 4.33]
+							}
+						}, {
+							"time": 2.2,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_root",
+								"spec": "/pa/effects/specs/titan_smoke_01.pfx",
+								"effect_scale": 1.0,
+								"attached": true,
+								"death_effect": true,
+								"bone_offset": [-7.4, 12.8, 10.15]
+							}
+						}, {
+							"time": 2.4,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_root",
+								"spec": "/pa/effects/specs/titan_smoke_01.pfx",
+								"effect_scale": 1.0,
+								"attached": true,
+								"death_effect": true,
+								"bone_offset": [-13.3, -17.6, 5.98]
+							}
+						}, {
+							"time": 3.5,
+							"type": "effect",
+							"parameters": {
+								"bone": "bone_main_turret",
+								"spec": "/pa/units/land/titan_vehicle/titan_vehicle_death_fall.pfx",
+								"effect_scale": 1.0,
+								"attached": false,
+								"bone_offset": [0, 0, 0]
+							}
+						}]
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "anim_complete",
+							"target": "dead"
+						},
+						"transition_reverse": {
+							"func": "anim_complete",
+							"target": "dead"
+						}
+					}],
+					"reset": "playback_reset"
+				}, {
+					"type": "item",
+					"name": "dead",
+					"node": {
+						"type": "playback",
+						"anim_name": "dead",
+						"looping": false
+					},
+					"transitions": [{
+						"transition_forward": {
+							"func": "false_func",
+							"target": "death"
+						},
+						"transition_reverse": {
+							"func": "anim_complete",
+							"target": "death"
+						}
+					}],
+					"reset": "playback_reset"
+				}]
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turret",
+			"rotation_axis": "z",
+			"weapon_index": 0
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_pitch",
+			"rotation_axis": "x",
+			"weapon_index": 0
+		}
+	}, {
+		"type": "recoil",
+		"bone": "bone_recoil",
+		"recoil_dist": 4.0,
+		"restore_time": 10,
+		"unit_event": "fired0"
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretLeft",
+			"rotation_axis": "z",
+			"weapon_index": 1
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretLeft",
+			"rotation_axis": "x",
+			"weapon_index": 1
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretRight",
+			"rotation_axis": "z",
+			"weapon_index": 2
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "is_active",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turretRight",
+			"rotation_axis": "x",
+			"weapon_index": 2
+		}
+	}, {
+		"type": "recoil",
+		"bone": "bone_recoilLeft",
+		"recoil_dist": 1.0,
+		"restore_time": 0.5,
+		"unit_event": "fired1"
+	}, {
+		"type": "recoil",
+		"bone": "bone_recoilRight",
+		"recoil_dist": 1,
+		"restore_time": 0.5,
+		"unit_event": "fired2"
+	}]
+}

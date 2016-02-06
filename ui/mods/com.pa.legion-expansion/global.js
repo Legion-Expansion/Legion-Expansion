@@ -667,7 +667,7 @@
           ["L_factory", 3]
         ]
       }, {
-        spec_id: "/pa/units/land/L_titan_vehicle/titan_vehicle.json",
+        spec_id: "/pa/units/land/L_titan_vehicle/L_titan_vehicle.json",
         si_fallback: ["titan_vehicle"],
         preferred_builds: [
           ["L_factory", 4]
