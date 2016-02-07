@@ -8,7 +8,7 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:basic_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
+  "description": "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
   "display_name": "Legion Laser Turret",
   "events": {
     "build_complete": {
