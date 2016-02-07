@@ -56,7 +56,7 @@
 		},
 		"fired": {
 			"audio_cue": "/SE/Weapons/veh/tank_hover_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Veh"

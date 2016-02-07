@@ -22,8 +22,8 @@
 		"ORDER_Attack",
 		"ORDER_Assist"
 	],
-	"description": "!LOC(units:basic_manufacturing_builds_and_launches_satellites_and_other_units.message):Basic manufacturing- Builds and launches satellites and other units.",
-	"display_name": "Legion Orbital Launcher",
+	"description": "Launches Satellites and Basic Orbital Units.",
+	"display_name": "Orbital Launcher",
 	"enable_orbital_shell": true,
 	"events": {
 		"died": {

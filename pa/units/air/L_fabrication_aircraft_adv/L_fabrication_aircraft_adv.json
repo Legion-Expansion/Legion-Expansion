@@ -35,7 +35,7 @@
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 2100,
-  "buildable_types": "Custom1 & ( Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild | Custom2)",
+	"buildable_types": "Custom1 & Land & Structure & Advanced - Factory | Custom1 & Factory & Advanced & Air | Custom1 & FabAdvBuild | Custom1 & FabBuild | Custom1 & Air & Titan",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

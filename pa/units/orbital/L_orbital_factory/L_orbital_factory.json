@@ -25,8 +25,8 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:advanced_manufacturing_builds_orbital_satellites.message):Advanced manufacturing- Builds orbital satellites.",
-  "display_name": "Legion Orbital Factory",
+  "description": "Builds Advanced Orbital Units. Consumes Energy and Metal.",
+  "display_name": "Orbital Foundry",
   "enable_orbital_shell": true,
   "events": {
     "died": {

@@ -27,7 +27,7 @@
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 1600,
-  "buildable_types": "Custom1 & FabOrbBuild",
+  "buildable_types": "Custom1 & FabOrbBuild | Titan",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -38,7 +38,7 @@
     "ORDER_Use"
   ],
   "description": "Advanced fabricator- Builds Legion Orbital Satellites and Ships. ",
-  "display_name": "Bumble Bee",
+  "display_name": "BumbleBee",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab_orbital"
