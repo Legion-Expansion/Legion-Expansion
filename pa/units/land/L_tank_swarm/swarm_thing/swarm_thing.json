@@ -90,7 +90,7 @@
 		"offset": [0, 0.727, 0.42]
 	}],
 	"selection_icon": {
-		"diameter": 7.0
+		"diameter": -7.0
 	},
 	"TEMP_texelinfo": 5.39039,
 	"mesh_bounds": [1.6, 3.1, 1.6]
