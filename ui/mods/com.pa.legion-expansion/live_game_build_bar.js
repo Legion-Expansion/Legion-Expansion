@@ -90,6 +90,4 @@ model.isLegion = function (data){
 };
 
 //ADD legion class to build_bar_menu
-$('.div_build_bar_menu_cont').attr("data-bind","css: { legion_menu_cont: model.isLegion($data)}");
-$('.div_build_bar_page.div_short_build_bar_page').attr("data-bind","css: { legion_build_bar_page: model.isLegion($data), 'active_build_tab': active, 'inactive_build_tab': !active, div_short_build_bar_page: $data.skipLastRow(), div_long_build_bar_page: !$data.skipLastRow() }");
-$('.span_build_bar_tab').attr("data-bind","css: { legion_span_bb_tab: model.isLegion($data), span_build_bar_tab_active: active}");
+$('.div_build_bar_menu_cont').attr("data-bind","css: { legion: model.isLegion($data)}");
