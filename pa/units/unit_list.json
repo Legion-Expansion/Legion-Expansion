@@ -22,6 +22,7 @@
 		"/pa/units/air/L_fighter/L_fighter.json",
 		"/pa/units/air/L_raider/L_raider.json",
 		"/pa/units/air/L_firestarter/L_firestarter.json",
+		"/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret.json",
 		"/pa/units/air/fighter_adv/fighter_adv.json",
 		"/pa/units/air/L_fighter_adv/L_fighter_adv.json",
 		"/pa/units/air/gunship/gunship.json",
