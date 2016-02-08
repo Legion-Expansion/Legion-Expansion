@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 100,
+  "build_metal_cost": 1000,
   "description": "Walking Artillery. Long Range. Attacks Land and Naval.",
   "display_name": "Miniman",
   "events": {
@@ -45,7 +45,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 80,
+  "max_health": 125,
   "mesh_bounds": [
     5,
     5,
@@ -64,8 +64,8 @@
   "navigation": {
     "acceleration": 120,
     "brake": 120,
-    "move_speed": 8,
-    "turn_speed": 720,
+    "move_speed": 6,
+    "turn_speed": 75,
     "type": "land-small"
   },
   "physics": {
@@ -78,13 +78,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         }
       ]
@@ -93,20 +93,23 @@
   "selection_icon": {
     "diameter": -18
   },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
   "tools": [
     {
       "aim_bone": "bone_pitch01",
-      "muzzle_bone": "socket_muzzle01",
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch02",
-      "muzzle_bone": "socket_muzzle02",
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch03",
-      "muzzle_bone": "socket_muzzle03",
+      "muzzle_bone": [
+		"socket_muzzle01",
+		"socket_muzzle02",
+		"socket_muzzle03"
+	  ],
+	  "projectiles_per_fire": 3,
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
     }
   ],

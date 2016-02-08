@@ -25,7 +25,7 @@
         }
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 75,
+    "build_metal_cost": 100,
     "description": "Anti-Air Walker. Short range. Attacks Air.",
     "display_name": "Patriot",
     "events": {
@@ -60,7 +60,7 @@
     "navigation": {
         "acceleration": 120,
         "brake": 120,
-        "move_speed": 18,
+        "move_speed": 12,
         "turn_speed": 720,
         "type": "land-small"
     },

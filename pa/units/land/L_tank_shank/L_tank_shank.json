@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 325,
+  "build_metal_cost": 280,
   "description": "Main Battle Tank. Attacks Land and Naval.",
   "display_name": "Shank",
   "events": {
@@ -69,7 +69,7 @@
       ]
     }
   ],
-  "max_health": 325,
+  "max_health": 400,
   "mesh_bounds": [
     4.941,
     6.102,

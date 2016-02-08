@@ -1,13 +1,13 @@
 {
 	"base_spec": "/pa/ammo/base_missiles/base_missile_tactical.json",
-	"damage": 100,
-	"splash_damage": 0,
-	"splash_radius": 0,
-	"cruise_height": 20,
-	"initial_velocity": 80.0,
+	"damage": 50,
+	"splash_damage": 25,
+	"splash_radius": 5,
+	"cruise_height": 50,
+	"initial_velocity": 10.0,
 	"max_velocity": 80.0,
-	"turn_rate": 45,
-	"lifetime": 15,
+	"turn_rate": 360,
+	"lifetime": 6,
 	"max_health": 1,
 	"influence_radius": 400,
 	"fx_trail":{"filename":"/pa/units/land/L_hover_tank_adv/trail.pfx"},
@@ -21,31 +21,50 @@
 	"physics": {
 		"radius": 1,
 		"gravity_scalar": 5,
-		"ignore_gravity": true,
+		"ignore_gravity": false,
 		"add_to_spatial_db": true
 	},
 	"armor_damage_map": {
 		"AT_Orbital": 0.5
 	},
 	"flight_type": "Staged",
-	"stages": [{
+	"stages": [
+	{
 		"ignores_gravity": true,
 		"ignores_LOS": true,
-		"stage_duration": 200,
+		"stage_duration": 100,
 		"stage_turn_rate": 0,
-		"rotates_to_velocity": true
-	}, {
+		"rotates_to_velocity": true,
+		"stage_turn_rate": 0
+	},
+	{
+		"ignores_gravity": true,
+		"ignores_LOS": true,
+		"stage_duration": 100,
+		"stage_turn_rate": 0,
+		"rotates_to_velocity": true,
+		"stage_turn_rate": 540
+	},
+	{
 		"ignores_gravity": true,
 		"ignores_LOS": true,
 		"stage_duration": 0,
-		"stage_turn_rate": 75,
-		"stage_change_range": 50,
+		"stage_turn_rate": 50,
+		"stage_change_range": 70,
 		"rotates_to_velocity": true
-	}, {
+	},
+	{
+		"ignores_gravity": false,
+		"ignores_LOS": false,
+		"stage_duration": 1000,
+		"stage_turn_rate": 240,
+		"rotates_to_velocity": true
+	},
+	{
 		"ignores_gravity": false,
 		"ignores_LOS": false,
 		"stage_duration": 5000,
-		"stage_turn_rate": 405,
+		"stage_turn_rate": 0,
 		"rotates_to_velocity": true
 	}]
 }

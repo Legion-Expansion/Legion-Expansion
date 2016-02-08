@@ -18,8 +18,9 @@
 		"add_to_spatial_db": false,
 		"allow_underground": true
 	},
-	"damage": 20,
+	"damage": 35,
 	"splash_damage": 0,
+	"full_damage_splash_radius": 2,
 	"splash_radius": 0,
 	"initial_velocity": 150.0,
 	"max_velocity": 150.0,

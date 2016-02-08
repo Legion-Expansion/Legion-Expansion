@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 350,
+  "build_metal_cost": 300,
   "description": "Close Rage Support. Attacks Land and Naval.",
   "display_name": "Maul",
   "events": {
@@ -45,7 +45,7 @@
     }
   },
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 1000,
+  "max_health": 1500,
   "mesh_bounds": [
     7,
     7,
@@ -60,7 +60,7 @@
     "acceleration": 75,
     "brake": 100,
     "group_preference": "front",
-    "move_speed": 10,
+    "move_speed": 8,
     "turn_speed": 180,
     "type": "land-small"
   },
@@ -94,81 +94,6 @@
     "diameter": -13
   },
   "tools": [
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_weapon.json"
-    },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",

@@ -1,0 +1,11 @@
+{
+  "recon": {
+    "observable": {
+      "layer": "surface_and_air",
+      "sphere_radius": 10
+    }
+  },
+  "spawn_response": {
+    "audio_cue": "/SE/Impacts/bomb_bot_plasma"
+  }
+}

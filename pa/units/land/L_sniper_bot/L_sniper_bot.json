@@ -2,8 +2,8 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "Lancer",
 	"description": "Laser bot. Medium Range Laser Weapon. Attacks Land and Naval.",
-	"max_health": 75,
-	"build_metal_cost": 110,
+	"max_health": 84,
+	"build_metal_cost": 160,
 	"attachable": {
 		"offsets": {
 			"root": [0, 0, 0],
@@ -24,7 +24,8 @@
 		"size": 1
 	},
 	"physics": {
-		"radius": 3.5
+    "push_class": 2,		
+	"radius": 3.5
 	},
 	"recon": {
 		"observer": {
@@ -32,12 +33,12 @@
 				"layer": "surface_and_air",
 				"channel": "sight",
 				"shape": "capsule",
-				"radius": 95
+				"radius": 100
 			}, {
 				"layer": "underwater",
 				"channel": "sight",
 				"shape": "capsule",
-				"radius": 95
+				"radius": 100
 			}]
 		}
 	},

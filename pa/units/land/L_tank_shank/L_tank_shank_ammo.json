@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 150,
+  "damage": 125,
   "fx_trail": {
     "filename": "/pa/units/land/L_tank_shank/trail.pfx",
     "offset": [
@@ -21,6 +21,6 @@
   "model": {
     "filename": ""
   },
-  "splash_damage": 0,
-  "splash_radius": 0
+  "splash_damage": 15,
+  "splash_radius": 2
 }

@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 700,
+  "build_metal_cost": 900,
   "description": "Sniper. Attacks Land and Naval.",
   "display_name": "Deathmark",
   "events": {
@@ -83,7 +83,7 @@
   "navigation": {
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 10,
+    "move_speed": 6,
     "turn_speed": 90,
     "type": "land-small"
   },

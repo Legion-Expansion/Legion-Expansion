@@ -28,7 +28,7 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"build_metal_cost": 1200,
+	"build_metal_cost": 1800,
 	"description": "Heavy Mobile Beam Weapon. Medium Range. Attacks Land and Naval.",
 	"display_name": "Monstrosity",
 	"events": {
@@ -41,7 +41,15 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/bot/sniper_fire",
-			"effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain"
+			"effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/artillery_muzzle_ground.pfx bone_root"
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/bot/sniper_fire",
+			"effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft01 /pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight01"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/bot/sniper_fire",
+			"effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft02 /pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight02"
 		}
 	},
 	"guard_layer": "WL_AnySurface",
@@ -95,7 +103,7 @@
 		],
 		"radius": 1.5
 	}],
-	"max_health": 800,
+	"max_health": 6100,
 	"mesh_bounds": [
 		10,
 		12,
@@ -111,11 +119,12 @@
 		"walk_speed": 4
 	},
 	"navigation": {
-		"acceleration": 120,
-		"brake": 120,
-		"group_preference": "back",
-		"move_speed": 8,
-		"turn_speed": 50,
+		"acceleration": 40,
+		"brake": 30,
+		"group_preference": "front",
+		"aggressive_distance": 90,
+		"move_speed": 10,
+		"turn_speed": 60,
 		"type": "land-small"
 	},
 	"nearby_target_tick_update_interval": 15,
@@ -128,12 +137,12 @@
 			"items": [{
 				"channel": "sight",
 				"layer": "surface_and_air",
-				"radius": 180,
+				"radius": 150,
 				"shape": "capsule"
 			}, {
 				"channel": "sight",
 				"layer": "underwater",
-				"radius": 180,
+				"radius": 150,
 				"shape": "capsule"
 			}]
 		}
@@ -146,19 +155,31 @@
 		"fire_event": "fired0",
 		"muzzle_bone": "socket_muzzleMain",
 		"record_index": 0,
-		"spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_tool_weapon.json"
-	}, {
-		"aim_bone": "bone_recoilRight01 bone_recoilLeft01",
+		"spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_tool_weapon.json"
+	}, 
+	{
+		"aim_bone": "bone_turretLeft",
 		"fire_event": "fired1",
 		"muzzle_bone": [
 			"socket_muzzleRight01",
+			"socket_muzzleLeft01"			
+		],
+		"record_index": 1,
+		"projectiles_per_fire": 1,
+		"spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_light_tool_weapon.json"
+	},
+	{
+		"aim_bone": "bone_turretRight",
+		"fire_event": "fired2",
+		"muzzle_bone": [
 			"socket_muzzleRight02",
-			"socket_muzzleLeft01",
 			"socket_muzzleLeft02"			
 		],
 		"record_index": 1,
-		"spec_id": "/pa/units/land/L_bot_artillery_adv/light_weapon.json"
-	}],
+		"projectiles_per_fire": 1,
+		"spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_light_tool_weapon.json"
+	}
+	],
 	"transportable": {
 		"size": 1
 	},

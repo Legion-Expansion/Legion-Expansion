@@ -2,8 +2,8 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "Panzerwerfer",
 	"description": "Medium Range Rocket Barrage Tank. Attacks Land and Naval",
-	"max_health": 410,
-	"build_metal_cost": 680,
+	"max_health": 200,
+	"build_metal_cost": 1200,
 	"armor_type": "AT_Hover",
 	"attachable": {
 		"offsets": {
@@ -37,8 +37,8 @@
 		"type": "hover",
 		"acceleration": 140,
 		"brake": 140,
-		"move_speed": 14,
-		"turn_speed": 90
+		"move_speed": 6,
+		"turn_speed": 40
 	},
 	"physics": {
 		"radius": 3,

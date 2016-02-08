@@ -2,14 +2,22 @@
   "ammo_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_ammo.json",
   "arc_type": "ARC_Low",
   "auto_attack": true,
+  "manual_attack": true,
   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "firing_standard_deviation": 10,
   "idle_aim_delay": 1,
   "max_firing_velocity": 88,
-  "max_range": 160,
-  "min_firing_velocity": 85,
+  "min_firing_velocity": 55,
+  "max_range": 180,
   "pitch_range": 90,
   "pitch_rate": 360,
-  "rate_of_fire": 0.5,
+  "rate_of_fire": 1,
+  "ammo_capacity": 5,
+  "ammo_demand": 1,
+  "ammo_per_shot": 3,
+  "ammo_source": "time",
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": false,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
@@ -24,5 +32,5 @@
     "Wall"
   ],
   "yaw_range": 180,
-  "yaw_rate": 360
+  "yaw_rate": 45
 }

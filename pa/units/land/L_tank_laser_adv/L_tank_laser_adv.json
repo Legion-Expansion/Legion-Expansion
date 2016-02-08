@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 600,
+  "build_metal_cost": 800,
   "description": "Advanced Main Battle Tank. Attacks Land and Naval.",
   "display_name": "Scorpion",
   "events": {
@@ -76,9 +76,23 @@
   "navigation": {
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 10,
-    "turn_speed": 60,
-    "type": "land-small"
+    "move_speed": 8,
+    "turn_speed": 55,
+    "type": "land-small",
+	"park_stamp": {
+      "cost": 10,
+      "shape": "sphere",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        }
+      ]
+    }
   },
   "physics": {
     "push_class": 70,
