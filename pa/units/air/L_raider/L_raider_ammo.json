@@ -23,6 +23,6 @@
 		"filename": ""
 	},
 	"splash_damage": 15,	
-	"splash_radius": 7,
-	"full_damage_splash_radius": 3
+	"splash_radius": 3,
+	"full_damage_splash_radius": 1
 }

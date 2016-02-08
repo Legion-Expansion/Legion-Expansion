@@ -3,7 +3,7 @@
 	"display_name": "Sky Castle",
 	"description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
 	"build_metal_cost": 900,
-	"max_health": 1100,
+	"max_health": 1200,
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist", "ORDER_Use", "ORDER_FireSecondaryWeapon"],
 	"unit_types": ["UNITTYPE_Fighter", "UNITTYPE_Air", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
 	"guard_layer": "WL_Air",

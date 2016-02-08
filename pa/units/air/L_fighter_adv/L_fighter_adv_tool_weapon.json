@@ -10,5 +10,8 @@
 	"pitch_range": 180,
 	"firing_arc_pitch": 60,
 	"auto_attack": true,
-	"target_layers": ["WL_Air"]
+	"target_layers": ["WL_Air"],
+	"target_priorities": [
+		"fighter"
+	]
 }

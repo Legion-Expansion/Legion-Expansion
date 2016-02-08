@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
 	"display_name": "Firebird",
 	"description": "Advanced Fighter/Interceptor. Fast and Armored. Attacks Air. ",
-	"build_metal_cost": 720,
+	"build_metal_cost": 820,
 	"max_health": 300,
 	"system_velocity_multiplier": 15.0,
 	"gravwell_velocity_multiplier": 6.0,
@@ -11,10 +11,10 @@
 	"navigation": {
 		"type": "air",
 		"inter_planetary_type": "system",
-		"acceleration": 80,
-		"brake": 80,
-		"move_speed": 80,
-		"turn_speed": 270,
+		"acceleration": 90,
+		"brake": 90,
+		"move_speed": 90,
+		"turn_speed": 300,
 		"aggressive_distance": 50.0,
 		"bank_factor": 10,
 		"vertical_speed": 50
@@ -58,24 +58,14 @@
 		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
 	}, {
 		"aim_bone": "bone_root",
-		"muzzle_bone": "missile001",
+		"muzzle_bone": [ 
+			"missile001",
+			"missile002",
+			"missile003",
+			"missile004"
+		],
 		"fire_event": "fired2",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile002",
-		"fire_event": "fired3",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile003",
-		"fire_event": "fired4",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
-	}, {
-		"aim_bone": "bone_root",
-		"muzzle_bone": "missile004",
-		"fire_event": "fired5",
-		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket.json"
+		"spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket_tool_weapon.json"
 	}],
 	"events": {
 		"build_complete": {

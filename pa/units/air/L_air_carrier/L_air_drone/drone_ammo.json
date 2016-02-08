@@ -14,5 +14,6 @@
 	"lifetime": 2,
 	"armor_damage_map": {
 		"AT_Structure": 1.0
-	}
+	},
+	"splash_damage": 0
 }

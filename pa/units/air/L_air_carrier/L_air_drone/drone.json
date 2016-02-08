@@ -7,7 +7,8 @@
     "guard_radius": 200,
     "passive_health_regen": -3,
     "unit_types": [
-        "UNITTYPE_Scout",
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Offense",
         "UNITTYPE_Mobile",
         "UNITTYPE_Air",
         "UNITTYPE_Basic"

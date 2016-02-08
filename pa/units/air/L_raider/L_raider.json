@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 280,
+  "build_metal_cost": 190,
   "description": "Steals your Lunch Money and Shoves you into Lockers.",
   "display_name": "Raider",
   "events": {
@@ -72,9 +72,9 @@
     }	
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_radius": 120,
+  "guard_radius": 100,
   "maintain_priority_target": false,
-  "max_health": 60,
+  "max_health": 100,
   "mesh_bounds": [
     14,
     7.5,
@@ -87,13 +87,13 @@
   },
 	"navigation": {
 		"type": "air",
-		"acceleration": 35,
-		"brake": 45,
-		"move_speed": 100,
-		"turn_speed": 90,
+		"acceleration": 70,
+		"brake": 100,
+		"move_speed": 95,
+		"turn_speed": 120,
 		"dodge_radius": 0,
 		"dodge_multiplier": 0.0,
-		"aggressive_distance": 180.0,
+		"aggressive_distance": 80.0,
 		"aggressive_height": 100.0,
 		"aggressive_behavior": "circle",
 		"circle_min_time": 2.0,

@@ -14,7 +14,7 @@
         }
     },
     "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-    "build_metal_cost": 6000,
+    "build_metal_cost": 3000,
     "command_caps": [
         "ORDER_Move",
         "ORDER_Patrol",
@@ -128,7 +128,7 @@
             "audio_cue": "/SE/Weapons/air/air_scout_fire"
         }
     },
-    "max_health": 1500,
+    "max_health": 3000,
     "mesh_bounds": [
         17,
         23,
