@@ -15,9 +15,6 @@
   "ammo_capacity": 5,
   "ammo_demand": 1,
   "ammo_per_shot": 3,
-  "ammo_source": "time",
-  "carpet_fire": true,
-  "carpet_wait_for_full_ammo": false,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
