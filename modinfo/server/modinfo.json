@@ -15,7 +15,7 @@
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
-	"com.pa.legion-expansion.client"
+    "com.pa.legion-expansion.client"
   ], 
   "description": "Super secret something something", 
   "display_name": "Legion Expansion", 
@@ -30,6 +30,9 @@
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
     ],
+    "live_game_action_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"
+    ],    
     "live_game_sandbox": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
     ],

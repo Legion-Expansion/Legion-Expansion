@@ -64,7 +64,7 @@ if ( ! legionExpansionLoaded )
     }
 }
 
-//LOAD CUSTOM LEGION NEW GAME CSS
+//LOAD CUSTOM LEGION BUILDBAR CSS
 loadCSS("coui://ui/mods/com.pa.legion-expansion/css/build_bar.css");
 loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
