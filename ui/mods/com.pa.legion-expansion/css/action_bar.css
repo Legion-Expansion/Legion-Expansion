@@ -1,13 +1,10 @@
-.legion .div_command_bar
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground.png) 26 24 26 26 fill;
-}
-
+.legion .div_command_bar,
 .legion .div_orders_bar {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground.png) 26 24 26 26 fill;
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground.png) 26 24 26 26 fill !important;
 }
 
 .legion .div_command_bar_cont,
-.legion .div_orders_bar_cont {   
+.legion .div_orders_bar_cont {
     background: rgba(70, 0, 0, 1);
-    box-shadow: inset 0px 0px 8px rgba(255, 18, 18, 0.5);    
+    box-shadow: inset 0px 0px 8px rgba(255, 18, 18, 0.5);
 }

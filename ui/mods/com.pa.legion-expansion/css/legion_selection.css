@@ -1,0 +1,19 @@
+.legion {
+    border: 1px solid rgba(255, 0, 0, 1) !important;
+    background: rgba(70, 0, 0, 1) !important;
+    box-shadow: inset 0px 0px 8px rgba(255, 18, 18, 0.5) !important;
+}
+
+    .legion:hover {
+        border: 1px solid rgba(160,0,0,0.8) !important;
+        background: rgba(160,0,0,0.8) !important;
+    }
+
+    .legion:active {
+        border: 1px solid rgba(255,0,0,0.8) !important;
+        background: rgba(255,0,0,0.8) !important;
+    }
+    
+.legion .span_selection_count {
+    background: rgba(255,0,0,0.8) !important;
+}
