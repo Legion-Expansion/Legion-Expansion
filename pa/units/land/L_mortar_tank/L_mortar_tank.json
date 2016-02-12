@@ -1,29 +1,25 @@
 {
-  "TEMP_texelinfo": 9.31488,
+  "TEMP_texelinfo": 22.4238,
+  "armor_type": "AT_Hover",
   "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        3.1
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
+		"offsets": {
+			"root": [0, 0, 0],
+			"head": [0, 0, 2.7]
+		}
+	},
   "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    }
-  },
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/veh/tank_hover_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/veh/tank_hover"
+		}
+	},
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 450,
   "description": "Short range Artillery. Attacks Land and Naval.",
@@ -44,56 +40,129 @@
   "influence_radius": 400,
   "max_health": 125,
   "mesh_bounds": [
-    7,
-    7.5,
-    3.8
+	6.468,
+	7.765,
+	5.711
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
-    "arrows": 5,
-    "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
-  },
+		"filename": "/pa/units/land/L_hover_tank/L_hover_tank.papa",
+		"animations": {
+			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/L_hover_tank_anim_tree.json"
+	},
   "navigation": {
     "acceleration": 50,
     "brake": 100,
     "group_preference": "back",
     "move_speed": 6,
-    "turn_speed": 60,
+    "turn_speed": 50,
     "type": "land-small"
   },
   "nearby_target_tick_update_interval": 15,
   "physics": {
-    "push_class": 60,
-    "radius": 6
-  },
+		"radius": 3,
+		"air_friction": 0.5
+	},
   "recon": {
     "observer": {
       "items": [
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         }
       ]
     }
   },
   "selection_icon": {
-    "diameter": -11
-  },
-  "tools": [
-    {
-      "aim_bone": "bone_pitch",
-      "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
-    }
-  ],
+		"diameter": -12.0
+	},
+	"fx_offsets": [
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [-2.86, -1.9, 0.96],
+			"orientation": [0, 0, -202.5]
+		}, 
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [2.86, -1.9, 0.96],
+			"orientation": [0, 0, 22.5]
+		}, 
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [2.13, 2.14, 2.22],
+			"orientation": [0, 0, -15]
+		}, 
+		{
+			"type": "idle",
+			"filename": "/pa/effects/specs/hover_idle_01.pfx",
+			"bone": "bone_root",
+			"offset": [-2.13, 2.14, 2.22],
+			"orientation": [0, 0, 195]
+		}
+	],
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/veh/tank_hover_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/veh/tank_hover"
+		}
+	},
+	"headlights": [
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [1.8, -2, 1.0],
+			"orientation": [0.0, 65.0, 0.0],
+			"near_width": 2.0,
+			"near_height": 2.0,
+			"near_distance": 1.2,
+			"far_distance": 20.0,
+			"color": [0.9, 0.92, 1.0],
+			"intensity": 1.4
+		}, 
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [-1.8, -2, 1.0],
+			"orientation": [0.0, 65.0, 0.0],
+			"near_width": 2.0,
+			"near_height": 2.0,
+			"near_distance": 1.2,
+			"far_distance": 20.0,
+			"color": [0.9, 0.92, 1.0],
+			"intensity": 1.4
+		}
+	],
+	"tools": [
+		{
+		"aim_bone": "bone_turret",
+		"muzzle_bone": [
+			"socket_muzzleLeft",
+			"socket_muzzleRight"
+		],
+		"projectiles_per_fire": 2,
+		"spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"		
+		}
+	],
   "transportable": {
     "size": 1
   },
@@ -102,6 +171,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
+	"UNITTYPE_Hover", 
     "UNITTYPE_Artillery",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
