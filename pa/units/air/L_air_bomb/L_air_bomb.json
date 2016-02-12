@@ -47,6 +47,12 @@
 			"effect_scale": 0.5
 		}
 	},
+	"fx_offsets": [
+		{
+		"filename": "/pa/units/air/L_air_bomb/L_air_bomb.pfx",
+		"bone": "bone_root",
+		"type": "idle"
+	}],	
 	"max_health": 40,
 	"mesh_bounds": [
 		13.42,
@@ -67,12 +73,17 @@
 		"move_speed": 70,
 		"turn_speed": 180,
 		"type": "air",
-		"vertical_speed": 100
+		"vertical_speed": 100,
+		"wobble_factor": 0.25,
+		"wobble_speed": 0.2,
+		"hover_time": -1.0		
 	},
 	"physics": {
-		"gravity_scalar": 0.001,
-		"push_class": 15,
-		"radius": 5
+		"radius": 6,
+		"gravity_scalar": 1,
+		"push_sideways": false,
+		"allow_pushing": false,
+		"air_friction": 1.0
 	},
 	"recon": {
 		"observer": {
