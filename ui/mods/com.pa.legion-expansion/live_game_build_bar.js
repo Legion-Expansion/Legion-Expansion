@@ -65,29 +65,58 @@ if ( ! legionExpansionLoaded )
 }
 
 //LOAD CUSTOM LEGION BUILDBAR CSS
-loadCSS("coui://ui/mods/com.pa.legion-expansion/css/build_bar.css");
+loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css");
 loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
 //see global.js
 var legionspecids = legionglobal.builders;
 
-model.isLegion = function (data){
-  haslegionunit = false;
+model.isLegionOrMixedOrVanilla = function (data) {
   try{
+    var legioncount = 0;
+    var specslength = 0;
     var selectedspecs = data.buildSet().selectedSpecs();
     
     _.forOwn(selectedspecs, function(value, key){
       if(_.includes(legionspecids, key)){
-        haslegionunit = true;
-        return haslegionunit;
+        legioncount++;
       }
+      specslength++; 
     });
+    if(legioncount == specslength){
+      return "legion";
+    }
+    else{
+      if(legioncount > 0 && legioncount < specslength){
+        return "mixed";
+      }
+      else{
+        return "vanilla";
+      }
+    }
   }
   catch(e){
+    return "";
   }
+}
 
-  return haslegionunit;
+model.isLegion = function (data){
+ if(model.isLegionOrMixedOrVanilla(data) === "legion"){
+    return true;
+ }
+ else{
+    return false;
+ }
+};
+
+model.isMixed = function (data){
+ if(model.isLegionOrMixedOrVanilla(data) === "mixed"){
+    return true;
+ }
+ else{
+    return false;
+ }
 };
 
 //ADD legion class to build_bar_menu
-$('.div_build_bar_menu_cont').attr("data-bind","css: { legion: model.isLegion($data)}");
+$('.div_build_bar_menu_cont').attr("data-bind","css: { legion: model.isLegion($data), mixed: model.isMixed($data)}");
