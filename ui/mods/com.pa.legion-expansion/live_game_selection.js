@@ -26,5 +26,8 @@ model.isLegion = function (type){
 //ADD legion class to build_bar_menu
 $('.div_unit_selection').attr("data-bind","css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $root.onTypeFilterClick($data.type, event); } }");
 
+handlers.legionui = function(payload){
+  console.log(payload);
+}
 
 console.log("selection legion");

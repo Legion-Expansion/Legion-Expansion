@@ -1,0 +1,7 @@
+.legionui .div_player_list_cont {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-left-legionui.png) 17 47 47 17 fill !important;
+}
+
+.mixedui .div_player_list_cont {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-left-mixedui.png) 17 47 47 17 fill !important;
+}

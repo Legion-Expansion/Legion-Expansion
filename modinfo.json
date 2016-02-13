@@ -26,6 +26,9 @@
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
     ],
+    "live_game_players": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
+    ],
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
     ],
