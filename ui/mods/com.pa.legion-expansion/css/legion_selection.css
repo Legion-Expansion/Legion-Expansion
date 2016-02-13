@@ -25,3 +25,11 @@
 .mixedui .div_selection_cont {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png) 35 35 23 35 fill !important;
 }
+
+.legionui .div_selection_cont .wrapper {
+  box-shadow: 0px 0px 50px rgba(158, 0, 0, 0.5) !important;
+}
+
+.mixedui .div_selection_cont .wrapper {
+  box-shadow: 0px 0px 50px rgba(99, 14, 138, 0.5) !important;
+}
