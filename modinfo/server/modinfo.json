@@ -33,6 +33,9 @@
     "live_game_planets": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_planets.js"
     ],
+    "live_game_control_group_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar.js"
+    ],
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
     ],

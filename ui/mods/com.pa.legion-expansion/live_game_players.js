@@ -54,6 +54,7 @@ model.isMixed = function (){
 
 api.Panel.message("selection","legionui", model.isLegionOrMixedOrVanilla());
 api.Panel.message("planets","legionui", model.isLegionOrMixedOrVanilla());
+api.Panel.message("control_group_bar","legionui", model.isLegionOrMixedOrVanilla());
 
 $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
 
