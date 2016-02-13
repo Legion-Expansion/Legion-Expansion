@@ -51,10 +51,18 @@ model.isMixed = function (){
     return false;
  }
 };
+model.legionstart = ko.observable(false);
 
-api.Panel.message("selection","legionui", model.isLegionOrMixedOrVanilla());
-api.Panel.message("planets","legionui", model.isLegionOrMixedOrVanilla());
-api.Panel.message("control_group_bar","legionui", model.isLegionOrMixedOrVanilla());
+model.player.subscribe(function(newval){
+    if(!model.legionstart()){
+        var ui = model.isLegionOrMixedOrVanilla();
+        api.Panel.message("selection","legionui", ui);
+        api.Panel.message("planets","legionui", ui);
+        api.Panel.message("control_group_bar","legionui", ui);
+        model.legionstart(true);   
+    }
+});
+
 
 $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
 

@@ -2,6 +2,19 @@
     border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-left-legionui.png) 17 17 47 47 fill !important;
 }
 
+.legionui .list_control_btn:hover {
+        background: #970000;
+        border: 1px solid #970000;
+        box-shadow: inset 0px 0px 10px #970000;
+    }
+
+    .legionui .list_control_btn:active {
+        background: #900000;
+        border: 1px solid #900000;
+        box-shadow: inset 0px 0px 10px #900000;
+    }
+
+
 .mixedui .div_planet_list_cont {
     border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-left-mixedui.png) 17 17 47 47 fill !important;
 }
