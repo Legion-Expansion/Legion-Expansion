@@ -27,7 +27,13 @@ model.isLegion = function (type){
 $('.div_unit_selection').attr("data-bind","css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $root.onTypeFilterClick($data.type, event); } }");
 
 handlers.legionui = function(payload){
-  console.log(payload);
+  console.log("SET UI : " + payload);
+  if(payload === "legion"){
+    $('.body_panel').addClass("legionui");
+  }
+  if(payload === "mixed"){
+    $('.body_panel').addClass("mixedui");
+  }
 }
 
 console.log("selection legion");

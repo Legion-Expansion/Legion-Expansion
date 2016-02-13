@@ -52,7 +52,7 @@ model.isMixed = function (){
  }
 };
 
-api.Panel.message(api.Panel.parentId,'legionui', model.isLegionOrMixedOrVanilla());
+api.Panel.message("selection","legionui", model.isLegionOrMixedOrVanilla());
 
 $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
 
