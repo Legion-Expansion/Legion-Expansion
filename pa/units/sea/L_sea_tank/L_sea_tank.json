@@ -13,7 +13,7 @@
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
 	"build_metal_cost": 3800,
 	"description": "Stealth Sea Tank - Short Range Cannon Blasters. Undetectable by radar.",
-	"display_name": "Billy",
+	"display_name": "Chimaera",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/sea"
