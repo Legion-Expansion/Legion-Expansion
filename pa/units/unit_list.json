@@ -278,11 +278,11 @@
 		"/pa/units/land/artillery_unit_launcher/artillery_unit_launcher.json",
 		"/pa/units/air/L_titan_air/L_titan_air.json",
 		"/pa/units/land/L_titan_vehicle/L_titan_vehicle.json",
-		"/pa/units/orbital/L_titan_orbital/titan_orbital.json",
+		"/pa/units/orbital/L_titan_orbital/L_titan_orbital.json",
 		"/pa/units/orbital/excal/excal.json",
 		"/pa/units/orbital/hammerhead/hammerhead.json",
 		"/pa/units/orbital/sentinel/sentinel.json",
 		"/pa/units/orbital/wraith/wraith.json",
-		"/pa/units/land/L_titan_structure/titan_structure.json"
+		"/pa/units/land/L_titan_structure/L_titan_structure.json"
 	]
 }
