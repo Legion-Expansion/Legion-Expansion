@@ -71,7 +71,6 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Naval",
     "UNITTYPE_Defense",
-    "UNITTYPE_CombatFabBuild",
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_Custom1"
   ],
