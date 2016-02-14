@@ -103,7 +103,7 @@
             "muzzle_bone": "bone_fire02"
         },
         {
-            "spec_id": "/pa/units/land/tesla/tesla_anti_tac.json",
+            "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json",
             "aim_bone": "bone_pitch01",
             "muzzle_bone": "bone_muzzle01"
         }
