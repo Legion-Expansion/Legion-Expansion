@@ -17,7 +17,7 @@
 	"UNITTYPE_Titan",
 	"UNITTYPE_Important",
 	"UNITTYPE_FabOrbBuild",
-		"UNITTYPE_Custom2"],
+		"UNITTYPE_Custom1"],
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist"],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {

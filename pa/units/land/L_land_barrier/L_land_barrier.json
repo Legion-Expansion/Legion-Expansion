@@ -33,21 +33,19 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "physics": {
-    "air_friction": 1,
-    "allow_pushing": false,
-    "allow_underground": false,
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "ignore_collisions": false,
-    "push_class": 255,
-    "push_sideways": false,
-    "radius": 1,
-    "shape": "Box",
-    "type": "Structure"
-  },
+	"physics": {
+		"type": "Structure",
+		"shape": "Box",
+		"collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+		"radius": 1,
+		"air_friction": 1.0,
+		"allow_pushing": false,
+		"push_sideways": false,
+		"allow_underground": false
+	},
   "placement_size": [
-    3,
-    3
+    4,
+    4
   ],
   "recon": {
     "observer": {
@@ -85,5 +83,23 @@
       "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier_tool_weapon.json"
     }
   ],
+	"structure": {
+		"cost_stamp": {
+			"shape": "box",
+			"type_data": [{
+				"move_type": "land-small",
+				"stamp_type": "wall"
+			}, {
+				"move_type": "amphibious",
+				"stamp_type": "wall"
+			}, {
+				"move_type": "deepwater",
+				"stamp_type": "wall"
+			}, {
+				"move_type": "underwater",
+				"stamp_type": "wall"
+			}]
+		}
+	},
   "wreckage_health_frac": 0.2
 }

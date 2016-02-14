@@ -115,7 +115,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle_build_arm.json"
+      "spec_id": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat_build_arm.json"
     }
   ],
   "transportable": {
