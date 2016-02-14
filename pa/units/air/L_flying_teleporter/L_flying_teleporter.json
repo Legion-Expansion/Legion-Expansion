@@ -25,7 +25,6 @@
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Advanced",
 		"UNITTYPE_FabAdvBuild",
-		"UNITTYPE_CombatFabAdvBuild",
 		"UNITTYPE_Important",
 		"UNITTYPE_Custom1"
 	],
