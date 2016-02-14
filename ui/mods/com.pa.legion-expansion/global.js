@@ -574,13 +574,13 @@
         spec_id: "/pa/units/orbital/L_mining_platform/L_mining_platform.json",
         si_fallback: ["mining_platform"],
         preferred_builds: [
-          ["L_orbital", 8]
+          ["L_orbital_structure", 8]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json",
         si_fallback: ["orbital_factory"],
         preferred_builds: [
-          ["L_orbital", 9]
+          ["L_orbital_structure", 9]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.json",
@@ -616,7 +616,7 @@
         spec_id: "/pa/units/orbital/sentinel/sentinel.json",
         si_fallback: ["orbital_probe"],
         preferred_builds: [
-          ["L_orbital", 16]
+          ["L_orbital_structure", 16]
         ]
       },
 
@@ -673,13 +673,13 @@
           ["L_factory", 4]
         ]
       }, {
-        spec_id: "/pa/units/orbital/L_titan_orbital/titan_orbital.json",
+        spec_id: "/pa/units/orbital/L_titan_orbital/l_titan_orbital.json",
         si_fallback: ["titan_orbital"],
         preferred_builds: [
           ["L_orbital_structure", 6]
         ]
       }, {
-        spec_id: "/pa/units/land/L_titan_structure/titan_structure.json",
+        spec_id: "/pa/units/land/L_titan_structure/l_titan_structure.json",
         si_fallback: ["titan_structure"],
         preferred_builds: [
           ["L_utility", 0]
