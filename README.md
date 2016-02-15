@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Legion-Expansion/Legion-Expansion.png?label=ready&title=Ready)](https://waffle.io/Legion-Expansion/Legion-Expansion)
 # Legion Expansion Server & Client Mods
 
 Please do not commit untested or broken files to the master branch :-)
