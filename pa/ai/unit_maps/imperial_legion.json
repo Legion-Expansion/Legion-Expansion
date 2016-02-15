@@ -66,6 +66,9 @@
     "LegionBotAdvancedTactical": {
       "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
     },
+    "LegionBotAdvancedBomb": {
+      "spec_id": "/pa/units/land/L_necromancer/L_necromancer.json"
+    },
     "LegionBotBasicAA": {
       "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa.json"
     },
