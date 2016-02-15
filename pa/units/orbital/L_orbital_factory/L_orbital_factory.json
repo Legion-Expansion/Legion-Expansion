@@ -26,7 +26,7 @@
     "ORDER_Assist"
   ],
   "description": "Builds Advanced Orbital Units. Consumes Energy and Metal.",
-  "display_name": "Orbital Foundry",
+  "display_name": "Starship Foundry",
   "enable_orbital_shell": true,
   "events": {
     "died": {
