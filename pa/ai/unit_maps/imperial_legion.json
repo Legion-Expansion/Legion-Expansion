@@ -22,7 +22,7 @@
       "spec_id": "/pa/units/air/L_gunship/L_gunship.json"
     },
     "LegionAirAdvancedBomber": {
-      "spec_id": "/pa/units/air/L_bomber_adv/L_bomber_adv.json"
+      "spec_id": "/pa/units/air/L_firestarter/L_firestarter.json"
     },
     "LegionAirAdvancedCarrier": {
       "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier.json"
@@ -52,7 +52,7 @@
       "spec_id": "/pa/units/air/L_transport/L_transport.json"
     },
     "LegionBotAdvancedAA": {
-      "spec_id": "/pa/units/land/L_bot_tactical_missile/L_bot_tactical_missile.json"
+      "spec_id": "/pa/units/land/L_bot_aa_adv/L_bot_aa_adv.json"
     },
     "LegionBotAdvancedArtillery": {
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery.json"
@@ -201,8 +201,8 @@
     "LegionNavalAdvancedFabberSub": {
       "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json"
     },
-    "LegionNavalAdvancedSub": {
-      "spec_id": "/pa/units/sea/L_nuclear_sub/L_nuclear_sub.json"
+    "LegionNavalAdvancedTank": {
+      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
     },
     "LegionNavalAdvancedTactical": {
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship.json"
@@ -218,9 +218,6 @@
     },
     "LegionNavalBasicScout": {
       "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout.json"
-    },
-    "LegionNavalAdvancedTank": {
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
     },
     "LegionNavalBasicSub": {
       "spec_id": "/pa/units/sea/L_attack_sub/L_attack_sub.json"
