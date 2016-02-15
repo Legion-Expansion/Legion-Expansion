@@ -23,7 +23,7 @@
 		"ORDER_Assist"
 	],
 	"description": "Launches Satellites and Basic Orbital Units.",
-	"display_name": "Orbital Launcher",
+	"display_name": "Starship Projector",
 	"enable_orbital_shell": true,
 	"events": {
 		"died": {
