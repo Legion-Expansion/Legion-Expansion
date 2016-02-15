@@ -4,7 +4,7 @@
 	"damage": 7.5,
 	"splash_damage": 7.5,	
 	"splash_radius": 3,
-	"full_damage_splash_radius": 1
+	"full_damage_splash_radius": 1,
 	"collision_check": "target",
 	"collision_response": "impact",
 	"fx_beam_spec": "/pa/units/land/L_sniper_bot/beam_trail.pfx",
