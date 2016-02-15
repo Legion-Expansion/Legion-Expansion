@@ -71,7 +71,7 @@
 	"recon": {
 		"observable": {
 			"ignore_radar": true,
-			"layer": "underwater"
+			"layer": "surface_and_air"
 		},
 		"observer": {
 			"items": [{
