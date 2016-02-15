@@ -135,6 +135,9 @@
     "LegionDefenseBasicOrbital": {
       "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense.json"
     },
+    "LegionDefenseBasicSwarm": {
+      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive.json"
+    },
     "LegionEcoAdvancedEnergyPlant": {
       "spec_id": "/pa/units/land/L_energy_plant_adv/L_energy_plant_adv.json"
     },
@@ -162,6 +165,9 @@
     "LegionFactoryAdvancedVehicle": {
       "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
     },
+    "LegionFactoryAdvancedOrbital": {
+      "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json"
+    },
     "LegionFactoryBasicAir": {
       "spec_id": "/pa/units/air/L_air_factory/L_air_factory.json"
     },
@@ -173,6 +179,9 @@
     },
     "LegionFactoryBasicVehicle": {
       "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
+    },
+    "LegionFactoryBasicOrbital": {
+      "spec_id": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.json"
     },
     "LegionIntelAdvancedRadar": {
       "spec_id": "/pa/units/land/L_radar_adv/L_radar_adv.json"
@@ -206,6 +215,9 @@
     },
     "LegionNavalBasicScout": {
       "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout.json"
+    },
+    "LegionNavalAdvancedTank": {
+      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
     },
     "LegionNavalBasicSub": {
       "spec_id": "/pa/units/sea/L_attack_sub/L_attack_sub.json"
@@ -258,11 +270,11 @@
     "LegionVehicleBasicFabber": {
       "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
     },
+    "LegionVehicleBasicCFab": {
+      "spec_id": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json"
+    },
     "LegionVehicleBasicHover": {
       "spec_id": "/pa/units/land/L_hover_tank/L_hover_tank.json"
-    },
-    "LegionVehicleBasicScout": {
-      "spec_id": "/pa/units/land/L_land_scout/L_land_scout.json"
     },
     "LegionVehicleBasicLaser": {
       "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"
