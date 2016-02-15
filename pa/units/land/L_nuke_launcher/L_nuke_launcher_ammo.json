@@ -17,8 +17,8 @@
         "radius_accel": -40,
         "radius_velocity": 200
     },
-    "description": "!LOC(units:nuclear_missile_long_range_large_area_damage_projectile.message):Nuclear missile - Long range, large area damage, projectile",
-    "display_name": "Supernova” Strategic Warhead",
+    "description": "Long range, high damage ballistic missile.",
+    "display_name": "Supernova Strategic Warhead",
     "enable_orbital_shell": true,
     "events": {
         "collided": {
