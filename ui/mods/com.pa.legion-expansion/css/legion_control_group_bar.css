@@ -1,14 +1,11 @@
 .legionui .div_group_select .bground {
     border: 1px solid #970000;
     box-shadow: 0px 0px 10px rgba(158, 0, 0, 0.5);
-    background: linear-gradient(to top, #000 0%, #970000 100%);
+    background: linear-gradient(to top, #4d0000 0%, #970000 100%);
 }
 
-
-.mixedui .div_group_select .bground  {
-    border: 1px solid #660066;
-    box-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
-    background: linear-gradient(to top, #000 0%, #660066 100%);
+.watermark_empty {
+    background: blue;
 }
 
 .legionui .unit_group_menu {
@@ -35,13 +32,28 @@
     .legionui .unit_group_item .numkey {
         color: #970000;
         background: black;
-        border: 1px solid #970000;
+        border: 1px solid #4d0000;
     }
+    
+    .unit_group_item .total {
+        flex-grow: 1;
+        color: #000;
+    }    
 
     
 .legionui .active {
-    background: rgba(158,0,0,1) !important;
+    background: rgba(130,0,0,1) !important;
     border: 1px solid #910000 !important;
-}    
+} 
+
+.legionui .btn_std_ix:hover {
+    box-shadow: inset 0px 0px 10px #970000 !important;
+}   
 
 /*TODO MIXEDUI */
+
+.mixedui .div_group_select .bground  {
+    border: 1px solid #660066;
+    box-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
+    background: linear-gradient(to top, #000 0%, #660066 100%);
+}
