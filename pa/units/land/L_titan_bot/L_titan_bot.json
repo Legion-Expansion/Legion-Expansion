@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Atlas",
-	"description": "!LOC:Seismic Titan- Devastating damage to everything nearby. Amphibious. Attacks land, sea, and undersea targets.",
+	"display_name": "Anubis",
+	"description": "Laser Titan. Lasers everything into oblivion. Amphibious. Attacks land, sea, and undersea targets.",
 	"max_health": 40000,
 	"build_metal_cost": 30000,
 	"atrophy_rate": 200.0,
