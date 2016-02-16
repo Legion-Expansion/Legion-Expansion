@@ -33,7 +33,7 @@
         }
 	],
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 600,
+  "build_metal_cost": 650,
   "description": "Light Submarine. Attacks Aquatic Targets.",
   "display_name": "Nymph",
   "events": {
@@ -51,7 +51,7 @@
     }
   },
   "guard_layer": "WL_AnyWater",
-  "max_health": 610,
+  "max_health": 510,
   "mesh_bounds": [
     4,
     15,
@@ -64,7 +64,7 @@
   "navigation": {
     "acceleration": 40,
     "brake": 120,
-    "move_speed": 12,
+    "move_speed": 15,
     "turn_speed": 60,
     "type": "underwater"
   },
@@ -80,13 +80,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 135,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 135,
           "shape": "capsule"
         }
       ]
