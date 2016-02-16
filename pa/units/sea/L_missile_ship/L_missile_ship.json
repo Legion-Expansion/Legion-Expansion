@@ -131,7 +131,7 @@
         "rocket001",
         "rocket002",
         "rocket003"
-      ]
+      ],
       "record_index": 5,
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_rocket_tool_weapon.json"
     },
@@ -142,7 +142,7 @@
         "rocket001",
         "rocket002",
         "rocket003"
-      ]
+      ],
       "record_index": 5,
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_antiuc_tool_weapon.json"
     }
