@@ -57,15 +57,20 @@ loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 var legioncommanders = legionglobal.commanders;
 var vanillacommanders = ["/pa/units/commanders/quad_osiris/quad_osiris.json","/pa/units/commanders/imperial_delta/imperial_delta.json"];
 
-model.isNotLegion = function(commander){
+model.isNotLegion = function(commander,isEmpty){
+  if(!isEmpty){
     return !_.includes(legioncommanders, commander);
+  }
+  else{
+    return true;
+  }
 }
 
 //Style Commander Picker Legion
 $('.div-commander-picker-item.btn_std_ix').attr("data-bind","css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'");
 
 //Style Slot Legion
-$('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander()), ready: isReady, loading: isLoading}");
+$('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
 
 
 model.changeLegionAI = function(playerid){
