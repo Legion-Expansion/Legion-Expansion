@@ -4,7 +4,7 @@
 	"exclude_unit_types": "Hover", 
 	"spawn_layers": "WL_Underwater",
 	"rate_of_fire": 1.5,
-	"max_range": 190,
+	"max_range": 180,
 	"yaw_rate": 360,
 	"pitch_rate": 360,
 	"yaw_range": 180,
