@@ -46,7 +46,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 3000,
+  "max_health": 3500,
   "mesh_bounds": [
     7,
     32,
@@ -134,6 +134,17 @@
       ]
       "record_index": 5,
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_rocket_tool_weapon.json"
+    },
+    {
+      "aim_bone": "rocket002",
+      "fire_event": "fired5",
+      "muzzle_bone": [
+        "rocket001",
+        "rocket002",
+        "rocket003"
+      ]
+      "record_index": 5,
+      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_antiuc_tool_weapon.json"
     }
   ],
   "unit_types": [
