@@ -7,9 +7,9 @@
 		"filename": "/pa/effects/specs/wave.pfx",
 		"offset": [0.0, 0.0, 0.0]
 	},
-	"damage": 400,
-	"splash_damage": 0,
-	"splash_radius": 0,
+	"damage": 525,
+	"splash_damage": 400,
+	"splash_radius": 50,
 	"initial_velocity": 100.0,
 	"max_velocity": 100.0,
 	"lifetime": 3,
