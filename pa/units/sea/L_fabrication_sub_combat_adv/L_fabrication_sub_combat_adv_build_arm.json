@@ -5,8 +5,8 @@
 	"max_range": 30,
 	"auto_repair": true,
 	"construction_demand": {
-		"energy": 2000,
-		"metal": 120
+		"energy": 1000,
+		"metal": 60
 	},
 	"can_only_assist_with_buildable_items": true
 }
