@@ -5,7 +5,7 @@ loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 //see global.js
 var legioncomms = legionglobal.commanders;
 
-model.isLegionOrMixedOrVanilla = function () {
+model.isLegionOrMixedOrVanilla = ko.computed(function () {
   try{
     var legioncount = 0;
     var specslength = 0;
@@ -32,25 +32,26 @@ model.isLegionOrMixedOrVanilla = function () {
   catch(e){
     return "";
   }
-}
+});
 
-model.isLegion = function (){
+model.isLegion = ko.computed(function (){
  if(model.isLegionOrMixedOrVanilla() === "legion"){
     return true;
  }
  else{
     return false;
  }
-};
+});
 
-model.isMixed = function (){
+model.isMixed = ko.computed(function (){
  if(model.isLegionOrMixedOrVanilla() === "mixed"){
     return true;
  }
  else{
     return false;
  }
-};
+});
+
 model.legionstart = ko.observable(false);
 
 model.player.subscribe(function(newval){
@@ -59,9 +60,8 @@ model.player.subscribe(function(newval){
         api.Panel.message("selection","legionui", ui);
         api.Panel.message("planets","legionui", ui);
         api.Panel.message("control_group_bar","legionui", ui);
-        $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
-        model.legionstart(true);   
+        model.legionstart(true);
     }
 });
-
+$('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
 console.log("players legion");
