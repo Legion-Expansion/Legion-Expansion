@@ -11,7 +11,7 @@
 		}
 	},
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
-	"build_metal_cost": 3800,
+	"build_metal_cost": 2650,
 	"description": "Stealth Sea Tank - Short Range Cannon Blasters. Undetectable by radar.",
 	"display_name": "Chimaera",
 	"events": {
@@ -127,7 +127,7 @@
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
 		"UNITTYPE_Advanced",
-        "UNITTYPE_Tactical",
+        	"UNITTYPE_Tactical",
 		"UNITTYPE_FactoryBuild",
 		"UNITTYPE_Custom1"
 	]
