@@ -10,23 +10,27 @@ model.isLegionOrMixedOrVanilla = ko.computed(function () {
     var legioncount = 0;
     var specslength = 0;
     var selectedspecs = model.player().commanders;
-    
-    _.forOwn(selectedspecs, function(value, key){
-      if(_.includes(legioncomms, value)){
-        legioncount++;
-      }
-      specslength++; 
-    });
-    if(legioncount == specslength){
-      return "legion";
-    }
-    else{
-      if(legioncount > 0 && legioncount < specslength){
-        return "mixed";
+    if (selectedspecs !== undefined){
+      _.forOwn(selectedspecs, function(value, key){
+        if(_.includes(legioncomms, value)){
+          legioncount++;
+        }
+        specslength++; 
+      });
+      if(legioncount == specslength){
+        return "legion";
       }
       else{
-        return "vanilla";
+        if(legioncount > 0 && legioncount < specslength){
+          return "mixed";
+        }
+        else{
+          return "vanilla";
+        }
       }
+    }
+    else{
+      return "vanilla";
     }
   }
   catch(e){
