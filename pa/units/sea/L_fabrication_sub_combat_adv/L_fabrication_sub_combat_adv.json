@@ -31,7 +31,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 2100,
+  "build_metal_cost": 1000,
   "buildable_types": "Custom1 & CombatFabAdvBuild",
   "command_caps": [
     "ORDER_Move",
@@ -69,7 +69,7 @@
 		"filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx"
 	}
   ],
-  "max_health": 300,
+  "max_health": 800,
   "mesh_bounds": [
     10,
     22,
@@ -83,7 +83,7 @@
 		"type": "underwater",
 		"acceleration": 40,
 		"brake": 120,
-		"move_speed": 12,
+		"move_speed": 10,
 		"turn_speed": 60,
 		"turn_accel": 30
 	},
@@ -98,13 +98,19 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 100,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 100,
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 150,
           "shape": "capsule"
         }
       ]

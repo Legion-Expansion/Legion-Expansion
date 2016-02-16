@@ -59,11 +59,9 @@ model.player.subscribe(function(newval){
         api.Panel.message("selection","legionui", ui);
         api.Panel.message("planets","legionui", ui);
         api.Panel.message("control_group_bar","legionui", ui);
+        $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
         model.legionstart(true);   
     }
 });
-
-
-$('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
 
 console.log("players legion");
