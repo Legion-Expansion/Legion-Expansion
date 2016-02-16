@@ -1,7 +1,14 @@
 {
 	"base_spec": "/pa/ammo/base_artillery/base_artillery.json",
 	"damage": 5000,
-	"splash_damage": 2000,
+	"damage_volume": {
+        "burnable_remove_radius": 30,
+        "delay": 1,
+        "initial_radius": 10,
+        "radius_accel": -10,
+        "radius_velocity": 60
+    },
+	"splash_damage": 5000,
 	"splash_damages_allies": false,
 	"splash_radius": 20,
 	"full_damage_splash_radius": 0,

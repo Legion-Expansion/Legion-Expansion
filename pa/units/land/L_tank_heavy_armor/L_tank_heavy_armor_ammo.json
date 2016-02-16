@@ -1,11 +1,14 @@
 {
+	"armor_damage_map": {
+		"AT_Air": 0.0
+	},
     "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
-    "damage": 700,
+    "damage": 2000,
     "damage_volume": {
-        "initial_radius": 5,
-        "radius_velocity": 80,
+        "initial_radius": 10,
+        "radius_velocity": 100,
         "radius_accel": 0,
-        "delay": 0.1
+        "delay": 0
     },
     "death": {
         "decals": [
@@ -17,14 +20,15 @@
             "effect_spec": "/pa/effects/specs/none.pfx"
         }
     },
-    "full_damage_splash_radius": 5,
+    "full_damage_splash_radius": 20,
     "fx_trail": {
         "effect_spec": "/pa/effects/specs/none.pfx"
     },
+	"sim_impact_effect": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_shake.json",
     "initial_velocity": 15,
     "lifetime": 3,
     "max_velocity": 15,
     "model": {},
-    "splash_damage": 700,
-    "splash_radius": 35
+    "splash_damage": 750,
+    "splash_radius": 70
 }

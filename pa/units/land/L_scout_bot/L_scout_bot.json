@@ -70,7 +70,7 @@
 	"navigation": {
 		"acceleration": 350,
 		"brake": 250,
-		"move_speed": 23,
+		"move_speed": 35,
 		"turn_speed": 720,
 		"type": "amphibious"
 	},

@@ -10,6 +10,5 @@
 	"pitch_range": 89,
 	"spread_fire": true,
 	"auto_attack": true,
-	"target_layers": ["WL_Air",
-	"WL_LandHorizontal"]
+	"target_layers": ["WL_Air"]
 }

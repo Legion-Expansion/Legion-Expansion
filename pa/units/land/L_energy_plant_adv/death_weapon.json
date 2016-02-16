@@ -1,18 +1,18 @@
 {
 	"ammo_type": "PBAOE",
-	"damage": 600,
-	"splash_radius": 40,
-	"splash_damage": 300,
-	"full_damage_splash_radius": 10,
+	"damage": 6000,
+	"splash_radius": 3000,
+	"splash_damage": 100,
+	"full_damage_splash_radius": 20,
 	"splash_damages_allies": true,
 	"burn_damage": 200,
-	"burn_radius": 70,
+	"burn_radius": 100,
 	"damage_volume": {
 		"initial_radius": 20.0,
 		"radius_velocity": 110.0,
 		"radius_accel": -20.0,
 		"delay": 5,
-		"burnable_remove_radius": 100.0
+		"burnable_remove_radius": 80.0
 	},
 	"armor_damage_map": {
 		"AT_Orbital": 0.0

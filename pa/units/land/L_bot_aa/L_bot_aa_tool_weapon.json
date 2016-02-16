@@ -4,13 +4,13 @@
   "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
   "max_range": 100,
   "pitch_range": 85,
-  "pitch_rate": 3600,
-  "rate_of_fire": 2,
+  "pitch_rate": 720,
+  "rate_of_fire": 0.5,
   "idle_aim_delay": 3,
   "spread_fire": true,
   "target_layers": [
     "WL_Air"
   ],
   "yaw_range": 180,
-  "yaw_rate": 3600
+  "yaw_rate": 720
 }

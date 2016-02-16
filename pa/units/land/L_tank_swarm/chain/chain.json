@@ -1,0 +1,71 @@
+{
+	"base_spec": "/pa/units/land/base_bot/base_bot.json",
+	"display_name": "Chain",
+	"description": "Chain Lightning",
+	"max_health": 40,
+	"build_metal_cost": 90,
+	"guard_radius": 15,
+	"unit_types": ["UNITTYPE_Land", "UNITTYPE_Hover"],
+	"guard_layer": "WL_LandHorizontal",
+	"navigation": {
+		"type": "hover",
+		"acceleration": 0,
+		"brake": 0,
+		"move_speed": 0,
+		"turn_speed": 1080,
+		"wobble_factor": 0.1,
+		"wobble_speed": 0.2
+	},
+	"physics": {
+		"radius": 0,
+		"allow_pushing": true
+	},
+	"wreckage_health_frac": 0.0,
+	"recon": {
+		"observer": {
+			"items": [{
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 10
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 10
+			}]
+		}
+	},
+	"model": {},
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"record_index": 0
+		},
+		{
+			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain_death_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"record_index": 0
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/bot/spark_fire"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+			"effect_scale": 0.4
+		}
+	},
+	"TEMP_texelinfo": 5.39039,
+	"mesh_bounds": [
+		0.1,
+		0.1,
+		0.1
+	]
+}

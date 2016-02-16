@@ -32,8 +32,8 @@
 	"description": "Radar vision but immobile",
 	"display_name": "Scout Bot Radar mode",
 	"command_caps": [
-    "ORDER_FireSecondaryWeapon"
-  ],
+		"ORDER_FireSecondaryWeapon"
+    ],	
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/bot"
@@ -165,7 +165,6 @@
 		"UNITTYPE_Bot",
 		"UNITTYPE_Scout",
 		"UNITTYPE_Mobile",
-		"UNITTYPE_Offense",
 		"UNITTYPE_Land",
 		"UNITTYPE_Basic",
 		"UNITTYPE_Custom1"

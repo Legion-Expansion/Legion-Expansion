@@ -45,7 +45,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 170,
+  "max_health": 200,
   "mesh_bounds": [
     4,
     2,
@@ -63,7 +63,7 @@
   "navigation": {
     "acceleration": 50,
     "brake": 50,
-    "move_speed": 18,
+    "move_speed": 16,
     "turn_speed": 720,
     "type": "amphibious"
   },

@@ -1,8 +1,8 @@
 {
 	"base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
 	"ammo_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv_ammo.json",
-	"rate_of_fire": 2,
-	"max_range": 100,
+	"rate_of_fire": 1.5,
+	"max_range": 110,
 	"yaw_rate": 50,
 	"pitch_rate": 180,
 	"yaw_range": 180,

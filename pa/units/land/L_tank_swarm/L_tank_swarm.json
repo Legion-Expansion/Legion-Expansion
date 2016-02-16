@@ -1,19 +1,52 @@
 {
-	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Sloth",
-	"description": "Deploys swarm bevies. Targets land and sea.",
-	"max_health": 300,
-	"build_metal_cost": 750,
+	"TEMP_texelinfo": 9.31488,
+	"mesh_bounds": [
+		7,
+		7.5,
+		3.8
+	],
 	"attachable": {
 		"offsets": {
 			"root": [0, 0, 0],
 			"head": [0, 0, 3.1]
 		}
 	},
-	"unit_types": ["UNITTYPE_Tank", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_AirDefense", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
-	"transportable": {
-		"size": 1
+	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+	"display_name": "Slothtest",
+	"description": "Healing pulse",
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/veh"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/bot/spark_fire"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Veh",
+			"effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+			"effect_scale": 1.0
+		}
 	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
+	"max_health": 750,
+	"build_metal_cost": 900,
+	"command_caps": [
+		"ORDER_Move",
+		"ORDER_Attack",
+		"ORDER_Patrol",
+		"ORDER_Assist",
+		"ORDER_Use",
+		"ORDER_FireSecondaryWeapon"
+	],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "land-small",
@@ -71,35 +104,20 @@
 		"arrows": 5
 	},
 	"nearby_target_tick_update_interval": 15,
-	"tools": [{
-		"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json",
-		"aim_bone": "socket_aim",
-		"muzzle_bone": ["gun001", "gun002", "gun003", "gun004", "gun005", "gun006"]
-	}],
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/veh"
-		},
-		"fired": {
-			"audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-			"effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle04"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Veh",
-			"effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-			"effect_scale": 1.0
-		}
-	},
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		}
-	},
+	"tools": [
+		{
+			"aim_bone": "bone_root",
+			"muzzle_bone": [
+				"gun001",
+				"gun002",
+				"gun003",
+				"gun004",
+				"gun005",
+				"gun006"
+			],
+			"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
+		}		
+	],
   "scrolling_uv": {
     "scroll_rate": 0.5,
     "uv_split": 0.9
@@ -107,6 +125,17 @@
 	"selection_icon": {
 		"diameter": -14.0
 	},
-	"TEMP_texelinfo": 9.31488,
-	"mesh_bounds": [7, 7.5, 3.8]
+	"transportable": {
+		"size": 1
+	},
+	"unit_types": [
+		"UNITTYPE_Tank",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_AirDefense",
+		"UNITTYPE_Land", 
+		"UNITTYPE_Advanced",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+	]
 }
