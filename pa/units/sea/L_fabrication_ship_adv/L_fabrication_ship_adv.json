@@ -41,7 +41,7 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "Builds Advanced Strcutures. Can Build Exclusive Water Units.",
+  "description": "Builds Advanced Structures. Can Build Exclusive Water Units.",
   "display_name": "Advanced Fabrication Barge",
   "events": {
     "build_complete": {
@@ -55,45 +55,25 @@
   },
   "fx_offsets": [
     {
-      "bone": "socket_rightMuzzle",
+      "bone": "socket_latheRight",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-      "offset": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
       "type": "build"
     },
     {
-      "bone": "socket_leftMuzzle",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "bone": "socket_latheLeft",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     }
   ],
   "max_health": 450,
   "mesh_bounds": [
-    6.8,
-    15,
-    6.6
+    6.309,
+    15.39,
+    8.097
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-    "filename": "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv.papa"
+    "filename": "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.papa"
   },
   "navigation": {
     "acceleration": 100,
