@@ -25,8 +25,8 @@
         }
     },
     "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-    "build_metal_cost": 90,
-    "description": "Advanced Mobile AA. Medium Range. Attacks Air.",
+    "build_metal_cost": 850,
+    "description": "Advanced Mobile AA. Attacks Air.",
     "display_name": "Orbweaver",
     "events": {
         "build_complete": {
@@ -42,7 +42,7 @@
         }
     },
     "guard_layer": "WL_Air",
-    "max_health": 230,
+    "max_health": 400,
     "mesh_bounds": [
         4.5,
         3,

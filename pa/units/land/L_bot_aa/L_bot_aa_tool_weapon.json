@@ -5,7 +5,7 @@
   "max_range": 100,
   "pitch_range": 85,
   "pitch_rate": 720,
-  "rate_of_fire": 0.5,
+  "rate_of_fire": 1,
   "idle_aim_delay": 3,
   "spread_fire": true,
   "target_layers": [
