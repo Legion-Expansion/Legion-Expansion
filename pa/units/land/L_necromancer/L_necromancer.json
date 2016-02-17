@@ -59,7 +59,7 @@
 		},
 		"animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
 		"filename": "/pa/units/land/L_necromancer/L_necromancer.papa",
-		"walk_speed": 3.33333
+		"walk_speed": 3.4
 	},
 	"navigation": {
 		"acceleration": 80,
