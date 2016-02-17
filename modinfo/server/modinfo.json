@@ -36,8 +36,17 @@
     "live_game_control_group_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar.js"
     ],
+    "live_game_options_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar.js"
+    ],
+    "live_game_econ": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_econ.js"
+    ],    
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
+    ],
+    "live_game_build_hover": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover.js"
     ],
     "live_game_action_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"

@@ -64,6 +64,9 @@ model.player.subscribe(function(newval){
         api.Panel.message("selection","legionui", ui);
         api.Panel.message("planets","legionui", ui);
         api.Panel.message("control_group_bar","legionui", ui);
+        api.Panel.message("econ","legionui", ui);
+        api.Panel.message("options_bar","legionui", ui);
+        api.Panel.message("build_hover","legionui", ui);
         model.legionstart(true);
     }
 });

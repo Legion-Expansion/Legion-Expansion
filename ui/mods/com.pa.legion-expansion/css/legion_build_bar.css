@@ -1,5 +1,5 @@
-.div_build_bar_menu_cont.legion {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png) 35 35 23 35 fill;
+.legion .div_build_bar_menu_cont {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png) 35 35 23 35 fill !important;
 }
 .legion .div_build_bar_page{   
     border-left: 1px solid #970000;
@@ -11,6 +11,13 @@
     border-right-color:#970000;
     border-bottom-color:#970000;
 }
+
+.legion .div_build_item:hover {
+    background: rgba(255,0,0,0.8);
+    border:1px solid rgba(158, 0, 0, 0.5) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.8) !important;
+}
+
 .legion .span_build_bar_tab {
     color: #FF0000;
     text-shadow: 0px 0px 30px #FF0000;
@@ -20,8 +27,8 @@
     background: #1D1D1D;
 }
 
-.div_build_bar_menu_cont.mixed {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png) 35 35 23 35 fill;
+.mixed .div_build_bar_menu_cont {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png) 35 35 23 35 fill !important;
 }
 .mixed .div_build_bar_page{   
     border-left: 1px solid #660066;

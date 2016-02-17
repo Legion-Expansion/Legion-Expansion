@@ -118,5 +118,5 @@ model.isMixed = function (data){
  }
 };
 
-//ADD legion class to build_bar_menu
-$('.div_build_bar_menu_cont').attr("data-bind","css: { legion: model.isLegion($data), mixed: model.isMixed($data)}");
+//ADD legion / mixed ui
+$('.body_panel').attr("data-bind","css: { legion: model.isLegion($data), mixed: model.isMixed($data)}");
