@@ -570,6 +570,13 @@
         preferred_builds: [
           ["L_orbital", 7]
         ]
+      },
+      {
+        spec_id: "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.json",
+        si_fallback: ["mining_platform"],
+        preferred_builds: [
+          ["L_orbital_structure", 7]
+        ]
       }, {
         spec_id: "/pa/units/orbital/L_mining_platform/L_mining_platform.json",
         si_fallback: ["mining_platform"],
