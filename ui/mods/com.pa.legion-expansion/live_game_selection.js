@@ -20,23 +20,30 @@ if ( ! legionExpansionLoaded )
 
         //see global.js
         var legionspecids = legionglobal.commanders;
+        
+        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
 
         model.isLegion = function (type){
-        haslegionunit = false;
-        try{
-            if(_.includes(legionspecids, type)){
-                haslegionunit = true;
-                return haslegionunit;
-            }
-            if(type.indexOf("/L_") > 2){
-                haslegionunit = true;
-                return haslegionunit;
-            }
-        }
-        catch(e){
-        }
+            if(themesetting === "ON"){
+                haslegionunit = false;
+                try{
+                    if(_.includes(legionspecids, type)){
+                        haslegionunit = true;
+                        return haslegionunit;
+                    }
+                    if(type.indexOf("/L_") > 2){
+                        haslegionunit = true;
+                        return haslegionunit;
+                    }
+                }
+                catch(e){
+                }
 
-        return haslegionunit;
+                return haslegionunit;
+            }
+            else{
+                return false;
+            }
         };
 
         //ADD legion class to build_bar_menu

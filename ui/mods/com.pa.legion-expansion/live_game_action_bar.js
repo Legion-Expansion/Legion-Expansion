@@ -20,36 +20,44 @@ if ( ! legionExpansionLoaded )
 
         //see global.js
         var legionspecids = legionglobal.commanders;
+        
+        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
 
         model.isLegionOrMixedOrVanilla = function (data) {
-          try{
-            var legioncount = 0;
-            var specslength = 0;
-            var selectedspecs = data.selection().spec_ids;
-            
-            _.forOwn(selectedspecs, function(value, key){
-              if(_.includes(legionspecids, key)){
-                legioncount++;
-              }
-              if(key.indexOf("/L_") > 2){
-                legioncount++;
-              }
-              specslength++; 
-            });
-            if(legioncount == specslength){
-              return "legion";
+          
+            if(themesetting === "ON"){    
+                try{          
+                    var legioncount = 0;
+                    var specslength = 0;
+                    var selectedspecs = data.selection().spec_ids;
+                    
+                    _.forOwn(selectedspecs, function(value, key){
+                        if(_.includes(legionspecids, key)){
+                            legioncount++;
+                        }
+                        if(key.indexOf("/L_") > 2){
+                            legioncount++;
+                        }
+                        specslength++; 
+                    });
+                    if(legioncount == specslength){
+                        return "legion";
+                    }
+                    else{
+                        if(legioncount > 0 && legioncount < specslength){
+                            return "mixed";
+                        }
+                        else{
+                            return "vanilla";
+                        }
+                    }
             }
-            else{
-              if(legioncount > 0 && legioncount < specslength){
-                return "mixed";
-              }
-              else{
-                return "vanilla";
-              }
+            catch(e){
+                return "";
             }
           }
-          catch(e){
-            return "";
+          else{
+              return "vanilla";
           }
         }
 

@@ -77,29 +77,44 @@ if ( ! legionExpansionLoaded )
 
         model.player.subscribe(function(newval){
             if(!model.legionstart()){
-                var ui = model.isLegionOrMixedOrVanilla();
-                api.Panel.message("selection","legionui", ui);
-                api.Panel.message("planets","legionui", ui);
-                api.Panel.message("control_group_bar","legionui", ui);
-                api.Panel.message("econ","legionui", ui);
-                api.Panel.message("options_bar","legionui", ui);
-                api.Panel.message("build_hover","legionui", ui);
+                var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
                 
-                if(ui === "legion"){
+                if(themesetting === "ON"){
+                    var ui = model.isLegionOrMixedOrVanilla();
+                    api.Panel.message("selection","legionui", ui);
+                    api.Panel.message("planets","legionui", ui);
+                    api.Panel.message("control_group_bar","legionui", ui);
+                    api.Panel.message("econ","legionui", ui);
+                    api.Panel.message("options_bar","legionui", ui);
+                    api.Panel.message("build_hover","legionui", ui);
+                    api.Panel.message("time_bar","legionui", ui);
                     
-                    var toggleImage = function(open) {
-                        return open ? 'coui://ui/mods/com.pa.legion-expansion/img/controls/pin_open.png' : 'coui://ui/mods/com.pa.legion-expansion/img/controls/pin_closed.png';
-                    };
-                    
-                    model.playerPanelToggleImage = ko.computed(function() { return toggleImage(model.showPlayerListPanel()); });
-                    model.spectatorPanelToggleImage = ko.computed(function() { return toggleImage(model.showSpectatorPanel()); });
+                    if(ui === "legion"){
+                        
+                        var toggleImage = function(open) {
+                            return open ? 'coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png' : 'coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png';
+                        };
+                        
+                        model.playerPanelToggleImage = ko.computed(function() { return toggleImage(model.showPlayerListPanel()); });
+                        model.spectatorPanelToggleImage = ko.computed(function() { return toggleImage(model.showSpectatorPanel()); });
 
-                    
-                    $('img[src="coui://ui/main/shared/img/controls/pin_open.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/pin_open.png");
-                    $('img[src="coui://ui/main/shared/img/controls/pin_closed.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/pin_closed.png");    
-                }
-                if(ui === "mixed"){
-                    
+                        
+                        $('img[src="coui://ui/main/shared/img/controls/pin_open.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png");
+                        $('img[src="coui://ui/main/shared/img/controls/pin_closed.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png");    
+                    }
+                    if(ui === "mixed"){
+                        var toggleImage = function(open) {
+                            return open ? 'coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png' : 'coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png';
+                        };
+                        
+                        model.playerPanelToggleImage = ko.computed(function() { return toggleImage(model.showPlayerListPanel()); });
+                        model.spectatorPanelToggleImage = ko.computed(function() { return toggleImage(model.showSpectatorPanel()); });
+
+                        
+                        $('img[src="coui://ui/main/shared/img/controls/red/pin_open.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png");
+                        $('img[src="coui://ui/main/shared/img/controls/red/pin_closed.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png");                        
+                        
+                    }
                 }
                 model.legionstart(true);
             }
@@ -107,8 +122,6 @@ if ( ! legionExpansionLoaded )
         
         $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
         
-        
-
     }
 
     try
