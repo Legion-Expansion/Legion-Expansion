@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 650,
+  "build_metal_cost": 720,
   "description": "Medium Range Anti-Land Anti-Sea Vessel.",
   "display_name": "Bowhead",
   "events": {
@@ -39,7 +39,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 1700,
+  "max_health": 2300,
   "mesh_bounds": [
     4,
     24,
@@ -70,13 +70,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 160,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 140,
+          "radius": 150,
           "shape": "capsule"
         }
       ]

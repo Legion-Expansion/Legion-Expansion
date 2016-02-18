@@ -11,9 +11,9 @@
 		}
 	},
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
-	"build_metal_cost": 3000,
-	"description": "Stealth Sea Tank - Short Range Cannon Blasters. Undetectable by radar.",
-	"display_name": "Chimaera",
+	"build_metal_cost": 3750,
+	"description": "Bigger is always better - short range cannon blasters",
+	"display_name": "Turtle",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/sea"
@@ -39,7 +39,7 @@
 			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle005 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle006 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle007 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle008"
 		}
 	},
-	"max_health": 8000,
+	"max_health": 10000,
 	"mesh_bounds": [
 		15.396,
 		35.345,
@@ -57,9 +57,9 @@
 		"filename": "/pa/units/sea/L_sea_tank/L_sea_tank.papa"
 	},
   "navigation": {
-    "acceleration": 30,
-    "brake": 80,
-    "move_speed": 8,
+    "acceleration": 2,
+    "brake": 4,
+    "move_speed": 16,
     "turn_speed": 20,
     "type": "deepwater"
   },
@@ -90,44 +90,39 @@
 	"selection_icon": {
 		"diameter": -44
 	},
-  "spawn_layers": "WL_WaterSurface",
-	"tools": [{
-		"aim_bone": "bone_pitchLeft",
-		"fire_event": "fired0",
-		"muzzle_bone": [
-			"socket_muzzle001",
-			"socket_muzzle002",
-			"socket_muzzle003",
-			"socket_muzzle004"
-		],
-		"projectiles_per_fire": 4,
-		"record_index": 0,
-		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
-	}, {
-		"aim_bone": "bone_pitchRight",
-		"fire_event": "fired1",
-		"muzzle_bone": [
-			"socket_muzzle005",
-			"socket_muzzle006",
-			"socket_muzzle007",
-			"socket_muzzle008"
-		],
-		"projectiles_per_fire": 4,
-		"record_index": 1,
-		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
-	}, {
-		"aim_bone": "bone_torpedoTurret",
-		"fire_event": "fired2",
-		"muzzle_bone": "bone_torpedoMuzzle",
-		"record_index": 2,
-		"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_torpedo_weapon.json"
-	}],
+	"spawn_layers": "WL_WaterSurface",
+	"tools": [
+		{
+			"aim_bone": "bone_pitchLeft",
+			"fire_event": "fired0",
+			"muzzle_bone": [
+				"socket_muzzle001",
+				"socket_muzzle002",
+				"socket_muzzle003",
+				"socket_muzzle004"
+			],
+			"record_index": 0,
+			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+		}, 
+		{
+			"aim_bone": "bone_pitchRight",
+			"fire_event": "fired1",
+			"muzzle_bone": [
+				"socket_muzzle005",
+				"socket_muzzle006",
+				"socket_muzzle007",
+				"socket_muzzle008"
+			],
+			"record_index": 1,
+			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+		}
+	],
 	"unit_types": [
 		"UNITTYPE_Naval",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
 		"UNITTYPE_Advanced",
-        	"UNITTYPE_Tactical",
+        "UNITTYPE_Tactical",
 		"UNITTYPE_FactoryBuild",
 		"UNITTYPE_Custom1"
 	]
