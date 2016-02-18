@@ -21,6 +21,7 @@ if ( ! legionExpansionLoaded )
 
         //see global.js
         var legioncomms = legionglobal.commanders;
+        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
 
         model.isLegionOrMixedOrVanilla = ko.computed(function () {
         try{
@@ -77,7 +78,7 @@ if ( ! legionExpansionLoaded )
 
         model.player.subscribe(function(newval){
             if(!model.legionstart()){
-                var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+                
                 
                 if(themesetting === "ON"){
                     var ui = model.isLegionOrMixedOrVanilla();
@@ -120,7 +121,9 @@ if ( ! legionExpansionLoaded )
             }
         });
         
-        $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
+        if(themesetting === "ON"){
+            $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
+        }
         
     }
 
