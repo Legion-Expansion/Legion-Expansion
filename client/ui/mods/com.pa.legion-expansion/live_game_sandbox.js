@@ -30,9 +30,6 @@ if ( ! legionExpansionLoaded )
                 'L_sea',
                 'L_orbital')
         }
-        if (model.miscUnits) {
-            model.miscUnits.push('/pa/units/commanders/imperial_fiveleafclover/imperial_fiveleafclover.json')
-        }
     }
 
     try
