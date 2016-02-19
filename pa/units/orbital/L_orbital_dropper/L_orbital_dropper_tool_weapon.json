@@ -1,0 +1,21 @@
+{
+	"base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+	"tool_type": "TOOL_Weapon",
+	"ammo_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+	"force_fire_from_muzzle":true,
+	"ammo_source": "factory",
+	"idle_aim_delay": 5,
+	"rate_of_fire": 1,
+	"max_range": 30,
+	"yaw_rate": 0,
+	"pitch_rate": 0,
+	"yaw_range": 0,
+	"pitch_range": 0,
+	"firing_arc_yaw": 10,
+	"firing_arc_pitch": 10,
+	"manual_fire": true,
+	"carpet_fire": true,
+	"auto_attack": false,
+	"auto_task_type": "none",
+	"target_layers": ["WL_LandHorizontal"]
+}
