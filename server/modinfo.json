@@ -12,8 +12,6 @@
   "date": "2016/03/26",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
-    "com.wondible.pa.icon_extensions",
-    "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.legion-expansion.client-balance"
