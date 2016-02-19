@@ -4,7 +4,7 @@
 	"splash_radius": 110,
 	"full_damage_splash_radius": 20,
 	"splash_damages_allies": true,
-	"sim_fire_effect": "/pa/effects/specs/default_commander_explosion_ent.json",
+	"sim_fire_effect": "/pa/units/land/L_necromancer/death_weapon/necromancer_explosion.json",
 	"impact_decals": ["/pa/effects/specs/nuke_scorch_01.json"],
 	"burn_damage": 200,
 	"burn_radius": 137,
