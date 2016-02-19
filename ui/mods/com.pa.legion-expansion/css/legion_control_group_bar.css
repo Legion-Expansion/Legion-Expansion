@@ -1,7 +1,7 @@
 .legionui .div_group_select .bground {
     border: 1px solid #970000;
     box-shadow: 0px 0px 10px rgba(158, 0, 0, 0.5);
-    background: linear-gradient(to top, #4d0000 0%, #970000 100%);
+    background: linear-gradient(to top, rgba(130,0,0,0.2) 0%, rgba(158,0,0,0.5) 50%);
 }
 
 .watermark_empty {
@@ -48,6 +48,8 @@
 
 .legionui .btn_std_ix:hover {
     box-shadow: inset 0px 0px 10px #970000 !important;
+    background: rgba(255,0,0,0.8);
+    border:1px solid rgba(158, 0, 0, 0.5) !important;  
 }   
 
 /*TODO MIXEDUI */

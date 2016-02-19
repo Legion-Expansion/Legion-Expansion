@@ -4,11 +4,11 @@
 	"atrophy_cool_down": 15.0,
 	"atrophy_rate": 10.0,
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
-	"build_metal_cost": 800,
+	"build_metal_cost": 1400,
 	"command_caps": [
 		"ORDER_Attack"
 	],
-	"description": "Heavy Anti-Ship Defense. Attacks Naval Targets.",
+	"description": "Heavy Anti-Ship Defense. Attacks Naval Targets waves and heavy torpedos.",
 	"display_name": "Tsunami",
 	"events": {
 		"build_complete": {
@@ -23,7 +23,7 @@
 		}
 	},
 	"guard_layer": "WL_WaterSurface",
-	"max_health": 2000,
+	"max_health": 4200,
 	"mesh_bounds": [
 		12,
 		6,

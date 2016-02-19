@@ -1,9 +1,10 @@
 {
 	"base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
 	"ammo_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_ammo_underwater.json",
+	"exclude_unit_types": "Hover", 
 	"spawn_layers": "WL_Underwater",
-	"rate_of_fire": 0.8,
-	"max_range": 200,
+	"rate_of_fire": 0.4,
+	"max_range": 350,
 	"yaw_rate": 360,
 	"pitch_rate": 360,
 	"yaw_range": 180,
