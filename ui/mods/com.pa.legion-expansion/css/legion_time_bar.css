@@ -1,0 +1,18 @@
+.legionui .div_time_progress_frame {
+    border: 1px solid rgba(255, 0, 0, 1) !important;
+}
+.legionui .time_progress {
+    border: 1px solid rgba(255, 0, 0, 1) !important;
+    background: rgba(70, 0, 0, 1) !important;
+    box-shadow: 0px 0px 20px rgba(255, 18, 18, 0.5) !important;
+}
+
+.legionui .btn_play_pause_toggle_pause {
+    background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_pause.png) top center no-repeat !important;
+}
+
+.legionui .btn_play_pause_toggle_play {
+    background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_play.png) top center no-repeat !important;
+}
+
+/* MIXED */
