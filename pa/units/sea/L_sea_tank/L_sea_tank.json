@@ -35,8 +35,7 @@
 		},
 		"fired2": {
 			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
-			"effect_scale": 1.0,
-			"effect_spec": "/pa/effects/specs/small_gun_smoke.pfx bone_torpedoMuzzle"
+			"effect_scale": 1.0
 		},
 		"fired3": {
 			"effect_scale": 3.0,
@@ -126,8 +125,8 @@
 			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_torpedo_tool_weapon.json"
 		},
 		{
-			"aim_bone": "bone_root",
-			"muzzle_bone": "bone_root",
+			"aim_bone": "bone_rammer",
+			"muzzle_bone": "bone_rammer",
 			"fire_event": "fired3",
 			"record_index": 3,
 			"primary_weapon": true,
