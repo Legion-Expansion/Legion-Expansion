@@ -78,17 +78,31 @@
 }
 
 .mixedui .div_unit_selection {
-    border: 1px solid rgba(0,179,255,1);
+    border: 1px solid rgba(160,0,0,0.8) !important;
     background: rgba(0, 20, 30, 1);
-    box-shadow: inset 0px 0px 8px rgba(99, 14, 138, 0.5) !important;
+    box-shadow: inset 0px 0px 8px rgba(255, 18, 18, 0.5) !important;
 }
 
     .mixedui .div_unit_selection:hover {
-        border: 1px solid rgba(0,179,255,1);
-        background: rgba(0,179,255,1);
+        border: 1px solid rgba(160,0,0,0.8) !important;
+        background: rgba(160,0,0,0.8) !important;
     }
 
     .mixedui .div_unit_selection:active {
-        border: 1px solid rgba(0,255,255,1);
-        background: rgba(0,255,255,1);
+        border: 1px solid rgba(255,0,0,0.8) !important;
+        background: rgba(255,0,0,0.8) !important;
     }
+
+.mixedui .summary_bar {
+   border-top: 1px solid rgba(255,0,0,0.8);
+}
+    
+.mixedui .unit_total {
+    text-shadow: 0px 0px 10px rgba(160,0,0,0.8);
+}
+
+.mixedui .summary_category.btn_std_ix {
+    text-shadow: rgba(160,0,0,0.8) !important;
+    border: 1px solid rgba(255,0,0,0.8) !important;
+    color:rgba(160,0,0,0.8) !important;
+}

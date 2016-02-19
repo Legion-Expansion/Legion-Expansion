@@ -31,6 +31,11 @@
 }
 
 .mixedui .btn_std_ix:hover {
-    color: rgba(255,0,0,0.8);
-    text-shadow: 0px 0px 10px rgba(158, 0, 0, 0.5);
+    color: #663399;
+    text-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
+}
+
+.mixedui .span_tooltip_hotkey {
+    border:1px solid rgba(99, 14, 138, 0.5) !important;
+    color: #663399 !important;
 }

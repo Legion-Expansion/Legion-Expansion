@@ -77,4 +77,22 @@
     .legionui .btn_jump_control_fwd {
         background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_jump_fwd.png) center right no-repeat !important;
     }
+
+.legionui .btn_std_idx.btn_video_option {
+        border: 1px solid rgba(70, 0, 0, .5) !important;
+    color:rgba(255, 0, 0, 1) !important;
+    text-shadow:0px 0px 10px rgba(255, 0, 0, 1) !important;
+}
+    
+.legionui .btn_std_idx:hover {
+        background: #970000;
+        border: 1px solid #970000;
+        box-shadow: inset 0px 0px 10px #970000;
+    }
+
+    .legionui .btn_std_idx:active {
+        background: #900000;
+        border: 1px solid #900000;
+        box-shadow: inset 0px 0px 10px #900000;
+    }    
 /* MIXED */

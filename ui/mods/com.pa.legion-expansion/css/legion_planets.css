@@ -50,57 +50,65 @@
 .legionui .btn_planet_thumb.btn_planet_thumb_active {
     background:rgba(255,0,0,0.8) !important;
 }
+
+.legionui .planet_title {
+    color:#FFF !important;
+}
 /* MIXED */
 .mixedui .div_planet_list_cont {
     border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-right-mixed.png) 17 17 47 47 fill !important;
 }
 
 .mixedui .div_planet_list_item_group {
-    border: 1px solid rgba(255, 0, 0, 1) !important;
-    background: rgba(70, 0, 0, 1) !important;
-    box-shadow: inset 0px 0px 10px rgba(255, 18, 18, 0.5) !important;
+    border: 1px solid #663399 !important;
+    background: #660099 !important;
+    box-shadow: inset 0px 0px 10px rgba(99, 14, 138, 0.5) !important;
 }
     .mixedui .div_planet_list_item_group:hover {
-        border: 1px solid rgba(160,0,0,0.8) !important;
-        background: rgba(160,0,0,0.8) !important;
+        border: 1px solid #660066 !important;
+        background: rgba(99, 14, 138, 0.5) !important;
     }
 
     .mixedui .div_planet_list_item_group:active {
-        border: 1px solid rgba(255,0,0,0.8) !important;
-        background: rgba(255,0,0,0.8) !important;
-        box-shadow: inset 0px 0px 10px rgba(99, 14, 138, 0.5) !important;;
+        border: 1px solid #660066 !important;
+        background: #660099 !important;
+        box-shadow: inset 0px 0px 10px rgba(99, 14, 138, 0.5) !important;
     }
 
 .mixedui .list_control_btn:hover {
-        background: #970000;
-        border: 1px solid #970000;
-        box-shadow: inset 0px 0px 10px #970000;
+        background: #660099;
+        border: 1px solid #660066;
+        box-shadow: inset 0px 0px 10px #660066;
     }
 
     .mixedui .list_control_btn:active {
-        background: #900000;
-        border: 1px solid #900000;
-        box-shadow: inset 0px 0px 10px #900000;
+        background: #660099;
+        border: 1px solid #660099;
+        box-shadow: inset 0px 0px 10px #660099;
     }
 .mixedui .div_planet_list_item_active {
-    background:rgba(255,0,0,0.8) !important;
-    box-shadow: inset 0px 0px 10px #970000 !important;
+    background:#660099 !important;
+    box-shadow: inset 0px 0px 10px #660099 !important;
 }
 
 .mixedui .div_planet_list_panel {
-    color:#970000 !important;
-    text-shadow: 0px 0px 10px #970000 !important;
+    color:#660099 !important;
+    text-shadow: 0px 0px 10px #660099 !important;
 }
 
 .mixedui .btn_planet_thumb {
-    border: 1px solid rgba(255,0,0,0.8) !important;
+    border: 1px solid #660099 !important;
     box-shadow: inset 0px 0px 10px rgba(99, 14, 138, 0.5) !important;
 }
 
     .mixedui .btn_planet_thumb:hover {
-        background:rgba(255,0,0,0.8) !important;
+        background:#660099 !important;
     }
 
 .mixedui .btn_planet_thumb.btn_planet_thumb_active {
-    background:rgba(255,0,0,0.8) !important;
+    background:#660099 !important;
+}
+
+.mixedui .planet_title {
+    color:#FFF !important;
 }
