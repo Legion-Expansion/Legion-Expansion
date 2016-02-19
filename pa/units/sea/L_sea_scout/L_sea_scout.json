@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 190,
+  "build_metal_cost": 200,
   "description": "Light Scout. Fast. Attacks Land, Sea, and Air.",
   "display_name": "Dogfish",
   "events": {
@@ -27,7 +27,7 @@
       "audio_cue": "/SE/Weapons/bot/sniper_fire"
     }
   },
-  "max_health": 260,
+  "max_health": 250,
   "mesh_bounds": [
     4.401,
     12.124,
@@ -40,7 +40,7 @@
   "navigation": {
     "acceleration": 90,
     "brake": 200,
-    "move_speed": 18,
+    "move_speed": 20,
     "turn_in_place": false,
     "turn_speed": 180,
     "type": "deepwater"

@@ -11,8 +11,8 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 650,
-  "description": "Medium Range AA. Attacks Air.",
+  "build_metal_cost": 550,
+  "description": "Medium Range anti-air Ship. Only attacks air",
   "display_name": "Talos",
   "events": {
     "build_complete": {
@@ -23,28 +23,23 @@
       "effect_scale": 0.75
     },
     "fired0": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
+      "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+	  "effect_scale": 0.5,
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01b"
     },
     "fired1": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
+      "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+	  "effect_scale": 0.5,
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02b"
     },
     "fired2": {
-      "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_scale": 0.5,
+      "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
+	  "effect_scale": 0.5,
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03a /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03b"
-    },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/sea/torpedo_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 1600,
+  "max_health": 650,
   "mesh_bounds": [
     6,
     15,
@@ -97,6 +92,7 @@
         "socket_muzzle01a",
         "socket_muzzle01b"
       ],
+	  "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
     },
@@ -107,6 +103,7 @@
         "socket_muzzle02a",
         "socket_muzzle02b"
       ],
+	  "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
     },
@@ -117,6 +114,7 @@
         "socket_muzzle03a",
         "socket_muzzle03b"
       ],
+	  "projectiles_per_fire": 2,
       "record_index": 2,
       "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
     }

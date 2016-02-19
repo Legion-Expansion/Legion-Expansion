@@ -5,10 +5,10 @@
   "exclude_unit_types": "Hover",
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,
-  "max_range": 100,
+  "max_range": 90,
   "pitch_range": 360,
   "pitch_rate": 3600,
-  "rate_of_fire": 0.2,
+  "rate_of_fire": 0.3,
   "spread_fire": true,
   "target_layers": [
     "WL_WaterSurface",

@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/ammo/torpedo/torpedo.json",
-	"damage": 510,
-	"initial_velocity": 70.0,
+	"damage": 250,
+	"initial_velocity": 10.0,
 	"max_velocity": 50.0,
 	"lifetime": 8.0,
 	"turn_rate": 150,

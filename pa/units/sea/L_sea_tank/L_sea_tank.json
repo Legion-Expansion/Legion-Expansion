@@ -11,8 +11,8 @@
 		}
 	},
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
-	"build_metal_cost": 3750,
-	"description": "Bigger is always better - short range cannon blasters",
+	"build_metal_cost": 4000,
+	"description": "Short range cannon, can ram enemy ships",
 	"display_name": "Turtle",
 	"events": {
 		"build_complete": {
@@ -23,27 +23,31 @@
 			"effect_scale": 1.5,
 			"effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
 		},
-		"fired2": {
-			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
-			"effect_scale": 2.0,
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_torpedoMuzzle"
-		},
 		"fired0": {
-			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
 			"effect_scale": 2.0,
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle001 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle002 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle003 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle004"
+			"effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_muzzle001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle003 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle004"
 		},
 		"fired1": {
-			"audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
 			"effect_scale": 2.0,
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle005 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle006 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle007 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle008"
-		}
+			"effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_muzzle005 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle006 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle007 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle008"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
+			"effect_scale": 1.0,
+			"effect_spec": "/pa/effects/specs/small_gun_smoke.pfx bone_torpedoMuzzle"
+		},
+		"fired3": {
+			"effect_scale": 3.0,
+			"audio_cue": "/SE/Impacts/shell_artillery"
+		}	
 	},
-	"max_health": 10000,
+	"max_health": 14000,
 	"mesh_bounds": [
 		15.396,
 		35.345,
-		17.576
+		15
 	],
 	"fx_offsets": [{
 		"type": "moving_forward",
@@ -57,22 +61,18 @@
 		"filename": "/pa/units/sea/L_sea_tank/L_sea_tank.papa"
 	},
   "navigation": {
-    "acceleration": 2,
-    "brake": 4,
-    "move_speed": 16,
-    "turn_speed": 20,
+    "acceleration": 3.6,
+    "brake": 15,
+    "move_speed": 18,
+    "turn_speed": 50,
     "type": "deepwater"
   },
   "physics": {
     "push_class": 2,
-    "radius": 3,
+    "radius": 11,
     "shape": "sphere"
   },
 	"recon": {
-		"observable": {
-			"ignore_radar": true,
-			"layer": "surface_and_air"
-		},
 		"observer": {
 			"items": [{
 				"channel": "sight",
@@ -102,6 +102,7 @@
 				"socket_muzzle004"
 			],
 			"record_index": 0,
+			"projectiles_per_fire": 2,
 			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
 		}, 
 		{
@@ -114,7 +115,23 @@
 				"socket_muzzle008"
 			],
 			"record_index": 1,
+			"projectiles_per_fire": 2,
 			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+		},
+		{
+			"aim_bone": "bone_torpedoTurret",
+			"muzzle_bone": "bone_torpedoMuzzle",
+			"fire_event": "fired2",
+			"record_index": 2,
+			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_torpedo_tool_weapon.json"
+		},
+		{
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root",
+			"fire_event": "fired3",
+			"record_index": 3,
+			"primary_weapon": true,
+			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_ram_tool_weapon.json"
 		}
 	],
 	"unit_types": [

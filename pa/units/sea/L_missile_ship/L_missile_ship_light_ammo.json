@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 27.5,
+  "damage": 10,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
@@ -15,9 +15,9 @@
       0.0
     ]
   },
-  "initial_velocity": 160,
-  "lifetime": 2.8,
-  "max_velocity": 160,
-  "splash_damage": 0,
-  "splash_radius": 3
+  "initial_velocity": 	220,
+  "lifetime": 0.8,
+  "max_velocity": 220,
+  "splash_damage": 10,
+  "splash_radius": 1
 }
