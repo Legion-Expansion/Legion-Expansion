@@ -41,23 +41,13 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_radarPivot01",
+      "bone": "bone_top_thing001",
       "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish01_on.pfx",
       "type": "energy"
     },
     {
-      "bone": "bone_radarPivot02",
+      "bone": "bone_top_thing002",
       "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish02_on.pfx",
-      "type": "energy"
-    },
-    {
-      "bone": "bone_antenna01",
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx",
-      "type": "energy"
-    },
-    {
-      "bone": "bone_antenna02",
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_antenna_on.pfx",
       "type": "energy"
     }
   ],
@@ -70,12 +60,10 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_closed.papa",
-      "deploy": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_deploy.papa",
-      "open": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_anim_open.papa"
+		"idle": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
-    "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.papa"
+    "animtree": "/pa/anim/anim_trees/L_radar_satellite_adv_anim_tree.json",
+    "filename": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -134,6 +122,14 @@
   "selection_icon": {
     "diameter": -33
   },
+	"tools": [{
+		"spec_id": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_tool_weapon.json",
+		"aim_bone": "bone_turret",
+		"record_index": 0,
+		"fire_event": "fired",
+		"projectiles_per_fire": 2,
+		"muzzle_bone": ["socket_muzzle001", "socket_muzzle002"]
+	}],
   "spawn_layers": "WL_Orbital",
   "unit_types": [
     "UNITTYPE_Mobile",

@@ -1,0 +1,35 @@
+{
+	"blend_root": {
+		"type": "unit_state",
+		"nodes": {
+			"being_built": {
+				"type": "bind_pose"
+			},
+			"living": {
+				"type": "playback",
+				"anim_name": "idle"
+			},
+			"dead": {
+				"type": "bind_pose"
+			},
+			"ghost": {
+				"type": "bind_pose"
+			}
+		}
+	},
+	"skeleton_controls": [{
+		"bone": "bone_recoil",
+		"recoil_dist": 1.5,
+		"restore_time": 1,
+		"type": "recoil",
+		"unit_event": "fired"
+	}, {
+		"type": "procedural_aim",
+		"rotation_bone": "bone_pitch",
+		"rotation_axis": "x"
+	}, {
+		"type": "procedural_aim",
+		"rotation_bone": "bone_turret",
+		"rotation_axis": "z"
+	}]
+}
