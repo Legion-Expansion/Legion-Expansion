@@ -9,7 +9,15 @@
     //console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
 
     // the build groups are ordered to match the build bar tab order
-    HodgePodge.addUnits([{
+    HodgePodge.addUnits([
+	  
+	  {
+        spec_id: "/pa/units/commanders/tank_aeson/tank_aeson.json",
+        si_fallback: ["commander"]
+      },{
+        spec_id: "/pa/units/commanders/imperial_invictus/imperial_invictus.json",
+        si_fallback: ["commander"]
+      },{
         spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
         si_fallback: ["teleporter"],
         preferred_builds: [

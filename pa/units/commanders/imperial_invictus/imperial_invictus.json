@@ -105,6 +105,7 @@
     "selection_icon": {
         "diameter": -16.6
     },
+	"si_name": "L_commander",
     "mesh_bounds": [12.6, 6, 15.6193],
     "catalog_object_name": "InvictusCommander",
     "client": {

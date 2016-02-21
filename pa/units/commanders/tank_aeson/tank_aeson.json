@@ -86,6 +86,7 @@
         "scroll_rate": 0.4,
         "uv_split": 0.8
     },
+	"si_name": "L_commander",
     "tools": [{
         "aim_bone": "bone_turret",
         "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
