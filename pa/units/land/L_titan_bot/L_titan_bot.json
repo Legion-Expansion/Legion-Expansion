@@ -1,4 +1,5 @@
 {
+	"TEMP_texelinfo": 35.2973,
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "Anubis",
 	"description": "Laser Titan. Lasers everything into oblivion. Amphibious. Attacks land, sea, and undersea targets.",
@@ -9,22 +10,14 @@
 	"wreckage_health_frac": 0.7,
 	"guard_radius": 100,
 	"has_death_effects": true,
-	"unit_types": ["UNITTYPE_Bot",
-	"UNITTYPE_Mobile",
-	"UNITTYPE_Offense",
-	"UNITTYPE_Land",
-	"UNITTYPE_Advanced",
-	"UNITTYPE_Titan",
-	"UNITTYPE_Important",
-	"UNITTYPE_FabOrbBuild",
-		"UNITTYPE_Custom1"],
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist"],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "amphibious-large",
+		"aggressive_distance": 170,
 		"acceleration": 260,
 		"brake": -1.0,
-		"move_speed": 13,
+		"move_speed": 11,
 		"turn_speed": 60,
 		"turn_accel": 80,
 		"turn_in_place": true,
@@ -56,7 +49,7 @@
 		}
 	},
 	"physics": {
-		"radius": 15,
+		"radius": 12,
 		"orient_interp_rate": 60.0
 	},
 	"recon": {
@@ -84,7 +77,7 @@
 			"idle": ""
 		},
 		"animtree": "/pa/anim/anim_trees/L_titan_bot_anim_tree.json",
-		"walk_speed": 13
+		"walk_speed": 15
 	},
 	"tools": [
 		{
@@ -132,7 +125,7 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-			"effect_spec": "/pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftBottom /pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftTop"
+			"effect_spec": "/pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftBottom /pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftTop /pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx socket_muzzleLeftTop"
 		},
 		"fired1": {
 			"audio_cue": "/SE/Weapons/bot/sniper_fire",
@@ -177,16 +170,6 @@
 				36.5,
 				15
 			]
-		},
-		{
-			"bone": "bone_root",
-			"filename": "/pa/units/land/L_titan_bot/L_titan_bot_shake.json",
-			"type": "moving_forward",
-			"offset": [
-				0,
-				0,
-				0
-			]
 		}
 	],
 	"audio": {
@@ -208,6 +191,16 @@
 	"selection_icon": {
 		"diameter": -68.0
 	},
-	"mesh_bounds": [53, 52, 60],
-	"TEMP_texelinfo": 35.2973
+	"mesh_bounds": [40, 39, 60],
+	"unit_types": [
+		"UNITTYPE_Bot",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Land",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Titan",
+		"UNITTYPE_Important",
+		"UNITTYPE_FabOrbBuild",
+		"UNITTYPE_Custom1"
+	]
 }
