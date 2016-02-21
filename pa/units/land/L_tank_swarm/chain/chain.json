@@ -36,7 +36,6 @@
 			}]
 		}
 	},
-	"model": {},
 	"tools": [
 		{
 			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json",
