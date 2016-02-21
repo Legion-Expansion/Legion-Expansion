@@ -1,0 +1,28 @@
+{
+  "ammo_id": "/pa/units/land/L_titan_bot/L_titan_bot_rocket_ammo.json",
+  "ammo_source": "time",
+  "ammo_capacity": 24,
+  "ammo_demand": 1,
+  "ammo_per_shot": 3,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "firing_standard_deviation": 40,
+  "max_range": 180,
+  "pitch_range": 0,
+  "pitch_rate": 180,
+  "rate_of_fire": 3,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+	"WL_Air",
+	"WL_Orbital"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 0,
+  "yaw_rate": 180
+}

@@ -1,7 +1,9 @@
 {
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
 	"ammo_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_ammo_main.json",
-	"rate_of_fire": 0.3,
+	"min_firing_velocity": 110,
+	"max_firing_velocity": 400,
+	"rate_of_fire": 0.25,
 	"idle_aim_delay": 3,
 	"max_range": 400,
 	"yaw_rate": 60,
