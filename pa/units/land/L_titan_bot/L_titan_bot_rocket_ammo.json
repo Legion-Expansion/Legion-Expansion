@@ -11,23 +11,23 @@
   },
   "flight_type": "Staged",
   "influence_radius": 400,
-  "initial_velocity": 120.0,
+  "initial_velocity": 160.0,
   "lifetime": 10,
-  "max_velocity": 120.0,
+  "max_velocity": 160.0,
   "physics": {
     "add_to_spatial_db": true,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "radius": 1
   },
-  "splash_damage": 0,
-  "splash_radius": 0,
+  "splash_damage": 50,
+  "splash_radius": 15,
   "stages": [
     {
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_duration": 500,
+      "stage_duration": 200,
       "stage_turn_rate": 0
     },
     {
@@ -36,7 +36,7 @@
       "rotates_to_velocity": true,
       "stage_change_range": 70,
       "stage_duration": 0,
-      "stage_turn_rate": 120
+      "stage_turn_rate": 240
     },
     {
       "ignores_LOS": false,

@@ -54,7 +54,7 @@
 		}
 	},
 	"physics": {
-		"radius": 10,
+		"radius": 8,
 		"orient_interp_rate": 90.0
 	},
 	"recon": {
@@ -237,6 +237,6 @@
 	"selection_icon": {
 		"diameter": 68.0
 	},
-	"mesh_bounds": [47.17, 54.953, 22.469],
+	"mesh_bounds": [42, 49, 22.469],
 	"TEMP_texelinfo": 35.95324
 }
