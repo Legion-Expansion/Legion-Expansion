@@ -136,6 +136,9 @@
         preferred_builds: [
           ["L_combat", 10]
         ]
+      },{
+        spec_id: "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret.json",
+        si_fallback: ["laser_defense_single"]
       }, {
         spec_id: "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json",
         si_fallback: ["laser_defense_single"],
