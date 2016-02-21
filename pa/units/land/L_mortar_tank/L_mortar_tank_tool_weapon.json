@@ -6,7 +6,7 @@
 		}
 	],
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-	"rate_of_fire": 1.6,
+	"rate_of_fire": 1.5,
 	"idle_aim_delay": 3,
 	"max_range": 70,
 	"yaw_rate": 160,

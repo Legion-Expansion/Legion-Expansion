@@ -1,0 +1,12 @@
+{
+	"base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+	"ammo_id": "/pa/units/land/L_titan_bot/L_titan_bot_stomp_ammo.json",
+	"rate_of_fire": 2,
+	"max_range": 50,
+	"yaw_rate": 720,
+	"pitch_rate": 720,
+	"yaw_range": 360,
+	"pitch_range": 40,
+	"auto_attack": true,
+	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Seafloor"]
+}

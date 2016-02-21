@@ -59,7 +59,7 @@
 	},
 	"display_name": "Stoke",
 	"description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
-	"max_health": 260,
+	"max_health": 251,
 	"build_metal_cost": 200,	
 	"guard_layer": "WL_AnySurface",
 	"influence_radius": 400,
