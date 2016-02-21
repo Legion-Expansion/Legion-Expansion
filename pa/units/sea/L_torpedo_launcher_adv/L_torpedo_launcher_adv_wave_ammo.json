@@ -7,15 +7,15 @@
 		"filename": "/pa/effects/specs/wave.pfx",
 		"offset": [0.0, 0.0, 0.0]
 	},
-	"damage": 525,
-	"splash_damage": 400,
-	"splash_radius": 50,
-	"initial_velocity": 100.0,
-	"max_velocity": 100.0,
-	"lifetime": 3,
+	"damage": 125,
+	"splash_damage": 125,
+	"splash_radius": 40,
+	"initial_velocity": 40.0,
+	"max_velocity": 50.0,
+	"lifetime": 6,
 	"physics": {
 		"type": "Projectile",
-		"radius": 10,
+		"radius": 20,
 		"gravity_scalar": 3,
 		"add_to_spatial_db": false,
 		"allow_underground": true

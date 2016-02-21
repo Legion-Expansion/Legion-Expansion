@@ -1,180 +1,124 @@
 {
-  "TEMP_texelinfo": 22.4238,
-  "armor_type": "AT_Hover",
-  "attachable": {
+	"TEMP_texelinfo": 9.31488,
+	"attachable": {
 		"offsets": {
-			"root": [0, 0, 0],
-			"head": [0, 0, 2.7]
+			"head": [
+				0,
+				0,
+				3.1
+			],
+			"root": [
+				0,
+				0,
+				0
+			]
 		}
 	},
-  "audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/veh/tank_hover_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/veh/tank_hover"
-		}
-	},
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 450,
-  "description": "Short range Artillery. Attacks Land and Naval.",
-  "display_name": "Stoke",
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.4
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
-    }
-  },
-  "guard_layer": "WL_AnySurface",
-  "influence_radius": 400,
-  "max_health": 125,
-  "mesh_bounds": [
-	6.468,
-	7.765,
-	5.711
-  ],
-  "model": {
-		"filename": "/pa/units/land/L_hover_tank/L_hover_tank.papa",
-		"animations": {
-			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/L_hover_tank_anim_tree.json"
-	},
-  "navigation": {
-    "acceleration": 50,
-    "brake": 100,
-    "group_preference": "back",
-    "move_speed": 6,
-    "turn_speed": 50,
-    "type": "land-small"
-  },
-  "nearby_target_tick_update_interval": 15,
-  "physics": {
-		"radius": 3,
-		"air_friction": 0.5
-	},
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule"
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 100,
-          "shape": "capsule"
-        }
-      ]
-    }
-  },
-  "selection_icon": {
-		"diameter": -12.0
-	},
-	"fx_offsets": [
-		{
-			"type": "idle",
-			"filename": "/pa/effects/specs/hover_idle_01.pfx",
-			"bone": "bone_root",
-			"offset": [-2.86, -1.9, 0.96],
-			"orientation": [0, 0, -202.5]
-		}, 
-		{
-			"type": "idle",
-			"filename": "/pa/effects/specs/hover_idle_01.pfx",
-			"bone": "bone_root",
-			"offset": [2.86, -1.9, 0.96],
-			"orientation": [0, 0, 22.5]
-		}, 
-		{
-			"type": "idle",
-			"filename": "/pa/effects/specs/hover_idle_01.pfx",
-			"bone": "bone_root",
-			"offset": [2.13, 2.14, 2.22],
-			"orientation": [0, 0, -15]
-		}, 
-		{
-			"type": "idle",
-			"filename": "/pa/effects/specs/hover_idle_01.pfx",
-			"bone": "bone_root",
-			"offset": [-2.13, 2.14, 2.22],
-			"orientation": [0, 0, 195]
-		}
-	],
+	"events": {
+     "build_complete": {
+       "audio_cue": "/SE/Build_Complete/veh"
+     },
+     "died": {
+       "audio_cue": "/SE/Death/Veh",
+       "effect_scale": 1.4
+     },
+	 "fired0": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
+	  "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_muzzle"
+     },
+     "fired1": {
+       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
+	   "effect_scale": 1.0,
+	   "effect_spec": ""
+     }	 
+   },
 	"audio": {
 		"loops": {
-			"move": {
-				"cue": "/SE/Movement/veh/tank_hover_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/veh/tank_hover"
+		  "move": {
+			"cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+			"flag": "vel_changed",
+			"should_start_func": "is_moving",
+			"should_stop_func": "is_not_moving"
+		  }
 		}
 	},
-	"headlights": [
-		{
-			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-			"offset": [1.8, -2, 1.0],
-			"orientation": [0.0, 65.0, 0.0],
-			"near_width": 2.0,
-			"near_height": 2.0,
-			"near_distance": 1.2,
-			"far_distance": 20.0,
-			"color": [0.9, 0.92, 1.0],
-			"intensity": 1.4
-		}, 
-		{
-			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-			"offset": [-1.8, -2, 1.0],
-			"orientation": [0.0, 65.0, 0.0],
-			"near_width": 2.0,
-			"near_height": 2.0,
-			"near_distance": 1.2,
-			"far_distance": 20.0,
-			"color": [0.9, 0.92, 1.0],
-			"intensity": 1.4
-		}
+	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+	"model": {
+		"animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+		"arrows": 5,
+		"filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
+    },
+	"mesh_bounds": [
+		5,
+		7,
+		3
 	],
+	"physics": {
+		"radius": 4
+	},
+	"display_name": "Stoke",
+	"description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
+	"max_health": 260,
+	"build_metal_cost": 200,	
+	"guard_layer": "WL_AnySurface",
+	"influence_radius": 400,
+	"navigation": {
+		"acceleration": 20,
+		"brake": 20,
+		"move_speed": 14,
+		"turn_speed": 100,
+		"type": "amphibious"
+	},	
+	"recon": {
+		"observer": {
+		  "items": [
+			{
+			  "channel": "sight",
+			  "layer": "surface_and_air",
+			  "radius": 100,
+			  "shape": "capsule"
+			},
+			{
+			  "channel": "sight",
+			  "layer": "underwater",
+			  "radius": 150,
+			  "shape": "capsule"
+			}
+		  ]
+		}
+	},
 	"tools": [
 		{
-		"aim_bone": "bone_turret",
-		"muzzle_bone": [
-			"socket_muzzleLeft",
-			"socket_muzzleRight"
-		],
-		"projectiles_per_fire": 2,
-		"spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"		
+		  "aim_bone": "bone_turret",
+		  "fire_event": "fired0",
+		  "record_index": 0,
+		  "muzzle_bone": "socket_muzzle",
+		  "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
+		},
+		{
+		  "aim_bone": "bone_turret",
+		  "fire_event": "fired1",
+		  "record_index": 1,
+		  "muzzle_bone": "socket_muzzle",
+		  "show_range": false,
+		  "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_torpedo_tool_weapon.json"
 		}
+		
 	],
-  "transportable": {
-    "size": 1
-  },
-  "unit_types": [
-    "UNITTYPE_Tank",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-	"UNITTYPE_Hover", 
-    "UNITTYPE_Artillery",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
-  ]
+	"transportable": {
+		"size": 1
+	},
+	"selection_icon": {
+		"diameter": -11.0
+	},
+	"unit_types": [
+		"UNITTYPE_Tank",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Land",
+		"UNITTYPE_Basic",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+   ]
 }

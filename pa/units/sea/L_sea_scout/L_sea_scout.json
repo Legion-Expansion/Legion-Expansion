@@ -24,10 +24,10 @@
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/sea/sea_scout_fire"
+      "audio_cue": "/SE/Weapons/bot/sniper_fire"
     }
   },
-  "max_health": 220,
+  "max_health": 250,
   "mesh_bounds": [
     4.401,
     12.124,
@@ -40,7 +40,7 @@
   "navigation": {
     "acceleration": 90,
     "brake": 200,
-    "move_speed": 18,
+    "move_speed": 20,
     "turn_in_place": false,
     "turn_speed": 180,
     "type": "deepwater"
@@ -55,13 +55,19 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 170,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 170,
+          "radius": 150,
+          "shape": "capsule"
+        },
+		{
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 250,
           "shape": "capsule"
         }
       ]
@@ -76,6 +82,10 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_tool_weapon.json"
+    },
+	{
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_torpedo_tool_weapon.json"
     }
   ],
   "unit_types": [

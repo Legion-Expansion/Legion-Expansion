@@ -7,7 +7,7 @@
   "max_range": 50,
   "firing_arc_pitch": 20,
   "firing_arc_yaw": 5,
-  "rate_of_fire": 0.66,
+  "rate_of_fire": 1,
   "spread_fire": false,
   "target_layers": [
     "WL_LandHorizontal",

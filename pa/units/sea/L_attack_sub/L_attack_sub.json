@@ -34,8 +34,8 @@
 	],
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 650,
-  "description": "Light Submarine. Attacks Aquatic Targets.",
-  "display_name": "Nymph",
+  "description": "Close range attack submarine",
+  "display_name": "Akula",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"
@@ -80,13 +80,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 135,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 135,
+          "radius": 75,
           "shape": "capsule"
         }
       ]

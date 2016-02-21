@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 4800,
+  "build_metal_cost": 6000,
   "description": "Fires Long Range, High Velocity Projectiles. Armored and Slow. Can Attack Land and Sea.",
   "display_name": "Epoch",
   "events": {
@@ -58,7 +58,7 @@
       "type": "idle"
     }],  
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 6000,
+  "max_health": 7500,
   "mesh_bounds": [
     9,
     40,
@@ -74,7 +74,7 @@
     "move_speed": 8,
     "park_stamp_cost": 30,
     "park_stamp_type": "box",
-    "turn_speed": 45,
+    "turn_speed": 30,
     "type": "deepwater"
   },
   "nearby_target_tick_update_interval": 15,

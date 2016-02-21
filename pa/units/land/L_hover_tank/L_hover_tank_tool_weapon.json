@@ -1,14 +1,23 @@
 {
-	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-	"ammo_id": "/pa/units/land/L_hover_tank/L_hover_tank_ammo.json",
-	"rate_of_fire": 3,
-	"idle_aim_delay": 3,
-	"max_range": 100,
-	"yaw_rate": 60,
-	"pitch_rate": 60,
-	"yaw_range": 180,
-	"pitch_range": 120,
-	"spread_fire": true,
-	"auto_attack": true,
-	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface"]
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "ammo_id": "/pa/units/land/L_hover_tank/L_hover_tank_ammo.json",
+  "arc_type": "ARC_High",
+  "rate_of_fire": 0.25,  
+  "idle_aim_delay": 10,
+  "max_range": 160,
+  "yaw_rate": 45,    
+  "pitch_rate": 45,  
+  "yaw_range": 180,
+  "pitch_range": 89,
+  "max_firing_velocity": 150,
+  "min_firing_velocity": 1,  
+  "spread_fire": true,
+  "auto_attack": true,  
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface",
+    "WL_Underwater"
+  ]
 }
+

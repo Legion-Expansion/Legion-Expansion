@@ -18,6 +18,6 @@
   "initial_velocity": 100,
   "lifetime": 0.6,
   "max_velocity": 100,
-  "splash_damage": 60,
-  "splash_radius": 4
+  "splash_damage": 100,
+  "splash_radius": 12
 }

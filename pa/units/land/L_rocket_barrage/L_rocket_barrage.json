@@ -135,7 +135,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 1,
-      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon01.json"
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch02",
@@ -147,7 +147,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 2,
-      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon02.json"
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch03",
@@ -159,7 +159,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 3,
-      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon03.json"
+      "spec_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_tool_weapon.json"
     }
   ],
   "unit_types": [

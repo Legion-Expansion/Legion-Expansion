@@ -4,7 +4,7 @@
   "atrophy_cool_down": 15,
   "atrophy_rate": 7.5,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 380,
+  "build_metal_cost": 400,
   "command_caps": [
     "ORDER_Attack"
   ],
@@ -27,7 +27,7 @@
 		"diameter": -22
 	},     
   "guard_layer": "WL_AnySurface",
-  "max_health": 1600,
+  "max_health": 2000,
   "mesh_bounds": [
     13.397,
     17.409,

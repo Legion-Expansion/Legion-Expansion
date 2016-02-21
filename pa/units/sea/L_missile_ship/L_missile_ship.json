@@ -14,8 +14,8 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 3200,
-  "description": "All-Purpose Armored Vessel. Attacks Land, Air, and Sea Targets.",
+  "build_metal_cost": 3750,
+  "description": "Ballistic Missile Ship.  Equipped with anti-air cannon",
   "display_name": "Manta",
   "events": {
     "build_complete": {
@@ -64,6 +64,7 @@
     "acceleration": 30,
     "brake": 80,
     "move_speed": 8,
+	"turn_accel": 15,
     "turn_speed": 45,
     "type": "deepwater"
   },

@@ -1,13 +1,14 @@
 {
 	"base_spec": "/pa/ammo/base_shell/base_shell.json",
-	"damage": 350,
-	"splash_damage": 200,
-	"splash_radius": 100,
-	"full_damage_splash_radius": 3,
+	"damage": 500,
+	"splash_damage": 500,
+	"splash_radius": 40,
+	"full_damage_splash_radius": 5,
 	"splash_damages_allies": false,
-	"initial_velocity": 800.0,
-	"max_velocity": 800.0,
-	"lifetime": 0.75,
+	"initial_velocity": 200.0,
+	"min_velocity": 100,
+	"max_velocity": 400.0,
+	"lifetime": 4,
 	"events": {
 		"died": {
 			"audio_cue": "/SE/Impacts/shell_bullet",
@@ -23,7 +24,7 @@
 	},
 	"physics": {
 		"radius": 1,
-		"gravity_scalar": 120,
+		"gravity_scalar": 26,
 		"add_to_spatial_db": false,
 		"allow_underground": true
 	}

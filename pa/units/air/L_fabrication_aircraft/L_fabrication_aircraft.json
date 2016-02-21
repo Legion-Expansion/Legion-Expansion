@@ -77,7 +77,7 @@
 		"type": "moving"
 	}],
 	"guard_layer": "WL_LandHorizontal",
-	"max_health": 65,
+	"max_health": 85,
 	"mesh_bounds": [
 		9.8,
 		5.58409,
@@ -91,12 +91,12 @@
 		"filename": "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.papa"
 	},
 	"navigation": {
-		"acceleration": 35,
+		"acceleration": 30,
 		"aggressive_behavior": "circle",
-		"brake": 35,
+		"brake": 30,
 		"circle_max_time": 3,
 		"circle_min_time": 1,
-		"move_speed": 35,
+		"move_speed": 30,
 		"turn_speed": 180,
 		"type": "air"
 	},

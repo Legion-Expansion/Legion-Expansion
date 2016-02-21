@@ -28,8 +28,8 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 50,
-  "description": "Rocket Spider- Super fast suicide bot that homes in on its prey.",
+  "build_metal_cost": 100,
+  "description": "Rocket Spider- Fast suicide bot that homes in on it's prey",
   "display_name": "Purger",
   "events": {
     "build_complete": {
@@ -61,7 +61,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 10,
+  "max_health": 50,
   "mesh_bounds": [
     3.8,
     4.5,
@@ -80,7 +80,7 @@
   "navigation": {
     "acceleration": 400,
     "brake": 400,
-    "move_speed": 25,
+    "move_speed": 30,
     "turn_speed": 720,
     "type": "land-small"
   },
@@ -95,13 +95,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 20,
+          "radius": 90,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 20,
+          "radius": 90,
           "shape": "capsule"
         }
       ]

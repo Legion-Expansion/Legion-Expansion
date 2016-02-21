@@ -28,8 +28,8 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 2500,
-  "description": "Area of Effect Crowd Control. Attacks Land.",
+  "build_metal_cost": 1800,
+  "description": "Experimental Earthquake Tank. Attacks Land.",
   "display_name": "Earthshaker",
   "events": {
     "build_complete": {
@@ -73,12 +73,6 @@
           "channel": "sight",
           "layer": "surface_and_air",
           "radius": 100,
-          "shape": "capsule"
-        },
-        {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 150,
           "shape": "capsule"
         },
         {

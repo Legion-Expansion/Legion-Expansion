@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 650,
+  "build_metal_cost": 800,
   "description": "Medium Range Anti-Land Anti-Sea Vessel.",
   "display_name": "Bowhead",
   "events": {
@@ -25,21 +25,21 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_small_left_muzzle"
+      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_small_left_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_small_right_muzzle"
+      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_small_right_muzzle"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_main_muzzle"
+      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_main_muzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 1700,
+  "max_health": 2100,
   "mesh_bounds": [
     4,
     24,
@@ -55,7 +55,8 @@
     "move_speed": 8,
     "park_stamp_cost": 20,
     "park_stamp_type": "box",
-    "turn_speed": 45,
+    "turn_accel": 30,
+    "turn_speed": 30,
     "type": "deepwater"
   },
   "nearby_target_tick_update_interval": 15,
@@ -70,13 +71,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 160,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 140,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
