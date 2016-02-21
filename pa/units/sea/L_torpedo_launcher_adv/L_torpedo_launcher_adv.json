@@ -65,27 +65,24 @@
 		"diameter": -17
 	},
 	"spawn_layers": "WL_WaterSurface",
-	"tools": [{
-		"aim_bone": "socket_aim",
-		"muzzle_bone": ["gun01", "gun02", "gun03"],
-		"projectiles_per_fire": 3,
-		"record_index": 0,
-		"fire_event": "fired0",
-		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon.json"
-	}, {
-		"aim_bone": "socket_aim",
-		"muzzle_bone": ["gun04", "gun05", "gun06"],
-		"projectiles_per_fire": 3,
-		"record_index": 1,
-		"fire_event": "fired1",
-		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon.json"
-	}, {
-		"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_tool_weapon_underwater.json",
-		"aim_bone": "bone_turret",
-		"record_index": 2,
-		"fire_event": "fired2",
-		"muzzle_bone": ["socket_muzzle01", "socket_muzzle02", "socket_muzzle03"]
-	}],
+	"tools": [
+		{
+			"aim_bone": "socket_aim",
+			"muzzle_bone": ["gun01", "gun02", "gun03"],
+			"projectiles_per_fire": 3,
+			"record_index": 0,
+			"fire_event": "fired0",
+			"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_wave_tool_weapon.json"
+		}, 
+		{
+			"aim_bone": "socket_aim",
+			"muzzle_bone": ["gun04", "gun05", "gun06"],
+			"projectiles_per_fire": 3,
+			"record_index": 1,
+			"fire_event": "fired1",
+			"spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_wave_tool_weapon.json"
+		}
+	],
 	"unit_types": [
 		"UNITTYPE_Structure",
 		"UNITTYPE_Advanced",

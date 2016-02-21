@@ -4,7 +4,7 @@
 	"atrophy_cool_down": 15.0,
 	"atrophy_rate": 10.0,
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
-	"build_metal_cost": 450,
+	"build_metal_cost": 250,
 	"command_caps": [
 		"ORDER_Attack"
 	],
@@ -23,7 +23,7 @@
 		}
 	},
 	"guard_layer": "WL_WaterSurface",
-	"max_health": 1800,
+	"max_health": 1000,
 	"mesh_bounds": [
 		12,
 		6,
@@ -62,20 +62,16 @@
 		"diameter": -17
 	},
 	"spawn_layers": "WL_WaterSurface",
-	"tools": [{
-		"aim_bone": "socket_aim",
-		"muzzle_bone": ["bone_push", "gun02", "gun03", "gun04", "gun05"],
-		"projectiles_per_fire": 6,
-		"record_index": 0,
-		"fire_event": "fired0",
-		"spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher_tool_weapon.json"
-	}, {
-		"spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher_tool_weapon_underwater.json",
-		"aim_bone": "bone_turret",
-		"record_index": 1,
-		"fire_event": "fired1",
-		"muzzle_bone": ["socket_muzzle01", "socket_muzzle02"]
-	}],
+	"tools": [
+		{
+			"aim_bone": "bone_turret",
+			"muzzle_bone": ["bone_push", "gun02", "gun03", "gun04", "gun05"],
+			"projectiles_per_fire": 6,
+			"record_index": 0,
+			"fire_event": "fired0",
+			"spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher_wave_tool_weapon.json"
+		}
+	],
 	"unit_types": [
 		"UNITTYPE_Structure",
 		"UNITTYPE_Basic",
