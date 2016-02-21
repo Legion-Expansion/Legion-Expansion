@@ -28,7 +28,7 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"build_metal_cost": 1800,
+	"build_metal_cost": 1700,
 	"description": "Heavy Mobile Beam Weapon. Medium Range. Attacks Land and Naval.",
 	"display_name": "Monstrosity",
 	"events": {
