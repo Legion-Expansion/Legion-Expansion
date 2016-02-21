@@ -6,7 +6,7 @@
     "damage": 2000,
     "damage_volume": {
         "initial_radius": 10,
-        "radius_velocity": 100,
+        "radius_velocity": 95,
         "radius_accel": 0,
         "delay": 0
     },
@@ -20,7 +20,7 @@
             "effect_spec": "/pa/effects/specs/none.pfx"
         }
     },
-    "full_damage_splash_radius": 20,
+    "full_damage_splash_radius": 15,
     "fx_trail": {
         "effect_spec": "/pa/effects/specs/none.pfx"
     },
@@ -29,6 +29,6 @@
     "lifetime": 3,
     "max_velocity": 15,
     "model": {},
-    "splash_damage": 750,
-    "splash_radius": 70
+    "splash_damage": 500,
+    "splash_radius": 50
 }
