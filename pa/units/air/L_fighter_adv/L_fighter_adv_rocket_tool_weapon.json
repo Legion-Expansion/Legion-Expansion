@@ -1,14 +1,11 @@
 {
   "ammo_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket_ammo.json",
-  "arc_type": "High",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
-  "firing_arc_pitch": 40,
-  "firing_arc_yaw": 40,
   "firing_standard_deviation": 25,
   "max_range": 170,
-  "pitch_range": 0,
-  "pitch_rate": 70,
+  "pitch_range": 45,
+  "pitch_rate": 90,
   "carpet_fire": true,
   "carpet_wait_for_full_ammo": true,
   "ammo_source": "time",
@@ -21,6 +18,6 @@
 	"WL_Air"
   ],
   "tool_type": "TOOL_Weapon",
-  "yaw_range": 0,
-  "yaw_rate": 70
+  "yaw_range": 180,
+  "yaw_rate": 90
 }
