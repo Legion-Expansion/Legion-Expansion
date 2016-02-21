@@ -44,8 +44,7 @@
 		"ORDER_Attack",
 		"ORDER_Patrol",
 		"ORDER_Assist",
-		"ORDER_Use",
-		"ORDER_FireSecondaryWeapon"
+		"ORDER_Use"
 	],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
