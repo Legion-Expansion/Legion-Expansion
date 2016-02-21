@@ -425,6 +425,9 @@
           ["L_air", 9]
         ]
       }, {
+        spec_id: "/pa/units/air/L_air_carrier/L_drone/L_drone.json",
+        si_fallback: ["drone"]
+      }, {
         spec_id: "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.json",
         si_fallback: ["fabrication_aircraft"],
         preferred_builds: [
