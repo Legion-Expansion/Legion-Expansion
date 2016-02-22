@@ -109,11 +109,11 @@
 	},
 	
 	"recon": {
+	"observable": {
+		"ignore_sight": true,
+		"layer": "surface_and_air"
+	},
     "observer": {
-		"observable": {
-			"layer": "mine",
-			"ignore_sight": true
-		},
       "items": [
         {
           "channel": "sight",
