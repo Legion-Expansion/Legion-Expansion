@@ -16,6 +16,9 @@
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
     "com.pa.legion-expansion.client"
+	"com.pa.quitch.qQuellerAI"
+	"com.pa.quitch.qAIModCompatibilityPatch"
+	
   ], 
   "description": "Super secret something something", 
   "display_name": "Legion Expansion", 
