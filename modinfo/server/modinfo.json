@@ -15,8 +15,8 @@
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
-    "com.pa.legion-expansion.client"
-	"com.pa.quitch.qQuellerAI"
+    "com.pa.legion-expansion.client",
+	"com.pa.quitch.qQuellerAI",
 	"com.pa.quitch.qAIModCompatibilityPatch"
 	
   ], 
