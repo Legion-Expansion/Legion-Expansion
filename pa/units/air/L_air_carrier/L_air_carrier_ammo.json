@@ -12,7 +12,7 @@
     "turn_rate": 720,
     "lifetime": 5,
     "model": {
-        "filename": "/pa/units/sea/drone_carrier/drone/drone.papa"
+        "filename": "/pa/units/air/L_air_carrier/L_drone/L_drone.papa"
     },
     "fx_trail": {
         "filename": "/pa/units/sea/drone_carrier/carrier/carrier_ammo_trail.pfx",
@@ -22,7 +22,7 @@
             0.42
         ]
     },
-    "spawn_unit_on_death": "/pa/units/air/L_air_carrier/L_air_drone/drone.json",
+    "spawn_unit_on_death": "/pa/units/air/L_air_carrier/L_drone/L_drone.json",
     "spawn_unit_on_death_with_velocity": true,
     "physics": {
         "radius": 1,

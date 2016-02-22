@@ -11,6 +11,7 @@
 		"/pa/units/air/L_bomber/L_bomber.json",
 		"/pa/units/air/bomber_adv/bomber_adv.json",
 		"/pa/units/air/L_air_carrier/L_air_carrier.json",
+		"/pa/units/air/L_air_carrier/L_drone/L_drone.json",
 		"/pa/units/orbital/orbital_probe/orbital_probe.json",
 		"/pa/units/air/fabrication_aircraft/fabrication_aircraft.json",
 		"/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json",

@@ -54,7 +54,7 @@
 		}
 	},
 	"physics": {
-		"radius": 10,
+		"radius": 8,
 		"orient_interp_rate": 90.0
 	},
 	"recon": {
@@ -119,7 +119,7 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-			"effect_spec": "/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx bone_main_recoil"
+			"effect_spec": "/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/big_gun_smoke.pfx socket_muzzleMain"
 		},
 		"fired1": {
 			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
@@ -237,6 +237,6 @@
 	"selection_icon": {
 		"diameter": 68.0
 	},
-	"mesh_bounds": [47.17, 54.953, 22.469],
+	"mesh_bounds": [42, 49, 22.469],
 	"TEMP_texelinfo": 35.95324
 }

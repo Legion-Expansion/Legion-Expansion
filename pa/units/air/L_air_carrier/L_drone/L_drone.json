@@ -8,7 +8,6 @@
     "passive_health_regen": -3,
     "unit_types": [
 		"UNITTYPE_Fighter",
-		"UNITTYPE_Offense",
         "UNITTYPE_Mobile",
         "UNITTYPE_Air",
         "UNITTYPE_Basic"
@@ -48,16 +47,16 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/L_air_carrier/L_air_drone/drone.papa",
+        "filename": "/pa/units/air/L_air_carrier/L_drone/L_drone.papa",
         "animations": {
-            "deploy": "/pa/units/air/L_air_carrier/L_air_drone/drone_anim_deploy.papa",
-            "idle": "/pa/units/air/L_air_carrier/L_air_drone/drone_anim_idle.papa"
+            "deploy": "/pa/units/air/L_air_carrier/L_drone/L_drone_anim_deploy.papa",
+            "idle": "/pa/units/air/L_air_carrier/L_drone/L_drone_anim_idle.papa"
         },
         "animtree": "/pa/anim/anim_trees/drone_anim_tree.json"
     },
     "tools": [
         {
-            "spec_id": "/pa/units/air/L_air_carrier/L_air_drone/drone_tool_weapon.json",
+            "spec_id": "/pa/units/air/L_air_carrier/L_drone/L_drone_tool_weapon.json",
             "aim_bone": "bone_root",
             "record_index": 0
         }
@@ -91,7 +90,7 @@
     "fx_offsets": [
         {
             "type": "moving_forward",
-            "filename": "/pa/units/air/L_air_carrier/L_air_drone/drone_jets.pfx",
+            "filename": "/pa/units/air/L_air_carrier/L_drone/L_drone_jets.pfx",
             "offset": [
                 0,
                 0.727,

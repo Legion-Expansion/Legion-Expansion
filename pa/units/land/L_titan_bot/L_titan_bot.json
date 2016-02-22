@@ -1,30 +1,23 @@
 {
+	"TEMP_texelinfo": 35.2973,
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "Anubis",
 	"description": "Laser Titan. Lasers everything into oblivion. Amphibious. Attacks land, sea, and undersea targets.",
-	"max_health": 40000,
+	"max_health": 80000,
 	"build_metal_cost": 30000,
 	"atrophy_rate": 200.0,
 	"atrophy_cool_down": 15.0,
 	"wreckage_health_frac": 0.7,
 	"guard_radius": 100,
 	"has_death_effects": true,
-	"unit_types": ["UNITTYPE_Bot",
-	"UNITTYPE_Mobile",
-	"UNITTYPE_Offense",
-	"UNITTYPE_Land",
-	"UNITTYPE_Advanced",
-	"UNITTYPE_Titan",
-	"UNITTYPE_Important",
-	"UNITTYPE_FabOrbBuild",
-		"UNITTYPE_Custom1"],
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist"],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "amphibious-large",
+		"aggressive_distance": 170,
 		"acceleration": 260,
 		"brake": -1.0,
-		"move_speed": 13,
+		"move_speed": 11,
 		"turn_speed": 60,
 		"turn_accel": 80,
 		"turn_in_place": true,
@@ -56,7 +49,7 @@
 		}
 	},
 	"physics": {
-		"radius": 15,
+		"radius": 12,
 		"orient_interp_rate": 60.0
 	},
 	"recon": {
@@ -84,84 +77,101 @@
 			"idle": ""
 		},
 		"animtree": "/pa/anim/anim_trees/L_titan_bot_anim_tree.json",
-		"walk_speed": 13
+		"walk_speed": 15
 	},
-	"tools": [{
-		"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_left_weapon_01.json",
-		"aim_bone": "bone_turret",
-		"muzzle_bone": ["socket_muzzleLeftBottom", "socket_muzzleLeftTop"],
-		"projectiles_per_fire": 2,
-		"record_index": 0,
-		"fire_event": "fired0"
-	}, {
-		"spec_id": "/pa/units/land/L_titan_bot/mega_laser.json",
-		"aim_bone": "bone_turret",
-		"muzzle_bone": "socket_rightMuzzle",
-		"record_index": 1,
-		"fire_event": "fired1"
-	}, {
-		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
-		"aim_bone": "rocket004",
-		"projectiles_per_fire": 6,
-		"muzzle_bone": "rocket004",
-		"fire_event": "firedRocket004"
-	}, {
-		"spec_id": "/pa/units/land/L_titan_bot/rocket.json",
-		"aim_bone": "rocket014",
-		"projectiles_per_fire": 6,
-		"muzzle_bone": "rocket014",
-		"fire_event": "firedRocket014"
-	}],
+	"tools": [
+		{
+			"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_cannon_tool_weapon.json",
+			"aim_bone": "bone_turret",
+			"muzzle_bone": [
+				"socket_muzzleLeftBottom",
+				"socket_muzzleLeftTop"
+			],
+			"projectiles_per_fire": 2,
+			"record_index": 0,
+			"fire_event": "fired0"
+		}, 
+		{
+			"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_mega_laser_tool_weapon.json",
+			"aim_bone": "bone_turret",
+			"muzzle_bone": "socket_rightMuzzle",
+			"record_index": 1,
+			"fire_event": "fired1"
+		}, 
+		{
+			"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_rocket_tool_weapon.json",
+			"aim_bone": "bone_turret",
+			"projectiles_per_fire": 3,
+			"muzzle_bone": [
+				"rocket004",
+				"rocket014"
+			],
+			"record_index": 2,
+			"fire_event": "fired2"
+		},
+		{
+			"spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_stomp_tool_weapon.json",
+			"record_index": -1,
+			"fire_event": "fired",
+			"projectiles_per_fire": 1,
+			"aim_bone": "bone_root",
+			"muzzle_bone": "bone_root"
+		}	
+	],
 	"teleportable": null,
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/Titan_Complete"
 		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
+			"effect_spec": "/pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftBottom /pa/effects/specs/big_gun_smoke.pfx socket_muzzleLeftTop /pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx socket_muzzleLeftTop"
+		},
 		"fired1": {
-			"audio_cue": "",
+			"audio_cue": "/SE/Weapons/bot/sniper_fire",
 			"effect_spec": "/pa/units/land/L_titan_bot/muzzle_flash.pfx socket_rightMuzzle"
+		},
+		"fired3": {
+			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
+			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket004"
 		},
 		"died": {
 			"audio_cue": "",
 			"effect_spec": "",
 			"effect_scale": 1.0
-		},
-		"firedRocket004": {
-			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket004"
-		},
-		"firedRocket014": {
-			"audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-			"effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket014"
 		}
 	},
-	"fx_offsets": [{
-		"bone": "socket_rightMuzzle",
-		"filename": "/pa/units/land/L_titan_bot/electricity_field.pfx",
-		"type": "idle",
-		"offset": [
-			0, -3,
-			0
-		]
-	}, {
-		"bone": "socket_rightMuzzle",
-		"filename": "/pa/units/land/L_titan_bot/back_smoke.pfx",
-		"type": "idle",
-		"offset": [
-			20,
-			35.5,
-			15
-		]
-	}, {
-		"bone": "socket_rightMuzzle",
-		"filename": "/pa/units/land/L_titan_bot/back_fire.pfx",
-		"type": "moving_forward",
-		"offset": [
-			20,
-			36.5,
-			15
-		]
-	}],
+	"fx_offsets": [
+		{
+			"bone": "socket_rightMuzzle",
+			"filename": "/pa/units/land/L_titan_bot/electricity_field.pfx",
+			"type": "idle",
+			"offset": [
+				0, -3,
+				0
+			]
+		}, 
+		{
+			"bone": "socket_rightMuzzle",
+			"filename": "/pa/units/land/L_titan_bot/back_smoke.pfx",
+			"type": "idle",
+			"offset": [
+				20,
+				35.5,
+				15
+			]
+		}, 
+		{
+			"bone": "socket_rightMuzzle",
+			"filename": "/pa/units/land/L_titan_bot/back_fire.pfx",
+			"type": "moving_forward",
+			"offset": [
+				20,
+				36.5,
+				15
+			]
+		}
+	],
 	"audio": {
 		"loops": {
 			"move": {
@@ -181,6 +191,16 @@
 	"selection_icon": {
 		"diameter": -68.0
 	},
-	"mesh_bounds": [53, 52, 60],
-	"TEMP_texelinfo": 35.2973
+	"mesh_bounds": [40, 39, 60],
+	"unit_types": [
+		"UNITTYPE_Bot",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Land",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Titan",
+		"UNITTYPE_Important",
+		"UNITTYPE_FabOrbBuild",
+		"UNITTYPE_Custom1"
+	]
 }
