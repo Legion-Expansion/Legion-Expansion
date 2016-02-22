@@ -7,16 +7,16 @@
 		"filename": "/pa/effects/specs/wave.pfx",
 		"offset": [0.0, 0.0, 0.0]
 	},
-	"damage": 125,
-	"splash_damage": 125,
+	"damage": 200,
+	"splash_damage": 200,
 	"splash_radius": 5,
 	"initial_velocity": 20,
-	"max_velocity": 30,
+	"max_velocity": 35,
 	"lifetime": 8,
 	"cruise_height": 2,
-	"turn_rate": 2,
+	"turn_rate": 1,
 	"physics": {
-		"radius": 9,
+		"radius": 8,
 		"shape": "sphere"
 	}
 }
