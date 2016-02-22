@@ -1,10 +1,10 @@
 {
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Chain1",
+	"display_name": "Chain3",
 	"description": "Chain Lightning",
-	"max_health": 50,
+	"max_health": 30,
 	"build_metal_cost": 90,
-	"guard_radius": 25,
+	"guard_radius": 15,
 	"unit_types": ["UNITTYPE_Land", "UNITTYPE_Hover"],
 	"guard_layer": "WL_LandHorizontal",
 	"navigation": {
@@ -44,7 +44,7 @@
 	"model": {},
 	"tools": [
 		{
-			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json",
+			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain3_tool_weapon.json",
 			"aim_bone": "bone_root",
 			"muzzle_bone": [
 				"bone_root",

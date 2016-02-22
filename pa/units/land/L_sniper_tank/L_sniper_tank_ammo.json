@@ -14,10 +14,17 @@
       "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
       "effect_spec": "/pa/units/land/L_sniper_tank/hit.pfx"
     }
-  },  
-  "initial_velocity": 140,
-  "lifetime": 2,
-  "max_velocity": 300,
+  },
+  "physics": {
+	"radius": 1,
+	"gravity_scalar": 26,
+	"add_to_spatial_db": false,
+	"allow_underground": true
+  },
+  "lifetime": 3,
+  "initial_velocity": 200.0,
+  "min_velocity": 90,
+  "max_velocity": 500.0,
   "splash_damage": 0,
   "splash_radius": 0
 }

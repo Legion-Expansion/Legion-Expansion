@@ -45,11 +45,11 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 700,
+  "max_health": 500,
   "mesh_bounds": [
-    9.125,
-    9.623,
-    8.808
+    7.5,
+    7.5,
+    7
   ],
   "model": {
     "animations": {
@@ -69,8 +69,7 @@
     "type": "land-small"
   },
   "physics": {
-    "push_class": 2,
-    "radius": 2
+    "radius": 4
   },
   "recon": {
     "observer": {

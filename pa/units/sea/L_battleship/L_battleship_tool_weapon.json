@@ -7,7 +7,7 @@
 	"yaw_rate": 45,
 	"pitch_rate": 90,
 	"yaw_range": 120,
-	"pitch_range": 80,	
+	"pitch_range": 80,
 	"spread_fire": true,
 	"auto_attack": true,
 	"min_firing_velocity": 60,
