@@ -22,7 +22,7 @@
         "UNITTYPE_Bot",
         "UNITTYPE_Mobile",
         "UNITTYPE_Offense",
-        "UNITTYPE_Tactical",
+        "UNITTYPE_Fighter",
         "UNITTYPE_Land",
         "UNITTYPE_Basic",
         "UNITTYPE_FactoryBuild",
