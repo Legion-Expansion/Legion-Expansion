@@ -92,21 +92,21 @@
 			"bone": "bone_root",
 			"offset": [-2.86, -1.9, 0.96],
 			"orientation": [0, 0, -202.5]
-		}, 
+		},
 		{
 			"type": "idle",
 			"filename": "/pa/effects/specs/hover_idle_01.pfx",
 			"bone": "bone_root",
 			"offset": [2.86, -1.9, 0.96],
 			"orientation": [0, 0, 22.5]
-		}, 
+		},
 		{
 			"type": "idle",
 			"filename": "/pa/effects/specs/hover_idle_01.pfx",
 			"bone": "bone_root",
 			"offset": [2.13, 2.14, 2.22],
 			"orientation": [0, 0, -15]
-		}, 
+		},
 		{
 			"type": "idle",
 			"filename": "/pa/effects/specs/hover_idle_01.pfx",
@@ -115,19 +115,6 @@
 			"orientation": [0, 0, 195]
 		}
 	],
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/veh/tank_hover_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/veh/tank_hover"
-		}
-	},
 	"headlights": [
 		{
 			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
@@ -139,7 +126,7 @@
 			"far_distance": 20.0,
 			"color": [0.9, 0.92, 1.0],
 			"intensity": 1.4
-		}, 
+		},
 		{
 			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
 			"offset": [-1.8, -2, 1.0],
@@ -160,7 +147,7 @@
 			"socket_muzzleRight"
 		],
 		"projectiles_per_fire": 2,
-		"spec_id": "/pa/units/land/L_hover_tank/L_hover_tank_tool_weapon.json"		
+		"spec_id": "/pa/units/land/L_hover_tank/L_hover_tank_tool_weapon.json"
 		}
 	],
   "transportable": {
@@ -171,7 +158,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
-	"UNITTYPE_Hover", 
+	"UNITTYPE_Hover",
     "UNITTYPE_Artillery",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
