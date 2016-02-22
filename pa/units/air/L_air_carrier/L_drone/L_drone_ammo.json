@@ -4,7 +4,7 @@
 		"filename": ""
 	},
 	"fx_trail": {
-		"filename": "/pa/units/sea/drone_carrier/drone/drone_ammo_trail.pfx",
+		"filename": "/pa/units/air/L_air_carrier/L_drone/L_drone_ammo_trail.pfx",
 		"offset": [0.0, 0.0, 0.0]
 	},
 	"damage": 10,

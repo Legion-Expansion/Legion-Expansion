@@ -9,7 +9,15 @@
     //console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
 
     // the build groups are ordered to match the build bar tab order
-    HodgePodge.addUnits([{
+    HodgePodge.addUnits([
+	  
+	  {
+        spec_id: "/pa/units/commanders/tank_aeson/tank_aeson.json",
+        si_fallback: ["commander"]
+      },{
+        spec_id: "/pa/units/commanders/imperial_invictus/imperial_invictus.json",
+        si_fallback: ["commander"]
+      },{
         spec_id: "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
         si_fallback: ["teleporter"],
         preferred_builds: [
@@ -128,6 +136,9 @@
         preferred_builds: [
           ["L_combat", 10]
         ]
+      },{
+        spec_id: "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret.json",
+        si_fallback: ["laser_defense_single"]
       }, {
         spec_id: "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.json",
         si_fallback: ["laser_defense_single"],
@@ -424,6 +435,9 @@
         preferred_builds: [
           ["L_air", 9]
         ]
+      }, {
+        spec_id: "/pa/units/air/L_air_carrier/L_drone/L_drone.json",
+        si_fallback: ["drone"]
       }, {
         spec_id: "/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.json",
         si_fallback: ["fabrication_aircraft"],
