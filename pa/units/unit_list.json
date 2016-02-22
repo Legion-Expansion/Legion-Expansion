@@ -207,6 +207,7 @@
 		"/pa/units/orbital/L_orbital_factory/L_orbital_factory.json",
 		"/pa/units/orbital/orbital_fighter/orbital_fighter.json",
 		"/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.json",
+		"/pa/units/orbital/L_orbital_battleship/L_orbital_battleship.json",
 		"/pa/units/orbital/orbital_lander/orbital_lander.json",
 		"/pa/units/orbital/L_orbital_lander/L_orbital_lander.json",
 		"/pa/units/orbital/orbital_laser/orbital_laser.json",
