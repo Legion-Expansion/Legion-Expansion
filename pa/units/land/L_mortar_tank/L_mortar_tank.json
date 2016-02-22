@@ -117,6 +117,7 @@
 		"UNITTYPE_Tank",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
+		"UNITTYPE_Hover",
 		"UNITTYPE_Land",
 		"UNITTYPE_Basic",
 		"UNITTYPE_FactoryBuild",
