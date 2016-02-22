@@ -103,11 +103,13 @@ The AI is a work-in-progress. Bugs, suggestions, etc. should be raised as issues
 3. Download/Sync the [develop](https://github.com/Quitch/AI-Mod-Compatibility-Patch/tree/develop) branch of the AI Mod Compatibility Patch to your server-mods folder
 4. Download/Sync the [develop](https://github.com/Quitch/Queller-AI-Personalities/tree/develop) branch of the Queller AI Personalities to your client-mods folder
  * On older installations of PAMM this folder will be called mods
-5. Open PAMM
-6. Enable the server mod Queller AI DEV LEGION
+5. Download/Sync the [develop](https://github.com/Quitch/AI-Mod-Compatibility-Personalities-Patch/tree/Develop) branc of the AI Mod Compatibility Personalities Patch to your server-mods folder
+ * On older installations of PAMM this folder will be called mods
+6. Open PAMM
+7. Enable the server mod Queller AI DEV LEGION
  * This should also enable Queller AI Personalities DEV and AI Mod Compatibility Patch
-7. Load PA
-8. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
+8. Load PA
+9. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
 
 
 ## Screenshots & Video
