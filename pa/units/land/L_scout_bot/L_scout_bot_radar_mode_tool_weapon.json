@@ -10,6 +10,7 @@
   "ammo_capacity": 3,
   "ammo_per_shot": 3,
   "ammo_demand": 1,
+  "start_fully_charged": false,
   "force_fire_from_muzzle": true,
   "idle_aim_delay": 0,
   "manual_fire": true,
