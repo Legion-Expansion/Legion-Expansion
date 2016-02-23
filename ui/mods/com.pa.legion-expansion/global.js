@@ -404,10 +404,17 @@
           ] // aa
       }, {
         spec_id: "/pa/units/land/L_scout_bot/L_scout_bot.json",
-        si_fallback: ["aa_missile_vehicle"],
+        si_fallback: ["land_scout"],
         preferred_builds: [
             ["L_bot", 17]
-          ] // aa
+          ] // scout
+      },
+	  {
+        spec_id: "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode.json",
+        si_fallback: ["land_scout"],
+        preferred_builds: [
+            ["L_bot", 18]
+          ] // scout_radar_mode
       },
 
 
