@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
   "spawn_unit_on_death": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
-  "spawn_unit_on_death_with_velocity": false,
+  "spawn_unit_on_death_with_velocity": true,
     "death": {
         "decals": [
             "/pa/effects/specs/scorch_b_01.json"
@@ -15,9 +15,9 @@
     "fx_trail": {
         "filename": "/pa/effects/specs/none.pfx"
     },
-    "initial_velocity": 0,
-	"min_velocity": 10,
-    "lifetime": 3,
+    "initial_velocity": 15,
+	"min_velocity": 15,
+    "lifetime": 2,
     "max_velocity": 20,
     "model": {
 		"filename": ""
