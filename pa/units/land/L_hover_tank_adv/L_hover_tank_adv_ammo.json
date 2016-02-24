@@ -28,15 +28,20 @@
 	"armor_damage_map": {
 		"AT_Orbital": 0.5
 	},
+	"recon": {
+		"observable": {
+		  "ignore_radar": true
+		}
+	},
+	"spawn_layers": "WL_Air",
 	"flight_type": "Staged",
 	"stages": [
 		{
 			"ignores_gravity": true,
 			"ignores_LOS": true,
-			"stage_duration": 40,
-			"stage_turn_rate": 0,
+			"stage_change_range": 5,
 			"rotates_to_velocity": true,
-			"stage_turn_rate": 90
+			"stage_turn_rate": 0
 		},
 		{
 			"ignores_gravity": true,

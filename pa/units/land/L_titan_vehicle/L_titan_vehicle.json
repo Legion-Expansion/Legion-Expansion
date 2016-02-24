@@ -91,14 +91,14 @@
 		"aim_bone": "bone_turretLeft",
 		"record_index": 1,
 		"fire_event": "fired1",
-		"projectiles_per_fire": 2,
+		"projectiles_per_fire": 1,
 		"muzzle_bone": ["socket_muzzleLeft001", "socket_muzzleLeft002"]
 	}, {
 		"spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_side.json",
 		"aim_bone": "bone_turretRight",
 		"record_index": 2,
 		"fire_event": "fired2",
-		"projectiles_per_fire": 2,
+		"projectiles_per_fire": 1,
 		"muzzle_bone": ["socket_muzzleRight001", "socket_muzzleRight002"]
 	}, {
 		"spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_stomp.json",
@@ -123,15 +123,11 @@
 		},
 		"fired1": {
 			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_left_muzzle02"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleLeft001 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleLeft002"
 		},
 		"fired2": {
 			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_right_muzzle02"
-		},
-		"fired3": {
-			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_rear_muzzle02"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_nuzzleRight001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleRight001 /pa/effects/specs/tank_muzzle_flash.pfx socket_nuzzleRight002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleRight002"
 		},
 		"died": {
 			"audio_cue": "",
