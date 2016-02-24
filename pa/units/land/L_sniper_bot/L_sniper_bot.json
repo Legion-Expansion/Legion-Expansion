@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/units/land/base_bot/base_bot.json",
-    "display_name": "Proalert",
+    "display_name": "Lancer",
     "description": "Laser bot. Medium Range Laser Weapon. Attacks Land and Naval.",
     "max_health": 84,
     "build_metal_cost": 150,
