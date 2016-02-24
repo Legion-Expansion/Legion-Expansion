@@ -27,6 +27,7 @@
       "audio_cue": "/SE/Weapons/bot/sniper_fire"
     }
   },
+  "guard_radius": 85,
   "max_health": 250,
   "mesh_bounds": [
     4.401,
