@@ -16,8 +16,8 @@
 		"ORDER_Patrol",
 		"ORDER_Attack"
 	],
-	"description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
-	"display_name": "Kappa",
+	"description": "Heavy anti-orbital cannons to impose Legion's iron fist upon its enemies",
+	"display_name": "Imperator",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/orbital"
