@@ -17,7 +17,7 @@
 	"full_damage_splash_radius": 0,
 	"initial_velocity": 160,
 	"max_velocity": 160,
-	"lifetime": 3,
+	"lifetime": 2,
 	"firing_standard_deviation": 2,
 	"turn_rate": 10,
 	"events": {
