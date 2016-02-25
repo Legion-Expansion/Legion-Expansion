@@ -158,9 +158,9 @@
   ],
   "max_health": 500,
   "mesh_bounds": [
-    50,
-    50,
-    50
+    118.558,
+    118.558,
+    54.449
   ],
   "model": {
     "animations": {
@@ -169,7 +169,7 @@
       "start": "/pa/units/orbital/mining_platform/mining_platform_anim_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json",
-    "filename": "/pa/units/orbital/mining_platform/mining_platform.papa"
+    "filename": "/pa/units/orbital/L_mining_platform/L_mining_platform.papa"
   },
   "physics": {
     "collision_layers": "WL_Orbital",
