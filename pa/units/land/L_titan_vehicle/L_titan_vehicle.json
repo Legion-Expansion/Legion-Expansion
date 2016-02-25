@@ -15,7 +15,7 @@
 			"head": [0, 0, 3.4]
 		}
 	},
-	"unit_types": ["UNITTYPE_Tank", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_Titan", "UNITTYPE_Hover", "UNITTYPE_Important", "UNITTYPE_FabOrbBuild", "UNITTYPE_Custom1", "UNITTYPE_Custom3"],
+	"unit_types": ["UNITTYPE_Tank", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Advanced", "UNITTYPE_Titan", "UNITTYPE_Hover", "UNITTYPE_Important", "UNITTYPE_FabOrbBuild", "UNITTYPE_Custom1"],
 	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist"],
 	"guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
 	"navigation": {
