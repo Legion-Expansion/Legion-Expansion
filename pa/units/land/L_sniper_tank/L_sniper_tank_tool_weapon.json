@@ -14,6 +14,9 @@
     "WL_Seafloor",
     "WL_WaterSurface"
   ],
+  "target_priorities": [
+	"Mobile"
+  ],
   "yaw_range": 180,
   "yaw_rate": 60
 }

@@ -13,6 +13,5 @@
 	"min_firing_velocity": 60,
 	"max_firing_velocity": 800,
 	"target_layers": ["WL_LandHorizontal",
-	"WL_Seafloor",
 	"WL_WaterSurface"]
 }

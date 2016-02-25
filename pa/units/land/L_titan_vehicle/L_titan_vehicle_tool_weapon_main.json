@@ -12,5 +12,5 @@
 	"spread_fire": true,
 	"auto_attack": true,
 	"firing_standard_deviation": 0.25,
-	"target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"]
+	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface"]
 }
