@@ -1,5 +1,5 @@
 {
-  "TEMP_texelinfo": 72.293,
+  "TEMP_texelinfo": 48,
   "area_build_separation": 100,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
@@ -32,130 +32,6 @@
       "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
     }
   },
-  "fx_offsets": [
-    {
-      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle.pfx",
-      "offset": [
-        0,
-        0,
-        15.875
-      ],
-      "type": "idle"
-    },
-    {
-      "bone": "bone_hose07",
-      "filename": "/pa/units/orbital/mining_platform/mining_platform_idle_tip.pfx",
-      "offset": [
-        0,
-        0,
-        52.5
-      ],
-      "type": "idle"
-    }
-  ],
-  "lamps": [
-    {
-      "bone": "bone_rotator02",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        0.0,
-        -4.15,
-        0.0
-      ],
-      "radius": 4.5
-    },
-    {
-      "bone": "bone_rotator02",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        -3.59,
-        2.08,
-        0.0
-      ],
-      "radius": 4.5
-    },
-    {
-      "bone": "bone_rotator02",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        3.59,
-        2.08,
-        0.0
-      ],
-      "radius": 4.5
-    },
-    {
-      "color": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "intensity": 2.0,
-      "offset": [
-        0.0,
-        7.43,
-        24.87
-      ],
-      "radius": 4.0
-    },
-    {
-      "color": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "intensity": 2.0,
-      "offset": [
-        0.0,
-        17.87,
-        22.0
-      ],
-      "radius": 4.0
-    },
-    {
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        20.5,
-        0.0,
-        0.6
-      ],
-      "radius": 6.0
-    },
-    {
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        -20.5,
-        0.0,
-        0.6
-      ],
-      "radius": 6.0
-    }
-  ],
   "max_health": 500,
   "mesh_bounds": [
     118.558,
@@ -164,11 +40,9 @@
   ],
   "model": {
     "animations": {
-      "end": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa",
-      "loop": "/pa/units/orbital/mining_platform/mining_platform_anim_loop.papa",
-      "start": "/pa/units/orbital/mining_platform/mining_platform_anim_start.papa"
+      "idle": "/pa/units/orbital/L_mining_platform/L_mining_platform_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/L_mining_platform/L_mining_platform.papa"
   },
   "physics": {
