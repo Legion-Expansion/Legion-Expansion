@@ -1,4 +1,21 @@
 {
+	"blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+			"ghost": {
+                "type": "bind_pose"
+            },
+			"dead": {
+				"type": "bind_pose"
+			},
+            "living": {
+                "type": "bind_pose"          
+            }            
+        }
+    },
 	"skeleton_controls": [{
 		"type": "fader",
 		"lerp_func": "not_being_built",

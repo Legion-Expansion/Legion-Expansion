@@ -53,7 +53,7 @@
             "idle": "/pa/units/land/L_bot_aa/L_bot_aa_idle.papa",
             "walk": "/pa/units/land/L_bot_aa/L_bot_aa_walk.papa"
         },
-        "animtree": "/pa/anim/anim_trees/bot_aa_anim_tree.json",
+        "animtree": "/pa/anim/anim_trees/L_bot_aa_anim_tree.json",
         "filename": "/pa/units/land/L_bot_aa/L_bot_aa.papa",
         "walk_speed": 3
     },
@@ -86,7 +86,7 @@
     },
     "tools": [
         {
-            "aim_bone": "bone_pitch",
+            "aim_bone": "bone_turret",
             "muzzle_bone": [
                 "socket_muzzle01",
                 "socket_muzzle02",

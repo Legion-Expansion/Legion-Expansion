@@ -57,7 +57,7 @@
 			"idle": "/pa/units/land/L_necromancer/L_necromancer_idle.papa",
 			"walk": "/pa/units/land/L_necromancer/L_necromancer_walk.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_necromancer_anim_tree.json",
 		"filename": "/pa/units/land/L_necromancer/L_necromancer.papa",
 		"walk_speed": 3.4
 	},

@@ -38,7 +38,7 @@
 		"type": "hover",
 		"acceleration": 100,
 		"brake": 100,
-		"move_speed": 8,
+		"move_speed": 10,
 		"turn_speed": 40
 	},
 	"physics": {
@@ -60,7 +60,7 @@
 		"animations": {
 			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/tank_hover_anim_tree.json"
+		"animtree": "/pa/anim/anim_trees/L_hover_tank_adv_anim_tree.json"
 	},
 	"tools": [{
 		"spec_id": "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv_tool_weapon.json",
@@ -99,7 +99,7 @@
 		},
 		"fired": {
 			"audio_cue": "/SE/Weapons/veh/tank_hover_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight03 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft03 /pa/effects/specs/ground_smoke_impact_low.pfx bone_root"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight03 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleRight02 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft03"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Veh"
