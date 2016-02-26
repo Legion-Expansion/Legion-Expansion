@@ -12,7 +12,7 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Thomas",
+	"display_name": "Havoc",
 	"description": "Shoots chain lightning at land targets",
 	"events": {
 		"build_complete": {

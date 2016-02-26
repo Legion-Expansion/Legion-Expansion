@@ -30,7 +30,7 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"build_metal_cost": 1400,
 	"description": "Walking explosive device.  Equipped with evil boombot minions",
-	"display_name": "Charles",
+	"display_name": "Necromancer",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/bot"

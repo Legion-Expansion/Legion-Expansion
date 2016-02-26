@@ -30,7 +30,7 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"build_metal_cost": 90,
 	"description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
-	"display_name": "James",
+	"display_name": "Creeper",
 	"command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

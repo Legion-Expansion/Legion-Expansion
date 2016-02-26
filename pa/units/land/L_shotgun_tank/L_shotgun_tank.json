@@ -30,7 +30,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 300,
   "description": "Close Rage Support. Attacks Land and Naval.",
-  "display_name": "Robert",
+  "display_name": "Maul",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"
