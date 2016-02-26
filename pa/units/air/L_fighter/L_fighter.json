@@ -84,7 +84,7 @@
     "aggressive_distance": 50,
     "bank_factor": 5,
     "brake": 80,
-    "move_speed": 90,
+    "move_speed": 95,
     "turn_speed": 340,
     "type": "air"
   },
