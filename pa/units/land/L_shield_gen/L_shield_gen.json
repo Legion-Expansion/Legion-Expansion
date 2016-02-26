@@ -8,6 +8,9 @@
     "description": "Shield Defense",
     "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
     "energy_efficiency_requirement": 1,
+	"consumption": {
+		"energy": 300
+	},
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/barrier"
@@ -26,10 +29,13 @@
     ],
     "model": [
         {
+			"animations": {
+                "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
+            },
             "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
-            "layer": "WL_LandHorizontal",
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json",
+			"layer": "WL_LandHorizontal"
         },
         {
             "animations": {
@@ -37,17 +43,12 @@
             },
             "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+			"skirt_decal": "/pa/effects/specs/skirt_energy.json",
             "layer": "WL_WaterSurface"
         }
     ],
     "physics": {
-        "air_friction": 1,
-        "allow_pushing": false,
-        "allow_underground": false,
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-        "ignore_collisions": false,
-        "push_class": 255,
-        "push_sideways": false,
         "radius": 1,
         "shape": "Box",
         "type": "Structure"
@@ -62,7 +63,7 @@
                 {
                     "channel": "sight",
                     "layer": "surface_and_air",
-                    "radius": 35,
+                    "radius": 100,
                     "shape": "capsule"
                 }
             ]
@@ -99,7 +100,8 @@
     },
     "tools": [
         {
-            "aim_bone": "bone_void",
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
             "record_index": 1,
             "fire_event": "fired0",
             "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_tool_weapon.json"
