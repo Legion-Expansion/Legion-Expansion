@@ -4,24 +4,26 @@
     "atrophy_cool_down": 0.5,
     "atrophy_rate": 20,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 900,
+    "build_metal_cost": 1400,
     "description": "Shield Defense",
     "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
     "energy_efficiency_requirement": 1,
 	"consumption": {
-		"energy": 300
+		"energy": 600
 	},
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/barrier"
         },
         "died": {
-            "audio_cue": "/SE/Death/barrier",
             "effect_scale": 1.25,
             "effect_spec": "/pa/effects/specs/default_explosion.pfx"
         }
     },
-    "max_health": 400,
+	"death_weapon": {
+		"ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
+	},
+    "max_health": 1000,
     "mesh_bounds": [
         5,
         5,
@@ -54,8 +56,8 @@
         "type": "Structure"
     },
     "placement_size": [
-        15,
-        15
+        20,
+        20
     ],
     "recon": {
         "observer": {
@@ -99,12 +101,26 @@
         "diameter": -20
     },
     "tools": [
-        {
+		{
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
+            "record_index": 0,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
+        },
+		{
             "aim_bone": "bone_root",
 			"muzzle_bone": "bone_void",
             "record_index": 1,
-            "fire_event": "fired0",
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_tool_weapon.json"
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
+        },
+		{
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
+            "record_index": 2,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
         }
     ],
     "wreckage_health_frac": 0.2
