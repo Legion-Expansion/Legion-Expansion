@@ -20,6 +20,7 @@
     "allow_pushing": true,
     "radius": 0
   },
+  "spawn_unit_on_death": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
 	"wreckage_health_frac": 0.0,
 	"recon": {
 		"observer": {
