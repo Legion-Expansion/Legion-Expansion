@@ -583,7 +583,7 @@
 
 
       {
-        spec_id: "/pa/units/orbital/hammerhead/hammerhead.json",
+        spec_id: "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship.json",
         si_fallback: ["orbital_battleship"],
         preferred_builds: [
           ["L_orbital", 0]
