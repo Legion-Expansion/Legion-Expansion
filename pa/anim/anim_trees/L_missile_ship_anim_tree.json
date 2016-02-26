@@ -2,8 +2,7 @@
   "blend_root": {
     "nodes": {
       "being_built": {
-        "anim_name": "closed",
-        "type": "playback"
+        "type": "bind_pose"
       },
       "dead": {
         "type": "bind_pose"
@@ -13,28 +12,6 @@
       },
       "living": {
         "entries": [
-          {
-            "name": "attached",
-            "node": {
-              "anim_name": "closed",
-              "looping": false,
-              "type": "playback"
-            },
-            "reset": "playback_reset",
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "not_attached",
-                  "target": "deploy"
-                },
-                "transition_reverse": {
-                  "func": "not_attached",
-                  "target": "deploy"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          },
           {
             "name": "deploy",
             "node": {
