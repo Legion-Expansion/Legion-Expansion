@@ -10,8 +10,8 @@
 
     // the build groups are ordered to match the build bar tab order
     HodgePodge.addUnits([
-	  
-	  {
+    
+    {
         spec_id: "/pa/units/commanders/tank_aeson/tank_aeson.json",
         si_fallback: ["commander"]
       },{

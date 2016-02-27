@@ -1,0 +1,84 @@
+{
+  "TEMP_texelinfo": 9.4493,
+  "area_build_separation": 18,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 5,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 600,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "description": "Anti-land defense. Deploys swarms of weak nanobots.",
+  "display_name": "Swarmer",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.5
+    }
+  },
+  "guard_layer": "WL_Air",
+  "max_health": 1000,
+  "mesh_bounds": [
+    5,
+    5,
+    9
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/land/air_defense/air_defense.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/sea/air_defense/air_defense.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "nearby_target_tick_update_interval": 2,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 155,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 155,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 12.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "socket_rightMuzzle",
+        "socket_leftMuzzle"
+      ],
+      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Land",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Custom1",
+    "UNITTYPE_FabBuild"
+  ]
+}
