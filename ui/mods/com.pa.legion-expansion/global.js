@@ -573,80 +573,80 @@
         spec_id: "/pa/units/orbital/L_solar_array/L_solar_array.json",
         si_fallback: ["solar_array"],
         preferred_builds: [
-          ["L_orbital", 1]
+          ["L_orbital", 6]
         ]
       }, {
         spec_id: "/pa/units/orbital/excal/excal.json",
         si_fallback: ["orbital_railgun"],
         preferred_builds: [
-          ["L_orbital", 2]
+          ["L_orbital", 9]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_laser/L_orbital_laser.json",
         si_fallback: ["orbital_laser"],
         preferred_builds: [
-          ["L_orbital", 6]
+          ["L_orbital", 7]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.json",
         si_fallback: ["radar_satellite_adv"],
         preferred_builds: [
-          ["L_orbital", 7]
+          ["L_orbital", 8]
         ]
       },
       {
         spec_id: "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.json",
         si_fallback: ["mining_platform"],
         preferred_builds: [
-          ["L_orbital_structure", 7]
+          ["L_orbital_structure", 15]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_mining_platform/L_mining_platform.json",
         si_fallback: ["mining_platform"],
         preferred_builds: [
-          ["L_orbital_structure", 8]
+          ["L_orbital_structure", 13]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json",
         si_fallback: ["orbital_factory"],
         preferred_builds: [
-          ["L_orbital_structure", 9]
+          ["L_orbital_structure", 14]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.json",
         si_fallback: ["orbital_fabrication_bot"],
         preferred_builds: [
-          ["L_orbital", 10]
+          ["L_orbital", 12]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.json",
         si_fallback: ["orbital_fighter"],
         preferred_builds: [
-          ["L_orbital", 12]
+          ["L_orbital", 13]
         ]
       }, {
         spec_id: "/pa/units/orbital/wraith/wraith.json",
         si_fallback: ["radar_satellite"],
         preferred_builds: [
-          ["L_orbital", 13]
+          ["L_orbital", 16]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_orbital_lander/L_orbital_lander.json",
         si_fallback: ["orbital_lander"],
         preferred_builds: [
-          ["L_orbital", 14]
+          ["L_orbital", 15]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_radar_satellite/L_radar_satellite.json",
         si_fallback: ["radar_satellite"],
         preferred_builds: [
-          ["L_orbital", 15]
+          ["L_orbital", 14]
         ]
       }, {
         spec_id: "/pa/units/orbital/sentinel/sentinel.json",
         si_fallback: ["orbital_probe"],
         preferred_builds: [
-          ["L_orbital_structure", 16]
+          ["L_orbital_structure", 12]
         ]
       },
 
