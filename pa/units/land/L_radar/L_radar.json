@@ -10,9 +10,9 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 300,
   "consumption": {
-    "energy": 150
+    "energy": 200
   },
   "description": "Basic radar- Detects nearby enemy land, sea, and air units.",
   "display_name": "Radar",

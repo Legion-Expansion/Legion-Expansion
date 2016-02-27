@@ -1,19 +1,10 @@
 {
 	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-	"ammo_id": "/pa/units/land/L_shield_gen/L_shield_gen_ammo.json",
-	"rate_of_fire": 10,
-	"idle_aim_delay": 0.0,
-	"max_range": 35,
-	"yaw_rate": 0,
-	"pitch_rate": 0,
-	"yaw_range": 0,
-	"pitch_range": 0,
-	"firing_arc_yaw": 360,
-	"firing_arc_pitch": 360,
-	"spread_fire": true,
-	"auto_attack": true,
-	"auto_task_type": "anti_entity",
-	"anti_entity_targets_units": false,
+	"ammo_source": "energy",
+	"ammo_demand": 600,
+	"ammo_capacity": 21000,
+	"ammo_per_shot": 600,
+	"energy_efficiency_requirement": 1,
 	"anti_entity_targets": [
 		"/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
 		"/pa/units/air/bomber_adv/bomber_adv_ammo.json",
@@ -115,8 +106,9 @@
 		"/pa/units/land/titan_vehicle/titan_vehicle_ammo.json",
 		"/pa/units/land/L_titan_bot/rocket_ammo.json"
 	],
+	"auto_task_type": "anti_entity",
+	"anti_entity_targets_units": false,
 	"target_layers": [
-		"WL_Air",
-		"WL_Orbital"
+		"WL_Air"
 	]
 }

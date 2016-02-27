@@ -62,10 +62,11 @@
 	"max_health": 251,
 	"build_metal_cost": 200,
 	"guard_layer": "WL_AnySurface",
+	"guard_radius": 10,
 	"influence_radius": 400,
 	"navigation": {
-		"acceleration": 20,
-		"brake": 20,
+		"acceleration": 40,
+		"brake": 40,
 		"move_speed": 14,
 		"turn_speed": 100,
 		"type": "amphibious"
@@ -116,7 +117,7 @@
 		"UNITTYPE_Tank",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
-    "UNITTYPE_Hover",
+		"UNITTYPE_Sub",
 		"UNITTYPE_Land",
 		"UNITTYPE_Basic",
 		"UNITTYPE_FactoryBuild",

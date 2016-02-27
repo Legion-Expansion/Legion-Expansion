@@ -45,11 +45,11 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 700,
+  "max_health": 500,
   "mesh_bounds": [
-    9.125,
-    9.623,
-    8.808
+    7.5,
+    7.5,
+    7
   ],
   "model": {
     "animations": {
@@ -57,7 +57,7 @@
       "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
       "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/L_riot_bot_anim_tree.json",
     "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
     "walk_speed": 3
   },
@@ -69,8 +69,7 @@
     "type": "land-small"
   },
   "physics": {
-    "push_class": 2,
-    "radius": 2
+    "radius": 4
   },
   "recon": {
     "observer": {

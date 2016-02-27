@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 1200,
   "description": "Sniper. Attacks Land and Naval.",
   "display_name": "Deathmark",
   "events": {
@@ -38,7 +38,7 @@
     "died": {
       "audio_cue": "/SE/Death/Veh"
     },
-    "fired": {
+    "fired0": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
     }
@@ -110,10 +110,12 @@
     {
       "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_weapon.json"
+	  "fire_event": "fired0",
+	  "record_index": 0,
+      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_tool_weapon.json"
     }
   ],
-	"fx_offsets": [{
+  "fx_offsets": [{
 		"bone": "bone_turret",
 		"offset": [
 		0,

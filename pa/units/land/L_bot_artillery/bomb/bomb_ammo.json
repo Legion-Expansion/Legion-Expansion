@@ -7,10 +7,10 @@
 	"AT_Commander": 1.0,
 	"AT_Hover": 1.0,
 	"AT_Air": 0,
-	"AT_Structure": 2.0
+	"AT_Structure": 3.0
   },
   "ammo_type": "PBAOE",
-  "damage": 350,
+  "damage": 500,
   "damage_volume": {
     "initial_radius": 10.0
   },
@@ -18,7 +18,8 @@
     "/pa/effects/specs/scorch_b_01.json"
   ],
   "sim_fire_effect": "/pa/units/land/L_bot_artillery/bomb/bomb_ammo_explosion_ent.json",
-  "splash_damage": 350,
+  "splash_damage": 500,
   "splash_damages_allies": true,
-  "splash_radius": 10
+  "splash_radius": 15,
+  "full_splash_damage_radius": 15
 }

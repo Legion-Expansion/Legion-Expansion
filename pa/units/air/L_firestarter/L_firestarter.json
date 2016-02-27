@@ -51,11 +51,11 @@
 			"deploy": "/pa/units/air/L_firestarter/L_firestarter_deploy.papa",
 			"open": "/pa/units/air/L_firestarter/L_firestarter_open.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/L_missile_ship_anim_tree.json"
+		"animtree": "/pa/anim/anim_trees/L_firestarter_anim_tree.json"
 	},
 	"tools": [{
-		"aim_bone": "bone_fireDrop",
-		"muzzle_bone": "bone_fireDrop",
+		"aim_bone": "bone_altDrop",
+		"muzzle_bone": "bone_altDrop",
 		"fire_event": "fired0",
 		"secondary_weapon": true,
 		"record_index": 0,
@@ -75,7 +75,7 @@
 			"audio_cue": "/SE/Build_Complete/air"
 		},
 		"fired0": {
-			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
+			"audio_cue": "/SE/Weapons/structure/artillery_short_fire"
 		},
 		"fired1": {
 			"audio_cue": "/SE/Weapons/veh/tank_flame",

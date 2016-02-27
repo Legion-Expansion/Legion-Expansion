@@ -16,9 +16,9 @@
   "lifetime": 2,
   "min_velocity": 60,
   "max_velocity": 150,
-  "damage": 600,
-  "splash_damage": 300,
+  "damage": 750,
+  "splash_damage": 200,
   "splash_damages_allies": true,
-  "full_damage_splash_radius": 1,
-  "splash_radius": 5
+  "full_damage_splash_radius": 4,
+  "splash_radius": 12
 }
