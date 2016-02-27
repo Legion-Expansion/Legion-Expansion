@@ -19,15 +19,19 @@
 	},
 	"skeleton_controls": [{
 		"type": "fader",
-		"lerp_func": "is_active",
+		"lerp_func": "not_being_built",
+		"child": {
+			"type": "procedural_aim",
+			"rotation_bone": "bone_turret",
+			"rotation_axis": "z"
+		}
+	}, {
+		"type": "fader",
+		"lerp_func": "not_being_built",
 		"child": {
 			"type": "procedural_aim",
 			"rotation_bone": "bone_pitch",
 			"rotation_axis": "x"
 		}
-	}, {
-		"type": "procedural_aim",
-		"rotation_bone": "bone_turret",
-		"rotation_axis": "z"
 	}]
 }

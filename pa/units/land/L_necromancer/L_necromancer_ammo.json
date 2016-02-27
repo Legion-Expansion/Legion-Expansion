@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
-  "spawn_unit_on_death": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
+  "spawn_unit_on_death": "/pa/units/land/L_necromancer/death_weapon/delay.json",
   "spawn_unit_on_death_with_velocity": false,
     "death": {
         "decals": [
@@ -17,7 +17,7 @@
     },
     "initial_velocity": 0,
 	"min_velocity": 10,
-    "lifetime": 3,
+    "lifetime": 1,
     "max_velocity": 20,
     "model": {
 		"filename": ""
@@ -26,3 +26,4 @@
     "splash_damage": 0,
     "splash_radius": 0
 }
+

@@ -156,7 +156,8 @@
       "walk": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
       "walk_stop": ""
     },
-    "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+    "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa",
+	"animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json"
   },
   "navigation": {
     "acceleration": 60,
