@@ -75,9 +75,7 @@
     "unit_types": [
         "UNITTYPE_Structure",
         "UNITTYPE_Basic",
-        "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_CombatFabAdvBuild",
         "UNITTYPE_Custom1"
     ],
     "fx_offsets": [
