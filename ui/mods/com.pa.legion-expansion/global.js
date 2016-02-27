@@ -123,6 +123,15 @@
           ["L_combat", 7]
         ]
       },  {
+        spec_id: "/pa/units/land/L_swarm_hive/L_swarm_hive.json",
+        si_fallback: ["artillery_unit_launcher"],
+        preferred_builds: [
+          ["L_combat", 8]
+        ]
+      },  {
+        spec_id: "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.json",
+        si_fallback: ["bot_nanoswarm"]
+      },  {
         spec_id: "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json",
         si_fallback: ["torpedo_launcher_adv"],
         preferred_builds: [
