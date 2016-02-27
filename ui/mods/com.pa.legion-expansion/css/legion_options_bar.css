@@ -20,6 +20,11 @@
     color: rgba(255,0,0,0.8) !important;
 }
 
+.legionui .div_sim_speed {
+  color: rgba(255,0,0,0.8) !important;
+  text-shadow: 0px 0px 30px rgba(255,0,0,0.8) !important;
+}
+
 .mixedui .div_pip_toggle_cont {
     border:1px solid rgba(99, 14, 138, 0.5) !important;
 }
