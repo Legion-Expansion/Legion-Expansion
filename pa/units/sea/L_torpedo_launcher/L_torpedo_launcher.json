@@ -23,7 +23,7 @@
 		}
 	},
 	"guard_layer": "WL_WaterSurface",
-	"max_health": 2000,
+	"max_health": 1500,
 	"mesh_bounds": [
 		12,
 		6,

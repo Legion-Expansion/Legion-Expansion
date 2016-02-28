@@ -1,27 +1,27 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, dom314, Elodea",
-  "build": "85138",
+  "build": "85138", 
   "category": [
-    "server-mod",
+    "server-mod", 
     "lobby",
     "in-game",
     "units",
-    "faction"
-  ],
-  "context": "server",
-  "date": "2015/08/05",
+    "faction" 
+  ], 
+  "context": "server", 
+  "date": "2015/08/05", 
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia"
-  ],
-  "description": "Super secret something something",
-  "display_name": "Legion Expansion (balance)",
-  "enabled": true,
-  "forum": "",
-  "icon": "",
-  "identifier": "com.pa.legion-expansion.server",
+  ], 
+  "description": "Super secret something something", 
+  "display_name": "Legion Expansion", 
+  "enabled": true, 
+  "forum": "", 
+  "icon": "", 
+  "identifier": "com.pa.legion-expansion.server", 
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
@@ -65,7 +65,7 @@
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
-  },
-  "signature": "not yet implemented",
+  }, 
+  "signature": "not yet implemented", 
   "version": "0.5"
 }

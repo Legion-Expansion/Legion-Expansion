@@ -12,8 +12,8 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Havoc",
-	"description": "Shoots chain lightning at land targets",
+	"display_name": "Slothtest",
+	"description": "Healing pulse",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/veh"
@@ -37,14 +37,15 @@
 			}
 		}
 	},
-	"max_health": 800,
+	"max_health": 750,
 	"build_metal_cost": 900,
 	"command_caps": [
 		"ORDER_Move",
 		"ORDER_Attack",
 		"ORDER_Patrol",
 		"ORDER_Assist",
-		"ORDER_Use"
+		"ORDER_Use",
+		"ORDER_FireSecondaryWeapon"
 	],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
@@ -99,7 +100,7 @@
 	},
 	"model": {
 		"filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa",
-		"animtree": "/pa/anim/anim_trees/L_tank_swarm_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/tank_flak_anim_tree.json",
 		"arrows": 5
 	},
 	"nearby_target_tick_update_interval": 15,
@@ -114,7 +115,6 @@
 				"gun005",
 				"gun006"
 			],
-			"projectiles_per_fire": 6,
 			"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
 		}		
 	],

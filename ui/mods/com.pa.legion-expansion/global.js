@@ -281,11 +281,11 @@
             ["L_vehicle", 8]
           ] // vanguard
       }, {
-        spec_id: "/pa/units/land/L_tank_swarm/L_tank_swarm.json",
-        si_fallback: ["tank_flak"],
+        spec_id: "/pa/units/land/L_sniper_tank/L_sniper_tank.json",
+        si_fallback: ["tank_heavy_mortar"],
         preferred_builds: [
-          ["L_vehicle", 9]
-        ]
+            ["L_vehicle", 9]
+          ] // sheller
       }, {
         spec_id: "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv.json",
         si_fallback: ["tank_hover"],
@@ -293,11 +293,11 @@
             ["L_vehicle", 10]
           ] //hover
       }, {
-        spec_id: "/pa/units/land/L_sniper_tank/L_sniper_tank.json",
-        si_fallback: ["tank_heavy_mortar"],
+        spec_id: "/pa/units/land/L_tank_swarm/L_tank_swarm.json",
+        si_fallback: ["tank_flak"],
         preferred_builds: [
-            ["L_vehicle", 11]
-          ] // sheller
+          ["L_vehicle", 11]
+        ]
       }, {
         spec_id: "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json",
         si_fallback: ["fabrication_vehicle"],
@@ -317,44 +317,23 @@
             ["L_vehicle", 14]
           ] // flame tank
       }, {
-        spec_id: "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 15]
-          ] // spinner
-      }, {
         spec_id: "/pa/units/land/L_hover_tank/L_hover_tank.json",
         si_fallback: ["tank_hover"],
         preferred_builds: [
-            ["L_vehicle", 16]
+            ["L_vehicle", 15]
           ] // hover tank
+      }, {
+        spec_id: "/pa/units/land/L_mortar_tank/L_mortar_tank.json",
+        si_fallback: ["tank_heavy_mortar"],
+        preferred_builds: [
+            ["L_vehicle", 16]
+          ] // spinner
       }, {
         spec_id: "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json",
         si_fallback: ["tank_heavy_mortar"],
         preferred_builds: [
             ["L_vehicle", 17]
           ] // spinner
-      },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 18]
-          ] // chain lightning 1
-      },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain2.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 19]
-          ] // chain lightning 2
-      },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain3.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 20]
-          ] // chain lightning 3
       },
 
 
@@ -384,23 +363,24 @@
             ["L_bot", 8]
           ] // sniper
       }, {
-        spec_id: "/pa/units/land/L_bot_aa_adv/L_bot_aa_adv.json",
-        si_fallback: ["bot_nanoswarm"],
+        spec_id: "/pa/units/land/L_necromancer/L_necromancer.json",
+        si_fallback: ["fabrication_bot_combat_adv"],
         preferred_builds: [
-            ["L_bot", 9]
-          ] // grenadier
+          ["L_bot", 9]
+        ]
       }, {
         spec_id: "/pa/units/land/L_bot_artillery/L_bot_artillery.json",
         si_fallback: ["bluehawk"],
         preferred_builds: [
             ["L_bot", 10]
           ] // grenadier
-      }, {
-        spec_id: "/pa/units/land/L_necromancer/L_necromancer.json",
-        si_fallback: ["fabrication_bot_combat_adv"],
+      },
+      {
+        spec_id: "/pa/units/land/L_bot_aa_adv/L_bot_aa_adv.json",
+        si_fallback: ["bot_nanoswarm"],
         preferred_builds: [
-          ["L_bot", 11]
-        ]
+            ["L_bot", 11]
+          ] // grenadier
       }, {
         spec_id: "/pa/units/land/L_fabrication_bot/L_fabrication_bot.json",
         si_fallback: ["fabrication_bot"],
@@ -414,36 +394,29 @@
             ["L_bot", 13]
           ] // dox
       }, {
+        spec_id: "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
+        si_fallback: ["bot_bomb"],
+        preferred_builds: [
+            ["L_bot", 14]
+          ] // boom
+      }, {
         spec_id: "/pa/units/land/L_sniper_bot/L_sniper_bot.json",
         si_fallback: ["bot_sniper"],
         preferred_builds: [
-            ["L_bot", 14]
+            ["L_bot", 15]
           ] //lancer
       }, {
         spec_id: "/pa/units/land/L_bot_aa/L_bot_aa.json",
         si_fallback: ["aa_missile_vehicle"],
         preferred_builds: [
-            ["L_bot", 15]
+            ["L_bot", 16]
           ] // aa
       }, {
-        spec_id: "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
-        si_fallback: ["bot_bomb"],
-        preferred_builds: [
-            ["L_bot", 16]
-          ] // boom
-      }, {
         spec_id: "/pa/units/land/L_scout_bot/L_scout_bot.json",
-        si_fallback: ["land_scout"],
+        si_fallback: ["aa_missile_vehicle"],
         preferred_builds: [
             ["L_bot", 17]
-          ] // scout
-      },
-	  {
-        spec_id: "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode.json",
-        si_fallback: ["land_scout"],
-        preferred_builds: [
-            ["L_bot", 18]
-          ] // scout_radar_mode
+          ] // aa
       },
 
 
@@ -534,20 +507,20 @@
           ["L_sea", 6]
         ]
       }, {
-        spec_id: "/pa/units/sea/L_sea_tank/L_sea_tank.json",
-        si_fallback: ["nuclear_sub"],
+        spec_id: "/pa/units/sea/L_battleship/L_battleship.json",
+        si_fallback: ["battleship"],
         preferred_builds: [
           ["L_sea", 7]
         ]
       }, {
-        spec_id: "/pa/units/sea/L_battleship/L_battleship.json",
-        si_fallback: ["battleship"],
+        spec_id: "/pa/units/sea/L_missile_ship/L_missile_ship.json",
+        si_fallback: ["missile_ship"],
         preferred_builds: [
           ["L_sea", 8]
         ]
       }, {
-        spec_id: "/pa/units/sea/L_missile_ship/L_missile_ship.json",
-        si_fallback: ["missile_ship"],
+        spec_id: "/pa/units/sea/L_sea_tank/L_sea_tank.json",
+        si_fallback: ["nuclear_sub"],
         preferred_builds: [
           ["L_sea", 9]
         ]

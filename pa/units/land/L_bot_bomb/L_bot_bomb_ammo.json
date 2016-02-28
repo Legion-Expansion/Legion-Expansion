@@ -1,9 +1,9 @@
 { 
 	"armor_damage_map": {
-		"AT_Structure": 1.5
+		"AT_Structure": 2.5
   },
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 500,
+  "damage": 250,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bomb_bot_plasma",
@@ -40,6 +40,5 @@
   },
   "splash_damage": 40,
   "splash_damages_allies": false,
-  "splash_radius": 12,
-  "full_splash_damage_radius": 3
+  "splash_radius": 13
 }

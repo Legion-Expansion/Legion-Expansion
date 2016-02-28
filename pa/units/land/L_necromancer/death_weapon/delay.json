@@ -1,16 +1,16 @@
 {
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Boombot Cocoon",
-	"description": "I wonder what is inside this evil cocoon",
-	"max_health": 250,
+	"display_name": "Time Delay Bomb",
+	"description": "KABOOM",
+	"max_health": 350,
 	"build_metal_cost": 100,
 	"damageable": false,
-	"guard_radius": 0,
+	"guard_radius": 30,
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "land-small",
-		"acceleration": 0,
-		"brake": 0,
+		"acceleration": 400,
+		"brake": 400,
 		"move_speed": 0,
 		"turn_speed": 0,
 		"wobble_factor": 0.1,
@@ -28,12 +28,17 @@
 				"layer": "surface_and_air",
 				"channel": "sight",
 				"shape": "capsule",
-				"radius": 0
+				"radius": 30
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 30
 			}]
 		}
 	},
 	"tools": [{
-		"spec_id": "/pa/units/land/L_necromancer/minion/minion_spawner_death_weapon.json",
+		"spec_id": "/pa/units/land/L_necromancer/death_weapon/bomb_tool_weapon.json",
 		"aim_bone": "bone_root",
 		"record_index": 0
 	}],
@@ -49,6 +54,16 @@
 			"effect_scale": 1.0
 		}
 	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/carrier_drone_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		}
+	},
 	"fx_offsets": [{
 		"filename": "/pa/effects/specs/none.pfx",
 		"type": "idle",		
@@ -60,19 +75,19 @@
 		]
 	}],
 	"selection_icon": {
-		"diameter": -1
+		"diameter": -9
     },
 	"TEMP_texelinfo": 6.38702,
 	"mesh_bounds": [
-		0.01,
-		0.01,
-		0.01
+		1,
+		1,
+		1
 	],
 	"unit_types": [
-	"UNITTYPE_SelfDestruct",
     "UNITTYPE_Bot",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
+    "UNITTYPE_Offense",
     "UNITTYPE_Custom1"
   ]
 }

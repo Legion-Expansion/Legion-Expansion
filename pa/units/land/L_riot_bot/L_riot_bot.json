@@ -45,11 +45,11 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 500,
+  "max_health": 700,
   "mesh_bounds": [
-    7.5,
-    7.5,
-    7
+    9.125,
+    9.623,
+    8.808
   ],
   "model": {
     "animations": {
@@ -57,7 +57,7 @@
       "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
       "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_riot_bot_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
     "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
     "walk_speed": 3
   },
@@ -69,7 +69,8 @@
     "type": "land-small"
   },
   "physics": {
-    "radius": 4
+    "push_class": 2,
+    "radius": 2
   },
   "recon": {
     "observer": {
@@ -95,15 +96,15 @@
   "tools": [
   {
 		"aim_bone": "bone_pitch",
-		"spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
+		"spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",		
 		"muzzle_bone": [
 			"left_muzzle01",
 			"right_muzzle01",
 			"left_muzzle02",
 			"right_muzzle02",
 			"left_muzzle03",
-			"right_muzzle03"
-		]
+			"right_muzzle03"			
+		] 
     }
   ],
   "transportable": {
@@ -113,6 +114,7 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
+    "UNITTYPE_Artillery",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",

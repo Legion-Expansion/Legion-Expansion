@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 35,
+  "damage": 25,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bot_spark_impact",
@@ -18,5 +18,5 @@
     "filename": ""
   },
   "splash_damage": 10,
-  "splash_radius": 10
+  "splash_radius": 5
 }

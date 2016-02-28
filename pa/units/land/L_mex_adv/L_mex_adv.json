@@ -4,7 +4,7 @@
 	"description": "Basic Economy. Extracts Mass to Produce a Metal Income.",
 	"strategic_icon_priority": 5, 
 	"max_health": 5000,  
-	"build_metal_cost": 1400,  
+	"build_metal_cost": 1700,  
 	"atrophy_rate": 33.3333,  
 	"atrophy_cool_down": 15.0, 
 	"spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -12,7 +12,7 @@
 	"force_snap_to_feature_orientation": true,  
 	"area_build_type": "Sphere",
 	"production": {
-		"metal": 22
+		"metal": 26
 	},  
 	"consumption": {
 		"energy": 0

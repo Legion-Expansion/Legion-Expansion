@@ -80,11 +80,11 @@
     "filename": "/pa/units/air/L_fighter/L_fighter.papa"
   },
   "navigation": {
-    "acceleration": 180,
+    "acceleration": 90,
     "aggressive_distance": 50,
     "bank_factor": 5,
-    "brake": 95,
-    "move_speed": 95,
+    "brake": 80,
+    "move_speed": 90,
     "turn_speed": 340,
     "type": "air"
   },

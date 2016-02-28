@@ -122,7 +122,7 @@
 	"spawn_layers": "WL_Underwater",
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_pitch",
       "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv_build_arm.json"
     }
   ],
