@@ -34,10 +34,10 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 50,
+  "build_metal_cost": 30,
   "buildable_types": "",
-  "description": "Bees",
-  "display_name": "Bees",
+  "description": "!LOC:Nanobot Swarm- Extremely Fast. Cheap. Close range. Devastating damage. Attacks land targets.",
+  "display_name": "Swarmlings",
   "events": {
     "died": {
       "audio_cue": "/SE/Death/swarm",
@@ -48,37 +48,24 @@
       "effect_spec": ""
     }
   },
-  "fx_offsets": [
-    {
-      "bone": "bone_body",
-      "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "idle"
-    }
-  ],
-  "guard_layer": "WL_AnySurface",
-  "guard_radius": 130,
-  "max_health": 100,
-  "passive_health_regen": -10,
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 25,
   "mesh_bounds": [
-    4,
-    4,
-    4
+    6,
+    6,
+    6
   ],
   "model": {
-    "animations": {
-      "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json",
-    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
+    "animtree": "/pa/anim/anim_trees/L_hive_nanoswarm_anim_tree.json",
+		"animations": {
+			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+		},
+    "filename": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.papa"
   },
   "navigation": {
     "acceleration": 400,
-    "brake": -1,
+    "brake": 400,
+    "group_preference": "back",
     "move_speed": 40,
     "turn_speed": 1080,
     "type": "hover"
@@ -111,10 +98,15 @@
   "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {
-      "aim_bone": "bone_body",
-      "spec_id": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_tool_weapon.json"
+      "aim_bone": "bone_pitch",
+	  "muzzle_bone": [
+		"socket_muzzle001",
+		"socket_muzzle002"
+	],
+      "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_tool_weapon.json"
     }
   ],
+  "passive_health_regen": -3,
   "transportable": {
     "size": 1
   },
@@ -122,8 +114,11 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
+    "UNITTYPE_Offense",
     "UNITTYPE_Advanced",
-    "UNITTYPE_Hover"
+    "UNITTYPE_Deconstruction",
+    "UNITTYPE_Hover",
+	"UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }

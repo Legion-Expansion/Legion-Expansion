@@ -1,31 +1,20 @@
 {
-  "ammo_capacity": 250,
-  "ammo_demand": 25,
   "ammo_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_ammo.json",
-  "ammo_per_shot": 50,
   "ammo_source": "metal",
+  "ammo_capacity": 30,
+  "ammo_demand": 30,
+  "ammo_per_shot": 30,
   "auto_attack": true,
-  "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-  "carpet_fire": true,
-  "carpet_wait_for_full_ammo": true,
-  "start_fully_charged": true,
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_artillery",
-      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
-    }
-  },
-  "firing_standard_deviation": 0,
-  "min_firing_velocity": 20,
-  "max_range": 120,
-  "pitch_range": 10,
+  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+  "max_range": 150,
+  "pitch_range": 89,
   "pitch_rate": 360,
-  "rate_of_fire": 3,
+  "rate_of_fire": 1,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
-	"WL_WaterSurface"
+    "WL_WaterSurface"
   ],
   "yaw_range": 180,
-  "yaw_rate": 3600
+  "yaw_rate": 360
 }
