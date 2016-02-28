@@ -1,67 +1,65 @@
 {
-  "TEMP_texelinfo": 15.3609,
+  "TEMP_texelinfo": 9.4493,
   "area_build_separation": 18,
-  "atrophy_cool_down": 15.0,
-  "atrophy_rate": 15.0,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 5,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 600,
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Spawns angry bees",
-  "display_name": "Hive",
+  "description": "Anti-land defense. Deploys swarms of weak nanobots.",
+  "display_name": "Swarmer",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",
-      "effect_scale": 0.75
-    },
-    "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire"
+      "effect_scale": 0.5
     }
   },
-  "guard_layer": "WL_AnySurface",
-  "max_health": 4000,
+  "guard_layer": "WL_Air",
+  "max_health": 1000,
   "mesh_bounds": [
-    8,
-    8,
-    23
+    5,
+    5,
+    9
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/defense_turret_adv_anim_tree.json",
-      "filename": "/pa/units/land/laser_defense_adv/laser_defense_adv.papa",
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/land/air_defense/air_defense.papa",
       "layer": "WL_LandHorizontal",
-      "skirt_decal": "/pa/effects/specs/skirt_defense_adv.json"
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/defense_turret_adv_anim_tree.json",
-      "filename": "/pa/units/sea/floating_laser_adv/floating_laser_adv.papa",
+      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "filename": "/pa/units/sea/air_defense/air_defense.papa",
       "layer": "WL_WaterSurface"
     }
   ],
+  "nearby_target_tick_update_interval": 2,
   "recon": {
     "observer": {
       "items": [
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 130,
+          "radius": 155,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 130,
+          "radius": 155,
           "shape": "capsule"
         }
       ]
     }
   },
   "selection_icon": {
-    "diameter": 15.0
+    "diameter": 12.0
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
@@ -69,7 +67,6 @@
       "aim_bone": "bone_pitch",
       "muzzle_bone": [
         "socket_rightMuzzle",
-        "socket_centerMuzzle",
         "socket_leftMuzzle"
       ],
       "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
@@ -77,10 +74,11 @@
   ],
   "unit_types": [
     "UNITTYPE_Structure",
-    "UNITTYPE_Advanced",
+    "UNITTYPE_Basic",
     "UNITTYPE_Land",
     "UNITTYPE_SurfaceDefense",
     "UNITTYPE_Defense",
-    "UNITTYPE_FabAdvBuild"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_FabBuild"
   ]
 }
