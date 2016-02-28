@@ -4,21 +4,26 @@
     "atrophy_cool_down": 0.5,
     "atrophy_rate": 20,
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 900,
+    "build_metal_cost": 1400,
     "description": "Shield Defense",
     "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
     "energy_efficiency_requirement": 1,
+	"consumption": {
+		"energy": 600
+	},
     "events": {
         "build_complete": {
             "audio_cue": "/SE/Build_Complete/barrier"
         },
         "died": {
-            "audio_cue": "/SE/Death/barrier",
             "effect_scale": 1.25,
             "effect_spec": "/pa/effects/specs/default_explosion.pfx"
         }
     },
-    "max_health": 400,
+	"death_weapon": {
+		"ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
+	},
+    "max_health": 1000,
     "mesh_bounds": [
         5,
         5,
@@ -26,10 +31,13 @@
     ],
     "model": [
         {
+			"animations": {
+                "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
+            },
             "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
-            "layer": "WL_LandHorizontal",
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json",
+			"layer": "WL_LandHorizontal"
         },
         {
             "animations": {
@@ -37,24 +45,19 @@
             },
             "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
             "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+			"skirt_decal": "/pa/effects/specs/skirt_energy.json",
             "layer": "WL_WaterSurface"
         }
     ],
     "physics": {
-        "air_friction": 1,
-        "allow_pushing": false,
-        "allow_underground": false,
         "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-        "ignore_collisions": false,
-        "push_class": 255,
-        "push_sideways": false,
         "radius": 1,
         "shape": "Box",
         "type": "Structure"
     },
     "placement_size": [
-        15,
-        15
+        20,
+        20
     ],
     "recon": {
         "observer": {
@@ -62,7 +65,7 @@
                 {
                     "channel": "sight",
                     "layer": "surface_and_air",
-                    "radius": 35,
+                    "radius": 100,
                     "shape": "capsule"
                 }
             ]
@@ -72,9 +75,7 @@
     "unit_types": [
         "UNITTYPE_Structure",
         "UNITTYPE_Basic",
-        "UNITTYPE_FabBuild",
         "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_CombatFabAdvBuild",
         "UNITTYPE_Custom1"
     ],
     "fx_offsets": [
@@ -98,11 +99,26 @@
         "diameter": -20
     },
     "tools": [
-        {
-            "aim_bone": "bone_void",
+		{
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
+            "record_index": 0,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
+        },
+		{
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
             "record_index": 1,
-            "fire_event": "fired0",
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_tool_weapon.json"
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
+        },
+		{
+            "aim_bone": "bone_root",
+			"muzzle_bone": "bone_void",
+            "record_index": 2,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
         }
     ],
     "wreckage_health_frac": 0.2

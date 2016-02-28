@@ -1,0 +1,99 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "anim_name": "death01",
+        "looping": false,
+        "type": "playback"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+			"type": "aim_blend",
+			"aim_bone_root": "bone_turret",
+			"node_aim_down": {
+				"type": "bind_pose"
+			},
+			"node_aim_neutral": {
+				"type": "bind_pose"
+			},
+			"node_aim_up": {
+				"type": "bind_pose"
+			},
+		   "child": {
+				"type": "walk",
+				"node_idle": {
+					"type": "playback",
+					"anim_name": "idle"
+				},
+				"node_walk": {
+					"type": "playback",
+					"anim_name": "walk"
+				}
+			}
+		
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch01",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+	{
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch02",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+	{
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch03",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "bone": "bone_recoil01",
+      "recoil_dist": 1,
+      "restore_time": 1.0,
+      "type": "recoil"
+    },
+	{
+      "bone": "bone_recoil02",
+      "recoil_dist": 1,
+      "restore_time": 1.0,
+      "type": "recoil"
+    },
+	{
+      "bone": "bone_recoil03",
+      "recoil_dist": 1,
+      "restore_time": 1.0,
+      "type": "recoil"
+    }
+  ]
+}

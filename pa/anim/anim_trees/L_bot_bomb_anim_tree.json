@@ -1,0 +1,40 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "anim_name": "death01",
+        "looping": false,
+        "type": "playback"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "node_idle": {
+          "anim_name": "idle",
+          "type": "playback"
+        },
+        "node_walk": {
+          "anim_name": "walk",
+          "type": "playback"
+        },
+        "type": "walk"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_root",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    }
+  ]
+}

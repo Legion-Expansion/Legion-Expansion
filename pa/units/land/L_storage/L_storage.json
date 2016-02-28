@@ -10,16 +10,20 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 900,
-  "description": "Significantly Increases Storage Capacity of Metal and Energy Production.",
+  "build_metal_cost": 500,
+  "description": "Uses Blackhole Compression to Store Significant Ammounts of Metal and Energy",
   "display_name": "OmniSilo Storage Device",
+  "death_weapon": {
+	"ground_ammo_spec": "/pa/units/land/L_storage/death_weapon.json"
+  },
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 0.8
+	  "effect_spec": "/pa/units/land/L_storage/black_hole_implosion.pfx",
+      "effect_scale": 1
     }
   },
   "fx_offsets": [
@@ -94,8 +98,8 @@
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "storage": {
-    "energy": 50000,
-    "metal": 9250
+    "energy": 75000,
+    "metal": 15000
   },
   "unit_types": [
     "UNITTYPE_Structure",

@@ -20,7 +20,7 @@
         "cue": "/SE/Construction/Fab_contruction_beam_loop",
         "flag": "build_target_changed",
         "should_start_func": "has_build_target",
-        "sh1ld_stop_func": "no_build_target"
+        "should_stop_func": "no_build_target"
       },
       "move": {
         "cue": "/SE/Movement/sea/Fab_ship_loop",

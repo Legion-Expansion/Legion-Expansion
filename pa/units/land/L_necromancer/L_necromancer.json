@@ -28,8 +28,8 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"build_metal_cost": 550,
-	"description": "Heavy Assault Bot. Short Range. Attacks Land and Naval.",
+	"build_metal_cost": 1400,
+	"description": "Walking explosive device.  Equipped with evil boombot minions",
 	"display_name": "Necromancer",
 	"events": {
 		"build_complete": {
@@ -45,7 +45,7 @@
 		}
 	},
 	"guard_layer": "WL_AnySurface",
-	"max_health": 700,
+	"max_health": 1250,
 	"mesh_bounds": [
 		8.05,
 		6.214,
@@ -57,19 +57,19 @@
 			"idle": "/pa/units/land/L_necromancer/L_necromancer_idle.papa",
 			"walk": "/pa/units/land/L_necromancer/L_necromancer_walk.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_necromancer_anim_tree.json",
 		"filename": "/pa/units/land/L_necromancer/L_necromancer.papa",
 		"walk_speed": 3.4
 	},
 	"navigation": {
 		"acceleration": 80,
 		"brake": 80,
-		"move_speed": 12,
+		"move_speed": 10,
 		"turn_speed": 240,
-		"type": "land-small"
+		"type": "land-small",
+		"group_preference": "back"
 	},
 	"physics": {
-		"push_class": 2,
 		"radius": 2
 	},
 	"recon": {

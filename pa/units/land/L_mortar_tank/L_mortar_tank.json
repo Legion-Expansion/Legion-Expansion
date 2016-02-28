@@ -31,7 +31,7 @@
        "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
 	   "effect_scale": 1.0,
 	   "effect_spec": ""
-     }	 
+     }
    },
 	"audio": {
 		"loops": {
@@ -60,16 +60,17 @@
 	"display_name": "Stoke",
 	"description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
 	"max_health": 251,
-	"build_metal_cost": 200,	
+	"build_metal_cost": 200,
 	"guard_layer": "WL_AnySurface",
+	"guard_radius": 10,
 	"influence_radius": 400,
 	"navigation": {
-		"acceleration": 20,
-		"brake": 20,
+		"acceleration": 40,
+		"brake": 40,
 		"move_speed": 14,
 		"turn_speed": 100,
 		"type": "amphibious"
-	},	
+	},
 	"recon": {
 		"observer": {
 		  "items": [
@@ -104,7 +105,7 @@
 		  "show_range": false,
 		  "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_torpedo_tool_weapon.json"
 		}
-		
+
 	],
 	"transportable": {
 		"size": 1
@@ -116,6 +117,7 @@
 		"UNITTYPE_Tank",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
+		"UNITTYPE_Sub",
 		"UNITTYPE_Land",
 		"UNITTYPE_Basic",
 		"UNITTYPE_FactoryBuild",
