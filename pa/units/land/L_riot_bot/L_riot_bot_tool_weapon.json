@@ -10,7 +10,7 @@
   "firing_arc_yaw": 0,
   "pitch_range": 90,
   "pitch_rate": 540,
-  "rate_of_fire": 4.5,
+  "rate_of_fire": 10,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",

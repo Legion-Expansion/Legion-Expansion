@@ -1,9 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "flight_type": "Staged",
-  "cruise_height": 15,
-  "spawn_layers": "WL_Air",
-  "damage": 300,
+  "damage": 30,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast"
@@ -12,34 +9,11 @@
   "fx_trail": {
     "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm_trail.pfx"
   },
-  "initial_velocity": 200.0,
-  "lifetime": 2,
-  "max_velocity": 300.0,
-  "splash_damage": 300,
-  "splash_radius": 2,
-  "turn_rate": 200,
+  "initial_velocity": 400.0,
+  "lifetime": 1,
+  "max_velocity": 400.0,
+  "splash_damage": 0,
+  "splash_radius": 0,
   "spawn_unit_on_death": "/pa/units/land/L_tank_swarm/chain/chain.json",
-  "spawn_unit_on_death_with_velocity": false,
-  "physics": {
-		"radius": 1,
-		"gravity_scalar": 5,
-		"ignore_gravity": false,
-		"add_to_spatial_db": true
-	},
-	"stages": [
-		{
-			"ignores_gravity": true,
-			"ignores_LOS": true,
-			"stage_duration": 50,
-			"stage_turn_rate": 120,
-			"rotates_to_velocity": true
-		},
-		{
-			"ignores_gravity": false,
-			"ignores_LOS": false,
-			"stage_duration": 5000,
-			"stage_turn_rate": 900,
-			"rotates_to_velocity": true
-		}
-	]
+  "spawn_unit_on_death_with_velocity": false
 }

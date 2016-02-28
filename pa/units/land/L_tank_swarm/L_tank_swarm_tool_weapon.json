@@ -1,25 +1,22 @@
 {
   "ammo_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_ammo.json",
   "auto_attack": true,
-  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
-  "firing_standard_deviation": 7,
-  "min_firing_velocity": 100,
-  "max_firing_velocity": 400,
+  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
   "ammo_source": "time",
-  "ammo_capacity": 5,
+  "ammo_capacity": 12,
   "ammo_demand": 1,
-  "ammo_per_shot": 5,
+  "ammo_per_shot": 2,
+  "carpet_fire":  true,
   "max_range": 100,
   "pitch_range": 90,
   "pitch_rate": 180,
-  "rate_of_fire": 2,
+  "rate_of_fire": 4,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
+    "WL_Seafloor",
     "WL_WaterSurface"
   ],
-  "firing_arc_yaw": 180,
-  "firing_arc_pitch": 180,
   "yaw_range": 180,
-  "yaw_rate": 360
+  "yaw_rate": 60
 }

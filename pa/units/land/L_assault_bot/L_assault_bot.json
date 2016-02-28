@@ -63,9 +63,8 @@
   "navigation": {
     "acceleration": 50,
     "brake": 50,
-    "move_speed": 15,
+    "move_speed": 16,
     "turn_speed": 720,
-	"group_preference": "front",
     "type": "amphibious"
   },
   "physics": {

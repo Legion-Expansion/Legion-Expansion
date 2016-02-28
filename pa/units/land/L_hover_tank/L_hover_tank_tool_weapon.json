@@ -16,10 +16,8 @@
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
-    "WL_WaterSurface"
-  ],
-  "target_priorities": [
-	"Mobile"
+    "WL_WaterSurface",
+    "WL_Underwater"
   ]
 }
 

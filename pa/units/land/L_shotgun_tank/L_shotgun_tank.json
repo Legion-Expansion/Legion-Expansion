@@ -58,7 +58,7 @@
   },
   "navigation": {
     "acceleration": 75,
-    "brake": -1,
+    "brake": 100,
     "group_preference": "front",
     "move_speed": 8,
     "turn_speed": 180,
@@ -106,11 +106,9 @@
 		"socket_muzzle",
 		"socket_muzzle",
 		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
 		"socket_muzzle"
 	  ],
-	  "projectiles_per_fire": 12,
+	  "projectiles_per_fire": 10,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_tool_weapon.json"
     }
   ],
