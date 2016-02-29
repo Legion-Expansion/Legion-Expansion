@@ -34,7 +34,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 2100,
+  "build_metal_cost": 2400,
   "buildable_types": "(Custom1 & ( Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & Tank))",
   "command_caps": [
     "ORDER_Move",
@@ -69,7 +69,7 @@
         }
     ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 450,
+  "max_health": 500,
     "mesh_bounds": [
         5.2,
         5.8,
@@ -83,7 +83,7 @@
     "acceleration": 120,
     "brake": 120,
     "group_preference": "back",
-    "move_speed": 12,
+    "move_speed": 10,
     "turn_speed": 360,
     "type": "land-small"
   },
