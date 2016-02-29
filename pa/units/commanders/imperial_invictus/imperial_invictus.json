@@ -159,6 +159,7 @@
       "radius": 4.0
     }
   ],
+  "metal_cost": 25000,
   "max_health": 12500,
   "mesh_bounds": [
     12.6,
