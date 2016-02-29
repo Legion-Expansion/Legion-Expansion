@@ -2,7 +2,7 @@
   "ammo_capacity": 425,
   "ammo_demand": 100,
   "ammo_id": "/pa/units/air/L_bomber/L_bomber_ammo.json",
-  "ammo_per_shot": 75,
+  "ammo_per_shot": 212,
   "ammo_source": "energy",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
@@ -13,12 +13,12 @@
       "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   },
-  "firing_standard_deviation": 10,
+  "firing_standard_deviation": 0,
   "max_range": 10,
   "pitch_range": 180,
   "pitch_rate": 3600,
-  "rate_of_fire": 15,
-  "spread_fire": false,
+  "rate_of_fire": 2.2,
+  "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_WaterSurface",
