@@ -4,11 +4,11 @@
 	"splash_damage": 200,
 	"splash_radius": 10,
 	"full_damage_splash_radius": 2,
-	"initial_velocity": 110.0,
+	"initial_velocity": 70.0,
 	"max_velocity": 110.0,
 	"splash_damages_allies": false,
 	"influence_radius": 900,
-	"lifetime": 1,
+	"lifetime": 5,
 	"audio_loop": "/SE/Movement/missile/battleship_fly_loop",
 	"model": {
 		"filename": "/pa/units/air/shell/shell.papa"
