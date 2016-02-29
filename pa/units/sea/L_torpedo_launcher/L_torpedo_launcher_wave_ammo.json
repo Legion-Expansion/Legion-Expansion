@@ -9,7 +9,7 @@
 	"damage": 60,
 	"splash_damage": 60,
 	"splash_radius": 15,
-	"full_damage_splash_radius": 3,
+	"full_damage_splash_radius": 10,
 	"initial_velocity": 65.0,
 	"max_velocity": 75.0,
 	"lifetime": 8,
@@ -29,20 +29,27 @@
 	"physics": {
 		"add_to_spatial_db": false,
 		"allow_underground": true,
-		"gravity_scalar": 5,
-		"radius": 5
+		"gravity_scalar": 3,
+		"radius": 1
 	},
-	"turn_rate": 5,
+	"turn_rate": 0,
 	"max_health": 1,
 	"flight_type": "Staged",
 	"flight_layer": "Underwater",
 	"spawn_layers": "WL_Underwater",
 	"stages": [
+		{	
+			"ignores_gravity": true,
+			"ignores_LOS": true,
+			"stage_duration": 100,
+			"rotates_to_velocity": true,
+			"stage_turn_rate": 20
+		},
 		{
 			"ignores_gravity": true,
 			"ignores_LOS": true,
-			"stage_turn_rate": 0,
-			"stage_duration": 2500,
+			"stage_turn_rate": 6,
+			"stage_duration": 2750,
 			"stage_change_range": 10,
 			"rotates_to_velocity": true
 		},
