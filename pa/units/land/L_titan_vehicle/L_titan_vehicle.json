@@ -100,13 +100,6 @@
 		"fire_event": "fired2",
 		"projectiles_per_fire": 1,
 		"muzzle_bone": ["socket_muzzleRight001", "socket_muzzleRight002"]
-	}, {
-		"spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_stomp.json",
-		"record_index": -1,
-		"fire_event": "fired",
-		"projectiles_per_fire": 1,
-		"aim_bone": "bone_root",
-		"muzzle_bone": "bone_root"
 	}],
 	"teleportable": null,
 	"events": {
