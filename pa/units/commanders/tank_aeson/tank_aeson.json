@@ -1,5 +1,4 @@
 {
-"base_spec": "/pa/units/commanders/tank_base/tank_base.json",
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
@@ -31,6 +30,7 @@
       }
     }
   },
+  "build_metal_cost": 25000,
   "buildable_types": "CmdBuild & Custom1",
   "catalog_object_name": "TankAeson",
   "client": {
@@ -144,7 +144,6 @@
       "radius": 4
     }
   ],
-  "metal_cost": 25000,
   "max_health": 12500,
   "mesh_bounds": [
     11.1,
@@ -162,7 +161,6 @@
     "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa",
 	"animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json"
   },
-"build_metal_cost": 25000,
   "navigation": {
     "acceleration": 60,
     "brake": -1,
