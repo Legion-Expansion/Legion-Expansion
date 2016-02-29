@@ -10,6 +10,9 @@
   "fx_trail": {
     "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
   },
+  "impact_decals": [
+    null
+  ],
   "initial_velocity": 60,
   "lifetime": 30,
   "max_velocity": 100,
