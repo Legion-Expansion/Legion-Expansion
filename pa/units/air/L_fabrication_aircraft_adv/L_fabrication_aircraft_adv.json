@@ -34,7 +34,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 2100,
+  "build_metal_cost": 2400,
 	"buildable_types": "Custom1 & (Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild | Air & Titan)",
   "command_caps": [
     "ORDER_Move",
@@ -148,11 +148,11 @@
   },
   "tools": [
     {
-      "aim_bone": "turret_right",
-      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
-    },
-    {
-      "aim_bone": "turret_left",
+      "aim_bone": "bone_root",
+	  "muzzle_bone": [
+		"turret_left",
+		"turret_right"
+	  ],
       "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
     }
   ],
