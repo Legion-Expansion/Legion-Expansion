@@ -3,14 +3,15 @@
   "damage": 30,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/laser_blast"
+      "audio_cue": "/SE/Impacts/laser_blast",
+      "effect_spec": "/pa/effects/specs/none.pfx"
     }
   },
   "fx_trail": {
     "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm_trail.pfx"
   },
   "initial_velocity": 400.0,
-  "lifetime": 1,
+  "lifetime": 0.37,
   "max_velocity": 400.0,
   "splash_damage": 0,
   "splash_radius": 0,

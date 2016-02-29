@@ -41,7 +41,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/artillery_fire",
-      "effect_spec": ""
+      "effect_spec": "/pa/units/land/L_shotgun_tank/muzzle_flash.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_LandHorizontal",

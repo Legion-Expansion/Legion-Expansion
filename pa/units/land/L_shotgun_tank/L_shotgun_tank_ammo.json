@@ -4,7 +4,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
+      "effect_spec": "/pa/units/land/L_shotgun_tank/proj_hit.pfx"
     }
   },
   "fx_trail": {
@@ -16,7 +16,7 @@
     ]
   },
   "initial_velocity": 200,
-  "lifetime": 0.5,
+  "lifetime": 0.38,
   "max_velocity": 200,
   "splash_damage": 10,
   "splash_radius": 7,

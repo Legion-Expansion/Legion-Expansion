@@ -51,6 +51,7 @@
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Bot_bomb",
+			"effect_spec":	"/pa/effects/specs/none.pfx",		
 			"effect_scale": 1.0
 		}
 	},
@@ -64,16 +65,6 @@
 			}
 		}
 	},
-	"fx_offsets": [{
-		"filename": "/pa/effects/specs/none.pfx",
-		"type": "idle",		
-        "bone": "bone_root",
-		"offset": [
-			0,
-			0,
-			5
-		]
-	}],
 	"selection_icon": {
 		"diameter": -9
     },
@@ -82,7 +73,7 @@
 		1,
 		1,
 		1
-	],
+	],	
 	"unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Land",

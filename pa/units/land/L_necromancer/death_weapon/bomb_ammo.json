@@ -14,9 +14,9 @@
   "damage_volume": {
     "initial_radius": 10.0
   },
-  "impact_decals": [
-    "/pa/effects/specs/scorch_b_01.json"
-  ],
+	"death": {
+		"decals": [""]
+	},
   "sim_fire_effect": "/pa/units/land/L_bot_artillery/bomb/bomb_ammo_explosion_ent.json",
   "splash_damage": 0,
   "splash_damages_allies": true,

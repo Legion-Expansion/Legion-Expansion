@@ -2,14 +2,12 @@
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
   "spawn_unit_on_death": "/pa/units/land/L_necromancer/death_weapon/delay.json",
   "spawn_unit_on_death_with_velocity": false,
-    "death": {
-        "decals": [
-            "/pa/effects/specs/scorch_b_01.json"
-        ]
-    },
+	"death": {
+		"decals": [""]
+	},
     "events": {
         "died": {
-            "effect_spec": "/pa/effects/specs/none.pfx"
+            "effect_spec": "/pa/units/land/L_necromancer/death_weapon/teleport.pfx"
         }
     },
     "fx_trail": {
