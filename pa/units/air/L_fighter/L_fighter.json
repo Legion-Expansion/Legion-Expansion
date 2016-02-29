@@ -83,9 +83,9 @@
     "acceleration": 180,
     "aggressive_distance": 50,
     "bank_factor": 5,
-    "brake": 95,
+    "brake": 80,
     "move_speed": 95,
-    "turn_speed": 340,
+    "turn_speed": 300,
     "type": "air"
   },
   "physics": {
