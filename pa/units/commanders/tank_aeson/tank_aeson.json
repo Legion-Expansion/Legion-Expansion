@@ -1,4 +1,5 @@
 {
+"base_spec": "/pa/units/commanders/tank_base/tank_base.json",
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
@@ -161,6 +162,7 @@
     "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa",
 	"animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json"
   },
+"build_metal_cost": 25000,
   "navigation": {
     "acceleration": 60,
     "brake": -1,
