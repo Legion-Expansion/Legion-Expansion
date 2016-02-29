@@ -1,12 +1,8 @@
 {
-  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 40,
-  "fx_trail": {
-    "filename": "/pa/units/air/L_fighter/trail.pfx"
-  },
-  "initial_velocity": 350,
-  "lifetime": 2,
-  "max_velocity": 350,
-  "splash_damage": 0,
-  "splash_radius": 0
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "damage": 35,
+  "collision_check": "target",
+	"collision_response": "impact",
+	"fx_beam_spec": "/pa/units/land/L_sniper_bot/beam_trail.pfx",
+	"fx_collision_spec": "/pa/units/land/L_sniper_bot/beam_hit.pfx"
 }
