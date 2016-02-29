@@ -1,4 +1,5 @@
 {
+	"base_spec": "/pa/units/commanders/imperial_base/imperial_base.json",
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
