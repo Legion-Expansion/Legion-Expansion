@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
 	"display_name": "Odin",
 	"description": "Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
-	"max_health": 80000,
+	"max_health": 55000,
 	"build_metal_cost": 30000,
 	"armor_type": "AT_Hover",
 	"atrophy_rate": 200.0,
