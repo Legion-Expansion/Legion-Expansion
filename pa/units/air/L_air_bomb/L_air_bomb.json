@@ -30,8 +30,8 @@
 		"ORDER_Assist",
 		"ORDER_Attack"
 	],
-	"guard_layer": "WL_AnySurface",
-	"guard_radius": 140,
+	"guard_layer": "WL_Air",
+	"guard_radius": 150,
 	"description": "Suicide Bomb Plane",
 	"display_name": "Black Hole",
 	"events": {
@@ -57,8 +57,8 @@
 	}],	
 	"max_health": 100,
 	"mesh_bounds": [
-		4,
-		4,
+		6,
+		6,
 		4
 	],
 	"model": {
