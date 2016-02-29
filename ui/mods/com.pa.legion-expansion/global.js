@@ -524,6 +524,12 @@
         preferred_builds: [
           ["L_air", 11]
         ]
+      }, {
+        spec_id: "/pa/units/air/L_air_scout_adv/vision/vision.json",
+        si_fallback: ["air_scout"],
+        preferred_builds: [
+          ["L_air", 12]
+        ]
       },
 
 
