@@ -27,6 +27,7 @@
       "cue": "/SE/Selection/commander"
     }
   },
+  "build_metal_cost": 25000,
   "buildable_types": "CmdBuild & Custom1",
   "catalog_object_name": "InvictusCommander",
   "client": {
@@ -159,7 +160,6 @@
       "radius": 4.0
     }
   ],
-  "metal_cost": 25000,
   "max_health": 12500,
   "mesh_bounds": [
     12.6,
