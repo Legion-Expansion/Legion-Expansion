@@ -60,14 +60,17 @@
     "LegionBotAdvancedAssault": {
       "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot.json"
     },
+    "LegionBotAdvancedBomb": {
+      "spec_id": "/pa/units/land/L_necromancer/L_necromancer.json"
+    },
     "LegionBotAdvancedFabber": {
       "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"
     },
     "LegionBotAdvancedTactical": {
       "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
     },
-    "LegionBotAdvancedBomb": {
-      "spec_id": "/pa/units/land/L_necromancer/L_necromancer.json"
+    "LegionBotAdvancedSupportCommander": {
+      "spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander.json"
     },
     "LegionBotBasicAA": {
       "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa.json"
@@ -201,7 +204,7 @@
     "LegionNavalAdvancedFabberSub": {
       "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json"
     },
-    "LegionNavalAdvancedTank": {
+    "LegionNavalAdvancedDestroyer": {
       "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
     },
     "LegionNavalAdvancedTactical": {
