@@ -1,9 +1,9 @@
 {
 	"base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-	"damage": 5600,
-	"splash_damage": 5600,
-	"splash_radius": 20,
-	"full_damage_splash_radius": 10,
+	"damage": 6000,
+	"splash_damage": 6000,
+	"splash_radius": 100,
+	"full_damage_splash_radius": 65,
 	"splash_damages_allies": false,
 	"initial_velocity": 300.0,
 	"lifetime": 4,
