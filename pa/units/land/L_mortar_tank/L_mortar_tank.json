@@ -25,7 +25,7 @@
 	 "fired0": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
 	  "effect_scale": 1.0,
-      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/L_mortar_tank/muzzle_flash.pfx socket_muzzle"
      },
      "fired1": {
        "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
