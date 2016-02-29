@@ -15,17 +15,17 @@
 	},
 	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
 	"build_metal_cost": 800,
-	"consumption": {
-		"energy": 1550
-	},
 	"command_caps": [
 		"ORDER_Move",
 		"ORDER_Patrol",
 		"ORDER_Assist",
-		"ORDER_Attack"
+		"ORDER_Attack",
+		"ORDER_FireSecondaryWeapon"
 	],
-	"description": "Advanced Mobile Radar and Vision. Quick.",
-	"display_name": "Cub",
+	"description": "Equipped with sneaky Spy Camera, radar, and some guns",
+	"display_name": "Stalker",
+	"guard_layer": "WL_AnySurface",
+	"guard_radius": -60,
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/air"
@@ -39,7 +39,7 @@
 			"audio_cue": "/SE/Weapons/air/air_scout_fire"
 		}
 	},
-	"max_health": 1000,
+	"max_health": 400,
 	"mesh_bounds": [
 		23.7,
 		17.7,
@@ -58,16 +58,19 @@
 		"brake": 50,
 		"dodge_multiplier": 1,
 		"dodge_radius": 10,
-		"move_speed": 65,
-		"turn_speed": 90,
+		"move_speed": 90,
+		"turn_speed": 120,
 		"type": "air",
-		"wobble_factor": 0.15,
-		"wobble_speed": 0.1
+		"wobble_factor": 0.25,
+		"wobble_speed": 0.1,
+		"bank_factor": 2
 	},
 	"physics": {
 		"gravity_scalar": 1,
-		"push_class": 2,
 		"radius": 6
+	},
+	"consumption": {
+		"energy": 900
 	},
 	"recon": {
 		"observer": {
@@ -75,60 +78,63 @@
 				"layer": "surface_and_air",
 				"channel": "radar",
 				"shape": "capsule",
-				"radius": 500,
-				"uses_energy": true
-			}, {
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200,
-				"uses_energy": true
-			}, {
-				"layer": "orbital",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200,
-				"uses_energy": true
-			}, {
-				"layer": "underwater",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200,
+				"radius": 400,
 				"uses_energy": true
 			}, {
 				"layer": "underwater",
 				"channel": "radar",
 				"shape": "capsule",
-				"radius": 500,
+				"radius": 400,
+				"uses_energy": true
+			}, {
+				"layer": "surface_and_air",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 150,
+				"uses_energy": true
+			}, {
+				"layer": "orbital",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 150,
+				"uses_energy": true
+			}, {
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 150,
 				"uses_energy": true
 			}]
 		}
 	},
-	"tools": [{
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun01",
-		"muzzle_bone": "gun01"
-	}, {
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun02",
-		"muzzle_bone": "gun02"
-	}, {
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun03",
-		"muzzle_bone": "gun03"
-	}, {
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun04",
-		"muzzle_bone": "gun04"
-	}, {
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun05",
-		"muzzle_bone": "gun05"
-	}, {
-		"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
-		"aim_bone": "gun06",
-		"muzzle_bone": "gun06"
-	}],
+	"tools": [
+		{
+			"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": [
+				"gun01",
+				"gun02",
+				"gun03"
+			],
+			"projectiles_per_fire": 1
+		},
+		{
+			"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": [
+				"gun04",
+				"gun05",
+				"gun06"
+			],
+			"projectiles_per_fire": 1
+		},
+		{
+			"spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_vision_tool_weapon.json",
+			"aim_bone": "bone_root",
+			"muzzle": "light",
+			"projectiles_per_fire": 1
+		}
+	],
 	"fx_offsets": [{
 		"type": "moving_forward",
 		"filename": "/pa/units/air/gunship/gunship_jets.pfx",
@@ -166,7 +172,6 @@
 		],
 		"bone": "thrust04"
 	}],
-	"passive_health_regen": 20,
 	"selection_icon": {
 		"diameter": -33
 	},
