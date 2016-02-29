@@ -11,7 +11,7 @@
     "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
   },
   "impact_decals": [
-    "/pa/effects/specs/scorch_a_01.json"
+    null
   ],
   "initial_velocity": 75,
   "lifetime": 30,
