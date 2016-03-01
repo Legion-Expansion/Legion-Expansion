@@ -29,13 +29,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/land/air_defense/air_defense.papa",
+      "filename": "/pa/units/land/L_swarm_hive/L_swarm_hive.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/sea/air_defense/air_defense.papa",
+      "filename": "/pa/units/land/L_swarm_hive/L_swarm_hive.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -64,10 +64,16 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_root",
       "muzzle_bone": [
-        "socket_rightMuzzle",
-        "socket_leftMuzzle"
+		"socket001",
+		"socket002",
+		"socket003",
+		"socket004",
+		"socket005",
+		"socket006",
+		"socket007",
+		"socket008"
       ],
       "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
     }
