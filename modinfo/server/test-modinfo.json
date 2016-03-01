@@ -1,5 +1,5 @@
 {
-  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
+  "author": "furrygopher",
   "build": "",
   "category": [],
   "context": "server",
@@ -13,7 +13,7 @@
     "com.pa.legion-expansion.client-balance-test"
   ],
   "description": "",
-  "display_name": "LE Balance Test",
+  "display_name": "My One Unit",
   "enabled": true,
   "forum": "",
   "icon": "",
