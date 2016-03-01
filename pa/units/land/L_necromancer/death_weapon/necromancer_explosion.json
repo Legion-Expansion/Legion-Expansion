@@ -8,7 +8,7 @@
 		}
 	},
 	"spawn_response": {
-		"audio_cue": "/SE/Death/Commander",
+		"audio_cue": "/SE/Death/Titan_Bot",
 		"effect_spec": "/pa/units/land/L_necromancer/death_weapon/explosion.pfx"
 	}
 }

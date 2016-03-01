@@ -36,8 +36,6 @@
 			"audio_cue": "/SE/Build_Complete/bot"
 		},
 		"died": {
-			"audio_cue": "/SE/Death/Bot",
-			"effect_scale": 1
 		},
 		"fired": {
 			"audio_cue": "/SE/Weapons/bot/grenadier_fire",
