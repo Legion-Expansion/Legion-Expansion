@@ -1,13 +1,7 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
   "build": "", 
-  "category": [
-    "server-mod", 
-    "lobby",
-    "in-game",
-    "units",
-    "faction" 
-  ], 
+  "category": [], 
   "context": "server", 
   "date": "", 
   "dependencies": [
@@ -68,5 +62,5 @@
     ]
   }, 
   "signature": "not yet implemented", 
-  "version": "0.5"
+  "version": "0.5.0"
 }

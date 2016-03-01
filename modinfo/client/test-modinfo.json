@@ -1,10 +1,7 @@
 {
   "author": "Nicb1,KillerKiwiJuice,Crembels",
   "build": "",
-  "category": [
-    "Units",
-    "Faction"
-  ],
+  "category": [],
   "context": "client",
   "date": "",
   "dependencies": [
@@ -18,5 +15,5 @@
   "identifier": "com.pa.legion-expansion.client-balance-test",
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.5"
+  "version": "0.5.0"
 }
