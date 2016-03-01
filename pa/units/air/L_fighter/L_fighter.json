@@ -117,12 +117,11 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "socket_muzzleLeft",
-      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "socket_muzzleRight",
+      "muzzle_bone": [
+		"socket_muzzleLeft",
+		"socket_muzzleRight"
+	  ],
+	  "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
     }
   ],
