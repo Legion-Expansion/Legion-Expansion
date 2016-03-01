@@ -13,17 +13,17 @@
 		"add_to_spatial_db": false
 	},
 	"model": {
-		"filename": "/pa/units/air/shell_large/shell_large.papa"
+		"filename": ""
 	},
 	"fx_trail": {
-		"filename": "/pa/units/land/titan_vehicle/titan_vehicle_ammo_main_proj_trail.pfx",
-		"offset": [0.0, 1.0, 0.0]
+		"filename": "/pa/units/land/L_titan_vehicle/main_proj_trail.pfx",
+		"offset": [0.0, 0.0, 0.0]
 	},
 	"audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
 	"events": {
 		"died": {
 		  "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-		  "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
+		  "effect_spec": "/pa/units/land/L_titan_vehicle/proj_hit.pfx"
 		}
 	}
 }
