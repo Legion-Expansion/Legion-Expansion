@@ -1,29 +1,30 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
-  "build": "", 
-  "category": [], 
-  "context": "server", 
-  "date": "", 
+  "build": "",
+  "category": [],
+  "context": "server",
+  "date": "",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
+    "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.legion-expansion.client-balance-test"
-  ], 
-  "description": "", 
-  "display_name": "LE Balance Test", 
-  "enabled": true, 
-  "forum": "", 
-  "icon": "", 
-  "identifier": "com.pa.legion-expansion.server-balance-test", 
+  ],
+  "description": "",
+  "display_name": "LE Balance Test",
+  "enabled": true,
+  "forum": "",
+  "icon": "",
+  "identifier": "com.pa.legion-expansion.server-balance-test",
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
     ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
-    ],    
+    ],
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
     ],
@@ -60,7 +61,7 @@
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
-  }, 
-  "signature": "not yet implemented", 
+  },
+  "signature": "not yet implemented",
   "version": "0.5.0"
 }

@@ -1,27 +1,28 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, dom314, Elodea",
-  "build": "89755", 
+  "build": "89755",
   "category": [
-    "server-mod", 
+    "server-mod",
     "lobby",
     "in-game",
     "units",
-    "faction" 
-  ], 
-  "context": "server", 
-  "date": "2016/03/01", 
+    "faction"
+  ],
+  "context": "server",
+  "date": "2016/03/01",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
-    "com.wondible.pa.xenophobia"
-  ], 
-  "description": "Super secret something something", 
-  "display_name": "Legion Expansion Combined Alpha (balance)", 
-  "enabled": true, 
-  "forum": "", 
-  "icon": "", 
-  "identifier": "com.pa.legion-expansion-combined-balance", 
+    "com.wondible.pa.xenophobia",
+    "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch"
+  ],
+  "description": "Super secret something something",
+  "display_name": "Legion Expansion Combined Alpha (balance)",
+  "enabled": true,
+  "forum": "",
+  "icon": "",
+  "identifier": "com.pa.legion-expansion-combined-balance",
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
@@ -65,7 +66,7 @@
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
-  }, 
-  "signature": "not yet implemented", 
+  },
+  "signature": "not yet implemented",
   "version": "0.5"
 }
