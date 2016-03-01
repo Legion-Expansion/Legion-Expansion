@@ -10,7 +10,7 @@
 		  "layer": "WL_LandHorizontal"
 		}
 	],
-	"rate_of_fire": 0.3,
+	"rate_of_fire": 0.285,
 	"exclude_unit_types": "Hover",
 	"max_range": 150,
 	"firing_arc_pitch": 180,
