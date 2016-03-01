@@ -3,7 +3,7 @@
   "damage":15150,
   "events": {
     "died": {
-		"audio_cue": "/SE/Death/Commander",
+		"audio_cue": "/SE/Impacts/missile_nuke",
       "effect_spec": "/pa/units/orbital/L_orbital_laser/L_orb_laser_exp.pfx"
     }
   },
