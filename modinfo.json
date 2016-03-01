@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, dom314, Elodea",
-  "build": "85138", 
+  "build": "89755", 
   "category": [
     "server-mod", 
     "lobby",
@@ -9,7 +9,7 @@
     "faction" 
   ], 
   "context": "server", 
-  "date": "2015/08/05", 
+  "date": "2016/03/01", 
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
@@ -17,11 +17,11 @@
     "com.wondible.pa.xenophobia"
   ], 
   "description": "Super secret something something", 
-  "display_name": "Legion Expansion", 
+  "display_name": "Legion Expansion Combined Alpha", 
   "enabled": true, 
   "forum": "", 
   "icon": "", 
-  "identifier": "com.pa.legion-expansion.server", 
+  "identifier": "com.pa.legion-expansion-combined", 
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"

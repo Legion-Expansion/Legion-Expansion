@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
-  "build": "85138", 
+  "build": "89755", 
   "category": [
     "server-mod", 
     "lobby",
@@ -9,17 +9,17 @@
     "faction" 
   ], 
   "context": "server", 
-  "date": "2015/12/29", 
+  "date": "2016/03/01", 
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
     "com.pa.legion-expansion.client"
-	
+
   ], 
   "description": "Super secret something something", 
-  "display_name": "Legion Expansion", 
+  "display_name": "Legion Expansion Alpha", 
   "enabled": true, 
   "forum": "", 
   "icon": "http://i.imgur.com/oyn18ZG.png", 
@@ -69,5 +69,5 @@
     ]
   }, 
   "signature": "not yet implemented", 
-  "version": "Pre-Alpha"
+  "version": "0.5"
 }
