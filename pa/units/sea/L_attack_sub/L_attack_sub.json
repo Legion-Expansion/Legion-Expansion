@@ -51,7 +51,7 @@
     }
   },
   "guard_layer": "WL_AnyWater",
-  "max_health": 510,
+  "max_health": 500,
   "mesh_bounds": [
     4,
     15,
@@ -62,10 +62,10 @@
     "filename": "/pa/units/sea/L_attack_sub/L_attack_sub.papa"
   },
   "navigation": {
-    "acceleration": 40,
-    "brake": 120,
-    "move_speed": 15,
-    "turn_speed": 60,
+    "acceleration": 60,
+    "brake": 60,
+    "move_speed": 18,
+    "turn_speed": 140,
     "type": "underwater"
   },
   "physics": {
