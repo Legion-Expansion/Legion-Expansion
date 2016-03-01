@@ -25,7 +25,7 @@
 	"description": "Equipped with sneaky Spy Camera, radar, and some guns",
 	"display_name": "Stalker",
 	"guard_layer": "WL_AnySurface",
-	"guard_radius": -60,
+	"guard_radius": -110,
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/air"
