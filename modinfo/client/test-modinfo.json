@@ -1,0 +1,19 @@
+{
+  "author": "Nicb1,KillerKiwiJuice,Crembels",
+  "build": "",
+  "category": [],
+  "context": "client",
+  "date": "",
+  "dependencies": [
+    "com.pa.legion-expansion.server-balance-test"
+  ],
+  "description": "",
+  "display_name": "LE Client Balance Test",
+  "enabled": true,
+  "forum": "",
+  "icon": "",
+  "identifier": "com.pa.legion-expansion.client-balance-test",
+  "priority": 100,
+  "signature": "(not yet implemented)",
+  "version": "0.5.0"
+}

@@ -1,34 +1,29 @@
 {
-  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, dom314, Elodea",
-  "build": "89755", 
-  "category": [
-    "server-mod", 
-    "lobby",
-    "in-game",
-    "units",
-    "faction" 
-  ], 
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible",
+  "build": "", 
+  "category": [], 
   "context": "server", 
-  "date": "2016/03/01", 
+  "date": "", 
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
     "com.wondible.pa.icon_reloader",
-    "com.wondible.pa.xenophobia"
+    "com.wondible.pa.xenophobia",
+    "com.pa.legion-expansion.client-balance-test"
   ], 
-  "description": "Super secret something something", 
-  "display_name": "Legion Expansion Combined Alpha (balance)", 
+  "description": "", 
+  "display_name": "LE Balance Test", 
   "enabled": true, 
   "forum": "", 
   "icon": "", 
-  "identifier": "com.pa.legion-expansion-combined-balance", 
+  "identifier": "com.pa.legion-expansion.server-balance-test", 
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
     ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
-    ],
+    ],    
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
     ],
@@ -67,5 +62,5 @@
     ]
   }, 
   "signature": "not yet implemented", 
-  "version": "0.5"
+  "version": "0.5.0"
 }

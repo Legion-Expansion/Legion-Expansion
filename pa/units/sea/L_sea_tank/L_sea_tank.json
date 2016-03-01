@@ -40,7 +40,7 @@
 		"fired3": {
 			"effect_scale": 3.0,
 			"audio_cue": "/SE/Impacts/shell_artillery"
-		}	
+		}
 	},
 	"max_health": 14000,
 	"mesh_bounds": [
@@ -103,7 +103,7 @@
 			"record_index": 0,
 			"projectiles_per_fire": 2,
 			"spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
-		}, 
+		},
 		{
 			"aim_bone": "bone_pitchRight",
 			"fire_event": "fired1",
@@ -138,7 +138,7 @@
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
 		"UNITTYPE_Advanced",
-        "UNITTYPE_Tactical",
+    "UNITTYPE_Heavy",
 		"UNITTYPE_FactoryBuild",
 		"UNITTYPE_Custom1"
 	]
