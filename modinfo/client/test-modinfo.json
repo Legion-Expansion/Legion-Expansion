@@ -10,11 +10,11 @@
   "dependencies": [
     "com.pa.legion-expansion.server-balance-test"
   ],
-  "description": "A somewhat secret project",
+  "description": "",
   "display_name": "LE Client Balance Test",
   "enabled": true,
-  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
-  "icon": "http://i.imgur.com/SsUYiL8.png",
+  "forum": "",
+  "icon": "",
   "identifier": "com.pa.legion-expansion.client-balance-test",
   "priority": 100,
   "signature": "(not yet implemented)",

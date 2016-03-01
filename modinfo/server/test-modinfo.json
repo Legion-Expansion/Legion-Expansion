@@ -17,11 +17,11 @@
     "com.wondible.pa.xenophobia",
     "com.pa.legion-expansion.client-balance-test"
   ], 
-  "description": "Super secret something something", 
+  "description": "", 
   "display_name": "LE Balance Test", 
   "enabled": true, 
   "forum": "", 
-  "icon": "http://i.imgur.com/oyn18ZG.png", 
+  "icon": "", 
   "identifier": "com.pa.legion-expansion.server-balance-test", 
   "scenes": {
     "global_mod_list": [
