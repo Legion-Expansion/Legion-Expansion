@@ -7,7 +7,7 @@
   "dependencies": [
     "com.pa.legion-expansion.server-balance-test"
   ],
-  "description": "",
+  "description": "No longer works",
   "display_name": "My One Unit",
   "enabled": true,
   "forum": "",
