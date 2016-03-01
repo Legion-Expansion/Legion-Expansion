@@ -6,17 +6,17 @@
     "Faction"
   ],
   "context": "client",
-  "date": "2015/12/29",
+  "date": "2016/03/01",
   "dependencies": [
-    "com.pa.legion-expansion.server"
+    "com.pa.legion-expansion.server-balance"
   ],
   "description": "A somewhat secret project",
-  "display_name": "Legion Expansion Client Alpha",
+  "display_name": "Legion Expansion Client Alpha (balance)",
   "enabled": true,
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
   "icon": "http://i.imgur.com/SsUYiL8.png",
-  "identifier": "com.pa.legion-expansion.client",
+  "identifier": "com.pa.legion-expansion.client-balance",
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "Pre-Alpha"
+  "version": "0.5"
 }
