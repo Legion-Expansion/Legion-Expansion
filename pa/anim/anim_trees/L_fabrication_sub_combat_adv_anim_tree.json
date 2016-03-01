@@ -6,10 +6,20 @@
 				"type": "bind_pose"
 			},
 			"living": {
-				"type": "bind_pose"
+				"type": "walk",
+				"node_idle": {
+					"type": "playback",
+					"anim_name": "idle"
+				},
+				"node_walk": {
+					"type": "playback",
+					"anim_name": "walk"
+				}
 			},
 			"dead": {
-				"type": "bind_pose"
+				"type": "playback",
+				"looping": false,
+				"anim_name": "death01"
 			},
 			"ghost": {
 				"type": "bind_pose"

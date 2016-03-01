@@ -1,10 +1,10 @@
 {
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Chain1",
+	"display_name": "Chain",
 	"description": "Chain Lightning",
-	"max_health": 50,
+	"max_health": 40,
 	"build_metal_cost": 90,
-	"guard_radius": 25,
+	"guard_radius": 15,
 	"unit_types": ["UNITTYPE_Land", "UNITTYPE_Hover"],
 	"guard_layer": "WL_LandHorizontal",
 	"navigation": {
@@ -22,11 +22,6 @@
 	},
 	"wreckage_health_frac": 0.0,
 	"recon": {
-		"observable": {
-			"ignore_sight": true,
-			"ignore_radar": true,
-			"layer": "surface_and_air"			
-		},
 		"observer": {
 			"items": [{
 				"layer": "surface_and_air",
@@ -45,11 +40,6 @@
 		{
 			"spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json",
 			"aim_bone": "bone_root",
-			"muzzle_bone": [
-				"bone_root",
-				"bone_root"
-			],
-			"projectiles_per_fire": 2,
 			"record_index": 0
 		},
 		{
@@ -63,17 +53,19 @@
 			"audio_cue": "/SE/Build_Complete/air"
 		},
 		"fired": {
-			"audio_cue": "/SE/Weapons/bot/spark_fire"
+			"audio_cue": "/SE/Weapons/bot/spark_fire",
+			"effect_spec": "/pa/effects/specs/none.pfx"			
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/land/L_tank_swarm/chain/electrode.pfx",
 			"effect_scale": 0.4
 		}
 	},
 	"TEMP_texelinfo": 5.39039,
 	"mesh_bounds": [
-		0.01,
-		0.01,
-		0.01
+		0.1,
+		0.1,
+		0.1
 	]
 }

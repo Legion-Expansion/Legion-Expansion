@@ -57,7 +57,7 @@
       "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
       "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_bot_artillery_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/bot_grenadier_anim_tree.json",
     "filename": "/pa/units/land/L_bot_artillery/L_bot_artillery.papa",
     "walk_speed": 3
   },

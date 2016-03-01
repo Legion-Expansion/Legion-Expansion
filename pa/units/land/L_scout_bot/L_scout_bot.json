@@ -30,16 +30,14 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"build_metal_cost": 150,
 	"description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
-	"display_name": "Creeper",
+	"display_name": "Freak",
 	"command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Assist",
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
-  ],
-  "death": {
-  },
+  ],	
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/bot"
@@ -54,7 +52,7 @@
 	"death": {
 	},	
 	"guard_layer": "WL_AnySurface",
-	"max_health": 60,
+	"max_health": 120,
 	"mesh_bounds": [
 		4,
 		2,
@@ -65,7 +63,7 @@
 			"idle": "/pa/units/land/L_scout_bot/L_scout_bot_idle.papa",
 			"walk": "/pa/units/land/L_scout_bot/L_scout_bot_walk.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/L_scout_bot_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
 		"filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa",
 		"walk_speed": 2.75
 	},
@@ -106,6 +104,7 @@
 	"tools": [
     {
       "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
 	  "primary_weapon": false,
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_scout_bot/L_scout_bot_tool_weapon.json"

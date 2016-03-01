@@ -268,7 +268,7 @@
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.json"
     },
     "LegionVehicleBasicArtillery": {
-      "spec_id": "/pa/units/land/L_hover_tank/L_hover_tank.json"
+      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
     },
     "LegionVehicleBasicFabber": {
       "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
@@ -277,7 +277,7 @@
       "spec_id": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json"
     },
     "LegionVehicleBasicHover": {
-      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"
+      "spec_id": "/pa/units/land/L_hover_tank/L_hover_tank.json"
     },
     "LegionVehicleBasicLaser": {
       "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank.json"

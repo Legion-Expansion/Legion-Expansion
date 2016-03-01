@@ -26,8 +26,7 @@
       "effect_scale": 0.75
     },
     "fired": {
-		"audio_cue": "/SE/Weapons/air/gunship_fire",
-		"effect_scale": 2
+			"audio_cue": "/SE/Weapons/air/gunship_fire"
     }
   },
   "fx_offsets": [
@@ -135,6 +134,7 @@
   "tools": [
   {
 		"aim_bone": "bone_root",
+		"fire_event": "fired0",
 		"muzzle_bone": [
 			"right_muzzle",
 			"left_muzzle"		

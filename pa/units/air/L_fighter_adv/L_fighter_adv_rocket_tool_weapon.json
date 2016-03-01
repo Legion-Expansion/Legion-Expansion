@@ -19,5 +19,5 @@
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
-  "yaw_rate": 360
+  "yaw_rate": 90
 }

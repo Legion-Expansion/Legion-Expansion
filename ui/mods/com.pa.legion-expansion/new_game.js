@@ -51,34 +51,14 @@ if (!legionExpansionLoaded) {
             });   
         }
 
-        //PATCHED lobby.js
+        //NEED PATCHED lobby.js
         //To Legion Button
-        //$('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}">to Legion</div>');
+        $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}">to Legion</div>');
         //To Vanilla Button
-        //$('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">to Vanilla</div>');
-        //ENDOF PATCHED lobby.js
+        $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">to Vanilla</div>');
+        //ENDOF NEED PATCHED lobby.js
         
-        //UNPATCHED lobby.js
-        //HACKY WAY TO SWITCH LEGION COMMANDER till lobby.js is updated
-        model.LegionCommander = function (index) {
-            model.targetAIArmyIndex(index);
-            model.targetAISlotIndex(0);
-            model.addAI();
-            console.log(index);
-            setTimeout(model.CheckLegionCommander, 200, index);
-        };
-        model.CheckLegionCommander = function (index) {
-            if ((model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/tank_aeson/tank_aeson.json") && (model.armies()[index].slots()[0].commander() !== "/pa/units/commanders/imperial_invictus/imperial_invictus.json")) {
-                console.log(model.armies()[index].slots()[0].commander());
-                model.kickUser(index);
-                model.LegionCommander(index);
-            } else {
-                console.log("FUCK YEAH");
-            }
-        };
-
-        $('.army-button.btn_add_ai').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.isEmpty(),click: function() { model.LegionCommander(army.index());}">Add Legion AI</div>');        
-        //END OF UNPATCHED lobby.js
+      
 
 /*      var commanderObjectNameToHack = 'ImperialFiveleafclover';
 

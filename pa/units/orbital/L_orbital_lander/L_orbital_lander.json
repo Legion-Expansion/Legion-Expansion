@@ -41,93 +41,43 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_leftThruster",
+      "bone": "thrust001",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -3.793,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
       "type": "moving"
     },
     {
-      "bone": "bone_rightThruster",
+      "bone": "thrust002",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -3.793,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
       "type": "moving"
     },
     {
-      "bone": "bone_jet01",
+      "bone": "thrust003",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -2.694,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
       "type": "moving"
     },
     {
-      "bone": "bone_jet02",
+      "bone": "thrust004",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -2.694,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
       "type": "moving"
     },
     {
-      "bone": "bone_jet03",
+      "bone": "thrust005",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -2.694,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
       "type": "moving"
     },
     {
-      "bone": "bone_jet04",
+      "bone": "thrust006",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        -2.694,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "type": "moving"
+    },
+    {
+      "bone": "thrust007",
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "type": "moving"
+    },
+    {
+      "bone": "thrust008",
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
       "type": "moving"
     }
   ],
@@ -140,12 +90,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/orbital_lander/orbital_lander_anim_closed.papa",
-      "deploy": "/pa/units/orbital/orbital_lander/orbital_lander_anim_deploy.papa",
-      "open": "/pa/units/orbital/orbital_lander/orbital_lander_anim_open.papa"
+      "closed": "/pa/units/orbital/L_orbital_lander/L_orbital_lander_closed.papa",
+      "deploy": "/pa/units/orbital/L_orbital_lander/L_orbital_lander_deploy.papa",
+      "open": "/pa/units/orbital/L_orbital_lander/L_orbital_lander_open.papa"
     },
     "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
-    "filename": "/pa/units/orbital/orbital_lander/orbital_lander.papa"
+    "filename": "/pa/units/orbital/L_orbital_lander/L_orbital_lander.papa"
   },
   "navigation": {
     "acceleration": 25,
@@ -193,7 +143,7 @@
     "capacity": 1,
     "transportable_attach_offset": "head",
     "transportable_unit_types": "(Mobile & Land) | (Fabber & (Air | Naval))",
-    "transporter_attach_bone": "bone_payload"
+    "transporter_attach_bone": "bone_root"
   },
   "unit_types": [
     "UNITTYPE_Orbital",

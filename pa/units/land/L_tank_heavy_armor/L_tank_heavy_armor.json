@@ -27,7 +27,6 @@
       "cue": "/SE/Selection/veh/tank_vagaurd_T2"
     }
   },
-  "guard_radius": 55,
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 1800,
   "description": "Experimental Earthquake Tank. Attacks Land.",
@@ -57,7 +56,7 @@
   },
   "navigation": {
     "acceleration": 100,
-    "brake": -1,
+    "brake": 100,
     "group_preference": "front",
     "move_speed": 10,
     "turn_speed": 180,

@@ -88,6 +88,7 @@
     "type": "land-small"
   },
   "physics": {
+    "push_class": 60,
     "radius": 4
   },
   "recon": {
@@ -109,7 +110,7 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank_tool_weapon.json"
+      "spec_id": "/pa/units/land/L_tank_shank/L_tank_shank_weapon.json"
     }
   ],
   "transportable": {

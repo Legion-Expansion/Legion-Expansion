@@ -3,8 +3,8 @@
   "damage": 0,
   "events": {
     "died": {
-	  "effect_spec": "/pa/units/land/L_scout_bot/L_scout_bot_superman_debris.pfx",
-      "audio_cue": "/SE/Build_Complete/radar"
+      "audio_cue": "/SE/Impacts/bomb_bot_plasma",
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
     }
   },
   "fx_trail": {

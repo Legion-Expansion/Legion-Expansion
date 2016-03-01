@@ -8,15 +8,17 @@
             "living": {
                 "type": "aim_blend",
                 "aim_bone_root": "bone_turret",
+                "node_aim_down": {
+                    "type": "playback",
+                    "anim_name": "aim_down"
+                },
                 "node_aim_neutral": {
                     "type": "bind_pose"
                 },
-				"node_aim_down": {
-					  "type": "bind_pose"
-				},
-				"node_aim_up": {
-					"type": "bind_pose"
-				},
+                "node_aim_up": {
+                    "type": "playback",
+                    "anim_name": "aim_up"
+                },
                 "child": {
                     "type": "walk",
                     "node_idle": {
@@ -29,12 +31,14 @@
                     }
                 }
             },
+            "dead": {
+                "type": "playback",
+                "looping": false,
+                "anim_name": "death01"
+            },
             "ghost": {
                 "type": "bind_pose"
-            },
-			"dead": {
-				"type": "bind_pose"
-			}
+            }
         }
     },
     "skeleton_controls": [
@@ -46,6 +50,12 @@
                 "rotation_bone": "bone_turret",
                 "rotation_axis": "z"
             }
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil",
+            "recoil_dist": 0.75,
+            "restore_time": 0.5
         }
     ]
 }
