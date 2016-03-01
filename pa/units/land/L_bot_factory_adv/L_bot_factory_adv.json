@@ -38,7 +38,7 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser01",
+            "bone": "lathe001",
             "orientation": [
                 0,
                 0,
@@ -48,7 +48,7 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser02",
+            "bone": "lathe002",
             "orientation": [
                 0,
                 0,
@@ -58,7 +58,7 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser3",
+            "bone": "lathe003",
             "orientation": [
                 0,
                 0,
@@ -68,7 +68,27 @@
         {
             "type": "build",
             "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "laser4",
+            "bone": "lathe004",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "lathe005",
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+            "bone": "lathe006",
             "orientation": [
                 0,
                 0,
