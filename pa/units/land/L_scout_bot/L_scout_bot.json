@@ -1,4 +1,6 @@
 {
+  "display_name": "Creeper",
+  "description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
@@ -37,8 +39,6 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "death": {},
-  "description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
-  "display_name": "Creeper",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"

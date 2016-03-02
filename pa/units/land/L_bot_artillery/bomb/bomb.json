@@ -1,4 +1,6 @@
 {
+  "display_name": "Time Delay Bomb",
+  "description": "KABOOM",
   "TEMP_texelinfo": 6.38702,
   "audio": {
     "loops": {
@@ -13,8 +15,6 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 100,
   "damageable": false,
-  "description": "KABOOM",
-  "display_name": "Time Delay Bomb",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

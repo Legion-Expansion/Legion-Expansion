@@ -1,4 +1,6 @@
 {
+  "display_name": "Starship Foundry",
+  "description": "Builds Advanced Orbital Units. Consumes Energy and Metal.",
   "TEMP_texelinfo": 65.6074,
   "area_build_separation": 7,
   "atrophy_cool_down": 15,
@@ -25,8 +27,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Builds Advanced Orbital Units. Consumes Energy and Metal.",
-  "display_name": "Starship Foundry",
   "enable_orbital_shell": true,
   "events": {
     "died": {

@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Flyer Foundry",
+  "description": "Advanced Manufacturing- Builds Legion Air Units.",
   "TEMP_texelinfo": 65.6074,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,
@@ -25,8 +27,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Advanced Manufacturing- Builds Legion Air Units.",
-  "display_name": "Advanced Flyer Foundry",
   "events": {
     "died": {
       "effect_scale": 2

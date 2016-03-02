@@ -1,4 +1,6 @@
 {
+  "display_name": "Rockteeth Commander",
+  "description": "Tank Rockteeth Commander ",
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
@@ -55,8 +57,6 @@
     "air_height_threshold": 50,
     "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json"
   },
-  "description": "Tank Rockteeth Commander ",
-  "display_name": "Rockteeth Commander",
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/structure/air_defense_fire",

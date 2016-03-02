@@ -1,4 +1,6 @@
 {
+  "display_name": "Raider",
+  "description": "Steals your Lunch Money and Shoves you into Lockers.",
   "TEMP_texelinfo": 8,
   "audio": {
     "loops": {
@@ -15,8 +17,6 @@
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 240,
-  "description": "Steals your Lunch Money and Shoves you into Lockers.",
-  "display_name": "Raider",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

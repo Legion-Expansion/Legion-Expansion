@@ -1,4 +1,6 @@
 {
+  "display_name": "Epoch",
+  "description": "Fires Long Range, High Velocity Projectiles. Armored and Slow. Can Attack Land and Sea.",
   "TEMP_texelinfo": 47.2606,
   "audio": {
     "loops": {
@@ -15,8 +17,6 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 6000,
-  "description": "Fires Long Range, High Velocity Projectiles. Armored and Slow. Can Attack Land and Sea.",
-  "display_name": "Epoch",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

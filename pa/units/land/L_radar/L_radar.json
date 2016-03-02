@@ -1,4 +1,6 @@
 {
+  "display_name": "Radar",
+  "description": "Basic radar- Detects nearby enemy land, sea, and air units.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 100,
   "area_build_type": "Sphere",
@@ -14,8 +16,6 @@
   "consumption": {
     "energy": 150
   },
-  "description": "Basic radar- Detects nearby enemy land, sea, and air units.",
-  "display_name": "Radar",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

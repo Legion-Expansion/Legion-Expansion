@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Scaffold Jig",
+  "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.",
   "TEMP_texelinfo": 48,
   "area_build_separation": 100,
   "area_build_type": "Sphere",
@@ -20,8 +22,6 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_orbitalpbaoe.json"
   },
-  "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.",
-  "display_name": "Legion Scaffold Jig",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital_platform"

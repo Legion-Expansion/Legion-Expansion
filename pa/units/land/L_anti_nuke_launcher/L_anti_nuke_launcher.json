@@ -1,4 +1,6 @@
 {
+  "display_name": "Iron Dome",
+  "description": "Nuke Defense. Intercepts Nuclear Missiles.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 100,
   "area_build_type": "Sphere",
@@ -25,8 +27,6 @@
   "command_caps": [
     "ORDER_FactoryBuild"
   ],
-  "description": "Nuke Defense. Intercepts Nuclear Missiles.",
-  "display_name": "Iron Dome",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/factory"

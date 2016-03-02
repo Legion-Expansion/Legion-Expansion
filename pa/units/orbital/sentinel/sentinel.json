@@ -1,4 +1,6 @@
 {
+  "display_name": "Sentinel",
+  "description": "Stationary anti-surface defense structure. Good for use against armies.",
   "TEMP_texelinfo": 26.4194,
   "area_build_separation": 75,
   "area_build_type": "Sphere",
@@ -19,8 +21,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Stationary anti-surface defense structure. Good for use against armies.",
-  "display_name": "Sentinel",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

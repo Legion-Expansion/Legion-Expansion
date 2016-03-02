@@ -1,4 +1,6 @@
 {
+  "display_name": "Comet",
+  "description": "Launches Flyer Drones. Strong.",
   "TEMP_texelinfo": 10,
   "audio": {
     "loops": {
@@ -21,8 +23,6 @@
     "ORDER_Assist",
     "ORDER_Attack"
   ],
-  "description": "Launches Flyer Drones. Strong.",
-  "display_name": "Comet",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

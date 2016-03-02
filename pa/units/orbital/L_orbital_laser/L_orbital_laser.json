@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Black Knight",
+  "description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {
@@ -16,8 +18,6 @@
     "ORDER_Patrol",
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
-  "display_name": "Legion Black Knight",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

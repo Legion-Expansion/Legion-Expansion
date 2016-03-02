@@ -1,4 +1,6 @@
 {
+  "display_name": "Talos",
+  "description": "Medium Range anti-air Ship. Only attacks air",
   "TEMP_texelinfo": 21.4,
   "audio": {
     "loops": {
@@ -12,8 +14,6 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 550,
-  "description": "Medium Range anti-air Ship. Only attacks air",
-  "display_name": "Talos",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

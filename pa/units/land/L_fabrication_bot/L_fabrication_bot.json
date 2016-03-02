@@ -1,4 +1,6 @@
 {
+  "display_name": "Fabrication Walker",
+  "description": "Builds Basic Structures. Can Build Exclusive Walker Units.",
   "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {
@@ -48,8 +50,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Builds Basic Structures. Can Build Exclusive Walker Units.",
-  "display_name": "Fabrication Walker",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

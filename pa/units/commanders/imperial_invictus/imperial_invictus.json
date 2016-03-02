@@ -1,4 +1,6 @@
 {
+  "display_name": "Overwatch Commander",
+  "description": "Legion Overwatch Commander",
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
@@ -52,8 +54,6 @@
     "air_height_threshold": 50,
     "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json"
   },
-  "description": "Legion Overwatch Commander",
-  "display_name": "Overwatch Commander",
   "events": {
     "fired": {
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle"

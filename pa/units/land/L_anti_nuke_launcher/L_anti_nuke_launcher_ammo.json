@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Iron Dome Interceptor",
+  "description": "Anti-nuke - Intercepts incoming nuclear missiles.",
   "ammo_type": "Projectile",
   "audio_loop": "/SE/Movement/missile/anti_nuke_missile_fly_loop",
   "build_metal_cost": 6750,
@@ -6,8 +8,6 @@
   "collision_check": "target",
   "collision_response": "destroy",
   "damage": 1,
-  "description": "Anti-nuke - Intercepts incoming nuclear missiles.",
-  "display_name": "Legion Iron Dome Interceptor",
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_antinuke",

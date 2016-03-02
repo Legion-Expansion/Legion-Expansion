@@ -1,4 +1,6 @@
 {
+  "display_name": "Helios",
+  "description": "!LOC:Invasion Titan- Can link with a teleporter and send units directly to a planet's surface. Attacks everything.",
   "TEMP_texelinfo": 32.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
@@ -28,8 +30,6 @@
     "ORDER_Patrol",
     "ORDER_Attack"
   ],
-  "description": "!LOC:Invasion Titan- Can link with a teleporter and send units directly to a planet's surface. Attacks everything.",
-  "display_name": "Helios",
   "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {

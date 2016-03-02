@@ -1,4 +1,6 @@
 {
+  "display_name": "Comet",
+  "description": "Advanced Mobile Teleporter. Can Travel Between Local Solar Bodies.",
   "TEMP_texelinfo": 23.6108,
   "atrophy_cool_down": 15,
   "atrophy_rate": 200,
@@ -18,8 +20,6 @@
     "ORDER_Patrol",
     "ORDER_Attack"
   ],
-  "description": "Advanced Mobile Teleporter. Can Travel Between Local Solar Bodies.",
-  "display_name": "Comet",
   "energy_efficiency_requirement": 1,
   "events": {
     "build_complete": {

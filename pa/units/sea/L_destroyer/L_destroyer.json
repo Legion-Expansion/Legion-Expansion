@@ -1,4 +1,6 @@
 {
+  "display_name": "Bowhead",
+  "description": "Medium Range Anti-Land Anti-Sea Vessel.",
   "TEMP_texelinfo": 22.1895,
   "audio": {
     "loops": {
@@ -12,8 +14,6 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 800,
-  "description": "Medium Range Anti-Land Anti-Sea Vessel.",
-  "display_name": "Bowhead",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

@@ -1,4 +1,6 @@
 {
+  "display_name": "Bofors II",
+  "description": "Basic AA Turret- Equipped With a Light Machine Gun.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
@@ -8,8 +10,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Basic AA Turret- Equipped With a Light Machine Gun.",
-  "display_name": "Bofors II",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

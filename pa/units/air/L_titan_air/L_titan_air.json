@@ -1,4 +1,6 @@
 {
+  "display_name": "!LOC:Zeus",
+  "description": "!LOC:Lightning Titan- Heavy damage over a wide area. Attacks any targets except orbital.",
   "TEMP_texelinfo": 35.89798,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
@@ -20,8 +22,6 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/air/titan_air/titan_air_ammo_death.json"
   },
-  "description": "!LOC:Lightning Titan- Heavy damage over a wide area. Attacks any targets except orbital.",
-  "display_name": "!LOC:Zeus",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/Titan_Complete"

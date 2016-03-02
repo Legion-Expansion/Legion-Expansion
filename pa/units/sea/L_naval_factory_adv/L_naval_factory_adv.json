@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Ship Foundry",
+  "description": "Advanced Manufacturing- Builds Legion Naval Units.",
   "TEMP_texelinfo": 69.307,
   "area_build_separation": 5,
   "atrophy_cool_down": 15,
@@ -28,8 +30,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Advanced Manufacturing- Builds Legion Naval Units.",
-  "display_name": "Advanced Ship Foundry",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

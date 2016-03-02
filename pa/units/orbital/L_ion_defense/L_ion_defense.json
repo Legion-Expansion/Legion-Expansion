@@ -1,4 +1,6 @@
 {
+  "display_name": "Tola",
+  "description": "Anti Orbital Ion Cannon. Attacks Orbital Units.",
   "TEMP_texelinfo": 35,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
@@ -8,8 +10,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Anti Orbital Ion Cannon. Attacks Orbital Units.",
-  "display_name": "Tola",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

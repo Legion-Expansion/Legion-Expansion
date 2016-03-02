@@ -1,4 +1,6 @@
 {
+  "display_name": "M-42B Mass Extractor",
+  "description": "Legion metal extractors produce more metal but cost more to build.",
   "TEMP_texelinfo": 15.0973,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15,
@@ -13,8 +15,6 @@
   "consumption": {
     "energy": 0
   },
-  "description": "Legion metal extractors produce more metal but cost more to build.",
-  "display_name": "M-42B Mass Extractor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"

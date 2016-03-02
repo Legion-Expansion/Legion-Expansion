@@ -1,4 +1,6 @@
 {
+  "display_name": "Scout Bot Radar mode",
+  "description": "Radar vision but immobile",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
@@ -33,8 +35,6 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "death": {},
-  "description": "Radar vision but immobile",
-  "display_name": "Scout Bot Radar mode",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/radar"

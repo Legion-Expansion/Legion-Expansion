@@ -1,4 +1,6 @@
 {
+  "display_name": "Seagull",
+  "description": "Unit Transport. Quick. Unarmed and Weak.",
   "TEMP_texelinfo": 10.4837,
   "attachable": {
     "offsets": {
@@ -31,8 +33,6 @@
     "ORDER_Load",
     "ORDER_Unload"
   ],
-  "description": "Unit Transport. Quick. Unarmed and Weak.",
-  "display_name": "Seagull",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

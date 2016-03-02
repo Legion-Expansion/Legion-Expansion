@@ -1,4 +1,6 @@
 {
+  "display_name": "Gustav",
+  "description": "Magnetic Accelerator Cannon- Fires high damage projectiles in a mild arc to decimate structures.",
   "TEMP_texelinfo": 24.1279,
   "atrophy_cool_down": 15,
   "atrophy_rate": 240,
@@ -12,8 +14,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Magnetic Accelerator Cannon- Fires high damage projectiles in a mild arc to decimate structures.",
-  "display_name": "Gustav",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

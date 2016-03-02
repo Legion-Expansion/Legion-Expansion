@@ -1,4 +1,6 @@
 {
+  "display_name": "Stoke",
+  "description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
   "TEMP_texelinfo": 9.31488,
   "attachable": {
     "offsets": {
@@ -26,8 +28,6 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 200,
-  "description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
-  "display_name": "Stoke",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"

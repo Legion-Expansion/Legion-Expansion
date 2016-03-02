@@ -1,4 +1,6 @@
 {
+  "display_name": "Ripple",
+  "description": "Wave Maker and Torpedo Launcher. Attacks Naval Targets.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,
@@ -8,8 +10,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Wave Maker and Torpedo Launcher. Attacks Naval Targets.",
-  "display_name": "Ripple",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

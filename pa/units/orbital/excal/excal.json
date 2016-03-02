@@ -1,4 +1,6 @@
 {
+  "display_name": "Excalibur",
+  "description": "Long-range orbital structure assault",
   "TEMP_texelinfo": 6.1803,
   "audio": {
     "loops": {
@@ -21,8 +23,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Long-range orbital structure assault",
-  "display_name": "Excalibur",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

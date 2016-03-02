@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Fabrication Barge",
+  "description": "Builds Advanced Structures. Can Build Exclusive Water Units.",
   "TEMP_texelinfo": 11.3243,
   "attachable": {
     "offsets": {
@@ -41,8 +43,6 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "Builds Advanced Structures. Can Build Exclusive Water Units.",
-  "display_name": "Advanced Fabrication Barge",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

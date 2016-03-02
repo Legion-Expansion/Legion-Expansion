@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Sputnik",
+  "description": "!LOC(units:basic_radar_satellite_detects_a_large_area_for_enemy_land_sea_and_air_units.message):Basic radar satellite- Detects a large area for enemy land, sea, and air units.",
   "TEMP_texelinfo": 10.6806,
   "attachable": {
     "offsets": {
@@ -24,8 +26,6 @@
   "consumption": {
     "energy": 700
   },
-  "description": "!LOC(units:basic_radar_satellite_detects_a_large_area_for_enemy_land_sea_and_air_units.message):Basic radar satellite- Detects a large area for enemy land, sea, and air units.",
-  "display_name": "Legion Sputnik",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

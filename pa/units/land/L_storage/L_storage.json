@@ -1,4 +1,6 @@
 {
+  "display_name": "OmniSilo Storage Device",
+  "description": "Significantly Increases Storage Capacity of Metal and Energy Production.",
   "TEMP_texelinfo": 26.4567,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,
@@ -10,8 +12,6 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 900,
-  "description": "Significantly Increases Storage Capacity of Metal and Energy Production.",
-  "display_name": "OmniSilo Storage Device",
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {

@@ -1,4 +1,6 @@
 {
+  "display_name": "Cub",
+  "description": "Advanced Mobile Radar and Vision. Quick.",
   "TEMP_texelinfo": 17,
   "audio": {
     "loops": {
@@ -24,8 +26,6 @@
   "consumption": {
     "energy": 1550
   },
-  "description": "Advanced Mobile Radar and Vision. Quick.",
-  "display_name": "Cub",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

@@ -1,4 +1,6 @@
 {
+  "display_name": "Space Bridge",
+  "description": "Teleporter. Use to Teleport Units.",
   "TEMP_texelinfo": 55.7884,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,
@@ -24,8 +26,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Teleporter. Use to Teleport Units.",
-  "display_name": "Space Bridge",
   "energy_efficiency_requirement": 1,
   "events": {
     "build_complete": {
