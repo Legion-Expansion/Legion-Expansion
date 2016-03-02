@@ -444,7 +444,13 @@
         preferred_builds: [
             ["L_bot", 18]
           ] // scout_radar_mode
-      },
+      }, {
+        spec_id: "/pa/units/land/L_necromancer/minion/minion.json",
+        si_fallback: ["bot_bomb"],
+        preferred_builds: [
+          ["L_bot", 19]
+        ] // necromancer boombot
+      }, 
 
 
       {

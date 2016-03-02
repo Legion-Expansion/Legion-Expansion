@@ -14,10 +14,10 @@
   "fx_trail": {
     "filename": "/pa/effects/specs/none.pfx"
   },
-  "initial_velocity": 0,
+  "initial_velocity": 17,
   "lifetime": 1,
   "max_velocity": 20,
-  "min_velocity": 10,
+  "min_velocity": 17,
   "model": {
     "filename": ""
   },

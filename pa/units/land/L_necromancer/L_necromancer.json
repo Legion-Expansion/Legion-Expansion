@@ -78,13 +78,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 200,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 200,
           "shape": "capsule"
         }
       ]
@@ -108,9 +108,6 @@
       "spec_id": "/pa/units/land/L_necromancer/L_necromancer_tool_weapon.json"
     }
   ],
-  "transportable": {
-    "size": 1
-  },
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",

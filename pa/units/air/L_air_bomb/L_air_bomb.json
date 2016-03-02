@@ -70,10 +70,10 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 60,
+    "acceleration": 120,
     "brake": 180,
     "hover_time": -1.0,
-    "move_speed": 120,
+    "move_speed": 95,
     "turn_in_place": true,
     "turn_speed": 1080,
     "type": "air",

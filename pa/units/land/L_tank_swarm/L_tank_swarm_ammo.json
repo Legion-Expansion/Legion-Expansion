@@ -4,7 +4,8 @@
   "damage": 300,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/laser_blast"
+      "audio_cue": "/SE/Impacts/laser_blast",
+      "effect_spec": "/pa/units/land/L_tank_swarm/chain/electrode.pfx"
     }
   },
   "flight_type": "Staged",
