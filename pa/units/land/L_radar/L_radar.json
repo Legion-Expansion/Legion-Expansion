@@ -141,6 +141,7 @@
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",
     "UNITTYPE_FabBuild",
+	"UNITTYPE_CombatFabBuild",
     "UNITTYPE_Recon",
     "UNITTYPE_Custom1"
   ]
