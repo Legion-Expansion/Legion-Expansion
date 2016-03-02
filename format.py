@@ -73,10 +73,6 @@ def validateFile(filename):
 
       if not os.path.isfile(filename3):
 
-#      print(filename)
-
-#    else:
-
         print("\nMISSING FILE", filename, "\n")
         
         missing.append( filename )
