@@ -8,6 +8,7 @@ from os.path import join
 from collections import OrderedDict
 
 # update papaths.py with your paths
+
 from papaths import PA_MEDIA_PATH
 
 if not os.path.isdir(PA_MEDIA_PATH):
