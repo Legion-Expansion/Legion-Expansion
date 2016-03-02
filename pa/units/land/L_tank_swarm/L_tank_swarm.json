@@ -12,8 +12,8 @@
 		}
 	},
 	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Slothtest",
-	"description": "Healing pulse",
+	"display_name": "Havoc",
+	"description": "Shoots chain lightning at land targets",
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/veh"
@@ -44,8 +44,7 @@
 		"ORDER_Attack",
 		"ORDER_Patrol",
 		"ORDER_Assist",
-		"ORDER_Use",
-		"ORDER_FireSecondaryWeapon"
+		"ORDER_Use"
 	],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {

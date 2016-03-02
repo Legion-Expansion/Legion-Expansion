@@ -23,6 +23,7 @@
 		"UNITTYPE_Tank",
 		"UNITTYPE_Mobile",
 		"UNITTYPE_Offense",
+		"UNITTYPE_Artillery",
 		"UNITTYPE_Land",
 		"UNITTYPE_Advanced",
 		"UNITTYPE_Hover",
@@ -98,7 +99,7 @@
 		},
 		"fired": {
 			"audio_cue": "/SE/Weapons/veh/tank_hover_fire",
-			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight03 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft03 /pa/effects/specs/ground_smoke_impact_low.pfx bone_root"
+			 "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight03 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleRight02 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft03" 
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Veh"

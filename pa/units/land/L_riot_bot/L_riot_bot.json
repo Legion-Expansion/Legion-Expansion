@@ -47,9 +47,9 @@
   "guard_layer": "WL_AnySurface",
   "max_health": 700,
   "mesh_bounds": [
-    9.125,
-    9.623,
-    8.808
+    7.5,
+    7.5,
+    7
   ],
   "model": {
     "animations": {
@@ -69,7 +69,6 @@
     "type": "land-small"
   },
   "physics": {
-    "push_class": 2,
     "radius": 2
   },
   "recon": {
@@ -114,7 +113,6 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_Artillery",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",

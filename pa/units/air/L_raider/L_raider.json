@@ -26,7 +26,8 @@
       "effect_scale": 0.75
     },
     "fired": {
-			"audio_cue": "/SE/Weapons/air/gunship_fire"
+	  "audio_cue": "/SE/Weapons/air/gunship_fire",
+	  "effect_scale": 2
     }
   },
   "fx_offsets": [

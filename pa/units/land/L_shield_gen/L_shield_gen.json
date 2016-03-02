@@ -19,6 +19,9 @@
         }
     },
     "max_health": 400,
+	"death_weapon": {
+		"ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
+	},
     "mesh_bounds": [
         5,
         5,
@@ -53,8 +56,8 @@
         "type": "Structure"
     },
     "placement_size": [
-        15,
-        15
+        20,
+        20
     ],
     "recon": {
         "observer": {
@@ -100,9 +103,21 @@
     "tools": [
         {
             "aim_bone": "bone_void",
+            "record_index": 0,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
+        },
+		{
+            "aim_bone": "bone_void",
             "record_index": 1,
-            "fire_event": "fired0",
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_tool_weapon.json"
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
+        },
+		{
+            "aim_bone": "bone_void",
+            "record_index": 2,
+			"show_range": true,
+            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
         }
     ],
     "wreckage_health_frac": 0.2

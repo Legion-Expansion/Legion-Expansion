@@ -23,9 +23,8 @@
 	"transportable": {
 		"size": 1
 	},
-	"physics": {
-    "push_class": 2,		
-	"radius": 3.5
+	"physics": {	
+		"radius": 2
 	},
 	"recon": {
 		"observer": {
@@ -51,7 +50,6 @@
 		"animtree": "/pa/anim/anim_trees/L_sniper_bot_anim_tree.json",
 		"walk_speed": 3
 	},
-	"nearby_target_tick_update_interval": 15,
 	"tools": [{
 		"spec_id": "/pa/units/land/L_sniper_bot/L_sniper_bot_tool_weapon.json",
 		"aim_bone": "bone_turret",
@@ -89,6 +87,6 @@
 	"selection_icon": {
 		"diameter": -11.0
 	},
-	"mesh_bounds": [3, 6.3, 4.8],
+	"mesh_bounds": [3, 5, 4.8],
 	"TEMP_texelinfo": 16
 }

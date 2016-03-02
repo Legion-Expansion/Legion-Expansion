@@ -24,7 +24,7 @@
 			}
 		},
 		"selection_response": {
-			"cue": "/SE/Selection/bot/assault"
+			"cue": "/SE/Selection/structure/radar"
 		}
 	},
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
@@ -36,13 +36,13 @@
     ],	
 	"events": {
 		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/bot"
+			"audio_cue": "/SE/Build_Complete/radar"
 		},
 		"died": {
 		},
 		"fired": {
-			"audio_cue": "/SE/Weapons/bot/assault_fire",
-			"effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
+			"effect_spec": "/pa/units/land/L_scout_bot/L_scout_bot_superman_debris.pfx",
+			"audio_cue": "/SE/Weapons/bot/assault_fire"
 		}
 	},
 	"death": {
@@ -59,14 +59,14 @@
 			"idle": "/pa/units/land/L_scout_bot/L_scout_bot_idle.papa",
 			"walk": "/pa/units/land/L_scout_bot/L_scout_bot_walk.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_scout_bot_anim_tree.json",
 		"filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa",
 		"walk_speed": 2.75
 	},
 	"fx_offsets": [
     {
-      "bone": "effect",
-      "filename": "/pa/units/land/L_radar/L_radar_on.pfx",
+      "bone": "bone_radar",
+      "filename": "/pa/units/land/L_scout_bot/L_scout_bot_radar_on.pfx",
       "offset": [
         0,
         0,
@@ -111,8 +111,8 @@
 	"recon": {
     "observer": {
 		"observable": {
-			"layer": "mine",
-			"ignore_sight": true
+			"ignore_sight": true,
+			"layer": "surface_and_air"
 		},
       "items": [
         {
@@ -152,7 +152,6 @@
 	"tools": [
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
 	  "primary_weapon": false,
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode_tool_weapon.json"
