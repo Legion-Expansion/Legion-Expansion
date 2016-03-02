@@ -41,7 +41,7 @@
     23.4
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/sentinel_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/sentinel/sentinel.papa"
   },
   "physics": {
