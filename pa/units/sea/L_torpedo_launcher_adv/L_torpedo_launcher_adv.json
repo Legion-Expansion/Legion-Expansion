@@ -4,7 +4,7 @@
 	"atrophy_cool_down": 15.0,
 	"atrophy_rate": 10.0,
 	"base_spec": "/pa/units/land/base_structure/base_structure.json",
-	"build_metal_cost": 900,
+	"build_metal_cost": 3500,
 	"command_caps": [
 		"ORDER_Attack"
 	],

@@ -32,12 +32,12 @@
 	"description": "Scout Bot. Provides Short Range Vision and Radar Coverage For Friendly Units.",
 	"display_name": "Creeper",
 	"command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Assist",
-    "ORDER_Use",
-    "ORDER_FireSecondaryWeapon"
-  ],	
+		"ORDER_Move",
+		"ORDER_Patrol",
+		"ORDER_Assist",
+		"ORDER_Use",
+		"ORDER_FireSecondaryWeapon"
+	],	
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/bot"
@@ -52,7 +52,7 @@
 	"death": {
 	},	
 	"guard_layer": "WL_AnySurface",
-	"max_health": 120,
+	"max_health": 60,
 	"mesh_bounds": [
 		4,
 		2,

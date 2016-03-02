@@ -2,7 +2,7 @@
 	"base_spec": "/pa/units/land/base_bot/base_bot.json",
 	"display_name": "Time Delay Bomb",
 	"description": "KABOOM",
-	"max_health": 350,
+	"max_health": 160,
 	"build_metal_cost": 100,
 	"damageable": false,
 	"guard_radius": 30,

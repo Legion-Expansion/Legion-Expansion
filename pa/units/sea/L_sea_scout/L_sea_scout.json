@@ -31,7 +31,7 @@
 	  "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
 	}
   },
-  "guard_layer": "WL_AnyWater",
+  "guard_layer": "WL_AnySurface",
   "max_health": 250,
   "mesh_bounds": [
     4.401,
@@ -43,8 +43,8 @@
     "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
   },
   "navigation": {
-    "acceleration": 90,
-    "brake": 200,
+    "acceleration": 60,
+    "brake": -1,
     "move_speed": 20,
     "turn_in_place": false,
     "turn_speed": 180,

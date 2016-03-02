@@ -30,5 +30,5 @@
     "max_velocity": 15,
     "model": {},
     "splash_damage": 500,
-    "splash_radius": 50
+    "splash_radius": 55
 }

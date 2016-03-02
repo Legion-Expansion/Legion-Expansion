@@ -37,7 +37,7 @@
 			}
 		}
 	},
-	"max_health": 750,
+	"max_health": 800,
 	"build_metal_cost": 900,
 	"command_caps": [
 		"ORDER_Move",
@@ -114,6 +114,7 @@
 				"gun005",
 				"gun006"
 			],
+			"projectiles_per_fire": 6,
 			"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
 		}		
 	],

@@ -3,19 +3,28 @@
 	"display_name": "Lancer",
 	"description": "Laser bot. Medium Range Laser Weapon. Attacks Land and Naval.",
 	"max_health": 84,
-	"build_metal_cost": 160,
+	"build_metal_cost": 150,
 	"attachable": {
 		"offsets": {
 			"root": [0, 0, 0],
 			"head": [0, 0, 7.4]
 		}
 	},
-	"unit_types": ["UNITTYPE_Bot", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Land", "UNITTYPE_Basic", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
+	"unit_types": [
+		"UNITTYPE_Bot",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Land",
+		"UNITTYPE_Basic",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_Custom1"
+	],
 	"guard_layer": "WL_AnySurface",
 	"navigation": {
 		"type": "land-small",
-		"acceleration": 120,
-		"brake": -1,
+		"acceleration": 50,
+		"brake": 50,
 		"move_speed": 15,
 		"turn_speed": 720,
 		"group_preference": "back"

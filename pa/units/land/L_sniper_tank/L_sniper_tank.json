@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 1200,
   "description": "Sniper. Attacks Land and Naval.",
   "display_name": "Deathmark",
   "events": {
@@ -108,12 +108,12 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_weapon.json"
+      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_tool_weapon.json"
     }
   ],
-	"fx_offsets": [{
+  "fx_offsets": [{
 		"bone": "bone_turret",
 		"offset": [
 		0,

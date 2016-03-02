@@ -3,7 +3,7 @@
 	"display_name": "Panzerwerfer",
 	"description": "Medium Range Rocket Barrage Tank. Attacks Land and Naval",
 	"max_health": 200,
-	"build_metal_cost": 1600,
+	"build_metal_cost": 1200,
 	"armor_type": "AT_Hover",
 	"attachable": {
 		"offsets": {
@@ -36,9 +36,9 @@
 	"guard_layer": "WL_LandHorizontal",
 	"navigation": {
 		"type": "hover",
-		"acceleration": 140,
-		"brake": 140,
-		"move_speed": 6,
+		"acceleration": 100,
+		"brake": 100,
+		"move_speed": 10,
 		"turn_speed": 40
 	},
 	"physics": {

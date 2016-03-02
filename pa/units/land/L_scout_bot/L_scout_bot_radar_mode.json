@@ -33,7 +33,10 @@
 	"display_name": "Scout Bot Radar mode",
 	"command_caps": [
 		"ORDER_FireSecondaryWeapon"
-    ],	
+    ],
+	"consumption": {
+		"energy": 100
+	},
 	"events": {
 		"build_complete": {
 			"audio_cue": "/SE/Build_Complete/radar"
@@ -48,7 +51,7 @@
 	"death": {
 	},
 	"guard_layer": "WL_AnySurface",
-	"max_health": 120,
+	"max_health": 60,
 	"mesh_bounds": [
 		4,
 		2,

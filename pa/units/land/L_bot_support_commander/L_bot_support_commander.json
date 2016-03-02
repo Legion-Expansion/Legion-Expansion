@@ -3,7 +3,7 @@
 	"display_name": "Shredder",
 	"description": "Auxiliary Commander. High Health and a Strong Attack - Can Build Structures.",
 	"strategic_icon_priority": 0,
-	"max_health": 9000,
+	"max_health": 10000,
 	"build_metal_cost": 7000,
 	"buildable_types": "(Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot) & Custom1",
 	"show_in_orbital_layer": true,
@@ -68,7 +68,7 @@
 		"spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_tool_weapon.json",
 		"aim_bone": "bone_turret",
 		"muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
-		"projectiles_per_fire": 2,
+		"projectiles_per_fire": 1,
 		"primary_weapon": true
 	}],
 	"events": {

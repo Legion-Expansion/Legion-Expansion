@@ -267,6 +267,8 @@
 		"/pa/units/land/tank_flak/tank_flak.json",
 		"/pa/units/land/L_tank_swarm/L_tank_swarm.json",
 		"/pa/units/land/L_tank_swarm/chain/chain.json",
+		"/pa/units/land/L_tank_swarm/chain/chain2.json",
+		"/pa/units/land/L_tank_swarm/chain/chain3.json",
 		"/pa/units/land/tank_nuke/tank_nuke.json",
 		"/pa/units/air/solar_drone/solar_drone.json",
 		"/pa/units/air/bomber_heavy/bomber_heavy.json",

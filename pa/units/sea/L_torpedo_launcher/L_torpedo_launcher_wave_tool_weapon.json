@@ -1,7 +1,7 @@
 {
 	"base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
 	"ammo_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher_wave_ammo.json",
-	"rate_of_fire": 0.2,
+	"rate_of_fire": 0.33,
 	"idle_aim_delay": 4,
 	"max_range": 200,
 	"yaw_rate": 180,
