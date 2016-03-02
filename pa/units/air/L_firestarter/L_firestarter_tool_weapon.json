@@ -1,18 +1,22 @@
 {
-	"tool_type": "TOOL_Weapon",
-	"ammo_id": "/pa/units/air/L_firestarter/L_firestarter_ammo.json",
-	"target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
-	"ammo_source": "metal",
-	"ammo_capacity": 1000,
-	"ammo_demand": 20,
-	"ammo_per_shot": 1000,
-	"max_range": 10,
-	"yaw_rate": 3600,
-	"pitch_rate": 3600,
-	"yaw_range": 180,
-	"pitch_range": 180,
-	"rate_of_fire": 1.0,
-	"auto_attack": false,
-	"manual_fire": true,
-	"auto_task_type": "none"
+  "ammo_capacity": 1000,
+  "ammo_demand": 20,
+  "ammo_id": "/pa/units/air/L_firestarter/L_firestarter_ammo.json",
+  "ammo_per_shot": 1000,
+  "ammo_source": "metal",
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "manual_fire": true,
+  "max_range": 10,
+  "pitch_range": 180,
+  "pitch_rate": 3600,
+  "rate_of_fire": 1.0,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 3600
 }

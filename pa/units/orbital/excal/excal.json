@@ -1,145 +1,149 @@
 {
-   "base_spec":"/pa/units/orbital/base_orbital/base_orbital.json",
-   "display_name":"Excalibur",
-   "description":"Long-range orbital structure assault",
-   "max_health":6200,
-   "build_metal_cost":4800,
-   "gravwell_velocity_multiplier":6.0,
-    "spawn_layers": "WL_Orbital",
-   "unit_types":[
-	  "UNITTYPE_Artillery",
-      "UNITTYPE_Fighter",
-      "UNITTYPE_Orbital",
-      "UNITTYPE_Mobile",
-      "UNITTYPE_Offense",
-      "UNITTYPE_Advanced",
-      "UNITTYPE_FactoryBuild",
-	  "UNITTYPE_Custom1"
-   ],
-   "command_caps":[
-      "ORDER_Move",
-      "ORDER_Patrol",
-      "ORDER_Attack",
-      "ORDER_Assist"
-   ],
-   "guard_radius":300,
-    "guard_layer": "WL_Orbital",
-   "navigation":{
-      "type":"orbital",
-      "acceleration":25,
-      "brake":25,
-      "move_speed":30,
-      "turn_speed":50,
-	  "bank_factor":5,
-      "vertical_speed":300,
-	  "hover_time": -1.0
-   },
+  "TEMP_texelinfo": 6.1803,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_fighter_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fighter"
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 4800,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "description": "Long-range orbital structure assault",
+  "display_name": "Excalibur",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_spec": "/pa/units/orbital/excal/excal_death.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
+      "effect_spec": "/pa/units/orbital/excal/vents.pfx bone_root /pa/units/orbital/excal/fire.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "effect_scale": 5,
+      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "offset": [
+        7.8,
+        16.9,
+        0.6764
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "effect_scale": 5,
+      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "offset": [
+        7.8,
+        16.9,
+        -0.6764
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "effect_scale": 5,
+      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "offset": [
+        -7.8,
+        16.9,
+        -0.6764
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "effect_scale": 5,
+      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "offset": [
+        -7.8,
+        16.9,
+        0.6764
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/orbital/excal/gun.pfx",
+      "offset": [
+        0,
+        -47.2,
+        0
+      ],
+      "type": "idle"
+    }
+  ],
+  "gravwell_velocity_multiplier": 6.0,
+  "guard_layer": "WL_Orbital",
+  "guard_radius": 300,
+  "max_health": 6200,
+  "mesh_bounds": [
+    22.0,
+    54.82,
+    13.6
+  ],
+  "model": {
+    "arrows": 5,
+    "filename": "/pa/units/orbital/excal/excal.papa"
+  },
+  "navigation": {
+    "acceleration": 25,
+    "bank_factor": 5,
+    "brake": 25,
+    "hover_time": -1.0,
+    "move_speed": 30,
+    "turn_speed": 50,
+    "type": "orbital",
+    "vertical_speed": 300
+  },
   "physics": {
     "gravity_scalar": 0.001,
     "push_class": 15,
     "radius": 10
   },
-   "recon":{
-      "observer":{
-         "items":[
-            {
-               "layer":"orbital",
-               "channel":"sight",
-               "shape":"sphere",
-               "radius":400
-            }
-         ]
-      }
-   },
-   "model":{
-      "filename":"/pa/units/orbital/excal/excal.papa",
-      "arrows":5
-   },
-   "tools":[
-      {
-         "spec_id":"/pa/units/orbital/excal/excal_tool_weapon.json",
-         "aim_bone":"bone_fire01",
-         "muzzle_bone":"bone_fire01"
-      }
-   ],
-   "events":{
-      "build_complete":{
-         "audio_cue":"/SE/Build_Complete/air"
-      },
-      "fired":{
-            "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-			"effect_spec":"/pa/units/orbital/excal/vents.pfx bone_root /pa/units/orbital/excal/fire.pfx"
-      },
-      "died":{
-         "audio_cue":"/SE/Death/Air",
-         "effect_spec":"/pa/units/orbital/excal/excal_death.pfx"
-      }
-   },
-   "audio":{
-      "loops":{
-         "move":{
-            "cue":"/SE/Movement/air/air_fighter_loop",
-            "flag":"vel_changed",
-            "should_start_func":"is_moving",
-            "should_stop_func":"is_not_moving"
-         }
-      },
-      "selection_response":{
-         "cue":"/SE/Selection/air/fighter"
-      }
-   },
-   "fx_offsets":[
-      {
-         "type":"moving_forward",
-         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
-		 "effect_scale":5,
-         "offset":[
-            7.8,
-            16.9,
-            0.6764
-         ]
-      },
-	  {
-         "type":"moving_forward",
-         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
-		 "effect_scale":5,
-         "offset":[
-            7.8,
-            16.9,
-            -0.6764
-         ]
-      },
-	  {
-         "type":"moving_forward",
-         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
-		 "effect_scale":5,
-         "offset":[
-            -7.8,
-            16.9,
-            -0.6764
-         ]
-      },
-	        {
-         "type":"moving_forward",
-         "filename":"/pa/units/orbital/excal/spaceship_jets.pfx",
-		 "effect_scale":5,
-         "offset":[
-            -7.8,
-            16.9,
-            0.6764
-         ]
-      }, 
-	  	    {
-         "type":"idle",
-		 "bone": "bone_root",
-         "filename":"/pa/units/orbital/excal/gun.pfx",
-         "offset":[ 0, -47.2, 0 ]
-      }
-   ],
-   "TEMP_texelinfo":6.1803,
-   "mesh_bounds":[
-      22.0,
-      54.82,
-      13.6
-   ]
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 400,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "spawn_layers": "WL_Orbital",
+  "tools": [
+    {
+      "aim_bone": "bone_fire01",
+      "muzzle_bone": "bone_fire01",
+      "spec_id": "/pa/units/orbital/excal/excal_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Artillery",
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

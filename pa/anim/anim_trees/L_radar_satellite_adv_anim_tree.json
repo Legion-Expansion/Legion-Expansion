@@ -1,35 +1,39 @@
 {
-	"blend_root": {
-		"type": "unit_state",
-		"nodes": {
-			"being_built": {
-				"type": "bind_pose"
-			},
-			"living": {
-				"type": "playback",
-				"anim_name": "idle"
-			},
-			"dead": {
-				"type": "bind_pose"
-			},
-			"ghost": {
-				"type": "bind_pose"
-			}
-		}
-	},
-	"skeleton_controls": [{
-		"bone": "bone_recoil",
-		"recoil_dist": 1.5,
-		"restore_time": 1,
-		"type": "recoil",
-		"unit_event": "fired"
-	}, {
-		"type": "procedural_aim",
-		"rotation_bone": "bone_pitch",
-		"rotation_axis": "x"
-	}, {
-		"type": "procedural_aim",
-		"rotation_bone": "bone_turret",
-		"rotation_axis": "z"
-	}]
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "anim_name": "idle",
+        "type": "playback"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "bone": "bone_recoil",
+      "recoil_dist": 1.5,
+      "restore_time": 1,
+      "type": "recoil",
+      "unit_event": "fired"
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_pitch",
+      "type": "procedural_aim"
+    },
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret",
+      "type": "procedural_aim"
+    }
+  ]
 }

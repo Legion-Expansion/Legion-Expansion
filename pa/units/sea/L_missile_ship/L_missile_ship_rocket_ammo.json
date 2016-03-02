@@ -37,14 +37,14 @@
   "splash_damage": 0,
   "splash_radius": 0,
   "stages": [
-	{
+    {
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
       "stage_duration": 200,
       "stage_turn_rate": 720
     },
-	{
+    {
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
@@ -52,7 +52,7 @@
       "stage_duration": 0,
       "stage_turn_rate": 120
     },
-	{
+    {
       "ignores_LOS": false,
       "ignores_gravity": false,
       "rotates_to_velocity": true,

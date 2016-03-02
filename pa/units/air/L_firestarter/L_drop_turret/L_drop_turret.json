@@ -20,7 +20,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom" 
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -65,7 +65,7 @@
       "aim_bone": "bone_pitch",
       "muzzle_bone": [
         "socket_muzzleTop",
-		"socket_muzzleBottom"
+        "socket_muzzleBottom"
       ],
       "spec_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_tool_weapon.json"
     }

@@ -18,10 +18,10 @@
   "initial_velocity": 200,
   "lifetime": 0.38,
   "max_velocity": 200,
-  "splash_damage": 10,
-  "splash_radius": 7,
   "physics": {
     "radius": 5,
     "shape": "sphere"
-  }
+  },
+  "splash_damage": 10,
+  "splash_radius": 7
 }

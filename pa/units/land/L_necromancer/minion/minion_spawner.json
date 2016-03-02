@@ -1,79 +1,85 @@
 {
-	"base_spec": "/pa/units/land/base_bot/base_bot.json",
-	"display_name": "Boombot Cocoon",
-	"description": "I wonder what is inside this evil cocoon",
-	"max_health": 250,
-	"build_metal_cost": 100,
-	"damageable": false,
-	"guard_radius": 0,
-	"guard_layer": "WL_AnySurface",
-	"navigation": {
-		"type": "land-small",
-		"acceleration": 0,
-		"brake": 0,
-		"move_speed": 0,
-		"turn_speed": 0,
-		"wobble_factor": 0.1,
-		"wobble_speed": 0.2
-	},
-	"physics": {
+  "TEMP_texelinfo": 6.38702,
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 100,
+  "damageable": false,
+  "description": "I wonder what is inside this evil cocoon",
+  "display_name": "Boombot Cocoon",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot_bomb",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/carrier_drone_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/none.pfx",
+      "offset": [
+        0,
+        0,
+        5
+      ],
+      "type": "idle"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 0,
+  "max_health": 250,
+  "mesh_bounds": [
+    0.01,
+    0.01,
+    0.01
+  ],
+  "navigation": {
+    "acceleration": 0,
+    "brake": 0,
+    "move_speed": 0,
+    "turn_speed": 0,
+    "type": "land-small",
+    "wobble_factor": 0.1,
+    "wobble_speed": 0.2
+  },
+  "physics": {
     "allow_pushing": true,
     "radius": 0
   },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 0,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -1
+  },
   "spawn_unit_on_death": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
-	"wreckage_health_frac": 0.0,
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 0
-			}]
-		}
-	},
-	"tools": [{
-		"spec_id": "/pa/units/land/L_necromancer/minion/minion_spawner_death_weapon.json",
-		"aim_bone": "bone_root",
-		"record_index": 0
-	}],
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/air"
-		},
-		"fired": {
-			"audio_cue": "/SE/Weapons/air/carrier_drone_fire"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Bot_bomb",
-			"effect_spec":	"/pa/effects/specs/none.pfx",
-			"effect_scale": 1.0
-		}
-	},
-	"fx_offsets": [{
-		"filename": "/pa/effects/specs/none.pfx",
-		"type": "idle",		
-        "bone": "bone_root",
-		"offset": [
-			0,
-			0,
-			5
-		]
-	}],
-	"selection_icon": {
-		"diameter": -1
-    },
-	"TEMP_texelinfo": 6.38702,
-	"mesh_bounds": [
-		0.01,
-		0.01,
-		0.01
-	],
-	"unit_types": [
-	"UNITTYPE_SelfDestruct",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "record_index": 0,
+      "spec_id": "/pa/units/land/L_necromancer/minion/minion_spawner_death_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_SelfDestruct",
     "UNITTYPE_Bot",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom1"
-  ]
+  ],
+  "wreckage_health_frac": 0.0
 }

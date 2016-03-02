@@ -82,6 +82,7 @@
     "turn_speed": 1080,
     "type": "hover"
   },
+  "passive_health_regen": -10,
   "physics": {
     "allow_pushing": true,
     "radius": 4
@@ -114,7 +115,6 @@
       "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_tool_weapon.json"
     }
   ],
-  "passive_health_regen": -10,
   "transportable": {
     "size": 1
   },
@@ -126,7 +126,7 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Deconstruction",
     "UNITTYPE_Hover",
-	"UNITTYPE_Custom1"
+    "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }

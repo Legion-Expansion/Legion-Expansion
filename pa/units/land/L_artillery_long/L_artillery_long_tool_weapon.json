@@ -5,7 +5,7 @@
   "ammo_per_shot": 37500,
   "ammo_source": "energy",
   "auto_attack": true,
-	"base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "max_range": 500,
   "pitch_range": 60,
   "pitch_rate": 10,

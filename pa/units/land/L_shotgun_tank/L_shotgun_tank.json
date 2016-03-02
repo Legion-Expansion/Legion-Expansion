@@ -97,20 +97,20 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": [
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle",
-		"socket_muzzle"
-	  ],
-	  "projectiles_per_fire": 12,
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle",
+        "socket_muzzle"
+      ],
+      "projectiles_per_fire": 12,
       "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_tool_weapon.json"
     }
   ],

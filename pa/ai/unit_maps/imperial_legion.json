@@ -12,23 +12,20 @@
     "AnyLegionFactoryBasic": {
       "unit_types": "(Factory & Basic) & Custom1"
     },
-    "LegionCommander": {
-      "unit_types": "Commander & Custom1"
-    },
-    "LegionAirAdvancedFabber": {
-      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.json"
-    },
-    "LegionAirAdvancedGunship": {
-      "spec_id": "/pa/units/air/L_gunship/L_gunship.json"
-    },
     "LegionAirAdvancedBomber": {
       "spec_id": "/pa/units/air/L_firestarter/L_firestarter.json"
     },
     "LegionAirAdvancedCarrier": {
       "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier.json"
     },
+    "LegionAirAdvancedFabber": {
+      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.json"
+    },
     "LegionAirAdvancedFighter": {
       "spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv.json"
+    },
+    "LegionAirAdvancedGunship": {
+      "spec_id": "/pa/units/air/L_gunship/L_gunship.json"
     },
     "LegionAirAdvancedScout": {
       "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv.json"
@@ -66,11 +63,11 @@
     "LegionBotAdvancedFabber": {
       "spec_id": "/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"
     },
-    "LegionBotAdvancedTactical": {
-      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
-    },
     "LegionBotAdvancedSupportCommander": {
       "spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander.json"
+    },
+    "LegionBotAdvancedTactical": {
+      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.json"
     },
     "LegionBotBasicAA": {
       "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa.json"
@@ -89,6 +86,9 @@
     },
     "LegionBotBasicSniper": {
       "spec_id": "/pa/units/land/L_sniper_bot/L_sniper_bot.json"
+    },
+    "LegionCommander": {
+      "unit_types": "Commander & Custom1"
     },
     "LegionDefenseAdvancedAir": {
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv.json"
@@ -168,11 +168,11 @@
     "LegionFactoryAdvancedNaval": {
       "spec_id": "/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json"
     },
-    "LegionFactoryAdvancedVehicle": {
-      "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
-    },
     "LegionFactoryAdvancedOrbital": {
       "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory.json"
+    },
+    "LegionFactoryAdvancedVehicle": {
+      "spec_id": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json"
     },
     "LegionFactoryBasicAir": {
       "spec_id": "/pa/units/air/L_air_factory/L_air_factory.json"
@@ -183,11 +183,11 @@
     "LegionFactoryBasicNaval": {
       "spec_id": "/pa/units/sea/L_naval_factory/L_naval_factory.json"
     },
-    "LegionFactoryBasicVehicle": {
-      "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
-    },
     "LegionFactoryBasicOrbital": {
       "spec_id": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.json"
+    },
+    "LegionFactoryBasicVehicle": {
+      "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.json"
     },
     "LegionIntelAdvancedRadar": {
       "spec_id": "/pa/units/land/L_radar_adv/L_radar_adv.json"
@@ -198,14 +198,14 @@
     "LegionNavalAdvancedBattleship": {
       "spec_id": "/pa/units/sea/L_battleship/L_battleship.json"
     },
+    "LegionNavalAdvancedDestroyer": {
+      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
+    },
     "LegionNavalAdvancedFabber": {
       "spec_id": "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.json"
     },
     "LegionNavalAdvancedFabberSub": {
       "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json"
-    },
-    "LegionNavalAdvancedDestroyer": {
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank.json"
     },
     "LegionNavalAdvancedTactical": {
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship.json"
@@ -213,11 +213,11 @@
     "LegionNavalBasicAA": {
       "spec_id": "/pa/units/sea/L_frigate/L_frigate.json"
     },
-    "LegionNavalBasicFabber": {
-      "spec_id": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json"
-    },
     "LegionNavalBasicDestroyer": {
       "spec_id": "/pa/units/sea/L_destroyer/L_destroyer.json"
+    },
+    "LegionNavalBasicFabber": {
+      "spec_id": "/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json"
     },
     "LegionNavalBasicScout": {
       "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout.json"
@@ -270,11 +270,11 @@
     "LegionVehicleBasicArtillery": {
       "spec_id": "/pa/units/land/L_hover_tank/L_hover_tank.json"
     },
-    "LegionVehicleBasicFabber": {
-      "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
-    },
     "LegionVehicleBasicCFab": {
       "spec_id": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json"
+    },
+    "LegionVehicleBasicFabber": {
+      "spec_id": "/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json"
     },
     "LegionVehicleBasicHover": {
       "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank.json"

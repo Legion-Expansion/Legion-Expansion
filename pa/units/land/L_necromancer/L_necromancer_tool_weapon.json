@@ -7,7 +7,6 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
   "carpet_fire": true,
-  "start_fully_charged": false,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_artillery",
@@ -20,6 +19,7 @@
   "pitch_rate": 3600,
   "rate_of_fire": 2,
   "spread_fire": true,
+  "start_fully_charged": false,
   "target_layers": [
     "WL_LandHorizontal"
   ],

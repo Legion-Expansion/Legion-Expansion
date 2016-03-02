@@ -77,9 +77,7 @@
     "acceleration": 100,
     "brake": 100,
     "move_speed": 8,
-    "turn_speed": 55,
-    "type": "land-small",
-	"park_stamp": {
+    "park_stamp": {
       "cost": 10,
       "shape": "sphere",
       "type_data": [
@@ -92,7 +90,9 @@
           "stamp_type": "simple"
         }
       ]
-    }
+    },
+    "turn_speed": 55,
+    "type": "land-small"
   },
   "physics": {
     "push_class": 70,

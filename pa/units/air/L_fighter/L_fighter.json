@@ -30,43 +30,45 @@
   },
   "fx_offsets": [
     {
+      "bone": "thrust_right",
       "filename": "/pa/units/air/L_fighter/fighter_lines_thrust.pfx",
-      "bone": "thrust_right",
       "type": "moving_forward"
     },
     {
+      "bone": "thrust_left",
       "filename": "/pa/units/air/L_fighter/fighter_lines_thrust.pfx",
-      "bone": "thrust_left",
       "type": "moving_forward"
     },
     {
-      "filename": "/pa/units/air/L_fighter/fighter_jets.pfx",
       "bone": "thrust_right",
-      "type": "moving_forward"
-    },
-    {
       "filename": "/pa/units/air/L_fighter/fighter_jets.pfx",
-      "bone": "thrust_left",
       "type": "moving_forward"
-    },	
-    {
-      "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
-      "bone": "thrust_left",
-      "type": "moving_forward",
-	  "offset": [
-		1.828,
-		-2.175,
-		-1.316]
     },
     {
+      "bone": "thrust_left",
+      "filename": "/pa/units/air/L_fighter/fighter_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_left",
       "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
+      "offset": [
+        1.828,
+        -2.175,
+        -1.316
+      ],
+      "type": "moving_forward"
+    },
+    {
       "bone": "thrust_right",
-      "type": "moving_forward",
-	  "offset": [
-		-1.828,
-		-2.175,
-		-1.31]
-    }		
+      "filename": "/pa/units/air/L_fighter/fighter_lines.pfx",
+      "offset": [
+        -1.828,
+        -2.175,
+        -1.31
+      ],
+      "type": "moving_forward"
+    }
   ],
   "guard_layer": "WL_Air",
   "max_health": 150,
@@ -118,10 +120,10 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": [
-		"socket_muzzleLeft",
-		"socket_muzzleRight"
-	  ],
-	  "projectiles_per_fire": 2,
+        "socket_muzzleLeft",
+        "socket_muzzleRight"
+      ],
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
     }
   ],

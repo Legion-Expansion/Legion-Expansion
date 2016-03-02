@@ -46,11 +46,11 @@
     "radius": 0
   },
   "recon": {
-	"observable": {
-		"ignore_radar": true,
-		"ignore_sight": true,
-		"layer": "surface_and_air"
-	},
+    "observable": {
+      "ignore_radar": true,
+      "ignore_sight": true,
+      "layer": "surface_and_air"
+    },
     "observer": {
       "items": [
         {
@@ -72,10 +72,10 @@
     "diameter": -1.0
   },
   "tools": [
-		{
-			"spec_id": "/pa/units/air/L_air_scout_adv/vision/vision_death_tool_weapon.json",
-			"aim_bone": "bone_root"
-		}
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/air/L_air_scout_adv/vision/vision_death_tool_weapon.json"
+    }
   ],
   "unit_types": [
     "UNITTYPE_Scout",

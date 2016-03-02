@@ -1,126 +1,125 @@
 {
-	"TEMP_texelinfo": 9.31488,
-	"attachable": {
-		"offsets": {
-			"head": [
-				0,
-				0,
-				3.1
-			],
-			"root": [
-				0,
-				0,
-				0
-			]
-		}
-	},
-	"events": {
-     "build_complete": {
-       "audio_cue": "/SE/Build_Complete/veh"
-     },
-     "died": {
-       "audio_cue": "/SE/Death/Veh",
-       "effect_scale": 1.4
-     },
-	 "fired0": {
-      "audio_cue": "/SE/Weapons/bot/spark_fire",
-	  "effect_scale": 1.0,
-      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_muzzle"
-     },
-     "fired1": {
-       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
-	   "effect_scale": 1.0,
-	   "effect_spec": ""
-     }
-   },
-	"audio": {
-		"loops": {
-		  "move": {
-			"cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
-			"flag": "vel_changed",
-			"should_start_func": "is_moving",
-			"should_stop_func": "is_not_moving"
-		  }
-		}
-	},
-	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"model": {
-		"animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
-		"arrows": 5,
-		"filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
+  "TEMP_texelinfo": 9.31488,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.1
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 200,
+  "description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
+  "display_name": "Stoke",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
     },
-	"mesh_bounds": [
-		5,
-		7,
-		3
-	],
-	"physics": {
-		"radius": 4
-	},
-	"display_name": "Stoke",
-	"description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
-	"max_health": 250,
-	"build_metal_cost": 200,
-	"guard_layer": "WL_AnySurface",
-	"guard_radius": 10,
-	"influence_radius": 400,
-	"navigation": {
-		"acceleration": 40,
-		"brake": 40,
-		"move_speed": 14,
-		"turn_speed": 100,
-		"type": "amphibious"
-	},
-	"recon": {
-		"observer": {
-		  "items": [
-			{
-			  "channel": "sight",
-			  "layer": "surface_and_air",
-			  "radius": 100,
-			  "shape": "capsule"
-			},
-			{
-			  "channel": "sight",
-			  "layer": "underwater",
-			  "radius": 150,
-			  "shape": "capsule"
-			}
-		  ]
-		}
-	},
-	"tools": [
-		{
-		  "aim_bone": "bone_turret",
-		  "fire_event": "fired0",
-		  "record_index": 0,
-		  "muzzle_bone": "socket_muzzle",
-		  "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
-		},
-		{
-		  "aim_bone": "bone_turret",
-		  "fire_event": "fired1",
-		  "record_index": 1,
-		  "muzzle_bone": "socket_muzzle",
-		  "show_range": false,
-		  "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_torpedo_tool_weapon.json"
-		}
-
-	],
-	"transportable": {
-		"size": 1
-	},
-	"selection_icon": {
-		"diameter": -11.0
-	},
-	"unit_types": [
-		"UNITTYPE_Tank",
-		"UNITTYPE_Mobile",
-		"UNITTYPE_Offense",
-		"UNITTYPE_Sub",
-		"UNITTYPE_Land",
-		"UNITTYPE_Basic",
-		"UNITTYPE_FactoryBuild",
-		"UNITTYPE_Custom1"
-   ]
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 1.4
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_muzzle"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
+      "effect_scale": 1.0,
+      "effect_spec": ""
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 10,
+  "influence_radius": 400,
+  "max_health": 250,
+  "mesh_bounds": [
+    5,
+    7,
+    3
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
+  },
+  "navigation": {
+    "acceleration": 40,
+    "brake": 40,
+    "move_speed": 14,
+    "turn_speed": 100,
+    "type": "amphibious"
+  },
+  "physics": {
+    "radius": 4
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -11.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 0,
+      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired1",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 1,
+      "show_range": false,
+      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_torpedo_tool_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Sub",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

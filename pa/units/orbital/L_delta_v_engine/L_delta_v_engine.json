@@ -353,9 +353,9 @@
     }
   },
   "selection_icon": {
-    "diameter": -69.0, 
+    "diameter": -69.0,
     "vertical_offset": 3.0
-  }, 
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Orbital",

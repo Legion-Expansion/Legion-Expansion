@@ -1,5 +1,5 @@
 {
-    "TEMP_texelinfo": 5,
+  "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {
       "head": [
@@ -59,29 +59,29 @@
       "effect_scale": 0.8
     }
   },
-    "fx_offsets": [
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "muzzle00"
-        }
-    ],
+  "fx_offsets": [
+    {
+      "bone": "muzzle00",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 65,
-    "mesh_bounds": [
-        3,
-        2,
-        4.5
-    ],
-    "model": {
-        "filename": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.papa",
-        "animations": {
-            "idle": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_idle.papa",
-            "walk": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_walk.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/one_turret_walk_idle.json",
-        "walk_speed": 2.75
+  "mesh_bounds": [
+    3,
+    2,
+    4.5
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_idle.papa",
+      "walk": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_walk.papa"
     },
+    "animtree": "/pa/anim/anim_trees/one_turret_walk_idle.json",
+    "filename": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.papa",
+    "walk_speed": 2.75
+  },
   "navigation": {
     "acceleration": 240,
     "brake": 120,
@@ -113,15 +113,15 @@
       ]
     }
   },
-    "selection_icon": {
-        "diameter": -8
-    },
-    "tools": [
-        {
-            "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_build_arm.json",
-            "aim_bone": "turret00"
-        }
-    ],
+  "selection_icon": {
+    "diameter": -8
+  },
+  "tools": [
+    {
+      "aim_bone": "turret00",
+      "spec_id": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_build_arm.json"
+    }
+  ],
   "transportable": {
     "size": 1
   },

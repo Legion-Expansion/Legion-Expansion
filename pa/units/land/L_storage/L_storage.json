@@ -1,7 +1,6 @@
 {
   "TEMP_texelinfo": 26.4567,
   "area_build_type": "Line",
-  "energy_efficiency_requirement": 0.9,  
   "atrophy_cool_down": 15,
   "atrophy_rate": 7.5,
   "audio": {
@@ -11,50 +10,51 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 500,
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/L_storage/L_storage_death_weapon.json"
+  },
   "description": "Uses Blackhole Compression to Store Significant Ammounts of Metal and Energy",
   "display_name": "OmniSilo Storage Device",
-  "death_weapon": {
-	"ground_ammo_spec": "/pa/units/land/L_storage/L_storage_death_weapon.json"
-  },
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",
-	  "effect_spec": "/pa/units/land/L_storage/black_hole_implosion.pfx",
-      "effect_scale": 1
+      "effect_scale": 1,
+      "effect_spec": "/pa/units/land/L_storage/black_hole_implosion.pfx"
     }
   },
   "fx_offsets": [
     {
+      "bone": "bone_root",
       "filename": "/pa/units/land/L_storage/black_hole.pfx",
-      "bone": "bone_root",	  
       "offset": [
         0,
         0,
         20
       ],
       "type": "energy"
-    }, 
+    },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield01",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield02",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield03",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield04",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     }
   ],

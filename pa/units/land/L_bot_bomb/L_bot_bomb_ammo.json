@@ -1,6 +1,6 @@
-{ 
-	"armor_damage_map": {
-		"AT_Structure": 1.5
+{
+  "armor_damage_map": {
+    "AT_Structure": 1.5
   },
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
   "damage": 500,
@@ -10,21 +10,22 @@
       "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
     }
   },
+  "full_splash_damage_radius": 3,
   "fx_trail": {
     "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
   },
   "impact_decals": [
     "/pa/effects/specs/scorch_a_01.json"
   ],
-  "physics": {
-    "add_to_spatial_db": true
-  },
   "initial_velocity": 100,
   "lifetime": 30,
   "max_velocity": 150,
   "min_velocity": 40,
   "model": {
     "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true
   },
   "recon": {
     "observer": {
@@ -40,6 +41,5 @@
   },
   "splash_damage": 40,
   "splash_damages_allies": false,
-  "splash_radius": 12,
-  "full_splash_damage_radius": 3
+  "splash_radius": 12
 }

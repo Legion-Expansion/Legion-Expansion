@@ -64,10 +64,10 @@
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     },
-{
-		"type": "moving_forward",
-		"filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx"
-	}
+    {
+      "filename": "/pa/units/sea/nuclear_sub/nuclear_sub_wake.pfx",
+      "type": "moving_forward"
+    }
   ],
   "max_health": 800,
   "mesh_bounds": [
@@ -79,19 +79,19 @@
     "animtree": "/pa/anim/anim_trees/L_fabrication_sub_combat_adv_anim_tree.json",
     "filename": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.papa"
   },
-	"navigation": {
-		"type": "underwater",
-		"acceleration": 40,
-		"brake": 120,
-		"move_speed": 10,
-		"turn_speed": 60,
-		"turn_accel": 30
-	},
-	"physics": {
-		"underwater": true,
-		"shape": "sphere",
-		"radius": 3
-	},
+  "navigation": {
+    "acceleration": 40,
+    "brake": 120,
+    "move_speed": 10,
+    "turn_accel": 30,
+    "turn_speed": 60,
+    "type": "underwater"
+  },
+  "physics": {
+    "radius": 3,
+    "shape": "sphere",
+    "underwater": true
+  },
   "recon": {
     "observer": {
       "items": [
@@ -119,7 +119,7 @@
   "selection_icon": {
     "diameter": -25
   },
-	"spawn_layers": "WL_Underwater",
+  "spawn_layers": "WL_Underwater",
   "tools": [
     {
       "aim_bone": "bone_turret",

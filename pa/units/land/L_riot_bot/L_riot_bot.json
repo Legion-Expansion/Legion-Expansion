@@ -93,17 +93,17 @@
     "diameter": -15
   },
   "tools": [
-  {
-		"aim_bone": "bone_pitch",
-		"spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json",
-		"muzzle_bone": [
-			"left_muzzle01",
-			"right_muzzle01",
-			"left_muzzle02",
-			"right_muzzle02",
-			"left_muzzle03",
-			"right_muzzle03"
-		]
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "left_muzzle01",
+        "right_muzzle01",
+        "left_muzzle02",
+        "right_muzzle02",
+        "left_muzzle03",
+        "right_muzzle03"
+      ],
+      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
     }
   ],
   "transportable": {

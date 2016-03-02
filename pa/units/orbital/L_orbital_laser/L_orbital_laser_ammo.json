@@ -1,12 +1,24 @@
 {
+  "armor_damage_map": {
+    "AT_Commander": 0.4
+  },
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage":15150,
+  "burn_damage": 200,
+  "damage": 15150,
+  "damage_volume": {
+    "burnable_remove_radius": 100,
+    "delay": 1,
+    "initial_radius": 10,
+    "radius_accel": 0,
+    "radius_velocity": 17
+  },
   "events": {
     "died": {
-		"audio_cue": "/SE/Impacts/missile_nuke",
+      "audio_cue": "/SE/Impacts/missile_nuke",
       "effect_spec": "/pa/units/orbital/L_orbital_laser/L_orb_laser_exp.pfx"
     }
   },
+  "full_damage_splash_radius": 60,
   "fx_trail": {
     "filename": "/pa/units/orbital/L_orbital_laser/trail.pfx",
     "offset": [
@@ -18,19 +30,9 @@
   "impact_decals": [
     "/pa/effects/specs/nuke_scorch_01.json"
   ],
-  "armor_damage_map":{"AT_Commander":0.4}, 
-  "burn_damage": 200,  
-  "damage_volume": {
-        "initial_radius": 10,
-        "radius_velocity": 17,
-        "radius_accel": 0,
-        "delay": 1,
-        "burnable_remove_radius": 100
-    },  
   "initial_velocity": 150,
   "lifetime": 5,
   "max_velocity": 150,
-  "splash_damage":6000,
-  "splash_radius":90,
-  "full_damage_splash_radius": 60
+  "splash_damage": 6000,
+  "splash_radius": 90
 }

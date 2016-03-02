@@ -1,141 +1,154 @@
 {
-	"TEMP_texelinfo": 9.31488,
-	"mesh_bounds": [
-		7,
-		7.5,
-		3.8
-	],
-	"attachable": {
-		"offsets": {
-			"root": [0, 0, 0],
-			"head": [0, 0, 3.1]
-		}
-	},
-	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-	"display_name": "Havoc",
-	"description": "Shoots chain lightning at land targets",
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/veh"
-		},
-		"fired": {
-			"audio_cue": "/SE/Weapons/bot/spark_fire"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Veh",
-			"effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
-			"effect_scale": 1.0
-		}
-	},
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		}
-	},
-	"max_health": 800,
-	"build_metal_cost": 900,
-	"command_caps": [
-		"ORDER_Move",
-		"ORDER_Attack",
-		"ORDER_Patrol",
-		"ORDER_Assist",
-		"ORDER_Use"
-	],
-	"guard_layer": "WL_AnySurface",
-	"navigation": {
-		"type": "land-small",
-		"acceleration": 100,
-		"brake": 100,
-		"move_speed": 10,
-		"turn_speed": 60,
-		"group_preference": "back"
-	},
-	"physics": {
-		"radius": 6
-	},
-	"headlights": [{
-		"bone": "bone_root",
-		"color": [
-			0.75,
-			1,
-			1
-		],
-		"far_distance": 20,
-		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-		"intensity": 1.4,
-		"near_distance": 1,
-		"near_height": 1.5,
-		"near_width": 1.5,
-		"offset": [
-			0, 
-			0,
-			0
-		],
-		"orientation": [
-			0,
-			0,
-			0
-		]
-	}],
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 100
-			}, {
-				"layer": "underwater",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 100
-			}]
-		}
-	},
-	"model": {
-		"filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa",
-		"animtree": "/pa/anim/anim_trees/L_tank_swarm_anim_tree.json",
-		"arrows": 5
-	},
-	"nearby_target_tick_update_interval": 15,
-	"tools": [
-		{
-			"aim_bone": "bone_root",
-			"muzzle_bone": [
-				"gun001",
-				"gun002",
-				"gun003",
-				"gun004",
-				"gun005",
-				"gun006"
-			],
-			"projectiles_per_fire": 6,
-			"spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
-		}		
-	],
+  "TEMP_texelinfo": 9.31488,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.1
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 900,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Attack",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "description": "Shoots chain lightning at land targets",
+  "display_name": "Havoc",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire"
+    }
+  },
+  "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "bone": "bone_root",
+      "color": [
+        0.75,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1,
+      "near_height": 1.5,
+      "near_width": 1.5,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "max_health": 800,
+  "mesh_bounds": [
+    7,
+    7.5,
+    3.8
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/L_tank_swarm_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "group_preference": "back",
+    "move_speed": 10,
+    "turn_speed": 60,
+    "type": "land-small"
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
   "scrolling_uv": {
     "scroll_rate": 0.5,
     "uv_split": 0.9
   },
-	"selection_icon": {
-		"diameter": -14.0
-	},
-	"transportable": {
-		"size": 1
-	},
-	"unit_types": [
-		"UNITTYPE_Tank",
-		"UNITTYPE_Mobile",
-		"UNITTYPE_Offense",
-		"UNITTYPE_AirDefense",
-		"UNITTYPE_Land", 
-		"UNITTYPE_Advanced",
-		"UNITTYPE_FactoryBuild",
-		"UNITTYPE_Custom1"
-	]
+  "selection_icon": {
+    "diameter": -14.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun001",
+        "gun002",
+        "gun003",
+        "gun004",
+        "gun005",
+        "gun006"
+      ],
+      "projectiles_per_fire": 6,
+      "spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

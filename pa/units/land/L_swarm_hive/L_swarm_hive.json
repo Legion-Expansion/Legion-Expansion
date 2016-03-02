@@ -66,14 +66,14 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": [
-		"socket001",
-		"socket002",
-		"socket003",
-		"socket004",
-		"socket005",
-		"socket006",
-		"socket007",
-		"socket008"
+        "socket001",
+        "socket002",
+        "socket003",
+        "socket004",
+        "socket005",
+        "socket006",
+        "socket007",
+        "socket008"
       ],
       "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
     }

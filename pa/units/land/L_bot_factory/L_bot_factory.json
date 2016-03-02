@@ -1,5 +1,6 @@
 {
   "TEMP_texelinfo": 33.4936,
+  "area_build_separation": 2,
   "atrophy_cool_down": 15,
   "atrophy_rate": 10,
   "audio": {
@@ -124,7 +125,6 @@
     47,
     55
   ],
-  "area_build_separation": 2,  
   "recon": {
     "observer": {
       "items": [
