@@ -18,7 +18,7 @@
     "filename": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json"
   },
   "spawn_unit_on_death": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.json",
-  "spawn_unit_on_death_with_velocity": true,
+  "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0,
   "turn_rate": 60.0

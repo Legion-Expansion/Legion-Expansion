@@ -6,7 +6,10 @@
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 1400,
+  "consumption": {
+    "energy": 600
+  },
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
   },
@@ -38,7 +41,7 @@
       "type": "energy"
     }
   ],
-  "max_health": 400,
+  "max_health": 750,
   "mesh_bounds": [
     5,
     5,
@@ -61,13 +64,7 @@
     }
   ],
   "physics": {
-    "air_friction": 1,
-    "allow_pushing": false,
-    "allow_underground": false,
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "ignore_collisions": false,
-    "push_class": 255,
-    "push_sideways": false,
     "radius": 1,
     "shape": "Box",
     "type": "Structure"
@@ -82,7 +79,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 35,
+          "radius": 150,
           "shape": "capsule"
         }
       ]

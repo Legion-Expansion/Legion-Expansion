@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 320,
+  "build_metal_cost": 350,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
@@ -64,7 +64,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 120,
   "maintain_priority_target": false,
-  "max_health": 170,
+  "max_health": 150,
   "mesh_bounds": [
     14,
     7.5,
@@ -82,7 +82,7 @@
     "dodge_multiplier": 0,
     "dodge_radius": 0,
     "move_speed": 75,
-    "turn_speed": 110,
+    "turn_speed": 95,
     "type": "air",
     "wobble_factor": 0.05,
     "wobble_speed": 0.1

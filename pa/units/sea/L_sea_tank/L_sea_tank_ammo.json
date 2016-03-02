@@ -18,8 +18,8 @@
     ]
   },
   "influence_radius": 900,
-  "initial_velocity": 110.0,
-  "lifetime": 1,
+  "initial_velocity": 70.0,
+  "lifetime": 5,
   "max_velocity": 110.0,
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"

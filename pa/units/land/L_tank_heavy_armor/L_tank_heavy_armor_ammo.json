@@ -30,5 +30,5 @@
   "model": {},
   "sim_impact_effect": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_shake.json",
   "splash_damage": 500,
-  "splash_radius": 50
+  "splash_radius": 55
 }

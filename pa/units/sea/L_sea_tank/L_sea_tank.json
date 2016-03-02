@@ -143,7 +143,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Advanced",
-    "UNITTYPE_Tactical",
+    "UNITTYPE_Heavy",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]

@@ -87,7 +87,7 @@
     8.1
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/double_turret_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "arrows": 5,
     "filename": "/pa/units/orbital/hammerhead/hammerhead.papa"
   },

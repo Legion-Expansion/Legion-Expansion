@@ -1,29 +1,27 @@
 {
-  "ammo_capacity": 75,
-  "ammo_demand": 75,
+  "ammo_capacity": 560,
+  "ammo_demand": 40,
   "ammo_id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
-  "ammo_per_shot": 75,
+  "ammo_per_shot": 80,
   "ammo_source": "metal",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-  "carpet_fire": false,
+  "carpet_fire": true,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_artillery",
       "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   },
-  "firing_standard_deviation": 5,
-  "max_range": 100,
+  "firing_standard_deviation": 2,
+  "max_range": 150,
   "pitch_range": 180,
   "pitch_rate": 3600,
-  "rate_of_fire": 3,
+  "rate_of_fire": 2,
   "spread_fire": true,
+  "start_fully_charged": false,
   "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface",
-    "WL_Seafloor",
-    "WL_Underwater"
+    "WL_LandHorizontal"
   ],
   "yaw_range": 180,
   "yaw_rate": 3600

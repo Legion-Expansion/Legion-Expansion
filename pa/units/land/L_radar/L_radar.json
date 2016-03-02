@@ -12,9 +12,9 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 350,
   "consumption": {
-    "energy": 150
+    "energy": 300
   },
   "energy_efficiency_requirement": 0.9,
   "events": {
@@ -104,7 +104,7 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 450,
+          "radius": 500,
           "shape": "capsule",
           "uses_energy": true
         },
@@ -125,7 +125,7 @@
         {
           "channel": "radar",
           "layer": "underwater",
-          "radius": 450,
+          "radius": 500,
           "shape": "capsule",
           "uses_energy": true
         }

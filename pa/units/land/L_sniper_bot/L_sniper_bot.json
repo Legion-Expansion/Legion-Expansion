@@ -30,7 +30,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 160,
+  "build_metal_cost": 150,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"
@@ -62,8 +62,8 @@
     "walk_speed": 3
   },
   "navigation": {
-    "acceleration": 120,
-    "brake": -1,
+    "acceleration": 50,
+    "brake": 50,
     "group_preference": "back",
     "move_speed": 15,
     "turn_speed": 720,
@@ -109,6 +109,7 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
+    "UNITTYPE_Fighter",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",

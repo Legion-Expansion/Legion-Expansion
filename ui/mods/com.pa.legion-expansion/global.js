@@ -334,12 +334,27 @@
         preferred_builds: [
             ["L_vehicle", 17]
           ] // spinner
-      }, {
+      },
+	  {
         spec_id: "/pa/units/land/L_tank_swarm/chain/chain.json",
         si_fallback: ["tank_heavy_mortar"],
         preferred_builds: [
             ["L_vehicle", 18]
-          ] // spinner
+          ] // chain lightning 1
+      },
+	  {
+        spec_id: "/pa/units/land/L_tank_swarm/chain/chain2.json",
+        si_fallback: ["tank_heavy_mortar"],
+        preferred_builds: [
+            ["L_vehicle", 19]
+          ] // chain lightning 2
+      },
+	  {
+        spec_id: "/pa/units/land/L_tank_swarm/chain/chain3.json",
+        si_fallback: ["tank_heavy_mortar"],
+        preferred_builds: [
+            ["L_vehicle", 20]
+          ] // chain lightning 3
       },
 
 
@@ -421,13 +436,14 @@
         si_fallback: ["land_scout"],
         preferred_builds: [
             ["L_bot", 17]
-          ] // aa
-      }, {
+          ] // scout
+      },
+	  {
         spec_id: "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode.json",
         si_fallback: ["land_scout"],
         preferred_builds: [
             ["L_bot", 18]
-          ] // aa
+          ] // scout_radar_mode
       },
 
 
@@ -507,6 +523,12 @@
         si_fallback: ["transport"],
         preferred_builds: [
           ["L_air", 11]
+        ]
+      }, {
+        spec_id: "/pa/units/air/L_air_scout_adv/vision/vision.json",
+        si_fallback: ["air_scout"],
+        preferred_builds: [
+          ["L_air", 12]
         ]
       },
 

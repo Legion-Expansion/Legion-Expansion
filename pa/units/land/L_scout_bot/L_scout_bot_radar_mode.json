@@ -30,10 +30,13 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 90,
+  "build_metal_cost": 150,
   "command_caps": [
     "ORDER_FireSecondaryWeapon"
   ],
+  "consumption": {
+    "energy": 100
+  },
   "death": {},
   "events": {
     "build_complete": {
@@ -79,7 +82,7 @@
       "radius": 3
     }
   ],
-  "max_health": 120,
+  "max_health": 60,
   "mesh_bounds": [
     4,
     2,

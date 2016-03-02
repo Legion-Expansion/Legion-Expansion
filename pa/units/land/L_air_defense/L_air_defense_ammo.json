@@ -18,9 +18,9 @@
       0.0
     ]
   },
-  "lifetime": 2,
-  "max_velocity": 160,
-  "min_velocity": 160,
+  "lifetime": 1,
+  "max_velocity": 280,
+  "min_velocity": 280,
   "model": {
     "filename": ""
   },

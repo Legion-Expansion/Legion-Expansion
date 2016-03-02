@@ -35,7 +35,7 @@
       "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
     "fired0": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
+      "audio_cue": "/SE/Weapons/structure/artillery_short_fire"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
@@ -116,9 +116,9 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_fireDrop",
+      "aim_bone": "bone_altDrop",
       "fire_event": "fired0",
-      "muzzle_bone": "bone_fireDrop",
+      "muzzle_bone": "bone_altDrop",
       "record_index": 0,
       "secondary_weapon": true,
       "show_range": false,

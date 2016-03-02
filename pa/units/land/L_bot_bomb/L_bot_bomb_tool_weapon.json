@@ -6,7 +6,7 @@
   "default_firing_pitch": -65,
   "firing_arc_pitch": 1,
   "firing_arc_yaw": 1,
-  "firing_standard_deviation": 3,
+  "firing_standard_deviation": 2,
   "force_fire_from_muzzle": true,
   "idle_aim_delay": 0,
   "manual_fire": false,

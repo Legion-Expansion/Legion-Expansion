@@ -13,14 +13,15 @@
     }
   },
   "flight_type": "Staged",
+  "full_damage_splash_radius": 0,
   "fx_trail": {
     "filename": "/pa/units/land/L_hover_tank_adv/trail.pfx"
   },
   "influence_radius": 400,
   "initial_velocity": 10.0,
-  "lifetime": 7,
+  "lifetime": 8,
   "max_health": 1,
-  "max_velocity": 70.0,
+  "max_velocity": 110.0,
   "physics": {
     "add_to_spatial_db": true,
     "gravity_scalar": 5,
@@ -28,7 +29,7 @@
     "radius": 1
   },
   "splash_damage": 10,
-  "splash_radius": 5,
+  "splash_radius": 6,
   "stages": [
     {
       "ignores_LOS": true,
@@ -48,23 +49,16 @@
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_change_range": 70,
+      "stage_change_range": 60,
       "stage_duration": 0,
-      "stage_turn_rate": 50
-    },
-    {
-      "ignores_LOS": false,
-      "ignores_gravity": false,
-      "rotates_to_velocity": true,
-      "stage_duration": 1000,
-      "stage_turn_rate": 240
+      "stage_turn_rate": 180
     },
     {
       "ignores_LOS": false,
       "ignores_gravity": false,
       "rotates_to_velocity": true,
       "stage_duration": 5000,
-      "stage_turn_rate": 0
+      "stage_turn_rate": 180
     }
   ],
   "turn_rate": 360

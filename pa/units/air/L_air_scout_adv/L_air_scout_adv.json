@@ -1,6 +1,6 @@
 {
-  "display_name": "Cub",
-  "description": "Advanced Mobile Radar and Vision. Quick.",
+  "display_name": "Stalker",
+  "description": "Equipped with sneaky Spy Camera, radar, and some guns",
   "TEMP_texelinfo": 17,
   "audio": {
     "loops": {
@@ -21,10 +21,11 @@
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Assist",
-    "ORDER_Attack"
+    "ORDER_Attack",
+    "ORDER_FireSecondaryWeapon"
   ],
   "consumption": {
-    "energy": 1550
+    "energy": 900
   },
   "events": {
     "build_complete": {
@@ -81,7 +82,9 @@
       "type": "moving_forward"
     }
   ],
-  "max_health": 1000,
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": -110,
+  "max_health": 400,
   "mesh_bounds": [
     23.7,
     17.7,
@@ -97,19 +100,18 @@
   },
   "navigation": {
     "acceleration": 50,
+    "bank_factor": 2,
     "brake": 50,
     "dodge_multiplier": 1,
     "dodge_radius": 10,
-    "move_speed": 65,
-    "turn_speed": 90,
+    "move_speed": 90,
+    "turn_speed": 120,
     "type": "air",
-    "wobble_factor": 0.15,
+    "wobble_factor": 0.25,
     "wobble_speed": 0.1
   },
-  "passive_health_regen": 20,
   "physics": {
     "gravity_scalar": 1,
-    "push_class": 2,
     "radius": 6
   },
   "recon": {
@@ -118,35 +120,35 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 500,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 200,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "orbital",
-          "radius": 200,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
-          "channel": "sight",
-          "layer": "underwater",
-          "radius": 200,
+          "radius": 400,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "radar",
           "layer": "underwater",
-          "radius": 500,
+          "radius": 400,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 150,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
           "shape": "capsule",
           "uses_energy": true
         }
@@ -158,34 +160,30 @@
   },
   "tools": [
     {
-      "aim_bone": "gun01",
-      "muzzle_bone": "gun01",
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun01",
+        "gun02",
+        "gun03"
+      ],
+      "projectiles_per_fire": 1,
       "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
     },
     {
-      "aim_bone": "gun02",
-      "muzzle_bone": "gun02",
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun04",
+        "gun05",
+        "gun06"
+      ],
+      "projectiles_per_fire": 1,
       "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
     },
     {
-      "aim_bone": "gun03",
-      "muzzle_bone": "gun03",
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "gun04",
-      "muzzle_bone": "gun04",
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "gun05",
-      "muzzle_bone": "gun05",
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "gun06",
-      "muzzle_bone": "gun06",
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
+      "aim_bone": "bone_root",
+      "muzzle": "light",
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_vision_tool_weapon.json"
     }
   ],
   "unit_types": [

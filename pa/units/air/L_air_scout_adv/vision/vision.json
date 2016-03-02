@@ -1,0 +1,86 @@
+{
+  "display_name": "Camera Target",
+  "description": "Camera Focus",
+  "TEMP_texelinfo": 5.39039,
+  "audio": {
+    "loops": {
+      "idle": {
+        "cue": "/SE/Selection/structure/radar"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/structure/radar"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 1,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/bot_spark_impact",
+      "effect_spec": "/pa/effects/specs/tesla_hit.pfx"
+    }
+  },
+  "max_health": 20,
+  "mesh_bounds": [
+    0.01,
+    0.01,
+    0.01
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json",
+    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
+  },
+  "navigation": {
+    "acceleration": 0,
+    "bank_factor": 0,
+    "brake": 0,
+    "move_speed": 0,
+    "turn_speed": 0,
+    "type": "air"
+  },
+  "physics": {
+    "gravity_scalar": 1,
+    "radius": 0
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true,
+      "ignore_sight": true,
+      "layer": "surface_and_air"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -1.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/air/L_air_scout_adv/vision/vision_death_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Scout",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Air",
+    "UNITTYPE_Basic"
+  ]
+}

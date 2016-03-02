@@ -39,7 +39,7 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/L_mortar_tank/muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/effects/specs/tesla_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
@@ -48,8 +48,9 @@
     }
   },
   "guard_layer": "WL_AnySurface",
+  "guard_radius": 10,
   "influence_radius": 400,
-  "max_health": 251,
+  "max_health": 250,
   "mesh_bounds": [
     5,
     7,
@@ -61,8 +62,8 @@
     "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
   },
   "navigation": {
-    "acceleration": 20,
-    "brake": 20,
+    "acceleration": 40,
+    "brake": 40,
     "move_speed": 14,
     "turn_speed": 100,
     "type": "amphibious"
@@ -115,6 +116,7 @@
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
+    "UNITTYPE_Sub",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",

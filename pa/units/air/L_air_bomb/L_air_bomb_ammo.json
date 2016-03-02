@@ -1,0 +1,10 @@
+{
+  "ammo_type": "PBAOE",
+  "damage": 80,
+  "damage_volume": {
+    "initial_radius": 15.0
+  },
+  "splash_damage": 80,
+  "splash_damages_allies": false,
+  "splash_radius": 15
+}

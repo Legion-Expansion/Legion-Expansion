@@ -82,12 +82,12 @@
     "filename": "/pa/units/air/L_fighter/L_fighter.papa"
   },
   "navigation": {
-    "acceleration": 90,
+    "acceleration": 180,
     "aggressive_distance": 50,
     "bank_factor": 5,
     "brake": 80,
-    "move_speed": 90,
-    "turn_speed": 340,
+    "move_speed": 95,
+    "turn_speed": 300,
     "type": "air"
   },
   "physics": {
@@ -119,12 +119,11 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "socket_muzzleLeft",
-      "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "socket_muzzleRight",
+      "muzzle_bone": [
+        "socket_muzzleLeft",
+        "socket_muzzleRight"
+      ],
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/L_fighter/L_fighter_tool_weapon.json"
     }
   ],

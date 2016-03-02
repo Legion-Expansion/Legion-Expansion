@@ -1,5 +1,5 @@
 {
-  "display_name": "Chain",
+  "display_name": "Chain1",
   "description": "Chain Lightning",
   "TEMP_texelinfo": 5.39039,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
@@ -19,12 +19,12 @@
     }
   },
   "guard_layer": "WL_LandHorizontal",
-  "guard_radius": 15,
-  "max_health": 40,
+  "guard_radius": 25,
+  "max_health": 50,
   "mesh_bounds": [
-    0.1,
-    0.1,
-    0.1
+    0.01,
+    0.01,
+    0.01
   ],
   "navigation": {
     "acceleration": 0,
@@ -40,6 +40,11 @@
     "radius": 0
   },
   "recon": {
+    "observable": {
+      "ignore_radar": true,
+      "ignore_sight": true,
+      "layer": "surface_and_air"
+    },
     "observer": {
       "items": [
         {
@@ -60,6 +65,11 @@
   "tools": [
     {
       "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "bone_root",
+        "bone_root"
+      ],
+      "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json"
     },

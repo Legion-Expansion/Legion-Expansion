@@ -4,9 +4,9 @@
   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
   "firing_arc_pitch": 20,
   "firing_arc_yaw": 5,
-  "firing_standard_deviation": 9,
+  "firing_standard_deviation": 8,
   "idle_aim_delay": 1,
-  "max_range": 50,
+  "max_range": 55,
   "rate_of_fire": 1,
   "spread_fire": false,
   "target_layers": [
@@ -20,5 +20,5 @@
     "Structure - Wall"
   ],
   "yaw_range": 180,
-  "yaw_rate": 180
+  "yaw_rate": 240
 }

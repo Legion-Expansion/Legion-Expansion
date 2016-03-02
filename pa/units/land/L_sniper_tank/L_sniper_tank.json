@@ -30,7 +30,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 1200,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"
@@ -120,9 +120,9 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_weapon.json"
+      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_tool_weapon.json"
     }
   ],
   "transportable": {

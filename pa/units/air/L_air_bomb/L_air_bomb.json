@@ -1,6 +1,6 @@
 {
   "display_name": "Black Hole",
-  "description": "ninjjnjnasidniasunfdiuhyasbuyfdgwauyigbfdiuwyang",
+  "description": "Suicide Bomb Plane",
   "TEMP_texelinfo": 10.4837,
   "attachable": {
     "offsets": {
@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 100,
+  "build_metal_cost": 120,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -54,11 +54,13 @@
       "type": "idle"
     }
   ],
-  "max_health": 40,
+  "guard_layer": "WL_Air",
+  "guard_radius": 150,
+  "max_health": 100,
   "mesh_bounds": [
-    13.42,
-    22.2,
-    7.561
+    6,
+    6,
+    4
   ],
   "model": {
     "animations": {
@@ -68,11 +70,12 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 30,
-    "brake": 20,
+    "acceleration": 60,
+    "brake": 180,
     "hover_time": -1.0,
-    "move_speed": 70,
-    "turn_speed": 180,
+    "move_speed": 120,
+    "turn_in_place": true,
+    "turn_speed": 1080,
     "type": "air",
     "vertical_speed": 100,
     "wobble_factor": 0.25,
@@ -91,7 +94,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 70,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
@@ -100,8 +103,16 @@
   "selection_icon": {
     "diameter": -24
   },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb_tool_weapon.json"
+    }
+  ],
   "unit_types": [
     "UNITTYPE_Air",
+    "UNITTYPE_Offense",
+    "UNITTYPE_SelfDestruct",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",

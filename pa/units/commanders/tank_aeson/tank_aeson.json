@@ -32,6 +32,7 @@
       }
     }
   },
+  "build_metal_cost": 25000,
   "buildable_types": "CmdBuild & Custom1",
   "catalog_object_name": "TankAeson",
   "client": {

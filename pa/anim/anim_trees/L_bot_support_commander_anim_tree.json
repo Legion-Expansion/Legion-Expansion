@@ -169,15 +169,13 @@
           "type": "sequence"
         },
         "node_aim_down": {
-          "anim_name": "aim_down",
-          "type": "playback"
+          "type": "bind_pose"
         },
         "node_aim_neutral": {
           "type": "bind_pose"
         },
         "node_aim_up": {
-          "anim_name": "aim_up",
-          "type": "playback"
+          "type": "bind_pose"
         },
         "type": "aim_blend"
       }

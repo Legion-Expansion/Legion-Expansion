@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 1700,
+  "build_metal_cost": 1400,
   "consumption": {
     "energy": 0
   },
@@ -64,7 +64,7 @@
     16
   ],
   "production": {
-    "metal": 26
+    "metal": 22
   },
   "recon": {
     "observer": {

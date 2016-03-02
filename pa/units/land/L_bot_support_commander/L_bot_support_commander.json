@@ -67,7 +67,7 @@
       "type": "build"
     }
   ],
-  "max_health": 9000,
+  "max_health": 10000,
   "mesh_bounds": [
     9.97,
     10.233,
@@ -134,7 +134,7 @@
         "socket_muzzle002"
       ],
       "primary_weapon": true,
-      "projectiles_per_fire": 2,
+      "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_tool_weapon.json"
     }
   ],

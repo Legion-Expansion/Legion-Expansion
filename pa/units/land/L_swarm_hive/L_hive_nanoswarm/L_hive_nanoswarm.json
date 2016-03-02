@@ -48,8 +48,20 @@
       "effect_spec": ""
     }
   },
+  "fx_offsets": [
+    {
+      "bone": "bone_body",
+      "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
+    }
+  ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 25,
+  "max_health": 50,
   "mesh_bounds": [
     6,
     6,
@@ -57,10 +69,10 @@
   ],
   "model": {
     "animations": {
-      "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+      "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_hive_nanoswarm_anim_tree.json",
-    "filename": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.papa"
+    "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json",
+    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
   },
   "navigation": {
     "acceleration": 400,
@@ -70,7 +82,7 @@
     "turn_speed": 1080,
     "type": "hover"
   },
-  "passive_health_regen": -3,
+  "passive_health_regen": -10,
   "physics": {
     "allow_pushing": true,
     "radius": 4
@@ -99,11 +111,7 @@
   "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {
-      "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzle001",
-        "socket_muzzle002"
-      ],
+      "aim_bone": "bone_body",
       "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_tool_weapon.json"
     }
   ],

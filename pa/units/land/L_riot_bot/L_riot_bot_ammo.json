@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
-  "damage": 32,
+  "damage": 100,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
