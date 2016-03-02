@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Solar Array",
+  "description": "!LOC(units:manufacturing_orbital_energy_generation.message):Manufacturing- Orbital energy generation.",
   "TEMP_texelinfo": 25.0,
   "attachable": {
     "offsets": {
@@ -16,8 +18,6 @@
     "ORDER_Patrol",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:manufacturing_orbital_energy_generation.message):Manufacturing- Orbital energy generation.",
-  "display_name": "Legion Solar Array",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

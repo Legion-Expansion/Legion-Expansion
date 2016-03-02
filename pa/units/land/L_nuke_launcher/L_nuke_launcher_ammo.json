@@ -1,4 +1,6 @@
 {
+  "display_name": "Supernova Strategic Warhead",
+  "description": "Long range, high damage ballistic missile.",
   "ammo_type": "Projectile",
   "armor_damage_map": {
     "AT_Commander": 0.33
@@ -17,8 +19,6 @@
     "radius_accel": -40,
     "radius_velocity": 200
   },
-  "description": "Long range, high damage ballistic missile.",
-  "display_name": "Supernova Strategic Warhead",
   "enable_orbital_shell": true,
   "events": {
     "collided": {

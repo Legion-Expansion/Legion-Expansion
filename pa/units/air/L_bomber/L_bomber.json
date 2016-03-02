@@ -1,4 +1,6 @@
 {
+  "display_name": "Dauntless",
+  "description": "Plasma Bomber. High Damage. Attacks Land and Naval.",
   "TEMP_texelinfo": 10.4258,
   "audio": {
     "loops": {
@@ -15,8 +17,6 @@
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 350,
-  "description": "Plasma Bomber. High Damage. Attacks Land and Naval.",
-  "display_name": "Dauntless",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

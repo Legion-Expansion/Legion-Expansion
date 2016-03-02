@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Fabrication Flyer",
+  "description": "Builds Advanced Structures. Can Build Exclusive Flyer Units.",
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
@@ -45,8 +47,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Builds Advanced Structures. Can Build Exclusive Flyer Units.",
-  "display_name": "Advanced Fabrication Flyer",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

@@ -1,4 +1,6 @@
 {
+  "display_name": "Wraith",
+  "description": "Advanced orbital scout - has decent orbital and ground vision, equipped with radar stealth.",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -20,8 +22,6 @@
   "consumption": {
     "energy": 1500
   },
-  "description": "Advanced orbital scout - has decent orbital and ground vision, equipped with radar stealth.",
-  "display_name": "Wraith",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

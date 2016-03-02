@@ -1,9 +1,9 @@
 {
+  "display_name": "Chain3",
+  "description": "Chain Lightning",
   "TEMP_texelinfo": 5.39039,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 90,
-  "description": "Chain Lightning",
-  "display_name": "Chain3",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

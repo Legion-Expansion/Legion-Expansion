@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Armour Fabricator",
+  "description": "Builds Advanced Structures. Can Build Exclusive Vehicle Units.",
   "TEMP_texelinfo": 12,
   "attachable": {
     "offsets": {
@@ -45,8 +47,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Builds Advanced Structures. Can Build Exclusive Vehicle Units.",
-  "display_name": "Advanced Armour Fabricator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

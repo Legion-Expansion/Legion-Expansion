@@ -1,4 +1,6 @@
 {
+  "display_name": "Necromancer",
+  "description": "Walking explosive device. Equipped with evil boombot minions",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
@@ -32,8 +34,6 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/L_necromancer/death_weapon/pbaoe.json"
   },
-  "description": "Walking explosive device. Equipped with evil boombot minions",
-  "display_name": "Necromancer",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"

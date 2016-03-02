@@ -1,4 +1,6 @@
 {
+  "display_name": "Orbital Chariot",
+  "description": "!LOC(units:orbital_lander_load_it_up_get_units_to_other_planets.message):Orbital lander- Load it up, get units to other planets.",
   "TEMP_texelinfo": 23.9658,
   "attachable": {
     "offsets": {
@@ -29,8 +31,6 @@
     "ORDER_Unload",
     "ORDER_SpecialMove"
   ],
-  "description": "!LOC(units:orbital_lander_load_it_up_get_units_to_other_planets.message):Orbital lander- Load it up, get units to other planets.",
-  "display_name": "Orbital Chariot",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

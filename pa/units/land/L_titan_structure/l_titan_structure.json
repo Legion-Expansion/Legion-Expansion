@@ -1,4 +1,6 @@
 {
+  "display_name": "Ragnarok",
+  "description": "!LOC:Doomsday Titan- Destroys the planet it's built on once finished.",
   "TEMP_texelinfo": 32.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,
@@ -20,8 +22,6 @@
       "/pa/effects/specs/scorch_titan_01.json"
     ]
   },
-  "description": "!LOC:Doomsday Titan- Destroys the planet it's built on once finished.",
-  "display_name": "Ragnarok",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/delta_v"

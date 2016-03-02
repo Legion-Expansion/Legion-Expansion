@@ -1,4 +1,6 @@
 {
+  "display_name": "Armour Fabricator",
+  "description": "Builds Basic Structures. Can Build Exclusive Vehicle Units.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
@@ -45,8 +47,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Builds Basic Structures. Can Build Exclusive Vehicle Units.",
-  "display_name": "Armour Fabricator",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

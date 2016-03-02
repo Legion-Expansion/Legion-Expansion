@@ -1,4 +1,6 @@
 {
+  "display_name": "Advanced Walker Foundry",
+  "description": "Advanced Manufacturing- Builds Legion Bots.",
   "TEMP_texelinfo": 44,
   "area_build_separation": 7,
   "atrophy_cool_down": 15,
@@ -26,8 +28,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Advanced Manufacturing- Builds Legion Bots.",
-  "display_name": "Advanced Walker Foundry",
   "events": {
     "died": {
       "effect_scale": 1.5

@@ -1,4 +1,6 @@
 {
+  "display_name": "Odin",
+  "description": "Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
   "TEMP_texelinfo": 35.95324,
   "armor_type": "AT_Hover",
   "atrophy_cool_down": 15.0,
@@ -46,8 +48,6 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/titan_vehicle/titan_vehicle_ammo_death.json"
   },
-  "description": "Rolling Fortress- Near invincible. Long-range. Heavy damage. Hover. Attacks land and sea targets.",
-  "display_name": "Odin",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/Titan_Complete"

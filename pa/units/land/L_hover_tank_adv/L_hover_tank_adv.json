@@ -1,4 +1,6 @@
 {
+  "display_name": "Panzerwerfer",
+  "description": "Medium Range Rocket Barrage Tank. Attacks Land and Naval",
   "TEMP_texelinfo": 5.84968,
   "armor_type": "AT_Hover",
   "attachable": {
@@ -30,8 +32,6 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 1200,
-  "description": "Medium Range Rocket Barrage Tank. Attacks Land and Naval",
-  "display_name": "Panzerwerfer",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"

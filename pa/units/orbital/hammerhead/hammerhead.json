@@ -1,4 +1,6 @@
 {
+  "display_name": "Hammerhead",
+  "description": "Anti Fighter Escort",
   "TEMP_texelinfo": 6.1803,
   "audio": {
     "loops": {
@@ -21,8 +23,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "Anti Fighter Escort",
-  "display_name": "Hammerhead",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

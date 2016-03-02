@@ -1,4 +1,6 @@
 {
+  "display_name": "Patriot",
+  "description": "Anti-Air Walker. Short range. Attacks Air.",
   "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {
@@ -26,8 +28,6 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 100,
-  "description": "Anti-Air Walker. Short range. Attacks Air.",
-  "display_name": "Patriot",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"

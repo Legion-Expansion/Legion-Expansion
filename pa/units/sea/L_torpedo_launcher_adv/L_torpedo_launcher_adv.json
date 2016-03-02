@@ -1,4 +1,6 @@
 {
+  "display_name": "Tsunami",
+  "description": "Heavy Anti-Ship Defense. Attacks Naval Targets waves and heavy torpedos.",
   "TEMP_texelinfo": 10.4007,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,
@@ -8,8 +10,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "Heavy Anti-Ship Defense. Attacks Naval Targets waves and heavy torpedos.",
-  "display_name": "Tsunami",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

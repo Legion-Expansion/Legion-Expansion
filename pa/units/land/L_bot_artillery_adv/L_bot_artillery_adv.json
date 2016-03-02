@@ -1,4 +1,6 @@
 {
+  "display_name": "Monstrosity",
+  "description": "Heavy Mobile Beam Weapon. Medium Range. Attacks Land and Naval.",
   "TEMP_texelinfo": 13,
   "attachable": {
     "offsets": {
@@ -29,8 +31,6 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 1700,
-  "description": "Heavy Mobile Beam Weapon. Medium Range. Attacks Land and Naval.",
-  "display_name": "Monstrosity",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/bot"

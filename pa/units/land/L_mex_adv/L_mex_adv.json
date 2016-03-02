@@ -1,4 +1,6 @@
 {
+  "display_name": "M-48A Advanced Mass Extractor",
+  "description": "Basic Economy. Extracts Mass to Produce a Metal Income.",
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
@@ -13,8 +15,6 @@
   "consumption": {
     "energy": 0
   },
-  "description": "Basic Economy. Extracts Mass to Produce a Metal Income.",
-  "display_name": "M-48A Advanced Mass Extractor",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/metal"

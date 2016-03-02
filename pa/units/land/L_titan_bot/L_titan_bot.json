@@ -1,4 +1,6 @@
 {
+  "display_name": "Anubis",
+  "description": "Laser Titan. Lasers everything into oblivion. Amphibious. Attacks land, sea, and undersea targets.",
   "TEMP_texelinfo": 35.2973,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
@@ -31,8 +33,6 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/titan_bot/titan_bot_ammo_death.json"
   },
-  "description": "Laser Titan. Lasers everything into oblivion. Amphibious. Attacks land, sea, and undersea targets.",
-  "display_name": "Anubis",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/Titan_Complete"

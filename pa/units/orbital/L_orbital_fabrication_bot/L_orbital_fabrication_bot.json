@@ -1,4 +1,6 @@
 {
+  "display_name": "BumbleBee",
+  "description": "Advanced fabricator- Builds Legion Orbital Satellites and Ships. ",
   "TEMP_texelinfo": 38.253,
   "attachable": {
     "offsets": {
@@ -37,8 +39,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Advanced fabricator- Builds Legion Orbital Satellites and Ships. ",
-  "display_name": "BumbleBee",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab_orbital"

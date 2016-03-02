@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Grey Wizard Massive Defence",
+  "description": "!LOC(units:advanced_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.",
   "TEMP_texelinfo": 15.3609,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
@@ -8,8 +10,6 @@
   "command_caps": [
     "ORDER_Attack"
   ],
-  "description": "!LOC(units:advanced_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.",
-  "display_name": "Legion Grey Wizard Massive Defence",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"

@@ -1,4 +1,6 @@
 {
+  "display_name": "Sky Castle",
+  "description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
   "TEMP_texelinfo": 7,
   "audio": {
     "loops": {
@@ -23,8 +25,6 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
-  "description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
-  "display_name": "Sky Castle",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

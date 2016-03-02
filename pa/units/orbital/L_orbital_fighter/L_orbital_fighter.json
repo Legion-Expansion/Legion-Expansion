@@ -1,4 +1,6 @@
 {
+  "display_name": "Legion Avenger",
+  "description": "!LOC(units:orbital_fighter_fast_moving_orbital_fighter_for_offense_and_defense.message):Orbital fighter- Fast moving orbital fighter for offense and defense.",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -17,8 +19,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "!LOC(units:orbital_fighter_fast_moving_orbital_fighter_for_offense_and_defense.message):Orbital fighter- Fast moving orbital fighter for offense and defense.",
-  "display_name": "Legion Avenger",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

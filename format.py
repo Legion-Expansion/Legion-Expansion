@@ -5,6 +5,8 @@ import sys
 
 from os.path import join
 
+from collections import OrderedDict
+
 # update papaths.py with your paths
 from papaths import PA_MEDIA_PATH
 
@@ -81,7 +83,20 @@ def validateFile(filename):
 
     validateJSON(filename)
 
-        
+def walkJSON(data,first=False):
+
+  if isinstance(data,(dict)):
+    if not first:
+      data = OrderedDict(sorted(data.items()))
+    for key, value in data.items():
+      data[key] = walkJSON(value)
+
+  if isinstance(data,(list)):
+    for index,item in enumerate(data):
+      data[index] = walkJSON(item)
+
+  return data
+  
 def validateJSON(filename):
 
   fp = None
@@ -111,9 +126,21 @@ def validateJSON(filename):
   if filename.startswith(PA_MEDIA_PATH):
     print("PA %s" % filename)
     return
-    
+
+  ordered = OrderedDict()
+  
+  if 'display_name' in data:
+    ordered['display_name'] = data['display_name']
+
+  if 'description' in data:
+    ordered['description'] = data['description']
+  
+  ordered.update(sorted(data.items()));
+  
+  data = walkJSON(ordered,True)
+  
   fp = open(filename, 'w')
-  fp.write(json.dumps(data, indent=2, sort_keys=True) + "\n")
+  fp.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
   fp.close()
 
   if "display_name" in data:

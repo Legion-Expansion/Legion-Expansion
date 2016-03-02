@@ -1,4 +1,6 @@
 {
+  "display_name": "Fabrication Barge",
+  "description": "Builds Basic Structures. Can Build Exclusive Water Units.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {
@@ -41,8 +43,6 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "Builds Basic Structures. Can Build Exclusive Water Units.",
-  "display_name": "Fabrication Barge",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea_fab"

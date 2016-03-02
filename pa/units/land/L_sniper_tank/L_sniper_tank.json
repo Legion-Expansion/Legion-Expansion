@@ -1,4 +1,6 @@
 {
+  "display_name": "Deathmark",
+  "description": "Sniper. Attacks Land and Naval.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {
@@ -29,8 +31,6 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 1200,
-  "description": "Sniper. Attacks Land and Naval.",
-  "display_name": "Deathmark",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/veh"

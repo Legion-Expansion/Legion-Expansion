@@ -1,4 +1,6 @@
 {
+  "display_name": "Mermaid",
+  "description": "Places Sea Mines and Repairs Friendly Units. Lightly Armored.",
   "TEMP_texelinfo": 20,
   "attachable": {
     "offsets": {
@@ -41,8 +43,6 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
-  "description": "Places Sea Mines and Repairs Friendly Units. Lightly Armored.",
-  "display_name": "Mermaid",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"

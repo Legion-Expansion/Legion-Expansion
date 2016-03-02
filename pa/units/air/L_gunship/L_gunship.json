@@ -1,4 +1,6 @@
 {
+  "display_name": "Lockheed",
+  "description": "Heavily armored gunship equipped with seeking missiles and a light machine gun.",
   "audio": {
     "loops": {
       "move": {
@@ -14,8 +16,6 @@
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 850,
-  "description": "Heavily armored gunship equipped with seeking missiles and a light machine gun.",
-  "display_name": "Lockheed",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"

@@ -1,4 +1,6 @@
 {
+  "display_name": "Jiffy",
+  "description": "Combat Fabrication Vehicle. Places Turrets and Repairs Friendly Units.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
@@ -45,8 +47,6 @@
     "ORDER_Assist",
     "ORDER_Use"
   ],
-  "description": "Combat Fabrication Vehicle. Places Turrets and Repairs Friendly Units.",
-  "display_name": "Jiffy",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
