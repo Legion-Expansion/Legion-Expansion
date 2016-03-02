@@ -151,8 +151,9 @@ def validateJSON(filename):
 #     print(filename)
    
   walkObject(data,filename)
-    
-         
+
+#
+  
 for root, dirnames, filenames in os.walk('./pa'):
   for filename in filenames:
   
