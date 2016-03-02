@@ -6,6 +6,7 @@
   "ammo_source": "energy",
   "auto_attack": false,
   "auto_task_type": "none",
+  "base_spec": "/pa/tools/uber_cannon/uber_cannon.json",
   "manual_fire": true,
   "max_range": 100,
   "pitch_range": 90,
