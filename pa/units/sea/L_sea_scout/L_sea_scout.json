@@ -34,7 +34,7 @@
     4.762
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/L_sea_scout_anim_tree.json",
     "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
   },
   "navigation": {

@@ -51,7 +51,7 @@
 			"deploy": "/pa/units/air/L_firestarter/L_firestarter_deploy.papa",
 			"open": "/pa/units/air/L_firestarter/L_firestarter_open.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/L_missile_ship_anim_tree.json"
+		"animtree": "/pa/anim/anim_trees/L_firestarter_anim_tree.json"
 	},
 	"tools": [{
 		"aim_bone": "bone_fireDrop",

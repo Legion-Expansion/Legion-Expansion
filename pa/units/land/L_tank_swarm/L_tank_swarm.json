@@ -100,7 +100,7 @@
 	},
 	"model": {
 		"filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa",
-		"animtree": "/pa/anim/anim_trees/tank_flak_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_tank_swarm_anim_tree.json",
 		"arrows": 5
 	},
 	"nearby_target_tick_update_interval": 15,

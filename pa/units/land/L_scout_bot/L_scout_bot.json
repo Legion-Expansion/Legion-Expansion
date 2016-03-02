@@ -63,7 +63,7 @@
 			"idle": "/pa/units/land/L_scout_bot/L_scout_bot_idle.papa",
 			"walk": "/pa/units/land/L_scout_bot/L_scout_bot_walk.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
+		"animtree": "/pa/anim/anim_trees/L_scout_bot_anim_tree.json",
 		"filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa",
 		"walk_speed": 2.75
 	},

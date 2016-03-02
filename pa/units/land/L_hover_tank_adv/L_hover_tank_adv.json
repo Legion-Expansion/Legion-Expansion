@@ -59,7 +59,7 @@
 		"animations": {
 			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
 		},
-		"animtree": "/pa/anim/anim_trees/tank_hover_anim_tree.json"
+		"animtree": "/pa/anim/anim_trees/L_hover_tank_adv_anim_tree.json"
 	},
 	"tools": [{
 		"spec_id": "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv_tool_weapon.json",
