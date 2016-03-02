@@ -17,9 +17,13 @@ if not os.path.isdir(PA_MEDIA_PATH):
 missing = [];
 badJSON = [];
 
+#
+
 def validateBuildableTypes(value,source):
 
   print(value)
+
+#
   
 def walkObject(data,source):
 
@@ -54,6 +58,7 @@ def walkObject(data,source):
 
     print("\n\nSET\n\n")
 
+#
 
 def validateFile(filename):
 
@@ -83,6 +88,8 @@ def validateFile(filename):
 
     validateJSON(filename)
 
+#
+
 def walkJSON(data,first=False):
 
   if isinstance(data,(dict)):
@@ -96,6 +103,8 @@ def walkJSON(data,first=False):
       data[index] = walkJSON(item)
 
   return data
+
+#
   
 def validateJSON(filename):
 
@@ -151,8 +160,9 @@ def validateJSON(filename):
 #     print(filename)
    
   walkObject(data,filename)
-    
-         
+
+#
+  
 for root, dirnames, filenames in os.walk('./pa'):
   for filename in filenames:
   
