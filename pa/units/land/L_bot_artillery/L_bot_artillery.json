@@ -29,6 +29,14 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 1000,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
   "description": "Walking Artillery. Long Range. Attacks Land and Naval.",
   "display_name": "Miniman",
   "events": {
@@ -45,6 +53,32 @@
     }
   },
   "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "bone": "bone_root",
+      "color": [
+        0.75,
+        1,
+        1
+      ],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1,
+      "near_height": 1.5,
+      "near_width": 1.5,
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
   "max_health": 125,
   "mesh_bounds": [
     5,
@@ -93,52 +127,21 @@
   "selection_icon": {
     "diameter": -18
   },
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Attack",
-    "ORDER_Assist",
-    "ORDER_Use",
-    "ORDER_FireSecondaryWeapon"
-  ],
   "tools": [
     {
       "aim_bone": "bone_pitch01",
       "muzzle_bone": [
-		"socket_muzzle01",
-		"socket_muzzle02",
-		"socket_muzzle03"
-	  ],
-	  "projectiles_per_fire": 3,
+        "socket_muzzle01",
+        "socket_muzzle02",
+        "socket_muzzle03"
+      ],
+      "projectiles_per_fire": 3,
       "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
     }
   ],
   "transportable": {
     "size": 1
   },
-	"headlights": [{
-		"bone": "bone_root",
-		"color": [
-			0.75,
-			1,
-			1
-		],
-		"far_distance": 20,
-		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-		"intensity": 1.4,
-		"near_distance": 1,
-		"near_height": 1.5,
-		"near_width": 1.5,
-		"offset": [
-			0, 0,
-			0
-		],
-		"orientation": [
-			0,
-			0,
-			0
-		]
-	}],
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",

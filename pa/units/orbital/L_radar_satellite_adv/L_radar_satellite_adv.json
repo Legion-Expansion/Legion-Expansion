@@ -60,7 +60,7 @@
   ],
   "model": {
     "animations": {
-		"idle": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_idle.papa"
+      "idle": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/L_radar_satellite_adv_anim_tree.json",
     "filename": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.papa"
@@ -122,15 +122,20 @@
   "selection_icon": {
     "diameter": -33
   },
-	"tools": [{
-		"spec_id": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_tool_weapon.json",
-		"aim_bone": "bone_turret",
-		"record_index": 0,
-		"fire_event": "fired",
-		"projectiles_per_fire": 2,
-		"muzzle_bone": ["socket_muzzle001", "socket_muzzle002"]
-	}],
   "spawn_layers": "WL_Orbital",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired",
+      "muzzle_bone": [
+        "socket_muzzle001",
+        "socket_muzzle002"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_tool_weapon.json"
+    }
+  ],
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Orbital",

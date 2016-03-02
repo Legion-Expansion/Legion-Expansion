@@ -1,91 +1,98 @@
 {
-	"blend_root": {
-		"type": "unit_state",
-		"nodes": {
-			"being_built": {
-				"type": "bind_pose"
-			},
-			"living": {
-				"type": "aim_blend",
-				"aim_bone_root": "bone_turret",
-				"node_aim_down": {
-					"type": "bind_pose"
-				},
-				"node_aim_neutral": {
-					"type": "bind_pose"
-				},
-				"node_aim_up": {
-					"type": "bind_pose"
-				},
-				"child": {
-					"type": "walk",
-					"node_idle": {
-						"type": "playback",
-						"anim_name": "idle"
-					},
-					"node_walk": {
-						"type": "playback",
-						"anim_name": "walk"
-					}
-				}
-			},
-			"dead": {
-				"type": "playback",
-				"looping": false,
-				"anim_name": "death"
-			},
-			"ghost": {
-				"type": "bind_pose"
-			}
-		}
-	},
-	"skeleton_controls": [{
-		"type": "fader",
-		"lerp_func": "is_active",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_turret",
-			"rotation_axis": "z",
-			"weapon_index": 0
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "is_active",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_turret",
-			"rotation_axis": "z",
-			"weapon_index": 1
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "is_active",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_pitch",
-			"rotation_axis": "x",
-			"weapon_index": 0
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "is_active",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_pitch",
-			"rotation_axis": "x",
-			"weapon_index": 1
-		}
-	}, {
-		"type": "recoil",
-		"bone": "bone_recoilLeftTop",
-		"recoil_dist": 2.0,
-		"restore_time": 1,
-		"unit_event": "fired0"
-	}, {
-		"type": "recoil",
-		"bone": "bone_recoilLeftBottom",
-		"recoil_dist": 2.0,
-		"restore_time": 1,
-		"unit_event": "fired0"
-	}]
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "anim_name": "death",
+        "looping": false,
+        "type": "playback"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "aim_bone_root": "bone_turret",
+        "child": {
+          "node_idle": {
+            "anim_name": "idle",
+            "type": "playback"
+          },
+          "node_walk": {
+            "anim_name": "walk",
+            "type": "playback"
+          },
+          "type": "walk"
+        },
+        "node_aim_down": {
+          "type": "bind_pose"
+        },
+        "node_aim_neutral": {
+          "type": "bind_pose"
+        },
+        "node_aim_up": {
+          "type": "bind_pose"
+        },
+        "type": "aim_blend"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim",
+        "weapon_index": 0
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim",
+        "weapon_index": 1
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch",
+        "type": "procedural_aim",
+        "weapon_index": 0
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch",
+        "type": "procedural_aim",
+        "weapon_index": 1
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "bone": "bone_recoilLeftTop",
+      "recoil_dist": 2.0,
+      "restore_time": 1,
+      "type": "recoil",
+      "unit_event": "fired0"
+    },
+    {
+      "bone": "bone_recoilLeftBottom",
+      "recoil_dist": 2.0,
+      "restore_time": 1,
+      "type": "recoil",
+      "unit_event": "fired0"
+    }
+  ]
 }

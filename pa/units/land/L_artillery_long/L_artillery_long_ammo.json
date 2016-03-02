@@ -1,40 +1,40 @@
 {
-	"base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-	"damage": 5000,
-	"damage_volume": {
-        "burnable_remove_radius": 30,
-        "delay": 1,
-        "initial_radius": 10,
-        "radius_accel": -10,
-        "radius_velocity": 60
-    },
-	"splash_damage": 5000,
-	"splash_damages_allies": false,
-	"splash_radius": 20,
-	"full_damage_splash_radius": 0,
-	"initial_velocity": 500.0,
-	"lifetime": 5,
-	"physics": {
-		"radius": 1,
-		"gravity_scalar": 40,
-		"add_to_spatial_db": false
-	},
-	"model": {
-		"filename": "/pa/units/air/shell_large/shell_large.papa"
-	},
-	"events": {
-		"died": {
-			"audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-			"effect_spec": "/pa/effects/specs/awesome_explosion.pfx"
-		}
-	},
-	"fx_trail": {
-		"filename": "/pa/effects/specs/plasma_ball_with_sparks_long.pfx",
-		"offset": [
-			0.0,
-			1.0,
-			0.0
-		]
-	},
-	"audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop"
+  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+  "damage": 5000,
+  "damage_volume": {
+    "burnable_remove_radius": 30,
+    "delay": 1,
+    "initial_radius": 10,
+    "radius_accel": -10,
+    "radius_velocity": 60
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+      "effect_spec": "/pa/effects/specs/awesome_explosion.pfx"
+    }
+  },
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/plasma_ball_with_sparks_long.pfx",
+    "offset": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 500.0,
+  "lifetime": 5,
+  "model": {
+    "filename": "/pa/units/air/shell_large/shell_large.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": false,
+    "gravity_scalar": 40,
+    "radius": 1
+  },
+  "splash_damage": 5000,
+  "splash_damages_allies": false,
+  "splash_radius": 20
 }

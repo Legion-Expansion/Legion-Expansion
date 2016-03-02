@@ -1,118 +1,146 @@
 {
-	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-	"display_name": "Sky Castle",
-	"description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
-	"build_metal_cost": 900,
-	"max_health": 1200,
-	"command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack", "ORDER_Assist", "ORDER_Use", "ORDER_FireSecondaryWeapon"],
-	"unit_types": ["UNITTYPE_Fighter", "UNITTYPE_Air", "UNITTYPE_Mobile", "UNITTYPE_Offense", "UNITTYPE_Advanced", "UNITTYPE_FactoryBuild", "UNITTYPE_Custom1"],
-	"guard_layer": "WL_Air",
-	"guard_radius": 120,
-	"navigation": {
-		"type": "air",
-		"acceleration": 10,
-		"brake": 20,
-		"move_speed": 30,
-		"turn_speed": 110,
-		"dodge_radius": 0,
-		"dodge_multiplier": 0.0,
-		"aggressive_distance": 50.0,
-		"aggressive_height": 100.0,
-		"wobble_factor": 0.05,
-		"wobble_speed": 0.1,
-		"bank_factor": 0.25
-	},
-	"physics": {
-		"radius": 6,
-		"gravity_scalar": 1,
-		"push_sideways": false,
-		"allow_pushing": false,
-		"air_friction": 1.0
-	},
-	"maintain_priority_target": false,
-	"recon": {
-		"observer": {
-			"items": [{
-				"layer": "surface_and_air",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200
-			}, {
-				"layer": "underwater",
-				"channel": "sight",
-				"shape": "capsule",
-				"radius": 200
-			}]
-		}
-	},
-	"model": {
-		"filename": "/pa/units/air/L_firestarter/L_firestarter.papa",
-		"animations": {
-			"deploy": "/pa/units/air/L_firestarter/L_firestarter_deploy.papa",
-			"open": "/pa/units/air/L_firestarter/L_firestarter_open.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/L_firestarter_anim_tree.json"
-	},
-	"tools": [{
-		"aim_bone": "bone_fireDrop",
-		"muzzle_bone": "bone_fireDrop",
-		"fire_event": "fired0",
-		"secondary_weapon": true,
-		"record_index": 0,
-		"show_range": false,
-		"spec_id": "/pa/units/air/L_firestarter/L_firestarter_tool_weapon.json"
-	}, {
-		"aim_bone": "bone_fireDrop",
-		"muzzle_bone": "bone_fireDrop",
-		"fire_event": "fired1",
-		"primary_weapon": true,
-		"record_index": 1,
-		"show_range": true,
-		"spec_id": "/pa/units/air/L_firestarter/L_firestarter_flame_tool_weapon.json"
-	}],
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/air"
-		},
-		"fired0": {
-			"audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
-		},
-		"fired1": {
-			"audio_cue": "/SE/Weapons/veh/tank_flame",
-			"effect_spec": "/pa/units/air/L_firestarter/fire.pfx bone_fireDrop"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Air",
-			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
-			"effect_scale": 0.85
-		}
-	},
-	"fx_offsets": [{
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-		"bone": "thrust_top",
-		"type": "moving_forward"
-	}, {
-		"filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
-		"bone": "thrust_bottom",
-		"type": "moving_forward"
-	}],
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/air/air_fighter_loop_advanced",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving_laterally",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/air/fighter"
-		}
-	},
-	"selection_icon": {
-		"diameter": -20.0,
-		"vertical_offset": -2.0
-	},
-	"TEMP_texelinfo": 7,
-	"mesh_bounds": [4.5, 9.2, 4]
+  "TEMP_texelinfo": 7,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_fighter_loop_advanced",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving_laterally",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fighter"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 900,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "description": "Armored Bomber Equiped with a Top-Down Napalm Bombing Bay. Use its Secondary Fire to Drop a Light Turret.",
+  "display_name": "Sky Castle",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_scale": 0.85,
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      "effect_spec": "/pa/units/air/L_firestarter/fire.pfx bone_fireDrop"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "thrust_top",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust_bottom",
+      "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_Air",
+  "guard_radius": 120,
+  "maintain_priority_target": false,
+  "max_health": 1200,
+  "mesh_bounds": [
+    4.5,
+    9.2,
+    4
+  ],
+  "model": {
+    "animations": {
+      "deploy": "/pa/units/air/L_firestarter/L_firestarter_deploy.papa",
+      "open": "/pa/units/air/L_firestarter/L_firestarter_open.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/L_firestarter_anim_tree.json",
+    "filename": "/pa/units/air/L_firestarter/L_firestarter.papa"
+  },
+  "navigation": {
+    "acceleration": 10,
+    "aggressive_distance": 50.0,
+    "aggressive_height": 100.0,
+    "bank_factor": 0.25,
+    "brake": 20,
+    "dodge_multiplier": 0.0,
+    "dodge_radius": 0,
+    "move_speed": 30,
+    "turn_speed": 110,
+    "type": "air",
+    "wobble_factor": 0.05,
+    "wobble_speed": 0.1
+  },
+  "physics": {
+    "air_friction": 1.0,
+    "allow_pushing": false,
+    "gravity_scalar": 1,
+    "push_sideways": false,
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 200,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -20.0,
+    "vertical_offset": -2.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_fireDrop",
+      "fire_event": "fired0",
+      "muzzle_bone": "bone_fireDrop",
+      "record_index": 0,
+      "secondary_weapon": true,
+      "show_range": false,
+      "spec_id": "/pa/units/air/L_firestarter/L_firestarter_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_fireDrop",
+      "fire_event": "fired1",
+      "muzzle_bone": "bone_fireDrop",
+      "primary_weapon": true,
+      "record_index": 1,
+      "show_range": true,
+      "spec_id": "/pa/units/air/L_firestarter/L_firestarter_flame_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

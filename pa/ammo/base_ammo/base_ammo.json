@@ -1,45 +1,45 @@
 {
-    "ammo_type": "AMMO_Projectile",
-    "flight_type": "Ballistic",
-    "flight_layer": "Air",
-    "spawn_layers": "WL_Air",
-    "model": {
-        "filename": "/pa/units/generic/placeholder_proj/placeholder_proj.papa"
-    },
-    "fx_trail": {
-        "filename": "/pa/effects/specs/placeholder_proj_trail.pfx",
-        "offset": [
-            0,
-            0,
-            0
-        ]
-    },
-    "events": {
-        "died": {
-            "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
-        }
-    },
-    "recon": {
-        "observable": {
-            "ignore_radar": true
-        }
-    },
-    "physics": {
-        "type": "Projectile",
-        "radius": 1,
-        "gravity_scalar": 3,
-        "add_to_spatial_db": true,
-        "allow_underground": true
-    },
-    "damage": 0,
-    "splash_damage": 0,
-    "splash_radius": 0,
-    "splash_damages_allies": false,
-    "lifetime": 8,
-    "initial_velocity": 1,
-    "max_velocity": 1,
-    "turn_rate": 0,
-    "burn_damage": 15,
-    "burn_radius": 2,
-    "burn_duration": 2.5
+  "ammo_type": "AMMO_Projectile",
+  "burn_damage": 15,
+  "burn_duration": 2.5,
+  "burn_radius": 2,
+  "damage": 0,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
+    }
+  },
+  "flight_layer": "Air",
+  "flight_type": "Ballistic",
+  "fx_trail": {
+    "filename": "/pa/effects/specs/placeholder_proj_trail.pfx",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "initial_velocity": 1,
+  "lifetime": 8,
+  "max_velocity": 1,
+  "model": {
+    "filename": "/pa/units/generic/placeholder_proj/placeholder_proj.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "radius": 1,
+    "type": "Projectile"
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0,
+  "turn_rate": 0
 }

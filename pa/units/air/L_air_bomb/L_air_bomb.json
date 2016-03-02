@@ -1,108 +1,110 @@
 {
-	"TEMP_texelinfo": 10.4837,
-	"attachable": {
-		"offsets": {
-			"root": [
-				0,
-				0,
-				0
-			]
-		}
-	},
-	"audio": {
-		"loops": {
-			"move": {
-				"cue": "/SE/Movement/air/air_transport_loop",
-				"flag": "vel_changed",
-				"should_start_func": "is_moving",
-				"should_stop_func": "is_not_moving"
-			}
-		},
-		"selection_response": {
-			"cue": "/SE/Selection/air/transport"
-		}
-	},
-	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-	"build_metal_cost": 100,
-	"command_caps": [
-		"ORDER_Move",
-		"ORDER_Patrol",
-		"ORDER_Assist",
-		"ORDER_Attack"
-	],
-	"description": "ninjjnjnasidniasunfdiuhyasbuyfdgwauyigbfdiuwyang",
-	"display_name": "Black Hole",
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/air"
-		},
-		"child_attached": {
-			"audio_cue": "/SE/Movement/air/transport_load"
-		},
-		"child_detached": {
-			"audio_cue": "/SE/Movement/air/transport_unload"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/Air",
-			"effect_scale": 0.5
-		}
-	},
-	"fx_offsets": [
-		{
-		"filename": "/pa/units/air/L_air_bomb/L_air_bomb.pfx",
-		"bone": "bone_root",
-		"type": "idle"
-	}],	
-	"max_health": 40,
-	"mesh_bounds": [
-		13.42,
-		22.2,
-		7.561
-	],
-	"model": {
-		"animations": {
-			"idle": "/pa/units/air/L_air_bomb/L_air_bomb_idle.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-		"filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
-	},
-	"navigation": {
-		"acceleration": 30,
-		"brake": 20,
-		"hover_time": -1.0,
-		"move_speed": 70,
-		"turn_speed": 180,
-		"type": "air",
-		"vertical_speed": 100,
-		"wobble_factor": 0.25,
-		"wobble_speed": 0.2,
-		"hover_time": -1.0		
-	},
-	"physics": {
-		"radius": 6,
-		"gravity_scalar": 1,
-		"push_sideways": false,
-		"allow_pushing": false,
-		"air_friction": 1.0
-	},
-	"recon": {
-		"observer": {
-			"items": [{
-				"channel": "sight",
-				"layer": "surface_and_air",
-				"radius": 70,
-				"shape": "capsule"
-			}]
-		}
-	},
-	"selection_icon": {
-		"diameter": -24
-	},
-	"unit_types": [
-		"UNITTYPE_Air",
-		"UNITTYPE_Mobile",
-		"UNITTYPE_Basic",
-		"UNITTYPE_FactoryBuild",
-		"UNITTYPE_Custom1"
-	]
+  "TEMP_texelinfo": 10.4837,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_transport_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/transport"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 100,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Attack"
+  ],
+  "description": "ninjjnjnasidniasunfdiuhyasbuyfdgwauyigbfdiuwyang",
+  "display_name": "Black Hole",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/air"
+    },
+    "child_attached": {
+      "audio_cue": "/SE/Movement/air/transport_load"
+    },
+    "child_detached": {
+      "audio_cue": "/SE/Movement/air/transport_unload"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_scale": 0.5
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/air/L_air_bomb/L_air_bomb.pfx",
+      "type": "idle"
+    }
+  ],
+  "max_health": 40,
+  "mesh_bounds": [
+    13.42,
+    22.2,
+    7.561
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/air/L_air_bomb/L_air_bomb_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
+  },
+  "navigation": {
+    "acceleration": 30,
+    "brake": 20,
+    "hover_time": -1.0,
+    "move_speed": 70,
+    "turn_speed": 180,
+    "type": "air",
+    "vertical_speed": 100,
+    "wobble_factor": 0.25,
+    "wobble_speed": 0.2
+  },
+  "physics": {
+    "air_friction": 1.0,
+    "allow_pushing": false,
+    "gravity_scalar": 1,
+    "push_sideways": false,
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 70,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -24
+  },
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
 }

@@ -8,11 +8,11 @@
   "model": {
     "filename": "/pa/units/sea/torpedo_small/torpedo_small.papa"
   },
-  "turn_rate": 160,
   "physics": {
     "add_to_spatial_db": false,
     "allow_underground": true,
     "gravity_scalar": 5,
     "radius": 1
-  }
+  },
+  "turn_rate": 160
 }

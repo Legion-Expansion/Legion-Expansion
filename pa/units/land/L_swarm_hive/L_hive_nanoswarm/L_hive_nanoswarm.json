@@ -56,10 +56,10 @@
     6
   ],
   "model": {
+    "animations": {
+      "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+    },
     "animtree": "/pa/anim/anim_trees/L_hive_nanoswarm_anim_tree.json",
-		"animations": {
-			"hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
-		},
     "filename": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.papa"
   },
   "navigation": {
@@ -70,6 +70,7 @@
     "turn_speed": 1080,
     "type": "hover"
   },
+  "passive_health_regen": -3,
   "physics": {
     "allow_pushing": true,
     "radius": 4
@@ -99,14 +100,13 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-	  "muzzle_bone": [
-		"socket_muzzle001",
-		"socket_muzzle002"
-	],
+      "muzzle_bone": [
+        "socket_muzzle001",
+        "socket_muzzle002"
+      ],
       "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_tool_weapon.json"
     }
   ],
-  "passive_health_regen": -3,
   "transportable": {
     "size": 1
   },
@@ -118,7 +118,7 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Deconstruction",
     "UNITTYPE_Hover",
-	"UNITTYPE_Custom1"
+    "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }

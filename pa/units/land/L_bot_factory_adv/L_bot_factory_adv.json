@@ -34,68 +34,68 @@
     }
   },
   "factory_cooldown_time": 3,
-    "fx_offsets": [
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe001",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe002",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe003",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe004",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe005",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-            "bone": "lathe006",
-            "orientation": [
-                0,
-                0,
-                0
-            ]
-        }
-    ],
+  "fx_offsets": [
+    {
+      "bone": "lathe001",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "lathe002",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "lathe003",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "lathe004",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "lathe005",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "lathe006",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
   "headlights": [
     {
       "color": [
@@ -209,15 +209,11 @@
     }
   ],
   "max_health": 30000,
-    "mesh_bounds": [
-        48,
-        48,
-        34
-    ],
-    "placement_size": [
-        50,
-        65
-    ],
+  "mesh_bounds": [
+    48,
+    48,
+    34
+  ],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv_end.papa",
@@ -231,6 +227,10 @@
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
+  "placement_size": [
+    50,
+    65
+  ],
   "recon": {
     "observer": {
       "items": [

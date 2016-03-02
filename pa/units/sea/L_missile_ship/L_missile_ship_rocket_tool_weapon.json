@@ -1,9 +1,9 @@
 {
-  "ammo_source": "time",
-  "ammo_demand": 1,
   "ammo_capacity": 6,
-  "ammo_per_shot": 1,
+  "ammo_demand": 1,
   "ammo_id": "/pa/units/sea/L_missile_ship/L_missile_ship_rocket_ammo.json",
+  "ammo_per_shot": 1,
+  "ammo_source": "time",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
   "carpet_fire": true,

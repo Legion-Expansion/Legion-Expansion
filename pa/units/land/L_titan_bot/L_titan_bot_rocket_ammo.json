@@ -9,14 +9,14 @@
       "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   },
-  "model": {
-    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
-  },
   "flight_type": "Staged",
   "influence_radius": 400,
   "initial_velocity": 160.0,
   "lifetime": 10,
   "max_velocity": 160.0,
+  "model": {
+    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+  },
   "physics": {
     "add_to_spatial_db": true,
     "gravity_scalar": 5,

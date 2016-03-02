@@ -24,19 +24,20 @@
       "effect_scale": 0.75
     }
   },
-	"fx_offsets": [{
-		"type": "idle",
-		"filename": "/pa/units/land/L_mex/L_mex.pfx",
-		"offset": [0,
-		0,
-		5]
-	}],  
   "feature_requirements": [
     "metal_spot"
   ],
-	"selection_icon": {
-		"diameter": -24
-	},    
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/land/L_mex/L_mex.pfx",
+      "offset": [
+        0,
+        0,
+        5
+      ],
+      "type": "idle"
+    }
+  ],
   "max_health": 1000,
   "mesh_bounds": [
     15.741,
@@ -78,6 +79,9 @@
   "replaceable_units": [
     "/pa/units/land/L_mex_adv/L_mex_adv.json"
   ],
+  "selection_icon": {
+    "diameter": -24
+  },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Structure",

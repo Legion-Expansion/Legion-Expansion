@@ -20,12 +20,9 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
-			"effect_spec": "/pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleRight /pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleLeft"  
+      "effect_spec": "/pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleRight /pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleLeft"
     }
   },
-	"selection_icon": {
-		"diameter": -22
-	},     
   "guard_layer": "WL_AnySurface",
   "max_health": 2000,
   "mesh_bounds": [
@@ -63,6 +60,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": -22
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [

@@ -25,11 +25,11 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-	  "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx"
-	},
-	"fired1": {
-	  "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
-	}
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
+    }
   },
   "guard_layer": "WL_AnyWater",
   "max_health": 250,
@@ -69,7 +69,7 @@
           "radius": 150,
           "shape": "capsule"
         },
-		{
+        {
           "channel": "radar",
           "layer": "underwater",
           "radius": 250,
@@ -84,20 +84,20 @@
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
-		"aim_bone": "bone_turret",
-		"muzzle_bone": "socket_muzzle",
-		"fire_event": "fired0",
-		"record_index": 0,
-		"spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_tool_weapon.json"
-	},
-	{
-		"aim_bone": "bone_root",
-		"muzzle_bone": "bone_root",
-		"primary_weapon": true,
-		"fire_event": "fired1",
-		"record_index": 1,
-		"spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_torpedo_tool_weapon.json"
-	}
+      "aim_bone": "bone_turret",
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 0,
+      "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired1",
+      "muzzle_bone": "bone_root",
+      "primary_weapon": true,
+      "record_index": 1,
+      "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_torpedo_tool_weapon.json"
+    }
   ],
   "unit_types": [
     "UNITTYPE_Naval",

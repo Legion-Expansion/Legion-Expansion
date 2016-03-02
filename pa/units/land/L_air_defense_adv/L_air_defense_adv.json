@@ -81,26 +81,26 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
+      "fire_event": "fired0",
       "muzzle_bone": "rocket001",
-	  "fire_event": "fired0",
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
+      "fire_event": "fired1",
       "muzzle_bone": "rocket002",
-	  "fire_event": "fired1",
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
+      "fire_event": "fired2",
       "muzzle_bone": "rocket003",
-	  "fire_event": "fired2",
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
+      "fire_event": "fired3",
       "muzzle_bone": "rocket004",
-	  "fire_event": "fired3",
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     }
   ],

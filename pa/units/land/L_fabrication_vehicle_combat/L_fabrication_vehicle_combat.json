@@ -71,11 +71,11 @@
     3.68
   ],
   "model": {
+    "animations": {
+      "drive": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat_drive.papa"
+    },
     "animtree": "/pa/anim/anim_trees/L_fabrication_vehicle_combat_anim.json",
     "arrows": 5,
-	"animations": {
-	"drive": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat_drive.papa"
-	},
     "filename": "/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.papa"
   },
   "navigation": {

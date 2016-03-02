@@ -1,7 +1,6 @@
 {
   "TEMP_texelinfo": 26.4567,
   "area_build_type": "Line",
-  "energy_efficiency_requirement": 0.9,  
   "atrophy_cool_down": 15,
   "atrophy_rate": 7.5,
   "audio": {
@@ -13,6 +12,7 @@
   "build_metal_cost": 900,
   "description": "Significantly Increases Storage Capacity of Metal and Energy Production.",
   "display_name": "OmniSilo Storage Device",
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
@@ -24,33 +24,33 @@
   },
   "fx_offsets": [
     {
+      "bone": "bone_root",
       "filename": "/pa/units/land/L_storage/black_hole.pfx",
-      "bone": "bone_root",	  
       "offset": [
         0,
         0,
         20
       ],
       "type": "energy"
-    }, 
+    },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield01",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield02",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield03",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "bone": "shield04",
+      "filename": "/pa/units/land/L_storage/storage_shield.pfx",
       "type": "idle"
     }
   ],

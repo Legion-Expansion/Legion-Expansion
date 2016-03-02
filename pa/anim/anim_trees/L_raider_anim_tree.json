@@ -1,37 +1,42 @@
 {
-	"skeleton_controls": [{
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_rightTurret",
-			"rotation_axis": "z",
-			"weapon_index": 0
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_leftTurret",
-			"rotation_axis": "z",
-			"weapon_index": 1
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_rightPitch",
-			"rotation_axis": "x"
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_leftPitch",
-			"rotation_axis": "x"
-		}
-	}]
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_rightTurret",
+        "type": "procedural_aim",
+        "weapon_index": 0
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_leftTurret",
+        "type": "procedural_aim",
+        "weapon_index": 1
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_rightPitch",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_leftPitch",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    }
+  ]
 }

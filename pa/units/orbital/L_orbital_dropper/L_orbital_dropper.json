@@ -1,104 +1,113 @@
 {
-	"TEMP_texelinfo": 26.4194,
-	"area_build_separation": 75,
-	"area_build_type": "Line",
-	"atrophy_cool_down": 15.0,
-	"atrophy_rate": 60,
-	"attachable": {
-		"offsets": {
-			"root": [
-				0,
-				0,
-				0
-			]
-		}
-	},
-	"base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-	"build_metal_cost": 2200,
-	"command_caps": ["ORDER_FactoryBuild", "ORDER_Attack"],
-	"description": "!LOC(units:defense_satellite_heavy_orbital_offensive_and_defensive_platform_with_basic_laser.message):Defense satellite- Heavy orbital offensive and defensive platform with basic laser.",
-	"display_name": "Legion Deadweight",
-	"events": {
-		"build_complete": {
-			"audio_cue": "/SE/Build_Complete/orbital"
-		},
-		"died": {
-			"audio_cue": "/SE/Death/orbital"
-		},
-		"fired0": {
-			"audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
-		},
-		"fired1": {
-			"audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
-		},
-		"fired2": {
-			"audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
-		}
-	},
-	"factory_cooldown_time": 3.0,
-	"buildable_types": "Custom4",
-	"enable_orbital_shell": true,
-	"wait_to_rolloff_time": 3,
-	"factory": {
-		"deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
-		"spawn_points": ["socket_muzzle01_a"]
-	},
-	"gravwell_velocity_multiplier": 6.0,
-	"max_health": 3000,
-	"mesh_bounds": [
-		23,
-		23,
-		6
-	],
-	"model": {
-		"animations": {
-			"fire": "/pa/units/orbital/defense_satellite/defense_satellite_anim_fire.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/defense_satellite_anim_tree.json",
-		"filename": "/pa/units/orbital/defense_satellite/defense_satellite.papa"
-	},
-	"physics": {
-		"collision_layers": "WL_Orbital",
-		"gravity_scalar": 0.001,
-		"push_class": 50,
-		"radius": 15
-	},
-	"placement_size": [
-		50,
-		50
-	],
-	"recon": {
-		"observer": {
-			"items": [{
-				"channel": "sight",
-				"layer": "orbital",
-				"radius": 600,
-				"shape": "sphere"
-			}, {
-				"channel": "sight",
-				"layer": "surface_and_air",
-				"radius": 120,
-				"shape": "capsule"
-			}]
-		}
-	},
-	"selection_icon": {
-		"diameter": -37
-	},
-	"spawn_layers": "WL_Orbital",
-	"tools": [
-	{
-		"spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json",
-		"record_index": 1,
-		"aim_bone": "bone_root"
-	}],
-	"unit_types": [
-		"UNITTYPE_Structure",
-		"UNITTYPE_Orbital",
-		"UNITTYPE_Factory",
-		"UNITTYPE_Advanced",
-		"UNITTYPE_FabOrbBuild",
-		"UNITTYPE_Custom1"
-	],
-	"wreckage_health_frac": 0.0
+  "TEMP_texelinfo": 26.4194,
+  "area_build_separation": 75,
+  "area_build_type": "Line",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 60,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "build_metal_cost": 2200,
+  "buildable_types": "Custom4",
+  "command_caps": [
+    "ORDER_FactoryBuild",
+    "ORDER_Attack"
+  ],
+  "description": "!LOC(units:defense_satellite_heavy_orbital_offensive_and_defensive_platform_with_basic_laser.message):Defense satellite- Heavy orbital offensive and defensive platform with basic laser.",
+  "display_name": "Legion Deadweight",
+  "enable_orbital_shell": true,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
+    }
+  },
+  "factory": {
+    "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+    "spawn_points": [
+      "socket_muzzle01_a"
+    ]
+  },
+  "factory_cooldown_time": 3.0,
+  "gravwell_velocity_multiplier": 6.0,
+  "max_health": 3000,
+  "mesh_bounds": [
+    23,
+    23,
+    6
+  ],
+  "model": {
+    "animations": {
+      "fire": "/pa/units/orbital/defense_satellite/defense_satellite_anim_fire.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/defense_satellite_anim_tree.json",
+    "filename": "/pa/units/orbital/defense_satellite/defense_satellite.papa"
+  },
+  "physics": {
+    "collision_layers": "WL_Orbital",
+    "gravity_scalar": 0.001,
+    "push_class": 50,
+    "radius": 15
+  },
+  "placement_size": [
+    50,
+    50
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 600,
+          "shape": "sphere"
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 120,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -37
+  },
+  "spawn_layers": "WL_Orbital",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "record_index": 1,
+      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "wait_to_rolloff_time": 3,
+  "wreckage_health_frac": 0.0
 }

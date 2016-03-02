@@ -12,7 +12,7 @@
   "rate_of_fire": 0.25,
   "spread_fire": true,
   "target_layers": [
-	"WL_Air"
+    "WL_Air"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,

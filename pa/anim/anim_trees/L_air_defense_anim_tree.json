@@ -1,37 +1,40 @@
 {
-	"blend_root": {
-		"type": "unit_state",
-		"nodes": {
-			"being_built": {
-				"type": "bind_pose"
-			},
-			"living": {
-				"type": "playback",
-				"anim_name": "idle"
-			},
-			"dead": {
-				"type": "bind_pose"
-			},
-			"ghost": {
-				"type": "bind_pose"
-			}
-		}
-	},
-	"skeleton_controls": [{
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_turret",
-			"rotation_axis": "z"
-		}
-	}, {
-		"type": "fader",
-		"lerp_func": "not_being_built",
-		"child": {
-			"type": "procedural_aim",
-			"rotation_bone": "bone_pitch",
-			"rotation_axis": "x"
-		}
-	}]
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "anim_name": "idle",
+        "type": "playback"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    }
+  ]
 }

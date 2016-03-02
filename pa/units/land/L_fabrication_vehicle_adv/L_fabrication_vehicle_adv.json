@@ -56,29 +56,29 @@
       "effect_scale": 1.75
     }
   },
-    "fx_offsets": [
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "socket_latheRight"
-        },
-        {
-            "type": "build",
-            "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-            "bone": "socket_latheLeft"
-        }
-    ],
+  "fx_offsets": [
+    {
+      "bone": "socket_latheRight",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "socket_latheLeft",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 450,
-    "mesh_bounds": [
-        5.2,
-        5.8,
-        3.5
-    ],
-    "model": {
-        "filename": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.papa",
-        "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
-    },
+  "mesh_bounds": [
+    5.2,
+    5.8,
+    3.5
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+    "filename": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.papa"
+  },
   "navigation": {
     "acceleration": 120,
     "brake": 120,
@@ -110,6 +110,10 @@
       ]
     }
   },
+  "scrolling_uv": {
+    "scroll_rate": 0.6,
+    "uv_split": 0.85
+  },
   "selection_icon": {
     "diameter": -12
   },
@@ -132,9 +136,5 @@
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_CannonBuildable",
     "UNITTYPE_Custom1"
-  ],
-    "scrolling_uv": {
-        "scroll_rate": 0.6,
-        "uv_split": 0.85
-    }
+  ]
 }

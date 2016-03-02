@@ -13,8 +13,8 @@
   "initial_velocity": 400.0,
   "lifetime": 0.37,
   "max_velocity": 400.0,
-  "splash_damage": 0,
-  "splash_radius": 0,
   "spawn_unit_on_death": "/pa/units/land/L_tank_swarm/chain/chain.json",
-  "spawn_unit_on_death_with_velocity": false
+  "spawn_unit_on_death_with_velocity": false,
+  "splash_damage": 0,
+  "splash_radius": 0
 }

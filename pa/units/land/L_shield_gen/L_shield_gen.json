@@ -1,124 +1,124 @@
 {
-    "TEMP_texelinfo": 27,
-    "area_build_separation": 50,
-    "atrophy_cool_down": 0.5,
-    "atrophy_rate": 20,
-    "base_spec": "/pa/units/land/base_structure/base_structure.json",
-    "build_metal_cost": 900,
-    "description": "Shield Defense",
-    "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
-    "energy_efficiency_requirement": 1,
-    "events": {
-        "build_complete": {
-            "audio_cue": "/SE/Build_Complete/barrier"
-        },
-        "died": {
-            "audio_cue": "/SE/Death/barrier",
-            "effect_scale": 1.25,
-            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
-        }
+  "TEMP_texelinfo": 27,
+  "area_build_separation": 50,
+  "atrophy_cool_down": 0.5,
+  "atrophy_rate": 20,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 900,
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
+  },
+  "description": "Shield Defense",
+  "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
+  "energy_efficiency_requirement": 1,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
     },
-    "max_health": 400,
-	"death_weapon": {
-		"ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
-	},
-    "mesh_bounds": [
-        5,
-        5,
-        14
-    ],
-    "model": [
-        {
-            "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
-            "layer": "WL_LandHorizontal",
-            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
-        },
-        {
-            "animations": {
-                "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
-            },
-            "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
-            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-            "layer": "WL_WaterSurface"
-        }
-    ],
-    "physics": {
-        "air_friction": 1,
-        "allow_pushing": false,
-        "allow_underground": false,
-        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-        "ignore_collisions": false,
-        "push_class": 255,
-        "push_sideways": false,
-        "radius": 1,
-        "shape": "Box",
-        "type": "Structure"
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_scale": 1.25,
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_void",
+      "filename": "/pa/units/land/L_shield_gen/shield.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "energy"
+    }
+  ],
+  "max_health": 400,
+  "mesh_bounds": [
+    5,
+    5,
+    14
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_energy.json"
     },
-    "placement_size": [
-        20,
-        20
-    ],
-    "recon": {
-        "observer": {
-            "items": [
-                {
-                    "channel": "sight",
-                    "layer": "surface_and_air",
-                    "radius": 35,
-                    "shape": "capsule"
-                }
-            ]
-        }
-    },
-    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "unit_types": [
-        "UNITTYPE_Structure",
-        "UNITTYPE_Basic",
-        "UNITTYPE_FabBuild",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_CombatFabAdvBuild",
-        "UNITTYPE_Custom1"
-    ],
-    "fx_offsets": [
+    {
+      "animations": {
+        "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "physics": {
+    "air_friction": 1,
+    "allow_pushing": false,
+    "allow_underground": false,
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "ignore_collisions": false,
+    "push_class": 255,
+    "push_sideways": false,
+    "radius": 1,
+    "shape": "Box",
+    "type": "Structure"
+  },
+  "placement_size": [
+    20,
+    20
+  ],
+  "recon": {
+    "observer": {
+      "items": [
         {
-            "bone": "bone_void",
-            "filename": "/pa/units/land/L_shield_gen/shield.pfx",
-            "offset": [
-                0,
-                0,
-                0
-            ],
-            "orientation": [
-                0,
-                0,
-                0
-            ],
-            "type": "energy"
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 35,
+          "shape": "capsule"
         }
-    ],
-    "selection_icon": {
-        "diameter": -20
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -20
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_void",
+      "record_index": 0,
+      "show_range": true,
+      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
     },
-    "tools": [
-        {
-            "aim_bone": "bone_void",
-            "record_index": 0,
-			"show_range": true,
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
-        },
-		{
-            "aim_bone": "bone_void",
-            "record_index": 1,
-			"show_range": true,
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
-        },
-		{
-            "aim_bone": "bone_void",
-            "record_index": 2,
-			"show_range": true,
-            "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
-        }
-    ],
-    "wreckage_health_frac": 0.2
+    {
+      "aim_bone": "bone_void",
+      "record_index": 1,
+      "show_range": true,
+      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_void",
+      "record_index": 2,
+      "show_range": true,
+      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 0.2
 }

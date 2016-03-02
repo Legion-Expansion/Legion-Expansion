@@ -1,22 +1,26 @@
 {
-	"base_spec": "/pa/ammo/torpedo/torpedo.json",
-	"model": {
-		"filename": ""
-	},
-	"fx_trail": {
-		"filename": "/pa/effects/specs/wave.pfx",
-		"offset": [0.0, 0.0, 0.0]
-	},
-	"damage": 125,
-	"splash_damage": 125,
-	"splash_radius": 10,
-	"initial_velocity": 20,
-	"max_velocity": 50,
-	"lifetime": 7,
-	"cruise_height": 2,
-	"turn_rate": 3.5,
-	"physics": {
-		"radius": 9,
-		"shape": "sphere"
-	}
+  "base_spec": "/pa/ammo/torpedo/torpedo.json",
+  "cruise_height": 2,
+  "damage": 125,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/wave.pfx",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 20,
+  "lifetime": 7,
+  "max_velocity": 50,
+  "model": {
+    "filename": ""
+  },
+  "physics": {
+    "radius": 9,
+    "shape": "sphere"
+  },
+  "splash_damage": 125,
+  "splash_radius": 10,
+  "turn_rate": 3.5
 }

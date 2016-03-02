@@ -49,7 +49,7 @@
       "lerp_func": "not_being_built",
       "type": "fader"
     },
-	{
+    {
       "child": {
         "rotation_axis": "x",
         "rotation_bone": "bone_pitch",

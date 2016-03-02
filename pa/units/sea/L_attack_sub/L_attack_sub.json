@@ -10,28 +10,6 @@
       }
     }
   },
-    "fx_offsets": [
-        {
-            "bone": "bone_rotor", 
-            "filename": "/pa/effects/specs/naval_trail_sub.pfx", 
-            "offset": [
-                0, 
-                0, 
-                0
-            ], 
-            "type": "moving"
-        },
-        {
-            "bone": "bone_root", 
-            "filename": "/pa/effects/specs/naval_bubbles_sub.pfx", 
-            "offset": [
-                0, 
-                0, 
-                0
-            ], 
-            "type": "idle"
-        }
-	],
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 650,
   "description": "Close range attack submarine",
@@ -47,9 +25,31 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
-       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx"
     }
   },
+  "fx_offsets": [
+    {
+      "bone": "bone_rotor",
+      "filename": "/pa/effects/specs/naval_trail_sub.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/naval_bubbles_sub.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
+    }
+  ],
   "guard_layer": "WL_AnyWater",
   "max_health": 510,
   "mesh_bounds": [
