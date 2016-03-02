@@ -11,7 +11,10 @@ from papaths import PA_MEDIA_PATH
 if not os.path.isdir(PA_MEDIA_PATH):
   print("\nCheck your PA_MEDIA_PATH in papaths.py: " + PA_MEDIA_PATH + "\n")
   sys.exit()
-  
+
+missing = [];
+badJSON = [];
+
 def validateBuildableTypes(value,source):
 
   print(value)
@@ -54,16 +57,24 @@ def validateFile(filename):
 
   if not os.path.isfile(filename):
   
-    filename2 = PA_MEDIA_PATH + filename[1:]
+    filename2 = PA_MEDIA_PATH + "/pa_ex1" + filename[4:]
     
     if not os.path.isfile(filename2):
     
+      filename3 = PA_MEDIA_PATH + filename[1:]
+
+      if not os.path.isfile(filename3):
+
 #      print(filename)
 
 #    else:
 
-      print("\nMISSING FILE", filename, filename2, "\n")
-      
+        print("\nMISSING FILE", filename, "\n")
+        
+        missing.append( filename )
+        
+      return;
+       
     return;
 
   if filename[-5:] == ".json" or filename[-4:] == ".pfx":
@@ -88,6 +99,7 @@ def validateJSON(filename):
       data = json.load(fp)
   except ValueError:
     print("\nINVALID %s\n" % filename)
+    badJSON.append(filename)
     return
   finally:
     fp.close()
@@ -121,4 +133,10 @@ for root, dirnames, filenames in os.walk('./pa'):
     
     validateFile(filename)
     
+print( "\nMISSING FILES: ", len( missing ), "\n" )
 
+print( "\n".join( missing ), "\n" )
+
+print( "\nBAD JSON: ", len( badJSON ), "\n" )
+
+print( "\n".join( badJSON ) )
