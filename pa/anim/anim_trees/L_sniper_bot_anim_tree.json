@@ -30,9 +30,7 @@
 				}
 			},
 			"dead": {
-				"type": "playback",
-				"looping": false,
-				"anim_name": "death"
+				"type": "bind_pose"
 			},
 			"ghost": {
 				"type": "bind_pose"

@@ -119,15 +119,15 @@
 		},
 		"fired0": {
 			"audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-			"effect_spec": "/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx socket_muzzleMain /pa/units/land/L_titan_vehicle/big_gun_smoke.pfx socket_muzzleMain"
+			"effect_spec": "/pa/units/land/titan_vehicle/titan_vehicle_main_muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/big_gun_smoke.pfx socket_muzzleMain"
 		},
 		"fired1": {
 			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
-			"effect_spec": "/pa/units/land/L_titan_vehicle/tank_muzzle_flash.pfx socket_muzzleLeft001 /pa/units/land/L_titan_vehicle/small_gun_smoke.pfx socket_muzzleLeft001 /pa/units/land/L_titan_vehicle/tank_muzzle_flash.pfx socket_muzzleLeft002 /pa/units/land/L_titan_vehicle/small_gun_smoke.pfx socket_muzzleLeft002"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleLeft001 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleLeft002"
 		},
 		"fired2": {
 			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
-			"effect_spec": "/pa/units/land/L_titan_vehicle/tank_muzzle_flash.pfx socket_nuzzleRight001 /pa/units/land/L_titan_vehicle/small_gun_smoke.pfx socket_muzzleRight001 /pa/units/land/L_titan_vehicle/tank_muzzle_flash.pfx socket_nuzzleRight002 /pa/units/land/L_titan_vehicle/small_gun_smoke.pfx socket_muzzleRight002"
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_nuzzleRight001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleRight001 /pa/effects/specs/tank_muzzle_flash.pfx socket_nuzzleRight002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzleRight002"
 		},
 		"died": {
 			"audio_cue": "",
@@ -148,6 +148,11 @@
 			"cue": "/SE/Selection/titan/hover_tank"
 		}
 	},
+	"fx_offsets": [{
+		"type": "idle",
+		"filename": "/pa/units/land/titan_vehicle/titan_vehicle_idle.pfx",
+		"bone": "bone_root"
+	}],
 	"headlights": [{
 		"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
 		"offset": [6.118, -20.125, 8.122],
