@@ -73,8 +73,8 @@
 	}],
 	"events": {
 		"fired": {
-			"audio_cue": "/SE/Weapons/bot/sub_commander_gun_fire_laser",
-			"effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+			"audio_cue": "/SE/Weapons/sea/destroyer_fire",
+			"effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/small_gun_smoke.pfx socket_rightMuzzle"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Bot",

@@ -9,7 +9,8 @@
 	"lifetime": 3,
 	"events": {
 		"died": {
-			"effect_spec": "/pa/units/sea/battleship/battleship_hit.pfx"
+			"audio_cue": "/SE/Impacts/shell_tanmk",
+			"effect_spec": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_side_ammo.pfx"
 		}
 	},
 	"physics": {

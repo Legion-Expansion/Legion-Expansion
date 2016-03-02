@@ -30,6 +30,7 @@
 		"/pa/units/air/L_gunship/L_gunship.json",
 		"/pa/units/air/L_air_bomb/L_air_bomb.json",
 		"/pa/units/land/L_scout_bot/L_scout_bot.json",
+		"/pa/units/land/L_scout_bot/L_scout_bot_radar_mode.json",
 		"/pa/units/air/transport/transport.json",
 		"/pa/units/air/L_transport/L_transport.json",
 		"/pa/units/air/L_flying_teleporter/L_flying_teleporter.json",
