@@ -3,7 +3,7 @@
   "build": "",
   "category": [],
   "context": "client",
-  "date": "",
+  "date": "2014/11/28",
   "dependencies": [
     "com.pa.legion-expansion.server-balance-test"
   ],
@@ -11,7 +11,6 @@
   "display_name": "My One Unit",
   "enabled": true,
   "forum": "",
-  "icon": "",
   "identifier": "com.pa.legion-expansion.client-balance-test",
   "priority": 100,
   "signature": "(not yet implemented)",

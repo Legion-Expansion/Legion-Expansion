@@ -3,7 +3,7 @@
   "build": "",
   "category": [],
   "context": "server",
-  "date": "",
+  "date": "2015/02/02",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
@@ -16,7 +16,6 @@
   "display_name": "My One Unit",
   "enabled": true,
   "forum": "",
-  "icon": "",
   "identifier": "com.pa.legion-expansion.server-balance-test",
   "scenes": {
     "global_mod_list": [
