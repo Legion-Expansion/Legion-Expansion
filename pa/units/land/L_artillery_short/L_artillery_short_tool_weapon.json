@@ -15,7 +15,6 @@
   "physics": {
     "add_to_spatial_db": false,
     "gravity_scalar": 1,
-    "push_class": 1,
     "radius": 1
   },
   "pitch_range": 89.9,
