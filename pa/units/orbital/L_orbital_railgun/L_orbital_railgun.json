@@ -1,22 +1,18 @@
 {
   "display_name": "Excalibur",
-  "description": "Long-range orbital structure assault",
+  "description": "Sword of ages, Slayer of gophers",
   "TEMP_texelinfo": 6.1803,
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/air/air_fighter_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/air/fighter"
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 4800,
+  "build_metal_cost": 2500,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -25,21 +21,22 @@
   ],
   "events": {
     "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
+      "audio_cue": "/SE/Build_Complete/orbital"
     },
     "died": {
-      "audio_cue": "/SE/Death/Air",
-      "effect_spec": "/pa/units/orbital/excal/excal_death.pfx"
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 2.5,
+      "effect_spec": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_death.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-      "effect_spec": "/pa/units/orbital/excal/vents.pfx bone_root /pa/units/orbital/excal/fire.pfx"
+      "effect_spec": "/pa/units/orbital/L_orbital_railgun/vents.pfx bone_root /pa/units/orbital/L_orbital_railgun/fire.pfx bone_root"
     }
   },
   "fx_offsets": [
     {
       "effect_scale": 5,
-      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
       "offset": [
         7.8,
         16.9,
@@ -49,7 +46,7 @@
     },
     {
       "effect_scale": 5,
-      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
       "offset": [
         7.8,
         16.9,
@@ -59,7 +56,7 @@
     },
     {
       "effect_scale": 5,
-      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
       "offset": [
         -7.8,
         16.9,
@@ -69,7 +66,7 @@
     },
     {
       "effect_scale": 5,
-      "filename": "/pa/units/orbital/excal/spaceship_jets.pfx",
+      "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
       "offset": [
         -7.8,
         16.9,
@@ -79,7 +76,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/orbital/excal/gun.pfx",
+      "filename": "/pa/units/orbital/L_orbital_railgun/gun.pfx",
       "offset": [
         0,
         -47.2,
@@ -90,8 +87,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "guard_radius": 300,
-  "max_health": 6200,
+  "max_health": 650,
   "mesh_bounds": [
     22.0,
     54.82,
@@ -99,21 +95,20 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/orbital/excal/excal.papa"
+    "filename": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.papa"
   },
   "navigation": {
-    "acceleration": 25,
-    "bank_factor": 5,
-    "brake": 25,
+    "acceleration": 10,
+    "bank_factor": 1,
+    "brake": 10,
     "hover_time": -1.0,
     "move_speed": 30,
-    "turn_speed": 50,
-    "type": "orbital",
-    "vertical_speed": 300
+    "turn_in_place": true,
+    "turn_speed": 30,
+    "type": "orbital"
   },
   "physics": {
     "gravity_scalar": 0.001,
-    "push_class": 15,
     "radius": 10
   },
   "recon": {
@@ -122,7 +117,7 @@
         {
           "channel": "sight",
           "layer": "orbital",
-          "radius": 400,
+          "radius": 650,
           "shape": "sphere"
         }
       ]
@@ -131,13 +126,12 @@
   "spawn_layers": "WL_Orbital",
   "tools": [
     {
-      "aim_bone": "bone_fire01",
+      "aim_bone": "bone_root",
       "muzzle_bone": "bone_fire01",
-      "spec_id": "/pa/units/orbital/excal/excal_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_tool_weapon.json"
     }
   ],
   "unit_types": [
-    "UNITTYPE_Artillery",
     "UNITTYPE_Fighter",
     "UNITTYPE_Orbital",
     "UNITTYPE_Mobile",
@@ -145,5 +139,6 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
-  ]
+  ],
+  "wreckage_health_frac": 0.0
 }
