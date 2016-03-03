@@ -42,6 +42,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
+      "effect_scale": 0.8,
       "effect_spec": "/pa/units/land/L_sniper_bot/muzzle_flash_medium.pfx socket_muzzle"
     }
   },
