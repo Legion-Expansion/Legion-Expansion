@@ -4,5 +4,5 @@
   "collision_response": "impact",
   "damage": 35,
   "fx_beam_spec": "/pa/units/air/L_fighter/beam_trail.pfx",
-  "fx_collision_spec": "/pa/units/air/L_fighter/beam_trail.pfx"
+  "fx_collision_spec": "/pa/units/air/L_fighter/beam_hit.pfx"
 }
