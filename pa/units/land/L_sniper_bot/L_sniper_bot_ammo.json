@@ -18,7 +18,7 @@
     ]
   },
   "initial_velocity": 600.0,
-  "lifetime": 0.75,
+  "lifetime": 0.15,
   "max_velocity": 600.0,
   "model": {
     "filename": ""
