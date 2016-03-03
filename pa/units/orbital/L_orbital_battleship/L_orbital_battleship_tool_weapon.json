@@ -4,11 +4,11 @@
   "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
   "max_range": 150,
   "pitch_range": 60,
-  "pitch_rate": 360,
+  "pitch_rate": 120,
   "rate_of_fire": 1,
   "target_layers": [
     "WL_Orbital"
   ],
-  "yaw_range": 100,
-  "yaw_rate": 360
+  "yaw_range": 120,
+  "yaw_rate": 120
 }
