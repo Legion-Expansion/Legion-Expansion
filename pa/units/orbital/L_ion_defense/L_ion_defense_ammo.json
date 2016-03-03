@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 150,
+  "damage": 200,
   "flight_type": "Seeking",
   "fx_trail": {
     "filename": "/pa/units/orbital/ion_defense/ion_defense_proj_trail.pfx"

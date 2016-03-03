@@ -6,7 +6,7 @@
   "atrophy_cool_down": 15,
   "atrophy_rate": 5,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 225,
+  "build_metal_cost": 900,
   "command_caps": [
     "ORDER_Attack"
   ],
@@ -18,13 +18,16 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.55
     },
-    "fired": {
+    "fired0": {
       "audio_cue": "/SE/Weapons/orb/umbrella_laser_fire",
-      "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle01"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/umbrella_mis_anti_unitcannon_fire"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 350,
+  "max_health": 900,
   "mesh_bounds": [
     18.162,
     18.162,
@@ -43,19 +46,28 @@
       "layer": "WL_WaterSurface"
     }
   ],
+  "physics": {
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  },
   "recon": {
     "observer": {
       "items": [
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 130,
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 500,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         }
       ]
@@ -64,15 +76,26 @@
   "selection_icon": {
     "diameter": -32
   },
+  "show_in_orbital_layer": false,
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "ring03",
+      "aim_bone": "bone_turret",
+      "fire_event": "fired0",
       "muzzle_bone": [
         "socket_muzzle"
       ],
       "record_index": 0,
       "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_antidrop.json"
     }
   ],
   "unit_types": [
