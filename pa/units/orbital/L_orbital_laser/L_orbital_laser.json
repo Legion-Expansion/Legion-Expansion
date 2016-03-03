@@ -1,6 +1,6 @@
 {
-  "display_name": "Legion Black Knight",
-  "description": "!LOC(units:orbital_laser_platform_rains_death_from_above.message):Orbital laser platform- Rains death from above.",
+  "display_name": "Black Knight",
+  "description": "Mysterious Artifact, engraved with a masterful image of Legari Snarlingpatterned with the Finger of Taking striking down The Abyssal Boat in the late summer of 204",
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {
@@ -59,7 +59,6 @@
   },
   "physics": {
     "gravity_scalar": 0.001,
-    "push_class": 15,
     "radius": 10
   },
   "recon": {
@@ -87,7 +86,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -64
+    "diameter": -46
   },
   "spawn_layers": "WL_Orbital",
   "tools": [
