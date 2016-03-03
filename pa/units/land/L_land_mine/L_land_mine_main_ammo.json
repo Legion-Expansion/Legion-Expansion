@@ -1,0 +1,27 @@
+{
+  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+  "damage": 35,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_tank",
+      "effect_spec": "/pa/units/land/L_shotgun_tank/proj_hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      0.5,
+      0.0
+    ]
+  },
+  "initial_velocity": 200,
+  "lifetime": 0.38,
+  "max_velocity": 200,
+  "physics": {
+    "radius": 5,
+    "shape": "sphere"
+  },
+  "splash_damage": 10,
+  "splash_radius": 7
+}
