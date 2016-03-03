@@ -1,6 +1,6 @@
 {
   "display_name": "Wraith",
-  "description": "Advanced orbital scout - has decent orbital and ground vision, equipped with radar stealth.",
+  "description": "Travels very fast between planets using Legion Slipstream Warp Technology",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -12,16 +12,13 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 410,
+  "build_metal_cost": 300,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "consumption": {
-    "energy": 1500
-  },
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -29,9 +26,15 @@
     "died": {
       "audio_cue": "/SE/Death/orbital"
     },
-    "fired": {
+    "fired0": {
       "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_fire01"
+      "effect_scale": 0.4,
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_fire02 /pa/effects/specs/default_muzzle_flash.pfx bone_fire03"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
+      "effect_scale": 0.4,
+      "effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx bone_muzzle01"
     }
   },
   "fx_offsets": [
@@ -51,9 +54,9 @@
       "type": "moving"
     }
   ],
-  "gravwell_velocity_multiplier": 6,
+  "gravwell_velocity_multiplier": 100,
   "guard_layer": "WL_Orbital",
-  "max_health": 1600,
+  "max_health": 50,
   "mesh_bounds": [
     9.4,
     21.4,
@@ -65,52 +68,47 @@
       "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa"
     },
     "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json",
-    "filename": "/pa/units/orbital/wraith/wraith.papa"
+    "filename": "/pa/units/orbital/L_orbital_probe/L_orbital_probe.papa"
   },
   "navigation": {
-    "acceleration": 180,
+    "acceleration": 80,
     "aggressive_behavior": "line",
     "aggressive_distance": 30,
-    "bank_factor": 10,
-    "brake": 180,
-    "dodge_multiplier": 6,
-    "dodge_radius": 15,
+    "bank_factor": 2,
+    "brake": 80,
     "hover_time": 1,
-    "move_speed": 280,
+    "move_speed": 120,
     "turn_speed": 90,
     "type": "orbital",
     "vertical_speed": 200
   },
   "physics": {
     "gravity_scalar": 0.001,
-    "push_class": 15,
-    "radius": 15
+    "radius": 6
   },
   "recon": {
-    "observable": {
-      "ignore_radar": true,
-      "layer": "orbital",
-      "uses_energy": true
-    },
     "observer": {
       "items": [
         {
           "channel": "sight",
-          "layer": "orbital",
-          "radius": 300,
-          "shape": "sphere"
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule",
+          "uses_energy": true
         },
         {
           "channel": "sight",
-          "layer": "surface_and_air",
-          "radius": 200,
-          "shape": "capsule"
+          "layer": "orbital",
+          "radius": 600,
+          "shape": "capsule",
+          "uses_energy": true
         },
         {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 220,
-          "shape": "capsule"
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 200,
+          "shape": "capsule",
+          "uses_energy": true
         }
       ]
     }
@@ -119,18 +117,18 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "bone_fire01",
-      "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json"
+      "muzzle_bone": [
+        "bone_fire02",
+        "bone_fire03"
+      ],
+      "spec_id": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_light_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_root",
-      "muzzle_bone": "bone_fire02",
-      "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch01",
-      "muzzle_bone": "bone_muzzle01",
-      "spec_id": "/pa/units/orbital/wraith/wraith_tool_weapon.json"
+      "aim_bone": "bone_turret01",
+      "muzzle_bone": [
+        "bone_muzzle01"
+      ],
+      "spec_id": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_heavy_tool_weapon.json"
     }
   ],
   "unit_types": [
@@ -138,7 +136,7 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Offense",
     "UNITTYPE_Orbital",
-    "UNITTYPE_Fighter",
+    "UNITTYPE_Scout",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ],
