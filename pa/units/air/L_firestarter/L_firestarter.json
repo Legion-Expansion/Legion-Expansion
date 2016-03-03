@@ -135,7 +135,7 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Fighter",
+    "UNITTYPE_Bomber",
     "UNITTYPE_Air",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
