@@ -615,7 +615,7 @@
           ["L_orbital", 6]
         ]
       }, {
-        spec_id: "/pa/units/orbital/excal/excal.json",
+        spec_id: "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.json",
         si_fallback: ["orbital_railgun"],
         preferred_builds: [
           ["L_orbital", 9]
@@ -664,7 +664,7 @@
           ["L_orbital", 13]
         ]
       }, {
-        spec_id: "/pa/units/orbital/wraith/wraith.json",
+        spec_id: "/pa/units/orbital/L_orbital_probe/L_orbital_probe.json",
         si_fallback: ["radar_satellite"],
         preferred_builds: [
           ["L_orbital", 16]
