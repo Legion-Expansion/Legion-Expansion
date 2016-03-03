@@ -149,7 +149,7 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Bomber",
+    "UNITTYPE_Gunship",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Air",
