@@ -47,7 +47,7 @@ if ( ! legionExpansionLoaded )
         };
 
         //ADD legion class to build_bar_menu
-        $('.div_unit_selection').attr("data-bind","css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $root.onTypeFilterClick($data.type, event); } }");
+        $('.div_unit_selection').attr("data-bind","css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $parent.onSelectionDisplayClick($index(), event) } }");
 
         handlers.legionui = function(payload){
             console.log("SET UI : " + payload);
