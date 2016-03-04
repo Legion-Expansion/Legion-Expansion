@@ -54,7 +54,7 @@
       "type": "moving_forward"
     }
   ],
-  "guard_layer": "WL_Air",
+  "guard_layer": "WL_LandHorizontal",
   "guard_radius": 120,
   "maintain_priority_target": false,
   "max_health": 1200,
