@@ -37,7 +37,7 @@
   "catalog_object_name": "TankAeson",
   "client": {
     "ui": {
-      "image": "/ui/main/shared/img/commanders/img_tank_aeson.png",
+      "image": "/ui/main/shared/img/commanders/rockteeth_image.png",
       "profile_image": "/ui/main/shared/img/commanders/profiles/profile_rockteeth.png",
       "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_tank_aeson_thumb.png"
     }
