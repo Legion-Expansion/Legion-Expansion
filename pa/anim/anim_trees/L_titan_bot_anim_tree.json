@@ -19,6 +19,22 @@
           },
           "node_walk": {
             "anim_name": "walk",
+            "events": [
+              {
+                "parameters": {
+                  "cue": "/SE/Movement/titan/bot_step_big"
+                },
+                "time": 3.0,
+                "type": "audio"
+              },
+              {
+                "parameters": {
+                  "cue": "/SE/Movement/titan/bot_step_big"
+                },
+                "time": 1.5,
+                "type": "audio"
+              }
+            ],
             "type": "playback"
           },
           "type": "walk"
