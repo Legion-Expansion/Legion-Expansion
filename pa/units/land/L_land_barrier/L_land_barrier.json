@@ -86,16 +86,6 @@
       ]
     }
   },
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "socket_muzzle"
-      ],
-      "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_land_barrier/L_land_barrier_tool_weapon.json"
-    }
-  ],
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Basic",
