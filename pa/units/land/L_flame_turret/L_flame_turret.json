@@ -36,7 +36,7 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "max_health": 5000,
+  "max_health": 4000,
   "mesh_bounds": [
     13.397,
     17.409,
