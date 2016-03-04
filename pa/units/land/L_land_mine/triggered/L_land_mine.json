@@ -1,68 +1,7 @@
 {
   "display_name": "Legion Land Mine",
-  "description": "Pop up Landmine that sprays shrapnel",
+  "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
   "TEMP_texelinfo": 24,
-  "area_build_pattern": [
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ]
-  ],
   "area_build_separation": 1,
   "area_build_type": "Sphere",
   "build_metal_cost": 20,
@@ -72,12 +11,15 @@
     },
     "died": {
       "audio_cue": "/SE/Death/barrier",
-      "effect_spec": "/pa/effects/specs/none.pfx"
+      "effect_spec": "/pa/units/land/bot_bomb/bot_bomb_ammo_explosion.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/bot/assault_fire"
     }
   },
   "guard_layer": "WL_AnySurface",
   "guard_radius": 10,
-  "max_health": 5,
+  "max_health": 1000,
   "mesh_bounds": [
     4,
     4,
@@ -85,6 +27,10 @@
   ],
   "model": [
     {
+      "animations": {
+        "fire": "/pa/units/land/L_land_mine/L_land_mine_fire.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/L_land_mine_anim_tree.json",
       "filename": "/pa/units/land/L_land_mine/L_land_mine.papa",
       "layer": "WL_LandHorizontal"
     }
@@ -100,15 +46,12 @@
     "type": "Structure"
   },
   "recon": {
-    "observable": {
-      "layer": "mine"
-    },
     "observer": {
       "items": [
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 10,
+          "radius": 20,
           "shape": "sphere"
         }
       ]
@@ -122,14 +65,24 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_land_mine/L_land_mine_trigger_tool_weapon.json"
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_kappa",
+        "bone_kappa",
+        "bone_kappa"
+      ],
+      "projectiles_per_fire": 3,
+      "spec_id": "/pa/units/land/L_land_mine/triggered/L_land_mine_main_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "fire_event": "fired1",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/land/L_land_mine/triggered/L_land_mine_tool_weapon.json"
     }
   ],
   "unit_types": [
-    "UNITTYPE_Basic",
     "UNITTYPE_Land",
-    "UNITTYPE_Defense",
-    "UNITTYPE_CombatFabBuild",
     "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0
