@@ -30,7 +30,7 @@
                 {
                   "label": "death",
                   "parameters": {
-                    "cue": "/SE/Death/Titan_Air"
+                    "cue": "/SE/UI/plus/sing"
                   },
                   "time": 0.1,
                   "type": "audio"
@@ -38,7 +38,7 @@
                 {
                   "label": "death",
                   "parameters": {
-                    "cue": "/SE/Death/Titan_2"
+                    "cue": "/SE/Death/Titan_Air2"
                   },
                   "time": 2.1,
                   "type": "audio"

@@ -174,3 +174,5 @@ print( "\n".join( missing ), "\n" )
 print( "\nBAD JSON: ", len( badJSON ), "\n" )
 
 print( "\n".join( badJSON ) )
+
+input()
