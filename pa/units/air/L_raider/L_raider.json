@@ -105,7 +105,7 @@
     "dodge_multiplier": 0.0,
     "dodge_radius": 0.0,
     "hover_time": -1.0,
-    "move_speed": 95,
+    "move_speed": 100,
     "turn_speed": 140,
     "type": "air",
     "wobble_factor": 0.05,
@@ -121,13 +121,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 200,
+          "radius": 250,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 200,
+          "radius": 250,
           "shape": "capsule"
         }
       ]
