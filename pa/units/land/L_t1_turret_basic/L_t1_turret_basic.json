@@ -24,7 +24,7 @@
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 400,
+  "max_health": 750,
   "mesh_bounds": [
     10,
     13.799,
