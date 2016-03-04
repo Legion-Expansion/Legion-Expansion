@@ -1,7 +1,7 @@
 {
   "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
-  "damage": 500,
+  "damage": 600,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
@@ -29,7 +29,7 @@
     "radius": 10,
     "type": "projectile"
   },
-  "splash_damage": 250,
+  "splash_damage": 300,
   "splash_damages_allies": false,
   "splash_radius": 40,
   "turn_rate": 120
