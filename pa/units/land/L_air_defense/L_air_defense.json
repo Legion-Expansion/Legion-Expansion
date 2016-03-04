@@ -77,6 +77,11 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/L_air_defense/L_air_defense_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/L_air_defense/L_air_defense_beam_tool_weapon.json"
     }
   ],
   "unit_types": [
