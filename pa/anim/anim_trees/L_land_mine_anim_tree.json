@@ -1,0 +1,99 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "entries": [
+          {
+            "name": "idle",
+            "node": {
+              "type": "bind_pose"
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "is_firing",
+                  "target": "start"
+                },
+                "transition_reverse": {
+                  "func": "is_firing",
+                  "target": "start"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          },
+          {
+            "name": "start",
+            "node": {
+              "anim_name": "fire",
+              "looping": false,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          }
+        ],
+        "transition_seek": {
+          "false_target": "idle",
+          "func": "fired0",
+          "true_target": "start"
+        },
+        "type": "sequence"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "bone": "bone_recoil001",
+      "recoil_dist": 6.0,
+      "restore_time": 6,
+      "type": "recoil"
+    },
+    {
+      "bone": "bone_recoil002",
+      "recoil_dist": 3,
+      "restore_time": 3,
+      "type": "recoil"
+    }
+  ]
+}
