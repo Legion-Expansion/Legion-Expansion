@@ -197,9 +197,9 @@
   ],
   "max_health": 6000,
   "mesh_bounds": [
-    32.37,
-    32.772,
-    17
+    32.48,
+    26.72,
+    15
   ],
   "model": {
     "animations": {
@@ -217,7 +217,7 @@
   },
   "placement_size": [
     40,
-    60
+    55
   ],
   "recon": {
     "observer": {
