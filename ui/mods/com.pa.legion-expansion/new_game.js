@@ -11,9 +11,43 @@ if (!legionExpansionLoaded) {
         var patchName = 'legionExpansion new_game.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
-        
         //LOAD CUSTOM LEGION CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");  
+        
+        model.legionclient_isLoaded = ko.observable(false);
+        model.legionclient_isChecked = ko.observable(false);
+        
+        model.legionclient_checkLoaded = function()
+        {
+            api.mods.getMountedMods( 'client', function ( mods )
+            {
+                var loaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.test-client' ] ).length > 0;
+                model.legionclient_isLoaded ( loaded );
+                model.legionclient_isChecked(true);
+                console.log("legion expansion client mod loaded : " + loaded );
+            });
+            
+        }
+        
+        // once mod data is sent check if client mod is actually loaded
+        if ( window.scene_server_mod_list && window.scene_server_mod_list.new_game )
+        {
+            model.legionclient_checkLoaded(); 
+        }
+        else
+        {
+            model.legion_server_mod_info_updated_handler = handlers.server_mod_info_updated;
+    
+            handlers.server_mod_info_updated = function( payload )
+            {
+                model.legion_server_mod_info_updated_handler( payload );
+                
+                model.legionclient_checkLoaded();
+            }
+        }        
+        //ADD WARNING MESSAGE CLIENt
+        $("#start-error").parent().prepend('<div class="legionalert" data-bind="visible:model.legionclient_isChecked() && !model.legionclient_isLoaded()">Legion Client Mod Missing</div>');
+
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         var legioncommanders = legionglobal.commanders;
