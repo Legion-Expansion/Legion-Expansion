@@ -19,12 +19,12 @@
       "effect_scale": 0.55
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzleTop /pa/effects/specs/default_muzzle_flash.pfx socket_muzzleBottom"
+      "audio_cue": "/SE/Weapons/veh/tank_flame",
+      "effect_spec": "/pa/units/air/L_firestarter/forward_fire.pfx socket_muzzleTop"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 350,
+  "max_health": 1000,
   "mesh_bounds": [
     10.7,
     11.2,
@@ -44,13 +44,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 130,
+          "radius": 100,
           "shape": "capsule"
         }
       ]
