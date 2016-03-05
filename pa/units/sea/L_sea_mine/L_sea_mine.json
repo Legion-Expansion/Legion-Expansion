@@ -15,6 +15,7 @@
       "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx"
     }
   },
+  "guard_layer": "WL_AnySurface",
   "max_health": 5,
   "mesh_bounds": [
     10,
@@ -49,7 +50,13 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 2,
+          "radius": 10,
+          "shape": "sphere"
+        },
+        {
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 10,
           "shape": "sphere"
         }
       ]
