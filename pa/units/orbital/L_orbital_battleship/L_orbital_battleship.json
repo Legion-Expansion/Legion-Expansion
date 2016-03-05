@@ -103,7 +103,7 @@
       "aim_bone": "turret001",
       "fire_event": "fired1",
       "muzzle_bone": "socket_muzzle001",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 0,
       "record_index": 1,
       "spec_id": "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship_tool_weapon.json"
     },
@@ -119,7 +119,7 @@
       "aim_bone": "turret003",
       "fire_event": "fired3",
       "muzzle_bone": "socket_muzzle003",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 2,
       "record_index": 3,
       "spec_id": "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship_tool_weapon.json"
     },
@@ -127,7 +127,7 @@
       "aim_bone": "turret004",
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle004",
-      "projectiles_per_fire": 1,
+      "projectiles_per_fire": 3,
       "record_index": 0,
       "spec_id": "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship_main_tool_weapon.json"
     },
