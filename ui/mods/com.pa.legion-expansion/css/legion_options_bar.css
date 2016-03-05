@@ -30,7 +30,7 @@
 }
 
 .mixedui .div_ingame_timer {
-    color: rgba(99, 14, 138, 0.5);
+    color: #663399;
     text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
     /*background: url(coui://ui/main/game/live_game/img/ingame_options_bar/img_bar_clock.png) left top no-repeat;*/
 }
@@ -44,6 +44,12 @@
     border:1px solid rgba(99, 14, 138, 0.5) !important;
     color: #663399 !important;
 }
+
+.mixedui .div_sim_speed {
+  color: #663399 !important;
+  text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+}
+
 .watermark {
     color: rgba(255,0,0,0.8);
     text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
