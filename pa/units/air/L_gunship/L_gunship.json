@@ -169,7 +169,7 @@
         "socket_rocket06"
       ],
       "record_index": 1,
-      "spec_id": "/pa/units/air/L_gunship/nuclear_sub_tool_weapon_missile.json"
+      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
     }
   ],
   "unit_types": [

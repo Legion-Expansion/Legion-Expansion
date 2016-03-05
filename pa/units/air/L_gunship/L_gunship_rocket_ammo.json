@@ -4,13 +4,13 @@
   "damage": 300,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_spec": "/pa/units/air/L_gunship/rocket_explosion.pfx"
     }
   },
-  "full_damage_splash_radius": 5,
+  "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/effects/specs/shell_artillery_small_proj_trail.pfx",
+    "filename": "/pa/units/air/L_gunship/rocket_proj_trail.pfx",
     "offset": [
       0,
       0,
@@ -29,7 +29,7 @@
     "gravity_scalar": 10,
     "radius": 1
   },
-  "splash_damage": 100,
+  "splash_damage": 0,
   "splash_damages_allies": false,
-  "splash_radius": 20
+  "splash_radius": 0
 }
