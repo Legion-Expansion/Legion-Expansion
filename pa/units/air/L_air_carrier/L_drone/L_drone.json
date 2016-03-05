@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 0,
+  "build_metal_cost": 90,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
@@ -69,7 +69,6 @@
     "type": "air",
     "vertical_speed": 200
   },
-  "passive_health_regen": -3,
   "physics": {
     "gravity_scalar": 1,
     "radius": 6
@@ -104,6 +103,11 @@
       ],
       "record_index": 0,
       "spec_id": "/pa/units/air/L_air_carrier/L_drone/L_drone_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "record_index": 0,
+      "spec_id": "/pa/units/air/L_air_carrier/L_drone/L_drone_death_tool_weapon.json"
     }
   ],
   "unit_types": [
