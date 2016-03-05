@@ -64,10 +64,11 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closed.papa",
-      "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deploy.papa"
+      "closed": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_closed.papa",
+      "deploy": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_deploy.papa",
+      "open": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/orbital_fighter_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_probe/L_orbital_probe.papa"
   },
   "navigation": {
@@ -114,23 +115,6 @@
     }
   },
   "spawn_layers": "WL_Orbital",
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "bone_fire02",
-        "bone_fire03"
-      ],
-      "spec_id": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_light_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret01",
-      "muzzle_bone": [
-        "bone_muzzle01"
-      ],
-      "spec_id": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_heavy_tool_weapon.json"
-    }
-  ],
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
