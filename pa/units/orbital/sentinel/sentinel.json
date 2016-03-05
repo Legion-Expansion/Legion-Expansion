@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "build_metal_cost": 2600,
+  "build_metal_cost": 1600,
   "command_caps": [
     "ORDER_Attack",
     "ORDER_Assist"
@@ -34,7 +34,7 @@
   },
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "max_health": 5600,
+  "max_health": 2400,
   "mesh_bounds": [
     25.1,
     19.6,
