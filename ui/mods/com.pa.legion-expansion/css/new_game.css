@@ -12,3 +12,7 @@
 .slot-player.legionslot.loading {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17;
 }
+
+.legionslot .slot-player-commander {
+    border: 1px solid #FF0000 !important;
+}
