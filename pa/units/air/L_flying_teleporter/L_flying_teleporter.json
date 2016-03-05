@@ -18,7 +18,10 @@
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
-    "ORDER_Attack"
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_SpecialMove"
   ],
   "energy_efficiency_requirement": 1,
   "events": {
@@ -28,7 +31,7 @@
     "died": {
       "audio_cue": "/SE/Death/orbital",
       "effect_scale": 1,
-      "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx"
+      "effect_spec": "/pa/units/air/titan_air/titan_air_death.pfx"
     },
     "disabled": {
       "audio_cue": "/SE/Buildings/teleporter_disabled",
@@ -38,8 +41,13 @@
       "audio_cue": "/SE/Buildings/teleporter_enabled",
       "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx event_horizon"
     },
-    "fired": {
-      "audio_cue": "/SE/Weapons/orb/titan_orbital_fire"
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+      "effect_spec": "/pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket002 /pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket005"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
+      "effect_spec": "/pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket008 /pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket011"
     }
   },
   "fx_offsets": [
@@ -136,7 +144,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Anysurface",
-  "max_health": 3200,
+  "max_health": 4800,
   "mesh_bounds": [
     35,
     40,
@@ -160,10 +168,10 @@
     "circle_min_time": 1,
     "hover_time": -1,
     "inter_planetary_type": "system",
-    "move_speed": 30,
+    "move_speed": 40,
     "turn_speed": 50,
     "type": "air",
-    "vertical_speed": 10
+    "vertical_speed": 100
   },
   "physics": {
     "gravity_scalar": 1,
@@ -176,13 +184,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 100,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 100,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
@@ -196,7 +204,7 @@
   "teleporter": {
     "energy_demand": 1000,
     "spawn_radius": 1,
-    "type": "orbital"
+    "type": "land-small"
   },
   "tools": [
     {
@@ -204,27 +212,27 @@
       "fire_event": "fired0",
       "muzzle_bone": [
         "rocket001",
+        "rocket006",
         "rocket002",
-        "rocket003",
-        "rocket004",
         "rocket005",
-        "rocket006"
+        "rocket003",
+        "rocket004"
       ],
-      "projectiles_per_fire": 3,
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "fire_event": "fired1",
       "muzzle_bone": [
-        "rocket007",
-        "rocket008",
         "rocket009",
-        "rocket010",
+        "rocket012",
+        "rocket008",
         "rocket011",
-        "rocket012"
+        "rocket007",
+        "rocket010"
       ],
-      "projectiles_per_fire": 3,
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json"
     }
   ],
@@ -237,5 +245,9 @@
     "UNITTYPE_Important",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0
+  "useable": {
+    "range": 100,
+    "type": "teleporter"
+  },
+  "wreckage_health_frac": 0.5
 }
