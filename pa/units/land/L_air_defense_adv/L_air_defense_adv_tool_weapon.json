@@ -14,6 +14,11 @@
   "target_layers": [
     "WL_Air"
   ],
+  "target_priorities": [
+    "Air & Bomber",
+    "Air & Gunship",
+    "Air & Mobile"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
   "yaw_rate": 70
