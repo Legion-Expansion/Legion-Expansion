@@ -1,5 +1,5 @@
 {
-  "author": "furrygopher",
+  "author": "bob",
   "build": "",
   "category": [],
   "context": "server",
@@ -10,13 +10,13 @@
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
-    "com.pa.legion-expansion.client-balance-test"
+    "com.pa.test-client"
   ],
   "description": "No longer works",
-  "display_name": "My One Unit",
+  "display_name": "test",
   "enabled": true,
   "forum": "",
-  "identifier": "com.pa.legion-expansion.server-balance-test",
+  "identifier": "com.pa.test",
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"

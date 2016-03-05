@@ -1,17 +1,17 @@
 {
-  "author": "furrygopher",
+  "author": "bob",
   "build": "",
   "category": [],
   "context": "client",
   "date": "2014/11/28",
   "dependencies": [
-    "com.pa.legion-expansion.server-balance-test"
+    "com.pa.test"
   ],
   "description": "No longer works",
-  "display_name": "My One Unit",
+  "display_name": "test",
   "enabled": true,
   "forum": "",
-  "identifier": "com.pa.legion-expansion.client-balance-test",
+  "identifier": "com.pa.test-client",
   "priority": 100,
   "signature": "(not yet implemented)",
   "version": "0.5.0"
