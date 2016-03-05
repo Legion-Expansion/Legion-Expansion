@@ -80,7 +80,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "ring03",
       "fire_event": "fired0",
       "muzzle_bone": [
         "socket_muzzle"
@@ -89,7 +89,7 @@
       "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "ring03",
       "fire_event": "fired1",
       "muzzle_bone": [
         "socket_muzzle"
