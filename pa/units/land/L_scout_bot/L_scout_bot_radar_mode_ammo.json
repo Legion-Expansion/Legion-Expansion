@@ -13,10 +13,10 @@
   "impact_decals": [
     null
   ],
-  "initial_velocity": 60,
+  "initial_velocity": 90,
   "lifetime": 30,
-  "max_velocity": 100,
-  "min_velocity": 40,
+  "max_velocity": 150,
+  "min_velocity": 90,
   "model": {
     "filename": "/pa/units/land/L_scout_bot/L_scout_bot.papa"
   },
