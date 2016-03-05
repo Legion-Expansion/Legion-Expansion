@@ -99,16 +99,15 @@
     "filename": "/pa/units/air/L_titan_air/L_titan_air.papa"
   },
   "navigation": {
-    "acceleration": 30,
+    "acceleration": 50,
     "aggressive_behavior": "point",
-    "aggressive_distance": 100.0,
     "bank_factor": 0.3,
     "brake": 60,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
     "hover_time": -1.0,
     "move_speed": 30,
-    "turn_speed": 30,
+    "turn_speed": 50,
     "type": "air",
     "vertical_speed": 50
   },
