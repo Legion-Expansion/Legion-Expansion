@@ -13,7 +13,7 @@
     "com.pa.test-client"
   ],
   "description": "Testing",
-  "display_name": "test",
+  "display_name": "test (broken)",
   "enabled": true,
   "forum": "",
   "identifier": "com.pa.test",
