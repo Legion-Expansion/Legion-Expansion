@@ -10,13 +10,13 @@
     "com.wondible.pa.icon_reloader",
     "com.wondible.pa.xenophobia",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
-    "com.pa.test-client"
+    "com.pa.monty-client"
   ],
-  "description": "Testing",
-  "display_name": "test (broken)",
+  "description": " ",
+  "display_name": " ",
   "enabled": true,
   "forum": "",
-  "identifier": "com.pa.test",
+  "identifier": "com.pa.monty",
   "scenes": {
     "global_mod_list": [
       "coui://ui/mods/com.pa.legion-expansion/global.js"
