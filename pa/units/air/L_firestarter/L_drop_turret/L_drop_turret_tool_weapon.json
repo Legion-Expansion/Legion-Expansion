@@ -3,10 +3,10 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "idle_aim_delay": 5,
-  "max_range": 70,
+  "max_range": 100,
   "pitch_range": 90,
   "pitch_rate": 90,
-  "rate_of_fire": 10,
+  "rate_of_fire": 5,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",

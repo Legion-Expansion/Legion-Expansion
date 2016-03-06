@@ -20,11 +20,11 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/air/L_firestarter/forward_fire.pfx socket_muzzleTop"
+      "effect_spec": "/pa/units/land/L_flame_turret/fire.pfx socket_muzzleTop"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 1000,
+  "max_health": 3000,
   "mesh_bounds": [
     10.7,
     11.2,
@@ -68,10 +68,16 @@
         "socket_muzzleBottom"
       ],
       "spec_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "record_index": 0,
+      "spec_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_death_tool_weapon.json"
     }
   ],
   "unit_types": [
     "UNITTYPE_Structure",
+    "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_Land",
     "UNITTYPE_SurfaceDefense",

@@ -1,8 +1,8 @@
 {
   "ammo_type": "AMMO_Beam",
-  "damage": 10,
+  "damage": 20,
   "fx_collision_spec": "/pa/units/air/L_firestarter/flame_death.pfx",
-  "splash_damage": 10,
+  "splash_damage": 20,
   "splash_damages_allies": false,
   "splash_radius": 10
 }
