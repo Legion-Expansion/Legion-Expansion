@@ -11,7 +11,9 @@
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",
-    "WL_WaterSurface"
+    "WL_WaterSurface",
+    "WL_Orbital",
+    "WL_Air"
   ],
   "yaw_range": 180,
   "yaw_rate": 30

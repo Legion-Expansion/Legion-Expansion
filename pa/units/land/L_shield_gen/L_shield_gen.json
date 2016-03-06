@@ -112,6 +112,8 @@
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Advanced",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_Custom1"

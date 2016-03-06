@@ -1,23 +1,14 @@
 {
   "display_name": "Legion Deadweight",
   "description": "!LOC(units:defense_satellite_heavy_orbital_offensive_and_defensive_platform_with_basic_laser.message):Defense satellite- Heavy orbital offensive and defensive platform with basic laser.",
-  "TEMP_texelinfo": 26.4194,
+  "TEMP_texelinfo": 36,
   "area_build_separation": 75,
   "area_build_type": "Line",
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 60,
-  "attachable": {
-    "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
   "build_metal_cost": 2200,
-  "buildable_types": "Custom4",
+  "buildable_types": "Custom1 & CannonBuildable",
   "command_caps": [
     "ORDER_FactoryBuild",
     "ORDER_Attack"
@@ -43,30 +34,61 @@
   "factory": {
     "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
     "spawn_points": [
-      "socket_muzzle01_a"
-    ]
+      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build"],
+		"store_units": true,
+		"pass_on_orders": false,
+		"hide_deploy_projectile": true,
+		"hide_stored_units": true
   },
   "factory_cooldown_time": 3.0,
-  "gravwell_velocity_multiplier": 6.0,
   "max_health": 3000,
   "mesh_bounds": [
-    23,
-    23,
-    6
+    75.576,
+    85.687,
+    79.187
   ],
+	"fx_offsets": [{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser001"
+	},{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser002"
+	},{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser003"
+	},
+{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser004"
+	},
+{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser005"
+	},
+{
+		"type": "build",
+		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
+		"bone": "bone_laser006"
+	}],
   "model": {
-    "animations": {
-      "fire": "/pa/units/orbital/defense_satellite/defense_satellite_anim_fire.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/defense_satellite_anim_tree.json",
-    "filename": "/pa/units/orbital/defense_satellite/defense_satellite.papa"
+		"animations": {
+			"start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa",
+			"build": "/pa/units/land/L_orbital_dropper/L_orbital_dropper_build.papa",
+			"end": "/pa/units/land/L_orbital_dropper/L_orbital_dropper_end.papa"
+		},
+    "animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json",
+    "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
   },
-  "physics": {
-    "collision_layers": "WL_Orbital",
-    "gravity_scalar": 0.001,
-    "push_class": 50,
-    "radius": 15
-  },
+	"physics": {
+		"radius": 20,
+		"collision_layers": "WL_Orbital",
+		"ignore_gravity": true
+	},
   "placement_size": [
     50,
     50
@@ -95,7 +117,7 @@
   "spawn_layers": "WL_Orbital",
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "socket_muzzle",
       "record_index": 1,
       "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
     }

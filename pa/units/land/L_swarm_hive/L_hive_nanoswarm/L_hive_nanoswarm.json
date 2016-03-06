@@ -61,7 +61,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 50,
+  "max_health": 75,
   "mesh_bounds": [
     6,
     6,
@@ -82,7 +82,7 @@
     "turn_speed": 1080,
     "type": "hover"
   },
-  "passive_health_regen": -10,
+  "passive_health_regen": -15,
   "physics": {
     "allow_pushing": true,
     "radius": 4

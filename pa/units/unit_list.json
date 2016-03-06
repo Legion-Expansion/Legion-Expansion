@@ -202,6 +202,7 @@
     "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json",
     "/pa/units/orbital/ion_defense/ion_defense.json",
     "/pa/units/orbital/L_ion_defense/L_ion_defense.json",
+    "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.json",
     "/pa/units/orbital/mining_platform/mining_platform.json",
     "/pa/units/orbital/L_mining_platform/L_mining_platform.json",
     "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json",
