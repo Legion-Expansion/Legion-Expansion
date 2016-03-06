@@ -7,7 +7,7 @@
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 60,
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "build_metal_cost": 2200,
+  "build_metal_cost": 7400,
   "buildable_types": "Custom1 & CannonBuildable",
   "command_caps": [
     "ORDER_FactoryBuild",
@@ -21,20 +21,15 @@
     "died": {
       "audio_cue": "/SE/Death/orbital"
     },
-    "fired0": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
-    },
-    "fired1": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
-    },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
+    "fired": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
+	  "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle /pa/effects/specs/tank_muzzle_flash.pfx bone_root"
     }
   },
   "factory": {
     "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
     "spawn_points": [
-      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build",      "bone_build"],
+      "bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build"],
 		"store_units": true,
 		"pass_on_orders": false,
 		"hide_deploy_projectile": true,
@@ -78,8 +73,8 @@
   "model": {
 		"animations": {
 			"start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa",
-			"build": "/pa/units/land/L_orbital_dropper/L_orbital_dropper_build.papa",
-			"end": "/pa/units/land/L_orbital_dropper/L_orbital_dropper_end.papa"
+			"build": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build.papa",
+			"end": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_end.papa"
 		},
     "animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
@@ -112,7 +107,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -37
+    "diameter": -70
   },
   "spawn_layers": "WL_Orbital",
   "tools": [
@@ -120,6 +115,12 @@
       "aim_bone": "socket_muzzle",
       "record_index": 1,
       "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
+    },
+    {
+      "aim_bone": "socket_muzzle",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 2,
+      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tool_weapon.json"
     }
   ],
   "unit_types": [

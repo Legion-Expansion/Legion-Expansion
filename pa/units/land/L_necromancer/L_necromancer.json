@@ -116,7 +116,6 @@
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
     "UNITTYPE_Custom1"
   ]
 }

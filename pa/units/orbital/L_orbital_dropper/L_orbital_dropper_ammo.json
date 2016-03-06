@@ -27,16 +27,13 @@
     }
   },
   "flight_type": "Staged",
-  "fx_trail": {
-    "filename": ""
-  },
-  "ground_target_area_spread": 5,
+  "ground_target_area_spread": 0,
   "influence_radius": 400,
-  "initial_velocity": -30.0,
-  "lifetime": 0,
-  "max_velocity": 75.0,
+  "initial_velocity": 0,
+  "lifetime": 7,
+  "max_velocity": 0,
   "model": {
-    "filename": ""
+    "filename": "/pa/units/air/unit_shell/unit_shell.papa"
   },
   "physics": {
     "add_to_spatial_db": true,
@@ -51,27 +48,12 @@
       "ignore_radar": false
     }
   },
-  "show_in_orbital_layer": true,
-  "show_strategic_icon": true,
+  "show_in_orbital_layer": false,
+  "show_strategic_icon": false,
   "splash_damage": 0,
   "splash_damages_allies": "false",
   "splash_radius": 0,
   "stages": [
-    {
-      "ignores_LOS": true,
-      "ignores_gravity": true,
-      "rotates_to_velocity": true,
-      "stage_duration": 300,
-      "stage_turn_rate": 0
-    },
-    {
-      "ignores_LOS": true,
-      "ignores_gravity": true,
-      "rotates_to_velocity": true,
-      "stage_change_height": 200,
-      "stage_duration": 0,
-      "stage_turn_rate": 90
-    },
     {
       "apply_thrust": false,
       "ignores_LOS": false,
@@ -89,10 +71,10 @@
     }
   ],
   "transporter": {
-    "capacity": 10,
+    "capacity": 12,
     "transportable_attach_offset": "root",
     "transportable_unit_types": "Custom1 & CannonBuildable",
     "transporter_attach_bone": "bone_root"
   },
-  "turn_rate": 90
+  "turn_rate": 1000
 }
