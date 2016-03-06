@@ -140,18 +140,6 @@
       "spec_id": "/pa/units/air/L_firestarter/L_firestarter_flame_drop_tool_weapon.json"
     },
     {
-      "aim_bone": "intake_left",
-      "fire_event": "fired2",
-      "muzzle_bone": [
-        "intake_left",
-        "intake_right"
-      ],
-      "primary_weapon": false,
-      "projectiles_per_fire": 2,
-      "record_index": 2,
-      "spec_id": "/pa/units/air/L_firestarter/L_firestarter_flame_main_tool_weapon.json"
-    },
-    {
       "aim_bone": "nose_light",
       "fire_event": "fired3",
       "muzzle_bone": "nose_light",
