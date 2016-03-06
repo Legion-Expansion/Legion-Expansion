@@ -28,7 +28,7 @@
   },
   "flight_type": "Staged",
   "fx_trail": {
-    "filename": "/pa/units/air/unit_shell/unit_shell_trail.pfx"
+    "filename": ""
   },
   "ground_target_area_spread": 5,
   "influence_radius": 400,
@@ -36,7 +36,7 @@
   "lifetime": 0,
   "max_velocity": 75.0,
   "model": {
-    "filename": "/pa/units/air/unit_shell/unit_shell.papa"
+    "filename": ""
   },
   "physics": {
     "add_to_spatial_db": true,
@@ -91,7 +91,7 @@
   "transporter": {
     "capacity": 10,
     "transportable_attach_offset": "root",
-    "transportable_unit_types": "Custom4",
+    "transportable_unit_types": "Custom1 & CannonBuildable",
     "transporter_attach_bone": "bone_root"
   },
   "turn_rate": 90

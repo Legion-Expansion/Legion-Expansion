@@ -8,7 +8,6 @@
   "firing_arc_pitch": 10,
   "firing_arc_yaw": 10,
   "force_fire_from_muzzle": true,
-  "idle_aim_delay": 5,
   "manual_fire": true,
   "max_range": 30,
   "pitch_range": 0,
