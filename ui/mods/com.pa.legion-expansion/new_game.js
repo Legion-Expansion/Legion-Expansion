@@ -21,7 +21,7 @@ if (!legionExpansionLoaded) {
         {
             api.mods.getMountedMods( 'client', function ( mods )
             {
-                var loaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.test-client' ] ).length > 0;
+                var loaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.monty-client' ] ).length > 0;
                 model.legionclient_isLoaded ( loaded );
                 model.legionclient_isChecked(true);
                 console.log("legion expansion client mod loaded : " + loaded );
