@@ -28,30 +28,24 @@
     "died": {
       "audio_cue": "/SE/Death/orbital"
     },
-    "fired0": {
+    "fired": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
-    },
-    "fired1": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
-    },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire_in_orbit"
     }
   },
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "max_health": 3000,
   "mesh_bounds": [
-    23,
-    23,
-    6
+    28.44,
+    26.384,
+    41.841
   ],
   "model": {
     "animations": {
-      "fire": "/pa/units/orbital/defense_satellite/defense_satellite_anim_fire.papa"
+      "idle": "/pa/units/orbital/L_defense_satellite/L_defense_satellite_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/defense_satellite_anim_tree.json",
-    "filename": "/pa/units/orbital/defense_satellite/defense_satellite.papa"
+    "animtree": "/pa/anim/anim_trees/L_defense_satellite_anim_tree.json",
+    "filename": "/pa/units/orbital/L_defense_satellite/L_defense_satellite.papa"
   },
   "physics": {
     "collision_layers": "WL_Orbital",
@@ -87,35 +81,12 @@
   "spawn_layers": "WL_Orbital",
   "tools": [
     {
-      "aim_bone": "bone_turret01",
-      "fire_event": "fired0",
+      "aim_bone": "bone_turret",
       "muzzle_bone": [
-        "socket_muzzle01_a",
-        "socket_muzzle01_b",
-        "socket_muzzle01_c"
+        "socket_muzzle001",
+        "socket_muzzle002"
       ],
-      "record_index": 0,
-      "spec_id": "/pa/units/orbital/defense_satellite/defense_satellite_tool_ground.json"
-    },
-    {
-      "aim_bone": "bone_turret02",
-      "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_muzzle02_right",
-        "socket_muzzle02_left"
-      ],
-      "record_index": 1,
-      "spec_id": "/pa/units/orbital/defense_satellite/defense_satellite_tool_orbital.json"
-    },
-    {
-      "aim_bone": "bone_turret03",
-      "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle03_right",
-        "socket_muzzle03_left"
-      ],
-      "record_index": 2,
-      "spec_id": "/pa/units/orbital/defense_satellite/defense_satellite_tool_orbital.json"
+      "spec_id": "/pa/units/orbital/L_defense_satellite/L_defense_satellite_tool_weapon.json"
     }
   ],
   "unit_types": [

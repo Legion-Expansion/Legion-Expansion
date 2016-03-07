@@ -682,8 +682,8 @@
           ["L_orbital", 14]
         ]
       }, {
-        spec_id: "/pa/units/orbital/sentinel/sentinel.json",
-        si_fallback: ["orbital_probe"],
+        spec_id: "/pa/units/orbital/L_defense_satellite/L_defense_satellite.json",
+        si_fallback: ["defense_satellite"],
         preferred_builds: [
           ["L_orbital_structure", 12]
         ]
