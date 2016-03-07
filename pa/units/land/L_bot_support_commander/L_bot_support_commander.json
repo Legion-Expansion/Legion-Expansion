@@ -37,7 +37,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 7000,
+  "build_metal_cost": 7500,
   "buildable_types": "(Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot) & Custom1",
   "command_caps": [
     "ORDER_Move",
@@ -67,7 +67,7 @@
       "type": "build"
     }
   ],
-  "max_health": 10000,
+  "max_health": 6000,
   "mesh_bounds": [
     9.97,
     10.233,
