@@ -1,6 +1,6 @@
 {
-  "display_name": "Shield- Absorbs incoming fire at the cost of energy.",
-  "description": "Rampart",
+  "description": "Shield- Absorbs incoming fire at the cost of energy.",
+  "display_name": "Rampart",
   "TEMP_texelinfo": 27,
   "area_build_separation": 50,
   "atrophy_cool_down": 0.5,
