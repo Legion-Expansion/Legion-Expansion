@@ -1,6 +1,6 @@
 {
-  "display_name": "Legion Deadweight",
-  "description": "!LOC(units:defense_satellite_heavy_orbital_offensive_and_defensive_platform_with_basic_laser.message):Defense satellite- Heavy orbital offensive and defensive platform with basic laser.",
+  "display_name": "Starcannon",
+  "description": "Orbital Unit Cannon- Fires units below.",
   "TEMP_texelinfo": 36,
   "area_build_separation": 75,
   "area_build_type": "Line",
