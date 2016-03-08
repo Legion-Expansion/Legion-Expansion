@@ -1,6 +1,6 @@
 {
-  "display_name": "Xankar's Mighty Voice",
-  "description": "Experimental Earthquake Tank. Attacks Land.",
+  "display_name": "Tremor",
+  "description": "Seismic Tank- Heavily armored; creates seismic shockwaves. Effective at close range.",
   "TEMP_texelinfo": 9.04444,
   "attachable": {
     "offsets": {

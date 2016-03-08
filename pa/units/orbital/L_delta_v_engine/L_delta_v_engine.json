@@ -1,5 +1,5 @@
 {
-  "display_name": "Legion Shoemaker",
+  "display_name": "Shoemaker",
   "description": "!LOC(units:delta_v_engine_used_to_move_small_to_medium_celestial_bodies.message):Delta V Engine- Used to move small to medium celestial bodies.",
   "TEMP_texelinfo": 77.8386,
   "atrophy_cool_down": 15.0,

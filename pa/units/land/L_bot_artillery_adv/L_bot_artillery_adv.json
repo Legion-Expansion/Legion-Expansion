@@ -1,6 +1,6 @@
 {
-  "display_name": "Monstrosity",
-  "description": "Heavy Mobile Beam Weapon. Medium Range. Attacks Land and Naval.",
+  "display_name": "Obliterator",
+  "description": "Heavy Assault Walker- Virtually unstoppable. Equipped with four heavy machine guns and a heavy plasma projector.",
   "TEMP_texelinfo": 13,
   "attachable": {
     "offsets": {

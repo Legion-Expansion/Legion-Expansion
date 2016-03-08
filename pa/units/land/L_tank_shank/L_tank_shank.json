@@ -1,6 +1,6 @@
 {
-  "display_name": "Shank",
-  "description": "Main Battle Tank. Attacks Land and Naval.",
+  "display_name": "Pounder",
+  "description": "Main Battle Tank- Attacks Land and Naval.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {

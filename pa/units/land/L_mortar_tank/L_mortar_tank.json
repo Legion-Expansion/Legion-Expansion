@@ -1,6 +1,6 @@
 {
-  "display_name": "Stoke",
-  "description": "Amphibious tank.  Equipped with torpedoes and laser cannon",
+  "display_name": "Bandit",
+  "description": "Amphibious Tank- Fast attack tank. Equipped with torpedoes and laser cannon.",
   "TEMP_texelinfo": 9.31488,
   "attachable": {
     "offsets": {

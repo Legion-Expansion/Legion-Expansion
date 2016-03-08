@@ -1,6 +1,6 @@
 {
-  "display_name": "Ennet",
-  "description": "Short range Hover Artillery. Attacks Land and Naval.",
+  "display_name": "Corsair",
+  "description": "Hover Artillery- Medium range. Attacks Land and Naval.",
   "TEMP_texelinfo": 22.4238,
   "armor_type": "AT_Hover",
   "attachable": {
