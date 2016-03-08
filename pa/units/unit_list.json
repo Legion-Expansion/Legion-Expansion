@@ -286,7 +286,6 @@
     "/pa/units/land/L_titan_vehicle/L_titan_vehicle.json",
     "/pa/units/orbital/L_titan_orbital/L_titan_orbital.json",
     "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.json",
-    "/pa/units/orbital/sentinel/sentinel.json",
     "/pa/units/orbital/L_orbital_probe/L_orbital_probe.json",
     "/pa/units/land/L_titan_structure/L_titan_structure.json",
     "/pa/units/land/L_swarm_hive/L_swarm_hive.json",
