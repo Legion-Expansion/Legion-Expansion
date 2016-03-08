@@ -1,6 +1,6 @@
 {
-  "display_name": "Lockheed",
-  "description": "Heavily armored gunship equipped with seeking missiles and a light machine gun.",
+  "display_name": "Eradicator",
+  "description": "Gunship- Heavily armored gunship equipped with seeking missiles and a light machine gun.",
   "audio": {
     "loops": {
       "move": {
