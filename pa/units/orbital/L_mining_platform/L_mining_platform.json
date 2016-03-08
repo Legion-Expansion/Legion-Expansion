@@ -1,5 +1,5 @@
 {
-  "display_name": "Legion Scaffold Jig",
+  "display_name": "Exploiter",
   "description": "!LOC(units:gas_mining_and_metal_creation_satellite_only_works_above_gas_giant_planets.message):Gas mining and metal creation satellite. Only works above gas giant planets.",
   "TEMP_texelinfo": 48,
   "area_build_separation": 100,
