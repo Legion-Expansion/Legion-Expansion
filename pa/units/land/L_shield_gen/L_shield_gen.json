@@ -1,6 +1,6 @@
 {
-  "display_name": "Legion Shield. Deflects Tactical Missiles and Seeking Projectiles.",
-  "description": "Shield Defense",
+  "display_name": "Shield- Absorbs incoming fire at the cost of energy.",
+  "description": "Rampart",
   "TEMP_texelinfo": 27,
   "area_build_separation": 50,
   "atrophy_cool_down": 0.5,
