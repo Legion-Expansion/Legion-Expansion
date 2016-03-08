@@ -1,6 +1,6 @@
 {
-  "display_name": "Aggressor",
-  "description": "Orbital Fighter- Heavy assault unit.",
+  "display_name": "XMB",
+  "description": "Xankar",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -28,16 +28,16 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/orbital/L_orbital_fighter/muzzle_flash.pfx socket_muzzle"
     }
   },
   "fx_offsets": [
     {
       "bone": "bone_body",
-      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "filename": "/pa/units/orbital/L_orbital_fighter/thrusters.pfx",
       "offset": [
         0,
-        8.9,
+        2,
         0
       ],
       "orientation": [
@@ -45,7 +45,7 @@
         0,
         0
       ],
-      "type": "moving"
+      "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
