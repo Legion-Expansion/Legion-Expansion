@@ -5,7 +5,7 @@
   "firing_arc_pitch": 180,
   "firing_arc_yaw": 180,
   "manual_fire": true,
-  "max_range": 30,
+  "max_range": 5,
   "pitch_range": 0,
   "pitch_rate": 0,
   "rate_of_fire": 1,

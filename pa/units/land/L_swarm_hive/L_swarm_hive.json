@@ -1,7 +1,7 @@
 {
   "display_name": "Swarmer",
   "description": "Anti-land defense. Deploys swarms of weak nanobots.",
-  "TEMP_texelinfo": 9.4493,
+  "TEMP_texelinfo": 29.412345,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 5,

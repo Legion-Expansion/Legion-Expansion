@@ -223,7 +223,6 @@
     "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv.json",
     "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.json",
     "/pa/units/orbital/solar_array/solar_array.json",
-    "/pa/units/orbital/L_solar_array/L_solar_array.json",
     "/pa/units/sea/attack_sub/attack_sub.json",
     "/pa/units/sea/L_attack_sub/L_attack_sub.json",
     "/pa/units/sea/base_ship/base_ship.json",

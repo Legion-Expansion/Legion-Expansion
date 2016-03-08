@@ -21,7 +21,8 @@
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
-    "ORDER_Assist"
+    "ORDER_Assist",
+	"ORDER_Attack"
   ],
   "consumption": {
     "energy": 9000
@@ -36,7 +37,7 @@
       "effect_scale": 1.5
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/air/bomber_fire"
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
     }
   },
   "fx_offsets": [
