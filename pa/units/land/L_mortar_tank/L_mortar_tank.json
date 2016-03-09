@@ -50,7 +50,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 10,
   "influence_radius": 400,
-  "max_health": 250,
+  "max_health": 225,
   "mesh_bounds": [
     5,
     7,
@@ -83,7 +83,7 @@
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 100,
           "shape": "capsule"
         }
       ]
