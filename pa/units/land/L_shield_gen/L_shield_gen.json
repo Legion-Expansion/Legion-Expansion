@@ -18,6 +18,10 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
     },
+	"fired": {
+		"audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+		"effect_spec": "/pa/units/land/L_shield_gen/shield_hit.pfx bone_void"
+	},	
     "died": {
       "audio_cue": "/SE/Death/barrier",
       "effect_scale": 1.25,

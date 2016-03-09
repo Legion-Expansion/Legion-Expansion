@@ -29,20 +29,12 @@
   },
   "fx_offsets": [
     {
-      "filename": "/pa/units/land/L_bot_artillery/trail.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "bone": "bone_root",
       "filename": "/pa/units/land/L_bot_artillery/exp.pfx",
       "offset": [
         0,
         0,
-        5
+        0
       ],
       "type": "idle"
     }
