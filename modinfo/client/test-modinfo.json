@@ -16,6 +16,11 @@
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
   "icon": "http://i.imgur.com/SsUYiL8.png",
   "identifier": "com.pa.legion-expansion.client-test",
+  "scenes": {
+    "server_browser": [
+      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
+    ]
+  },
   "priority": 100,
   "signature": "(not yet implemented)",
   "version": "0.5"
