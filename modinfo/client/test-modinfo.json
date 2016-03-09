@@ -12,6 +12,11 @@
   "enabled": true,
   "forum": "",
   "identifier": "com.pa.monty-client",
+  "scenes": {
+    "server_browser": [
+      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
+    ]
+  },
   "priority": 100,
   "signature": "(not yet implemented)",
   "version": "0.5.0"
