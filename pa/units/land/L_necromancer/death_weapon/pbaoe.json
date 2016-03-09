@@ -5,19 +5,19 @@
   },
   "burn_damage": 200,
   "burn_radius": 137,
-  "damage": 600,
+  "damage": 10000,
   "damage_volume": {
     "burnable_remove_radius": 100.0,
     "delay": 1.5,
-    "initial_radius": 15.0,
+    "initial_radius": 9.5,
     "radius_accel": -35.0,
-    "radius_velocity": 180.0
+    "radius_velocity": 350.0
   },
-  "full_damage_splash_radius": 10,
+  "full_damage_splash_radius": 20,
   "impact_decals": [
     "/pa/effects/specs/nuke_scorch_01.json"
   ],
   "sim_fire_effect": "/pa/units/land/L_necromancer/death_weapon/necromancer_explosion.json",
   "splash_damages_allies": true,
-  "splash_radius": 100
+  "splash_radius": 80
 }

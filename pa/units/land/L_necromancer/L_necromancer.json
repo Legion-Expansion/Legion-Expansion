@@ -45,7 +45,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 1250,
+  "max_health": 3000,
   "mesh_bounds": [
     8.05,
     6.214,
@@ -65,7 +65,7 @@
     "acceleration": 80,
     "brake": 80,
     "group_preference": "back",
-    "move_speed": 10,
+    "move_speed": 12,
     "turn_speed": 240,
     "type": "land-small"
   },
