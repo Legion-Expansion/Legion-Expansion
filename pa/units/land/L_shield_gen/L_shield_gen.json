@@ -1,6 +1,6 @@
 {
-  "description": "Shield- Absorbs incoming fire at the cost of energy.",
   "display_name": "Rampart",
+  "description": "Shield- Absorbs incoming fire at the cost of energy.",
   "TEMP_texelinfo": 27,
   "area_build_separation": 50,
   "atrophy_cool_down": 0.5,
@@ -18,14 +18,14 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
     },
-	"fired": {
-		"audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
-		"effect_spec": "/pa/units/land/L_shield_gen/shield_hit.pfx bone_void"
-	},	
     "died": {
       "audio_cue": "/SE/Death/barrier",
       "effect_scale": 1.25,
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_spec": "/pa/units/land/L_shield_gen/shield_hit.pfx bone_void"
     }
   },
   "fx_offsets": [

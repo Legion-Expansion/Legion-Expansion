@@ -23,67 +23,83 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
-	  "effect_spec": "/pa/units/orbital/L_orbital_dropper/beam.pfx socket_muzzle /pa/units/orbital/L_orbital_dropper/ground.pfx bone_root"
+      "effect_spec": "/pa/units/orbital/L_orbital_dropper/beam.pfx socket_muzzle /pa/units/orbital/L_orbital_dropper/ground.pfx bone_root"
     }
   },
   "factory": {
     "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+    "hide_deploy_projectile": true,
+    "hide_stored_units": true,
+    "pass_on_orders": false,
     "spawn_points": [
-      "bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build","bone_build"],
-		"store_units": true,
-		"pass_on_orders": false,
-		"hide_deploy_projectile": true,
-		"hide_stored_units": true
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build"
+    ],
+    "store_units": true
   },
   "factory_cooldown_time": 3.0,
+  "fx_offsets": [
+    {
+      "bone": "bone_laser001",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser002",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser003",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser004",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser005",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser006",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    }
+  ],
   "max_health": 3000,
   "mesh_bounds": [
     75.576,
     85.687,
     79.187
   ],
-	"fx_offsets": [{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser001"
-	},{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser002"
-	},{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser003"
-	},
-{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser004"
-	},
-{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser005"
-	},
-{
-		"type": "build",
-		"filename": "/pa/effects/specs/legion_factory_spray.pfx",
-		"bone": "bone_laser006"
-	}],
   "model": {
-		"animations": {
-			"start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa",
-			"build": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build.papa",
-			"end": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_end.papa"
-		},
+    "animations": {
+      "build": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build.papa",
+      "end": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_end.papa",
+      "start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa"
+    },
     "animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
   },
-	"physics": {
-		"radius": 20,
-		"collision_layers": "WL_Orbital",
-		"ignore_gravity": true
-	},
+  "physics": {
+    "collision_layers": "WL_Orbital",
+    "ignore_gravity": true,
+    "radius": 20
+  },
   "placement_size": [
     50,
     50

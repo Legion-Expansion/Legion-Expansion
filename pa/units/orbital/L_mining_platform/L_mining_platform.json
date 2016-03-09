@@ -32,16 +32,18 @@
       "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
     }
   },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/orbital/L_mining_platform/top_light.pfx",
+      "type": "idle"
+    }
+  ],
   "max_health": 500,
   "mesh_bounds": [
     118.558,
     118.558,
     54.449
   ],
-	"fx_offsets": [{
-		"type": "idle",
-		"filename": "/pa/units/orbital/L_mining_platform/top_light.pfx"
-	}],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/L_mining_platform/L_mining_platform_idle.papa"

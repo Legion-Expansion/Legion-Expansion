@@ -27,7 +27,6 @@
     "ORDER_Use"
   ],
   "energy_efficiency_requirement": 1,
-  "flip_drag_orientation": true,  
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
@@ -45,6 +44,7 @@
       "effect_spec": "/pa/effects/specs/default_explosion.pfx bone_root"
     }
   },
+  "flip_drag_orientation": true,
   "fx_offsets": [
     {
       "bone": "socket_entry",

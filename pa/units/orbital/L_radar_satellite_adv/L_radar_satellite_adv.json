@@ -22,7 +22,7 @@
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Assist",
-	"ORDER_Attack"
+    "ORDER_Attack"
   ],
   "consumption": {
     "energy": 9000
