@@ -102,6 +102,9 @@
     "LegionDefenseAdvancedArtillery": {
       "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long.json"
     },
+    "LegionDefenseAdvancedEngine": {
+      "spec_id": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json"
+    },
     "LegionDefenseAdvancedLand": {
       "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
     },
@@ -141,6 +144,9 @@
     "LegionDefenseBasicOrbital": {
       "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense.json"
     },
+    "LegionDefenseBasicOrbitalII": {
+      "spec_id": "/pa/units/orbital/L_defense_satellite/L_defense_satellite.json"
+    },
     "LegionDefenseBasicSwarm": {
       "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive.json"
     },
@@ -149,6 +155,9 @@
     },
     "LegionEcoAdvancedMetalExtractor": {
       "spec_id": "/pa/units/land/L_mex_adv/L_mex_adv.json"
+    },
+    "LegionEcoAdvancedMine": {
+      "spec_id": "/pa/units/orbital/L_mining_platform/L_mining_platform.json"
     },
     "LegionEcoBasicEnergyPlant": {
       "spec_id": "/pa/units/land/L_energy_plant/L_energy_plant.json"
@@ -224,6 +233,33 @@
     },
     "LegionNavalBasicSub": {
       "spec_id": "/pa/units/sea/L_attack_sub/L_attack_sub.json"
+    },
+    "LegionOrbitalAdvancedBattleship": {
+      "spec_id": "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship.json"
+    },
+    "LegionOrbitalAdvancedCannon": {
+      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.json"
+    },
+    "LegionOrbitalAdvancedLaser": {
+      "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.json"
+    },
+    "LegionOrbitalAdvancedRadar": {
+      "spec_id": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.json"
+    },
+    "LegionOrbitalAdvancedSniper": {
+      "spec_id": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.json"
+    },
+    "LegionOrbitalBasicFighter": {
+      "spec_id": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.json"
+    },
+    "LegionOrbitalBasicRadar": {
+      "spec_id": "/pa/units/orbital/L_radar_satellite/L_radar_satellite.json"
+    },
+    "LegionOrbitalBasicScout": {
+      "spec_id": "/pa/units/orbital/L_orbital_probe/L_orbital_probe.json"
+    },
+    "LegionOrbitalBasicTransport": {
+      "spec_id": "/pa/units/orbital/L_orbital_lander/L_orbital_lander.json"
     },
     "LegionStructureBasicTeleporter": {
       "spec_id": "/pa/units/land/L_teleporter/L_teleporter.json"
