@@ -59,7 +59,7 @@
     },
     "animtree": "/pa/anim/anim_trees/L_necromancer_anim_tree.json",
     "filename": "/pa/units/land/L_necromancer/L_necromancer.papa",
-    "walk_speed": 3.4
+    "walk_speed": 3
   },
   "navigation": {
     "acceleration": 80,

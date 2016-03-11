@@ -9,6 +9,6 @@
   "target_layers": [
     "WL_Orbital"
   ],
-  "yaw_range": 100,
-  "yaw_rate": 720
+  "yaw_range": 180,
+  "yaw_rate": 120
 }
