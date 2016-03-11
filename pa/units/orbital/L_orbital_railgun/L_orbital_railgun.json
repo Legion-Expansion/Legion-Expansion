@@ -25,12 +25,10 @@
     },
     "died": {
       "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 2.5,
-      "effect_spec": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_death.pfx"
+      "effect_scale": 2.5
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-      "effect_spec": "/pa/units/orbital/L_orbital_railgun/vents.pfx bone_root /pa/units/orbital/L_orbital_railgun/fire.pfx bone_root"
+      "audio_cue": "/SE/Weapons/structure/artillery_long_fire"
     }
   },
   "fx_offsets": [
