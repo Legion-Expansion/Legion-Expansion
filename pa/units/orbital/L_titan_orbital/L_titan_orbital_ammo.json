@@ -1,1 +1,10 @@
-{"base_spec":"/pa/ammo/base_beam/base_beam.json","damage":1250,"splash_damage":1250,"splash_radius":20,"full_damage_splash_radius":3,"collision_check":"target","fx_beam_spec":"/pa/units/orbital/orbital_laser/orbital_laser_ammo_beam.pfx","fx_collision_spec":"/pa/units/orbital/orbital_laser/orbital_laser_ammo_beam_hit.pfx"}
+{
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "target",
+  "damage": 1250,
+  "full_damage_splash_radius": 3,
+  "fx_beam_spec": "/pa/units/orbital/orbital_laser/orbital_laser_ammo_beam.pfx",
+  "fx_collision_spec": "/pa/units/orbital/orbital_laser/orbital_laser_ammo_beam_hit.pfx",
+  "splash_damage": 1250,
+  "splash_radius": 20
+}
