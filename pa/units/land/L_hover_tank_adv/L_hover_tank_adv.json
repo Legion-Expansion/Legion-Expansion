@@ -50,7 +50,7 @@
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
         -2.86,
-        -1.9,
+        -4,
         0.96
       ],
       "orientation": [
@@ -65,7 +65,7 @@
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
         2.86,
-        -1.9,
+        -4,
         0.96
       ],
       "orientation": [
@@ -79,9 +79,9 @@
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
-        2.13,
-        2.14,
-        2.22
+        3,
+        3.56,
+        0.96
       ],
       "orientation": [
         0,
@@ -94,9 +94,9 @@
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
       "offset": [
-        -2.13,
-        2.14,
-        2.22
+        -3,
+        3.56,
+        0.96
       ],
       "orientation": [
         0,
