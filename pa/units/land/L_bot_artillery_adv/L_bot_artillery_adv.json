@@ -1,5 +1,5 @@
 {
-  "display_name": "Obliterator",
+  "display_name": "Monstrosity",
   "description": "Heavy Assault Walker- Virtually unstoppable. Equipped with four heavy machine guns and a heavy plasma projector.",
   "TEMP_texelinfo": 13,
   "attachable": {
@@ -41,7 +41,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/artillery_muzzle_ground.pfx bone_root"
+      "effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/units/land/L_bot_artillery_adv/ground_smoke.pfx bone_root"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
