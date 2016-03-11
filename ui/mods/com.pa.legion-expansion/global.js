@@ -742,7 +742,7 @@
           ["L_factory", 4]
         ]
       }, {
-        spec_id: "/pa/units/orbital/L_titan_orbital/l_titan_orbital.json",
+        spec_id: "/pa/units/orbital/L_titan_orbital/L_titan_orbital.json",
         si_fallback: ["titan_orbital"],
         preferred_builds: [
           ["L_orbital_structure", 6]
