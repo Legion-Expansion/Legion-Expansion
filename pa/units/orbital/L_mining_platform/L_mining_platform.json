@@ -36,6 +36,10 @@
     {
       "filename": "/pa/units/orbital/L_mining_platform/top_light.pfx",
       "type": "idle"
+    },
+    {
+      "filename": "/pa/units/orbital/L_mining_platform/main_effect.pfx",
+      "type": "idle"
     }
   ],
   "max_health": 500,
