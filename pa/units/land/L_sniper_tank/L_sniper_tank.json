@@ -40,7 +40,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
+      "effect_spec": "/pa/units/land/L_sniper_tank/muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
     }
   },
   "fx_offsets": [
