@@ -3,7 +3,8 @@ var legionExpansionLoaded;
 
 if ( ! legionExpansionLoaded )
 {
-
+    $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion &nbsp <span>ALPHA</span></div>");
+    
     legionExpansionLoaded = true;
 
     function legionExpansion()
@@ -16,11 +17,13 @@ if ( ! legionExpansionLoaded )
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
         
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_options_bar.css");
+        
 
+        
         handlers.legionui = function(payload){
             console.log("SET UI : " + payload);
             //temporary watermark
-           $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion &nbsp <span>ALPHA</span></div>");
+
 
             if(payload === "legion"){
                 $('.body_panel').addClass("legionui");
