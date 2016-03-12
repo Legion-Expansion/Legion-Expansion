@@ -4,8 +4,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/cannon_uber",
-      "effect_spec": "/pa/effects/specs/uber_proj_explosion_legion.pfx",
-	  "effect_scale": 0.75
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/effects/specs/uber_proj_explosion_legion.pfx"
     }
   },
   "fx_trail": {
