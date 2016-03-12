@@ -90,7 +90,7 @@
         spec_id: "/pa/units/land/L_flame_turret/L_flame_turret.json",
         si_fallback: ["laser_defense_adv"],
         preferred_builds: [
-          ["L_combat", 0]
+          ["L_combat", 3]
         ]
       }, {
         spec_id: "/pa/units/land/L_artillery_long/L_artillery_long.json",
@@ -102,7 +102,7 @@
         spec_id: "/pa/units/land/L_rocket_barrage/L_rocket_barrage.json",
         si_fallback: ["tactical_missile_launcher"],
         preferred_builds: [
-            ["L_combat", 3]
+            ["L_combat", 0]
           ] // catapult
       }, {
         spec_id: "/pa/units/land/L_nuke_launcher/L_nuke_launcher.json",
