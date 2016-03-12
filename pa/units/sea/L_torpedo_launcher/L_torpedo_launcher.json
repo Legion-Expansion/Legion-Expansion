@@ -69,14 +69,14 @@
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_turretMain",
       "fire_event": "fired0",
       "muzzle_bone": [
-        "bone_push",
-        "gun02",
-        "gun03",
-        "gun04",
-        "gun05"
+        "gun001",
+        "gun002",
+        "gun003",
+        "gun004",
+        "gun005"
       ],
       "projectiles_per_fire": 5,
       "record_index": 0,
