@@ -40,13 +40,9 @@
       "effect_scale": 1.0,
       "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx"
     },
-    "disabled": {
-      "audio_cue": "/SE/Buildings/teleporter_disabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx bone_root"
-    },
-    "enabled": {
-      "audio_cue": "/SE/Buildings/teleporter_enabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx bone_root"
+    "fired": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
+      "effect_spec": "/pa/units/orbital/L_titan_orbital/beam.pfx bone_megaLaser"
     }
   },
   "fx_offsets": [
@@ -198,7 +194,7 @@
     "brake": 25,
     "hover_time": -1.0,
     "move_speed": 25,
-    "turn_speed": 90,
+    "turn_speed": 45,
     "type": "orbital"
   },
   "physics": {
@@ -245,10 +241,9 @@
   "tools": [
     {
       "aim_bone": "bone_megaLaser",
-      "muzzle_bone": [
-        "bone_megaLaser"
-      ],
-      "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json"
+      "muzzle_bone": "bone_megaLaser",
+      "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json",
+	  "show_range": true
     }
   ],
   "unit_types": [

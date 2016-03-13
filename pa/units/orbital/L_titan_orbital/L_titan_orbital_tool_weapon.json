@@ -2,26 +2,18 @@
   "ammo_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_ammo.json",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
-  "carpet_fire": false,
-  "firing_arc_pitch": 90,
-  "firing_arc_yaw": 90,
-  "max_range": 30,
-  "pitch_range": 360,
-  "pitch_rate": 10,
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "force_fire_from_muzzle": true,
+  "manual_fire": false,
+  "max_range": 70,
+  "pitch_range": 0,
+  "pitch_rate": 0,
   "rate_of_fire": 6,
   "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface",
-    "WL_Seafloor",
-    "WL_Air"
+    "WL_LandHorizontal"
   ],
-  "target_priorities": [
-    "Structure - Wall",
-    "Land - Wall",
-    "Naval",
-    "Wall",
-    "Air"
-  ],
-  "yaw_range": 360,
-  "yaw_rate": 10
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 0,
+  "yaw_rate": 0
 }
