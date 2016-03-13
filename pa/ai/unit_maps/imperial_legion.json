@@ -9,8 +9,23 @@
     "AnyLegionFactoryAdvanced": {
       "unit_types": "(Factory & Advanced) & Custom1"
     },
+    "AnyLegionFactoryAir": {
+      "unit_types": "(Factory & Air) & Custom1"
+    },
     "AnyLegionFactoryBasic": {
       "unit_types": "(Factory & Basic) & Custom1"
+    },
+    "AnyLegionFactoryBot": {
+      "unit_types": "(Factory & Bot) & Custom1"
+    },
+    "AnyLegionFactoryNaval": {
+      "unit_types": "(Factory & Naval) & Custom1"
+    },
+    "AnyLegionFactoryOrbital": {
+      "unit_types": "(Factory & Orbital) & Custom1"
+    },
+    "AnyLegionFactoryVehicle": {
+      "unit_types": "(Factory & Tank) & Custom1"
     },
     "LegionAirAdvancedBomber": {
       "spec_id": "/pa/units/air/L_firestarter/L_firestarter.json"
