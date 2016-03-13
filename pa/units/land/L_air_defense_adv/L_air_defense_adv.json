@@ -18,25 +18,13 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.5
     },
-    "fired0": {
+    "fired": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket005"
-    },
-    "fired1": {
-      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket006"
-    },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket007"
-    },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/L_rocket_barrage/back_smoke.pfx rocket008"
+      "effect_spec": "/pa/units/land/L_air_defense_adv/launch_smoke.pfx rocket005 /pa/units/land/L_air_defense_adv/launch_smoke.pfx rocket006 /pa/units/land/L_air_defense_adv/launch_smoke.pfx rocket007 /pa/units/land/L_air_defense_adv/launch_smoke.pfx rocket008"
     }
   },
   "guard_layer": "WL_Air",
-  "max_health": 2000,
+  "max_health": 3000,
   "mesh_bounds": [
     16.6,
     16.6,
@@ -81,26 +69,14 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "fire_event": "fired0",
-      "muzzle_bone": "rocket001",
-      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch",
-      "fire_event": "fired1",
-      "muzzle_bone": "rocket002",
-      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch",
-      "fire_event": "fired2",
-      "muzzle_bone": "rocket003",
-      "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_pitch",
-      "fire_event": "fired3",
-      "muzzle_bone": "rocket004",
+      "fire_event": "fired",
+      "muzzle_bone": [
+        "rocket001",
+        "rocket002",
+        "rocket003",
+        "rocket004"
+      ],
+      "projectiles_per_fire": 4,
       "spec_id": "/pa/units/land/L_air_defense_adv/L_air_defense_adv_tool_weapon.json"
     }
   ],

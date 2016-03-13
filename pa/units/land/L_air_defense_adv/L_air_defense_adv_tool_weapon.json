@@ -6,9 +6,9 @@
   "firing_arc_pitch": 10,
   "firing_arc_yaw": 10,
   "firing_standard_deviation": 25,
-  "max_range": 240,
+  "max_range": 120,
   "pitch_range": 180,
-  "pitch_rate": 70,
+  "pitch_rate": 3600,
   "rate_of_fire": 1,
   "spread_fire": true,
   "target_layers": [
@@ -21,5 +21,5 @@
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
-  "yaw_rate": 70
+  "yaw_rate": 3600
 }
