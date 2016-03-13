@@ -335,27 +335,6 @@
             ["L_vehicle", 17]
           ] // spinner
       },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 18]
-          ] // chain lightning 1
-      },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain2.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 19]
-          ] // chain lightning 2
-      },
-	  {
-        spec_id: "/pa/units/land/L_tank_swarm/chain/chain3.json",
-        si_fallback: ["tank_heavy_mortar"],
-        preferred_builds: [
-            ["L_vehicle", 20]
-          ] // chain lightning 3
-      },
 
 
       {
@@ -440,16 +419,10 @@
       },
 	  {
         spec_id: "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode.json",
-        si_fallback: ["land_scout"],
-        preferred_builds: [
-            ["L_bot", 18]
-          ] // scout_radar_mode
+        si_fallback: ["land_scout"]
       }, {
         spec_id: "/pa/units/land/L_necromancer/minion/minion.json",
-        si_fallback: ["bot_bomb"],
-        preferred_builds: [
-          ["L_bot", 19]
-        ] // necromancer boombot
+        si_fallback: ["bot_bomb"]
       }, 
 
 
