@@ -249,6 +249,9 @@
     "LegionOrbitalAdvancedSniper": {
       "spec_id": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.json"
     },
+    "LegionOrbitalBasicFabber": {
+      "spec_id": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.json"
+    },
     "LegionOrbitalBasicFighter": {
       "spec_id": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.json"
     },
