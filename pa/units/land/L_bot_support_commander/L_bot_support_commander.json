@@ -1,6 +1,6 @@
 {
   "display_name": "Shredder",
-  "description": "Auxiliary Commander. High Health and a Strong Attack - Can Build Structures.",
+  "description": "Auxiliary Commander. Can Build Structures.",
   "TEMP_texelinfo": 25,
   "armor_type": "AT_Commander",
   "attachable": {
@@ -37,7 +37,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 7500,
+  "build_metal_cost": 7000,
   "buildable_types": "(Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot) & Custom1",
   "command_caps": [
     "ORDER_Move",
@@ -57,7 +57,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/small_gun_smoke.pfx socket_rightMuzzle"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_recoil /pa/effects/specs/small_gun_smoke.pfx bone_recoil"
     }
   },
   "fx_offsets": [
@@ -67,7 +67,7 @@
       "type": "build"
     }
   ],
-  "max_health": 6000,
+  "max_health": 10000,
   "mesh_bounds": [
     9.97,
     10.233,
