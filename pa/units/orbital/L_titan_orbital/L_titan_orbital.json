@@ -242,8 +242,8 @@
     {
       "aim_bone": "bone_megaLaser",
       "muzzle_bone": "bone_megaLaser",
-      "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json",
-	  "show_range": true
+      "show_range": true,
+      "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -1,79 +1,82 @@
 {
-	"ammo_type": "AMMO_Projectile",
-	"attachable": {
-		"default_attach_bone": "bone_root",
-		"offsets": {
-			"root": [
-				0,
-				0,
-				0
-			]
-		}
-	},
-	"collision_check": "ground",
-	"damage": 100,
-	"events": {
-		"collided": {
-			"audio_cue": "/SE/Impacts/missile_seeking",
-			"effect_scale": 0.5,
-			"effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx",
-			"effect_world_aligned": false
-		},
-		"died": {
-			"audio_cue": "",
-			"effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
-		}
-	},
-	"flight_type": "Staged",
-	"ground_target_area_spread": 0,
-	"influence_radius": 400,
-	"initial_velocity": 0,
-	"lifetime": 7,
-	"max_velocity": 0,
-	"model": {
-		"filename": ""
-	},
-	"physics": {
-		"add_to_spatial_db": true,
-		"allow_underground": true,
-		"gravity_scalar": 3,
-		"ignore_gravity": true,
-		"layer": "orbital",
-		"radius": 10
-	},
-	"recon": {
-		"observable": {
-			"ignore_radar": false
-		}
-	},
-	"damage_volume": {
-		"burnable_remove_radius": 100,
-		"delay": 0,
-		"initial_radius": 20,
-		"radius_accel": -40,
-		"radius_velocity": 200
-	},
-	"burn_damage": 200,
-	"burn_radius": 137,
-	"full_damage_splash_radius": 40,
-	"splash_damage": 20,
-	"splash_damage_orbital": false,
-	"splash_damages_allies": false,
-	"splash_radius": 150,
-	"show_in_orbital_layer": false,
-	"show_strategic_icon": false,
-	"stages": [{
-		"apply_thrust": false,
-		"ignores_LOS": false,
-		"ignores_gravity": false,
-		"rotates_to_velocity": true,
-		"stage_duration": 1000
-	}, {
-		"apply_thrust": false,
-		"ignores_LOS": false,
-		"ignores_gravity": false,
-		"rotates_to_velocity": false,
-		"stage_duration": 0
-	}],
-	"turn_rate": 1000
+  "ammo_type": "AMMO_Projectile",
+  "attachable": {
+    "default_attach_bone": "bone_root",
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "burn_damage": 200,
+  "burn_radius": 137,
+  "collision_check": "ground",
+  "damage": 100,
+  "damage_volume": {
+    "burnable_remove_radius": 100,
+    "delay": 0,
+    "initial_radius": 20,
+    "radius_accel": -40,
+    "radius_velocity": 200
+  },
+  "events": {
+    "collided": {
+      "audio_cue": "/SE/Impacts/missile_seeking",
+      "effect_scale": 0.5,
+      "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx",
+      "effect_world_aligned": false
+    },
+    "died": {
+      "audio_cue": "",
+      "effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
+    }
+  },
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 40,
+  "ground_target_area_spread": 0,
+  "influence_radius": 400,
+  "initial_velocity": 0,
+  "lifetime": 7,
+  "max_velocity": 0,
+  "model": {
+    "filename": ""
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "ignore_gravity": true,
+    "layer": "orbital",
+    "radius": 10
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": false
+    }
+  },
+  "show_in_orbital_layer": false,
+  "show_strategic_icon": false,
+  "splash_damage": 20,
+  "splash_damage_orbital": false,
+  "splash_damages_allies": false,
+  "splash_radius": 150,
+  "stages": [
+    {
+      "apply_thrust": false,
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 1000
+    },
+    {
+      "apply_thrust": false,
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": false,
+      "stage_duration": 0
+    }
+  ],
+  "turn_rate": 1000
 }
