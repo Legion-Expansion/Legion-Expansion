@@ -1,7 +1,7 @@
 {
   "display_name": "Advanced Ship Foundry",
   "description": "Advanced Manufacturing- Builds Legion Naval Units.",
-  "TEMP_texelinfo": 69.307,
+  "TEMP_texelinfo": 67.307,
   "area_build_separation": 5,
   "atrophy_cool_down": 15,
   "atrophy_rate": 80,
