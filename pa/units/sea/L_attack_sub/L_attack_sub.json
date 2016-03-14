@@ -75,6 +75,10 @@
     "underwater": true
   },
   "recon": {
+    "observable": {
+      "ignore_radar": true,
+      "layer": "underwater"
+    },
     "observer": {
       "items": [
         {
@@ -86,7 +90,7 @@
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 75,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
