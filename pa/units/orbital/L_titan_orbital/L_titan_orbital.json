@@ -178,9 +178,9 @@
   ],
   "max_health": 13000,
   "mesh_bounds": [
-    85,
-    85,
-    20
+    116.1,
+    133.2,
+    144.328
   ],
   "model": {
     "animations": {
