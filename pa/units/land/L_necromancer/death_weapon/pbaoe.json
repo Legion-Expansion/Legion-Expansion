@@ -5,7 +5,7 @@
   },
   "burn_damage": 200,
   "burn_radius": 137,
-  "damage": 10000,
+  "damage": 3000,
   "damage_volume": {
     "burnable_remove_radius": 100.0,
     "delay": 1.5,
@@ -13,7 +13,7 @@
     "radius_accel": -35.0,
     "radius_velocity": 350.0
   },
-  "full_damage_splash_radius": 20,
+  "full_damage_splash_radius": 10,
   "impact_decals": [
     "/pa/effects/specs/nuke_scorch_01.json"
   ],

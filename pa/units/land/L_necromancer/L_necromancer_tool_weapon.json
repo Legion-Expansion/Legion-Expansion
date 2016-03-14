@@ -1,8 +1,8 @@
 {
-  "ammo_capacity": 560,
-  "ammo_demand": 40,
+  "ammo_capacity": 210,
+  "ammo_demand": 30,
   "ammo_id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
-  "ammo_per_shot": 80,
+  "ammo_per_shot": 210,
   "ammo_source": "metal",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
@@ -18,9 +18,9 @@
   "max_range": 180,
   "pitch_range": 180,
   "pitch_rate": 3600,
-  "rate_of_fire": 2,
+  "rate_of_fire": 1,
   "spread_fire": true,
-  "start_fully_charged": false,
+  "start_fully_charged": true,
   "target_layers": [
     "WL_LandHorizontal"
   ],
