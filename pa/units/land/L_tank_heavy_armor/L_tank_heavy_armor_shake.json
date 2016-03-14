@@ -1,4 +1,12 @@
 {
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
   "spawn_response": {
     "camera_shake": {
       "duration": 2.2,
@@ -26,17 +34,17 @@
             0.06
           ],
           [
-            4.0,
+            1.5,
             0.03
           ],
           [
-            6.0,
+            2.2,
             0
           ]
         ],
         "stepped": false
       },
-      "max_falloff_dist": 1900.0,
+      "max_falloff_dist": 1500.0,
       "min_falloff_dist": 300.0,
       "width": {
         "keys": [
