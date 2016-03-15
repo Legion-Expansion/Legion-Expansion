@@ -9,7 +9,7 @@
   "min_firing_velocity": 230,
   "pitch_range": 60,
   "pitch_rate": 360,
-  "rate_of_fire": 4,
+  "rate_of_fire": 3,
   "spread_fire": true,
   "target_layers": [
     "WL_Air"

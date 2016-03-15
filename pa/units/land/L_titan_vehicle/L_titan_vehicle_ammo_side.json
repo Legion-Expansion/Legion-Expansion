@@ -12,7 +12,7 @@
   },
   "base_spec": "/pa/ammo/base_missiles/base_missile_tactical.json",
   "cruise_height": 20,
-  "damage": 100,
+  "damage": 40,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
@@ -20,7 +20,7 @@
     }
   },
   "flight_type": "Staged",
-  "full_damage_splash_radius": 1,
+  "full_damage_splash_radius": 25,
   "fx_trail": {
     "filename": "/pa/effects/specs/shell_proj_trail.pfx",
     "offset": [
@@ -42,7 +42,7 @@
     "gravity_scalar": 1,
     "radius": 10
   },
-  "splash_damage": 50,
+  "splash_damage": 40,
   "splash_radius": 25,
   "stages": [
     {

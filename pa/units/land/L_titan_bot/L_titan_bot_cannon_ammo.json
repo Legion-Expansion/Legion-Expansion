@@ -1,7 +1,7 @@
 {
   "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 750,
+  "damage": 700,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",

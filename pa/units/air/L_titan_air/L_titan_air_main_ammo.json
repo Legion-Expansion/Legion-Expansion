@@ -1,7 +1,10 @@
 {
+  "armor_damage_map": {
+    "AT_Air": 0.75
+  },
   "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
-  "damage": 600,
+  "damage": 800,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
