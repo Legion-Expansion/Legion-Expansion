@@ -30,7 +30,7 @@
     {
       "child": {
         "rotation_axis": "x",
-        "rotation_bone": "bone_turret",
+        "rotation_bone": "bone_pitch",
         "type": "procedural_aim"
       },
       "lerp_func": "is_active",
@@ -38,13 +38,13 @@
     },
     {
       "bone": "bone_recoilLeft",
-      "recoil_dist": 0.95,
+      "recoil_dist": 1.5,
       "restore_time": 0.5,
       "type": "recoil"
     },
     {
       "bone": "bone_recoilRight",
-      "recoil_dist": 0.95,
+      "recoil_dist": 1.5,
       "restore_time": 0.5,
       "type": "recoil"
     }
