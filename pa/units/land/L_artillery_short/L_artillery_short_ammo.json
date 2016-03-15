@@ -5,7 +5,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
-      "effect_spec": "/pa/units/land/L_artillery_short/proj_exp.pfx"
+      "effect_spec": "/pa/units/land/L_artillery_short/proj_exp.pfx",
+	  "effect_scale": 0.65		  
     }
   },
   "full_damage_splash_radius": 5,
