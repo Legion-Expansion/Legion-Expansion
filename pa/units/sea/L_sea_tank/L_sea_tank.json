@@ -105,7 +105,7 @@
         "socket_muzzle003",
         "socket_muzzle004"
       ],
-      "projectiles_per_fire": 2,
+      "projectiles_per_fire": 4,
       "record_index": 0,
       "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
     },
@@ -118,7 +118,7 @@
         "socket_muzzle007",
         "socket_muzzle008"
       ],
-      "projectiles_per_fire": 2,
+      "projectiles_per_fire": 4,
       "record_index": 1,
       "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
     },
