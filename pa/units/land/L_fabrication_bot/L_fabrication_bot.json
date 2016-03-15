@@ -39,7 +39,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 210,
   "buildable_types": "Custom1 & ( Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild )",
   "command_caps": [
     "ORDER_Move",

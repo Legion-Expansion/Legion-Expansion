@@ -1,5 +1,5 @@
 {
-  "display_name": "Fabrication Barge",
+  "display_name": "Fabrication Ship",
   "description": "Builds Basic Structures. Can Build Exclusive Water Units.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {
@@ -33,7 +33,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 250,
+  "build_metal_cost": 240,
   "buildable_types": "Custom1 & ( Naval & Structure & Basic | Naval & Factory & Advanced | Air & Factory & Basic | FabBuild )",
   "command_caps": [
     "ORDER_Move",
