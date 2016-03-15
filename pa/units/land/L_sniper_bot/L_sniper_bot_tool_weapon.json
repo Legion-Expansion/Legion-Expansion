@@ -4,8 +4,8 @@
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "idle_aim_delay": 1.0,
   "max_range": 80,
-  "pitch_range": 80,
-  "pitch_rate": 90,
+  "pitch_range": 90,
+  "pitch_rate": 360,
   "rate_of_fire": 10,
   "spread_fire": true,
   "target_layers": [
@@ -14,5 +14,5 @@
     "WL_WaterSurface"
   ],
   "yaw_range": 180,
-  "yaw_rate": 130
+  "yaw_rate": 360
 }
