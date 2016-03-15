@@ -22,6 +22,6 @@
     "radius": 5,
     "shape": "sphere"
   },
-  "splash_damage": 10,
-  "splash_radius": 7
+  "splash_damage": 7,
+  "splash_radius": 6
 }
