@@ -5,8 +5,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-      "effect_spec": "/pa/units/land/L_titan_vehicle/proj_hit.pfx",
-      "effect_scale": 0.75	  
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/units/land/L_titan_vehicle/proj_hit.pfx"
     }
   },
   "full_damage_splash_radius": 10,
