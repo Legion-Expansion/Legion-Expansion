@@ -1,12 +1,11 @@
 {
-  "ammo_capacity": 210,
+  "ammo_capacity": 300,
   "ammo_demand": 30,
   "ammo_id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
-  "ammo_per_shot": 210,
+  "ammo_per_shot": 300,
   "ammo_source": "metal",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-  "carpet_fire": true,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_artillery",
