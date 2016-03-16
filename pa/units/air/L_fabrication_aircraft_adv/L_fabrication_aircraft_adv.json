@@ -58,12 +58,12 @@
   "fx_offsets": [
     {
       "bone": "lathe_left",
-      "filename": "/pa/effects/specs/legion_air_fab_spray.pfx",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     },
     {
       "bone": "lathe_right",
-      "filename": "/pa/effects/specs/legion_air_fab_spray.pfx",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     },
     {

@@ -9,9 +9,11 @@
   "max_range": 70,
   "pitch_range": 0,
   "pitch_rate": 0,
-  "rate_of_fire": 6,
+  "rate_of_fire": 3,
   "target_layers": [
-    "WL_LandHorizontal"
+    "WL_Air",
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
