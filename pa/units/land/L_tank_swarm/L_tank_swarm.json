@@ -27,7 +27,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 900,
+  "build_metal_cost": 600,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Attack",
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "max_health": 800,
+  "max_health": 650,
   "mesh_bounds": [
     7,
     7.5,
@@ -90,7 +90,7 @@
     "acceleration": 100,
     "brake": 100,
     "group_preference": "back",
-    "move_speed": 10,
+    "move_speed": 12,
     "turn_speed": 60,
     "type": "land-small"
   },
@@ -128,13 +128,9 @@
       "aim_bone": "bone_root",
       "muzzle_bone": [
         "gun001",
-        "gun002",
-        "gun003",
-        "gun004",
-        "gun005",
-        "gun006"
+        "gun002"
       ],
-      "projectiles_per_fire": 6,
+      "projectiles_per_fire": 2,
       "spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
     }
   ],

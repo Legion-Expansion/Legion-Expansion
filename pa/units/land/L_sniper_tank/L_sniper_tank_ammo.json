@@ -7,6 +7,7 @@
       "effect_spec": "/pa/units/land/L_sniper_tank/hit.pfx"
     }
   },
+  "full_damage_splash_radius": 3,
   "fx_trail": {
     "filename": "/pa/units/land/L_sniper_tank/trail.pfx",
     "offset": [

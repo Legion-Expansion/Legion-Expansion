@@ -1,9 +1,9 @@
 {
-  "ammo_capacity": 5,
-  "ammo_demand": 1,
+  "ammo_capacity": 3000,
+  "ammo_demand": 600,
   "ammo_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_ammo.json",
-  "ammo_per_shot": 5,
-  "ammo_source": "time",
+  "ammo_per_shot": 3000,
+  "ammo_source": "energy",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "firing_arc_pitch": 180,
@@ -16,6 +16,7 @@
   "pitch_rate": 180,
   "rate_of_fire": 2,
   "spread_fire": true,
+  "start_fully_charged": false,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_WaterSurface"

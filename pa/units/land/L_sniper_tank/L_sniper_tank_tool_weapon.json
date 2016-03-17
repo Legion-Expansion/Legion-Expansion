@@ -12,7 +12,7 @@
   "min_firing_velocity": 60,
   "pitch_range": 80,
   "pitch_rate": 60,
-  "rate_of_fire": 0.166,
+  "rate_of_fire": 0.133,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",

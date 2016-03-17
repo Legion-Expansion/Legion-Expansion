@@ -51,14 +51,14 @@
       "rotates_to_velocity": true,
       "stage_change_range": 60,
       "stage_duration": 0,
-      "stage_turn_rate": 180
+      "stage_turn_rate": 240
     },
     {
       "ignores_LOS": false,
       "ignores_gravity": false,
       "rotates_to_velocity": true,
       "stage_duration": 5000,
-      "stage_turn_rate": 180
+      "stage_turn_rate": 240
     }
   ],
   "turn_rate": 360

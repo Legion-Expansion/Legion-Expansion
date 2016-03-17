@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 300,
+  "damage": 350,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bomb_bot_plasma",
@@ -36,7 +36,7 @@
       ]
     }
   },
-  "splash_damage": 40,
+  "splash_damage": 50,
   "splash_damages_allies": false,
   "splash_radius": 15
 }

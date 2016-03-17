@@ -131,7 +131,7 @@
     "aggressive_distance": 90,
     "brake": 30,
     "group_preference": "front",
-    "move_speed": 10,
+    "move_speed": 12,
     "turn_speed": 60,
     "type": "land-small"
   },

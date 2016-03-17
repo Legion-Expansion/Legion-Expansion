@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
   "cruise_height": 15,
-  "damage": 300,
+  "damage": 750,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
@@ -24,7 +24,7 @@
   "spawn_layers": "WL_Air",
   "spawn_unit_on_death": "/pa/units/land/L_tank_swarm/chain/chain.json",
   "spawn_unit_on_death_with_velocity": false,
-  "splash_damage": 300,
+  "splash_damage": 500,
   "splash_radius": 2,
   "stages": [
     {

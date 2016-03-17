@@ -18,7 +18,7 @@
   "model": {
     "filename": ""
   },
-  "splash_damage": 200,
+  "splash_damage": 150,
   "splash_damages_allies": true,
-  "splash_radius": 12
+  "splash_radius": 15
 }
