@@ -69,8 +69,8 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "guard_radius": 90,
-  "max_health": 20,
+  "guard_radius": 50,
+  "max_health": 80,
   "mesh_bounds": [
     3.5,
     3,
@@ -87,9 +87,9 @@
     "walk_speed": 1
   },
   "navigation": {
-    "acceleration": 400,
+    "acceleration": 200,
     "brake": -1,
-    "move_speed": 25,
+    "move_speed": 30,
     "turn_speed": 720,
     "type": "land-small"
   },
@@ -122,13 +122,11 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "bone_fuse",
       "primary_weapon": true,
       "spec_id": "/pa/units/land/L_bot_bomb/L_bot_bomb_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "bone_fuse",
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_bot_bomb/L_bot_bomb_jump_tool_weapon.json"
     }
