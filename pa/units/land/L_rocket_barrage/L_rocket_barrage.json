@@ -166,6 +166,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Structure",
     "UNITTYPE_Tactical",
+    "UNITTYPE_SurfaceDefense",
     "UNITTYPE_Defense",
     "UNITTYPE_Advanced",
     "UNITTYPE_FabAdvBuild",
