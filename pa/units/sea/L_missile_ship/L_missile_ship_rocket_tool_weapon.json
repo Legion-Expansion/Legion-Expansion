@@ -1,5 +1,5 @@
 {
-  "ammo_capacity": 6,
+  "ammo_capacity": 5,
   "ammo_demand": 1,
   "ammo_id": "/pa/units/sea/L_missile_ship/L_missile_ship_rocket_ammo.json",
   "ammo_per_shot": 1,

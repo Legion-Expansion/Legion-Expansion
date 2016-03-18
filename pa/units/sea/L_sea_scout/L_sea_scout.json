@@ -43,15 +43,15 @@
     "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
   },
   "navigation": {
-    "acceleration": 60,
+    "acceleration": 40,
     "brake": -1,
     "move_speed": 20,
+    "turn_accel": 90,
     "turn_in_place": false,
-    "turn_speed": 180,
+    "turn_speed": 150,
     "type": "deepwater"
   },
   "physics": {
-    "push_class": 2,
     "radius": 6
   },
   "recon": {

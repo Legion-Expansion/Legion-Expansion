@@ -62,10 +62,10 @@
     "filename": "/pa/units/sea/L_sea_tank/L_sea_tank.papa"
   },
   "navigation": {
-    "acceleration": 3.6,
-    "brake": 15,
-    "move_speed": 18,
-    "turn_speed": 50,
+    "acceleration": 4,
+    "brake": 25,
+    "move_speed": 20,
+    "turn_speed": 65,
     "type": "deepwater"
   },
   "physics": {

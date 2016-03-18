@@ -27,22 +27,12 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/structure/air_defense_fire",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle001 /pa/effects/specs/bullet_shells.pfx muzzle001"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle001 /pa/effects/specs/bullet_shells.pfx muzzle001 /pa/effects/specs/default_muzzle_flash.pfx muzzle002 /pa/effects/specs/bullet_shells.pfx muzzle002"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/structure/air_defense_fire",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle002 /pa/effects/specs/bullet_shells.pfx muzzle002"
-    },
-    "fired2": {
-      "audio_cue": "/SE/Weapons/structure/air_defense_fire",
-      "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle003 /pa/effects/specs/bullet_shells.pfx muzzle003"
-    },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/structure/air_defense_fire",
-      "effect_scale": 0.5,
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle004 /pa/effects/specs/bullet_shells.pfx muzzle004"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle003 /pa/effects/specs/bullet_shells.pfx muzzle003 /pa/effects/specs/default_muzzle_flash.pfx muzzle004 /pa/effects/specs/bullet_shells.pfx muzzle004"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -100,30 +90,42 @@
     {
       "aim_bone": "pitch001",
       "fire_event": "fired0",
-      "muzzle_bone": "muzzle001",
+      "muzzle_bone": [
+        "muzzle001",
+        "muzzle002"
+      ],
+      "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
     },
     {
-      "aim_bone": "pitch002",
+      "aim_bone": "pitch003",
       "fire_event": "fired1",
-      "muzzle_bone": "muzzle002",
+      "muzzle_bone": [
+        "muzzle003",
+        "muzzle004"
+      ],
+      "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
     },
     {
-      "aim_bone": "pitch003",
-      "fire_event": "fired2",
-      "muzzle_bone": "muzzle003",
-      "record_index": 2,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
+      "aim_bone": "pitch001",
+      "muzzle_bone": [
+        "muzzle001",
+        "muzzle002"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_beam_tool_weapon.json"
     },
     {
-      "aim_bone": "pitch004",
-      "fire_event": "fired3",
-      "muzzle_bone": "muzzle004",
-      "record_index": 3,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
+      "aim_bone": "pitch003",
+      "muzzle_bone": [
+        "muzzle003",
+        "muzzle004"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_beam_tool_weapon.json"
     },
     {
       "aim_bone": "rocket002",

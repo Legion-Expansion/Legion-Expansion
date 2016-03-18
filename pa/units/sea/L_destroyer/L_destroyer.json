@@ -55,8 +55,7 @@
     "move_speed": 8,
     "park_stamp_cost": 20,
     "park_stamp_type": "box",
-    "turn_accel": 30,
-    "turn_speed": 30,
+    "turn_speed": 40,
     "type": "deepwater"
   },
   "nearby_target_tick_update_interval": 15,
