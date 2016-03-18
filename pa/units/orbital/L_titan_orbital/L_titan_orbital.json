@@ -41,7 +41,6 @@
       "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
       "effect_spec": "/pa/units/orbital/L_titan_orbital/beam.pfx bone_megaLaser"
     }
   },
