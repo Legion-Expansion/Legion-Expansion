@@ -10,13 +10,6 @@
     "radius_accel": 0,
     "radius_velocity": 95
   },
-  "physics": {
-    "add_to_spatial_db": false,
-    "allow_underground": true,
-    "gravity_scalar": 3,
-    "radius": 1,
-    "type": "Projectile"
-  },
   "death": {
     "decals": [
       "/pa/effects/specs/scorch_b_01.json"
@@ -35,6 +28,13 @@
   "lifetime": 3,
   "max_velocity": 15,
   "model": {},
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "radius": 1,
+    "type": "Projectile"
+  },
   "sim_impact_effect": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_shake.json",
   "splash_damage": 500,
   "splash_radius": 55
