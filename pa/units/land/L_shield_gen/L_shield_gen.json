@@ -6,7 +6,7 @@
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 1400,
+  "build_metal_cost": 2000,
   "consumption": {
     "energy": 600
   },
