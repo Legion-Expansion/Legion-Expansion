@@ -37,7 +37,6 @@
     "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 6,
-    "push_class": 1,
     "radius": 2
   },
   "spawn_unit_on_death": "/pa/units/land/L_bot_artillery/bomb/bomb.json",

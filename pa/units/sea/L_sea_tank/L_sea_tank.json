@@ -69,7 +69,6 @@
     "type": "deepwater"
   },
   "physics": {
-    "push_class": 2,
     "radius": 11,
     "shape": "sphere"
   },

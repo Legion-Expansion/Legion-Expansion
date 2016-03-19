@@ -66,7 +66,6 @@
   },
   "nearby_target_tick_update_interval": 3,
   "physics": {
-    "push_class": 2,
     "radius": 2.25
   },
   "recon": {

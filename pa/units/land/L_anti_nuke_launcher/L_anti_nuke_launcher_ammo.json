@@ -37,7 +37,6 @@
     "allow_underground": true,
     "gravity_scalar": 3,
     "ignore_gravity": true,
-    "push_class": 1,
     "radius": 5
   },
   "show_strategic_icon": true,

@@ -14,11 +14,6 @@
   "max_firing_velocity": 80,
   "max_range": 180,
   "min_firing_velocity": 5,
-  "physics": {
-    "add_to_spatial_db": false,
-    "gravity_scalar": 1,
-    "radius": 1
-  },
   "pitch_range": 89.9,
   "pitch_rate": 50,
   "rate_of_fire": 1.5,

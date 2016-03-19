@@ -22,7 +22,7 @@
     "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
   },
   "physics": {
-    "add_to_spatial_db": true
+    "add_to_spatial_db": false
   },
   "recon": {
     "observer": {

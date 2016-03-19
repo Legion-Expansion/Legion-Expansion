@@ -19,6 +19,7 @@
   "lifetime": 0.25,
   "max_velocity": 200,
   "physics": {
+    "add_to_spatial_db": true,
     "radius": 5,
     "shape": "sphere"
   },

@@ -1,0 +1,28 @@
+{
+  "base_spec": "/pa/ammo/base_missiles/base_missile.json",
+  "damage": 500,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "flight_type": "Seeking",
+  "fx_trail": {
+    "filename": "/pa/units/air/missile_tactical/missile_tactical_trail.pfx",
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ]
+  },
+  "initial_velocity": 70.0,
+  "lifetime": 30,
+  "max_velocity": 70.0,
+  "model": {
+    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+  },
+  "splash_damage": 500,
+  "splash_radius": 19,
+  "turn_rate": 150
+}

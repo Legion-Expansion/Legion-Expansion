@@ -12,6 +12,12 @@
   "initial_velocity": 400.0,
   "lifetime": 0.3,
   "max_velocity": 400.0,
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 1,
+    "ignore_gravity": true,
+    "radius": 1
+  },
   "splash_damage": 0,
   "splash_radius": 0,
   "turn_rate": 240

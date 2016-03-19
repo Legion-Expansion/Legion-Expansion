@@ -15,9 +15,8 @@
   "lifetime": 0.5,
   "max_velocity": 500.0,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "ignores_LOS": false,
-    "push_class": 1,
     "radius": 1
   },
   "splash_damage": 0,

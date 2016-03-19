@@ -24,7 +24,7 @@
     "filename": ""
   },
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "allow_underground": true,
     "gravity_scalar": 40,
     "radius": 1

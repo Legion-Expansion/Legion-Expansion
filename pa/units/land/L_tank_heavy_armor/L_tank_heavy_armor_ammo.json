@@ -10,6 +10,13 @@
     "radius_accel": 0,
     "radius_velocity": 95
   },
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "radius": 1,
+    "type": "Projectile"
+  },
   "death": {
     "decals": [
       "/pa/effects/specs/scorch_b_01.json"

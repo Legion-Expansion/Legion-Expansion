@@ -86,7 +86,6 @@
   },
   "physics": {
     "allow_pushing": true,
-    "push_class": 3,
     "radius": 6,
     "shape": "sphere"
   },

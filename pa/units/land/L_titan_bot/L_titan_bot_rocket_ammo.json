@@ -18,7 +18,7 @@
     "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
   },
   "physics": {
-    "add_to_spatial_db": true,
+    "add_to_spatial_db": false,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "radius": 1

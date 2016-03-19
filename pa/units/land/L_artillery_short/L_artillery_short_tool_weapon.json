@@ -13,7 +13,7 @@
   "max_range": 260,
   "min_firing_velocity": 100,
   "physics": {
-    "add_to_spatial_db": false,
+    "add_to_spatial_db": true,
     "gravity_scalar": 1,
     "radius": 1
   },

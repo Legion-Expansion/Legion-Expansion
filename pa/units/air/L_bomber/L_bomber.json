@@ -91,7 +91,6 @@
     "air_friction": 1,
     "allow_pushing": false,
     "gravity_scalar": 1,
-    "push_class": 2,
     "push_sideways": false,
     "radius": 6
   },

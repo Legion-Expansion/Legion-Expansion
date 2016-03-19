@@ -88,7 +88,6 @@
   },
   "physics": {
     "allow_pushing": true,
-    "push_class": 100,
     "radius": 3
   },
   "recon": {

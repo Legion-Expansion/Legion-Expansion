@@ -194,6 +194,7 @@
         "missile003",
         "missile004"
       ],
+      "projectiles_per_fire": 4,
       "spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket_tool_weapon.json"
     }
   ],

@@ -73,7 +73,6 @@
     "type": "amphibious"
   },
   "physics": {
-    "push_class": 2,
     "radius": 2
   },
   "recon": {

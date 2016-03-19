@@ -108,7 +108,6 @@
   },
   "physics": {
     "gravity_scalar": 0.001,
-    "push_class": 25,
     "radius": 8
   },
   "recon": {

@@ -9,7 +9,6 @@
   "lifetime": 2,
   "max_velocity": 150,
   "physics": {
-    "add_to_spatial_db": false,
     "allow_underground": true,
     "ignore_gravity": true,
     "radius": 1,

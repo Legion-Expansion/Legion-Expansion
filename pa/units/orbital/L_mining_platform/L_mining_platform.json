@@ -58,7 +58,6 @@
   "physics": {
     "collision_layers": "WL_Orbital",
     "ignore_gravity": true,
-    "push_class": 15,
     "radius": 20
   },
   "placement_size": [

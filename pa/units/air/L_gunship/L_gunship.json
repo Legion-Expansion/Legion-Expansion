@@ -124,7 +124,6 @@
     "vertical_speed": 30
   },
   "physics": {
-    "push_class": 2,
     "radius": 6
   },
   "recon": {

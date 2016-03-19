@@ -35,7 +35,6 @@
     "allow_pushing": false,
     "allow_underground": false,
     "ignore_collisions": true,
-    "push_class": 255,
     "push_sideways": false,
     "radius": 1,
     "shape": "Box",

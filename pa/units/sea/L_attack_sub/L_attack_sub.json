@@ -69,7 +69,6 @@
     "type": "underwater"
   },
   "physics": {
-    "push_class": 2,
     "radius": 3,
     "shape": "sphere",
     "underwater": true

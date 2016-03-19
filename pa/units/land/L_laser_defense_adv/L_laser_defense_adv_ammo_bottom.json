@@ -25,7 +25,6 @@
     "add_to_spatial_db": false,
     "allow_underground": true,
     "gravity_scalar": 6,
-    "push_class": 1,
     "radius": 1
   },
   "splash_damage": 60,
