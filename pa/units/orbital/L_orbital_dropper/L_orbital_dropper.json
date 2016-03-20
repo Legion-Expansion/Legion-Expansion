@@ -1,11 +1,21 @@
 {
   "display_name": "Overseer",
-  "description": "Orbital Unitcannon - also a one way invasion teleporter",
+  "description": "Orbital Unitcannon - reinforces below. Also a one way invasion teleporter",
   "TEMP_texelinfo": 36,
   "area_build_separation": 75,
   "area_build_type": "Line",
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 60,
+  "audio": {
+    "loops": {
+      "enabled": {
+        "cue": "/SE/Buildings/helios_teleporter_loop",
+        "flag": "enable_changed",
+        "should_start_func": "is_enabled",
+        "should_stop_func": "is_disabled"
+      }
+    }
+  },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
   "build_metal_cost": 4000,
   "buildable_types": "Custom1 & CannonBuildable",
@@ -33,10 +43,6 @@
     "hide_stored_units": true,
     "pass_on_orders": false,
     "spawn_points": [
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
       "bone_build",
       "bone_build",
       "bone_build",
@@ -120,7 +126,7 @@
       "end": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_end.papa",
       "start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa"
     },
-    "animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/L_orbital_dropper_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
   },
   "physics": {
@@ -161,12 +167,12 @@
   },
   "tools": [
     {
-      "aim_bone": "socket_muzzle",
+      "aim_bone": "bone_build",
       "record_index": 1,
       "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
     },
     {
-      "aim_bone": "socket_muzzle",
+      "aim_bone": "bone_root",
       "muzzle_bone": "socket_muzzle",
       "record_index": 2,
       "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tool_weapon.json"
@@ -180,6 +186,6 @@
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
   ],
-  "wait_to_rolloff_time": 3,
+  "wait_to_rolloff_time": 0,
   "wreckage_health_frac": 0.0
 }

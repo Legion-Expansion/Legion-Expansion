@@ -1,4 +1,5 @@
 {
+  "ammo_type": "AMMO_Projectile",
   "attachable": {
     "default_attach_bone": "bone_root",
     "offsets": {
@@ -12,7 +13,6 @@
   "audio_loop": "/SE/Movement/missile/unit_cannon_missile_fly_loop",
   "build_metal_cost": 1,
   "collision_check": "ground",
-  "cruise_height": 280,
   "damage": 0,
   "events": {
     "collided": {
@@ -27,14 +27,12 @@
     }
   },
   "flight_type": "Staged",
-  "fx_trail": {
-    "filename": "/pa/units/air/unit_shell/unit_shell_trail.pfx"
-  },
   "ground_target_area_spread": 30,
   "influence_radius": 400,
-  "initial_velocity": 30,
+  "initial_velocity": 50,
   "lifetime": 10,
-  "max_velocity": 150,
+  "max_health": 1,
+  "max_velocity": 100,
   "model": {
     "filename": "/pa/units/air/unit_shell/unit_shell.papa"
   },
@@ -59,17 +57,18 @@
   "stages": [
     {
       "ignores_LOS": true,
-      "ignores_gravity": true,
+      "ignores_gravity": false,
       "rotates_to_velocity": true,
-      "stage_duration": 500
+      "stage_duration": 1000,
+      "stage_turn_rate": 0
     },
     {
       "ignores_LOS": true,
-      "ignores_gravity": true,
+      "ignores_gravity": false,
       "rotates_to_velocity": true,
-      "stage_change_range": 60,
-      "stage_duration": 0,
-      "stage_turn_rate": 90
+      "stage_change_height": 250,
+      "stage_change_range": 100,
+      "stage_turn_rate": 360
     },
     {
       "ignores_LOS": false,
@@ -77,14 +76,14 @@
       "release_payload_on_impact": true,
       "rotates_to_velocity": true,
       "stage_duration": 0,
-      "stage_turn_rate": 60
+      "stage_turn_rate": 480
     }
   ],
   "transporter": {
-    "capacity": 12,
+    "capacity": 1,
     "transportable_attach_offset": "root",
     "transportable_unit_types": "Custom1 & CannonBuildable",
     "transporter_attach_bone": "bone_root"
   },
-  "turn_rate": 90
+  "turn_rate": 1000
 }
