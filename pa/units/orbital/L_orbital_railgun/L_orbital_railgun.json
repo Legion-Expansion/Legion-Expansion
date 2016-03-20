@@ -12,7 +12,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 2500,
+  "build_metal_cost": 2000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -43,8 +43,8 @@
   "guard_layer": "WL_Orbital",
   "max_health": 650,
   "mesh_bounds": [
-    22.0,
-    54.82,
+    20,
+    35,
     13.6
   ],
   "model": {
@@ -60,8 +60,10 @@
     "acceleration": 10,
     "bank_factor": 1,
     "brake": 10,
+    "circle_max_time": 4,
+    "circle_min_time": 2,
     "hover_time": -1.0,
-    "move_speed": 20,
+    "move_speed": 30,
     "turn_in_place": true,
     "turn_speed": 30,
     "type": "orbital"
