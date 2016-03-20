@@ -1,8 +1,9 @@
 {
-  "base_spec": "/pa/ammo/base_ammo/base_ammo.json",
+  "ammo_type": "AMMO_Projectile",
   "burn_damage": 200,
   "burn_radius": 137,
-  "damage": 100,
+  "cruise_height": 0,
+  "damage": 300,
   "damage_volume": {
     "burnable_remove_radius": 100,
     "delay": 0,
@@ -22,25 +23,22 @@
       "effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
     }
   },
-  "flight_type": "Direct",
-  "full_damage_splash_radius": 40,
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 20,
   "fx_trail": {
     "filename": "/pa/effects/specs/none.pfx"
   },
-  "ground_target_area_spread": 0,
   "influence_radius": 400,
-  "initial_velocity": 65,
-  "lifetime": 7,
-  "max_velocity": 65,
+  "initial_velocity": 0,
+  "lifetime": 10,
+  "max_velocity": 0,
   "model": {
-    "filename": ""
+    "filename": "/pa/units/air/unit_shell/unit_shell.papa"
   },
   "physics": {
-    "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 3,
-    "ignore_gravity": true,
-    "layer": "orbital",
+    "add_to_spatial_db": false,
+    "gravity_scalar": 2.7,
+    "ignore_gravity": false,
     "radius": 10
   },
   "recon": {
@@ -50,9 +48,28 @@
   },
   "show_in_orbital_layer": false,
   "show_strategic_icon": false,
+  "sim_impact_effect": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_shake.json",
   "spawn_layers": "orbital",
-  "splash_damage": 20,
+  "splash_damage": 300,
   "splash_damage_orbital": false,
   "splash_damages_allies": false,
-  "splash_radius": 150
+  "splash_radius": 150,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 10,
+      "stage_turn_rate": 0
+    },
+    {
+      "apply_thrust": false,
+      "ignores_LOS": true,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 10000,
+      "stage_turn_rate": 0
+    }
+  ],
+  "turn_rate": 30
 }

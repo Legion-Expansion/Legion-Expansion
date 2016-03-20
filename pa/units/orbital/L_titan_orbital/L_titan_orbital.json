@@ -40,8 +40,11 @@
       "effect_scale": 1.0,
       "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx"
     },
-    "fired": {
+    "fired0": {
       "effect_spec": "/pa/units/orbital/L_titan_orbital/beam.pfx bone_megaLaser"
+    },
+    "fired1": {
+      "effect_spec": "/pa/effects/specs/none.pfx"
     }
   },
   "fx_offsets": [
@@ -189,11 +192,11 @@
     "filename": "/pa/units/orbital/L_titan_orbital/L_titan_orbital.papa"
   },
   "navigation": {
-    "acceleration": 15,
-    "brake": 15,
+    "acceleration": 10,
+    "brake": 10,
     "hover_time": -1.0,
-    "move_speed": 20,
-    "turn_accel": 15,
+    "move_speed": 15,
+    "turn_accel": 10,
     "turn_in_place": true,
     "turn_speed": 30,
     "type": "orbital"
@@ -237,6 +240,7 @@
   "tools": [
     {
       "aim_bone": "bone_megaLaser",
+      "fire_event": "fired0",
       "muzzle_bone": "bone_megaLaser",
       "show_range": true,
       "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json"
