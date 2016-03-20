@@ -3,18 +3,19 @@
   "ammo_source": "factory",
   "auto_attack": true,
   "auto_task_type": "none",
-  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+  "base_spec": "/pa/tools/base_fighter_turret/base_fighter_turret.json",
   "carpet_fire": true,
-  "force_fire_from_muzzle": true,
+  "firing_arc_pitch": 360,
+  "firing_arc_yaw": 360,
   "manual_fire": true,
   "max_range": 250,
-  "pitch_range": 360,
+  "pitch_range": 0,
   "pitch_rate": 3600,
   "rate_of_fire": 3,
   "target_layers": [
     "WL_LandHorizontal"
   ],
   "tool_type": "TOOL_Weapon",
-  "yaw_range": 360,
+  "yaw_range": 0,
   "yaw_rate": 3600
 }

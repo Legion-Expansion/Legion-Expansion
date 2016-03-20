@@ -121,25 +121,5 @@
       }
     },
     "type": "unit_state"
-  },
-  "skeleton_controls": [
-    {
-      "child": {
-        "rotation_axis": "z",
-        "rotation_bone": "bone_root",
-        "type": "procedural_aim"
-      },
-      "lerp_func": "not_being_built",
-      "type": "fader"
-    },
-    {
-      "child": {
-        "rotation_axis": "x",
-        "rotation_bone": "bone_rotate",
-        "type": "procedural_aim"
-      },
-      "lerp_func": "not_being_built",
-      "type": "fader"
-    }
-  ]
+  }
 }

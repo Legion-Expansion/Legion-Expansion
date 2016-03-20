@@ -24,7 +24,6 @@
     "ORDER_Attack"
   ],
   "enable_orbital_shell": true,
-  "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -34,7 +33,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
-      "effect_spec": "/pa/units/orbital/L_orbital_dropper/beam.pfx socket_muzzle /pa/units/orbital/L_orbital_dropper/ground.pfx bone_root"
+      "effect_spec": "/pa/units/orbital/L_orbital_dropper/beam.pfx socket_muzzle /pa/units/orbital/L_orbital_dropper/ground.pfx socket_muzzle"
     }
   },
   "factory": {
