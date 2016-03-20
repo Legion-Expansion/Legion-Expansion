@@ -1,6 +1,6 @@
 {
   "display_name": "Tyr",
-  "description": "Mega Laser",
+  "description": "Purifies the planet with mega lasers",
   "TEMP_texelinfo": 33.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
@@ -24,7 +24,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 30000,
+  "build_metal_cost": 40000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -189,16 +189,18 @@
     "filename": "/pa/units/orbital/L_titan_orbital/L_titan_orbital.papa"
   },
   "navigation": {
-    "acceleration": 25,
-    "brake": 25,
+    "acceleration": 15,
+    "brake": 15,
     "hover_time": -1.0,
-    "move_speed": 25,
-    "turn_speed": 45,
+    "move_speed": 20,
+    "turn_accel": 15,
+    "turn_in_place": true,
+    "turn_speed": 30,
     "type": "orbital"
   },
   "physics": {
     "gravity_scalar": 0.001,
-    "radius": 10
+    "radius": 15
   },
   "recon": {
     "observable": {
@@ -232,11 +234,6 @@
     "vertical_offset": -10
   },
   "spawn_layers": "WL_Orbital",
-  "teleporter": {
-    "energy_demand": 1000,
-    "spawn_radius": 20,
-    "type": "orbital"
-  },
   "tools": [
     {
       "aim_bone": "bone_megaLaser",

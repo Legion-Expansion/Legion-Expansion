@@ -1,6 +1,6 @@
 {
   "display_name": "Orbital Chariot",
-  "description": "!LOC(units:orbital_lander_load_it_up_get_units_to_other_planets.message):Orbital lander- Load it up, get units to other planets.",
+  "description": "Orbital lander- Load it up, get units to other planets.",
   "TEMP_texelinfo": 23.9658,
   "attachable": {
     "offsets": {
@@ -22,7 +22,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 400,
+  "build_metal_cost": 200,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",

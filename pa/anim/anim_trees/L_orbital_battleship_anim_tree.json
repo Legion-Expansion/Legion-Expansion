@@ -50,28 +50,28 @@
       "recoil_dist": 3.0,
       "restore_time": 1.0,
       "type": "recoil",
-      "unit_event": "fired0"
+      "unit_event": "fired1"
     },
     {
       "bone": "recoil002",
       "recoil_dist": 3.0,
       "restore_time": 1.0,
       "type": "recoil",
-      "unit_event": "fired0"
+      "unit_event": "fired2"
     },
     {
       "bone": "recoil003",
       "recoil_dist": 3.0,
       "restore_time": 1.0,
       "type": "recoil",
-      "unit_event": "fired1"
+      "unit_event": "fired3"
     },
     {
       "bone": "recoil004",
       "recoil_dist": 3.0,
       "restore_time": 1.0,
       "type": "recoil",
-      "unit_event": "fired1"
+      "unit_event": "fired0"
     }
   ]
 }

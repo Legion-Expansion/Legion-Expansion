@@ -203,10 +203,17 @@
         spec_id: "/pa/units/orbital/L_deep_space_radar/L_deep_space_radar.json",
         si_fallback: ["deep_space_radar"],
         preferred_builds: [
-          ["L_utility", 6]
+          ["L_utility", 5]
         ]
       }, {
-        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json",
+        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_base.json",
+        si_fallback: ["delta_v_engine"],
+        preferred_builds: [
+          ["L_utility", 6]
+        ]
+      }, 
+      {
+        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_upgrade.json",
         si_fallback: ["delta_v_engine"],
         preferred_builds: [
           ["L_utility", 7]

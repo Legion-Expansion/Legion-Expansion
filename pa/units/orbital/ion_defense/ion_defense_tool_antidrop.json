@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_antidrop_ammo.json",
+  "ammo_id": "/pa/units/orbital/ion_defense/ion_defense_antidrop_ammo.json",
   "anti_entity_targets": [
     "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
     "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
@@ -11,10 +11,9 @@
   "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
   "firing_arc_pitch": 180,
   "firing_arc_yaw": 180,
-  "firing_standard_deviation": 5,
   "idle_aim_delay": 0.1,
   "manual_fire": true,
-  "max_range": 230,
+  "max_range": 180,
   "pitch_range": 0,
   "pitch_rate": 0,
   "rate_of_fire": 2.0,

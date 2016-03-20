@@ -7,12 +7,13 @@
   "carpet_fire": true,
   "firing_arc_pitch": 10,
   "firing_arc_yaw": 10,
+  "firing_standard_deviation": 20,
   "force_fire_from_muzzle": true,
   "manual_fire": true,
-  "max_range": 70,
+  "max_range": 400,
   "pitch_range": 0,
   "pitch_rate": 0,
-  "rate_of_fire": 12,
+  "rate_of_fire": 3,
   "target_layers": [
     "WL_LandHorizontal"
   ],

@@ -1,19 +1,20 @@
 {
-  "display_name": "Starcannon",
-  "description": "Orbital Unit Cannon- Fires units below.",
+  "display_name": "Overseer",
+  "description": "Orbital Unitcannon - also a one way invasion teleporter",
   "TEMP_texelinfo": 36,
   "area_build_separation": 75,
   "area_build_type": "Line",
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 60,
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "build_metal_cost": 7400,
+  "build_metal_cost": 4000,
   "buildable_types": "Custom1 & CannonBuildable",
   "command_caps": [
     "ORDER_FactoryBuild",
     "ORDER_Attack"
   ],
   "enable_orbital_shell": true,
+  "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -43,11 +44,23 @@
       "bone_build",
       "bone_build",
       "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
+      "bone_build",
       "bone_build"
     ],
     "store_units": true
   },
-  "factory_cooldown_time": 3.0,
+  "factory_cooldown_time": 0,
   "fx_offsets": [
     {
       "bone": "bone_laser001",
@@ -78,6 +91,21 @@
       "bone": "bone_laser006",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/orbital/titan_orbital/teleporter_event_horizon.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "enabled"
     }
   ],
   "max_health": 3000,
@@ -126,6 +154,11 @@
     "diameter": -70
   },
   "spawn_layers": "WL_Orbital",
+  "teleporter": {
+    "energy_demand": 1000,
+    "spawn_radius": 20,
+    "type": "orbital"
+  },
   "tools": [
     {
       "aim_bone": "socket_muzzle",

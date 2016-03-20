@@ -36,22 +36,22 @@
     "fired1": {
       "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
       "effect_scale": 3,
-      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle1"
+      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle001"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
       "effect_scale": 3,
-      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle2"
+      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle002"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
       "effect_scale": 3,
-      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle3"
+      "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle003"
     }
   },
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
-  "max_health": 4000,
+  "max_health": 5500,
   "mesh_bounds": [
     48.836,
     83.054,
@@ -69,6 +69,7 @@
     "circle_min_time": 2,
     "hover_time": -1.0,
     "move_speed": 15,
+    "turn_accel": 20,
     "turn_speed": 30,
     "type": "orbital"
   },

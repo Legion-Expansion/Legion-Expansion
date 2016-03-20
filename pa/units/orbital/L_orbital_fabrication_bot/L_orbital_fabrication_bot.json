@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 1600,
+  "build_metal_cost": 1300,
   "buildable_types": "Custom1 & FabOrbBuild | Titan & Custom1",
   "command_caps": [
     "ORDER_Move",
@@ -61,7 +61,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "max_health": 50,
+  "max_health": 100,
   "mesh_bounds": [
     20,
     10,
@@ -122,7 +122,7 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "spec_id": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_build_arm.json"
+      "spec_id": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_build_arm.json"
     }
   ],
   "unit_types": [
