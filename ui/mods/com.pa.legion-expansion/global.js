@@ -572,6 +572,12 @@
         preferred_builds: [
           ["L_sea", 16]
         ]
+      }, {
+        spec_id: "/pa/units/sea/L_boat_riot/L_boat_riot.json",
+        si_fallback: ["destroyer"],
+        preferred_builds: [
+          ["L_sea", 17]
+        ]
       },
 
 

@@ -288,6 +288,7 @@
     "/pa/units/orbital/L_orbital_probe/L_orbital_probe.json",
     "/pa/units/land/L_titan_structure/L_titan_structure.json",
     "/pa/units/land/L_swarm_hive/L_swarm_hive.json",
-    "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.json"
+    "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.json",
+	"/pa/units/sea/L_boat_riot/L_boat_riot.json"
   ]
 }
