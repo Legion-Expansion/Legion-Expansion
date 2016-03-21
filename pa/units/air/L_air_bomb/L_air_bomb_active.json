@@ -30,8 +30,7 @@
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Assist",
-    "ORDER_Attack",
-	"ORDER_FireSecondaryWeapon"
+    "ORDER_Attack"
   ],
   "events": {
     "build_complete": {
@@ -71,10 +70,10 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 40,
-    "brake": 40,
+    "acceleration": 120,
+    "brake": 180,
     "hover_time": -1.0,
-    "move_speed": 5,
+    "move_speed": 80,
     "turn_in_place": true,
     "turn_speed": 1080,
     "type": "air",
@@ -95,7 +94,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 50,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
@@ -106,14 +105,14 @@
   },
   "tools": [
     {
-	  "aim_bone": "bone_root",
+      "aim_bone": "bone_root",
       "primary_weapon": true,
       "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb_tool_weapon.json"
     },
 	{
       "aim_bone": "bone_root",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb_tool_weapon_activate.json"
+      "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb_active_death_tool_weapon.json"
 	}
   ],
   "unit_types": [
