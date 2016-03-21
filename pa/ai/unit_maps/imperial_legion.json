@@ -48,6 +48,9 @@
     "LegionAirAdvancedTeleporter": {
       "spec_id": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json"
     },
+    "LegionAirBasicBomb": {
+      "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb.json"
+    },
     "LegionAirBasicBomber": {
       "spec_id": "/pa/units/air/L_bomber/L_bomber.json"
     },
