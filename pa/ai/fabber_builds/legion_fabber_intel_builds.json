@@ -1,0 +1,339 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "value0": 200,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic Radar",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 90,
+      "shared_instance_count": "BasicRadar",
+      "to_build": "LegionIntelBasicRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Advanced - Orbital) | (Recon & Orbital - Structure)",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
+            "value0": 0
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Basic",
+            "value0": 200,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic Radar - Need for Ranged",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 246,
+      "shared_instance_count": "BasicRadar",
+      "to_build": "LegionIntelBasicRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionIntelBasicRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic Radar - Have none",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 605,
+      "shared_instance_count": "BasicRadar",
+      "to_build": "LegionIntelBasicRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "value0": 350,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Radar",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 91,
+      "shared_instance_count": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "string0": "Ally",
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Land & Structure & Recon & Advanced",
+            "value0": 350,
+            "value1": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Radar - Need for Ranged",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 247,
+      "shared_instance_count": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Recon & Structure - Orbital) | (Recon & Orbital - Structure)",
+            "value0": 1
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionIntelAdvancedRadar",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Radar - Have none",
+      "placement_rules": {
+        "buffer": 2,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 265,
+      "shared_instance_count": "AdvancedRadar",
+      "to_build": "LegionIntelAdvancedRadar"
+    }
+  ]
+}

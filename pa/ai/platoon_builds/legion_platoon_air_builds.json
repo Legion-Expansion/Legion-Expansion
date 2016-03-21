@@ -1,0 +1,284 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 1
+          },
+          {
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 1
+          },
+          {
+            "string0": "Suicide_Attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Suicide Attack Platoon Small",
+      "priority": 104,
+      "task_type": "FighterAttack",
+      "to_build": "Suicide_Attack_Small"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 4
+          },
+          {
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 4
+          },
+          {
+            "string0": "Suicide_Attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Suicide Attack Platoon Medium",
+      "priority": 103,
+      "task_type": "FighterAttack",
+      "to_build": "Suicide_Attack_Medium"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 10
+          },
+          {
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 10
+          },
+          {
+            "string0": "Suicide_Attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Suicide Attack Platoon Large",
+      "priority": 102,
+      "task_type": "FighterAttack",
+      "to_build": "Suicide_Attack_Large"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 20
+          },
+          {
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 20
+          },
+          {
+            "string0": "Suicide_Attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Suicide Attack Platoon XLarge",
+      "priority": 101,
+      "task_type": "FighterAttack",
+      "to_build": "Suicide_Attack_XLarge"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 40
+          },
+          {
+            "string0": "WL_Air",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & SelfDestruct",
+            "value0": 40
+          },
+          {
+            "string0": "Suicide_Attack",
+            "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Suicide Attack Platoon Max",
+      "priority": 100,
+      "task_type": "FighterAttack",
+      "to_build": "Suicide_Attack_Max"
+    }
+  ]
+}
