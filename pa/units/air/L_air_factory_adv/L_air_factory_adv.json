@@ -1,7 +1,7 @@
 {
   "display_name": "Advanced Flyer Foundry",
   "description": "Advanced Manufacturing- Builds Legion Air Units.",
-  "TEMP_texelinfo": 65.6074,
+  "TEMP_texelinfo": 42.821,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,
   "atrophy_rate": 80,
@@ -35,83 +35,23 @@
   "factory_cooldown_time": 2,
   "fx_offsets": [
     {
-      "bone": "muzzle01",
+      "bone": "arm_lathe001",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        90
-      ],
       "type": "build"
     },
     {
-      "bone": "muzzle02",
+      "bone": "arm_lathe002",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        90
-      ],
       "type": "build"
     },
     {
-      "bone": "muzzle03",
+      "bone": "arm_lathe003",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        90
-      ],
       "type": "build"
     },
     {
-      "bone": "muzzle04",
+      "bone": "arm_lathe004",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        90
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "platformA",
-      "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
-      "type": "idle"
-    },
-    {
-      "bone": "platformA",
-      "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
-      "type": "build"
-    },
-    {
-      "bone": "platformB",
-      "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
-      "type": "idle"
-    },
-    {
-      "bone": "platformB",
-      "filename": "/pa/units/air/L_air_factory_adv/platform.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
       "type": "build"
     }
   ],
@@ -273,9 +213,9 @@
   ],
   "max_health": 30000,
   "mesh_bounds": [
-    50,
-    50,
-    25
+    60,
+    61,
+    35
   ],
   "model": [
     {
@@ -296,7 +236,7 @@
         "build_start": "/pa/units/air/L_air_factory_adv/L_air_factory_adv_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/air/L_air_factory_adv/sea/L_air_factory_adv.papa",
+      "filename": "/pa/units/air/L_air_factory_adv/L_air_factory_adv.papa",
       "layer": "WL_WaterSurface"
     }
   ],
