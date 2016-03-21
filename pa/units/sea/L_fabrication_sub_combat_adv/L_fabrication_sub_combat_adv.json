@@ -130,7 +130,7 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Fabber",
+    "UNITTYPE_Offense",
     "UNITTYPE_Construction",
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
