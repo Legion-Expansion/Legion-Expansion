@@ -1,6 +1,6 @@
 {
-  "display_name": "Mermaid",
-  "description": "Places Sea Mines and Repairs Friendly Units. Lightly Armored.",
+  "display_name": "Remora",
+  "description": "Combat Fabrication- Places Sea Mines and Repairs Friendly Units. Lightly Armored.",
   "TEMP_texelinfo": 20,
   "attachable": {
     "offsets": {
