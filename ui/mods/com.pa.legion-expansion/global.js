@@ -206,19 +206,13 @@
           ["L_utility", 5]
         ]
       }, {
-        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_base.json",
+        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json",
         si_fallback: ["delta_v_engine"],
         preferred_builds: [
           ["L_utility", 6]
         ]
       }, 
-      {
-        spec_id: "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_upgrade.json",
-        si_fallback: ["delta_v_engine"],
-        preferred_builds: [
-          ["L_utility", 7]
-        ]
-      }, {
+       {
         spec_id: "/pa/units/land/L_radar_adv/L_radar_adv.json",
         si_fallback: ["radar_adv"],
         preferred_builds: [
