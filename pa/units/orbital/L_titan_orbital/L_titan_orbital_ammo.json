@@ -47,8 +47,8 @@
   "spawn_layers": "orbital",
   "splash_damage": 300,
   "splash_damage_orbital": false,
-  "splash_damages_allies": false,
-  "splash_radius": 150,
+  "splash_damages_allies": true,
+  "splash_radius": 180,
   "stages": [
     {
       "ignores_LOS": true,

@@ -1,6 +1,6 @@
 {
-  "display_name": "Overseer",
-  "description": "Orbital Unitcannon - reinforces below. Also a one way invasion teleporter",
+  "display_name": "Master of Space and Time",
+  "description": "Orbital UnitCannon - Builds and teleports units to any location within range, also a one way linkable invasion teleporter",
   "TEMP_texelinfo": 36,
   "area_build_separation": 75,
   "area_build_type": "Line",
@@ -14,6 +14,9 @@
         "should_start_func": "is_enabled",
         "should_stop_func": "is_disabled"
       }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/structure/unit_cannon"
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
@@ -23,49 +26,43 @@
     "ORDER_FactoryBuild",
     "ORDER_Attack"
   ],
-  "enable_orbital_shell": true,
+  "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
     },
     "died": {
-      "audio_cue": "/SE/Death/orbital"
+      "audio_cue": "/SE/Death/unit_cannon",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     },
-    "fired": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
-      "effect_spec": "/pa/units/orbital/L_orbital_dropper/beam.pfx socket_muzzle /pa/units/orbital/L_orbital_dropper/ground.pfx socket_muzzle"
+    "fired0": {
+      "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
+      "effect_spec": "/pa/units/land/unit_cannon/unit_cannon_fire.pfx socket_muzzle"
     }
   },
   "factory": {
-    "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+    "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tactical_missile_ammo.json",
     "hide_deploy_projectile": true,
     "hide_stored_units": true,
     "pass_on_orders": false,
     "spawn_points": [
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build",
-      "bone_build"
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate"
     ],
     "store_units": true
   },
-  "factory_cooldown_time": 0,
+  "factory_cooldown_time": 0.0,
   "fx_offsets": [
     {
       "bone": "bone_laser001",
@@ -99,7 +96,37 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/orbital/titan_orbital/teleporter_event_horizon.pfx",
+      "filename": "/pa/units/orbital/L_orbital_dropper/beam.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_spin",
+      "filename": "/pa/units/orbital/L_orbital_dropper/ground.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_spin",
+      "filename": "/pa/units/orbital/L_orbital_dropper/teleporter_glow.pfx",
       "offset": [
         0,
         0,
@@ -167,14 +194,15 @@
   "tools": [
     {
       "aim_bone": "bone_build",
-      "record_index": 1,
-      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tactical_missile_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": "socket_muzzle",
-      "record_index": 2,
-      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tool_weapon.json"
+      "record_index": 1,
+      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
     }
   ],
   "unit_types": [
