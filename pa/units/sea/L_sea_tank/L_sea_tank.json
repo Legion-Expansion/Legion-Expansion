@@ -26,12 +26,12 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 2.0,
-      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_muzzle001 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle002 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle003 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle004"
+      "effect_spec": "/pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle001 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle002 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle003 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle004"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 2.0,
-      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_muzzle005 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle006 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle007 /pa/effects/specs/small_gun_smoke.pfx socket_muzzle008"
+      "effect_spec": "/pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle005 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle006 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle007 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle008"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/torpedo_fire",
@@ -39,7 +39,8 @@
     },
     "fired3": {
       "audio_cue": "/SE/Impacts/shell_artillery",
-      "effect_scale": 3.0
+      "effect_scale": 3.0,
+      "effect_spec": "/pa/units/sea/L_sea_tank/ram_hit.pfx bone_rammer"
     }
   },
   "fx_offsets": [

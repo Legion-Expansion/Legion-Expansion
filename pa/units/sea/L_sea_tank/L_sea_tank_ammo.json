@@ -5,12 +5,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/battleship",
-      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+      "effect_spec": "/pa/units/sea/L_sea_tank/shell_hit.pfx"
     }
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/sea/battleship/battleship_shell_proj_trail.pfx",
+    "filename": "/pa/units/sea/L_sea_tank/shell_proj_trail.pfx",
     "offset": [
       0.0,
       0.7,
