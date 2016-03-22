@@ -178,7 +178,7 @@
       "radius": 3.0
     }
   ],
-  "max_health": 20000,
+  "max_health": 25000,
   "mesh_bounds": [
     116.1,
     133.2,
@@ -192,13 +192,13 @@
     "filename": "/pa/units/orbital/L_titan_orbital/L_titan_orbital.papa"
   },
   "navigation": {
-    "acceleration": 10,
-    "brake": 10,
+    "acceleration": 7.5,
+    "brake": 7.5,
     "hover_time": -1.0,
     "move_speed": 15,
-    "turn_accel": 10,
+    "turn_accel": 5,
     "turn_in_place": true,
-    "turn_speed": 30,
+    "turn_speed": 25,
     "type": "orbital"
   },
   "physics": {
@@ -244,6 +244,13 @@
       "muzzle_bone": "bone_megaLaser",
       "show_range": true,
       "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_megaLaser",
+      "fire_event": "fired1",
+      "muzzle_bone": "bone_megaLaser",
+      "show_range": false,
+      "spec_id": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_effect_tool_weapon.json"
     }
   ],
   "unit_types": [
