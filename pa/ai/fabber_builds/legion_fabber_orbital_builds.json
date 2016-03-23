@@ -574,7 +574,7 @@
       "instance_count": 1,
       "name": "Legion - Move Orbital Fabber To Planet",
       "priority": 800,
-      "task_type": "LegionOrbitalBasicFabberMoveToPlanet"
+      "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
       "build_conditions": [
@@ -602,7 +602,7 @@
       "instance_count": 1,
       "name": "Legion - Move Orbital Fabber To Safe Planet",
       "priority": 800,
-      "task_type": "LegionOrbitalBasicFabberMoveToSafePlanet"
+      "task_type": "OrbitalFabberMoveToSafePlanet"
     }
   ]
 }
