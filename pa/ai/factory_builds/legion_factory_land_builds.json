@@ -1222,7 +1222,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "LegionBotAdvancedSupportCommander",
+            "unit_type_string0": "SupportCommander",
             "value0": 5
           }
         ]
