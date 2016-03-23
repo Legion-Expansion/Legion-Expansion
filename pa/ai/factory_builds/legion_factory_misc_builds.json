@@ -17,7 +17,7 @@
         ]
       ],
       "builders": [
-        "NukeSilo"
+        "LegionDefenseAdvancedNukeSilo"
       ],
       "instance_count": -1,
       "name": "Legion - Nuke Missile",
@@ -47,7 +47,7 @@
         ]
       ],
       "builders": [
-        "NukeSilo"
+        "LegionDefenseAdvancedNukeSilo"
       ],
       "instance_count": 2,
       "max_num_assisters": 12,
@@ -73,7 +73,7 @@
         ]
       ],
       "builders": [
-        "AntiNukeSilo"
+        "LegionDefenseAdvancedAntiNukeSilo"
       ],
       "instance_count": -1,
       "name": "Legion - Anti Nuke Missile",
@@ -104,7 +104,7 @@
         ]
       ],
       "builders": [
-        "AntiNukeSilo"
+        "LegionDefenseAdvancedAntiNukeSilo"
       ],
       "instance_count": -1,
       "max_num_assisters": 12,
