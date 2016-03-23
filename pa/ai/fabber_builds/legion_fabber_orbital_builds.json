@@ -93,7 +93,7 @@
             "test_type": "WantCommanderOffPlanet"
           },
           {
-            "test_type": "LegionFactoryBasicOrbital"
+            "test_type": "NeedOrbitalLauncher"
           },
           {
             "compare0": ">=",
