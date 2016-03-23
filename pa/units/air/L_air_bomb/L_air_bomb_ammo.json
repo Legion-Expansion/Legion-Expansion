@@ -14,9 +14,9 @@
     "filename": "/pa/units/air/L_air_bomb/teleport.pfx"
   },
   "influence_radius": 400,
-  "initial_velocity": 0.0,
-  "lifetime": 10.0,
-  "max_velocity": 15.0,
+  "initial_velocity": 60.0,
+  "lifetime": 1,
+  "max_velocity": 60.0,
   "model": {
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
@@ -35,7 +35,7 @@
   "show_strategic_icon": false,
   "spawn_layers": "Air",
   "spawn_unit_on_death": "/pa/units/air/L_air_bomb/triggered/L_air_bomb.json",
-  "spawn_unit_on_death_with_velocity": false,
+  "spawn_unit_on_death_with_velocity": true,
   "splash_damage": 0,
   "splash_radius": 0,
   "stages": [
@@ -43,7 +43,7 @@
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_duration": 1000,
+      "stage_duration": 200,
       "stage_turn_rate": 0
     },
     {

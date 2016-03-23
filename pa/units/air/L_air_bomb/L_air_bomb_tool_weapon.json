@@ -9,7 +9,7 @@
   "pitch_rate": 3600,
   "rate_of_fire": 1,
   "self_destruct": true,
-  "spread_fire": false,
+  "spread_fire": true,
   "target_layers": [
     "WL_Air"
   ],

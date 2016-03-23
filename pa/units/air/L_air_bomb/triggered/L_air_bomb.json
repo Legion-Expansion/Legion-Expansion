@@ -49,8 +49,8 @@
     }
   ],
   "guard_layer": "WL_Air",
-  "guard_radius": 150,
-  "max_health": 100,
+  "guard_radius": 1500,
+  "max_health": 180,
   "mesh_bounds": [
     6,
     6,
@@ -64,8 +64,8 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 15,
-    "brake": 20,
+    "acceleration": 60,
+    "brake": 140,
     "hover_time": -1.0,
     "move_speed": 120,
     "turn_in_place": true,
