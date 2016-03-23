@@ -377,7 +377,7 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Lander",
-      "priority": 111,
+      "priority": 0,
       "to_build": "LegionOrbitalBasicTransport"
     },
     {
