@@ -938,7 +938,7 @@
             "unit_type_string0": "Mobile & Land & Advanced"
           },
           {
-            "string0": "LegionDefenseAdvancedLand",
+            "string0": "LegionDefenseAdvancedTactical",
             "test_type": "CanFindPlaceToBuild"
           }
         ],
@@ -969,7 +969,7 @@
             "unit_type_string0": "Mobile & Land & Advanced"
           },
           {
-            "string0": "LegionDefenseAdvancedLand",
+            "string0": "LegionDefenseAdvancedTactical",
             "test_type": "CanFindPlaceToBuild"
           }
         ]
@@ -1001,7 +1001,7 @@
         ]
       },
       "priority": 255,
-      "to_build": "LegionDefenseAdvancedLand"
+      "to_build": "LegionDefenseAdvancedTactical"
     },
     {
       "base_sort": "FromPerimeter",
@@ -1033,7 +1033,7 @@
             "unit_type_string0": "Mobile & Land & Advanced"
           },
           {
-            "string0": "LegionDefenseAdvancedLandII",
+            "string0": "LegionDefenseAdvancedLand",
             "test_type": "CanFindPlaceToBuild"
           }
         ],
@@ -1064,7 +1064,7 @@
             "unit_type_string0": "Mobile & Land & Advanced"
           },
           {
-            "string0": "LegionDefenseAdvancedLandII",
+            "string0": "LegionDefenseAdvancedLand",
             "test_type": "CanFindPlaceToBuild"
           }
         ]
@@ -1096,7 +1096,78 @@
         ]
       },
       "priority": 255,
-      "to_build": "LegionDefenseAdvancedLandII"
+      "to_build": "LegionDefenseAdvancedLand"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedTactical",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Land Defense - Threat",
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 2,
+            "range": 75,
+            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "LegionDefenseAdvancedTactical"
     },
     {
       "base_sort": "FromPerimeter",
@@ -1145,77 +1216,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedLand"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseAdvancedLandII",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
       "name": "Legion - Advanced Land Defense II - Threat",
       "placement_rules": {
         "buffer": 2,
@@ -1238,7 +1238,7 @@
         ]
       },
       "priority": 379,
-      "to_build": "LegionDefenseAdvancedLandII"
+      "to_build": "LegionDefenseAdvancedLand"
     },
     {
       "base_sort": "FromPerimeter",
