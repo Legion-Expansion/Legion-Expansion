@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tactical_missile_ammo.json",
+  "ammo_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
   "ammo_source": "factory",
   "auto_attack": false,
   "auto_task_type": "none",
@@ -7,14 +7,14 @@
   "carpet_fire": true,
   "firing_arc_pitch": 1,
   "firing_arc_yaw": 1,
-  "firing_standard_deviation": 25,
+  "firing_standard_deviation": 23,
   "force_fire_from_muzzle": true,
   "idle_aim_delay": 5,
   "manual_fire": true,
-  "max_range": 450,
+  "max_range": 600,
   "pitch_range": 180,
   "pitch_rate": 360,
-  "rate_of_fire": 5,
+  "rate_of_fire": 6,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal"

@@ -13,7 +13,7 @@
   "audio_loop": "/SE/Movement/missile/bot_tactical_missile_fly_loop",
   "build_metal_cost": 1,
   "collision_check": "ground",
-  "cruise_height": 220,
+  "cruise_height": 170,
   "damage": 0,
   "events": {
     "collided": {
@@ -69,9 +69,9 @@
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_change_range": 75,
+      "stage_change_range": 70,
       "stage_duration": 0,
-      "stage_turn_rate": 75
+      "stage_turn_rate": 45
     },
     {
       "ignores_LOS": false,

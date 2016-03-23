@@ -1,6 +1,7 @@
 {
   "assist_layers": [
-    "WL_Orbital"
+    "WL_Orbital",
+    "WL_Air"
   ],
   "base_spec": "/pa/tools/engineer_build_arm_adv/engineer_build_arm_adv.json",
   "construction_demand": {
