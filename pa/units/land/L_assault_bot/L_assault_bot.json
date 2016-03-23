@@ -47,8 +47,8 @@
   "guard_layer": "WL_AnySurface",
   "max_health": 140,
   "mesh_bounds": [
-    4.5,
-    3,
+    4,
+    2.5,
     4
   ],
   "model": {
