@@ -3,7 +3,7 @@ var legionExpansionLoaded;
 
 if ( ! legionExpansionLoaded )
 {
-    $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion &nbsp <span>ALPHA</span></div>");
+    $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion &nbsp <span>BETA</span></div>");
     
     legionExpansionLoaded = true;
 
