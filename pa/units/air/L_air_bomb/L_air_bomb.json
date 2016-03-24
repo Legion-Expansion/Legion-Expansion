@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 105,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -35,12 +35,6 @@
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
-    },
-    "child_attached": {
-      "audio_cue": "/SE/Movement/air/transport_load"
-    },
-    "child_detached": {
-      "audio_cue": "/SE/Movement/air/transport_unload"
     },
     "died": {
       "audio_cue": "/SE/Death/Air",
@@ -55,8 +49,7 @@
     }
   ],
   "guard_layer": "WL_Air",
-  "guard_radius": 150,
-  "max_health": 150,
+  "max_health": 180,
   "mesh_bounds": [
     6,
     6,
@@ -70,14 +63,13 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 120,
-    "brake": 180,
+    "acceleration": 75,
+    "brake": 25,
     "hover_time": -1.0,
-    "move_speed": 95,
+    "move_speed": 75,
     "turn_in_place": true,
     "turn_speed": 1080,
     "type": "air",
-    "vertical_speed": 95,
     "wobble_factor": 0.25,
     "wobble_speed": 0.2
   },

@@ -12,7 +12,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 6000,
+  "build_metal_cost": 5000,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -32,9 +32,9 @@
       "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle"
     }
   },
-  "gravwell_velocity_multiplier": 6.0,
+  "gravwell_velocity_multiplier": 3.0,
   "guard_layer": "WL_AnySurface",
-  "max_health": 1600,
+  "max_health": 900,
   "mesh_bounds": [
     38,
     38,
@@ -50,10 +50,11 @@
     "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
   },
   "navigation": {
-    "acceleration": 25,
-    "brake": 25,
+    "acceleration": 14,
+    "brake": 14,
     "hover_time": -1.0,
-    "move_speed": 25,
+    "move_speed": 14,
+    "turn_in_place": true,
     "turn_speed": 90,
     "type": "orbital"
   },
@@ -61,6 +62,7 @@
     "gravity_scalar": 0.001,
     "radius": 10
   },
+  "planetary_arrival_cooldown_time": 5.0,
   "recon": {
     "observer": {
       "items": [

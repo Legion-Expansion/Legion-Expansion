@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea",
-  "build": "89755",
+  "build": "89528",
   "category": [
     "server-mod",
     "lobby",
@@ -9,7 +9,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2016/03/01",
+  "date": "2016/03/24",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
@@ -18,7 +18,7 @@
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch"
   ],
   "description": "Super secret something something",
-  "display_name": "Legion Expansion Combined Alpha (balance)",
+  "display_name": "Legion Expansion (combined)",
   "enabled": true,
   "forum": "",
   "icon": "",
@@ -68,5 +68,5 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.5"
+  "version": "0.6-beta"
 }

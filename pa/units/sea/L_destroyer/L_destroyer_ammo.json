@@ -3,11 +3,11 @@
   "damage": 200,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/sea/battleship/battleship_hit.pfx"
+      "effect_spec": "/pa/units/sea/L_destroyer/t1_shell_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/sea/battleship/battleship_shell_proj_trail.pfx",
+    "filename": "/pa/units/sea/L_destroyer/t1_shell_proj_trail.pfx",
     "offset": [
       0.0,
       0.7,

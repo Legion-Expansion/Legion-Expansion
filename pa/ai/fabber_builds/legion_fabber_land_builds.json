@@ -1,0 +1,828 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicBotFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicBotFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedBotFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Bot & Basic) - Orbital",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicBotFactory"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "value0": 0
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Bot Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 376,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicBot"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicVehicleFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicVehicleFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedVehicleFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Tank & Basic) - Orbital",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicVehicleFactory"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "value0": 0
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Vehicle Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 376,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicVehicle"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicBotFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicBotFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Bot Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 515,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicBot"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicVehicleFactory"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicVehicleFactory"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Vehicle Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 515,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicVehicle"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedBotFactory"
+          },
+          {
+            "string0": "LegionFactoryAdvancedBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedBotFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryAdvancedBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Bot Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 477,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedBot"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedVehicleFactory"
+          },
+          {
+            "string0": "LegionFactoryAdvancedVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryAdvancedVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedVehicleFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryAdvancedVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionVehicleBasicFabber",
+        "LegionVehicleAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Vehicle Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 477,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedVehicle"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedBotFactory"
+          },
+          {
+            "string0": "LegionFactoryAdvancedBot",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedBot",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Bot Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 525,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedBot"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedVehicleFactory"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
+            "string0": "LegionFactoryAdvancedVehicle",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedVehicle",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionVehicleBasicFabber",
+        "LegionVehicleAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Vehicle Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 525,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedVehicle"
+    }
+  ]
+}

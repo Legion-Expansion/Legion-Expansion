@@ -1,0 +1,24 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "base_spec": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_ammo.json",
+  "burn_damage": 0,
+  "burn_radius": 0,
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": "",
+      "effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
+    }
+  },
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/none.pfx"
+  },
+  "influence_radius": 400,
+  "initial_velocity": 400,
+  "lifetime": 10,
+  "max_velocity": 400,
+  "splash_damage": 0,
+  "splash_radius": 0
+}

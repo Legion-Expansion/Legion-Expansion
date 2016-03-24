@@ -1,0 +1,44 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/cannon_uber",
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/effects/specs/uber_proj_explosion_legion.pfx"
+    }
+  },
+  "flight_type": "Direct",
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/uber_proj_trail_legion.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
+  },
+  "influence_radius": 400,
+  "initial_velocity": 80.0,
+  "lifetime": 15,
+  "max_velocity": 80.0,
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "ignore_gravity": true,
+    "push_class": 1,
+    "radius": 10
+  },
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0
+}

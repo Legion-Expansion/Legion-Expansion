@@ -5,7 +5,7 @@
   "damage": 200,
   "full_damage_splash_radius": 10,
   "fx_beam_spec": "/pa/effects/specs/none.pfx",
-  "fx_collision_spec": "/pa/units/sea/L_sea_tank/ram_hit.pfx",
+  "fx_collision_spec": "/pa/effects/specs/none.pfx",
   "splash_damage": 200,
   "splash_damages_allies": true,
   "splash_radius": 10

@@ -146,6 +146,7 @@
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_SupportCommander",
+    "UNITTYPE_CannonBuildable",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",

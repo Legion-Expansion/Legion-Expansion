@@ -1,6 +1,6 @@
 {
-  "display_name": "Aggressor",
-  "description": "Orbital Fighter- Heavy starfighter. Good for harassment and assaulting lightly defended starports.",
+  "display_name": "Alpha's sneaky chuckle",
+  "description": "Legion starfighter. Attacks orbital targets",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -50,11 +50,12 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
-  "max_health": 50,
+  "guard_radius": 60,
+  "max_health": 100,
   "mesh_bounds": [
-    20,
-    16,
-    5.3
+    12,
+    11,
+    2.5
   ],
   "model": {
     "animations": {
@@ -66,16 +67,15 @@
     "filename": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter.papa"
   },
   "navigation": {
-    "acceleration": 50,
-    "aggressive_behavior": "circle",
-    "aggressive_distance": 150,
+    "acceleration": 65,
+    "aggressive_behavior": "point",
     "bank_factor": 1,
-    "brake": 50,
+    "brake": 20,
     "circle_max_time": 4,
     "circle_min_time": 2,
     "hover_time": -1.0,
-    "move_speed": 50,
-    "turn_speed": 120,
+    "move_speed": 65,
+    "turn_speed": 200,
     "type": "orbital"
   },
   "physics": {
@@ -101,7 +101,7 @@
   "tools": [
     {
       "aim_bone": "bone_body",
-      "muzzle_bone": "bone_recoil01",
+      "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/orbital/L_orbital_fighter/L_orbital_fighter_tool_weapon.json"
     }
   ],

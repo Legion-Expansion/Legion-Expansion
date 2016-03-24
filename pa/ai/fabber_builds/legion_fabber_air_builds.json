@@ -1,0 +1,450 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicAirFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicAirFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedAirFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Air & Basic",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicAirFactory"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital - SelfDestruct",
+            "value0": 0
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Air & Basic",
+            "value0": 0
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Air Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 376,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicAir"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "NeedBasicAirFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedBasicAirFactory"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryBasicAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Basic Air Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 515,
+      "shared_instance_count": "BasicFactory",
+      "to_build": "LegionFactoryBasicAir"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedAirFactory"
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedAirFactory"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Air & Advanced",
+            "value0": 0
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionAirBasicFabber",
+        "LegionAirAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Air Factory",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 477,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedAir"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveEcoForAdvanced"
+          },
+          {
+            "boolean": true,
+            "string0": "PreventsWaste",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": ">",
+            "test_type": "CurrentMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "MetalStorageFrac",
+            "value0": 0.2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "CurrentEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "NeedAdvancedAirFactory"
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "string0": "LegionFactoryAdvancedAir",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionAirBasicFabber",
+        "LegionAirAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Advanced Air Factory - Wasting",
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 525,
+      "shared_instance_count": "AdvancedFactory",
+      "to_build": "LegionFactoryAdvancedAir"
+    }
+  ]
+}

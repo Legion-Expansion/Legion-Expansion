@@ -1,0 +1,69 @@
+{
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
+  "spawn_response": {
+    "camera_shake": {
+      "delay": 4.5,
+      "duration": 1.8,
+      "height": {
+        "keys": [
+          [
+            0,
+            3
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "stepped": false
+      },
+      "interval": {
+        "keys": [
+          [
+            0,
+            0.06
+          ],
+          [
+            1.1,
+            0.03
+          ],
+          [
+            1.8,
+            0
+          ]
+        ],
+        "stepped": false
+      },
+      "max_falloff_dist": 1700.0,
+      "min_falloff_dist": 200.0,
+      "width": {
+        "keys": [
+          [
+            0,
+            3
+          ],
+          [
+            0.5,
+            3
+          ],
+          [
+            1.0,
+            0
+          ]
+        ],
+        "stepped": false
+      }
+    }
+  }
+}

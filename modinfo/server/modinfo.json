@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch",
-  "build": "89755",
+  "build": "89528",
   "category": [
     "server-mod",
     "lobby",
@@ -9,7 +9,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2016/03/01",
+  "date": "2016/03/24",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
@@ -19,7 +19,7 @@
     "com.pa.legion-expansion.client-balance"
   ],
   "description": "Super secret something something",
-  "display_name": "Legion Expansion Alpha (balance)",
+  "display_name": "Legion Expansion BETA",
   "enabled": true,
   "forum": "",
   "icon": "http://i.imgur.com/oyn18ZG.png",
@@ -69,5 +69,5 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.6"
+  "version": "0.6-beta"
 }

@@ -7,7 +7,7 @@
       "unit_types": "(Fabber & (Basic | Debug) & Custom1) - Orbital"
     },
     "AnyLegionFactoryAdvanced": {
-      "unit_types": "(Factory & Advanced) & Custom1"
+      "unit_types": "(Factory & Advanced) & Custom1 - PlanetEngine"
     },
     "AnyLegionFactoryAir": {
       "unit_types": "(Factory & Air) & Custom1"
@@ -22,7 +22,7 @@
       "unit_types": "(Factory & Naval) & Custom1"
     },
     "AnyLegionFactoryOrbital": {
-      "unit_types": "(Factory & Orbital) & Custom1"
+      "unit_types": "(Factory & Orbital) & Custom1 - PlanetEngine"
     },
     "AnyLegionFactoryVehicle": {
       "unit_types": "(Factory & Tank) & Custom1"
@@ -47,6 +47,9 @@
     },
     "LegionAirAdvancedTeleporter": {
       "spec_id": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.json"
+    },
+    "LegionAirBasicBomb": {
+      "spec_id": "/pa/units/air/L_air_bomb/L_air_bomb.json"
     },
     "LegionAirBasicBomber": {
       "spec_id": "/pa/units/air/L_bomber/L_bomber.json"
@@ -121,10 +124,10 @@
       "spec_id": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.json"
     },
     "LegionDefenseAdvancedLand": {
-      "spec_id": "/pa/units/land/L_laser_defense_adv/L_laser_defense_adv.json"
-    },
-    "LegionDefenseAdvancedLandII": {
       "spec_id": "/pa/units/land/L_flame_turret/L_flame_turret.json"
+    },
+    "LegionDefenseAdvancedModule": {
+      "spec_id": "/pa/units/land/L_control_module/L_control_module.json"
     },
     "LegionDefenseAdvancedNaval": {
       "spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.json"

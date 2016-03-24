@@ -1,5 +1,5 @@
 {
-  "display_name": "Wraith",
+  "display_name": "Ghost",
   "description": "Travels very fast between planets using Legion Slipstream Warp Technology",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
@@ -42,8 +42,8 @@
       "bone": "bone_body",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
       "offset": [
-        0.5,
-        10.2,
+        0,
+        8.5,
         0
       ],
       "orientation": [
@@ -54,8 +54,7 @@
       "type": "moving"
     }
   ],
-  "gravwell_velocity_multiplier": 100,
-  "guard_layer": "WL_Orbital",
+  "gravwell_velocity_multiplier": 50,
   "max_health": 50,
   "mesh_bounds": [
     9.4,
@@ -72,16 +71,13 @@
     "filename": "/pa/units/orbital/L_orbital_probe/L_orbital_probe.papa"
   },
   "navigation": {
-    "acceleration": 80,
-    "aggressive_behavior": "line",
-    "aggressive_distance": 30,
+    "acceleration": 75,
     "bank_factor": 2,
-    "brake": 80,
-    "hover_time": 1,
-    "move_speed": 120,
-    "turn_speed": 90,
-    "type": "orbital",
-    "vertical_speed": 200
+    "brake": 75,
+    "hover_time": -1,
+    "move_speed": 75,
+    "turn_speed": 75,
+    "type": "orbital"
   },
   "physics": {
     "gravity_scalar": 0.001,
@@ -113,6 +109,9 @@
         }
       ]
     }
+  },
+  "selection_icon": {
+    "diameter": -28.0
   },
   "spawn_layers": "WL_Orbital",
   "unit_types": [

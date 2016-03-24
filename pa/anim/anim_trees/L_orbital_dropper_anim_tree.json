@@ -1,0 +1,125 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "aim_bone_root": "bone_rotate",
+        "child": {
+          "entries": [
+            {
+              "name": "idle",
+              "node": {
+                "type": "bind_pose"
+              },
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "has_build_target",
+                    "target": "build_start"
+                  },
+                  "transition_reverse": {
+                    "func": "has_build_target",
+                    "target": "build_end"
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            },
+            {
+              "name": "build_start",
+              "node": {
+                "anim_name": "start",
+                "looping": false,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "anim_complete",
+                    "target": "build_loop"
+                  },
+                  "transition_reverse": {
+                    "func": "anim_complete",
+                    "target": "idle"
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            },
+            {
+              "name": "build_loop",
+              "node": {
+                "anim_name": "build",
+                "looping": true,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "no_build_target",
+                    "target": "build_end"
+                  },
+                  "transition_reverse": {
+                    "func": "no_build_target",
+                    "target": "build_start"
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            },
+            {
+              "name": "build_end",
+              "node": {
+                "anim_name": "end",
+                "looping": false,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "anim_complete",
+                    "target": "idle"
+                  },
+                  "transition_reverse": {
+                    "func": "anim_complete",
+                    "target": "build_loop"
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            }
+          ],
+          "transition_seek": {
+            "false_target": "idle",
+            "func": "has_build_target",
+            "true_target": "build_loop"
+          },
+          "type": "sequence"
+        },
+        "node_aim_down": {
+          "type": "bind_pose"
+        },
+        "node_aim_neutral": {
+          "type": "bind_pose"
+        },
+        "node_aim_up": {
+          "type": "bind_pose"
+        },
+        "type": "aim_blend",
+        "weapon_index": 0
+      }
+    },
+    "type": "unit_state"
+  }
+}

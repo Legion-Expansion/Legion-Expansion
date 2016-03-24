@@ -25,17 +25,17 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_small_left_muzzle"
+      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_small_left_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_small_right_muzzle"
+      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_small_right_muzzle"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/small_gun_smoke.pfx socket_main_muzzle"
+      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_main_muzzle"
     }
   },
   "guard_layer": "WL_AnySurface",

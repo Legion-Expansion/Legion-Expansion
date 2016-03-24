@@ -6,7 +6,7 @@
   "firing_arc_pitch": 10,
   "firing_arc_yaw": 10,
   "firing_standard_deviation": 25,
-  "max_range": 120,
+  "max_range": 140,
   "pitch_range": 180,
   "pitch_rate": 3600,
   "rate_of_fire": 1,

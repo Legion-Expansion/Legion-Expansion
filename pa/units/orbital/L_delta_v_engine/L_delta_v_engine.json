@@ -1,7 +1,7 @@
 {
-  "display_name": "Shoemaker",
-  "description": "!LOC(units:delta_v_engine_used_to_move_small_to_medium_celestial_bodies.message):Delta V Engine- Used to move small to medium celestial bodies.",
-  "TEMP_texelinfo": 77.8386,
+  "display_name": "Goku",
+  "description": "First planet mover component - Used to move small to medium celestial bodies.",
+  "TEMP_texelinfo": 39.9237,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,
   "audio": {
@@ -16,14 +16,16 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 40000,
+  "build_metal_cost": 50000,
   "build_restrictions": "Thrustable",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/delta_v"
     },
     "died": {
-      "audio_cue": "/SE/Death/delta_v"
+      "audio_cue": "/SE/Death/delta_v",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
   "fx_offsets": [
@@ -312,18 +314,18 @@
   ],
   "max_health": 20000,
   "mesh_bounds": [
-    50.0454,
-    50.0306,
-    43
+    65.192,
+    60.94,
+    58.53
   ],
   "model": {
     "animations": {
-      "end": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_end.papa",
-      "loop": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_loop.papa",
-      "start": "/pa/units/orbital/delta_v_engine/delta_v_engine_anim_start.papa"
+      "end": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_end.papa",
+      "loop": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_loop.papa",
+      "start": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_transition_anim_tree.json",
-    "filename": "/pa/units/orbital/delta_v_engine/delta_v_engine.papa"
+    "filename": "/pa/units/orbital/L_delta_v_engine/L_delta_v_engine.papa"
   },
   "orbital_thruster": {
     "power": 1
@@ -356,11 +358,8 @@
     "diameter": -69.0,
     "vertical_offset": 3.0
   },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [
     "UNITTYPE_Orbital",
-    "UNITTYPE_Factory",
-    "UNITTYPE_Construction",
     "UNITTYPE_Structure",
     "UNITTYPE_Land",
     "UNITTYPE_PlanetEngine",

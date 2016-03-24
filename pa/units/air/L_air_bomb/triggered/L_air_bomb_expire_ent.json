@@ -1,0 +1,14 @@
+{
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
+  "spawn_response": {
+    "audio_cue": "/SE/Weapons/bot/spark_fire",
+    "effect_spec": "/pa/units/air/L_air_bomb/triggered/L_air_bomb_expired.pfx"
+  }
+}
