@@ -4,6 +4,7 @@
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "firing_arc_pitch": 180,
   "firing_arc_yaw": 360,
+  "firing_standard_deviation": 10,
   "max_range": 35,
   "pitch_range": 180,
   "pitch_rate": 3600,
@@ -14,6 +15,5 @@
     "WL_Air"
   ],
   "yaw_range": 360,
-  "yaw_rate": 3600,
-  "firing_standard_deviation": 10
+  "yaw_rate": 3600
 }
