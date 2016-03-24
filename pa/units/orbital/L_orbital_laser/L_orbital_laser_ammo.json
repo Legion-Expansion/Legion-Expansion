@@ -16,6 +16,7 @@
       "effect_spec": "/pa/units/orbital/L_orbital_laser/L_orb_laser_exp.pfx"
     }
   },
+  "full_damage_splash_radius": 5,
   "fx_trail": {
     "filename": "/pa/units/orbital/L_orbital_laser/trail.pfx",
     "offset": [
@@ -24,7 +25,6 @@
       0
     ]
   },
-  "full_damage_splash_radius": 5,
   "initial_velocity": 60,
   "lifetime": 5,
   "max_velocity": 60,
