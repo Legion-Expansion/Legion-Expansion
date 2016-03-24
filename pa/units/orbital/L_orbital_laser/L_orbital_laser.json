@@ -94,13 +94,7 @@
   "tools": [
     {
       "aim_bone": "bone_tusks",
-      "muzzle_bone": [
-        "socket_muzzle",
-        "socket_muzzle",
-        "socket_muzzle",
-        "socket_muzzle"
-      ],
-      "projectiles_per_fire": 4,
+      "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_tool_weapon.json"
     }
   ],
