@@ -19,7 +19,6 @@
   "initial_velocity": 400,
   "lifetime": 10,
   "max_velocity": 400,
-  "sim_impact_effect": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_shake.json",
   "splash_damage": 0,
   "splash_radius": 0
 }
