@@ -101,7 +101,7 @@
       "type": "build"
     },
     {
-      "bone": "socket_muzzle",
+      "bone": "bone_root",
       "filename": "/pa/units/orbital/L_orbital_dropper/beam.pfx",
       "offset": [
         0,
@@ -116,7 +116,7 @@
       "type": "enabled"
     },
     {
-      "bone": "bone_rotate",
+      "bone": "bone_spin",
       "filename": "/pa/units/orbital/L_orbital_dropper/ground.pfx",
       "offset": [
         0,
@@ -131,7 +131,7 @@
       "type": "enabled"
     },
     {
-      "bone": "bone_rotate",
+      "bone": "bone_spin",
       "filename": "/pa/units/orbital/L_orbital_dropper/teleporter_glow.pfx",
       "offset": [
         0,
