@@ -44,7 +44,26 @@ if (!legionExpansionLoaded) {
                 
                 model.legionclient_checkLoaded();
             }
-        }        
+        } 
+        
+        //WELCOME MESSAGE   
+        var url = "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/";
+        model.openUrl = function(href) {
+            engine.call('web.launchPage', href);
+        }
+        model.openThread = function() {
+            model.openUrl(url);
+        }
+        model.hideDiv = function() {
+            $(".light").css("display", "none");
+            $(".lwmfade").css("display", "none");
+        }
+        $("body").append('<div class="light"><p><br />Welcome to the Legion Expansion mod! This mod adds an entirely new faction to Planetary Annihilation - ' +
+                            'don\'t worry though, the vanilla faction is completely unchanged!<br />' +
+                            '<a data-bind="click: model.openThread;">Forum Thread</a>' +
+                            '</p> <div data-bind="click: model.hideDiv;" class="closewrapper"><div>CLOSE</div></div></div>');
+        $("body").append('<div class="lwmfade"></div>');  
+
         //ADD WARNING MESSAGE CLIENt
         $("#start-error").parent().prepend('<div class="legionalert" data-bind="visible:model.legionclient_isChecked() && !model.legionclient_isLoaded()">Legion Client Mod Missing</div>');
 
