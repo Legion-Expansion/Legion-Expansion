@@ -41,11 +41,6 @@
     40
   ],
   "model": {
-    "animations": {
-      "closed": "/pa/units/orbital/orbital_laser/orbital_laser_anim_closed.papa",
-      "deploy": "/pa/units/orbital/orbital_laser/orbital_laser_anim_deploy.papa",
-      "open": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_open.papa"
-    },
     "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json",
     "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
   },
