@@ -22,7 +22,7 @@
   "flight_type": "Staged",
   "full_damage_splash_radius": 25,
   "fx_trail": {
-    "filename": "/pa/effects/specs/shell_proj_trail.pfx",
+    "filename": "/pa/units/land/L_titan_vehicle/side_trail.pfx",
     "offset": [
       0.0,
       0.8,
