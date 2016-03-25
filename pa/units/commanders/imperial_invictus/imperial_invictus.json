@@ -98,68 +98,6 @@
       "shadow_resolution": 128
     }
   ],
-  "lamps": [
-    {
-      "bone": "bone_spine",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "intensity": 5.0,
-      "offset": [
-        0.0,
-        -1.7,
-        1.9
-      ],
-      "radius": 2.0
-    },
-    {
-      "bone": "bone_leftElbow",
-      "color": [
-        0.4,
-        1.0,
-        0.01
-      ],
-      "intensity": 2.0,
-      "offset": [
-        0.07,
-        -3.85,
-        0.2
-      ],
-      "radius": 4.0
-    },
-    {
-      "bone": "bone_rightPad",
-      "color": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        -1.754,
-        0.022,
-        1.272
-      ],
-      "radius": 4.0
-    },
-    {
-      "bone": "bone_leftPad",
-      "color": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "intensity": 1.0,
-      "offset": [
-        1.753,
-        0.022,
-        1.272
-      ],
-      "radius": 4.0
-    }
-  ],
   "max_health": 12500,
   "mesh_bounds": [
     12.6,

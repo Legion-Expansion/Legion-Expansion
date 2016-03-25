@@ -86,10 +86,15 @@
         "socket_muzzle002"
       ],
       "projectiles_per_fire": 2,
+      "fire_event": "fired1",
+      "record_index": 1,
       "spec_id": "/pa/units/orbital/L_defense_satellite/L_defense_satellite_tool_weapon.json"
     },
     {
       "aim_bone": "laser",
+	  "muzzle_bone": "laser",
+      "fire_event": "fired2",
+      "record_index": 2,
       "spec_id": "/pa/units/orbital/L_defense_satellite/L_defense_satellite_ground_tool_weapon.json"
     }
   ],
