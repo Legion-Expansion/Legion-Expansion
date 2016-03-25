@@ -87,32 +87,34 @@ if (!legionExpansionLoaded) {
             model.send_message("chat_message", msg);
 		  }
 
-        isModMounted = function(mod_identifier, modlist) {
-            for(i in modlist) {
-                if(modlist[i].identifier == mod_identifier) {
-						 legion_sendChatMessage("Using Legion Expansion client v" + modlist[i].version);
-                    return true;
-					  }
-            }
-            legion_sendChatMessage("Legion Expansion client not installed!");
-            return false;
-        }
-
         // Check if client mod is installed and display appropriate welcome message
-        api.mods.getMountedMods("client", function(modlist){
+        // Subscribe postpones this code until the check is complete.
+        model.legionclient_isChecked.subscribe(function(hasClient) {
 
-            if(isModMounted("com.pa.monty-client", modlist)) {
+            // HACK to prevent clicking ready if the client mod is not present
+            model.toggleReady_original = model.toggleReady;
+			   model.toggleReady = function () {
+			       if(model.legionclient_isLoaded()) {
+                    model.toggleReady_original();
+                }
+            };
+
+            if(model.legionclient_isLoaded()) {
                 if(model.legionWelcomeDontShow() != "true") {
                     legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
                 }
             } else {
+				    // HACK to force the ready button to stay disabled.
+				    // This is terrible and will break if the ready button stop being the div that immediately follows #start-error.
+				    // Uber why do you almost never give divs IDs?
+					 $("#start-error").next().children().addClass("disabled");
+
                 model.legionWelcomeDontShow(false);
                 localStorage.legion_welcome_dontshow = false;
+                legion_sendChatMessage("Legion Expansion client not installed!");
                 legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome_noclientmod.html");
             }
         });
-
-
 
         //ADD WARNING MESSAGE CLIENT
         $("#start-error").parent().prepend('<div class="legionalert" data-bind="visible:model.legionclient_isChecked() && !model.legionclient_isLoaded()">Legion Client Mod Missing</div>');
