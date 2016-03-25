@@ -1,7 +1,12 @@
 {
   "ammo_capacity": 420,
   "ammo_demand": 35,
-  "ammo_id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
+      "layer": "WL_AnyLand"
+    }
+  ],
   "ammo_per_shot": 420,
   "ammo_source": "metal",
   "auto_attack": true,

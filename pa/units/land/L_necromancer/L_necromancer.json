@@ -75,7 +75,7 @@
     "group_preference": "back",
     "move_speed": 10,
     "turn_speed": 240,
-    "type": "land-small"
+    "type": "amphibious"
   },
   "physics": {
     "radius": 2
