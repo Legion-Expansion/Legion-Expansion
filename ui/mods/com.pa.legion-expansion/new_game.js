@@ -12,11 +12,11 @@ if (!legionExpansionLoaded) {
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
         //LOAD CUSTOM LEGION CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");  
-        
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");
+
         model.legionclient_isLoaded = ko.observable(false);
         model.legionclient_isChecked = ko.observable(false);
-        
+
         model.legionclient_checkLoaded = function()
         {
             api.mods.getMountedMods( 'client', function ( mods )
@@ -26,45 +26,65 @@ if (!legionExpansionLoaded) {
                 model.legionclient_isChecked(true);
                 console.log("legion expansion client mod loaded : " + loaded );
             });
-            
+
         }
-        
+
         // once mod data is sent check if client mod is actually loaded
         if ( window.scene_server_mod_list && window.scene_server_mod_list.new_game )
         {
-            model.legionclient_checkLoaded(); 
+            model.legionclient_checkLoaded();
         }
         else
         {
             model.legion_server_mod_info_updated_handler = handlers.server_mod_info_updated;
-    
+
             handlers.server_mod_info_updated = function( payload )
             {
                 model.legion_server_mod_info_updated_handler( payload );
-                
+
                 model.legionclient_checkLoaded();
             }
-        } 
-        
-        //WELCOME MESSAGE   
-        var url = "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/";
-        model.openUrl = function(href) {
-            engine.call('web.launchPage', href);
-        }
-        model.openThread = function() {
-            model.openUrl(url);
-        }
-        model.hideDiv = function() {
-            $(".light").css("display", "none");
-            $(".lwmfade").css("display", "none");
         }
-        $("body").append('<div class="light"><p><br />Welcome to the Legion Expansion mod! This mod adds an entirely new faction to Planetary Annihilation - ' +
-                            'don\'t worry though, the vanilla faction is completely unchanged!<br />' +
-                            '<a data-bind="click: model.openThread;">Forum Thread</a>' +
-                            '</p> <div data-bind="click: model.hideDiv;" class="closewrapper"><div>CLOSE</div></div></div>');
-        $("body").append('<div class="lwmfade"></div>');  
 
-        //ADD WARNING MESSAGE CLIENt
+        //WELCOME MESSAGE
+
+			model.legionWelcomeDontShow = ko.observable(localStorage.legion_welcome_dontshow);
+
+        //load html dynamically
+        legion_loadHtmlTemplate = function(element, url) {
+            element.load(url, function () {
+                console.log("Loading html " + url);
+                element.children().each(function() {
+                    ko.applyBindings(model, this);
+                });
+            });
+        };
+
+        legion_openUrl = function(href) {
+            engine.call('web.launchPage', href);
+        }
+
+        $("body").append("<div id='legion_welcome'></div>");
+
+			// Look through the html file and make all the links clickable.
+        $("#legion_welcome").on("DOMSubtreeModified", function() {
+            $("#legion_welcome").find("a").unbind("click");
+            $("#legion_welcome").find("a").on("click", function(e) {
+                var linkTarget = e.delegateTarget.href;
+                legion_openUrl(linkTarget);
+                return false;
+            });
+        });
+
+        legion_welcome_dontshow = function() {
+			  model.legionWelcomeDontShow(true);
+			  localStorage.legion_welcome_dontshow = true;
+		  }
+
+			if(model.legionWelcomeDontShow() != "true")
+        		legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
+
+        //ADD WARNING MESSAGE CLIENT
         $("#start-error").parent().prepend('<div class="legionalert" data-bind="visible:model.legionclient_isChecked() && !model.legionclient_isLoaded()">Legion Client Mod Missing</div>');
 
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
@@ -93,7 +113,7 @@ if (!legionExpansionLoaded) {
             model.send_message('set_ai_commander', {
                 id: playerid,
                 ai_commander: legioncommanders[_.random(legioncommanders.length-1)]
-            });   
+            });
         }
 
         model.changeVanillaAI = function(playerid){
@@ -101,7 +121,7 @@ if (!legionExpansionLoaded) {
             model.send_message('set_ai_commander', {
                 id: playerid,
                 ai_commander: vanillacommanders[_.random(vanillacommanders.length-1)]
-            });   
+            });
         }
 
         //NEED PATCHED lobby.js
@@ -110,8 +130,8 @@ if (!legionExpansionLoaded) {
         //To Vanilla Button
         $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">To MLA</div>');
         //ENDOF NEED PATCHED lobby.js
-        
-      
+
+
 
 /*      var commanderObjectNameToHack = 'ImperialFiveleafclover';
 
@@ -120,14 +140,14 @@ if (!legionExpansionLoaded) {
         model.commanders.subscribe(function (commanders) {
             commanders.push(commanderIdToHack);
         });
-        
+
         localStorage.setItem('legionExpansionSelected', false);
 
         model.selectedCommander.subscribe(function (selectedCommander) {
 
             localStorage.setItem('legionExpansionSelected', selectedCommander == commanderIdToHack);
 
-        }); 
+        });
 
     model.legionCommanderSelected = ko.observable(false);
 
@@ -145,7 +165,7 @@ if (!legionExpansionLoaded) {
 
 
     }
-     
+
     try {
         legionExpansion();
     } catch (e) {

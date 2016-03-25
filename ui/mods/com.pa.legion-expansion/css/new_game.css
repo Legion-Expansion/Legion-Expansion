@@ -43,23 +43,32 @@
         margin:0 auto;
         padding: 16px;
         z-index:1002;
-        left: 25%;
-        overflow: auto;
+        left: 50%;
+        /*overflow: auto;*/
         top: 25%;
-        background-image: url(coui://ui/mods/com.pa.legion-expansion/img/welcome_block.png);
-        background-repeat: no-repeat; 
-        background-size: 750px 500px;
-        background-position: right 50% bottom 1100%;
+
+    }
+    
+    .light-inner {
+    	background-image: url(coui://ui/mods/com.pa.legion-expansion/img/welcome_block.png);
+	        background-repeat: no-repeat; 
+	        background-size: 750px 500px;
+	        background-position: right 50% bottom 1100%;
         background-origin: content-box;
+        margin-left: -100%;
+        display: inline-table;
+        width: 475px;
+        
     }
     .light p {
       font-size:18px;
-      width: 50%;
+      width: 375px;
       height: 300px;
-      bottom: 25px;
-      display: inline-table;
+      margin-left: 50px;
+      /*bottom: 25px;*/
+      /*display: inline-table;*/
       position: relative;
-      overflow-y: scroll;
+      /*overflow-y: scroll;*/
 }
     .closewrapper {
       text-decoration:none;
@@ -70,7 +79,7 @@
       position: relative;
       margin:0 auto;
       padding: 15px;
-      width: 50%;
+      width: 120px;
       height:200px;
       background-image: url(coui://ui/main/shared/img/buttons/btn_lrg_std.png);
       background-size: 120px 80px;
@@ -82,5 +91,25 @@
     
       vertical-align: middle;
       bottom: 100px;
-      left: 130px;
+      left: 100px;
+}
+
+#legion-welcome-links {
+	display: inline;
+	width: 100px;
+	font-size: 18px;
+	position: relative;
+	top: -180px;
+	left: 33px;
+	margin-left: -75px;
+}
+
+#legion-welcome-checkbox {
+	display: inline;
+	width: 100px;
+	font-size: 18px;
+	position: relative;
+	top: -150px;
+	left: 100px;
+	margin-left: -200px;
 }
