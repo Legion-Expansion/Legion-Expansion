@@ -1,16 +1,16 @@
 {
-  "author": "Nicb1,KillerKiwiJuice,Crembels",
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea",
   "build": "89528",
   "category": [
     "Units",
     "Faction"
   ],
   "context": "client",
-  "date": "2016/03/24",
+  "date": "2016/03/25",
   "dependencies": [
     "com.pa.legion-expansion.server-balance"
   ],
-  "description": "A somewhat secret project",
+  "description": "Supporting files necessary to play with the Legion Expansion server mod.",
   "display_name": "Legion Expansion BETA",
   "enabled": true,
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",

@@ -1,5 +1,5 @@
 {
-  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch",
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea",
   "build": "89528",
   "category": [
     "server-mod",
@@ -9,7 +9,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2016/03/24",
+  "date": "2016/03/25",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.icon_extensions",
@@ -18,10 +18,10 @@
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.legion-expansion.client-balance"
   ],
-  "description": "Super secret something something",
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
   "display_name": "Legion Expansion BETA",
   "enabled": true,
-  "forum": "",
+  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
   "icon": "http://i.imgur.com/oyn18ZG.png",
   "identifier": "com.pa.legion-expansion.server-balance",
   "scenes": {
