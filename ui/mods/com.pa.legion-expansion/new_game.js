@@ -77,12 +77,42 @@ if (!legionExpansionLoaded) {
         });
 
         legion_welcome_dontshow = function() {
-			  model.legionWelcomeDontShow(true);
+			  model.legionWelcomeDontShow("true");
 			  localStorage.legion_welcome_dontshow = true;
 		  }
 
-			if(model.legionWelcomeDontShow() != "true")
-        		legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
+		  legion_sendChatMessage = function(message) {
+            var msg = {};
+            msg.message = message;
+            model.send_message("chat_message", msg);
+		  }
+
+        isModMounted = function(mod_identifier, modlist) {
+            for(i in modlist) {
+                if(modlist[i].identifier == mod_identifier) {
+						 legion_sendChatMessage("Using Legion Expansion client v" + modlist[i].version);
+                    return true;
+					  }
+            }
+            legion_sendChatMessage("Legion Expansion client not installed!");
+            return false;
+        }
+
+        // Check if client mod is installed and display appropriate welcome message
+        api.mods.getMountedMods("client", function(modlist){
+
+            if(isModMounted("com.pa.monty-client", modlist)) {
+                if(model.legionWelcomeDontShow() != "true") {
+                    legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
+                }
+            } else {
+                model.legionWelcomeDontShow(false);
+                localStorage.legion_welcome_dontshow = false;
+                legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome_noclientmod.html");
+            }
+        });
+
+
 
         //ADD WARNING MESSAGE CLIENT
         $("#start-error").parent().prepend('<div class="legionalert" data-bind="visible:model.legionclient_isChecked() && !model.legionclient_isLoaded()">Legion Client Mod Missing</div>');
