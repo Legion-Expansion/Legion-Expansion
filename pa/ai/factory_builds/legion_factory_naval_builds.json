@@ -389,6 +389,32 @@
       "name": "Legion - Advanced Destroyer",
       "priority": 199,
       "to_build": "LegionNavalAdvancedDestroyer"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "name": "Legion - Hover Ship",
+      "priority": 199,
+      "to_build": "LegionNavalAdvancedHover"
     }
   ]
 }

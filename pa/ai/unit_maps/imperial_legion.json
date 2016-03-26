@@ -234,6 +234,9 @@
     "LegionNavalAdvancedFabberSub": {
       "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json"
     },
+    "LegionNavalAdvancedHover": {
+      "spec_id": "/pa/units/sea/L_hover_ship/L_hover_ship.json"
+    },
     "LegionNavalAdvancedTactical": {
       "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship.json"
     },
