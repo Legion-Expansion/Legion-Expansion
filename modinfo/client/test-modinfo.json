@@ -15,7 +15,46 @@
   "scenes": {
     "server_browser": [
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
-    ]
+    ],
+    "settings": [
+      "coui://ui/mods/com.pa.legion-expansion/settings_client.js"
+    ],
+    "live_game_players": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_players_client.js"
+    ],
+    "live_game_planets": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_planets_client.js"
+    ],
+    "live_game_control_group_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar_client.js"
+    ],
+    "live_game_options_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar_client.js"
+    ],
+    "live_game_econ": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_econ_client.js"
+    ],
+    "live_game_time_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar_client.js"
+    ],
+    "live_game_build_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar_client.js"
+    ],
+    "live_game_build_hover": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover_client.js"
+    ],
+    "live_game_action_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar_client.js"
+    ],
+    "live_game_selection": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_selection_client.js"
+    ],
+    "live_game_sandbox": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox_client.js"
+    ],    
+    "start":[
+      "coui://ui/mods/com.pa.legion-expansion/start_client.js"
+    ]    
   },
   "priority": 100,
   "signature": "(not yet implemented)",
