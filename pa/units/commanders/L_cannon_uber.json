@@ -1,11 +1,6 @@
 {
   "base_spec": "/pa/ammo/cannon_uber/cannon_uber.json",
-  "damage": 800,
-  "damage_volume": {
-    "burnable_remove_radius": 30.0,
-    "initial_radius": 5.0,
-    "radius_velocity": 20.0
-  },
+  "damage": 700,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/cannon_uber",
@@ -21,7 +16,7 @@
       0.0
     ]
   },
-  "splash_damage": 800,
-  "splash_radius": 28,
+  "splash_damage": 700,
+  "splash_radius": 20,
   "turn_rate": 180
 }

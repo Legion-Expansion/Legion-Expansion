@@ -4,7 +4,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_scale": 1.0,
+      "effect_scale": 0.8,
       "effect_spec": "/pa/units/sea/L_battleship/main_gun_exp.pfx"
     }
   },
