@@ -17,7 +17,7 @@ if ( ! legionExpansionLoaded )
         
         //LOAD CUSTOM LEGION CSS
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players_client.css");
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common_client.js");
+        loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         //see global.js
         var legioncomms = legionglobal.commanders;

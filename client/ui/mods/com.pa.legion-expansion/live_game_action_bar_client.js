@@ -16,7 +16,7 @@ if ( ! legionExpansionLoaded )
         
         //LOAD CUSTOM LEGION ACTIONBAR CSS
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar_client.css");
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common_client.js");
+        loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         //see global.js
         var legionspecids = legionglobal.commanders;
