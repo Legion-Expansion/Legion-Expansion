@@ -1,0 +1,12 @@
+//check if we can't get this from blueprint unit infoframework but will need dependency.
+var legionglobal = {};
+
+legionglobal.commanders = ["/pa/units/commanders/tank_aeson/tank_aeson.json","/pa/units/commanders/imperial_invictus/imperial_invictus.json"];
+legionglobal.basicfactories = ["/pa/units/air/L_air_factory/L_air_factory.json","/pa/units/land/L_bot_factory/L_bot_factory.json","/pa/units/land/L_vehicle_factory/L_vehicle_factory.json","/pa/units/sea/L_naval_factory/L_naval_factory.json","/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.json"];
+legionglobal.advfactories = ["/pa/units/air/L_air_factory_adv/L_air_factory_adv.json","/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.json","/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.json","/pa/units/sea/L_naval_factory_adv/L_naval_factory_adv.json","/pa/units/orbital/L_orbital_factory/L_orbital_factory.json"];
+legionglobal.airfabbers = ["/pa/units/air/L_fabrication_aircraft/L_fabrication_aircraft.json","/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.json"];
+legionglobal.landfabbers = ["/pa/units/land/L_fabrication_vehicle/L_fabrication_vehicle.json","/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.json","/pa/units/land/L_fabrication_vehicle_combat/L_fabrication_vehicle_combat.json","/pa/units/land/L_bot_support_commander/L_bot_support_commander.json","/pa/units/land/L_fabrication_bot/L_fabrication_bot.json","/pa/units/land/L_fabrication_bot_adv/L_fabrication_bot_adv.json"];
+legionglobal.orbitalfabbers = ["/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.json"];
+legionglobal.navalfabbers = ["/pa/units/sea/L_fabrication_ship/L_fabrication_ship.json","/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.json","/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.json"];
+legionglobal.launchers = ["/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.json","/pa/units/land/L_nuke_launcher/L_nuke_launcher.json", "/pa/units/land/L_unit_cannon/L_unit_cannon.json"];
+legionglobal.builders = _.union(legionglobal.commanders,legionglobal.basicfactories,legionglobal.advfactories,legionglobal.airfabbers,legionglobal.landfabbers,legionglobal.orbitalfabbers,legionglobal.navalfabbers,legionglobal.launchers);
