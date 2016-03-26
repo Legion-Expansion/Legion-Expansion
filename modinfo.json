@@ -28,44 +28,50 @@
       "coui://ui/mods/com.pa.legion-expansion/global.js"
     ],
     "settings": [
-      "coui://ui/mods/com.pa.legion-expansion/settings.js"
+      "coui://ui/mods/com.pa.legion-expansion/settings_client.js"
     ],
     "live_game_players": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_players_client.js"
     ],
     "live_game_planets": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_planets.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_planets_client.js"
     ],
     "live_game_control_group_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar_client.js"
     ],
     "live_game_options_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar_client.js"
     ],
     "live_game_econ": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_econ.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_econ_client.js"
     ],
     "live_game_time_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar_client.js"
     ],
     "live_game_build_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar_client.js"
     ],
     "live_game_build_hover": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover_client.js"
     ],
     "live_game_action_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar_client.js"
     ],
     "live_game_selection": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_selection.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_selection_client.js"
     ],
     "live_game_sandbox": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox_client.js"
+    ],
+    "server_browser": [
+      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
     ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
-    ]
+    ],
+    "start":[
+      "coui://ui/mods/com.pa.legion-expansion/start_client.js"
+    ]    
   },
   "signature": "not yet implemented",
   "version": "0.6-beta"
