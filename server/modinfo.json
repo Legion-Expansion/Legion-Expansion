@@ -1,0 +1,37 @@
+{
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea",
+  "build": "89528",
+  "category": [
+    "server-mod",
+    "lobby",
+    "in-game",
+    "units",
+    "faction"
+  ],
+  "context": "server",
+  "date": "2016/03/25",
+  "dependencies": [
+    "com.wondible.pa.hodgepodge",
+    "com.wondible.pa.icon_extensions",
+    "com.wondible.pa.icon_reloader",
+    "com.wondible.pa.xenophobia",
+    "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
+    "com.pa.legion-expansion.client-balance"
+  ],
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
+  "display_name": "Legion Expansion BETA",
+  "enabled": true,
+  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
+  "icon": "http://i.imgur.com/oyn18ZG.png",
+  "identifier": "com.pa.legion-expansion.server-balance",
+  "scenes": {
+    "global_mod_list": [
+      "coui://ui/mods/com.pa.legion-expansion/global.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.6-beta"
+}
