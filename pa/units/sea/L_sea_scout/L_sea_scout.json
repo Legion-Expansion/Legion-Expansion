@@ -13,7 +13,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 180,
+  "build_metal_cost": 200,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"
@@ -32,7 +32,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 230,
+  "max_health": 255,
   "mesh_bounds": [
     4.401,
     12.124,
