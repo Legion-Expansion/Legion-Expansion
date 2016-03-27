@@ -1,6 +1,6 @@
 {
-  "display_name": "Advanced Mass Extractor",
-  "description": "Advanced Mass-Lode Extractor - Extracts Metal to Support Economic Expansion.",
+  "display_name": "Advanced Metal Extractor",
+  "description": "Extracts Metal, can only be placed on metal deposits.",
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
