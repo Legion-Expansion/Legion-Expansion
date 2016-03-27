@@ -1,0 +1,66 @@
+{
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
+  "build": "89528",
+  "category": [
+    "Units",
+    "Faction"
+  ],
+  "context": "client",
+  "date": "2016/03/25",
+  "dependencies": [
+    "com.pa.legion-expansion.server-balance"
+  ],
+  "description": "Supporting files necessary to play with the Legion Expansion server mod.",
+  "display_name": "Legion Expansion BETA",
+  "enabled": true,
+  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
+  "icon": "http://i.imgur.com/SsUYiL8.png",
+  "identifier": "com.pa.legion-expansion.client-balance",
+  "scenes": {
+    "server_browser": [
+      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
+    ],
+    "settings": [
+      "coui://ui/mods/com.pa.legion-expansion/settings.js"
+    ],
+    "live_game_players": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
+    ],
+    "live_game_planets": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_planets.js"
+    ],
+    "live_game_control_group_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar.js"
+    ],
+    "live_game_options_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar.js"
+    ],
+    "live_game_econ": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_econ.js"
+    ],
+    "live_game_time_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar.js"
+    ],
+    "live_game_build_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
+    ],
+    "live_game_build_hover": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover.js"
+    ],
+    "live_game_action_bar": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"
+    ],
+    "live_game_selection": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_selection.js"
+    ],
+    "live_game_sandbox": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
+    ],
+    "start":[
+      "coui://ui/mods/com.pa.legion-expansion/start.js"
+    ]
+  },
+  "priority": 100,
+  "signature": "(not yet implemented)",
+  "version": "0.6-beta"
+}

@@ -1,0 +1,231 @@
+{
+  "display_name": "Overwatch Commander",
+  "description": "Legion Overwatch Commander",
+  "armor_type": "AT_Commander",
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        12.2
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/commander"
+    }
+  },
+  "build_metal_cost": 25000,
+  "buildable_types": "CmdBuild & Custom1",
+  "catalog_object_name": "InvictusCommander",
+  "client": {
+    "ui": {
+      "image": "/ui/main/shared/img/commanders/overwatch_image.png",
+      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_overwatch.png",
+      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_imperial_invictus_thumb.png"
+    }
+  },
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "death_weapon": {
+    "air_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe_air.json",
+    "air_height_threshold": 50,
+    "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json"
+  },
+  "events": {
+    "fired": {
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle"
+    },
+    "teleported": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "lathe",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "headlights": [
+    {
+      "bone": "bone_turret",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "far_distance": 30.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6.0,
+      "near_distance": 3.0,
+      "near_height": 5.0,
+      "near_width": 5.0,
+      "offset": [
+        0.0,
+        -1.7,
+        1.9
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shadow_resolution": 128
+    }
+  ],
+  "max_health": 12500,
+  "mesh_bounds": [
+    12.6,
+    6,
+    15.6193
+  ],
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa",
+      "walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa",
+      "walk_stop": ""
+    },
+    "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
+    "filename": "/pa/units/commanders/imperial_invictus/imperial_invictus.papa",
+    "walk_speed": 6
+  },
+  "navigation": {
+    "acceleration": 60,
+    "brake": -1,
+    "move_speed": 6,
+    "park_stamp": {
+      "cost": 20,
+      "shape": "sphere",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    },
+    "turn_in_place": false,
+    "turn_speed": 90,
+    "type": "amphibious"
+  },
+  "physics": {
+    "radius": 9,
+    "sync_radius_to_extents": true
+  },
+  "production": {
+    "energy": 2000,
+    "metal": 20
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "celestial",
+          "radius": 1,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -16.6
+  },
+  "show_in_orbital_layer": true,
+  "storage": {
+    "energy": 45000,
+    "metal": 1500
+  },
+  "strategic_icon_priority": 0,
+  "teleportable": {},
+  "tools": [
+    {
+      "aim_bone": "turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "turret",
+      "muzzle_bone": "muzzle",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
+    },
+    {
+      "aim_bone": "turret",
+      "muzzle_bone": "muzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+    },
+    {
+      "aim_bone": "turret",
+      "muzzle_bone": "muzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
+    },
+    {
+      "aim_bone": "turret",
+      "muzzle_bone": "muzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

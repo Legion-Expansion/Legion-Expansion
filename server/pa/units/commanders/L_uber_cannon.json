@@ -1,0 +1,23 @@
+{
+  "ammo_capacity": 10000,
+  "ammo_demand": 2500,
+  "ammo_id": "/pa/units/commanders/L_cannon_uber.json",
+  "ammo_per_shot": 10000,
+  "ammo_source": "energy",
+  "auto_attack": false,
+  "auto_task_type": "none",
+  "base_spec": "/pa/tools/uber_cannon/uber_cannon.json",
+  "manual_fire": true,
+  "max_range": 100,
+  "pitch_range": 90,
+  "pitch_rate": 360,
+  "rate_of_fire": 1.0,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 360
+}

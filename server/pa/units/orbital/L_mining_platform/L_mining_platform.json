@@ -1,0 +1,100 @@
+{
+  "display_name": "Rig",
+  "description": "Gas Planet Economy Structure - Produces Metal and Energy. Only works above gas giant planets.",
+  "TEMP_texelinfo": 48,
+  "area_build_separation": 100,
+  "area_build_type": "Sphere",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 50.0,
+  "audio": {
+    "loops": {
+      "enabled": {
+        "cue": "/SE/Celestial/Planet_Engines_Loop",
+        "flag": "enable_changed",
+        "should_start_func": "is_enabled",
+        "should_stop_func": "is_disabled"
+      }
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "build_metal_cost": 3600,
+  "build_restrictions": "Terrainless",
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/orbital/mining_platform/mining_platform_nuke.json"
+  },
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital_platform"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/mining_platform_orbital_explosion.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/orbital/L_mining_platform/top_light.pfx",
+      "type": "idle"
+    },
+    {
+      "filename": "/pa/units/orbital/L_mining_platform/main_effect.pfx",
+      "type": "idle"
+    }
+  ],
+  "max_health": 600,
+  "mesh_bounds": [
+    118.558,
+    118.558,
+    54.449
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/orbital/L_mining_platform/L_mining_platform_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "filename": "/pa/units/orbital/L_mining_platform/L_mining_platform.papa"
+  },
+  "physics": {
+    "collision_layers": "WL_Orbital",
+    "ignore_gravity": true,
+    "radius": 40
+  },
+  "placement_size": [
+    100,
+    100
+  ],
+  "production": {
+    "energy": 1080,
+    "metal": 43
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 250,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -83
+  },
+  "spawn_layers": "WL_Orbital",
+  "storage": {
+    "energy": 50000,
+    "metal": 10000
+  },
+  "unit_types": [
+    "UNITTYPE_Orbital",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_EnergyProduction",
+    "UNITTYPE_MetalProduction",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Economy",
+    "UNITTYPE_Custom1"
+  ]
+}
