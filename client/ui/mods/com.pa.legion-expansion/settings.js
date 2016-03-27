@@ -11,7 +11,7 @@ if ( ! legionExpansionLoaded )
 
         var buildVersion = decode( sessionStorage.build_version );
 
-        var patchName = 'legionExpansion settings_client.js';
+        var patchName = 'legionExpansion settings.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
        _.extend(api.settings.definitions.ui.settings, {

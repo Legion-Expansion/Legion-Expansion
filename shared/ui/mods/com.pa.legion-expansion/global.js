@@ -511,8 +511,13 @@
           ["L_air", 12]
         ]
       },
-
-
+      {
+        spec_id: "/pa/units/sea/L_hover_ship/L_hover_ship.json",
+        si_fallback: ["hover_ship"],
+        preferred_builds: [
+            ["L_sea", 0]
+        ]
+      },
       {
         spec_id: "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.json",
         si_fallback: ["fabrication_ship_adv"],

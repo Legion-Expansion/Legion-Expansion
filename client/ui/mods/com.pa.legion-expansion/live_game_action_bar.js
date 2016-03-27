@@ -10,12 +10,12 @@ if ( ! legionExpansionLoaded )
 
         var buildVersion = decode( sessionStorage.build_version );
 
-        var patchName = 'legionExpansion live_game_action_bar_client.js';
+        var patchName = 'legionExpansion live_game_action_bar.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
         
         //LOAD CUSTOM LEGION ACTIONBAR CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar_client.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css");
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         //see global.js

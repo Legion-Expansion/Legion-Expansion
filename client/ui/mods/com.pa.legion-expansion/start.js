@@ -11,10 +11,10 @@ if ( ! legionExpansionLoaded )
 
         var buildVersion = decode( sessionStorage.build_version );
 
-        var patchName = 'legionExpansion start_client.js';
+        var patchName = 'legionExpansion start.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start_client.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
         $('body').addClass("legion");
     }
 

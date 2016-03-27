@@ -10,7 +10,7 @@ if ( ! legionExpansionLoaded )
 
         var buildVersion = decode( sessionStorage.build_version );
 
-        var patchName = 'legionExpansion live_game_sandbox_client.js';
+        var patchName = 'legionExpansion live_game_sandbox.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
 

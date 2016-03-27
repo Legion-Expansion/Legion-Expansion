@@ -11,11 +11,11 @@ if ( ! legionExpansionLoaded )
 
         var buildVersion = decode( sessionStorage.build_version );
 
-        var patchName = 'legionExpansion live_game_selection_client.js';
+        var patchName = 'legionExpansion live_game_selection.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
         //LOAD CUSTOM LEGION CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_selection_client.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css");
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         //see global.js
