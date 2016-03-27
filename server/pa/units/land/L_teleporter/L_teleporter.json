@@ -1,6 +1,6 @@
 {
   "display_name": "Sky Bridge",
-  "description": "Teleportation Device - Instantaneously Transports Units From Point A to Point B.",
+  "description": "Teleportation Device - Teleports units from one to another.",
   "TEMP_texelinfo": 30.032139,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,

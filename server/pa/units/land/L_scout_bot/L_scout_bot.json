@@ -1,6 +1,6 @@
 {
   "display_name": "Creeper",
-  "description": "Scout Bot. Provides Short Range Vision and Radar Coverage.",
+  "description": "Scout Bot. Deploys into a Hidden Short Range Radar.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
