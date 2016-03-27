@@ -32,7 +32,7 @@ def walkObject(data,source):
    
     if data[:3] == "/pa":
 
-      validateFile( "." + data)
+      validateFile( "./server" + data)
 
   elif isinstance(data,(dict)):
 
@@ -63,24 +63,36 @@ def walkObject(data,source):
 
 def validateFile(filename):
 
+# server
+
   if not os.path.isfile(filename):
+
+# client
   
-    filename2 = PA_MEDIA_PATH + "/pa_ex1" + filename[4:]
-    
-    if not os.path.isfile(filename2):
-    
-      filename3 = PA_MEDIA_PATH + filename[1:]
+    filename = "./client" + filename[8:] # strip ./server to start with /pa
 
-      if not os.path.isfile(filename3):
+    if not os.path.isfile(filename):
 
-        print("\nMISSING FILE", filename, "\n")
+# titans
+  
+      filename2 = PA_MEDIA_PATH + "/pa_ex1" + filename[11:] # strip ./client/pa
+ 
+      if not os.path.isfile(filename2):
+
+# classic
+    
+        filename2 = PA_MEDIA_PATH + filename[8:] # strip ./client
+
+        if not os.path.isfile(filename2):
+
+          print("\nMISSING FILE", filename2, "\n")
         
-        missing.append( filename )
+          missing.append( filename2 )
         
-      return;
+        return;
        
-    return;
-
+      return;
+    
   if filename[-5:] == ".json" or filename[-4:] == ".pfx":
 
     validateJSON(filename)
@@ -160,9 +172,9 @@ def validateJSON(filename):
 
 #
   
-for root, dirnames, filenames in os.walk('./pa'):
+for root, dirnames, filenames in os.walk('./server/pa'):
   for filename in filenames:
-  
+
     filename = join(root,filename)
     
     validateFile(filename)
