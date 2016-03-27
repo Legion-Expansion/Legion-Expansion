@@ -70,6 +70,12 @@
           "shape": "capsule"
         },
         {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
           "channel": "radar",
           "layer": "underwater",
           "radius": 250,
