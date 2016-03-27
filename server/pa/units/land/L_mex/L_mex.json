@@ -1,6 +1,6 @@
 {
   "display_name": "Mass Extractor",
-  "description": "Legion metal extractors produce more metal but cost more to build.",
+  "description": "Mass-Lode Extractor - Extracts Metal to Support Economic Expansion.",
   "TEMP_texelinfo": 15.0973,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15,

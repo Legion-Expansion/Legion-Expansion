@@ -1,6 +1,6 @@
 {
   "display_name": "Jackal",
-  "description": "Short Range, Light Defense Turret. Attacks Land and Naval Targets.",
+  "description": "Light Defense Turret. Short Range. Attacks Land and Naval Targets.",
   "TEMP_texelinfo": 23.76123,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

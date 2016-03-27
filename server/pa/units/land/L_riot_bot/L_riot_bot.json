@@ -1,6 +1,6 @@
 {
   "display_name": "Enforcer",
-  "description": "Heavy Assault Bot. Short Range. Attacks Land and Naval.",
+  "description": "Heavy Assault Walker. Short Range. Attacks Land and Naval.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {

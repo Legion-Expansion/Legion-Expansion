@@ -1,6 +1,6 @@
 {
   "display_name": "Advanced Mass Extractor",
-  "description": "Basic Economy. Extracts Mass to Produce a Metal Income.",
+  "description": "Advanced Mass-Lode Extractor - Extracts Metal to Support Economic Expansion.",
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,

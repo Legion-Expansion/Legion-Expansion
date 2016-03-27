@@ -1,6 +1,6 @@
 {
   "display_name": "Necro",
-  "description": "Mobile Siege Weapon- Summons Purgers from the earth below. Explodes violently when destroyed.",
+  "description": "Mobile Siege Walker - Summons Purgers from the Ground Below. Massive Explosion Upon Death.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {

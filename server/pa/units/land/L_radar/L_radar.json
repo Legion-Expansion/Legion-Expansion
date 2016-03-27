@@ -1,6 +1,6 @@
 {
   "display_name": "Radar",
-  "description": "Basic radar- Detects nearby enemy land, sea, and air units.",
+  "description": "Basic Radar - Detects Nearby Enemy Units.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 100,
   "area_build_type": "Sphere",

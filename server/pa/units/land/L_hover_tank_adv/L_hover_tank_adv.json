@@ -1,6 +1,6 @@
 {
   "display_name": "Dominator",
-  "description": "Hover Assault- Medium range rockets. Attacks Land and Naval.",
+  "description": "Hover Assault - Medium Range Rockets. Attacks Land, Air and Naval.",
   "TEMP_texelinfo": 5.84968,
   "armor_type": "AT_Hover",
   "attachable": {
