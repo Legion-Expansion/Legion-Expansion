@@ -54,7 +54,7 @@ if ( ! legionExpansionLoaded )
         };
         
         //LOAD CUSTOM LEGION BUILDBAR CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar_client.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css");
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         //see global.js
