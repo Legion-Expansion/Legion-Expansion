@@ -10,22 +10,11 @@
         "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
-    },
-    "selection_response": {
-      "cue": "/SE/Selection/air/air"
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 90,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Air",
-      "effect_scale": 0.4,
-      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/air/carrier_drone_fire"
     }
@@ -42,7 +31,7 @@
       "type": "moving_forward"
     }
   ],
-  "guard_layer": "WL_AnyLayer",
+  "guard_layer": "WL_AnySurface",
   "guard_radius": 200,
   "max_health": 40,
   "mesh_bounds": [
@@ -60,18 +49,11 @@
   },
   "navigation": {
     "acceleration": 80,
-    "aggressive_distance": 50,
-    "aggressive_height": 0,
     "bank_factor": 10,
     "brake": 30,
     "move_speed": 80,
     "turn_speed": 240,
-    "type": "air",
     "vertical_speed": 200
-  },
-  "physics": {
-    "gravity_scalar": 1,
-    "radius": 6
   },
   "recon": {
     "observer": {
@@ -92,7 +74,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 11
+    "diameter": -11
   },
   "tools": [
     {

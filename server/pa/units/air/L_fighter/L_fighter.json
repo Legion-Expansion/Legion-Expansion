@@ -1,6 +1,6 @@
 {
   "display_name": "Beamer",
-  "description": "Air Fighter/Interceptor. Fast. Attacks Air.",
+  "description": "Fast Air Interceptor. Attacks Air.",
   "TEMP_texelinfo": 6.1803,
   "audio": {
     "loops": {
@@ -18,12 +18,6 @@
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 240,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Air"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/air/fighter_fire"
     }
@@ -83,16 +77,10 @@
   },
   "navigation": {
     "acceleration": 180,
-    "aggressive_distance": 50,
     "bank_factor": 5,
     "brake": 80,
     "move_speed": 95,
-    "turn_speed": 300,
-    "type": "air"
-  },
-  "physics": {
-    "gravity_scalar": 1,
-    "radius": 6
+    "turn_speed": 300
   },
   "recon": {
     "observer": {

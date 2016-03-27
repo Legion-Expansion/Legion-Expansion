@@ -27,11 +27,7 @@
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 240,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.75
     },
     "fired": {
@@ -104,10 +100,8 @@
     "circle_min_time": 2.0,
     "dodge_multiplier": 0.0,
     "dodge_radius": 0.0,
-    "hover_time": -1.0,
     "move_speed": 100,
     "turn_speed": 140,
-    "type": "air",
     "wobble_factor": 0.05,
     "wobble_speed": 0.1
   },

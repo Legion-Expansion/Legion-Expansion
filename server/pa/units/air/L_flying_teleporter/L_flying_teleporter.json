@@ -161,20 +161,16 @@
   "navigation": {
     "acceleration": 10,
     "aggressive_behavior": "circle",
-    "aggressive_distance": 50,
     "bank_factor": 1,
     "brake": 10,
     "circle_max_time": 2,
     "circle_min_time": 1,
-    "hover_time": -1,
     "inter_planetary_type": "system",
     "move_speed": 40,
     "turn_speed": 50,
-    "type": "air",
     "vertical_speed": 100
   },
   "physics": {
-    "gravity_scalar": 1,
     "radius": 8
   },
   "recon": {
@@ -196,8 +192,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -40,
-    "vertical_offset": 0
+    "diameter": -40
   },
   "system_velocity_multiplier": 15.0,
   "teleporter": {

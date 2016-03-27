@@ -100,18 +100,13 @@
     "brake": 60,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
-    "hover_time": -1.0,
     "move_speed": 30,
     "turn_speed": 50,
-    "type": "air",
     "vertical_speed": 50
   },
   "physics": {
-    "air_friction": 1.0,
     "allow_pushing": false,
-    "gravity_scalar": 1,
-    "push_sideways": false,
-    "radius": 6
+    "push_sideways": false
   },
   "recon": {
     "observer": {

@@ -50,9 +50,6 @@
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Air"
     }
   },
   "fx_offsets": [
@@ -118,11 +115,9 @@
     "circle_max_time": 3,
     "circle_min_time": 1,
     "move_speed": 30,
-    "turn_speed": 180,
-    "type": "air"
+    "turn_speed": 180
   },
   "physics": {
-    "gravity_scalar": 1,
     "radius": 4
   },
   "recon": {

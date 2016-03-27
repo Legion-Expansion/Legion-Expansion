@@ -34,9 +34,6 @@
     "ORDER_Unload"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "child_attached": {
       "audio_cue": "/SE/Movement/air/transport_load"
     },
@@ -44,7 +41,6 @@
       "audio_cue": "/SE/Movement/air/transport_unload"
     },
     "died": {
-      "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.5
     }
   },
@@ -86,15 +82,12 @@
   "navigation": {
     "acceleration": 30,
     "brake": 20,
-    "hover_time": -1.0,
     "move_speed": 70,
     "turn_speed": 180,
-    "type": "air",
     "vertical_speed": 100
   },
   "physics": {
-    "gravity_scalar": 0.001,
-    "radius": 5
+    "gravity_scalar": 0.001
   },
   "recon": {
     "observer": {

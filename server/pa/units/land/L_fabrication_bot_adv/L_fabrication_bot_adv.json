@@ -50,7 +50,6 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
-      "audio_cue": "/SE/Death/Bot",
       "effect_scale": 0.8
     }
   },
@@ -86,8 +85,7 @@
     "brake": 120,
     "group_preference": "back",
     "move_speed": 14,
-    "turn_speed": 720,
-    "type": "land-small"
+    "turn_speed": 720
   },
   "physics": {
     "allow_pushing": true,

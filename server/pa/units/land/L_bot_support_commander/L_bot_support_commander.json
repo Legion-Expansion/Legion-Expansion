@@ -51,7 +51,6 @@
   ],
   "events": {
     "died": {
-      "audio_cue": "/SE/Death/Bot",
       "effect_scale": 1.7,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     },
@@ -86,7 +85,6 @@
     "acceleration": 120,
     "brake": 120,
     "move_speed": 12,
-    "turn_in_place": false,
     "turn_speed": 90,
     "type": "amphibious"
   },
@@ -117,7 +115,6 @@
   },
   "show_in_orbital_layer": true,
   "strategic_icon_priority": 0,
-  "teleportable": {},
   "tools": [
     {
       "aim_bone": "bone_turret",

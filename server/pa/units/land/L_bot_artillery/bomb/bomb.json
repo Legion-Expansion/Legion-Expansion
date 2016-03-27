@@ -14,11 +14,7 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 100,
-  "damageable": false,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "died": {
       "audio_cue": "/SE/Death/Bot_bomb",
       "effect_scale": 1.0

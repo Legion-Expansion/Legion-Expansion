@@ -28,13 +28,6 @@
     "ORDER_FactoryBuild"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/factory"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Factory",
-      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
     }

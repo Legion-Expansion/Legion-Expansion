@@ -29,13 +29,6 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 600,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/bot",
-      "effect_scale": 0.6
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
@@ -61,8 +54,7 @@
     "acceleration": 120,
     "brake": 120,
     "move_speed": 12,
-    "turn_speed": 720,
-    "type": "land-small"
+    "turn_speed": 720
   },
   "nearby_target_tick_update_interval": 3,
   "physics": {
