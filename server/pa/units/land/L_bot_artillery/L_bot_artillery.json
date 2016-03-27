@@ -1,6 +1,6 @@
 {
   "display_name": "Terrorizer",
-  "description": "Heavy Siege Weapon- Long Range. Launches Self-Exploding Sticky Plasma Mines.",
+  "description": "Heavy Siege Walker - Long Range. Launches Self-Exploding Sticky Plasma Mines.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {

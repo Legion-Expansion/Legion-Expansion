@@ -1,6 +1,6 @@
 {
-  "display_name": "TODO",
-  "description": "TODO",
+  "display_name": "Jaeger",
+  "description": "Hover Ship - Equipped with Heavy Cannons. Can Travel on any Surface. Attacks Land and Naval.",
   "TEMP_texelinfo": 22.1895,
   "armor_type": "AT_Hover",
   "audio": {

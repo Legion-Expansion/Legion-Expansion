@@ -1,6 +1,6 @@
 {
   "display_name": "Sea Urchin",
-  "description": "Proximity Bomb. You Should Probably Stay Away from These.",
+  "description": "Proximity Bomb - Destroys Naval Units that get too Close.",
   "TEMP_texelinfo": 2.37699,
   "area_build_separation": 1,
   "area_build_type": "Sphere",

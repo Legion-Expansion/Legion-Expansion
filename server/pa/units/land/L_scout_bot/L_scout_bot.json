@@ -1,6 +1,6 @@
 {
   "display_name": "Creeper",
-  "description": "Scout Bot. Deploys into a Hidden Short Range Radar.",
+  "description": "Scout Bot - Deploys into a Hidden Short Range Radar via Alt-Fire.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

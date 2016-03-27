@@ -1,6 +1,6 @@
 {
   "display_name": "Legion Advanced Radar Satellite",
-  "description": "!LOC(units:advanced_radar_satellite_detects_a_vast_area_for_enemy_land_sea_and_air_units.message):Advanced radar satellite- Detects a vast area for enemy land, sea, and air units.",
+  "description": "Armored Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Orbital.",
   "TEMP_texelinfo": 22.7385,
   "attachable": {
     "offsets": {
