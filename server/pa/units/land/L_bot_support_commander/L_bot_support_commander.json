@@ -75,11 +75,8 @@
   ],
   "model": {
     "animations": {
-      "aim_down": "",
-      "aim_up": "",
       "idle": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_idle.papa",
-      "walk": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_walk.papa",
-      "walk_stop": ""
+      "walk": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/L_bot_support_commander_anim_tree.json",
     "filename": "/pa/units/land/L_bot_support_commander/L_bot_support_commander.papa",

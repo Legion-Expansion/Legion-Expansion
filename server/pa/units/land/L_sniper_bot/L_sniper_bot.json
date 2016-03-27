@@ -40,7 +40,7 @@
       "effect_scale": 1.2,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     },
-    "fired0": {
+    "fired": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
       "effect_scale": 0.8,
       "effect_spec": "/pa/units/land/L_sniper_bot/muzzle_flash_medium.pfx socket_muzzle"
@@ -97,9 +97,7 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
-      "record_index": 0,
       "spec_id": "/pa/units/land/L_sniper_bot/L_sniper_bot_tool_weapon.json"
     }
   ],

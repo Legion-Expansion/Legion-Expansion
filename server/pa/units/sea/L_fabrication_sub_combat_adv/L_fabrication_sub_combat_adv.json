@@ -76,7 +76,7 @@
     9
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_fabrication_sub_combat_adv_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
     "filename": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.papa"
   },
   "navigation": {

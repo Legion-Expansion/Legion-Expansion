@@ -63,7 +63,7 @@
     "animations": {
       "idle": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_radar_satellite_adv_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_recoil_anim_tree.json",
     "filename": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.papa"
   },
   "navigation": {

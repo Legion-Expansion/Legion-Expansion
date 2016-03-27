@@ -188,7 +188,7 @@
     "animations": {
       "idle": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_titan_orbital_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/L_titan_orbital/L_titan_orbital.papa"
   },
   "navigation": {

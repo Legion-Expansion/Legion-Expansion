@@ -121,7 +121,7 @@
   "system_velocity_multiplier": 15.0,
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "spec_id": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_build_arm.json"
     }
   ],

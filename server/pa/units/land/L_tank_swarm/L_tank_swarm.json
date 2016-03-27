@@ -82,7 +82,7 @@
     3.8
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_tank_swarm_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
     "arrows": 5,
     "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa"
   },

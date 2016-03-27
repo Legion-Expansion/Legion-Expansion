@@ -80,7 +80,7 @@
     "animations": {
       "fly": "/pa/units/air/L_transport/L_transport_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_transport_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/transport_anim_tree.json",
     "filename": "/pa/units/air/L_transport/L_transport.papa"
   },
   "navigation": {

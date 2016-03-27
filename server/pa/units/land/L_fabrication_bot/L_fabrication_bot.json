@@ -78,7 +78,7 @@
       "idle": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_idle.papa",
       "walk": "/pa/units/land/L_fabrication_bot/L_fabrication_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/one_turret_walk_idle.json",
+    "animtree": "/pa/anim/anim_trees/L_fabrication_bot_anim_tree.json",
     "filename": "/pa/units/land/L_fabrication_bot/L_fabrication_bot.papa",
     "walk_speed": 2.75
   },

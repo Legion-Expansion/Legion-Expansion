@@ -11,8 +11,7 @@
       "type": "bind_pose"
     },
     "node_aim_up": {
-      "anim_name": "aim_up",
-      "type": "playback"
+      "type": "bind_pose"
     },
     "type": "aim_blend"
   },

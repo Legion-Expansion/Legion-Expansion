@@ -104,7 +104,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_root",
       "primary_weapon": false,
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_scout_bot/L_scout_bot_tool_weapon.json"

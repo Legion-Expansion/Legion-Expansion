@@ -2,8 +2,7 @@
   "blend_root": {
     "nodes": {
       "being_built": {
-        "anim_name": "closed",
-        "type": "playback"
+        "type": "bind_pose"
       },
       "dead": {
         "type": "bind_pose"
@@ -12,78 +11,7 @@
         "type": "bind_pose"
       },
       "living": {
-        "entries": [
-          {
-            "name": "attached",
-            "node": {
-              "anim_name": "closed",
-              "looping": false,
-              "type": "playback"
-            },
-            "reset": "playback_reset",
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "not_attached",
-                  "target": "deploy"
-                },
-                "transition_reverse": {
-                  "func": "not_attached",
-                  "target": "deploy"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          },
-          {
-            "name": "deploy",
-            "node": {
-              "anim_name": "deploy",
-              "looping": false,
-              "type": "playback"
-            },
-            "reset": "playback_reset",
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "anim_complete",
-                  "target": "idle"
-                },
-                "transition_reverse": {
-                  "func": "anim_complete",
-                  "target": "idle"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          },
-          {
-            "name": "idle",
-            "node": {
-              "type": "bind_pose"
-            },
-            "reset": "playback_reset",
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "is_attached",
-                  "target": "attached"
-                },
-                "transition_reverse": {
-                  "func": "is_attached",
-                  "target": "attached"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          }
-        ],
-        "transition_seek": {
-          "false_target": "idle",
-          "func": "is_attached",
-          "true_target": "attached"
-        },
-        "type": "sequence"
+        "type": "bind_pose"
       }
     },
     "type": "unit_state"

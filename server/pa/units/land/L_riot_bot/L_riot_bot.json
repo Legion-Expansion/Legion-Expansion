@@ -53,11 +53,10 @@
   ],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
       "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
       "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_riot_bot_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
     "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
     "walk_speed": 3
   },

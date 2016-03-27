@@ -165,7 +165,7 @@
     "animations": {
       "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_hover_tank_adv_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/one_turret_hover_anim_tree.json",
     "filename": "/pa/units/land/L_hover_tank_adv/L_hover_tank_adv.papa"
   },
   "navigation": {

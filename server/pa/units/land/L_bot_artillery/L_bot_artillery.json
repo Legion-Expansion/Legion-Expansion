@@ -87,7 +87,6 @@
   ],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
       "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
       "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
     },

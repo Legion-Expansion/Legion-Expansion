@@ -90,11 +90,6 @@
     14.856
   ],
   "model": {
-    "animations": {
-      "dead": "/pa/units/air/titan_air/titan_air_anim_dead.papa",
-      "death": "/pa/units/air/titan_air/titan_air_anim_death.papa",
-      "hover": "/pa/units/air/titan_air/titan_air_anim_hover.papa"
-    },
     "animtree": "/pa/anim/anim_trees/L_titan_air_anim_tree.json",
     "filename": "/pa/units/air/L_titan_air/L_titan_air.papa"
   },
@@ -141,7 +136,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_main_turret",
+      "aim_bone": "bone_turret_main",
       "fire_event": "fired0",
       "muzzle_bone": [
         "socket_muzzle001",
@@ -152,7 +147,7 @@
       "spec_id": "/pa/units/air/L_titan_air/L_titan_air_main_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_main_turret",
+      "aim_bone": "bone_turret_main",
       "fire_event": "fired1",
       "muzzle_bone": [
         "socket_muzzle003",

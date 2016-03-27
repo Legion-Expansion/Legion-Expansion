@@ -127,10 +127,6 @@
     4
   ],
   "model": {
-    "animations": {
-      "closed": "/pa/units/air/fighter_adv/fighter_adv_anim_closed.papa",
-      "deploy": "/pa/units/air/fighter_adv/fighter_adv_anim_deploy.papa"
-    },
     "animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json",
     "filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
   },

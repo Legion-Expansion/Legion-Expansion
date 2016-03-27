@@ -63,37 +63,5 @@
       }
     },
     "type": "unit_state"
-  },
-  "skeleton_controls": [
-    {
-      "child": {
-        "rotation_axis": "z",
-        "rotation_bone": "bone_turret",
-        "type": "procedural_aim"
-      },
-      "lerp_func": "is_active",
-      "type": "fader"
-    },
-    {
-      "child": {
-        "rotation_axis": "x",
-        "rotation_bone": "bone_pitch",
-        "type": "procedural_aim"
-      },
-      "lerp_func": "is_active",
-      "type": "fader"
-    },
-    {
-      "bone": "bone_recoil001",
-      "recoil_dist": 6.0,
-      "restore_time": 6,
-      "type": "recoil"
-    },
-    {
-      "bone": "bone_recoil002",
-      "recoil_dist": 3,
-      "restore_time": 3,
-      "type": "recoil"
-    }
-  ]
+  }
 }

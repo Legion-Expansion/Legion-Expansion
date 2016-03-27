@@ -44,7 +44,7 @@
     8
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_frigate_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
     "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
   },
   "navigation": {

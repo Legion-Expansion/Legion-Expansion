@@ -91,13 +91,13 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
       "filename": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_08.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/L_rocket_barrage_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
       "filename": "/pa/units/land/L_rocket_barrage/L_rocket_barrage.papa",
       "layer": "WL_WaterSurface"
     }
