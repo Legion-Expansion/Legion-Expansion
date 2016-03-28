@@ -42,7 +42,7 @@
     "acceleration": 40,
     "brake": -1,
     "move_speed": 20,
-    "turn_accel": 90,
+    "turn_accel": 150,
     "turn_in_place": false,
     "turn_speed": 150
   },

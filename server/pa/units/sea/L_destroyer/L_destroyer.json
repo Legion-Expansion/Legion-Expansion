@@ -49,7 +49,7 @@
   "navigation": {
     "acceleration": 50,
     "brake": 90,
-    "move_speed": 8,
+    "move_speed": 9,
     "park_stamp_cost": 20,
     "park_stamp_type": "box",
     "turn_speed": 40
