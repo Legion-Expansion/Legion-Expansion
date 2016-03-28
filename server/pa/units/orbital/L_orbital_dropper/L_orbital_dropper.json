@@ -26,7 +26,6 @@
     "ORDER_FactoryBuild",
     "ORDER_Attack"
   ],
-  "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
