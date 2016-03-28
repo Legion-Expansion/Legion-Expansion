@@ -6,10 +6,9 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": [
-        "bone_root",
         "bone_root"
       ],
-      "projectiles_per_fire": 2,
+      "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/land/L_tank_swarm/chain/chain2_tool_weapon.json"
     },
