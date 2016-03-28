@@ -53,7 +53,7 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
@@ -62,7 +62,7 @@
       "animations": {
         "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
       },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
       "layer": "WL_WaterSurface"
     }

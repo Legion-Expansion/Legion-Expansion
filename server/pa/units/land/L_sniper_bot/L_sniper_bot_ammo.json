@@ -26,7 +26,7 @@
   "physics": {
     "add_to_spatial_db": true,
     "allow_underground": true,
-    "gravity_scalar": 40,
+    "gravity_scalar": 30,
     "radius": 1
   },
   "splash_damage": 0,

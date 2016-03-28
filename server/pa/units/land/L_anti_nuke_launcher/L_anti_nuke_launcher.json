@@ -84,13 +84,13 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_antinuke.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
       "layer": "WL_WaterSurface"
     }
