@@ -23,9 +23,6 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
     },
-    "died": {
-      "audio_cue": "/SE/Death/orbital"
-    },
     "fired0": {
       "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
       "effect_scale": 0.4,
@@ -74,14 +71,8 @@
     "acceleration": 75,
     "bank_factor": 2,
     "brake": 75,
-    "hover_time": -1,
     "move_speed": 75,
-    "turn_speed": 75,
-    "type": "orbital"
-  },
-  "physics": {
-    "gravity_scalar": 0.001,
-    "radius": 6
+    "turn_speed": 75
   },
   "recon": {
     "observer": {
@@ -113,7 +104,6 @@
   "selection_icon": {
     "diameter": -28.0
   },
-  "spawn_layers": "WL_Orbital",
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
@@ -122,6 +112,5 @@
     "UNITTYPE_Scout",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0
+  ]
 }

@@ -20,7 +20,6 @@
       "audio_cue": "/SE/Build_Complete/metal"
     },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 0.75
     }
   },

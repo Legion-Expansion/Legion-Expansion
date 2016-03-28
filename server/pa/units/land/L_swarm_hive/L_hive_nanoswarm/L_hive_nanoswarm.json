@@ -56,7 +56,6 @@
   },
   "navigation": {
     "acceleration": 60,
-    "brake": -1,
     "move_speed": 60,
     "turn_speed": 1080,
     "type": "hover"

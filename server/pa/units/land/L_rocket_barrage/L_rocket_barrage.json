@@ -15,11 +15,7 @@
     "ORDER_Attack"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/factory"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 0.5
     },
     "fired1": {

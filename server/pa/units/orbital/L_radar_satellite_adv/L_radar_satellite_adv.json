@@ -32,10 +32,6 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
     },
-    "died": {
-      "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 1.5
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
     }
@@ -69,14 +65,8 @@
   "navigation": {
     "acceleration": 10,
     "brake": 10,
-    "hover_time": -1.0,
     "move_speed": 10,
-    "turn_speed": 90,
-    "type": "orbital"
-  },
-  "physics": {
-    "gravity_scalar": 0.001,
-    "radius": 5
+    "turn_speed": 90
   },
   "recon": {
     "observer": {
@@ -122,7 +112,6 @@
   "selection_icon": {
     "diameter": -33
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_turret",

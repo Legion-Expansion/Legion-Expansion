@@ -144,7 +144,7 @@
         }
       ]
     },
-    "turn_accel": 80,
+    "turn_accel": 20,
     "turn_in_place": true,
     "turn_speed": 60,
     "type": "amphibious-large"

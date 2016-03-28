@@ -137,9 +137,6 @@
     "filename": "/pa/units/land/L_vehicle_factory_adv/L_vehicle_factory_adv.papa",
     "skirt_decal": "/pa/effects/specs/skirt_02.json"
   },
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
-  },
   "placement_size": [
     50,
     65

@@ -33,11 +33,6 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "events": {
-    "died": {
-      "effect_scale": 1
-    }
-  },
   "factory_cooldown_time": 4,
   "fx_offsets": [
     {
@@ -211,9 +206,6 @@
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
     "filename": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.papa",
     "skirt_decal": "/pa/effects/specs/skirt_01.json"
-  },
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
   "placement_size": [
     40,

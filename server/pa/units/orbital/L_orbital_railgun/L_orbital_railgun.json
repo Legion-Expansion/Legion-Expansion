@@ -24,7 +24,6 @@
       "audio_cue": "/SE/Build_Complete/orbital"
     },
     "died": {
-      "audio_cue": "/SE/Death/orbital",
       "effect_scale": 2.5
     },
     "fired": {
@@ -62,14 +61,11 @@
     "brake": 10,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "hover_time": -1.0,
     "move_speed": 30,
     "turn_in_place": true,
-    "turn_speed": 30,
-    "type": "orbital"
+    "turn_speed": 30
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 10
   },
   "recon": {
@@ -84,7 +80,6 @@
       ]
     }
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_recoilBody",
@@ -100,6 +95,5 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0.0
+  ]
 }

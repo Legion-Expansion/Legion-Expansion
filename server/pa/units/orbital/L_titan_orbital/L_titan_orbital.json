@@ -36,8 +36,6 @@
       "audio_cue": "/SE/Build_Complete/orbital"
     },
     "died": {
-      "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 1.0,
       "effect_spec": "/pa/units/orbital/titan_orbital/titan_orbital_death.pfx"
     },
     "fired0": {
@@ -194,15 +192,12 @@
   "navigation": {
     "acceleration": 7.5,
     "brake": 7.5,
-    "hover_time": -1.0,
     "move_speed": 15,
     "turn_accel": 5,
     "turn_in_place": true,
-    "turn_speed": 25,
-    "type": "orbital"
+    "turn_speed": 25
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 15
   },
   "recon": {
@@ -236,7 +231,6 @@
     "diameter": -133.0,
     "vertical_offset": -10
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_megaLaser",

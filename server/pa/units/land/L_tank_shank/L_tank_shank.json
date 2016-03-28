@@ -32,12 +32,6 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 270,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_light_fire",
       "effect_spec": "/pa/units/land/L_tank_shank/muzzle_flash.pfx socket_muzzle"
@@ -84,8 +78,7 @@
     "acceleration": 100,
     "brake": 100,
     "move_speed": 8,
-    "turn_speed": 90,
-    "type": "land-small"
+    "turn_speed": 90
   },
   "physics": {
     "radius": 4

@@ -84,14 +84,8 @@
   "navigation": {
     "acceleration": 15,
     "brake": 15,
-    "hover_time": -1.0,
     "move_speed": 15,
-    "turn_speed": 90,
-    "type": "orbital"
-  },
-  "physics": {
-    "gravity_scalar": 0.001,
-    "radius": 5
+    "turn_speed": 90
   },
   "recon": {
     "observer": {

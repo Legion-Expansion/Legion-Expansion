@@ -21,8 +21,6 @@
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
-      "effect_scale": 1,
       "effect_spec": "/pa/units/land/L_storage/black_hole_implosion.pfx"
     }
   },

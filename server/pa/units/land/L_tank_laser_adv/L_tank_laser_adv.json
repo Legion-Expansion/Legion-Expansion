@@ -32,11 +32,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 800,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 1.6
     },
     "fired": {
@@ -77,22 +73,7 @@
     "acceleration": 100,
     "brake": 100,
     "move_speed": 8,
-    "park_stamp": {
-      "cost": 10,
-      "shape": "sphere",
-      "type_data": [
-        {
-          "move_type": "land-small",
-          "stamp_type": "simple"
-        },
-        {
-          "move_type": "amphibious",
-          "stamp_type": "simple"
-        }
-      ]
-    },
-    "turn_speed": 55,
-    "type": "land-small"
+    "turn_speed": 55
   },
   "physics": {
     "radius": 5

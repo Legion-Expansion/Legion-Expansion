@@ -16,16 +16,6 @@
       ]
     }
   },
-  "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/veh/tank_heavy_mortar_loop_sheller_T2",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    }
-  },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 600,
   "command_caps": [
@@ -36,12 +26,7 @@
     "ORDER_Use"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     },
     "fired": {
@@ -91,8 +76,7 @@
     "brake": 100,
     "group_preference": "back",
     "move_speed": 12,
-    "turn_speed": 60,
-    "type": "land-small"
+    "turn_speed": 60
   },
   "nearby_target_tick_update_interval": 15,
   "physics": {

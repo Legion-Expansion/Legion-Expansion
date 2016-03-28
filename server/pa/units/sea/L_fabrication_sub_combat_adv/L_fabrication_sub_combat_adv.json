@@ -48,8 +48,6 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
-      "audio_cue": "/SE/Death/Sea",
-      "effect_scale": 1.5,
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     }
   },
@@ -89,7 +87,6 @@
   },
   "physics": {
     "radius": 3,
-    "shape": "sphere",
     "underwater": true
   },
   "recon": {

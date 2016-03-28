@@ -383,9 +383,6 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
-  },
   "recon": {
     "observer": {
       "items": [

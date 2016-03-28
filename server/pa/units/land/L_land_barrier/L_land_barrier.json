@@ -33,16 +33,6 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "physics": {
-    "air_friction": 1.0,
-    "allow_pushing": false,
-    "allow_underground": false,
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "push_sideways": false,
-    "radius": 1,
-    "shape": "Box",
-    "type": "Structure"
-  },
   "placement_size": [
     4,
     4

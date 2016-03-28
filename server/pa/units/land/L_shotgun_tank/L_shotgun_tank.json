@@ -32,11 +32,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 300,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 1.4
     },
     "fired": {
@@ -61,8 +57,7 @@
     "brake": -1,
     "group_preference": "front",
     "move_speed": 8,
-    "turn_speed": 180,
-    "type": "land-small"
+    "turn_speed": 180
   },
   "physics": {
     "radius": 4.5

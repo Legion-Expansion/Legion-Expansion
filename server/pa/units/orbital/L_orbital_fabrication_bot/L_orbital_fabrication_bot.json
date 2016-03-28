@@ -42,9 +42,6 @@
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab_orbital"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/orbital"
     }
   },
   "fx_offsets": [
@@ -82,13 +79,8 @@
     "aggressive_distance": 120,
     "bank_factor": 10,
     "brake": 10,
-    "hover_time": -1.0,
     "move_speed": 20,
-    "turn_speed": 75,
-    "type": "orbital"
-  },
-  "physics": {
-    "radius": 5
+    "turn_speed": 75
   },
   "recon": {
     "observer": {
@@ -117,8 +109,6 @@
   "selection_icon": {
     "diameter": -27
   },
-  "spawn_layers": "WL_Orbital",
-  "system_velocity_multiplier": 15.0,
   "tools": [
     {
       "aim_bone": "bone_turret",

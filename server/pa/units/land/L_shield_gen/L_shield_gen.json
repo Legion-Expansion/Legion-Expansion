@@ -67,12 +67,6 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
-    "radius": 1,
-    "shape": "Box",
-    "type": "Structure"
-  },
   "placement_size": [
     20,
     20
@@ -122,5 +116,5 @@
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0.2
+  "wreckage_health_frac": 0.4
 }

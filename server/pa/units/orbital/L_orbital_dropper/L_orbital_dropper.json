@@ -33,7 +33,6 @@
     },
     "died": {
       "audio_cue": "/SE/Death/unit_cannon",
-      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     },
     "fired0": {
@@ -162,7 +161,6 @@
     "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
   },
   "physics": {
-    "collision_layers": "WL_Orbital",
     "ignore_gravity": true,
     "radius": 20
   },
@@ -191,7 +189,6 @@
   "selection_icon": {
     "diameter": -70
   },
-  "spawn_layers": "WL_Orbital",
   "teleporter": {
     "energy_demand": 1000,
     "spawn_radius": 20,
@@ -219,6 +216,5 @@
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
   ],
-  "wait_to_rolloff_time": 0,
-  "wreckage_health_frac": 0.0
+  "wait_to_rolloff_time": 0
 }

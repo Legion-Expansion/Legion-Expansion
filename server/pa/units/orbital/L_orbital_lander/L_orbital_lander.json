@@ -34,9 +34,6 @@
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/orbital"
     }
   },
   "fx_offsets": [
@@ -100,14 +97,11 @@
   "navigation": {
     "acceleration": 25,
     "brake": 25,
-    "hover_time": -1.0,
     "move_speed": 25,
     "turn_speed": 360,
-    "type": "orbital",
     "vertical_speed": 200
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 8
   },
   "recon": {

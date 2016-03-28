@@ -37,7 +37,6 @@
   "consumption": {
     "energy": 100
   },
-  "death": {},
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/radar"

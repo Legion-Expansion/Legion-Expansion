@@ -23,9 +23,6 @@
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
     },
-    "died": {
-      "audio_cue": "/SE/Death/orbital"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
       "effect_spec": "/pa/units/orbital/L_orbital_fighter/muzzle_flash.pfx socket_muzzle"
@@ -73,13 +70,10 @@
     "brake": 20,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "hover_time": -1.0,
     "move_speed": 65,
-    "turn_speed": 200,
-    "type": "orbital"
+    "turn_speed": 200
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 5
   },
   "recon": {
@@ -97,7 +91,6 @@
   "selection_icon": {
     "diameter": -30
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_body",
@@ -113,6 +106,5 @@
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0.0
+  ]
 }

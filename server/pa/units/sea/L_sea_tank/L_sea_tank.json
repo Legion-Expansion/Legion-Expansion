@@ -15,9 +15,6 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 4000,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "died": {
       "audio_cue": "/SE/Death/Sea_sub",
       "effect_scale": 1.5,
@@ -66,12 +63,10 @@
     "acceleration": 4,
     "brake": 25,
     "move_speed": 20,
-    "turn_speed": 65,
-    "type": "deepwater"
+    "turn_speed": 65
   },
   "physics": {
-    "radius": 11,
-    "shape": "sphere"
+    "radius": 11
   },
   "recon": {
     "observer": {
@@ -94,7 +89,6 @@
   "selection_icon": {
     "diameter": -44
   },
-  "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
       "aim_bone": "bone_pitchLeft",
