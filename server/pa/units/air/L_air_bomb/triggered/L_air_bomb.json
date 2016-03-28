@@ -55,9 +55,9 @@
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 60,
+    "acceleration": 100,
     "brake": 140,
-    "move_speed": 120,
+    "move_speed": 110,
     "turn_in_place": true,
     "turn_speed": 480,
     "wobble_factor": 0.25,
