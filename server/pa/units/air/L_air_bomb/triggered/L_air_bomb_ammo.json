@@ -29,10 +29,10 @@
       0.0
     ]
   },
-  "initial_velocity": 650,
+  "initial_velocity": 500,
   "lifetime": 2.5,
   "max_health": 1,
-  "max_velocity": 650,
+  "max_velocity": 500,
   "model": {
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
