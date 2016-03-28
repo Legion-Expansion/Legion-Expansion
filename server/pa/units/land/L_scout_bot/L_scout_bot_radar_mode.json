@@ -37,7 +37,6 @@
   "consumption": {
     "energy": 100
   },
-  "death": {},
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/radar"
@@ -151,7 +150,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_root",
       "primary_weapon": false,
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode_tool_weapon.json"

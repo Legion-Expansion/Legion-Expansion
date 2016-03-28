@@ -17,14 +17,6 @@
     }
   },
   "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/assault_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
     "selection_response": {
       "cue": "/SE/Selection/bot/assault"
     }
@@ -32,13 +24,6 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 75,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
       "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"

@@ -32,11 +32,6 @@
       "/pa/effects/specs/scorch_c_01.json"
     ]
   },
-  "events": {
-    "died": {
-      "effect_scale": 1
-    }
-  },
   "factory_cooldown_time": 2,
   "fx_offsets": [
     {
@@ -271,9 +266,6 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
-  },
   "placement_size": [
     40,
     40

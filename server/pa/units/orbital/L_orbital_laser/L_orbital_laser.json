@@ -23,7 +23,6 @@
       "audio_cue": "/SE/Build_Complete/orbital"
     },
     "died": {
-      "audio_cue": "/SE/Death/orbital",
       "effect_scale": 2
     },
     "fired": {
@@ -32,7 +31,6 @@
       "effect_spec": "/pa/units/orbital/orbital_laser/orbital_laser_muzzle_flash.pfx socket_muzzle"
     }
   },
-  "gravwell_velocity_multiplier": 3.0,
   "guard_layer": "WL_AnySurface",
   "max_health": 900,
   "mesh_bounds": [
@@ -47,14 +45,11 @@
   "navigation": {
     "acceleration": 14,
     "brake": 14,
-    "hover_time": -1.0,
     "move_speed": 14,
     "turn_in_place": true,
-    "turn_speed": 90,
-    "type": "orbital"
+    "turn_speed": 90
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 10
   },
   "planetary_arrival_cooldown_time": 5.0,
@@ -85,7 +80,6 @@
   "selection_icon": {
     "diameter": -46
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_tusks",

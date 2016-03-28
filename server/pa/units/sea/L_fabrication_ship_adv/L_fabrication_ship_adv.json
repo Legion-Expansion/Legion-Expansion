@@ -48,8 +48,6 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
-      "audio_cue": "/SE/Death/Sea",
-      "effect_scale": 1.5,
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     }
   },
@@ -81,13 +79,10 @@
     "move_speed": 9,
     "park_stamp_cost": 10,
     "park_stamp_type": "sphere",
-    "turn_speed": 90,
-    "type": "deepwater"
+    "turn_speed": 90
   },
   "physics": {
-    "allow_pushing": true,
-    "radius": 6,
-    "shape": "sphere"
+    "allow_pushing": true
   },
   "recon": {
     "observer": {
@@ -110,7 +105,6 @@
   "selection_icon": {
     "diameter": -20
   },
-  "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
       "aim_bone": "bone_pitch",

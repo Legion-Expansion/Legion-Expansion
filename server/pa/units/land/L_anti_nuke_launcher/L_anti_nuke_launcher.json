@@ -28,13 +28,6 @@
     "ORDER_FactoryBuild"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/factory"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Factory",
-      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
     }
@@ -91,13 +84,13 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_antinuke.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/anti_nuke_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
       "layer": "WL_WaterSurface"
     }

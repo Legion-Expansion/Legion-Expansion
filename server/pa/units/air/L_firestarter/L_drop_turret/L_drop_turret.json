@@ -59,7 +59,6 @@
   "selection_icon": {
     "diameter": -10
   },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
       "aim_bone": "bone_pitch",

@@ -10,15 +10,8 @@
       "effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
     }
   },
-  "flight_type": "Staged",
   "full_damage_splash_radius": 0,
-  "fx_trail": {
-    "filename": "/pa/effects/specs/none.pfx"
-  },
-  "influence_radius": 400,
   "initial_velocity": 400,
-  "lifetime": 10,
   "max_velocity": 400,
-  "splash_damage": 0,
-  "splash_radius": 0
+  "splash_damage": 0
 }

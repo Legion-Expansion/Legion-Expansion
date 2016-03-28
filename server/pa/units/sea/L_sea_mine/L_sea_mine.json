@@ -32,13 +32,7 @@
     }
   ],
   "physics": {
-    "allow_pushing": false,
-    "allow_underground": false,
-    "ignore_collisions": true,
-    "push_sideways": false,
-    "radius": 1,
-    "shape": "Box",
-    "type": "Structure"
+    "ignore_collisions": true
   },
   "recon": {
     "observable": {

@@ -5,14 +5,14 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/air/air_fighter_loop_advanced",
+        "cue": "/SE/Movement/air/air_bomber_siege_loop",
         "flag": "vel_changed",
-        "should_start_func": "is_moving_laterally",
+        "should_start_func": "is_moving",
         "should_stop_func": "is_not_moving"
       }
     },
     "selection_response": {
-      "cue": "/SE/Selection/air/bomber"
+      "cue": "/SE/Selection/air/bomber_T2"
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
@@ -26,11 +26,7 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.85,
       "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
@@ -63,7 +59,6 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_radius": 50,
   "max_health": 1500,
   "mesh_bounds": [
     4.5,
@@ -87,16 +82,12 @@
     "dodge_radius": 0,
     "move_speed": 40,
     "turn_speed": 70,
-    "type": "air",
     "wobble_factor": 0.05,
     "wobble_speed": 0.1
   },
   "physics": {
-    "air_friction": 1.0,
     "allow_pushing": false,
-    "gravity_scalar": 1,
-    "push_sideways": false,
-    "radius": 6
+    "push_sideways": false
   },
   "recon": {
     "observer": {

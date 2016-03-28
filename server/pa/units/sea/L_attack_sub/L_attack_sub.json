@@ -15,9 +15,6 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 650,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "died": {
       "audio_cue": "/SE/Death/Sea_sub",
       "effect_scale": 2.0,
@@ -70,7 +67,6 @@
   },
   "physics": {
     "radius": 3,
-    "shape": "sphere",
     "underwater": true
   },
   "recon": {

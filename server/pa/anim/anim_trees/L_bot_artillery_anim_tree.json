@@ -5,9 +5,7 @@
         "type": "bind_pose"
       },
       "dead": {
-        "anim_name": "death01",
-        "looping": false,
-        "type": "playback"
+        "type": "bind_pose"
       },
       "ghost": {
         "type": "bind_pose"

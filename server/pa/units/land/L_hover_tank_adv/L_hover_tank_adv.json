@@ -33,12 +33,6 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 1200,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_hover_fire",
       "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleRight03 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleRight02 /pa/units/land/L_hover_tank_adv/launch_smoke.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleLeft03"
@@ -185,6 +179,12 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
           "radius": 100,
           "shape": "capsule"
         }

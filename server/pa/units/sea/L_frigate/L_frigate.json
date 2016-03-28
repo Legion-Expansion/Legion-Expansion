@@ -15,9 +15,6 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 550,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "died": {
       "audio_cue": "/SE/Death/Sea_large",
       "effect_scale": 0.75
@@ -44,20 +41,18 @@
     8
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_frigate_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
     "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
   },
   "navigation": {
     "acceleration": 30,
     "brake": 90,
     "move_speed": 9,
-    "turn_speed": 60,
-    "type": "deepwater"
+    "turn_speed": 60
   },
   "nearby_target_tick_update_interval": 3,
   "physics": {
-    "radius": 3,
-    "shape": "sphere"
+    "radius": 3
   },
   "recon": {
     "observer": {
@@ -80,7 +75,6 @@
   "selection_icon": {
     "diameter": -22
   },
-  "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
       "aim_bone": "bone_pitch01",

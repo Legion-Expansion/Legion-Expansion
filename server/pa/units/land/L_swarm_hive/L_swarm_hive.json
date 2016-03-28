@@ -51,7 +51,7 @@
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
       "filename": "/pa/units/land/L_swarm_hive/L_swarm_hive.papa",
       "layer": "WL_WaterSurface"
     }

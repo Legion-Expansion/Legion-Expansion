@@ -51,7 +51,6 @@
   ],
   "events": {
     "died": {
-      "audio_cue": "/SE/Death/Bot",
       "effect_scale": 1.7,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     },
@@ -75,11 +74,8 @@
   ],
   "model": {
     "animations": {
-      "aim_down": "",
-      "aim_up": "",
       "idle": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_idle.papa",
-      "walk": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_walk.papa",
-      "walk_stop": ""
+      "walk": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/L_bot_support_commander_anim_tree.json",
     "filename": "/pa/units/land/L_bot_support_commander/L_bot_support_commander.papa",
@@ -89,7 +85,6 @@
     "acceleration": 120,
     "brake": 120,
     "move_speed": 12,
-    "turn_in_place": false,
     "turn_speed": 90,
     "type": "amphibious"
   },
@@ -120,7 +115,6 @@
   },
   "show_in_orbital_layer": true,
   "strategic_icon_priority": 0,
-  "teleportable": {},
   "tools": [
     {
       "aim_bone": "bone_turret",

@@ -48,7 +48,6 @@
     "filename": "/pa/units/orbital/L_defense_satellite/L_defense_satellite.papa"
   },
   "physics": {
-    "collision_layers": "WL_Orbital",
     "gravity_scalar": 0.001,
     "radius": 15
   },
@@ -77,7 +76,6 @@
   "selection_icon": {
     "diameter": -43
   },
-  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_turret",

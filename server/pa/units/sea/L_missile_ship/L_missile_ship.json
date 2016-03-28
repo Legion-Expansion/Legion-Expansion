@@ -18,12 +18,6 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 3750,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Sea"
-    },
     "fired0": {
       "audio_cue": "/SE/Weapons/structure/air_defense_fire",
       "effect_scale": 0.5,
@@ -55,13 +49,11 @@
     "brake": 80,
     "move_speed": 8,
     "turn_accel": 15,
-    "turn_speed": 45,
-    "type": "deepwater"
+    "turn_speed": 45
   },
   "nearby_target_tick_update_interval": 20,
   "physics": {
-    "radius": 3,
-    "shape": "sphere"
+    "radius": 3
   },
   "recon": {
     "observer": {
@@ -84,7 +76,6 @@
   "selection_icon": {
     "diameter": -32
   },
-  "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
       "aim_bone": "pitch001",

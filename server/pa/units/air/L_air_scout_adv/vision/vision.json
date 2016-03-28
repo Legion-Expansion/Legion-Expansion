@@ -3,11 +3,6 @@
   "description": "Camera Focus",
   "TEMP_texelinfo": 5.39039,
   "audio": {
-    "loops": {
-      "idle": {
-        "cue": "/SE/Selection/structure/radar"
-      }
-    },
     "selection_response": {
       "cue": "/SE/Selection/structure/radar"
     }

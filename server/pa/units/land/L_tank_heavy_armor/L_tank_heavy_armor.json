@@ -32,11 +32,7 @@
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 1800,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 2
     },
     "fired0": {
@@ -44,7 +40,6 @@
     }
   },
   "guard_layer": "WL_LandHorizontal",
-  "guard_radius": 55,
   "max_health": 7000,
   "mesh_bounds": [
     7.792,
@@ -60,8 +55,7 @@
     "brake": -1,
     "group_preference": "front",
     "move_speed": 10,
-    "turn_speed": 180,
-    "type": "land-small"
+    "turn_speed": 180
   },
   "physics": {
     "radius": 6

@@ -90,11 +90,6 @@
     14.856
   ],
   "model": {
-    "animations": {
-      "dead": "/pa/units/air/titan_air/titan_air_anim_dead.papa",
-      "death": "/pa/units/air/titan_air/titan_air_anim_death.papa",
-      "hover": "/pa/units/air/titan_air/titan_air_anim_hover.papa"
-    },
     "animtree": "/pa/anim/anim_trees/L_titan_air_anim_tree.json",
     "filename": "/pa/units/air/L_titan_air/L_titan_air.papa"
   },
@@ -105,18 +100,13 @@
     "brake": 60,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
-    "hover_time": -1.0,
     "move_speed": 30,
     "turn_speed": 50,
-    "type": "air",
     "vertical_speed": 50
   },
   "physics": {
-    "air_friction": 1.0,
     "allow_pushing": false,
-    "gravity_scalar": 1,
-    "push_sideways": false,
-    "radius": 6
+    "push_sideways": false
   },
   "recon": {
     "observer": {

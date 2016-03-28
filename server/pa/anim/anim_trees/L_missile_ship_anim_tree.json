@@ -43,11 +43,11 @@
               {
                 "transition_forward": {
                   "func": "is_attached",
-                  "target": "attached"
+                  "target": "idle"
                 },
                 "transition_reverse": {
                   "func": "is_attached",
-                  "target": "attached"
+                  "target": "idle"
                 }
               }
             ],
@@ -57,7 +57,7 @@
         "transition_seek": {
           "false_target": "idle",
           "func": "is_attached",
-          "true_target": "attached"
+          "true_target": "idle"
         },
         "type": "sequence"
       }

@@ -6,9 +6,6 @@
   "build_metal_cost": 90,
   "death": {},
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
       "effect_spec": "/pa/units/land/L_tank_swarm/chain/electrode.pfx"
@@ -30,9 +27,7 @@
     "brake": 0,
     "move_speed": 0,
     "turn_speed": 1080,
-    "type": "hover",
-    "wobble_factor": 0.1,
-    "wobble_speed": 0.2
+    "type": "hover"
   },
   "physics": {
     "allow_pushing": true,

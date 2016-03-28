@@ -15,11 +15,7 @@
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 200,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Sea",
       "effect_scale": 1.25,
       "effect_spec": "/pa/effects/specs/default_explosion.pfx"
     },
@@ -39,7 +35,7 @@
     4.762
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_sea_scout_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
     "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
   },
   "navigation": {
@@ -48,11 +44,7 @@
     "move_speed": 20,
     "turn_accel": 90,
     "turn_in_place": false,
-    "turn_speed": 150,
-    "type": "deepwater"
-  },
-  "physics": {
-    "radius": 6
+    "turn_speed": 150
   },
   "recon": {
     "observer": {
@@ -87,7 +79,6 @@
   "selection_icon": {
     "diameter": -18
   },
-  "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
       "aim_bone": "bone_turret",

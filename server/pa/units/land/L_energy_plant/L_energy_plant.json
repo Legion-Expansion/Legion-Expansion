@@ -17,7 +17,6 @@
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 0.5
     }
   },

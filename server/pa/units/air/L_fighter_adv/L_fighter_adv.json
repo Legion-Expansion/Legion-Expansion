@@ -18,11 +18,7 @@
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
   "build_metal_cost": 820,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/air"
-    },
     "died": {
-      "audio_cue": "/SE/Death/Air",
       "effect_scale": 0.85,
       "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
@@ -127,27 +123,17 @@
     4
   ],
   "model": {
-    "animations": {
-      "closed": "/pa/units/air/fighter_adv/fighter_adv_anim_closed.papa",
-      "deploy": "/pa/units/air/fighter_adv/fighter_adv_anim_deploy.papa"
-    },
     "animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json",
     "filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
   },
   "navigation": {
     "acceleration": 90,
-    "aggressive_distance": 50.0,
-    "bank_factor": 10,
+    "bank_factor": 2,
     "brake": 90,
     "inter_planetary_type": "system",
     "move_speed": 90,
     "turn_speed": 300,
-    "type": "air",
     "vertical_speed": 50
-  },
-  "physics": {
-    "gravity_scalar": 1,
-    "radius": 6
   },
   "recon": {
     "observer": {

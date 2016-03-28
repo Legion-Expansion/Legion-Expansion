@@ -38,11 +38,7 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
-  "death": {},
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
     "died": {},
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
@@ -104,7 +100,7 @@
   },
   "tools": [
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_root",
       "primary_weapon": false,
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/L_scout_bot/L_scout_bot_tool_weapon.json"

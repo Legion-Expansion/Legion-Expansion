@@ -40,13 +40,6 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",
       "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle03"
@@ -87,7 +80,6 @@
   ],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
       "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
       "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
     },
@@ -99,8 +91,7 @@
     "acceleration": 120,
     "brake": 120,
     "move_speed": 6,
-    "turn_speed": 75,
-    "type": "land-small"
+    "turn_speed": 75
   },
   "physics": {
     "radius": 2

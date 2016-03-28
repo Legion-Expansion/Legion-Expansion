@@ -32,7 +32,6 @@
       "audio_cue": "/SE/Build_Complete/energy"
     },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 1.5
     },
     "disabled": {
@@ -96,7 +95,6 @@
   "selection_icon": {
     "diameter": -75
   },
-  "spawn_layers": "WL_LandHorizontal",
   "teleporter": {
     "energy_demand": 1000
   },

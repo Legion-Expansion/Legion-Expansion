@@ -40,9 +40,6 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
     "died": {
       "audio_cue": "/SE/Death/Bot_bomb"
     },
@@ -90,8 +87,7 @@
     "acceleration": 200,
     "brake": -1,
     "move_speed": 30,
-    "turn_speed": 720,
-    "type": "land-small"
+    "turn_speed": 720
   },
   "physics": {
     "allow_pushing": true,

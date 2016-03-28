@@ -35,7 +35,7 @@
       "animations": {
         "idle": "/pa/units/land/L_air_defense/L_air_defense_idle.papa"
       },
-      "animtree": "/pa/anim/anim_trees/L_air_defense_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
       "filename": "/pa/units/land/L_air_defense/L_air_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
@@ -44,7 +44,7 @@
       "animations": {
         "idle": "/pa/units/land/L_air_defense/L_air_defense_idle.papa"
       },
-      "animtree": "/pa/anim/anim_trees/L_air_defense_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
       "filename": "/pa/units/land/L_air_defense/L_air_defense.papa",
       "layer": "WL_WaterSurface"
     }

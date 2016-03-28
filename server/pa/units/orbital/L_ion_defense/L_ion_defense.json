@@ -35,13 +35,13 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/L_ion_defense_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/one_turret_static_anim_tree.json",
       "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/L_ion_defense_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/one_turret_static_anim_tree.json",
       "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
       "layer": "WL_WaterSurface"
     }

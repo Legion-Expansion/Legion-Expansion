@@ -43,9 +43,6 @@
     "ground_ammo_spec": "/pa/units/land/L_necromancer/death_weapon/pbaoe.json"
   },
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
     "died": {},
     "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",

@@ -56,7 +56,6 @@
     "filename": "/pa/units/orbital/L_mining_platform/L_mining_platform.papa"
   },
   "physics": {
-    "collision_layers": "WL_Orbital",
     "ignore_gravity": true,
     "radius": 40
   },
@@ -83,7 +82,6 @@
   "selection_icon": {
     "diameter": -83
   },
-  "spawn_layers": "WL_Orbital",
   "storage": {
     "energy": 50000,
     "metal": 10000

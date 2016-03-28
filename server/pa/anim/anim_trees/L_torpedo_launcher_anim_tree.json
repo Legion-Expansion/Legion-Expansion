@@ -11,8 +11,7 @@
         "type": "bind_pose"
       },
       "living": {
-        "anim_name": "idle",
-        "type": "playback"
+        "type": "bind_pose"
       }
     },
     "type": "unit_state"

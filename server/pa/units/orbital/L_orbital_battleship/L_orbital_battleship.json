@@ -67,14 +67,11 @@
     "brake": 80,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "hover_time": -1.0,
     "move_speed": 15,
     "turn_accel": 20,
-    "turn_speed": 30,
-    "type": "orbital"
+    "turn_speed": 30
   },
   "physics": {
-    "gravity_scalar": 0.001,
     "radius": 10
   },
   "recon": {

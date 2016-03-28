@@ -224,9 +224,6 @@
     "filename": "/pa/units/land/L_bot_factory_adv/L_bot_factory_adv.papa",
     "skirt_decal": "/pa/effects/specs/skirt_bot_adv.json"
   },
-  "physics": {
-    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
-  },
   "placement_size": [
     68,
     68

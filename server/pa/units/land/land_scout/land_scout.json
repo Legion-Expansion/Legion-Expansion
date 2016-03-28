@@ -38,9 +38,6 @@
     "ORDER_Use"
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "died": {
       "audio_cue": "/SE/Death/Veh_small",
       "effect_scale": 1.0
@@ -68,8 +65,7 @@
     "acceleration": 250,
     "brake": 250,
     "move_speed": 25,
-    "turn_speed": 360,
-    "type": "land-small"
+    "turn_speed": 360
   },
   "physics": {
     "radius": 3

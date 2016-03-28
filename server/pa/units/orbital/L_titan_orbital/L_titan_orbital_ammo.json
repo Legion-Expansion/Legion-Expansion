@@ -39,7 +39,8 @@
   },
   "recon": {
     "observable": {
-      "ignore_radar": false
+      "ignore_radar": true,
+      "ignore_sight": true
     }
   },
   "show_in_orbital_layer": false,

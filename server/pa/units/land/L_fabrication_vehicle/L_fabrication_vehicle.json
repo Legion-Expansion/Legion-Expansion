@@ -52,7 +52,6 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 1.5
     }
   },
@@ -80,8 +79,7 @@
     "brake": 120,
     "group_preference": "back",
     "move_speed": 10,
-    "turn_speed": 360,
-    "type": "land-small"
+    "turn_speed": 360
   },
   "physics": {
     "allow_pushing": true,
