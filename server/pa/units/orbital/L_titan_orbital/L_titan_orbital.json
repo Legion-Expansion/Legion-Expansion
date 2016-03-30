@@ -227,11 +227,11 @@
       ]
     }
   },
-  "spawn_layers": "WL_Orbital",
   "selection_icon": {
     "diameter": -133.0,
     "vertical_offset": -10
   },
+  "spawn_layers": "WL_Orbital",
   "tools": [
     {
       "aim_bone": "bone_megaLaser",

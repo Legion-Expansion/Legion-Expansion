@@ -24,17 +24,36 @@
                 "parameters": {
                   "cue": "/SE/Movement/titan/bot_step_big"
                 },
-                "time": 3.0,
+                "time": 1.8,
                 "type": "audio"
               },
               {
                 "parameters": {
                   "cue": "/SE/Movement/titan/bot_step_big"
                 },
-                "time": 1.5,
+                "time": 3.7,
                 "type": "audio"
+              },
+              {
+                "parameters": {
+                  "bone": "bone_rightFoot",
+                  "effect_scale": 2.0,
+                  "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx"
+                },
+                "time": 1.8,
+                "type": "effect"
+              },
+              {
+                "parameters": {
+                  "bone": "bone_leftFoot",
+                  "effect_scale": 2.0,
+                  "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx"
+                },
+                "time": 3.7,
+                "type": "effect"
               }
             ],
+            "looping": true,
             "type": "playback"
           },
           "type": "walk"
@@ -66,30 +85,10 @@
     },
     {
       "child": {
-        "rotation_axis": "z",
-        "rotation_bone": "bone_turret",
-        "type": "procedural_aim",
-        "weapon_index": 1
-      },
-      "lerp_func": "is_active",
-      "type": "fader"
-    },
-    {
-      "child": {
         "rotation_axis": "x",
         "rotation_bone": "bone_pitch",
         "type": "procedural_aim",
         "weapon_index": 0
-      },
-      "lerp_func": "is_active",
-      "type": "fader"
-    },
-    {
-      "child": {
-        "rotation_axis": "x",
-        "rotation_bone": "bone_pitch",
-        "type": "procedural_aim",
-        "weapon_index": 1
       },
       "lerp_func": "is_active",
       "type": "fader"

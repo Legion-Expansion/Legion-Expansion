@@ -88,7 +88,6 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "guard_radius": 100,
   "has_death_effects": true,
   "max_health": 80000,
   "mesh_bounds": [
@@ -106,9 +105,8 @@
     "walk_speed": 15
   },
   "navigation": {
-    "acceleration": 260,
-    "aggressive_distance": 170,
-    "brake": -1.0,
+    "acceleration": 10,
+    "brake": 10,
     "move_speed": 11,
     "park_stamp": {
       "cost": 10,
@@ -191,7 +189,7 @@
       "aim_bone": "bone_turret",
       "fire_event": "fired1",
       "muzzle_bone": "socket_rightMuzzle",
-      "record_index": 1,
+      "record_index": 0,
       "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_mega_laser_tool_weapon.json"
     },
     {
