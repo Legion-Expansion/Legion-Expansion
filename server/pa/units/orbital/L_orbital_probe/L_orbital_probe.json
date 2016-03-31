@@ -94,7 +94,7 @@
         0
       ],
       "type": "idle"
-    }		
+    }
   ],
   "gravwell_velocity_multiplier": 50,
   "max_health": 50,
