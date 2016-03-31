@@ -30,7 +30,9 @@ if ( ! legionExpansionLoaded )
 }
 
 // Play intro video one time only
-var legion_intro_one_time = localStorage.legion_intro_one_time;
+
+// BLOCKED UNTIL WE HAVE AN INTRO VIDEO
+/*var legion_intro_one_time = localStorage.legion_intro_one_time;
 
 if(legion_intro_one_time != "true") {
 
@@ -48,4 +50,5 @@ if(legion_intro_one_time != "true") {
 	localStorage.legion_intro_one_time = "true";
 }
 
+*/
 
