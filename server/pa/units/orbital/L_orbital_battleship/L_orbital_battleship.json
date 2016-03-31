@@ -84,7 +84,7 @@
     "brake": 80,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "move_speed": 15,
+    "move_speed": 20,
     "turn_accel": 20,
     "turn_speed": 30
   },
