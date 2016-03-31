@@ -54,6 +54,14 @@
       "bone": "socket_muzzle002",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
+    },     {
+      "bone": "thrust001",
+      "filename": "/pa/units/orbital/L_orbital_fabrication_bot/orbital_jets.pfx",
+      "type": "moving_forward"
+    }, {
+      "bone": "thrust002",
+      "filename": "/pa/units/orbital/L_orbital_fabrication_bot/orbital_jets.pfx",
+      "type": "moving_forward"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
