@@ -136,6 +136,19 @@
       "spec_id": "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship_tool_weapon_ground.json"
     }
   ],
+	"fx_offsets": [{
+		"type": "moving_forward",
+		"filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets_big.pfx",
+		"bone": "thrust001"
+}, {
+		"type": "moving_forward",
+		"filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets.pfx",
+		"bone": "thrust002"
+}, {
+		"type": "moving_forward",
+		"filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets.pfx",
+		"bone": "thrust003"
+}],  
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
