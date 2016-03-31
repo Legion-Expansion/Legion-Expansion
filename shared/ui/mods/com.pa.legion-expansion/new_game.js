@@ -100,7 +100,10 @@ if (!legionExpansionLoaded) {
             };
 
             if(model.legionclient_isLoaded()) {
-                if(model.legionWelcomeDontShow() != "true") {
+
+					var gameTicket = model.gameTicket();
+                if(model.legionWelcomeDontShow() != "true" && (sessionStorage.legion_lastGameTicket != gameTicket || gameTicket == undefined)) {
+                    sessionStorage.legion_lastGameTicket = gameTicket;
                     legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
                 }
             } else {

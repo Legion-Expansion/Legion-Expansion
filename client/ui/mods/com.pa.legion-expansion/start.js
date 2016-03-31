@@ -30,23 +30,22 @@ if ( ! legionExpansionLoaded )
 }
 
 // Play intro video one time only
-(function() {
-	var legion_intro_one_time = localStorage.legion_intro_one_time;
+var legion_intro_one_time = localStorage.legion_intro_one_time;
 
-	//load html dynamically
-	legion_loadHtmlTemplate = function(element, url) {
-		element.load(url, function () {
-			console.log("Loading html " + url);
-			element.children().each(function() {
-				ko.applyBindings(model, this);
-			});
-		});
-	};
+if(legion_intro_one_time != "true") {
 
-	if(legion_intro_one_time != "true") {
-	   $("body").append("<div id='legion_intro_wrapper'></div>");
-	   legion_loadHtmlTemplate($("#legion_intro_wrapper"), "coui://ui/mods/com.pa.legion-expansion/start/intro.html");
-		localStorage.legion_intro_one_time = "true";
-	}
+	var intro_url = "https://www.youtube.com/embed/xGp4NClVm2I?autoplay=1";
+	$("body").append("<div id='legion_intro_wrapper'>" +
+	"<div id='legion_intro' style='position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 11111;'>" +
+	"	<iframe width='100%' height='100%' src='" + intro_url + "' frameborder='0' allowfullscreen></iframe>" +
+	"</div>" +
+	"<div id='legion_intro_top' style='position: fixed; left: 0; top: 0; width: 100%; height: 50px; z-index: 22222; padding-left: 1px; padding-right: 1px;'>" +
+	"	<div style='width: 100%; height: 100%; background-color: black;'>" +
+	"		<div style='position: fixed; right: 10px; top: 10px; width: 80px; height: 50px; z-index: 33333; background-image: url(coui://ui/main/shared/img/buttons/btn_lrg_std.png); text-align: center; padding-top: 8px; font-size: 20px;' onclick='$(\"#legion_intro\").remove();$(\"#legion_intro_top\").remove();'>Close</div>" +
+	"	</div>" +
+	"</div>" +
+	"</div>");
+	localStorage.legion_intro_one_time = "true";
+}
 
-})();
+
