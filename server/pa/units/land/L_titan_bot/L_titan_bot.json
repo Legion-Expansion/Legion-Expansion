@@ -40,7 +40,7 @@
     "died": {
       "audio_cue": "",
       "effect_scale": 1.0,
-      "effect_spec": ""
+      "effect_spec": "/pa/units/land/L_titan_bot/titan_bot_death.pfx"  
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
