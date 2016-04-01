@@ -14,6 +14,7 @@
   "min_firing_velocity": 70,
   "pitch_range": 90,
   "pitch_rate": 60,
+  "exclude_unit_types": "Hover",
   "rate_of_fire": 3,
   "spread_fire": true,
   "target_layers": [
