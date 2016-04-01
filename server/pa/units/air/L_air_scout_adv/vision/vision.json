@@ -9,22 +9,12 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 1,
+  "death": {},
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bot_spark_impact",
       "effect_spec": "/pa/effects/specs/tesla_hit.pfx"
     }
-  },
-  "max_health": 20,
-  "mesh_bounds": [
-    1,
-    1,
-    1
-  ],
-  "death": {
-    "decals": [
-      ""
-    ]
   },
   "fx_offsets": [
     {
@@ -42,6 +32,12 @@
       ],
       "type": "idle"
     }
+  ],
+  "max_health": 20,
+  "mesh_bounds": [
+    1,
+    1,
+    1
   ],
   "navigation": {
     "acceleration": 400,
@@ -106,6 +102,6 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Offense",
     "UNITTYPE_Custom1"
-  ], 
+  ],
   "wreckage_health_frac": 0.0
 }
