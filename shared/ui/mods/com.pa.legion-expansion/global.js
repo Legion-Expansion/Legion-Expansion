@@ -555,8 +555,8 @@
           ["L_sea", 12]
         ]
       }, {
-        spec_id: "/pa/units/sea/L_frigate/L_frigate.json",
-        si_fallback: ["frigate"],
+        spec_id: "/pa/units/sea/L_sea_scout/L_sea_scout.json",
+        si_fallback: ["sea_scout"],
         preferred_builds: [
           ["L_sea", 13]
         ]
@@ -573,8 +573,8 @@
           ["L_sea", 15]
         ]
       }, {
-        spec_id: "/pa/units/sea/L_sea_scout/L_sea_scout.json",
-        si_fallback: ["sea_scout"],
+        spec_id: "/pa/units/sea/L_frigate/L_frigate.json",
+        si_fallback: ["frigate"],
         preferred_builds: [
           ["L_sea", 16]
         ]
@@ -585,7 +585,7 @@
         spec_id: "/pa/units/orbital/L_orbital_battleship/L_orbital_battleship.json",
         si_fallback: ["orbital_battleship"],
         preferred_builds: [
-          ["L_orbital", 0]
+          ["L_orbital", 5]
         ]
       }, {
         spec_id: "/pa/units/orbital/L_solar_array/L_solar_array.json",

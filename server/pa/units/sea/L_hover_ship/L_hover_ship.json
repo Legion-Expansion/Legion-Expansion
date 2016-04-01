@@ -14,11 +14,8 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 1500,
+  "build_metal_cost": 1700,
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "died": {
       "audio_cue": "/SE/Death/Sea_large",
       "effect_scale": 1.2,
@@ -27,22 +24,15 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/hover_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle01"
+      "effect_spec": "/pa/effects/specs/big_gun_smoke.pfx socket_muzzle_main"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/hover_fire",
-      "effect_scale": 5.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle02"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_a_001 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_b_001 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_c_001"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_scale": 1.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle03"
-    },
-    "fired3": {
-      "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_scale": 1.0,
-      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle04 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle04"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_a_002 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_b_002 /pa/effects/specs/tank_muzzle_flash.pfx bone_muzzle_side_c_002"
     }
   },
   "fx_offsets": [
@@ -168,11 +158,11 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "max_health": 2000,
+  "max_health": 1600,
   "mesh_bounds": [
     16.721,
     26.856,
-    9.926
+    7
   ],
   "model": {
     "animations": {
@@ -182,14 +172,17 @@
     "filename": "/pa/units/sea/L_hover_ship/L_hover_ship.papa"
   },
   "navigation": {
-    "acceleration": 30,
-    "brake": 110,
-    "move_speed": 11,
+    "acceleration": 8,
+    "aggressive_behaviour": "point",
+    "brake": 6,
+    "move_speed": 16,
     "park_stamp_cost": 20,
     "park_stamp_type": "box",
-    "turn_accel": 15,
-    "turn_speed": 45,
-    "type": "hover"
+    "turn_accel": 25,
+    "turn_speed": 50,
+    "type": "hover",
+    "wobble_factor": 5,
+    "wobble_speed": 0.2
   },
   "nearby_target_tick_update_interval": 15,
   "physics": {
@@ -223,8 +216,7 @@
       "aim_bone": "bone_turret_main",
       "fire_event": "fired0",
       "muzzle_bone": [
-        "socket_leftMuzzle01",
-        "socket_rightMuzzle01"
+        "socket_muzzle_main"
       ],
       "projectiles_per_fire": 1,
       "record_index": 0,

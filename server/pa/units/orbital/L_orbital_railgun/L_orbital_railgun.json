@@ -33,9 +33,31 @@
   "fx_offsets": [
     {
       "bone": "thrust001",
-      "effect_scale": 2,
+      "effect_scale": 1,
       "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
       "type": "moving_forward"
+    },
+    {
+      "bone": "bone_root",
+      "effect_scale": 2,
+      "filename": "/pa/units/orbital/L_orbital_railgun/idle.pfx",
+      "offset": [
+        0,
+        13.9,
+        11
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "effect_scale": 1,
+      "filename": "/pa/units/orbital/L_orbital_railgun/idle2.pfx",
+      "offset": [
+        0,
+        -23.9,
+        3.7
+      ],
+      "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,

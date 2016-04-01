@@ -108,6 +108,12 @@
           "layer": "mine",
           "radius": 100,
           "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
         }
       ]
     }

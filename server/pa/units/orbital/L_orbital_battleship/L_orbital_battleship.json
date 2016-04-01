@@ -49,6 +49,23 @@
       "effect_spec": "/pa/units/sea/L_battleship/t2_muzzle_flash.pfx socket_muzzle003"
     }
   },
+  "fx_offsets": [
+    {
+      "bone": "thrust001",
+      "filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets_big.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust002",
+      "filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust003",
+      "filename": "/pa/units/orbital/L_orbital_battleship/orbital_jets.pfx",
+      "type": "moving_forward"
+    }
+  ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
   "max_health": 5500,
@@ -67,7 +84,7 @@
     "brake": 80,
     "circle_max_time": 4,
     "circle_min_time": 2,
-    "move_speed": 15,
+    "move_speed": 20,
     "turn_accel": 20,
     "turn_speed": 30
   },

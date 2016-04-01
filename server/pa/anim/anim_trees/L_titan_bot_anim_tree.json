@@ -24,17 +24,36 @@
                 "parameters": {
                   "cue": "/SE/Movement/titan/bot_step_big"
                 },
-                "time": 3.0,
+                "time": 1.8,
                 "type": "audio"
               },
               {
                 "parameters": {
                   "cue": "/SE/Movement/titan/bot_step_big"
                 },
-                "time": 1.5,
+                "time": 3.7,
                 "type": "audio"
+              },
+              {
+                "parameters": {
+                  "bone": "bone_rightFoot",
+                  "effect_scale": 2.0,
+                  "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx"
+                },
+                "time": 1.8,
+                "type": "effect"
+              },
+              {
+                "parameters": {
+                  "bone": "bone_leftFoot",
+                  "effect_scale": 2.0,
+                  "spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx"
+                },
+                "time": 3.7,
+                "type": "effect"
               }
             ],
+            "looping": true,
             "type": "playback"
           },
           "type": "walk"
