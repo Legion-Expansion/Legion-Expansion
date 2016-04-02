@@ -1,6 +1,6 @@
 {
   "display_name": "Stalker",
-  "description": "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera.",
+  "description": "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy",
   "TEMP_texelinfo": 17,
   "audio": {
     "loops": {
@@ -24,6 +24,7 @@
   "consumption": {
     "energy": 900
   },
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "died": {
       "effect_scale": 0.25
