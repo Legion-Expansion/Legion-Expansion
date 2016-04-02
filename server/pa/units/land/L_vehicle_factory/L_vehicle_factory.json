@@ -1,7 +1,7 @@
 {
   "display_name": "Armour Foundry",
   "description": "Basic Manufacturing - Builds Legion Armor.",
-  "TEMP_texelinfo": 34.745,
+  "TEMP_texelinfo": 33.98346,
   "area_build_separation": 3,
   "atrophy_cool_down": 15,
   "atrophy_rate": 10,
