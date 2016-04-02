@@ -27,7 +27,7 @@
   "energy_efficiency_requirement": 0.9,
   "events": {
     "died": {
-      "effect_scale": 0.25
+      "effect_scale": 1.25
     },
     "fired": {
       "audio_cue": "/SE/Weapons/air/air_scout_fire"
