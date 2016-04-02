@@ -176,6 +176,13 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
+      "fire_event": "fired1",
+      "muzzle_bone": "socket_rightMuzzle",
+      "record_index": 1,
+      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_mega_laser_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
       "fire_event": "fired0",
       "muzzle_bone": [
         "socket_muzzleLeftBottom",
@@ -184,13 +191,6 @@
       "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_cannon_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "fire_event": "fired1",
-      "muzzle_bone": "socket_rightMuzzle",
-      "record_index": 1,
-      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_mega_laser_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
