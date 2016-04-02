@@ -29,10 +29,10 @@
       0.0
     ]
   },
-  "initial_velocity": 500,
+  "initial_velocity": 300,
   "lifetime": 2.5,
   "max_health": 1,
-  "max_velocity": 500,
+  "max_velocity": 300,
   "model": {
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
@@ -43,8 +43,7 @@
     "radius": 10
   },
   "splash_damage": 140,
-  "splash_damages_allies": true,
-  "splash_radius": 30,
+  "splash_radius": 25,
   "stages": [
     {
       "ignores_LOS": true,
