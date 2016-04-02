@@ -41,7 +41,7 @@
       "audio_cue": "/SE/Movement/air/transport_unload"
     },
     "died": {
-      "effect_scale": 0.5
+      "effect_scale": 1
     }
   },
   "fx_offsets": [
