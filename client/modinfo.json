@@ -56,6 +56,9 @@
     "live_game_sandbox": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
     ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
+    ],  
     "start":[
       "coui://ui/mods/com.pa.legion-expansion/start.js"
     ]
