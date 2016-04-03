@@ -1,0 +1,25 @@
+{
+  "ammo_capacity": 4.1,
+  "ammo_demand": 1,
+  "ammo_id": "/pa/units/sea/l_attack_sub/l_attack_sub_ammo.json",
+  "ammo_per_shot": 1.7,
+  "ammo_source": "time",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "exclude_unit_types": "Hover",
+  "firing_arc_pitch": 60,
+  "firing_arc_yaw": 60,
+  "max_range": 130,
+  "pitch_range": 10,
+  "pitch_rate": 180,
+  "rate_of_fire": 2,
+  "spawn_layers": "WL_Underwater",
+  "spread_fire": true,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "yaw_range": 10,
+  "yaw_rate": 180
+}

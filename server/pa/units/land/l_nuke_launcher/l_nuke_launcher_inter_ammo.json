@@ -1,0 +1,70 @@
+{
+  "ammo_type": "Projectile",
+  "audio_loop": "/SE/Movement/missile/nuke_missile_fly_loop",
+  "build_metal_cost": 32400,
+  "collision_check": "ground",
+  "cruise_height": 100,
+  "damage": 11000,
+  "flight_type": "Staged",
+  "full_damage_splash_radius": 30,
+  "fx_trail": {
+    "bone": "socket_exhaust001",
+    "filename": "/pa/units/air/missile_nuke/missile_nuke_trail.pfx"
+  },
+  "gravwell_velocity_multiplier": 15.0,
+  "influence_radius": 400,
+  "initial_velocity": 40.0,
+  "interplanetary_type": "INTER_GravWell",
+  "lifetime": 0,
+  "max_velocity": 75.0,
+  "model": {
+    "filename": "/pa/units/land/l_nuke_launcher/missile/l_nuclear_missile.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "ignore_gravity": true,
+    "radius": 10
+  },
+  "show_in_orbital_layer": true,
+  "show_strategic_icon": true,
+  "sim_impact_effect": "/pa/effects/specs/default_commander_explosion_ent.json",
+  "spawn_layers": "WL_Air",
+  "splash_damage": 11000,
+  "splash_damages_allies": true,
+  "splash_radius": 150,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 600,
+      "stage_turn_rate": 0
+    },
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_change_range": 75,
+      "stage_duration": 0,
+      "stage_turn_rate": 90
+    },
+    {
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 5000,
+      "stage_turn_rate": 360
+    },
+    {
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": true,
+      "stage_duration": 5000,
+      "stage_turn_rate": 1080
+    }
+  ],
+  "system_velocity_multiplier": 15.0,
+  "turn_rate": 180
+}

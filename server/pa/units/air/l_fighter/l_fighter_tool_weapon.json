@@ -1,0 +1,21 @@
+{
+  "ammo_id": "/pa/units/air/l_fighter/l_fighter_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "firing_arc_pitch": 60,
+  "firing_arc_yaw": 70,
+  "idle_aim_delay": 0,
+  "max_range": 110,
+  "pitch_range": 89,
+  "pitch_rate": 360,
+  "rate_of_fire": 1,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Fighter"
+  ],
+  "yaw_range": 70,
+  "yaw_rate": 3600
+}

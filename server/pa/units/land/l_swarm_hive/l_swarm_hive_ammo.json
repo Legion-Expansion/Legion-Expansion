@@ -1,0 +1,33 @@
+{
+  "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
+  "damage": 0,
+  "death": {
+    "decals": [
+      ""
+    ]
+  },
+  "events": {
+    "died": {
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "fx_trail": {
+    "bone": "bone_body",
+    "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "initial_velocity": 15.0,
+  "lifetime": 3.0,
+  "max_velocity": 20.0,
+  "model": {
+    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
+  },
+  "spawn_unit_on_death": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm.json",
+  "spawn_unit_on_death_with_velocity": true,
+  "splash_damage": 0,
+  "splash_radius": 0
+}

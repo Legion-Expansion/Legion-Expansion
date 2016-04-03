@@ -1,0 +1,17 @@
+{
+  "ammo_id": "/pa/units/sea/l_sea_tank/l_sea_tank_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "firing_arc_yaw": 15,
+  "max_range": 150,
+  "pitch_range": 90,
+  "pitch_rate": 45,
+  "rate_of_fire": 0.5,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 25,
+  "yaw_rate": 90
+}

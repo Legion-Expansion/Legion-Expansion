@@ -1,19 +1,39 @@
-var legionExpansionLoaded, vanillaLock;
+var legionExpansionLoaded;
 
 if (!legionExpansionLoaded) {
 
     legionExpansionLoaded = true;
+    var legionUINoHostRefreshLoaded;
 
     function legionExpansion() {
+
+        if( legionUINoHostRefreshLoaded) {
+            return;
+        }
 
         var buildVersion = decode(sessionStorage.build_version);
 
         var patchName = 'legionExpansion new_game.js';
 
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 85138');
+        console.log(patchName + ' on ' + buildVersion + ' last tested on 85138 no host refresh mod is loaded');
+        legionUINoHostRefreshLoaded = true;
         //LOAD CUSTOM LEGION CSS
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/new_game.css");
-
+        
+        model.legionserver_isLoaded = ko.observable(false);
+        model.legionserver_isHost = ko.computed ( function() {
+            return model.isGameCreator() && model.legionserver_isLoaded();
+        });
+        
+        model.legionserver_checkLoaded = function(){
+            api.mods.getMountedMods('server', function(mods){
+                // check to see if server mod (and optionally a dev version) are loaded
+                var loadedserver =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.server','com.pa.legion-expansion.server-balance', 'com.pa.monty-server' ] ).length > 0;
+                model.legionserver_isLoaded(loadedserver);
+            });
+        }
+        
+        
         model.legionclient_isLoaded = ko.observable(false);
         model.legionclient_isChecked = ko.observable(false);
 
@@ -21,8 +41,9 @@ if (!legionExpansionLoaded) {
         {
             api.mods.getMountedMods( 'client', function ( mods )
             {
-                var loaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.monty-client' ] ).length > 0;
-                model.legionclient_isLoaded ( loaded );
+                // check to see if client mod (and optionally a dev version) are loaded
+                var loadedclient =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.monty-client' ] ).length > 0;
+                model.legionclient_isLoaded ( loadedclient );
                 model.legionclient_isChecked(true);
                 console.log("legion expansion client mod loaded : " + loaded );
             });
@@ -32,23 +53,25 @@ if (!legionExpansionLoaded) {
         // once mod data is sent check if client mod is actually loaded
         if ( window.scene_server_mod_list && window.scene_server_mod_list.new_game )
         {
+            model.legionserver_checkLoaded();
             model.legionclient_checkLoaded();
         }
         else
         {
-            model.legion_server_mod_info_updated_handler = handlers.server_mod_info_updated;
+            var legion_server_mod_info_updated_handler = handlers.server_mod_info_updated;
 
             handlers.server_mod_info_updated = function( payload )
             {
-                model.legion_server_mod_info_updated_handler( payload );
-
+                legion_server_mod_info_updated_handler( payload );
+                
+                model.legionserver_checkLoaded();
                 model.legionclient_checkLoaded();
             }
         }
 
         //WELCOME MESSAGE
 
-			model.legionWelcomeDontShow = ko.observable(localStorage.legion_welcome_dontshow);
+		model.legionWelcomeDontShow = ko.observable(localStorage.legion_welcome_dontshow);
 
         //load html dynamically
         legion_loadHtmlTemplate = function(element, url) {
@@ -100,7 +123,10 @@ if (!legionExpansionLoaded) {
             };
 
             if(model.legionclient_isLoaded()) {
-                if(model.legionWelcomeDontShow() != "true") {
+
+				var gameTicket = model.gameTicket();
+                if(model.legionWelcomeDontShow() != "true" && (sessionStorage.legion_lastGameTicket != gameTicket || gameTicket == undefined)) {
+                    sessionStorage.legion_lastGameTicket = gameTicket;
                     legion_loadHtmlTemplate($("#legion_welcome"), "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html");
                 }
             } else {
@@ -138,7 +164,6 @@ if (!legionExpansionLoaded) {
 
         //Style Slot Legion
         $('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
-
 
         model.changeLegionAI = function(playerid){
             //console.log("change to legion");

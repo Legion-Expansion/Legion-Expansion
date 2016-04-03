@@ -1,0 +1,19 @@
+{
+  "ammo_id": "/pa/units/sea/l_destroyer/l_destroyer_torpedo_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "max_range": 180,
+  "pitch_range": 2,
+  "pitch_rate": 180,
+  "rate_of_fire": 0.25,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
+  "yaw_range": 2,
+  "yaw_rate": 180
+}

@@ -1,0 +1,6 @@
+{
+  "ammo_id": "/pa/units/orbital/l_titan_orbital/l_titan_orbital_effect_ammo.json",
+  "base_spec": "/pa/units/orbital/l_titan_orbital/l_titan_orbital_tool_weapon.json",
+  "manual_fire": false,
+  "rate_of_fire": 1
+}

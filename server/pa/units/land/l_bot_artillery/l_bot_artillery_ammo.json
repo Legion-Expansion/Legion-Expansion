@@ -1,0 +1,47 @@
+{
+  "ammo_type": "Projectile",
+  "armor_damage_map": {
+    "AT_Bot": 0,
+    "AT_Commander": 0,
+    "AT_Hover": 0,
+    "AT_Naval": 0,
+    "AT_Orbital": 0,
+    "AT_Structure": 0,
+    "AT_Vehicle": 0
+  },
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_bullet",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "bone": "bone_root",
+    "filename": "/pa/units/land/l_bot_artillery/trail.pfx",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "influence_radius": 20,
+  "initial_velocity": 50,
+  "lifetime": 10,
+  "max_velocity": 100,
+  "min_velocity": 50,
+  "physics": {
+    "add_to_spatial_db": true,
+    "allow_underground": true,
+    "gravity_scalar": 6,
+    "radius": 2
+  },
+  "spawn_unit_on_death": "/pa/units/land/l_bot_artillery/bomb/bomb.json",
+  "spawn_unit_on_death_with_velocity": false,
+  "splash_damage": 0,
+  "splash_damages_allies": true,
+  "splash_radius": 0
+}

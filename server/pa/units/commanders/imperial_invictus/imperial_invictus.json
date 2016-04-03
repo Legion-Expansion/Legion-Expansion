@@ -198,7 +198,7 @@
       "aim_bone": "turret",
       "muzzle_bone": "muzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+      "spec_id": "/pa/units/commanders/l_uber_cannon.json"
     },
     {
       "aim_bone": "turret",

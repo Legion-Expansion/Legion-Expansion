@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "89528",
+  "build": "89755+",
   "category": [
     "server-mod",
     "lobby",
@@ -9,7 +9,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2016/03/26",
+  "date": "2016/04/03",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.wondible.pa.xenophobia",

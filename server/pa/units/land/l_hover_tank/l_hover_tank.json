@@ -1,0 +1,228 @@
+{
+  "display_name": "Corsair",
+  "description": "Hover Artillery - Medium Range. Attacks Land and Naval.",
+  "TEMP_texelinfo": 22.4238,
+  "armor_type": "AT_Hover",
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_hover_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_hover"
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 400,
+  "events": {
+    "died": {
+      "effect_scale": 1.4
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/veh/tank_T2_sheller"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "offset": [
+        -2.86,
+        -1.9,
+        0.96
+      ],
+      "orientation": [
+        0,
+        0,
+        -202.5
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "offset": [
+        2.86,
+        -1.9,
+        0.96
+      ],
+      "orientation": [
+        0,
+        0,
+        22.5
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "offset": [
+        2.13,
+        2.14,
+        2.22
+      ],
+      "orientation": [
+        0,
+        0,
+        -15
+      ],
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "offset": [
+        -2.13,
+        2.14,
+        2.22
+      ],
+      "orientation": [
+        0,
+        0,
+        195
+      ],
+      "type": "idle"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
+      "offset": [
+        1.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ]
+    },
+    {
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
+      "offset": [
+        -1.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ]
+    }
+  ],
+  "influence_radius": 400,
+  "max_health": 125,
+  "mesh_bounds": [
+    6.468,
+    7.765,
+    5.711
+  ],
+  "model": {
+    "animations": {
+      "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/l_hover_tank_anim_tree.json",
+    "filename": "/pa/units/land/l_hover_tank/l_hover_tank.papa"
+  },
+  "navigation": {
+    "acceleration": 50,
+    "brake": 100,
+    "group_preference": "back",
+    "move_speed": 10,
+    "turn_speed": 50,
+    "type": "hover"
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "air_friction": 0.5,
+    "radius": 3
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -12.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": [
+        "socket_muzzleLeft",
+        "socket_muzzleRight"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/land/l_hover_tank/l_hover_tank_tool_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Hover",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

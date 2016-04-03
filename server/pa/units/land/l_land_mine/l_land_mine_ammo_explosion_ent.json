@@ -1,0 +1,12 @@
+{
+  "recon": {
+    "observable": {
+      "layer": "surface_and_air",
+      "sphere_radius": 15
+    }
+  },
+  "spawn_response": {
+    "audio_cue": "/SE/Impacts/landmine",
+    "effect_spec": "/pa/units/land/l_land_mine/l_land_mine_ammo_explosion.pfx"
+  }
+}

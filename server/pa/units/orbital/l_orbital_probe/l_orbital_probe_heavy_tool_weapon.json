@@ -1,0 +1,17 @@
+{
+  "ammo_id": "/pa/units/orbital/l_orbital_probe/l_orbital_probe_heavy_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_fighter_turret/base_fighter_turret.json",
+  "firing_arc_pitch": 15,
+  "firing_arc_yaw": 5,
+  "max_range": 25,
+  "pitch_range": 15,
+  "rate_of_fire": 0.25,
+  "target_layers": [
+    "WL_Orbital"
+  ],
+  "target_priorities": [
+    "Orbital"
+  ],
+  "yaw_range": 45
+}
