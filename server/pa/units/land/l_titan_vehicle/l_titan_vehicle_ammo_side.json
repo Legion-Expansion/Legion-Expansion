@@ -43,7 +43,7 @@
     "radius": 10
   },
   "splash_damage": 40,
-  "splash_radius": 25,
+  "splash_radius": 20,
   "stages": [
     {
       "ignores_LOS": true,
