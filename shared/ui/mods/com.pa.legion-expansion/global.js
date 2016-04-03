@@ -692,7 +692,7 @@
           name: 'Legion Iron Dome Interceptor',
           description: '!LOC:Anti-nuke - Intercepts incoming nuclear missiles.',
           cost: 6750,
-          sicon_override: 'L_anti_nuke_launcher_ammo',
+          sicon_override: 'l_anti_nuke_launcher_ammo',
           damage: 1
         },
       }, {
@@ -705,7 +705,7 @@
           name: 'Supernova Strategic Warhead',
           description: 'Long range, high damage ballistic missile.',
           cost: 50000,
-          sicon_override: 'L_nuke_launcher_ammo',
+          sicon_override: 'l_nuke_launcher_ammo',
           damage: 33000
         },
       },
