@@ -13,7 +13,7 @@
       "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   },
-  "firing_standard_deviation": 0,
+  "firing_standard_deviation": 1,
   "max_range": 10,
   "pitch_range": 180,
   "pitch_rate": 3600,

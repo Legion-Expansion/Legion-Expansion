@@ -16,12 +16,12 @@
       0.0
     ]
   },
-  "initial_velocity": 45.0,
+  "initial_velocity": 35.0,
   "lifetime": 2,
-  "max_velocity": 45.0,
+  "max_velocity": 35.0,
   "model": {
     "filename": ""
   },
-  "splash_damage": 100,
+  "splash_damage": 150,
   "splash_radius": 10
 }
