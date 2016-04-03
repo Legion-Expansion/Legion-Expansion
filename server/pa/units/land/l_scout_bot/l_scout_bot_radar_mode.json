@@ -107,6 +107,10 @@
     "radius": 2
   },
   "recon": {
+    "observable": {
+      "ignore_sight": true,
+      "layer": "surface_and_air"
+    },
     "observer": {
       "items": [
         {
@@ -137,11 +141,7 @@
           "shape": "capsule",
           "uses_energy": true
         }
-      ],
-      "observable": {
-        "ignore_sight": true,
-        "layer": "surface_and_air"
-      }
+      ]
     }
   },
   "selection_icon": {
