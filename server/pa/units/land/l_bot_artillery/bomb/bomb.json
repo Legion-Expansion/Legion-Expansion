@@ -17,7 +17,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Death/Bot_bomb",
-      "effect_scale": 1.0
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/none.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/air/carrier_drone_fire"
@@ -54,7 +55,7 @@
   },
   "physics": {
     "allow_pushing": true,
-    "radius": 0
+    "radius": 1
   },
   "recon": {
     "observer": {

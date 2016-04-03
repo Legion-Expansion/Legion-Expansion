@@ -15,7 +15,7 @@
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/l_bot_artillery/exp.pfx"
+      "effect_spec": "/pa/effects/specs/none.pfx"
     }
   },
   "full_damage_splash_radius": 0,
