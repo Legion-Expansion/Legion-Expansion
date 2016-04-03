@@ -43,11 +43,11 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
-      "effect_spec": "/pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket002 /pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket005"
+      "effect_spec": "/pa/units/air/l_flying_teleporter/launch_smoke.pfx rocket002 /pa/units/air/l_flying_teleporter/launch_smoke.pfx rocket005"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
-      "effect_spec": "/pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket008 /pa/units/air/L_flying_teleporter/launch_smoke.pfx rocket011"
+      "effect_spec": "/pa/units/air/l_flying_teleporter/launch_smoke.pfx rocket008 /pa/units/air/l_flying_teleporter/launch_smoke.pfx rocket011"
     }
   },
   "fx_offsets": [
@@ -113,7 +113,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/L_flying_teleporter/dust.pfx",
+      "filename": "/pa/units/air/l_flying_teleporter/dust.pfx",
       "offset": [
         0,
         0,
@@ -128,7 +128,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/L_flying_teleporter/event_horizon.pfx",
+      "filename": "/pa/units/air/l_flying_teleporter/event_horizon.pfx",
       "offset": [
         0,
         0,
@@ -152,11 +152,11 @@
   ],
   "model": {
     "animations": {
-      "fly": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_fly.papa",
-      "idle": "/pa/units/air/L_flying_teleporter/L_flying_teleporter_idle.papa"
+      "fly": "/pa/units/air/l_flying_teleporter/l_flying_teleporter_fly.papa",
+      "idle": "/pa/units/air/l_flying_teleporter/l_flying_teleporter_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_flying_teleporter_anim_tree.json",
-    "filename": "/pa/units/air/L_flying_teleporter/L_flying_teleporter.papa"
+    "animtree": "/pa/anim/anim_trees/l_flying_teleporter_anim_tree.json",
+    "filename": "/pa/units/air/l_flying_teleporter/l_flying_teleporter.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -213,7 +213,7 @@
         "rocket004"
       ],
       "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -227,7 +227,7 @@
         "rocket010"
       ],
       "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_tool_weapon.json"
     }
   ],
   "unit_types": [

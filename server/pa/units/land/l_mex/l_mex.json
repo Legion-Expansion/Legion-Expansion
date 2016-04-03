@@ -28,7 +28,7 @@
   ],
   "fx_offsets": [
     {
-      "filename": "/pa/units/land/L_mex/L_mex.pfx",
+      "filename": "/pa/units/land/l_mex/l_mex.pfx",
       "offset": [
         0,
         0,
@@ -45,10 +45,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_mex/L_metal_extractor_idle.papa"
+      "idle": "/pa/units/land/l_mex/l_metal_extractor_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
-    "filename": "/pa/units/land/L_mex/L_metal_extractor.papa"
+    "filename": "/pa/units/land/l_mex/l_metal_extractor.papa"
   },
   "placement_size": [
     20,
@@ -76,7 +76,7 @@
     }
   },
   "replaceable_units": [
-    "/pa/units/land/L_mex_adv/L_mex_adv.json"
+    "/pa/units/land/l_mex_adv/l_mex_adv.json"
   ],
   "selection_icon": {
     "diameter": -24

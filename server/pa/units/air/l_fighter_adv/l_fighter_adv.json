@@ -35,7 +35,7 @@
   "fx_offsets": [
     {
       "bone": "thrust001",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_jets_big.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_jets_big.pfx",
       "offset": [
         0,
         0,
@@ -45,7 +45,7 @@
     },
     {
       "bone": "thrust001",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
       "offset": [
         0,
         0,
@@ -55,7 +55,7 @@
     },
     {
       "bone": "thrust002",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_jets.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_jets.pfx",
       "offset": [
         0,
         0,
@@ -65,7 +65,7 @@
     },
     {
       "bone": "thrust003",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_jets.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_jets.pfx",
       "offset": [
         0,
         0,
@@ -75,7 +75,7 @@
     },
     {
       "bone": "thrust002",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
       "offset": [
         0,
         0,
@@ -85,7 +85,7 @@
     },
     {
       "bone": "thrust003",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
       "offset": [
         0,
         0,
@@ -95,7 +95,7 @@
     },
     {
       "bone": "muzzle_left",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_lines.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_lines.pfx",
       "offset": [
         0.5,
         8.5,
@@ -105,7 +105,7 @@
     },
     {
       "bone": "muzzle_right",
-      "filename": "/pa/units/air/L_fighter_adv/fighter_lines.pfx",
+      "filename": "/pa/units/air/l_fighter_adv/fighter_lines.pfx",
       "offset": [
         -0.5,
         8.5,
@@ -123,8 +123,8 @@
     4
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_fighter_adv_anim_tree.json",
-    "filename": "/pa/units/air/L_fighter_adv/L_fighter_adv.papa"
+    "animtree": "/pa/anim/anim_trees/l_fighter_adv_anim_tree.json",
+    "filename": "/pa/units/air/l_fighter_adv/l_fighter_adv.papa"
   },
   "navigation": {
     "acceleration": 90,
@@ -163,13 +163,13 @@
       "aim_bone": "recoil_right",
       "fire_event": "fired0",
       "muzzle_bone": "muzzle_right",
-      "spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_fighter_adv/l_fighter_adv_tool_weapon.json"
     },
     {
       "aim_bone": "recoil_left",
       "fire_event": "fired1",
       "muzzle_bone": "muzzle_left",
-      "spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_fighter_adv/l_fighter_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -181,7 +181,7 @@
         "missile004"
       ],
       "projectiles_per_fire": 4,
-      "spec_id": "/pa/units/air/L_fighter_adv/L_fighter_adv_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_fighter_adv/l_fighter_adv_rocket_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -23,12 +23,12 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 2.0,
-      "effect_spec": "/pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle001 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle002 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle003 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle004"
+      "effect_spec": "/pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle001 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle002 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle003 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle004"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 2.0,
-      "effect_spec": "/pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle005 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle006 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle007 /pa/units/sea/L_sea_tank/muzzle_flash.pfx socket_muzzle008"
+      "effect_spec": "/pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle005 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle006 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle007 /pa/units/sea/l_sea_tank/muzzle_flash.pfx socket_muzzle008"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/torpedo_fire",
@@ -37,7 +37,7 @@
     "fired3": {
       "audio_cue": "/SE/Impacts/shell_artillery",
       "effect_scale": 3.0,
-      "effect_spec": "/pa/units/sea/L_sea_tank/ram_hit.pfx bone_rammer"
+      "effect_spec": "/pa/units/sea/l_sea_tank/ram_hit.pfx bone_rammer"
     }
   },
   "fx_offsets": [
@@ -54,10 +54,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/sea/L_sea_tank/L_sea_tank_idle.papa"
+      "idle": "/pa/units/sea/l_sea_tank/l_sea_tank_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_sea_tank_anim_tree.json",
-    "filename": "/pa/units/sea/L_sea_tank/L_sea_tank.papa"
+    "animtree": "/pa/anim/anim_trees/l_sea_tank_anim_tree.json",
+    "filename": "/pa/units/sea/l_sea_tank/l_sea_tank.papa"
   },
   "navigation": {
     "acceleration": 4,
@@ -101,7 +101,7 @@
       ],
       "projectiles_per_fire": 4,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_tank/l_sea_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitchRight",
@@ -114,14 +114,14 @@
       ],
       "projectiles_per_fire": 4,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_tank/l_sea_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_torpedoTurret",
       "fire_event": "fired2",
       "muzzle_bone": "bone_torpedoMuzzle",
       "record_index": 2,
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_torpedo_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_tank/l_sea_tank_torpedo_tool_weapon.json"
     },
     {
       "aim_bone": "bone_rammer",
@@ -129,7 +129,7 @@
       "muzzle_bone": "bone_rammer",
       "primary_weapon": true,
       "record_index": 3,
-      "spec_id": "/pa/units/sea/L_sea_tank/L_sea_tank_ram_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_tank/l_sea_tank_ram_tool_weapon.json"
     }
   ],
   "unit_types": [

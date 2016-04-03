@@ -26,7 +26,7 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/L_bot_artillery/exp.pfx",
+      "filename": "/pa/units/land/l_bot_artillery/exp.pfx",
       "offset": [
         0,
         0,
@@ -81,7 +81,7 @@
     {
       "aim_bone": "bone_root",
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_bot_artillery/bomb/bomb_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_artillery/bomb/bomb_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -100,10 +100,10 @@
   ],
   "model": {
     "animations": {
-      "fly": "/pa/units/air/L_gunship/L_gunship_fly.papa"
+      "fly": "/pa/units/air/l_gunship/l_gunship_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_gunship_anim_tree.json",
-    "filename": "/pa/units/air/L_gunship/L_gunship.papa"
+    "animtree": "/pa/anim/anim_trees/l_gunship_anim_tree.json",
+    "filename": "/pa/units/air/l_gunship/l_gunship.papa"
   },
   "navigation": {
     "acceleration": 20,
@@ -144,7 +144,7 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
       "record_index": 0,
-      "spec_id": "/pa/units/air/L_gunship/L_gunship_main_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_gunship/l_gunship_main_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -158,7 +158,7 @@
         "socket_rocket06"
       ],
       "record_index": 1,
-      "spec_id": "/pa/units/air/L_gunship/L_gunship_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_gunship/l_gunship_rocket_tool_weapon.json"
     }
   ],
   "unit_types": [

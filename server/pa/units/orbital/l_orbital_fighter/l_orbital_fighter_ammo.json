@@ -4,11 +4,11 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/cannon_uber",
-      "effect_spec": "/pa/units/orbital/L_orbital_fighter/proj_exp.pfx"
+      "effect_spec": "/pa/units/orbital/l_orbital_fighter/proj_exp.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/air/L_bomber/L_bomber_proj_trail.pfx"
+    "filename": "/pa/units/air/l_bomber/l_bomber_proj_trail.pfx"
   },
   "initial_velocity": 300.0,
   "lifetime": 1.0,

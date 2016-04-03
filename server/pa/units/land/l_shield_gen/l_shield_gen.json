@@ -11,7 +11,7 @@
     "energy": 0
   },
   "death_weapon": {
-    "ground_ammo_spec": "/pa/units/land/L_shield_gen/L_shield_gen_death.json"
+    "ground_ammo_spec": "/pa/units/land/l_shield_gen/l_shield_gen_death.json"
   },
   "energy_efficiency_requirement": 1,
   "events": {
@@ -25,13 +25,13 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
-      "effect_spec": "/pa/units/land/L_shield_gen/shield_hit.pfx bone_void"
+      "effect_spec": "/pa/units/land/l_shield_gen/shield_hit.pfx bone_void"
     }
   },
   "fx_offsets": [
     {
       "bone": "bone_void",
-      "filename": "/pa/units/land/L_shield_gen/shield.pfx",
+      "filename": "/pa/units/land/l_shield_gen/shield.pfx",
       "offset": [
         0,
         0,
@@ -54,16 +54,16 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/L_shield_gen/L_shield_gen.papa",
+      "filename": "/pa/units/land/l_shield_gen/l_shield_gen.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
     },
     {
       "animations": {
-        "idle": "/pa/units/land/L_shield_gen/L_shield_gen_idle.papa"
+        "idle": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/L_shield_gen/sea/L_shield_gen.papa",
+      "filename": "/pa/units/land/l_shield_gen/sea/l_shield_gen.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -92,19 +92,19 @@
       "aim_bone": "bone_void",
       "record_index": 0,
       "show_range": true,
-      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_short_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_short_tool_weapon.json"
     },
     {
       "aim_bone": "bone_void",
       "record_index": 1,
       "show_range": true,
-      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_mid_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_mid_tool_weapon.json"
     },
     {
       "aim_bone": "bone_void",
       "record_index": 2,
       "show_range": true,
-      "spec_id": "/pa/units/land/L_shield_gen/L_shield_gen_long_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_long_tool_weapon.json"
     }
   ],
   "unit_types": [

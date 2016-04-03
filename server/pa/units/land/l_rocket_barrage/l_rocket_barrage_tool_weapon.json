@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/land/L_rocket_barrage/L_rocket_barrage_ammo.json",
+  "ammo_id": "/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json",
   "arc_type": "High",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",

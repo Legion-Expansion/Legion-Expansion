@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_anti_ammo.json",
+  "ammo_id": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_anti_ammo.json",
   "anti_entity_targets": [
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/air/bomber_adv/bomber_adv_ammo.json",

@@ -10,7 +10,7 @@
   },
   "full_damage_splash_radius": 0,
   "fx_trail": {
-    "filename": "/pa/units/land/L_titan_bot/left_trail.pfx",
+    "filename": "/pa/units/land/l_titan_bot/left_trail.pfx",
     "offset": [
       0.0,
       1.0,

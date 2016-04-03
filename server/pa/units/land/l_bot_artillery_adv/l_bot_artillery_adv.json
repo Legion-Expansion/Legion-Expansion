@@ -37,15 +37,15 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/units/land/L_bot_artillery_adv/ground_smoke.pfx bone_root"
+      "effect_spec": "/pa/units/land/l_bot_artillery_adv/muzzle_flash.pfx socket_muzzleMain /pa/units/land/l_bot_artillery_adv/ground_smoke.pfx bone_root"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft01 /pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight01"
+      "effect_spec": "/pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft01 /pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight01"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft02 /pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight02"
+      "effect_spec": "/pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzleLeft02 /pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzleRight02"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -115,11 +115,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_idle.papa",
-      "walk": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_walk.papa"
+      "idle": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_idle.papa",
+      "walk": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_bot_artillery_adv_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv.papa",
+    "animtree": "/pa/anim/anim_trees/l_bot_artillery_adv_anim_tree.json",
+    "filename": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv.papa",
     "walk_speed": 4
   },
   "navigation": {
@@ -161,7 +161,7 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzleMain",
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turretLeft",
@@ -172,7 +172,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_light_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turretRight",
@@ -183,7 +183,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/land/L_bot_artillery_adv/L_bot_artillery_adv_light_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"
     }
   ],
   "transportable": {

@@ -34,7 +34,7 @@
       ]
     }
   },
-  "spawn_unit_on_death": "/pa/units/land/L_land_mine/triggered/L_land_mine.json",
+  "spawn_unit_on_death": "/pa/units/land/l_land_mine/triggered/l_land_mine.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,

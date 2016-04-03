@@ -74,12 +74,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/L_radar_satellite/L_radar_satellite_closed.papa",
-      "deploy": "/pa/units/orbital/L_radar_satellite/L_radar_satellite_deploy.papa",
-      "open": "/pa/units/orbital/L_radar_satellite/L_radar_satellite_open.papa"
+      "closed": "/pa/units/orbital/l_radar_satellite/l_radar_satellite_closed.papa",
+      "deploy": "/pa/units/orbital/l_radar_satellite/l_radar_satellite_deploy.papa",
+      "open": "/pa/units/orbital/l_radar_satellite/l_radar_satellite_open.papa"
     },
     "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
-    "filename": "/pa/units/orbital/L_radar_satellite/L_radar_satellite.papa"
+    "filename": "/pa/units/orbital/l_radar_satellite/l_radar_satellite.papa"
   },
   "navigation": {
     "acceleration": 15,

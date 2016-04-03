@@ -75,7 +75,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
-    "filename": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv.papa"
+    "filename": "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.papa"
   },
   "navigation": {
     "acceleration": 40,
@@ -120,7 +120,7 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "spec_id": "/pa/units/sea/L_fabrication_sub_combat_adv/L_fabrication_sub_combat_adv_build_arm.json"
+      "spec_id": "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv_build_arm.json"
     }
   ],
   "transportable": {

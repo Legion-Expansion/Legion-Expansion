@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+  "ammo_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json",
   "ammo_source": "factory",
   "auto_attack": false,
   "auto_task_type": "none",

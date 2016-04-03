@@ -29,7 +29,7 @@
   "fx_offsets": [
     {
       "bone": "effect",
-      "filename": "/pa/units/land/L_radar/L_radar_on.pfx",
+      "filename": "/pa/units/land/l_radar/l_radar_on.pfx",
       "offset": [
         0,
         0,
@@ -69,11 +69,11 @@
     {
       "animations": {
         "end": "/pa/units/land/radar/radar_anim_end.papa",
-        "loop": "/pa/units/land/L_radar/L_radar_idle.papa",
+        "loop": "/pa/units/land/l_radar/l_radar_idle.papa",
         "start": "/pa/units/land/radar/radar_anim_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-      "filename": "/pa/units/land/L_radar/L_radar.papa",
+      "filename": "/pa/units/land/l_radar/l_radar.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_radar.json"
     },
@@ -84,7 +84,7 @@
         "start": "/pa/units/land/radar/radar_anim_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-      "filename": "/pa/units/land/L_radar/L_radar.papa",
+      "filename": "/pa/units/land/l_radar/l_radar.papa",
       "layer": "WL_WaterSurface"
     }
   ],

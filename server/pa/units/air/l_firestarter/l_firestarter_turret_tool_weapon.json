@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 450,
   "ammo_demand": 30,
-  "ammo_id": "/pa/units/air/L_firestarter/L_firestarter_turret_ammo.json",
+  "ammo_id": "/pa/units/air/l_firestarter/l_firestarter_turret_ammo.json",
   "ammo_per_shot": 150,
   "ammo_source": "metal",
   "auto_attack": false,

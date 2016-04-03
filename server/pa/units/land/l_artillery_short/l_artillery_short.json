@@ -53,14 +53,14 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/L_artillery_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_short/L_artillery_short.papa",
+      "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",
+      "filename": "/pa/units/land/l_artillery_short/l_artillery_short.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_short.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/L_artillery_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_short/L_artillery_short.papa",
+      "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",
+      "filename": "/pa/units/land/l_artillery_short/l_artillery_short.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -91,7 +91,7 @@
     {
       "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_artillery_short/L_artillery_short_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_artillery_short/l_artillery_short_tool_weapon.json"
     }
   ],
   "unit_types": [

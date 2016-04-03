@@ -28,10 +28,10 @@
   "model": [
     {
       "animations": {
-        "fire": "/pa/units/land/L_land_mine/L_land_mine_fire.papa"
+        "fire": "/pa/units/land/l_land_mine/l_land_mine_fire.papa"
       },
-      "animtree": "/pa/anim/anim_trees/L_land_mine_anim_tree.json",
-      "filename": "/pa/units/land/L_land_mine/L_land_mine.papa",
+      "animtree": "/pa/anim/anim_trees/l_land_mine_anim_tree.json",
+      "filename": "/pa/units/land/l_land_mine/l_land_mine.papa",
       "layer": "WL_LandHorizontal"
     }
   ],
@@ -72,13 +72,13 @@
         "bone_kappa"
       ],
       "projectiles_per_fire": 3,
-      "spec_id": "/pa/units/land/L_land_mine/triggered/L_land_mine_main_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_land_mine/triggered/l_land_mine_main_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "fire_event": "fired1",
       "muzzle_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_land_mine/triggered/L_land_mine_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_land_mine/triggered/l_land_mine_tool_weapon.json"
     }
   ],
   "unit_types": [

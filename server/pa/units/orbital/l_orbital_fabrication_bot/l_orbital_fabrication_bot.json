@@ -57,12 +57,12 @@
     },
     {
       "bone": "thrust001",
-      "filename": "/pa/units/orbital/L_orbital_fabrication_bot/orbital_jets.pfx",
+      "filename": "/pa/units/orbital/l_orbital_fabrication_bot/orbital_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust002",
-      "filename": "/pa/units/orbital/L_orbital_fabrication_bot/orbital_jets.pfx",
+      "filename": "/pa/units/orbital/l_orbital_fabrication_bot/orbital_jets.pfx",
       "type": "moving_forward"
     }
   ],
@@ -76,12 +76,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_closed.papa",
-      "deploy": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_deploy.papa",
-      "open": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_open.papa"
+      "closed": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot_closed.papa",
+      "deploy": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot_deploy.papa",
+      "open": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_orbital_fabrication_bot_anim_tree.json",
-    "filename": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot.papa"
+    "animtree": "/pa/anim/anim_trees/l_orbital_fabrication_bot_anim_tree.json",
+    "filename": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -122,7 +122,7 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "spec_id": "/pa/units/orbital/L_orbital_fabrication_bot/L_orbital_fabrication_bot_build_arm.json"
+      "spec_id": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot_build_arm.json"
     }
   ],
   "unit_types": [

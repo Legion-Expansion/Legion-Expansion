@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 5,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/air/L_gunship/L_gunship_rocket_ammo.json",
+  "ammo_id": "/pa/units/air/l_gunship/l_gunship_rocket_ammo.json",
   "ammo_per_shot": 2.5,
   "ammo_source": "time",
   "auto_attack": true,

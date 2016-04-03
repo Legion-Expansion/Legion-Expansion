@@ -11,7 +11,7 @@
     "radius_velocity": 200.0
   },
   "full_damage_splash_radius": 0,
-  "sim_fire_effect": "/pa/units/land/L_shield_gen/L_shield_gen_explosion_ent.json",
+  "sim_fire_effect": "/pa/units/land/l_shield_gen/l_shield_gen_explosion_ent.json",
   "splash_damage": 0,
   "splash_damages_allies": false,
   "splash_radius": 0

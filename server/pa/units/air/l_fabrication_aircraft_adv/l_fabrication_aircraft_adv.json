@@ -103,10 +103,10 @@
   ],
   "model": {
     "animations": {
-      "fly": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_fly.papa"
+      "fly": "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv_fly.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_fabrication_aircraft_adv_anim_tree.json",
-    "filename": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv.papa"
+    "animtree": "/pa/anim/anim_trees/l_fabrication_aircraft_adv_anim_tree.json",
+    "filename": "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -148,7 +148,7 @@
         "turret_left",
         "turret_right"
       ],
-      "spec_id": "/pa/units/air/L_fabrication_aircraft_adv/L_fabrication_aircraft_adv_build_arm.json"
+      "spec_id": "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv_build_arm.json"
     }
   ],
   "transportable": {

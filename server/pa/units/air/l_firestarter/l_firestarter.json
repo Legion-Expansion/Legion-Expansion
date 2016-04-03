@@ -35,11 +35,11 @@
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/air/L_firestarter/bottom_fire.pfx bone_fireDrop"
+      "effect_spec": "/pa/units/air/l_firestarter/bottom_fire.pfx bone_fireDrop"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/air/L_firestarter/forward_fire.pfx intake_left /pa/units/air/L_firestarter/forward_fire.pfx intake_right"
+      "effect_spec": "/pa/units/air/l_firestarter/forward_fire.pfx intake_left /pa/units/air/l_firestarter/forward_fire.pfx intake_right"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
@@ -67,11 +67,11 @@
   ],
   "model": {
     "animations": {
-      "deploy": "/pa/units/air/L_firestarter/L_firestarter_deploy.papa",
-      "open": "/pa/units/air/L_firestarter/L_firestarter_open.papa"
+      "deploy": "/pa/units/air/l_firestarter/l_firestarter_deploy.papa",
+      "open": "/pa/units/air/l_firestarter/l_firestarter_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_firestarter_anim_tree.json",
-    "filename": "/pa/units/air/L_firestarter/L_firestarter.papa"
+    "animtree": "/pa/anim/anim_trees/l_firestarter_anim_tree.json",
+    "filename": "/pa/units/air/l_firestarter/l_firestarter.papa"
   },
   "navigation": {
     "acceleration": 60,
@@ -119,7 +119,7 @@
       "record_index": 0,
       "secondary_weapon": true,
       "show_range": false,
-      "spec_id": "/pa/units/air/L_firestarter/L_firestarter_turret_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_firestarter/l_firestarter_turret_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -128,7 +128,7 @@
       "primary_weapon": true,
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/air/L_firestarter/L_firestarter_flame_drop_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_firestarter/l_firestarter_flame_drop_tool_weapon.json"
     },
     {
       "aim_bone": "nose_light",

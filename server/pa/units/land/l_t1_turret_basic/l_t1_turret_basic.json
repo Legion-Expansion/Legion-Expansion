@@ -20,7 +20,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-      "effect_spec": "/pa/units/land/L_t1_turret_basic/muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -33,13 +33,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.papa",
+      "filename": "/pa/units/land/l_t1_turret_basic/l_t1_turret_basic.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic.papa",
+      "filename": "/pa/units/land/l_t1_turret_basic/l_t1_turret_basic.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -71,7 +71,7 @@
       "muzzle_bone": [
         "socket_muzzle"
       ],
-      "spec_id": "/pa/units/land/L_t1_turret_basic/L_t1_turret_basic_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_t1_turret_basic/l_t1_turret_basic_tool_weapon.json"
     }
   ],
   "unit_types": [

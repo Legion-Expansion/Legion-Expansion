@@ -51,7 +51,7 @@
   "fx_offsets": [
     {
       "bone": "thrustBackMain",
-      "filename": "/pa/units/air/L_titan_air/titan_back_jets.pfx",
+      "filename": "/pa/units/air/l_titan_air/titan_back_jets.pfx",
       "offset": [
         0,
         0,
@@ -61,7 +61,7 @@
     },
     {
       "bone": "thrustBackMain",
-      "filename": "/pa/units/air/L_titan_air/titan_side_jets.pfx",
+      "filename": "/pa/units/air/l_titan_air/titan_side_jets.pfx",
       "offset": [
         0,
         0,
@@ -71,7 +71,7 @@
     },
     {
       "bone": "thrustBackMain",
-      "filename": "/pa/units/air/L_titan_air/titan_back_smoke.pfx",
+      "filename": "/pa/units/air/l_titan_air/titan_back_smoke.pfx",
       "offset": [
         0,
         0,
@@ -90,8 +90,8 @@
     14.856
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_titan_air_anim_tree.json",
-    "filename": "/pa/units/air/L_titan_air/L_titan_air.papa"
+    "animtree": "/pa/anim/anim_trees/l_titan_air_anim_tree.json",
+    "filename": "/pa/units/air/l_titan_air/l_titan_air.papa"
   },
   "navigation": {
     "acceleration": 50,
@@ -139,7 +139,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/air/L_titan_air/L_titan_air_main_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_titan_air/l_titan_air_main_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret_main",
@@ -150,7 +150,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/air/L_titan_air/L_titan_air_main_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_titan_air/l_titan_air_main_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret_side_left",
@@ -163,7 +163,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 2,
-      "spec_id": "/pa/units/air/L_titan_air/L_titan_air_side_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_titan_air/l_titan_air_side_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret_side_right",
@@ -176,7 +176,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 3,
-      "spec_id": "/pa/units/air/L_titan_air/L_titan_air_side_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_titan_air/l_titan_air_side_tool_weapon.json"
     }
   ],
   "unit_types": [

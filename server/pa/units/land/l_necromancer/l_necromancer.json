@@ -40,13 +40,13 @@
     "ORDER_FireSecondaryWeapon"
   ],
   "death_weapon": {
-    "ground_ammo_spec": "/pa/units/land/L_necromancer/death_weapon/pbaoe.json"
+    "ground_ammo_spec": "/pa/units/land/l_necromancer/death_weapon/pbaoe.json"
   },
   "events": {
     "died": {},
     "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/L_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/L_riot_bot/bullet_shells_left.pfx bone_pivot"
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/l_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/l_riot_bot/bullet_shells_left.pfx bone_pivot"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -59,11 +59,11 @@
   "model": {
     "animations": {
       "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",
-      "idle": "/pa/units/land/L_necromancer/L_necromancer_idle.papa",
-      "walk": "/pa/units/land/L_necromancer/L_necromancer_walk.papa"
+      "idle": "/pa/units/land/l_necromancer/l_necromancer_idle.papa",
+      "walk": "/pa/units/land/l_necromancer/l_necromancer_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_necromancer_anim_tree.json",
-    "filename": "/pa/units/land/L_necromancer/L_necromancer.papa",
+    "animtree": "/pa/anim/anim_trees/l_necromancer_anim_tree.json",
+    "filename": "/pa/units/land/l_necromancer/l_necromancer.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -111,7 +111,7 @@
         "drop003"
       ],
       "projectiles_per_fire": 7,
-      "spec_id": "/pa/units/land/L_necromancer/L_necromancer_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_necromancer/l_necromancer_tool_weapon.json"
     }
   ],
   "unit_types": [

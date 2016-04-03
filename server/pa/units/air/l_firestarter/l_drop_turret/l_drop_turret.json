@@ -20,7 +20,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/land/L_flame_turret/fire.pfx socket_muzzleTop"
+      "effect_spec": "/pa/units/land/l_flame_turret/fire.pfx socket_muzzleTop"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
@@ -33,7 +33,7 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret.papa",
+      "filename": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     }
@@ -66,12 +66,12 @@
         "socket_muzzleTop",
         "socket_muzzleBottom"
       ],
-      "spec_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "record_index": 0,
-      "spec_id": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret_death_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_death_tool_weapon.json"
     }
   ],
   "unit_types": [

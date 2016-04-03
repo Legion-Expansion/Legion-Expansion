@@ -9,6 +9,6 @@
   },
   "spawn_response": {
     "audio_cue": "/SE/Impacts/missile_nuke",
-    "effect_spec": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo_explosion_air.pfx"
+    "effect_spec": "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo_explosion_air.pfx"
   }
 }

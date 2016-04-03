@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 48000,
   "ammo_demand": 4000,
-  "ammo_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_ammo.json",
+  "ammo_id": "/pa/units/orbital/l_orbital_laser/l_orbital_laser_ammo.json",
   "ammo_per_shot": 48000,
   "ammo_source": "energy",
   "auto_attack": true,

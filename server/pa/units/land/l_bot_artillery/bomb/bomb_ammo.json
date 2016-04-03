@@ -18,7 +18,7 @@
   "impact_decals": [
     "/pa/effects/specs/scorch_b_01.json"
   ],
-  "sim_fire_effect": "/pa/units/land/L_bot_artillery/bomb/bomb_ammo_explosion_ent.json",
+  "sim_fire_effect": "/pa/units/land/l_bot_artillery/bomb/bomb_ammo_explosion_ent.json",
   "splash_damage": 500,
   "splash_damages_allies": true,
   "splash_radius": 15

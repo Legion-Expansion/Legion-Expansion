@@ -15,13 +15,13 @@
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/L_bot_artillery/exp.pfx"
+      "effect_spec": "/pa/units/land/l_bot_artillery/exp.pfx"
     }
   },
   "full_damage_splash_radius": 0,
   "fx_trail": {
     "bone": "bone_root",
-    "filename": "/pa/units/land/L_bot_artillery/trail.pfx",
+    "filename": "/pa/units/land/l_bot_artillery/trail.pfx",
     "offset": [
       0,
       0,
@@ -39,7 +39,7 @@
     "gravity_scalar": 6,
     "radius": 2
   },
-  "spawn_unit_on_death": "/pa/units/land/L_bot_artillery/bomb/bomb.json",
+  "spawn_unit_on_death": "/pa/units/land/l_bot_artillery/bomb/bomb.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": true,

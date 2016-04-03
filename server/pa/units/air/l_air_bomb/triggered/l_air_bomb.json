@@ -38,7 +38,7 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/L_air_bomb/triggered/L_air_bomb.pfx",
+      "filename": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.pfx",
       "type": "idle"
     }
   ],
@@ -52,10 +52,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/air/L_air_bomb/L_air_bomb_idle.papa"
+      "idle": "/pa/units/air/l_air_bomb/l_air_bomb_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-    "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
+    "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "navigation": {
     "acceleration": 110,
@@ -88,15 +88,15 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/air/L_air_bomb/triggered/L_air_bomb_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/air/L_air_bomb/triggered/L_air_bomb_death_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_death_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/air/L_air_bomb/triggered/L_air_bomb_tracer_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_tracer_tool_weapon.json"
     }
   ],
   "unit_types": [

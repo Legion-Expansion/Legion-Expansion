@@ -8,7 +8,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
-      "effect_spec": "/pa/units/land/L_tank_swarm/chain/electrode.pfx"
+      "effect_spec": "/pa/units/land/l_tank_swarm/chain/electrode.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/spark_fire"
@@ -65,12 +65,12 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_tank_swarm/chain/chain_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_tank_swarm/chain/chain_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_tank_swarm/chain/chain_death_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_tank_swarm/chain/chain_death_tool_weapon.json"
     }
   ],
   "unit_types": [

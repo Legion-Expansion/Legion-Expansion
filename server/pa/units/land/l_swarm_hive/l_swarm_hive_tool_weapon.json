@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 1500,
   "ammo_demand": 150,
-  "ammo_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_ammo.json",
+  "ammo_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_ammo.json",
   "ammo_per_shot": 750,
   "ammo_source": "energy",
   "auto_attack": true,

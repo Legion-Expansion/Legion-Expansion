@@ -35,7 +35,7 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/L_mortar_tank/muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/l_mortar_tank/muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
@@ -53,7 +53,7 @@
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank.papa"
+    "filename": "/pa/units/land/l_mortar_tank/l_mortar_tank.papa"
   },
   "navigation": {
     "acceleration": 40,
@@ -92,7 +92,7 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -100,7 +100,7 @@
       "muzzle_bone": "socket_muzzle",
       "record_index": 1,
       "show_range": false,
-      "spec_id": "/pa/units/land/L_mortar_tank/L_mortar_tank_torpedo_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_tool_weapon.json"
     }
   ],
   "transportable": {

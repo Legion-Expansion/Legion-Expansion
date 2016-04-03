@@ -36,7 +36,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
-    "filename": "/pa/units/sea/L_sea_scout/L_sea_scout.papa"
+    "filename": "/pa/units/sea/l_sea_scout/l_sea_scout.papa"
   },
   "navigation": {
     "acceleration": 40,
@@ -85,7 +85,7 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_scout/l_sea_scout_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -93,7 +93,7 @@
       "muzzle_bone": "bone_root",
       "primary_weapon": true,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_sea_scout/L_sea_scout_torpedo_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_sea_scout/l_sea_scout_torpedo_tool_weapon.json"
     }
   ],
   "unit_types": [

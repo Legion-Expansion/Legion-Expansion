@@ -8,7 +8,7 @@
   },
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/L_necromancer/death_weapon/teleport.pfx"
+      "effect_spec": "/pa/units/land/l_necromancer/death_weapon/teleport.pfx"
     }
   },
   "fx_trail": {
@@ -21,7 +21,7 @@
   "model": {
     "filename": ""
   },
-  "spawn_unit_on_death": "/pa/units/land/L_necromancer/minion/minion_spawner.json",
+  "spawn_unit_on_death": "/pa/units/land/l_necromancer/minion/minion_spawner.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0

@@ -8,12 +8,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
-      "effect_spec": "/pa/units/land/L_tank_swarm/chain/electrode.pfx"
+      "effect_spec": "/pa/units/land/l_tank_swarm/chain/electrode.pfx"
     }
   },
   "flight_type": "Staged",
   "fx_trail": {
-    "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm_trail.pfx"
+    "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_trail.pfx"
   },
   "initial_velocity": 200.0,
   "lifetime": 2,
@@ -25,7 +25,7 @@
     "radius": 1
   },
   "spawn_layers": "WL_Air",
-  "spawn_unit_on_death": "/pa/units/land/L_tank_swarm/chain/chain.json",
+  "spawn_unit_on_death": "/pa/units/land/l_tank_swarm/chain/chain.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 500,
   "splash_radius": 2,

@@ -30,7 +30,7 @@
     "fired2": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle03a /pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle03b /pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle01a /pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle01b /pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle02a /pa/units/air/L_fighter/muzzle_flash.pfx socket_muzzle02b"
+      "effect_spec": "/pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle03a /pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle03b /pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle01a /pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle01b /pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle02a /pa/units/air/l_fighter/muzzle_flash.pfx socket_muzzle02b"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -42,7 +42,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
-    "filename": "/pa/units/sea/L_frigate/L_frigate.papa"
+    "filename": "/pa/units/sea/l_frigate/l_frigate.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -85,7 +85,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+      "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"
     },
     {
       "aim_bone": "bone_pitch02",
@@ -96,7 +96,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+      "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"
     },
     {
       "aim_bone": "bone_pitch03",
@@ -107,7 +107,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 2,
-      "spec_id": "/pa/units/sea/L_frigate/L_frigate_tool_weapon_aa.json"
+      "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"
     }
   ],
   "unit_types": [

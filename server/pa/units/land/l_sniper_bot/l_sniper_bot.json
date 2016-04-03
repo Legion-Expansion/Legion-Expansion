@@ -39,7 +39,7 @@
     "fired": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
       "effect_scale": 0.8,
-      "effect_spec": "/pa/units/land/L_sniper_bot/muzzle_flash_medium.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/l_sniper_bot/muzzle_flash_medium.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -51,11 +51,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_sniper_bot/L_sniper_bot_idle.papa",
-      "walk": "/pa/units/land/L_sniper_bot/L_sniper_bot_walk.papa"
+      "idle": "/pa/units/land/l_sniper_bot/l_sniper_bot_idle.papa",
+      "walk": "/pa/units/land/l_sniper_bot/l_sniper_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_sniper_bot_anim_tree.json",
-    "filename": "/pa/units/land/L_sniper_bot/L_sniper_bot.papa",
+    "animtree": "/pa/anim/anim_trees/l_sniper_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_sniper_bot/l_sniper_bot.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -93,7 +93,7 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_sniper_bot/L_sniper_bot_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_sniper_bot/l_sniper_bot_tool_weapon.json"
     }
   ],
   "transportable": {

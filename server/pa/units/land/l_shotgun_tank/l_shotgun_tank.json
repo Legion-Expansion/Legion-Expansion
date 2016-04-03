@@ -37,7 +37,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/artillery_fire",
-      "effect_spec": "/pa/units/land/L_shotgun_tank/muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/l_shotgun_tank/muzzle_flash.pfx socket_muzzle"
     }
   },
   "guard_layer": "WL_LandHorizontal",
@@ -50,7 +50,7 @@
   "model": {
     "animtree": "/pa/anim/anim_trees/tank_armor_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/land/L_shotgun_tank/L_shotgun_tank.papa"
+    "filename": "/pa/units/land/l_shotgun_tank/l_shotgun_tank.papa"
   },
   "navigation": {
     "acceleration": 75,
@@ -101,7 +101,7 @@
         "socket_muzzle"
       ],
       "projectiles_per_fire": 8,
-      "spec_id": "/pa/units/land/L_shotgun_tank/L_shotgun_tank_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_shotgun_tank/l_shotgun_tank_tool_weapon.json"
     }
   ],
   "transportable": {

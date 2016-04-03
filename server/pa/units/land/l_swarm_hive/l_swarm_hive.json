@@ -22,7 +22,7 @@
   "fx_offsets": [
     {
       "bone": "bone_radar",
-      "filename": "/pa/units/land/L_swarm_hive/idle.pfx",
+      "filename": "/pa/units/land/l_swarm_hive/idle.pfx",
       "offset": [
         0,
         0,
@@ -46,13 +46,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-      "filename": "/pa/units/land/L_swarm_hive/L_swarm_hive.papa",
+      "filename": "/pa/units/land/l_swarm_hive/l_swarm_hive.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/L_swarm_hive/L_swarm_hive.papa",
+      "filename": "/pa/units/land/l_swarm_hive/l_swarm_hive.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -87,7 +87,7 @@
         "socket002"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket003",
@@ -96,7 +96,7 @@
         "socket004"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket005",
@@ -105,7 +105,7 @@
         "socket006"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket007",
@@ -114,7 +114,7 @@
         "socket008"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_swarm_hive/L_swarm_hive_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     }
   ],
   "unit_types": [

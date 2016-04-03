@@ -26,7 +26,7 @@
   },
   "full_damage_splash_radius": 5,
   "fx_trail": {
-    "filename": "/pa/units/land/L_hover_tank_adv/trail.pfx",
+    "filename": "/pa/units/land/l_hover_tank_adv/trail.pfx",
     "offset": [
       0,
       0,

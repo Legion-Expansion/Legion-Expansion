@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 4.1,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/sea/L_attack_sub/L_attack_sub_ammo.json",
+  "ammo_id": "/pa/units/sea/l_attack_sub/l_attack_sub_ammo.json",
   "ammo_per_shot": 1.7,
   "ammo_source": "time",
   "auto_attack": true,

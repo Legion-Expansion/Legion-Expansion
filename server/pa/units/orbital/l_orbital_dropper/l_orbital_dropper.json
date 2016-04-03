@@ -40,7 +40,7 @@
     }
   },
   "factory": {
-    "deploy_projectile": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_ammo.json",
+    "deploy_projectile": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json",
     "hide_deploy_projectile": true,
     "hide_stored_units": true,
     "pass_on_orders": false,
@@ -100,7 +100,7 @@
     },
     {
       "bone": "socket_muzzle",
-      "filename": "/pa/units/orbital/L_orbital_dropper/beam.pfx",
+      "filename": "/pa/units/orbital/l_orbital_dropper/beam.pfx",
       "offset": [
         0,
         0,
@@ -115,7 +115,7 @@
     },
     {
       "bone": "bone_rotate",
-      "filename": "/pa/units/orbital/L_orbital_dropper/ground.pfx",
+      "filename": "/pa/units/orbital/l_orbital_dropper/ground.pfx",
       "offset": [
         0,
         0,
@@ -130,7 +130,7 @@
     },
     {
       "bone": "bone_rotate",
-      "filename": "/pa/units/orbital/L_orbital_dropper/teleporter_glow.pfx",
+      "filename": "/pa/units/orbital/l_orbital_dropper/teleporter_glow.pfx",
       "offset": [
         0,
         0,
@@ -152,12 +152,12 @@
   ],
   "model": {
     "animations": {
-      "build": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build.papa",
-      "end": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_end.papa",
-      "start": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_start.papa"
+      "build": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build.papa",
+      "end": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_end.papa",
+      "start": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_start.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_orbital_dropper_anim_tree.json",
-    "filename": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper.papa"
+    "animtree": "/pa/anim/anim_trees/l_orbital_dropper_anim_tree.json",
+    "filename": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper.papa"
   },
   "physics": {
     "ignore_gravity": true,
@@ -199,12 +199,12 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
       "record_index": 0,
-      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "record_index": 1,
-      "spec_id": "/pa/units/orbital/L_orbital_dropper/L_orbital_dropper_build_arm.json"
+      "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build_arm.json"
     }
   ],
   "unit_types": [

@@ -74,11 +74,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_idle.papa",
-      "walk": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_walk.papa"
+      "idle": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_idle.papa",
+      "walk": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_bot_support_commander_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_support_commander/L_bot_support_commander.papa",
+    "animtree": "/pa/anim/anim_trees/l_bot_support_commander_anim_tree.json",
+    "filename": "/pa/units/land/l_bot_support_commander/l_bot_support_commander.papa",
     "walk_speed": 4.0
   },
   "navigation": {
@@ -119,7 +119,7 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_laser",
-      "spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_tool_build_arm.json"
+      "spec_id": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_tool_build_arm.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -129,7 +129,7 @@
       ],
       "primary_weapon": true,
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_bot_support_commander/L_bot_support_commander_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_tool_weapon.json"
     }
   ],
   "transportable": {

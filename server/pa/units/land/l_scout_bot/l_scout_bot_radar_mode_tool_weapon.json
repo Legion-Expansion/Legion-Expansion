@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 3,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/land/L_scout_bot/L_scout_bot_radar_mode_ammo.json",
+  "ammo_id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_ammo.json",
   "ammo_per_shot": 3,
   "ammo_source": "time",
   "arc_type": "ARC_high",

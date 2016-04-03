@@ -56,7 +56,7 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/sea/L_attack_sub/L_attack_sub.papa"
+    "filename": "/pa/units/sea/l_attack_sub/l_attack_sub.papa"
   },
   "navigation": {
     "acceleration": 60,
@@ -99,7 +99,7 @@
     {
       "aim_bone": "socket_muzzle",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/sea/L_attack_sub/L_attack_sub_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_attack_sub/l_attack_sub_tool_weapon.json"
     }
   ],
   "unit_types": [

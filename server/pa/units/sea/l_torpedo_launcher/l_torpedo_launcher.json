@@ -30,8 +30,8 @@
     5
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_torpedo_launcher_anim_tree.json",
-    "filename": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher.papa"
+    "animtree": "/pa/anim/anim_trees/l_torpedo_launcher_anim_tree.json",
+    "filename": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher.papa"
   },
   "recon": {
     "observer": {
@@ -80,7 +80,7 @@
       ],
       "projectiles_per_fire": 5,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_torpedo_launcher/L_torpedo_launcher_wave_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher_wave_tool_weapon.json"
     }
   ],
   "unit_types": [

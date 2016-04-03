@@ -1,7 +1,7 @@
 {
   "ammo_id": [
     {
-      "id": "/pa/units/land/L_mortar_tank/L_mortar_tank_ammo.json",
+      "id": "/pa/units/land/l_mortar_tank/l_mortar_tank_ammo.json",
       "layer": "WL_AnyLand"
     }
   ],

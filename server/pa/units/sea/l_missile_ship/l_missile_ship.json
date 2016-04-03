@@ -38,11 +38,11 @@
   ],
   "model": {
     "animations": {
-      "deploy": "/pa/units/sea/L_missile_ship/L_missile_ship_deploy.papa",
-      "open": "/pa/units/sea/L_missile_ship/L_missile_ship_open.papa"
+      "deploy": "/pa/units/sea/l_missile_ship/l_missile_ship_deploy.papa",
+      "open": "/pa/units/sea/l_missile_ship/l_missile_ship_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_missile_ship_anim_tree.json",
-    "filename": "/pa/units/sea/L_missile_ship/L_missile_ship.papa"
+    "animtree": "/pa/anim/anim_trees/l_missile_ship_anim_tree.json",
+    "filename": "/pa/units/sea/l_missile_ship/l_missile_ship.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -86,7 +86,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_light_tool_weapon.json"
     },
     {
       "aim_bone": "pitch003",
@@ -97,7 +97,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_light_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_light_tool_weapon.json"
     },
     {
       "aim_bone": "pitch001",
@@ -106,7 +106,7 @@
         "muzzle002"
       ],
       "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_beam_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_beam_tool_weapon.json"
     },
     {
       "aim_bone": "pitch003",
@@ -115,7 +115,7 @@
         "muzzle004"
       ],
       "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_beam_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_beam_tool_weapon.json"
     },
     {
       "aim_bone": "rocket002",
@@ -126,7 +126,7 @@
         "rocket003"
       ],
       "record_index": 5,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_rocket_tool_weapon.json"
     },
     {
       "aim_bone": "rocket002",
@@ -137,7 +137,7 @@
         "rocket003"
       ],
       "record_index": 5,
-      "spec_id": "/pa/units/sea/L_missile_ship/L_missile_ship_antiuc_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_antiuc_tool_weapon.json"
     }
   ],
   "unit_types": [

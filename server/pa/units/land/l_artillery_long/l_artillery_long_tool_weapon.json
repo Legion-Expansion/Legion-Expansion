@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 37500,
   "ammo_demand": 2500,
-  "ammo_id": "/pa/units/land/L_artillery_long/L_artillery_long_ammo.json",
+  "ammo_id": "/pa/units/land/l_artillery_long/l_artillery_long_ammo.json",
   "ammo_per_shot": 37500,
   "ammo_source": "energy",
   "arc_type": "Both",

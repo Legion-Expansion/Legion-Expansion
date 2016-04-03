@@ -104,13 +104,13 @@
   ],
   "model": {
     "animations": {
-      "build_end": "/pa/units/land/L_bot_factory/L_bot_factory_end.papa",
-      "build_loop": "/pa/units/land/L_bot_factory/L_bot_factory_build.papa",
-      "build_start": "/pa/units/land/L_bot_factory/L_bot_factory_start.papa",
-      "idle": "/pa/units/land/L_bot_factory/L_bot_factory_idle.papa"
+      "build_end": "/pa/units/land/l_bot_factory/l_bot_factory_end.papa",
+      "build_loop": "/pa/units/land/l_bot_factory/l_bot_factory_build.papa",
+      "build_start": "/pa/units/land/l_bot_factory/l_bot_factory_start.papa",
+      "idle": "/pa/units/land/l_bot_factory/l_bot_factory_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_factory/L_bot_factory.papa",
+    "filename": "/pa/units/land/l_bot_factory/l_bot_factory.papa",
     "skirt_decal": "/pa/effects/specs/skirt_bot.json"
   },
   "placement_size": [
@@ -153,7 +153,7 @@
   "tools": [
     {
       "aim_bone": "bone_platform",
-      "spec_id": "/pa/units/land/L_bot_factory/L_bot_factory_build_arm.json"
+      "spec_id": "/pa/units/land/l_bot_factory/l_bot_factory_build_arm.json"
     }
   ],
   "unit_types": [

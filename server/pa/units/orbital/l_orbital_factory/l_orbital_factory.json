@@ -71,12 +71,12 @@
   "model": [
     {
       "animations": {
-        "build_end": "/pa/units/orbital/L_orbital_factory/L_orbital_factory_end.papa",
-        "build_loop": "/pa/units/orbital/L_orbital_factory/L_orbital_factory_build.papa",
-        "build_start": "/pa/units/orbital/L_orbital_factory/L_orbital_factory_start.papa"
+        "build_end": "/pa/units/orbital/l_orbital_factory/l_orbital_factory_end.papa",
+        "build_loop": "/pa/units/orbital/l_orbital_factory/l_orbital_factory_build.papa",
+        "build_start": "/pa/units/orbital/l_orbital_factory/l_orbital_factory_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/orbital/L_orbital_factory/L_orbital_factory.papa",
+      "filename": "/pa/units/orbital/l_orbital_factory/l_orbital_factory.papa",
       "layer": "WL_Orbital"
     }
   ],
@@ -118,7 +118,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/orbital/L_orbital_factory/L_orbital_factory_build_arm.json"
+      "spec_id": "/pa/units/orbital/l_orbital_factory/l_orbital_factory_build_arm.json"
     }
   ],
   "unit_types": [

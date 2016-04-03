@@ -20,7 +20,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_double_fire",
-      "effect_spec": "/pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleRight /pa/units/land/L_t1_turret_adv/muzzle_flash.pfx socket_muzzleLeft"
+      "effect_spec": "/pa/units/land/l_t1_turret_adv/muzzle_flash.pfx socket_muzzleRight /pa/units/land/l_t1_turret_adv/muzzle_flash.pfx socket_muzzleLeft"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -33,13 +33,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.papa",
+      "filename": "/pa/units/land/l_t1_turret_adv/l_t1_turret_adv.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
-      "filename": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv.papa",
+      "filename": "/pa/units/land/l_t1_turret_adv/l_t1_turret_adv.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -72,7 +72,7 @@
         "socket_muzzleRight",
         "socket_muzzleLeft"
       ],
-      "spec_id": "/pa/units/land/L_t1_turret_adv/L_t1_turret_adv_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_t1_turret_adv/l_t1_turret_adv_tool_weapon.json"
     }
   ],
   "unit_types": [

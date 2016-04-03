@@ -4,12 +4,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bot_spark_impact",
-      "effect_spec": "/pa/units/land/L_mortar_tank/L_mortar_tank_ammo_hit.pfx"
+      "effect_spec": "/pa/units/land/l_mortar_tank/l_mortar_tank_ammo_hit.pfx"
     }
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/land/L_mortar_tank/L_mortar_tank_ammo_proj_trail.pfx"
+    "filename": "/pa/units/land/l_mortar_tank/l_mortar_tank_ammo_proj_trail.pfx"
   },
   "initial_velocity": 200.0,
   "lifetime": 1,

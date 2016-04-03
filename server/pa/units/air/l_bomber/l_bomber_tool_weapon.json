@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 425,
   "ammo_demand": 100,
-  "ammo_id": "/pa/units/air/L_bomber/L_bomber_ammo.json",
+  "ammo_id": "/pa/units/air/l_bomber/l_bomber_ammo.json",
   "ammo_per_shot": 212,
   "ammo_source": "energy",
   "auto_attack": true,

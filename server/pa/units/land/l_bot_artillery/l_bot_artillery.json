@@ -80,11 +80,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_bot_artillery/L_bot_artillery_idle.papa",
-      "walk": "/pa/units/land/L_bot_artillery/L_bot_artillery_walk.papa"
+      "idle": "/pa/units/land/l_bot_artillery/l_bot_artillery_idle.papa",
+      "walk": "/pa/units/land/l_bot_artillery/l_bot_artillery_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_bot_artillery_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_artillery/L_bot_artillery.papa",
+    "animtree": "/pa/anim/anim_trees/l_bot_artillery_anim_tree.json",
+    "filename": "/pa/units/land/l_bot_artillery/l_bot_artillery.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -126,7 +126,7 @@
         "socket_muzzle03"
       ],
       "projectiles_per_fire": 3,
-      "spec_id": "/pa/units/land/L_bot_artillery/L_bot_artillery_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_artillery/l_bot_artillery_tool_weapon.json"
     }
   ],
   "transportable": {

@@ -246,23 +246,23 @@
   "model": [
     {
       "animations": {
-        "build_end": "/pa/units/air/L_air_factory/L_air_factory_end.papa",
-        "build_loop": "/pa/units/air/L_air_factory/L_air_factory_build.papa",
-        "build_start": "/pa/units/air/L_air_factory/L_air_factory_start.papa"
+        "build_end": "/pa/units/air/l_air_factory/l_air_factory_end.papa",
+        "build_loop": "/pa/units/air/l_air_factory/l_air_factory_build.papa",
+        "build_start": "/pa/units/air/l_air_factory/l_air_factory_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/air/L_air_factory/L_air_factory.papa",
+      "filename": "/pa/units/air/l_air_factory/l_air_factory.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_air.json"
     },
     {
       "animations": {
-        "build_end": "/pa/units/air/L_air_factory/L_air_factory_end.papa",
-        "build_loop": "/pa/units/air/L_air_factory/L_air_factory_build.papa",
-        "build_start": "/pa/units/air/L_air_factory/L_air_factory_start.papa"
+        "build_end": "/pa/units/air/l_air_factory/l_air_factory_end.papa",
+        "build_loop": "/pa/units/air/l_air_factory/l_air_factory_build.papa",
+        "build_start": "/pa/units/air/l_air_factory/l_air_factory_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/air/L_air_factory/L_air_factory.papa",
+      "filename": "/pa/units/air/l_air_factory/l_air_factory.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -317,7 +317,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/air/L_air_factory/L_air_factory_build_arm.json"
+      "spec_id": "/pa/units/air/l_air_factory/l_air_factory_build_arm.json"
     }
   ],
   "unit_types": [

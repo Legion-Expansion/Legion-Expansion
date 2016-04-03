@@ -33,19 +33,19 @@
   "model": [
     {
       "animations": {
-        "idle": "/pa/units/land/L_air_defense/L_air_defense_idle.papa"
+        "idle": "/pa/units/land/l_air_defense/l_air_defense_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
-      "filename": "/pa/units/land/L_air_defense/L_air_defense.papa",
+      "filename": "/pa/units/land/l_air_defense/l_air_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animations": {
-        "idle": "/pa/units/land/L_air_defense/L_air_defense_idle.papa"
+        "idle": "/pa/units/land/l_air_defense/l_air_defense_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
-      "filename": "/pa/units/land/L_air_defense/L_air_defense.papa",
+      "filename": "/pa/units/land/l_air_defense/l_air_defense.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -76,12 +76,12 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_air_defense/L_air_defense_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_air_defense/l_air_defense_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_air_defense/L_air_defense_beam_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_air_defense/l_air_defense_beam_tool_weapon.json"
     }
   ],
   "unit_types": [

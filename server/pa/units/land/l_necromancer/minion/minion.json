@@ -1,11 +1,11 @@
 {
-  "base_spec": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
+  "base_spec": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
   "guard_radius": 250,
   "tools": [
     {
       "aim_bone": "bone_root",
       "primary_weapon": true,
-      "spec_id": "/pa/units/land/L_necromancer/minion/minion_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_necromancer/minion/minion_tool_weapon.json"
     }
   ],
   "unit_types": [

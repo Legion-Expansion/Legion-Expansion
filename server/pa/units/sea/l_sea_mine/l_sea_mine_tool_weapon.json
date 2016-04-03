@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/sea/L_sea_mine/L_sea_mine_ammo.json",
+  "ammo_id": "/pa/units/sea/l_sea_mine/l_sea_mine_ammo.json",
   "auto_attack": true,
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,

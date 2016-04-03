@@ -15,7 +15,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
-      "effect_spec": "/pa/units/air/L_air_scout_adv/vision/vision_active.pfx"
+      "effect_spec": "/pa/units/air/l_air_scout_adv/vision/vision_active.pfx"
     }
   },
   "flight_type": "Staged",
@@ -48,7 +48,7 @@
     }
   },
   "spawn_layers": "WL_Air",
-  "spawn_unit_on_death": "/pa/units/air/L_air_scout_adv/vision/vision.json",
+  "spawn_unit_on_death": "/pa/units/air/l_air_scout_adv/vision/vision.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0,

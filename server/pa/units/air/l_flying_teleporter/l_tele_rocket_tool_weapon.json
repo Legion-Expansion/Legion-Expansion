@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 6,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/air/L_flying_teleporter/L_tele_rocket_ammo.json",
+  "ammo_id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_ammo.json",
   "ammo_per_shot": 2,
   "ammo_source": "time",
   "auto_attack": true,

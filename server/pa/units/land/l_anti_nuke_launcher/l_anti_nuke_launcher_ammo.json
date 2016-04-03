@@ -11,13 +11,13 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_antinuke",
-      "effect_spec": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo_explosion.pfx",
+      "effect_spec": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo_explosion.pfx",
       "effect_world_aligned": false
     }
   },
   "flight_type": "Staged",
   "fx_trail": {
-    "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo_trail.pfx",
+    "filename": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo_trail.pfx",
     "offset": [
       0.0,
       4.6,
@@ -30,7 +30,7 @@
   "lifetime": 5,
   "max_velocity": 500.0,
   "model": {
-    "filename": "/pa/units/land/L_anti_nuke_launcher/missile/missile.papa"
+    "filename": "/pa/units/land/l_anti_nuke_launcher/missile/missile.papa"
   },
   "physics": {
     "add_to_spatial_db": false,

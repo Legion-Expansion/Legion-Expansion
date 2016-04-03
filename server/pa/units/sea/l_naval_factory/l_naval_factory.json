@@ -80,12 +80,12 @@
   ],
   "model": {
     "animations": {
-      "build_end": "/pa/units/sea/L_naval_factory/L_naval_factory_end.papa",
-      "build_loop": "/pa/units/sea/L_naval_factory/L_naval_factory_build.papa",
-      "build_start": "/pa/units/sea/L_naval_factory/L_naval_factory_start.papa"
+      "build_end": "/pa/units/sea/l_naval_factory/l_naval_factory_end.papa",
+      "build_loop": "/pa/units/sea/l_naval_factory/l_naval_factory_build.papa",
+      "build_start": "/pa/units/sea/l_naval_factory/l_naval_factory_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-    "filename": "/pa/units/sea/L_naval_factory/L_naval_factory.papa"
+    "filename": "/pa/units/sea/l_naval_factory/l_naval_factory.papa"
   },
   "placement_size": [
     40,
@@ -122,7 +122,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/sea/L_naval_factory/L_naval_factory_build_arm.json"
+      "spec_id": "/pa/units/sea/l_naval_factory/l_naval_factory_build_arm.json"
     }
   ],
   "unit_types": [

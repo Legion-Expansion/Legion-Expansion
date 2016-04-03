@@ -4,11 +4,11 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
-      "effect_spec": "/pa/units/orbital/L_orbital_battleship/main_proj_hit.pfx"
+      "effect_spec": "/pa/units/orbital/l_orbital_battleship/main_proj_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/orbital/L_orbital_battleship/main_proj_trail.pfx"
+    "filename": "/pa/units/orbital/l_orbital_battleship/main_proj_trail.pfx"
   },
   "influence_radius": 800,
   "initial_velocity": 400.0,

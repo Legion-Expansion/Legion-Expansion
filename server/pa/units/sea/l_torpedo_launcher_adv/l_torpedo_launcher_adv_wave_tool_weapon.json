@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 2,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_wave_ammo.json",
+  "ammo_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_ammo.json",
   "ammo_per_shot": 1,
   "ammo_source": "time",
   "auto_attack": true,

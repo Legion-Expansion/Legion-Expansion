@@ -40,7 +40,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json",
-    "filename": "/pa/units/orbital/L_orbital_laser/L_orbital_laser.papa"
+    "filename": "/pa/units/orbital/l_orbital_laser/l_orbital_laser.papa"
   },
   "navigation": {
     "acceleration": 14,
@@ -84,7 +84,7 @@
     {
       "aim_bone": "bone_tusks",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/orbital/L_orbital_laser/L_orbital_laser_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/l_orbital_laser/l_orbital_laser_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -36,18 +36,18 @@
     },
     "disabled": {
       "audio_cue": "/SE/Buildings/teleporter_disabled",
-      "effect_spec": "/pa/units/land/L_teleporter/disable.pfx bone_root"
+      "effect_spec": "/pa/units/land/l_teleporter/disable.pfx bone_root"
     },
     "enabled": {
       "audio_cue": "/SE/Buildings/teleporter_enabled",
-      "effect_spec": "/pa/units/land/L_teleporter/enable.pfx bone_root"
+      "effect_spec": "/pa/units/land/l_teleporter/enable.pfx bone_root"
     }
   },
   "flip_drag_orientation": true,
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/L_teleporter/idle.pfx",
+      "filename": "/pa/units/land/l_teleporter/idle.pfx",
       "type": "enabled"
     }
   ],
@@ -64,7 +64,7 @@
       "start": "/pa/units/land/teleporter/teleporter_anim_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
-    "filename": "/pa/units/land/L_teleporter/L_teleporter.papa",
+    "filename": "/pa/units/land/l_teleporter/l_teleporter.papa",
     "skirt_decal": "/pa/effects/specs/skirt_teleporter.json"
   },
   "orders": {

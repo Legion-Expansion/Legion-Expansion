@@ -69,7 +69,7 @@
   "model": {
     "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm.papa"
+    "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm.papa"
   },
   "navigation": {
     "acceleration": 100,
@@ -115,7 +115,7 @@
         "gun002"
       ],
       "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/land/L_tank_swarm/L_tank_swarm_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_tool_weapon.json"
     }
   ],
   "transportable": {

@@ -7,6 +7,6 @@
   },
   "spawn_response": {
     "audio_cue": "/SE/Impacts/landmine",
-    "effect_spec": "/pa/units/land/L_land_mine/L_land_mine_ammo_explosion.pfx"
+    "effect_spec": "/pa/units/land/l_land_mine/l_land_mine_ammo_explosion.pfx"
   }
 }

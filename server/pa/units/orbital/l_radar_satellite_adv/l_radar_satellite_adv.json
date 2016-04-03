@@ -57,10 +57,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_idle.papa"
+      "idle": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_recoil_anim_tree.json",
-    "filename": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv.papa"
+    "filename": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -122,7 +122,7 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/orbital/L_radar_satellite_adv/L_radar_satellite_adv_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv_tool_weapon.json"
     }
   ],
   "unit_types": [

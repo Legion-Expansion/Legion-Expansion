@@ -112,7 +112,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/L_vehicle_factory/energy_platform.pfx",
+      "filename": "/pa/units/land/l_vehicle_factory/energy_platform.pfx",
       "orientation": [
         90,
         0,
@@ -198,13 +198,13 @@
   ],
   "model": {
     "animations": {
-      "build_end": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_end.papa",
-      "build_loop": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_build.papa",
-      "build_start": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_start.papa",
+      "build_end": "/pa/units/land/l_vehicle_factory/l_vehicle_factory_end.papa",
+      "build_loop": "/pa/units/land/l_vehicle_factory/l_vehicle_factory_build.papa",
+      "build_start": "/pa/units/land/l_vehicle_factory/l_vehicle_factory_start.papa",
       "idle": "/pa/units/land/vehicle_factory/vehicle_factory_anim_build.papa"
     },
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-    "filename": "/pa/units/land/L_vehicle_factory/L_vehicle_factory.papa",
+    "filename": "/pa/units/land/l_vehicle_factory/l_vehicle_factory.papa",
     "skirt_decal": "/pa/effects/specs/skirt_01.json"
   },
   "placement_size": [
@@ -248,7 +248,7 @@
     {
       "aim_bone": "bone_platform",
       "muzzle_bone": "bone_platform",
-      "spec_id": "/pa/units/land/L_vehicle_factory/L_vehicle_factory_build_arm.json"
+      "spec_id": "/pa/units/land/l_vehicle_factory/l_vehicle_factory_build_arm.json"
     }
   ],
   "unit_types": [

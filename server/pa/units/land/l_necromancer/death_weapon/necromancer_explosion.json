@@ -9,6 +9,6 @@
   },
   "spawn_response": {
     "audio_cue": "/SE/Impacts/missile_nuke",
-    "effect_spec": "/pa/units/land/L_necromancer/death_weapon/explosion.pfx"
+    "effect_spec": "/pa/units/land/l_necromancer/death_weapon/explosion.pfx"
   }
 }

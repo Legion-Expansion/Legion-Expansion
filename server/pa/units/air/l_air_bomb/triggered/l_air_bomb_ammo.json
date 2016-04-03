@@ -22,7 +22,7 @@
   "flight_type": "Staged",
   "full_splash_damage_radius": 3,
   "fx_trail": {
-    "filename": "/pa/units/air/L_air_bomb/triggered/L_air_bomb.pfx",
+    "filename": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.pfx",
     "offset": [
       0.0,
       0.0,
@@ -34,7 +34,7 @@
   "max_health": 1,
   "max_velocity": 300,
   "model": {
-    "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
+    "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "physics": {
     "add_to_spatial_db": false,

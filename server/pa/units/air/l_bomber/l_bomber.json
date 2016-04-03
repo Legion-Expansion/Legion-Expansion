@@ -28,32 +28,32 @@
   "fx_offsets": [
     {
       "bone": "lines_left",
-      "filename": "/pa/units/air/L_bomber/bomber_lines.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_lines.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "lines_right",
-      "filename": "/pa/units/air/L_bomber/bomber_lines.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_lines.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust001",
-      "filename": "/pa/units/air/L_bomber/bomber_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust002",
-      "filename": "/pa/units/air/L_bomber/bomber_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust001",
-      "filename": "/pa/units/air/L_bomber/bomber_jets.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust002",
-      "filename": "/pa/units/air/L_bomber/bomber_jets.pfx",
+      "filename": "/pa/units/air/l_bomber/bomber_jets.pfx",
       "type": "moving_forward"
     }
   ],
@@ -68,7 +68,7 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/air/L_bomber/L_bomber.papa"
+    "filename": "/pa/units/air/l_bomber/l_bomber.papa"
   },
   "navigation": {
     "acceleration": 75,
@@ -110,7 +110,7 @@
     {
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_payload",
-      "spec_id": "/pa/units/air/L_bomber/L_bomber_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_bomber/l_bomber_tool_weapon.json"
     }
   ],
   "unit_types": [

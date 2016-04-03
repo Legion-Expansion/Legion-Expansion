@@ -85,11 +85,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_idle.papa"
+      "idle": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/air/L_air_scout_adv/L_air_scout_adv.papa"
+    "filename": "/pa/units/air/l_air_scout_adv/l_air_scout_adv.papa"
   },
   "navigation": {
     "acceleration": 50,
@@ -151,7 +151,7 @@
         "gun03"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -161,13 +161,13 @@
         "gun06"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "muzzle": "light",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/air/L_air_scout_adv/L_air_scout_adv_vision_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_vision_tool_weapon.json"
     }
   ],
   "unit_types": [

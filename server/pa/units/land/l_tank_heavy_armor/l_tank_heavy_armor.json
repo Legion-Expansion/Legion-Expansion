@@ -36,7 +36,7 @@
       "effect_scale": 2
     },
     "fired0": {
-      "effect_spec": "/pa/units/land/L_tank_heavy_armor/shockwave.pfx bone_root"
+      "effect_spec": "/pa/units/land/l_tank_heavy_armor/shockwave.pfx bone_root"
     }
   },
   "guard_layer": "WL_LandHorizontal",
@@ -47,8 +47,8 @@
     7.277
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_tank_heavy_armor_anim_tree.json",
-    "filename": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor.papa"
+    "animtree": "/pa/anim/anim_trees/l_tank_heavy_armor_anim_tree.json",
+    "filename": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor.papa"
   },
   "navigation": {
     "acceleration": 100,
@@ -91,7 +91,7 @@
       "fire_event": "fired0",
       "muzzle_bone": "socket_muzzle",
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_tool_weapon.json"
     }
   ],
   "transportable": {

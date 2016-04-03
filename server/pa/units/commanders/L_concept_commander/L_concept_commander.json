@@ -144,12 +144,12 @@
     "animations": {
       "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
       "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
-      "idle": "/pa/units/commanders/L_concept_commander/L_concept_commander_idle.papa",
-      "walk": "/pa/units/commanders/L_concept_commander/L_concept_commander_walk.papa",
+      "idle": "/pa/units/commanders/l_concept_commander/l_concept_commander_idle.papa",
+      "walk": "/pa/units/commanders/l_concept_commander/l_concept_commander_walk.papa",
       "walk_stop": ""
     },
     "animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json",
-    "filename": "/pa/units/commanders/L_concept_commander/L_concept_commander.papa"
+    "filename": "/pa/units/commanders/l_concept_commander/l_concept_commander.papa"
   },
   "navigation": {
     "acceleration": 60,
@@ -232,7 +232,7 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+      "spec_id": "/pa/units/commanders/l_uber_cannon.json"
     },
     {
       "aim_bone": "bone_turret",

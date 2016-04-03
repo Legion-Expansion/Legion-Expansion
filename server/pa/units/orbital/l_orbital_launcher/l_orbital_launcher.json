@@ -96,7 +96,7 @@
     },
     {
       "bone": "smoke",
-      "filename": "/pa/units/orbital/L_orbital_launcher/vent_smoke.pfx",
+      "filename": "/pa/units/orbital/l_orbital_launcher/vent_smoke.pfx",
       "offset": [
         0.0,
         0
@@ -363,23 +363,23 @@
   "model": [
     {
       "animations": {
-        "build_end": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_end.papa",
-        "build_loop": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_build.papa",
-        "build_start": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_start.papa"
+        "build_end": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_end.papa",
+        "build_loop": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_build.papa",
+        "build_start": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.papa",
+      "filename": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_orbital_launcher.json"
     },
     {
       "animations": {
-        "build_end": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_end.papa",
-        "build_loop": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_build.papa",
-        "build_start": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher_start.papa"
+        "build_end": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_end.papa",
+        "build_loop": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_build.papa",
+        "build_start": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher_start.papa"
       },
       "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
-      "filename": "/pa/units/orbital/L_orbital_launcher/L_orbital_launcher.papa",
+      "filename": "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher.papa",
       "layer": "WL_WaterSurface"
     }
   ],

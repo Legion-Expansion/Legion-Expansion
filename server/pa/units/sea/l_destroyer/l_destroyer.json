@@ -22,17 +22,17 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_small_left_muzzle"
+      "effect_spec": "/pa/units/sea/l_destroyer/muzzle_flash.pfx socket_small_left_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_small_right_muzzle"
+      "effect_spec": "/pa/units/sea/l_destroyer/muzzle_flash.pfx socket_small_right_muzzle"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/units/sea/L_destroyer/muzzle_flash.pfx socket_main_muzzle"
+      "effect_spec": "/pa/units/sea/l_destroyer/muzzle_flash.pfx socket_main_muzzle"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -43,8 +43,8 @@
     7
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/L_destroyer_anim_tree.json",
-    "filename": "/pa/units/sea/L_destroyer/L_destroyer.papa"
+    "animtree": "/pa/anim/anim_trees/l_destroyer_anim_tree.json",
+    "filename": "/pa/units/sea/l_destroyer/l_destroyer.papa"
   },
   "navigation": {
     "acceleration": 50,
@@ -89,7 +89,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_small_pitch_right",
@@ -99,7 +99,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch_main",
@@ -109,7 +109,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 2,
-      "spec_id": "/pa/units/sea/L_destroyer/L_destroyer_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"
     }
   ],
   "unit_types": [

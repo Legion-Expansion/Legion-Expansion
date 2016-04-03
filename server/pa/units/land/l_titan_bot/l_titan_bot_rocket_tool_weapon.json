@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 18,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/land/L_titan_bot/L_titan_bot_rocket_ammo.json",
+  "ammo_id": "/pa/units/land/l_titan_bot/l_titan_bot_rocket_ammo.json",
   "ammo_per_shot": 2,
   "ammo_source": "time",
   "auto_attack": true,

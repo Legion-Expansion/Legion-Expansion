@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 1000,
   "ammo_demand": 200,
-  "ammo_id": "/pa/units/land/L_artillery_short/L_artillery_short_ammo.json",
+  "ammo_id": "/pa/units/land/l_artillery_short/l_artillery_short_ammo.json",
   "ammo_per_shot": 1000,
   "ammo_source": "energy",
   "auto_attack": true,

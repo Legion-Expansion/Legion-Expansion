@@ -34,7 +34,7 @@
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/L_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/L_riot_bot/bullet_shells_left.pfx bone_pivot"
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx right_muzzle03 /pa/effects/specs/default_small_muzzle_flash.pfx left_muzzle03 /pa/units/land/l_riot_bot/bullet_shells.pfx bone_pivot /pa/units/land/l_riot_bot/bullet_shells_left.pfx bone_pivot"
     }
   },
   "guard_layer": "WL_AnySurface",
@@ -46,11 +46,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_riot_bot/L_riot_bot_idle.papa",
-      "walk": "/pa/units/land/L_riot_bot/L_riot_bot_walk.papa"
+      "idle": "/pa/units/land/l_riot_bot/l_riot_bot_idle.papa",
+      "walk": "/pa/units/land/l_riot_bot/l_riot_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
-    "filename": "/pa/units/land/L_riot_bot/L_riot_bot.papa",
+    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_riot_bot/l_riot_bot.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -94,7 +94,7 @@
         "left_muzzle03",
         "right_muzzle03"
       ],
-      "spec_id": "/pa/units/land/L_riot_bot/L_riot_bot_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_riot_bot/l_riot_bot_tool_weapon.json"
     }
   ],
   "transportable": {

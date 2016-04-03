@@ -34,11 +34,11 @@
   },
   "fx_offsets": [
     {
-      "filename": "/pa/units/orbital/L_mining_platform/top_light.pfx",
+      "filename": "/pa/units/orbital/l_mining_platform/top_light.pfx",
       "type": "idle"
     },
     {
-      "filename": "/pa/units/orbital/L_mining_platform/main_effect.pfx",
+      "filename": "/pa/units/orbital/l_mining_platform/main_effect.pfx",
       "type": "idle"
     }
   ],
@@ -50,10 +50,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/orbital/L_mining_platform/L_mining_platform_idle.papa"
+      "idle": "/pa/units/orbital/l_mining_platform/l_mining_platform_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-    "filename": "/pa/units/orbital/L_mining_platform/L_mining_platform.papa"
+    "filename": "/pa/units/orbital/l_mining_platform/l_mining_platform.papa"
   },
   "physics": {
     "ignore_gravity": true,

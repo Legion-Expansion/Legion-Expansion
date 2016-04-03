@@ -46,11 +46,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_bot_aa/L_bot_aa_idle.papa",
-      "walk": "/pa/units/land/L_bot_aa/L_bot_aa_walk.papa"
+      "idle": "/pa/units/land/l_bot_aa/l_bot_aa_idle.papa",
+      "walk": "/pa/units/land/l_bot_aa/l_bot_aa_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
-    "filename": "/pa/units/land/L_bot_aa/L_bot_aa.papa",
+    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_bot_aa/l_bot_aa.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -87,7 +87,7 @@
         "socket_muzzle03",
         "socket_muzzle04"
       ],
-      "spec_id": "/pa/units/land/L_bot_aa/L_bot_aa_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_bot_aa/l_bot_aa_tool_weapon.json"
     }
   ],
   "transportable": {

@@ -25,11 +25,11 @@
   ],
   "model": [
     {
-      "filename": "/pa/units/land/L_land_barrier/L_land_barrier.papa",
+      "filename": "/pa/units/land/l_land_barrier/l_land_barrier.papa",
       "layer": "WL_LandHorizontal"
     },
     {
-      "filename": "/pa/units/land/L_land_barrier/sea/L_land_barrier.papa",
+      "filename": "/pa/units/land/l_land_barrier/sea/l_land_barrier.papa",
       "layer": "WL_WaterSurface"
     }
   ],

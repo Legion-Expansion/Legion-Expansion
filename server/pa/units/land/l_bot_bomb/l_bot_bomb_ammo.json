@@ -9,7 +9,7 @@
   },
   "full_splash_damage_radius": 3,
   "fx_trail": {
-    "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
+    "filename": "/pa/units/land/l_bot_bomb/rocket_trail.pfx"
   },
   "impact_decals": [
     "/pa/effects/specs/scorch_a_01.json"
@@ -19,7 +19,7 @@
   "max_velocity": 150,
   "min_velocity": 40,
   "model": {
-    "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
+    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
   },
   "physics": {
     "add_to_spatial_db": false

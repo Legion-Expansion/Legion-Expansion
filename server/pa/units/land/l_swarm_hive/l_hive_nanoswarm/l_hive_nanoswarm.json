@@ -89,11 +89,11 @@
   "tools": [
     {
       "aim_bone": "bone_body",
-      "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm_death_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_death_tool_weapon.json"
     }
   ],
   "unit_types": [

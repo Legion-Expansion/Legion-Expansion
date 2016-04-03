@@ -11,14 +11,14 @@
   "flight_type": "Staged",
   "full_damage_splash_radius": 0,
   "fx_trail": {
-    "filename": "/pa/units/air/L_air_bomb/teleport.pfx"
+    "filename": "/pa/units/air/l_air_bomb/teleport.pfx"
   },
   "influence_radius": 400,
   "initial_velocity": 20.0,
   "lifetime": 1,
   "max_velocity": 20.0,
   "model": {
-    "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
+    "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "physics": {
     "add_to_spatial_db": false,
@@ -34,7 +34,7 @@
   },
   "show_strategic_icon": false,
   "spawn_layers": "Air",
-  "spawn_unit_on_death": "/pa/units/air/L_air_bomb/triggered/L_air_bomb.json",
+  "spawn_unit_on_death": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.json",
   "spawn_unit_on_death_with_velocity": true,
   "splash_damage": 0,
   "splash_radius": 0,

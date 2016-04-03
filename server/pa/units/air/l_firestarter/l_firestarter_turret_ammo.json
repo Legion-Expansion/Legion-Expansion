@@ -16,7 +16,7 @@
   "model": {
     "filename": "/pa/units/air/unit_shell_small/unit_shell_small.papa"
   },
-  "spawn_unit_on_death": "/pa/units/air/L_firestarter/L_drop_turret/L_drop_turret.json",
+  "spawn_unit_on_death": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret.json",
   "splash_damage": 0,
   "splash_radius": 0
 }

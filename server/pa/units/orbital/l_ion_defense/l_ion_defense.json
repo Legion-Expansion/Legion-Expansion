@@ -36,13 +36,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/one_turret_static_anim_tree.json",
-      "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
+      "filename": "/pa/units/orbital/l_ion_defense/l_ion_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_ion_defense.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/one_turret_static_anim_tree.json",
-      "filename": "/pa/units/orbital/L_ion_defense/L_ion_defense.papa",
+      "filename": "/pa/units/orbital/l_ion_defense/l_ion_defense.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -86,7 +86,7 @@
         "socket_muzzle"
       ],
       "record_index": 0,
-      "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/l_ion_defense/l_ion_defense_tool_weapon.json"
     },
     {
       "aim_bone": "ring03",
@@ -95,7 +95,7 @@
         "socket_muzzle"
       ],
       "record_index": 0,
-      "spec_id": "/pa/units/orbital/L_ion_defense/L_ion_defense_tool_antidrop.json"
+      "spec_id": "/pa/units/orbital/l_ion_defense/l_ion_defense_tool_antidrop.json"
     }
   ],
   "unit_types": [

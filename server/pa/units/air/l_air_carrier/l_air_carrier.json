@@ -39,52 +39,52 @@
   "fx_offsets": [
     {
       "bone": "thrust01",
-      "filename": "/pa/units/air/L_air_carrier/carrier_jets_big.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_jets_big.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust02",
-      "filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust03",
-      "filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust04",
-      "filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust05",
-      "filename": "/pa/units/air/L_air_carrier/carrier_jets.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust01",
-      "filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust_big.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_lines_thrust_big.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust02",
-      "filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust03",
-      "filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust04",
-      "filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "thrust05",
-      "filename": "/pa/units/air/L_air_carrier/carrier_lines_thrust.pfx",
+      "filename": "/pa/units/air/l_air_carrier/carrier_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
@@ -116,7 +116,7 @@
   ],
   "model": {
     "arrows": 5,
-    "filename": "/pa/units/air/L_air_carrier/L_air_carrier.papa"
+    "filename": "/pa/units/air/l_air_carrier/l_air_carrier.papa"
   },
   "navigation": {
     "acceleration": 30,
@@ -162,7 +162,7 @@
         "socket_muzzleLeft"
       ],
       "record_index": 0,
-      "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_carrier/l_air_carrier_tool_weapon.json"
     },
     {
       "aim_bone": "socket_muzzleRight",
@@ -171,7 +171,7 @@
         "socket_muzzleRight"
       ],
       "record_index": 1,
-      "spec_id": "/pa/units/air/L_air_carrier/L_air_carrier_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_carrier/l_air_carrier_tool_weapon.json"
     }
   ],
   "unit_types": [

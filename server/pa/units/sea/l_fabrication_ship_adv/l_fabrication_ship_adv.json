@@ -71,7 +71,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-    "filename": "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv.papa"
+    "filename": "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.papa"
   },
   "navigation": {
     "acceleration": 100,
@@ -108,7 +108,7 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "spec_id": "/pa/units/sea/L_fabrication_ship_adv/L_fabrication_ship_adv_build_arm.json"
+      "spec_id": "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv_build_arm.json"
     }
   ],
   "transportable": {

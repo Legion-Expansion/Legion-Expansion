@@ -76,7 +76,7 @@
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-    "filename": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv.papa"
+    "filename": "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.papa"
   },
   "navigation": {
     "acceleration": 120,
@@ -117,7 +117,7 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "spec_id": "/pa/units/land/L_fabrication_vehicle_adv/L_fabrication_vehicle_adv_build_arm.json"
+      "spec_id": "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv_build_arm.json"
     }
   ],
   "transportable": {

@@ -5,12 +5,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_tactical",
-      "effect_spec": "/pa/units/air/L_gunship/rocket_explosion.pfx"
+      "effect_spec": "/pa/units/air/l_gunship/rocket_explosion.pfx"
     }
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/air/L_gunship/rocket_proj_trail.pfx",
+    "filename": "/pa/units/air/l_gunship/rocket_proj_trail.pfx",
     "offset": [
       0,
       0,

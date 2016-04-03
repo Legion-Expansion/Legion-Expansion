@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/orbital/L_defense_satellite/L_defense_satellite_ground_ammo.json",
+  "ammo_id": "/pa/units/orbital/l_defense_satellite/l_defense_satellite_ground_ammo.json",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
   "firing_arc_pitch": 360,

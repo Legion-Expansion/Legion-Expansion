@@ -24,13 +24,13 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/artillery_long_fire",
-      "effect_spec": "/pa/effects/specs/ring_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx bone_root /pa/units/land/L_artillery_long/back_hatch.pfx bone_backHatch"
+      "effect_spec": "/pa/effects/specs/ring_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx bone_root /pa/units/land/l_artillery_long/back_hatch.pfx bone_backHatch"
     }
   },
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/L_artillery_long/energy_rod.pfx",
+      "filename": "/pa/units/land/l_artillery_long/energy_rod.pfx",
       "offset": [
         0,
         0,
@@ -66,19 +66,19 @@
   "model": [
     {
       "animations": {
-        "fire": "/pa/units/land/L_artillery_long/L_artillery_long_fire.papa"
+        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
       },
-      "animtree": "/pa/anim/anim_trees/L_artillery_long_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_long/L_artillery_long.papa",
+      "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
+      "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
     },
     {
       "animations": {
-        "fire": "/pa/units/land/L_artillery_long/L_artillery_long_fire.papa"
+        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
       },
-      "animtree": "/pa/anim/anim_trees/L_artillery_long_anim_tree.json",
-      "filename": "/pa/units/land/L_artillery_long/L_artillery_long.papa",
+      "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
+      "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_WaterSurface"
     }
   ],
@@ -109,7 +109,7 @@
     {
       "aim_bone": "bone_pitch",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_artillery_long/L_artillery_long_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_artillery_long/l_artillery_long_tool_weapon.json"
     }
   ],
   "unit_types": [

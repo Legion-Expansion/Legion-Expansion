@@ -10,7 +10,7 @@
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/L_tank_swarm/L_tank_swarm_trail.pfx"
+    "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_trail.pfx"
   },
   "initial_velocity": 400.0,
   "lifetime": 0.3,
@@ -21,7 +21,7 @@
     "ignore_gravity": true,
     "radius": 1
   },
-  "spawn_unit_on_death": "/pa/units/land/L_tank_swarm/chain/chain2.json",
+  "spawn_unit_on_death": "/pa/units/land/l_tank_swarm/chain/chain2.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0,

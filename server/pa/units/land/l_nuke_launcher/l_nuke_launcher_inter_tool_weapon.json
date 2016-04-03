@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_inter_ammo.json",
+  "ammo_id": "/pa/units/land/l_nuke_launcher/l_nuke_launcher_inter_ammo.json",
   "ammo_source": "factory",
   "auto_attack": false,
   "auto_task_type": "none",

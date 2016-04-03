@@ -38,11 +38,11 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/L_assault_bot/L_assault_bot_idle.papa",
-      "walk": "/pa/units/land/L_assault_bot/L_assault_bot_walk.papa"
+      "idle": "/pa/units/land/l_assault_bot/l_assault_bot_idle.papa",
+      "walk": "/pa/units/land/l_assault_bot/l_assault_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_assault_bot_anim_tree.json",
-    "filename": "/pa/units/land/L_assault_bot/L_assault_bot.papa",
+    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_assault_bot/l_assault_bot.papa",
     "walk_speed": 3
   },
   "navigation": {
@@ -84,7 +84,7 @@
         "socket_muzzle"
       ],
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/land/L_assault_bot/L_assault_bot_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_assault_bot/l_assault_bot_tool_weapon.json"
     }
   ],
   "transportable": {

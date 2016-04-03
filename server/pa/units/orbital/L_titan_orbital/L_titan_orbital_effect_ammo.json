@@ -1,13 +1,13 @@
 {
   "ammo_type": "AMMO_Projectile",
-  "base_spec": "/pa/units/orbital/L_titan_orbital/L_titan_orbital_ammo.json",
+  "base_spec": "/pa/units/orbital/l_titan_orbital/l_titan_orbital_ammo.json",
   "burn_damage": 0,
   "burn_radius": 0,
   "damage": 0,
   "events": {
     "died": {
       "audio_cue": "",
-      "effect_spec": "/pa/units/orbital/L_titan_orbital/ground.pfx"
+      "effect_spec": "/pa/units/orbital/l_titan_orbital/ground.pfx"
     }
   },
   "full_damage_splash_radius": 0,

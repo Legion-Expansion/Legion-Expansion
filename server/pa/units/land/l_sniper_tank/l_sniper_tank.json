@@ -34,13 +34,13 @@
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/units/land/L_sniper_tank/muzzle_flash.pfx socket_muzzle /pa/units/land/L_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
+      "effect_spec": "/pa/units/land/l_sniper_tank/muzzle_flash.pfx socket_muzzle /pa/units/land/l_sniper_tank/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
     }
   },
   "fx_offsets": [
     {
       "bone": "bone_turret",
-      "filename": "/pa/units/land/L_sniper_tank/energy_rods.pfx",
+      "filename": "/pa/units/land/l_sniper_tank/energy_rods.pfx",
       "offset": [
         0,
         0,
@@ -84,7 +84,7 @@
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
     "arrows": 5,
-    "filename": "/pa/units/land/L_sniper_tank/L_sniper_tank.papa"
+    "filename": "/pa/units/land/l_sniper_tank/l_sniper_tank.papa"
   },
   "navigation": {
     "acceleration": 100,
@@ -114,7 +114,7 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/L_sniper_tank/L_sniper_tank_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_sniper_tank/l_sniper_tank_tool_weapon.json"
     }
   ],
   "transportable": {

@@ -29,7 +29,7 @@
   },
   "flight_type": "Staged",
   "fx_trail": {
-    "filename": "/pa/units/orbital/L_orbital_dropper/unit_shell_trail.pfx"
+    "filename": "/pa/units/orbital/l_orbital_dropper/unit_shell_trail.pfx"
   },
   "ground_target_area_spread": 30,
   "influence_radius": 400,

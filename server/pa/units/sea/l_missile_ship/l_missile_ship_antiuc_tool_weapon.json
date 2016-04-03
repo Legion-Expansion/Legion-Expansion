@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/sea/L_missile_ship/L_missile_ship_antidrop_ammo.json",
+  "ammo_id": "/pa/units/sea/l_missile_ship/l_missile_ship_antidrop_ammo.json",
   "anti_entity_targets": [
     "/pa/units/land/unit_cannon/unit_cannon_deploy.json"
   ],

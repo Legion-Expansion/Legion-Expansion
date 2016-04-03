@@ -40,7 +40,7 @@
     "died": {
       "audio_cue": "",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/L_titan_bot/titan_bot_death.pfx"
+      "effect_spec": "/pa/units/land/l_titan_bot/titan_bot_death.pfx"
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
@@ -48,17 +48,17 @@
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/L_titan_bot/muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/pa/units/land/l_titan_bot/muzzle_flash.pfx socket_rightMuzzle"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/L_titan_bot/vent_smoke.pfx rocket004"
+      "effect_spec": "/pa/units/land/l_titan_bot/vent_smoke.pfx rocket004"
     }
   },
   "fx_offsets": [
     {
       "bone": "socket_rightMuzzle",
-      "filename": "/pa/units/land/L_titan_bot/electricity_field.pfx",
+      "filename": "/pa/units/land/l_titan_bot/electricity_field.pfx",
       "offset": [
         0,
         -3,
@@ -68,7 +68,7 @@
     },
     {
       "bone": "socket_rightMuzzle",
-      "filename": "/pa/units/land/L_titan_bot/back_smoke.pfx",
+      "filename": "/pa/units/land/l_titan_bot/back_smoke.pfx",
       "offset": [
         20,
         35.5,
@@ -78,7 +78,7 @@
     },
     {
       "bone": "socket_rightMuzzle",
-      "filename": "/pa/units/land/L_titan_bot/back_fire.pfx",
+      "filename": "/pa/units/land/l_titan_bot/back_fire.pfx",
       "offset": [
         20,
         36.5,
@@ -98,10 +98,10 @@
   "model": {
     "animations": {
       "idle": "",
-      "walk": "/pa/units/land/L_titan_bot/L_titan_bot_walk.papa"
+      "walk": "/pa/units/land/l_titan_bot/l_titan_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_titan_bot_anim_tree.json",
-    "filename": "/pa/units/land/L_titan_bot/L_titan_bot.papa",
+    "animtree": "/pa/anim/anim_trees/l_titan_bot_anim_tree.json",
+    "filename": "/pa/units/land/l_titan_bot/l_titan_bot.papa",
     "walk_speed": 15
   },
   "navigation": {
@@ -183,14 +183,14 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_cannon_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_cannon_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired1",
       "muzzle_bone": "socket_rightMuzzle",
       "record_index": 1,
-      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_mega_laser_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_mega_laser_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -201,7 +201,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 2,
-      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_rocket_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_rocket_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
@@ -209,7 +209,7 @@
       "muzzle_bone": "bone_root",
       "projectiles_per_fire": 1,
       "record_index": -1,
-      "spec_id": "/pa/units/land/L_titan_bot/L_titan_bot_stomp_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     }
   ],
   "unit_types": [

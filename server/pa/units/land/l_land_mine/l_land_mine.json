@@ -85,7 +85,7 @@
   ],
   "model": [
     {
-      "filename": "/pa/units/land/L_land_mine/L_land_mine.papa",
+      "filename": "/pa/units/land/l_land_mine/l_land_mine.papa",
       "layer": "WL_LandHorizontal"
     }
   ],
@@ -122,7 +122,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/L_land_mine/L_land_mine_trigger_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_land_mine/l_land_mine_trigger_tool_weapon.json"
     }
   ],
   "unit_types": [

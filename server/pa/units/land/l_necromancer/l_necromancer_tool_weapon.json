@@ -3,7 +3,7 @@
   "ammo_demand": 35,
   "ammo_id": [
     {
-      "id": "/pa/units/land/L_necromancer/L_necromancer_ammo.json",
+      "id": "/pa/units/land/l_necromancer/l_necromancer_ammo.json",
       "layer": "WL_AnyLand"
     }
   ],

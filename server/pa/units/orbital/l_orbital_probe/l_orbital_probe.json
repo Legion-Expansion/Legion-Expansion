@@ -31,7 +31,7 @@
     "fired1": {
       "audio_cue": "/SE/Weapons/orb/orb_fighter_fire",
       "effect_scale": 0.4,
-      "effect_spec": "/pa/units/land/L_bot_artillery_adv/muzzle_flash.pfx bone_muzzle01"
+      "effect_spec": "/pa/units/land/l_bot_artillery_adv/muzzle_flash.pfx bone_muzzle01"
     }
   },
   "fx_offsets": [
@@ -82,7 +82,7 @@
     },
     {
       "bone": "bone_body",
-      "filename": "/pa/units/orbital/L_orbital_probe/idle.pfx",
+      "filename": "/pa/units/orbital/l_orbital_probe/idle.pfx",
       "offset": [
         0,
         -2.0,
@@ -105,12 +105,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_closed.papa",
-      "deploy": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_deploy.papa",
-      "open": "/pa/units/orbital/L_orbital_probe/L_orbital_probe_open.papa"
+      "closed": "/pa/units/orbital/l_orbital_probe/l_orbital_probe_closed.papa",
+      "deploy": "/pa/units/orbital/l_orbital_probe/l_orbital_probe_deploy.papa",
+      "open": "/pa/units/orbital/l_orbital_probe/l_orbital_probe_open.papa"
     },
     "animtree": "/pa/anim/anim_trees/satellite_launched_anim_tree.json",
-    "filename": "/pa/units/orbital/L_orbital_probe/L_orbital_probe.papa"
+    "filename": "/pa/units/orbital/l_orbital_probe/l_orbital_probe.papa"
   },
   "navigation": {
     "acceleration": 75,

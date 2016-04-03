@@ -63,7 +63,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/pa/units/land/L_titan_vehicle/muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/big_gun_smoke.pfx socket_muzzleMain"
+      "effect_spec": "/pa/units/land/l_titan_vehicle/muzzle_flash.pfx socket_muzzleMain /pa/effects/specs/big_gun_smoke.pfx socket_muzzleMain"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
@@ -77,7 +77,7 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_idle.pfx",
+      "filename": "/pa/units/land/l_titan_vehicle/l_titan_vehicle_idle.pfx",
       "type": "idle"
     }
   ],
@@ -269,8 +269,8 @@
       "death": "/pa/units/land/titan_vehicle/titan_vehicle_anim_death.papa",
       "hover": "/pa/units/land/titan_vehicle/titan_vehicle_anim_hover.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_titan_vehicle_anim_tree.json",
-    "filename": "/pa/units/land/L_titan_vehicle/L_titan_vehicle.papa"
+    "animtree": "/pa/anim/anim_trees/l_titan_vehicle_anim_tree.json",
+    "filename": "/pa/units/land/l_titan_vehicle/l_titan_vehicle.papa"
   },
   "navigation": {
     "acceleration": 20,
@@ -344,7 +344,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 0,
-      "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_main.json"
+      "spec_id": "/pa/units/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_main.json"
     },
     {
       "aim_bone": "bone_turretLeft",
@@ -355,7 +355,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 1,
-      "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_side.json"
+      "spec_id": "/pa/units/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_side.json"
     },
     {
       "aim_bone": "bone_turretRight",
@@ -366,7 +366,7 @@
       ],
       "projectiles_per_fire": 1,
       "record_index": 2,
-      "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_side.json"
+      "spec_id": "/pa/units/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_side.json"
     },
     {
       "aim_bone": "bone_root",
@@ -374,7 +374,7 @@
       "muzzle_bone": "bone_root",
       "projectiles_per_fire": 1,
       "record_index": -1,
-      "spec_id": "/pa/units/land/L_titan_vehicle/L_titan_vehicle_tool_weapon_stomp.json"
+      "spec_id": "/pa/units/land/l_titan_vehicle/l_titan_vehicle_tool_weapon_stomp.json"
     }
   ],
   "unit_types": [

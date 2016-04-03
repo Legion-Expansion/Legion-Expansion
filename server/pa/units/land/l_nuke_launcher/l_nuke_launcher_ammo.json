@@ -44,7 +44,7 @@
   "lifetime": 0,
   "max_velocity": 75,
   "model": {
-    "filename": "/pa/units/land/L_nuke_launcher/missile/L_nuclear_missile.papa"
+    "filename": "/pa/units/land/l_nuke_launcher/missile/l_nuclear_missile.papa"
   },
   "physics": {
     "add_to_spatial_db": true,
@@ -56,7 +56,7 @@
   "show_in_orbital_layer": true,
   "show_strategic_icon": true,
   "signal_type": "nuke",
-  "sim_impact_effect": "/pa/units/land/L_nuke_launcher/L_nuke_launcher_ammo_explosion_ent.json",
+  "sim_impact_effect": "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo_explosion_ent.json",
   "spawn_layers": "WL_Air",
   "splash_damage": 33000,
   "splash_damage_orbital": true,

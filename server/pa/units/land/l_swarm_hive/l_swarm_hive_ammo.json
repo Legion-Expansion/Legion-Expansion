@@ -26,7 +26,7 @@
   "model": {
     "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
   },
-  "spawn_unit_on_death": "/pa/units/land/L_swarm_hive/L_hive_nanoswarm/L_hive_nanoswarm.json",
+  "spawn_unit_on_death": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm.json",
   "spawn_unit_on_death_with_velocity": true,
   "splash_damage": 0,
   "splash_radius": 0

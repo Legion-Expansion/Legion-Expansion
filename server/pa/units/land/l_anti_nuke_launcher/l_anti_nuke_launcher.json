@@ -22,7 +22,7 @@
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 12000,
   "buildable_projectiles": [
-    "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo.json"
+    "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json"
   ],
   "command_caps": [
     "ORDER_FactoryBuild"
@@ -34,7 +34,7 @@
   },
   "factory": {
     "default_build_stance": "Continuous",
-    "initial_build_spec": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher_ammo.json",
+    "initial_build_spec": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json",
     "spawn_points": [
       "missile01",
       "missile02",
@@ -85,13 +85,13 @@
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
+      "filename": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_antinuke.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/L_anti_nuke_launcher/L_anti_nuke_launcher.papa",
+      "filename": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher.papa",
       "layer": "WL_WaterSurface"
     }
   ],

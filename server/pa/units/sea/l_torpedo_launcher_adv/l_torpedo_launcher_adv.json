@@ -31,10 +31,10 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_idle.papa"
+      "idle": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_idle.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_torpedo_launcher_adv_anim_tree.json",
-    "filename": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv.papa"
+    "animtree": "/pa/anim/anim_trees/l_torpedo_launcher_adv_anim_tree.json",
+    "filename": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv.papa"
   },
   "recon": {
     "observer": {
@@ -81,7 +81,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 0,
-      "spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_wave_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -93,7 +93,7 @@
       ],
       "projectiles_per_fire": 3,
       "record_index": 1,
-      "spec_id": "/pa/units/sea/L_torpedo_launcher_adv/L_torpedo_launcher_adv_wave_tool_weapon.json"
+      "spec_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_tool_weapon.json"
     }
   ],
   "unit_types": [

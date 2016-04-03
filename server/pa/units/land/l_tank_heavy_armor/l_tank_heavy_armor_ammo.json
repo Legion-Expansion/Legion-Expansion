@@ -19,7 +19,7 @@
     ]
   },
   "full_damage_splash_radius": 15,
-  "sim_fire_effect": "/pa/units/land/L_tank_heavy_armor/L_tank_heavy_armor_shake.json",
+  "sim_fire_effect": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_shake.json",
   "splash_damage": 500,
   "splash_damages_allies": false,
   "splash_radius": 55

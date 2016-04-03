@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 720,
   "ammo_demand": 20,
-  "ammo_id": "/pa/units/air/L_air_carrier/L_air_carrier_ammo.json",
+  "ammo_id": "/pa/units/air/l_air_carrier/l_air_carrier_ammo.json",
   "ammo_per_shot": 60,
   "ammo_source": "metal",
   "auto_attack": true,

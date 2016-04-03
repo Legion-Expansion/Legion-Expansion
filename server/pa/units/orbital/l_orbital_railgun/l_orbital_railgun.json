@@ -34,13 +34,13 @@
     {
       "bone": "thrust001",
       "effect_scale": 1,
-      "filename": "/pa/units/orbital/L_orbital_railgun/spaceship_jets.pfx",
+      "filename": "/pa/units/orbital/l_orbital_railgun/spaceship_jets.pfx",
       "type": "moving_forward"
     },
     {
       "bone": "bone_root",
       "effect_scale": 2,
-      "filename": "/pa/units/orbital/L_orbital_railgun/idle.pfx",
+      "filename": "/pa/units/orbital/l_orbital_railgun/idle.pfx",
       "offset": [
         0,
         13.9,
@@ -51,7 +51,7 @@
     {
       "bone": "bone_root",
       "effect_scale": 1,
-      "filename": "/pa/units/orbital/L_orbital_railgun/idle2.pfx",
+      "filename": "/pa/units/orbital/l_orbital_railgun/idle2.pfx",
       "offset": [
         0,
         -23.9,
@@ -70,12 +70,12 @@
   ],
   "model": {
     "animations": {
-      "closed": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_closed.papa",
-      "deploy": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_deploy.papa",
-      "open": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_open.papa"
+      "closed": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_closed.papa",
+      "deploy": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_deploy.papa",
+      "open": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_open.papa"
     },
-    "animtree": "/pa/anim/anim_trees/L_orbital_railgun_anim_tree.json",
-    "filename": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun.papa"
+    "animtree": "/pa/anim/anim_trees/l_orbital_railgun_anim_tree.json",
+    "filename": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun.papa"
   },
   "navigation": {
     "acceleration": 10,
@@ -106,7 +106,7 @@
     {
       "aim_bone": "bone_recoilBody",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/orbital/L_orbital_railgun/L_orbital_railgun_tool_weapon.json"
+      "spec_id": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_tool_weapon.json"
     }
   ],
   "unit_types": [

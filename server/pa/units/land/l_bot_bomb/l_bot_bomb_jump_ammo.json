@@ -7,7 +7,7 @@
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/L_bot_bomb/rocket_trail.pfx"
+    "filename": "/pa/units/land/l_bot_bomb/rocket_trail.pfx"
   },
   "impact_decals": [
     null
@@ -17,7 +17,7 @@
   "max_velocity": 150,
   "min_velocity": 75,
   "model": {
-    "filename": "/pa/units/land/L_bot_bomb/L_bot_bomb.papa"
+    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
   },
   "recon": {
     "observer": {
@@ -31,7 +31,7 @@
       ]
     }
   },
-  "spawn_unit_on_death": "/pa/units/land/L_bot_bomb/L_bot_bomb.json",
+  "spawn_unit_on_death": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,

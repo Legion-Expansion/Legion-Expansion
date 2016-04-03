@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 10000,
   "ammo_demand": 2500,
-  "ammo_id": "/pa/ammo/L_cannon_uber/L_cannon_uber.json",
+  "ammo_id": "/pa/ammo/l_cannon_uber/l_cannon_uber.json",
   "ammo_per_shot": 10000,
   "ammo_source": "energy",
   "auto_attack": false,
