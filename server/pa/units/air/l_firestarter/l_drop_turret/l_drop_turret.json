@@ -20,11 +20,11 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/land/l_flame_turret/fire.pfx socket_muzzleTop"
+      "effect_spec": "/pa/units/air/l_firestarter/l_drop_turret/fire.pfx socket_muzzleTop"
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 3000,
+  "max_health": 2500,
   "mesh_bounds": [
     10.7,
     11.2,
