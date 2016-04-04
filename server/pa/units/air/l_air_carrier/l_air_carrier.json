@@ -29,8 +29,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Air",
-      "effect_scale": 0.25,
-      "effect_spec": "/pa/units/air/missile_nuke/missile_nuke_implosion.pfx"
+      "effect_scale": 1,
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/air/air_scout_fire"
