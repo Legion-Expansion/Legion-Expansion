@@ -164,6 +164,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Structure",
+    "UNITTYPE_Artillery",
     "UNITTYPE_Orbital",
     "UNITTYPE_Factory",
     "UNITTYPE_Advanced",
