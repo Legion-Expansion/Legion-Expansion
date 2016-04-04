@@ -169,48 +169,48 @@
       "to_build": "LegionDefenseAdvancedNukeSilo"
     },
     {
-      "name": "Legion - Orbital Dropper",
-      "to_build": "LegionOrbitalAdvancedCannon",
-      "instance_count": 1,
-      "shared_instance_count": "UnitCannon",
-      "priority": 360,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
       "build_conditions": [
         [
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanAffordPotentialDrain",
-            "string0": "UnitCannon"
+            "string0": "UnitCannon",
+            "test_type": "CanAffordPotentialDrain"
           },
           {
+            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Artillery & Factory",
-            "compare0": "<",
             "value0": 5
           },
           {
-            "test_type": "PlanetThreat",
-            "string0": "Economy",
             "compare0": ">",
+            "string0": "Economy",
+            "test_type": "PlanetThreat",
             "value0": 0
           },
           {
-            "test_type": "CanFindPlaceToBuild",
-            "string0": "UnitCannon"
+            "string0": "UnitCannon",
+            "test_type": "CanFindPlaceToBuild"
           }
         ]
       ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Orbital Dropper",
       "placement_rules": {
         "buffer": 2
-      }
+      },
+      "priority": 360,
+      "shared_instance_count": "UnitCannon",
+      "to_build": "LegionOrbitalAdvancedCannon"
     },
     {
       "build_conditions": [
