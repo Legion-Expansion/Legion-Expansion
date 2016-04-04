@@ -92,7 +92,7 @@
     }
   ],
   "guard_layer": "WL_Anysurface",
-  "max_health": 400,
+  "max_health": 450,
   "mesh_bounds": [
     8.5,
     11.5,
@@ -106,14 +106,14 @@
     "filename": "/pa/units/air/l_gunship/l_gunship.papa"
   },
   "navigation": {
-    "acceleration": 20,
+    "acceleration": 50,
     "aggressive_behavior": "circle",
     "bank_factor": 1,
-    "brake": 25,
+    "brake": 50,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
-    "move_speed": 40,
-    "turn_speed": 60,
+    "move_speed": 50,
+    "turn_speed": 90,
     "vertical_speed": 30
   },
   "recon": {
