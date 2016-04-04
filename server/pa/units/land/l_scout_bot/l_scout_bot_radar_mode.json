@@ -83,7 +83,7 @@
   ],
   "max_health": 60,
   "mesh_bounds": [
-    4,
+    2,
     2,
     4
   ],
@@ -104,7 +104,15 @@
     "type": "amphibious"
   },
   "physics": {
-    "radius": 2
+    "allow_pushing": false,
+    "allow_underground": false,
+    "collide_with_types": [
+      "Projectile"
+    ],
+    "push_sideways": false,
+    "radius": 0,
+    "shape": "Box",
+    "type": "Structure"
   },
   "recon": {
     "observable": {
