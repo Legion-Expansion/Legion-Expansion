@@ -334,7 +334,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -402,7 +403,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -470,7 +472,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -590,10 +593,11 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot"
+        "LegionFactoryBasicBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic AA Vehicle",
+      "name": "Legion - Basic AA Bot",
       "priority": 97,
       "to_build": "LegionBotBasicAA"
     },
@@ -710,7 +714,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -842,7 +847,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -906,7 +912,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicVehicle"
+        "LegionFactoryBasicVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -1056,7 +1063,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedBot"
+        "LegionFactoryAdvancedBot",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
