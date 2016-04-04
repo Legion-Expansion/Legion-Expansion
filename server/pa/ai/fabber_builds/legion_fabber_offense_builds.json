@@ -169,6 +169,50 @@
       "to_build": "LegionDefenseAdvancedNukeSilo"
     },
     {
+      "name": "Legion - Orbital Dropper",
+      "to_build": "LegionOrbitalAdvancedCannon",
+      "instance_count": 1,
+      "shared_instance_count": "UnitCannon",
+      "priority": 360,
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "UnitCannon"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Artillery & Factory",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "UnitCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
       "build_conditions": [
         [
           {
