@@ -7,7 +7,7 @@
       "unit_types": "(Fabber & (Basic | Debug) & Custom1) - Orbital"
     },
     "AnyLegionFactoryAdvanced": {
-      "unit_types": "(Factory & Advanced) & Custom1 - PlanetEngine"
+      "unit_types": "(Factory & Advanced) & Custom1"
     },
     "AnyLegionFactoryAir": {
       "unit_types": "(Factory & Air) & Custom1"
@@ -22,7 +22,7 @@
       "unit_types": "(Factory & Naval) & Custom1"
     },
     "AnyLegionFactoryOrbital": {
-      "unit_types": "(Factory & Orbital) & Custom1 - PlanetEngine"
+      "unit_types": "(Factory & Orbital) & Custom1"
     },
     "AnyLegionFactoryVehicle": {
       "unit_types": "(Factory & Tank) & Custom1"
