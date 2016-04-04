@@ -15,7 +15,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 850,
+  "build_metal_cost": 800,
   "events": {
     "died": {
       "effect_scale": 0.75
@@ -92,7 +92,7 @@
     }
   ],
   "guard_layer": "WL_Anysurface",
-  "max_health": 500,
+  "max_health": 400,
   "mesh_bounds": [
     8.5,
     11.5,
