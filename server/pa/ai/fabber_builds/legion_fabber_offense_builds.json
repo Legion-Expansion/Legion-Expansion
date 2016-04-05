@@ -176,16 +176,20 @@
             "test_type": "AloneOnPlanet"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "string0": "UnitCannon",
+            "string0": "LegionOrbitalAdvancedCannon",
             "test_type": "CanAffordPotentialDrain"
           },
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Artillery & Factory",
+            "unit_type_string0": "Artillery & Factory",
             "value0": 5
           },
           {
@@ -195,7 +199,7 @@
             "value0": 0
           },
           {
-            "string0": "UnitCannon",
+            "string0": "LegionOrbitalAdvancedCannon",
             "test_type": "CanFindPlaceToBuild"
           }
         ]
