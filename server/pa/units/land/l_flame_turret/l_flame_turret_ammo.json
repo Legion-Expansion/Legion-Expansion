@@ -12,7 +12,9 @@
   "initial_velocity": 130.0,
   "lifetime": 2,
   "max_velocity": 130.0,
-  "model": null,
+  "model": {
+    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
+  },
   "physics": {
     "add_to_spatial_db": false
   },
