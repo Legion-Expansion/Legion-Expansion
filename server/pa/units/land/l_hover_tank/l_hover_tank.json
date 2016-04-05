@@ -155,7 +155,7 @@
   "max_health": 125,
   "mesh_bounds": [
     6.468,
-    7.765,
+    8,
     5.711
   ],
   "model": {
@@ -176,7 +176,7 @@
   "nearby_target_tick_update_interval": 15,
   "physics": {
     "air_friction": 0.5,
-    "radius": 3
+    "radius": 6
   },
   "recon": {
     "observer": {
