@@ -5,7 +5,7 @@
   "idle_aim_delay": 5,
   "max_range": 100,
   "pitch_range": 90,
-  "pitch_rate": 90,
+  "pitch_rate": 180,
   "rate_of_fire": 3,
   "spread_fire": true,
   "target_layers": [
@@ -13,5 +13,5 @@
     "WL_WaterSurface"
   ],
   "yaw_range": 180,
-  "yaw_rate": 90
+  "yaw_rate": 180
 }
