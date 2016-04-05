@@ -35,11 +35,11 @@
     },
     "disabled": {
       "audio_cue": "/SE/Buildings/teleporter_disabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_down.pfx event_horizon"
+      "effect_spec": "/pa/units/air/l_flying_teleporter/teleporter_power_down.pfx event_horizon"
     },
     "enabled": {
       "audio_cue": "/SE/Buildings/teleporter_enabled",
-      "effect_spec": "/pa/units/land/teleporter/teleporter_power_on.pfx event_horizon"
+      "effect_spec": "/pa/units/air/l_flying_teleporter/teleporter_power_on.pfx event_horizon"
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire",
