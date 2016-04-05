@@ -28,9 +28,7 @@
   "initial_velocity": 60,
   "lifetime": 5,
   "max_velocity": 60,
-  "model": {
-    "filename": "/pa/units/air/unit_shell/unit_shell.papa"
-  },
+  "model": null,
   "splash_damage": 3000,
   "splash_radius": 65
 }
