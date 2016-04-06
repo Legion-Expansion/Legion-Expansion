@@ -134,7 +134,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 120,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
@@ -155,6 +155,13 @@
       "aim_bone": "bone_root",
       "record_index": 1,
       "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_build",
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 2,
+      "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_tool_antinuke.json"
     }
   ],
   "unit_types": [
