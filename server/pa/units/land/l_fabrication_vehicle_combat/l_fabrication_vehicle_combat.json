@@ -36,7 +36,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 200,
+  "build_metal_cost": 350,
   "buildable_types": "Custom1 & CombatFabBuild",
   "command_caps": [
     "ORDER_Move",
