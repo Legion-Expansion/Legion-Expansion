@@ -15,7 +15,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]

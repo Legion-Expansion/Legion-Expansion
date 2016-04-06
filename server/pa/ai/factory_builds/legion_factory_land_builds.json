@@ -224,7 +224,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -274,7 +274,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ],
@@ -397,7 +397,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -466,7 +466,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -587,7 +587,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -655,7 +655,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -708,7 +708,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -777,7 +777,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -841,7 +841,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -906,7 +906,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1057,7 +1057,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1126,7 +1126,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1194,7 +1194,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1298,7 +1298,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1418,7 +1418,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1472,13 +1472,14 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -1540,7 +1541,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1604,7 +1605,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ],
@@ -1656,7 +1657,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1720,7 +1721,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]
@@ -1788,7 +1789,7 @@
           {
             "compare0": ">",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter - (Orbital | Air)",
+            "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
         ]

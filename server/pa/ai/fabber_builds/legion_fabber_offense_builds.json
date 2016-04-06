@@ -189,7 +189,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Artillery & Factory",
+            "unit_type_string0": "Structure & Artillery & Factory",
             "value0": 5
           },
           {
