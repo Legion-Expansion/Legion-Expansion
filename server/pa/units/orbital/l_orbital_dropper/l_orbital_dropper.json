@@ -163,6 +163,7 @@
     }
   ],
   "unit_types": [
+    "UNITTYPE_Structure",
     "UNITTYPE_Teleporter",
     "UNITTYPE_Artillery",
     "UNITTYPE_Orbital",
