@@ -102,6 +102,9 @@
       ]
     }
   },
+  "selection_icon": {
+    "diameter": -30.0
+  },
   "tools": [
     {
       "aim_bone": "bone_recoilBody",
