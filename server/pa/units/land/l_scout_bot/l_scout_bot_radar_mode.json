@@ -93,7 +93,7 @@
       "walk": "/pa/units/land/l_scout_bot/l_scout_bot_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_scout_bot_anim_tree.json",
-    "filename": "/pa/units/land/l_scout_bot/l_scout_bot.papa",
+    "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",
     "walk_speed": 2.75
   },
   "navigation": {
