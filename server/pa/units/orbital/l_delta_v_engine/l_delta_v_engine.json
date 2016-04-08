@@ -30,7 +30,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_thrust001",		
+      "bone": "bone_thrust001",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
       "offset": [
         0,
@@ -43,8 +43,9 @@
         0
       ],
       "type": "enabled"
-    },    {
-      "bone": "bone_thrust002",		
+    },
+    {
+      "bone": "bone_thrust002",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
       "offset": [
         0,
@@ -57,8 +58,9 @@
         0
       ],
       "type": "enabled"
-    },     {
-      "bone": "bone_thrust003",		
+    },
+    {
+      "bone": "bone_thrust003",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
       "offset": [
         0,
@@ -71,8 +73,9 @@
         0
       ],
       "type": "enabled"
-    },     {
-      "bone": "bone_thrust004",		
+    },
+    {
+      "bone": "bone_thrust004",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
       "offset": [
         0,
