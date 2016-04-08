@@ -86,5 +86,5 @@
     "UNITTYPE_CombatFabAdvBuild",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0.2
+  "wreckage_health_frac": 0.0
 }
