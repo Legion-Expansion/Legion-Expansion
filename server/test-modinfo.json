@@ -11,7 +11,8 @@
     "com.wondible.pa.xenophobia",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.monty-client",
-"com.wondible.pa.weapons_tracking"  ],
+    "com.wondible.pa.weapons_tracking"
+  ],
   "description": " ",
   "display_name": " ",
   "enabled": true,
