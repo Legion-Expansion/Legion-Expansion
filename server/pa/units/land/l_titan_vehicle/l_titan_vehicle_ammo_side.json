@@ -20,7 +20,7 @@
     }
   },
   "flight_type": "Staged",
-  "full_damage_splash_radius": 25,
+  "full_damage_splash_radius": 5,
   "fx_trail": {
     "filename": "/pa/units/land/l_titan_vehicle/side_trail.pfx",
     "offset": [
