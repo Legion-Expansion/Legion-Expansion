@@ -60,22 +60,62 @@
     {
       "bone": "thrust005",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "type": "moving"
+      "offset": [
+        0,
+        1,
+        0
+      ],
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "idle"
     },
     {
       "bone": "thrust006",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "type": "moving"
+      "offset": [
+        0,
+        1,
+        0
+      ],
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "idle"
     },
     {
       "bone": "thrust007",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "type": "moving"
+      "offset": [
+        0,
+        1,
+        0
+      ],
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "idle"
     },
     {
       "bone": "thrust008",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "type": "moving"
+      "offset": [
+        0,
+        1,
+        0
+      ],
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 5.0,
