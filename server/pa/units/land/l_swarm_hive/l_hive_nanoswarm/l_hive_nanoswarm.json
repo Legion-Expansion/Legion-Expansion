@@ -30,7 +30,7 @@
   "fx_offsets": [
     {
       "bone": "bone_body",
-      "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+      "filename": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/nanoswarm_kappa_idle.pfx",
       "offset": [
         0,
         0,
