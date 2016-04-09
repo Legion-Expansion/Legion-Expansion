@@ -32,11 +32,11 @@
       "effect_spec": "/pa/units/air/titan_air/titan_air_death.pfx bone_root"
     },
     "fired0": {
-      "audio_cue": "/SE/UI/UI_lobby_match_found",
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
       "effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle001 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle002"
     },
     "fired1": {
-      "audio_cue": "/SE/UI/UI_lobby_match_found",
+      "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
       "effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle003 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle004"
     },
     "fired2": {
