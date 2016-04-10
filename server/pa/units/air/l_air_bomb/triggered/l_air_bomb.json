@@ -25,7 +25,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 105,
+  "build_metal_cost": 90,
   "command_caps": [
     "ORDER_Attack"
   ],
@@ -58,9 +58,9 @@
     "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 110,
+    "acceleration": 120,
     "brake": 140,
-    "move_speed": 110,
+    "move_speed": 120,
     "turn_in_place": true,
     "turn_speed": 480,
     "wobble_factor": 0.25,

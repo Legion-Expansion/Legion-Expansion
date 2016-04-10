@@ -14,9 +14,9 @@
     "filename": "/pa/units/air/l_air_bomb/teleport.pfx"
   },
   "influence_radius": 400,
-  "initial_velocity": 20.0,
+  "initial_velocity": 10.0,
   "lifetime": 1,
-  "max_velocity": 20.0,
+  "max_velocity": 10.0,
   "model": {
     "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
@@ -43,7 +43,7 @@
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_duration": 200,
+      "stage_duration": 100,
       "stage_turn_rate": 0
     },
     {
