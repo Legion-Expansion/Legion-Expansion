@@ -6,15 +6,14 @@
       "effect_spec": "/pa/effects/specs/flame_death.pfx"
     }
   },
+  "flight_type": "direct",
   "fx_trail": {
     "filename": "/pa/effects/specs/none.pfx"
   },
   "initial_velocity": 130.0,
   "lifetime": 2,
   "max_velocity": 130.0,
-  "model": {
-    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
-  },
+  "model": null,
   "physics": {
     "add_to_spatial_db": false
   },
