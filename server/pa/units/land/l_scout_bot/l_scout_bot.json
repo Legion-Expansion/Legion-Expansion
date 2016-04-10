@@ -38,6 +38,9 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
+  "death": {
+    "decals": []
+  },
   "events": {
     "died": {},
     "fired": {

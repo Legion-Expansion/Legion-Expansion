@@ -32,8 +32,7 @@
       ]
     }
   },
-  "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_land_ent.json",
-  "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot.json",
+  "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_collision_check.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,

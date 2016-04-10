@@ -1,21 +1,7 @@
 {
-  "display_name": "Scout Bot Radar mode",
+  "display_name": "Scout Bot Radar mode collision check",
   "description": "Radar vision but immobile",
   "TEMP_texelinfo": 4.07719,
-  "attachable": {
-    "offsets": {
-      "head": [
-        0,
-        0,
-        3.5
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
-    }
-  },
   "audio": {
     "loops": {
       "move": {
@@ -37,11 +23,11 @@
   "consumption": {
     "energy": 100
   },
+  "death": {
+    "decals": []
+  },
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/radar"
-    },
-    "died": {},
+    "died": null,
     "fired": null
   },
   "fx_offsets": [
@@ -101,16 +87,7 @@
     "type": "amphibious"
   },
   "physics": {
-    "allow_pushing": false,
-    "allow_underground": false,
-    "collide_with_types": [
-      "Projectile",
-      "Feature"
-    ],
-    "push_sideways": false,
-    "radius": 0,
-    "shape": "Box",
-    "type": "Structure"
+    "radius": 2
   },
   "recon": {
     "observable": {
@@ -154,17 +131,14 @@
     "diameter": -8
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode.json",
+  "spawn_unit_on_death_with_velocity": false,
   "tools": [
     {
       "aim_bone": "bone_root",
-      "primary_weapon": false,
-      "secondary_weapon": true,
-      "spec_id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_collision_check_tool_weapon.json"
     }
   ],
-  "transportable": {
-    "size": 1
-  },
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Scout",

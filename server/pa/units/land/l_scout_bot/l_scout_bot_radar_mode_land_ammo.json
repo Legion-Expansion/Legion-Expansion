@@ -4,7 +4,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Build_Complete/radar",
-      "effect_spec": "/pa/units/land/l_scout_bot/l_scout_bot_superman_debris.pfx"
+      "effect_spec": "/pa/effects/specs/none.pfx"
     }
   },
   "fx_trail": {
@@ -32,7 +32,8 @@
       ]
     }
   },
-  "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode.json",
+  "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_land_ent.json",
+  "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,
