@@ -96,19 +96,19 @@
       "type": "build"
     },
     {
+      "type": "enabled",		
       "bone": "stacks01",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "filename": "/pa/effects/specs/factory_smoke.pfx"	  
     },
     {
+      "type": "enabled",		
       "bone": "stacks02",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "filename": "/pa/effects/specs/factory_smoke.pfx"	  
     },
     {
+      "type": "enabled",		
       "bone": "stacks03",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "filename": "/pa/effects/specs/factory_smoke.pfx"	  
     },
     {
       "bone": "bone_root",

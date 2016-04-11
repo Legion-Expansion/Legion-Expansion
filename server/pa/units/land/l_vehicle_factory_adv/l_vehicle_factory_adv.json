@@ -81,15 +81,55 @@
       "type": "build"
     },
     {
-      "bone": "smoke001",
-      "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "bone": "stacks001",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled"
     },
     {
-      "bone": "smoke002",
+      "bone": "stacks001",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "type": "enabled",
+      "offset": [
+        -1,
+        -12,
+        2
+      ]	  
     },
+    {
+      "bone": "stacks001",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "enabled",
+      "offset": [
+        -1,
+        -16,
+        0
+      ]	  
+    },	
+    {
+      "bone": "stacks002",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled"
+    },
+    {
+      "bone": "stacks002",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "enabled",
+      "offset": [
+        -1,
+        12,
+        2
+      ]	  
+    },
+    {
+      "bone": "stacks002",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "type": "enabled",
+      "offset": [
+        -1,
+        16,
+        0
+      ]	  
+    },	
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_vehicle_factory_adv/energy_platform_adv.pfx",

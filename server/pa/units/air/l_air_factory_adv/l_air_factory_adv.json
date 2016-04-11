@@ -53,7 +53,47 @@
       "bone": "arm_lathe004",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
-    }
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled",
+      "offset": [
+        15.5,
+        20,
+        11
+      ]		  
+    }, 
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled",
+      "offset": [
+        -15.5,
+        20,
+        11
+      ]		  
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled",
+      "offset": [
+        15.5,
+        -20,
+        11
+      ]		  
+    }, 
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
+      "type": "enabled",
+      "offset": [
+        -15.5,
+        -20,
+        11
+      ]		  
+    }	
   ],
   "headlights": [
     {

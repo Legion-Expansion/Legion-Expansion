@@ -69,17 +69,17 @@
     {
       "bone": "smoke002",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "type": "enabled"
     },
     {
       "bone": "smoke003",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "type": "enabled"
     },
     {
       "bone": "smoke004",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "type": "build"
+      "type": "enabled"
     }
   ],
   "max_health": 30000,
