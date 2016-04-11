@@ -1,6 +1,6 @@
 {
-  "display_name": "Ragnarok",
-  "description": "!LOC:Doomsday Titan- Destroys the planet it's built on once finished.",
+  "display_name": "MegaKappa",
+  "description": "Summons a laser from the heavens.",
   "TEMP_texelinfo": 32.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,
@@ -45,12 +45,12 @@
     "animations": {
       "dead": "/pa/units/land/titan_structure/titan_structure_anim_dead.papa",
       "death": "/pa/units/land/titan_structure/titan_structure_anim_death.papa",
-      "end": "/pa/units/land/titan_structure/titan_structure_anim_end.papa",
-      "loop": "/pa/units/land/titan_structure/titan_structure_anim_loop.papa",
-      "start": "/pa/units/land/titan_structure/titan_structure_anim_start.papa"
+      "end": "/pa/units/land/l_titan_structure/l_titan_structure_end.papa",
+      "loop": "/pa/units/land/l_titan_structure/l_titan_structure_loop.papa",
+      "start": "/pa/units/land/l_titan_structure/l_titan_structure_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/titan_structure_anim_tree.json",
-    "filename": "/pa/units/land/titan_structure/titan_structure.papa",
+    "filename": "/pa/units/land/l_titan_structure/l_titan_structure.papa",
     "skirt_decal": "/pa/effects/specs/skirt_titan_structure.json"
   },
   "physics": {
