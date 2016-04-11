@@ -23,6 +23,9 @@
   "model": {
     "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
   },
+  "physics": {
+    "add_to_spatial_db": false
+  },
   "splash_damage": 140,
   "splash_damages_allies": false,
   "splash_radius": 25,
