@@ -94,6 +94,26 @@
         0
       ],
       "type": "build"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "offset": [
+        -21.8,
+        -10,
+        29
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "offset": [
+        -21.8,
+        10,
+        29
+      ],
+      "type": "enabled"
     }
   ],
   "headlights": [
