@@ -35,5 +35,5 @@
   "splash_damage": 300,
   "splash_damages_allies": false,
   "splash_radius": 40,
-  "turn_rate": 120
+  "turn_rate": 160
 }

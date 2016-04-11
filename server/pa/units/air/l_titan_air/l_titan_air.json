@@ -101,6 +101,7 @@
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
     "move_speed": 30,
+    "turn_accel": 20,
     "turn_speed": 50,
     "vertical_speed": 50
   },
