@@ -57,43 +57,43 @@
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke_big.pfx",
-      "type": "enabled",
       "offset": [
         15.5,
         20,
         11
-      ]		  
-    }, 
-    {
-      "bone": "bone_root",
-      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
-      "type": "enabled",
-      "offset": [
-        -15.5,
-        20,
-        11
-      ]		  
+      ],
+      "type": "enabled"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke_big.pfx",
-      "type": "enabled",
+      "offset": [
+        -15.5,
+        20,
+        11
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke_big.pfx",
       "offset": [
         15.5,
         -20,
         11
-      ]		  
-    }, 
+      ],
+      "type": "enabled"
+    },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke_big.pfx",
-      "type": "enabled",
       "offset": [
         -15.5,
         -20,
         11
-      ]		  
-    }	
+      ],
+      "type": "enabled"
+    }
   ],
   "headlights": [
     {
