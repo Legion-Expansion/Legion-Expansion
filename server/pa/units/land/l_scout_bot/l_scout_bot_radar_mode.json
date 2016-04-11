@@ -37,7 +37,8 @@
   "consumption": {
     "energy": 100
   },
-  "energy_efficiency_requirement": 0.9,  "events": {
+  "energy_efficiency_requirement": 0.9,
+  "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/radar"
     },
