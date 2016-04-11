@@ -48,16 +48,6 @@
     {
       "bone": "bone_radar",
       "filename": "/pa/units/land/l_scout_bot/l_scout_bot_radar_on.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
       "type": "energy"
     }
   ],
@@ -86,8 +76,7 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_scout_bot/l_scout_bot_idle.papa",
-      "walk": "/pa/units/land/l_scout_bot/l_scout_bot_walk.papa"
+      "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_scout_bot_anim_tree.json",
     "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",
