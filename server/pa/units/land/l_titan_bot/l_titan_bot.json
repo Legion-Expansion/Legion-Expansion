@@ -186,7 +186,7 @@
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_cannon_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_turret",
+      "aim_bone": "bone_rightShoulderTurret",
       "fire_event": "fired1",
       "muzzle_bone": "socket_rightMuzzle",
       "record_index": 1,

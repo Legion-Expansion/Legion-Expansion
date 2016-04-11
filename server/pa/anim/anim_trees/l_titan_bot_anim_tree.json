@@ -86,7 +86,7 @@
     {
       "child": {
         "rotation_axis": "z",
-        "rotation_bone": "bone_turret",
+        "rotation_bone": "bone_rightShoulderTurret",
         "type": "procedural_aim",
         "weapon_index": 1
       },
@@ -106,7 +106,7 @@
     {
       "child": {
         "rotation_axis": "x",
-        "rotation_bone": "bone_pitch",
+        "rotation_bone": "bone_rightShoulderPitch",
         "type": "procedural_aim",
         "weapon_index": 1
       },
