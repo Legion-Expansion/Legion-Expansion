@@ -32,18 +32,6 @@ if ( ! legionExpansionLoaded )
     }
 }
 
-var menu_video = localStorage.menu_video;
-localStorage.menu_video = "false";
-
-if(menu_video != "true") {
-$("body").append("<div>" +
-    "<video width='auto' height='auto' autoplay loop>" +
-    "<source src='coui://ui/backgrounds/background_red.webm'>" +
-    "</video>" +
-    "</div>"
-    );
- }
-
 // Play intro video one time only
 
 // BLOCKED UNTIL WE HAVE AN INTRO VIDEO
