@@ -1,99 +1,19 @@
 {
-  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "display_name": "!LOC:Fabrication Ship",
   "description": "!LOC:Basic fabricator- Wired to build naval structures.",
-  "max_health": 100,
-  "build_metal_cost": 200,
-  "spawn_layers": "WL_WaterSurface",
-  "mesh_bounds": [
-    4,
-    10,
-    5
-  ],
+  "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ],
       "head": [
         0,
         0,
         4
+      ],
+      "root": [
+        0,
+        0,
+        0
       ]
-    }
-  },
-  "buildable_types": "(Naval & Structure & Basic | Naval & Factory & Advanced | Air & Factory & Basic | FabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
-  "unit_types": [
-    "UNITTYPE_Fabber",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Naval",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild"
-  ],
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Build",
-    "ORDER_Reclaim",
-    "ORDER_Repair",
-    "ORDER_Assist"
-  ],
-  "navigation": {
-    "type": "deepwater",
-    "acceleration": 100,
-    "brake": 100,
-    "move_speed": 10,
-    "turn_speed": 90,
-    "park_stamp_type": "sphere",
-    "park_stamp_cost": 10
-  },
-  "physics": {
-    "shape": "sphere",
-    "radius": 4,
-    "allow_pushing": true
-  },
-  "transportable": {
-    "size": 1
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "layer": "surface_and_air",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 100
-        },
-        {
-          "layer": "underwater",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 100
-        }
-      ]
-    }
-  },
-  "model": {
-    "filename": "/pa/units/sea/fabrication_ship/fabrication_ship.papa",
-    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json"
-  },
-  "tools": [
-    {
-      "spec_id": "/pa/units/sea/fabrication_ship/fabrication_ship_build_arm.json",
-      "aim_bone": "bone_root"
-    }
-  ],
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea_fab"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Sea_small",
-      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
-      "effect_scale": 0.6
     }
   },
   "audio": {
@@ -112,11 +32,31 @@
       }
     }
   },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 200,
+  "buildable_types": "(Naval & Structure & Basic | Naval & Factory & Advanced | Air & Factory & Basic | FabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea_fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_small",
+      "effect_scale": 0.6,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx"
+    }
+  },
   "fx_offsets": [
     {
-      "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
       "bone": "bone_pitch",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         0.585,
         -2.948,
@@ -126,12 +66,12 @@
         0,
         0,
         0
-      ]
+      ],
+      "type": "build"
     },
     {
-      "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
       "bone": "bone_pitch",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         -0.585,
         -2.948,
@@ -141,15 +81,75 @@
         0,
         0,
         0
-      ]
+      ],
+      "type": "build"
     },
     {
-      "type": "moving_forward",
-      "filename": "/pa/units/sea/fabrication_ship/fabrication_ship_wake.pfx"
+      "filename": "/pa/units/sea/fabrication_ship/fabrication_ship_wake.pfx",
+      "type": "moving_forward"
     }
   ],
+  "max_health": 100,
+  "mesh_bounds": [
+    4,
+    10,
+    5
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+    "filename": "/pa/units/sea/fabrication_ship/fabrication_ship.papa"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "park_stamp_cost": 10,
+    "park_stamp_type": "sphere",
+    "turn_speed": 90,
+    "type": "deepwater"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 4,
+    "shape": "sphere"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
   "selection_icon": {
     "diameter": 13
   },
-  "TEMP_texelinfo": 7.50603
+  "spawn_layers": "WL_WaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/sea/fabrication_ship/fabrication_ship_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ]
 }

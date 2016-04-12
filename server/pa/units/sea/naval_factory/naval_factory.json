@@ -1,4 +1,6 @@
 {
+  "display_name": "!LOC:Naval Factory",
+  "description": "!LOC:Basic manufacturing- Builds naval units.",
   "TEMP_texelinfo": 44.3722,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,
@@ -28,8 +30,6 @@
     "ORDER_Attack",
     "ORDER_Assist"
   ],
-  "description": "!LOC:Basic manufacturing- Builds naval units.",
-  "display_name": "!LOC:Naval Factory",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"

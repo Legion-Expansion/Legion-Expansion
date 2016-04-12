@@ -1,95 +1,19 @@
 {
-  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "display_name": "!LOC:Fabrication Vehicle",
   "description": "!LOC:Builder- Builds structures. Durable. More powerful than other builders.",
-  "max_health": 150,
-  "build_metal_cost": 200,
-  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ],
       "head": [
         0,
         0,
         2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
       ]
-    }
-  },
-  "unit_types": [
-    "UNITTYPE_Fabber",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Tank",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Basic",
-    "UNITTYPE_Land",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable"
-  ],
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Build",
-    "ORDER_Reclaim",
-    "ORDER_Repair",
-    "ORDER_Assist",
-    "ORDER_Use"
-  ],
-  "transportable": {
-    "size": 1
-  },
-  "guard_layer": "WL_LandHorizontal",
-  "navigation": {
-    "type": "land-small",
-    "acceleration": 120,
-    "brake": 120,
-    "move_speed": 12,
-    "turn_speed": 360,
-    "group_preference": "back"
-  },
-  "physics": {
-    "radius": 3,
-    "allow_pushing": true
-  },
-  "recon": {
-    "observer": {
-      "items": [
-        {
-          "layer": "surface_and_air",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 100
-        },
-        {
-          "layer": "underwater",
-          "channel": "sight",
-          "shape": "capsule",
-          "radius": 100
-        }
-      ]
-    }
-  },
-  "model": {
-    "filename": "/pa/units/land/fabrication_vehicle/fabrication_vehicle.papa",
-    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
-    "arrows": 5
-  },
-  "tools": [
-    {
-      "spec_id": "/pa/units/land/fabrication_vehicle/fabrication_vehicle_build_arm.json",
-      "aim_bone": "bone_root"
-    }
-  ],
-  "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/fab"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.5
     }
   },
   "audio": {
@@ -111,11 +35,31 @@
       "cue": "/SE/Selection/veh/fab"
     }
   },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 200,
+  "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 1.5
+    }
+  },
   "fx_offsets": [
     {
-      "type": "build",
-      "filename": "/pa/effects/specs/fab_spray.pfx",
       "bone": "bone_pitch",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         0,
         -4.198,
@@ -125,16 +69,72 @@
         0,
         0,
         0
-      ]
+      ],
+      "type": "build"
     }
   ],
-  "selection_icon": {
-    "diameter": 12
-  },
-  "TEMP_texelinfo": 6.20134,
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 150,
   "mesh_bounds": [
     4.5,
     6,
     3
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/fabrication_vehicle/fabrication_vehicle.papa"
+  },
+  "navigation": {
+    "acceleration": 120,
+    "brake": 120,
+    "group_preference": "back",
+    "move_speed": 12,
+    "turn_speed": 360,
+    "type": "land-small"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 3
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 12
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/fabrication_vehicle/fabrication_vehicle_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Land",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
   ]
 }
