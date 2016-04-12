@@ -22,7 +22,7 @@
       "unit_types": "(Factory & Naval) & Custom1"
     },
     "AnyLegionFactoryOrbital": {
-      "unit_types": "(Factory & Orbital) & Custom1"
+      "unit_types": "(Factory & Orbital) & Custom1 - Artillery"
     },
     "AnyLegionFactoryVehicle": {
       "unit_types": "(Factory & Tank) & Custom1"
