@@ -35,7 +35,7 @@ if ( ! legionExpansionLoaded )
                         if(_.includes(legionspecids, key)){
                             legioncount++;
                         }
-                        if(key.indexOf("/L_") > 2){
+                        if(key.indexOf("/l_") > 2){
                             legioncount++;
                         }
                         specslength++; 
