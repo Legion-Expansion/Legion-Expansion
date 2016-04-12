@@ -1,0 +1,149 @@
+{
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "!LOC:Colonel",
+  "description": "!LOC:Proxy Commander -- Builds advanced structures. Durable. High damage. Attacks everything but orbital.",
+  "strategic_icon_priority": 0,
+  "max_health": 8000,
+  "build_metal_cost": 7000,
+  "buildable_types": "(Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot) - Custom1 - Custom2 - Custom3 - Custom4",
+  "show_in_orbital_layer": true,
+  "armor_type": "AT_Commander",
+  "wreckage_health_frac": 0.5,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        10
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_SupportCommander",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 120,
+    "brake": 120,
+    "move_speed": 12,
+    "turn_speed": 90,
+    "turn_in_place": false
+  },
+  "physics": {
+    "radius": 9,
+    "sync_radius_to_extents": true
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/commanders/imperial_sub/imperial_sub.papa",
+    "animations": {
+      "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa",
+      "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle.papa",
+      "walk_stop": "/pa/units/commanders/imperial_base/imperial_base_anim_walkStop.papa",
+      "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
+    "walk_speed": 7
+  },
+  "teleportable": {},
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/bot_support_commander/bot_support_commander_tool_build_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/land/bot_support_commander/bot_support_commander_tool_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    }
+  ],
+  "events": {
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/sub_commander_gun_fire_laser",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 1.7
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "build",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "bone": "socket_leftMuzzle"
+    }
+  ],
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/bot/Sub_Commander_move_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/sub_commander"
+    }
+  },
+  "selection_icon": {
+    "diameter": 15
+  },
+  "mesh_bounds": [
+    12.6,
+    8.71255,
+    15.6193
+  ]
+}

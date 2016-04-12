@@ -1,0 +1,184 @@
+{
+  "display_name": "Base Commander",
+  "description": "Base Commander Description - If you're seeing this, something is wrong in your commander.",
+  "si_name": "commander",
+  "strategic_icon_priority": 0,
+  "max_health": 12500,
+  "build_metal_cost": 25000,
+  "buildable_types": "(CmdBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "show_in_orbital_layer": true,
+  "armor_type": "AT_Commander",
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        10
+      ]
+    }
+  },
+  "production": {
+    "energy": 2000,
+    "metal": 20
+  },
+  "storage": {
+    "energy": 45000,
+    "metal": 1500
+  },
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "navigation": {
+    "type": "amphibious",
+    "acceleration": 60,
+    "brake": -1,
+    "move_speed": 6,
+    "turn_speed": 90,
+    "turn_in_place": false,
+    "park_stamp": {
+      "shape": "sphere",
+      "cost": 20,
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    }
+  },
+  "physics": {
+    "radius": 9,
+    "sync_radius_to_extents": true
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "celestial",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 1
+        }
+      ]
+    }
+  },
+  "teleportable": {},
+  "tools": [
+    {
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/tools/uber_cannon/uber_cannon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ],
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json",
+    "air_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe_air.json",
+    "air_height_threshold": 50
+  },
+  "events": {
+    "fired": {
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+    },
+    "teleported": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "build",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "bone": "socket_leftMuzzle"
+    }
+  ],
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/commander"
+    }
+  },
+  "selection_icon": {
+    "diameter": 16.6
+  },
+  "mesh_bounds": [
+    12.6,
+    8.71255,
+    15.6193
+  ]
+}

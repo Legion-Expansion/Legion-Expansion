@@ -1,0 +1,153 @@
+{
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "display_name": "!LOC:Mend",
+  "description": "!LOC:Advanced Support Fabricator- Repairs much faster. Can build turrets in addition to mines.",
+  "max_health": 150,
+  "spawn_layers": "WL_LandHorizontal",
+  "build_metal_cost": 1200,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        6.8
+      ]
+    }
+  },
+  "buildable_types": "(CombatFabAdvBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "unit_types": [
+    "UNITTYPE_Construction",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "navigation": {
+    "type": "land-small",
+    "acceleration": 120,
+    "brake": -1,
+    "move_speed": 12,
+    "turn_speed": 720,
+    "group_preference": "back"
+  },
+  "physics": {
+    "radius": 4,
+    "allow_pushing": true
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv.papa",
+    "animations": {
+      "death01": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_death01.papa",
+      "idle": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_idle.papa",
+      "walk": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_run.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/fabrication_bot_combat_adv_anim_tree.json",
+    "walk_speed": 12,
+    "arrows": 5
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_build_arm.json",
+      "aim_bone": "bone_turretBack"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 1.3
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/bot/T2_fab_combat_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/T2_fab_combat"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "build",
+      "filename": "/pa/effects/specs/fab_combat_spray.pfx",
+      "bone": "socket_muzzleBack",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "selection_icon": {
+    "diameter": 13
+  },
+  "TEMP_texelinfo": 6.38702,
+  "mesh_bounds": [
+    4.4,
+    7.5,
+    10
+  ]
+}

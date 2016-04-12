@@ -1,0 +1,68 @@
+{
+  "base_spec": "/pa/units/commanders/imperial_delta/imperial_delta.json",
+  "max_health": 10000,
+  "buildable_types": "(CmdBuild -Air) - Custom1 - Custom2 - Custom3 - Custom4",
+  "production": {
+    "energy": 1000,
+    "metal": 200
+  },
+  "storage": {
+    "energy": 1000,
+    "metal": 1000
+  },
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/commanders/tutorial_ai_commander/tutorial_ai_commander_arm.json",
+      "aim_bone": "bone_turret"
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false
+    }
+  ]
+}

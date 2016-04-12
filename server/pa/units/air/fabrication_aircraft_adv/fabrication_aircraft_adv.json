@@ -1,0 +1,173 @@
+{
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "display_name": "!LOC:Advanced Fab Aircraft",
+  "description": "!LOC:Builder- Builds structures. Very mobile. Vulnerable",
+  "max_health": 100,
+  "build_metal_cost": 2200,
+  "buildable_types": "(Land & Structure & Advanced - Factory | Factory & Advanced & Air | FabAdvBuild | FabBuild | Titan & Air) - Custom1 - Custom2 - Custom3 - Custom4",
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        2.7
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Air",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "navigation": {
+    "type": "air",
+    "acceleration": 35,
+    "brake": 35,
+    "move_speed": 35,
+    "turn_speed": 180,
+    "circle_min_time": 1,
+    "circle_max_time": 3,
+    "aggressive_behavior": "circle"
+  },
+  "physics": {
+    "radius": 4,
+    "gravity_scalar": 1
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa",
+    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_adv_anim_tree.json",
+    "animations": {
+      "fly": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_anim_fly.papa"
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_build_arm.json",
+      "aim_bone": "bone_turret"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+      "effect_scale": 0.75
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/fab_air_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving_laterally",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/fabber_T2"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "build",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "bone": "socket_muzzle",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "moving",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+      "bone": "bone_rightWing",
+      "offset": [
+        1.386,
+        0,
+        -1.139
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "type": "moving",
+      "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
+      "bone": "bone_leftWing",
+      "offset": [
+        -1.386,
+        0,
+        -1.139
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ]
+    }
+  ],
+  "selection_icon": {
+    "diameter": 17
+  },
+  "mesh_bounds": [
+    10.5,
+    7.52258,
+    3.9
+  ],
+  "TEMP_texelinfo": 7.54279
+}
