@@ -136,7 +136,7 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_Artillery",
+    "UNITTYPE_Heavy",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
