@@ -41,6 +41,14 @@ body.legion{
   color: white;
 }
 
+.legion .username{
+  text-shadow: 0px 0px 20px rgba(70,0,0,0.9) !important;
+}
+
+.legion .update_title{
+  color: white !important;
+}
+
 .legion .copyright{
   color: white;
 }
@@ -52,7 +60,7 @@ body.legion{
 
 .legion .div_uber_watermark{
   background: url(coui://ui/main/game/start/img/img_uber_logo_hover.png) top center no-repeat !important;
-  background-size: 32px 44px;
+  background-size: 44px 44px;
 }
 
 .legion .div_kickstarter_watermark:hover{
