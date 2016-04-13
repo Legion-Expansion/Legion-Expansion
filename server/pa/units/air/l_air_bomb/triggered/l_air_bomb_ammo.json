@@ -21,7 +21,7 @@
   "max_velocity": 500,
   "min_velocity": 300,
   "model": {
-    "filename": "/pa/units/air/L_air_bomb/L_air_bomb.papa"
+    "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "physics": {
     "add_to_spatial_db": false
