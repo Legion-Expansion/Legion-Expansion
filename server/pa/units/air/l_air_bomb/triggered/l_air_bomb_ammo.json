@@ -9,7 +9,7 @@
   },
   "full_splash_damage_radius": 3,
   "fx_trail": {
-    "filename": "/pa/units/air/L_air_bomb/triggered/L_air_bomb.pfx",
+    "filename": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.pfx",
     "offset": [
       0.0,
       0.0,
