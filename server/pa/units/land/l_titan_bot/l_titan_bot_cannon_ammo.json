@@ -1,7 +1,7 @@
 {
   "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
-  "damage": 700,
+  "damage": 600,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
@@ -30,8 +30,8 @@
     "radius": 10
   },
   "spawn_layers": "WL_Air",
-  "splash_damage": 750,
+  "splash_damage": 600,
   "splash_damages_allies": false,
   "splash_radius": 10,
-  "turn_rate": 60
+  "turn_rate": 90
 }
