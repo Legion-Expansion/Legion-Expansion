@@ -1,21 +1,21 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "89755",
+  "build": "PTE",
   "category": [
-    "Units",
-    "Faction"
+    "titans",
+    "units",
+    "faction"
   ],
   "context": "client",
-  "date": "2016/04/03",
+  "date": "2016/04/17",
   "dependencies": [
-    "com.pa.legion-expansion.server-balance"
+    "com.pa.legion-expansion-server"
   ],
-  "description": "Supporting files necessary to play with the Legion Expansion server mod.",
-  "display_name": "Legion Expansion BETA",
-  "enabled": true,
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
+  "display_name": "Legion Expansion",
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
   "icon": "http://i.imgur.com/SsUYiL8.png",
-  "identifier": "com.pa.legion-expansion.client-balance",
+  "identifier": "com.pa.legion-expansion-client",
   "scenes": {
     "server_browser": [
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
@@ -58,12 +58,12 @@
     ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
-    ],  
-    "start":[
+    ],
+    "start": [
       "coui://ui/mods/com.pa.legion-expansion/start.js"
     ]
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.6-beta"
+  "version": "0.9-beta"
 }
