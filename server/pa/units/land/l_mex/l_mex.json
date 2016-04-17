@@ -1,7 +1,7 @@
 {
   "display_name": "Mass Extractor",
   "description": "Extracts Mass - can only be placed on metal deposits.",
-  "TEMP_texelinfo": 15.0973,
+  "TEMP_texelinfo": 24.0973,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15,
   "atrophy_rate": 2.5,
