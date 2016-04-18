@@ -1,0 +1,164 @@
+{
+  "display_name": "!LOC:Advanced Fabrication Bot",
+  "description": "!LOC:Builder- Builds advanced structures. Cheap. Fast. Less powerful than other builders.",
+  "TEMP_texelinfo": 6.38702,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0.25,
+        4.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/bot/T2_fab_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/T2_fab"
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 1800,
+  "buildable_types": "(Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Titan & Bot) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "socket_rightMuzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 150,
+  "mesh_bounds": [
+    6,
+    6,
+    5
+  ],
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_aimDown.papa",
+      "aim_up": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_aimUp.papa",
+      "death01": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_death01.papa",
+      "idle": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_idle.papa",
+      "walk": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_run.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/fabrication_bipedal_mech_anim_tree.json",
+    "filename": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv.papa",
+    "walk_speed": 4.9
+  },
+  "navigation": {
+    "acceleration": 160,
+    "brake": -1,
+    "group_preference": "back",
+    "move_speed": 16,
+    "turn_speed": 720,
+    "type": "land-small"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 4
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 12
+  },
+  "spawn_layers": "WL_LandHorizontal",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
+  ]
+}

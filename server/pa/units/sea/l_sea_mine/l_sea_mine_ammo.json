@@ -1,0 +1,13 @@
+{
+  "base_spec": "/pa/ammo/mine_pbaoe/mine_pbaoe.json",
+  "damage": 1700,
+  "damage_volume": {
+    "initial_radius": 25
+  },
+  "impact_decals": [
+    "/pa/effects/specs/scorch_b_01.json"
+  ],
+  "sim_fire_effect": "/pa/units/sea/l_sea_mine/l_sea_mine_ammo_explosion_ent.json",
+  "splash_damage": 1700,
+  "splash_radius": 25
+}

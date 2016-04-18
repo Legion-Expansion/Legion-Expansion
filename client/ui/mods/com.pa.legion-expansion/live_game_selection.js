@@ -31,7 +31,7 @@ if ( ! legionExpansionLoaded )
                         haslegionunit = true;
                         return haslegionunit;
                     }
-                    if(type.indexOf("/L_") > 2){
+                    if(type.indexOf("/l_") > 2){
                         haslegionunit = true;
                         return haslegionunit;
                     }

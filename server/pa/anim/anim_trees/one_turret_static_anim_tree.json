@@ -1,0 +1,26 @@
+{
+  "blend_root": {
+    "type": "bind_pose"
+  },
+  "skeleton_controls": [
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_pitch",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    },
+    {
+      "bone": "bone_recoil",
+      "recoil_dist": 1.8,
+      "restore_time": 0.75,
+      "type": "recoil",
+      "unit_event": "fired0"
+    }
+  ]
+}

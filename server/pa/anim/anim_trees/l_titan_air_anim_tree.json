@@ -1,0 +1,85 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "type": "bind_pose"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret_main",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_FPitch",
+      "type": "procedural_aim",
+      "weapon_index": 0
+    },
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret_side_left",
+      "type": "procedural_aim",
+      "weapon_index": 2
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_pitch_side_left",
+      "type": "procedural_aim",
+      "weapon_index": 2
+    },
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret_side_right",
+      "type": "procedural_aim",
+      "weapon_index": 3
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_pitch_side_right",
+      "type": "procedural_aim",
+      "weapon_index": 3
+    },
+    {
+      "bone": "bone_FLLRecoil",
+      "recoil_dist": 2.0,
+      "restore_time": 2,
+      "type": "recoil",
+      "unit_event": "fired0"
+    },
+    {
+      "bone": "bone_FLRRecoil",
+      "recoil_dist": 2.0,
+      "restore_time": 2,
+      "type": "recoil",
+      "unit_event": "fired00"
+    },
+    {
+      "bone": "bone_FRLRecoil",
+      "recoil_dist": 2.0,
+      "restore_time": 2,
+      "type": "recoil",
+      "unit_event": "fired0"
+    },
+    {
+      "bone": "bone_FRRRecoil",
+      "recoil_dist": 2.0,
+      "restore_time": 2,
+      "type": "recoil",
+      "unit_event": "fired0"
+    }
+  ]
+}

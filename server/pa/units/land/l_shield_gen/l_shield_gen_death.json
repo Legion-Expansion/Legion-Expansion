@@ -1,0 +1,18 @@
+{
+  "ammo_type": "PBAOE",
+  "burn_damage": 200,
+  "burn_radius": 137,
+  "damage": 0,
+  "damage_volume": {
+    "burnable_remove_radius": 100.0,
+    "delay": 0.6,
+    "initial_radius": 20.0,
+    "radius_accel": -40.0,
+    "radius_velocity": 200.0
+  },
+  "full_damage_splash_radius": 0,
+  "sim_fire_effect": "/pa/units/land/l_shield_gen/l_shield_gen_explosion_ent.json",
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0
+}

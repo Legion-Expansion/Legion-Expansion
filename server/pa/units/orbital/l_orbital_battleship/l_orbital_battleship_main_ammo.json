@@ -1,0 +1,24 @@
+{
+  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+  "damage": 800,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/laser_blast",
+      "effect_spec": "/pa/units/orbital/l_orbital_battleship/main_proj_hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/orbital/l_orbital_battleship/main_proj_trail.pfx"
+  },
+  "influence_radius": 800,
+  "initial_velocity": 400.0,
+  "lifetime": 1,
+  "max_velocity": 400.0,
+  "physics": {
+    "add_to_spatial_db": true,
+    "ignores_LOS": false,
+    "radius": 1
+  },
+  "splash_damage": 0,
+  "splash_radius": 0
+}

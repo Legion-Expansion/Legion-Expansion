@@ -242,7 +242,13 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+      "spec_id": "/pa/units/commanders/l_uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tracer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
@@ -254,13 +260,7 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_beam_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
-      "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_beam_aa_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_aa_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",

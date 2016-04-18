@@ -109,8 +109,7 @@
       "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa",
       "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
       "idle": "/pa/units/commanders/imperial_invictus/imperial_invictus_idle.papa",
-      "walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa",
-      "walk_stop": ""
+      "walk": "/pa/units/commanders/imperial_invictus/imperial_invictus_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
     "filename": "/pa/units/commanders/imperial_invictus/imperial_invictus.papa",
@@ -199,7 +198,7 @@
       "aim_bone": "turret",
       "muzzle_bone": "muzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/L_uber_cannon.json"
+      "spec_id": "/pa/units/commanders/l_uber_cannon.json"
     },
     {
       "aim_bone": "turret",

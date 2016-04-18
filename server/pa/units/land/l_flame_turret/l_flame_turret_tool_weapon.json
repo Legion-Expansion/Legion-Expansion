@@ -1,0 +1,19 @@
+{
+  "ammo_id": "/pa/units/land/l_flame_turret/l_flame_turret_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "firing_arc_pitch": 10,
+  "firing_arc_yaw": 10,
+  "idle_aim_delay": 5,
+  "max_range": 120,
+  "pitch_range": 45,
+  "pitch_rate": 90,
+  "rate_of_fire": 10,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 90
+}

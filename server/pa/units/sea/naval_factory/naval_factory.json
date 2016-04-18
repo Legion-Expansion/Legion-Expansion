@@ -1,0 +1,139 @@
+{
+  "display_name": "!LOC:Naval Factory",
+  "description": "!LOC:Basic manufacturing- Builds naval units.",
+  "TEMP_texelinfo": 44.3722,
+  "area_build_separation": 2,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 10,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_naval",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/sea/factory"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 600,
+  "buildable_types": "((Naval & Mobile & Basic) & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_large"
+    }
+  },
+  "factory_cooldown_time": 3.5,
+  "fx_offsets": [
+    {
+      "bone": "socket_muzzle01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "socket_muzzle02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
+  "max_health": 6000,
+  "mesh_bounds": [
+    20,
+    30,
+    12
+  ],
+  "model": {
+    "animations": {
+      "build_end": "/pa/units/sea/naval_factory/naval_factory_anim_end.papa",
+      "build_loop": "/pa/units/sea/naval_factory/naval_factory_anim_build.papa",
+      "build_start": "/pa/units/sea/naval_factory/naval_factory_anim_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+    "filename": "/pa/units/sea/naval_factory/naval_factory.papa"
+  },
+  "placement_size": [
+    40,
+    50
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "selection_icon": {
+    "diameter": 47.5
+  },
+  "spawn_layers": "WL_DeepWater",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/sea/naval_factory/naval_factory_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Structure",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 0
+}

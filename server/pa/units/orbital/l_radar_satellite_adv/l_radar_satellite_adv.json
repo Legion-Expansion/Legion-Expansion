@@ -1,0 +1,156 @@
+{
+  "display_name": "Kosmos",
+  "description": "Armored Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Orbital.",
+  "TEMP_texelinfo": 22.7385,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/orbital/radar"
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 4800,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Attack"
+  ],
+  "consumption": {
+    "energy": 9000
+  },
+  "energy_efficiency_requirement": 0.9,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_top_thing001",
+      "filename": "/pa/units/orbital/l_radar_satellite_adv/radar_on.pfx",
+      "offset": [
+        -1,
+        -0.8,
+        -0.2
+      ],
+      "orientation": [
+        -90,
+        -90,
+        0
+      ],
+      "type": "energy"
+    },
+    {
+      "bone": "bone_top_thing002",
+      "filename": "/pa/units/orbital/l_radar_satellite_adv/radar_on.pfx",
+      "offset": [
+        1,
+        -0.8,
+        -0.2
+      ],
+      "orientation": [
+        90,
+        -90,
+        0
+      ],
+      "type": "energy"
+    }
+  ],
+  "gravwell_velocity_multiplier": 6.0,
+  "max_health": 2000,
+  "mesh_bounds": [
+    25,
+    15,
+    15
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_recoil_anim_tree.json",
+    "filename": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv.papa"
+  },
+  "navigation": {
+    "acceleration": 10,
+    "brake": 10,
+    "move_speed": 10,
+    "turn_speed": 90
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 1000,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 600,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 1200,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 600,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "radar",
+          "layer": "underwater",
+          "radius": 1000,
+          "shape": "capsule",
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -33
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "fire_event": "fired",
+      "muzzle_bone": [
+        "socket_muzzle001",
+        "socket_muzzle002"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Recon",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

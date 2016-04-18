@@ -1,0 +1,37 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "type": "bind_pose"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "bone": "bone_push",
+      "recoil_dist": 3.0,
+      "restore_time": 3.0,
+      "type": "recoil",
+      "unit_event": "fired0"
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turretMain",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader"
+    }
+  ]
+}

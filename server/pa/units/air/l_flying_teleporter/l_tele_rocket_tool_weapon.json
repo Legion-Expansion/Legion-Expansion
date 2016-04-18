@@ -1,0 +1,30 @@
+{
+  "ammo_capacity": 6,
+  "ammo_demand": 1,
+  "ammo_id": [
+    {
+      "id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_ammo.json",
+      "layer": "WL_Air"
+    }
+  ],
+  "ammo_per_shot": 2,
+  "ammo_source": "time",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "firing_arc_pitch": 360,
+  "firing_arc_yaw": 360,
+  "firing_standard_deviation": 30,
+  "max_range": 150,
+  "pitch_range": 0,
+  "pitch_rate": 3600,
+  "rate_of_fire": 2,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 0,
+  "yaw_rate": 3600
+}

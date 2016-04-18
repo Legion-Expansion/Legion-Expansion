@@ -1,0 +1,147 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "aim_bone_root": "bone_turret",
+        "child": {
+          "entries": [
+            {
+              "name": "idle",
+              "node": {
+                "anim_name": "idle",
+                "events": [],
+                "looping": true,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "duration": 0.2,
+                    "func": "is_moving",
+                    "target": "walking"
+                  },
+                  "transition_reverse": {
+                    "duration": 0.2,
+                    "func": "is_moving",
+                    "target": "walking"
+                  }
+                }
+              ],
+              "type": "item"
+            },
+            {
+              "name": "walking",
+              "node": {
+                "anim_name": "walk",
+                "events": [
+                  {
+                    "parameters": {
+                      "cue": "/SE/Movement/commander/Commander_step"
+                    },
+                    "time": 0.46,
+                    "type": "audio"
+                  },
+                  {
+                    "parameters": {
+                      "bone": "bone_footRight",
+                      "bone_offset": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "effect_scale": 1.0,
+                      "spec": "/pa/effects/specs/commander_step.pfx"
+                    },
+                    "time": 0.46,
+                    "type": "effect"
+                  },
+                  {
+                    "parameters": {
+                      "cue": "/SE/Movement/commander/Commander_step"
+                    },
+                    "time": 1.26,
+                    "type": "audio"
+                  },
+                  {
+                    "parameters": {
+                      "bone": "bone_footLeft",
+                      "bone_offset": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "effect_scale": 1.0,
+                      "spec": "/pa/effects/specs/commander_step.pfx"
+                    },
+                    "time": 1.26,
+                    "type": "effect"
+                  }
+                ],
+                "looping": true,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "scale_to_move_speed": true,
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "duration": 0.4,
+                    "func": "not_moving",
+                    "target": "idle"
+                  },
+                  "transition_reverse": {
+                    "duration": 0.4,
+                    "func": "not_moving",
+                    "target": "idle"
+                  }
+                }
+              ],
+              "type": "item"
+            }
+          ],
+          "type": "sequence"
+        },
+        "node_aim_down": {
+          "type": "bind_pose"
+        },
+        "node_aim_neutral": {
+          "type": "bind_pose"
+        },
+        "node_aim_up": {
+          "type": "bind_pose"
+        },
+        "type": "aim_blend"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "rotation_axis": "z",
+      "rotation_bone": "bone_turret",
+      "type": "procedural_aim"
+    },
+    {
+      "rotation_axis": "x",
+      "rotation_bone": "bone_pitch",
+      "type": "procedural_aim"
+    },
+    {
+      "bone": "bone_recoil",
+      "recoil_dist": 1.0,
+      "restore_time": 1,
+      "type": "recoil",
+      "unit_event": "fired"
+    }
+  ]
+}

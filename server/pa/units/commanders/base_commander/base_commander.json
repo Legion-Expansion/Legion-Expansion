@@ -1,0 +1,184 @@
+{
+  "display_name": "Base Commander",
+  "description": "Base Commander Description - If you're seeing this, something is wrong in your commander.",
+  "armor_type": "AT_Commander",
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        10
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/commander"
+    }
+  },
+  "build_metal_cost": 25000,
+  "buildable_types": "(CmdBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Attack",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use",
+    "ORDER_FireSecondaryWeapon"
+  ],
+  "death_weapon": {
+    "air_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe_air.json",
+    "air_height_threshold": 50,
+    "ground_ammo_spec": "/pa/ammo/nuke_pbaoe/nuke_pbaoe.json"
+  },
+  "events": {
+    "fired": {
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+    },
+    "teleported": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "max_health": 12500,
+  "mesh_bounds": [
+    12.6,
+    8.71255,
+    15.6193
+  ],
+  "navigation": {
+    "acceleration": 60,
+    "brake": -1,
+    "move_speed": 6,
+    "park_stamp": {
+      "cost": 20,
+      "shape": "sphere",
+      "type_data": [
+        {
+          "move_type": "land-small",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "amphibious",
+          "stamp_type": "simple"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "simple"
+        }
+      ]
+    },
+    "turn_in_place": false,
+    "turn_speed": 90,
+    "type": "amphibious"
+  },
+  "physics": {
+    "radius": 9,
+    "sync_radius_to_extents": true
+  },
+  "production": {
+    "energy": 2000,
+    "metal": 20
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "celestial",
+          "radius": 1,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 16.6
+  },
+  "show_in_orbital_layer": true,
+  "si_name": "commander",
+  "storage": {
+    "energy": 45000,
+    "metal": 1500
+  },
+  "strategic_icon_priority": 0,
+  "teleportable": {},
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/uber_cannon/uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Commander",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_NoBuild"
+  ]
+}

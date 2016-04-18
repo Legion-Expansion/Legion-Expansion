@@ -1,0 +1,23 @@
+{
+  "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    "AT_Orbital": 0.0
+  },
+  "burn_damage": 200,
+  "burn_radius": 137,
+  "damage": 3000,
+  "damage_volume": {
+    "burnable_remove_radius": 100.0,
+    "delay": 1.5,
+    "initial_radius": 9.5,
+    "radius_accel": -35.0,
+    "radius_velocity": 350.0
+  },
+  "full_damage_splash_radius": 10,
+  "impact_decals": [
+    "/pa/effects/specs/nuke_scorch_01.json"
+  ],
+  "sim_fire_effect": "/pa/units/land/l_necromancer/death_weapon/necromancer_explosion.json",
+  "splash_damages_allies": true,
+  "splash_radius": 80
+}

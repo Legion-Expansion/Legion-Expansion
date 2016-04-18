@@ -1,0 +1,34 @@
+{
+  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+  "damage": 5600,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+      "effect_scale": 0.75,
+      "effect_spec": "/pa/units/land/l_titan_vehicle/proj_hit.pfx"
+    }
+  },
+  "full_damage_splash_radius": 10,
+  "fx_trail": {
+    "filename": "/pa/units/land/l_titan_vehicle/main_proj_trail.pfx",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "initial_velocity": 300.0,
+  "lifetime": 4,
+  "model": {
+    "filename": ""
+  },
+  "physics": {
+    "add_to_spatial_db": false,
+    "gravity_scalar": 10,
+    "radius": 10
+  },
+  "splash_damage": 5600,
+  "splash_damages_allies": false,
+  "splash_radius": 25
+}

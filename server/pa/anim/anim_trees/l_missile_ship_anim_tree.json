@@ -1,0 +1,173 @@
+{
+  "blend_root": {
+    "nodes": {
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "entries": [
+          {
+            "name": "deploy",
+            "node": {
+              "anim_name": "deploy",
+              "looping": false,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          },
+          {
+            "name": "idle",
+            "node": {
+              "anim_name": "open",
+              "looping": true,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "is_attached",
+                  "target": "idle"
+                },
+                "transition_reverse": {
+                  "func": "is_attached",
+                  "target": "idle"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          }
+        ],
+        "transition_seek": {
+          "false_target": "idle",
+          "func": "is_attached",
+          "true_target": "idle"
+        },
+        "type": "sequence"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "bone": "recoil001",
+      "recoil_dist": 1.5,
+      "restore_time": 1,
+      "type": "recoil"
+    },
+    {
+      "bone": "recoil002",
+      "recoil_dist": 1.5,
+      "restore_time": 1,
+      "type": "recoil"
+    },
+    {
+      "bone": "recoil003",
+      "recoil_dist": 1.5,
+      "restore_time": 1,
+      "type": "recoil"
+    },
+    {
+      "bone": "recoil004",
+      "recoil_dist": 1.5,
+      "restore_time": 1,
+      "type": "recoil"
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "turret001",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 0
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "pitch001",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 0
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "turret002",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 1
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "pitch002",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 1
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "turret003",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 2
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "pitch003",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 2
+    },
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "turret004",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 3
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "pitch004",
+        "type": "procedural_aim"
+      },
+      "lerp_func": "not_being_built",
+      "type": "fader",
+      "weapon_index": 3
+    }
+  ]
+}
