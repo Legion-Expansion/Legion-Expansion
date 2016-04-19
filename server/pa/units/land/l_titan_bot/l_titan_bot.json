@@ -91,8 +91,8 @@
   "has_death_effects": true,
   "max_health": 80000,
   "mesh_bounds": [
-    37,
-    36,
+    30,
+    30,
     60
   ],
   "model": {
@@ -143,14 +143,14 @@
         }
       ]
     },
-    "turn_accel": 30,
+    "turn_accel": 40,
     "turn_in_place": true,
-    "turn_speed": 60,
+    "turn_speed": 50,
     "type": "amphibious-large"
   },
   "physics": {
-    "orient_interp_rate": 60.0,
-    "radius": 10
+    "orient_interp_rate": 50.0,
+    "radius": 7
   },
   "recon": {
     "observer": {
@@ -205,7 +205,6 @@
         "rocket004",
         "rocket004",
         "rocket004",
-        "rocket014",
         "rocket014",
         "rocket014",
         "rocket014",
