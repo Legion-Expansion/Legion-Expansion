@@ -4,8 +4,8 @@
   "collision_response": "impact",
   "damage": 150,
   "full_damage_splash_radius": 5,
-  "fx_beam_spec": "/pa/units/land/L_titan_bot/beam.pfx",
-  "fx_collision_spec": "/pa/units/land/L_titan_bot/beam_hit.pfx",
+  "fx_beam_spec": "/pa/units/land/l_titan_bot/beam.pfx",
+  "fx_collision_spec": "/pa/units/land/l_titan_bot/beam_hit.pfx",
   "splash_damage": 150,
   "splash_radius": 5
 }
