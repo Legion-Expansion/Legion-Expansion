@@ -224,15 +224,15 @@
     },
     {
       "aim_bone": "bone_rightFoot",
-      "muzzle_bone": "bone_rightFoot",
       "fire_event": "fired3",
+      "muzzle_bone": "bone_rightFoot",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     },
     {
       "aim_bone": "bone_leftFoot",
-      "muzzle_bone": "bone_leftFoot",
       "fire_event": "fired3",
+      "muzzle_bone": "bone_leftFoot",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     }
