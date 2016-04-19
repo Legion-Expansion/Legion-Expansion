@@ -36,7 +36,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
-      "effect_spec": "/pa/units/land/unit_cannon/unit_cannon_fire.pfx socket_muzzle"
+      "effect_spec": "/pa/effects/specs/none.pfx socket_muzzle"
     }
   },
   "factory": {
@@ -45,10 +45,6 @@
     "hide_stored_units": true,
     "pass_on_orders": false,
     "spawn_points": [
-      "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
       "bone_rotate",
       "bone_rotate",
       "bone_rotate",
@@ -97,51 +93,6 @@
       "bone": "bone_laser006",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
       "type": "build"
-    },
-    {
-      "bone": "socket_muzzle",
-      "filename": "/pa/units/orbital/l_orbital_dropper/beam.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "enabled"
-    },
-    {
-      "bone": "bone_rotate",
-      "filename": "/pa/units/orbital/l_orbital_dropper/ground.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "enabled"
-    },
-    {
-      "bone": "bone_rotate",
-      "filename": "/pa/units/orbital/l_orbital_dropper/teleporter_glow.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
-      "type": "enabled"
     }
   ],
   "max_health": 3000,
@@ -179,7 +130,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 120,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
@@ -187,11 +138,6 @@
   },
   "selection_icon": {
     "diameter": -70
-  },
-  "teleporter": {
-    "energy_demand": 1000,
-    "spawn_radius": 20,
-    "type": "orbital"
   },
   "tools": [
     {
@@ -209,6 +155,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Structure",
+    "UNITTYPE_Artillery",
     "UNITTYPE_Orbital",
     "UNITTYPE_Factory",
     "UNITTYPE_Advanced",

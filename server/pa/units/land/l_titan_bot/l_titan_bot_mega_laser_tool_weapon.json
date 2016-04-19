@@ -1,20 +1,28 @@
 {
+  "ammo_capacity": 5000,
+  "ammo_demand": 1000,
   "ammo_id": "/pa/units/land/l_titan_bot/l_titan_bot_mega_laser_ammo.json",
+  "ammo_per_shot": 333,
+  "ammo_source": "energy",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "charge_ammo_when_targeting": false,
   "firing_arc_pitch": 0,
-  "firing_arc_yaw": 10,
-  "idle_aim_delay": 3.0,
+  "firing_arc_yaw": 0,
+  "idle_aim_delay": 2.0,
   "max_range": 250,
   "pitch_range": 80,
   "pitch_rate": 90,
-  "rate_of_fire": 0.3,
-  "spread_fire": true,
+  "rate_of_fire": 10,
+  "spread_fire": false,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_Seafloor",
+    "WL_Underwater",
     "WL_WaterSurface"
   ],
   "yaw_range": 180,
-  "yaw_rate": 70
+  "yaw_rate": 40
 }

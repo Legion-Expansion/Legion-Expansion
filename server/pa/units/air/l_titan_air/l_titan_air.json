@@ -29,14 +29,14 @@
     "died": {
       "audio_cue": "",
       "effect_scale": 1.0,
-      "effect_spec": ""
+      "effect_spec": "/pa/units/air/titan_air/titan_air_death.pfx bone_root"
     },
     "fired0": {
-      "audio_cue": "/SE/UI/UI_lobby_match_found",
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
       "effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle001 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle002"
     },
     "fired1": {
-      "audio_cue": "/SE/UI/UI_lobby_match_found",
+      "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
       "effect_spec": "/pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle003 /pa/units/air/titan_air/titan_air_muzzle_flash.pfx socket_muzzle004"
     },
     "fired2": {
@@ -101,6 +101,7 @@
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
     "move_speed": 30,
+    "turn_accel": 20,
     "turn_speed": 50,
     "vertical_speed": 50
   },

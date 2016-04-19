@@ -92,11 +92,11 @@
     "filename": "/pa/units/air/l_air_scout_adv/l_air_scout_adv.papa"
   },
   "navigation": {
-    "acceleration": 50,
+    "acceleration": 60,
     "bank_factor": 2,
-    "brake": 50,
+    "brake": 60,
     "move_speed": 90,
-    "turn_speed": 120
+    "turn_speed": 180
   },
   "recon": {
     "observer": {
@@ -104,35 +104,35 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 250,
+          "radius": 300,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 250,
+          "radius": 300,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "mine",
-          "radius": 250,
+          "radius": 300,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "orbital",
-          "radius": 250,
+          "radius": 300,
           "shape": "capsule",
           "uses_energy": true
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 250,
+          "radius": 300,
           "shape": "capsule",
           "uses_energy": true
         }

@@ -259,8 +259,8 @@
   ],
   "max_health": 50000,
   "mesh_bounds": [
+    38,
     42,
-    49,
     22.469
   ],
   "model": {
@@ -273,8 +273,8 @@
     "filename": "/pa/units/land/l_titan_vehicle/l_titan_vehicle.papa"
   },
   "navigation": {
-    "acceleration": 20,
-    "brake": 20,
+    "acceleration": 5,
+    "brake": 5,
     "move_speed": 10,
     "park_stamp": {
       "cost": 10,
@@ -310,14 +310,14 @@
         }
       ]
     },
-    "turn_accel": 15,
+    "turn_accel": 10,
     "turn_in_place": true,
-    "turn_speed": 30,
+    "turn_speed": 25,
     "type": "hover-large"
   },
   "physics": {
     "orient_interp_rate": 90.0,
-    "radius": 8
+    "radius": 5
   },
   "recon": {
     "observer": {

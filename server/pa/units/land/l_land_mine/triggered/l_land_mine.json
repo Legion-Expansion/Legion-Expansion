@@ -1,5 +1,5 @@
 {
-  "display_name": "Legion Land Mine",
+  "display_name": "Land Mine",
   "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 1,

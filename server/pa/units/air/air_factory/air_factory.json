@@ -1,0 +1,343 @@
+{
+  "display_name": "!LOC:Air Factory",
+  "description": "!LOC:Basic manufacturing- Builds air units.",
+  "TEMP_texelinfo": 37.6046,
+  "area_build_separation": 2,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 12,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_air",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 600,
+  "buildable_types": "((Air & Mobile & Basic | Air & Fabber & Basic & Mobile) & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "death": {
+    "decals": [
+      "/pa/effects/specs/scorch_c_01.json"
+    ]
+  },
+  "events": {
+    "died": {
+      "effect_scale": 1
+    }
+  },
+  "factory_cooldown_time": 2,
+  "fx_offsets": [
+    {
+      "bone": "bone_outsideRing",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -6.45,
+        6.45,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        -45
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_outsideRing",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        6.45,
+        6.45,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        45
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_outsideRing",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        6.45,
+        -6.45,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        135
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_outsideRing",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -6.45,
+        -6.45,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        -135
+      ],
+      "type": "build"
+    }
+  ],
+  "headlights": [
+    {
+      "bone": "bone_platform",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 1,
+      "near_height": 2.4,
+      "near_width": 2.4,
+      "offset": [
+        5.67,
+        5.67,
+        2.5
+      ],
+      "orientation": [
+        -35,
+        31,
+        0
+      ]
+    },
+    {
+      "bone": "bone_platform",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 1,
+      "near_height": 2.4,
+      "near_width": 2.4,
+      "offset": [
+        5.67,
+        -5.67,
+        2.5
+      ],
+      "orientation": [
+        -35,
+        -31,
+        0
+      ]
+    },
+    {
+      "bone": "bone_platform",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 1,
+      "near_height": 2.4,
+      "near_width": 2.4,
+      "offset": [
+        -5.67,
+        5.67,
+        2.5
+      ],
+      "orientation": [
+        35,
+        31,
+        0
+      ]
+    },
+    {
+      "bone": "bone_platform",
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
+      "far_distance": 15,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 3,
+      "near_distance": 1,
+      "near_height": 2.4,
+      "near_width": 2.4,
+      "offset": [
+        -5.67,
+        -5.67,
+        2.5
+      ],
+      "orientation": [
+        35,
+        -31,
+        0
+      ]
+    }
+  ],
+  "lamps": [
+    {
+      "color": [
+        0.1,
+        1,
+        0.1
+      ],
+      "intensity": 2,
+      "offset": [
+        4,
+        -11.1,
+        6
+      ],
+      "radius": 8
+    },
+    {
+      "color": [
+        0.1,
+        1,
+        0.1
+      ],
+      "intensity": 2,
+      "offset": [
+        -4,
+        -11.1,
+        6
+      ],
+      "radius": 8
+    },
+    {
+      "color": [
+        1,
+        0,
+        0
+      ],
+      "intensity": 2,
+      "offset": [
+        5,
+        14.12,
+        4.54
+      ],
+      "radius": 4
+    }
+  ],
+  "max_health": 6000,
+  "mesh_bounds": [
+    30,
+    30,
+    15
+  ],
+  "model": [
+    {
+      "animations": {
+        "build_end": "/pa/units/air/air_factory/air_factory_anim_end.papa",
+        "build_loop": "/pa/units/air/air_factory/air_factory_anim_build.papa",
+        "build_start": "/pa/units/air/air_factory/air_factory_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/air/air_factory/air_factory.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_air.json"
+    },
+    {
+      "animations": {
+        "build_end": "/pa/units/air/air_factory/air_factory_anim_end.papa",
+        "build_loop": "/pa/units/air/air_factory/air_factory_anim_build.papa",
+        "build_start": "/pa/units/air/air_factory/air_factory_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/sea/air_factory/air_factory.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "physics": {
+    "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
+  },
+  "placement_size": [
+    40,
+    40
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "rolloff_dirs": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "selection_icon": {
+    "diameter": 49.5
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/air/air_factory/air_factory_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Air",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 0
+}

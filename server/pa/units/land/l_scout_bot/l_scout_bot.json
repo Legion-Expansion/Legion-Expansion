@@ -1,5 +1,5 @@
 {
-  "display_name": "Creeper",
+  "display_name": "Investigator",
   "description": "Scout Bot - Deploys into a Hidden Short Range Radar via Alt-Fire.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
@@ -38,6 +38,9 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
+  "death": {
+    "decals": []
+  },
   "events": {
     "died": {},
     "fired": {

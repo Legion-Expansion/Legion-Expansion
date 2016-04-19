@@ -8,6 +8,11 @@
         0,
         0,
         3.6
+      ],
+      "root": [
+        0,
+        0,
+        0
       ]
     }
   },
@@ -30,7 +35,7 @@
       }
     },
     "selection_response": {
-      "cue": "/SE/Selection/bot/fab"
+      "cue": "/SE/Selection/bot/T2_fab"
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
@@ -65,6 +70,7 @@
       "type": "build"
     }
   ],
+  "guard_layer": "WL_LandHorizontal",
   "max_health": 150,
   "mesh_bounds": [
     4,
@@ -91,6 +97,24 @@
     "allow_pushing": true,
     "radius": 4
   },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
   "selection_icon": {
     "diameter": -9
   },
@@ -100,6 +124,9 @@
       "spec_id": "/pa/units/land/l_fabrication_bot_adv/l_fabrication_bot_adv_build_arm.json"
     }
   ],
+  "transportable": {
+    "size": 1
+  },
   "unit_types": [
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",

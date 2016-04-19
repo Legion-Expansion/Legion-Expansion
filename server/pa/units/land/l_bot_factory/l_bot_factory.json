@@ -94,6 +94,26 @@
         0
       ],
       "type": "build"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "offset": [
+        -14,
+        -5.5,
+        19
+      ],
+      "type": "enabled"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/effects/specs/factory_smoke.pfx",
+      "offset": [
+        -14,
+        5.5,
+        19
+      ],
+      "type": "enabled"
     }
   ],
   "max_health": 6000,

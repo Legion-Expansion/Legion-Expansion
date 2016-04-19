@@ -97,69 +97,12 @@
                   "transition_forward": {
                     "duration": 0.4,
                     "func": "not_moving",
-                    "target": "walk_stop"
+                    "target": "idle"
                   },
                   "transition_reverse": {
                     "duration": 0.4,
                     "func": "not_moving",
-                    "target": "walk_stop"
-                  }
-                }
-              ],
-              "type": "item"
-            },
-            {
-              "name": "walk_stop",
-              "node": {
-                "anim_name": "walk_stop",
-                "events": [
-                  {
-                    "parameters": {
-                      "cue": "/SE/Movement/commander/Commander_step"
-                    },
-                    "time": 0.36,
-                    "type": "audio"
-                  },
-                  {
-                    "parameters": {
-                      "cue": "/SE/Movement/commander/Commander_step"
-                    },
-                    "time": 0.95,
-                    "type": "audio"
-                  },
-                  {
-                    "parameters": {
-                      "cue": "/SE/Movement/commander/Commander_step"
-                    },
-                    "time": 1.33,
-                    "type": "audio"
-                  }
-                ],
-                "looping": false,
-                "type": "playback"
-              },
-              "reset": "playback_reset",
-              "transitions": [
-                {
-                  "transition_forward": {
-                    "func": "anim_complete",
                     "target": "idle"
-                  },
-                  "transition_reverse": {
-                    "func": "anim_complete",
-                    "target": "idle"
-                  }
-                },
-                {
-                  "transition_forward": {
-                    "duration": 0.2,
-                    "func": "is_moving",
-                    "target": "walking"
-                  },
-                  "transition_reverse": {
-                    "duration": 0.2,
-                    "func": "is_moving",
-                    "target": "walking"
                   }
                 }
               ],

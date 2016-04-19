@@ -1,5 +1,5 @@
 {
-  "display_name": "Legion Advanced Radar Satellite",
+  "display_name": "Kosmos",
   "description": "Armored Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Orbital.",
   "TEMP_texelinfo": 22.7385,
   "attachable": {
@@ -39,12 +39,32 @@
   "fx_offsets": [
     {
       "bone": "bone_top_thing001",
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish01_on.pfx",
+      "filename": "/pa/units/orbital/l_radar_satellite_adv/radar_on.pfx",
+      "offset": [
+        -1,
+        -0.8,
+        -0.2
+      ],
+      "orientation": [
+        -90,
+        -90,
+        0
+      ],
       "type": "energy"
     },
     {
       "bone": "bone_top_thing002",
-      "filename": "/pa/units/orbital/radar_satellite_adv/radar_satellite_adv_dish02_on.pfx",
+      "filename": "/pa/units/orbital/l_radar_satellite_adv/radar_on.pfx",
+      "offset": [
+        1,
+        -0.8,
+        -0.2
+      ],
+      "orientation": [
+        90,
+        -90,
+        0
+      ],
       "type": "energy"
     }
   ],

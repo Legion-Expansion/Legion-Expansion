@@ -1,7 +1,16 @@
 {
   "ammo_capacity": 3,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_ammo.json",
+  "ammo_id": [
+    {
+      "id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_land_ammo.json",
+      "layer": "WL_LandHorizontal"
+    },
+    {
+      "id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_water_ammo.json",
+      "layer": "WL_Seafloor"
+    }
+  ],
   "ammo_per_shot": 3,
   "ammo_source": "time",
   "arc_type": "ARC_high",
@@ -21,7 +30,8 @@
   "self_destruct": true,
   "start_fully_charged": false,
   "target_layers": [
-    "WL_LandHorizontal"
+    "WL_LandHorizontal",
+    "WL_Seafloor"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,

@@ -1,6 +1,6 @@
 {
   "display_name": "Talos",
-  "description": "Medium Range Anti-Air Ship. Only Attacks Air.",
+  "description": "Frigate- Only Attacks Air.",
   "TEMP_texelinfo": 21.4,
   "audio": {
     "loops": {

@@ -6,9 +6,9 @@
   "date": "2015/02/02",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
-    "com.wondible.pa.xenophobia",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
-    "com.pa.monty-client"
+    "com.pa.monty-client",
+    "com.wondible.pa.weapons_tracking"
   ],
   "description": " ",
   "display_name": " ",

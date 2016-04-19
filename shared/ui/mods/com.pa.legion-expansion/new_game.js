@@ -28,7 +28,7 @@ if (!legionExpansionLoaded) {
         model.legionserver_checkLoaded = function(){
             api.mods.getMountedMods('server', function(mods){
                 // check to see if server mod (and optionally a dev version) are loaded
-                var loadedserver =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.server','com.pa.legion-expansion.server-balance', 'com.pa.monty-server' ] ).length > 0;
+                var loadedserver =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion-server','com.pa.legion-expansion-server-balance', 'com.pa.monty-server' ] ).length > 0;
                 model.legionserver_isLoaded(loadedserver);
             });
         }
@@ -42,7 +42,7 @@ if (!legionExpansionLoaded) {
             api.mods.getMountedMods( 'client', function ( mods )
             {
                 // check to see if client mod (and optionally a dev version) are loaded
-                var loadedclient =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion.client','com.pa.legion-expansion.client-balance', 'com.pa.monty-client' ] ).length > 0;
+                var loadedclient =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion-client','com.pa.legion-expansion-client-balance', 'com.pa.monty-client' ] ).length > 0;
                 model.legionclient_isLoaded ( loadedclient );
                 model.legionclient_isChecked(true);
                 console.log("legion expansion client mod loaded : " + loaded );

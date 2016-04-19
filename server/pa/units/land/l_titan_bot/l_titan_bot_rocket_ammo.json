@@ -10,12 +10,15 @@
     }
   },
   "flight_type": "Staged",
+  "fx_trail": {
+    "filename": "/pa/units/land/l_titan_bot/trail.pfx"
+  },
   "influence_radius": 400,
-  "initial_velocity": 160.0,
+  "initial_velocity": 75.0,
   "lifetime": 10,
-  "max_velocity": 160.0,
+  "max_velocity": 200.0,
   "model": {
-    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+    "filename": "/pa/units/air/missile_tactical/missile_tactical.papa"
   },
   "physics": {
     "add_to_spatial_db": false,
@@ -30,7 +33,7 @@
       "ignores_LOS": true,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_duration": 200,
+      "stage_duration": 300,
       "stage_turn_rate": 0
     },
     {

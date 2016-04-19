@@ -1,0 +1,10 @@
+{
+  "base_spec": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_land_ammo.json",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Build_Complete/radar",
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_water_ent.json"
+}
