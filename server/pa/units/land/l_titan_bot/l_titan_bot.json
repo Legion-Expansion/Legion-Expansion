@@ -53,6 +53,10 @@
     "fired2": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
       "effect_spec": "/pa/units/land/l_titan_bot/vent_smoke.pfx rocket004 /pa/units/land/l_titan_bot/vent_smoke.pfx rocket014"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
+      "effect_scale": 0.2
     }
   },
   "fx_offsets": [
@@ -91,8 +95,8 @@
   "has_death_effects": true,
   "max_health": 80000,
   "mesh_bounds": [
-    30,
-    30,
+    5,
+    5,
     60
   ],
   "model": {
@@ -221,12 +225,14 @@
     {
       "aim_bone": "bone_rightFoot",
       "muzzle_bone": "bone_rightFoot",
+      "fire_event": "fired3",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     },
     {
       "aim_bone": "bone_leftFoot",
       "muzzle_bone": "bone_leftFoot",
+      "fire_event": "fired3",
       "record_index": -1,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_stomp_tool_weapon.json"
     }
