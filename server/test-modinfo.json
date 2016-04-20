@@ -6,8 +6,6 @@
   "date": "2015/02/02",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
-    "com.wondible.pa.icon_extensions",
-    "com.wondible.pa.icon_reloader",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.monty-client",
     "com.wondible.pa.weapons_tracking"

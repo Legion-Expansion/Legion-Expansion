@@ -687,13 +687,27 @@
         si_fallback: ["anti_nuke_launcher_ammo"],
         preferred_builds: [
           ["L_ammo", 13]
-        ]
+        ],
+        ammo_build_hover: {
+          name: 'Legion Iron Dome Interceptor',
+          description: '!LOC:Anti-nuke - Intercepts incoming nuclear missiles.',
+          cost: 6750,
+          sicon_override: 'l_anti_nuke_launcher_ammo',
+          damage: 1
+        },
       }, {
         spec_id: "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json",
         si_fallback: ["nuke_launcher_ammo"],
         preferred_builds: [
           ["L_ammo", 14]
-        ]
+        ],
+        ammo_build_hover: {
+          name: 'Supernova Strategic Warhead',
+          description: 'Long range, high damage ballistic missile.',
+          cost: 50000,
+          sicon_override: 'l_nuke_launcher_ammo',
+          damage: 33000
+        },
       },
 
       /*

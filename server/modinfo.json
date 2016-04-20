@@ -10,8 +10,6 @@
   "date": "2016/04/17",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
-    "com.wondible.pa.icon_extensions",
-    "com.wondible.pa.icon_reloader",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.legion-expansion-client",
     "com.wondible.pa.weapons_tracking"

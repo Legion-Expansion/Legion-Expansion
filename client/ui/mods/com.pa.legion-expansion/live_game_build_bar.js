@@ -13,8 +13,23 @@ if ( ! legionExpansionLoaded )
         var patchName = 'legionExpansion live_game_build_bar.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
-        
+
         var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+
+        if (model.BuildSet && model.BuildSet.tabsTemplate) {
+            model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
+                ['L_factory', '!LOC:factory', true],
+                ['L_combat', '!LOC:combat', true],
+                ['L_utility', '!LOC:utility', true],
+                ['L_vehicle', '!LOC:vehicle'],
+                ['L_bot', '!LOC:bot'],
+                ['L_air', '!LOC:air'],
+                ['L_sea', '!LOC:sea'],
+                ['L_orbital', '!LOC:orbital', true],
+                ['L_orbital_structure', 'orbital structure', true],
+                ['L_ammo', '!LOC:ammo', true],
+            ]);
+        }
                     
         ko.computed(function() {
             var buildSet = model.buildSet();
@@ -127,4 +142,3 @@ if ( ! legionExpansionLoaded )
         console.log(JSON.stringify(e));
     }
 }
-
