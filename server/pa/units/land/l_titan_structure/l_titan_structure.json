@@ -1,6 +1,6 @@
 {
   "display_name": "Holocene",
-  "description": "Summons a laser from the heavens.",
+  "description": "Doomsday Device- Destroys the planet it's built on once finished.",
   "TEMP_texelinfo": 32.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,
