@@ -1,13 +1,13 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "PTE",
+  "build": "94132",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "server",
-  "date": "2016/04/17",
+  "date": "2016/04/22",
   "dependencies": [
     "com.wondible.pa.hodgepodge",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
