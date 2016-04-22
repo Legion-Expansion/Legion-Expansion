@@ -1,0 +1,49 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "anim_name": "idle",
+        "type": "playback"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "child": {
+        "rotation_axis": "z",
+        "rotation_bone": "bone_turret",
+        "type": "procedural_aim",
+        "weapon_index": 1
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "child": {
+        "rotation_axis": "x",
+        "rotation_bone": "bone_pitch",
+        "type": "procedural_aim",
+        "weapon_index": 1
+      },
+      "lerp_func": "is_active",
+      "type": "fader"
+    },
+    {
+      "bone": "bone_recoil",
+      "recoil_dist": 2.0,
+      "restore_time": 0.5,
+      "type": "recoil",
+      "unit_event": "fired1"
+    }
+  ]
+}

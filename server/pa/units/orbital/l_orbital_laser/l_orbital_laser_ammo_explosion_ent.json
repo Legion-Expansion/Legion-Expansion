@@ -1,0 +1,13 @@
+{
+  "recon": {
+    "observable": {
+      "always_visible": true,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
+  "spawn_response": {
+    "effect_spec": "/pa/units/orbital/l_orbital_laser/l_orb_laser_exp.pfx"
+  }
+}

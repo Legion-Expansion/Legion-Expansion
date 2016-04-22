@@ -1,0 +1,166 @@
+{
+  "display_name": "Starcannon",
+  "description": "Orbital Unit Cannon - Relays Reinforcement Units to the Surface Below. One-Way Teleportation Device.",
+  "TEMP_texelinfo": 36,
+  "area_build_separation": 50,
+  "area_build_type": "Line",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 60,
+  "audio": {
+    "loops": {
+      "enabled": {
+        "cue": "/SE/Buildings/helios_teleporter_loop",
+        "flag": "enable_changed",
+        "should_start_func": "is_enabled",
+        "should_stop_func": "is_disabled"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/structure/unit_cannon"
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "build_metal_cost": 1500,
+  "buildable_types": "Custom1 & CannonBuildable",
+  "command_caps": [
+    "ORDER_FactoryBuild",
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/orbital"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/unit_cannon",
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
+      "effect_spec": "/pa/effects/specs/none.pfx socket_muzzle"
+    }
+  },
+  "factory": {
+    "deploy_projectile": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json",
+    "hide_deploy_projectile": true,
+    "hide_stored_units": true,
+    "pass_on_orders": false,
+    "spawn_points": [
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate",
+      "bone_rotate"
+    ],
+    "store_units": true
+  },
+  "factory_cooldown_time": 0.0,
+  "fx_offsets": [
+    {
+      "bone": "bone_laser001",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser002",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser003",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser004",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser005",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    },
+    {
+      "bone": "bone_laser006",
+      "filename": "/pa/effects/specs/legion_factory_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "max_health": 3000,
+  "mesh_bounds": [
+    75.576,
+    85.687,
+    79.187
+  ],
+  "model": {
+    "animations": {
+      "build": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build.papa",
+      "end": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_end.papa",
+      "start": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/l_orbital_dropper_anim_tree.json",
+    "filename": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper.papa"
+  },
+  "physics": {
+    "ignore_gravity": true,
+    "radius": 20
+  },
+  "placement_size": [
+    50,
+    50
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 600,
+          "shape": "sphere"
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -70
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_build",
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "record_index": 1,
+      "spec_id": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "wait_to_rolloff_time": 0
+}

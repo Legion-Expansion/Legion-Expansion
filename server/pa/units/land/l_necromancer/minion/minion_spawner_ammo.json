@@ -1,0 +1,5 @@
+{
+  "ammo_type": "PBAOE",
+  "damage": 0,
+  "sim_fire_effect": "/pa/units/land/l_bot_artillery/bomb/bomb_ammo_explosion_ent.json"
+}

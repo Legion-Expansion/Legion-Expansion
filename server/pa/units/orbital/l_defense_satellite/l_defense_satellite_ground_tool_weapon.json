@@ -1,0 +1,19 @@
+{
+  "ammo_id": "/pa/units/orbital/l_defense_satellite/l_defense_satellite_ground_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+  "firing_arc_pitch": 360,
+  "firing_arc_yaw": 360,
+  "max_range": 100,
+  "pitch_range": 180,
+  "pitch_rate": 360,
+  "rate_of_fire": 1.5,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air",
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 360
+}

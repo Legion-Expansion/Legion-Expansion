@@ -1,0 +1,145 @@
+{
+  "display_name": "!LOC:Advanced Fabrication Vehicle",
+  "description": "!LOC:Builder- Builds advanced structures. Durable. More powerful than other builders.",
+  "TEMP_texelinfo": 6.38729,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0.5,
+        5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/veh/fab_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/fab_T2"
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 2025,
+  "buildable_types": "(Structure & Land & Advanced - Factory | Factory & Land & Tank & Advanced | FabAdvBuild | FabBuild | Titan & (Tank | Naval)) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    }
+  ],
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 400,
+  "mesh_bounds": [
+    5.2,
+    6,
+    4.6
+  ],
+  "model": {
+    "animations": {
+      "death01": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_death01.papa",
+      "drive": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_drive.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/turret_wheels_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv.papa"
+  },
+  "navigation": {
+    "acceleration": 120,
+    "brake": 120,
+    "group_preference": "back",
+    "move_speed": 12,
+    "turn_speed": 360,
+    "type": "land-small"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 3
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 13
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable"
+  ]
+}

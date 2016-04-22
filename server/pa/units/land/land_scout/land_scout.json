@@ -1,0 +1,118 @@
+{
+  "display_name": "!LOC:Skitter",
+  "description": "!LOC: Scout- Fast. Can see far away. Detects mines. Does not attack.",
+  "TEMP_texelinfo": 4.03457,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        -0.2,
+        1.6
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/land_scout_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/land_scout"
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 75,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Veh_small",
+      "effect_scale": 1.0
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/veh/land_scout_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
+    }
+  },
+  "max_health": 10,
+  "mesh_bounds": [
+    3.5,
+    4.5,
+    2
+  ],
+  "model": {
+    "animations": {
+      "drive": "/pa/units/land/land_scout/land_scout_anim_drive.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/land_scout_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/land_scout/land_scout.papa"
+  },
+  "navigation": {
+    "acceleration": 250,
+    "brake": 250,
+    "move_speed": 25,
+    "turn_speed": 360
+  },
+  "physics": {
+    "radius": 3
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 200,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 200,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 10.0
+  },
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Scout",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

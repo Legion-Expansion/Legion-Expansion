@@ -1,0 +1,608 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": false,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - Orbital - Nuke - NukeDefense - SelfDestruct",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 3,
+      "name": "Legion - Orbital Launcher",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 485,
+      "shared_instance_count": "OrbitalLauncher",
+      "to_build": "LegionFactoryBasicOrbital"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "WantCommanderOffPlanet"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - (Naval & Orbital)",
+            "value0": 3
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory & Land",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "UnableToExpand"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "value0": 2
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory & Land",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "test_type": "NeedOrbitalLauncher"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital - Nuke - NukeDefense",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "value0": 2
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory & Land",
+            "value0": 1
+          },
+          {
+            "string0": "LegionFactoryBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Orbital Launcher - Rush",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 486,
+      "shared_instance_count": "OrbitalLauncher",
+      "to_build": "LegionFactoryBasicOrbital"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionFactoryAdvancedOrbital",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "NeedOrbitalFactory"
+          },
+          {
+            "compare0": "<=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory - Land",
+            "value0": 3
+          },
+          {
+            "string0": "LegionFactoryAdvancedOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 3,
+      "name": "Legion - Orbital Factory",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 485,
+      "to_build": "LegionFactoryAdvancedOrbital"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & OrbitalDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | MetalProduction | Factory)",
+            "value0": 2
+          },
+          {
+            "string0": "LegionDefenseBasicOrbitalII",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & OrbitalDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | MetalProduction | Factory)",
+            "value0": 1
+          },
+          {
+            "string0": "LegionDefenseBasicOrbitalII",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & OrbitalDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Teleporter | PlanetEngine | ControlModule)",
+            "value0": 0
+          },
+          {
+            "string0": "LegionDefenseBasicOrbitalII",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Defense Satellite",
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Orbital & OrbitalDefense"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "LegionDefenseBasicOrbitalII"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "EnemyPresenceOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "PlanetCount",
+            "value0": 3
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetIsMainEcoBase"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetCanBeUsedAsKineticWeapon"
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetHasUseablePlanetWeapon"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveThrustToMovePlanet"
+          },
+          {
+            "boolean": true,
+            "compare0": "<=",
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedEngine",
+            "value0": 0
+          },
+          {
+            "string0": "LegionDefenseAdvancedEngine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 45,
+      "min_num_assisters": 8,
+      "name": "Legion - Delta V Engine",
+      "placement_rules": {
+        "buffer": 5
+      },
+      "priority": 612,
+      "to_build": "LegionDefenseAdvancedEngine"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": "<",
+            "test_type": "PotentialMetalEfficiency",
+            "value0": 1
+          },
+          {
+            "string0": "LegionEcoAdvancedMine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "string0": "LegionEcoAdvancedMine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": "<",
+            "test_type": "PotentialEnergyEfficiency",
+            "value0": 1
+          },
+          {
+            "string0": "LegionEcoAdvancedMine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "string0": "LegionEcoAdvancedMine",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 3,
+      "name": "Legion - Orbital Mining Platform",
+      "placement_rules": {
+        "buffer": 15
+      },
+      "priority": 360,
+      "to_build": "LegionEcoAdvancedMine"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetWithoutPresence"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber",
+            "value0": 2
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Orbital & Transport",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "LegionBotBasicFabber",
+        "LegionVehicleBasicFabber",
+        "LegionAirBasicFabber",
+        "LegionBotAdvancedFabber",
+        "LegionBotAdvancedSupportCommander",
+        "LegionVehicleAdvancedFabber",
+        "LegionAirAdvancedFabber"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Move Fabber To Planet",
+      "priority": 800,
+      "task_type": "TransportToPlanet"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "PlanetOrGasGiantWithoutPresence"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fabber",
+            "value0": 2
+          }
+        ]
+      ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Move Orbital Fabber To Planet",
+      "priority": 800,
+      "task_type": "OrbitalFabberMoveToPlanet"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "SafePlanetOrGasGiantWithoutPresence"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Factory",
+            "value0": 1
+          }
+        ]
+      ],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Move Orbital Fabber To Safe Planet",
+      "priority": 800,
+      "task_type": "OrbitalFabberMoveToSafePlanet"
+    }
+  ]
+}

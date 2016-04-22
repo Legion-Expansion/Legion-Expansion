@@ -1,0 +1,5 @@
+{
+  "base_spec": "/pa/units/land/l_bot_bomb/l_bot_bomb_tool_weapon.json",
+  "max_range": 40,
+  "no_busy_auto_attack": false
+}

@@ -1,0 +1,120 @@
+{
+  "display_name": "Rampart",
+  "description": "Shield - Absorbs Incoming Shots. Requires Energy. Overlapping Ramparts Provides Little Benefit.",
+  "TEMP_texelinfo": 27,
+  "area_build_separation": 50,
+  "atrophy_cool_down": 0.5,
+  "atrophy_rate": 20,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 2400,
+  "consumption": {
+    "energy": 0
+  },
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/l_shield_gen/l_shield_gen_death.json"
+  },
+  "energy_efficiency_requirement": 1,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/barrier"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/barrier",
+      "effect_scale": 1.25,
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
+      "effect_spec": "/pa/units/land/l_shield_gen/shield_hit.pfx bone_void"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_void",
+      "filename": "/pa/units/land/l_shield_gen/shield.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "energy"
+    }
+  ],
+  "max_health": 750,
+  "mesh_bounds": [
+    5,
+    5,
+    14
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
+      "filename": "/pa/units/land/l_shield_gen/l_shield_gen.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+    },
+    {
+      "animations": {
+        "idle": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
+      "filename": "/pa/units/land/l_shield_gen/sea/l_shield_gen.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "placement_size": [
+    20,
+    20
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -20
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_void",
+      "record_index": 0,
+      "show_range": true,
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_short_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_void",
+      "record_index": 1,
+      "show_range": true,
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_mid_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_void",
+      "record_index": 2,
+      "show_range": true,
+      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_long_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 0.4
+}

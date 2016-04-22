@@ -1,0 +1,64 @@
+{
+  "platoon_templates": {
+    "Suicide_Attack_1": {
+      "units": [
+        {
+          "max_count": 3,
+          "min_count": 1,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    },
+    "Suicide_Attack_10": {
+      "units": [
+        {
+          "max_count": 19,
+          "min_count": 10,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    },
+    "Suicide_Attack_20": {
+      "units": [
+        {
+          "max_count": 39,
+          "min_count": 20,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    },
+    "Suicide_Attack_30": {
+      "units": [
+        {
+          "max_count": 39,
+          "min_count": 30,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    },
+    "Suicide_Attack_4": {
+      "units": [
+        {
+          "max_count": 9,
+          "min_count": 4,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    },
+    "Suicide_Attack_40": {
+      "units": [
+        {
+          "max_count": -1,
+          "min_count": 40,
+          "squad": "Suicide",
+          "unit_types": "Air & Mobile & SelfDestruct"
+        }
+      ]
+    }
+  }
+}

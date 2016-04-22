@@ -1,0 +1,35 @@
+{
+  "blend_root": {
+    "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
+      "dead": {
+        "type": "bind_pose"
+      },
+      "ghost": {
+        "type": "bind_pose"
+      },
+      "living": {
+        "type": "bind_pose"
+      }
+    },
+    "type": "unit_state"
+  },
+  "skeleton_controls": [
+    {
+      "bone": "recoil_right",
+      "recoil_dist": 1.5,
+      "restore_time": 1.0,
+      "type": "recoil",
+      "unit_event": "fired0"
+    },
+    {
+      "bone": "recoil_left",
+      "recoil_dist": 1.5,
+      "restore_time": 1.0,
+      "type": "recoil",
+      "unit_event": "fired1"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "display_name": "!LOC:Orbital Fabrication Bot",
+  "description": "!LOC:Advanced fabricator- Builds orbital satellites and ships.",
+  "TEMP_texelinfo": 7.54279,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop_orbital",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/air/fab_air_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 1300,
+  "buildable_types": "(FabOrbBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab_orbital"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_nozzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        1.755,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        -90
+      ],
+      "type": "build"
+    }
+  ],
+  "gravwell_velocity_multiplier": 6,
+  "guard_layer": "WL_Orbital",
+  "max_health": 100,
+  "mesh_bounds": [
+    20,
+    10,
+    21
+  ],
+  "model": {
+    "animations": {
+      "closed": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_closed.papa",
+      "deploy": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_deploy.papa",
+      "open": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_open.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/orbital_fabrication_bot_anim_tree.json",
+    "filename": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.papa"
+  },
+  "navigation": {
+    "acceleration": 10,
+    "aggressive_behavior": "circle",
+    "aggressive_distance": 120,
+    "bank_factor": 10,
+    "brake": 10,
+    "hover_time": -1,
+    "move_speed": 20,
+    "turn_speed": 75,
+    "type": "orbital"
+  },
+  "physics": {
+    "radius": 5
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 250,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 32
+  },
+  "spawn_layers": "WL_Orbital",
+  "system_velocity_multiplier": 15,
+  "tools": [
+    {
+      "aim_bone": "bone_shoulder",
+      "spec_id": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Fabber",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

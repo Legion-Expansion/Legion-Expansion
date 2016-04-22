@@ -1,0 +1,32 @@
+{
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
+  "build": "94132",
+  "category": [
+    "titans",
+    "units",
+    "faction"
+  ],
+  "context": "server",
+  "date": "2016/04/22",
+  "dependencies": [
+    "com.wondible.pa.hodgepodge",
+    "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
+    "com.pa.legion-expansion-client",
+    "com.wondible.pa.weapons_tracking"
+  ],
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
+  "display_name": "Legion Expansion",
+  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
+  "icon": "http://i.imgur.com/oyn18ZG.png",
+  "identifier": "com.pa.legion-expansion-server",
+  "scenes": {
+    "global_mod_list": [
+      "coui://ui/mods/com.pa.legion-expansion/global.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.9.0-beta"
+}

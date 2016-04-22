@@ -1,0 +1,92 @@
+{
+  "ammo_type": "Projectile",
+  "attachable": {
+    "default_attach_bone": "socket_payload",
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio_loop": "/SE/Movement/missile/orbital_missile_fly_loop",
+  "build_metal_cost": 1,
+  "cruise_height": 150,
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/orbital_launcher_deployed",
+      "effect_spec": "/pa/units/air/missile_orbital/missile_orbital_explosion.pfx",
+      "effect_world_aligned": false
+    }
+  },
+  "flight_type": "Staged",
+  "fx_trail": {
+    "filename": "/pa/units/air/missile_orbital/missile_orbital_trail.pfx",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "influence_radius": 400,
+  "initial_velocity": 75.0,
+  "lifetime": 0,
+  "max_velocity": 75.0,
+  "model": {
+    "filename": "/pa/units/air/missile_orbital/missile_orbital.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "ignore_gravity": true,
+    "layer": "air",
+    "radius": 10
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  },
+  "splash_damage": 0,
+  "splash_damages_allies": "false",
+  "splash_radius": 0,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": false,
+      "stage_duration": 300,
+      "stage_turn_rate": 0
+    },
+    {
+      "climb_angle": 45,
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": false,
+      "stage_change_height": 200,
+      "stage_duration": 0,
+      "stage_turn_rate": 90
+    },
+    {
+      "apply_thrust": false,
+      "climb_angle": 45,
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "rotates_to_velocity": false,
+      "stage_duration": 1000
+    },
+    {
+      "apply_thrust": false,
+      "die_here": true,
+      "ignores_LOS": false,
+      "ignores_gravity": false,
+      "release_payload": true,
+      "rotates_to_velocity": false,
+      "stage_duration": 0
+    }
+  ],
+  "turn_rate": 90
+}

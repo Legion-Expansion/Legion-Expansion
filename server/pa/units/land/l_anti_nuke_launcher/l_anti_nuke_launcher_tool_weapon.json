@@ -1,0 +1,26 @@
+{
+  "ammo_id": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json",
+  "ammo_source": "factory",
+  "anti_entity_targets": [
+    "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
+    "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"
+  ],
+  "auto_attack": false,
+  "auto_task_type": "anti_entity",
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "manual_fire": true,
+  "max_range": 300,
+  "pitch_range": 180,
+  "pitch_rate": 0,
+  "rate_of_fire": 1.5,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air",
+    "WL_Orbital"
+  ],
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 0
+}

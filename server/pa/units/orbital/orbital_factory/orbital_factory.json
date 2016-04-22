@@ -1,0 +1,203 @@
+{
+  "display_name": "!LOC:Orbital Factory",
+  "description": "!LOC:Advanced manufacturing- Builds orbital satellites.",
+  "TEMP_texelinfo": 65.6074,
+  "area_build_separation": 7,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 90,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_orbital",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    }
+  },
+  "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
+  "build_metal_cost": 3600,
+  "buildable_types": "(Orbital & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_FactoryBuild",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "enable_orbital_shell": true,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
+    }
+  },
+  "factory_cooldown_time": 4,
+  "fx_offsets": [
+    {
+      "bone": "bone_centerHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        17,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_centerHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -17,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        -90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_frontHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        9.5,
+        0,
+        9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        135
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_frontHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -9.5,
+        0,
+        -9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        -135
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_backHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        9.5,
+        0,
+        9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        135
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_backHalo",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -9.5,
+        0,
+        -9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        -135
+      ],
+      "type": "build"
+    }
+  ],
+  "max_health": 9000,
+  "mesh_bounds": [
+    45,
+    40,
+    24
+  ],
+  "model": [
+    {
+      "animations": {
+        "build_end": "/pa/units/orbital/orbital_factory/orbital_factory_anim_end.papa",
+        "build_loop": "/pa/units/orbital/orbital_factory/orbital_factory_anim_build.papa",
+        "build_start": "/pa/units/orbital/orbital_factory/orbital_factory_anim_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
+      "filename": "/pa/units/orbital/orbital_factory/orbital_factory.papa",
+      "layer": "WL_Orbital"
+    }
+  ],
+  "physics": {
+    "collision_layers": "WL_Orbital",
+    "ignore_gravity": true,
+    "radius": 20
+  },
+  "placement_size": [
+    100,
+    100
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 250,
+          "shape": "sphere"
+        }
+      ]
+    }
+  },
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "selection_icon": {
+    "diameter": 73
+  },
+  "spawn_layers": "WL_Orbital",
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/orbital/orbital_factory/orbital_factory_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 0,
+  "wreckage_health_frac": 0
+}

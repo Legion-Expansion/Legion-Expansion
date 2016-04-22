@@ -1,0 +1,41 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "damage": 500,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+    }
+  },
+  "flight_type": "Seeking",
+  "fx_trail": {
+    "filename": "/pa/effects/specs/rocket_proj_trail.pfx",
+    "offset": [
+      0.0,
+      4.6,
+      0.0
+    ]
+  },
+  "initial_velocity": 70.0,
+  "lifetime": 30,
+  "max_velocity": 70.0,
+  "model": {
+    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "allow_underground": true,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
+    "radius": 1
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 500,
+  "splash_radius": 19,
+  "turn_rate": 150
+}

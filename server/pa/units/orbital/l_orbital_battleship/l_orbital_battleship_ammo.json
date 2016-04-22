@@ -1,0 +1,9 @@
+{
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "target",
+  "damage": 65,
+  "fx_beam_spec": "/pa/units/orbital/defense_satellite/defense_satellite_ammo_orbital_beam.pfx",
+  "fx_collision_spec": "/pa/units/orbital/defense_satellite/defense_satellite_ammo_orbital_beam_hit.pfx",
+  "initial_velocity": 500.0,
+  "max_velocity": 500.0
+}

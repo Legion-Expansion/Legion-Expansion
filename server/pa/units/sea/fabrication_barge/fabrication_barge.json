@@ -1,0 +1,162 @@
+{
+  "display_name": "!LOC:Barnacle",
+  "description": "!LOC:Support Barge- Repairs damaged ships. Builds and detects mines. Cannot help build things.",
+  "TEMP_texelinfo": 7.50603,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Fab_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      },
+      "move": {
+        "cue": "/SE/Movement/sea/Fab_ship_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/sea/base_ship/base_ship.json",
+  "build_metal_cost": 550,
+  "buildable_types": "(CombatFabBuild - Teleporter) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Build",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Assist"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea_fab"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Sea_small",
+      "effect_scale": 0.8,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0.25,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "socket_muzzle",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        -0.25,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "build"
+    },
+    {
+      "filename": "/pa/units/sea/fabrication_barge/fabrication_barge_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "max_health": 500,
+  "mesh_bounds": [
+    4,
+    10,
+    5
+  ],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+    "filename": "/pa/units/sea/fabrication_barge/fabrication_barge.papa"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "park_stamp_cost": 10,
+    "park_stamp_type": "sphere",
+    "turn_accel": 45,
+    "turn_speed": 90,
+    "type": "deepwater"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 4,
+    "shape": "sphere"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 150,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 150,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 21
+  },
+  "spawn_layers": "WL_WaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/units/sea/fabrication_barge/fabrication_barge_build_arm.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Offense",
+    "UNITTYPE_Construction",
+    "UNITTYPE_Naval",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild"
+  ]
+}

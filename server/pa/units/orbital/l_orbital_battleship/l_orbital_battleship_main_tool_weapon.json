@@ -1,0 +1,14 @@
+{
+  "ammo_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_main_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+  "max_range": 250,
+  "pitch_range": 60,
+  "pitch_rate": 30,
+  "rate_of_fire": 0.2,
+  "target_layers": [
+    "WL_Orbital"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 30
+}

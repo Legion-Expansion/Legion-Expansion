@@ -1,0 +1,150 @@
+{
+  "display_name": "!LOC:Unit Cannon",
+  "description": "!LOC:Interplanetary Transport- Builds and launches up to 12 units at once anywhere in the system.",
+  "TEMP_texelinfo": 62.1789,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 140,
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Factory_contruction_loop_unit_cannon",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/structure/unit_cannon"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 10000,
+  "buildable_types": "(CannonBuildable) - Custom1 - Custom2 - Custom3 - Custom4",
+  "command_caps": [
+    "ORDER_FactoryBuild",
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/unit_cannon "
+    },
+    "died": {
+      "audio_cue": "/SE/Death/unit_cannon",
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/unit_cannon_fire",
+      "effect_spec": "/pa/units/land/unit_cannon/unit_cannon_fire.pfx bone_recoil02"
+    }
+  },
+  "factory": {
+    "deploy_projectile": "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+    "hide_deploy_projectile": true,
+    "hide_stored_units": true,
+    "pass_on_orders": false,
+    "spawn_points": [
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build",
+      "socket_build"
+    ],
+    "store_units": true
+  },
+  "factory_cooldown_time": 3,
+  "fx_offsets": [
+    {
+      "bone": "bone_buildSpray01",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0.25,
+        0,
+        1.25
+      ],
+      "orientation": [
+        0,
+        90,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_buildSpray02",
+      "filename": "/pa/effects/specs/fab_spray.pfx",
+      "offset": [
+        0.25,
+        0,
+        1.25
+      ],
+      "orientation": [
+        0,
+        90,
+        90
+      ],
+      "type": "build"
+    },
+    {
+      "bone": "bone_recoil02",
+      "filename": "/pa/units/land/unit_cannon/unit_cannon_idle.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "type": "energy"
+    }
+  ],
+  "max_health": 18000,
+  "mesh_bounds": [
+    50,
+    50,
+    30
+  ],
+  "model": {
+    "animations": {
+      "aim_up": "/pa/units/land/unit_cannon/unit_cannon_anim_aimUp.papa",
+      "build": "/pa/units/land/unit_cannon/unit_cannon_anim_build.papa",
+      "end": "/pa/units/land/unit_cannon/unit_cannon_anim_end.papa",
+      "start": "/pa/units/land/unit_cannon/unit_cannon_anim_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/unit_cannon_anim_tree.json",
+    "filename": "/pa/units/land/unit_cannon/unit_cannon.papa"
+  },
+  "placement_size": [
+    65,
+    65
+  ],
+  "selection_icon": {
+    "diameter": 78
+  },
+  "tools": [
+    {
+      "aim_bone": "socket_aim",
+      "muzzle_bone": "socket_muzzle",
+      "record_index": 0,
+      "spec_id": "/pa/units/land/unit_cannon/unit_cannon_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "record_index": 1,
+      "spec_id": "/pa/units/land/unit_cannon/unit_cannon_build_arm.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Artillery",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important"
+  ],
+  "wait_to_rolloff_time": 3
+}

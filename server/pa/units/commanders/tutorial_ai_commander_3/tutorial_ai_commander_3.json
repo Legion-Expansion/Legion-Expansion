@@ -1,0 +1,5 @@
+{
+  "base_spec": "/pa/units/commanders/imperial_delta/imperial_delta.json",
+  "buildable_types": "(CmdBuild -Air) - Custom1 - Custom2 - Custom3 - Custom4",
+  "max_health": 1000
+}

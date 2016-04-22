@@ -1,0 +1,9 @@
+{
+  "ammo_type": "AMMO_Beam",
+  "damage": 30,
+  "fx_beam_spec": "/pa/effects/specs/nanoswarm_attack.pfx",
+  "fx_collision_spec": "/pa/effects/specs/nanoswarm_hit.pfx",
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0
+}

@@ -1,0 +1,43 @@
+{
+  "ammo_type": "AMMO_Projectile",
+  "damage": 450,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/bomb",
+      "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
+    }
+  },
+  "flight_type": "Ballistic",
+  "fx_trail": {
+    "filename": "/pa/effects/specs/shell_proj_trail.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
+  },
+  "initial_velocity": 35.0,
+  "lifetime": 8,
+  "max_velocity": 35.0,
+  "model": {
+    "arrows": 3,
+    "filename": "/pa/units/air/bomb/bomb.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "air_friction": 1.0,
+    "allow_underground": true,
+    "gravity_scalar": 3,
+    "radius": 1
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  },
+  "spawn_layers": "WL_Air",
+  "splash_damage": 125,
+  "splash_damages_allies": false,
+  "splash_radius": 8,
+  "turn_rate": 5
+}

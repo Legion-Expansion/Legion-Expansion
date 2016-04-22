@@ -1,0 +1,27 @@
+{
+  "base_spec": "/pa/ammo/base_missiles/base_missile.json",
+  "damage": 0,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
+    }
+  },
+  "flight_type": "Seeking",
+  "fx_trail": {
+    "filename": "/pa/effects/specs/rocket_proj_trail.pfx",
+    "offset": [
+      0.0,
+      1.3,
+      0.0
+    ]
+  },
+  "initial_velocity": 155.0,
+  "max_velocity": 155.0,
+  "model": {
+    "filename": "/pa/units/air/missile/missile.papa"
+  },
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "turn_rate": 270
+}

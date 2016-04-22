@@ -1,0 +1,4 @@
+{
+  "base_spec": "/pa/units/land/l_scout_bot/l_scout_bot_land_ammo.json",
+  "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_water_ent.json"
+}

@@ -1,0 +1,5 @@
+{
+  "ammo_type": "PBAOE",
+  "damage": 0,
+  "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_land_ent.json"
+}

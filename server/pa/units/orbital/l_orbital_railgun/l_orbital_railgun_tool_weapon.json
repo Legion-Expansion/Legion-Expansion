@@ -1,0 +1,19 @@
+{
+  "ammo_capacity": 1000,
+  "ammo_demand": 200,
+  "ammo_id": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_ammo.json",
+  "ammo_per_shot": 1000,
+  "ammo_source": "energy",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_laser_turret/base_laser_turret.json",
+  "charge_ammo_when_targeting": false,
+  "max_range": 350,
+  "pitch_range": 180,
+  "pitch_rate": 180,
+  "rate_of_fire": 0.2,
+  "target_layers": [
+    "WL_Orbital"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 40
+}

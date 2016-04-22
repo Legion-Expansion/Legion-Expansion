@@ -1,0 +1,888 @@
+{
+  "build_list": [
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 2,
+      "name": "Legion - Basic Metal Extractor - Desire - Area",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 501,
+      "shared_instance_count": "BasicMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 2,
+      "name": "Legion - Basic Metal Extractor - Expand - Area 1",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 499,
+      "shared_instance_count": "BasicMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 4,
+      "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 499,
+      "shared_instance_count": "BasicMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 4,
+      "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 2,
+      "shared_instance_count": "BasicMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 2,
+      "name": "Legion - Basic Metal Extractor - Desire",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 501,
+      "shared_instance_count": "BasicMetal",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "value0": 2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 2,
+      "name": "Legion - Basic Metal Extractor - Expand 1",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 499,
+      "shared_instance_count": "BasicMetal",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "instance_count": 4,
+      "name": "Legion - Basic Metal Extractor - Expand Low Pri",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 2,
+      "shared_instance_count": "BasicMetal",
+      "to_build": "LegionEcoBasicMetalExtractor"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "value0": 0
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Basic",
+            "value0": 4
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionEcoBasicEnergyPlant",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Commander",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Advanced",
+            "value0": 1
+          },
+          {
+            "string0": "LegionEcoBasicEnergyPlant",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "cross_planet_shared_count": true,
+      "instance_count": 1,
+      "max_num_assisters": 3,
+      "name": "Legion - Basic Energy Generator - Desire",
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 500,
+      "shared_instance_count": "BasicEnergy",
+      "to_build": "LegionEcoBasicEnergyPlant"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Advanced Metal Extractor - Desire - Area",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 610,
+      "shared_instance_count": "AdvancedMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Metal Extractor - Expand - Area",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 609,
+      "shared_instance_count": "AdvancedMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 4,
+      "name": "Legion - Advanced Metal Extractor - Expand - Area Alone",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 609,
+      "shared_instance_count": "AdvancedMetal",
+      "task_type": "AreaBuild",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Advanced Metal Extractor - Desire",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 614,
+      "shared_instance_count": "AdvancedMetal",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Advanced Metal Extractor - Expand",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 609,
+      "shared_instance_count": "AdvancedMetal",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "string0": "SlowerExpansion",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildAdvanced"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 2,
+      "name": "Legion - Advanced Metal Extractor - Expand 2",
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 2,
+      "shared_instance_count": "AdvancedMetal",
+      "to_build": "LegionEcoAdvancedMetalExtractor"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "string0": "LegionEcoAdvancedEnergyPlant",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "cross_planet_shared_count": true,
+      "instance_count": 1,
+      "max_num_assisters": 5,
+      "min_num_assisters": 2,
+      "name": "Legion - Advanced Energy Generator - Desire",
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 615,
+      "shared_instance_count": "AdvancedEnergy",
+      "to_build": "LegionEcoAdvancedEnergyPlant"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": "<",
+            "test_type": "EnergyStorageToProductionRatio",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionEcoBasicStorage",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": "<",
+            "test_type": "MetalStorageToProductionRatio",
+            "value0": 6
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionEcoBasicStorage",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Storage",
+      "placement_rules": {
+        "buffer": 10,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "compare_type": "<",
+          "influence_type": "AntiSurface",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "priority": 140,
+      "to_build": "LegionEcoBasicStorage"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+  "damage": 0,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/l_bot_bomb/rocket_trail.pfx"
+  },
+  "impact_decals": [
+    null
+  ],
+  "initial_velocity": 75,
+  "lifetime": 30,
+  "max_velocity": 150,
+  "min_velocity": 75,
+  "model": {
+    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 50,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "spawn_unit_on_death": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
+  "spawn_unit_on_death_with_velocity": false,
+  "splash_damage": 0,
+  "splash_damages_allies": false,
+  "splash_radius": 0
+}

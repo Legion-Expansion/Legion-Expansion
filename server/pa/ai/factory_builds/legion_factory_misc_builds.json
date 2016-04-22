@@ -1,0 +1,117 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
+      "instance_count": -1,
+      "name": "Legion - Nuke Missile",
+      "priority": 151,
+      "to_build": "LegionDefenseAdvancedNuke"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<=",
+            "string0": "AntiNuke",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
+      "instance_count": 2,
+      "max_num_assisters": 12,
+      "min_num_assisters": 3,
+      "name": "Legion - Nuke Missile - No Antis",
+      "priority": 387,
+      "to_build": "LegionDefenseAdvancedNuke"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
+      "instance_count": -1,
+      "name": "Legion - Anti Nuke Missile",
+      "priority": 151,
+      "to_build": "LegionDefenseAdvancedAntiNuke"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Nuke",
+            "test_type": "PlanetThreat",
+            "value0": 0
+          },
+          {
+            "boolean": true,
+            "test_type": "FactorySlotsEmpty"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 12,
+      "min_num_assisters": 5,
+      "name": "Legion - Anti Nuke Missile - Rush",
+      "priority": 388,
+      "to_build": "LegionDefenseAdvancedAntiNuke"
+    }
+  ]
+}

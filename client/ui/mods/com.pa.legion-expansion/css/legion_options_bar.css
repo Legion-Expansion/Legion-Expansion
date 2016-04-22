@@ -1,0 +1,87 @@
+/* STYLES CAUSE COMM IS LEGION OR MIXED */
+.legionui .div_pip_toggle_cont {
+    border:1px solid rgba(255,0,0,0.8) !important;
+}
+
+.legionui .div_ingame_timer {
+    color: rgba(255,0,0,0.8);
+    text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
+    /*background: url(coui://ui/main/game/live_game/img/ingame_options_bar/img_bar_clock.png) left top no-repeat;*/
+}
+
+.legionui .btn_std_ix:hover {
+    background: rgba(255,0,0,0.8);
+    border:1px solid rgba(158, 0, 0, 0.5) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.8) !important;
+}
+
+.legionui .span_tooltip_hotkey {
+    border:1px solid rgba(158, 0, 0, 0.5) !important;
+    color: rgba(255,0,0,0.8) !important;
+}
+
+.legionui .div_sim_speed {
+  color: rgba(255,0,0,0.8) !important;
+  text-shadow: 0px 0px 30px rgba(255,0,0,0.8) !important;
+}
+
+.mixedui .div_pip_toggle_cont {
+    border:1px solid rgba(99, 14, 138, 0.5) !important;
+}
+
+.mixedui .div_ingame_timer {
+    color: #663399;
+    text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+    /*background: url(coui://ui/main/game/live_game/img/ingame_options_bar/img_bar_clock.png) left top no-repeat;*/
+}
+
+.mixedui .btn_std_ix:hover {
+    color: #663399;
+    text-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
+}
+
+.mixedui .span_tooltip_hotkey {
+    border:1px solid rgba(99, 14, 138, 0.5) !important;
+    color: #663399 !important;
+}
+
+.mixedui .div_sim_speed {
+  color: #663399 !important;
+  text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+}
+
+.watermark {
+    color: rgba(255,0,0,0.8);
+    text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
+    font-family: 'Trebuchet MS Bold';
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:6px;
+}
+.watermark > span {
+    color: rgba(255,255,255,0.8);
+    text-shadow: 0px 0px 30px rgba(255,255,255,0.8);
+    /**background-image: repeating-linear-gradient(45deg, #FFC800 50%, black 50%);**/
+background: repeating-linear-gradient(
+        45deg,
+        #FFC800,
+        #FFC800 10px,
+        black 10px,
+        black 20px
+    );
+    background-size: 100% 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: stripes 15s linear infinite;
+    animation: stripes 15s linear infinite;
+}
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 100px 0;
+  }
+}
+.div_ingame_options_bar {
+    border-image: url(coui://ui/main/shared/img/build_bar/img_build_bar_bground_fill.png) 19 45 19 53 fill;
+}

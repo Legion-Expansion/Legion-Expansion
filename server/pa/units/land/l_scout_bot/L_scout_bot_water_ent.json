@@ -1,0 +1,6 @@
+{
+  "spawn_response": {
+    "audio_cue": "/SE/Weapons/bot/assault_fire",
+    "effect_spec": "/pa/units/land/l_scout_bot/l_scout_bot_superman_debris_water.pfx"
+  }
+}
