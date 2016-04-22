@@ -19,6 +19,15 @@
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
     ],
+    "icon_atlas": [
+      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
+    ],
+    "shared_build": [
+      "coui://ui/mods/com.pa.legion-expansion/shared_build.js"
+    ],
+    "live_game": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
+    ],
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
     ],
