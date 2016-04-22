@@ -1,5 +1,5 @@
 {
-  "ammo_capacity": 600,
+  "ammo_capacity": 400,
   "ammo_demand": 20,
   "ammo_id": "/pa/units/air/l_air_carrier/l_air_carrier_ammo.json",
   "ammo_per_shot": 60,
