@@ -95,8 +95,8 @@
   "has_death_effects": true,
   "max_health": 80000,
   "mesh_bounds": [
-    5,
-    5,
+    25,
+    25,
     60
   ],
   "model": {
@@ -179,7 +179,7 @@
   },
   "teleportable": null,
   "tools": [
-    {
+      {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
       "muzzle_bone": [
