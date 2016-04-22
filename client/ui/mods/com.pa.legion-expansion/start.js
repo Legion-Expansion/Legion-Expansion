@@ -42,7 +42,7 @@ var legion_introVideoId = 'rxQjhuobKYc';
 
 // BLOCKED UNTIL WE HAVE AN INTRO VIDEO
 
-
+/*
 var legion_intro_one_time = localStorage.legion_intro_one_time;
 
 // Check if we should play the intro
@@ -105,3 +105,5 @@ function legion_introEnded(e) {
   $("#legion_intro_wrapper").remove();
   api.audio.pauseMusic(false);
 }
+
+*/
