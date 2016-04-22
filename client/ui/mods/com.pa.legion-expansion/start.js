@@ -35,13 +35,13 @@ if ( ! legionExpansionLoaded )
 // Play intro video one time only
 
 //Youtube video id (can be found in the url)
-var legion_introVideoId = '0Bmhjf0rKe8';
+var legion_introVideoId = 'rxQjhuobKYc';
 
 //UNCOMMENT TO PLAY EVERY TIME
 //localStorage.legion_intro_one_time = false;
 
 // BLOCKED UNTIL WE HAVE AN INTRO VIDEO
-/*
+
 
 var legion_intro_one_time = localStorage.legion_intro_one_time;
 
@@ -105,5 +105,3 @@ function legion_introEnded(e) {
   $("#legion_intro_wrapper").remove();
   api.audio.pauseMusic(false);
 }
-
-*/
