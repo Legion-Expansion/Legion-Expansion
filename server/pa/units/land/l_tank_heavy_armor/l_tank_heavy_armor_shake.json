@@ -9,19 +9,23 @@
   },
   "spawn_response": {
     "camera_shake": {
-      "duration": 2.2,
+      "duration": 2,
       "height": {
         "keys": [
           [
             0,
-            5
+            4
           ],
           [
-            1,
-            2
+            0.5,
+            1
           ],
           [
-            2.2,
+            0.8,
+            0.4
+          ],
+          [
+            2,
             0
           ]
         ],
@@ -34,30 +38,38 @@
             0
           ],
           [
+            0.5,
+            0
+          ],
+          [
             1,
             0
           ],
           [
-            2.2,
+            2,
             0
           ]
         ],
         "stepped": false
       },
-      "max_falloff_dist": 1500.0,
-      "min_falloff_dist": 300.0,
+      "max_falloff_dist": 750.0,
+      "min_falloff_dist": 150.0,
       "width": {
         "keys": [
           [
             0,
-            5
+            4
           ],
           [
-            1,
-            2
+            0.5,
+            1
           ],
           [
-            2.2,
+            0.8,
+            0.4
+          ],
+          [
+            2,
             0
           ]
         ],

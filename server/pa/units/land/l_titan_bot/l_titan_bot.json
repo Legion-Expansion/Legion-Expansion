@@ -179,7 +179,7 @@
   },
   "teleportable": null,
   "tools": [
-      {
+    {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
       "muzzle_bone": [
