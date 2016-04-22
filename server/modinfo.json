@@ -9,7 +9,6 @@
   "context": "server",
   "date": "2016/04/22",
   "dependencies": [
-    "com.wondible.pa.hodgepodge",
     "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
     "com.pa.legion-expansion-client",
     "com.wondible.pa.weapons_tracking"
@@ -20,9 +19,6 @@
   "icon": "http://i.imgur.com/oyn18ZG.png",
   "identifier": "com.pa.legion-expansion-server",
   "scenes": {
-    "global_mod_list": [
-      "coui://ui/mods/com.pa.legion-expansion/global.js"
-    ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
