@@ -20,6 +20,9 @@
   "initial_velocity": 600.0,
   "lifetime": 0.75,
   "max_velocity": 600.0,
+  "model": {
+    "filename": ""
+  },
   "physics": {
     "add_to_spatial_db": true,
     "allow_underground": true,
