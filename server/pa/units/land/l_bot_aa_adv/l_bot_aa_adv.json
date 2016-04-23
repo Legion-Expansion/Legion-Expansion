@@ -31,7 +31,7 @@
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle004 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle001"
     }
   },
   "guard_layer": "WL_Air",
