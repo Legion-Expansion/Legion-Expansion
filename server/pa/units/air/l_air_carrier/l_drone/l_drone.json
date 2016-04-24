@@ -21,19 +21,39 @@
   },
   "fx_offsets": [
     {
+      "bone": "bone_root",
+      "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_trail.pfx",
+      "offset": [
+        0,
+        1.5,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
       "bone": "thrust001",
       "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_jets.pfx",
-      "type": "moving_forward"
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "moving"
     },
     {
       "bone": "thrust002",
       "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_jets.pfx",
-      "type": "moving_forward"
+      "orientation": [
+        0,
+        180,
+        0
+      ],
+      "type": "moving"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 200,
-  "max_health": 40,
+  "max_health": 60,
   "mesh_bounds": [
     4,
     4,

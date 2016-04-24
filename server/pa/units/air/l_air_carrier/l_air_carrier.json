@@ -33,7 +33,8 @@
       "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/air/air_scout_fire"
+      "audio_cue": "/SE/Weapons/air/air_scout_fire",
+      "effect_spec": "/pa/units/air/l_air_carrier/launch_smoke.pfx socket_muzzleRight /pa/units/air/l_air_carrier/launch_smoke.pfx socket_muzzleLeft"
     }
   },
   "fx_offsets": [

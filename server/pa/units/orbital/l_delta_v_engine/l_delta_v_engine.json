@@ -405,7 +405,8 @@
     "vertical_offset": 3.0
   },
   "unit_types": [
-    "UNITTYPE_Orbital",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Construction",
     "UNITTYPE_Structure",
     "UNITTYPE_Land",
     "UNITTYPE_PlanetEngine",

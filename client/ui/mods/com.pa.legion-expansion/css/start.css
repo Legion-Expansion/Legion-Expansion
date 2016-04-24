@@ -73,3 +73,24 @@ body.legion{
   background-size: 32px 44px;
 }
 
+.legionplayerOpen {
+  position: fixed; 
+  left: 10%; 
+  top: 10%; 
+  width: 80%; /*really css*/
+  height: 80%; 
+  z-index: 11111; 
+  /*background-color: black;*/
+  border:none;
+}
+
+.legionplayerClosed {
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  width: 1%; 
+  height: 1%; 
+  z-index: -11111;
+  border:none;
+}
+

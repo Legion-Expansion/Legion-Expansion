@@ -15,23 +15,23 @@
       "effect_spec": "/pa/units/land/titan_bot/titan_bot_footstep_01.pfx"
     }
   },
-  "full_damage_splash_radius": 8.5,
+  "full_damage_splash_radius": 15,
   "fx_trail": {
     "filename": "/pa/effects/specs/none.pfx"
   },
-  "initial_velocity": 25,
+  "initial_velocity": 80,
   "lifetime": 1,
-  "max_velocity": 50,
-  "min_velocity": 50,
+  "max_velocity": 80,
+  "min_velocity": 25,
   "model": {
     "filename": ""
   },
   "physics": {
     "add_to_spatial_db": false,
-    "gravity_scalar": 30,
+    "gravity_scalar": 80,
     "ignore_gravity": false
   },
   "splash_damage": 500,
   "splash_damages_allies": false,
-  "splash_radius": 8.5
+  "splash_radius": 15
 }
