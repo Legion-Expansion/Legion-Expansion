@@ -152,7 +152,6 @@
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
-    "UNITTYPE_Offense",
     "UNITTYPE_Orbital",
     "UNITTYPE_Scout",
     "UNITTYPE_FactoryBuild",
