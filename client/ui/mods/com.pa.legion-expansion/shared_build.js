@@ -1,8 +1,8 @@
-var legionExpansionLoaded;
+var legionExpansion_sharedbuildLoaded;
 
-if ( ! legionExpansionLoaded )
+if ( ! legionExpansion_sharedbuildLoaded )
 {
-    legionExpansionLoaded = true;
+    legionExpansion_sharedbuildLoaded = true;
 
     function legionExpansion()
     {
