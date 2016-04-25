@@ -116,7 +116,8 @@ function onYouTubeIframeAPIReady() {
       controls: 1,
       modestbranding: 1,
       rel: 0,
-      iv_load_policy: 3
+      iv_load_policy: 3,
+      disablekb : 1
     },
     events: {
       'onReady': model.onPlayerLegionReady,
@@ -129,7 +130,15 @@ model.onPlayerLegionStateChange = function(event) {
   if(event.data === 0) {
     model.stopLegionVideo();
   }
-  console.log("Youtube Player State changed " + event.data);
+  if(event.data === 1){
+    //Start Playing
+    /* BALLS
+    $(window).keyup(function(e) {
+      if (e.keyCode === 27) model.stopLegionVideo();  console.log("stopped video via esc"); // esc
+    });         
+   */ 
+  }
+  //console.log("Youtube Player State changed " + event.data);
 }
 
 model.stopLegionVideo = function(e) {
@@ -146,11 +155,6 @@ model.playLegionVideo = function(){
 
 model.onPlayerLegionReady = function(event) {
   model.legionYTPlayerReady(true);
-  /* BALLS
-  $('#legionplayer').keyup(function(e) {
-    if (e.keyCode === 27) model.stopLegionVideo();  console.log("stopped video via esc"); // esc
-  });         
-   */ 
   // Check if we should play the intro
   if(legion_intro_one_time != "true") {
     model.playLegionVideo();
