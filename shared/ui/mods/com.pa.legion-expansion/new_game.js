@@ -8,20 +8,15 @@ if (!legionExpansionLoaded) {
 
         console.log('legionExpansion new_game.js last tested on 94157+');
 
-        var legionEnabled = false;
+        var legionExpansionEnabled = false;
 
         model.enableLegion = function() {
 
-            if(legionEnabled) {
+            if(legionExpansionEnabled) {
                 return;
             }
 
-            legionEnabled = true;
-
-// temporary until next PTE
-            if (!model.gameModIdentifiers) {
-                model.gameModIdentifiers = ko.observableArray().extend({ session: 'game_mod_identifiers' });
-            }
+            legionExpansionEnabled = true;
 
             var newBuild = _.isFunction( model.aiPersonalities );
 
@@ -131,16 +126,15 @@ if (!legionExpansionLoaded) {
             $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">To MLA</div>');
             //ENDOF NEED PATCHED lobby.js
         }
-        
-        model.legionServerModIsloading = ko.computed(function() {
-            var legionServerModIsloading = _.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', ,'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0;
+ 
+ // temporary until next PTE
+        if (!model.gameModIdentifiers) {
+            model.gameModIdentifiers = ko.observableArray().extend({ session: 'game_mod_identifiers' });
+        }
 
-            if (legionServerModIsloading && ! legionEnabled) {
-                model.enableLegion();
-            }
-
-            return legionServerModIsloading;
-        });
+        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', ,'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
+               model.enableLegion();
+        }
     }
 
     try {
