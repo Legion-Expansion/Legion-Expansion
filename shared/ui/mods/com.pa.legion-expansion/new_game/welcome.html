@@ -18,10 +18,12 @@
                     <a data-bind="click: legionUrlClicked, clickBubble: false" href="https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/">Discuss</a>
                 </div>
 
+                <!-- ko if: legionClientModLoaded -->
                 <div id="legion-welcome-donotshow" data-bind="click: legionToggleDoNotShowWelcome">
                     <label for="legion-welcome-checkbox">Do not show this again</label>
                     <input id="legion-welcome-checkbox" type="checkbox" style="pointer-events: none !important;" data-bind="checked: legionDoNotShowWelcome" />
                 </div>
+                <!-- /ko -->
             </div>
         </div>
     </div>
