@@ -18,11 +18,28 @@ if (!legionExpansionLoaded) {
 
             legionEnabled = true;
 
-// temporary
+// temporary until next PTE
             if (!model.gameModIdentifiers) {
                 model.gameModIdentifiers = ko.observableArray().extend({ session: 'game_mod_identifiers' });
             }
-//
+
+            var newBuild = _.isFunction( model.aiPersonalities );
+
+            var aiPersonalities = newBuild ? model.aiPersonalities() : model.aiPersonalities;
+
+            var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
+
+            _.forEach( aiPersonalities, function(personality, name) {
+                if(defaultAiPersonalities.indexOf(name) != -1) {
+                    personality.personality_tags = _.union(personality.personality_tags || [], ['Vanilla']);
+                }
+            });
+
+            if (newBuild) {
+                model.aiPersonalities.valueHasMutated();
+            } else {
+                model.aiPersonalityNames(_.keys(aiPersonalities));
+            }  
 
             model.legionClientModLoaded = ko.observable(false);
 
