@@ -16,7 +16,7 @@
 }
 
 body.legion{
-    background: url(coui://ui/mods/com.pa.legion-expansion/img/startmainmenu.png) center right no-repeat;
+    background: url(coui://ui/mods/com.pa.legion-expansion/img/splash.png) center right no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position-x: 0px;

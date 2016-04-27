@@ -9,7 +9,7 @@
   "context": "server",
   "date": "2016/04/22",
   "dependencies": [
-    "com.pa.quitch.qAIModCompatibilityPersonalitiesPatch",
+    "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client",
     "com.wondible.pa.weapons_tracking"
   ],
