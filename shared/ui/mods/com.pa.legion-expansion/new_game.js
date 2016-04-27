@@ -73,10 +73,6 @@ if (!legionExpansionLoaded) {
 
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
-            if (!model.legionDoNotShowWelcome() && ! model.returnFromLoad()) {
-                model.legionShowWelcome();
-            }
-
             api.mods.getMountedMods('client', function(mods) {
                 var legionClientLoaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion-client', ,'com.pa.legion-expansion-client-master', 'com.pa.legion-expansion-client-balance' ] ).length > 0;
 
@@ -87,6 +83,9 @@ if (!legionExpansionLoaded) {
                     if (model.localChatMessage) model.localChatMessage('Legion Expansion', 'Legion Expansion client mod is not installed!');
                 }
 
+                if (!model.legionDoNotShowWelcome() && ! model.returnFromLoad()) {
+                    model.legionShowWelcome();
+                }
             });
 
             loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
