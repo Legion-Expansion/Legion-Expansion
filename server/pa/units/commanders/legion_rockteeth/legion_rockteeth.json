@@ -104,9 +104,9 @@
     "animations": {
       "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
       "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
-      "idle": "/pa/units/commanders/tank_base/tank_base_anim_walkStop.papa",
+      "idle": "/pa/units/commanders/legion_rockteeth/legion_rockteeth_idle.papa",
       "walk": "/pa/units/commanders/legion_rockteeth/legion_rockteeth_idle.papa",
-      "walk_stop": "/pa/units/commanders/tank_base/tank_base_anim_walkStop.papa"
+      "walk_stop": "/pa/units/commanders/legion_rockteeth/legion_rockteeth_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json",
     "filename": "/pa/units/commanders/legion_rockteeth/legion_rockteeth.papa"
