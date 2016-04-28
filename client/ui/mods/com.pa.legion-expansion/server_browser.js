@@ -19,7 +19,7 @@
 	$("#detail-pane div").first().append('<div class="lbl_titans lbl_legion details" data-bind="visible: $data.legion, css: { lbl_titans_missing: $data.is_missing_content }"><loc>Legion Expansion</loc></div>');
 })();
 
-
+    var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
     if(themesetting === "ON"){
           $('body').addClass("legion");
     }
