@@ -20,7 +20,9 @@
 })();
 
 
-    $("body").addClass("legion");
+    if(themesetting === "ON"){
+          $('body').addClass("legion");
+    }
     
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
     

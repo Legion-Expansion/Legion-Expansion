@@ -1,19 +1,15 @@
 .legion .section_title {
-    height: 60px;
-    text-align: left;
-    border-bottom: 20px solid rgba(0,0,0,0.15);
+    border-bottom: 20px solid rgba(50,0,0,0.1);
     box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);
-    position: relative;
-    z-index: 2;
 }
 
 .legion .section_content_top_bar {
-    min-height: 20px;
-    width: 100%;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.2);
     box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
+}
+
+.legion .section_title .content .title {
+    text-shadow: 0px 0px 20px rgba(70,0,0,0.9) !important;
 }
 
 .legion .content_titans_badge {
@@ -29,12 +25,10 @@
 }
 
 .legion .btn_std:hover {
-    border-width: 10px 21px 21px 21px;
     border-image: url(coui://ui/main/shared/img/buttons/btn_lrg_red_hover.png) 10 21 21 21 fill;
 }
 
 .btn_std:active {
-    border-width: 10px 21px 21px 21px;
     border-image: url(coui://ui/main/shared/img/buttons/btn_lrg_red_active.png) 10 21 21 21 fill;
     box-shadow: inset 500px 500px 500px 500px #000;
 }
@@ -57,10 +51,10 @@
 }
 
 .legion .section_content {
-    background: rgba(10,0,0,0.8);
+    background: rgba(10,0,0,0.85);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    border-bottom: 1px solid rgba(255,180,180,.15);
-    border-top: 1px solid rgba(255,180,180,.15);
+    border-bottom: 1px solid rgba(255,140,140,.15);
+    border-top: 1px solid rgba(255,140,140,.15);
 }
 
 .legion .div_commit_cont {
@@ -70,7 +64,7 @@
 }
 
 .legion .div_data_table {
-    background: rgba(60, 0, 0, 1);
+    background: rgba(50, 0, 0, 1);
     border: 1px solid rgba(255, 0, 0, 0.25);
     box-shadow: inset 0px 0px 50px rgba(130, 0, 0, 0.2);
 }
