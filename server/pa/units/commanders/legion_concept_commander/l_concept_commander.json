@@ -39,7 +39,7 @@
     "ui": {
       "image": "/ui/main/shared/img/commanders/rockteeth_image.png",
       "profile_image": "/ui/main/shared/img/commanders/profiles/profile_rockteeth.png",
-      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_tank_aeson_thumb.png"
+      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_legion_rockteeth_thumb.png"
     }
   },
   "command_caps": [
@@ -238,19 +238,19 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_beam_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_beam_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_beam_aa_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_beam_aa_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",

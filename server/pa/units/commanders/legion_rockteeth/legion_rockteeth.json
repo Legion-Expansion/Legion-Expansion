@@ -15,14 +15,13 @@
       ]
     }
   },
-  "base_spec": "/pa/units/commanders/tank_base/tank_base.json",
-  "buildable_types": "CmdBuild & Custom1",
-  "catalog_object_name": "TankAeson",
+  "base_spec": "/pa/units/commanders/legion_base/legion_base.json",
+  "catalog_object_name": "LegionRockteeth",
   "client": {
     "ui": {
-      "image": "/ui/main/shared/img/commanders/rockteeth_image.png",
-      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_rockteeth.png",
-      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_tank_aeson_thumb.png"
+      "image": "/ui/main/shared/img/commanders/img_legion_rockteeth.png",
+      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_legion_rockteeth.png",
+      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_legion_rockteeth_thumb.png"
     }
   },
   "fx_offsets": [
@@ -35,11 +34,6 @@
         0
       ],
       "type": "idle"
-    },
-    {
-      "bone": "socket_leftMuzzle",
-      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
-      "type": "build"
     }
   ],
   "headlights": [
@@ -110,20 +104,17 @@
     "animations": {
       "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
       "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
-      "idle": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
-      "walk": "/pa/units/commanders/tank_aeson/tank_aeson_idle.papa",
-      "walk_stop": ""
+      "idle": "/pa/units/commanders/tank_base/tank_base_anim_walkStop.papa",
+      "walk": "/pa/units/commanders/legion_rockteeth/legion_rockteeth_idle.papa",
+      "walk_stop": "/pa/units/commanders/tank_base/tank_base_anim_walkStop.papa"
     },
-    "filename": "/pa/units/commanders/tank_aeson/tank_aeson.papa"
+    "animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json",
+    "filename": "/pa/units/commanders/legion_rockteeth/legion_rockteeth.papa"
   },
   "scrolling_uv": {
     "scroll_rate": 0.4,
     "uv_split": 0.8
   },
-  "selection_icon": {
-    "diameter": -16.6
-  },
-  "si_name": "l_commander",
   "tools": [
     {
       "aim_bone": "bone_turret",
@@ -133,41 +124,25 @@
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/commanders/l_uber_cannon.json"
+      "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tracer_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_tracer_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_tool_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_rightMuzzle",
       "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/commanders/tank_aeson/gatling_gun_aa_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_rightMuzzle",
-      "primary_weapon": false,
-      "show_range": false,
-      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+      "spec_id": "/pa/units/commanders/legion_rockteeth/gatling_gun_aa_tool_weapon.json"
     }
-  ],
-  "unit_types": [
-    "UNITTYPE_Commander",
-    "UNITTYPE_Construction",
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Offense",
-    "UNITTYPE_Land",
-    "UNITTYPE_NoBuild",
-    "UNITTYPE_Custom1"
   ]
 }
