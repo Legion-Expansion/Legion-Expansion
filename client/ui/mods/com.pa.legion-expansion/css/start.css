@@ -112,3 +112,9 @@ body.legion{
   border:none;
 }
 
+#legionplayer {
+  outline: 1.5px solid rgba(110, 0, 0, 1);
+  outline-offset: -1px;
+  box-shadow: 0px 0px 25px rgba(240,0,0,0.3);
+}
+
