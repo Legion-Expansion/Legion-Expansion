@@ -1,5 +1,5 @@
 {
-  "display_name": "Hash Slinging Slasher",
+  "display_name": "Hash-Slinging Slasher",
   "description": "Legion KiwiCom Commander",
   "attachable": {
     "offsets": {
@@ -16,11 +16,11 @@
     }
   },
   "base_spec": "/pa/units/commanders/legion_base/legion_base.json",
-  "catalog_object_name": "LegionKiwiCom ",
+  "catalog_object_name": "RaptorSlash",
   "client": {
     "ui": {
-      "image": "/ui/main/shared/img/commanders/img_legion_kiwicom.png",
-      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_legion_kiwicom.png",
+      "image": "/ui/main/shared/img/commanders/img_legion_slasher.png",
+      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_legion_slasher.png",
       "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_legion_kiwicom_thumb.png"
     }
   },
@@ -106,7 +106,8 @@
       "walk": "/pa/units/commanders/legion_concept_commander/legion_concept_commander_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
-    "filename": "/pa/units/commanders/legion_concept_commander/legion_concept_commander.papa"
+    "filename": "/pa/units/commanders/legion_concept_commander/legion_concept_commander.papa",
+    "walk_speed": 6
   },
   "selection_icon": {
     "diameter": -16.6
