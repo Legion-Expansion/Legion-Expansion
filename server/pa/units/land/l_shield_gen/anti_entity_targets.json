@@ -4,6 +4,7 @@
   "ammo_per_shot": 1000,
   "ammo_source": "energy",
   "anti_entity_targets": [
+    "/pa/units/orbital/l_orbital_laser/l_orbital_laser_ammo.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
