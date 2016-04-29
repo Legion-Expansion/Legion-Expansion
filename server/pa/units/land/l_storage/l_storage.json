@@ -44,20 +44,20 @@
   ],
   "model": [
     {
-      "filename": "/pa/units/land/l_storage/l_storage.papa",
       "animations": {
         "idle": "/pa/units/land/l_storage/l_storage_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/l_storage/l_storage.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
     },
     {
-      "filename": "/pa/units/land/l_storage/l_storage.papa",
       "animations": {
         "idle": "/pa/units/land/l_storage/l_storage_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "filename": "/pa/units/land/l_storage/l_storage.papa",
       "layer": "WL_WaterSurface"
     }
   ],
