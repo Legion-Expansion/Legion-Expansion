@@ -1,5 +1,5 @@
 {
-  "display_name": "KiwiCom",
+  "display_name": "Hash Slinging Slasher",
   "description": "Legion KiwiCom Commander",
   "attachable": {
     "offsets": {
@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/commanders/legion_base/legion_base.json",
-  "catalog_object_name": "LegionKiwiCom",
+  "catalog_object_name": "LegionKiwiCom ",
   "client": {
     "ui": {
       "image": "/ui/main/shared/img/commanders/img_legion_kiwicom.png",
@@ -113,30 +113,30 @@
   },
   "tools": [
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
     },
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "muzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
     },
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "muzzle",
       "secondary_weapon": true,
       "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
     },
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "muzzle",
       "primary_weapon": false,
       "show_range": false,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
     },
     {
-      "aim_bone": "turret",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "muzzle",
       "primary_weapon": false,
       "show_range": false,
