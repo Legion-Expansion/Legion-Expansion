@@ -76,10 +76,6 @@
     box-shadow: inset 0px 0px 20px rgba(255, 0, 0, 0.2);
 }
 
-.legion .btn_std_ix {
-    text-shadow: 0px 0px 500px rgba(0,250,0,1);
-}
-
 .legion .ui-selected {
     background: rgba(255,0,0,0.8) !important;
     border:1px solid rgba(158, 0, 0, 0.1) !important;
@@ -102,6 +98,7 @@
     text-shadow: 0px 0px 20px rgba(0,200,0,1);
 }
     
-#detail-pane .item {
-    box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.15);
+.legion #detail-pane .item {
+    border: 1px solid rgba(255,140,140,.1);
+    box-shadow: inset 0px 0px 4px rgba(200,140,140, 0.15);
 }
