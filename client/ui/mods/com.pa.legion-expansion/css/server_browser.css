@@ -9,7 +9,7 @@
 }
 
 .legion .section_title .content .title {
-    text-shadow: 0px 0px 20px rgba(70,0,0,0.9) !important;
+    text-shadow: 0px 0px 20px rgba(190,0,0,0.9) !important;
 }
 
 .legion .content_titans_badge {
@@ -72,9 +72,36 @@
 .legion #game-list-header > div {
     border-bottom: 1px solid rgba(255, 0, 0, 0.45);
     border-right: 1px solid rgba(255, 0, 0, 0.45);
+    text-shadow: 0px 0px 20px rgba(200,0,0,0.8);
+    box-shadow: inset 0px 0px 20px rgba(255, 0, 0, 0.2);
+}
+
+.legion .btn_std_ix {
+    text-shadow: 0px 0px 500px rgba(0,250,0,1);
+}
+
+.legion .ui-selected {
+    background: rgba(255,0,0,0.8) !important;
+    border:1px solid rgba(158, 0, 0, 0.1) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
 }
 
 .legion .div_data_table .table_glow {
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.6);
 }
 
+.legion #detail-pane h3 {
+    text-shadow: 0px 0px 15px rgba(255,0,0,0.7);
+}
+
+.legion #detail-pane .item .text {
+    text-shadow: 0px 0px 15px rgba(255,0,0,.5);
+}
+
+.legion #detail-pane .item .open {
+    text-shadow: 0px 0px 20px rgba(0,200,0,1);
+}
+    
+#detail-pane .item {
+    box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.15);
+}
