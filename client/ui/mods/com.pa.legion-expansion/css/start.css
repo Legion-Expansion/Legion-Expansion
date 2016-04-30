@@ -21,14 +21,6 @@
   border: 0px !important;
 }
 
-body.legion{
-    background: url(coui://ui/mods/com.pa.legion-expansion/img/splash.png) center right no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-x: 0px;
-    background-position-y: 0px;
-}
-
 .legion .secondary_bar {
   background: rgba(0,0,0,.15) !important;
 }
