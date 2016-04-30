@@ -65,6 +65,11 @@ if (!legionExpansionLoaded) {
             }
 
             loadCSS('coui://ui/mods/com.pa.legion-expansion/css/new_game.css');
+            
+            var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+            if(themesetting === "ON"){
+                $('body').addClass("legion");
+            }            
 
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
