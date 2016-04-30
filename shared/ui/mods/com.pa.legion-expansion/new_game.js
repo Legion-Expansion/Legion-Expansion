@@ -65,7 +65,7 @@ if (!legionExpansionLoaded) {
             }
 
             loadCSS('coui://ui/mods/com.pa.legion-expansion/css/new_game.css');
-            
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_no_logo.css");
             var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
             if(themesetting === "ON"){
                 $('body').addClass("legion");
