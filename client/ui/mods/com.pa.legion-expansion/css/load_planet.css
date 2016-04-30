@@ -1,0 +1,96 @@
+﻿.legion .body {
+    color: white;
+}
+
+.legion .section_content {
+    background: rgba(15,0,0,0.3) !important;
+}
+
+.legion .section_content_table {
+    width: 79%;
+    padding: 0px 0px 0px 0px;
+    background: rgba(15,0,0,0.15);
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.9);
+}
+
+.legion .tab-wrapper {
+    height: 100%;
+    margin: 0px 0px;
+    padding: 10px 0px 0px 20px;
+}
+
+.legion .section_content .col_1 {
+    background: rgba(15,0,0,0.3);
+}
+
+.legion .section_controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.legion .section_content .col_2 {
+    width: 68%;
+    flex-grow: 0;
+    background: rgba(10,0,0,0.8) !important;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1) !important;
+}
+
+.legion .one-system, .one-planet {
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 0px rgba(0, 179, 255, 0);
+}
+
+.legion .one_system_selected {
+    border:1px solid rgba(158, 0, 0, 0.1);
+    background: rgba(255,0,0,0.7);
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5);
+}
+
+.legion .one-system:hover, one-planet:hover {
+    border:1px solid rgba(158, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5);
+    background: rgba(255,0,0,0.85);
+}
+
+.legion .one-system:active {
+    background: rgba(255,0,0,1);
+    border:1px solid rgba(158, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.8);
+}
+
+.legion .system-properties {
+    background: linear-gradient(to bottom, rgba(150,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.legion .system-title {
+    text-shadow: 0px 0px 15px rgba(255,0,0,0.5);
+}
+
+.legion .section_content .col_3 {
+    background: rgba(15,0,0,0.35);
+}
+
+.legion #detail-pane .one-planet-detail {
+    background:rgba(10, 0, 0, 0.6); 
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.legion .thruster_count {
+    background: url('coui://ui/mods/com.pa.legion-expansion/img/icon_thruster.png') top center no-repeat;
+    color: red;
+    font-weight: bolder;
+}
+
+.legion .btn_hero {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png) 10 21 21 21 fill;
+}
+
+    .legion .btn_hero:hover {
+        border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png) 10 21 21 21 fill;
+    }
+
+    .legion .btn_hero:active {
+        border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png) 10 21 21 21 fill;
+    }
