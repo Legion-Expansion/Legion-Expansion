@@ -11,6 +11,12 @@
     box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
 }
 
+.legion .btn_std_ix_active {
+    background: rgba(255,0,0,0.8) !important;
+    border:1px solid rgba(158, 0, 0, 0.1) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
+}
+
 .legion .nav_sub_item {
   border: 0px !important;
 }
@@ -117,4 +123,3 @@ body.legion{
   outline-offset: -1px;
   box-shadow: 0px 0px 25px rgba(240,0,0,0.3);
 }
-
