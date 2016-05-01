@@ -4,6 +4,7 @@
   "ammo_per_shot": 1000,
   "ammo_source": "energy",
   "anti_entity_targets": [
+    "/pa/units/orbital/l_orbital_laser/l_orbital_laser_ammo.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
@@ -57,10 +58,6 @@
     "/pa/units/sea/l_sea_tank/l_sea_tank_ammo.json",
     "/pa/units/sea/nuclear_sub/nuclear_sub_ammo.json",
     "/pa/units/sea/sea_scout/sea_scout_ammo.json",
-    "/pa/units/orbital/l_orbital_laser/l_orbital_laser_ammo.json",
-    "/pa/units/orbital/sentinel/sentinel_ammo.json",
-    "/pa/units/orbital/hammerhead/hammerhead_ammo.json",
-    "/pa/units/orbital/excal/excal_ammo.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
     "/pa/units/land/air_defense/air_defense_ammo.json",

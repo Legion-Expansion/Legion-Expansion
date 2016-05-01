@@ -1,0 +1,11 @@
+{
+  "base_spec": "/pa/ammo/base_beam/base_beam.json",
+  "collision_check": "target",
+  "collision_response": "impact",
+  "damage": 200,
+  "full_damage_splash_radius": 5,
+  "fx_beam_spec": "/pa/units/orbital/l_ion_defense/beam.pfx",
+  "fx_collision_spec": "/pa/units/orbital/l_ion_defense/beam_hit.pfx",
+  "splash_damage": 0,
+  "splash_radius": 0
+}

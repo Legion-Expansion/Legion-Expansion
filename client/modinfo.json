@@ -1,6 +1,6 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "94132",
+  "build": "94157",
   "category": [
     "titans",
     "units",
@@ -14,11 +14,14 @@
   "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
   "display_name": "Legion Expansion Client",
   "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
-  "icon": "http://i.imgur.com/SsUYiL8.png",
+  "icon": "https://i.imgur.com/Eal5t9L.png",
   "identifier": "com.pa.legion-expansion-client",
   "scenes": {
     "server_browser": [
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
+    ],
+    "load_planet": [
+       "coui://ui/mods/com.pa.legion-expansion/load_planet.js" 
     ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"

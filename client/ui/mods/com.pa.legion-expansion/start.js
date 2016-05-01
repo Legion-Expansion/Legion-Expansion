@@ -15,12 +15,13 @@ if ( ! legionExpansionLoaded )
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
         var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
         if(themesetting === "ON"){
           $('body').addClass("legion");
         }
         model.showLegionGuidesMenu = ko.observable(false);
-        
+
         model.legionToggleGuides = function(){
           if(model.showLegionGuidesMenu()){
             model.showLegionGuidesMenu(false);
@@ -31,24 +32,24 @@ if ( ! legionExpansionLoaded )
             model.showMultiplayerMenu(false);
           }
         }
-        
+
         model.navToLegionGuide1 = function(){
           engine.call('web.launchPage', 'http://exodusesports.com/article/planetary-annihilation-titans/');
           model.showLegionGuidesMenu(false);
         }
-        
+
         model.navToLegionGuide2 = function(){
-          engine.call('web.launchPage', 'http://exodusesports.com/article/legion-community-faction-mod/');
+          engine.call('web.launchPage', 'http://exodusesports.com/article/legion-expansion-community-faction-mod/');
           model.showLegionGuidesMenu(false);
         }
-       
+
         //ADD GUIDES MENU
         $("#nav_mods").before('<div class="nav_cascade_group"><div class="btn_std_ix nav_item nav_item_text" data-bind="click: legionToggleGuides, click_sound: \'default\', rollover_sound: \'default\', css: { nav_item_text_disabled: !allowNewOrJoinGame(), btn_std_ix_active: showLegionGuidesMenu }">Legion Guides <div class="glyphicon glyphicon-chevron-right nav_carat" aria-hidden="true"></div></div><div class="nav_sub_item" data-bind="visible: showLegionGuidesMenu"><div class="nav_item nav_item nav_item_text btn_std_ix" data-bind="click: navToLegionGuide1, click_sound: \'default\', rollover_sound: \'default\'">TITANS</div><div class="nav_item nav_item nav_item_text btn_std_ix" data-bind="click: navToLegionGuide2, click_sound: \'default\', rollover_sound: \'default\'">LEGION</div></div> </div>')
-        
+
         var legionOriginalToggleSinglePlayerMenu = model.toggleSinglePlayerMenu;
         var legionOriginalToggleMultiplayerPlayerMenu = model.toggleMultiplayerMenu;
         var legionOriginalHideSubMenus = model.hideSubMenus;
-        
+
         model.toggleSinglePlayerMenu = function () {
             legionOriginalToggleSinglePlayerMenu();
             model.showLegionGuidesMenu(false);
@@ -57,15 +58,15 @@ if ( ! legionExpansionLoaded )
           legionOriginalToggleMultiplayerPlayerMenu();
           model.showLegionGuidesMenu(false);
         };
-        
-        
+
+
         model.hideSubMenus = function(data, event) {
             legionOriginalHideSubMenus(data, event);
             if (document.getElementById("navigation_panel").contains(event.target))
                 return;
             model.showLegionGuidesMenu(false);
         };
-        
+
     }
 
     try
@@ -107,7 +108,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 model.legionYTplayer = null;
 function onYouTubeIframeAPIReady() {
-  
+
   model.legionYTplayer = new YT.Player('legionplayer', {
     height: '100%',
     width: '100%',
@@ -116,7 +117,8 @@ function onYouTubeIframeAPIReady() {
       controls: 1,
       modestbranding: 1,
       rel: 0,
-      iv_load_policy: 3
+      iv_load_policy: 3,
+      disablekb : 1
     },
     events: {
       'onReady': model.onPlayerLegionReady,
@@ -129,7 +131,15 @@ model.onPlayerLegionStateChange = function(event) {
   if(event.data === 0) {
     model.stopLegionVideo();
   }
-  console.log("Youtube Player State changed " + event.data);
+  if(event.data === 1){
+    //Start Playing
+    /* BALLS
+    $(window).keyup(function(e) {
+      if (e.keyCode === 27) model.stopLegionVideo();  console.log("stopped video via esc"); // esc
+    });
+   */
+  }
+  //console.log("Youtube Player State changed " + event.data);
 }
 
 model.stopLegionVideo = function(e) {
@@ -146,11 +156,6 @@ model.playLegionVideo = function(){
 
 model.onPlayerLegionReady = function(event) {
   model.legionYTPlayerReady(true);
-  /* BALLS
-  $('#legionplayer').keyup(function(e) {
-    if (e.keyCode === 27) model.stopLegionVideo();  console.log("stopped video via esc"); // esc
-  });         
-   */ 
   // Check if we should play the intro
   if(legion_intro_one_time != "true") {
     model.playLegionVideo();
@@ -158,5 +163,5 @@ model.onPlayerLegionReady = function(event) {
   }
   else{ //fix for people getting stuck and pressing F5 so they can get out of video
     model.stopLegionVideo();
-  }    
+  }
 }

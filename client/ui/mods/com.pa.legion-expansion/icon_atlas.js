@@ -14,10 +14,8 @@ if ( ! legionExpansionLoaded )
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
 
         var legionIcons =[
-          "tank_aeson", // FIXME
-          "imperial_invictus", // FIXME
+		  "l_commander",
           "l_flying_teleporter",
-          "l_unit_cannon",
           "l_naval_factory_adv",
           "l_air_factory_adv",
           "l_bot_factory_adv",
@@ -46,7 +44,6 @@ if ( ! legionExpansionLoaded )
           "l_control_module",
           "l_energy_plant_adv",
           "l_mex_adv",
-          "l_deep_space_radar",
           "l_delta_v_engine",
           "l_radar_adv",
           "l_energy_plant",

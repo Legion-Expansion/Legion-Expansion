@@ -21,7 +21,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/orb/umbrella_laser_fire",
-      "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/orbital/l_ion_defense/ion_defense_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/orb/umbrella_mis_anti_unitcannon_fire"

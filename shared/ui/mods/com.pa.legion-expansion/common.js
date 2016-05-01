@@ -1,7 +1,7 @@
 //check if we can't get this from blueprint unit infoframework but will need dependency.
 var legionglobal = {};
 
-legionglobal.commanders = ["/pa/units/commanders/tank_aeson/tank_aeson.json","/pa/units/commanders/imperial_invictus/imperial_invictus.json"];
+legionglobal.commanders = ["/pa/units/commanders/l_rockteeth/l_rockteeth.json","/pa/units/commanders/l_overwatch/l_overwatch.json", "/pa/units/commanders/l_cyclops/l_cyclops.json", "/pa/units/commanders/l_wasushi/l_wasushi.json"];
 legionglobal.basicfactories = ["/pa/units/air/l_air_factory/l_air_factory.json","/pa/units/land/l_bot_factory/l_bot_factory.json","/pa/units/land/l_vehicle_factory/l_vehicle_factory.json","/pa/units/sea/l_naval_factory/l_naval_factory.json","/pa/units/orbital/l_orbital_launcher/l_orbital_launcher.json"];
 legionglobal.advfactories = ["/pa/units/air/l_air_factory_adv/l_air_factory_adv.json","/pa/units/land/l_bot_factory_adv/l_bot_factory_adv.json","/pa/units/land/l_vehicle_factory_adv/l_vehicle_factory_adv.json","/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv.json","/pa/units/orbital/l_orbital_factory/l_orbital_factory.json"];
 legionglobal.airfabbers = ["/pa/units/air/l_fabrication_aircraft/l_fabrication_aircraft.json","/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json"];

@@ -18,3 +18,12 @@
 	$("#game-list .col-md-3").append('<span class="lbl_titans lbl_legion" data-bind="visible: $data.legion"><noloc>Legion<noloc></span>');
 	$("#detail-pane div").first().append('<div class="lbl_titans lbl_legion details" data-bind="visible: $data.legion, css: { lbl_titans_missing: $data.is_missing_content }"><loc>Legion Expansion</loc></div>');
 })();
+
+//load legion theme
+loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");    
+loadCSS("coui://ui/mods/com.pa.legion-expansion/css/server_browser.css");
+loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_no_logo.css");
+var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+if(themesetting === "ON"){
+    $('body').addClass("legion");
+}
