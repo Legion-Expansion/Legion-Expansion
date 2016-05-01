@@ -1,6 +1,6 @@
 {
-  "display_name": "Wasushi",
-  "description": "Legion Wasushi Commander",
+  "display_name": "Cyclops",
+  "description": "Legion Cyclops Commander",
   "attachable": {
     "offsets": {
       "head": [
@@ -15,13 +15,13 @@
       ]
     }
   },
-  "base_spec": "/pa/units/commanders/legion_base/legion_base.json",
-  "catalog_object_name": "ImperialWasushi",
+  "base_spec": "/pa/units/commanders/l_base/l_base.json",
+  "catalog_object_name": "RaptorSlash",
   "client": {
     "ui": {
-      "image": "/ui/main/shared/img/commanders/img_legion_wasushi.png",
-      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_legion_wasushi.png",
-      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_legion_kiwicom_thumb.png"
+      "image": "/ui/main/shared/img/commanders/img_l_cyclops.png",
+      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_l_cyclops.png",
+      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_l_cyclops_thumb.png"
     }
   },
   "events": {
@@ -102,12 +102,12 @@
   ],
   "model": {
     "animations": {
-      "idle": "/pa/units/commanders/legion_wasushi/legion_wasushi_idle.papa",
-      "walk": "/pa/units/commanders/legion_wasushi/legion_wasushi_walk.papa"
+      "idle": "/pa/units/commanders/l_cyclops/l_cyclops_idle.papa",
+      "walk": "/pa/units/commanders/l_cyclops/l_cyclops_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
-    "filename": "/pa/units/commanders/legion_wasushi/legion_wasushi.papa",
-    "walk_speed": 5.5
+    "filename": "/pa/units/commanders/l_cyclops/l_cyclops.papa",
+    "walk_speed": 6
   },
   "selection_icon": {
     "diameter": -16.6
