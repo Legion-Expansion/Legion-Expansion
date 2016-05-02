@@ -1,0 +1,9 @@
+## CHANGELOG
+
+#### v0.10.0 - 
+ 
+ - Introduced new Legion unique build effects
+
+#### v0.9.0 - 2016/02/05
+
+ - Public beta release
