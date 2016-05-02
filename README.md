@@ -18,7 +18,7 @@ Lastest Python 3.x is required. Please do not use Python 2.x as whitespace forma
 
 ## Commiting
 
-1. Don't commit broken stuff to MASTER. Develop, text and fix in your local, a branch or your own fork.
+1. Don't commit broken stuff to MASTER. Develop, test and fix in your local, a branch or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE refernces in the format.py output
 
