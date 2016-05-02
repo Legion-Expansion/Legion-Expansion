@@ -193,7 +193,7 @@ void mainLegion()
     // wire_distfield = min(wire_distfield, hexCell);
 
     float height_fraction = v_ModelPosition.z / model_height + 
-        (texture(NoiseTexture, v_ModelPosition.xy / 80.0 + build_fraction).r + texture(NoiseTexture, v_ModelPosition.xy / -90.0 + build_fraction).g) * 0.03;
+        (texture(NoiseTexture, v_ModelPosition.xy / 80.0 + build_fraction).r + texture(NoiseTexture, v_ModelPosition.xy / -90.0 + build_fraction).g) * 0.05;
         // - 0.2 * hex_distfield * hexCell;
 
 
@@ -223,7 +223,7 @@ void mainLegion()
         (
             height_fraction - (build_fraction - 0.5) * 2.0
              - 0.75 / model_height
-             - 0.2 * hexCell * hex_distfield
+             - 0.4 * hexCell * hex_distfield
         ) * 800.0,
         0.0,
         1.0);
@@ -245,6 +245,7 @@ void mainLegion()
 
     vec3 build_color = TeamColor_Primary.xyz;
     vec3 fab_color = vec3(100, 0.2, 0.0);
+    vec3 fab_color2 = mix(build_color, fab_color, 0.05);
 
     vec4 mask = texture(MaskTexture, tc);
     vec3 viewNormal = normalize(v_Normal);
@@ -270,7 +271,7 @@ void mainLegion()
     vec3 ambient = ambientColor * diffuse.rgb + diffuse.rgb * 2.0 * (1.0 - fab_fade) * emissive_mask * (1.0 - build_mask);
     ambient = mix(build_color, ambient, wire_mask);
     ambient = mix(ambient, fab_color, fab_mask);
-    ambient = mix(ambient, fab_color, max(build_mask, height_fraction * (1 - build_fraction) / 5) * hexCell * hex_distfield);
+    ambient = mix(ambient, fab_color2, max(build_mask, height_fraction * (1 - build_fraction) / 5) * hexCell * hex_distfield);
 
     out_FragData[0] = vec4(ambient, 1.0);
     out_FragData[1] = vec4(diffuse.rgb, specularMask);
