@@ -278,8 +278,9 @@ void mainLegion()
     out_FragData[3] = vec4(encodeViewNormal(viewNormal), encodeSpecularExp(specularExp, specularMetal));
 }
 
-void main() {   
-    vec4 tex = texture2D(DiffuseTexture, vec2(0, 1));
+void main() {
+    ivec2 size2 = textureSize(DiffuseTexture, 0);
+    vec4 tex = texelFetch(DiffuseTexture, ivec2(size2.x-1, 0), 0);
     if (tex.b > tex.g * 1.5 && tex.r > tex.g * 1.5) {
         mainLegion();
     } else {
