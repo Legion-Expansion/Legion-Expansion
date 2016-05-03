@@ -108,8 +108,7 @@ if ( ! legionExpansion_sharedbuildLoaded )
           "/pa/units/sea/l_attack_sub/l_attack_sub.json": [ "L_sea", 15 ],
           "/pa/units/sea/l_frigate/l_frigate.json": [ "L_sea", 16 ],
 
-          "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 5 ],
-          "/pa/units/orbital/l_solar_array/l_solar_array.json": [ "L_orbital", 6 ],
+          "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship.json": [ "L_orbital", 6 ],
           "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun.json": [ "L_orbital", 9 ],
           "/pa/units/orbital/l_orbital_laser/l_orbital_laser.json": [ "L_orbital", 7 ],
           "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv.json": [ "L_orbital", 8 ],
