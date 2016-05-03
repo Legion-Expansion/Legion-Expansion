@@ -34,6 +34,11 @@
         0
       ],
       "type": "idle"
+    },
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
     }
   ],
   "headlights": [
