@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "client",
-  "date": "2016/04/22",
+  "date": "2016/05/03",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
@@ -21,7 +21,7 @@
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
     ],
     "load_planet": [
-       "coui://ui/mods/com.pa.legion-expansion/load_planet.js" 
+       "coui://ui/mods/com.pa.legion-expansion/load_planet.js"
     ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
@@ -77,6 +77,6 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.9.0-beta",
+  "version": "0.9.1",
   "hidden": true
 }
