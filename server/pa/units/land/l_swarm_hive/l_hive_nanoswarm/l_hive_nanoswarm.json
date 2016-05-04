@@ -41,7 +41,7 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "guard_radius": 300,
-  "max_health": 125,
+  "max_health": 80,
   "mesh_bounds": [
     1,
     1,
@@ -56,7 +56,7 @@
   },
   "navigation": {
     "acceleration": 60,
-    "move_speed": 60,
+    "move_speed": 50,
     "turn_speed": 1080,
     "type": "hover"
   },
