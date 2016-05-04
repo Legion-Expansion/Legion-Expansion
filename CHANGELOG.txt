@@ -1,8 +1,15 @@
 ## CHANGELOG
 
-#### v0.10.0 - 
- 
+#### v0.10.0 -
+
  - Introduced new Legion unique build effects
+
+#### v0.9.1 - 2016/05/03
+
+ - Fixed bug preventing the Enderstryke71 and Nefelpitou Commanders from building
+ - Restored Rockteeth build effects
+ - The Imperator orbital battleship is now buildable
+ - Fixed the Marauder description
 
 #### v0.9.0 - 2016/02/05
 
