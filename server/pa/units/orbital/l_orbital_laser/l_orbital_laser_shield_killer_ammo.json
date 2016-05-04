@@ -1,0 +1,24 @@
+{
+  "base_spec": "/pa/units/orbital/l_orbital_laser/l_orbital_laser_ammo.json",
+  "burn_damage": 0,
+  "burn_radius": 0,
+  "damage": 0,
+  "damage_volume": {
+    "burnable_remove_radius": 0
+  },
+  "events": {
+    "died": {
+      "effect_scale": 0,
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "full_damage_splash_radius": 0,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/none.pfx"
+  },
+  "model": {
+    "filename": ""
+  },
+  "splash_damage": 0,
+  "splash_radius": 0
+}

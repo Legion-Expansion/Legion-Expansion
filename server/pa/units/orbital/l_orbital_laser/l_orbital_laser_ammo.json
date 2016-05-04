@@ -8,7 +8,7 @@
     "delay": 3,
     "initial_radius": 20,
     "radius_accel": -5,
-    "radius_velocity": 40
+    "radius_velocity": 50
   },
   "events": {
     "died": {
@@ -25,10 +25,14 @@
       0
     ]
   },
-  "initial_velocity": 60,
-  "lifetime": 5,
-  "max_velocity": 60,
+  "initial_velocity": 50,
+  "lifetime": 10,
+  "max_velocity": 50,
   "model": null,
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 0.01
+  },
   "splash_damage": 3000,
   "splash_radius": 65
 }
