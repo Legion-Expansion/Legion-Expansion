@@ -1,6 +1,6 @@
 {
   "display_name": "Salamander",
-  "description": "Flame Deployment Bomber - Relic of the First Nomad War. Incinerates Rebel Enemies without Mercy.",
+  "description": "Flame Deployment Bomber - Heavy damage over an area. Well armoured. Can deploy light flamethrower turret.",
   "TEMP_texelinfo": 7,
   "audio": {
     "loops": {
