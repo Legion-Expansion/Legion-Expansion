@@ -59,7 +59,7 @@
     color: white;
 }
 
-.legion input[type="text"], input[type="password"], input[type="number"] {
+.legion input[type="text"], .legion input[type="password"], .legion input[type="number"] {
     background: rgba(70,0,0,1) !important;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
@@ -121,7 +121,7 @@
     max-width: 190px !important;
     padding: 6px 8px;
     background-color: rgba(70,0,0,1) !important;
-    box-shadow: 0px 0px 25px rgba(255,0,0,0.8) !important;
+    box-shadow: 0px 0px 25px rgba(255,0,0,0.7) !important;
 }
 
 .legion .section_content_table {
@@ -185,19 +185,19 @@
     margin: 0px 3px 0px 20px;
 }
 
-.legion .btn_toggle, .btn_toggle_shared_army {
+.legion .btn_toggle, .legion .btn_toggle_shared_army {
     background:rgba(70, 0, 0, 1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
     -webkit-box-shadow: none !important;
 }
 
-    .legion .btn_toggle:hover, .btn_toggle_shared_army:hover {
+    .legion .btn_toggle:hover, .legion .btn_toggle_shared_army:hover {
         background: rgba(255,0,0,0.85) !important;
         border: 1px solid rgba(255, 0, 0, 0.2) !important;
         box-shadow: 0px 0px 20px rgba(255,0,0,1) !important;
     }
 
-    .legion .btn_toggle:active, .btn_toggle.live, .btn_toggle_shared_army.on {
+    .legion .btn_toggle:active, .legion .btn_toggle.live, .legion .btn_toggle_shared_army.on {
         background: rgba(255,0,0,0.7) !important;
         border:1px solid rgba(158, 0, 0, 0.1) !important;
         box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;

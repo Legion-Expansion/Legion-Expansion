@@ -2,6 +2,7 @@
     background:rgba(70, 0, 0, 1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
     box-shadow: inset 0px 0px 8px rgba(255, 0, 0, 0.1) !important;
+    text-shadow: 0px 0px 15px rgba(255,0,0,.5);
     color:white !important;
 }
 
@@ -30,8 +31,9 @@
 }
 
 .legion .full_update{
-  background: linear-gradient(to top, rgba(70, 0, 0, 0.4) 0%, rgba(80, 0, 0, 0.9) 85%) !important;
-  border: red 1px !important;
+  background: linear-gradient(to top, rgba(50, 0, 0, 0.6) 0%, rgba(50, 0, 0, 1) 85%) !important;
+  border: 1px solid rgba(255, 0, 0, 0.2) !important;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.7) !important;
   color: white;
 }
 
@@ -114,4 +116,11 @@
   outline: 1.5px solid rgba(110, 0, 0, 1);
   outline-offset: -1px;
   box-shadow: 0px 0px 25px rgba(240,0,0,0.3);
+}
+
+.legion .tooltip-inner {
+    max-width: 190px !important;
+    padding: 6px 8px;
+    background-color: rgba(70,0,0,1) !important;
+    box-shadow: 0px 0px 25px rgba(255,0,0,0.7) !important;
 }

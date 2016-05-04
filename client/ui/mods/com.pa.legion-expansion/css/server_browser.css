@@ -98,3 +98,8 @@
     border: 1px solid rgba(255,140,140,.1);
     box-shadow: inset 0px 0px 4px rgba(200,140,140, 0.15);
 }
+
+.legion .form-group label,
+    .legion #detail-pane .col-header {
+        color: rgb(230,230,230);
+    }
