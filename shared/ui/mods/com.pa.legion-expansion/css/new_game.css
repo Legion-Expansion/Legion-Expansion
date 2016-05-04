@@ -1,16 +1,337 @@
+/*legion theme skin*/
+.legion .section_content {
+    height: calc(100% - 190px) !important;
+    background: rgba(15,0,0,0.3) !important;
+    color: (white);
+}
+
+.legion .body {
+    color: white !important;
+}
+
+.legion .section_title { 
+    height: 50px;
+    padding: 5px 0px 0px 0px;
+}
+
+.legion .section_content .game_settings .section {
+    color: white;    
+}
+
+.legion .section_content .section_header {
+    text-shadow: 0px 0px 15px rgba(255,0,0,.5); 
+}
+
+.legion .game_settings .section .form-control {
+    background: none;
+}
+
+.legion .dropdown-menu .text {
+    text-shadow: 0px 0px 15px rgba(255,0,0,.5) !important; 
+}
+
+.legion .dropdown-menu {
+    background: rgba(70, 0, 0, 1) !important;
+    border: 1px solid rgba(255, 0, 0, 0.2) !important;    
+}
+
+.legion .dropdown-menu > li > a:hover {
+    background: rgba(255, 0, 0, 0.85) !important;
+    border:1px solid rgba(158, 0, 0, 0.1) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
+}
+
+.legion .dropdown-menu > li > a:focus {
+    background: rgba(255, 0, 0, 0.7) !important;
+    border:1px solid rgba(158, 0, 0, 0.1) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
+}
+
+.legion label {
+    color: white;
+}
+
+.legion label:hover {
+    color: white;
+}
+
+.legion label:active {
+    color: white;
+}
+
+.legion input[type="text"], input[type="password"], input[type="number"] {
+    background: rgba(70,0,0,1) !important;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1) !important;
+    border: 1px solid rgba(255, 0, 0, 0.2) !important;
+}
+
+.legion .chat_container {
+    border: 1px solid rgba(130,0,0,0.4);
+}
+
+.legion .section {
+    border-top: 1px solid rgba(130,0,0,0.35);
+}
+
+.legion .dropdown-system-picker {
+    background: rgba(70,0,0,1);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2);
+}
+
+.legion .dropdown-system-picker:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.legion .btn_std_ix {
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
+}
+
+.legion .div-system-picker {
+    background: rgba(60,0,0,1);
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.2);
+    border:1px solid rgba(158, 0, 0, 1);
+}
+
+.legion .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
+    background: rgba(255,0,0,0.7) !important;
+    border:1px solid rgba(158, 0, 0, 1) !important;
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+}
+
+.legion .nav-pills > li > a {
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
+    border:1px solid rgba(158, 0, 0, 1) !important;
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5);
+}
+
+.legion .nav-pills > li > a:hover {
+        text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
+        background: rgba(255, 0, 0, 0.85) !important;
+        border:1px solid rgba(158, 0, 0, 1) !important;
+        box-shadow: 0px 0px 20px rgba(255,0,0,0.8) !important;
+}
+
+.legion .div_settings_control_input label, .div_settings_control_input label input[type="checkbox"] {
+    color: white !important;
+}
+
+.legion .tooltip-inner {
+    max-width: 190px !important;
+    padding: 6px 8px;
+    background-color: rgba(70,0,0,1) !important;
+    box-shadow: 0px 0px 25px rgba(255,0,0,0.8) !important;
+}
+
+.legion .section_content_table {
+    border-image: none;
+}
+
+.legion .section_wrapper {
+    margin: 2%;
+    height: 96%;
+    background: rgba(10,0,0,0.8);
+    border-left: 15px solid rgba(10,0,0,0);
+    border-right: 15px solid rgba(10,0,0,0);
+    box-shadow: 0px 0px 40px rgba(15,0,0,1);
+}
+
+.legion .col_2 {
+    margin: 10px 0px 10px 10px;
+    padding: 22px 0px 0px 20px;
+    border: 1px solid rgba(125,0,0,0.5);
+    background: linear-gradient(rgba(80,0,0,0.3),rgba(80,0,0,0.15));
+    box-shadow: 0px 0px 30px rgba(15, 0, 0, 0.8);
+    display: block;
+    height: 100%;
+}
+
+.legion .armies-wrapper {
+    overflow-x: hidden;
+    border: 1px solid rgba(158,0,0,0.25);
+    background: rgba(100,0,0,0.5);
+    box-shadow: inset 0px 0px 30px rgba(30, 0, 0, 0.5);
+    padding: 8px 0px 0px 8px;
+    margin: 0px -10px -10px;
+    color: white;
+}
+
+.legion .game_roster {
+    border-image: none;
+    max-width: calc(100% - 55px);
+    max-height: calc(100% - 55px);    
+}
+
+.legion .roster_table {
+    height: calc(100% + 12px);
+}
+
+.legion .section .section_header, .spectator_section_header {
+    border-top: none !important;
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
+}
+
+.legion .container_embed.spectator {
+    border: 1px solid rgba(158,0,0,0.5);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.8);
+    background: rgba(35,0,0,0.8);
+}
+
+.legion .mods-class {
+    border: 1px solid rgba(158,0,0,0.5);
+    box-shadow: inset 0px 0px 15px rgba(15,0,0,0.8);
+    background: rgba(70,0,0,1);
+    margin: 0px 3px 0px 20px;
+}
+
+.legion .btn_toggle, .btn_toggle_shared_army {
+    background:rgba(70, 0, 0, 1) !important;
+    border: 1px solid rgba(255, 0, 0, 0.2) !important;
+    -webkit-box-shadow: none !important;
+}
+
+    .legion .btn_toggle:hover, .btn_toggle_shared_army:hover {
+        background: rgba(255,0,0,0.85) !important;
+        border: 1px solid rgba(255, 0, 0, 0.2) !important;
+        box-shadow: 0px 0px 20px rgba(255,0,0,1) !important;
+    }
+
+    .legion .btn_toggle:active, .btn_toggle.live, .btn_toggle_shared_army.on {
+        background: rgba(255,0,0,0.7) !important;
+        border:1px solid rgba(158, 0, 0, 0.1) !important;
+        box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+    }
+
+.legion .btn_std {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png) 10 21 21 21 fill;
+}
+
+.legion .btn_std:hover {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png) 10 21 21 21 fill;
+}
+
+.legion .btn_std:active {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png) 10 21 21 21 fill;
+    box-shadow: inset 500px 500px 500px 500px #000;
+}
+
+.legion .army-header {
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5);
+}
+
+.legion .slot-player-commander {
+    height: 38px;
+    margin: 6px 8px -15px -10px;
+}
+
+.legion .profile-commander {
+    height: 36px;
+}
+
+.legion .div-commander-picker-item.legioncommander .profile-commander-name {
+    border-top: 1px solid rgba(255,0,0,0.3) !important;
+}
+
+.legion .dropdown-menu-cont {
+    width: 622px !important;
+}
+
+.legion .div-commander-picker {
+    background: rgba(0,0,0,1) !important;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5) !important;
+    border: none;
+    padding: 1px;
+}
+
+.legion .div-commander-picker-item {
+    background: rgba(0,50,70,0.5) !important;
+    border: 1px solid rgba(0,179,255,1) !important;
+}
+
+.legion .div-commander-picker-item.btn_std_ix {
+    color: rgb(200,255,255) !important;
+}
+
+.legion .div-commander-picker-item.btn_std_ix:hover {
+    background: rgba(0,179,255,0.75) !important;
+    border: 1px solid rgba(0,179,255,0.1) !important;
+    box-shadow: 0px 0px 15px rgba(0,179,255,0.8) !important;
+}
+
+.legion .legioncommander.btn_std_ix:hover {
+    background: rgba(255,0,0,0.75) !important;
+    border: 1px solid rgba(158, 0, 0, 0.1) !important;
+    box-shadow: 0px 0px 15px rgba(255,0,0,0.8) !important;
+}
+
+.legion .div-commander-picker-item.btn_std_ix:active {
+    background: rgba(0,179,255,1) !important;
+    border:1px solid rgba(0,179, 255, 1) !important;
+    box-shadow: 0px 0px 30px rgba(0,179,255,1) !important;
+}
+
+.legion .legioncommander.btn_std_ix:active {
+    background: rgba(255,0,0,1) !important;
+    border: 1px solid rgba(158, 0, 0, 1) !important;
+    box-shadow: 0px 0px 30px rgba(255,0,0,1) !important;
+}
+
+.legion .btn_std_gray {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png) 44 17 0 17 fill;
+}
+
+.legion .btn_std_gray:hover {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_hover.png) 44 17 0 17 fill;
+}
+
+.legion .btn_std_gray:active {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_active.png) 44 17 0 17 fill;
+}
+
+ .legion .btn_std_gray_disabled {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png) 44 17 0 17 fill;
+}
+
+.legion .army-button {
+    background: rgba(70,0,0,1) !important;
+    border: 1px solid rgba(255, 0, 0, 0.2) !important;
+    box-shadow: none !important;
+}
+
+    .legion .army-button:hover {
+        background: rgba(255,0,0,0.85) !important;
+        border: 1px solid rgba(255, 0, 0, 0.2) !important;
+        box-shadow: 0px 0px 20px rgba(255,0,0,1) !important;
+    }
+
+    .legion .army-button.on {
+        background: rgba(255,0,0,0.7) !important;
+        border:1px solid rgba(158, 0, 0, 0.1) !important;
+        box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+    }
+    
+.legion .btn_add_ai {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+/*legion commander outlines*/
+
 .div-commander-picker-item.btn_std_ix.legioncommander {
-  color: #FF0000;
-  border-color: #FF0000;
+  color: rgb(255,220,220) !important;
+  border-color: #FF0000 !important;
+  background: rgba(70,0,0,0.5) !important;
 }
 .slot-player.legionslot {
-  text-shadow: 0px 0px 4px #FF0000;
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png) 0 17 53 17;
+  text-shadow: 0px 0px 4px #FF0000 !important;
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png) 0 17 53 17 !important;
 }
 .slot-player.legionslot.ready {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17;
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17 !important;
 }
 .slot-player.legionslot.loading {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17;
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17 !important;
 }
 
 .legionslot .slot-player-commander {
@@ -18,10 +339,10 @@
 }
 
 .legionalert {
-    margin: 0px 20px 0px 0px;
-    display: inline-block;
-    color: #FF0000;
-    text-shadow: 0px 0px 40px #F00;
+    margin: 0px 20px 0px 0px !important;
+    display: inline-block !important;
+    color: #FF0000 !important;
+    text-shadow: 0px 0px 40px #F00 !important;
 }
 
 /* legion welcome */

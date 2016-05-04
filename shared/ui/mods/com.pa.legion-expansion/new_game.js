@@ -64,12 +64,13 @@ if (!legionExpansionLoaded) {
                 $('#legion-welcome').delay(1000).fadeIn();
             }
 
+            loadCSS('coui://ui/mods/com.pa.legion-expansion/css/start.css');
             loadCSS('coui://ui/mods/com.pa.legion-expansion/css/new_game.css');
             loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_no_logo.css");
             var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
             if(themesetting === "ON"){
                 $('body').addClass("legion");
-            }            
+            }
 
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
