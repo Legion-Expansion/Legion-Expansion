@@ -11,9 +11,10 @@
   "spread_fire": false,
   "target_layers": [
     "WL_LandHorizontal",
-    "WL_Seafloor",
-    "WL_Underwater",
     "WL_WaterSurface"
+  ],
+  "target_priorities": [
+    "Titan"
   ],
   "yaw_range": 180,
   "yaw_rate": 35
