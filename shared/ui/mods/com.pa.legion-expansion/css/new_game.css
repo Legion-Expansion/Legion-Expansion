@@ -38,7 +38,7 @@
 
 .legion .nav-pills > li > a {
     border:1px solid rgba(158, 0, 0, 1) !important;
-    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+    box-shadow: 0px 0px 10px rgba(255,0,0,0.3) !important;
 }
 
 .legion .nav-pills > li > a:hover {
@@ -47,13 +47,7 @@
     box-shadow: 0px 0px 20px rgba(255,0,0,0.8) !important;
 }
 
-.legion .nav-pills > li > a:hover, .legion .nav-pills > li.active > a:focus, {
-    background: rgba(255, 0, 0, 0.85) !important;
-    border:1px solid rgba(158, 0, 0, 1) !important;
-    box-shadow: 0px 0px 20px rgba(255,0,0,0.8) !important;
-}
-
-.legion .nav-pills > li.active > a:hover, .legion .nav-pills > li.active > a:focus {
+.legion .nav-pills > li.active > a, .legion .nav-pills > li.active > a:focus {
     background: rgba(255,0,0,0.7) !important;
     border:1px solid rgba(158, 0, 0, 1) !important;
     box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
@@ -132,6 +126,10 @@
     width: 622px !important;
 }
 
+.legion .div-color-picker-cont .dropdown-menu-cont {
+    width: auto;
+}
+
 .legion .div-commander-picker {
     background: rgba(0,0,0,1) !important;
     box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5) !important;
@@ -196,7 +194,7 @@
 }
 
 .slot-player-commander {
-    border: 2px solid rgb(0,179,255) !important;
+    border: 1px solid rgb(0,179,255) !important;
 }
 
 .legionslot .slot-player-commander {
