@@ -144,7 +144,7 @@ if ( ! legionExpansionLoaded )
         }        
         
         $('img[src="img/players_list_panel/icon_player_outline.png"]').replaceWith('<img data-bind="attr:{src: model.commanderImage($data)}" />');
-        $('.player_masked').attr("data-bind","css: { legcom: model.commanderImageMask($data)}");
+        $('.player_masked').attr("data-bind","style: { backgroundColor: color }, css: { legcom: model.commanderImageMask($data)}");
         
     }
 
