@@ -5,15 +5,3 @@ body.legion{
     background-position-x: 0px;
     background-position-y: 0px;
 }
-
-.legion .content_titans_badge {
-    height: 0%
-}
-
-.legion .section_title {
-    text-shadow: 0px 0px 20px rgba(190,0,0,0.9) !important;
-}
-
-.legion .section_title .content .title {
-    text-shadow: 0px 0px 20px rgba(190,0,0,0.9) !important;
-}

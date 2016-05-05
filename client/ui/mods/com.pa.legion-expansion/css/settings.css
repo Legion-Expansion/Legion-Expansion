@@ -7,21 +7,6 @@
     border-bottom: 1px solid rgba(255,140,140,.15);
 }
 
-.legion .nav-pills > li > a {
-    text-shadow: 0px 0px 15px rgba(255,0,0,0.6);
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_rest.png) 12 12 8 11 fill !important;
-}
-
-.legion .nav-pills > li > a:hover {
-    text-shadow: 0px 0px 15px rgba(255,0,0,1);
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_hover.png) 12 12 8 11 fill !important;
-}
-
-.legion .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    text-shadow: 0px 0px 15px rgba(255,0,0,0.8);
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_active.png) 12 12 8 11 fill !important;
-}
-
 .legion .section_content {
     height: 73%;
     background: rgba(15,0,0,0.3) !important;
@@ -61,23 +46,20 @@
     border: 1px solid rgba(255,200,200,0.8);
 }
 
-.legion input[type="text"]:disabled, input[type="password"]:disabled , input[type="number"]:disabled {
-    border: 1px solid rgba(255,0,0,0.2);
-    background:rgba(70, 0, 0, 1);
-    color:white;
-    box-shadow: inset 0px 0px 8px rgba(255, 0, 0, 0.1);
-}
-
-.legion input.active:disabled {
-    color:white;
-    font-weight: 900;
-    background:rgba(255, 0, 0, 0.8);
-    border: 1px solid rgba(255,200,200,0.8);
-    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
-}
-
 .legion .sub-group-title {
     color:white;
     background:rgba(70, 0, 0, 0.9);
     border:3px solid rgba(158, 0, 0, 0.2);
+}
+
+.legion .nav-pills > li > a {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_rest.png) 12 12 8 11 fill !important;
+}
+
+.legion .nav-pills > li > a:hover, .legion .nav-pills > li.active > a:hover {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_hover.png) 12 12 8 11 fill !important;
+}
+
+.legion .nav-pills > li.active > a, .legion .nav-pills > li.active > a:focus {
+    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_tab_std_active.png) 12 12 8 11 fill !important;
 }
