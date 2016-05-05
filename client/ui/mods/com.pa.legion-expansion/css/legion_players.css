@@ -60,3 +60,8 @@
         border: 1px solid #663399;
         box-shadow: inset 0px 0px 10px #663399;
     }
+    
+    
+.player_masked.legcom {
+    -webkit-mask-image: url("coui://ui/mods/com.pa.legion-expansion/img/icon_player_fill_l.png") !important; 
+}
