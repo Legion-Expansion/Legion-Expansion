@@ -4,17 +4,18 @@
 
 .legion .section_content {
     background: rgba(15,0,0,0.3) !important;
+    height: calc(100% - 220px) !important;
 }
 
 .legion .section_content_table {
-    width: 79%;
+    width: 77%;
     padding: 0px 0px 0px 0px;
     background: rgba(15,0,0,0.15);
     box-shadow: 0px 0px 50px rgba(0,0,0,0.9);
 }
 
 .legion .tab-wrapper {
-    height: 100%;
+    height: 100% !important;
     margin: 0px 0px;
     padding: 10px 0px 0px 20px;
 }
@@ -22,6 +23,7 @@
 .legion .section_content .col_1 {
     background: rgba(15,0,0,0.3);
     display: block !important;
+    width: 17.8% !important;
 }
 
 .legion .section_controls {
@@ -32,6 +34,7 @@
 }
 
 .legion .section_content .col_2 {
+    height: 100% !important;
     width: 68%;
     flex-grow: 0;
     background: rgba(10,0,0,0.8) !important;
@@ -39,6 +42,7 @@
 }
 
 .legion .one-system, .one-planet {
+    height: 100% !important;
     border: 1px solid rgba(255, 0, 0, 0.3);
     box-shadow: 0px 0px 0px rgba(0, 179, 255, 0);
 }
@@ -84,14 +88,6 @@
     font-weight: bolder;
 }
 
-.legion .btn_hero {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png) 10 21 21 21 fill;
+.legion .div_commit_cont {
+    padding: 0px 20px 8px 0px;
 }
-
-    .legion .btn_hero:hover {
-        border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png) 10 21 21 21 fill;
-    }
-
-    .legion .btn_hero:active {
-        border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png) 10 21 21 21 fill;
-    }

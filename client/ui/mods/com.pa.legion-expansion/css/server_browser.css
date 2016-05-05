@@ -8,46 +8,8 @@
     box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.25);
 }
 
-.legion .section_title .content .title {
-    text-shadow: 0px 0px 20px rgba(190,0,0,0.9) !important;
-}
-
-.legion .content_titans_badge {
-    height: 0%
-}
-
 .legion .section_content_table {
     box-shadow: inset 0px 0px 20px rgba(100, 100, 0, 0);
-}
-
-.legion .btn_std {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png) 10 21 21 21 fill;
-}
-
-.legion .btn_std:hover {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png) 10 21 21 21 fill;
-}
-
-.btn_std:active {
-    border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png) 10 21 21 21 fill;
-    box-shadow: inset 500px 500px 500px 500px #000;
-}
-
-.legion .dropdown-menu {
-    background: rgba(70, 0, 0, 1) !important;
-    border: 1px solid rgba(255, 0, 0, 0.2) !important;
-}
-
-.legion .dropdown-menu > li > a:hover {
-    background: rgba(255, 0, 0, 0.8) !important;
-    border:1px solid rgba(158, 0, 0, 0.1) !important;
-    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
-}
-
-.legion .dropdown-menu > li > a:focus {
-    background: rgba(255, 0, 0, 0.8) !important;
-    border:1px solid rgba(158, 0, 0, 0.1) !important;
-    box-shadow: 0px 0px 10px rgba(255,0,0,0.2) !important;
 }
 
 .legion .section_content {
@@ -102,3 +64,8 @@
     border: 1px solid rgba(255,140,140,.1);
     box-shadow: inset 0px 0px 4px rgba(200,140,140, 0.15);
 }
+
+.legion .form-group label,
+    .legion #detail-pane .col-header {
+        color: rgb(230,230,230);
+    }

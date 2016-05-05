@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "client",
-  "date": "2016/05/03",
+  "date": "2016/05/09",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
@@ -77,6 +77,6 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "hidden": true
 }

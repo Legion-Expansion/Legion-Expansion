@@ -17,6 +17,9 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 30,
+  "command_caps": [
+    ""
+  ],
   "events": {
     "died": {
       "audio_cue": "/SE/Death/swarm",
@@ -41,7 +44,7 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "guard_radius": 300,
-  "max_health": 125,
+  "max_health": 80,
   "mesh_bounds": [
     1,
     1,
@@ -56,7 +59,7 @@
   },
   "navigation": {
     "acceleration": 60,
-    "move_speed": 60,
+    "move_speed": 50,
     "turn_speed": 1080,
     "type": "hover"
   },

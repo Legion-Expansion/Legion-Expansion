@@ -14,6 +14,9 @@
     "WL_LandHorizontal",
     "WL_WaterSurface"
   ],
+  "target_priorities": [
+    "Titan"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
   "yaw_rate": 180

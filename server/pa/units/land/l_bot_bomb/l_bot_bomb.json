@@ -1,6 +1,6 @@
 {
   "display_name": "Purger",
-  "description": "Leaping Boombot Spider - Launches at Enemies and up Cliffs.",
+  "description": "Leaping Boombot Spider - Launches at Enemies and up Cliffs with Alt Fire.",
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {

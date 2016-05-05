@@ -125,6 +125,27 @@ if ( ! legionExpansionLoaded )
             $('.body_panel').attr("data-bind","css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show");
         }
         
+        model.commanderImage = function (d){
+             if(_.includes(legioncomms, d.commanders[0])){
+                 return "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
+             }
+             else{
+                 return "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png"
+             }
+        }
+        
+        model.commanderImageMask = function (d){
+             if(_.includes(legioncomms, d.commanders[0])){
+                 return true;
+             }
+             else{
+                 return false;
+             }
+        }        
+        
+        $('img[src="img/players_list_panel/icon_player_outline.png"]').replaceWith('<img data-bind="attr:{src: model.commanderImage($data)}" />');
+        $('.player_masked').attr("data-bind","style: { backgroundColor: color }, css: { legcom: model.commanderImageMask($data)}");
+        
     }
 
     try
