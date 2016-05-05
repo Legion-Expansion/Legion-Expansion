@@ -20,7 +20,7 @@ if ( ! legionExpansionLoaded )
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
-        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+        var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
         if(themesetting === "ON"){
           $('body').addClass("legion");
         }

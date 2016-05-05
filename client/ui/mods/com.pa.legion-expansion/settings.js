@@ -16,12 +16,21 @@ if ( ! legionExpansionLoaded )
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
        _.extend(api.settings.definitions.ui.settings, {
             legionThemeFunction: {
-                title: 'Theme',
+                title: 'Theme In Game',
                 type: 'select',
                 default: 'ON',
                 options: ['ON','OFF']
             }
         });
+        
+       _.extend(api.settings.definitions.ui.settings, {
+            legionMenuThemeFunction: {
+                title: 'Theme Menu',
+                type: 'select',
+                default: 'ON',
+                options: ['ON','OFF']
+            }
+        });        
       
       
        model.settingDefinitions(api.settings.definitions);
@@ -51,7 +60,7 @@ loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
 loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
 loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_no_logo.css");
 loadCSS("coui://ui/mods/com.pa.legion-expansion/css/settings.css");
-var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
 if(themesetting === "ON"){
     $('body').addClass("legion");
 }
