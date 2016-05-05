@@ -13,7 +13,7 @@
   ],
   "description": "Adds an entirely new faction for use in skirmish and multiplayer.",
   "display_name": "Legion Expansion Client",
-  "forum": "https://forums.uberent.com/threads/wip-server-imperial-legion-faction.69165/",
+  "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
   "identifier": "com.pa.legion-expansion-client",
   "scenes": {
