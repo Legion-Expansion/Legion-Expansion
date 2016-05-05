@@ -4,7 +4,7 @@
 
  - Introduced new Legion build effect
  - Marauder firing sound fixed
- - Improved Purged description
+ - Improved Purger description
  - More work done on the lobby UI
  - Black Knight now heavily drains Ramparts
  - Hive nerfed: 
