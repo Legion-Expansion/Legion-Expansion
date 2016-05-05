@@ -21,7 +21,14 @@ Lastest Python 3.x is required. Please do not use Python 2.x as whitespace forma
 1. Don't commit broken stuff to MASTER. Develop, test and fix in your local, a branch or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE refernces in the format.py output
+ 
+Our branch structure is as follows:
 
+MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions
+BALANCE - development; forked to RELEASE-x.x.x and FEATURE-*name*
+FEATURE-*name* - a feature which is stil in development; merged into BALANCE on completion
+HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
+RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
 
 ## Units
 
