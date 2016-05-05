@@ -122,17 +122,21 @@
     border-top: 1px solid rgba(255,0,0,0.3) !important;
 }
 
-.legion .dropdown-menu-cont {
+.legion .div-commander-picker-cont > .dropdown-menu-cont {
     width: 622px !important;
 }
 
-.legion .div-color-picker-cont .dropdown-menu-cont {
-    width: auto;
+.legion .div-color-picker {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
+    border: none;
 }
 
 .legion .div-commander-picker {
-    background: rgba(0,0,0,1) !important;
-    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5) !important;
+    background: rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
     border: none;
     padding: 1px;
 }
