@@ -1,8 +1,25 @@
 ## CHANGELOG
 
-#### v0.10.0 -
+#### v0.10.0 - 2016/05/09
 
- - Introduced new Legion unique build effects
+ - Introduced new Legion build effect
+ - Marauder firing sound fixed
+ - Improved Purged description
+ - More work done on the lobby UI
+ - Black Knight now heavily drains Ramparts
+ - Hive nerfed:
+   - Swarm health lowered from 125 to 80
+   - Swarm speed lowered from 60 to 50
+   - Increased cost of Swarm from 750 to 900 energy
+   - Increased ammo capacity from 1500 to 1800
+   - Swarms no longer accept player orders
+ - Titans prioritise shooting other Titans
+ - Reduced Tyr splash radius from 180 to 160
+ - Improved ability of Arsonist to hit units
+ - Reduced zoom level at which Arsonist flame effect is visible
+ - Hives can no longer overlap other units during placement
+ - Legion players now have a Legion Commander icon on the player list
+ - Legion UI can now be disabled separately for the menu and in-game UI
 
 #### v0.9.1 - 2016/05/03
 
