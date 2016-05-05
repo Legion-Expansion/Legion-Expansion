@@ -7,16 +7,16 @@
  - Improved Purged description
  - More work done on the lobby UI
  - Black Knight now heavily drains Ramparts
- - Hive nerfed:
+ - Hive nerfed: 
+   - Hive reload time increased from 10 seconds to 12
    - Swarm health lowered from 125 to 80
    - Swarm speed lowered from 60 to 50
-   - Increased cost of Swarm from 750 to 900 energy
-   - Increased ammo capacity from 1500 to 1800
    - Swarms no longer accept player orders
+   - Swarms expire after 6 seconds, down from 6.5
  - Titans prioritise shooting other Titans
  - Reduced Tyr splash radius from 180 to 160
  - Improved ability of Arsonist to hit units
- - Reduced zoom level at which Arsonist flame effect is visible
+ - Optimisation of Arsonist effects to reduce lag
  - Hives can no longer overlap other units during placement
  - Legion players now have a Legion Commander icon on the player list
  - Legion UI can now be disabled separately for the menu and in-game UI
