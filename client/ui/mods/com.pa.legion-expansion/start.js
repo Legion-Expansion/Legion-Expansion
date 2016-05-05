@@ -14,12 +14,17 @@ if ( ! legionExpansionLoaded )
         var patchName = 'legionExpansion start.js';
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
+        
+        /*load legion theme */
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
+        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
         var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
         if(themesetting === "ON"){
           $('body').addClass("legion");
         }
+        
         model.showLegionGuidesMenu = ko.observable(false);
 
         model.legionToggleGuides = function(){
