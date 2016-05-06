@@ -10,16 +10,36 @@
  - Hive nerfed:
    - Hive reload time increased from 10 seconds to 12
    - Hives no longer accept player orders
-   - Swarms can now be properly targeted by other units
-   - Swarm health lowered from 125 to 80
+   - Swarms are now properly targeted by other units
    - Swarm speed lowered from 60 to 50
    - Swarms no longer accept player orders
    - Swarms expire after 6 seconds, down from 6.5
+ - Peacekeeper weapon range increased from 70 to 75
+ - Air bomb splash damage only affects air units
+ - Add torpedo weapon to Rockteeth commander
+ - Monstrosity nerfed:
+   - Metal cost increased from 1700 to 1800
+   - Health decreased from 6100 to 6000
+   - Acceleration and brake decreased from 40/30 to 10/10
+   - Turn speed decreased from 60 to 45
+   - Main cannon yaw rate decreased from 70 to 30
+ - Purger damage increased from 350 to 450
+ - Stoke buffs
+   - Damage increased from 35 to 39
+   - Splash damage increased from 10 to 25
+   - Splash radius decreased from 7 to 6
+ - Lancer buffs/nerfs
+   - Damage against bots decreased by 15%
+   - Damage against vehicles increased by 10%
+   - Less likely to fire into the ground and do no damage to target
+ - Excalibur nerf
+   - Health decreased from 650 to 350, matching Artemis
  - Titans prioritise shooting other Titans
  - Reduced Tyr splash radius from 180 to 160
  - Improved ability of Arsonist to hit units
  - Optimisation of Arsonist effects to reduce lag
  - Hives can no longer overlap other units during placement
+ - Hive selection hexagon size increased to properly fit the unit
  - Legion players now have a Legion Commander icon on the player list
  - Legion UI can now be disabled separately for the menu and in-game UI
  - Improvements to the way the intro video is displayed
