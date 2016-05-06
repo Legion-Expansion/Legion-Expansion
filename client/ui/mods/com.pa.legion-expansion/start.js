@@ -6,46 +6,67 @@ if ( ! legionExpansionLoaded )
 
     legionExpansionLoaded = true;
 
+    function onYouTubeIframeAPIReady() {
+        model.legionYouTubeIframeAPIReady();
+    }
+        
     function legionExpansion()
     {
 
-        var buildVersion = decode( sessionStorage.build_version );
-
-        var patchName = 'legionExpansion start.js';
-
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
+        console.log( 'legionExpansion start.js' );
         
-        /*load legion theme */
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
-        var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
-        if(themesetting === "ON"){
-          $('body').addClass("legion");
+        const LEGION_VIDEO_ID = 'fYsPl8DFW7I';
+  
+  // temp until fixes in PTE
+    
+        model.playingDefaultVideo = ko.observable(true);
+        
+        var playIntroVideo = model.playIntroVideo;
+        
+        model.playIntroVideo = function() {
+            playIntroVideo();
+            model.playingDefaultVideo(true); 
         }
         
+        var introVideoComplete = model.introVideoComplete;
+
+        model.introVideoComplete = function() {
+            introVideoComplete();
+            model.playingDefaultVideo(false); 
+        }
+
+        var modalBack = model.modalBack;
+        
+        model.modalBack = function() {
+            if (model.playingDefaultVideo()) {
+                modalBack();
+                return;
+            }
+            
+            model.legionStopVideo();
+        }
+//
+              
         model.showLegionGuidesMenu = ko.observable(false);
 
-        model.legionToggleGuides = function(){
-          if(model.showLegionGuidesMenu()){
-            model.showLegionGuidesMenu(false);
-          }
-          else{
-            model.showLegionGuidesMenu(true);
-            model.showSinglePlayerMenu(false);
-            model.showMultiplayerMenu(false);
-          }
+        model.legionToggleGuides = function() {
+            if(model.showLegionGuidesMenu()) {
+                model.showLegionGuidesMenu(false);
+            }
+            else {
+                model.showLegionGuidesMenu(true);
+                model.showSinglePlayerMenu(false);
+                model.showMultiplayerMenu(false);
+            }
         }
-
         model.navToLegionGuide1 = function(){
-          engine.call('web.launchPage', 'http://exodusesports.com/article/planetary-annihilation-titans/');
-          model.showLegionGuidesMenu(false);
+            engine.call('web.launchPage', 'http://exodusesports.com/article/planetary-annihilation-titans/');
+            model.showLegionGuidesMenu(false);
         }
 
         model.navToLegionGuide2 = function(){
-          engine.call('web.launchPage', 'http://exodusesports.com/article/legion-expansion-community-faction-mod/');
-          model.showLegionGuidesMenu(false);
+            engine.call('web.launchPage', 'http://exodusesports.com/article/legion-expansion-community-faction-mod/');
+            model.showLegionGuidesMenu(false);
         }
 
         //ADD GUIDES MENU
@@ -59,6 +80,7 @@ if ( ! legionExpansionLoaded )
             legionOriginalToggleSinglePlayerMenu();
             model.showLegionGuidesMenu(false);
         };
+        
         model.toggleMultiplayerMenu = function () {
           legionOriginalToggleMultiplayerPlayerMenu();
           model.showLegionGuidesMenu(false);
@@ -72,6 +94,96 @@ if ( ! legionExpansionLoaded )
             model.showLegionGuidesMenu(false);
         };
 
+        $('.view_intro').css( 'padding', '5px 2px' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; display: none;" data-bind="visible: legionYouTubeReady, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
+
+        delete localStorage.legion_intro_one_time;
+        
+        model.legionPlayVideoed = ko.observable( false ).extend( { local: 'legion_intro_video_played' } );
+        
+        model.legionYouTubeReady = ko.observable( false );
+        
+        model.legionYouTubePlayer = undefined;
+        
+        model.legionYouTubeIframeAPIReady = function() {
+            
+            if ( ! model.legionPlayVideoed() ) {
+                model.legionPlayVideo();
+            }
+            else {
+                model.legionYouTubeReady( true );
+            }
+        }
+
+
+        model.legionPlayVideoerReady = function(event) {
+            
+            model.legionPlayVideoed(true);
+            engine.call('audio.pauseMusic', true);
+            engine.call("audio.setVideoVolumeScale", 1);
+            
+            $('#legionYouTubePlayer').fadeIn();
+        }
+        
+        model.legionStopVideo = function() {
+
+            if ( model.legionYouTubePlayer ) {
+                $('#legionYouTubePlayer').fadeOut( function() {
+                    model.legionYouTubePlayer.destroy();
+                    model.legionYouTubePlayer = false;
+                    $('#legionYouTubePlayer').remove();
+                    model.legionYouTubeReady(true);
+                });
+            }
+        }
+        
+        model.legionYouTubePlayerStateChange = function(event) {
+
+            var state = event && event.data;
+            
+            if ( state == YT.PlayerState.PAUSED || state == YT.PlayerState.ENDED ) {
+                model.legionStopVideo();
+            }
+        }
+        
+        model.legionYouTubePlayerError = function(event) {
+console.error('legionYouTubePlayerError ' + JSON.stringfy(event));
+            model.legionStopVideo();
+        }
+        
+        model.legionPlayVideo = function() {
+
+            $('body').append('<div id="legionYouTubePlayer" style="display: none; position: absolute"></div>');
+        
+            model.legionYouTubePlayer = new YT.Player('legionYouTubePlayer', {
+                height: '100%',
+                width: '100%',
+                videoId: LEGION_VIDEO_ID,
+                playerVars: {
+                    autoplay: 1,
+                    controls: 0,
+                    modestbranding: 1,
+                    rel: 0,
+                    iv_load_policy: 3,
+                    disablekb : 0,
+                    origin: 'https://www.youtube.com'
+                },
+                events: {
+                    onReady: model.legionPlayVideoerReady,
+                    onStateChange: model.legionYouTubePlayerStateChange,
+                    onError: model.legionYouTubePlayerError
+                }            
+            });            
+        }
+  
+        var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
+
+        if(themesetting === "ON") {
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
+            $('body').addClass("legion");
+        }
     }
 
     try
@@ -80,93 +192,7 @@ if ( ! legionExpansionLoaded )
     }
     catch (e)
     {
-        console.log(e);
-        console.log(JSON.stringify(e));
+        console.error(e);
     }
 }
 
-
-model.legionYTPlayerReady = ko.observable(false);
-model.legionYTPlayerOpen = ko.observable(false);
-
-//Youtube video id (can be found in the url)
-var legion_introVideoId = 'fYsPl8DFW7I';
-
-//UNCOMMENT TO PLAY EVERY TIME
-//localStorage.legion_intro_one_time = false;
-
-// BLOCKED UNTIL WE HAVE AN INTRO VIDEO
-var legion_intro_one_time = localStorage.legion_intro_one_time;
-
-$("body").append("<div id='legion_intro' data-bind='visible: legionYTPlayerOpen, css: { legionplayerClosed: !legionYTPlayerOpen(), legionplayerOpen: legionYTPlayerOpen }'><div id='legionplayer'></div></div><script src='http://www.youtube.com/player_api'></script>");
-$(".view_intro").after('<div class="btn_std_ix view_intro view_intro_legion" data-bind="visible: legionYTPlayerReady && !legionYTPlayerOpen() , click: playLegionVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
-$(".view_intro_legion").after('<div class="btn_std_ix view_intro" data-bind="visible: legionYTPlayerReady && legionYTPlayerOpen() , click: stopLegionVideo, click_sound: \'default\', rollover_sound: \'default\'">Stop Intro</div>');
-
-// 2. This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
-
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-model.legionYTplayer = null;
-function onYouTubeIframeAPIReady() {
-
-  model.legionYTplayer = new YT.Player('legionplayer', {
-    height: '100%',
-    width: '100%',
-    videoId: legion_introVideoId,
-    playerVars: {
-      controls: 1,
-      modestbranding: 1,
-      rel: 0,
-      iv_load_policy: 3,
-      disablekb : 1
-    },
-    events: {
-      'onReady': model.onPlayerLegionReady,
-      'onStateChange': model.onPlayerLegionStateChange
-    }
-  });
-}
-
-model.onPlayerLegionStateChange = function(event) {
-  if(event.data === 0) {
-    model.stopLegionVideo();
-  }
-  if(event.data === 1){
-    //Start Playing
-    /* BALLS
-    $(window).keyup(function(e) {
-      if (e.keyCode === 27) model.stopLegionVideo();  console.log("stopped video via esc"); // esc
-    });
-   */
-  }
-  //console.log("Youtube Player State changed " + event.data);
-}
-
-model.stopLegionVideo = function(e) {
-  model.legionYTplayer.stopVideo();
-  api.audio.pauseMusic(false);
-  model.legionYTPlayerOpen(false);
-}
-
-model.playLegionVideo = function(){
-  engine.call('audio.pauseMusic', true);
-  model.legionYTPlayerOpen(true);
-  model.legionYTplayer.playVideo();
-}
-
-model.onPlayerLegionReady = function(event) {
-  model.legionYTPlayerReady(true);
-  // Check if we should play the intro
-  if(legion_intro_one_time != "true") {
-    model.playLegionVideo();
-    localStorage.legion_intro_one_time = "true";
-  }
-  else{ //fix for people getting stuck and pressing F5 so they can get out of video
-    model.stopLegionVideo();
-  }
-}
