@@ -2,6 +2,7 @@
   "display_name": "Stoke",
   "description": "Fast Amphibious Attack Tank - Equipped with Torpedoes and a Light Cannon.",
   "TEMP_texelinfo": 9.31488,
+  "armor_type": "AT_Bot",
   "attachable": {
     "offsets": {
       "head": [
