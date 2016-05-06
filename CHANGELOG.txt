@@ -9,6 +9,8 @@
  - Black Knight now heavily drains Ramparts
  - Hive nerfed:
    - Hive reload time increased from 10 seconds to 12
+   - Hives no longer accept player orders
+   - Swarms can now be properly targeted by other units
    - Swarm health lowered from 125 to 80
    - Swarm speed lowered from 60 to 50
    - Swarms no longer accept player orders
