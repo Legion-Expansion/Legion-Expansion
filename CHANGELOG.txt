@@ -16,7 +16,7 @@
    - Swarms expire after 6 seconds, down from 6.5
  - Peacekeeper weapon range increased from 70 to 75
  - Air bomb splash damage only affects air units
- - Add torpedo weapon to Rockteeth commander
+ - Fix Rockteeth commander not having a torpedo weapon
  - Monstrosity nerfed:
    - Metal cost increased from 1700 to 1800
    - Health decreased from 6100 to 6000
