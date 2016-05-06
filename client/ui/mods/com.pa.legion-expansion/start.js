@@ -94,8 +94,14 @@ if ( ! legionExpansionLoaded )
             model.showLegionGuidesMenu(false);
         };
 
-        $('.view_intro').css( 'padding', '5px 2px' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; display: none;" data-bind="visible: legionYouTubeReady, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
+// includes some temp CSS until next PTE
 
+        $('div.view_intro').css( 'padding', '5px 2px' ).css( 'text-align', 'center' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; display: none; text-align: center" data-bind="visible: legionYouTubeReady, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
+
+        $('div.div_watermarks').css( 'bottom', '90px' );
+
+//
+        
         delete localStorage.legion_intro_one_time;
         
         model.legionPlayVideoed = ko.observable( false ).extend( { local: 'legion_intro_video_played' } );
