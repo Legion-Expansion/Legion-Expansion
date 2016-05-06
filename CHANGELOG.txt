@@ -22,6 +22,8 @@
  - Hives can no longer overlap other units during placement
  - Legion players now have a Legion Commander icon on the player list
  - Legion UI can now be disabled separately for the menu and in-game UI
+ - Improvements to the way the intro video is displayed
+ - Improved main menu load time when Legion theme is disabled
 
 #### v0.9.1 - 2016/05/03
 
