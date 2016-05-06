@@ -24,6 +24,7 @@
  - Legion UI can now be disabled separately for the menu and in-game UI
  - Improvements to the way the intro video is displayed
  - Improved main menu load time when Legion theme is disabled
+ - Optimised background images to reduce mod size
 
 #### v0.9.1 - 2016/05/03
 
