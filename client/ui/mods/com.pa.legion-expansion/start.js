@@ -19,7 +19,7 @@ if ( ! legionExpansionLoaded )
   
   // temp until fixes in PTE
     
-        model.playingDefaultVideo = ko.observable(true);
+        model.playingDefaultVideo = ko.observable(false);
         
         var playIntroVideo = model.playIntroVideo;
         
@@ -96,7 +96,7 @@ if ( ! legionExpansionLoaded )
 
 // includes some temp CSS until next PTE
 
-        $('div.view_intro').css( 'padding', '5px 2px' ).css( 'text-align', 'center' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; display: none; text-align: center" data-bind="visible: legionYouTubeReady, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
+        $('div.view_intro').css( 'padding', '5px 2px' ).css( 'text-align', 'center' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; text-align: center" data-bind="enabled: legionShowVideoButton, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
 
         $('div.div_watermarks').css( 'bottom', '90px' );
 
@@ -104,26 +104,28 @@ if ( ! legionExpansionLoaded )
         
         delete localStorage.legion_intro_one_time;
         
-        model.legionPlayVideoed = ko.observable( false ).extend( { local: 'legion_intro_video_played' } );
+        model.legionVideoPlayed = ko.observable( false ).extend( { local: 'legion_intro_video_played' } );
         
         model.legionYouTubeReady = ko.observable( false );
         
-        model.legionYouTubePlayer = undefined;
+        model.legionYouTubePlayer = ko.observable( undefined );
         
         model.legionYouTubeIframeAPIReady = function() {
             
-            if ( ! model.legionPlayVideoed() ) {
+            model.legionYouTubeReady( true );
+
+            if ( ! model.legionVideoPlayed() ) {
                 model.legionPlayVideo();
-            }
-            else {
-                model.legionYouTubeReady( true );
             }
         }
 
-
-        model.legionPlayVideoerReady = function(event) {
+        model.legionShowVideoButton = ko.computed( function() {
+            return model.legionYouTubeReady() && ! model.legionYouTubePlayer();
+        });
+        
+        model.legionVideoPlayerReadyEvent = function(event) {
             
-            model.legionPlayVideoed(true);
+            model.legionVideoPlayed(true);
             engine.call('audio.pauseMusic', true);
             engine.call("audio.setVideoVolumeScale", 1);
             
@@ -131,18 +133,19 @@ if ( ! legionExpansionLoaded )
         }
         
         model.legionStopVideo = function() {
-
-            if ( model.legionYouTubePlayer ) {
+            
+            var player = model.legionYouTubePlayer();
+            
+            if ( player) {
                 $('#legionYouTubePlayer').fadeOut( function() {
-                    model.legionYouTubePlayer.destroy();
-                    model.legionYouTubePlayer = false;
+                    player.destroy();
                     $('#legionYouTubePlayer').remove();
-                    model.legionYouTubeReady(true);
+                    model.legionYouTubePlayer(false)
                 });
             }
         }
         
-        model.legionYouTubePlayerStateChange = function(event) {
+        model.legionYouTubePlayerStateChangeEvemt = function(event) {
 
             var state = event && event.data;
             
@@ -151,16 +154,20 @@ if ( ! legionExpansionLoaded )
             }
         }
         
-        model.legionYouTubePlayerError = function(event) {
-console.error('legionYouTubePlayerError ' + JSON.stringfy(event));
+        model.legionYouTubePlayerErrorEvent = function(event) {
+console.error('legionYouTubePlayerErrorEvent ' + JSON.stringfy(event));
             model.legionStopVideo();
         }
         
         model.legionPlayVideo = function() {
 
-            $('body').append('<div id="legionYouTubePlayer" style="display: none; position: absolute"></div>');
+            if ( model.legionYouTubePlayer() ) {
+                return;
+            }
+            
+            $('body').append('<div id="legionYouTubePlayer" style="display: none; position: absolute; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; "></div>');
         
-            model.legionYouTubePlayer = new YT.Player('legionYouTubePlayer', {
+            var player  = new YT.Player('legionYouTubePlayer', {
                 height: '100%',
                 width: '100%',
                 videoId: LEGION_VIDEO_ID,
@@ -174,11 +181,13 @@ console.error('legionYouTubePlayerError ' + JSON.stringfy(event));
                     origin: 'https://www.youtube.com'
                 },
                 events: {
-                    onReady: model.legionPlayVideoerReady,
-                    onStateChange: model.legionYouTubePlayerStateChange,
-                    onError: model.legionYouTubePlayerError
+                    onReady: model.legionVideoPlayerReadyEvent,
+                    onStateChange: model.legionYouTubePlayerStateChangeEvemt,
+                    onError: model.legionYouTubePlayerErrorEvent
                 }            
-            });            
+            });
+            
+            model.legionYouTubePlayer(player);         
         }
   
         var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
