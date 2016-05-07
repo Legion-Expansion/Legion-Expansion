@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+#### v0.11.0 - 2016/05/16
+
+ - Moved Rampart to correct location on build bar
+ - Fixed colour of spectators in lobby when Legion theme is active
+ - Fixed colour of Legion tag in games browser
+
 #### v0.10.0 - 2016/05/09
 
  - Introduced new Legion build effect
