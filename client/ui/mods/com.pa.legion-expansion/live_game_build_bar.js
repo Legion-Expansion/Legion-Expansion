@@ -14,8 +14,6 @@ if ( ! legionExpansionLoaded )
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
 
-        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
-
         if (model.BuildSet && model.BuildSet.tabsTemplate) {
             model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
                 ['L_factory', '!LOC:factory', true],
@@ -68,67 +66,65 @@ if ( ! legionExpansionLoaded )
                 model.activeBuildGroupLocked(locked);
         };
         
-        //LOAD CUSTOM LEGION BUILDBAR CSS
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css");
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
+        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+        if(themesetting === "ON"){ 
+            //LOAD CUSTOM LEGION BUILDBAR CSS
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css");
+            loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-        //see global.js
-        var legionspecids = legionglobal.builders;
+            //see global.js
+            var legionspecids = legionglobal.builders;
 
-        model.isLegionOrMixedOrVanilla = function (data) {
-            if(themesetting === "ON"){     
-                try{                         
-                    var legioncount = 0;
-                    var specslength = 0;
-                    var selectedspecs = data.buildSet().selectedSpecs();
-                    
-                    _.forOwn(selectedspecs, function(value, key){
-                        if(_.includes(legionspecids, key)){
-                            legioncount++;
-                        }
-                        specslength++; 
-                    });
-                    if(legioncount == specslength){
-                        return "legion";
-                    }
-                    else{
-                        if(legioncount > 0 && legioncount < specslength){
-                            return "mixed";
+            model.isLegionOrMixedOrVanilla = function (data) {
+                    try{                         
+                        var legioncount = 0;
+                        var specslength = 0;
+                        var selectedspecs = data.buildSet().selectedSpecs();
+                        
+                        _.forOwn(selectedspecs, function(value, key){
+                            if(_.includes(legionspecids, key)){
+                                legioncount++;
+                            }
+                            specslength++; 
+                        });
+                        if(legioncount == specslength){
+                            return "legion";
                         }
                         else{
-                            return "vanilla";
+                            if(legioncount > 0 && legioncount < specslength){
+                                return "mixed";
+                            }
+                            else{
+                                return "vanilla";
+                            }
                         }
-                    }
+                }
+                catch(e){
+                    return "";
+                }
             }
-            catch(e){
-                return "";
-            }
-          }
-          else{
-              return "vanilla";
-          }
+
+            model.isLegion = function (data){
+                if(model.isLegionOrMixedOrVanilla(data) === "legion"){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            };
+
+            model.isMixed = function (data){
+                if(model.isLegionOrMixedOrVanilla(data) === "mixed"){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            };
+
+            //ADD legion / mixed ui
+            $('.body_panel').attr("data-bind","css: { legion: model.isLegion($data), mixed: model.isMixed($data)}");
         }
-
-        model.isLegion = function (data){
-         if(model.isLegionOrMixedOrVanilla(data) === "legion"){
-            return true;
-         }
-         else{
-            return false;
-         }
-        };
-
-        model.isMixed = function (data){
-         if(model.isLegionOrMixedOrVanilla(data) === "mixed"){
-            return true;
-         }
-         else{
-            return false;
-         }
-        };
-
-        //ADD legion / mixed ui
-        $('.body_panel').attr("data-bind","css: { legion: model.isLegion($data), mixed: model.isMixed($data)}");
 
     }
 
