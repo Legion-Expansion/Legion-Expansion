@@ -15,8 +15,10 @@ if ( ! legionExpansionLoaded )
 
         console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
         
-        loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css");
-
+        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
+        if(themesetting === "ON"){  
+            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css");
+        }
         handlers.legionui = function(payload){
             console.log("SET UI : " + payload);
             if(payload === "legion"){
