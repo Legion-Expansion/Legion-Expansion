@@ -94,8 +94,7 @@
     "allow_pushing": false,
     "allow_underground": false,
     "collide_with_types": [
-      "Projectile",
-      "Feature"
+      "Projectile"
     ],
     "push_sideways": false,
     "radius": 0,
