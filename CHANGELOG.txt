@@ -37,7 +37,7 @@
    - acceleration and brake decreased from 40/30 to 10/10
    - turn speed decreased from 60 to 45
    - main cannon yaw rate decreased from 70 to 30
- - Purger buffef:
+ - Purger buffed:
    - damage increased from 350 to 450
  - Stoke buffed:
    - damage increased from 35 to 39
