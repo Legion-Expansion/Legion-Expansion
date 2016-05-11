@@ -203,7 +203,6 @@
   background: rgba(70,0,0,0.5) !important;
 }
 .slot-player.legionslot {
-  text-shadow: 0px 0px 4px #FF0000 !important;
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png) 0 17 53 17 !important;
 }
 .slot-player.legionslot.ready {
@@ -211,6 +210,16 @@
 }
 .slot-player.legionslot.loading {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17 !important;
+}
+
+.slot-player.mlaslot {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_mla.png) 0 17 53 17 !important;
+}
+.slot-player.mlaslot.ready {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png) 0 17 53 17 !important;
+}
+.slot-player.mlaslot.loading {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png) 0 17 53 17 !important;
 }
 
 .slot-player-commander {
