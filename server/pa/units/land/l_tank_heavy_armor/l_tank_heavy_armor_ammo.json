@@ -5,11 +5,11 @@
     "AT_Orbital": 0.0
   },
   "burn_damage": 200,
-  "burn_radius": 137,
+  "burn_radius": 70,
   "damage": 1500,
   "damage_volume": {
     "delay": 0,
-    "initial_radius": 10,
+    "initial_radius": 15,
     "radius_accel": 0,
     "radius_velocity": 95
   },
