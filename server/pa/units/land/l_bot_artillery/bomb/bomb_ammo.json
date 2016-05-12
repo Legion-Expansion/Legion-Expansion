@@ -14,12 +14,12 @@
   "damage_volume": {
     "initial_radius": 10.0
   },
-  "full_splash_damage_radius": 15,
+  "full_splash_damage_radius": 5,
   "impact_decals": [
     "/pa/effects/specs/scorch_b_01.json"
   ],
   "sim_fire_effect": "/pa/units/land/l_bot_artillery/bomb/bomb_ammo_explosion_ent.json",
-  "splash_damage": 500,
+  "splash_damage": 250,
   "splash_damages_allies": true,
   "splash_radius": 15
 }
