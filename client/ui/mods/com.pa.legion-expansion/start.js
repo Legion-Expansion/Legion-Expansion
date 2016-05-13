@@ -96,7 +96,7 @@ if ( ! legionExpansionLoaded )
 
 // includes some temp CSS until next PTE
 
-        $('div.view_intro').css( 'padding', '5px 2px' ).css( 'text-align', 'center' ).after('<div class="btn_std_ix view_intro" style="padding: 5px 2px; text-align: center" data-bind="enabled: legionShowVideoButton, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
+        $('div.view_intro').css( 'padding', '15px 0px' ).css( 'text-align', 'center' ).css( 'width', '55px' ).after('<div class="btn_std_ix view_intro" style="padding: 15px 0px; text-align: center; width: 55px" data-bind="enabled: legionShowVideoButton, click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'">Legion Intro</div>');
 
         $('div.div_watermarks').css( 'bottom', '90px' );
 
