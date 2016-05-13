@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+#### v0.10.1 - 2016/05/13
+
+ - Added BETA tag to mod name
+ - Updated mod description to list known issues
+ - Updated lobby welcome screen to list known issues
+
 #### v0.10.0 - 2016/05/09
 
  - Introduced new Legion build effect
