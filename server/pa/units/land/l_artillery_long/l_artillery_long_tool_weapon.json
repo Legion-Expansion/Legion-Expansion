@@ -8,7 +8,7 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "max_firing_velocity": 2000,
-  "max_range": 550,
+  "max_range": 500,
   "min_firing_velocity": 100,
   "pitch_range": 60,
   "pitch_rate": 10,

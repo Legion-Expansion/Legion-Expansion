@@ -104,12 +104,19 @@ if (!legionExpansionLoaded) {
                     return true;
                 }
             }
+            
+            model.isMLA = function(commander,isEmpty){
+                if(!isEmpty){
+                    return !_.includes(legioncommanders, commander);
+                }
+            }
+            
 
             //Style Commander Picker Legion
             $('.div-commander-picker-item.btn_std_ix').attr("data-bind","css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'");
 
             //Style Slot Legion
-            $('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
+            $('.slot-player').attr("data-bind","css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), mlaslot: model.isMLA($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
 
             model.changeLegionAI = function(playerid){
                 //console.log("change to legion");
@@ -140,7 +147,7 @@ if (!legionExpansionLoaded) {
             model.gameModIdentifiers = ko.observableArray().extend({ session: 'game_mod_identifiers' });
         }
 
-        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', ,'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
+        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
                model.enableLegion();
         }
     }

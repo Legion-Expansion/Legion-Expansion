@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 2400,
+  "build_metal_cost": 2500,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -144,7 +144,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Anysurface",
-  "max_health": 4000,
+  "max_health": 2500,
   "mesh_bounds": [
     35,
     40,
@@ -232,6 +232,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Air",
+    "UNITTYPE_Bomber",
     "UNITTYPE_Teleporter",
     "UNITTYPE_Mobile",
     "UNITTYPE_Advanced",

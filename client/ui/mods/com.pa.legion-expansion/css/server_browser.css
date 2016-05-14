@@ -1,3 +1,8 @@
+.legion .lbl_titans.lbl_legion {
+    background: rgba(158,0,0,1);
+    border: 1px solid white;
+}
+
 .legion .section_title {
     border-bottom: 20px solid rgba(50,0,0,0.1);
     box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.2);

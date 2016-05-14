@@ -17,7 +17,9 @@
     "WL_WaterSurface"
   ],
   "target_priorities": [
-    "Mobile"
+    "Structure - Wall",
+    "Mobile - Air",
+    "Wall"
   ],
   "yaw_range": 180,
   "yaw_rate": 45

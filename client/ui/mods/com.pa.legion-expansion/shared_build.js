@@ -29,6 +29,7 @@ if ( ! legionExpansion_sharedbuildLoaded )
           "/pa/units/land/l_flame_turret/l_flame_turret.json": [ "L_combat", 3 ],
           "/pa/units/land/l_artillery_long/l_artillery_long.json": [ "L_combat", 2 ],
           "/pa/units/land/l_rocket_barrage/l_rocket_barrage.json": [ "L_combat", 0 ],
+          "/pa/units/land/l_shield_gen/l_shield_gen.json": [ "L_combat", 1 ],
           "/pa/units/land/l_nuke_launcher/l_nuke_launcher.json": [ "L_combat", 4 ],
           "/pa/units/land/l_t1_turret_adv/l_t1_turret_adv.json": [ "L_combat", 6 ],
           "/pa/units/land/l_air_defense_adv/l_air_defense_adv.json": [ "L_combat", 7 ],
@@ -53,7 +54,6 @@ if ( ! legionExpansion_sharedbuildLoaded )
           "/pa/units/land/l_teleporter/l_teleporter.json": [ "L_utility", 13 ],
           "/pa/units/land/l_radar/l_radar.json": [ "L_utility", 14 ],
           "/pa/units/land/l_storage/l_storage.json": [ "L_utility", 15 ],
-          "/pa/units/land/l_shield_gen/l_shield_gen.json": [ "L_utility", 16 ],
 
           "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.json": [ "L_vehicle", 6 ],
           "/pa/units/land/l_tank_laser_adv/l_tank_laser_adv.json": [ "L_vehicle", 7 ],

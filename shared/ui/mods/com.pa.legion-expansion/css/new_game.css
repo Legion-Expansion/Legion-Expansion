@@ -105,6 +105,22 @@
     border: 1px solid rgba(158,0,0,0.5);
     box-shadow: inset 0px 0px 20px rgba(0,0,0,0.8);
     background: rgba(35,0,0,0.8);
+    color: white !important;
+}
+
+.legion .spectator-item-contents {
+    border: 1px solid rgba(158,0,0,0.5);
+    background: rgba(70,0,0,1);
+    box-shadow: inset 0px 0px 8px rgba(255,0,0, 0.4);
+}
+
+.legion .spectator-name {
+    background: url('coui://ui/mods/com.pa.legion-expansion/img/players_list_panel/red/icon_visibility.png') left center no-repeat;
+}
+
+.legion .spectator-name.host {
+    color: rgb(0,255,0);
+    text-shadow: 0px 0px 20px rgba(0,255,0,0.8);
 }
 
 .legion .mods-class {
@@ -187,7 +203,6 @@
   background: rgba(70,0,0,0.5) !important;
 }
 .slot-player.legionslot {
-  text-shadow: 0px 0px 4px #FF0000 !important;
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png) 0 17 53 17 !important;
 }
 .slot-player.legionslot.ready {
@@ -195,6 +210,16 @@
 }
 .slot-player.legionslot.loading {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png) 0 17 53 17 !important;
+}
+
+.slot-player.mlaslot {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_mla.png) 0 17 53 17 !important;
+}
+.slot-player.mlaslot.ready {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png) 0 17 53 17 !important;
+}
+.slot-player.mlaslot.loading {
+  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png) 0 17 53 17 !important;
 }
 
 .slot-player-commander {

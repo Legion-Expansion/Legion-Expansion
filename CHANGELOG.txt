@@ -1,49 +1,59 @@
 ## CHANGELOG
 
+#### v0.11.0 - 2016/05/16
+
+###### General
+
+ - Patriots automatically place themselves at the back of formations
+ - MLA Commanders now outlined in blue in the lobby to match Legion reduce
+ - Earthshaker causes smaller forest fires
+ - Corsair prioritises structures (excluding walls) over mobile units
+ - Rampart uses team colour for its switching off effect
+ - Investigator no longer collides with features in radar mode
+
+###### Balance
+
+ - Gustav nerfed:
+   - range decreased to 500 from 550
+ - Earthshaker nerfed:
+   - damage reduced from 2000 to 1500
+ - Comet nerfed:
+   - build cost increased from 2400 metal to 2500
+   - health decreased from 4000 to 2500
+   - bomber tag added to ensure ground AA shoots it before fighters
+ - Nova overhaul:
+   - build cost increased from 90 metal to 120
+   - health decreased from 180 to 120
+   - causes constant damage to all air units within a radius for 20 seconds
+ - Miniman buffed:
+   - bomb health increased from 125 to 130
+   - bomb explosion timer decreased from 3 seconds to 2.5
+   - bomb splash damage decreased from 500 to 250
+
+###### Fixes
+
+ - Moved Rampart to correct location on build bar
+ - Fixed colour of spectators in lobby when Legion theme is active
+ - Fixed colour of Legion tag in games browser
+ - Stoke now uses correct weapon identifier on its factory build image
+ - Corsair now uses correct weapon identifier on its factory build image
+
+
 #### v0.10.1 - 2016/05/13
 
  - Added BETA tag to mod name
  - Updated mod description to list known issues
  - Updated lobby welcome screen to list known issues
 
+
 #### v0.10.0 - 2016/05/09
 
- - Introduced new Legion build effect
- - Marauder firing sound fixed
+###### General
+
+ - New build effect
  - Improved Purger description
  - More work done on the lobby UI
- - Black Knight now heavily drains Ramparts
- - Hive nerfed:
-   - Reload time increased from 10 seconds to 14
-   - No longer accept player orders
-   - Health reduced from 125 to 100
-   - Cost increased from 600 to 750 metal
-   - Swarms are now properly targeted by other units
-   - Swarm speed lowered from 60 to 50
-   - Swarms no longer accept player orders
-   - Swarms expire after 6 seconds instead of 6.5
- - Peacekeeper weapon range increased from 70 to 75
- - Air bomb splash damage only affects air units
- - Fix Rockteeth commander not having a torpedo weapon
- - Monstrosity nerfed:
-   - Metal cost increased from 1700 to 1800
-   - Health decreased from 6100 to 6000
-   - Acceleration and brake decreased from 40/30 to 10/10
-   - Turn speed decreased from 60 to 45
-   - Main cannon yaw rate decreased from 70 to 30
- - Purger damage increased from 350 to 450
- - Stoke buffs
-   - Damage increased from 35 to 39
-   - Splash damage increased from 10 to 25
-   - Splash radius decreased from 7 to 6
- - Lancer buffs/nerfs
-   - Damage against bots decreased by 15%
-   - Damage against vehicles increased by 10%
-   - Less likely to fire into the ground and do no damage to target
- - Excalibur nerf
-   - Health decreased from 650 to 350, matching Artemis
  - Titans prioritise shooting other Titans
- - Reduced Tyr splash radius from 180 to 160
  - Improved ability of Arsonist to hit units
  - Optimisation of Arsonist effects to reduce lag
  - Hives can no longer overlap other units during placement
@@ -54,12 +64,56 @@
  - Improved main menu load time when Legion theme is disabled
  - Optimised background images to reduce mod size
 
+###### Balance
+
+ - Black Knight now heavily drains Ramparts
+ - Hive nerfed:
+   - reload time increased from 10 seconds to 14
+   - no longer accepts orders
+   - health reduced from 125 to 100
+   - cost increased from 600 metal to 750
+   - Swarms are now properly targeted by other units
+   - Swarm speed lowered from 60 to 50
+   - Swarms no longer accept orders
+   - Swarm lifetime lowered to 6 seconds from 6.5
+ - Peacekeeper buffed:
+   - weapon range increased from 70 to 75
+ - Air bomb splash damage only affects air units
+ - Monstrosity nerfed:
+   - metal cost increased from 1700 to 1800
+   - health decreased from 6100 to 6000
+   - acceleration and brake decreased from 40/30 to 10/10
+   - turn speed decreased from 60 to 45
+   - main cannon yaw rate decreased from 70 to 30
+ - Purger buffed:
+   - damage increased from 350 to 450
+ - Stoke buffed:
+   - damage increased from 35 to 39
+   - splash damage increased from 10 to 25
+   - splash radius decreased from 7 to 6
+ - Lancer tweaked:
+   - damage against bots decreased by 15%
+   - damage against vehicles increased by 10%
+   - less likely to fire into the ground and do no damage to target
+ - Excalibur nerf:
+   - health decreased from 650 to 350
+ - Reduced Tyr splash radius from 180 to 160
+
+ ###### Fixes
+
+ - Marauder firing sound fixed
+ - Fix Rockteeth commander not having a torpedo weapon
+
+
 #### v0.9.1 - 2016/05/03
+
+###### Fixes
 
  - Fixed bug preventing the Enderstryke71 and Nefelpitou Commanders from building
  - Restored Rockteeth build effects
  - The Imperator orbital battleship is now buildable
  - Fixed the Marauder description
+
 
 #### v0.9.0 - 2016/05/02
 
