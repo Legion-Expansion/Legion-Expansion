@@ -23,7 +23,7 @@
  - Nova overhaul:
    - build cost increased from 90 metal to 120
    - health decreased from 180 to 120
-   - causes constant damage to all air units within a radius for 20 seconds
+   - causes constant damage to all enemy air units within close proximity for 20 seconds
  - Miniman buffed:
    - bomb health increased from 125 to 130
    - bomb explosion timer decreased from 3 seconds to 2.5
@@ -37,7 +37,8 @@
  - Stoke now uses correct weapon identifier on its factory build image
  - Corsair now uses correct weapon identifier on its factory build image
  - Investigator in radar mode no longer creates errors in the logs
- 
+ - Fixed Decimator rocket trail
+
 
 #### v0.10.1 - 2016/05/13
 
