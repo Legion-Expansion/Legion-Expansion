@@ -9,7 +9,6 @@
  - Earthshaker causes smaller forest fires
  - Corsair prioritises structures (excluding walls) over mobile units
  - Rampart uses team colour for its switching off effect
- - Investigator no longer collides with features in radar mode
 
 ###### Balance
 
@@ -37,7 +36,8 @@
  - Fixed colour of Legion tag in games browser
  - Stoke now uses correct weapon identifier on its factory build image
  - Corsair now uses correct weapon identifier on its factory build image
-
+ - Investigator in radar mode no longer creates errors in the logs
+ 
 
 #### v0.10.1 - 2016/05/13
 
@@ -99,15 +99,13 @@
    - health decreased from 650 to 350
  - Reduced Tyr splash radius from 180 to 160
 
- ###### Fixes
+###### Fixes
 
  - Marauder firing sound fixed
  - Fix Rockteeth commander not having a torpedo weapon
 
 
 #### v0.9.1 - 2016/05/03
-
-###### Fixes
 
  - Fixed bug preventing the Enderstryke71 and Nefelpitou Commanders from building
  - Restored Rockteeth build effects
