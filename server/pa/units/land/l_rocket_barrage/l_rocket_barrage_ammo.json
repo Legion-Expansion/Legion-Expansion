@@ -10,11 +10,11 @@
   },
   "full_damage_splash_radius": 5,
   "fx_trail": {
-    "filename": "/pa/effects/specs/shell_artillery_small_proj_trail.pfx",
+    "filename": "/pa/effects/specs/rocket_proj_trail.pfx",
     "offset": [
-      0,
-      0,
-      0
+      0.0,
+      1.0,
+      0.0
     ]
   },
   "influence_radius": 900,
