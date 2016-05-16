@@ -12,6 +12,9 @@
   "target_layers": [
     "WL_Air"
   ],
+  "target_priorities": [
+    "Air"
+  ],
   "yaw_range": 360,
   "yaw_rate": 3600
 }
