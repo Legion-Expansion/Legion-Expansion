@@ -9,5 +9,12 @@
 }
 */
 
+.legionui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+} 
+
 /*TODO MIXEDUI */
 
+.mixedui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(99,14,138,0.5) !important;
+}
