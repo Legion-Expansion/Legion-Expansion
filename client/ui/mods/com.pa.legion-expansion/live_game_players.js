@@ -90,6 +90,7 @@ if ( ! legionExpansionLoaded )
                     api.Panel.message("options_bar","legionui", ui);
                     api.Panel.message("build_hover","legionui", ui);
                     api.Panel.message("time_bar","legionui", ui);
+                    api.Panel.message("menu","legionui", ui);
                     
                     if(ui === "legion"){
                         
