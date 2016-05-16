@@ -114,8 +114,8 @@
   "has_death_effects": true,
   "max_health": 15000,
   "mesh_bounds": [
-    50.0454,
-    50.0306,
+    70.0454,
+    70.0306,
     43
   ],
   "model": {
