@@ -33,6 +33,7 @@
     box-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
 }
 
+
 /* nav pills */
 .legion .nav-pills > li > a {
     text-shadow: 0px 0px 15px rgba(255,0,0,0.6) !important;
@@ -66,7 +67,7 @@
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
 }
 
-.legion input[type="text"], .legion input[type="password"], .legion input[type="number"] {
+.legion input[type="text"], .legion input[type="password"], .legion .sub_options input[type="number"] {
     background: rgba(70,0,0,1) !important;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,0.1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
@@ -186,7 +187,7 @@
     border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png) 44 17 0 17 fill;
 }
 
-/* army button */
+/* army button 
 .legion .army-button {
     background: rgba(70,0,0,1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
@@ -203,4 +204,4 @@
         background: rgba(255,0,0,0.7) !important;
         border:1px solid rgba(158, 0, 0, 0.1) !important;
         box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
-    }
+    }*/

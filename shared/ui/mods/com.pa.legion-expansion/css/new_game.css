@@ -195,6 +195,34 @@
     margin: 0px 0px 0px 0px;
 }
 
+.legion .form-control-personality .btn-group .btn{
+    border: 1px solid #262626 !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+    background: none !important;
+}
+
+.legion .form-control-personality .dropdown-menu .text {
+    text-shadow: 0px 0px 15px rgba(255,255,255,.2) !important;
+}
+
+.legion .form-control-personality .dropdown-menu {
+    background: rgba(70,70,70,1) !important;
+    border: 1px solid #262626 !important;
+}
+
+.legion .form-control-personality .dropdown-menu > li > a:hover {
+    background: rgba(100,100,100,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+}
+
+.legion .form-control-personality .dropdown-menu > li > a:focus {
+    background: rgba(120,120,120,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    outline: none !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+}
+
 /*legion commander outlines*/
 
 .div-commander-picker-item.btn_std_ix.legioncommander {
