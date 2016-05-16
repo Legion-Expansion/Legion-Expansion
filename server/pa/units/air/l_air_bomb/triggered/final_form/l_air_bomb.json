@@ -43,11 +43,6 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.pfx",
-      "type": "idle"
-    },
-    {
-      "bone": "bone_root",
       "filename": "/pa/units/air/l_air_bomb/triggered/final_form/l_air_bomb.pfx",
       "offset": [
         0,
