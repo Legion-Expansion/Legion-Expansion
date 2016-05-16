@@ -26,9 +26,15 @@
 }
 
 .legion .div_build_item:hover {
-    background: rgba(255,0,0,0.8);
+    background: rgba(255,0,0,0.85);
     border:1px solid rgba(158, 0, 0, 0.5) !important;
-    box-shadow: 0px 0px 10px rgba(255,0,0,0.8) !important;
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.85) !important;
+}
+
+.legion .div_build_item.active {
+    background: rgba(255,0,0,0.7);
+    border:1px solid rgba(158, 0, 0, 0.5) !important;
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.7) !important;
 }
 
 .legion .span_build_bar_tab {
