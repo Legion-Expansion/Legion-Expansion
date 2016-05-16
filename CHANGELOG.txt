@@ -5,7 +5,7 @@
 ###### General
 
  - Patriots automatically place themselves at the back of formations
- - MLA Commanders now outlined in blue in the lobby to match Legion reduce
+ - MLA Commanders now outlined in blue in the lobby to match Legion
  - Earthshaker causes smaller forest fires
  - Corsair prioritises structures (excluding walls) over mobile units
  - Rampart uses team colour for its switching off effect
