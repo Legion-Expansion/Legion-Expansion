@@ -178,8 +178,8 @@
     "skirt_decal": "/pa/effects/specs/skirt_02.json"
   },
   "placement_size": [
-    50,
-    65
+    60,
+    80
   ],
   "recon": {
     "observer": {
