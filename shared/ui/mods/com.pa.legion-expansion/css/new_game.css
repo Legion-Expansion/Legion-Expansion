@@ -249,6 +249,9 @@
 .slot-player.mlaslot.loading {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png) 0 17 53 17 !important;
 }
+.slot-player.empty.ready {
+    border-image: url(coui://ui/main/game/new_game/img/ctrl_user_slot.png) 0 17 53 17 !important;
+}
 
 .slot-player-commander {
     border: 1px solid rgb(0,179,255) !important;
