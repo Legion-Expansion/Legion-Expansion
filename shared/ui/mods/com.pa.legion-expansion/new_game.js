@@ -73,7 +73,9 @@ if (!legionExpansionLoaded) {
                 loadCSS('coui://ui/mods/com.pa.legion-expansion/css/new_game.css');                
                 $('body').addClass("legion");
             }
-
+            //legion commander picker colouring
+            loadCSS('coui://ui/mods/com.pa.legion-expansion/css/legion_commander_picker.css');
+            
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
             api.mods.getMountedMods('client', function(mods) {
