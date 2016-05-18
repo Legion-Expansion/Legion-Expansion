@@ -30,9 +30,22 @@
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     },
     "fired": {
-      "audio_cue": "/SE/Weapons/bot/spark_fire"
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
+      "effect_spec": "/pa/units/land/l_tank_swarm/l_tank_swarm_fire.pfx gun002 /pa/units/land/l_tank_swarm/l_tank_swarm_fire.pfx gun005"
     }
   },
+  "fx_offsets": [
+    {
+      "bone": "gun002",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "gun005",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle.pfx",
+      "type": "idle"
+    }
+  ],
   "guard_layer": "WL_AnySurface",
   "headlights": [
     {
