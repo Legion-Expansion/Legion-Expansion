@@ -14,8 +14,7 @@
   "damage": 0,
   "events": {
     "died": {
-      "audio_cue": "/SE/Weapons/bot/spark_fire",
-      "effect_spec": "/pa/units/air/l_air_scout_adv/vision/vision_active.pfx"
+      "audio_cue": "/SE/Weapons/bot/spark_fire"
     }
   },
   "flight_type": "Staged",
