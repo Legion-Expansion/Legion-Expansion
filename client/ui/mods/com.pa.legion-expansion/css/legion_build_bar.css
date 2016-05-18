@@ -84,10 +84,16 @@
     color:#FFF !important;
 }
 
-.mixed .div_build_item:hover {
-    background: #663399;
+.mixed .div_build_item:active {
+    background: #663399 !important;
     border:1px solid rgba(99, 14, 138, 0.5) !important;
     box-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5) !important;
+}
+
+.mixed .div_build_item.hover {
+    background: rgba(139,54,178,0.85) !important;
+    border:1px solid rgba(99, 14, 138, 0.5) !important;
+    box-shadow: 0px 0px 20px rgba(139,54,178,0.85) !important;
 }
 
 .mixed .span_build_bar_tab {
