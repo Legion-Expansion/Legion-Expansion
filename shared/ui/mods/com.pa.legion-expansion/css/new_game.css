@@ -175,6 +175,10 @@
 .legion .div-commander-picker-item.btn_std_ix {
     color: rgb(200,255,255) !important;
 }
+
+.legion .btn_hero {
+    margin: 0px 0px 0px 0px !important;
+}
     
 .legion .btn_add_ai {
     text-align: center;
