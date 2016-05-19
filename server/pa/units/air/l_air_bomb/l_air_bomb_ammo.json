@@ -34,8 +34,6 @@
   },
   "show_strategic_icon": false,
   "spawn_layers": "Air",
-  "spawn_unit_on_death": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.json",
-  "spawn_unit_on_death_with_velocity": true,
   "splash_damage": 0,
   "splash_radius": 0,
   "stages": [
