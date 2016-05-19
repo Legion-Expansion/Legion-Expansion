@@ -13,6 +13,9 @@
     "com.pa.legion-expansion-client",
     "com.wondible.pa.weapons_tracking"
   ],
+  "companions": [
+    "com.pa.legion-expansion-client"
+  ],
   "description": "Adds an entirely new faction for use in skirmish and multiplayer. KNOWN ISSUES: Loading a Legion replay crashes the game. Joining a Legion game without the client mod crashes the game. Attempting to spectate a Legion game after it has launched crashes the game.",
   "display_name": "Legion Expansion BETA",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
