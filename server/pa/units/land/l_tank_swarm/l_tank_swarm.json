@@ -44,6 +44,11 @@
       "bone": "gun005",
       "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle.pfx",
       "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle_root.pfx",
+      "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
