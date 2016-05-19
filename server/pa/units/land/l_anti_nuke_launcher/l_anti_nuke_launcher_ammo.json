@@ -25,6 +25,7 @@
     ]
   },
   "has_notifications": true,
+  "strategic_icon_priority": 0,
   "influence_radius": 1200,
   "initial_velocity": 500.0,
   "lifetime": 5,
