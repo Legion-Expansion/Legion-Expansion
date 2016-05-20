@@ -15,14 +15,18 @@
     box-shadow: 0px 0px 10px rgba(255,0,0,0.8) !important;
 }
 
-.legionui .span_tooltip_hotkey {
-    border:1px solid rgba(158, 0, 0, 0.5) !important;
-    color: rgba(255,0,0,0.8) !important;
+.legionui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
 }
 
 .legionui .div_sim_speed {
   color: rgba(255,0,0,0.8) !important;
   text-shadow: 0px 0px 30px rgba(255,0,0,0.8) !important;
+}
+
+.legionui .span_tooltip_hotkey {
+    border:1px solid rgba(255, 0, 0, 1) !important;
+    color: rgba(255,0,0,1) !important;
 }
 
 .mixedui .div_pip_toggle_cont {
@@ -48,6 +52,15 @@
 .mixedui .div_sim_speed {
   color: #663399 !important;
   text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+}
+
+.mixedui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(99,14,138,0.5) !important;
+}
+
+.mixedui .span_tooltip_hotkey {
+    border:1px solid rgba(159,64,198,1) !important;
+    color: rgba(159,64,198,1) !important;
 }
 
 .watermark {

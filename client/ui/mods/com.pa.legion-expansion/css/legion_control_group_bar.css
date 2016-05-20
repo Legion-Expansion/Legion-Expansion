@@ -28,6 +28,7 @@
 
     .legionui .unit_group_item .numkey {
         color: #970000;
+        text-shadow: none;
         background: black;
         border: 1px solid #4d0000;
     }
@@ -46,7 +47,12 @@
     box-shadow: inset 0px 0px 10px #970000 !important;
     background: rgba(255,0,0,0.8);
     border:1px solid rgba(158, 0, 0, 0.5) !important;  
-}   
+}
+
+.legionui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+}
+
 
 /*TODO MIXEDUI */
 
@@ -81,6 +87,7 @@
     .mixedui .unit_group_item .numkey {
         color: #660066;
         background: black;
+        text-shadow: none;
         border: 1px solid #660066;
     }
     
@@ -101,3 +108,8 @@
     background: #660066;
     border:1px solid rgba(99, 14, 138, 0.5) !important;  
 }
+
+.mixedui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(99,14,138,0.5) !important;
+}
+

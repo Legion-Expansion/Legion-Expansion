@@ -55,6 +55,7 @@
   },
   "show_in_orbital_layer": true,
   "show_strategic_icon": true,
+  "strategic_icon_priority": 0,
   "signal_type": "nuke",
   "sim_impact_effect": "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo_explosion_ent.json",
   "spawn_layers": "WL_Air",

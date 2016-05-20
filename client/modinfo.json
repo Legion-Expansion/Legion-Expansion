@@ -1,17 +1,17 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "94157",
+  "build": "94533",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "client",
-  "date": "2016/05/16",
+  "date": "2016/05/23",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
-  "description": "Adds an entirely new faction for use in skirmish and multiplayer. KNOWN ISSUES: Loading a Legion replay crashes the game. Joining a Legion game without the client mod crashes the game. Attempting to spectate a Legion game after it has launched crashes the game.",
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer. KNOWN ISSUES: Joining a Legion game without the client mod crashes the game. Attempting to spectate a Legion game after it has launched crashes the game.",
   "display_name": "Legion Expansion Client BETA",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
@@ -68,6 +68,9 @@
     "live_game_sandbox": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
     ],
+    "live_game_menu": [
+      "coui://ui/mods/com.pa.legion-expansion/live_game_menu.js"
+    ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ],
@@ -77,6 +80,6 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "hidden": true
 }

@@ -54,6 +54,14 @@
 .legionui .planet_title {
     color:#FFF !important;
 }
+
+.legionui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+}
+
+.legionui .div_planet_list_item_cont {
+    box-shadow: none;
+}
 /* MIXED */
 .mixedui .div_planet_list_cont {
     border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-right-mixed.png) 17 17 47 47 fill !important;
@@ -111,4 +119,12 @@
 
 .mixedui .planet_title {
     color:#FFF !important;
+}
+
+.mixedui .tooltip-inner {
+    box-shadow: 0px 0px 20px rgba(99,14,138,0.5) !important;
+}
+
+.mixedui .div_planet_list_item_cont {
+    box-shadow: none;
 }

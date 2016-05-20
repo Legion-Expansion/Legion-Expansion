@@ -25,9 +25,9 @@ Sub PinkPixel(Folder)
           wscript.Echo subfolderType.Name
           For Each file in SubfolderType.Files
             If instr(file.name, "diffuse") AND NOT instr(file.name, "diffuse_pixel") Then
-              wscript.echo "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 " & replace(file.path,".png","_pixel.png")
+              wscript.echo "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 -alpha set -background none " & replace(file.path,".png","_pixel.png")
               'run ImageMagick to add 1 pink pixel to top-right and save as file_pixel.png
-              WSH.Run "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 " & replace(file.path,".png","_pixel.png"), 0, true
+              WSH.Run "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 -alpha set -background none " & replace(file.path,".png","_pixel.png"), 0, true
               
               PapafiyDiffuse file, SubFolder.name & "\" & LCase(SubFolderType.Name)
             End If
@@ -37,9 +37,9 @@ Sub PinkPixel(Folder)
             wscript.Echo SubSubFolder.Name
             For Each file in SubSubFolder.Files
               If instr(file.name, "diffuse") AND NOT instr(file.name, "diffuse_pixel") Then
-                wscript.echo "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 " & replace(file.path,".png","_pixel.png")
+                wscript.echo "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 -alpha set -background none " & replace(file.path,".png","_pixel.png")
                 'run ImageMagick to add 1 pink pixel to top-right and save as file_pixel.png
-                WSH.Run "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 " & replace(file.path,".png","_pixel.png"), 0, true
+                WSH.Run "magick " & file.path & " -rotate -90 -fill magenta -draw ""rectangle 0,0 1,1"" -rotate 90 -alpha set -background none " & replace(file.path,".png","_pixel.png"), 0, true
                 
                 PapafiyDiffuse file, SubFolder.name & "\" & LCase(SubFolderType.Name) & "\" & LCase(SubSubFolder.Name)
               End If
@@ -50,15 +50,23 @@ Sub PinkPixel(Folder)
 End Sub
 
 Sub PapafiyDiffuse(file, location)
-    wscript.echo scriptdir & "\papatran.exe --texture-mode include -o " & replace(file.name,".png",".papa") & " " & replace(file.path,".png","_pixel.png")
+    filepath = file.path
+    filename = file.name
+    tempfile = replace(filepath,".png","_temp.png")
+    pixelfile = replace(filepath,".png","_pixel.png")
+    FSO.MoveFile filepath, tempfile
+    FSO.MoveFile pixelfile , filepath
+    wscript.echo scriptdir & "\papatran.exe --texture-mode include -o " & replace(filename,".png",".papa") & " " & filepath
     'Run papatran in resolution folder with matching default.settings
-    WSH.Run scriptdir & "\papatran.exe --texture-mode include -o " & replace(file.name,".png",".papa") & " " & replace(file.path,".png","_pixel.png"), 0, true
+    WSH.Run scriptdir & "\papatran.exe --texture-mode include -o " & replace(filename,".png",".papa") & " " & filepath, 0, true
     'Copy PAPA file to correct dir
-    FSO.CopyFile scriptdir & "\" & replace(file.name,".png",".papa"), clientunitsdir & "\" & location & "\" & LCase(replace(file.name,".png",".papa")), true
+    FSO.CopyFile scriptdir & "\" & replace(filename,".png",".papa"), clientunitsdir & "\" & location & "\" & LCase(replace(filename,".png",".papa")), true
     'Remove temp PAPA file
-    FSO.DeleteFile scriptdir & "\" & replace(file.name,".png",".papa")
+    FSO.DeleteFile scriptdir & "\" & replace(filename,".png",".papa")
+    FSO.DeleteFile filepath
     'Remove _pixel file
-    FSO.DeleteFile replace(file.path,".png","_pixel.png") 
+    FSO.MoveFile tempfile , filepath
+    
 End Sub
 
 Sub PapaTimeNoDiffuse(Folder)

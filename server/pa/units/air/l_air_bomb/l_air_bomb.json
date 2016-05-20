@@ -33,6 +33,11 @@
     "ORDER_Assist",
     "ORDER_FireSecondaryWeapon"
   ],
+  "events": {
+    "fired": {
+      "effect_spec": "/pa/units/air/l_air_bomb/l_air_bomb_fire.pfx bone_root"
+    }
+  },
   "fx_offsets": [
     {
       "bone": "bone_root",
@@ -41,6 +46,7 @@
     }
   ],
   "guard_layer": "WL_Air",
+  "guard_radius": 150,
   "max_health": 180,
   "mesh_bounds": [
     6,
@@ -55,9 +61,9 @@
     "filename": "/pa/units/air/l_air_bomb/l_air_bomb.papa"
   },
   "navigation": {
-    "acceleration": 120,
+    "acceleration": 180,
     "brake": 120,
-    "move_speed": 90,
+    "move_speed": 95,
     "turn_speed": 1080,
     "wobble_factor": 0.25,
     "wobble_speed": 0.2
@@ -77,16 +83,20 @@
   "selection_icon": {
     "diameter": -24
   },
+  "spawn_unit_on_death": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.json",
+  "spawn_unit_on_death_with_velocity": false,
   "tools": [
     {
       "aim_bone": "bone_root",
       "primary_weapon": true,
+      "secondary_weapon": true,
       "spec_id": "/pa/units/air/l_air_bomb/l_air_bomb_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
-      "secondary_weapon": true,
-      "spec_id": "/pa/units/air/l_air_bomb/l_air_bomb_deploy_tool_weapon.json"
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/air/l_air_bomb/l_air_bomb_tracer_tool_weapon.json"
     }
   ],
   "unit_types": [
