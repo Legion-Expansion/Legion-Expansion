@@ -6,7 +6,7 @@ if (!legionExpansionLoaded) {
 
     function legionExpansion() {
 
-        console.log('legionExpansion new_game.js last tested on 94157+');
+        console.log('legionExpansion new_game.js last tested on 94533+');
 
         var legionExpansionEnabled = false;
 
@@ -15,6 +15,8 @@ if (!legionExpansionLoaded) {
             if(legionExpansionEnabled) {
                 return;
             }
+            
+            console.log('legionExpansion new_game.js enabled');
 
             legionExpansionEnabled = true;
 
@@ -144,11 +146,6 @@ if (!legionExpansionLoaded) {
             //ENDOF NEED PATCHED lobby.js
         }
  
- // temporary until next PTE
-        if (!model.gameModIdentifiers) {
-            model.gameModIdentifiers = ko.observableArray().extend({ session: 'game_mod_identifiers' });
-        }
-
         if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
                model.enableLegion();
         }
