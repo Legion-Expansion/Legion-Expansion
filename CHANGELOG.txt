@@ -12,7 +12,7 @@
  - Optimised Nova effects for performance
  - Standardised colouring of commanders on game launch splash
  - Standardised colouring of Commanders in lobby
- - Added a scanning effect to the Infiltrator's probe after deployment
+ - Infiltrator's probe scan effect plays more than once after deployment to more clearly show its function
  - Wraith renamed to Spectre
  - Excaliber renamed to Paladin
  - Added idle effects to the Havoc
