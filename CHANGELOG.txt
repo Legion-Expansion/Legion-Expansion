@@ -1,5 +1,47 @@
 ## CHANGELOG
 
+#### v0.12.0 - 2016/05/23
+
+###### General
+
+ - Improved MLA selection graphics in lobby
+ - Added icon to denote a mixed army on the playerlist
+ - In-game menu is now red when Legion UI is enabled
+ - Removed blue shadows from UI elements when Legion UI is enabled
+ - Novas prioritise air
+ - Optimised Nova effects for performance
+ - Standardised colouring of commanders on game launch splash
+ - Standardised colouring of Commanders in lobby
+ - Added a scanning effect to the Infiltrator's probe after deployment
+ - Wraith renamed to Spectre
+ - Excaliber renamed to Paladin
+ - Added idle effects to the Havoc
+ - Improved PA startup time when Legion is disabled through use of new companion mod feature
+ - Improved Investigator description
+ - Improved game logging
+ 
+###### Fixes
+
+ - Fixed build icon weapon symbols for Catfish, Bowhead and Talos
+ - Fixed numerous textures being too bright
+ - Adding unit card pictures for Booms spawned by Necromancers
+ - Log no longer shows errors for invalid impact decal
+ - Fixed placement size of basic and advanded Vehicle Foundry and the advanced Walker Foundry
+ - Build bar buttons turn red when clicked not blue
+ - Sub-orders from the orders bar are now also red
+ - Fixed boundry and selection box of the Holocene
+ - Legion lobby no longer obscures Lobby System Preview mod's planet display
+ - Slot colour now corret shade of grey after removing an AI player
+ - Legion Commanders highlighted red in commander selection even if the Legion theme is disabled
+ - Fixed ready button moving after being clicked
+ - Starcannon pods correctly display their trail
+ - Description of Kosmos now correctly states that it attacks land
+ - Starcannon description no longer claims it's a teleporter
+ - Booms spawned by the Necromancer now have alt-fire
+ - Purger can attack surface naval ships close to the shore
+ - Fixed strategic icon warnings in log
+
+
 #### v0.11.0 - 2016/05/16
 
 ###### General
