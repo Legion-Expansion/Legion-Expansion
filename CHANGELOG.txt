@@ -40,6 +40,7 @@
  - Booms spawned by the Necromancer now have alt-fire
  - Purger can attack surface naval ships close to the shore
  - Fixed strategic icon warnings in log
+ - Intro buttons properly sized for latest PA versions
 
 
 #### v0.11.0 - 2016/05/16
