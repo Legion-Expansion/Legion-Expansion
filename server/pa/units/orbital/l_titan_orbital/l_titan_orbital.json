@@ -3,7 +3,7 @@
   "description": "Orbital Mega-Laser - Purifies The Surface Below with its Laser.",
   "TEMP_texelinfo": 33.0,
   "atrophy_cool_down": 15.0,
-  "atrophy_rate": 200.0,
+  "atrophy_rate": 266.666,
   "attachable": {
     "offsets": {
       "root": [

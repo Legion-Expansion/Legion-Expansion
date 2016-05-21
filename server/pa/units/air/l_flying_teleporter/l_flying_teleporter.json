@@ -3,7 +3,7 @@
   "description": "Interplanetary Mobile Teleporter - Heavily Armored.",
   "TEMP_texelinfo": 23.6108,
   "atrophy_cool_down": 15,
-  "atrophy_rate": 200,
+  "atrophy_rate": 20.833,
   "attachable": {
     "offsets": {
       "root": [

@@ -4,7 +4,7 @@
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
-  "atrophy_rate": 33.3333,
+  "atrophy_rate": 28.3333,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/metal"

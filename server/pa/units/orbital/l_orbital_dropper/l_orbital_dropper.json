@@ -5,7 +5,7 @@
   "area_build_separation": 50,
   "area_build_type": "Line",
   "atrophy_cool_down": 15.0,
-  "atrophy_rate": 60,
+  "atrophy_rate": 21.13,
   "audio": {
     "loops": {
       "enabled": {

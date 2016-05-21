@@ -3,7 +3,7 @@
   "description": "Advanced Defense - Heavy Rocket Pods. Attacks Land and Naval.",
   "TEMP_texelinfo": 15.8261,
   "atrophy_cool_down": 15,
-  "atrophy_rate": 30,
+  "atrophy_rate": 33.333,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/artillery"

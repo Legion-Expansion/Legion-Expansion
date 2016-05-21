@@ -5,7 +5,7 @@
   "area_build_separation": 2,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,
-  "atrophy_rate": 45,
+  "atrophy_rate": 41,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/energy"

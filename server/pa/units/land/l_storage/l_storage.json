@@ -4,7 +4,7 @@
   "TEMP_texelinfo": 27.2827,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,
-  "atrophy_rate": 7.5,
+  "atrophy_rate": 8.33,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/energy"
