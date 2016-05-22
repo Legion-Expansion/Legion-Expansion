@@ -20,6 +20,11 @@
  - Improved Investigator description
  - Improved game logging
  
+###### Balance
+
+ - Diplomat buffed
+   - Cost reduced from 50,000 metal to 40,000 to match Halley
+ 
 ###### Fixes
 
  - Fixed build icon weapon symbols for Catfish, Bowhead and Talos

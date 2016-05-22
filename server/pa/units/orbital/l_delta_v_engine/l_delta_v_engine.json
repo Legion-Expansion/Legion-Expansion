@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 50000,
+  "build_metal_cost": 40000,
   "build_restrictions": "Thrustable",
   "events": {
     "build_complete": {
