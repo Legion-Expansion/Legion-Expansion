@@ -34,7 +34,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle03 /pa/effects/specs/default_muzzle_flash.pfx socket_muzzle04"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle"
     }
   },
   "guard_layer": "WL_Air",
@@ -88,7 +88,6 @@
         "socket_muzzle03",
         "socket_muzzle04"
       ],
-	  "projectiles_per_fire": 4,
       "spec_id": "/pa/units/land/l_bot_aa/l_bot_aa_tool_weapon.json"
     }
   ],
