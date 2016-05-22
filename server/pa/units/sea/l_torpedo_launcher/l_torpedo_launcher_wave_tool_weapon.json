@@ -8,7 +8,7 @@
   "max_range": 200,
   "pitch_range": 90,
   "pitch_rate": 60,
-  "rate_of_fire": 0.33,
+  "rate_of_fire": 0.6,
   "spread_fire": true,
   "target_layers": [
     "WL_WaterSurface",
