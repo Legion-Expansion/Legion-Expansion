@@ -1,0 +1,26 @@
+{
+  "ammo_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_anti_drop_ammo.json",
+  "anti_entity_targets": [
+    "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"
+  ],
+  "anti_entity_targets_units": true,
+  "auto_attack": true,
+  "auto_task_type": "anti_entity",
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "firing_arc_pitch": 180,
+  "firing_arc_yaw": 180,
+  "firing_standard_deviation": 20,
+  "max_firing_velocity": 80,
+  "max_range": 180,
+  "pitch_range": 89.9,
+  "pitch_rate": 50,
+  "rate_of_fire": 0.25,
+  "spread_fire": true,
+  "target_layers": [
+    "Orbital",
+    "WL_Air"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 120
+}

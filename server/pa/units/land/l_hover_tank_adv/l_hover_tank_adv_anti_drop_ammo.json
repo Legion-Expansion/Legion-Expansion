@@ -1,0 +1,6 @@
+{
+  "base_spec": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
+  "collision_check": "target",
+  "collision_response": "destroy",
+  "initial_velocity": 110
+}

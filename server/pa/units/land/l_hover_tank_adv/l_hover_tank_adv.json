@@ -242,6 +242,14 @@
       ],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "socket_muzzleLeft02"
+      ],
+      "projectiles_per_fire": 1,
+      "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_anti_drop_tool_weapon.json"
     }
   ],
   "transportable": {
