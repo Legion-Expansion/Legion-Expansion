@@ -5,7 +5,6 @@
 ###### General
 
  - Improved MLA selection graphics in lobby
- - Added icon to denote a mixed army on the playerlist
  - In-game menu is now red when Legion UI is enabled
  - Removed blue shadows from UI elements when Legion UI is enabled
  - Novas prioritise air
