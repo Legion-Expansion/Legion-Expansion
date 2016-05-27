@@ -1,5 +1,27 @@
 ## CHANGELOG
 
+#### v0.13.0 - 2016/05/29
+
+###### General
+
+ - Mixed MLA/Legion armies now use a custom icon on the player list
+
+###### Balance
+
+ - Starcannon nerf:
+   - Pods can now be shot down by Bluehawks, Catapults, Stingrays and Panzers
+ - Decimator buff:
+   - Health increased from 1500 to 2500
+ - Paner nerf:
+   - Missiles can now be shot down by GIL-Es
+
+###### Fixes
+
+ - Removed an invalid ammo type to prevent errors
+ - Panzer no longer misses at close range
+ - Legion tag no longer shown in UI in non-Legion games
+
+
 #### v0.12.0 - 2016/05/23
 
 ###### General
