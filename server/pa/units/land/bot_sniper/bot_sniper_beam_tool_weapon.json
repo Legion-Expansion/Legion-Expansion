@@ -1,0 +1,26 @@
+{
+  "ammo_id": "/pa/units/land/bot_sniper/bot_sniper_beam_ammo.json",
+  "anti_entity_targets": [
+    "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
+    "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
+    "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
+    "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"
+  ],
+  "anti_entity_targets_units": false,
+  "auto_attack": true,
+  "auto_task_type": "anti_entity",
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "idle_aim_delay": 0.1,
+  "manual_fire": true,
+  "max_range": 140,
+  "pitch_range": 89,
+  "pitch_rate": 3600,
+  "rate_of_fire": 0.25,
+  "spread_fire": true,
+  "target_layers": [
+    "WL_Air",
+    "WL_Orbital"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 3600
+}

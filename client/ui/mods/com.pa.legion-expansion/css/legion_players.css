@@ -73,3 +73,7 @@
 .player_masked.legcom {
     -webkit-mask-image: url("coui://ui/mods/com.pa.legion-expansion/img/icon_player_fill_l.png") !important; 
 }
+
+.player_masked.mixcom {
+    -webkit-mask-image: url("coui://ui/mods/com.pa.legion-expansion/img/icon_player_fill_m.png") !important; 
+}

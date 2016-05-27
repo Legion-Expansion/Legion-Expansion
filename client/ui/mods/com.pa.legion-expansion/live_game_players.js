@@ -23,38 +23,47 @@ if ( ! legionExpansionLoaded )
         //see global.js
         var legioncomms = legionglobal.commanders;
         var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
-
-        model.isLegionOrMixedOrVanilla = ko.computed(function () {
-        try{
-            var legioncount = 0;
-            var specslength = 0;
-            var selectedspecs = model.player().commanders;
-            if (selectedspecs !== undefined){
-            _.forOwn(selectedspecs, function(value, key){
-                if(_.includes(legioncomms, value)){
-                legioncount++;
-                }
-                specslength++; 
-            });
-            if(legioncount == specslength){
-                return "legion";
-            }
-            else{
-                if(legioncount > 0 && legioncount < specslength){
-                return "mixed";
+        
+        model.checkCommanders = function(commanders){
+            try{
+                var legioncount = 0;
+                var specslength = 0;
+                if (commanders !== undefined){
+                    _.forOwn(commanders, function(value, key){
+                        if(_.includes(legioncomms, value)){
+                        legioncount++;
+                        }
+                        specslength++; 
+                    });
+                    if(legioncount == specslength){
+                        return "legion";
+                    }
+                    else{
+                        if(legioncount > 0 && legioncount < specslength){
+                        return "mixed";
+                        }
+                        else{
+                        return "vanilla";
+                        }
+                    }
                 }
                 else{
-                return "vanilla";
+                    return "vanilla";
                 }
             }
-            }
-            else{
-            return "vanilla";
-            }
+            catch(e){
+                return "";
+            }            
         }
-        catch(e){
-            return "";
-        }
+        
+        model.isLegionOrMixedOrVanilla = ko.computed(function () {
+            try{
+                var selectedspecs = model.player().commanders;
+                return model.checkCommanders(selectedspecs);
+            }
+            catch(e){
+                return "";
+            }
         });
 
         model.isLegion = ko.computed(function (){
@@ -129,25 +138,45 @@ if ( ! legionExpansionLoaded )
         
         //COMMANDER IMAGE
         model.commanderImage = function (d){
-             if(_.includes(legioncomms, d.commanders[0])){
-                 return "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
-             }
-             else{
-                 return "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png"
-             }
+            var result="";
+            switch(model.checkCommanders(d.commanders))
+            {
+                case "vanilla":
+                    result = "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png";
+                break;
+                case "legion":
+                    result = "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
+                break;
+                case "mixed":
+                    result = "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_m.png";
+                break;
+                default:
+                    result ="coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png"
+                break;
+            }
+             return result;
         }
         
-        model.commanderImageMask = function (d){
-             if(_.includes(legioncomms, d.commanders[0])){
+        model.commanderImageMaskLeg = function (d){
+             if(model.checkCommanders(d.commanders) === "legion"){
                  return true;
              }
              else{
                  return false;
              }
-        }        
+        }
+        
+        model.commanderImageMaskMix = function (d){
+             if(model.checkCommanders(d.commanders) === "mixed"){
+                 return true;
+             }
+             else{
+                 return false;
+             }
+        }
         
         $('img[src="img/players_list_panel/icon_player_outline.png"]').replaceWith('<img data-bind="attr:{src: model.commanderImage($data)}" />');
-        $('.player_masked').attr("data-bind","style: { backgroundColor: color }, css: { legcom: model.commanderImageMask($data)}");
+        $('.player_masked').attr("data-bind","style: { backgroundColor: color }, css: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}");
         
     }
 

@@ -5,7 +5,7 @@
   "area_build_separation": 100,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15,
-  "atrophy_rate": 3.3333,
+  "atrophy_rate": 5.83333,
   "audio": {
     "selection_response": {
       "cue": "/SE/Selection/structure/radar"

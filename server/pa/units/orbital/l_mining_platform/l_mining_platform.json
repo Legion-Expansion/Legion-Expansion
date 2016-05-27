@@ -5,7 +5,7 @@
   "area_build_separation": 100,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
-  "atrophy_rate": 50.0,
+  "atrophy_rate": 60.0,
   "audio": {
     "loops": {
       "enabled": {

@@ -2,8 +2,7 @@
   "ammo_id": "/pa/units/orbital/l_ion_defense/l_ion_defense_antidrop_ammo.json",
   "anti_entity_targets": [
     "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
-    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json",
-    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo_teleporter.json"
+    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"
   ],
   "anti_entity_targets_units": false,
   "auto_attack": true,

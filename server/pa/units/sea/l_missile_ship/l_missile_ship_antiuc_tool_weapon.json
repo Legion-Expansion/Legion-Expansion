@@ -1,7 +1,8 @@
 {
   "ammo_id": "/pa/units/sea/l_missile_ship/l_missile_ship_antidrop_ammo.json",
   "anti_entity_targets": [
-    "/pa/units/land/unit_cannon/unit_cannon_deploy.json"
+    "/pa/units/land/unit_cannon/unit_cannon_deploy.json",
+    "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"
   ],
   "anti_entity_targets_units": false,
   "auto_attack": true,

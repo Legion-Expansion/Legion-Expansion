@@ -55,7 +55,6 @@
   },
   "show_in_orbital_layer": true,
   "show_strategic_icon": true,
-  "strategic_icon_priority": 0,
   "signal_type": "nuke",
   "sim_impact_effect": "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo_explosion_ent.json",
   "spawn_layers": "WL_Air",
@@ -95,6 +94,7 @@
       "stage_turn_rate": 1080
     }
   ],
+  "strategic_icon_priority": 0,
   "system_velocity_multiplier": 20,
   "turn_rate": 180,
   "unit_types": [

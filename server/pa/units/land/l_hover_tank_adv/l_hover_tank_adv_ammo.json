@@ -32,10 +32,10 @@
   "splash_radius": 6,
   "stages": [
     {
-      "ignores_LOS": true,
+      "ignores_LOS": false,
       "ignores_gravity": true,
       "rotates_to_velocity": true,
-      "stage_duration": 40,
+      "stage_duration": 50,
       "stage_turn_rate": 90
     },
     {
