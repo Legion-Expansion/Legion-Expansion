@@ -12,7 +12,7 @@
    - Pods can now be shot down by Bluehawks, Catapults, Stingrays and Panzers
  - Decimator buff:
    - Health increased from 1500 to 2500
- - Paner nerf:
+ - Panzer nerf:
    - Missiles can now be shot down by GIL-Es
 
 ###### Fixes
@@ -40,12 +40,12 @@
  - Improved PA startup time when Legion is disabled through use of new companion mod feature
  - Improved Investigator description
  - Improved game logging
- 
+
 ###### Balance
 
  - Diplomat buffed
    - Cost reduced from 50,000 metal to 40,000 to match Halley
- 
+
 ###### Fixes
 
  - Fixed build icon weapon symbols for Catfish, Bowhead and Talos
