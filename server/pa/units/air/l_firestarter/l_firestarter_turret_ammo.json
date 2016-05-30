@@ -9,7 +9,6 @@
     }
   },
   "full_damage_splash_radius": 0,
-  "influence_radius": 400,
   "initial_velocity": 15.0,
   "lifetime": 7,
   "max_velocity": 15.0,
