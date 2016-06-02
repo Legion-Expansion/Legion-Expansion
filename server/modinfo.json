@@ -16,7 +16,7 @@
   "companions": [
     "com.pa.legion-expansion-client"
   ],
-  "description": "Adds an entirely new faction for use in skirmish and multiplayer. KNOWN ISSUES:  Loading a Legion replay crashes the game.",
+  "description": "Adds an entirely new faction for use in skirmish and multiplayer. Requires TITANS.",
   "display_name": "Legion Expansion BETA",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
