@@ -1,13 +1,13 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "94533",
+  "build": "94684",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "client",
-  "date": "2016/05/27",
+  "date": "2016/06/03",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
@@ -80,6 +80,6 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.14.0-beta",
+  "version": "1.0.0-beta",
   "hidden": true
 }
