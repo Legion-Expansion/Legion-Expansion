@@ -36,7 +36,7 @@
   "initial_velocity": 40.0,
   "lifetime": 0,
   "max_health": 1,
-  "max_velocity": 150.0,
+  "max_velocity": 120.0,
   "model": {
     "filename": "/pa/units/air/unit_shell/unit_shell.papa"
   },

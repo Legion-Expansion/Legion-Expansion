@@ -38,22 +38,23 @@
       "effect_spec": "/pa/units/air/l_firestarter/bottom_fire.pfx bone_fireDrop"
     },
     "fired2": {
-      "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/pa/units/air/l_firestarter/forward_fire.pfx intake_left /pa/units/air/l_firestarter/forward_fire.pfx intake_right"
-    },
-    "fired3": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",
       "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx nose_light"
     }
   },
   "fx_offsets": [
     {
-      "bone": "thrust_top",
+      "bone": "bone_fireDrop",
+      "filename": "/pa/units/air/l_firestarter/idle.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "thrust_bottom",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_bottom",
+      "bone": "thrust_top",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving_forward"
     }
@@ -118,7 +119,6 @@
       "muzzle_bone": "bone_altDrop",
       "record_index": 0,
       "secondary_weapon": true,
-      "show_range": false,
       "spec_id": "/pa/units/air/l_firestarter/l_firestarter_turret_tool_weapon.json"
     },
     {
@@ -129,15 +129,6 @@
       "projectiles_per_fire": 1,
       "record_index": 1,
       "spec_id": "/pa/units/air/l_firestarter/l_firestarter_flame_drop_tool_weapon.json"
-    },
-    {
-      "aim_bone": "nose_light",
-      "fire_event": "fired3",
-      "muzzle_bone": "nose_light",
-      "primary_weapon": false,
-      "record_index": 3,
-      "show_range": false,
-      "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json"
     }
   ],
   "unit_types": [

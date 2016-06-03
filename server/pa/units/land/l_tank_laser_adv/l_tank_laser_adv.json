@@ -110,7 +110,6 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
-    "UNITTYPE_CannonBuildable",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1"
   ]

@@ -42,7 +42,7 @@
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle03"
+      "effect_spec": "/pa/units/land/l_bot_artillery/muzzle_flash.pfx socket_muzzle01 /pa/units/land/l_bot_artillery/muzzle_flash.pfx socket_muzzle02 /pa/units/land/l_bot_artillery/muzzle_flash.pfx socket_muzzle03"
     }
   },
   "guard_layer": "WL_AnySurface",
