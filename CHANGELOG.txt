@@ -37,6 +37,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
 ###### Fixes
 
  - Welcome message now links to correct Legion Expansion forum thread
+ - Fix bot fabricator having wrong metal cost
  - Meteor launch smoke now shoots in the correct direction
  - Miniman bomb explosion effect now timed correctly with explosion
  - Rockeeth given identical rate of fire and damage as other Commanders to ensure fairness
