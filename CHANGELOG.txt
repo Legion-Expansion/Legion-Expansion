@@ -1,5 +1,47 @@
 ## CHANGELOG
 
+#### v0.14.0 - 2016/06/06
+
+###### General
+
+ - Switched Deathmark and Havoc on the build bar so their positions are better aligned with MLA roles
+ - Switched Salamander and Infiltrator on the build bar so their positions are better aligned with MLA roles
+ - Added a firing effect to the Miniman
+ - Added idle effect to Salamander
+ - Salamander turrets now auto fire rather than requiring manual attack orders
+
+###### Balance
+
+Full unit stats - https://palobby.com/legion-expansion/units
+
+ - Salamander buff:
+   - Turrets now automatically deployed though manual deployment is still possible
+   - Turret health increased from 1500 to 2500
+   - Turret damage increased from 10 to 15
+ - Infiltrator nerf:
+   - Metal cost increased from 300 to 450
+   - Health decreased from 350 to 250
+   - Rate of fire decreased from 4 to 2
+   - Increased angle of fire from 180 to 360 degrees
+ - Starcannon nerf:
+   - Removed option to build Enforcer
+   - Removed option to build Scorpion
+   - Build power decreased from 50/2100 to 45/1900
+   - Rate of fire decreased from 6 to 3
+   - Unit pod velocity decreased from 150 to 120
+   - Metal cost reduced from 1500 to 900
+ - Meteor change:
+   - Drone storage capacity reduced from 18 to 14
+   - Drone damage increased from 15 to 20
+
+###### Fixes
+
+ - Meteor launch smoke now shoots in the correct direction
+ - Miniman bomb explosion effect now timed correctly with explosion
+ - Rockeeth given identical rate of fire and damage as other Commanders to ensure fairness
+ - Fixed bug preventing Necromancer from sometimes spawning all its Purgers
+
+
 #### v0.13.0 - 2016/05/29
 
 ###### General
