@@ -3,7 +3,7 @@
   "armor_damage_map": {
     "AT_Structure": 1.0
   },
-  "damage": 18,
+  "damage": 80,
   "events": {
     "died": {
       "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
