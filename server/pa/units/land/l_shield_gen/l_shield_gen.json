@@ -63,7 +63,7 @@
         "idle": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa"
       },
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
-      "filename": "/pa/units/land/l_shield_gen/sea/l_shield_gen.papa",
+      "filename": "/pa/units/land/l_shield_gen/l_shield_gen.papa",
       "layer": "WL_WaterSurface"
     }
   ],
