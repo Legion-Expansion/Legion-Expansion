@@ -81,5 +81,6 @@
   "priority": 100,
   "signature": "(not yet implemented)",
   "version": "1.0.0-beta",
+  "titansOnly": true,
   "hidden": true
 }
