@@ -142,6 +142,7 @@
       "type": "enabled"
     }
   ],
+  "planetary_arrival_cooldown_time": 3.0,
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Anysurface",
   "max_health": 2500,
