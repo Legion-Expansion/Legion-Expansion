@@ -12,7 +12,9 @@
   "target_layers": [
     "WL_Air",
     "WL_LandHorizontal",
-    "WL_WaterSurface"
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
