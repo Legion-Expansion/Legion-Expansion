@@ -23,7 +23,7 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/air/gunship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle"
+      "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire"
