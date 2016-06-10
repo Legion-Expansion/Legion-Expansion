@@ -2,6 +2,10 @@
 
 #### v0.14.1 - 2016/06/10
 
+###### General
+
+ - AI updated for Starcannon changes
+
 ###### Balance
 
  - Comet nerf:
