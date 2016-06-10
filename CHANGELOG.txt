@@ -1,5 +1,19 @@
 ## CHANGELOG
 
+#### v0.14.1 - 2016/06/10
+
+###### Balance
+
+ - Comet nerf:
+   - Added 3 second cooldown on arrival at a new planet
+ - Starcannon buff:
+   - Can now build the Orbweaver
+
+###### Fixes
+
+ - Stoke and Corsair now display the correct cost to build
+
+
 #### v0.14.0 - 2016/06/06
 
 ###### General
