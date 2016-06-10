@@ -16,6 +16,7 @@
 ###### Fixes
 
  - Stoke and Corsair now display the correct cost to build
+ - AI no longer tries to have the Praetorian build things it can't
 
 
 #### v0.14.0 - 2016/06/06

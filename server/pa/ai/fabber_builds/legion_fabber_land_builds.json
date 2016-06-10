@@ -561,8 +561,7 @@
       ],
       "builders": [
         "LegionBotBasicFabber",
-        "LegionBotAdvancedFabber",
-        "LegionBotAdvancedSupportCommander"
+        "LegionBotAdvancedFabber"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
@@ -727,8 +726,7 @@
       ],
       "builders": [
         "LegionBotBasicFabber",
-        "LegionBotAdvancedFabber",
-        "LegionBotAdvancedSupportCommander"
+        "LegionBotAdvancedFabber"
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
