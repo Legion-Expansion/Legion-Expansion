@@ -173,6 +173,7 @@
   "physics": {
     "radius": 8
   },
+  "planetary_arrival_cooldown_time": 3.0,
   "recon": {
     "observer": {
       "items": [
