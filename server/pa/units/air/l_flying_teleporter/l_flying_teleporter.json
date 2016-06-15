@@ -144,7 +144,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Anysurface",
-  "max_health": 2500,
+  "max_health": 1900,
   "mesh_bounds": [
     35,
     40,
@@ -173,7 +173,7 @@
   "physics": {
     "radius": 8
   },
-  "planetary_arrival_cooldown_time": 3.0,
+  "planetary_arrival_cooldown_time": 8.0,
   "recon": {
     "observer": {
       "items": [
@@ -195,7 +195,7 @@
   "selection_icon": {
     "diameter": -40
   },
-  "system_velocity_multiplier": 15.0,
+  "system_velocity_multiplier": 10.0,
   "teleporter": {
     "energy_demand": 1000,
     "spawn_radius": 1,
