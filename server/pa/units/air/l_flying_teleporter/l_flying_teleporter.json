@@ -195,7 +195,7 @@
   "selection_icon": {
     "diameter": -40
   },
-  "system_velocity_multiplier": 10.0,
+  "system_velocity_multiplier": 15.0,
   "teleporter": {
     "energy_demand": 1000,
     "spawn_radius": 1,
