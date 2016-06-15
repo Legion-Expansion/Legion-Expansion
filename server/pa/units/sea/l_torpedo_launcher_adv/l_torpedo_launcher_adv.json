@@ -18,7 +18,7 @@
       "audio_cue": "/SE/Death/Sea",
       "effect_scale": 0.5
     },
-    "fired": {
+    "fired0": {
       "audio_cue": "/SE/Weapons/sea/torpedo_fire"
     }
   },
