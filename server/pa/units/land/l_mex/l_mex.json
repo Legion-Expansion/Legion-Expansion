@@ -26,6 +26,7 @@
   "feature_requirements": [
     "metal_spot"
   ],
+  "force_snap_to_feature_orientation": true,
   "fx_offsets": [
     {
       "filename": "/pa/units/land/l_mex/l_mex.pfx",

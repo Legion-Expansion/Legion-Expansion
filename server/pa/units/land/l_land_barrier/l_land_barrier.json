@@ -66,6 +66,18 @@
           "stamp_type": "wall"
         },
         {
+          "move_type": "amphibious-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover-large",
+          "stamp_type": "wall"
+        },
+        {
           "move_type": "deepwater",
           "stamp_type": "wall"
         },

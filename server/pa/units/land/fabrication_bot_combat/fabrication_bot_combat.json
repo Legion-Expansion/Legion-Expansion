@@ -48,6 +48,9 @@
     "ORDER_Use"
   ],
   "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/fab"
+    },
     "died": {
       "effect_scale": 1.3
     }
@@ -91,7 +94,7 @@
     "group_preference": "back",
     "move_speed": 12,
     "turn_speed": 720,
-    "type": "amphibious"
+    "type": "land-small"
   },
   "physics": {
     "allow_pushing": true,

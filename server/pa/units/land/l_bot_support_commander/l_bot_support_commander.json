@@ -115,6 +115,7 @@
   },
   "show_in_orbital_layer": true,
   "strategic_icon_priority": 0,
+  "teleportable": {},
   "tools": [
     {
       "aim_bone": "bone_turret",
