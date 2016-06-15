@@ -16,6 +16,9 @@
       0.0
     ]
   },
+  "physics": {
+    "add_to_spatial_db": false
+  },
   "splash_damage": 700,
   "splash_radius": 20,
   "turn_rate": 180
