@@ -1,6 +1,6 @@
 {
   "display_name": "Advanced Armour Fabricator",
-  "description": "Fabricator - Builds Advanced Structures. Can Build Exclusive Armor Units.",
+  "description": "Fabricator - Builds Advanced Structures. Can Build Exclusive Armour Units.",
   "TEMP_texelinfo": 12,
   "attachable": {
     "offsets": {
