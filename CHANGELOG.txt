@@ -45,6 +45,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
    - No longer amphibious
  - Shredder buff:
    - Check for target tick rate changed from 3 to 2
+   - Does not spread its damage output across multiple targets
  - Iron Dome buff:
    - Missile initial and max velocity increased from 500 to 1500
    - Energy usage decreased from 9000 to 4000
@@ -81,7 +82,6 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - All instances of armour now spelled the same
  - Praetorian can now use teleporters
  - Clots now correctly block all hover and large amphibious units
- - MEXs can no longer be placed in a way which interferes with upgrades
  - Centurion plays sound when it fires
  - Removed Tsunami duplicate weapon
  - Tsunami plays sound when it fires
