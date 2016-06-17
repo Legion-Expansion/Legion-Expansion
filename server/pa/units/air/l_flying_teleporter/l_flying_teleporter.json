@@ -1,6 +1,6 @@
 {
   "display_name": "Comet",
-  "description": "Interplanetary Mobile Teleporter - Heavily Armored.",
+  "description": "Interplanetary Mobile Teleporter - Heavily Armoured.",
   "TEMP_texelinfo": 23.6108,
   "atrophy_cool_down": 15,
   "atrophy_rate": 20.833,
@@ -144,7 +144,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Anysurface",
-  "max_health": 2500,
+  "max_health": 1900,
   "mesh_bounds": [
     35,
     40,
@@ -173,7 +173,7 @@
   "physics": {
     "radius": 8
   },
-  "planetary_arrival_cooldown_time": 3.0,
+  "planetary_arrival_cooldown_time": 8.0,
   "recon": {
     "observer": {
       "items": [

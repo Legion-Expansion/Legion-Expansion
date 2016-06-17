@@ -42,7 +42,7 @@
       "type": "idle"
     }
   ],
-  "max_health": 600,
+  "max_health": 3600,
   "mesh_bounds": [
     118.558,
     118.558,
@@ -64,7 +64,7 @@
     100
   ],
   "production": {
-    "energy": 1080,
+    "energy": 10800,
     "metal": 43
   },
   "recon": {

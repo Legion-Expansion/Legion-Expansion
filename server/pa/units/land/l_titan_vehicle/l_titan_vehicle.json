@@ -1,6 +1,6 @@
 {
   "display_name": "Odin",
-  "description": "Experimental Rolling Fortress - Long Range. Heavily Armored and Deals Very High Damage.",
+  "description": "Experimental Rolling Fortress - Long Range. Heavily Armoured and Deals Very High Damage.",
   "TEMP_texelinfo": 35.95324,
   "armor_type": "AT_Hover",
   "atrophy_cool_down": 15.0,

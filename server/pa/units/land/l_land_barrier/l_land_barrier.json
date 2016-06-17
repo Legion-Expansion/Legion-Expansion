@@ -1,6 +1,6 @@
 {
   "display_name": "Clot",
-  "description": "Heavily Armored Siege Defense Barrier.",
+  "description": "Heavily Armoured Siege Defense Barrier.",
   "TEMP_texelinfo": 7.58193,
   "area_build_separation": 1.2,
   "atrophy_cool_down": 0.5,
@@ -63,6 +63,18 @@
         },
         {
           "move_type": "amphibious",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "amphibious-large",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover",
+          "stamp_type": "wall"
+        },
+        {
+          "move_type": "hover-large",
           "stamp_type": "wall"
         },
         {

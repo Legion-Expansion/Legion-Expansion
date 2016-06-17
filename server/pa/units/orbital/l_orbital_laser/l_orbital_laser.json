@@ -40,7 +40,7 @@
     40
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/orbital_laser_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/l_orbital_laser/l_orbital_laser.papa"
   },
   "navigation": {

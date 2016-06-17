@@ -16,7 +16,7 @@
       "move": {
         "cue": "/SE/Movement/air/air_transport_loop",
         "flag": "vel_changed",
-        "should_start_func": "is_moving",
+        "should_start_func": "is_moving_laterally",
         "should_stop_func": "is_not_moving"
       }
     },

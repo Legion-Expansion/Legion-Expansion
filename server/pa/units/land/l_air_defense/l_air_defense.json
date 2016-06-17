@@ -49,7 +49,7 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "nearby_target_tick_update_interval": 3,
+  "nearby_target_tick_update_interval": 2,
   "recon": {
     "observer": {
       "items": [

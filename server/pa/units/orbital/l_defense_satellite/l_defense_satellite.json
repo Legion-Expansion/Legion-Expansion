@@ -28,7 +28,10 @@
     "died": {
       "audio_cue": "/SE/Death/orbital"
     },
-    "fired": {
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
+    },
+    "fired2": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
     }
   },

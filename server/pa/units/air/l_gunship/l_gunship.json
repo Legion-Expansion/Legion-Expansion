@@ -1,12 +1,12 @@
 {
   "display_name": "Lockheed",
-  "description": "Gunship - Heavily Armored. Equipped with Seeking Missiles and a Light Machine Gun.",
+  "description": "Gunship - Heavily Armoured. Equipped with Seeking Missiles and a Light Machine Gun.",
   "audio": {
     "loops": {
       "move": {
         "cue": "/SE/Movement/air/air_gunship_loop",
         "flag": "vel_changed",
-        "should_start_func": "is_moving",
+        "should_start_func": "is_moving_laterally",
         "should_stop_func": "is_not_moving"
       }
     },
@@ -23,7 +23,7 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/air/gunship_fire",
       "effect_scale": 5.0,
-      "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_rightMuzzle /pa/units/air/gunship/gunship_muzzle_flash.pfx socket_leftMuzzle"
+      "effect_spec": "/pa/units/air/gunship/gunship_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/nuclear_sub_fire"
