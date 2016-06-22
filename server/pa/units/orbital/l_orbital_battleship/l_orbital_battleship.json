@@ -148,9 +148,17 @@
     },
     {
       "aim_bone": "laser",
-      "muzzle_bone": "laser",
+      "muzzle_bone": [
+        "laser"
+      ],
       "record_index": -1,
       "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon_ground.json"
+    },
+    {
+      "aim_bone": "laser",
+      "muzzle_bone": "laser",
+      "record_index": 4,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon_drone.json"
     }
   ],
   "unit_types": [

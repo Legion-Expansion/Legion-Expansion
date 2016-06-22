@@ -1,0 +1,7 @@
+{
+  "base_spec": "/pa/units/air/l_air_carrier/l_drone/l_drone_tool_weapon.json",
+  "rate_of_fire": 1.5,
+  "target_priorities": [
+    "OrbitalDefense"
+  ]
+}
