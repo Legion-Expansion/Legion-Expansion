@@ -49,6 +49,8 @@
   },
   "recon": {
     "observable": {
+      "always_visible": true,
+      "layer": "surface_and_air",
       "ignore_radar": false
     }
   },
