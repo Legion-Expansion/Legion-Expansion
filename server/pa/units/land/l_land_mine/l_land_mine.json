@@ -67,7 +67,7 @@
   "area_build_type": "Sphere",
   "build_metal_cost": 20,
   "command_caps": [
-      "ORDER_Attack"
+    "ORDER_Attack"
   ],
   "events": {
     "build_complete": {

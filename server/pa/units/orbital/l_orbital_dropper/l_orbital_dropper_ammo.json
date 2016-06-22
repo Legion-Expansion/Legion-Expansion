@@ -50,8 +50,8 @@
   "recon": {
     "observable": {
       "always_visible": true,
-      "layer": "surface_and_air",
-      "ignore_radar": false
+      "ignore_radar": false,
+      "layer": "surface_and_air"
     }
   },
   "show_in_orbital_layer": true,
