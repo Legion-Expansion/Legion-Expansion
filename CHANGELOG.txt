@@ -10,6 +10,8 @@
 
 ###### Balance
 
+ - Havoc buff
+   - Weapon starts fully charged
  - Black Knight buff
   - Speed, acceleration and deceleration increased from 14 to 20
  - Deathmark buff
