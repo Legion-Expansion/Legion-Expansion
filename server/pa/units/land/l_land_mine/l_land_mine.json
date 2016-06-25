@@ -66,6 +66,9 @@
   "area_build_separation": 1,
   "area_build_type": "Sphere",
   "build_metal_cost": 20,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"

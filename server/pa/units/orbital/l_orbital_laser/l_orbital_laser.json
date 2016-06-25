@@ -44,9 +44,9 @@
     "filename": "/pa/units/orbital/l_orbital_laser/l_orbital_laser.papa"
   },
   "navigation": {
-    "acceleration": 14,
-    "brake": 14,
-    "move_speed": 14,
+    "acceleration": 20,
+    "brake": 20,
+    "move_speed": 20,
     "turn_in_place": true,
     "turn_speed": 90
   },

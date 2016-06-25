@@ -1,5 +1,35 @@
 ## CHANGELOG
 
+#### v0.16.0 - 2016/06/27
+
+###### General
+
+ - Added ability to hold fire to Spoiler mines
+ - Imperator now launches drones against ground targets
+ - Performance improvements to Salamander and its turret
+
+###### Balance
+
+ - Havoc buff
+   - Weapon starts fully charged
+ - Black Knight buff
+  - Speed, acceleration and deceleration increased from 14 to 20
+ - Deathmark buff
+  - Rate of fire changed from 7 to 6
+ - Stoke buff
+   - Speed increased from 13 to 14
+ - Mass Extractor buff
+   - Metal cost decreased from 240 to 220
+ - Imperator change
+   - Launches drones against ground targets
+   - Orbital to ground damage decreased from 300 to 50
+
+###### Fixes
+
+ - Starcannon unit pods now always visible
+ - Epoch shots blocked by Ramparts
+
+
 #### v0.15.0 - 2016/06/20
 
 ###### General

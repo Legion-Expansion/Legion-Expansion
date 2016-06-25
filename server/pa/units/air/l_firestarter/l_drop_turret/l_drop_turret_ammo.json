@@ -3,7 +3,7 @@
   "damage": 15,
   "events": {
     "died": {
-      "effect_spec": "/pa/effects/specs/flame_death.pfx"
+      "effect_spec": "/pa/effects/specs/none.pfx"
     }
   },
   "flight_type": "seeking",

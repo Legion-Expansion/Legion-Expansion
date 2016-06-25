@@ -1,0 +1,31 @@
+{
+  "base_spec": "/pa/units/air/l_air_carrier/l_air_carrier_ammo.json",
+  "cruise_height": 200,
+  "initial_velocity": 90,
+  "lifetime": 5,
+  "max_velocity": 90,
+  "spawn_layers": "WL_Air",
+  "spawn_unit_on_death": "/pa/units/orbital/l_orbital_battleship/l_drone/l_drone.json",
+  "spawn_unit_on_death_with_velocity": true,
+  "stages": [
+    {
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 1500,
+      "stage_turn_rate": 0
+    },
+    {
+      "apply_thrust": true,
+      "ignores_LOS": true,
+      "ignores_gravity": true,
+      "rotates_to_velocity": true,
+      "stage_duration": 500,
+      "stage_turn_rate": 180
+    },
+    {
+      "die_here": true
+    }
+  ],
+  "turn_rate": 720
+}

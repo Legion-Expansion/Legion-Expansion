@@ -16,7 +16,6 @@
   "pitch_rate": 180,
   "rate_of_fire": 2,
   "spread_fire": true,
-  "start_fully_charged": false,
   "target_layers": [
     "WL_LandHorizontal",
     "WL_WaterSurface"
