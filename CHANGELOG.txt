@@ -28,6 +28,7 @@
 
  - Starcannon unit pods now always visible
  - Epoch shots blocked by Ramparts
+ - Purgers from Necromancers now correctly grouped with Purgers built from factories
 
 
 #### v0.15.0 - 2016/06/20
