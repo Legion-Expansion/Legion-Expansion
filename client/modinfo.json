@@ -80,7 +80,7 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.16.0",
+  "version": "0.17.0-beta",
   "titansOnly": true,
   "hidden": true
 }
