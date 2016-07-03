@@ -106,14 +106,14 @@
     "filename": "/pa/units/air/l_gunship/l_gunship.papa"
   },
   "navigation": {
-    "acceleration": 50,
+    "acceleration": 60,
     "aggressive_behavior": "circle",
     "bank_factor": 1,
-    "brake": 50,
+    "brake": 60,
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
-    "move_speed": 50,
-    "turn_speed": 90,
+    "move_speed": 60,
+    "turn_speed": 120,
     "vertical_speed": 30
   },
   "recon": {
