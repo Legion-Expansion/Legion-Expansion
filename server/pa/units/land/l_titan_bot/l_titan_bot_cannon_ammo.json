@@ -26,12 +26,13 @@
   },
   "physics": {
     "add_to_spatial_db": false,
-    "gravity_scalar": 15,
+    "allow_underground": true,
+    "gravity_scalar": 1,
     "radius": 10
   },
   "spawn_layers": "WL_Air",
   "splash_damage": 600,
   "splash_damages_allies": false,
-  "splash_radius": 10,
+  "splash_radius": 15,
   "turn_rate": 90
 }
