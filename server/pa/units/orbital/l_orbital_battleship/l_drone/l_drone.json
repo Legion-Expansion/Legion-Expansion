@@ -3,7 +3,7 @@
   "command_caps": [
     ""
   ],
-  "guard_radius": 200,
+  "guard_radius": 100,
   "selection_icon": {
     "diameter": -1
   },
