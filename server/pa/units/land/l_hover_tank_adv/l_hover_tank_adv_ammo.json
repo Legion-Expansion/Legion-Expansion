@@ -19,7 +19,7 @@
   },
   "influence_radius": 400,
   "initial_velocity": 10.0,
-  "lifetime": 8,
+  "lifetime": 5,
   "max_health": 1,
   "max_velocity": 110.0,
   "physics": {
