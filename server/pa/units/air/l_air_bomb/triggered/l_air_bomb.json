@@ -29,6 +29,9 @@
   "command_caps": [
     ""
   ],
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death.json"
+  },
   "events": {
     "died": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
