@@ -60,7 +60,7 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "max_health": 1250,
+  "max_health": 1100,
   "mesh_bounds": [
     4.5,
     9.2,
@@ -77,12 +77,12 @@
   "navigation": {
     "acceleration": 60,
     "aggressive_distance": 60.0,
-    "bank_factor": 0.25,
+    "bank_factor": 0.5,
     "brake": 20,
     "dodge_multiplier": 0.0,
     "dodge_radius": 0,
-    "move_speed": 50,
-    "turn_speed": 80,
+    "move_speed": 40,
+    "turn_speed": 120,
     "wobble_factor": 0.05,
     "wobble_speed": 0.1
   },
