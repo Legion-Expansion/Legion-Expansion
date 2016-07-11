@@ -10,16 +10,16 @@
     "AT_Structure": 0,
     "AT_Vehicle": 0
   },
-  "damage": 40,
+  "damage": 35,
   "damage_volume": {
-    "burnable_remove_radius": 0.0,
+    "burnable_remove_radius": 60,
     "delay": 1,
     "initial_radius": 5.0,
-    "radius_accel": -20.0,
+    "radius_accel": -25.0,
     "radius_velocity": 140.0
   },
   "full_splash_damage_radius": 0,
   "sim_fire_effect": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death_ent.json",
   "splash_damages_allies": false,
-  "splash_radius": 80
+  "splash_radius": 70
 }
