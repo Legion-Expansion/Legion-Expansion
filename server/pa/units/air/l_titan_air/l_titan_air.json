@@ -85,9 +85,9 @@
   "has_death_effects": true,
   "max_health": 9000,
   "mesh_bounds": [
-    84.247,
-    77.345,
-    14.856
+    84,
+    77,
+    15
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_titan_air_anim_tree.json",
@@ -101,7 +101,7 @@
     "circle_max_time": 2.0,
     "circle_min_time": 1.0,
     "move_speed": 30,
-    "turn_accel": 20,
+    "turn_accel": 30,
     "turn_speed": 50,
     "vertical_speed": 50
   },
