@@ -36,7 +36,7 @@
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
       "effect_scale": 1.0,
-      "effect_spec": "/pa/units/land/l_mortar_tank/muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/units/land/l_mortar_tank/muzzle_flash.pfx socket_muzzle001, /pa/units/land/l_mortar_tank/muzzle_flash.pfx socket_muzzle002"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire",
@@ -52,7 +52,7 @@
     2.6
   ],
   "model": {
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/l_mortar_tank_anim_tree.json",
     "arrows": 5,
     "filename": "/pa/units/land/l_mortar_tank/l_mortar_tank.papa"
   },
@@ -91,14 +91,17 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": "socket_muzzle",
+      "muzzle_bone": [
+		"socket_muzzle001", 
+		"socket_muzzle002"
+	  ],
       "record_index": 0,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired1",
-      "muzzle_bone": "socket_muzzle",
+      "muzzle_bone": "socket_muzzle001",
       "record_index": 1,
       "show_range": false,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_tool_weapon.json"
