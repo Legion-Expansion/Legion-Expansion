@@ -11,6 +11,7 @@
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client",
+    "com.wondible.pa.hodgepodge",
     "com.wondible.pa.weapons_tracking"
   ],
   "companions": [
@@ -22,6 +23,9 @@
   "icon": "https://i.imgur.com/Eal5t9L.png",
   "identifier": "com.pa.legion-expansion-server",
   "scenes": {
+    "icon_atlas": [
+      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
+    ],
     "new_game": [
       "coui://ui/mods/com.pa.legion-expansion/new_game.js"
     ]
