@@ -10,6 +10,7 @@
  - Performance improvements to Nova targeting laser
  - Reduced Loki formation spacing
  - Reduced Meteor formation spacing
+ - Miniman no longer prioritises Commander
  
 ###### Balance
  - Deathmark nerf
@@ -31,6 +32,8 @@
   - Rockets more likely to impact in an area around the target
  - Panzer nerf
   - Missile lifetime decreased from 8 to 5 seconds
+ - Miniman buff
+  - Bomb timer reduced from 2.5 to 2 seconds
  - Nova change
   - Metal cost increased from 120 to 180
   - Nova bubble now does 35 aoe damage on death after 1 second
@@ -38,7 +41,7 @@
   - Turn acceleration increased from 20 to 30
   - Turret pitch angle tolerance increased from 0 to 30
  - Lancer nerf
-  - Weapon range decreased from 80 to 77 
+  - Weapon range decreased from 80 to 75
  - Meteor nerf
   - Health decreased from 3000 to 2000
   - Turn speed increased from 40 to 60
@@ -48,6 +51,8 @@
  - Scout Bot Radar mode renamed to Investigator Radar mode
  - Nova now properly auto-attacks targets
  - Lockheed bullets now correctly exit from the gun barrel
+ - Lancer no longer fires above tall units at max range
+ - Spoiler land mines no longer block Commander pathing
  
 #### v0.16.0 - 2016/06/27
 
