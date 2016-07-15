@@ -1,5 +1,69 @@
 ## CHANGELOG
 
+#### v0.17.0 - 2016/07/18
+
+###### General
+
+ - Salamander banking angle increased from 0.25 to 0.5
+ - Havoc no longer prefers to be at the back of a formation
+ - Removed generic aircraft death explosion effect from Nova bubble
+ - Added idle and death explosion effects for Nova bubble
+ - Performance improvements to Nova targeting laser
+ - Reduced Loki formation spacing
+ - Reduced Meteor formation spacing
+ - Miniman no longer prioritises Commander
+ - New Stoke model
+
+###### Balance
+
+ - Deathmark nerf:
+  - Rate of fire changed from 6 to 7
+ - Lockheed buff:
+  - Speed, acceleration and deceleration increased from 50 to 60
+  - Turn speed increased from 90 to 120
+ - Salamander buff:
+  - Health increased from 1000 to 1100
+  - Turn speed increased from 70 to 120
+ - Orbweaver nerf:
+  - Rate of fire changed from 2 to 1.75
+ - Imperator nerf:
+  - Drone aggression radius changed from 200 to 100
+ - Thor buff:
+  - Laser damage increased from 150 to 175
+  - Rocket damage increased from 50 to 100
+  - Rocket splash radius increased from 10 to 15
+  - Rockets more likely to impact in an area around the target
+ - Panzer nerf:
+  - Missile lifetime decreased from 8 to 5 seconds
+ - Miniman buff:
+  - Bomb timer reduced from 2.5 to 2 seconds
+ - Nova change:
+  - Metal cost increased from 120 to 180
+  - Nova bubble now does 35 AOE damage on death after 1 second
+ - Loki buff:
+  - Turn acceleration increased from 20 to 30
+  - Turret pitch angle tolerance increased from 0 to 30
+ - Lancer nerf:
+  - Weapon range decreased from 80 to 75
+ - Meteor nerf:
+  - Health decreased from 3000 to 2000
+  - Turn speed increased from 40 to 60
+ - Havoc buff:
+  - Health decreased from 650 to 450
+  - Speed increased from 12 to 15
+  - Turn speed increased from 60 to 90
+
+###### Fixes
+
+ - Infiltrator now selects as a combat air unit
+ - Thor main cannon less likely to shoot into the ground
+ - Scout Bot Radar mode renamed to Investigator Radar mode
+ - Nova now properly auto-attacks targets
+ - Lockheed bullets now correctly exit from the gun barrel
+ - Lancer no longer fires above tall units at max range
+ - Spoiler land mines no longer block pathing
+
+
 #### v0.16.0 - 2016/06/27
 
 ###### General

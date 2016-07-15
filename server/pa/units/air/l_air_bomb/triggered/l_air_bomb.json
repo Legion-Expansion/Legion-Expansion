@@ -25,14 +25,18 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 90,
+  "build_metal_cost": 180,
   "command_caps": [
     ""
   ],
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death.json"
+  },
   "events": {
     "died": {
       "audio_cue": "/SE/Weapons/bot/spark_fire",
-      "effect_scale": 1
+      "effect_scale": 1,
+      "effect_spec": "/pa/effects/specs/none.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",

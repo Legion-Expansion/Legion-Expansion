@@ -1,0 +1,13 @@
+{
+  "recon": {
+    "observable": {
+      "always_visible": false,
+      "ignore_radar": true,
+      "layer": "surface_and_air",
+      "sphere_radius": 5
+    }
+  },
+  "spawn_response": {
+    "effect_spec": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death.pfx"
+  }
+}

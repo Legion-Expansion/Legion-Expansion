@@ -5,6 +5,9 @@
     "died": {
       "audio_cue": "/SE/Impacts/bot_spark_impact",
       "effect_spec": "/pa/units/land/l_mortar_tank/l_mortar_tank_ammo_hit.pfx"
+    },
+    "spawned": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire"
     }
   },
   "full_damage_splash_radius": 2,

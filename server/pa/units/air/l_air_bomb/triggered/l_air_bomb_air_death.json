@@ -1,0 +1,25 @@
+{
+  "ammo_type": "PBAOE",
+  "armor_damage_map": {
+    "AT_Air": 1.0,
+    "AT_Bot": 0,
+    "AT_Commander": 0,
+    "AT_Hover": 0,
+    "AT_Naval": 0,
+    "AT_Orbital": 0,
+    "AT_Structure": 0,
+    "AT_Vehicle": 0
+  },
+  "damage": 35,
+  "damage_volume": {
+    "burnable_remove_radius": 60,
+    "delay": 1,
+    "initial_radius": 5.0,
+    "radius_accel": -25.0,
+    "radius_velocity": 140.0
+  },
+  "full_splash_damage_radius": 0,
+  "sim_fire_effect": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death_ent.json",
+  "splash_damages_allies": false,
+  "splash_radius": 70
+}

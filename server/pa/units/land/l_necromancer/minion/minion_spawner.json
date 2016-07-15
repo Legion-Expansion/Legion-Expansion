@@ -66,7 +66,7 @@
   "selection_icon": {
     "diameter": -1
   },
-  "spawn_unit_on_death": "/pa/units/land/l_necromancer/minion/minion.json",
+  "spawn_unit_on_death": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
   "tools": [
     {
       "aim_bone": "bone_root",

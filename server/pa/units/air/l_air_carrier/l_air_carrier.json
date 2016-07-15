@@ -109,11 +109,11 @@
       "type": "idle"
     }
   ],
-  "max_health": 3000,
+  "max_health": 2000,
   "mesh_bounds": [
-    17,
-    23,
-    7
+    12,
+    7.5,
+    4
   ],
   "model": {
     "arrows": 5,
@@ -125,7 +125,7 @@
     "dodge_multiplier": 1,
     "dodge_radius": 10,
     "move_speed": 30,
-    "turn_speed": 40,
+    "turn_speed": 60,
     "type": "air",
     "wobble_factor": 0.2,
     "wobble_speed": 0.1
