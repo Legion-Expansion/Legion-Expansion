@@ -35,8 +35,6 @@
    - Rockets more likely to impact in an area around the target
  - Panzer nerf:
    - Missile lifetime decreased from 8 to 5 seconds
- - Miniman buff:
-   - Bomb timer reduced from 2.5 to 2 seconds
  - Nova change:
    - Metal cost increased from 120 to 180
    - Nova bubble now does 35 AOE damage on death after 1 second
