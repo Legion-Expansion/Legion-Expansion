@@ -50,6 +50,8 @@
    - Health decreased from 650 to 450
    - Speed increased from 12 to 15
    - Turn speed increased from 60 to 90
+ - Patriot nerf:
+   - Rate of fire per volley decreased from 1 to 0.83
 
 ###### Fixes
 
