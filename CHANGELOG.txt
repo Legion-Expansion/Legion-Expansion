@@ -1,5 +1,14 @@
 ## CHANGELOG
 
+#### v0.17.1 -
+
+The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
+
+###### Fixes
+
+ - Black icons caused by memory limit replaced with dots
+
+
 #### v0.17.0 - 2016/07/18
 
 ###### General
