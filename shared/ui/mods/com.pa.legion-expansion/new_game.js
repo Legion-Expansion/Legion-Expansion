@@ -95,6 +95,15 @@ if (!legionExpansionLoaded) {
                 }
             });
 
+            api.mods.getMountedMods('server', function(mods) {
+                var hodgepodgeLoaded =  _.pluck( mods, 'identifier' ).indexOf('com.wondible.pa.hodgepodge') != -1
+
+                if (!hodgepodgeLoaded) {
+                    if (model.registerHoldReady) model.registerHoldReady('com.wondible.pa.hodgepodge', 'Hodgepodge mod missing');
+                    if (model.localChatMessage) model.localChatMessage('Legion Expansion', 'Hodgepodge server mod is not installed! Please exit lobby and toggle Legion to enable new dependencies.');
+                }
+            });
+
             loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
             var legioncommanders = legionglobal.commanders;
