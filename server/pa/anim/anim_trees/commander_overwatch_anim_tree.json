@@ -128,7 +128,7 @@
   "skeleton_controls": [
     {
       "rotation_axis": "z",
-      "rotation_bone": "bone_turret",
+      "rotation_bone": "turret",
       "type": "procedural_aim"
     }
   ]
