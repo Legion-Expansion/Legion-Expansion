@@ -5,7 +5,6 @@
 
 .legion .div_command_bar_cont,
 .legion .div_orders_bar_cont {
-    background: rgba(70, 0, 0, 1);
     box-shadow: inset 0px 0px 8px rgba(255, 18, 18, 0.5);
 }
 
@@ -59,7 +58,6 @@
 
 .mixed .div_command_bar_cont,
 .mixed .div_orders_bar_cont {
-    background: #660099; 
     box-shadow: inset 0px 0px 8px rgba(99, 14, 138, 0.5);
 }
 
