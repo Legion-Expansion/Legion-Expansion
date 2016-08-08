@@ -32,7 +32,7 @@
   ],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/l_defense_turret_no_recoil_anim_tree.json",
       "filename": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
