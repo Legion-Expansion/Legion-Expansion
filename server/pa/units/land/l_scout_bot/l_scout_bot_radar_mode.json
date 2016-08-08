@@ -29,7 +29,7 @@
       "cue": "/SE/Selection/structure/radar"
     }
   },
-  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 150,
   "command_caps": [
     "ORDER_FireSecondaryWeapon"
@@ -37,12 +37,20 @@
   "consumption": {
     "energy": 100
   },
+  "death": {
+    "decals": []
+  },
   "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/radar"
     },
-    "died": {},
+    "destroyed": null,
+    "died": {
+      "audio_cue": "/SE/Death/Bot",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot.pfx"
+    },
     "fired": null
   },
   "fx_offsets": [
@@ -83,19 +91,13 @@
     "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",
     "walk_speed": 2.75
   },
-  "navigation": {
-    "acceleration": 0,
-    "brake": 0,
-    "move_speed": 0,
-    "turn_speed": 0,
-    "type": "amphibious"
-  },
   "physics": {
     "allow_pushing": false,
     "allow_underground": false,
     "collide_with_types": [
       "Projectile"
     ],
+    "collision_layers": "WL_LandHorizontal",
     "push_sideways": false,
     "radius": 0,
     "shape": "Box",
@@ -104,7 +106,8 @@
   "recon": {
     "observable": {
       "ignore_sight": true,
-      "layer": "surface_and_air"
+      "layer": "surface_and_air",
+      "show_ghost": false
     },
     "observer": {
       "items": [
@@ -142,7 +145,7 @@
   "selection_icon": {
     "diameter": -8
   },
-  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {
       "aim_bone": "bone_root",
@@ -157,7 +160,8 @@
   "unit_types": [
     "UNITTYPE_Bot",
     "UNITTYPE_Scout",
-    "UNITTYPE_Mobile",
+    "UNITTYPE_Structure",
+    "UNITTYPE_NoBuild",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom1"

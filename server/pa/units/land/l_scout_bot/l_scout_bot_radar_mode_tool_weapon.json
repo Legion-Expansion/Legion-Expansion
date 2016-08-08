@@ -8,7 +8,7 @@
     },
     {
       "id": "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_water_ammo.json",
-      "layer": "WL_Seafloor"
+      "layer": "WL_Underwater"
     }
   ],
   "ammo_per_shot": 3,
