@@ -21,7 +21,8 @@
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
       "effect_spec": "/pa/units/air/l_firestarter/l_drop_turret/fire.pfx socket_muzzleTop"
-    }
+    },
+    "fired0": {}
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
   "max_health": 2500,
@@ -65,6 +66,7 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
+      "fire_event": "fired",
       "muzzle_bone": [
         "socket_muzzleTop",
         "socket_muzzleBottom"
@@ -73,6 +75,7 @@
     },
     {
       "aim_bone": "bone_root",
+      "fire_event": "fired0",
       "record_index": 0,
       "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_death_tool_weapon.json"
     }
