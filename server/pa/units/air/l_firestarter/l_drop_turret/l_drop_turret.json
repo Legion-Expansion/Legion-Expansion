@@ -79,7 +79,6 @@
   ],
   "unit_types": [
     "UNITTYPE_Structure",
-    "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_Land",
     "UNITTYPE_SurfaceDefense",
