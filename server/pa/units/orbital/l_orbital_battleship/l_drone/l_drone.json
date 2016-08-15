@@ -15,11 +15,13 @@
         "socket_muzzle002"
       ],
       "record_index": 0,
+      "show_range": false,
       "spec_id": "/pa/units/orbital/l_orbital_battleship/l_drone/l_drone_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "record_index": 0,
+      "show_range": false,
       "spec_id": "/pa/units/air/l_air_carrier/l_drone/l_drone_death_tool_weapon.json"
     }
   ]
