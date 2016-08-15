@@ -1,0 +1,6 @@
+{
+  "base_spec": "/pa/units/land/l_bot_bomb/l_bot_bomb_jump_ammo.json",
+  "fx_trail": {
+    "filename": "/pa/units/land/l_necromancer/minion/rocket_trail.pfx"
+  }
+}
