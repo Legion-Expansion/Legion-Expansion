@@ -1,6 +1,55 @@
 ## CHANGELOG
 
-#### v0.17.1 -
+
+#### v0.18.0 - 2016/??/??
+
+###### General
+
+ - Anti-air symbol added to Jaegar build bar icon
+ - Weapon range circles disabled for uncontrollable entities
+ - Earthshaker camera shake reduced by 50%
+ - Necromancer purgers coloured red to distinguish them from factory built purgers
+ - Strategic icons now show for jumping purgers and investigators
+
+###### Balance
+
+ - Rampart nerf
+   - Shield no longer starts fully charged when built
+ - Earthshaker buff
+  - Rate of fire changed from 4 to 3.3
+  - Damage decreased from 1500 to 1200
+  - Splash damage decreased from 500 to 400
+ - Scorpion buff
+  - Ammo velocity increased to 110
+ - Loki buff
+   - Rate of fire changed from 3 to 2
+   - Main gun damage modifier against air units changed from 0.75 to 0.5
+ - Enforcer nerf
+   - Range decreased from 110 to 100
+ - Maul nerf
+   - Health decreased from 1300 to 1150
+ - Walker factory nerf
+   - Metal cost increased from 600 to 670
+ - Armour factory nerf
+   - Metal cost increased from 600 to 670
+ - Peacekeeper buff
+   - Rate of fire changed from 0.9 to 0.83
+ - Lancer change
+   - Damage increased from 6 to 125
+   - Rate of fire changed from 0.1 to 1.64
+
+###### Fixes
+
+ - Animation log errors fixed for a variety of units
+ - Salamander drop turret physics errors fixed
+ - Salamander drop turret no longer plays fire effect when it dies
+ - Mixed UI action bar now transparent like the MLA UI
+ - Mixed UI planetlist bar now transparent and no longer blocks metal counts
+ - Necromancer purgers now properly agro units at long range automatically
+ - Imperator ground attack drones no longer have missing unit selection portraits
+
+
+#### v0.17.1 - 2016/??/??
 
 The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
 
