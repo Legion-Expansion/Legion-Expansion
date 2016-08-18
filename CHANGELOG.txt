@@ -29,9 +29,13 @@
  - Maul nerf
    - Health decreased from 1300 to 1150
  - Walker factory nerf
-   - Metal cost increased from 600 to 670
+   - Metal cost increased from 600 to 660
  - Armour factory nerf
-   - Metal cost increased from 600 to 670
+   - Metal cost increased from 600 to 660
+ - Flyer factory nerf
+   - Metal cost increased from 600 to 660
+ - Ship factory nerf
+   - Metal cost increased from 600 to 660
  - Peacekeeper buff
    - Rate of fire changed from 0.9 to 0.83
  - Lancer change
