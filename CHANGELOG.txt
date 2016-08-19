@@ -41,6 +41,8 @@
  - Lancer change
    - Damage increased from 6 to 125
    - Rate of fire changed from 0.1 to 1.64
+ - Purger nerf
+   - Health decreased from 80 to 70
 
 ###### Fixes
 
