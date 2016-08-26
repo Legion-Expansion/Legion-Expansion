@@ -13,10 +13,6 @@
       "living": {
         "aim_bone_root": "bone_turret",
         "child": {
-          "node_idle": {
-            "anim_name": "idle",
-            "type": "playback"
-          },
           "node_walk": {
             "anim_name": "walk",
             "events": [

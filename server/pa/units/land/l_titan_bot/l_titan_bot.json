@@ -101,7 +101,6 @@
   ],
   "model": {
     "animations": {
-      "idle": "",
       "walk": "/pa/units/land/l_titan_bot/l_titan_bot_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_titan_bot_anim_tree.json",
