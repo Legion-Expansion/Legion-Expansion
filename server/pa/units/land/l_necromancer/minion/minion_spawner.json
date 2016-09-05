@@ -5,6 +5,9 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 100,
   "damageable": false,
+  "death": {
+    "decals": []
+  },
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/air"
@@ -66,7 +69,7 @@
   "selection_icon": {
     "diameter": -1
   },
-  "spawn_unit_on_death": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
+  "spawn_unit_on_death": "/pa/units/land/l_necromancer/minion/minion.json",
   "tools": [
     {
       "aim_bone": "bone_root",

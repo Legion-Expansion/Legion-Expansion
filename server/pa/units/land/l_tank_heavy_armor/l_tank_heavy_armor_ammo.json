@@ -6,7 +6,7 @@
   },
   "burn_damage": 200,
   "burn_radius": 70,
-  "damage": 900,
+  "damage": 1200,
   "damage_volume": {
     "delay": 0,
     "initial_radius": 15,
@@ -20,7 +20,7 @@
   },
   "full_damage_splash_radius": 15,
   "sim_fire_effect": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_shake.json",
-  "splash_damage": 300,
+  "splash_damage": 400,
   "splash_damages_allies": false,
   "splash_radius": 55
 }

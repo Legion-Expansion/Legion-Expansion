@@ -140,6 +140,7 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Scout",
     "UNITTYPE_Mobile",
+    "UNITTYPE_NoBuild",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom1"

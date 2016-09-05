@@ -65,11 +65,13 @@
       ],
       "projectiles_per_fire": 2,
       "record_index": 0,
+      "show_range": false,
       "spec_id": "/pa/units/land/l_tank_swarm/chain/chain_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "record_index": 0,
+      "show_range": false,
       "spec_id": "/pa/units/land/l_tank_swarm/chain/chain_death_tool_weapon.json"
     }
   ],

@@ -11,7 +11,7 @@
         "type": "bind_pose"
       },
       "living": {
-        "aim_bone_root": "bone_turret",
+        "aim_bone_root": "turret",
         "child": {
           "entries": [
             {
@@ -53,7 +53,7 @@
                   },
                   {
                     "parameters": {
-                      "bone": "bone_foot_a_001",
+                      "bone": "foot01",
                       "bone_offset": [
                         0.0,
                         0.0,
@@ -74,7 +74,7 @@
                   },
                   {
                     "parameters": {
-                      "bone": "bone_foot_b_002",
+                      "bone": "foot02",
                       "bone_offset": [
                         0.0,
                         0.0,
@@ -128,7 +128,7 @@
   "skeleton_controls": [
     {
       "rotation_axis": "z",
-      "rotation_bone": "bone_turret",
+      "rotation_bone": "turret",
       "type": "procedural_aim"
     }
   ]
