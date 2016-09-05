@@ -1,7 +1,8 @@
 ## CHANGELOG
 
+#### v1.0.0 - 2016/??/??
 
-#### v0.18.0 - 2016/??/??
+The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
 
 ###### General
 
@@ -46,6 +47,7 @@
 
 ###### Fixes
 
+ - Black icons caused by memory limit replaced with dots
  - Animation log errors fixed for a variety of units
  - Salamander drop turret physics errors fixed
  - Salamander drop turret no longer plays fire effect when it dies
@@ -54,15 +56,6 @@
  - Necromancer purgers now properly agro units at long range automatically
  - Imperator ground attack drones no longer have missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
-
-
-#### v0.17.1 - 2016/??/??
-
-The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
-
-###### Fixes
-
- - Black icons caused by memory limit replaced with dots
 
 
 #### v0.17.0 - 2016/07/18
