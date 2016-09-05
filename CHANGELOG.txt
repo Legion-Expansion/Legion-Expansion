@@ -9,8 +9,8 @@ The server mod HodgePodge has been added as a dependency. If your strategic icon
  - Anti-air symbol added to Jaegar build bar icon
  - Weapon range circles disabled for uncontrollable entities
  - Earthshaker camera shake reduced by 50%
- - Necromancer purgers coloured red to distinguish them from factory built purgers
- - Strategic icons now show for jumping purgers and investigators
+ - Necromancer's Purgers coloured red to distinguish them from factory built Purgers
+ - Strategic icons now show for jumping Purgers and Investigators
 
 ###### Balance
 
@@ -29,13 +29,13 @@ The server mod HodgePodge has been added as a dependency. If your strategic icon
    - Range decreased from 110 to 100
  - Maul nerf
    - Health decreased from 1300 to 1150
- - Walker factory nerf
+ - Walker Factory nerf
    - Metal cost increased from 600 to 660
- - Armour factory nerf
+ - Armour Foundry nerf
    - Metal cost increased from 600 to 660
- - Flyer factory nerf
+ - Flyer Foundry nerf
    - Metal cost increased from 600 to 660
- - Ship factory nerf
+ - Ship Foundry nerf
    - Metal cost increased from 600 to 660
  - Peacekeeper buff
    - Rate of fire changed from 0.9 to 0.83
@@ -52,10 +52,11 @@ The server mod HodgePodge has been added as a dependency. If your strategic icon
  - Salamander drop turret physics errors fixed
  - Salamander drop turret no longer plays fire effect when it dies
  - Mixed UI action bar now transparent like the MLA UI
- - Mixed UI planetlist bar now transparent and no longer blocks metal counts
- - Necromancer purgers now properly agro units at long range automatically
- - Imperator ground attack drones no longer have missing unit selection portraits
+ - Mixed UI planet list bar now transparent and no longer blocks metal counts
+ - Necromancer Purgers now properly agro units at long range automatically
+ - Imperator ground attack drones no longer missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
+ - Error in Thor animations fixed
 
 
 #### v0.17.0 - 2016/07/18
