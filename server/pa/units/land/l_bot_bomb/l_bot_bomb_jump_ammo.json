@@ -29,9 +29,11 @@
       ]
     }
   },
+  "show_strategic_icon": true,
   "spawn_unit_on_death": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,
-  "splash_radius": 0
+  "splash_radius": 0,
+  "strategic_icon_priority": 0
 }
