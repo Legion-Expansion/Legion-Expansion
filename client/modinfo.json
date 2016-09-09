@@ -7,12 +7,12 @@
     "faction"
   ],
   "context": "client",
-  "date": "2016/07/15",
+  "date": "2016/08/08",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
   "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Requires TITANS. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
-  "display_name": "Legion Expansion Client BETA",
+  "display_name": "Legion Expansion Client",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
   "identifier": "com.pa.legion-expansion-client",
@@ -77,7 +77,7 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "0.18.0-beta",
+  "version": "1.0.0",
   "titansOnly": true,
   "hidden": true
 }

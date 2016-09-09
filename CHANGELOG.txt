@@ -276,8 +276,6 @@ Full unit stats - https://palobby.com/legion-expansion/units
 
 ###### Balance
 
-Full unit stats - https://palobby.com/legion-expansion/units
-
  - Salamander buff:
    - Turrets now automatically deployed though manual deployment is still possible
    - Turret health increased from 1500 to 2500
