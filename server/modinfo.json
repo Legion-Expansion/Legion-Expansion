@@ -12,7 +12,7 @@
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client",
     "com.wondible.pa.hodgepodge",
-    "com.wondible.pa.weapons_tracking.server"
+    "com.wondible.pa.weapons_tracking"
   ],
   "companions": [
     "com.pa.legion-expansion-client"
