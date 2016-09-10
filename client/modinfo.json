@@ -1,83 +1,14 @@
 {
-  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
   "build": "94684",
-  "category": [
-    "titans",
-    "units",
-    "faction"
-  ],
+  "author": "dom314",
+  "date": "2016-09-10",
+  "signature": " ",
+  "identifier": "com.pa.domdom.weapons_tracking.client",
+  "version": "0.0.1",
+  "display_name": "Weapons Tracking for Legion Client",
+  "description": "Allows both projectile interception for legion, as well as effect overriding in other client mods.",
   "context": "client",
-  "date": "2016/08/08",
-  "dependencies": [
-    "com.pa.legion-expansion-server"
-  ],
-  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Requires TITANS. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
-  "display_name": "Legion Expansion Client",
-  "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
-  "icon": "https://i.imgur.com/Eal5t9L.png",
-  "identifier": "com.pa.legion-expansion-client",
-  "scenes": {
-    "server_browser": [
-      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
-    ],
-    "load_planet": [
-       "coui://ui/mods/com.pa.legion-expansion/load_planet.js"
-    ],
-    "settings": [
-      "coui://ui/mods/com.pa.legion-expansion/settings.js"
-    ],
-    "shared_build": [
-      "coui://ui/mods/com.pa.legion-expansion/shared_build.js"
-    ],
-    "live_game": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
-    ],
-    "live_game_players": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
-    ],
-    "live_game_planets": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_planets.js"
-    ],
-    "live_game_control_group_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_control_group_bar.js"
-    ],
-    "live_game_options_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar.js"
-    ],
-    "live_game_econ": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_econ.js"
-    ],
-    "live_game_time_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar.js"
-    ],
-    "live_game_build_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
-    ],
-    "live_game_build_hover": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover.js"
-    ],
-    "live_game_action_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"
-    ],
-    "live_game_selection": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_selection.js"
-    ],
-    "live_game_sandbox": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
-    ],
-    "live_game_menu": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_menu.js"
-    ],
-    "new_game": [
-      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
-    ],
-    "start": [
-      "coui://ui/mods/com.pa.legion-expansion/start.js"
-    ]
-  },
-  "priority": 100,
-  "signature": "(not yet implemented)",
-  "version": "1.0.0",
-  "titansOnly": true,
-  "hidden": true
+  "category": [
+    "effects"
+  ]
 }
