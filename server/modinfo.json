@@ -1,17 +1,36 @@
 {
+  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
   "build": "94684",
-  "author": "dom314",
-  "date": "2016-09-10",
-  "signature": " ",
-  "identifier": "com.pa.domdom.weapons_tracking.server",
-  "version": "0.0.1",
-  "display_name": "Weapons Tracking for Legion Server",
-  "description": "Allows both projectile interception for legion, as well as effect overriding in other client mods.",
-  "context": "server",
   "category": [
-    "units"
+    "titans",
+    "units",
+    "faction"
+  ],
+  "context": "server",
+  "date": "2016/08/08",
+  "dependencies": [
+    "com.pa.quitch.qAIModCompatibilityPatch",
+    "com.pa.legion-expansion-client",
+    "com.wondible.pa.hodgepodge",
+    "com.wondible.pa.weapons_tracking"
   ],
   "companions": [
-    "com.pa.domdom.weapons_tracking.client"
-  ]
+    "com.pa.legion-expansion-client"
+  ],
+  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Requires TITANS. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
+  "display_name": "Legion Expansion",
+  "forum": "https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/",
+  "icon": "https://i.imgur.com/Eal5t9L.png",
+  "identifier": "com.pa.legion-expansion-server",
+  "scenes": {
+    "icon_atlas": [
+      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "1.0.0",
+  "titansOnly": true
 }
