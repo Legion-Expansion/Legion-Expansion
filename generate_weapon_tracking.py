@@ -120,39 +120,3 @@ for target in targets:
 
     with open('server' + target, 'w', encoding='utf-8') as ammo_file:
         pajson.dump(ammo, ammo_file)
-
-print (' ::Creating modinfo::')
-from collections import OrderedDict
-common = OrderedDict()
-
-with open(os.path.join(paths.PA_MEDIA_DIR, '../version.txt')) as f:
-    common['build'] = f.read().strip()
-
-common['author'] = 'dom314'
-common['date'] = datetime.utcnow().strftime("%Y-%m-%d")
-common['signature'] = ' '
-common['identifier'] = 'com.pa.domdom.weapons_tracking.'
-common['version'] = '0.0.1'
-# common['framework'] = True
-
-common['display_name'] = 'Weapons Tracking for Legion'
-common['description'] = 'Allows both projectile interception for legion, as well as effect overriding in other client mods.'
-
-client = copy.deepcopy(common)
-client['context'] = 'client'
-client['category'] = ['effects']
-client['display_name'] += ' Client'
-client['identifier'] += 'client'
-
-server = copy.deepcopy(common)
-server['context'] = 'server'
-server['category'] = ['units']
-server['display_name'] += ' Server'
-server['identifier'] += 'server'
-server['companions'] = [client['identifier']]
-
-
-with open('server/modinfo.json', 'w', encoding='utf-8') as file:
-    pajson.dump(server, file, indent=2)
-with open('client/modinfo.json', 'w', encoding='utf-8') as file:
-    pajson.dump(client, file, indent=2)
