@@ -1,0 +1,3 @@
+[submodule "pa_tools"]
+	path = pa_tools
+	url = git@github.com:domdom/pa_tools.git
