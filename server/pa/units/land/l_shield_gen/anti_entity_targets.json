@@ -86,7 +86,6 @@
     "/pa/units/land/bot_support_commander/bot_support_commander_ammo.json",
     "/pa/units/land/l_bot_support_commander/l_bot_support_commander_ammo.json",
     "/pa/units/land/bot_tesla/bot_tesla_ammo.json",
-    "/pa/units/land/tank_heavy_artillery/tank_heavy_artillery_ammo.json",
     "/pa/units/land/tank_hover/tank_hover_ammo.json"
   ],
   "anti_entity_targets_units": false,
