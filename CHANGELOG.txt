@@ -3,7 +3,7 @@
 #### v1.0.0 - 2016/??/??
 
 The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
-The server mod dependency Weapons Tracking has been removed and the required changes merged directly into Legion.
+Please uninstall Weapons Tracking as the required changes merged directly into Legion.
 
 ###### General
 
@@ -58,7 +58,7 @@ The server mod dependency Weapons Tracking has been removed and the required cha
  - Imperator ground attack drones no longer missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
  - Error in Thor animations fixed
- - Legion can now allow MLA unit projectile effect mods. (More Pew Pew works with Legion now :3)
+ - Legion no longer overrides weapon effect mods
 
 
 #### v0.17.0 - 2016/07/18
