@@ -3,7 +3,7 @@
 #### v1.0.0 - 2016/??/??
 
 The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
-Please uninstall Weapons Tracking as the required changes merged directly into Legion.
+Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
 
 ###### General
 
