@@ -58,6 +58,8 @@ Please uninstall Weapons Tracking as the required changes have been merged direc
  - Imperator ground attack drones no longer missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
  - Error in Thor animations fixed
+ - Kaiju projectiles now properly blocked by Rampart Shield
+ - Jaegar projectiles now properly blocked by Rampart Shield
  - Legion no longer overrides weapon effect mods
 
 
