@@ -86,6 +86,10 @@
     "/pa/units/land/bot_support_commander/bot_support_commander_ammo.json",
     "/pa/units/land/l_bot_support_commander/l_bot_support_commander_ammo.json",
     "/pa/units/land/bot_tesla/bot_tesla_ammo.json",
+    "/pa/units/sea/hover_ship/hover_ship_ammo.json",
+    "/pa/units/sea/hover_ship/hover_ship_ammo_side.json",
+    "/pa/units/sea/l_hover_ship/l_hover_ship_ammo.json",
+    "/pa/units/sea/l_hover_ship/l_hover_ship_ammo_side.json",
     "/pa/units/land/tank_hover/tank_hover_ammo.json"
   ],
   "anti_entity_targets_units": false,
