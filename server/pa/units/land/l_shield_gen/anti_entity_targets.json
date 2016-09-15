@@ -34,7 +34,7 @@
     "/pa/units/sea/hover_ship/hover_ship_ammo.json",
     "/pa/units/sea/hover_ship/hover_ship_ammo_side.json",
     "/pa/units/sea/missile_ship/missile_ship_ammo.json",
-    "/pa/units/sea/nuclear_sub/nuclear_sub_ammo.json",
+    "/pa/units/sea/nuclear_sub/nuclear_sub_ammo_missile.json",
     "/pa/units/sea/sea_scout/sea_scout_ammo.json",
     "/pa/units/air/l_air_scout_adv/l_air_scout_adv_ammo.json",
     "/pa/units/air/l_bomber/l_bomber_ammo.json",
