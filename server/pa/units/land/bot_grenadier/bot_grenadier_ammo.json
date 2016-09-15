@@ -1,1 +1,24 @@
-{"model": null, "fx_trail": {"filename": "/pa/units/land/bot_grenadier\\bot_grenadier_ammo_trail.pfx"}, "events": {"died": {"effect_spec": "/pa/units/land/bot_grenadier\\bot_grenadier_ammo_hit.pfx", "effect_scale": 0.4}}, "physics": {"gravity_scalar": 6, "add_to_spatial_db": true}, "damage": 40, "splash_damage": 40, "splash_radius": 6, "lifetime": 5, "initial_velocity": 90.0, "max_velocity": 90.0, "base_spec": "/pa/ammo/base_bullet/base_bullet.json", "full_damage_splash_radius": 2}
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 40,
+  "events": {
+    "died": {
+      "effect_scale": 0.4,
+      "effect_spec": "/pa/units/land/bot_grenadier\\bot_grenadier_ammo_hit.pfx"
+    }
+  },
+  "full_damage_splash_radius": 2,
+  "fx_trail": {
+    "filename": "/pa/units/land/bot_grenadier\\bot_grenadier_ammo_trail.pfx"
+  },
+  "initial_velocity": 90.0,
+  "lifetime": 5,
+  "max_velocity": 90.0,
+  "model": null,
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 6
+  },
+  "splash_damage": 40,
+  "splash_radius": 6
+}
