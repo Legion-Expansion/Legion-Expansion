@@ -16,7 +16,7 @@ from pa_tools.pa import pajson
 print ('PA MEDIA DIR:', paths.PA_MEDIA_DIR)
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = Loader(paths.PA_MEDIA_DIR)
-loader.mount('/', '/pa_ex1')
+loader.mount('/pa', '/pa_ex1')
 
 
 with open("server/pa/units/land/l_shield_gen/anti_entity_targets.json",'r',encoding='utf8') as file:
