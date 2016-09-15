@@ -81,8 +81,6 @@
     "/pa/units/air/fighter_adv/fighter_adv_ammo.json",
     "/pa/units/air/gunship/gunship_ammo.json",
     "/pa/units/air/bomber_heavy/bomber_heavy_ammo.json",
-    "/pa/units/air/solar_drone/solar_drone_ammo.json",
-    "/pa/units/land/bot_nanoswarm/bot_nanoswarm_ammo.json",
     "/pa/units/land/bot_support_commander/bot_support_commander_ammo.json",
     "/pa/units/land/l_bot_support_commander/l_bot_support_commander_ammo.json",
     "/pa/units/land/bot_tesla/bot_tesla_ammo.json",
