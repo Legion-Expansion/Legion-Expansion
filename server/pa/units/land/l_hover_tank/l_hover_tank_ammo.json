@@ -13,26 +13,15 @@
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/land/l_mortar_tank/proj_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/land/l_mortar_tank/proj_trail.pfx"
   },
   "initial_velocity": 200,
   "lifetime": 5,
   "max_velocity": 400,
-  "model": {
-    "filename": ""
-  },
   "physics": {
     "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 6,
-    "radius": 1
+    "gravity_scalar": 6
   },
   "splash_damage": 40,
-  "splash_damages_allies": false,
   "splash_radius": 10
 }

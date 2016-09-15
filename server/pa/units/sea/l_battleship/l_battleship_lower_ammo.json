@@ -23,11 +23,8 @@
   "min_velocity": 90,
   "physics": {
     "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 26,
-    "radius": 1
+    "gravity_scalar": 26
   },
   "splash_damage": 800,
-  "splash_damages_allies": false,
   "splash_radius": 25
 }

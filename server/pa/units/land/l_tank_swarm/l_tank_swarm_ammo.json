@@ -7,7 +7,6 @@
   "damage": 750,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/laser_blast",
       "effect_spec": "/pa/units/land/l_tank_swarm/chain/electrode.pfx"
     }
   },
@@ -21,10 +20,8 @@
   "physics": {
     "add_to_spatial_db": true,
     "gravity_scalar": 5,
-    "ignore_gravity": false,
-    "radius": 1
+    "ignore_gravity": false
   },
-  "spawn_layers": "WL_Air",
   "spawn_unit_on_death": "/pa/units/land/l_tank_swarm/chain/chain.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 500,

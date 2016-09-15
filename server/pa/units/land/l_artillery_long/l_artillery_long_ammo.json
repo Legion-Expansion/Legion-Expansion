@@ -17,26 +17,16 @@
   },
   "full_damage_splash_radius": 0,
   "fx_trail": {
-    "filename": "/pa/effects/specs/plasma_ball_with_sparks_long.pfx",
-    "offset": [
-      0.0,
-      1.0,
-      0.0
-    ]
+    "filename": "/pa/effects/specs/plasma_ball_with_sparks_long.pfx"
   },
   "initial_velocity": 100,
   "lifetime": 5,
   "max_velocity": 2000,
   "min_velocity": 100,
-  "model": {
-    "filename": "/pa/units/air/shell_large/shell_large.papa"
-  },
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 25,
-    "radius": 1
+    "gravity_scalar": 25
   },
-  "splash_damage": 5000,
   "splash_damages_allies": false,
   "splash_radius": 25
 }

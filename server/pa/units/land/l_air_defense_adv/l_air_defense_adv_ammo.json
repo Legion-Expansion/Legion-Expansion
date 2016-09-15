@@ -43,11 +43,9 @@
   },
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 10,
-    "radius": 1
+    "gravity_scalar": 10
   },
   "splash_damage": 25,
-  "splash_damages_allies": false,
   "splash_radius": 15,
   "turn_rate": 720
 }
