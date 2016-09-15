@@ -3,18 +3,19 @@
   "damage": 300,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/tank_laser_adv\\tank_laser_adv_ammo_hit.pfx"
+      "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_hit.pfx"
     }
   },
   "full_damage_splash_radius": 1,
   "fx_trail": {
-    "filename": "/pa/units/land/tank_laser_adv\\tank_laser_adv_ammo_trail.pfx"
+    "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_trail.pfx"
   },
-  "initial_velocity": 150.0,
+  "initial_velocity": 140.0,
   "lifetime": 2,
-  "max_velocity": 150.0,
+  "max_velocity": 140.0,
   "physics": {
-    "add_to_spatial_db": true
+    "add_to_spatial_db": true,
+    "gravity_scalar": 7
   },
   "splash_damage": 300,
   "splash_radius": 3

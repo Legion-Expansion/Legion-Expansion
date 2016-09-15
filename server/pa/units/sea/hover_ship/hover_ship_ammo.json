@@ -1,13 +1,14 @@
 {
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
-  "damage": 50,
+  "damage": 200,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/sea/destroyer/destroyer_ammo_hit.pfx"
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_ammo_hit.pfx"
     }
   },
+  "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/sea/destroyer/destroyer_ammo_trail.pfx",
+    "filename": "/pa/units/sea/hover_ship/hover_ship_ammo_trail.pfx",
     "offset": [
       0.0,
       0.7,
@@ -21,5 +22,6 @@
     "add_to_spatial_db": true,
     "gravity_scalar": 7
   },
-  "splash_radius": 0
+  "splash_damage": 200,
+  "splash_radius": 5
 }

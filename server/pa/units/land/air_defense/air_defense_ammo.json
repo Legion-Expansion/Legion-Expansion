@@ -3,19 +3,16 @@
   "damage": 25,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/air_defense\\air_defense_ammo_hit.pfx"
+      "effect_spec": "/pa/units/land/air_defense/air_defense_ammo_hit.pfx"
     }
   },
   "full_damage_splash_radius": 0.75,
   "fx_trail": {
-    "filename": "/pa/units/land/air_defense\\air_defense_ammo_trail.pfx"
+    "filename": "/pa/units/land/air_defense/air_defense_ammo_trail.pfx"
   },
   "initial_velocity": 200.0,
   "lifetime": 3.0,
   "max_velocity": 200.0,
-  "physics": {
-    "add_to_spatial_db": true
-  },
   "splash_damage": 10,
   "splash_radius": 0.75,
   "turn_rate": 720.0

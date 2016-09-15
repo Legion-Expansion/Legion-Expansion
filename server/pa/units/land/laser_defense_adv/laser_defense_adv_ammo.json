@@ -3,11 +3,11 @@
   "damage": 150,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/laser_defense_adv\\laser_defense_adv_ammo_hit.pfx"
+      "effect_spec": "/pa/units/land/laser_defense_adv/laser_defense_adv_ammo_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/laser_defense_adv\\laser_defense_adv_ammo_trail.pfx"
+    "filename": "/pa/units/land/laser_defense_adv/laser_defense_adv_ammo_trail.pfx"
   },
   "initial_velocity": 500.0,
   "lifetime": 2,

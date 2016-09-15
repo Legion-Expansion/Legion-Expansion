@@ -4,12 +4,12 @@
   "damage": 400,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/tank_heavy_mortar\\tank_heavy_mortar_ammo_hit.pfx"
+      "effect_spec": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo_hit.pfx"
     }
   },
   "full_damage_splash_radius": 1,
   "fx_trail": {
-    "filename": "/pa/units/land/tank_heavy_mortar\\tank_heavy_mortar_ammo_trail.pfx"
+    "filename": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo_trail.pfx"
   },
   "initial_velocity": 200.0,
   "lifetime": 10,

@@ -3,11 +3,11 @@
   "damage": 250,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/sea/nuclear_sub\\nuclear_sub_ammo_hit.pfx"
+      "effect_spec": "/pa/units/sea/nuclear_sub/nuclear_sub_ammo_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/sea/nuclear_sub\\nuclear_sub_ammo_trail.pfx"
+    "filename": "/pa/units/sea/nuclear_sub/nuclear_sub_ammo_trail.pfx"
   },
   "initial_velocity": 5.0,
   "lifetime": 4.0,

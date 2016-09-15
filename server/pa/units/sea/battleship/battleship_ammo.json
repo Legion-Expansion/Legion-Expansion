@@ -5,12 +5,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/battleship",
-      "effect_spec": "/pa/units/sea/battleship\\battleship_ammo_hit.pfx"
+      "effect_spec": "/pa/units/sea/battleship/battleship_ammo_hit.pfx"
     }
   },
   "full_damage_splash_radius": 2,
   "fx_trail": {
-    "filename": "/pa/units/sea/battleship\\battleship_ammo_trail.pfx",
+    "filename": "/pa/units/sea/battleship/battleship_ammo_trail.pfx",
     "offset": [
       0.0,
       0.7,
@@ -18,14 +18,15 @@
     ]
   },
   "influence_radius": 900,
-  "initial_velocity": 110.0,
-  "lifetime": 4,
-  "max_velocity": 110.0,
+  "initial_velocity": 150.0,
+  "lifetime": 3.5,
+  "max_velocity": 150.0,
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"
   },
   "physics": {
-    "add_to_spatial_db": true
+    "add_to_spatial_db": true,
+    "gravity_scalar": 7
   },
   "splash_damage": 200,
   "splash_damages_allies": false,
