@@ -1,9 +1,8 @@
-
-
 """ this script takes all the targets that are needed by legion for their shields and changes their effect paths """
 # tools for generating this mod
 import os
 import os.path as path
+import posixpath
 import copy
 
 from datetime import datetime
@@ -15,16 +14,14 @@ from pa_tools.pa import pajson
 
 print ('PA MEDIA DIR:', paths.PA_MEDIA_DIR)
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
-loader = Loader(paths.PA_MEDIA_DIR)
+loader = Loader('server')
+loader.mount('/', paths.PA_MEDIA_DIR)
 loader.mount('/pa', '/pa_ex1')
-
 
 with open("server/pa/units/land/l_shield_gen/anti_entity_targets.json",'r',encoding='utf8') as file:
     targets, warnings = pajson.load(file)
     targets = targets["anti_entity_targets"]
 
-# inlcude only PA and PAT units
-targets = list(filter(lambda target: loader.hasFile(target), targets))
 
 """###################################################################################"""
 #########################################################################################
@@ -92,18 +89,25 @@ for target in targets:
 
     # get the spec
     ammo = _parseSpec(target)
+
+    if 'Projectile' not in ammo['ammo_type']:
+        print ('Skipping (reason: ammo type ' + ammo['ammo_type'] + ')')
+        continue
+
     ammo['physics']['add_to_spatial_db'] = True
 
-    # get the vanila effect that we are going to duplicate
-    src_trail_file = ammo['fx_trail']['filename']
-    src_hit_file = ammo['events']['died']['effect_spec']
+    is_legion = '/l_' in target
+    if not is_legion:
+        # get the vanila effect that we are going to duplicate
+        src_trail_file = ammo['fx_trail']['filename']
+        src_hit_file = ammo['events']['died']['effect_spec']
 
-    # construct the new effect names relative to the location of the actual ammo file
-    dst_trail_file = path.join(ammo_dir, ammo_name + '_trail.pfx')
-    dst_hit_file = path.join(ammo_dir, ammo_name + '_hit.pfx')
+        # construct the new effect names relative to the location of the actual ammo file
+        dst_trail_file = posixpath.join(ammo_dir, ammo_name + '_trail.pfx')
+        dst_hit_file = posixpath.join(ammo_dir, ammo_name + '_hit.pfx')
 
-    ammo['fx_trail']['filename'] = dst_trail_file
-    ammo['events']['died']['effect_spec'] = dst_hit_file
+        ammo['fx_trail']['filename'] = dst_trail_file
+        ammo['events']['died']['effect_spec'] =  dst_hit_file
 
 
     # make a minimal ammo spec for the server mod
@@ -112,11 +116,13 @@ for target in targets:
 
     # prepare files:
     os.makedirs('server' + ammo_dir, exist_ok=True)
-    os.makedirs('client' + ammo_dir, exist_ok=True)
 
-    # copy client files
-    copyfile(loader.resolveFile(src_hit_file), 'client' + dst_hit_file)
-    copyfile(loader.resolveFile(src_trail_file), 'client' + dst_trail_file)
+    if not is_legion:
+        os.makedirs('client' + ammo_dir, exist_ok=True)
+
+        # copy client files
+        copyfile(loader.resolveFile(src_hit_file), 'client' + dst_hit_file)
+        copyfile(loader.resolveFile(src_trail_file), 'client' + dst_trail_file)
 
     with open('server' + target, 'w', encoding='utf-8') as ammo_file:
         pajson.dump(ammo, ammo_file)
