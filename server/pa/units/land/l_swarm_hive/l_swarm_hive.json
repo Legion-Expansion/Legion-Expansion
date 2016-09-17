@@ -7,9 +7,7 @@
   "atrophy_rate": 15.625,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 750,
-  "command_caps": [
-    ""
-  ],
+  "command_caps": [],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
