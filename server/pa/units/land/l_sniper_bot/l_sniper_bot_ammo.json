@@ -30,10 +30,7 @@
   },
   "physics": {
     "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 10,
-    "radius": 1
+    "gravity_scalar": 10
   },
-  "splash_damage": 0,
   "splash_radius": 0
 }

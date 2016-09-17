@@ -1,1 +1,19 @@
-{"fx_trail": {"filename": "/pa/units/air/bomber\\bomber_ammo_trail.pfx"}, "events": {"died": {"effect_spec": "/pa/units/air/bomber\\bomber_ammo_hit.pfx"}}, "physics": {"add_to_spatial_db": true}, "damage": 75, "splash_damage": 75, "splash_radius": 10, "lifetime": 7, "base_spec": "/pa/ammo/base_bomb/base_bomb.json", "full_damage_splash_radius": 1}
+{
+  "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
+  "damage": 75,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/air/bomber/bomber_ammo_hit.pfx"
+    }
+  },
+  "full_damage_splash_radius": 1,
+  "fx_trail": {
+    "filename": "/pa/units/air/bomber/bomber_ammo_trail.pfx"
+  },
+  "lifetime": 7,
+  "physics": {
+    "add_to_spatial_db": true
+  },
+  "splash_damage": 75,
+  "splash_radius": 10
+}

@@ -23,6 +23,9 @@
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"
   },
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_damage": 400,
   "splash_damages_allies": false,
   "splash_radius": 4

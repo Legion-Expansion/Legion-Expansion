@@ -20,6 +20,9 @@
   "model": {
     "filename": ""
   },
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_damage": 25,
   "splash_radius": 6
 }
