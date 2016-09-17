@@ -8,9 +8,7 @@
     }
   },
   "fx_trail": {},
-  "impact_decals": [
-    null
-  ],
+  "impact_decals": [],
   "initial_velocity": 1,
   "lifetime": 5,
   "max_velocity": 1,
