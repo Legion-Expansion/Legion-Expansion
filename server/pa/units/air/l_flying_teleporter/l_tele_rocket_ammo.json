@@ -18,12 +18,9 @@
     "filename": "/pa/units/air/shell/shell.papa"
   },
   "physics": {
-    "add_to_spatial_db": true,
-    "gravity_scalar": 5,
-    "radius": 1
+    "add_to_spatial_db": true
   },
   "splash_damage": 0,
-  "splash_damages_allies": false,
   "splash_radius": 0,
   "stages": [
     {

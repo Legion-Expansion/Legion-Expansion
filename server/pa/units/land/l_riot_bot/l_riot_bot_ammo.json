@@ -3,23 +3,18 @@
   "damage": 100,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
       "effect_spec": "/pa/units/land/l_riot_bot/riot_proj_explosion.pfx"
     }
   },
   "full_damage_splash_radius": 0,
   "fx_trail": {
-    "filename": "/pa/units/land/l_riot_bot/ammo_trail.pfx",
-    "offset": [
-      0,
-      0,
-      0
-    ]
+    "filename": "/pa/units/land/l_riot_bot/ammo_trail.pfx"
   },
   "initial_velocity": 80,
   "lifetime": 1.3,
   "max_velocity": 80,
   "model": null,
-  "splash_damage": 0,
-  "splash_radius": 0
+  "physics": {
+    "add_to_spatial_db": true
+  }
 }

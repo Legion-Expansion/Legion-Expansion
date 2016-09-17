@@ -10,7 +10,6 @@
   },
   "full_damage_splash_radius": 5,
   "fx_trail": {
-    "filename": "/pa/effects/specs/rocket_proj_trail.pfx",
     "offset": [
       0.0,
       1.0,
@@ -26,10 +25,8 @@
   },
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 10,
-    "radius": 1
+    "gravity_scalar": 10
   },
   "splash_damage": 90,
-  "splash_damages_allies": false,
   "splash_radius": 6
 }

@@ -3,7 +3,6 @@
   "damage": 125,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
       "effect_spec": "/pa/units/land/l_tank_shank/proj_exp.pfx"
     }
   },
@@ -21,6 +20,8 @@
   "model": {
     "filename": ""
   },
-  "splash_damage": 0,
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_radius": 0
 }

@@ -3,7 +3,6 @@
   "damage": 250,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_artillery",
       "effect_spec": "/pa/effects/specs/t1_bomber_effect.pfx"
     }
   },
@@ -21,6 +20,9 @@
   "max_velocity": 35.0,
   "model": {
     "filename": ""
+  },
+  "physics": {
+    "add_to_spatial_db": true
   },
   "splash_damage": 150,
   "splash_radius": 10

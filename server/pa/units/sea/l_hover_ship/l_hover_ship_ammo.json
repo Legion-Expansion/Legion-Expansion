@@ -19,12 +19,9 @@
   "lifetime": 2,
   "max_velocity": 200.0,
   "physics": {
-    "add_to_spatial_db": false,
-    "allow_underground": true,
-    "gravity_scalar": 8,
-    "radius": 1
+    "add_to_spatial_db": true,
+    "gravity_scalar": 8
   },
   "splash_damage": 1500,
-  "splash_damages_allies": false,
   "splash_radius": 5
 }
