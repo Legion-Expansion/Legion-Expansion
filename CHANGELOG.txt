@@ -1,16 +1,18 @@
 ## CHANGELOG
 
-#### v1.0.0 - 2016/??/??
+#### v0.18.0 - 2016/10/03
 
-The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
-Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
+###### IMPORTANT
+
+ - The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
+ - Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
 
 ###### General
 
  - Anti-air symbol added to Jaeger build bar icon
  - Weapon range circles disabled for uncontrollable entities
  - Earthshaker camera shake reduced by 50%
- - Necromancer's Purgers coloured red to distinguish them from factory built Purgers
+ - Necromancer's Purgers no longer selectable with factory built Purgers and have been coloured red to distinguish them
  - Strategic icons now show for jumping Purgers and Investigators
 
 ###### Balance
@@ -54,13 +56,15 @@ Please uninstall Weapons Tracking as the required changes have been merged direc
  - Salamander drop turret no longer plays fire effect when it dies
  - Mixed UI action bar now transparent like the MLA UI
  - Mixed UI planet list bar now transparent and no longer blocks metal counts
- - Necromancer Purgers now properly agro units at long range automatically
+ - Necromancer Purgers now properly attack units at long range automatically
  - Imperator ground attack drones no longer missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
  - Error in Thor animations fixed
  - Kaiju projectiles now properly blocked by Rampart
  - Jaeger projectiles now properly blocked by Rampart
  - Legion no longer overrides weapon effect mods
+ - Cleanup of file shadowing
+ - Lobby overlay no longer broken when Legion theme is disabled
 
 
 #### v0.17.0 - 2016/07/18
