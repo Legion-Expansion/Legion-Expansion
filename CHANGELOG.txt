@@ -13,7 +13,6 @@
  - Weapon range circles disabled for uncontrollable entities
  - Earthshaker camera shake reduced by 50%
  - Necromancer's Purgers no longer selectable with factory built Purgers and have been coloured red to distinguish them
-   - This is to resolve an issue with the appropriate aggro radius being different for the two units
  - Strategic icons now show for jumping Purgers and Investigators
 
 ###### Balance
@@ -57,7 +56,7 @@
  - Salamander drop turret no longer plays fire effect when it dies
  - Mixed UI action bar now transparent like the MLA UI
  - Mixed UI planet list bar now transparent and no longer blocks metal counts
- - Necromancer Purgers now properly agro units at long range automatically
+ - Necromancer Purgers now properly attack units at long range automatically
  - Imperator ground attack drones no longer missing unit selection portraits
  - Orbweaver muzzle flash now appears in the correct position
  - Error in Thor animations fixed
