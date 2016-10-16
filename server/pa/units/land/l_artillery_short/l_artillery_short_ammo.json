@@ -20,7 +20,9 @@
   },
   "influence_radius": 400,
   "initial_velocity": 150,
-  "lifetime": 30,
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_damage": 200,
   "splash_damages_allies": false,
   "splash_radius": 18

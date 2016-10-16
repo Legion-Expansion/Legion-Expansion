@@ -96,7 +96,9 @@
   "physics": {
     "allow_pushing": false,
     "allow_underground": false,
-    "ignore_collisions": true,
+    "collide_with_types": [
+      "Projectile"
+    ],
     "push_sideways": false,
     "radius": 1,
     "shape": "Box",

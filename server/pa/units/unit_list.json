@@ -108,6 +108,7 @@
     "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher.json",
     "/pa/units/land/artillery_long/artillery_long.json",
     "/pa/units/land/l_necromancer/l_necromancer.json",
+    "/pa/units/land/l_necromancer/minion/minion.json",
     "/pa/units/land/l_artillery_long/l_artillery_long.json",
     "/pa/units/land/artillery_short/artillery_short.json",
     "/pa/units/land/l_artillery_short/l_artillery_short.json",
@@ -291,6 +292,7 @@
     "/pa/units/orbital/l_titan_orbital/l_titan_orbital.json",
     "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun.json",
     "/pa/units/orbital/l_orbital_probe/l_orbital_probe.json",
+    "/pa/units/orbital/l_orbital_battleship/l_drone/l_drone.json",
     "/pa/units/land/l_titan_structure/l_titan_structure.json",
     "/pa/units/land/l_swarm_hive/l_swarm_hive.json",
     "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm.json"

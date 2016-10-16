@@ -8,7 +8,6 @@
   "damage": 50,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/missile_tactical",
       "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   },
@@ -24,9 +23,7 @@
   "max_velocity": 110.0,
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 5,
-    "ignore_gravity": false,
-    "radius": 1
+    "ignore_gravity": false
   },
   "splash_damage": 10,
   "splash_radius": 6,

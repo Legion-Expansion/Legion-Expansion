@@ -1,33 +1,28 @@
 /*legion theme skin*/
 .legion .section_content {
-    height: calc(100% - 190px) !important;
     background: rgba(15,0,0,0.3) !important;
     color: (white);
 }
 
-.legion .section_title { 
-    height: 50px;
-    padding: 5px 0px 0px 0px;
+.legion .section_content_table {
+    border-image: url('coui://ui/mods/com.pa.legion-expansion/img/img_panel_std.png') 29 53 53 29 fill;
 }
 
-.legion .section_content .game_settings .section {
-    color: white;
+.legion .game_roster {
+    border-image: url('coui://ui/mods/com.pa.legion-expansion/img/img_panel_secondary.png') 33 46 46 33 fill;
 }
 
 .legion .section_content .section_header {
     text-shadow: 0px 0px 15px rgba(255,0,0,.5); 
 }
 
-.legion .game_settings .section .form-control {
-    background: none;
-}
-
 .legion .chat_container {
     border: 1px solid rgba(130,0,0,0.4);
 }
 
-.legion .section {
+.legion .section .section_header, .spectator_section_header {
     border-top: 1px solid rgba(130,0,0,0.35);
+    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
 }
 
 .legion .div-system-picker {
@@ -51,54 +46,6 @@
     background: rgba(255,0,0,0.7) !important;
     border:1px solid rgba(158, 0, 0, 1) !important;
     box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
-}
-
-.legion .section_content_table {
-    border-image: none;
-}
-
-.legion:not(.gLobbySystemPreview) .section_wrapper {
-    margin: 2%;
-    height: 96%;
-    background: rgba(10,0,0,0.8);
-    border-left: 15px solid rgba(10,0,0,0);
-    border-right: 15px solid rgba(10,0,0,0);
-    box-shadow: 0px 0px 40px rgba(15,0,0,1);
-}
-
-.legion .col_2 {
-    margin: 10px 0px 10px 10px;
-    padding: 22px 0px 0px 20px;
-    border: 1px solid rgba(125,0,0,0.5);
-    background: linear-gradient(rgba(80,0,0,0.3),rgba(80,0,0,0.15));
-    box-shadow: 0px 0px 30px rgba(15, 0, 0, 0.8);
-    display: block;
-    height: 100%;
-}
-
-.legion:not(.gLobbySystemPreview) .armies-wrapper {
-    overflow-x: hidden;
-    border: 1px solid rgba(158,0,0,0.25);
-    background: rgba(100,0,0,0.5);
-    box-shadow: inset 0px 0px 30px rgba(30, 0, 0, 0.5);
-    padding: 8px 0px 0px 8px;
-    margin: 0px -10px -10px;
-    color: white;
-}
-
-.legion .game_roster {
-    border-image: none;
-    max-width: calc(100% - 55px);
-    max-height: calc(100% - 55px);    
-}
-
-.legion .roster_table {
-    height: calc(100% + 12px);
-}
-
-.legion .section .section_header, .spectator_section_header {
-    border-top: none !important;
-    text-shadow: 0px 0px 10px rgba(255,0,0,0.5) !important;
 }
 
 .legion .container_embed.spectator {
@@ -127,7 +74,6 @@
     border: 1px solid rgba(158,0,0,0.5);
     box-shadow: inset 0px 0px 15px rgba(15,0,0,0.8);
     background: rgba(70,0,0,1);
-    margin: 0px 3px 0px 20px;
 }
 
 .legion .army-header {
@@ -143,15 +89,15 @@
 }
 
 .legion .div-color-picker {
-    background: rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
-    border: none;
+    background: rgba(20,0,0,1);
+    box-shadow: inset 0px 0px 10px rgba(90,0,0,0.5);
+    border: 1px solid rgba(120,0,0,0.6);
 }
 
 .legion .div-commander-picker {
-    background: rgba(0,0,0,1);
-    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
-    border: none;
+    background: rgba(20,0,0,1);
+    box-shadow: inset 0px 0px 10px rgba(90,0,0,0.5);
+    border: 1px solid rgba(120,0,0,0.6);
     padding: 1px;
 }
 
@@ -179,10 +125,41 @@
 .legion .btn_hero {
     margin: 0px 0px 0px 0px !important;
 }
-    
-.legion .btn_add_ai {
+
+.legion .slot-controls .btn {    
+    background: none !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,0.5) !important;
+    border: 1px solid black !important;
+    color: white !important;    
     text-align: center;
     margin: 0px 0px 0px 0px;
+}
+
+.legion .slot-controls .dropdown-menu .text {
+    text-shadow: 0px 0px 15px rgba(255,255,255,.2) !important;
+}
+
+.legion .slot-controls .dropdown-menu {    
+    background: rgba(70,70,70,1) !important;
+    border: 1px solid #262626 !important;
+}
+
+.legion .slot-controls .dropdown-menu > li > a {
+    border-top: 1px solid rgba(0,0,0,1) !important;
+    box-shadow: 0px 0px 10px rgba(255,255,255,.3) !important;
+}
+
+.legion .slot-controls .dropdown-menu > li > a:hover {
+    background: rgba(100,100,100,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
+}
+
+.legion .slot-controls .dropdown-menu > li > a:focus {
+    background: rgba(120,120,120,1) !important;
+    border: 1px solid rgba(50,50,50,0.5) !important;
+    outline: none !important;
+    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
 }
 
 .legion .form-control-personality .btn-group .btn{
@@ -195,71 +172,12 @@
     text-shadow: 0px 0px 15px rgba(255,255,255,.2) !important;
 }
 
-.legion .form-control-personality .dropdown-menu {
-    background: rgba(70,70,70,1) !important;
-    border: 1px solid #262626 !important;
+.legion .armies-wrapper {
+    color: white;
 }
 
-.legion .form-control-personality .dropdown-menu > li > a:hover {
-    background: rgba(100,100,100,1) !important;
-    border: 1px solid rgba(50,50,50,0.5) !important;
-    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
-}
-
-.legion .form-control-personality .dropdown-menu > li > a:focus {
-    background: rgba(120,120,120,1) !important;
-    border: 1px solid rgba(50,50,50,0.5) !important;
-    outline: none !important;
-    box-shadow: inset 0px 0px 8px rgba(255,255,255,.3) !important;
-}
-
-/* legion welcome */
-
-#legion-welcome {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9999;
-    background-color: rgba(0,0,0,0.6);
-    text-align: center;
-}
-
-#legion-welcome-wrapper {
-    width: 100%;
-    height: 100%;
-    display: table;
-}
-
-#legion-welcome-container {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#legion-welcome-splash {
-    max-width: 95%;
-    max-height: 95%;
-}
-
-#legion-welcome-content {
-    position: absolute;
-    top: 60%;
-    left: 15%;
-    width: 70%;
-    font-size: 22px;
-}
-
-#legion-welcome-links a {
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-#legion-welcome-close {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 85%;
+.legion:not(.lobby-system-preview) .armies-wrapper {
+    background: rgba(100,0,0,0.5);
+    border: 1px solid rgba(158,0,0,0.25);
+    box-shadow: inset 0px 0px 30px rgba(30, 0, 0, 0.5);
 }

@@ -73,7 +73,7 @@
       "idle": "/pa/units/commanders/l_overwatch/l_overwatch_idle.papa",
       "walk": "/pa/units/commanders/l_overwatch/l_overwatch_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/commander_legion_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/commander_overwatch_anim_tree.json",
     "filename": "/pa/units/commanders/l_overwatch/l_overwatch.papa",
     "walk_speed": 6
   },

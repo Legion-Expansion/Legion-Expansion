@@ -30,10 +30,12 @@
       ]
     }
   },
+  "show_strategic_icon": true,
   "sim_fire_effect": "/pa/units/land/l_scout_bot/l_scout_bot_land_ent.json",
   "spawn_unit_on_death": "/pa/units/land/l_scout_bot/l_scout_bot.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_damages_allies": false,
-  "splash_radius": 0
+  "splash_radius": 0,
+  "strategic_icon_priority": 0
 }

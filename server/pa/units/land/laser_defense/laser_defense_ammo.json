@@ -1,0 +1,18 @@
+{
+  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
+  "damage": 75,
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/land/laser_defense/laser_defense_ammo_hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/laser_defense/laser_defense_ammo_trail.pfx"
+  },
+  "initial_velocity": 500.0,
+  "lifetime": 2,
+  "max_velocity": 500.0,
+  "physics": {
+    "add_to_spatial_db": true
+  }
+}

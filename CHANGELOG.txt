@@ -1,8 +1,80 @@
 ## CHANGELOG
 
-#### v0.17.0 - xxxx/xx/xx
+#### v0.18.0 - 2016/10/03
+
+###### IMPORTANT
+
+ - The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
+ - Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
+ - Report any crashes experienced while playing with Legion
+   - Windows - https://wiki.palobby.com/wiki/Windows#Reporting_Windows_Issues
+   - OS X - https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues
+   - Linux - https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues
 
 ###### General
+
+ - Anti-air symbol added to Jaeger build bar icon
+ - Weapon range circles disabled for uncontrollable entities
+ - Earthshaker camera shake reduced by 50%
+ - Necromancer's Purgers no longer selectable with factory built Purgers and have been coloured red to distinguish them
+ - Strategic icons now show for jumping Purgers and Investigators
+
+###### Balance
+
+ - Rampart nerf
+   - Shield no longer starts fully charged when built
+ - Earthshaker buff
+  - Rate of fire changed from 4 to 3.3
+  - Damage decreased from 1500 to 1200
+  - Splash damage decreased from 500 to 400
+ - Scorpion buff
+  - Ammo velocity increased to 110
+ - Loki buff
+   - Rate of fire changed from 3 to 2
+   - Main gun damage modifier against air units changed from 0.75 to 0.5
+ - Enforcer nerf
+   - Range decreased from 110 to 100
+ - Maul nerf
+   - Health decreased from 1300 to 1150
+ - Walker Factory nerf
+   - Metal cost increased from 600 to 660
+ - Armour Foundry nerf
+   - Metal cost increased from 600 to 660
+ - Flyer Foundry nerf
+   - Metal cost increased from 600 to 660
+ - Ship Foundry nerf
+   - Metal cost increased from 600 to 660
+ - Peacekeeper buff
+   - Rate of fire changed from 0.9 to 0.83
+ - Lancer change
+   - Damage increased from 6 to 125
+   - Rate of fire changed from 0.1 to 1.64
+ - Purger nerf
+   - Health decreased from 80 to 70
+
+###### Fixes
+
+ - Black icons caused by memory limit replaced with dots
+ - Animation log errors fixed for a variety of units
+ - Salamander drop turret physics errors fixed
+ - Salamander drop turret no longer plays fire effect when it dies
+ - Mixed UI action bar now transparent like the MLA UI
+ - Mixed UI planet list bar now transparent and no longer blocks metal counts
+ - Necromancer Purgers now properly attack units at long range automatically
+ - Imperator ground attack drones no longer missing unit selection portraits
+ - Orbweaver muzzle flash now appears in the correct position
+ - Error in Thor animations fixed
+ - Kaiju projectiles now properly blocked by Rampart
+ - Jaeger projectiles now properly blocked by Rampart
+ - Legion no longer overrides weapon effect mods
+ - Cleanup of file shadowing
+ - Lobby overlay no longer broken when Legion theme is disabled
+
+
+#### v0.17.0 - 2016/07/18
+
+###### General
+
  - Salamander banking angle increased from 0.25 to 0.5
  - Havoc no longer prefers to be at the back of a formation
  - Removed generic aircraft death explosion effect from Nova bubble
@@ -10,45 +82,59 @@
  - Performance improvements to Nova targeting laser
  - Reduced Loki formation spacing
  - Reduced Meteor formation spacing
- 
+ - Miniman no longer prioritises Commander
+ - New Stoke model
+
 ###### Balance
- - Deathmark nerf
-  - Rate of fire changed from 6 to 7
- - Lockheed buff
-  - Speed, acceleration and deceleration increased from 50 to 60
-  - Turn speed increased from 90 to 120
- - Salamander buff
-  - Health increased from 1000 to 1100
-  - Turn speed increased from 70 to 120
- - Orbweaver nerf
-  - Rate of fire changed from 2 to 1.75
- - Imperator nerf
-  - Drone aggression radius changed from 200 to 100
- - Thor buff
-  - Laser damage increased from 150 to 175
-  - Rocket damage increased from 50 to 100
-  - Rocket splash radius increased from 10 to 15
-  - Rockets more likely to impact in an area around the target
- - Panzer nerf
-  - Missile lifetime decreased from 8 to 5 seconds
- - Nova change
-  - Metal cost increased from 120 to 180
-  - Nova bubble now does 35 aoe damage on death after 1 second
- - Loki buff
-  - Turn acceleration increased from 20 to 30
-  - Turret pitch angle tolerance increased from 0 to 30
- - Lancer nerf
-  - Weapon range decreased from 80 to 77 
- - Meteor nerf
-  - Health decreased from 3000 to 2000
-  - Turn speed increased from 40 to 60
+
+ - Deathmark nerf:
+   - Rate of fire changed from 6 to 7
+ - Lockheed buff:
+   - Speed, acceleration and deceleration increased from 50 to 60
+   - Turn speed increased from 90 to 120
+ - Salamander buff:
+   - Health increased from 1000 to 1100
+   - Turn speed increased from 70 to 120
+ - Orbweaver nerf:
+   - Rate of fire changed from 2 to 1.75
+ - Imperator nerf:
+   - Drone aggression radius changed from 200 to 100
+ - Thor buff:
+   - Laser damage increased from 150 to 175
+   - Rocket damage increased from 50 to 100
+   - Rocket splash radius increased from 10 to 15
+   - Rockets more likely to impact in an area around the target
+ - Panzer nerf:
+   - Missile lifetime decreased from 8 to 5 seconds
+ - Nova change:
+   - Metal cost increased from 120 to 180
+   - Nova bubble now does 35 AOE damage on death after 1 second
+ - Loki buff:
+   - Turn acceleration increased from 20 to 30
+   - Turret pitch angle tolerance increased from 0 to 30
+ - Lancer nerf:
+   - Weapon range decreased from 80 to 75
+ - Meteor nerf:
+   - Health decreased from 3000 to 2000
+   - Turn speed increased from 40 to 60
+ - Havoc buff:
+   - Health decreased from 650 to 450
+   - Speed increased from 12 to 15
+   - Turn speed increased from 60 to 90
+ - Patriot nerf:
+   - Rate of fire per volley decreased from 1 to 0.83
+
 ###### Fixes
+
  - Infiltrator now selects as a combat air unit
  - Thor main cannon less likely to shoot into the ground
  - Scout Bot Radar mode renamed to Investigator Radar mode
  - Nova now properly auto-attacks targets
  - Lockheed bullets now correctly exit from the gun barrel
- 
+ - Lancer no longer fires above tall units at max range
+ - Spoiler land mines no longer block pathing
+
+
 #### v0.16.0 - 2016/06/27
 
 ###### General
