@@ -1,6 +1,6 @@
 {
   "display_name": "Guardian",
-  "description": "Combat Fabrication Vehicle - Builds Turrets, Mines, Radar, and Repairs Friendly Units. Can Reclaim Trees.",
+  "description": "Combat Fabrication Vehicle - Builds Mines and Radar and Repairs Friendly Units. Can Reclaim.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
