@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+#### v1.0.0 - 2016/10/??
+
+###### General
+
+ - Replace metal texture on multiple units to ensure consistenct across faction
+
+
 #### v0.18.0 - 2016/10/03
 
 ###### IMPORTANT
