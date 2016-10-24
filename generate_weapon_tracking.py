@@ -2,21 +2,20 @@
 # tools for generating this mod
 import os
 import os.path as path
-import posixpath
+from posixpath import join
 import copy
 
-from datetime import datetime
 from shutil import copyfile
 
-from pa_tools.pa.load import Loader
+from pa_tools.pa import pafs
 from pa_tools.pa import paths
 from pa_tools.pa import pajson
 
 print ('PA MEDIA DIR:', paths.PA_MEDIA_DIR)
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
-loader = Loader('server')
-loader.mount('/', paths.PA_MEDIA_DIR)
-loader.mount('/pa', '/pa_ex1')
+fs = pafs('server')
+fs.mount('/', paths.PA_MEDIA_DIR)
+fs.mount('/pa', '/pa_ex1')
 
 with open("server/pa/units/land/l_shield_gen/anti_entity_targets.json",'r',encoding='utf8') as file:
     targets, warnings = pajson.load(file)
@@ -62,8 +61,8 @@ def _parseSpec(file_path):
     if file_path in _cache:
         return _cache[file_path]
 
-    global loader
-    resolved_file_path = loader.resolveFile(file_path)
+    global fs
+    resolved_file_path = fs.resolveFile(file_path)
 
     with open(resolved_file_path,'r',encoding='utf8') as file:
         spec, warnings = pajson.load(file)
@@ -103,8 +102,8 @@ for target in targets:
         src_hit_file = ammo['events']['died']['effect_spec']
 
         # construct the new effect names relative to the location of the actual ammo file
-        dst_trail_file = posixpath.join(ammo_dir, ammo_name + '_trail.pfx')
-        dst_hit_file = posixpath.join(ammo_dir, ammo_name + '_hit.pfx')
+        dst_trail_file = join(ammo_dir, ammo_name + '_trail.pfx')
+        dst_hit_file = join(ammo_dir, ammo_name + '_hit.pfx')
 
         ammo['fx_trail']['filename'] = dst_trail_file
         ammo['events']['died']['effect_spec'] =  dst_hit_file
@@ -121,8 +120,8 @@ for target in targets:
         os.makedirs('client' + ammo_dir, exist_ok=True)
 
         # copy client files
-        copyfile(loader.resolveFile(src_hit_file), 'client' + dst_hit_file)
-        copyfile(loader.resolveFile(src_trail_file), 'client' + dst_trail_file)
+        copyfile(fs.resolveFile(src_hit_file), 'client' + dst_hit_file)
+        copyfile(fs.resolveFile(src_trail_file), 'client' + dst_trail_file)
 
     with open('server' + target, 'w', encoding='utf-8') as ammo_file:
         pajson.dump(ammo, ammo_file)
