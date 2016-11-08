@@ -117,7 +117,6 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1",
-	"UNITTYPE_Custom2"
+    "UNITTYPE_Custom1"
   ]
 }
