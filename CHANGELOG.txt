@@ -1,10 +1,15 @@
 ## CHANGELOG
 
-#### v1.0.0 - 2016/10/??
+#### v1.0.0 - 2016/??/??
 
 ###### General
 
- - Replace metal texture on multiple units to ensure consistenct across faction
+ - Replace metal texture on multiple units to ensure consistency across faction
+ - Guardian tooltip more accurately describes its abilities
+
+###### Fixes
+
+ - Holocene correctly flagged as a Titan
 
 
 #### v0.18.0 - 2016/10/03
