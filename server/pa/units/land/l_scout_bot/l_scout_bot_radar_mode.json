@@ -164,8 +164,7 @@
     "UNITTYPE_NoBuild",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
-    "UNITTYPE_Custom1",
-	"UNITTYPE_Custom2"
+    "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }
