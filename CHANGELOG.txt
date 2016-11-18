@@ -6,6 +6,7 @@
 
  - Replace metal texture on multiple units to ensure consistency across faction
  - Guardian tooltip more accurately describes its abilities
+ - Disabled the AI building the Starcannon due to some associated server crashes
 
 ###### Fixes
 
