@@ -6,7 +6,7 @@
   "max_range": 140,
   "pitch_range": 40,
   "pitch_rate": 60,
-  "rate_of_fire": 0.3,
+  "rate_of_fire": 0.5,
   "spread_fire": true,
   "target_layers": [
     "WL_LandHorizontal",

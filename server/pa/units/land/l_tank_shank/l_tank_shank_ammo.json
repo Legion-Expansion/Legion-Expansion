@@ -23,5 +23,7 @@
   "physics": {
     "add_to_spatial_db": true
   },
-  "splash_radius": 0
+  "splash_damage": 20,
+  "splash_damages_allies": true,
+  "splash_radius": 5
 }
