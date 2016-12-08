@@ -8,7 +8,7 @@
 
 ###### Balance
 
- - Tanks
+ - Armour
    - Armour Fabricator
      - Speed increased from 10 to 11
    - Shank
