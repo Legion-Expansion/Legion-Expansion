@@ -1,5 +1,60 @@
 ## CHANGELOG
 
+#### v1.0 - 2016/12/22
+
+###### General
+
+ - Removed BETA from Legion UI and added version number
+
+###### Balance
+
+ - Tanks
+   - Armour Fabricator
+     - Speed increased from 10 to 11
+   - Shank
+     - Speed increased from 8 to 10
+     - Health decreased from 420 to 300
+   - Corsair
+     - Cost decreased from 405 to 350
+     - Health increased from  125 to 175
+   - Scorpion
+     - Rate of fire increased from 0.3 to 0.5
+  - Walkers
+    - Purger
+      - Cost decreased from 75 to 50
+      - Health decreased from 70 to 10
+      - Splash increased from 50 to 150
+    - Patriot
+      - Rate of fire decreased from 8 to 4
+    - Monstrosity
+      - Braking rate increased from 10 to 100
+      - Cost decreased from 1800 to 1700
+  - Naval
+    - Jaeger
+      - Damage decreased from 1500 to 750
+      - Rate of fire increased from 0.25 to 0.5
+  - Air
+    - Lockheed
+      - Health decreased from 450 to 400
+  - Structures
+    - Jackal
+      - Cost increased from 150 to 350
+      - Damage decreased from 30 to 10
+      - Rate of fire increased from 2 to 15
+      - Range increased from 100 to 105
+    - Scarab
+      - Cost increased from 400 to 500
+      - Damage increased from 100 to 300
+      - Rate of fire decreased from 1.75 to 1
+    - Gustav
+      - Splash decreased from 25 to 15
+      - Range increased from 500 to 600
+
+###### Fixes
+
+ - Fixed used of invalid form of RGB curve in fabber spray effects
+
+
 #### v0.18.2 - 2016/11/22
 
 ###### Fixes
