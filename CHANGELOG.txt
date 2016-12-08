@@ -14,8 +14,12 @@
    - Shank
      - Speed increased from 8 to 10
      - Health decreased from 420 to 300
+     - Added splash damage
+       - Damage 5
+       - Radius 20
+       - Damages allies
    - Corsair
-     - Cost decreased from 405 to 350
+     - Cost decreased from 405 to 300
      - Health increased from  125 to 175
    - Scorpion
      - Rate of fire increased from 0.3 to 0.5
