@@ -56,7 +56,7 @@
 
 ###### Fixes
 
- - Fixed used of invalid form of RGB curve in fabber spray effects
+ - Fixed use of invalid form of RGB curve in fabber spray effects
 
 
 #### v0.18.2 - 2016/11/22
