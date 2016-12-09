@@ -8,5 +8,8 @@
   "model": {
     "filename": "/pa/units/sea/torpedo_small/torpedo_small.papa"
   },
-  "turn_rate": 150
+  "turn_rate": 150,
+  "splash_damage": 50,
+  "full_damage_splash_radius": 2,
+  "splash_radius": 10
 }

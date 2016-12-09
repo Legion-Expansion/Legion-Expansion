@@ -49,6 +49,9 @@
       - Rof increased from 4 to 6
     - Epoch
       - Range increased from 400 to 430
+    - Hammerhead
+      - Splash dammage added to torpedo. 50 dammage in a 10 radius with 2 full and then linear
+      - Torpedo range increase from 150 to 200
   - Air
     - Lockheed
       - Health decreased from 450 to 400
