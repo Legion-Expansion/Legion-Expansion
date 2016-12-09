@@ -11,6 +11,7 @@
  - Armour
    - Armour Fabricator
      - Speed increased from 10 to 11
+     - Increased LOS from 100 to 125
    - Shank
      - Speed increased from 8 to 10
      - Health decreased from 420 to 300
@@ -33,6 +34,7 @@
     - Monstrosity
       - Braking rate increased from 10 to 100
       - Cost decreased from 1800 to 1700
+      - Primary weapon damage increased from 1500 to 1650
   - Naval
     - Jaeger
       - Damage decreased from 1500 to 750
@@ -40,7 +42,13 @@
   - Air
     - Lockheed
       - Health decreased from 450 to 400
-  - Structures
+    - Comet
+      - Increased cost from 2500 to 6000
+  - Orbital
+    - Starcannon
+      - Removed Purger
+      - Added Scorpion
+  - Static Weapons
     - Jackal
       - Cost increased from 150 to 350
       - Damage decreased from 30 to 10
