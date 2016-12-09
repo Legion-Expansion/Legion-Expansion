@@ -43,8 +43,10 @@
     - Catfish
       - Laser range decreased from 120 to 100
       - Speed decreased from 20 to 18
-    -Talos
+    - Talos
       - Range increase from 150 to 180
+    - Manta
+      - Rof increased from 4 to 6
   - Air
     - Lockheed
       - Health decreased from 450 to 400
