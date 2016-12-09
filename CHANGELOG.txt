@@ -39,6 +39,9 @@
     - Jaeger
       - Damage decreased from 1500 to 750
       - Rate of fire increased from 0.25 to 0.5
+      - Range increased from 180 to 250
+    - Catfish
+      - Laser range decreased from 120 to 100
   - Air
     - Lockheed
       - Health decreased from 450 to 400
