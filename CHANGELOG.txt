@@ -42,6 +42,7 @@
       - Range increased from 180 to 250
     - Catfish
       - Laser range decreased from 120 to 100
+      - Speed decreased from 20 to 18
   - Air
     - Lockheed
       - Health decreased from 450 to 400
