@@ -47,6 +47,8 @@
       - Range increase from 150 to 180
     - Manta
       - Rof increased from 4 to 6
+    - Epoch
+      - Range increased from 400 to 430
   - Air
     - Lockheed
       - Health decreased from 450 to 400
