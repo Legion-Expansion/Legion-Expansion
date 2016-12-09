@@ -43,7 +43,7 @@
     - Lockheed
       - Health decreased from 450 to 400
     - Comet
-      - Increased cost from 2500 to 6000
+      - Increased cost from 2500 to 4000
   - Orbital
     - Starcannon
       - Removed Purger
