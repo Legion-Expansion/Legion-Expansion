@@ -20,7 +20,7 @@
        - Damages allies
    - Corsair
      - Cost decreased from 405 to 300
-     - Health increased from  125 to 175
+     - Health increased from 125 to 175
    - Scorpion
      - Rate of fire increased from 0.3 to 0.5
   - Walkers
