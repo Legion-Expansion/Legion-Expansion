@@ -52,8 +52,12 @@
     - Epoch
       - Range increased from 400 to 430
     - Hammerhead
-      - Splash damage added to torpedo. 50 damage in a 10 radius with 2 full and then linear
       - Torpedo range increase from 150 to 200
+      - Added splash damage
+        - Damage 50
+        - Radius 10
+        - Full damage radius 2
+        - Linear fall-off
   - Air
     - Lockheed
       - Health decreased from 450 to 400
