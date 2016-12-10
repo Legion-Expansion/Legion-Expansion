@@ -22,6 +22,8 @@
    - Corsair
      - Cost decreased from 405 to 300
      - Health increased from 125 to 175
+   - Panzer
+     - Reloade time decreased from 9 sec to 4.5 sec
    - Scorpion
      - Rate of fire increased from 0.3 to 0.5
   - Walkers
@@ -46,7 +48,7 @@
     - Talos
       - Range increase from 150 to 180
     - Manta
-      - Rof increased from 4 to 6
+      - Rof aa increased from 4 to 6
     - Epoch
       - Range increased from 400 to 430
     - Hammerhead

@@ -1,6 +1,6 @@
 {
   "ammo_capacity": 9,
-  "ammo_demand": 1,
+  "ammo_demand": 0.5,
   "ammo_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
   "ammo_per_shot": 3,
   "ammo_source": "time",
