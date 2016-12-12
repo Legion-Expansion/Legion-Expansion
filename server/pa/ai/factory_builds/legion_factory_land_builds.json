@@ -472,8 +472,7 @@
         ]
       ],
       "builders": [
-        "LegionFactoryBasicBot",
-        "LegionOrbitalAdvancedCannon"
+        "LegionFactoryBasicBot"
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -1597,7 +1596,8 @@
         ]
       ],
       "builders": [
-        "LegionFactoryAdvancedVehicle"
+        "LegionFactoryAdvancedVehicle",
+        "LegionOrbitalAdvancedCannon"
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
