@@ -5,6 +5,7 @@
 ###### General
 
  - Removed BETA from Legion UI and added version number
+ - Updated AI for changes to Starcannon buildable units
 
 ###### Balance
 
