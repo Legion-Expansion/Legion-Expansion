@@ -24,6 +24,5 @@
     "add_to_spatial_db": true
   },
   "splash_damage": 20,
-  "splash_damages_allies": true,
   "splash_radius": 5
 }

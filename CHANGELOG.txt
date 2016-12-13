@@ -19,7 +19,6 @@
      - Added splash damage
        - Damage 5
        - Radius 20
-       - Damages allies
    - Corsair
      - Cost decreased from 405 to 300
      - Health increased from 125 to 175
