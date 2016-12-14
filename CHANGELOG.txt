@@ -25,7 +25,7 @@
    - Panzer
      - Reload time decreased from 9 sec to 4.5 sec
    - Scorpion
-     - Rate of fire increased from 0.3 to 0.5
+     - Rate of fire increased from 0.3 to 0.4
   - Walkers
     - Purger
       - Cost decreased from 75 to 50
