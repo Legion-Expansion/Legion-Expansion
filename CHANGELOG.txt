@@ -29,7 +29,7 @@
   - Walkers
     - Purger
       - Cost decreased from 75 to 50
-      - Health decreased from 70 to 10
+      - Health decreased from 70 to 40
       - Splash increased from 50 to 150
     - Patriot
       - Rate of fire decreased from 8 to 4
