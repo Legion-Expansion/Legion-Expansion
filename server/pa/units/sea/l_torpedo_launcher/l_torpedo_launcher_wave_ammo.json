@@ -10,5 +10,5 @@
   "max_velocity": 75.0,
   "splash_damage": 0,
   "splash_radius": 0,
-  "turn_rate": 30
+  "turn_rate": 60
 }
