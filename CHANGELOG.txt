@@ -84,6 +84,7 @@
 ###### Fixes
 
  - Fixed use of invalid form of RGB curve in fabber spray effects
+ - Fixed Ripple and Tsunami torpedoes colliding with the sea floor on certain maps
 
 
 #### v0.18.2 - 2016/11/22
