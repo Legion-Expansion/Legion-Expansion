@@ -1,5 +1,6 @@
 {
   "base_spec": "/pa/ammo/torpedo/torpedo.json",
+  "cruise_height": 2,
   "damage": 50,
   "fx_trail": {
     "filename": "/pa/effects/specs/wave.pfx"
