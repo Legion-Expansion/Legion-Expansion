@@ -1,6 +1,6 @@
 {
   "display_name": "Infiltrator",
-  "description": "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy",
+  "description": "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy. Interplanetary.",
   "TEMP_texelinfo": 17,
   "audio": {
     "loops": {
@@ -13,7 +13,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 500,
+  "build_metal_cost": 280,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -75,8 +75,7 @@
       "type": "moving_forward"
     }
   ],
-  "guard_layer": "WL_AnySurface",
-  "guard_radius": -110,
+  "gravwell_velocity_multiplier": 6.2,
   "max_health": 250,
   "mesh_bounds": [
     23.7,
@@ -92,19 +91,26 @@
     "filename": "/pa/units/air/l_air_scout_adv/l_air_scout_adv.papa"
   },
   "navigation": {
-    "acceleration": 60,
-    "bank_factor": 2,
+    "acceleration": 300,
+    "inter_planetary_type": "system",
+	"bank_factor": 2,
     "brake": 60,
-    "move_speed": 90,
-    "turn_speed": 180
+    "move_speed": 100,
+    "turn_speed": 180,
+	"vertical_speed": 90
   },
   "recon": {
+    
+	"observable": {
+      "ignore_radar": true,
+      "layer": "surface_and_air"
+    },
     "observer": {
       "items": [
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 300,
+          "radius": 400,
           "shape": "capsule",
           "uses_energy": true
         },
@@ -145,26 +151,6 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "gun01",
-        "gun02",
-        "gun03"
-      ],
-      "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "gun04",
-        "gun05",
-        "gun06"
-      ],
-      "projectiles_per_fire": 1,
-      "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
       "muzzle": "light",
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_vision_tool_weapon.json"
@@ -172,7 +158,6 @@
   ],
   "unit_types": [
     "UNITTYPE_Scout",
-    "UNITTYPE_Offense",
     "UNITTYPE_Mobile",
     "UNITTYPE_Air",
     "UNITTYPE_Advanced",
