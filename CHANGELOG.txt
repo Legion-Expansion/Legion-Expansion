@@ -23,7 +23,7 @@
      - Cost decreased from 405 to 300
      - Health increased from 125 to 175
    - Panzer
-     - Reload time decreased from 9 sec to 4.5 sec
+     - Reload time decreased from 9 sec to 6 sec
    - Scorpion
      - Rate of fire increased from 0.3 to 0.4
   - Walkers
