@@ -80,7 +80,7 @@
       - Damage increased from 100 to 300
       - Rate of fire decreased from 1.75 to 1
     - Gustav
-      - Range increased from 500 to 400
+      - Range decreased from 500 to 400
 
 ###### Fixes
 
