@@ -37,6 +37,8 @@
       - Braking rate increased from 10 to 100
       - Cost decreased from 1800 to 1700
       - Primary weapon damage increased from 1500 to 1650
+    - Miniman
+      - Speed increased from 6 to 7
   - Naval
     - Jaeger
       - Damage decreased from 1500 to 750
