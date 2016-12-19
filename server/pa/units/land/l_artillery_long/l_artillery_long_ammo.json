@@ -28,5 +28,5 @@
     "gravity_scalar": 25
   },
   "splash_damages_allies": false,
-  "splash_radius": 15
+  "splash_radius": 25
 }

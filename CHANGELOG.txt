@@ -78,8 +78,7 @@
       - Damage increased from 100 to 300
       - Rate of fire decreased from 1.75 to 1
     - Gustav
-      - Splash decreased from 25 to 15
-      - Range increased from 500 to 600
+      - Range increased from 500 to 400
 
 ###### Fixes
 
