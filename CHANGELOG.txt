@@ -39,6 +39,8 @@
       - Primary weapon damage increased from 1500 to 1650
     - Miniman
       - Speed increased from 6 to 7
+    - Enforcer
+      - Cost decreased from 550 to 450
   - Naval
     - Jaeger
       - Damage decreased from 1500 to 750
