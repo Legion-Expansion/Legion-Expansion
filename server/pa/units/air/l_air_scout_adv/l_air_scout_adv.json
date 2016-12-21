@@ -92,16 +92,15 @@
   },
   "navigation": {
     "acceleration": 300,
-    "inter_planetary_type": "system",
-	"bank_factor": 2,
+    "bank_factor": 2,
     "brake": 60,
+    "inter_planetary_type": "system",
     "move_speed": 100,
     "turn_speed": 180,
-	"vertical_speed": 90
+    "vertical_speed": 90
   },
   "recon": {
-    
-	"observable": {
+    "observable": {
       "ignore_radar": true,
       "layer": "surface_and_air"
     },
