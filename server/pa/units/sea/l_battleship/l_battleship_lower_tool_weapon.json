@@ -4,7 +4,7 @@
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "idle_aim_delay": 3.0,
   "max_firing_velocity": 800,
-  "max_range": 400,
+  "max_range": 430,
   "min_firing_velocity": 60,
   "pitch_range": 90,
   "pitch_rate": 90,

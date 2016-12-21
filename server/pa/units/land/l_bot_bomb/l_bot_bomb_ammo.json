@@ -37,7 +37,7 @@
     }
   },
   "show_strategic_icon": true,
-  "splash_damage": 50,
+  "splash_damage": 150,
   "splash_damages_allies": false,
   "splash_radius": 15,
   "strategic_icon_priority": 0

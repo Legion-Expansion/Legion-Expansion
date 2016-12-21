@@ -63,7 +63,7 @@
       ]
     }
   ],
-  "max_health": 420,
+  "max_health": 300,
   "mesh_bounds": [
     4.941,
     6,
@@ -77,7 +77,7 @@
   "navigation": {
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 8,
+    "move_speed": 10,
     "turn_speed": 90
   },
   "physics": {

@@ -1,6 +1,103 @@
 ## CHANGELOG
 
-#### v1.0.0 - 2016/11/18
+#### v1.0 - 2016/12/22
+
+###### General
+
+ - Removed BETA from Legion UI and added version number
+ - Updated AI for changes to Starcannon buildable units
+
+###### Balance
+
+ - Armour
+   - Armour Fabricator
+     - Speed increased from 10 to 11
+     - Increased LOS from 100 to 125
+   - Shank
+     - Speed increased from 8 to 10
+     - Health decreased from 420 to 300
+     - Added splash damage
+       - Damage 5
+       - Radius 20
+   - Corsair
+     - Cost decreased from 405 to 300
+     - Health increased from 125 to 175
+   - Panzer
+     - Reload time decreased from 9 sec to 6 sec
+   - Scorpion
+     - Rate of fire increased from 0.3 to 0.4
+  - Walkers
+    - Purger
+      - Cost decreased from 75 to 50
+      - Health decreased from 70 to 40
+      - Splash increased from 50 to 150
+    - Patriot
+      - Rate of fire decreased from 8 to 4
+    - Monstrosity
+      - Braking rate increased from 10 to 100
+      - Cost decreased from 1800 to 1700
+      - Primary weapon damage increased from 1500 to 1650
+    - Miniman
+      - Speed increased from 6 to 7
+    - Enforcer
+      - Cost decreased from 550 to 450
+  - Naval
+    - Jaeger
+      - Damage decreased from 1500 to 750
+      - Rate of fire increased from 0.25 to 0.5
+      - Range increased from 180 to 250
+    - Catfish
+      - Laser range decreased from 120 to 100
+      - Speed decreased from 20 to 18
+    - Talos
+      - Range increase from 150 to 180
+    - Manta
+      - Rate of fire AA increased from 4 to 6
+    - Epoch
+      - Range increased from 400 to 430
+    - Hammerhead
+      - Torpedo range increase from 150 to 200
+      - Added splash damage
+        - Damage 50
+        - Radius 10
+        - Full damage radius 2
+        - Linear fall-off
+  - Air
+    - Lockheed
+      - Health decreased from 450 to 400
+    - Comet
+      - Increased cost from 2500 to 4000
+  - Orbital
+    - Starcannon
+      - Removed Purger
+      - Added Scorpion
+  - Static Weapons
+    - Jackal
+      - Cost increased from 150 to 350
+      - Damage decreased from 30 to 10
+      - Rate of fire increased from 2 to 15
+      - Range increased from 100 to 105
+    - Scarab
+      - Cost increased from 400 to 500
+      - Damage increased from 100 to 300
+      - Rate of fire decreased from 1.75 to 1
+    - Gustav
+      - Range decreased from 500 to 400
+
+###### Fixes
+
+ - Fixed use of invalid form of RGB curve in fabber spray effects
+ - Fixed Ripple and Tsunami torpedoes colliding with the sea floor on certain maps
+
+
+#### v0.18.2 - 2016/11/22
+
+###### Fixes
+
+ - Correct version shown in UI
+
+
+#### v0.18.1 - 2016/11/22
 
 ###### General
 
