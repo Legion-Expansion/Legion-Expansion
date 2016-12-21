@@ -31,7 +31,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 405,
+  "build_metal_cost": 300,
   "events": {
     "died": {
       "effect_scale": 1.4
@@ -152,7 +152,7 @@
     }
   ],
   "influence_radius": 400,
-  "max_health": 125,
+  "max_health": 175,
   "mesh_bounds": [
     6.468,
     8,

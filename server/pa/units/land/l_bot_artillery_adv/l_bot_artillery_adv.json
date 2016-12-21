@@ -30,7 +30,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 1800,
+  "build_metal_cost": 1700,
   "events": {
     "died": {
       "effect_scale": 1.5
@@ -125,7 +125,7 @@
   "navigation": {
     "acceleration": 10,
     "aggressive_distance": 90,
-    "brake": 10,
+    "brake": 100,
     "group_preference": "front",
     "move_speed": 12,
     "turn_accel": 45,
