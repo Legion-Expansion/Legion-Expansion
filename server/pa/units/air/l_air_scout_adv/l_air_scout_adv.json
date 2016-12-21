@@ -94,8 +94,7 @@
     "bank_factor": 2,
     "brake": 60,
     "move_speed": 100,
-    "turn_speed": 180,
-    "vertical_speed": 90
+    "turn_speed": 180
   },
   "recon": {
     "observable": {
