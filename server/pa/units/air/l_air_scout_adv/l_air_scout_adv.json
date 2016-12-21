@@ -75,7 +75,6 @@
       "type": "moving_forward"
     }
   ],
-  "gravwell_velocity_multiplier": 6.2,
   "max_health": 250,
   "mesh_bounds": [
     23.7,
@@ -94,7 +93,6 @@
     "acceleration": 300,
     "bank_factor": 2,
     "brake": 60,
-    "inter_planetary_type": "system",
     "move_speed": 100,
     "turn_speed": 180,
     "vertical_speed": 90
