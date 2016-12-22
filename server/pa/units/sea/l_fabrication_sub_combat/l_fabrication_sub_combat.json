@@ -1,6 +1,8 @@
 {
+  "display_name": "Wrasse",
+  "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim.",
   "TEMP_texelinfo": 6.95074,
- "audio": {
+  "audio": {
     "loops": {
       "build": {
         "cue": "/SE/Construction/Fab_contruction_beam_loop",
@@ -26,8 +28,6 @@
     "ORDER_Repair",
     "ORDER_Assist"
   ],
- "display_name": "Wrasse",
- "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim.",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
@@ -82,7 +82,7 @@
           "radius": 100,
           "shape": "capsule"
         },
-		 {
+        {
           "channel": "sight",
           "layer": "underwater",
           "radius": 100,
@@ -97,7 +97,7 @@
       ]
     }
   },
-"spawn_layers": "WL_Underwater",
+  "spawn_layers": "WL_Underwater",
   "tools": [
     {
       "aim_bone": "bone_root",
@@ -109,7 +109,7 @@
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
-	"UNITTYPE_Custom1",
-	"UNITTYPE_FactoryBuild"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_FactoryBuild"
   ]
 }
