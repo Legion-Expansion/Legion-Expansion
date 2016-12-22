@@ -27,7 +27,7 @@
     "ORDER_Assist"
   ],
  "display_name": "Wrasse",
- "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim.",
+ "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim. Can spot mines",
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/fab"
