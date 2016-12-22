@@ -1,6 +1,6 @@
 {
   "display_name": "Wrasse",
-  "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim.",
+  "description": "Combat Fabrication sub - Repairs Friendly Units. Can Reclaim. Can spot mines.",
   "TEMP_texelinfo": 6.95074,
   "audio": {
     "loops": {

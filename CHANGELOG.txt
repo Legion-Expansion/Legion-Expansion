@@ -49,6 +49,7 @@
     - Catfish
       - Laser range decreased from 120 to 100
       - Speed decreased from 20 to 18
+      - Can no longer see mines
     - Talos
       - Range increase from 150 to 180
     - Manta
