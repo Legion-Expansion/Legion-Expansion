@@ -3,7 +3,7 @@
   "description": "I wonder what is inside this evil cocoon",
   "TEMP_texelinfo": 6.38702,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 100,
+  "build_metal_cost": 50,
   "damageable": false,
   "death": {
     "decals": []
