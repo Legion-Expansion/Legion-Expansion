@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+#### v1.0.1 - 2016/12/22
+
+ - Fixed Jaeger splash being twice its weapon's damage
+
+
 #### v1.0 - 2016/12/22
 
 ###### General
