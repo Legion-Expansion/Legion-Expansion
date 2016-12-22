@@ -106,6 +106,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Offense",
+    "UNITTYPE_Construction",
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
