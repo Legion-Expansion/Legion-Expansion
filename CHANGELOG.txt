@@ -63,9 +63,10 @@
         - Full damage radius 2
         - Linear fall-off
      - Wrasse
-        - Can reclaim commander (40m/ 350e)
-        - Can spot mines
-        - Can repair units 
+        - Tier 1 combat fabricator
+        - Spot mines
+        - Repairs units
+        - Reclaims
   - Air
     - Lockheed
       - Health decreased from 450 to 400
