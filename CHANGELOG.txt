@@ -6,6 +6,7 @@
 
  - Removed BETA from Legion UI and added version number
  - Updated AI for changes to Starcannon buildable units
+ - AI can build Wrasse
 
 ###### Balance
 
@@ -64,9 +65,10 @@
         - Full damage radius 2
         - Linear fall-off
      - Wrasse
-        - Can reclaim commander (40m/ 350e)
-        - Can spot mines
-        - Can repair units 
+        - Combat fabricator
+        - Reclaims
+        - Spot mines
+        - Repairs units
   - Air
     - Lockheed
       - Health decreased from 450 to 400
@@ -93,6 +95,7 @@
 
  - Fixed use of invalid form of RGB curve in fabber spray effects
  - Fixed Ripple and Tsunami torpedoes colliding with the sea floor on certain maps
+ - Necromancer Purger metal value set to match that of the Purger
 
 
 #### v0.18.2 - 2016/11/22
