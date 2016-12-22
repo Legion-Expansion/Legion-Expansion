@@ -22,6 +22,6 @@
     "add_to_spatial_db": true,
     "gravity_scalar": 8
   },
-  "splash_damage": 1500,
+  "splash_damage": 750,
   "splash_radius": 5
 }
