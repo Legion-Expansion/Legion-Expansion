@@ -7,7 +7,7 @@ if ( ! legionExpansionLoaded )
      api.mods.getMountedMods('server', function(mods) {
          var legionServerLoaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance' ] ).length > 0;
          if(legionServerLoaded){
-            $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion 1.0.1</div>");
+            $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion 1.0.2</div>");
          }
 
      });
