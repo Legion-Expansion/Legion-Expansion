@@ -170,7 +170,6 @@
     "UNITTYPE_SelfDestruct",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important",
-    "UNITTYPE_Custom1",
-    "UNITTYPE_Titan"
+    "UNITTYPE_Custom1"
   ]
 }
