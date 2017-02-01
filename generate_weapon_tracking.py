@@ -8,13 +8,13 @@ import copy
 from datetime import datetime
 from shutil import copyfile
 
-from pa_tools.pa.load import Loader
+from pa_tools.pa import pafs
 from pa_tools.pa import paths
 from pa_tools.pa import pajson
 
 print ('PA MEDIA DIR:', paths.PA_MEDIA_DIR)
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
-loader = Loader('server')
+loader = pafs('server')
 loader.mount('/', paths.PA_MEDIA_DIR)
 loader.mount('/pa', '/pa_ex1')
 
