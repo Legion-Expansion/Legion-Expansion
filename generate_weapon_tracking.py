@@ -100,15 +100,20 @@ for target in targets:
     full_ammo_spec = _parseSpec(target)
     ammo = _loadSpec(target)
 
+    original_spec = copy.deepcopy(ammo)
+
     if 'Projectile' not in full_ammo_spec['ammo_type']:
         print ('Skipping (reason: ammo type ' + full_ammo_spec['ammo_type'] + ')')
         continue
 
-    ammo['physics'] = ammo.get('physics', {})
-    ammo['physics']['add_to_spatial_db'] = True
+    if full_ammo_spec['physics'].get('add_to_spatial_db', False):
+        continue
 
     is_legion = '/l_' in target
     if not is_legion:
+        ammo['physics'] = ammo.get('physics', {})
+        ammo['physics']['add_to_spatial_db'] = True
+
         # get the vanila effect that we are going to duplicate
         src_trail_file = full_ammo_spec['fx_trail']['filename']
         src_hit_file = full_ammo_spec['events']['died']['effect_spec']
@@ -124,6 +129,8 @@ for target in targets:
         ammo['events']['died'] = ammo['events'].get('died', {})
         ammo['events']['died']['effect_spec'] =  dst_hit_file
 
+    if ammo == original_spec:
+        continue
 
     # prepare files:
     os.makedirs('server' + ammo_dir, exist_ok=True)
