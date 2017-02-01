@@ -26,7 +26,9 @@
   },
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 7
+    "allow_underground": true,
+    "gravity_scalar": 7,
+    "radius": 1
   },
   "splash_damage": 200,
   "splash_damages_allies": false,

@@ -4,5 +4,8 @@
   "initial_velocity": 200.0,
   "lifetime": 1.0,
   "max_velocity": 200.0,
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "turn_rate": 3600.0
 }

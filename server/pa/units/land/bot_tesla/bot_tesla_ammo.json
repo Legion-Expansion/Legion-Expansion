@@ -16,7 +16,10 @@
   "max_velocity": 180.0,
   "physics": {
     "add_to_spatial_db": true,
-    "gravity_scalar": 8
+    "allow_underground": true,
+    "gravity_scalar": 8,
+    "radius": 1,
+    "type": "Projectile"
   },
   "splash_damage": 50,
   "splash_radius": 10
