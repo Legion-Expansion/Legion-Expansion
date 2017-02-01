@@ -1,5 +1,6 @@
 {
   "base_spec": "/pa/ammo/torpedo/torpedo.json",
+  "cruise_height": 2,
   "damage": 250,
   "events": {
     "died": {
@@ -12,6 +13,9 @@
   "initial_velocity": 5.0,
   "lifetime": 4.0,
   "max_velocity": 50.0,
+  "model": {
+    "filename": "/pa/units/sea/torpedo/torpedo.papa"
+  },
   "physics": {
     "add_to_spatial_db": true
   },

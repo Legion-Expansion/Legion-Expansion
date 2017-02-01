@@ -16,6 +16,9 @@
   "model": {
     "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
   },
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_damage": 10,
   "splash_radius": 0.75
 }

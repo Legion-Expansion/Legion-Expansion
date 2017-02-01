@@ -13,7 +13,12 @@
   "flight_type": "Seeking",
   "full_damage_splash_radius": 1,
   "fx_trail": {
-    "filename": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_ammo_trail.pfx"
+    "filename": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
   },
   "initial_velocity": 100.0,
   "lifetime": 1,

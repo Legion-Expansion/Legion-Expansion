@@ -18,5 +18,8 @@
   "model": {
     "filename": ""
   },
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "turn_rate": 360
 }
