@@ -1,5 +1,5 @@
 'RUN in Command window 
-'cscript papastuff.vbs
+'cscript papastuff_diffuse.vbs
 'DEPENDENCIES
 'ImageMagick installed and in your path (should be default using win installer)
 'Copy Planetary Annihilation Titans\bin_x64\tools\papatran.exe to local resolution dir
