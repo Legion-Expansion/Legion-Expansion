@@ -1,5 +1,17 @@
 ## CHANGELOG
 
+#### v1.0.3
+
+###### General
+
+ - Standardised metal texture across faction to resolve light/dark contrast
+
+###### Fixes
+
+ - Holocene and Wrasse given correct selection shape
+ - Removed further unnecessary files to minimise mod size
+
+
 #### v1.0.2 - 2016/12/30
 
  - Fixed Holocene being buildable by Fabrication Starship
