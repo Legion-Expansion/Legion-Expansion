@@ -64,6 +64,13 @@
       - Speed increased from 6 to 7
     - Enforcer
       - Cost decreased from 550 to 450
+  - Air
+    - Infiltrator
+      - Decreased cost from 500 to 280
+      - Increased acceleration from 60 to 300
+      - Increased speed from 90 to 100
+      - Increased radar range to 400
+      - No longer visible on radar
   - Naval
     - Jaeger
       - Damage decreased from 1500 to 750
