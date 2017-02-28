@@ -7,7 +7,12 @@
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/assault_bot/assault_bot_ammo_trail.pfx"
+    "filename": "/pa/units/land/assault_bot/assault_bot_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
   },
   "initial_velocity": 130.0,
   "lifetime": 1.0,
@@ -15,5 +20,7 @@
   "model": null,
   "physics": {
     "add_to_spatial_db": true
-  }
+  },
+  "splash_damage": 0,
+  "splash_radius": 0
 }

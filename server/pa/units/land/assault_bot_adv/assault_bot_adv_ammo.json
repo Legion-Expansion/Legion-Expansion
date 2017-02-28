@@ -10,8 +10,11 @@
     "filename": "/pa/units/land/assault_bot_adv/assault_bot_adv_ammo_trail.pfx"
   },
   "initial_velocity": 150.0,
+  "lifetime": 2,
   "max_velocity": 150.0,
   "physics": {
     "add_to_spatial_db": true
-  }
+  },
+  "splash_damage": 0,
+  "splash_radius": 0
 }

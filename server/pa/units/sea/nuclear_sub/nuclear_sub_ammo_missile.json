@@ -15,6 +15,9 @@
   "initial_velocity": 140.0,
   "lifetime": 10,
   "max_velocity": 140.0,
+  "model": {
+    "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
+  },
   "physics": {
     "add_to_spatial_db": true
   },

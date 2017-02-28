@@ -19,6 +19,9 @@
   "model": {
     "filename": ""
   },
+  "physics": {
+    "add_to_spatial_db": true
+  },
   "splash_damage": 0,
   "splash_radius": 0
 }

@@ -2,9 +2,10 @@
 # tools for generating this mod
 import os
 import os.path as path
-from posixpath import join
+import posixpath
 import copy
 
+from datetime import datetime
 from shutil import copyfile
 
 from pa_tools.pa import pafs
@@ -13,9 +14,9 @@ from pa_tools.pa import pajson
 
 print ('PA MEDIA DIR:', paths.PA_MEDIA_DIR)
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
-fs = pafs('server')
-fs.mount('/', paths.PA_MEDIA_DIR)
-fs.mount('/pa', '/pa_ex1')
+loader = pafs('server')
+loader.mount('/', paths.PA_MEDIA_DIR)
+loader.mount('/pa', '/pa_ex1')
 
 with open("server/pa/units/land/l_shield_gen/anti_entity_targets.json",'r',encoding='utf8') as file:
     targets, warnings = pajson.load(file)
@@ -61,8 +62,8 @@ def _parseSpec(file_path):
     if file_path in _cache:
         return _cache[file_path]
 
-    global fs
-    resolved_file_path = fs.resolveFile(file_path)
+    global loader
+    resolved_file_path = loader.resolveFile(file_path)
 
     with open(resolved_file_path,'r',encoding='utf8') as file:
         spec, warnings = pajson.load(file)
@@ -73,6 +74,15 @@ def _parseSpec(file_path):
 
     _cache[file_path] = spec
     return copy.deepcopy(spec)
+
+def _loadSpec(file_path):
+    global loader
+    resolved_file_path = loader.resolveFile(file_path)
+
+    with open(resolved_file_path,'r',encoding='utf8') as file:
+        spec, warnings = pajson.load(file)
+
+    return spec
 
 
 """###################################################################################"""
@@ -87,31 +97,40 @@ for target in targets:
     ammo_name = path.splitext(path.basename(target))[0]
 
     # get the spec
-    ammo = _parseSpec(target)
+    full_ammo_spec = _parseSpec(target)
+    ammo = _loadSpec(target)
 
-    if 'Projectile' not in ammo['ammo_type']:
-        print ('Skipping (reason: ammo type ' + ammo['ammo_type'] + ')')
+    original_spec = copy.deepcopy(ammo)
+
+    if 'Projectile' not in full_ammo_spec['ammo_type']:
+        print ('Skipping (reason: ammo type ' + full_ammo_spec['ammo_type'] + ')')
         continue
 
-    ammo['physics']['add_to_spatial_db'] = True
+    if full_ammo_spec['physics'].get('add_to_spatial_db', False):
+        continue
 
     is_legion = '/l_' in target
     if not is_legion:
+        ammo['physics'] = ammo.get('physics', {})
+        ammo['physics']['add_to_spatial_db'] = True
+
         # get the vanila effect that we are going to duplicate
-        src_trail_file = ammo['fx_trail']['filename']
-        src_hit_file = ammo['events']['died']['effect_spec']
+        src_trail_file = full_ammo_spec['fx_trail']['filename']
+        src_hit_file = full_ammo_spec['events']['died']['effect_spec']
 
         # construct the new effect names relative to the location of the actual ammo file
-        dst_trail_file = join(ammo_dir, ammo_name + '_trail.pfx')
-        dst_hit_file = join(ammo_dir, ammo_name + '_hit.pfx')
+        dst_trail_file = posixpath.join(ammo_dir, ammo_name + '_trail.pfx')
+        dst_hit_file = posixpath.join(ammo_dir, ammo_name + '_hit.pfx')
 
+        ammo['fx_trail'] = ammo.get('fx_trail', {})
         ammo['fx_trail']['filename'] = dst_trail_file
+
+        ammo['events'] = ammo.get('events', {})
+        ammo['events']['died'] = ammo['events'].get('died', {})
         ammo['events']['died']['effect_spec'] =  dst_hit_file
 
-
-    # make a minimal ammo spec for the server mod
-    base_ammo = _parseSpec(ammo['base_spec'])
-    ammo = _pruneSpec(ammo, base_ammo)
+    if ammo == original_spec:
+        continue
 
     # prepare files:
     os.makedirs('server' + ammo_dir, exist_ok=True)
@@ -120,8 +139,8 @@ for target in targets:
         os.makedirs('client' + ammo_dir, exist_ok=True)
 
         # copy client files
-        copyfile(fs.resolveFile(src_hit_file), 'client' + dst_hit_file)
-        copyfile(fs.resolveFile(src_trail_file), 'client' + dst_trail_file)
+        copyfile(loader.resolveFile(src_hit_file), 'client' + dst_hit_file)
+        copyfile(loader.resolveFile(src_trail_file), 'client' + dst_trail_file)
 
     with open('server' + target, 'w', encoding='utf-8') as ammo_file:
         pajson.dump(ammo, ammo_file)
