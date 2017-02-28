@@ -14,10 +14,14 @@
 
 #### v1.0.2 - 2016/12/30
 
+###### Fixes
+
  - Fixed Holocene being buildable by Fabrication Starship
 
 
 #### v1.0.1 - 2016/12/22
+
+###### Fixes
 
  - Fixed Jaeger splash being twice its weapon's damage
 
