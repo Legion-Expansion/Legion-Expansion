@@ -1,15 +1,18 @@
 ## CHANGELOG
 
-#### v1.0.3 - 2017/02/28
+#### v1.1 - 2017/02/03
 
 ###### General
 
- - Standardised metal texture across faction to resolve light/dark contrast
+ - Standardised metal texture across faction to resolve light/dark contrast between units
+ - Resolved all instances of tron lines on units
+ - Replaced some low quality textures
 
 ###### Fixes
 
  - Holocene and Wrasse given correct selection shape
  - Removed further unnecessary files to minimise mod size
+ - Catfish strategic icon properly reflects its ability to fire torpedoes and is slightly larger now
 
 
 #### v1.0.2 - 2016/12/30
