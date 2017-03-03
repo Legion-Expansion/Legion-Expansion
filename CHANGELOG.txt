@@ -5,7 +5,7 @@
 ###### General
 
  - Standardised metal texture across faction to resolve light/dark contrast between units
- - Resolved all instances of tron lines on units
+ - Resolved all instances of Tron lines on units
  - Replaced some low quality textures
 
 ###### Fixes
