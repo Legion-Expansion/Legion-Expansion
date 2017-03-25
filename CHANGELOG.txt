@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+#### v1.x
+
+###### General
+
+ - AI puts greater distance between Rigs to avoid chain reactions
+
+
 #### v1.1 - 2017/02/03
 
 ###### General
