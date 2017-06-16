@@ -1,10 +1,17 @@
 ## CHANGELOG
 
-#### v1.x
+#### v1.2
 
 ###### General
 
  - AI puts greater distance between Rigs to avoid chain reactions
+ - Added support for new MLA Commanders
+ - Removed Wrasse
+
+###### Balance
+
+ - Star Cannon
+   - Added three second delay between unit builds (same as Unit Cannon)
 
 
 #### v1.1 - 2017/02/03
