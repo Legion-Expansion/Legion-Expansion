@@ -133,7 +133,6 @@ if ( ! legionExpansionLoaded )
             "l_titan_vehicle": ["titan_vehicle"],
             "l_titan_orbital": ["titan_orbital"],
             "l_titan_structure": ["titan_structure"],
-            "l_fabrication_sub_combat": ["fabrication_ship"],
         }
 
         if (model["requestIcons"]) {

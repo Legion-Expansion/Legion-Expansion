@@ -49,42 +49,6 @@
             "test_type": "AloneOnPlanet"
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
-            "unit_type_string1": "(Naval & Mobile) - Fabber",
-            "value0": 0.1
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Fabrication Barge",
-      "priority": 97,
-      "to_build": "LegionNavalBasicCFab"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
             "boolean": true,
             "test_type": "CanDeployNavalFromBase"
           },
