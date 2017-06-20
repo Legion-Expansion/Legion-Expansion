@@ -503,7 +503,7 @@
       "min_num_assisters": 3,
       "name": "Legion - Orbital Mining Platform",
       "placement_rules": {
-        "buffer": 15
+        "buffer": 75
       },
       "priority": 360,
       "to_build": "LegionEcoAdvancedMine"

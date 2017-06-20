@@ -1,13 +1,13 @@
 {
   "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "99377",
+  "build": "105067",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "server",
-  "date": "2017/03/02",
+  "date": "2017/06/20",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client",
@@ -30,6 +30,10 @@
     ]
   },
   "signature": "not yet implemented",
+<<<<<<< HEAD
   "version": "1.1",
+=======
+  "version": "1.2",
+>>>>>>> release-1.2.0
   "titansOnly": true
 }

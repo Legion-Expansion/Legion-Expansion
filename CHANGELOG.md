@@ -1,11 +1,25 @@
 ## CHANGELOG
 
+#### v1.2 - 2017/06/20
+
+###### General
+
+ - AI puts greater distance between Rigs to avoid chain reactions
+ - Added support for new MLA Commanders
+ - Removed Wrasse
+
+###### Balance
+
+ - Star Cannon
+   - Added three second delay between unit builds (same as Unit Cannon)
+
+
 #### v1.1 - 2017/02/03
 
 ###### General
 
  - Standardised metal texture across faction to resolve light/dark contrast between units
- - Resolved all instances of tron lines on units
+ - Resolved all instances of Tron lines on units
  - Replaced some low quality textures
 
 ###### Fixes

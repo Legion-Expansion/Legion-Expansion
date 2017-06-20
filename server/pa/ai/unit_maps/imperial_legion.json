@@ -243,9 +243,6 @@
     "LegionNavalBasicAA": {
       "spec_id": "/pa/units/sea/l_frigate/l_frigate.json"
     },
-    "LegionNavalBasicCFab": {
-      "spec_id": "/pa/units/sea/l_fabrication_sub_combat/l_fabrication_sub_combat.json"
-    },
     "LegionNavalBasicDestroyer": {
       "spec_id": "/pa/units/sea/l_destroyer/l_destroyer.json"
     },
