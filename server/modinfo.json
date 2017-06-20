@@ -30,10 +30,6 @@
     ]
   },
   "signature": "not yet implemented",
-<<<<<<< HEAD
-  "version": "1.1",
-=======
   "version": "1.2",
->>>>>>> release-1.2.0
   "titansOnly": true
 }
