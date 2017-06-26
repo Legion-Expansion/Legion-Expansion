@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+####
+
+ - Fixed multiple intro buttons appearing when Legion was installed by a player not logged into Ubernet
+
 #### v1.2 - 2017/06/20
 
 ###### General
