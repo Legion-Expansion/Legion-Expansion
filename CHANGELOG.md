@@ -1,8 +1,16 @@
 ## CHANGELOG
 
-####
+#### v1.x.x
+
+###### General
+
+ - Initial lobby pop-up now states how to play as Legion
+
+###### Fixes
 
  - Fixed multiple intro buttons appearing when Legion was installed by a player not logged into Ubernet
+ - POV button coloured to match Legion theme
+
 
 #### v1.2 - 2017/06/20
 
