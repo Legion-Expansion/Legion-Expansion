@@ -5,6 +5,7 @@
 ###### General
 
  - Initial lobby pop-up now states how to play as Legion
+ - Added support for Server Mod Help Chat
 
 ###### Fixes
 
