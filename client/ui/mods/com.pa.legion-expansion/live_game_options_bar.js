@@ -7,7 +7,7 @@ if ( ! legionExpansionLoaded )
      api.mods.getMountedMods('server', function(mods) {
          var legionServerLoaded =  _.intersection( _.pluck( mods, 'identifier' ), [ 'com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance' ] ).length > 0;
          if(legionServerLoaded){
-            $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion 1.2</div>");
+            $(".div_ingame_options_bar_cont").prepend("<div class='watermark'>Legion 1.2.1</div>");
          }
 
      });
@@ -56,6 +56,7 @@ if ( ! legionExpansionLoaded )
                 $('img[src="img/ingame_options_bar/uberbar_show.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_show.png");
                 $('img[src="img/ingame_options_bar/chronocam.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/chronocam.png");
                 $('img[src="img/ingame_options_bar/game_menu.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/game_menu.png");
+				$('img[src="img/ingame_options_bar/pov.png]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pov.png");
 
             }
             if(payload === "mixed"){
@@ -80,6 +81,7 @@ if ( ! legionExpansionLoaded )
                 $('img[src="img/ingame_options_bar/uberbar_show.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_show.png");
                 $('img[src="img/ingame_options_bar/chronocam.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/chronocam.png");
                 $('img[src="img/ingame_options_bar/game_menu.png"]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/game_menu.png");
+				$('img[src="img/ingame_options_bar/pov.png]').attr("src","coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pov.png");
             }
         }
     }
