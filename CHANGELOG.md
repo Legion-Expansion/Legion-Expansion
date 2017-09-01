@@ -1,11 +1,10 @@
 ## CHANGELOG
 
-#### v1.x.x
+#### v1.2.1 - 2017/09/01
 
 ###### General
 
  - Initial lobby pop-up now states how to play as Legion
- - Added support for Server Mod Help Chat
 
 ###### Fixes
 
