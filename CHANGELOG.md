@@ -2,9 +2,14 @@
 
 #### v1.2.2-beta
 
+###### General
+
+ - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
+ - Thor will move to bring its multilaser in range when attacking
+
 ###### Fixes
 
- - All units correctly maintain their maximum range when ordered to attack
+ - All units correctly maintain their maximum range when ordered to attack unless configured otherwise
 
 
 #### v1.2.1 - 2017/09/01
