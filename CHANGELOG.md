@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+#### v1.2.2-beta
+
+###### Fixes
+
+ - All units correctly maintain their maximum range when ordered to attack
+
+
 #### v1.2.1 - 2017/09/01
 
 ###### General
