@@ -1,6 +1,5 @@
 {
   "display_name": "Maul",
-  "attack_range_frac": 0.1,
   "description": "Close Range Shotgun Tank - Attacks Land and Naval.",
   "TEMP_texelinfo": 14.523,
   "attachable": {
@@ -17,6 +16,7 @@
       ]
     }
   },
+  "attack_range_frac": 0.1,
   "audio": {
     "loops": {
       "move": {
