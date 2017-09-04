@@ -1,5 +1,6 @@
 {
   "display_name": "Earthshaker",
+  "attack_range_frac": 0.1,
   "description": "Seismic Tank - Decimates Units That Get Too Close.",
   "TEMP_texelinfo": 9.04444,
   "attachable": {
