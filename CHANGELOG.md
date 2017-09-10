@@ -1,11 +1,16 @@
 ## CHANGELOG
 
-#### v1.2.2-beta
+#### v1.3-beta
 
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser in range when attacking
+
+###### Balance
+
+ - Odin buff
+   - Main cannon can now shoot at units on the sea floor
 
 ###### Fixes
 
