@@ -9,6 +9,7 @@
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser in range when attacking
  - Updated mod structure to work following the shutdown of PA Lobby
+ - AI no longer builds Necromancer
 
 ###### Balance
 
