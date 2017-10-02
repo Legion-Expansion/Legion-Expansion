@@ -2,13 +2,10 @@
 
 #### v1.3-beta
 
-***NOTE: Due to the shutdown of PA Lobby and loss of companion mod support, all players will need the Legion Expansion installed and actived to play***
-
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser in range when attacking
- - Updated mod structure to work following the shutdown of PA Lobby
  - AI no longer builds Necromancer
 
 ###### Balance
