@@ -112,3 +112,37 @@ To create a copy for testing local changes:
 3. Run install_new.py
 4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
 5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
+
+
+## License
+
+Legion Expansion is dual licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) and MIT for software portions containing JavaScript code.
+
+
+## Credits
+
+This project is not the work of one, but of a legion.
+
+| Name            | Role                               |
+| --------------- | ---------------------------------- |
+| nicb1           | Project Lead / Models              |
+| Crembels        | Concept Artist                     |
+| KillerKiwiJuice | Models / Textures / Code / Effects |
+| mgmetal13       | Textures                           |
+| zx0             | Textures                           |
+| Alpha2546       | Effects / Balance                  |
+| PRoeleert       | UI                                 |
+| wondible        | Code                               |
+| mikeyh          | Code                               |
+| Quitch          | AI / Media                         |
+| Stuart98        | Code / Strategic Icons             |
+| dom314          | Effects                            |
+| CptConundrum    | UI                                 |
+| Elodea          | Balance Lead / Effects / Media     |
+| AndreasG        | Balance Lead / Balance Senior      |
+| Clopse          | Balance                            |
+| Graushwein      | Balance                            |
+| N30N            | Playtester                         |
+| Qzipco          | Playtester                         |
+| WPMarshall      | Playtester                         |
+| xankar          | Playtester                         |
