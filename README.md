@@ -1,4 +1,47 @@
-# Legion Expansion Server & Client Mods
+# Legion Expansion Licensing
+
+Legion Expansion is dual licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) and MIT for software portions containing JavaScript code.
+
+Licensing is automatiaclly revoked for any projects that do not follow the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) terms or alter / remove licenses.
+
+Using a GitHub fork containing all changes will satisfy the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) requirement to indicate changes made.
+
+See [Best Practices for Attribution](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution).
+
+## Example Attribution
+
+This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
+
+## Full Credits
+
+This project is not the work of one, but of a legion.
+
+| Name            | Role                               |
+| --------------- | ---------------------------------- |
+| nicb1           | Project Lead / Models              |
+| Crembels        | Concept Artist                     |
+| KillerKiwiJuice | Models / Textures / Code / Effects |
+| mgmetal13       | Textures                           |
+| zx0             | Textures                           |
+| Alpha2546       | Effects / Balance                  |
+| PRoeleert       | UI                                 |
+| wondible        | Code                               |
+| mikeyh          | Code                               |
+| Quitch          | AI / Media                         |
+| Stuart98        | Code / Strategic Icons             |
+| dom314          | Effects                            |
+| CptConundrum    | UI                                 |
+| Elodea          | Balance Lead / Effects / Media     |
+| AndreasG        | Balance Lead / Balance Senior      |
+| Clopse          | Balance                            |
+| Graushwein      | Balance                            |
+| N30N            | Playtester                         |
+| Qzipco          | Playtester                         |
+| WPMarshall      | Playtester                         |
+| xankar          | Playtester                         |
+
+
+# Legion Expansion Development
 
 Please do not commit untested or broken files to the master or development branches, create a feature branch or fork the repository.
 
@@ -79,7 +122,7 @@ Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 ### Build Bar Images
 
-These will use a red tint.
+These should use a red tint.
 
 Add to the same path as the unit's json file:
 
@@ -91,17 +134,13 @@ Add to the same path as the unit's json file:
 
 If you're changing projectiles and anti-projectiles remember to update anti_entity_targets e.g. nukes
 
-### Commanders
-
-Currently commanders need to hijack an existing commander as commander_list.json cannot be shadowed.
-
 
 ## AI
 
 Full AI support is built into the mod.
 
 
-## Install
+## Installation
 
 This mod should be installed via the Planetary Annihilation in-game community mods manager.
 
@@ -112,32 +151,3 @@ To create a copy for testing local changes:
 3. Run install_new.py
 4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
 5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
-
-
-## Credits
-
-This project is not the work of one, but of a legion.
-
-| Name            | Role                               |
-| --------------- | ---------------------------------- |
-| nicb1           | Project Lead / Models              |
-| Crembels        | Concept Artist                     |
-| KillerKiwiJuice | Models / Textures / Code / Effects |
-| mgmetal13       | Textures                           |
-| zx0             | Textures                           |
-| Alpha2546       | Effects / Balance                  |
-| PRoeleert       | UI                                 |
-| wondible        | Code                               |
-| mikeyh          | Code                               |
-| Quitch          | AI / Media                         |
-| Stuart98        | Code / Strategic Icons             |
-| dom314          | Effects                            |
-| CptConundrum    | UI                                 |
-| Elodea          | Balance Lead / Effects / Media     |
-| AndreasG        | Balance Lead / Balance Senior      |
-| Clopse          | Balance                            |
-| Graushwein      | Balance                            |
-| N30N            | Playtester                         |
-| Qzipco          | Playtester                         |
-| WPMarshall      | Playtester                         |
-| xankar          | Playtester                         |
