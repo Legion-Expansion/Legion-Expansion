@@ -1,6 +1,6 @@
 # Legion Expansion Server & Client Mods
 
-Please do not commit untested or broken files to the master branch, create a branch or fork the repository.
+Please do not commit untested or broken files to the master or development branches, create a feature branch or fork the repository.
 
 
 ## Structure
@@ -21,8 +21,8 @@ Lastest Python 3.x is required. Please do not use Python 2.x as whitespace forma
 1. Don't commit broken stuff to MASTER. Develop, test and fix in your local, a branch or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE refernces in the format.py output
- 
-Our branch structure is as follows:
+
+Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
 MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions
 
@@ -33,6 +33,7 @@ FEATURE-*name* - a feature which is stil in development; merged into BALANCE on 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
 RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
+
 
 ## Units
 
@@ -48,7 +49,7 @@ When working with legion units please:
 - update pa/units/unit_list.json
 - update pa/ai/unit_maps/imperial_legion.json
 - update ui/mods/com.pa.legion-expansion/global.js
-- add a build bar image 
+- add a build bar image
 - add a strategic icon
 
 If replacing existing vanilla units:
@@ -67,7 +68,7 @@ If you rename a unit directory:
 
 ### Strategic Icons
 
-Ideally these resemble existing strategic icons for similar units.
+These should resemble existing strategic icons for similar units. All weapon capabilities must be indicated by the icon.
 
 Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
@@ -78,15 +79,13 @@ Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 ### Build Bar Images
 
-Ideally these should be the same blue tint as existing images to avoid UI clutter.
+These will use a red tint.
 
 Add to the same path as the unit's json file:
 
 - filename format: `L_unit_icon_buildbar.png`
 - 60px x 60px
 - PNG32
-
-Once mixed factions in shared teams is possible we can look at changing the background colour of build bar images in the server mod.
 
 ### Projecticles
 
@@ -99,49 +98,17 @@ Currently commanders need to hijack an existing commander as commander_list.json
 
 ## AI
 
-The AI is a work-in-progress. Bugs, suggestions, etc. should be raised as issues on the [Queller AI repository](https://github.com/Quitch/Queller-AI).
-
-1. Install the server mod AI Mod Compatibility Patch and its dependency
-2. Download/Sync the [feature-imperial-legion](https://github.com/Quitch/Queller-AI/tree/feature-imperial-legion) branch of the Queller AI to your server-mods folder
-3. Download/Sync the [develop](https://github.com/Quitch/AI-Mod-Compatibility-Patch/tree/develop) branch of the AI Mod Compatibility Patch to your server-mods folder
-4. Download/Sync the [develop](https://github.com/Quitch/Queller-AI-Personalities/tree/develop) branch of the Queller AI Personalities to your client-mods folder
- * On older installations of PAMM this folder will be called mods
-5. Download/Sync the [develop](https://github.com/Quitch/AI-Mod-Compatibility-Personalities-Patch/tree/Develop) branch of the AI Mod Compatibility Personalities Patch to your client-mods folder
- * On older installations of PAMM this folder will be called mods
-6. Open PAMM
-7. Enable the server mod Queller AI DEV LEGION
- * This should also enable Queller AI Personalities DEV, AI Mod Compatibility Patch DEV and AI Mod Compatibility Personalities Patch DEV
-8. Load PA
-9. Ensure Queller AI DEV LEGION is listed as a server mod in your lobby and click on the Add Legion AI button in an empty slot
-
-
-## Screenshots & Video
-
-The Legion should always use a primary/secondary colour setup of red/black
-
-Vanilla should should always use a primary/secondary colour setup of light blue/orange
+Full AI support is built into the mod.
 
 
 ## Install
 
-1. Download a copy of the master branch
-2. If you have Legion-Expansion-Server and Legion-Expansion-Client folders from a previous install then delete them now
-2. Run split_into_mods.py in the root directory of the branch
- * You will need Python 3.x installed on your system
-3. Enter the parent directory of the master branch
-4. Copy Legion-Expansion-Server to your server_mods folder
- * Setting up a symlink in place of copying will make updates more painless
-5. Copy Legion-Expansion-Client to your client_mods folder (mods on older PAMM installations)
- * Setting up a symlink in place of copying will make updates more painless
-6. The following steps are only necessary if this is the first time you've installed Legion Expansion
-7. Open PAMM
-8. Download the following client mods
- * Icon Extensions
-9. Download the following server mods
- * HodgePodge
- * Icon Reloader
- * Xenophobia
-10. Enable the Legion Expansion server mod
- * This will enable all dependencies automatically
- * Non-Legion dependencies will not be disabled when you disable the Legion mod
-11. Run Planetary Annihilation: TITANS
+This mod should be installed via the Planetary Annihilation in-game community mods manager.
+
+To create a copy for testing local changes:
+
+1. Install [Python](https://www.python.org/)
+2. Edit papaths.py to correctly set your Planetary Annihilation data and media folder paths
+3. Run install_new.py
+4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
+5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
