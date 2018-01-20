@@ -114,11 +114,6 @@ To create a copy for testing local changes:
 5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
 
 
-## License
-
-Legion Expansion is dual licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) and MIT for software portions containing JavaScript code.
-
-
 ## Credits
 
 This project is not the work of one, but of a legion.
