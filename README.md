@@ -1,16 +1,20 @@
 # Legion Expansion Licensing
 
-Legion Expansion is dual licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) and MIT for software portions containing JavaScript code.
+Legion Expansion is dual licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
 
-Licensing is automatiaclly revoked for any projects that do not follow the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) terms or alter / remove licenses.
+Licensing is automatically revoked for any projects that do not follow the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) terms, alter / remove licenses or distribute from private repositories.
 
-Using a GitHub fork containing all changes will satisfy the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) requirement to indicate changes made.
+You must publicly distribute your contributions using the same dual licence of [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
+
+You cannot use Legion Expansion for commercial advantage or any form of monetary compensation.
+
+Using a GitHub fork containing all changes will satisfy the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) requirement to indicate changes made.
 
 See [Best Practices for Attribution](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution).
 
 ## Example Attribution
 
-This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
+This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
 
 ## Full Credits
 
@@ -48,7 +52,7 @@ Please do not commit untested or broken files to the master or development branc
 
 ## Structure
 
-Please remove all unncessary files from the pa and ui directories.
+Please remove all unnecessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
 
@@ -56,14 +60,14 @@ Javascript and JSON are formatted for readability with 2 space indent and sorted
 
 Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
 
-Lastest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
+Latest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
 
-## Commiting
+## Committing
 
 1. Don't commit broken stuff to MASTER. Develop, test and fix in your local, a branch or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
-3. Fix any MISSING FILE refernces in the format.py output
+3. Fix any MISSING FILE references in the format.py output
 
 Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
@@ -98,12 +102,12 @@ When working with legion units please:
 If replacing existing vanilla units:
 
 - use the same naming conventions for directories and files as the vanilla units
-- set the base_spec to the vanila unit to reduce copy / paste of duplicate information in unit json files
+- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit json files
 - add only changed properties to unit json files (everything else will inherit from the base_spec)
 
 If you rename a unit directory:
 
-- reanme in pa/units/unit_list.json
+- rename in pa/units/unit_list.json
 - update pa/ai/unit_maps/imperial_legion.json
 - rename in ui/mods/com.pa.legion-expansion/global.js
 - rename the build bar image
@@ -130,7 +134,7 @@ Add to the same path as the unit's json file:
 - 60px x 60px
 - PNG32
 
-### Projecticles
+### Projectiles
 
 If you're changing projectiles and anti-projectiles remember to update anti_entity_targets e.g. nukes
 
