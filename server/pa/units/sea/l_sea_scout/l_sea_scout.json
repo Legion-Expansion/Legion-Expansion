@@ -40,7 +40,7 @@
   },
   "navigation": {
     "acceleration": 40,
-    "brake": 40,
+    "brake": -1,
     "move_speed": 18,
     "turn_accel": 150,
     "turn_in_place": false,
