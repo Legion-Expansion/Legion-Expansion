@@ -1,6 +1,6 @@
 {
-  "display_name": "Imperator",
-  "description": "Orbital Battleship - Heavily Armoured. Attacks Everything.",
+  "display_name": "!LOC:Imperator",
+  "description": "!LOC:Orbital Battleship - Heavily Armoured. Attacks Everything.",
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {

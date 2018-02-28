@@ -1,6 +1,6 @@
 {
-  "display_name": "Peacekeeper",
-  "description": "Assault Walker - Attacks Land and Naval.",
+  "display_name": "!LOC:Peacekeeper",
+  "description": "!LOC:Assault Walker - Attacks Land and Naval.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

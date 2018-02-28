@@ -1,6 +1,6 @@
 {
-  "display_name": "Starship Foundry",
-  "description": "Advanced Manufacturing - Builds Advanced Orbital Units.",
+  "display_name": "!LOC:Starship Foundry",
+  "description": "!LOC:Advanced Manufacturing - Builds Advanced Orbital Units.",
   "TEMP_texelinfo": 48.28787,
   "area_build_separation": 7,
   "atrophy_cool_down": 15,

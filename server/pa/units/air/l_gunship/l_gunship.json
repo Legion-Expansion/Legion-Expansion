@@ -1,6 +1,6 @@
 {
-  "display_name": "Lockheed",
-  "description": "Gunship - Heavily Armoured. Equipped with Seeking Missiles and a Light Machine Gun.",
+  "display_name": "!LOC:Lockheed",
+  "description": "!LOC:Raider- Lightly Armoured. Armed with Light Anti-Ground Lasers. Very Fast.",
   "audio": {
     "loops": {
       "move": {

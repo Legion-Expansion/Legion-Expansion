@@ -1,6 +1,6 @@
 {
-  "display_name": "Lancer",
-  "description": "Laser Walker - Medium Range Laser Weapon. Attacks Land and Naval.",
+  "display_name": "!LOC:Lancer",
+  "description": "!LOC:Laser Walker - Medium Range Laser Weapon. Attacks Land and Naval.",
   "TEMP_texelinfo": 16,
   "attachable": {
     "offsets": {

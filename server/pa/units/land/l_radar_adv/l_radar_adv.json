@@ -1,6 +1,6 @@
 {
-  "display_name": "Overseer",
-  "description": "Advanced Radar - Detects Enemy Units Inside a Large Area.",
+  "display_name": "!LOC:Overseer",
+  "description": "!LOC:Advanced Radar - Detects Enemy Units Inside a Large Area.",
   "TEMP_texelinfo": 36.63,
   "area_build_separation": 200,
   "area_build_type": "Sphere",

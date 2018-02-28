@@ -1,6 +1,6 @@
 {
-  "display_name": "Clot",
-  "description": "Heavily Armoured Siege Defense Barrier.",
+  "display_name": "!LOC:Clot",
+  "description": "!LOC:Heavily Armoured Siege Defense Barrier.",
   "TEMP_texelinfo": 7.58193,
   "area_build_separation": 1.2,
   "atrophy_cool_down": 0.5,

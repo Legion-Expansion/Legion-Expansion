@@ -1,6 +1,6 @@
 {
-  "display_name": "Advanced Fabrication Walker",
-  "description": "Advanced Fabrication Walker - Builds Advanced Structures and Exclusive Walker Units.",
+  "display_name": "!LOC:Advanced Fabrication Walker",
+  "description": "!LOC:Advanced Fabrication Walker - Builds Advanced Structures and Exclusive Walker Units.",
   "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {

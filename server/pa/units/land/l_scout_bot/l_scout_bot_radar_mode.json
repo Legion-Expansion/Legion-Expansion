@@ -1,6 +1,6 @@
 {
-  "display_name": "Investigator Radar mode",
-  "description": "Radar vision but immobile",
+  "display_name": "!LOC:Investigator Radar mode",
+  "description": "!LOC:Radar Vision but Immobile",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

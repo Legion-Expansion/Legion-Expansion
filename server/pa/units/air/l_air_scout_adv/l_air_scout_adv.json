@@ -1,6 +1,6 @@
 {
-  "display_name": "Infiltrator",
-  "description": "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy. Interplanetary.",
+  "display_name": "!LOC:Infiltrator",
+  "description": "!LOC:Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy. Interplanetary.",
   "TEMP_texelinfo": 17,
   "audio": {
     "loops": {

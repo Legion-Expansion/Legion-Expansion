@@ -1,6 +1,6 @@
 {
-  "display_name": "Orbweaver",
-  "description": "Advanced Mobile AA - Attacks Air.",
+  "display_name": "!LOC:Orbweaver",
+  "description": "!LOC:Advanced Mobile AA - Attacks Air.",
   "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {

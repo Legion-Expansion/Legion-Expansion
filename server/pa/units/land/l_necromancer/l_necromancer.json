@@ -1,6 +1,6 @@
 {
-  "display_name": "Necromancer",
-  "description": "Mobile Siege Walker - Summons Purgers from the Ground Below. Massive Explosion Upon Death.",
+  "display_name": "!LOC:Necromancer",
+  "description": "!LOC:Mobile Siege Walker - Summons Purgers from the Ground Below. Massive Explosion Upon Death.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {

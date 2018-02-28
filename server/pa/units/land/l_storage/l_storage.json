@@ -1,6 +1,6 @@
 {
-  "display_name": "OmniSilo Storage Device",
-  "description": "Storage - Harnesses the Power of Black Holes to Compress and Store Excess Metal and Energy.",
+  "display_name": "!LOC:OmniSilo Storage Device",
+  "description": "!LOC:Storage - Harnesses the Power of Black Holes to Compress and Store Excess Metal and Energy.",
   "TEMP_texelinfo": 27.2827,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,

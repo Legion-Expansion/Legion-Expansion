@@ -1,6 +1,6 @@
 {
-  "display_name": "Gustav",
-  "description": "Magnetic Accelerator Cannon - Fires High-Damage Projectiles.",
+  "display_name": "!LOC:Gustav",
+  "description": "!LOC:Magnetic Accelerator Cannon - Fires High-Damage Projectiles.",
   "TEMP_texelinfo": 24.1279,
   "atrophy_cool_down": 15,
   "atrophy_rate": 240,

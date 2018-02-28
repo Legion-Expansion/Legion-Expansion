@@ -1,6 +1,6 @@
 {
-  "display_name": "Purifier",
-  "description": "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
+  "display_name": "!LOC:Purifier",
+  "description": "!LOC:Basic turret- Equipped with Direct Fire Anti-Land, and Anti-Ship Defenses.",
   "TEMP_texelinfo": 10.2184,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

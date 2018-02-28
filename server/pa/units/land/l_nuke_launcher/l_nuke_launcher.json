@@ -1,6 +1,6 @@
 {
-  "display_name": "Supernova",
-  "description": "Long Range Ballistic Nuclear Launcher - High Damage and High AoE.",
+  "display_name": "!LOC:Supernova",
+  "description": "!LOC:Long Range Ballistic Nuclear Launcher - High Damage and High AoE.",
   "TEMP_texelinfo": 30,
   "atrophy_cool_down": 15,
   "atrophy_rate": 240,

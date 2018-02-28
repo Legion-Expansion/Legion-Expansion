@@ -1,6 +1,6 @@
 {
-  "display_name": "Ripple",
-  "description": "Wave Maker and Torpedo Launcher - Attacks Naval.",
+  "display_name": "!LOC:Ripple",
+  "description": "!LOC:Wave Maker and Torpedo Launcher - Attacks Naval.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,

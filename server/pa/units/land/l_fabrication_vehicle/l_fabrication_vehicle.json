@@ -1,6 +1,6 @@
 {
-  "display_name": "Armour Fabricator",
-  "description": "Fabricator - Builds Basic Structures. Can Build Exclusive Vehicle Units.",
+  "display_name": "!LOC:Armour Fabricator",
+  "description": "!LOC:Fabricator - Builds Basic Structures. Can Build Exclusive Vehicle Units.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {

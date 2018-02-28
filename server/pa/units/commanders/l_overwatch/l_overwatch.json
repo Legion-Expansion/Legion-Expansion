@@ -1,6 +1,6 @@
 {
-  "display_name": "Overwatch Commander",
-  "description": "Legion Overwatch Commander",
+  "display_name": "!LOC:Overwatch Commander",
+  "description": "!LOC:Legion Overwatch Commander",
   "attachable": {
     "offsets": {
       "head": [

@@ -1,6 +1,6 @@
 {
-  "display_name": "Sea Urchin",
-  "description": "Proximity Bomb - Destroys Naval Units that get too Close.",
+  "display_name": "!LOC:Sea Urchin",
+  "description": "!LOC:Proximity Bomb - Destroys Naval Units that get too Close.",
   "TEMP_texelinfo": 2.37699,
   "area_build_pattern": [
     [

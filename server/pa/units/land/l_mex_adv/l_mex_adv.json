@@ -1,6 +1,6 @@
 {
-  "display_name": "Advanced Mass Extractor",
-  "description": "Extracts Metal - can only be placed on metal deposits.",
+  "display_name": "!LOC:Advanced Mass Extractor",
+  "description": "!LOC:Extracts Metal - can only be placed on metal deposits.",
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,

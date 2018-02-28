@@ -1,6 +1,6 @@
 {
-  "display_name": "Kosmos",
-  "description": "Armoured Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Land.",
+  "display_name": "!LOC:Kosmos",
+  "description": "!LOC:Armoured Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Land.",
   "TEMP_texelinfo": 22.7385,
   "attachable": {
     "offsets": {

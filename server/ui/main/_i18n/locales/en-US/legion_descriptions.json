@@ -1,0 +1,338 @@
+{
+    "Suicide Bomb Plane - attacks air only.": {
+        "message": "Suicide bomb flyer- Attacks air only."
+    },
+    "Air Carrier - Launches Fast-Flying Drones at Enemies. Attacks Everything Except Orbital.": {
+        "message": "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital."
+    },
+    "Missile Drone-Fast, fragile, attacks land and air.": {
+        "message": "Missile drone- Fast, fragile, attacks land and air."
+    },
+    "Basic Manufacturing - Builds Legion Air Units.": {
+        "message": "Basic manufacturing- Builds Legion flyer units."
+    },
+    "Advanced Manufacturing - Builds Advanced Legion Air Units.": {
+        "message": "Advanced manufacturing- Builds advanced Legion flyer units."
+    },
+    "Advanced Stealth Plane - Equipped With a Sneaky Spy Camera. Consumes Energy. Interplanetary.": {
+        "message": "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary."
+    },
+    "Plasma Bomber - High Damage. Attacks Land and Naval.": {
+        "message": "Plasma bomber- High Damage. Attacks land and naval."
+    },
+    "Builds Basic Structures - Fast. Can Build Exclusive Flyer Units.": {
+        "message": "Builds basic structures- Fast. Can build exclusive flyer units."
+    },
+    "Builds Advanced Structures - Can Build Exclusive Flyer Units.": {
+        "message": "Builds advanced structures- Can build exclusive flyer units."
+    },
+    "Fast Air Interceptor. Attacks Air.": {
+        "message": "Fast air interceptor- Attacks air."
+    },
+    "Interplanetary Fighter - Fast and Armoured. Attacks Air.": {
+        "message": "Interplanetary fighter- Fast and armored. Attacks air."
+    },
+    "Basic turret- Equipped with Direct Fire Anti-Land, and Anti-Ship Defenses.": {
+        "message": "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses."
+    },
+    "Flame Deployment Bomber- Heavy Damage Over an Area. Well Armoured. Can Deploy Light Flamethrower Turret.": {
+        "message": "Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret."
+    },
+    "Interplanetary Mobile Teleporter - Heavily Armoured.": {
+        "message": "Interplanetary mobile teleporter- Heavily armored."
+    },
+    "Gunship - Heavily Armoured. Equipped with Seeking Missiles and a Light Machine Gun.": {
+        "message": "Gunship- Heavily armored. Equipped with seeking missiles and a light machine gun."
+    },
+    "Raider- Lightly Armoured. Armed with Light Anti-Ground Lasers. Very Fast.": {
+        "message": "Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast."
+    },
+    "Flying Fortress - Heavily Armoured. Equipped with Long Range Cannons and Rapid-Fire Machine Guns.": {
+        "message": "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns."
+    },
+    "Unit Transport - Quick. Unarmed.": {
+        "message": "Unit transport- Quick. Unarmed."
+    },
+    "Legion Class Commander. - If you're seeing this, something is wrong in your commander.": {
+        "message": "Legion Class Commander- If you're seeing this, something is wrong in your commander."
+    },
+    "Legion Cyclops Commander": {
+        "message": "Legion Cyclops Commander"
+    },
+    "Legion Overwatch Commander": {
+        "message": "Legion Overwatch Commander"
+    },
+    "Tank Rockteeth Commander": {
+        "message": "Tank Rockteeth Commander"
+    },
+    "Legion Wasushi Commander": {
+        "message": "Legion Wasushi Commander"
+    },
+    "Basic AA Turret - Equipped With a Light Machine Gun.": {
+        "message": "Basic AA turret- Equipped with a light machine gun."
+    },
+    "Advanced Anti Air Tower - Long Range. Attacks Air Units.": {
+        "message": "Advanced anti-air tower- Long range. Attacks air units."
+    },
+    "Nuke Defense - Intercepts And Destroys Incoming Nuclear Missiles.": {
+        "message": "Nuke defense- Intercepts and destroys incoming nuclear missiles."
+    },
+    "Magnetic Accelerator Cannon - Fires High-Damage Projectiles.": {
+        "message": "Magnetic accelerator cannon- Fires high damage projectiles."
+    },
+    "Medium Anti-Ship & Anti-Land Railgun - Requires Energy to Fire.": {
+        "message": "Medium anti-ship and anti-land railgun- Requires energy to fire."
+    },
+    "Assault Walker - Attacks Land and Naval.": {
+        "message": "Assault walker- Attacks land and naval."
+    },
+    "Anti-Air Walker - Short range. Attacks Air.": {
+        "message": "Anti-air walker- Short range. Attacks air."
+    },
+    "Advanced Mobile AA - Attacks Air.": {
+        "message": "Advanced mobile AA- Attacks air."
+    },
+    "Heavy Siege Walker - Long Range. Launches Self-Exploding Sticky Plasma Mines.": {
+        "message": "Heavy siege walker- Long range. Launches self-exploding sticky plasma mines."
+    },
+    "Heavy Assault Walker - Heavily Armoured. Equipped With Strong Cannons and A Heavy Laser.": {
+        "message": "Heavy assault walker- Heavily armored. Equipped with strong cannons and a heavy laser."
+    },
+    "Leaping Boombot Spider - Launches at Enemies and up Cliffs with Alt Fire.": {
+        "message": "Leaping boombot spider- Launches at enemies and up cliffs with alt fire."
+    },
+    "Basic Manufacturing - Builds Legion Walkers.": {
+        "message": "Basic manufacturing- Builds Legion walkers."
+    },
+    "Advanced Manufacturing - Builds Advanced Legion Walkers.": {
+        "message": "Advanced manufacturing- Builds advanced Legion walkers."
+    },
+    "Auxiliary Commander - Can Build Structures. High Health and Heavily Armed.": {
+        "message": "Auxiliary commander- Can build structures. High health and heavily armed."
+    },
+    "Basic Economy - Generates Power.": {
+        "message": "Basic economy- Generates power."
+    },
+    "Advanced Power Generator - Fabricates Black Holes and Harnesses Their Energy. Damages Allies Upon Death.": {
+        "message": "Advanced power generator- Fabricates black holes and harnesses their energy. Damages allies upon death."
+    },
+    "Fabricator - Builds Basic Structures. Can Build Exclusive Walker Units.": {
+        "message": "Fabricator- Builds basic structures. Can build exclusive walker units."
+    },
+    "Advanced Fabrication Walker - Builds Advanced Structures and Exclusive Walker Units.": {
+        "message": "Advanced fabrication walker- Builds advanced structures and exclusive walker units."
+    },
+    "Fabricator - Builds Basic Structures. Can Build Exclusive Vehicle Units.": {
+        "message": "Fabricator- Builds basic structures. Can build exclusive vehicle units."
+    },
+    "Fabricator - Builds Advanced Structures. Can Build Exclusive Armour Units.": {
+        "message": "Fabricator- Builds advanced structures. Can build exclusive armor units."
+    },
+    "Combat Fabrication Vehicle - Builds Mines and Radar and Repairs Friendly Units. Can Reclaim.": {
+        "message": "Combat fabrication vehicle- Builds mines and radar and repairs friendly units. Can reclaim."
+    },
+    "Flame Defense Turret - Spews High-Damage Napalm.": {
+        "message": "Flame defense turret- Spews high-damage napalm."
+    },
+    "Hover Artillery - Medium Range. Attacks Land and Naval.": {
+        "message": "Hover artillery- Medium range. Attacks land and naval."
+    },
+    "Hover Assault - Medium Range Rockets. Attacks Land, Air, Naval, and Orbital.": {
+        "message": "Hover assault- Medium range rockets. Attacks land, air, naval, and orbital."
+    },
+    "Heavily Armoured Siege Defense Barrier.": {
+        "message": "Heavily armored siege defense barrier."
+    },
+    "Pop-Up Landmine - Sprays Shrapnel Then Explodes After Four Seconds.": {
+        "message": "Pop-up landmine- Sprays shrapnel then explodes after four seconds."
+    },
+    "Extracts Metal - can only be placed on metal deposits.": {
+        "message": "Extracts metal- Can only be placed on metal deposits."
+    },
+    "Fast Amphibious Attack Tank - Equipped with Torpedoes and a Light Cannon.": {
+        "message": "Fast amphibious attack tank- Equipped with torpedoes and a light cannon."
+    },
+    "Mobile Siege Walker - Summons Purgers from the Ground Below. Massive Explosion Upon Death.": {
+        "message": "Mobile siege walker- Summons purgers from the ground below. Massive explosion upon death."
+    },
+    "Long Range Ballistic Nuclear Launcher - High Damage and High AoE.": {
+        "message": "Long range ballistic nuclear launcher- High damage and high aoe."
+    },
+    "Long range, high damage ballistic missile.": {
+        "message": "Long range, high damage ballistic missile."
+    },
+    "Basic Radar - Detects Nearby Enemy Units.": {
+        "message": "Basic radar- Detects nearby enemy units."
+    },
+    "Advanced Radar - Detects Enemy Units Inside a Large Area.": {
+        "message": "Advanced radar- Detects enemy units inside a large area."
+    },
+    "Advanced Assault Walker - High Damage Gatling Guns. Attacks Land and Naval.": {
+        "message": "Advanced assault walker- High damage gatling guns. Attacks land and naval."
+    },
+    "Advanced Defense - Heavy Rocket Pods. Attacks Land and Naval.": {
+        "message": "Advanced defense- Heavy rocket pods. Attacks land and naval."
+    },
+    "Scout Bot - Deploys into a Hidden Short Range Radar via Alt-Fire Detectable by Radar.": {
+        "message": "Scout bot- Deploys into a hidden short range radar via alt-fire detectable by radar."
+    },
+    "Radar Vision but Immobile": {
+        "message": "Radar vision but immobile."
+    },
+    "Shield - Absorbs Incoming Shots. Requires Energy. Overlapping Ramparts Provides Little Benefit.": {
+        "message": "Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit."
+    },
+    "Close Range Shotgun Tank - Attacks Land and Naval.": {
+        "message": "Close range shotgun tank- Attacks land and naval."
+    },
+    "Laser Walker - Medium Range Laser Weapon. Attacks Land and Naval.": {
+        "message": "Laser walker- Medium range laser weapon. Attacks land and naval."
+    },
+    "Sniper - Equipped with a High-Damage Beam Cannon. Attacks Land and Naval.": {
+        "message": "Sniper- Equipped with a high-damage beam cannon. Attacks land and naval."
+    },
+    "Storage - Harnesses the Power of Black Holes to Compress and Store Excess Metal and Energy.": {
+        "message": "Storage- Harnesses the power of black holes to compress and store excess metal and energy."
+    },
+    "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES": {
+        "message": "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!"
+    },
+    "Swarm Deployment - Fabricates Swarm Units. Attacks Land and Naval.": {
+        "message": "Swarm deployment- Fabricates swarm units. Attacks land and naval."
+    },
+    "Medium Defense Turret - Attacks Land and Naval Targets.": {
+        "message": "Medium defense turret- Attacks land and naval targets."
+    },
+    "Light Defense Turret - Short Range. Attacks Land and Naval Targets.": {
+        "message": "Light defense turret- Short range. Attacks land and naval targets."
+    },
+    "Seismic Tank - Decimates Units That Get Too Close.": {
+        "message": "Seismic tank- Decimates units that get too close."
+    },
+    "Advanced Battle Tank - Heavily Armoured. Attacks Land and Naval.": {
+        "message": "Advanced battle tank- Heavily armored. Attacks land and naval."
+    },
+    "Main Battle Tank - Slow but reliable. Attacks Land and Naval.": {
+        "message": "Main battle tank- Slow but reliable. Attacks land and naval."
+    },
+    "Advanced Lightning Tank - High Damage. Electrifies Land and Naval Targets.": {
+        "message": "Advanced lightning tank- High damage. Electrifies land and naval targets."
+    },
+    "Teleportation Device - Teleports Units from One to Another.": {
+        "message": "Teleportation device- Teleports units from one to another."
+    },
+    "Experimental Assault Titan - Equipped with an Arsenal of Highly Destructive Weapons.": {
+        "message": "Experimental assault titan- Equipped with an arsenal of highly destructive weapons."
+    },
+    "Doomsday Device- Destroys the planet it's built on once finished.": {
+        "message": "Doomsday device- Destroys the planet it's built on once finished."
+    },
+    "Experimental Rolling Fortress - Long Range. Heavily Armoured and Deals Very High Damage.": {
+        "message": "Experimental rolling fortress- Long range. Heavily armored and deals very high damage."
+    },
+    "Basic Manufacturing - Builds Legion Armour.": {
+        "message": "Basic manufacturing- Builds Legion armor."
+    },
+    "Advanced Manufacturing - Builds Advanced Legion Armour.": {
+        "message": "Advanced manufacturing- Builds advanced Legion armor."
+    },
+    "Orbital Defense - Heavy Defensive Satellite. Attacks Anything.": {
+        "message": "Orbital defense- Heavy defensive satellite. Attacks anything."
+    },
+    "Planet Engine - Used to Smash Celestial Bodies.": {
+        "message": "Planet engine- Used to smash celestial bodies."
+    },
+    "Anti-Orbital Ion Cannon - Attacks Orbital Units.": {
+        "message": "Anti-orbital ion cannon- Attacks orbital units."
+    },
+    "Gas Planet Economy Structure - Produces Metal and Energy. Only works above gas giant planets.": {
+        "message": "Gas planet economy structure- Produces metal and energy. Only works above gas giant planets."
+    },
+    "Orbital Battleship - Heavily Armoured. Attacks Everything.": {
+        "message": "Orbital battleship- Heavily armored. Attacks everything."
+    },
+    "Orbital Unit Cannon - Relays Reinforcement Units to the Surface Below.": {
+        "message": "Orbital unit cannon- Relays reinforcement units to the surface below."
+    },
+    "Advanced Fabricator - Builds Legion Orbital Satellites and Ships.": {
+        "message": "Advanced fabricator- Builds Legion orbital satellites and ships."
+    },
+    "Advanced Manufacturing - Builds Advanced Orbital Units.": {
+        "message": "Advanced manufacturing- Builds advanced orbital units."
+    },
+    "Orbital Fighter - Attacks Orbital Units. Fast.": {
+        "message": "Orbital fighter- Attacks orbital units. Fast."
+    },
+    "Orbital Lander - Interplanetary Transportation Carrier.": {
+        "message": "Orbital lander- Interplanetary transportation carrier."
+    },
+    "Orbital Laser - Equipped with a High Damage Plasma Cannon. Attacks Land and Naval.": {
+        "message": "Orbital laser- Equipped with a high damage plasma cannon. Attacks land and naval."
+    },
+    "Basic Orbital Factory - Launches Satellites and Basic Orbital Units into Space.": {
+        "message": "Basic orbital factory- Launches satellites and basic orbital units into space."
+    },
+    "Orbital Radar Probe - Fast. Small Vision Radius.": {
+        "message": "Orbital radar probe- Fast. Small vision radius."
+    },
+    "Orbital Railgun - High Damage. Attacks Orbital.": {
+        "message": "Orbital railgun- High damage. Attacks orbital."
+    },
+    "Basic Radar Satellite - Detects Enemy Units Within a Medium-Sized Area.": {
+        "message": "Basic radar satellite- Detects enemy units within a medium-sized area."
+    },
+    "Armoured Advanced Radar Satellite - Detects Units Within a Massive Area. Attacks Land.": {
+        "message": "Armored advanced radar satellite- Detects units within a massive area. Attacks land."
+    },
+    "Orbital Mega-Laser - Purifies The Surface Below with its Laser.": {
+        "message": "Orbital mega-laser- Purifies the surface below with its laser."
+    },
+    "Attack Submarine - Equipped With Torpedoes. Fast.": {
+        "message": "Attack submarine- Equipped with torpedoes. Fast."
+    },
+    "Battleship - Equipped with High-Damage Laser Cannons. Attacks Land and Naval Targets.": {
+        "message": "Battleship- Equipped with high-damage laser cannons. Attacks land and naval targets."
+    },
+    "Destroyer - Equipped with Heavy Cannons. Attacks Naval and Land.": {
+        "message": "Destroyer- Equipped with heavy cannons. Attacks naval and land."
+    },
+    "Builds Basic Structures. Can Build Exclusive Water Units.": {
+        "message": "Builds basic structures- Can build exclusive ship units."
+    },
+    "Builds Advanced Structures. Can Build Exclusive Water Units.": {
+        "message": "Builds advanced structures- Can build exclusive ship units."
+    },
+    "Combat Fabrication - Places Sea Mines and Repairs Friendly Units. Lightly Armoured.": {
+        "message": "Combat fabrication- Places sea mines and repairs friendly units. Lightly armored."
+    },
+    "Frigate- Only Attacks Air.": {
+        "message": "Frigate- Only attacks air."
+    },
+    "Hover Ship - Equipped with Heavy Cannons. Can Travel on any Surface. Attacks Land and Naval.": {
+        "message": "Hover ship - equipped with heavy cannons. Can travel on any surface. Attacks land and naval."
+    },
+    "Ballistic Missile Ship - Equipped with Heavy Rockets and Anti-Air Cannons.": {
+        "message": "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons."
+    },
+    "Basic Manufacturing - Builds Naval Ships.": {
+        "message": "Basic manufacturing- Builds naval ships."
+    },
+    "Advanced Manufacturing - Builds Advanced Naval Ships.": {
+        "message": "Advanced manufacturing- Builds advanced naval ships."
+    },
+    "Proximity Bomb - Destroys Naval Units that get too Close.": {
+        "message": "Proximity bomb- Destroys naval units that get too close."
+    },
+    "Corvette - Fast. Attacks Naval, Land and Subs.": {
+        "message": "Corvette- Fast. Attacks naval, land and subs."
+    },
+    "Heavily Armoured Barge - Rams Enemy Ships. Equipped with Heavy Direct-Fire Cannons.": {
+        "message": "Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons."
+    },
+    "Wave Maker and Torpedo Launcher - Attacks Naval.": {
+        "message": "Wave maker and torpedo launcher- Attacks naval."
+    },
+    "Heavy Anti-Ship Wave Machine - Attacks Naval.": {
+        "message": "Heavy anti-ship wave machine- Attacks naval."
+    }
+}

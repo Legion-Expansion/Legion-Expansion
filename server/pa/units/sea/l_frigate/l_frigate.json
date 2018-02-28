@@ -1,6 +1,6 @@
 {
-  "display_name": "Talos",
-  "description": "Frigate- Only Attacks Air.",
+  "display_name": "!LOC:Talos",
+  "description": "!LOC:Frigate- Only Attacks Air.",
   "TEMP_texelinfo": 21.4,
   "audio": {
     "loops": {

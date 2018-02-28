@@ -1,6 +1,6 @@
 {
-  "display_name": "Shank",
-  "description": "Main Battle Tank - Slow but reliable. Attacks Land and Naval.",
+  "display_name": "!LOC:Shank",
+  "description": "!LOC:Main Battle Tank - Slow but reliable. Attacks Land and Naval.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {

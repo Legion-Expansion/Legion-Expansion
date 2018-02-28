@@ -1,6 +1,6 @@
 {
-  "display_name": "Maul",
-  "description": "Close Range Shotgun Tank - Attacks Land and Naval.",
+  "display_name": "!LOC:Maul",
+  "description": "!LOC:Close Range Shotgun Tank - Attacks Land and Naval.",
   "TEMP_texelinfo": 14.523,
   "attachable": {
     "offsets": {

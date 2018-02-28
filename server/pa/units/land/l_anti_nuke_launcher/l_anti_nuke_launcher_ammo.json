@@ -1,6 +1,6 @@
 {
-  "display_name": "Iron Dome Interceptor",
-  "description": "Anti-nuke - Intercepts incoming nuclear missiles.",
+  "display_name": "!LOC:Iron Dome Interceptor",
+  "description": "!LOC:Nuke Defense - Intercepts And Destroys Incoming Nuclear Missiles.",
   "ammo_type": "Projectile",
   "audio_loop": "/SE/Movement/missile/anti_nuke_missile_fly_loop",
   "build_metal_cost": 5000,

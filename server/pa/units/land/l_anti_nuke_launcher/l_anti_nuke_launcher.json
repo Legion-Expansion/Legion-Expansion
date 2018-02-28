@@ -1,6 +1,6 @@
 {
-  "display_name": "Iron Dome",
-  "description": "Nuke Defense - Intercepts And Destroys Incoming Nuclear Missiles.",
+  "display_name": "!LOC:Iron Dome",
+  "description": "!LOC:Nuke Defense - Intercepts And Destroys Incoming Nuclear Missiles.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 100,
   "area_build_type": "Sphere",

@@ -1,6 +1,6 @@
 {
-  "display_name": "Advanced Power Catalyst",
-  "description": "Advanced Power Generator - Fabricates Black Holes and Harnesses Their Energy. Damages Allies Upon Death.",
+  "display_name": "!LOC:Advanced Power Catalyst",
+  "description": "!LOC:Advanced Power Generator - Fabricates Black Holes and Harnesses Their Energy. Damages Allies Upon Death.",
   "TEMP_texelinfo": 32.6108,
   "area_build_separation": 2,
   "area_build_type": "Line",

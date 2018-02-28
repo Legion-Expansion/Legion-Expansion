@@ -1,6 +1,6 @@
 {
-  "display_name": "Catfish",
-  "description": "Corvette - Fast. Attacks Naval, Land and Subs.",
+  "display_name": "!LOC:Catfish",
+  "description": "!LOC:Corvette - Fast. Attacks Naval, Land and Subs.",
   "TEMP_texelinfo": 4.24257,
   "audio": {
     "loops": {

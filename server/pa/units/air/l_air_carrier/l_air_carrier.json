@@ -1,6 +1,6 @@
 {
-  "display_name": "Meteor",
-  "description": "Air Carrier - Launches Fast-Flying Drones at Enemies. Attacks Everything Except Orbital.",
+  "display_name": "!LOC:Meteor",
+  "description": "!LOC:Air Carrier - Launches Fast-Flying Drones at Enemies. Attacks Everything Except Orbital.",
   "TEMP_texelinfo": 10,
   "audio": {
     "loops": {

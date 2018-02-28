@@ -1,6 +1,6 @@
 {
-  "display_name": "Land Mine",
-  "description": "!LOC(units:land_mine_detonates_when_enemy_units_are_in_proximity.message):Land mine- Detonates when enemy units are in proximity.",
+  "display_name": "!LOC:Spoiler",
+  "description": "!LOC:Pop-Up Landmine - Sprays Shrapnel Then Explodes After Four Seconds.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 1,
   "area_build_type": "Sphere",

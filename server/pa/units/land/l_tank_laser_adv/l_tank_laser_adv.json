@@ -1,6 +1,6 @@
 {
-  "display_name": "Scorpion",
-  "description": "Advanced Battle Tank - Heavily Armoured. Attacks Land and Naval.",
+  "display_name": "!LOC:Scorpion",
+  "description": "!LOC:Advanced Battle Tank - Heavily Armoured. Attacks Land and Naval.",
   "TEMP_texelinfo": 19.398,
   "attachable": {
     "offsets": {

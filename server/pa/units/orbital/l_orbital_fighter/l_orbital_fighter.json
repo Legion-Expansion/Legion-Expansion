@@ -1,6 +1,6 @@
 {
-  "display_name": "Viper",
-  "description": "Orbital Fighter - Attacks Orbital Units. Fast.",
+  "display_name": "!LOC:Viper",
+  "description": "!LOC:Orbital Fighter - Attacks Orbital Units. Fast.",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
