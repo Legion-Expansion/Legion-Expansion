@@ -5,8 +5,9 @@
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
- - Thor will move to bring its multilaser in range when attacking
+ - Thor will move to bring its multilaser into range when attacking
  - AI no longer builds Necromancer
+ - Setup Legion to allow translation of its files
 
 ###### Balance
 
@@ -265,7 +266,7 @@
  - Kaiju projectiles now properly blocked by Rampart
  - Jaeger projectiles now properly blocked by Rampart
  - Legion no longer overrides weapon effect mods
- - Cleanup of file shadowing
+ - Clean-up of file shadowing
  - Lobby overlay no longer broken when Legion theme is disabled
 
 
@@ -553,7 +554,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Wraith renamed to Spectre
  - Excalibur renamed to Paladin
  - Added idle effects to the Havoc
- - Improved PA startup time when Legion is disabled through use of new companion mod feature
+ - Improved PA start-up time when Legion is disabled through use of new companion mod feature
  - Improved Investigator description
  - Improved game logging
 
