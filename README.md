@@ -56,7 +56,7 @@ Please remove all unnecessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
 
-Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
+JavaScript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
 Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
 
@@ -75,7 +75,7 @@ MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create releas
 
 BALANCE - development; forked to RELEASE-x.x.x and FEATURE-*name*
 
-FEATURE-*name* - a feature which is stil in development; merged into BALANCE on completion
+FEATURE-*name* - a feature which is still in development; merged into BALANCE on completion
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
@@ -89,7 +89,7 @@ Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`. This 
 When working with legion units please:
 
 - prefix all legion units directories and filenames with L_
-- follow uber naming conventions ie L_type_unit_adv (although some are different eg dox)
+- follow uber naming conventions i.e. L_type_unit_adv (although some are different eg dox)
 - for all legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
 - check area builds i.e. area_build_separation
 - create sea versions when needed in pa/units/sea/
