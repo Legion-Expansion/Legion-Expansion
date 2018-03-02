@@ -11,8 +11,13 @@
 
 ###### Balance
 
- - Odin buff
-   - Main cannon can now shoot at units on the sea floor
+ - Titans
+   - Odin buff
+     - Main cannon can now shoot at units on the sea floor
+ - Orbital
+   - Spectre correction
+     - Cost decreased from 300 to 200
+     - Vision lost only once energy efficiency drops below 90% instead of 100%
 
 ###### Fixes
 

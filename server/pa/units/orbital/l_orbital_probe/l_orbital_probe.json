@@ -12,13 +12,14 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 300,
+  "build_metal_cost": 200,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist"
   ],
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
