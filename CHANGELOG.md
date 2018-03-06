@@ -2,6 +2,10 @@
 
 #### v1.3-beta
 
+If you would like to help translate the Legion Expansion to your local language then please look at [the translation project](https://poeditor.com/join/project/XsDmbbwns2).
+
+If a translation is currently empty but you're not 100% on the translation you're entering then please [mark it as fuzzy](https://poeditor.com/kb/fuzzy-translations). It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
+
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
