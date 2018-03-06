@@ -45,6 +45,12 @@ This project is not the work of one, but of a legion.
 | xankar          | Playtester                         |
 
 
+# Translations
+
+If you would like to help translate the Legion Expansion to your local language then please look at [the translation project](https://poeditor.com/join/project/XsDmbbwns2).
+
+If a translation is currently empty but you're not 100% on the translation you're entering then please [mark it as fuzzy](https://poeditor.com/kb/fuzzy-translations). It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
+
 # Legion Expansion Development
 
 Please do not commit untested or broken files to the master or development branches, create a feature branch or fork the repository.
