@@ -1,0 +1,353 @@
+{
+    "AOE Nova": {
+        "message": "\uad11\uc5ed \ub178\ubc14"
+    },
+    "Meteor": {
+        "message": "\ubbf8\ud2f0\uc5b4"
+    },
+    "Meteoroid": {
+        "message": "\ubbf8\ud2f0\ub85c\uc774\ub4dc"
+    },
+    "Flyer Foundry": {
+        "message": "\ud50c\ub77c\uc774\uc5b4 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Advanced Flyer Foundry": {
+        "message": "\ud5a5\uc0c1\ub41c \ud50c\ub77c\uc774\uc5b4 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Infiltrator": {
+        "message": "\uc778\ud384\ud2b8\ub808\uc774\ud130"
+    },
+    "Dauntless": {
+        "message": "\ub358\ud2b8\ub808\uc2a4"
+    },
+    "Fabrication Flyer": {
+        "message": "\uc81c\uc791 \ube44\ud589\uae30"
+    },
+    "Advanced Fabrication Flyer": {
+        "message": "\ud5a5\uc0c1\ub41c \uc81c\uc791 \ube44\ud589\uae30"
+    },
+    "Scythe": {
+        "message": "\uc2f8\uc774\ub4dc"
+    },
+    "Firebird": {
+        "message": "\ud30c\uc774\uc5b4\ubc84\ub4dc"
+    },
+    "Purifier": {
+        "message": "\ud4e8\ub9ac\ud30c\uc774\uc5b4"
+    },
+    "Salamander": {
+        "message": "\uc0b4\ub77c\ub9e8\ub354"
+    },
+    "Comet": {
+        "message": "\ucf54\uba67"
+    },
+    "Lockheed": {
+        "message": "\ub77d\ud5e4\ub4dc"
+    },
+    "Marauder": {
+        "message": "\uba38\ub85c\ub354"
+    },
+    "Loki": {
+        "message": "\ub85c\ud0a4"
+    },
+    "Osprey": {
+        "message": "\uc624\uc2a4\ud504\ub9ac"
+    },
+    "Legion Class Commander": {
+        "message": "\ub9ac\uc804 \ud074\ub798\uc2a4 \ucee4\ub9e8\ub354"
+    },
+    "Cyclops": {
+        "message": "\uc2f8\uc774\ud074\ub86d\uc2a4"
+    },
+    "Overwatch Commander": {
+        "message": "\uc624\ubc84\uc6cc\uce58 \ucee4\ub9e8\ub354"
+    },
+    "Rockteeth Commander": {
+        "message": "\ub85d\ud2f0\ub4dc \ucee4\ub9e8\ub354"
+    },
+    "Wasushi": {
+        "message": "\uc640\uc2a4\uc2dc"
+    },
+    "Shredder": {
+        "message": "\uc288\ub808\ub354"
+    },
+    "Archer": {
+        "message": "\uc544\ucc98"
+    },
+    "Iron Dome": {
+        "message": "\uc544\uc774\uc5b8 \ub3d4"
+    },
+    "Iron Dome Interceptor": {
+        "message": "\uc544\uc774\uc5b8 \ub3d4 \uc778\ud130\uc149\ud130"
+    },
+    "Gustav": {
+        "message": "\uad6c\uc2a4\ud0c0\ube0c"
+    },
+    "Theodor": {
+        "message": "\uc2dc\uc5b4\ub3c4\uc5b4"
+    },
+    "Peacekeeper": {
+        "message": "\ud53c\uc2a4\ud0a4\ud37c"
+    },
+    "Patriot": {
+        "message": "\ud328\ud2b8\ub9ac\uc5b4\ud2b8"
+    },
+    "Orbweaver": {
+        "message": "\uc624\ube0c\uc704\ubc84"
+    },
+    "Miniman": {
+        "message": "\ubbf8\ub2c8\ub9e8"
+    },
+    "Monstrosity": {
+        "message": "\ubaac\uc2a4\ud2b8\ub85c\uc2dc\ud2f0"
+    },
+    "Purger": {
+        "message": "\ud37c\uc800"
+    },
+    "Walker Foundry": {
+        "message": "\uc6cc\ucee4 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Advanced Walker Foundry": {
+        "message": "\ud5a5\uc0c1\ub41c \uc6cc\ucee4 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Praetorian": {
+        "message": "\ud504\ub9ac\ud1a0\ub9ac\uc548"
+    },
+    "Catalyst": {
+        "message": "\uce74\ud0c8\ub9ac\uc2a4\ud2b8"
+    },
+    "Power Catalyst": {
+        "message": "\ubc1c\uc804\uc18c"
+    },
+    "Advanced Power Catalyst": {
+        "message": "\uace0\uae09 \ubc1c\uc804\uc18c"
+    },
+    "Fabrication Walker": {
+        "message": "\uc81c\uc791 \uc6cc\ucee4"
+    },
+    "Advanced Fabrication Walker": {
+        "message": "\ud5a5\uc0c1\ub41c \uc81c\uc791 \uc6cc\ucee4"
+    },
+    "Armour Fabricator": {
+        "message": "\uc544\uba38 \uc81c\uc791\uc790"
+    },
+    "Advanced Armour Fabricator": {
+        "message": "\ud5a5\uc0c1\ub41c \uc544\uba38 \uc81c\uc791\uc790"
+    },
+    "Guardian": {
+        "message": "\uac00\ub514\uc5b8"
+    },
+    "Arsonist": {
+        "message": "\uc544\uc11c\ub2c8\uc2a4\ud2b8"
+    },
+    "Corsair": {
+        "message": "\ucf5c\uc138\uc5b4"
+    },
+    "Panzer": {
+        "message": "\ud310\uc800"
+    },
+    "Clot": {
+        "message": "\ud074\ub86f"
+    },
+    "Spoiler": {
+        "message": "\uc2a4\ud3ec\uc77c\ub7ec"
+    },
+    "Land Mine": {
+        "message": "\ub9e4\uc2a4 \ucd94\ucd9c\uae30"
+    },
+    "Mass Extractor": {
+        "message": "\uace0\uae09 \ub9e4\uc2a4 \ucd94\ucd9c\uae30"
+    },
+    "Advanced Mass Extractor": {
+        "message": "\uc2a4\ud1a0\ud06c"
+    },
+    "Stoke": {
+        "message": "\ub124\ud06c\ub85c\ub9e8\uc11c"
+    },
+    "Necromancer": {
+        "message": "\uc218\ud37c\ub178\ubc14"
+    },
+    "Supernova": {
+        "message": "\uc218\ud37c\ub178\ubc14\uae09 \uc804\ub7b5\ud0c4\ub450"
+    },
+    "Supernova Strategic Warhead": {
+        "message": "\ub808\uc774\ub354"
+    },
+    "Radar": {
+        "message": "\uc624\ubc84\uc2dc\uc5b4"
+    },
+    "Overseer": {
+        "message": "\uc5d4\ud3ec\uc11c"
+    },
+    "Enforcer": {
+        "message": "\ub370\uc2dc\ubbf8\ud130"
+    },
+    "Decimator": {
+        "message": "\uc778\ubca0\uc2a4\ud2f0\uac8c\uc774\ud130"
+    },
+    "Investigator": {
+        "message": "\uc778\ubca0\uc2a4\ud2f0\uac8c\uc774\ud130 \ub808\uc774\ub354 \ubaa8\ub4dc"
+    },
+    "Investigator Radar mode": {
+        "message": "\uc815\ucc30 \ubd07 \ub808\uc774\ub354 \ubaa8\ub4dc \ucda9\ub3cc \uac80\uc0ac"
+    },
+    "Scout Bot Radar mode collision check": {
+        "message": "\ub7a8\ud30c\ud2b8"
+    },
+    "Rampart": {
+        "message": "\ubbac"
+    },
+    "Maul": {
+        "message": "\ub79c\uc11c"
+    },
+    "Lancer": {
+        "message": "\ub370\uc2a4\ub9c8\ud06c"
+    },
+    "Deathmark": {
+        "message": "\uc634\ub2c8\uc18c\uc77c \uc790\uc6d0 \uc800\uc7a5\uc18c"
+    },
+    "OmniSilo Storage Device": {
+        "message": "\ube44\uc2a4"
+    },
+    "Bees": {
+        "message": "\ud558\uc774\ube0c"
+    },
+    "Hive": {
+        "message": "\uc2a4\uce90\ub7fd"
+    },
+    "Scarab": {
+        "message": "\uc790\uce7c"
+    },
+    "Jackal": {
+        "message": "\uc5b4\uc2a4\uc250\uc774\ucee4"
+    },
+    "Earthshaker": {
+        "message": "\uc2a4\ucf5c\ud53c\uc628"
+    },
+    "Scorpion": {
+        "message": "\uc115\ud06c"
+    },
+    "Shank": {
+        "message": "\ud558\ubcf4\ud06c"
+    },
+    "Havoc": {
+        "message": "\uc2a4\uce74\uc774 \ube0c\ub9bf\uc9c0"
+    },
+    "Sky Bridge": {
+        "message": "\ud1a0\ub974"
+    },
+    "Thor": {
+        "message": "\ud640\ub85c\uc52c"
+    },
+    "Holocene": {
+        "message": "\uc624\ub518"
+    },
+    "Odin": {
+        "message": "\uc544\uba38 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Armour Foundry": {
+        "message": "\ud5a5\uc0c1\ub41c \uc544\uba38 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Advanced Armour Foundry": {
+        "message": "\uc13c\uce04\ub9ac\uc628"
+    },
+    "Centurion": {
+        "message": "\ub514\ud50c\ub85c\ub9f7"
+    },
+    "Diplomat": {
+        "message": "\ud1a8\ub77c"
+    },
+    "Tola": {
+        "message": "\ub9ac\uadf8"
+    },
+    "Rig": {
+        "message": "\uc784\ud398\ub77c\ud1a0\ub974"
+    },
+    "Imperator": {
+        "message": "\uc2a4\ud0c0\uce90\ub17c"
+    },
+    "Starcannon": {
+        "message": "\uc81c\uc791 \uc2a4\ud0c0\uc27d"
+    },
+    "Fabrication Starship": {
+        "message": "\uc2a4\ud0c0\uc27d \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Starship Foundry": {
+        "message": "\ubc14\uc774\ud37c"
+    },
+    "Viper": {
+        "message": "\ucc44\ub9ac\uc5c7"
+    },
+    "Chariot": {
+        "message": "\ube14\ub799\ub098\uc774\ud2b8"
+    },
+    "Black Knight": {
+        "message": "\uc2a4\ud0c0\uc27d \ud504\ub85c\uc81d\ud130"
+    },
+    "Starship Projector": {
+        "message": "\uc2a4\ud399\ud130"
+    },
+    "Spectre": {
+        "message": "\ud314\ub77c\ub518"
+    },
+    "Paladin": {
+        "message": "\uc2a4\ud478\ud2b8\ub2c8\ud06c"
+    },
+    "Sputnik": {
+        "message": "\ucf54\uc2a4\ubaa8\uc2a4"
+    },
+    "Kosmos": {
+        "message": "\ud2f0\ub974"
+    },
+    "Tyr": {
+        "message": "\uc544\ucfe8\ub77c"
+    },
+    "Akula": {
+        "message": "\uc5d0\ud398"
+    },
+    "Epoch": {
+        "message": "\ubcf4\uc6b0\ud5e4\ub4dc"
+    },
+    "Bowhead": {
+        "message": "\uc81c\uc791 \ubca0\uc2ac"
+    },
+    "Fabrication Vessel": {
+        "message": "\ud5a5\uc0c1\ub41c \uc81c\uc791 \ubca0\uc2ac"
+    },
+    "Advanced Fabrication Vessel": {
+        "message": "\ub9ac\ubaa8\ub77c"
+    },
+    "Remora": {
+        "message": "\ud0c8\ub85c\uc2a4"
+    },
+    "Talos": {
+        "message": "\uc608\uac70"
+    },
+    "Jaeger": {
+        "message": "\ub9cc\ud0c0"
+    },
+    "Manta": {
+        "message": "\uc120\ubc15 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Ship Foundry": {
+        "message": "\ud5a5\uc0c1\ub41c \uc120\ubc15 \uc8fc\uc870\uacf5\uc7a5"
+    },
+    "Advanced Ship Foundry": {
+        "message": "\uae30\ub8b0"
+    },
+    "Sea Urchin": {
+        "message": "\ucea3\ud53c\uc2dc"
+    },
+    "Catfish": {
+        "message": "\ud574\uba38\ud5e4\ub4dc"
+    },
+    "Hammerhead": {
+        "message": "\ub9ac\ud50c"
+    },
+    "Ripple": {
+        "message": "\uc4f0\ub098\ubbf8"
+    },
+    "Tsunami": {
+        "message": "\uc790\ud3ed \ube44\ud589\uae30-\uacf5\uc911 \uacf5\uaca9\ub9cc \uac00\ub2a5\ud569\ub2c8\ub2e4."
+    }
+}
