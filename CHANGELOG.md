@@ -2,16 +2,14 @@
 
 #### v1.3-beta
 
-If you would like to help translate the Legion Expansion to your local language then please look at [the translation project](https://poeditor.com/join/project/XsDmbbwns2).
-
-If a translation is currently empty but you're not 100% on the translation you're entering then please [mark it as fuzzy](https://poeditor.com/kb/fuzzy-translations). It's better to have a translation than no translation, but marking it as fuzzy will let others know they should review it.
-
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser into range when attacking
  - AI no longer builds Necromancer
- - Setup Legion to allow translation of its files
+ - Legion supports the following languages:
+   - en-US, English (US)
+   - ko, Korean
 
 ###### Balance
 
@@ -22,10 +20,6 @@ If a translation is currently empty but you're not 100% on the translation you'r
    - Spectre correction
      - Cost decreased from 300 to 200
      - Vision lost only once energy efficiency drops below 90% instead of 100%
-
-###### Fixes
-
- - All units correctly maintain their maximum range when ordered to attack unless configured otherwise
 
 
 #### v1.2.1 - 2017/09/01
