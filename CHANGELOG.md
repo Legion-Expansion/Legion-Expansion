@@ -13,6 +13,9 @@
 
 ###### Balance
 
+ - Land
+   - Scorpion
+     - Damage reduced from 750 to 500
  - Titans
    - Odin buff
      - Main cannon can now shoot at units on the sea floor
