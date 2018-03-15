@@ -1,42 +1,42 @@
 {
     "Suicide bomb flyer- Attacks air only.": {
-        "message": "Zelfmoord Bom Vlieger - Valt enkel lucht-eenheden aan"
+        "message": "Zelfmoord Bom Vlieger - Valt enkel lucht-eenheden aan."
     },
     "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital.": {
-        "message": "Vliegdekschip - Lanceert snelle vliegende drones naar vijanden. Valt alles aan behalve ruimte-eenheden"
+        "message": "Vliegdekschip - Lanceert snelle vliegende drones naar vijanden. Valt alles aan behalve ruimte-eenheden."
     },
     "Missile drone- Fast, fragile, attacks land and air.": {
-        "message": "Raket drone - Snel, kwetsbaar, valt land en lucht aan"
+        "message": "Raket drone - Snel, kwetsbaar, valt land en lucht aan."
     },
     "Basic manufacturing- Builds Legion flyer units.": {
         "message": "Standaard Luchthaven - Bouwt Legion lucht eenheden."
     },
     "Advanced manufacturing- Builds advanced Legion flyer units.": {
-        "message": "Gevanceerde Luchthaven - Bouwt geavanceerde Legion lucht eenheden"
+        "message": "Gevanceerde Luchthaven - Bouwt geavanceerde Legion lucht eenheden."
     },
     "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary.": {
         "message": "Geavanceerde Stealth-vlieger : Uitgerust met een spionnen camera. Verbruikt energie. Interplanetair."
     },
     "Plasma bomber- High Damage. Attacks land and naval.": {
-        "message": "Plasma Bommenwerper - Zware aanval. Valt land en zee eenheden aan"
+        "message": "Plasma Bommenwerper - Zware aanval. Valt land en zee eenheden aan."
     },
     "Builds basic structures- Fast. Can build exclusive flyer units.": {
-        "message": "Bouwt basis gebouwen- Snel. Kan vlieger exclusieve eenheden bouwen"
+        "message": "Bouwt basis gebouwen- Snel. Kan vlieger exclusieve eenheden bouwen."
     },
     "Builds advanced structures- Can build exclusive flyer units.": {
-        "message": "Bouwt geavanceerde gebouwen- Snel. Kan vlieger exclusieve eenheden bouwen"
+        "message": "Bouwt geavanceerde gebouwen- Snel. Kan vlieger exclusieve eenheden bouwen."
     },
     "Fast air interceptor- Attacks air.": {
-        "message": "Snelle lucht onderschepper- Valt lucht aan"
+        "message": "Snelle lucht onderschepper- Valt lucht aan."
     },
     "Interplanetary fighter- Fast and armored. Attacks air.": {
         "message": "Interplanetaire vechter- Snel en gepantserd. Valt lucht aan."
     },
     "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.": {
-        "message": "Basis toren - Uitgerust met direct vuren anti-land, en anti-schip verdediging"
+        "message": "Basis toren - Uitgerust met direct vuren anti-land, en anti-schip verdediging."
     },
     "Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret.": {
-        "message": "Vlammen bommer - Hoge schade over een gebied. Goed gepantserd. Kan lichte flammenwerper torens neerzetten"
+        "message": "Vlammen bommer - Hoge schade over een gebied. Goed gepantserd. Kan lichte flammenwerper torens neerzetten."
     },
     "Interplanetary mobile teleporter- Heavily armored.": {
         "message": "Interplanetaire mobiele teleporteerder - Goed gepantserd."
@@ -45,28 +45,28 @@
         "message": "Gunship - Zwaar bepantserd. Uitgerust met zoekende raketten en een licht machinegeweer."
     },
     "Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.": {
-        "message": "Aanvaller- Licht gepantserd. Bewapend met lichte anti grond lazers"
+        "message": "Aanvaller- Licht gepantserd. Bewapend met lichte anti grond lazers."
     },
     "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns.": {
-        "message": "Vliegend Ford- Zwaar gepantserd. Uitgerust met langeafstandskanonnen en snel vuren machine geweren"
+        "message": "Vliegend Ford- Zwaar gepantserd. Uitgerust met langeafstandskanonnen en snel vuren machine geweren."
     },
     "Unit transport- Quick. Unarmed.": {
-        "message": "Eenheden transport- Snel. Onbewapend"
+        "message": "Eenheden transport- Snel. Onbewapend."
     },
     "Legion Class Commander- If you're seeing this, something is wrong in your commander.": {
-        "message": "Legioen-klasse Commandant - Als je dit ziet is er iets mis in je Commandant"
+        "message": "Legioen-klasse Commandant - Als je dit ziet is er iets mis in je Commandant."
     },
     "Legion Cyclops Commander": {
-        "message": "Legion Cycloops Commandant"
+        "message": "Legion Cycloops Commandant."
     },
     "Legion Overwatch Commander": {
-        "message": "Legion Overzicht Commandant"
+        "message": "Legion Overzicht Commandant."
     },
     "Tank Rockteeth Commander": {
-        "message": "Steentand Tank Commandant"
+        "message": "Steentand Tank Commandant."
     },
     "Legion Wasushi Commander": {
-        "message": "Legioen Wasushi Commandant"
+        "message": "Legioen Wasushi Commandant."
     },
     "Basic AA turret- Equipped with a light machine gun.": {
         "message": "Standaard Anti Lucht Kanon - Uitgerust met een lichte machinegeweer."
@@ -78,10 +78,10 @@
         "message": "Nucleare Defensie - Onderschept en vernietigt inkomende nucleaire raketten."
     },
     "Magnetic accelerator cannon- Fires high damage projectiles.": {
-        "message": "Magnetische acceleratie kanon - Vuurt zwaar beschadigende projectielen"
+        "message": "Magnetische acceleratie kanon - Vuurt zwaar beschadigende projectielen."
     },
     "Medium anti-ship and anti-land railgun- Requires energy to fire.": {
-        "message": "middenklasse anti schip en anti land railgun, vereist energie om te schieten"
+        "message": "middenklasse anti schip en anti land railgun, vereist energie om te schieten."
     },
     "Assault walker- Attacks land and naval.": {
         "message": "Aanvals loper - Valt land en zee aan."
@@ -108,10 +108,10 @@
         "message": "Geavanceerde fabricatie- Bouwt geavanceerde Legioenlopers."
     },
     "Auxiliary commander- Can build structures. High health and heavily armed.": {
-        "message": "Hulpcommandant- Kan gebouwen maken. Veel gezondheid en zwaar gepantserd"
+        "message": "Hulpcommandant- Kan gebouwen maken. Veel gezondheid en zwaar gepantserd."
     },
     "Basic economy- Generates power.": {
-        "message": "Basis stroomgenerator"
+        "message": "Basis stroomgenerator."
     },
     "Advanced power generator- Fabricates black holes and harnesses their energy. Damages allies upon death.": {
         "message": "Gevanceerde Stroomgenerator - Zuigt energie uit zwarte gaten. Doet schade bij vernietiging."
@@ -123,31 +123,31 @@
         "message": "Geavanceerde fabricatie loper - Bouwt geavanceerde structuren en exclusieve loper eenheden."
     },
     "Fabricator- Builds basic structures. Can build exclusive vehicle units.": {
-        "message": "Fabricator - Bouwt basis gebouwen. Kan exclusieve voertuig eenheden bouwen"
+        "message": "Fabricator - Bouwt basis gebouwen. Kan exclusieve voertuig eenheden bouwen."
     },
     "Fabricator- Builds advanced structures. Can build exclusive armor units.": {
-        "message": "Fabricator - Bouwt "
+        "message": "Fabricator - Bouwt ."
     },
     "Combat fabrication vehicle- Builds mines and radar and repairs friendly units. Can reclaim.": {
-        "message": "Gevechts fabricator voertuig- Bouwt mijnen, radar, repareert vriendelijke eenheden. Kan herwinnen"
+        "message": "Gevechts fabricator voertuig- Bouwt mijnen, radar, repareert vriendelijke eenheden. Kan herwinnen."
     },
     "Flame defense turret- Spews high-damage napalm.": {
-        "message": "Vlammen toren - spuwt erg schadelijke napalm"
+        "message": "Vlammen toren - spuwt erg schadelijke napalm."
     },
     "Hover artillery- Medium range. Attacks land and naval.": {
         "message": "zweef artillerie- gemiddelde afstand. Valt land en water aan."
     },
     "Hover assault- Medium range rockets. Attacks land, air, naval, and orbital.": {
-        "message": "zweef aanval- gemiddelde afstandsrakketen. Valt land,lucht, water and ruimte"
+        "message": "zweef aanval- gemiddelde afstandsrakketen. Valt land,lucht, water and ruimte."
     },
     "Heavily armored siege defense barrier.": {
-        "message": "Zwaar gepantserde belegering barriere"
+        "message": "Zwaar gepantserde belegering barriere."
     },
     "Pop-up landmine- Sprays shrapnel then explodes after four seconds.": {
-        "message": "Pop-up landmijn - Sproeit schroot en ontploft after 4 seconden"
+        "message": "Pop-up landmijn - Sproeit schroot en ontploft after 4 seconden."
     },
     "Extracts metal- Can only be placed on metal deposits.": {
-        "message": "ontgint metaal- Kan alleen op metal bron geplaatst worden"
+        "message": "ontgint metaal- Kan alleen op metal bron geplaatst worden."
     },
     "Fast amphibious attack tank- Equipped with torpedoes and a light cannon.": {
         "message": "Snelle zweef aanvals tank- Uitgerust met torpedo's en een licht kanon."
@@ -156,16 +156,16 @@
         "message": "Mobiele belegerings loper - Roept Purgers op van onder de grond. Zeer grote ontploffing bij dood."
     },
     "Long range ballistic nuclear launcher- High damage and high aoe.": {
-        "message": "Lanceerplatform voor lange afstand ballistische nucleaire raketten - Doet heel grote schade over een groot oppervlakte"
+        "message": "Lanceerplatform voor lange afstand ballistische nucleaire raketten - Doet heel grote schade over een groot oppervlakte."
     },
     "Long range, high damage ballistic missile.": {
         "message": "Lange afstand, destructieve ballistische raket."
     },
     "Basic radar- Detects nearby enemy units.": {
-        "message": "Standaard Radar - Ontdekt vijandige eenheden in de buurt"
+        "message": "Standaard Radar - Ontdekt vijandige eenheden in de buurt."
     },
     "Advanced radar- Detects enemy units inside a large area.": {
-        "message": "Gevanceerde Radar - Ontdekt vijandige eenheden in een grote omgeving"
+        "message": "Gevanceerde Radar - Ontdekt vijandige eenheden in een grote omgeving."
     },
     "Advanced assault walker- High damage gatling guns. Attacks land and naval.": {
         "message": "Geavanceerde aanvals loper - Hoge schade machine geweren. Valt land en zee aan."
@@ -195,10 +195,10 @@
         "message": "Opslag - Gebruikt de energie van zwarte gaten om overtollige metaal en energie op te slaan."
     },
     "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
-        "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!"
+        "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!."
     },
     "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
-        "message": "Zwerm "
+        "message": "Zwerm ."
     },
     "Medium defense turret- Attacks land and naval targets.": {
         "message": "Gemiddelde defensie toren - Valt land en zee eenheden aan."
@@ -219,7 +219,7 @@
         "message": "Geavanceerde bliksemtank- Veel schade. Elektrocuteert land- en zeedoelen."
     },
     "Teleportation device- Teleports units from one to another.": {
-        "message": "Teleportatiemachine- Teleporteert eenheden van de een naar de ander"
+        "message": "Teleportatiemachine- Teleporteert eenheden van de een naar de ander."
     },
     "Experimental assault titan- Equipped with an arsenal of highly destructive weapons.": {
         "message": "Experimentele aanvals Titan - Uitgerust met een arsenaal van hoog destructieve wapens."
@@ -255,7 +255,7 @@
         "message": "Ruimte eenheden kanon - Stuurt versterkings eenheden naar het oppervlakte van de planeet."
     },
     "Advanced fabricator- Builds Legion orbital satellites and ships.": {
-        "message": "Geavanceerde fabricator - Bouwt Legion ruimte satellieten en schepen"
+        "message": "Geavanceerde fabricator - Bouwt Legion ruimte satellieten en schepen."
     },
     "Advanced manufacturing- Builds advanced orbital units.": {
         "message": "Geavanceerde fabricage- Bouwt geavanceerde ruimte eenheden."
@@ -297,7 +297,7 @@
         "message": "Torpedojager - Uitgerust met zware kannonen. Valt zee en landeenheden aan."
     },
     "Builds basic structures- Can build exclusive ship units.": {
-        "message": "Bouwt basis structuren - Kan enkel schepen bouwen"
+        "message": "Bouwt basis structuren - Kan enkel schepen bouwen."
     },
     "Builds advanced structures- Can build exclusive ship units.": {
         "message": "Bouwt gevanceerde structuren - ..."
@@ -306,7 +306,7 @@
         "message": "Militaire fabricator - Kan zee mijnen plaatsen en team eenheden repareren. Licht bepantserd."
     },
     "Frigate- Only attacks air.": {
-        "message": "Fregat - valt enkel luchteenheden aan"
+        "message": "Fregat - valt enkel luchteenheden aan."
     },
     "Hover ship - equipped with heavy cannons. Can travel on any surface. Attacks land and naval.": {
         "message": "Zweef schip - uitgerust met zware kanonnen. Kan over iedere oppervlak reizen. Valt land en zee eenheden aan."
@@ -330,9 +330,9 @@
         "message": "Zwaar gepantserde sloep - ramt vijandelijke schepen. Uitgerust met zware kannonen."
     },
     "Wave maker and torpedo launcher- Attacks naval.": {
-        "message": "Golvenmaker en torpedolanceerder - "
+        "message": "Golvenmaker en torpedolanceerder - ."
     },
     "Heavy anti-ship wave machine- Attacks naval.": {
-        "message": "Zwaar anti-schepen golvenmachine - valt water aan"
+        "message": "Zwaar anti-schepen golvenmachine - valt water aan."
     }
 }
