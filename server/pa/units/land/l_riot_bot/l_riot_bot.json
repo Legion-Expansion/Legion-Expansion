@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Enforcer",
-  "description": "!LOC:Advanced Assault Walker - High Damage Gatling Guns. Attacks Land and Naval.",
+  "description": "!LOC:Advanced assault walker- High damage gatling guns. Attacks land and naval.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {

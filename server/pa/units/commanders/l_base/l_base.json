@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Legion Class Commander",
-  "description": "!LOC:Legion Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "description": "!LOC:Legion Class Commander- If you're seeing this, something is wrong in your commander.",
   "base_spec": "/pa/units/commanders/base_commander/base_commander.json",
   "buildable_types": "CmdBuild & Custom1",
   "custom": true,

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Vessel",
-  "description": "!LOC:Builds Advanced Structures. Can Build Exclusive Water Units.",
+  "description": "!LOC:Builds advanced structures- Can build exclusive ship units.",
   "TEMP_texelinfo": 11.3243,
   "attachable": {
     "offsets": {

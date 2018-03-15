@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Spectre",
-  "description": "!LOC:Orbital Radar Probe - Fast. Small Vision Radius.",
+  "description": "!LOC:Orbital radar probe- Fast. Small vision radius.",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {

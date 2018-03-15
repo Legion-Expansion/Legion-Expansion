@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Flyer Foundry",
-  "description": "!LOC:Advanced Manufacturing - Builds Advanced Legion Air Units.",
+  "description": "!LOC:Advanced manufacturing- Builds advanced Legion flyer units.",
   "TEMP_texelinfo": 42.821,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,

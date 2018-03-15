@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Meteoroid",
-  "description": "!LOC:Missile Drone-Fast, fragile, attacks land and air.",
+  "description": "!LOC:Missile drone- Fast, fragile, attacks land and air.",
   "TEMP_texelinfo": 5.39039,
   "audio": {
     "loops": {

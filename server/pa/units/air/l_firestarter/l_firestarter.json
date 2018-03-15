@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Salamander",
-  "description": "!LOC:Flame Deployment Bomber- Heavy Damage Over an Area. Well Armoured. Can Deploy Light Flamethrower Turret.",
+  "description": "!LOC:Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret.",
   "TEMP_texelinfo": 7,
   "audio": {
     "loops": {

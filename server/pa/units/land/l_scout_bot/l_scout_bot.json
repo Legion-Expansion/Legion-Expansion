@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Investigator",
-  "description": "!LOC:Scout Bot - Deploys into a Hidden Short Range Radar via Alt-Fire Detectable by Radar.",
+  "description": "!LOC:Scout bot- Deploys into a hidden short range radar via alt-fire detectable by radar.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

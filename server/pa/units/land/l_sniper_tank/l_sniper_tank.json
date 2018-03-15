@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Deathmark",
-  "description": "!LOC:Sniper - Equipped with a High-Damage Beam Cannon. Attacks Land and Naval.",
+  "description": "!LOC:Sniper- Equipped with a high-damage beam cannon. Attacks land and naval.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {

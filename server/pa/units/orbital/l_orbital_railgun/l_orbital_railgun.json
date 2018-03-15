@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Paladin",
-  "description": "!LOC:Orbital Railgun - High Damage. Attacks Orbital.",
+  "description": "!LOC:Orbital railgun- High damage. Attacks orbital.",
   "TEMP_texelinfo": 27,
   "attachable": {
     "offsets": {

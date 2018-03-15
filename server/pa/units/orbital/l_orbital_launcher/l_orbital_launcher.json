@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Starship Projector",
-  "description": "!LOC:Basic Orbital Factory - Launches Satellites and Basic Orbital Units into Space.",
+  "description": "!LOC:Basic orbital factory- Launches satellites and basic orbital units into space.",
   "TEMP_texelinfo": 47.5342,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 45.0,

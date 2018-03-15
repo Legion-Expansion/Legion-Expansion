@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Flyer Foundry",
-  "description": "!LOC:Basic Manufacturing - Builds Legion Air Units.",
+  "description": "!LOC:Basic manufacturing- Builds Legion flyer units.",
   "TEMP_texelinfo": 37.6046,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,

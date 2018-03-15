@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Archer",
-  "description": "!LOC:Advanced Anti Air Tower - Long Range. Attacks Air Units.",
+  "description": "!LOC:Advanced anti-air tower- Long range. Attacks air units.",
   "TEMP_texelinfo": 18.3,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

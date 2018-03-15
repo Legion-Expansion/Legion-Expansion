@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Radar",
-  "description": "!LOC:Basic Radar - Detects Nearby Enemy Units.",
+  "description": "!LOC:Basic radar- Detects nearby enemy units.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 100,
   "area_build_type": "Sphere",
