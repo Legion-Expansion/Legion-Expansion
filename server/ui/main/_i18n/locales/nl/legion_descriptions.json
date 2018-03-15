@@ -126,7 +126,7 @@
         "message": "Fabricator - Bouwt basis gebouwen. Kan exclusieve voertuig eenheden bouwen."
     },
     "Fabricator- Builds advanced structures. Can build exclusive armor units.": {
-        "message": "Fabricator - Bouwt ."
+        "message": "Fabricator - Bouwt geavanceerde structuren. Kan exclusieve voertuig eenheden bouwen."
     },
     "Combat fabrication vehicle- Builds mines and radar and repairs friendly units. Can reclaim.": {
         "message": "Gevechts fabricator voertuig- Bouwt mijnen, radar, repareert vriendelijke eenheden. Kan herwinnen."
@@ -198,7 +198,7 @@
         "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!."
     },
     "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
-        "message": "Zwerm ."
+        "message": "Zwerm inzet - Bouwt zwerm eenheden. Valt land en zee aan."
     },
     "Medium defense turret- Attacks land and naval targets.": {
         "message": "Gemiddelde defensie toren - Valt land en zee eenheden aan."
@@ -300,7 +300,7 @@
         "message": "Bouwt basis structuren - Kan enkel schepen bouwen."
     },
     "Builds advanced structures- Can build exclusive ship units.": {
-        "message": "Bouwt gevanceerde structuren - ..."
+        "message": "Bouwt gevanceerde structuren - Kan enkel schepen bouwen."
     },
     "Combat fabrication- Places sea mines and repairs friendly units. Lightly armored.": {
         "message": "Militaire fabricator - Kan zee mijnen plaatsen en team eenheden repareren. Licht bepantserd."
@@ -330,7 +330,7 @@
         "message": "Zwaar gepantserde sloep - ramt vijandelijke schepen. Uitgerust met zware kannonen."
     },
     "Wave maker and torpedo launcher- Attacks naval.": {
-        "message": "Golvenmaker en torpedolanceerder - ."
+        "message": "Golvenmaker en torpedolanceerder - valt water aan."
     },
     "Heavy anti-ship wave machine- Attacks naval.": {
         "message": "Zwaar anti-schepen golvenmachine - valt water aan."
