@@ -12,6 +12,8 @@
 
 For languages which use the Latin alphabet we are not including unit name translations at this time so as to avoid confusion when referring to units across languages. This was done on the advice of a number of our bilingual players.
 
+Thanks to everyone who has contributed so far!
+
 Translations added:
 
    - en-US, English (US)
