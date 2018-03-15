@@ -1,15 +1,22 @@
 ## CHANGELOG
 
-#### v1.3-beta
+#### v1.3 - 2018/03/15
 
 ###### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser into range when attacking
  - AI no longer builds Necromancer
- - Legion supports the following languages:
+
+##### Translations
+
+For languages which use the Latin alphabet we are not including unit name translations at this time so as to avoid confusion when referring to units across languages. This was done on the advice of a number of our bilingual players.
+
+Translations added:
+
    - en-US, English (US)
    - ko, Korean
+   - nl, Dutch
 
 ###### Balance
 
@@ -380,7 +387,7 @@
  - Improved Stoke textures
  - Firebird now uses the same laser effect as the Scythe to improve performance
  - Remove numerous redundant files
- - Optimise Legion uber cannon sim performance
+ - Optimise Legion ubercannon sim performance
  - Changed Firebird description to mention it's interplanetary
  - Enforcer now displays FX on death
 
