@@ -1,0 +1,347 @@
+{
+    "AOE Nova": {
+        "message": "AOE Nova"
+    },
+    "Meteor": {
+        "message": "Meteor"
+    },
+    "Meteoroid": {
+        "message": "Meteoroid"
+    },
+    "Flyer Foundry": {
+        "message": "Flyer Foundry"
+    },
+    "Advanced Flyer Foundry": {
+        "message": "Advanced Flyer Foundry"
+    },
+    "Infiltrator": {
+        "message": "Infiltrator"
+    },
+    "Dauntless": {
+        "message": "Dauntless"
+    },
+    "Fabrication Flyer": {
+        "message": "Fabrication Flyer"
+    },
+    "Advanced Fabrication Flyer": {
+        "message": "Advanced Fabrication Flyer"
+    },
+    "Scythe": {
+        "message": "Scythe"
+    },
+    "Firebird": {
+        "message": "Firebird"
+    },
+    "Purifier": {
+        "message": "Purifier"
+    },
+    "Salamander": {
+        "message": "Salamander"
+    },
+    "Comet": {
+        "message": "Comet"
+    },
+    "Lockheed": {
+        "message": "Lockheed"
+    },
+    "Marauder": {
+        "message": "Marauder"
+    },
+    "Loki": {
+        "message": "Loki"
+    },
+    "Osprey": {
+        "message": "Osprey"
+    },
+    "Legion Class Commander": {
+        "message": "Legion Class Commander"
+    },
+    "Cyclops": {
+        "message": "Cyclops"
+    },
+    "Overwatch Commander": {
+        "message": "Overwatch Commander"
+    },
+    "Rockteeth Commander": {
+        "message": "Rockteeth Commander"
+    },
+    "Wasushi": {
+        "message": "Wasushi"
+    },
+    "Shredder": {
+        "message": "Shredder"
+    },
+    "Archer": {
+        "message": "Archer"
+    },
+    "Iron Dome": {
+        "message": "Iron Dome"
+    },
+    "Iron Dome Interceptor": {
+        "message": "Iron Dome Interceptor"
+    },
+    "Gustav": {
+        "message": "Gustav"
+    },
+    "Theodor": {
+        "message": "Theodor"
+    },
+    "Peacekeeper": {
+        "message": "Peacekeeper"
+    },
+    "Patriot": {
+        "message": "Patriot"
+    },
+    "Orbweaver": {
+        "message": "Orbweaver"
+    },
+    "Miniman": {
+        "message": "Miniman"
+    },
+    "Monstrosity": {
+        "message": "Monstrosity"
+    },
+    "Purger": {
+        "message": "Purger"
+    },
+    "Walker Foundry": {
+        "message": "Walker Foundry"
+    },
+    "Advanced Walker Foundry": {
+        "message": "Advanced Walker Foundry"
+    },
+    "Praetorian": {
+        "message": "Praetorian"
+    },
+    "Catalyst": {
+        "message": "Catalyst"
+    },
+    "Power Catalyst": {
+        "message": "Power Catalyst"
+    },
+    "Advanced Power Catalyst": {
+        "message": "Advanced Power Catalyst"
+    },
+    "Fabrication Walker": {
+        "message": "Fabrication Walker"
+    },
+    "Advanced Fabrication Walker": {
+        "message": "Advanced Fabrication Walker"
+    },
+    "Armour Fabricator": {
+        "message": "Armor Fabricator"
+    },
+    "Advanced Armour Fabricator": {
+        "message": "Advanced Armor Fabricator"
+    },
+    "Guardian": {
+        "message": "Guardian"
+    },
+    "Arsonist": {
+        "message": "Arsonist"
+    },
+    "Corsair": {
+        "message": "Corsair"
+    },
+    "Panzer": {
+        "message": "Panzer"
+    },
+    "Clot": {
+        "message": "Clot"
+    },
+    "Spoiler": {
+        "message": "Spoiler"
+    },
+    "Mass Extractor": {
+        "message": "Mass Extractor"
+    },
+    "Advanced Mass Extractor": {
+        "message": "Advanced Mass Extractor"
+    },
+    "Stoke": {
+        "message": "Stoke"
+    },
+    "Necromancer": {
+        "message": "Necromancer"
+    },
+    "Supernova": {
+        "message": "Supernova"
+    },
+    "Supernova Strategic Warhead": {
+        "message": "Supernova Strategic Warhead"
+    },
+    "Overseer": {
+        "message": "Overseer"
+    },
+    "Enforcer": {
+        "message": "Enforcer"
+    },
+    "Decimator": {
+        "message": "Decimator"
+    },
+    "Investigator": {
+        "message": "Investigator"
+    },
+    "Investigator Radar mode": {
+        "message": "Investigator Radar mode"
+    },
+    "Scout Bot Radar mode collision check": {
+        "message": "Scout Bot Radar mode collision check"
+    },
+    "Rampart": {
+        "message": "Rampart"
+    },
+    "Maul": {
+        "message": "Maul"
+    },
+    "Lancer": {
+        "message": "Lancer"
+    },
+    "Deathmark": {
+        "message": "Deathmark"
+    },
+    "OmniSilo Storage Device": {
+        "message": "OmniSilo Storage Device"
+    },
+    "Bees": {
+        "message": "Bees"
+    },
+    "Hive": {
+        "message": "Hive"
+    },
+    "Scarab": {
+        "message": "Scarab"
+    },
+    "Jackal": {
+        "message": "Jackal"
+    },
+    "Earthshaker": {
+        "message": "Earthshaker"
+    },
+    "Scorpion": {
+        "message": "Scorpion"
+    },
+    "Shank": {
+        "message": "Shank"
+    },
+    "Havoc": {
+        "message": "Havoc"
+    },
+    "Sky Bridge": {
+        "message": "Sky Bridge"
+    },
+    "Thor": {
+        "message": "Thor"
+    },
+    "Holocene": {
+        "message": "Holocene"
+    },
+    "Odin": {
+        "message": "Odin"
+    },
+    "Armour Foundry": {
+        "message": "Armor Foundry"
+    },
+    "Advanced Armour Foundry": {
+        "message": "Advanced Armor Foundry"
+    },
+    "Centurion": {
+        "message": "Centurion"
+    },
+    "Diplomat": {
+        "message": "Diplomat"
+    },
+    "Tola": {
+        "message": "Tola"
+    },
+    "Rig": {
+        "message": "Rig"
+    },
+    "Imperator": {
+        "message": "Imperator"
+    },
+    "Starcannon": {
+        "message": "Starcannon"
+    },
+    "Fabrication Starship": {
+        "message": "Fabrication Starship"
+    },
+    "Starship Foundry": {
+        "message": "Starship Foundry"
+    },
+    "Viper": {
+        "message": "Viper"
+    },
+    "Chariot": {
+        "message": "Chariot"
+    },
+    "Black Knight": {
+        "message": "Black Knight"
+    },
+    "Starship Projector": {
+        "message": "Starship Projector"
+    },
+    "Spectre": {
+        "message": "Specter"
+    },
+    "Paladin": {
+        "message": "Paladin"
+    },
+    "Sputnik": {
+        "message": "Sputnik"
+    },
+    "Kosmos": {
+        "message": "Kosmos"
+    },
+    "Tyr": {
+        "message": "Tyr"
+    },
+    "Akula": {
+        "message": "Akula"
+    },
+    "Epoch": {
+        "message": "Epoch"
+    },
+    "Bowhead": {
+        "message": "Bowhead"
+    },
+    "Fabrication Vessel": {
+        "message": "Fabrication Vessel"
+    },
+    "Advanced Fabrication Vessel": {
+        "message": "Advanced Fabrication Vessel"
+    },
+    "Remora": {
+        "message": "Remora"
+    },
+    "Talos": {
+        "message": "Talos"
+    },
+    "Jaeger": {
+        "message": "Jaeger"
+    },
+    "Manta": {
+        "message": "Manta"
+    },
+    "Ship Foundry": {
+        "message": "Ship Foundry"
+    },
+    "Advanced Ship Foundry": {
+        "message": "Advanced Ship Foundry"
+    },
+    "Sea Urchin": {
+        "message": "Sea Urchin"
+    },
+    "Catfish": {
+        "message": "Catfish"
+    },
+    "Hammerhead": {
+        "message": "Hammerhead"
+    },
+    "Ripple": {
+        "message": "Ripple"
+    },
+    "Tsunami": {
+        "message": "Tsunami"
+    }
+}

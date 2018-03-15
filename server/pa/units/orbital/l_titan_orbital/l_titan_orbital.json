@@ -1,6 +1,6 @@
 {
-  "display_name": "Tyr",
-  "description": "Orbital Mega-Laser - Purifies The Surface Below with its Laser.",
+  "display_name": "!LOC:Tyr",
+  "description": "!LOC:Orbital mega-laser- Purifies the surface below with its laser.",
   "TEMP_texelinfo": 33.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 266.666,

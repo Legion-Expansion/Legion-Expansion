@@ -1,34 +1,46 @@
 <div id="legion-welcome" style="display:none" data-bind="click:legionCloseWelcome">
     <div id="legion-welcome-wrapper">
         <div id="legion-welcome-container">
-            <img id="legion-welcome-splash" src="coui://ui/mods/com.pa.legion-expansion/img/splash.png"/>
+            <img id="legion-welcome-splash" src="coui://ui/mods/com.pa.legion-expansion/img/splash.png" />
             <div id="legion-welcome-content">
                 <div id="legion-welecome-message">
                     <!-- ko if: legionClientModLoaded -->
-                    <div>The Legion Expansion adds an entirely new faction in Planetary Annihilation.</div>
-                    <div>Choose an MLA (blue - original) or Legion (red) Commander to control which faction you are.</div>
-                    <br>
-                      <div style="font-size:32px; font-weight:bold">KNOWN ISSUES</div>
-                     <div>1. Mods which add new units will prevent the Commander's build bar appearing</div>
+                    <div>
+                        <loc>The Legion Expansion adds an entirely new faction in Planetary Annihilation.</loc>
+                    </div>
+                    <div>
+                        <loc>Select a blue Commander for MLA and a red one for Legion.</loc>
+                    </div>
                     <!-- /ko -->
                     <!-- ko ifnot: legionClientModLoaded -->
-                    <div>It looks like you don't have the Legion Expansion client mod installed.</div>
-                    <div>You won't be able to play without it, but installing is easy! </div>
+                    <div>
+                        <loc>It looks like you don't have the Legion Expansion client mod installed.</loc>
+                    </div>
+                    <div>
+                        <loc>You won't be able to play without it, but installing is easy!</loc>
+                    </div>
                     <!-- /ko -->
                 </div>
                 <div id="legion-welcome-links">
-                    <a data-bind="click: legionUrlClicked, clickBubble: false" href="http://exodusesports.com/article/legion-expansion-community-faction-mod/">Learn More</a>
-                    <a data-bind="click: legionUrlClicked, clickBubble: false" href="https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/">Discuss</a>
+                    <a data-bind="click: legionUrlClicked, clickBubble: false" href="http://exodusesports.com/article/legion-expansion-community-faction-mod/">
+                        <loc>Learn More</loc>
+                    </a>
+                    <a data-bind="click: legionUrlClicked, clickBubble: false" href="https://forums.uberent.com/threads/rel-legion-expansion-public-beta.71680/">
+                        <loc>Discuss</loc>
+                    </a>
                 </div>
 
                 <!-- ko if: legionClientModLoaded -->
                 <div id="legion-welcome-donotshow" data-bind="click: legionToggleDoNotShowWelcome">
                     <label for="legion-welcome-checkbox">Do not show this again</label>
-                    <input id="legion-welcome-checkbox" type="checkbox" style="pointer-events: none !important;" data-bind="checked: legionDoNotShowWelcome" />
+                    <input id="legion-welcome-checkbox" type="checkbox" style="pointer-events: none !important;" data-bind="checked: legionDoNotShowWelcome"
+                    />
                 </div>
                 <!-- /ko -->
                 <div id="legion-welcome-close">
-                    <div>click or press space to close</div>
+                    <div>
+                        <loc>click or press space to close</loc>
+                    </div>
                 </div>
             </div>
         </div>

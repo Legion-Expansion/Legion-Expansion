@@ -1,6 +1,6 @@
 {
-  "display_name": "Hammerhead",
-  "description": "Heavily Armoured Barge - Rams Enemy Ships. Equipped with Heavy Direct-Fire Cannons.",
+  "display_name": "!LOC:Hammerhead",
+  "description": "!LOC:Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.",
   "TEMP_texelinfo": 24.7645,
   "audio": {
     "loops": {

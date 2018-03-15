@@ -1,6 +1,6 @@
 {
-  "display_name": "Shredder",
-  "description": "Basic AA Turret - Equipped With a Light Machine Gun.",
+  "display_name": "!LOC:Shredder",
+  "description": "!LOC:Basic AA turret- Equipped with a light machine gun.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

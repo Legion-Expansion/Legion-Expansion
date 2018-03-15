@@ -44,11 +44,23 @@ This project is not the work of one, but of a legion.
 | WPMarshall      | Playtester                         |
 | xankar          | Playtester                         |
 
+# Installation
+
+This mod should be installed via the Planetary Annihilation in-game community mods manager.
+
+To create a copy for testing local changes:
+
+1. Install [Python](https://www.python.org/)
+2. Edit papaths.py to correctly set your Planetary Annihilation data and media folder paths
+3. Run install_new.py
+4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
+5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
+
+# Translations
+
+If you would like to help translate the Legion Expansion to your local language then please look at [the translation project](https://poeditor.com/join/project/XsDmbbwns2).
 
 # Legion Expansion Development
-
-Please do not commit untested or broken files to the master or development branches, create a feature branch or fork the repository.
-
 
 ## Structure
 
@@ -56,26 +68,25 @@ Please remove all unnecessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
 
-Javascript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
+JavaScript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
 Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
 
 Latest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
-
 ## Committing
 
-1. Don't commit broken stuff to MASTER. Develop, test and fix in your local, a branch or your own fork.
+1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a branch, or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE references in the format.py output
 
 Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
-MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions
+MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
 BALANCE - development; forked to RELEASE-x.x.x and FEATURE-*name*
 
-FEATURE-*name* - a feature which is stil in development; merged into BALANCE on completion
+FEATURE-*name* - a feature which is still in development; merged into BALANCE on completion
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
@@ -84,13 +95,13 @@ RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks
 
 ## Units
 
-Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`. This is provided by the Xenophobia mod.
+Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
 
-When working with legion units please:
+When working with Legion units please:
 
-- prefix all legion units directories and filenames with L_
-- follow uber naming conventions ie L_type_unit_adv (although some are different eg dox)
-- for all legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
+- prefix all Legion units directories and filenames with L_
+- follow Uber's naming conventions i.e. L_type_unit_adv (although some are different eg dox)
+- for all Legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
 - check area builds i.e. area_build_separation
 - create sea versions when needed in pa/units/sea/
 - update pa/units/unit_list.json
@@ -137,21 +148,3 @@ Add to the same path as the unit's json file:
 ### Projectiles
 
 If you're changing projectiles and anti-projectiles remember to update anti_entity_targets e.g. nukes
-
-
-## AI
-
-Full AI support is built into the mod.
-
-
-## Installation
-
-This mod should be installed via the Planetary Annihilation in-game community mods manager.
-
-To create a copy for testing local changes:
-
-1. Install [Python](https://www.python.org/)
-2. Edit papaths.py to correctly set your Planetary Annihilation data and media folder paths
-3. Run install_new.py
-4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
-5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).

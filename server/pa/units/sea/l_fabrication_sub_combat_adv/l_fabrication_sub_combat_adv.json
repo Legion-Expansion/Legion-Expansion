@@ -1,6 +1,6 @@
 {
-  "display_name": "Remora",
-  "description": "Combat Fabrication - Places Sea Mines and Repairs Friendly Units. Lightly Armoured.",
+  "display_name": "!LOC:Remora",
+  "description": "!LOC:Combat fabrication- Places sea mines and repairs friendly units. Lightly armored.",
   "TEMP_texelinfo": 20,
   "attachable": {
     "offsets": {

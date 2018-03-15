@@ -1,6 +1,6 @@
 {
-  "display_name": "Scarab",
-  "description": "Medium Defense Turret - Attacks Land and Naval Targets.",
+  "display_name": "!LOC:Scarab",
+  "description": "!LOC:Medium defense turret- Attacks land and naval targets.",
   "TEMP_texelinfo": 23.9812,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

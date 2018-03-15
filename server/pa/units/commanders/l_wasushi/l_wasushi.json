@@ -1,6 +1,6 @@
 {
-  "display_name": "Wasushi",
-  "description": "Legion Wasushi Commander",
+  "display_name": "!LOC:Wasushi",
+  "description": "!LOC:Legion Wasushi Commander",
   "attachable": {
     "offsets": {
       "head": [

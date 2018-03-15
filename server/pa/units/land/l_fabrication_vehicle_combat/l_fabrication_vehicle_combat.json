@@ -1,6 +1,6 @@
 {
-  "display_name": "Guardian",
-  "description": "Combat Fabrication Vehicle - Builds Mines and Radar and Repairs Friendly Units. Can Reclaim.",
+  "display_name": "!LOC:Guardian",
+  "description": "!LOC:Combat fabrication vehicle- Builds mines and radar and repairs friendly units. Can reclaim.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {

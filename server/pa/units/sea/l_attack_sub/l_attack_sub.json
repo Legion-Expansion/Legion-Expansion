@@ -1,6 +1,6 @@
 {
-  "display_name": "Akula",
-  "description": "Attack Submarine - Equipped With Torpedoes. Fast.",
+  "display_name": "!LOC:Akula",
+  "description": "!LOC:Attack submarine- Equipped with torpedoes. Fast.",
   "TEMP_texelinfo": 8.37977,
   "audio": {
     "loops": {

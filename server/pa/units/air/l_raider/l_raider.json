@@ -1,6 +1,6 @@
 {
-  "display_name": "Marauder",
-  "description": "Raider- Lightly armoured. Armed with light anti-ground lasers. Very fast.",
+  "display_name": "!LOC:Marauder",
+  "description": "!LOC:Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.",
   "TEMP_texelinfo": 8,
   "attachable": {
     "offsets": {

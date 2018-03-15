@@ -1,9 +1,10 @@
 {
-  "display_name": "Thor",
-  "description": "Experimental Assault Titan - Equipped with an Arsenal of Highly Destructive Weapons.",
+  "display_name": "!LOC:Thor",
+  "description": "!LOC:Experimental assault titan- Equipped with an arsenal of highly destructive weapons.",
   "TEMP_texelinfo": 35.2973,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 200.0,
+  "attack_range_frac": 0.625,
   "audio": {
     "loops": {
       "move": {

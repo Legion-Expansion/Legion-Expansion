@@ -1307,7 +1307,7 @@
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Advanced Suicide Bot",
-      "priority": 199,
+      "priority": 0,
       "to_build": "LegionBotAdvancedBomb"
     },
     {
