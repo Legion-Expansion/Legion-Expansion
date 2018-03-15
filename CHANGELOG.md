@@ -12,6 +12,8 @@
 
 For languages which use the Latin alphabet we are not including unit name translations at this time so as to avoid confusion when referring to units across languages. This was done on the advice of a number of our bilingual players.
 
+We can't include translations for client components like the lobby pop-up at this time due to client mod translations breaking vanilla translations. We have put the necessary frameworks in place for the future though.
+
 Thanks to everyone who has contributed so far!
 
 Translations added:
