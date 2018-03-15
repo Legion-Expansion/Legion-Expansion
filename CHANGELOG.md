@@ -6,7 +6,7 @@
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser into range when attacking
- - AI no longer builds Necromancer
+ - AI no longer builds the Necromancer
 
 ##### Translations
 
