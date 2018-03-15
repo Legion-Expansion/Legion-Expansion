@@ -152,202 +152,199 @@
     "Spoiler": {
         "message": "\uc2a4\ud3ec\uc77c\ub7ec"
     },
-    "Land Mine": {
+    "Mass Extractor": {
         "message": "\ub9e4\uc2a4 \ucd94\ucd9c\uae30"
     },
-    "Mass Extractor": {
+    "Advanced Mass Extractor": {
         "message": "\uace0\uae09 \ub9e4\uc2a4 \ucd94\ucd9c\uae30"
     },
-    "Advanced Mass Extractor": {
+    "Stoke": {
         "message": "\uc2a4\ud1a0\ud06c"
     },
-    "Stoke": {
+    "Necromancer": {
         "message": "\ub124\ud06c\ub85c\ub9e8\uc11c"
     },
-    "Necromancer": {
+    "Supernova": {
         "message": "\uc218\ud37c\ub178\ubc14"
     },
-    "Supernova": {
+    "Supernova Strategic Warhead": {
         "message": "\uc218\ud37c\ub178\ubc14\uae09 \uc804\ub7b5\ud0c4\ub450"
     },
-    "Supernova Strategic Warhead": {
+    "Radar": {
         "message": "\ub808\uc774\ub354"
     },
-    "Radar": {
+    "Overseer": {
         "message": "\uc624\ubc84\uc2dc\uc5b4"
     },
-    "Overseer": {
+    "Enforcer": {
         "message": "\uc5d4\ud3ec\uc11c"
     },
-    "Enforcer": {
+    "Decimator": {
         "message": "\ub370\uc2dc\ubbf8\ud130"
     },
-    "Decimator": {
+    "Investigator": {
         "message": "\uc778\ubca0\uc2a4\ud2f0\uac8c\uc774\ud130"
     },
-    "Investigator": {
+    "Investigator Radar mode": {
         "message": "\uc778\ubca0\uc2a4\ud2f0\uac8c\uc774\ud130 \ub808\uc774\ub354 \ubaa8\ub4dc"
     },
-    "Investigator Radar mode": {
+    "Scout Bot Radar mode collision check": {
         "message": "\uc815\ucc30 \ubd07 \ub808\uc774\ub354 \ubaa8\ub4dc \ucda9\ub3cc \uac80\uc0ac"
     },
-    "Scout Bot Radar mode collision check": {
+    "Rampart": {
         "message": "\ub7a8\ud30c\ud2b8"
     },
-    "Rampart": {
+    "Maul": {
         "message": "\ubbac"
     },
-    "Maul": {
+    "Lancer": {
         "message": "\ub79c\uc11c"
     },
-    "Lancer": {
+    "Deathmark": {
         "message": "\ub370\uc2a4\ub9c8\ud06c"
     },
-    "Deathmark": {
+    "OmniSilo Storage Device": {
         "message": "\uc634\ub2c8\uc18c\uc77c \uc790\uc6d0 \uc800\uc7a5\uc18c"
     },
-    "OmniSilo Storage Device": {
+    "Bees": {
         "message": "\ube44\uc2a4"
     },
-    "Bees": {
+    "Hive": {
         "message": "\ud558\uc774\ube0c"
     },
-    "Hive": {
+    "Scarab": {
         "message": "\uc2a4\uce90\ub7fd"
     },
-    "Scarab": {
+    "Jackal": {
         "message": "\uc790\uce7c"
     },
-    "Jackal": {
+    "Earthshaker": {
         "message": "\uc5b4\uc2a4\uc250\uc774\ucee4"
     },
-    "Earthshaker": {
+    "Scorpion": {
         "message": "\uc2a4\ucf5c\ud53c\uc628"
     },
-    "Scorpion": {
+    "Shank": {
         "message": "\uc115\ud06c"
     },
-    "Shank": {
+    "Havoc": {
         "message": "\ud558\ubcf4\ud06c"
     },
-    "Havoc": {
+    "Sky Bridge": {
         "message": "\uc2a4\uce74\uc774 \ube0c\ub9bf\uc9c0"
     },
-    "Sky Bridge": {
+    "Thor": {
         "message": "\ud1a0\ub974"
     },
-    "Thor": {
+    "Holocene": {
         "message": "\ud640\ub85c\uc52c"
     },
-    "Holocene": {
+    "Odin": {
         "message": "\uc624\ub518"
     },
-    "Odin": {
+    "Armour Foundry": {
         "message": "\uc544\uba38 \uc8fc\uc870\uacf5\uc7a5"
     },
-    "Armour Foundry": {
+    "Advanced Armour Foundry": {
         "message": "\ud5a5\uc0c1\ub41c \uc544\uba38 \uc8fc\uc870\uacf5\uc7a5"
     },
-    "Advanced Armour Foundry": {
+    "Centurion": {
         "message": "\uc13c\uce04\ub9ac\uc628"
     },
-    "Centurion": {
+    "Diplomat": {
         "message": "\ub514\ud50c\ub85c\ub9f7"
     },
-    "Diplomat": {
+    "Tola": {
         "message": "\ud1a8\ub77c"
     },
-    "Tola": {
+    "Rig": {
         "message": "\ub9ac\uadf8"
     },
-    "Rig": {
+    "Imperator": {
         "message": "\uc784\ud398\ub77c\ud1a0\ub974"
     },
-    "Imperator": {
+    "Starcannon": {
         "message": "\uc2a4\ud0c0\uce90\ub17c"
     },
-    "Starcannon": {
+    "Fabrication Starship": {
         "message": "\uc81c\uc791 \uc2a4\ud0c0\uc27d"
     },
-    "Fabrication Starship": {
+    "Starship Foundry": {
         "message": "\uc2a4\ud0c0\uc27d \uc8fc\uc870\uacf5\uc7a5"
     },
-    "Starship Foundry": {
+    "Viper": {
         "message": "\ubc14\uc774\ud37c"
     },
-    "Viper": {
+    "Chariot": {
         "message": "\ucc44\ub9ac\uc5c7"
     },
-    "Chariot": {
+    "Black Knight": {
         "message": "\ube14\ub799\ub098\uc774\ud2b8"
     },
-    "Black Knight": {
+    "Starship Projector": {
         "message": "\uc2a4\ud0c0\uc27d \ud504\ub85c\uc81d\ud130"
     },
-    "Starship Projector": {
+    "Spectre": {
         "message": "\uc2a4\ud399\ud130"
     },
-    "Spectre": {
+    "Paladin": {
         "message": "\ud314\ub77c\ub518"
     },
-    "Paladin": {
+    "Sputnik": {
         "message": "\uc2a4\ud478\ud2b8\ub2c8\ud06c"
     },
-    "Sputnik": {
+    "Kosmos": {
         "message": "\ucf54\uc2a4\ubaa8\uc2a4"
     },
-    "Kosmos": {
+    "Tyr": {
         "message": "\ud2f0\ub974"
     },
-    "Tyr": {
+    "Akula": {
         "message": "\uc544\ucfe8\ub77c"
     },
-    "Akula": {
+    "Epoch": {
         "message": "\uc5d0\ud398"
     },
-    "Epoch": {
+    "Bowhead": {
         "message": "\ubcf4\uc6b0\ud5e4\ub4dc"
     },
-    "Bowhead": {
+    "Fabrication Vessel": {
         "message": "\uc81c\uc791 \ubca0\uc2ac"
     },
-    "Fabrication Vessel": {
+    "Advanced Fabrication Vessel": {
         "message": "\ud5a5\uc0c1\ub41c \uc81c\uc791 \ubca0\uc2ac"
     },
-    "Advanced Fabrication Vessel": {
+    "Remora": {
         "message": "\ub9ac\ubaa8\ub77c"
     },
-    "Remora": {
+    "Talos": {
         "message": "\ud0c8\ub85c\uc2a4"
     },
-    "Talos": {
+    "Jaeger": {
         "message": "\uc608\uac70"
     },
-    "Jaeger": {
+    "Manta": {
         "message": "\ub9cc\ud0c0"
     },
-    "Manta": {
+    "Ship Foundry": {
         "message": "\uc120\ubc15 \uc8fc\uc870\uacf5\uc7a5"
     },
-    "Ship Foundry": {
+    "Advanced Ship Foundry": {
         "message": "\ud5a5\uc0c1\ub41c \uc120\ubc15 \uc8fc\uc870\uacf5\uc7a5"
     },
-    "Advanced Ship Foundry": {
+    "Sea Urchin": {
         "message": "\uae30\ub8b0"
     },
-    "Sea Urchin": {
+    "Catfish": {
         "message": "\ucea3\ud53c\uc2dc"
     },
-    "Catfish": {
+    "Hammerhead": {
         "message": "\ud574\uba38\ud5e4\ub4dc"
     },
-    "Hammerhead": {
+    "Ripple": {
         "message": "\ub9ac\ud50c"
     },
-    "Ripple": {
-        "message": "\uc4f0\ub098\ubbf8"
-    },
     "Tsunami": {
-        "message": "\uc790\ud3ed \ube44\ud589\uae30-\uacf5\uc911 \uacf5\uaca9\ub9cc \uac00\ub2a5\ud569\ub2c8\ub2e4."
+        "message": "\uc4f0\ub098\ubbf8"
     }
 }
