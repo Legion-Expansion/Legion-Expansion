@@ -10,8 +10,6 @@ if (!legionExpansionLoaded) {
 
         var legionExpansionEnabled = false;
 
-        var helpText = 'To play as the Legion select one of the red Commanders.';
-
         model.enableLegion = function () {
 
             if (legionExpansionEnabled) {
@@ -136,9 +134,9 @@ if (!legionExpansionLoaded) {
 
             //NEED PATCHED lobby.js
             //To Legion Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}">To Legion</div>');
+            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}"><loc>To Legion</loc></div>');
             //To Vanilla Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">To MLA</div>');
+            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}"><loc>To MLA</loc></div>');
             //ENDOF NEED PATCHED lobby.js
         }
 
@@ -147,7 +145,7 @@ if (!legionExpansionLoaded) {
         }
 
         _.defer(function () {
-            model.localChatMessage('Legion Expansion', helpText);
+            model.localChatMessage(loc("!LOC:Legion Expansion"), loc("!LOC:To play as the Legion select one of the red Commanders."));
         });
 
     }
