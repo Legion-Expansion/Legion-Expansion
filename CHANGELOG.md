@@ -1,5 +1,13 @@
 ## CHANGELOG
 
+#### v1.x
+
+###### Translations
+
+ - Expanded to cover lobby messages
+ - Added French (fr) and German (de) for lobby only pending further unit description translations
+
+
 #### v1.3 - 2018/03/15
 
 ###### General
