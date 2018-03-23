@@ -55,8 +55,7 @@ To create a copy for testing local changes:
 3. Run install_new.py
 4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
 5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
-6. Change all modinfo.json "com.pa.legion-expansion-client-balance" references to "com.pa.legion-expansion-client-dev"
-7. Change all modinfo.json "com.pa.legion-expansion-server-balance" references to "com.pa.legion-expansion-server-dev"
+6. In both the client and server folders change all references in modinfo.json for "-balance" to "-dev"
 
 # Translations
 
