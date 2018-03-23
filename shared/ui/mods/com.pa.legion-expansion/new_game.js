@@ -140,7 +140,7 @@ if (!legionExpansionLoaded) {
             //ENDOF NEED PATCHED lobby.js
         }
 
-        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
+        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance', 'com.pa.legion-expansion-server-dev']).length > 0) {
             model.enableLegion();
         }
 
