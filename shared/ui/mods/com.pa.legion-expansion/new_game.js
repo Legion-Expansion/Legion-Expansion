@@ -75,7 +75,7 @@ if (!legionExpansionLoaded) {
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
             api.mods.getMountedMods('client', function (mods) {
-                var legionClientLoaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.legion-expansion-client', , 'com.pa.legion-expansion-client-master', 'com.pa.legion-expansion-client-balance']).length > 0;
+                var legionClientLoaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.legion-expansion-client', , 'com.pa.legion-expansion-client-master', 'com.pa.legion-expansion-client-balance', 'com.pa.legion-expansion-client-dev']).length > 0;
 
                 model.legionClientModLoaded(legionClientLoaded);
 
