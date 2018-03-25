@@ -6,7 +6,7 @@
 
  - Expanded to cover lobby chat messages
  - Added French (fr) and German (de) for lobby only pending further unit description translations
- - Commander names are no longer translated due to a lobby bug
+ - Commander names are no longer translated to resolve them being displayed incorrectly in the lobby
 
 
 #### v1.3 - 2018/03/15
