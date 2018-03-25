@@ -1,5 +1,62 @@
 ## CHANGELOG
 
+#### v1.x
+
+###### Translations
+
+ - Expanded to cover lobby chat messages
+ - Added French (fr) and German (de) for lobby only pending further unit description translations
+ - Commander names are no longer translated due to a lobby bug
+
+
+#### v1.3 - 2018/03/15
+
+###### General
+
+ - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
+ - Thor will move to bring its multilaser into range when attacking
+ - AI no longer builds the Necromancer
+
+###### Translations
+
+For languages which use the Latin alphabet we are not including unit name translations at this time so as to avoid confusion when referring to units across languages. This was done on the advice of a number of our bilingual players.
+
+We can't include translations for client components like the lobby pop-up at this time due to client mod translations breaking vanilla translations. We have put the necessary frameworks in place for the future though.
+
+Thanks to everyone who has contributed so far!
+
+Translations added:
+
+   - en-US, English (US)
+   - ko, Korean
+   - nl, Dutch
+
+###### Balance
+
+ - Land
+   - Scorpion
+     - Damage reduced from 750 to 500
+ - Titans
+   - Odin buff
+     - Main cannon can now shoot at units on the sea floor
+ - Orbital
+   - Spectre correction
+     - Cost decreased from 300 to 200
+     - Vision lost only once energy efficiency drops below 90% instead of 100%
+
+
+#### v1.2.1 - 2017/09/01
+
+###### General
+
+ - Initial lobby pop-up now states how to play as Legion
+
+###### Fixes
+
+ - Fixed multiple intro buttons appearing when Legion was installed by a player not logged into Ubernet
+ - POV button coloured to match Legion theme
+
+
 #### v1.2 - 2017/06/20
 
 ###### General
@@ -235,7 +292,7 @@
  - Kaiju projectiles now properly blocked by Rampart
  - Jaeger projectiles now properly blocked by Rampart
  - Legion no longer overrides weapon effect mods
- - Cleanup of file shadowing
+ - Clean-up of file shadowing
  - Lobby overlay no longer broken when Legion theme is disabled
 
 
@@ -343,7 +400,7 @@
  - Improved Stoke textures
  - Firebird now uses the same laser effect as the Scythe to improve performance
  - Remove numerous redundant files
- - Optimise Legion uber cannon sim performance
+ - Optimise Legion ubercannon sim performance
  - Changed Firebird description to mention it's interplanetary
  - Enforcer now displays FX on death
 
@@ -523,7 +580,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Wraith renamed to Spectre
  - Excalibur renamed to Paladin
  - Added idle effects to the Havoc
- - Improved PA startup time when Legion is disabled through use of new companion mod feature
+ - Improved PA start-up time when Legion is disabled through use of new companion mod feature
  - Improved Investigator description
  - Improved game logging
 

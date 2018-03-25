@@ -1,6 +1,6 @@
 {
-  "display_name": "Supernova Strategic Warhead",
-  "description": "Long range, high damage ballistic missile.",
+  "display_name": "!LOC:Supernova Strategic Warhead",
+  "description": "!LOC:Long range, high damage ballistic missile.",
   "ammo_type": "Projectile",
   "armor_damage_map": {
     "AT_Commander": 0.33,

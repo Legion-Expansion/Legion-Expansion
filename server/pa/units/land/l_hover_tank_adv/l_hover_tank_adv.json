@@ -1,6 +1,6 @@
 {
-  "display_name": "Panzer",
-  "description": "Hover Assault - Medium Range Rockets. Attacks Land, Air, Naval, and Orbital.",
+  "display_name": "!LOC:Panzer",
+  "description": "!LOC:Hover assault- Medium range rockets. Attacks land, air, naval, and orbital.",
   "TEMP_texelinfo": 5.84968,
   "armor_type": "AT_Hover",
   "attachable": {

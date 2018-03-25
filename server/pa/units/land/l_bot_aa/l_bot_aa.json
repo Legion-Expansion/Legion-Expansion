@@ -1,6 +1,6 @@
 {
-  "display_name": "Patriot",
-  "description": "Anti-Air Walker - Short range. Attacks Air.",
+  "display_name": "!LOC:Patriot",
+  "description": "!LOC:Anti-air walker- Short range. Attacks air.",
   "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {

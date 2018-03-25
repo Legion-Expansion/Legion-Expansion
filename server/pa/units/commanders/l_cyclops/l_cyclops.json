@@ -1,6 +1,6 @@
 {
-  "display_name": "Cyclops",
-  "description": "Legion Cyclops Commander",
+  "display_name": "!LOC:Cyclops",
+  "description": "!LOC:Legion Cyclops Commander",
   "attachable": {
     "offsets": {
       "head": [

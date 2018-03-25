@@ -1,6 +1,6 @@
 {
-  "display_name": "Centurion",
-  "description": "Orbital Defense - Heavy Defensive Satellite. Attacks Anything.",
+  "display_name": "!LOC:Centurion",
+  "description": "!LOC:Orbital defense- Heavy defensive satellite. Attacks anything.",
   "TEMP_texelinfo": 26.4194,
   "area_build_separation": 75,
   "area_build_type": "Sphere",

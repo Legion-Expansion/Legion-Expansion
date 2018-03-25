@@ -1,6 +1,6 @@
 {
-  "display_name": "Spectre",
-  "description": "Orbital Radar Probe - Fast. Small Vision Radius.",
+  "display_name": "!LOC:Spectre",
+  "description": "!LOC:Orbital radar probe- Fast. Small vision radius.",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
@@ -12,13 +12,14 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
-  "build_metal_cost": 300,
+  "build_metal_cost": 200,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist"
   ],
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"

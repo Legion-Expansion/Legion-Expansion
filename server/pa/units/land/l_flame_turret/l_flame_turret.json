@@ -1,6 +1,6 @@
 {
-  "display_name": "Arsonist",
-  "description": "Flame Defense Turret - Spews High-Damage Napalm.",
+  "display_name": "!LOC:Arsonist",
+  "description": "!LOC:Flame defense turret- Spews high-damage napalm.",
   "TEMP_texelinfo": 19.6,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,

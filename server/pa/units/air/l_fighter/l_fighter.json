@@ -1,6 +1,6 @@
 {
-  "display_name": "Scythe",
-  "description": "Fast Air Interceptor. Attacks Air.",
+  "display_name": "!LOC:Scythe",
+  "description": "!LOC:Fast air interceptor- Attacks air.",
   "TEMP_texelinfo": 6.1803,
   "audio": {
     "loops": {

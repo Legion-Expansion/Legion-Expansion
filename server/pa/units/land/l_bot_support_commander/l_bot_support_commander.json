@@ -1,6 +1,6 @@
 {
-  "display_name": "Praetorian",
-  "description": "Auxiliary Commander - Can Build Structures. High Health and Heavily Armed.",
+  "display_name": "!LOC:Praetorian",
+  "description": "!LOC:Auxiliary commander- Can build structures. High health and heavily armed.",
   "TEMP_texelinfo": 25,
   "armor_type": "AT_Commander",
   "attachable": {

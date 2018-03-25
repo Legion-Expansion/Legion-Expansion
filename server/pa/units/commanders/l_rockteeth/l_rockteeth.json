@@ -1,6 +1,6 @@
 {
-  "display_name": "Rockteeth Commander",
-  "description": "Tank Rockteeth Commander ",
+  "display_name": "!LOC:Rockteeth Commander",
+  "description": "!LOC:Tank Rockteeth Commander",
   "attachable": {
     "offsets": {
       "head": [

@@ -1,13 +1,13 @@
 {
-  "author": "Nicb1, KillerKiwiJuice, MgMetal13, Crembels, zx0, MikeyH, Alpha2546, PRoeleert, wondible, Quitch, Stuart98, dom314, Elodea, Graushwein, CptConundrum",
-  "build": "105067",
+  "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
+  "build": "108271",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "server",
-  "date": "2017/06/20",
+  "date": "2018/03/15",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client",
@@ -16,7 +16,7 @@
   "companions": [
     "com.pa.legion-expansion-client"
   ],
-  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Requires TITANS. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
+  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
   "display_name": "Legion Expansion",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-released.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
@@ -30,6 +30,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.1-beta",
+  "version": "1.3-beta",
   "titansOnly": true
 }
