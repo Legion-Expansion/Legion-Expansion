@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Fabrication Ship",
+  "display_name": "Fabrication Ship",
   "description": "!LOC:Basic fabricator- Wired to build naval structures.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {

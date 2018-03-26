@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Barnacle",
+  "display_name": "Barnacle",
   "description": "!LOC:Support Barge- Repairs damaged ships. Builds and detects mines. Cannot help build things.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {

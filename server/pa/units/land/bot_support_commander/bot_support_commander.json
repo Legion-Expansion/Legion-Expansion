@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Colonel",
+  "display_name": "Colonel",
   "description": "!LOC:Proxy Commander -- Builds advanced structures. Durable. High damage. Attacks everything but orbital.",
   "armor_type": "AT_Commander",
   "attachable": {

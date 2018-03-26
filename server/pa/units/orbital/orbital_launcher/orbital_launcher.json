@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Orbital Launcher",
+  "display_name": "Orbital Launcher",
   "description": "!LOC:Basic manufacturing- Builds and launches satellites and other units.",
   "TEMP_texelinfo": 63.4807,
   "atrophy_cool_down": 15,
