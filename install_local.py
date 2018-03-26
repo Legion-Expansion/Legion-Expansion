@@ -54,12 +54,13 @@ distutils.dir_util.copy_tree(join(root_folder, 'shared'), server_dest)
 print ('Update client identifier to', client_id)
 client_modinfo = open_json(client_dest, 'modinfo.json')
 client_modinfo['identifier'] = client_id
+client_modinfo['display_name'] = client_modinfo['display_name'] + ' [DEVELOPMENT]'
 with open(join(client_dest, 'modinfo.json'), 'w') as out:
     json.dump(client_modinfo, out, indent=2)
 
 print ('Update server identifier to', server_id)
 server_modinfo = open_json(server_dest, 'modinfo.json')
 server_modinfo['identifier'] = server_id
+server_modinfo['display_name'] = server_modinfo['display_name'] + ' [DEVELOPMENT]'
 with open(join(server_dest, 'modinfo.json'), 'w') as out:
     json.dump(server_modinfo, out, indent=2)
-
