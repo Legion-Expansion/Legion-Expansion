@@ -1,4 +1,5 @@
 {
+  "display_name": "!LOC:Purger",
   "base_spec": "/pa/units/land/l_bot_bomb/l_bot_bomb.json",
   "fx_offsets": [
     {

@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Rig",
+  "display_name": "Rig",
   "description": "!LOC:Gas planet economy structure- Produces metal and energy. Only works above gas giant planets.",
   "TEMP_texelinfo": 48,
   "area_build_separation": 100,

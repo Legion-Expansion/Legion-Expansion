@@ -10,8 +10,6 @@ if (!legionExpansionLoaded) {
 
         var legionExpansionEnabled = false;
 
-        var helpText = 'To play as the Legion select one of the red Commanders.';
-
         model.enableLegion = function () {
 
             if (legionExpansionEnabled) {
@@ -77,7 +75,7 @@ if (!legionExpansionLoaded) {
             $("body").append(loadHtml('coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html'));
 
             api.mods.getMountedMods('client', function (mods) {
-                var legionClientLoaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.legion-expansion-client', , 'com.pa.legion-expansion-client-master', 'com.pa.legion-expansion-client-balance']).length > 0;
+                var legionClientLoaded = _.intersection(_.pluck(mods, 'identifier'), ['com.pa.legion-expansion-client', , 'com.pa.legion-expansion-client-master', 'com.pa.legion-expansion-client-balance', 'com.pa.legion-expansion-client-dev']).length > 0;
 
                 model.legionClientModLoaded(legionClientLoaded);
 
@@ -136,18 +134,19 @@ if (!legionExpansionLoaded) {
 
             //NEED PATCHED lobby.js
             //To Legion Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}">To Legion</div>');
+            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}"><loc>To Legion</loc></div>');
             //To Vanilla Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}">To MLA</div>');
+            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}"><loc>To MLA</loc></div>');
+            locUpdateDocument();
             //ENDOF NEED PATCHED lobby.js
         }
 
-        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance']).length > 0) {
+        if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance', 'com.pa.legion-expansion-server-dev']).length > 0) {
             model.enableLegion();
         }
 
         _.defer(function () {
-            model.localChatMessage('Legion Expansion', helpText);
+            model.localChatMessage(loc("!LOC:Legion Expansion"), loc("!LOC:To play as the Legion select one of the red Commanders."));
         });
 
     }

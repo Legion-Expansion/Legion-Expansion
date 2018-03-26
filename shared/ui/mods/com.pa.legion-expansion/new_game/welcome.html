@@ -32,7 +32,9 @@
 
                 <!-- ko if: legionClientModLoaded -->
                 <div id="legion-welcome-donotshow" data-bind="click: legionToggleDoNotShowWelcome">
-                    <label for="legion-welcome-checkbox">Do not show this again</label>
+                    <label for="legion-welcome-checkbox">
+                        <loc>Do not show this again</loc>
+                    </label>
                     <input id="legion-welcome-checkbox" type="checkbox" style="pointer-events: none !important;" data-bind="checked: legionDoNotShowWelcome"
                     />
                 </div>

@@ -50,15 +50,15 @@ This mod should be installed via the Planetary Annihilation in-game community mo
 
 To create a copy for testing local changes:
 
-1. Install [Python](https://www.python.org/)
-2. Edit papaths.py to correctly set your Planetary Annihilation data and media folder paths
-3. Run install_new.py
-4. Move the Legion-Expansion-Client folder to your [client_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
-5. Move the Legion-Expansion-Server folder to your [server_mods folder](https://wiki.palobby.com/wiki/Planetary_Annihilation_Data_Directory).
+1. Install [Python 3](https://www.python.org/)
+2. Checkout origin/balance
+3. Run install_local.py
+4. Enable the '[DEVELOPMENT]' version of the mod.
+
 
 # Translations
 
-If you would like to help translate the Legion Expansion to your local language then please look at [the translation project](https://poeditor.com/join/project/XsDmbbwns2).
+If you would like to help translate Queller to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
 
 # Legion Expansion Development
 

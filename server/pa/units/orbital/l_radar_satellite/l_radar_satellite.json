@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Sputnik",
+  "display_name": "Sputnik",
   "description": "!LOC:Basic radar satellite- Detects enemy units within a medium-sized area.",
   "TEMP_texelinfo": 10.6806,
   "attachable": {
