@@ -1,5 +1,5 @@
 {
-  "display_name": "Stitch",
+  "display_name": "!LOC:Stitch",
   "description": "!LOC:Support Fabricator- Repairs damaged units. Can build and detect mines. Can't help build other structures.",
   "TEMP_texelinfo": 5.11028,
   "attachable": {

@@ -1,5 +1,5 @@
 {
-  "display_name": "Radar",
+  "display_name": "!LOC:Radar",
   "description": "!LOC:Basic radar- Detects nearby enemy units.",
   "TEMP_texelinfo": 15,
   "area_build_separation": 100,

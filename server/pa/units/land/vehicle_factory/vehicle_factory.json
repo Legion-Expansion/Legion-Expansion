@@ -1,5 +1,5 @@
 {
-  "display_name": "Vehicle Factory",
+  "display_name": "!LOC:Vehicle Factory",
   "description": "!LOC:Basic manufacturing- Builds land vehicles.",
   "TEMP_texelinfo": 39.6154,
   "area_build_separation": 2,

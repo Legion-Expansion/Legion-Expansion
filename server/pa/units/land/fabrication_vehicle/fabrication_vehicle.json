@@ -1,5 +1,5 @@
 {
-  "display_name": "Fabrication Vehicle",
+  "display_name": "!LOC:Fabrication Vehicle",
   "description": "!LOC:Builder- Builds structures. Durable. More powerful than other builders.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {

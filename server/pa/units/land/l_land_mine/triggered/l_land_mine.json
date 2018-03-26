@@ -1,5 +1,5 @@
 {
-  "display_name": "Spoiler",
+  "display_name": "!LOC:Spoiler",
   "description": "!LOC:Pop-up landmine- Sprays shrapnel then explodes after four seconds.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 1,

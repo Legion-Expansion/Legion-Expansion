@@ -1,5 +1,5 @@
 {
-  "display_name": "Air Factory",
+  "display_name": "!LOC:Air Factory",
   "description": "!LOC:Basic manufacturing- Builds air units.",
   "TEMP_texelinfo": 37.6046,
   "area_build_separation": 2,

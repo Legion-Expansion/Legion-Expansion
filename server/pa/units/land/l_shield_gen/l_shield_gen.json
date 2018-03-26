@@ -1,5 +1,5 @@
 {
-  "display_name": "Rampart",
+  "display_name": "!LOC:Rampart",
   "description": "!LOC:Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit.",
   "TEMP_texelinfo": 27,
   "area_build_separation": 50,

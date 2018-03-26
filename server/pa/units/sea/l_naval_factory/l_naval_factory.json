@@ -1,5 +1,5 @@
 {
-  "display_name": "Ship Foundry",
+  "display_name": "!LOC:Ship Foundry",
   "description": "!LOC:Basic manufacturing- Builds naval ships.",
   "TEMP_texelinfo": 44.3722,
   "area_build_separation": 2,

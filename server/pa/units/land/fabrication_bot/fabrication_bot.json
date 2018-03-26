@@ -1,5 +1,5 @@
 {
-  "display_name": "Fabrication Bot",
+  "display_name": "!LOC:Fabrication Bot",
   "description": "!LOC:Builder- Builds structures. Cheap. Fast. Less powerful than other builders.",
   "TEMP_texelinfo": 5.11028,
   "attachable": {

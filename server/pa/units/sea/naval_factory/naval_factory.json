@@ -1,5 +1,5 @@
 {
-  "display_name": "Naval Factory",
+  "display_name": "!LOC:Naval Factory",
   "description": "!LOC:Basic manufacturing- Builds naval units.",
   "TEMP_texelinfo": 44.3722,
   "area_build_separation": 2,
