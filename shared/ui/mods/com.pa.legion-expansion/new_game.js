@@ -137,6 +137,7 @@ if (!legionExpansionLoaded) {
             $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}"><loc>To Legion</loc></div>');
             //To Vanilla Button
             $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}"><loc>To MLA</loc></div>');
+            locUpdateDocument();
             //ENDOF NEED PATCHED lobby.js
         }
 
