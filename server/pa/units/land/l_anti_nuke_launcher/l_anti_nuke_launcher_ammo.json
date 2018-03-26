@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Iron Dome Interceptor",
+  "display_name": "Iron Dome Interceptor",
   "description": "!LOC:Nuke defense- Intercepts and destroys incoming nuclear missiles.",
   "ammo_type": "Projectile",
   "audio_loop": "/SE/Movement/missile/anti_nuke_missile_fly_loop",
