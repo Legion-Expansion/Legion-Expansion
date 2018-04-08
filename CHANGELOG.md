@@ -8,6 +8,7 @@
    - Infiltrator
      - Can now move between planets per its description
 
+
 #### v1.3.1 - 2018-03-26
 
 ###### Translations
