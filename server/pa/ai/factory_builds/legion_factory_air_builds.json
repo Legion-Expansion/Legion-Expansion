@@ -323,6 +323,13 @@
             "test_type": "BaseThreatened"
           },
           {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionAirAdvancedScout",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
@@ -342,6 +349,13 @@
           {
             "boolean": false,
             "test_type": "BaseThreatened"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionAirAdvancedScout",
+            "test_type": "CanAffordPotentialDrain"
           },
           {
             "compare0": "<",
@@ -367,6 +381,13 @@
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionAirAdvancedScout",
+            "test_type": "CanAffordPotentialDrain"
           },
           {
             "compare0": "<",
