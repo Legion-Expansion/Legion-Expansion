@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+#### vx.x.x
+
+###### Fixes
+
+ - All Legion Commander descriptions now consistent in their format
+
 #### v1.3.2 - 2018-04-08
 
 ###### Fixes
