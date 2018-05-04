@@ -1,5 +1,5 @@
 {
-  "display_name": "Tyr",
+  "display_name": "!LOC:Tyr",
   "description": "!LOC:Orbital mega-laser- Purifies the surface below with its laser.",
   "TEMP_texelinfo": 33.0,
   "atrophy_cool_down": 15.0,

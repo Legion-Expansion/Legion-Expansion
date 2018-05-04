@@ -2,6 +2,10 @@
 
 #### vx.x.x
 
+###### General
+
+ - Setup Legion unit names to allow translation by third party mods
+
 ###### Fixes
 
  - All Legion Commander descriptions now consistent in their format

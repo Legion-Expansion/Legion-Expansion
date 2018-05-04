@@ -1,5 +1,5 @@
 {
-  "display_name": "Hive",
+  "display_name": "!LOC:Hive",
   "description": "!LOC:Swarm deployment- Fabricates swarm units. Attacks land and naval.",
   "TEMP_texelinfo": 29.412345,
   "area_build_separation": 18,

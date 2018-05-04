@@ -1,5 +1,5 @@
 {
-  "display_name": "Scout Bot Radar mode collision check",
+  "display_name": "!LOC:Scout Bot Radar mode collision check",
   "description": "!LOC:Radar vision but immobile.",
   "TEMP_texelinfo": 4.07719,
   "audio": {
