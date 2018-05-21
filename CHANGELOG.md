@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-#### v1.4.0
+#### v1.4.0 - 2018-05-21
 
 ###### Translations
 
