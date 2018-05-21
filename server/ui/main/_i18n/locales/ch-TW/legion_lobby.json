@@ -1,0 +1,38 @@
+{
+  "Do not show this again": {
+    "message": "不要再顯示"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "選擇紅色的指揮官以使用'軍團'陣營"
+  },
+  "To Legion": {
+    "message": "換成'軍團'指揮官"
+  },
+  "To MLA": {
+    "message": "換成MLA指揮官"
+  },
+  "click or press space to close": {
+    "message": "點擊或按空白鍵關閉"
+  },
+  "Discuss": {
+    "message": "討論"
+  },
+  "Learn More": {
+    "message": "了解更多"
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "沒有它你就不能加入，但安裝很簡單!"
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "看來你沒安裝'軍團'擴展模組用戶端"
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "藍色的指揮官是MLA(原版)，紅色的則是'軍團'"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "'軍團'擴展模組加入一個全新的可用陣營"
+  },
+  "Legion Expansion": {
+    "message": "'軍團'擴展模組"
+  }
+}
