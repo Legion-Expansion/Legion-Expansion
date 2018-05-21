@@ -1,14 +1,16 @@
 ## CHANGELOG
 
-#### vx.x.x
+#### v1.4.0
 
-###### General
+###### Translations
 
  - Setup Legion unit names to allow translation by third party mods
+ - Added Chinese (Traditional) with thanks to IPWIW
 
 ###### Fixes
 
  - All Legion Commander descriptions now consistent in their format
+
 
 #### v1.3.2 - 2018-04-08
 
