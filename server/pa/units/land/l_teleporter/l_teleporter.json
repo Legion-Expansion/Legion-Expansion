@@ -1,5 +1,5 @@
 {
-  "display_name": "Sky Bridge",
+  "display_name": "!LOC:Sky Bridge",
   "description": "!LOC:Teleportation device- Teleports units from one to another.",
   "TEMP_texelinfo": 30.032139,
   "area_build_type": "Line",
