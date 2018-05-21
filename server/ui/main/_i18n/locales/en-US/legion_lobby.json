@@ -1,38 +1,38 @@
 {
-    "Do not show this again": {
-        "message": "Do not show this again"
-    },
-    "To play as the Legion select one of the red Commanders.": {
-        "message": "To play as the Legion select one of the red Commanders."
-    },
-    "To Legion": {
-        "message": "To Legion"
-    },
-    "To MLA": {
-        "message": "To MLA"
-    },
-    "click or press space to close": {
-        "message": "click or press space to close"
-    },
-    "Discuss": {
-        "message": "Discuss"
-    },
-    "Learn More": {
-        "message": "Learn More"
-    },
-    "You won't be able to play without it, but installing is easy!": {
-        "message": "You won't be able to play without it, but installing is easy!"
-    },
-    "It looks like you don't have the Legion Expansion client mod installed.": {
-        "message": "It looks like you don't have the Legion Expansion client mod installed."
-    },
-    "Select a blue Commander for MLA and a red one for Legion.": {
-        "message": "Select a blue Commander for MLA and a red one for Legion."
-    },
-    "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
-        "message": "The Legion Expansion adds an entirely new faction in Planetary Annihilation."
-    },
-    "Legion Expansion": {
-        "message": "Legion Expansion"
-    }
+  "Do not show this again": {
+    "message": "Do not show this again"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "To play as the Legion select one of the red Commanders."
+  },
+  "To Legion": {
+    "message": "To Legion"
+  },
+  "To MLA": {
+    "message": "To MLA"
+  },
+  "click or press space to close": {
+    "message": "click or press space to close"
+  },
+  "Discuss": {
+    "message": "Discuss"
+  },
+  "Learn More": {
+    "message": "Learn More"
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "You won't be able to play without it, but installing is easy!"
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "It looks like you don't have the Legion Expansion client mod installed."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Select a blue Commander for MLA and a red one for Legion."
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "The Legion Expansion adds an entirely new faction in Planetary Annihilation."
+  },
+  "Legion Expansion": {
+    "message": "Legion Expansion"
+  }
 }
