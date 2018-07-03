@@ -16,7 +16,7 @@
   "companions": [
     "com.pa.legion-expansion-client"
   ],
-  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings.",
+  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.",
   "display_name": "Legion Expansion",
   "forum": "https://forums.uberent.com/threads/rel-legion-expansion-released.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
