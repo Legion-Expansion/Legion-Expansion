@@ -1,0 +1,287 @@
+{
+  "Suicide bomb flyer- Attacks air only.": {
+    "message": "fliegende Selbstmordbombe - Greift nur Flugzeuge an."
+  },
+  "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital.": {
+    "message": "Flugzeugträger - Startet schnell-fliegende Drohnen die den Feind angreifen. Kann alles angreifen außer Orbitaleinheiten."
+  },
+  "Missile drone- Fast, fragile, attacks land and air.": {
+    "message": "Raketendrohne - Schnelle, aber fragile Drohne, kann nur Land- und Lufteinheiten angreifen."
+  },
+  "Basic manufacturing- Builds Legion flyer units.": {
+    "message": "Einfache Konstruktion - Baut Legion Lufteinheiten."
+  },
+  "Advanced manufacturing- Builds advanced Legion flyer units.": {
+    "message": "Erweiterte Konstruktion - Baut erweiterte Legion Lufteinheiten."
+  },
+  "Plasma bomber- High Damage. Attacks land and naval.": {
+    "message": "Plasma Bomber - Hoher Schaden. Greift Land und Marine einheiten an."
+  },
+  "Builds basic structures- Fast. Can build exclusive flyer units.": {
+    "message": "Baut einfache Konstruktionen - Schnell. Kann nur Lufteinheiten bauen."
+  },
+  "Builds advanced structures- Can build exclusive flyer units.": {
+    "message": "Baut verbesserte Konstruktionen - Kann nur Lufteinheiten bauen."
+  },
+  "Fast air interceptor- Attacks air.": {
+    "message": "Schneller Abfangjäger - Attackiert Lufteinheiten."
+  },
+  "Interplanetary fighter- Fast and armored. Attacks air.": {
+    "message": "Interplanetarischer Fighter - Schnell und gepanzert. Greift Lufteinheiten an."
+  },
+  "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.": {
+    "message": "Einfacher Turm - Ausgerüstet mit direkt feuernde Land- und Schiffabwehr waffen."
+  },
+  "Gunship- Heavily armored. Equipped with seeking missiles and a light machine gun.": {
+    "message": "Kampfhubschrauber - Schwer gepanzert. Ausgestattet mit Suchraketen und einem leichten Maschinengewehr."
+  },
+  "Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.": {
+    "message": "Raider - Leicht gepanzert. Bewaffnet mit leichten Anti-Ground-Lasern. Sehr schnell."
+  },
+  "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns.": {
+    "message": "Fliegende Festung - Schwer Gepanzert. Ausgestatet mit Langstrecken Kanonen und schnell feuernden Maschinengeweheren."
+  },
+  "Unit transport- Quick. Unarmed.": {
+    "message": "Einheiten Transporter - Schnell. Unbewaffnet."
+  },
+  "Legion Class Commander- If you're seeing this, something is wrong in your commander.": {
+    "message": "Kommandant der Legion Klasse - Wenn du das hier siehst ist etwas falsch mit deinem Kommandanten gelaufen."
+  },
+  "Imperial Cyclops Commander": {
+    "message": "Legion Cyclops Kommandant"
+  },
+  "Imperial Overwatch Commander": {
+    "message": "Legion Overwatch Kommandant"
+  },
+  "Tank Rockteeth Commander": {
+    "message": "Panzer Rockteeth Kommandant"
+  },
+  "Imperial Wasushi Commander": {
+    "message": "Legion Wasushi Kommandant"
+  },
+  "Basic AA turret- Equipped with a light machine gun.": {
+    "message": "Einfacher AA Turm - Ausgerüstet mit einem leichtem Maschinengewehr."
+  },
+  "Advanced anti-air tower- Long range. Attacks air units.": {
+    "message": "Erweiterter Luftabwehr Turm - Langstrecken. Attackiert Lufteinheiten."
+  },
+  "Nuke defense- Intercepts and destroys incoming nuclear missiles.": {
+    "message": "Nukleare Verteidigung - Fängt ab und zerstört anfliegende Nuklear Raketen."
+  },
+  "Magnetic accelerator cannon- Fires high damage projectiles.": {
+    "message": "Magnetische Beschleunigungskanone - Feuert Projektile mit hohem Schaden ab."
+  },
+  "Assault walker- Attacks land and naval.": {
+    "message": "Assault-Walker - Attackiert Land und Marineeinheiten."
+  },
+  "Heavy siege walker- Long range. Launches self-exploding sticky plasma mines.": {
+    "message": "Schwere Belagerungswalker - Lange Reichweite. Startet selbstexplodierende klebrige Plasma-Minen."
+  },
+  "Auxiliary commander- Can build structures. High health and heavily armed.": {
+    "message": "Hilfs Kommandant - Kann Gebäude bauen. Viel leben und schwer gepanzert."
+  },
+  "Basic economy- Generates power.": {
+    "message": "Grundökonomie - Erzeugt Power"
+  },
+  "Flame defense turret- Spews high-damage napalm.": {
+    "message": "Flammenturm - Spuckt Napalm. Hoher Schadensausput."
+  },
+  "Extracts metal- Can only be placed on metal deposits.": {
+    "message": "Metallexktrator - Kann nur auf Metallablagerungen platziert werden."
+  },
+  "Fast amphibious attack tank- Equipped with torpedoes and a light cannon.": {
+    "message": "Schneller Amphibien Sturm Panzer - Ausgestattet mit Torpedos und leichten Kanonen."
+  },
+  "Long range ballistic nuclear launcher- High damage and high aoe.": {
+    "message": "Ballistischer nuklearer Launcher mit großer Reichweite - hoher Schaden und großer Aoe."
+  },
+  "Long range, high damage ballistic missile.": {
+    "message": "Ballistische Rakete mit hoher Reichweite und hohem Schadenspotenzial"
+  },
+  "Basic radar- Detects nearby enemy units.": {
+    "message": "Einfaches Radar - entdeckt feindliche Einheiten in der Nähe."
+  },
+  "Advanced radar- Detects enemy units inside a large area.": {
+    "message": "Verbessertes Radar- entdeckt feindliche Einheiten in ein Größeres Gebiet."
+  },
+  "Radar vision but immobile.": {
+    "message": "Gibt Radarabdeckung aber Standort gebunden"
+  },
+  "Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit.": {
+    "message": "Schild - Absorbiert eingehende Schüsse. Benötigt Energie. Überlappung der Schilde bietet nur einen geringen Vorteil."
+  },
+  "Close range shotgun tank- Attacks land and naval.": {
+    "message": "Shotgun Panzer mit kleiner Reichweite - Attackiert Land-und Marineeinheiten."
+  },
+  "Sniper- Equipped with a high-damage beam cannon. Attacks land and naval.": {
+    "message": "Sniper - Ausgestattet mit einer Kanone mit hohem Schaden. Greift Land- und Marineeinheiten an."
+  },
+  "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
+    "message": "Lager - Schöpft die Kraft schwarzer Löcher aus, um überschüssiges Metall und Energie zu komprimieren und somit zu speichern."
+  },
+  "Medium defense turret- Attacks land and naval targets.": {
+    "message": "Mittlerer Verteidigungsturm - Greift Land- und Marineeinheiten an."
+  },
+  "Light defense turret- Short range. Attacks land and naval targets.": {
+    "message": "Leichter Verteidigungsturm - Kurze Reichweite. Greift Land- und Marineeinheiten an."
+  },
+  "Seismic tank- Decimates units that get too close.": {
+    "message": "Seismischer Panzer - Dezimiert Einheiten, die zu nahe kommen."
+  },
+  "Main battle tank- Slow but reliable. Attacks land and naval.": {
+    "message": "Kampfpanzer - Langsam aber verlässlich. Greift Land und Marine an."
+  },
+  "Advanced lightning tank- High damage. Electrifies land and naval targets.": {
+    "message": "Fortgeschrittener Blitzpanzer - Hoher Schaden. Verpufft Land- und Marineeinheiten."
+  },
+  "Teleportation device- Teleports units from one to another.": {
+    "message": "Teleporter - Teleportiert Einheiten von einem zu einem anderen."
+  },
+  "Experimental assault titan- Equipped with an arsenal of highly destructive weapons.": {
+    "message": "Experimetneller Angriffstitan- Ausgerüstet mit einem Arsenal von höchst zerstörerrischen Waffen."
+  },
+  "Doomsday device- Destroys the planet it's built on once finished.": {
+    "message": "Weltuntergangsmaschine - Zerstört den Planeten auf dem es gebaut wurde."
+  },
+  "Experimental rolling fortress- Long range. Heavily armored and deals very high damage.": {
+    "message": "Experimentelle rollende Festung - Langstrecken Waffen. Schwer gepanzert und fügt sehr starken Schaden zu."
+  },
+  "Basic manufacturing- Builds Legion armor.": {
+    "message": "Einfache Konstruktion - Baut Legion Panzer."
+  },
+  "Advanced manufacturing- Builds advanced Legion armor.": {
+    "message": "Verbesserte Konstruktion - Baut verbesserte Legion Panzer."
+  },
+  "Orbital defense- Heavy defensive satellite. Attacks anything.": {
+    "message": "Orbitare verteidigung - Schwerer Verteidigungssatellit. Greift alles an."
+  },
+  "Planet engine- Used to smash celestial bodies.": {
+    "message": "Planetenantrieb - Wird gebraucht um Himmeslkörper zu zerschmettern."
+  },
+  "Anti-orbital ion cannon- Attacks orbital units.": {
+    "message": "Anti-Orbital Ionnen Kanone - Attackiert Orbitaleinheiten."
+  },
+  "Gas planet economy structure- Produces metal and energy. Only works above gas giant planets.": {
+    "message": "Wirtschaftsstruktur für den Gasplaneten - Produziert Metall und Energie. Kann nur auf Gasplaneten plaziert werden."
+  },
+  "Orbital battleship- Heavily armored. Attacks everything.": {
+    "message": "Orbitale Kriegsschiff - Schwer gepanzert. Attackiert alles."
+  },
+  "Orbital unit cannon- Relays reinforcement units to the surface below.": {
+    "message": "Orbitale Einheitenkanone -Übertraägt Verstärkungseinheiten auf die darunter leigenden Oberfläche."
+  },
+  "Advanced fabricator- Builds Legion orbital satellites and ships.": {
+    "message": "Fortgeschrittener Fabrikator - Errichtet Orbitalsatelliten und Marineeinheiten der Legion."
+  },
+  "Advanced manufacturing- Builds advanced orbital units.": {
+    "message": "Fortschrittliche Herstellung - Baut erweiterte Orbitaleinheiten."
+  },
+  "Orbital fighter- Attacks orbital units. Fast.": {
+    "message": "Orbitaler Kämpfer - Attackiert nur orbitale Ziele. Schnell."
+  },
+  "Orbital lander- Interplanetary transportation carrier.": {
+    "message": "Orbitaltransporter - Interplanetare Transporteinheit"
+  },
+  "Orbital laser- Equipped with a high damage plasma cannon. Attacks land and naval.": {
+    "message": "Orbitallaser - Ausgerüstet mit einer Plasmakanone mit hohem Schaden. Attackiert Land- und Marineeinheiten."
+  },
+  "Basic orbital factory- Launches satellites and basic orbital units into space.": {
+    "message": "Einfache Orbitalfabrik - Startet Satelliten und Basisorbitaleinheiten in den Weltraum."
+  },
+  "Orbital radar probe- Fast. Small vision radius.": {
+    "message": "Orbitale Radar Sonde - Schnell. Kleiner Sichtbereich."
+  },
+  "Orbital railgun- High damage. Attacks orbital.": {
+    "message": "Orbital Railgun - Hoher Schaden. Attackiert Orbitaleinheiten."
+  },
+  "Basic radar satellite- Detects enemy units within a medium-sized area.": {
+    "message": "Einfacher Radarsatellit - Erkennt gegnerische Einheiten in einem mittelgroßen Bereich."
+  },
+  "Armored advanced radar satellite- Detects units within a massive area. Attacks land.": {
+    "message": "Gepanzerter fortschrittlicher Radarsatellit - Erkennt Einheiten in einem riesigen Gebiet. Greift Landeinheiten an."
+  },
+  "Orbital mega-laser- Purifies the surface below with its laser.": {
+    "message": "Orbital-Mega-Laser - Reinigt die darunter liegende Oberfläche mit seinem Laser."
+  },
+  "Attack submarine- Equipped with torpedoes. Fast.": {
+    "message": "Angriffs-U-Boot - Ausgestattet mit Torpedos. Schnell."
+  },
+  "Battleship- Equipped with high-damage laser cannons. Attacks land and naval targets.": {
+    "message": "Schlachtschiff - Ausgestattet mit Laser-Kanonen, hoher Schaden. Greift Land- und Marineziele an."
+  },
+  "Destroyer- Equipped with heavy cannons. Attacks naval and land.": {
+    "message": "Zerstörer - Ausgestattet mit schweren Kanonen. Angriffe Marine- und Landeinheiten an."
+  },
+  "Frigate- Only attacks air.": {
+    "message": "Fregatte - Attackiert nur Lufteinheiten."
+  },
+  "Hover ship- Equipped with heavy cannons. Can travel on any surface. Attacks land and naval.": {
+    "message": "Schwebeflugschiff - Ausgestattet mit schweren Kanonen. Kann auf jeder Oberfläche fahren. Greift Land und Marine an."
+  },
+  "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons.": {
+    "message": "Ballistisches Raketenschiff - Ausgestattet mit schweren Raketen und Luftabwehr Kanonen."
+  },
+  "Basic manufacturing- Builds naval ships.": {
+    "message": "Einfache Konstruktion - Baut Marine Schiffe."
+  },
+  "Advanced manufacturing- Builds advanced naval ships.": {
+    "message": "Verbesserte Konstruktion - Baut verbesserte Marine Schiffe."
+  },
+  "Proximity bomb- Destroys naval units that get too close.": {
+    "message": "Annäherungsbombe - Zerstört Marine einheiten welche zu nahe kommen."
+  },
+  "Corvette- Fast. Attacks naval, land and subs.": {
+    "message": "Korvette- Schnell - Attakiert Marine-, Land- und Lufteinheiten."
+  },
+  "Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.": {
+    "message": "Schwer gepanzerter Lastkahn - Rammt feindliche Schiffe. Ausgestattet mit schweren direkt feuernden Kanonen."
+  },
+  "Wave maker and torpedo launcher- Attacks naval.": {
+    "message": "Wellenerzeuger und Torpedowerfer - Greift Marineeinheiten an."
+  },
+  "Heavy anti-ship wave machine- Attacks naval.": {
+    "message": "Schwerer Wellenerzeuger - Greift Marine an."
+  },
+  "Legion Expansion": {
+    "message": "Legion Erweiterung"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "Die Legion Erweiterung fügt eine komplett neue Fraktion in Planetary Annihilation zu."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Wähle einen blauen Kommandanten für die MLA und einen roten für die Legion."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Es sieht so aus als hättest du die Legion Erweiterung client mod nicht installiert."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Du kannst nicht ohne sie spielen, aber die Installation ist einfach!"
+  },
+  "Learn More": {
+    "message": "Erfahre mehr"
+  },
+  "Discuss": {
+    "message": "Diskutiere"
+  },
+  "click or press space to close": {
+    "message": "Drück die Leertaste oder klicke mit der Maus zum schließen"
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "Bieneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeen!"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Fügt eine komplette neue Faktion mit über hundert neuen Einheiten hinzu, die sowohl im Multiplayer als auch im Singleplayer gespielt werden kann. Benötigt Titans. Nicht kompatible mit anderen Mods die neue Einheiten zum Spiel hinzufügen. \nDas Legion-Thema kann in den Einstellungen ausgeschaltete werden."
+  },
+  "To MLA": {
+    "message": "Zur MLA"
+  },
+  "To Legion": {
+    "message": "Zur Legion"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "Wähle einen roten Kommandanten um mit der Legionerweiterung zu spielen."
+  },
+  "Do not show this again": {
+    "message": "Nicht mehr anzeigen"
+  }
+}

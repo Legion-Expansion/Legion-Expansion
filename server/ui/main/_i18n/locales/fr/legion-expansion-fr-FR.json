@@ -1,0 +1,137 @@
+{
+  "Suicide bomb flyer- Attacks air only.": {
+    "message": "Drone Suicidaire - Attaque seulement unités volantes"
+  },
+  "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital.": {
+    "message": "Porte-avion volant - envoie des drones rapides contre l’ennemi. Attaque Tout sauf orbite."
+  },
+  "Missile drone- Fast, fragile, attacks land and air.": {
+    "message": "Drone à Missille - Rapide, fragile, attaque terre et mer."
+  },
+  "Basic manufacturing- Builds Legion flyer units.": {
+    "message": "Production basique - Construit Drones Volant de Legion"
+  },
+  "Advanced manufacturing- Builds advanced Legion flyer units.": {
+    "message": "Production avancée - Construit Drones Volant de Légion"
+  },
+  "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary.": {
+    "message": "Drone furtif avancé - équipe avec camera à espion. Consume de l’énergie. Interplanétaire."
+  },
+  "Plasma bomber- High Damage. Attacks land and naval.": {
+    "message": "Bombardier à plasma - Haut damage. Attaque sol et mer."
+  },
+  "Builds basic structures- Fast. Can build exclusive flyer units.": {
+    "message": "Construit structures basique - Rapide. Peut construire des Drones exclusifs."
+  },
+  "Builds advanced structures- Can build exclusive flyer units.": {
+    "message": "Construit structures avancées - Peut construire des Drones exclusifs."
+  },
+  "Fast air interceptor- Attacks air.": {
+    "message": "Intercepter de Drones rapide - Attaque air."
+  },
+  "Interplanetary fighter- Fast and armored. Attacks air.": {
+    "message": "Chasseur Interplanétaire - Rapide et Blindé. Attaque air."
+  },
+  "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.": {
+    "message": "Tourelle Basique - Équipée avec Tir Direct, Défenses anti-terre et anti-"
+  },
+  "Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret.": {
+    "message": "Bombardier Incinérateur - haut dommage sur aire. Bonne armure. Peut déployer tourelle lance-flamme légère."
+  },
+  "Interplanetary mobile teleporter- Heavily armored.": {
+    "message": "Téléporter mobile Interplanétaire- Armure lourde."
+  },
+  "Gunship- Heavily armored. Equipped with seeking missiles and a light machine gun.": {
+    "message": "Gunship - Armure lourde. Équipe avec missiles à tête chercheuse et LMG."
+  },
+  "Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.": {
+    "message": "Prédateur - Armure légère. Armé de Lasers anti-sol. Très rapide."
+  },
+  "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns.": {
+    "message": "Forteresse volante - armure lourde. Équipé avec cannons à longue portée et miniguns."
+  },
+  "Unit transport- Quick. Unarmed.": {
+    "message": "Transporteur d’unités - Rapide. Sans défense."
+  },
+  "Legion Class Commander- If you're seeing this, something is wrong in your commander.": {
+    "message": "Commandant classe: Légion - Si vous voyer ceci, il y a un problème avec votre commandant."
+  },
+  "Imperial Cyclops Commander": {
+    "message": "Commandant Légion Cyclopes"
+  },
+  "Imperial Overwatch Commander": {
+    "message": "Commandant Légion Overwatch."
+  },
+  "Tank Rockteeth Commander": {
+    "message": "Commandant Tank RockTeeth"
+  },
+  "Imperial Wasushi Commander": {
+    "message": "Commandant Légion Wasushi"
+  },
+  "Basic AA turret- Equipped with a light machine gun.": {
+    "message": "Tourelle AA basique - Équipée avec LMG"
+  },
+  "Advanced anti-air tower- Long range. Attacks air units.": {
+    "message": "Tourelle anti-air avancée - Haute Range. Attaque air"
+  },
+  "Nuke defense- Intercepts and destroys incoming nuclear missiles.": {
+    "message": "Défense Nucléaire - intercepte et détruit missiles nucléaire"
+  },
+  "Magnetic accelerator cannon- Fires high damage projectiles.": {
+    "message": "Canon accélérateur magnétique - Tire projectiles à haut dommages."
+  },
+  "Medium anti-ship and anti-land railgun- Requires energy to fire.": {
+    "message": "Anti-mer, anti-terre Railgun moyen. Coûte de l’énergie pour tirer."
+  },
+  "Assault walker- Attacks land and naval.": {
+    "message": "Bipèdes d'assaut - Attaque terre et mer."
+  },
+  "Anti-air walker- Short range. Attacks air.": {
+    "message": "Bipèdes anti-air - Courte range. Attaque air."
+  },
+  "Advanced mobile AA- Attacks air.": {
+    "message": "AA mobile avancé."
+  },
+  "Heavy siege walker- Long range. Launches self-exploding sticky plasma mines.": {
+    "message": "Bipèdes arme de siège - Haute Range. Tire mines au plasma, collante, auto-explosive."
+  },
+  "Heavy assault walker- Heavily armored. Equipped with strong cannons and a heavy laser.": {
+    "message": "Bipèdes d’assaut lourd - Armure lourde. Équipe avec gros canons et laser lourd."
+  },
+  "Legion Expansion": {
+    "message": "Expansion Légion"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "L'expansion de Légion ajoute une faction complétement nouvelle à Planetary Annihilation."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Selectionez un Commandant bleu pour MLA et un rouge pour Légion."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Il Semble que vous n'avez pas le mod Légion Expansion Client installé."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Vous ne serrez pas capable de jouer sans, mais l'installer est facile."
+  },
+  "Learn More": {
+    "message": "Apprenez plus"
+  },
+  "Discuss": {
+    "message": "Discutez"
+  },
+  "click or press space to close": {
+    "message": "cliquer ou appuyez sur espace"
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "ABEEEEEEEEEEEIIIIIIIILLES!"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Ajoute une complétement nouvelle faction avec plus de cent unités à utiliser en skirmish comme en multijoueur. Pas compatible avec les mods qui rajoutent des unités. Si vous n'aimez pas le nouveau thèmes, vous pouvez le changer dans les paramètres."
+  },
+  "To MLA": {
+    "message": "Vers MLA"
+  },
+  "To Legion": {
+    "message": "Vers Légion"
+  }
+}

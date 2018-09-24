@@ -9,10 +9,10 @@
     "message": "飛彈機 - 快速，脆弱，攻擊海陸單位"
   },
   "Basic manufacturing- Builds Legion flyer units.": {
-    "message": "基礎製造 - 生產'軍團'飛行單位"
+    "message": "基礎製造 - 生產\"軍團\"飛行單位"
   },
   "Advanced manufacturing- Builds advanced Legion flyer units.": {
-    "message": "進階製造 - 生產'軍團'進階飛行單位"
+    "message": "進階製造 - 生產\"軍團\"進階飛行單位"
   },
   "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary.": {
     "message": "進階間諜機 - 可發射間諜雷達，需額外能源運作，可跨星際移動"
@@ -48,25 +48,25 @@
     "message": "奇襲機 - 輕裝甲，裝備輕型對地雷射，高速"
   },
   "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns.": {
-    "message": "飛行要塞 - 重裝甲，裝備遠程加農砲和速射火炮"
+    "message": "飛行要塞 - 重裝甲，裝備重型加農砲和對空火炮"
   },
   "Unit transport- Quick. Unarmed.": {
     "message": "單位運輸 - 快速、沒有武器"
   },
   "Legion Class Commander- If you're seeing this, something is wrong in your commander.": {
-    "message": "'軍團'指揮官 - 這是bug替代，看到這句話代表你的指揮官出了問題"
+    "message": "\"軍團\"指揮官 - 這是bug替代，看到這句話代表你的指揮官出了問題"
   },
   "Imperial Cyclops Commander": {
-    "message": "錦衣衛 '獨眼' 指揮官"
+    "message": "錦衣衛 \"獨眼\" 指揮官"
   },
   "Imperial Overwatch Commander": {
-    "message": "錦衣衛 '看守' 指揮官"
+    "message": "錦衣衛 \"看守\" 指揮官"
   },
   "Tank Rockteeth Commander": {
-    "message": "緹騎 '大嘴' 指揮官"
+    "message": "履帶型 \"大嘴\" 指揮官"
   },
   "Imperial Wasushi Commander": {
-    "message": "錦衣衛 '壽司吧' 指揮官"
+    "message": "錦衣衛 \"壽司吧\" 指揮官"
   },
   "Basic AA turret- Equipped with a light machine gun.": {
     "message": "基礎對空砲塔 - 裝備輕機槍"
@@ -102,10 +102,10 @@
     "message": "自爆蜘蛛機甲 - 可用次要開火命令其躍過地形或跳向敵對單位"
   },
   "Basic manufacturing- Builds Legion walkers.": {
-    "message": "基礎製造 - 生產'軍團'機甲單位"
+    "message": "基礎製造 - 生產\"軍團\"機甲單位"
   },
   "Advanced manufacturing- Builds advanced Legion walkers.": {
-    "message": "進階製造 - 生產'軍團'進階機甲單位"
+    "message": "進階製造 - 生產\"軍團\"進階機甲單位"
   },
   "Auxiliary commander- Can build structures. High health and heavily armed.": {
     "message": "輔助指揮官 - 可建造進階建築，重武裝"
@@ -135,7 +135,7 @@
     "message": "火焰砲塔 - 裝備高傷害火焰發射器"
   },
   "Hover artillery- Medium range. Attacks land and naval.": {
-    "message": "浮空自走跑 -  中程攻擊距離，攻擊海陸單位"
+    "message": "浮空自走跑 -  中等射程，攻擊海陸單位"
   },
   "Hover assault- Medium range rockets. Attacks land, air, naval, and orbital.": {
     "message": "浮空突擊單位 - 裝備中程火箭，攻擊潛艦以外的所有單位"
@@ -194,9 +194,6 @@
   "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
     "message": "資源儲備設施 - 利用黑洞壓縮並儲存金屬和能量"
   },
-  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
-    "message": "是蜜蜂啊啊啊啊啊啊啊啊啊啊啊啊啊"
-  },
   "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
     "message": "蜂群防禦 - 製造並放出奈米蜂群，攻擊海陸單位"
   },
@@ -213,7 +210,7 @@
     "message": "進階戰車 - 重裝甲，攻擊海陸單位"
   },
   "Main battle tank- Slow but reliable. Attacks land and naval.": {
-    "message": "主戰戰車 - 緩慢但可靠，攻擊海陸單位"
+    "message": "主力戰車 - 緩慢但可靠，攻擊海陸單位"
   },
   "Advanced lightning tank- High damage. Electrifies land and naval targets.": {
     "message": "進階雷電戰車 - 高傷害，電焦海陸單位"
@@ -231,10 +228,10 @@
     "message": "實驗型移動要塞 - 重裝甲，能對遠方目標造成大量傷害"
   },
   "Basic manufacturing- Builds Legion armor.": {
-    "message": "基礎製造 - 生產'軍團'裝甲單位"
+    "message": "基礎製造 - 生產\"軍團\"裝甲單位"
   },
   "Advanced manufacturing- Builds advanced Legion armor.": {
-    "message": "進階製造 - 生產'軍團'進階裝甲單位"
+    "message": "進階製造 - 生產\"軍團\"進階裝甲單位"
   },
   "Orbital defense- Heavy defensive satellite. Attacks anything.": {
     "message": "軌道防禦 - 重型防禦衛星，攻擊潛艦以外的所有單位"
@@ -255,7 +252,7 @@
     "message": "軌道單位大砲 - 生產地面單位並向下投射"
   },
   "Advanced fabricator- Builds Legion orbital satellites and ships.": {
-    "message": "進階工程單位 - 建造'軍團'衛星和船艦"
+    "message": "進階工程單位 - 建造\"軍團\"衛星和船艦"
   },
   "Advanced manufacturing- Builds advanced orbital units.": {
     "message": "進階製造 - 生產進階軌道單位"
@@ -309,16 +306,16 @@
     "message": "巡防艦 - 只攻擊空中單位"
   },
   "Hover ship- Equipped with heavy cannons. Can travel on any surface. Attacks land and naval.": {
-    "message": "浮空船 - 裝備重型火砲，可在地面航行，攻擊海陸單位"
+    "message": "浮空船 - 裝備重型火砲，可以越過水和熔岩，攻擊海陸單位"
   },
   "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons.": {
     "message": "彈道飛彈艦 - 裝備重型飛彈和對空火砲"
   },
   "Basic manufacturing- Builds naval ships.": {
-    "message": "基礎製造 - 生產'軍團'海上單位"
+    "message": "基礎製造 - 生產\"軍團\"海上單位"
   },
   "Advanced manufacturing- Builds advanced naval ships.": {
-    "message": "進階製造 - 生產'軍團'進階海上單位"
+    "message": "進階製造 - 生產\"軍團\"進階海上單位"
   },
   "Proximity bomb- Destroys naval units that get too close.": {
     "message": "水雷 - 敵方單位靠近時引爆"
@@ -334,5 +331,47 @@
   },
   "Heavy anti-ship wave machine- Attacks naval.": {
     "message": "重型起浪器 - 進階魚雷發射器"
+  },
+  "Legion Expansion": {
+    "message": "\"軍團\"擴展模組"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "\"軍團\"擴展模組加入一個全新的可用陣營"
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "藍色的指揮官是MLA(原版)，紅色的則是\"軍團\""
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "看來你沒安裝\"軍團\"擴展模組用戶端"
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "沒有它你就不能加入，但安裝很簡單!"
+  },
+  "Learn More": {
+    "message": "了解更多"
+  },
+  "Discuss": {
+    "message": "討論"
+  },
+  "click or press space to close": {
+    "message": "點擊或按空白鍵關閉"
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "是蜜蜂啊啊啊啊啊啊啊啊啊啊啊啊啊"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "加入一個全新的可用陣營，包含上百個新單位。不兼容其他加入新單位的模組。紅色主題可以在\"設定\"換回。"
+  },
+  "To MLA": {
+    "message": "換成MLA指揮官"
+  },
+  "To Legion": {
+    "message": "換成\"軍團\"指揮官"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "選擇紅色的指揮官以使用\"軍團\"陣營"
+  },
+  "Do not show this again": {
+    "message": "不要再顯示"
   }
 }

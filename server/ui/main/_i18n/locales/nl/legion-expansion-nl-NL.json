@@ -194,9 +194,6 @@
   "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
     "message": "Opslag- Gebruikt de energie van zwarte gaten om overtollige metaal en energie op te slaan."
   },
-  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
-    "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!."
-  },
   "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
     "message": "Zwerm inzet- Bouwt zwerm eenheden. Valt land en zee aan."
   },
@@ -309,7 +306,7 @@
     "message": "Fregat- Valt enkel luchteenheden aan."
   },
   "Hover ship- Equipped with heavy cannons. Can travel on any surface. Attacks land and naval.": {
-    "message": "Zweef schip- Uitgerust met zware kanonnen. Kan over iedere oppervlak reizen. Valt land en zee eenheden aan."
+    "message": "Zweef schip - uitgerust met zware kanonnen. Kan over iedere oppervlak reizen. Valt land en zee eenheden aan."
   },
   "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons.": {
     "message": "Ballistisch raket schip- Uitgerust met zware raketten en anti-lucht kanonnen."
@@ -324,7 +321,7 @@
     "message": "Zee-mijn- Vernietigt zee eenheden dat te dichtbij komen."
   },
   "Corvette- Fast. Attacks naval, land and subs.": {
-    "message": "Korvet- Snel. Valt zee land en onderzee\u00ebrs aan."
+    "message": "Korvet- Snel. Valt zee land en onderzeeërs aan."
   },
   "Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.": {
     "message": "Zwaar gepantserde sloep- Ramt vijandelijke schepen. Uitgerust met zware kannonen."
@@ -335,7 +332,46 @@
   "Heavy anti-ship wave machine- Attacks naval.": {
     "message": "Zwaar anti-schepen golvenmachine- Valt water aan."
   },
-  "Super Weapon- Build five on a metal planet to activate the Annihilazer.": {
-    "message": "Superwapen- Bouw er vijf op een metaalplaneet om de Annihilaser te activeren."
+  "Legion Expansion": {
+    "message": "Legion Expansie"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "De Legion Expansie voegt een gehele nieuwe factie toe in Planetary Annihilation."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Selecteer een blauwe Commandant voor MLA en een rode voor Legion."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Het lijkt erop dat je de Legion Expansion client mod niet geïnstalleerd hebt."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Je kunt zonder deze mod spelen, maar hem installeren is eenvoudig!"
+  },
+  "Learn More": {
+    "message": "Meer weten"
+  },
+  "Discuss": {
+    "message": "Bespreken"
+  },
+  "click or press space to close": {
+    "message": "klik of druk op spatie om te sluiten"
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Voegt een totaal nieuwe speelbare factie toe met meer dan 100 eenheden, bruikbaar zowel in single als in multiplayer. Titans DLC is verplicht. Niet compatibel met andere mods die zelf eenheden toevoegen. Als je het nieuwe thema (kleuren) niet leuk vind kan je deze uitschakelen in de Instellingen."
+  },
+  "To MLA": {
+    "message": "Naar MLA"
+  },
+  "To Legion": {
+    "message": "Naar Legion"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "Om als Legion te spelen, selecteer een rode Commandant."
+  },
+  "Do not show this again": {
+    "message": "Laat niet meer zien"
   }
 }

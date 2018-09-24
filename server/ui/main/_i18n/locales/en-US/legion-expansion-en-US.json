@@ -194,9 +194,6 @@
   "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
     "message": "Storage- Harnesses the power of black holes to compress and store excess metal and energy."
   },
-  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
-    "message": "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!!"
-  },
   "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
     "message": "Swarm deployment- Fabricates swarm units. Attacks land and naval."
   },
@@ -334,5 +331,47 @@
   },
   "Heavy anti-ship wave machine- Attacks naval.": {
     "message": "Heavy anti-ship wave machine- Attacks naval."
+  },
+  "Legion Expansion": {
+    "message": "Legion Expansion"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "The Legion Expansion adds an entirely new faction in Planetary Annihilation."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Select a blue Commander for MLA and a red one for Legion."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "It looks like you don't have the Legion Expansion client mod installed."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "You won't be able to play without it, but installing is easy!"
+  },
+  "Learn More": {
+    "message": "Learn More"
+  },
+  "Discuss": {
+    "message": "Discuss"
+  },
+  "click or press space to close": {
+    "message": "click or press space to close"
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War."
+  },
+  "To MLA": {
+    "message": "To MLA"
+  },
+  "To Legion": {
+    "message": "To Legion"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "To play as the Legion select one of the red Commanders."
+  },
+  "Do not show this again": {
+    "message": "Do not show this again"
   }
 }

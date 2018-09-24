@@ -1,0 +1,89 @@
+{
+  "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
+    "message": "Хранилище. Использует силу чёрных дыр для хранения металла и энергии."
+  },
+  "Medium defense turret- Attacks land and naval targets.": {
+    "message": "Средняя оборонительная башня. Атакует наземные и морские цели."
+  },
+  "Light defense turret- Short range. Attacks land and naval targets.": {
+    "message": "Легкая защитная башня. Короткая дистанция атаки. Поражает наземные и морские цели."
+  },
+  "Seismic tank- Decimates units that get too close.": {
+    "message": "Танк с сейсмической установкой. Уничтожает войска вокруг себя на небольшом расстоянии."
+  },
+  "Advanced battle tank- Heavily armored. Attacks land and naval.": {
+    "message": "Продвинутый боевой танк с тяжелой бронёй.. Атакует наземные и морские цели."
+  },
+  "Main battle tank- Slow but reliable. Attacks land and naval.": {
+    "message": "Основной боевой танк - медленный, но надежный. Атакует наземные и морские цели."
+  },
+  "Advanced lightning tank- High damage. Electrifies land and naval targets.": {
+    "message": "Продвинутый лучевой танк. Высокий урон. Поражает наземные и морские цели."
+  },
+  "Teleportation device- Teleports units from one to another.": {
+    "message": "Устройство телепортации. Перемещает войска от одного, к другому."
+  },
+  "Experimental assault titan- Equipped with an arsenal of highly destructive weapons.": {
+    "message": "Экспериментальный штурмовой титан. Оснащен арсеналом чрезвычайно разрушительных пушек."
+  },
+  "Doomsday device- Destroys the planet it's built on once finished.": {
+    "message": "Механизм судного дня. Уничтожает планету на которой построен после активации. "
+  },
+  "Orbital defense- Heavy defensive satellite. Attacks anything.": {
+    "message": "Орбитальный страж - тяжёлый защитный спутник. Атакует все цели."
+  },
+  "Planet engine- Used to smash celestial bodies.": {
+    "message": "Планетарный двигатель. Используйте его для запуска небесного тела в планету врага!"
+  },
+  "Anti-orbital ion cannon- Attacks orbital units.": {
+    "message": "Анти - орбитальная ионная пушка. Атакует орбитальные цели."
+  },
+  "Orbital battleship- Heavily armored. Attacks everything.": {
+    "message": "Космический линкор - тяжело вооружён. Атакует все цели"
+  },
+  "Orbital unit cannon- Relays reinforcement units to the surface below.": {
+    "message": "Орбитальная пусковая установка боевых единиц. Позволяет строить и десантировать войска на поверхность планеты"
+  },
+  "Legion Expansion": {
+    "message": "Legion Expansion"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "Мод Legion Expansion добавляет совершенно новую фракцию в Planetary Annihilation."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Выберете синего командира, для игра за стандартную фракцию или красного, для игры за Легион."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Похоже, что у вас не установлен клиентский мод Legion Expansion."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Вы не сможете играть, не установив мод, но поверьте, это не сложно)"
+  },
+  "Learn More": {
+    "message": "Узнать подробнее"
+  },
+  "Discuss": {
+    "message": "Обсуждение"
+  },
+  "click or press space to close": {
+    "message": "Щёлкните мышкой или нажмите пробел чтобы закрыть. "
+  },
+  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+    "message": "Пчёлы! Рооой!"
+  },
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Добавляет совершенно новую фракцию с более чем ста уникальными единицами для использования в одиночной и многопользовательской игре. Не совместим с модами, которые добавляют дополнительные единицы. Если вам не нравится новая тема, ее можно отключить в настройках."
+  },
+  "To MLA": {
+    "message": "Стандарт"
+  },
+  "To Legion": {
+    "message": "Легион"
+  },
+  "To play as the Legion select one of the red Commanders.": {
+    "message": "Для игры за Легион выберите красного командира"
+  },
+  "Do not show this again": {
+    "message": "Больше не показывать это"
+  }
+}
