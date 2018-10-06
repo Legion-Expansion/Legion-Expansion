@@ -6,11 +6,11 @@
 
  - Added partial Russian (ru) suppport with thanks to Diskraip and грязь dirt
  - Updated and completed German (de) with thanks to tunsel
- - Updated Chinese (Traditional) (zh-TW) wth thanks to IPWIW
+ - Updated Chinese (Traditional) (zh-TW) with thanks to IPWIW
 
 ###### Fixes
 
- - Legion Intro button works again though we have to load it in an external browser now
+ - Legion Intro button works again though we must load it in an external browser now
  - Browsing systems in the lobby correctly uses the full width of the screen under the Legion theme
 
 
