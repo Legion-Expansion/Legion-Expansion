@@ -2,6 +2,12 @@
 
 ####
 
+###### Translations
+
+ - Added partial Russian (ru) suppport with thanks to Diskraip and грязь dirt
+ - Updated German (de) with thanks to tunsel
+ - Updated Chinese (Traditional) (zh-TW) wth thanks to IPWIW
+
 ###### Fixes
 
  - Legion Intro button works again though we've had to load it in an external browser now

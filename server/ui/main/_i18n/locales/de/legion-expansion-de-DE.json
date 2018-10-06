@@ -1,18 +1,21 @@
 {
   "Suicide bomb flyer- Attacks air only.": {
-    "message": "fliegende Selbstmordbombe - Greift nur Flugzeuge an."
+    "message": "Fliegende Selbstmordbombe - Greift nur Flugzeuge an."
   },
   "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital.": {
     "message": "Flugzeugträger - Startet schnell-fliegende Drohnen die den Feind angreifen. Kann alles angreifen außer Orbitaleinheiten."
   },
   "Missile drone- Fast, fragile, attacks land and air.": {
-    "message": "Raketendrohne - Schnelle, aber fragile Drohne, kann nur Land- und Lufteinheiten angreifen."
+    "message": "Raketendrohne - Schnelle, aber fragile Drohne, kann nur Land- Und Lufteinheiten angreifen."
   },
   "Basic manufacturing- Builds Legion flyer units.": {
     "message": "Einfache Konstruktion - Baut Legion Lufteinheiten."
   },
   "Advanced manufacturing- Builds advanced Legion flyer units.": {
     "message": "Erweiterte Konstruktion - Baut erweiterte Legion Lufteinheiten."
+  },
+  "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary.": {
+    "message": "Verbesserter Stealth Flieger -Ausgestattet mit einer hinterhältigen Spionage Kamera. Verbraucht Energie. Interplanetarisch."
   },
   "Plasma bomber- High Damage. Attacks land and naval.": {
     "message": "Plasma Bomber - Hoher Schaden. Greift Land und Marine einheiten an."
@@ -31,6 +34,12 @@
   },
   "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.": {
     "message": "Einfacher Turm - Ausgerüstet mit direkt feuernde Land- und Schiffabwehr waffen."
+  },
+  "Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret.": {
+    "message": "Flammen Bomber- Großer Schaden über einem bestimmten Gebiet. Gut gepanzert. Kann leichten Flammenwerferturm absetzen."
+  },
+  "Interplanetary mobile teleporter- Heavily armored.": {
+    "message": "Interplanetarischer mobiler Teleporter - Stark gepanzert."
   },
   "Gunship- Heavily armored. Equipped with seeking missiles and a light machine gun.": {
     "message": "Kampfhubschrauber - Schwer gepanzert. Ausgestattet mit Suchraketen und einem leichten Maschinengewehr."
@@ -71,11 +80,23 @@
   "Magnetic accelerator cannon- Fires high damage projectiles.": {
     "message": "Magnetische Beschleunigungskanone - Feuert Projektile mit hohem Schaden ab."
   },
+  "Medium anti-ship and anti-land railgun- Requires energy to fire.": {
+    "message": "Mittlere Anti-Naval und Anti-Lönd Railgun- Benötigt Energie zum feuern."
+  },
   "Assault walker- Attacks land and naval.": {
     "message": "Assault-Walker - Attackiert Land und Marineeinheiten."
   },
+  "Anti-air walker- Short range. Attacks air.": {
+    "message": "Anti-Lufteinheiten Läufer- Kurze Reichweite. Attackiert Lufteinheiten"
+  },
+  "Advanced mobile AA- Attacks air.": {
+    "message": "Verbesserte mobile AA- Attackiert Lufteinheiten."
+  },
   "Heavy siege walker- Long range. Launches self-exploding sticky plasma mines.": {
     "message": "Schwere Belagerungswalker - Lange Reichweite. Startet selbstexplodierende klebrige Plasma-Minen."
+  },
+  "Heavy assault walker- Heavily armored. Equipped with strong cannons and a heavy laser.": {
+    "message": "Schwerer Attack Läufer- Schwer gepanzert. Ausgerüstet mit starken Kanonen und einem schweren Laser."
   },
   "Auxiliary commander- Can build structures. High health and heavily armed.": {
     "message": "Hilfs Kommandant - Kann Gebäude bauen. Viel leben und schwer gepanzert."
@@ -283,5 +304,8 @@
   },
   "Do not show this again": {
     "message": "Nicht mehr anzeigen"
+  },
+  "Legion Intro": {
+    "message": "Legion Intro"
   }
 }
