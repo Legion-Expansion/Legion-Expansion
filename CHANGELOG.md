@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-####
+#### v1.4.1 - 2018-10-06
 
 ###### Translations
 
