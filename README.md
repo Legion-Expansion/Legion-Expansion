@@ -58,7 +58,7 @@ To create a copy for testing local changes:
 
 # Translations
 
-If you would like to help translate Queller to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
+If you would like to help translate Legion Expansion to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
 
 # Legion Expansion Development
 
