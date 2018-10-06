@@ -10,7 +10,7 @@
 
 ###### Fixes
 
- - Legion Intro button works again though we've had to load it in an external browser now
+ - Legion Intro button works again though we have to load it in an external browser now
  - Browsing systems in the lobby correctly uses the full width of the screen under the Legion theme
 
 
