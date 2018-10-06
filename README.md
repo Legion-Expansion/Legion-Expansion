@@ -36,7 +36,7 @@ This project is not the work of one, but of a legion.
 | dom314          | Effects                            |
 | CptConundrum    | UI                                 |
 | Elodea          | Balance Lead / Effects / Media     |
-| AndreasG        | Balance Lead / Balance Senior      |
+| AndreasG        | Balance Lead                       |
 | Clopse          | Balance                            |
 | Graushwein      | Balance                            |
 | N30N            | Playtester                         |
