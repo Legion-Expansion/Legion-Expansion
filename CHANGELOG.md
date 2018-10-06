@@ -1,5 +1,13 @@
 ## CHANGELOG
 
+####
+
+###### Fixes
+
+ - Legion Intro button works again though we've had to load it in an external browser now
+ - Selecting Browse Systems in the lobby shows the correct version of the screen when using the Legion theme
+
+
 #### v1.4.0 - 2018-05-21
 
 ###### Translations
