@@ -65,7 +65,7 @@ if ( ! legionExpansionLoaded )
         $('div.div_watermarks').css( 'bottom', '95px' );
 
         model.legionPlayVideo = function() {
-            engine.call('web.launchPage', 'https://gaming.youtube.com/embed/6DV33Jnsh9c?autoplay=1');       
+            engine.call('web.launchPage', 'https://gaming.youtube.com/embed/aqzdPnJfKMo?autoplay=1');       
         }
   
         var themesetting = api.settings.isSet('ui','legionMenuThemeFunction',true) || 'ON';
