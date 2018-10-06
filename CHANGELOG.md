@@ -4,7 +4,7 @@
 
 ###### Translations
 
- - Added partial Russian (ru) suppport with thanks to Diskraip and грязь dirt
+ - Added partial Russian (ru) support with thanks to Diskraip and грязь dirt
  - Updated and completed German (de) with thanks to tunsel
  - Updated Chinese (Traditional) (zh-TW) with thanks to IPWIW
 
