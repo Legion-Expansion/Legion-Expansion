@@ -373,5 +373,8 @@
   },
   "Do not show this again": {
     "message": "Laat niet meer zien"
+  },
+  "Legion #.##.#": {
+    "message": "Legion #.##.#"
   }
 }

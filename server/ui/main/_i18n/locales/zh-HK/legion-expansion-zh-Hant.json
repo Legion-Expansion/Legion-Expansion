@@ -376,5 +376,8 @@
   },
   "Legion Intro": {
     "message": "Legion介紹影片"
+  },
+  "Legion #.##.#": {
+    "message": "Legion #.##.#"
   }
 }

@@ -376,5 +376,8 @@
   },
   "Legion Intro": {
     "message": "Legion Intro"
+  },
+  "Legion #.##.#": {
+    "message": "Legion #.##.#"
   }
 }

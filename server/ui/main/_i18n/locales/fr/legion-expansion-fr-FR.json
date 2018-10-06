@@ -133,5 +133,8 @@
   },
   "To Legion": {
     "message": "Vers Légion"
+  },
+  "Legion #.##.#": {
+    "message": "Légion #.##.#"
   }
 }
