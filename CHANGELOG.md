@@ -2,6 +2,10 @@
 
 #### v1.4.2 - 2018-10-18
 
+###### Translations
+
+ - Corrected Chinese (Traditional) (zh-TW) translations added in 1.4.1 with thanks to IPWIW
+
 ###### Fixes
 
  - Advanced Air, Bot, Vehicle and Naval Factory cost updated to match the new cost in PA release 112176
