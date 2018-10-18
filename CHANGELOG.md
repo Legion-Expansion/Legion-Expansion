@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+#### v1.4.2 - 2018-10-18
+
+###### Fixes
+
+ - Advanced Air, Bot, Vehicle and Naval Factory cost updated to match the new cost in PA release 112176
+
+
 #### v1.4.1 - 2018-10-06
 
 ###### Translations
