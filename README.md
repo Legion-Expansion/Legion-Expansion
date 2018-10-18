@@ -36,7 +36,7 @@ This project is not the work of one, but of a legion.
 | dom314          | Effects                            |
 | CptConundrum    | UI                                 |
 | Elodea          | Balance Lead / Effects / Media     |
-| AndreasG        | Balance Lead / Balance Senior      |
+| AndreasG        | Balance Lead                       |
 | Clopse          | Balance                            |
 | Graushwein      | Balance                            |
 | N30N            | Playtester                         |
@@ -46,7 +46,7 @@ This project is not the work of one, but of a legion.
 
 # Installation
 
-This mod should be installed via the Planetary Annihilation in-game community mods manager.
+You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager. You will need to [enable Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
 To create a copy for testing local changes:
 
