@@ -5,6 +5,7 @@
 ###### Fixes
 
  - Strategic icons fixed following update to HodgePodge
+ - Fixed Linux issues with Havoc and Black Knight due to incorrect casing
 
 
 #### v1.4.2 - 2018-10-18
