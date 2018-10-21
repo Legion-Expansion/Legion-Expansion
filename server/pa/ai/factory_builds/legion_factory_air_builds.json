@@ -333,7 +333,7 @@
             "compare0": "<",
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Scout",
-            "value0": 200
+            "value0": 150
           },
           {
             "boolean": false,
