@@ -1,5 +1,12 @@
 ## CHANGELOG
 
+#### v1.4.3 - 2018-10-21
+
+###### Fixes
+
+ - Strategic icons fixed following update to HodgePodge
+
+
 #### v1.4.2 - 2018-10-18
 
 ###### Translations
