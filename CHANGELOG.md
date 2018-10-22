@@ -2,6 +2,12 @@
 
 #### v1.4.3 - 2018-10-21
 
+###### AI
+
+ - Updated for the changes to the vanilla AI in 112176
+ - Improved integration of Novas into platoons
+ - Better handling of air platoon creation alongside vanilla AI and in shared army situations
+
 ###### Fixes
 
  - Strategic icons fixed following update to HodgePodge
