@@ -1,5 +1,22 @@
 ## CHANGELOG
 
+####
+
+###### Balance
+
+ - Air
+   - Advanced Flyer Foundry 
+     - Cost increased from 3600 to 4500
+ - Land
+   - Advanced Walker Foundry 
+     - Cost increased from 3600 to 4500
+   - Advanced Armour Foundry 
+     - Cost increased from 3600 to 4500
+ - Naval
+   - Advanced Ship Foundry 
+     - Cost increased from 3600 to 4500
+
+
 #### v1.4.3 - 2018-10-21
 
 ###### AI

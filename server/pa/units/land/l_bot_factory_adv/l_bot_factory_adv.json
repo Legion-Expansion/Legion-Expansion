@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 3600,
+  "build_metal_cost": 4500,
   "buildable_types": "Custom1 & ( Bot & Mobile & FactoryBuild )",
   "command_caps": [
     "ORDER_Move",
