@@ -12,6 +12,8 @@
      - Cost increased from 3600 to 4500
    - Advanced Armour Foundry 
      - Cost increased from 3600 to 4500
+   - Panzer
+     - Missile lifetime increases from 5 to 5.5 seconds
  - Naval
    - Advanced Ship Foundry 
      - Cost increased from 3600 to 4500
