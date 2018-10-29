@@ -75,7 +75,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 
 ## Committing
 
-1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a branch, or your own fork.
+1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE references in the format.py output
 
