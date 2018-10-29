@@ -111,8 +111,8 @@ When working with Legion units please:
 If replacing existing vanilla units:
 
 - use the same naming conventions for directories and files as the vanilla units
-- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit json files
-- add only changed properties to unit json files (everything else will inherit from the base_spec)
+- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit JSON files
+- add only changed properties to unit JSON files (everything else will inherit from the base_spec)
 
 If you rename a unit directory:
 
@@ -137,7 +137,7 @@ Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 These should use a red tint.
 
-Add to the same path as the unit's json file:
+Add to the same path as the unit's JSON file:
 
 - filename format: `l_unit_icon_buildbar.png`
 - 60px x 60px
