@@ -55,7 +55,6 @@ To create a copy for testing local changes:
 3. Run install_local.py
 4. Enable the '[DEVELOPMENT]' version of the mod.
 
-
 # Translations
 
 If you would like to help translate Legion Expansion to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
