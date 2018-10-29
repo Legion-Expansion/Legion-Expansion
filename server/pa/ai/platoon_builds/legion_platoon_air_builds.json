@@ -1,659 +1,659 @@
 {
   "build_list": [
     {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": -1,
       "name": "Legion - Bomber-Gunship Attack Platoon Small",
-      "to_build": "Legion_BomberGunship_Attack_Small",
-      "instance_count": -1,
       "priority": 204,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Small"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Bomber-Gunship Attack Platoon Medium",
-      "to_build": "Legion_BomberGunship_Attack_Medium",
-      "instance_count": -1,
       "priority": 203,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Medium"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
-            "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Bomber-Gunship Attack Platoon Large",
-      "to_build": "Legion_BomberGunship_Attack_Large",
-      "instance_count": -1,
       "priority": 202,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Large"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
-            "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Bomber-Gunship Attack Platoon XLarge",
-      "to_build": "Legion_BomberGunship_Attack_XLarge",
-      "instance_count": -1,
       "priority": 201,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_XLarge"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
-            "compare0": ">=",
-            "value0": 20
+            "value0": 40
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Bomber-Gunship Attack Platoon Max",
-      "to_build": "Legion_BomberGunship_Attack_Max",
-      "instance_count": -1,
       "priority": 200,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Max"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) - Titan",
             "compare0": ">=",
-            "value0": 40
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Bomber & Advanced - Titan",
+            "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Heavy Bomber Attack Platoon Small",
-      "to_build": "Legion_BomberGunship_Attack_Small",
-      "instance_count": -1,
       "priority": 204,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Small"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Heavy Bomber Attack Platoon Medium",
-      "to_build": "Legion_BomberGunship_Attack_Medium",
-      "instance_count": -1,
       "priority": 203,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Medium"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Heavy Bomber Attack Platoon Large",
-      "to_build": "Legion_BomberGunship_Attack_Large",
-      "instance_count": -1,
       "priority": 202,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Large"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Heavy Bomber Attack Platoon XLarge",
-      "to_build": "Legion_BomberGunship_Attack_XLarge",
-      "instance_count": -1,
       "priority": 201,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_XLarge"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Bomber & Advanced - Titan",
-            "compare0": ">=",
-            "value0": 20
+            "value0": 40
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Heavy Bomber Attack Platoon Max",
-      "to_build": "Legion_BomberGunship_Attack_Max",
-      "instance_count": -1,
       "priority": 200,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_BomberGunship_Attack_Max"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Bomber & Advanced - Titan",
             "compare0": ">=",
-            "value0": 40
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Titan",
+            "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
             "string0": "WL_AnySurface",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsBomber",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": -1,
       "name": "Legion - Air Titan Attack",
-      "to_build": "Legion_Air_Attack_Titan",
-      "instance_count": -1,
       "priority": 205,
+      "task_type": "BomberAttack",
+      "to_build": "Legion_Air_Attack_Titan"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemySurfacePresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
             "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
+            "string0": "WL_Air",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
             "unit_type_string0": "Mobile | Structure"
           }
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan",
             "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Air & Fighter",
             "value0": 1
           },
           {
-            "test_type": "CanAttackWithPoolUnitsBomber",
-            "string0": "WL_AnySurface",
+            "string0": "fighter_attack",
             "string1": "WL_Air",
+            "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "BomberAttack"
-    },
-    {
+      "instance_count": 1,
       "name": "Legion - Fighter Attack Platoon Small",
-      "to_build": "Legion_Fighter_Attack_Small",
-      "instance_count": 1,
       "priority": 204,
+      "task_type": "FighterAttack",
+      "to_build": "Legion_Fighter_Attack_Small"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
-            "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
             "unit_type_string0": "Mobile | Structure"
           }
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 1
+            "value0": 4
           },
           {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "FighterAttack"
-    },
-    {
+      "instance_count": 1,
       "name": "Legion - Fighter Attack Platoon Medium",
-      "to_build": "Legion_Fighter_Attack_Medium",
-      "instance_count": 1,
       "priority": 203,
+      "task_type": "FighterAttack",
+      "to_build": "Legion_Fighter_Attack_Medium"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
-            "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
             "unit_type_string0": "Mobile | Structure"
           }
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 4
+            "value0": 10
           },
           {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "FighterAttack"
-    },
-    {
+      "instance_count": 1,
       "name": "Legion - Fighter Attack Platoon Large",
-      "to_build": "Legion_Fighter_Attack_Large",
-      "instance_count": 1,
       "priority": 202,
+      "task_type": "FighterAttack",
+      "to_build": "Legion_Fighter_Attack_Large"
+    },
+    {
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
-            "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
             "unit_type_string0": "Mobile | Structure"
           }
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 10
+            "value0": 20
           },
           {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "FighterAttack"
-    },
-    {
+      "instance_count": 1,
       "name": "Legion - Fighter Attack Platoon XLarge",
-      "to_build": "Legion_Fighter_Attack_XLarge",
-      "instance_count": 1,
       "priority": 201,
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanAttackWithPoolUnitsFighter",
-            "string0": "WL_Air",
-            "string1": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Vanilla",
-            "boolean": true
-          },
-          {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
-            "value0": 20
-          },
-          {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
-            "string0": "fighter_attack",
-            "string1": "WL_Air",
-            "string2": "WL_Air",
-            "unit_type_string0": "Mobile | Structure"
-          }
-        ]
-      ],
-      "task_type": "FighterAttack"
+      "task_type": "FighterAttack",
+      "to_build": "Legion_Fighter_Attack_XLarge"
     },
     {
-      "name": "Legion - Fighter Attack Platoon Max",
-      "to_build": "Legion_Fighter_Attack_Max",
-      "instance_count": 1,
-      "priority": 200,
       "build_conditions": [
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
             "value0": 40
           },
           {
-            "test_type": "CanAttackWithPoolUnitsFighter",
             "string0": "WL_Air",
             "string1": "WL_Air",
+            "test_type": "CanAttackWithPoolUnitsFighter",
             "unit_type_string0": "Mobile | Structure"
           }
         ],
         [
           {
-            "test_type": "HasPersonalityTag",
+            "boolean": true,
             "string0": "Vanilla",
-            "boolean": true
+            "test_type": "HasPersonalityTag"
           },
           {
-            "test_type": "EnemyAirPresenceOnPlanet",
-            "boolean": true
+            "boolean": true,
+            "test_type": "EnemyAirPresenceOnPlanet"
           },
           {
+            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "Air & Fighter",
-            "compare0": ">=",
             "value0": 40
           },
           {
-            "test_type": "CanProvideAirSupportWithPoolUnits",
             "string0": "fighter_attack",
             "string1": "WL_Air",
             "string2": "WL_Air",
+            "test_type": "CanProvideAirSupportWithPoolUnits",
             "unit_type_string0": "Mobile | Structure"
           }
         ]
       ],
-      "task_type": "FighterAttack"
+      "instance_count": 1,
+      "name": "Legion - Fighter Attack Platoon Max",
+      "priority": 200,
+      "task_type": "FighterAttack",
+      "to_build": "Legion_Fighter_Attack_Max"
     }
   ]
 }
