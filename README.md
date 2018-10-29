@@ -128,7 +128,7 @@ These should resemble existing strategic icons for similar units. All weapon cap
 
 Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
-- filename format: `icon_si_L_unit.png`
+- filename format: `icon_si_l_unit.png`
 - 52px x 52px
 - #FFFF00 mask
 - PNG32
@@ -139,7 +139,7 @@ These should use a red tint.
 
 Add to the same path as the unit's json file:
 
-- filename format: `L_unit_icon_buildbar.png`
+- filename format: `l_unit_icon_buildbar.png`
 - 60px x 60px
 - PNG32
 
