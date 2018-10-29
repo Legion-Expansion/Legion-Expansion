@@ -52,7 +52,7 @@ To create a copy for testing local changes:
 
 1. Install [Python 3](https://www.python.org/)
 2. Checkout origin/balance
-3. Run install_local.py
+3. Run install_local.py - requires the pa_tools submodule
 4. Enable the '[DEVELOPMENT]' version of the mod.
 
 # Translations
