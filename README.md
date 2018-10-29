@@ -97,8 +97,8 @@ Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
 
 When working with Legion units please:
 
-- prefix all Legion units directories and filenames with L_
-- follow Uber's naming conventions i.e. L_type_unit_adv (although some are different eg dox)
+- prefix all Legion units directories and filenames with l_
+- follow Uber's naming conventions i.e. l_type_unit_adv (although some are different eg dox)
 - for all Legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
 - check area builds i.e. area_build_separation
 - create sea versions when needed in pa/units/sea/
