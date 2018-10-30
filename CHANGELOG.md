@@ -1,8 +1,8 @@
-## CHANGELOG
+# CHANGELOG
 
-#### v1.5.0 - 2018-10-30
+## v1.5.0 - 2018-10-30
 
-###### Balance
+### Balance
 
  - Air
    - Advanced Flyer Foundry 
@@ -19,68 +19,68 @@
      - Cost increased from 3600 to 4500
 
 
-#### v1.4.3 - 2018-10-21
+## v1.4.3 - 2018-10-21
 
-###### AI
+### AI
 
  - Updated for the changes to the vanilla AI in 112176
  - Improved integration of Novas into platoons
  - Better handling of air platoon creation alongside vanilla AI and in shared army situations
 
-###### Fixes
+### Fixes
 
  - Strategic icons fixed following update to HodgePodge
  - Fixed Linux issues with Havoc and Black Knight due to incorrect casing
 
 
-#### v1.4.2 - 2018-10-18
+## v1.4.2 - 2018-10-18
 
-###### Translations
+### Translations
 
  - Corrected Chinese (Traditional) (zh-TW) translations added in 1.4.1 with thanks to IPWIW
 
-###### Fixes
+### Fixes
 
  - Advanced Air, Bot, Vehicle and Naval Factory cost updated to match the new cost in PA release 112176
 
 
-#### v1.4.1 - 2018-10-06
+## v1.4.1 - 2018-10-06
 
-###### Translations
+### Translations
 
  - Added partial Russian (ru) support with thanks to Diskraip and грязь dirt
  - Updated and completed German (de) with thanks to tunsel
  - Updated Chinese (Traditional) (zh-TW) with thanks to IPWIW
 
-###### Fixes
+### Fixes
 
  - Legion Intro button works again though we must load it in an external browser now
  - Browsing systems in the lobby correctly uses the full width of the screen under the Legion theme
 
 
-#### v1.4.0 - 2018-05-21
+## v1.4.0 - 2018-05-21
 
-###### Translations
+### Translations
 
  - Setup Legion unit names to allow translation by third party mods
  - Added Chinese (Traditional) with thanks to IPWIW
 
-###### Fixes
+### Fixes
 
  - All Legion Commander descriptions now consistent in their format
 
 
-#### v1.3.2 - 2018-04-08
+## v1.3.2 - 2018-04-08
 
-###### Fixes
+### Fixes
 
  - Infiltrator can now move between planets per its description
  - AI checks it can afford the build and running costs of the Infiltrator before building it
 
 
-#### v1.3.1 - 2018-03-26
+## v1.3.1 - 2018-03-26
 
-###### Translations
+### Translations
 
  - Expanded to cover lobby chat messages
  - Added French (fr) and German (de) for lobby only, pending further unit description translations
@@ -88,15 +88,15 @@
  - Unit names are no longer translated in any language to ensure consistency of communication
 
 
-#### v1.3 - 2018/03/15
+## v1.3 - 2018/03/15
 
-###### General
+### General
 
  - Maul, Earthshaker and Necromancer move to 10% of their range when attacking
  - Thor will move to bring its multilaser into range when attacking
  - AI no longer builds the Necromancer
 
-###### Translations
+### Translations
 
 For languages which use the Latin alphabet we are not including unit name translations at this time so as to avoid confusion when referring to units across languages. This was done on the advice of a number of our bilingual players.
 
@@ -110,7 +110,7 @@ Translations added:
    - ko, Korean
    - nl, Dutch
 
-###### Balance
+### Balance
 
  - Land
    - Scorpion
@@ -124,70 +124,70 @@ Translations added:
      - Vision lost only once energy efficiency drops below 90% instead of 100%
 
 
-#### v1.2.1 - 2017/09/01
+## v1.2.1 - 2017/09/01
 
-###### General
+### General
 
  - Initial lobby pop-up now states how to play as Legion
 
-###### Fixes
+### Fixes
 
  - Fixed multiple intro buttons appearing when Legion was installed by a player not logged into Ubernet
  - POV button coloured to match Legion theme
 
 
-#### v1.2 - 2017/06/20
+## v1.2 - 2017/06/20
 
-###### General
+### General
 
  - AI puts greater distance between Rigs to avoid chain reactions
  - Added support for new MLA Commanders
  - Removed Wrasse
 
-###### Balance
+### Balance
 
  - Star Cannon
    - Added three second delay between unit builds (same as Unit Cannon)
 
 
-#### v1.1 - 2017/02/03
+## v1.1 - 2017/02/03
 
-###### General
+### General
 
  - Standardised metal texture across faction to resolve light/dark contrast between units
  - Resolved all instances of Tron lines on units
  - Replaced some low quality textures
 
-###### Fixes
+### Fixes
 
  - Holocene and Wrasse given correct selection shape
  - Removed further unnecessary files to minimise mod size
  - Catfish strategic icon properly reflects its ability to fire torpedoes and is slightly larger now
 
 
-#### v1.0.2 - 2016/12/30
+## v1.0.2 - 2016/12/30
 
-###### Fixes
+### Fixes
 
  - Fixed Holocene being buildable by Fabrication Starship
 
 
-#### v1.0.1 - 2016/12/22
+## v1.0.1 - 2016/12/22
 
-###### Fixes
+### Fixes
 
  - Fixed Jaeger splash being twice its weapon's damage
 
 
-#### v1.0 - 2016/12/22
+## v1.0 - 2016/12/22
 
-###### General
+### General
 
  - Removed BETA from Legion UI and added version number
  - Updated AI for changes to Starcannon buildable units
  - AI can build Wrasse
 
-###### Balance
+### Balance
 
  - Armour
    - Armour Fabricator
@@ -277,36 +277,36 @@ Translations added:
     - Gustav
       - Range decreased from 500 to 400
 
-###### Fixes
+### Fixes
 
  - Fixed use of invalid form of RGB curve in fabber spray effects
  - Fixed Ripple and Tsunami torpedoes colliding with the sea floor on certain maps
  - Necromancer Purger metal value set to match that of the Purger
 
 
-#### v0.18.2 - 2016/11/22
+## v0.18.2 - 2016/11/22
 
-###### Fixes
+### Fixes
 
  - Correct version shown in UI
 
 
-#### v0.18.1 - 2016/11/22
+## v0.18.1 - 2016/11/22
 
-###### General
+### General
 
  - Replace metal texture on multiple units to ensure consistency across faction
  - Guardian tooltip more accurately describes its abilities
  - Disabled the AI building the Starcannon due to some associated server crashes
 
-###### Fixes
+### Fixes
 
  - Holocene correctly flagged as a Titan
 
 
-#### v0.18.0 - 2016/10/03
+## v0.18.0 - 2016/10/03
 
-###### IMPORTANT
+### IMPORTANT
 
  - The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
  - Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
@@ -315,7 +315,7 @@ Translations added:
    - OS X - https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues
    - Linux - https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues
 
-###### General
+### General
 
  - Anti-air symbol added to Jaeger build bar icon
  - Weapon range circles disabled for uncontrollable entities
@@ -323,7 +323,7 @@ Translations added:
  - Necromancer's Purgers no longer selectable with factory built Purgers and have been coloured red to distinguish them
  - Strategic icons now show for jumping Purgers and Investigators
 
-###### Balance
+### Balance
 
  - Rampart nerf
    - Shield no longer starts fully charged when built
@@ -356,7 +356,7 @@ Translations added:
  - Purger nerf
    - Health decreased from 80 to 70
 
-###### Fixes
+### Fixes
 
  - Black icons caused by memory limit replaced with dots
  - Animation log errors fixed for a variety of units
@@ -375,9 +375,9 @@ Translations added:
  - Lobby overlay no longer broken when Legion theme is disabled
 
 
-#### v0.17.0 - 2016/07/18
+## v0.17.0 - 2016/07/18
 
-###### General
+### General
 
  - Salamander banking angle increased from 0.25 to 0.5
  - Havoc no longer prefers to be at the back of a formation
@@ -389,7 +389,7 @@ Translations added:
  - Miniman no longer prioritises Commander
  - New Stoke model
 
-###### Balance
+### Balance
 
  - Deathmark nerf:
    - Rate of fire changed from 6 to 7
@@ -428,7 +428,7 @@ Translations added:
  - Patriot nerf:
    - Rate of fire per volley decreased from 1 to 0.83
 
-###### Fixes
+### Fixes
 
  - Infiltrator now selects as a combat air unit
  - Thor main cannon less likely to shoot into the ground
@@ -439,15 +439,15 @@ Translations added:
  - Spoiler land mines no longer block pathing
 
 
-#### v0.16.0 - 2016/06/27
+## v0.16.0 - 2016/06/27
 
-###### General
+### General
 
  - Added ability to hold fire to Spoiler mines
  - Imperator now launches drones against ground targets
  - Performance improvements to Salamander and its turret
 
-###### Balance
+### Balance
 
  - Havoc buff
    - Weapon starts fully charged
@@ -463,16 +463,16 @@ Translations added:
    - Launches drones against ground targets
    - Orbital to ground damage decreased from 300 to 50
 
-###### Fixes
+### Fixes
 
  - Starcannon unit pods now always visible
  - Epoch shots blocked by Ramparts
  - Purgers from Necromancers now correctly grouped with Purgers built from factories
 
 
-#### v0.15.0 - 2016/06/20
+## v0.15.0 - 2016/06/20
 
-###### General
+### General
 
  - Miniman projectiles now show a trail
  - Scorpion hit FX changed to better show AoE
@@ -483,7 +483,7 @@ Translations added:
  - Changed Firebird description to mention it's interplanetary
  - Enforcer now displays FX on death
 
-###### Balance
+### Balance
 
 Full unit stats - https://palobby.com/legion-expansion/units
 
@@ -543,7 +543,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Miniman buff:
    - Disabled friendly fire
 
-###### Fixes
+### Fixes
 
  - Rampart textures now show when it's built on the water
  - Fixed bone structure of the Stoke
@@ -561,28 +561,28 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Miniman bomb explosions don't end prematurely
 
 
-#### v0.14.1 - 2016/06/10
+## v0.14.1 - 2016/06/10
 
-###### General
+### General
 
  - AI updated for Starcannon changes
 
-###### Balance
+### Balance
 
  - Comet nerf:
    - Added 3 second cooldown on arrival at a new planet
  - Starcannon buff:
    - Can now build the Orbweaver
 
-###### Fixes
+### Fixes
 
  - Stoke and Corsair now display the correct cost to build
  - AI no longer tries to have the Praetorian build things it can't
 
 
-#### v0.14.0 - 2016/06/06
+## v0.14.0 - 2016/06/06
 
-###### General
+### General
 
  - Switched Deathmark and Havoc on the build bar so their positions are better aligned with MLA roles
  - Switched Salamander and Infiltrator on the build bar so their positions are better aligned with MLA roles
@@ -590,7 +590,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Added idle effect to Salamander
  - Salamander turrets now auto fire rather than requiring manual attack orders
 
-###### Balance
+### Balance
 
  - Salamander buff:
    - Turrets now automatically deployed though manual deployment is still possible
@@ -612,7 +612,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
    - Drone storage capacity reduced from 18 to 14
    - Drone damage increased from 15 to 20
 
-###### Fixes
+### Fixes
 
  - Welcome message now links to correct Legion Expansion forum thread
  - Fix bot fabricator having wrong metal cost
@@ -622,13 +622,13 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Fixed bug preventing Necromancer from sometimes spawning all its Purgers
 
 
-#### v0.13.0 - 2016/05/29
+## v0.13.0 - 2016/05/29
 
-###### General
+### General
 
  - Mixed MLA/Legion armies now use a custom icon on the player list
 
-###### Balance
+### Balance
 
  - Starcannon nerf:
    - Pods can now be shot down by Bluehawks, Catapults, Stingrays and Panzers
@@ -637,16 +637,16 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Panzer nerf:
    - Missiles can now be shot down by GIL-Es
 
-###### Fixes
+### Fixes
 
  - Removed an invalid ammo type to prevent errors
  - Panzer no longer misses at close range
  - Legion tag no longer shown in UI in non-Legion games
 
 
-#### v0.12.0 - 2016/05/23
+## v0.12.0 - 2016/05/23
 
-###### General
+### General
 
  - Improved MLA selection graphics in lobby
  - In-game menu is now red when Legion UI is enabled
@@ -663,12 +663,12 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Improved Investigator description
  - Improved game logging
 
-###### Balance
+### Balance
 
  - Diplomat buffed
    - Cost reduced from 50,000 metal to 40,000 to match Halley
 
-###### Fixes
+### Fixes
 
  - Fixed build icon weapon symbols for Catfish, Bowhead and Talos
  - Fixed numerous textures being too bright
@@ -691,9 +691,9 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Intro buttons properly sized for latest PA versions
 
 
-#### v0.11.0 - 2016/05/16
+## v0.11.0 - 2016/05/16
 
-###### General
+### General
 
  - Patriots automatically place themselves at the back of formations
  - MLA Commanders now outlined in blue in the lobby to match Legion
@@ -701,7 +701,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Corsair prioritises structures (excluding walls) over mobile units
  - Rampart uses team colour for its switching off effect
 
-###### Balance
+### Balance
 
  - Gustav nerfed:
    - range decreased to 500 from 550
@@ -720,7 +720,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
    - bomb explosion timer decreased from 3 seconds to 2.5
    - bomb splash damage decreased from 500 to 250
 
-###### Fixes
+### Fixes
 
  - Moved Rampart to correct location on build bar
  - Fixed colour of spectators in lobby when Legion theme is active
@@ -731,16 +731,16 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Fixed Decimator rocket trail
 
 
-#### v0.10.1 - 2016/05/13
+## v0.10.1 - 2016/05/13
 
  - Added BETA tag to mod name
  - Updated mod description to list known issues
  - Updated lobby welcome screen to list known issues
 
 
-#### v0.10.0 - 2016/05/09
+## v0.10.0 - 2016/05/09
 
-###### General
+### General
 
  - New build effect
  - Improved Purger description
@@ -756,7 +756,7 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Improved main menu load time when Legion theme is disabled
  - Optimised background images to reduce mod size
 
-###### Balance
+### Balance
 
  - Black Knight now heavily drains Ramparts
  - Hive nerfed:
@@ -791,13 +791,13 @@ Full unit stats - https://palobby.com/legion-expansion/units
    - health decreased from 650 to 350
  - Reduced Tyr splash radius from 180 to 160
 
-###### Fixes
+### Fixes
 
  - Marauder firing sound fixed
  - Fix Rockteeth commander not having a torpedo weapon
 
 
-#### v0.9.1 - 2016/05/03
+## v0.9.1 - 2016/05/03
 
  - Fixed bug preventing the Enderstryke71 and Nefelpitou Commanders from building
  - Restored Rockteeth build effects
@@ -805,6 +805,6 @@ Full unit stats - https://palobby.com/legion-expansion/units
  - Fixed the Marauder description
 
 
-#### v0.9.0 - 2016/05/02
+## v0.9.0 - 2016/05/02
 
  - Public beta release
