@@ -1,5 +1,24 @@
 ## CHANGELOG
 
+#### v1.5.0 - 2018-10-30
+
+###### Balance
+
+ - Air
+   - Advanced Flyer Foundry 
+     - Cost increased from 3600 to 4500
+ - Land
+   - Advanced Walker Foundry 
+     - Cost increased from 3600 to 4500
+   - Advanced Armour Foundry 
+     - Cost increased from 3600 to 4500
+   - Panzer
+     - Missile lifetime increased from 5 to 5.5 seconds
+ - Naval
+   - Advanced Ship Foundry 
+     - Cost increased from 3600 to 4500
+
+
 #### v1.4.3 - 2018-10-21
 
 ###### AI

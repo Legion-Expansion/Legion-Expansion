@@ -52,9 +52,8 @@ To create a copy for testing local changes:
 
 1. Install [Python 3](https://www.python.org/)
 2. Checkout origin/balance
-3. Run install_local.py
+3. Run install_local.py - requires the pa_tools submodule
 4. Enable the '[DEVELOPMENT]' version of the mod.
-
 
 # Translations
 
@@ -76,9 +75,10 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 
 ## Committing
 
-1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a branch, or your own fork.
+1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
 3. Fix any MISSING FILE references in the format.py output
+4. Use correct casing when referencing files so as to prevent issues on Linux
 
 Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
@@ -99,8 +99,8 @@ Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
 
 When working with Legion units please:
 
-- prefix all Legion units directories and filenames with L_
-- follow Uber's naming conventions i.e. L_type_unit_adv (although some are different eg dox)
+- prefix all Legion units directories and filenames with l_
+- follow Uber's naming conventions i.e. l_type_unit_adv (although some are different eg dox)
 - for all Legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
 - check area builds i.e. area_build_separation
 - create sea versions when needed in pa/units/sea/
@@ -113,8 +113,8 @@ When working with Legion units please:
 If replacing existing vanilla units:
 
 - use the same naming conventions for directories and files as the vanilla units
-- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit json files
-- add only changed properties to unit json files (everything else will inherit from the base_spec)
+- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit JSON files
+- add only changed properties to unit JSON files (everything else will inherit from the base_spec)
 
 If you rename a unit directory:
 
@@ -130,7 +130,7 @@ These should resemble existing strategic icons for similar units. All weapon cap
 
 Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
-- filename format: `icon_si_L_unit.png`
+- filename format: `icon_si_l_unit.png`
 - 52px x 52px
 - #FFFF00 mask
 - PNG32
@@ -139,9 +139,9 @@ Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
 
 These should use a red tint.
 
-Add to the same path as the unit's json file:
+Add to the same path as the unit's JSON file:
 
-- filename format: `L_unit_icon_buildbar.png`
+- filename format: `l_unit_icon_buildbar.png`
 - 60px x 60px
 - PNG32
 
