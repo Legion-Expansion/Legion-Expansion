@@ -137,7 +137,7 @@
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
     "message": "Dodaje całkowicie nową frakcję z ponad tysiącem jednostek do użycia w grze jednoosobowej i wieloosobowej. Wymaga rozszerzenia Titans. Nie jest kompatybilne z innymi modami dodającymi dodatkowe jednostki. Jeśli nielubisz nowej skórki może zostać wyłączona w menu."
   },
-  "Legion #.##.#": {
-    "message": "Legion #.##.#"
+  "Legion 1.5.0": {
+    "message": "Legion 1.5.0"
   }
 }
