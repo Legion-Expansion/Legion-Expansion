@@ -1,5 +1,11 @@
 # CHANGELOG
 
+##
+
+### General
+
+ - Update Legion Intro button to display correctly in 112474 and later
+
 ## v1.5.0 - 2018-10-30
 
 ### Balance
