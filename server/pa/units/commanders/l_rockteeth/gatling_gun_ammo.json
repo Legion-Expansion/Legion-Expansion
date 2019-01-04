@@ -15,7 +15,9 @@
   "initial_velocity": 250.0,
   "lifetime": 2,
   "max_velocity": 250.0,
-  "model": null,
+  "model": {
+    "filename": "/pa/units/generic/placeholder_proj/placeholder_proj.papa"
+  },
   "physics": {
     "add_to_spatial_db": true,
     "allow_underground": true,

@@ -6,6 +6,7 @@
 
  - Update Legion Intro button to display correctly in 112474 and later
  - All unit descriptions updated for accuracy and clarity
+ - Added visible project when Rockteeth shoots so you can see if you're missing
 
 ### Balance
 
