@@ -8,7 +8,8 @@
   "pitch_rate": 360,
   "rate_of_fire": 1,
   "target_layers": [
-    "WL_AnyLand"
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
   ],
   "yaw_range": 180,
   "yaw_rate": 360
