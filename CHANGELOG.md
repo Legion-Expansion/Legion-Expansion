@@ -6,13 +6,15 @@
 
  - Update Legion Intro button to display correctly in 112474 and later
  - All unit descriptions updated for accuracy and clarity
- - Added visible project when Rockteeth shoots so you can see if you're missing
 
 ### Balance
 
  - Air
    - Osprey
      - Movement increased from 70 to 80
+ - Commanders
+   - Rockteeth
+     - Removed custom weapons so that it is using the exact same weapon stats as all other Commanders
  - Orbital
    - Kosmos
      - Able to shoot sea surface targets in addition to land
