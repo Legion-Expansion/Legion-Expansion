@@ -9,6 +9,9 @@
 
 ### Balance
 
+ - Air
+   - Osprey
+     - Movement increased from 70 to 80
  - Orbital
    - Kosmos
      - Able to shoot sea surface targets in addition to land
