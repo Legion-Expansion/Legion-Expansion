@@ -34,7 +34,7 @@
     },
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/l_air_scout_adv/vision/vision_active.pfx",
+      "filename": "/pa/units/air/l_air_scout_adv/l_vision/l_vision_active.pfx",
       "type": "idle"
     }
   ],
@@ -98,7 +98,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/air/l_air_scout_adv/vision/vision_death_tool_weapon.json"
+      "spec_id": "/pa/units/air/l_air_scout_adv/l_vision/l_vision_death_tool_weapon.json"
     }
   ],
   "unit_types": [

@@ -6,7 +6,7 @@
     "/pa/units/air/l_air_factory_adv/l_air_factory_adv.json",
     "/pa/units/air/air_scout/air_scout.json",
     "/pa/units/air/l_air_scout_adv/l_air_scout_adv.json",
-    "/pa/units/air/l_air_scout_adv/vision/vision.json",
+    "/pa/units/air/l_air_scout_adv/l_vision/l_vision.json",
     "/pa/units/air/base_flyer/base_flyer.json",
     "/pa/units/air/bomber/bomber.json",
     "/pa/units/air/l_bomber/l_bomber.json",
