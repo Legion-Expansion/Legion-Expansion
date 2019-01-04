@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Tyr",
-  "description": "!LOC:Orbital mega-laser- Purifies the surface below with its laser.",
+  "description": "!LOC:Orbital Mega-Laser- Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.",
   "TEMP_texelinfo": 33.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 266.666,

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Earthshaker",
-  "description": "!LOC:Seismic tank- Decimates units that get too close.",
+  "description": "!LOC:Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.",
   "TEMP_texelinfo": 9.04444,
   "attachable": {
     "offsets": {

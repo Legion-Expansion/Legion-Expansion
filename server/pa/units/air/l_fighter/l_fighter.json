@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Scythe",
-  "description": "!LOC:Fast air interceptor- Attacks air.",
+  "description": "!LOC:Fighter- Fast. High damage. Forward firing only. Only attacks air targets.",
   "TEMP_texelinfo": 6.1803,
   "audio": {
     "loops": {

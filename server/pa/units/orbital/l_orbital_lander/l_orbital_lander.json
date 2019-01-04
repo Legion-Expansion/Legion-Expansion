@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Chariot",
-  "description": "!LOC:Orbital lander- Interplanetary transportation carrier.",
+  "description": "!LOC:Interplanetary Transport- Moves land and air units between planets.",
   "TEMP_texelinfo": 23.9658,
   "attachable": {
     "offsets": {

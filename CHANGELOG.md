@@ -5,6 +5,14 @@
 ### General
 
  - Update Legion Intro button to display correctly in 112474 and later
+ - All unit descriptions updated for accuracy and clarity
+
+### Balance
+
+ - Orbital
+   - Kosmos
+     - Able to shoot sea surface targets in addition to land
+
 
 ## v1.5.0 - 2018-10-30
 

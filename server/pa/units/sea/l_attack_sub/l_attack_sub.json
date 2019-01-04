@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Akula",
-  "description": "!LOC:Attack submarine- Equipped with torpedoes. Fast.",
+  "description": "!LOC:Submarine- Fast. Fires in salvos. Attacks sea, seabed and undersea targets.",
   "TEMP_texelinfo": 8.37977,
   "audio": {
     "loops": {

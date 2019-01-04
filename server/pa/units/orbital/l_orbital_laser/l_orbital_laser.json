@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Black Knight",
-  "description": "!LOC:Orbital laser- Equipped with a high damage plasma cannon. Attacks land and naval.",
+  "description": "!LOC:Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets.",
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {

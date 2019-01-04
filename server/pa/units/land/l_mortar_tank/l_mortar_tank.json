@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Stoke",
-  "description": "!LOC:Fast amphibious attack tank- Equipped with torpedoes and a light cannon.",
+  "description": "!LOC:Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.",
   "TEMP_texelinfo": 9.31488,
   "armor_type": "AT_Bot",
   "attachable": {

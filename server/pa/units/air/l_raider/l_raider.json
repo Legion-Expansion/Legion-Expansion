@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Marauder",
-  "description": "!LOC:Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.",
+  "description": "!LOC:Raider- Fast. Can see far away. Attacks land and sea targets.",
   "TEMP_texelinfo": 8,
   "attachable": {
     "offsets": {

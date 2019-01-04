@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Scorpion",
-  "description": "!LOC:Advanced battle tank- Heavily armored. Attacks land and naval.",
+  "description": "!LOC:Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 19.398,
   "attachable": {
     "offsets": {
