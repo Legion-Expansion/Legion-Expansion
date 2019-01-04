@@ -15,6 +15,9 @@
  - Orbital
    - Kosmos
      - Able to shoot sea surface targets in addition to land
+ - Titans
+   - Loki
+     - Lowered shot velocity and increased tracking to improve accuracy
 
 
 ## v1.5.0 - 2018-10-30
