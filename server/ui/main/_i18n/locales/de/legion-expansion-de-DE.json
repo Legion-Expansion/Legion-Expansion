@@ -1,59 +1,59 @@
 {
-  "Suicide bomb flyer- Attacks air only.": {
+  "Flying Bomb- Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
     "message": "Fliegende Selbstmordbombe - Greift nur Lufteinheiten an."
   },
-  "Air carrier- Launches fast-flying drones at enemies. Attacks everything except orbital.": {
+  "Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
     "message": "Flugzeugträger - Startet schnell-fliegende Drohnen die den Feind angreifen. Kann alles angreifen außer Orbitaleinheiten."
   },
-  "Missile drone- Fast, fragile, attacks land and air.": {
+  "Drone- Fast. Fragile. Attacks land, sea and air targets.": {
     "message": "Raketendrohne - Schnelle, aber fragile Drohne, kann nur Land- und Lufteinheiten angreifen."
   },
-  "Basic manufacturing- Builds Legion flyer units.": {
+  "Basic Manufacturing- Builds basic air units.": {
     "message": "Einfache Konstruktion - Baut Legion Lufteinheiten."
   },
-  "Advanced manufacturing- Builds advanced Legion flyer units.": {
+  "Advanced Manufacturing- Builds advanced air units.": {
     "message": "Erweiterte Konstruktion - Baut erweiterte Legion Lufteinheiten."
   },
-  "Advanced stealth flyer- Equipped with a sneaky spy camera. Consumes energy. Interplanetary.": {
+  "Advanced Stealth Scout- Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
     "message": "Verbesserter Stealth Flieger -Ausgestattet mit einer hinterhältigen Spionage Kamera. Verbraucht Energie. Interplanetarisch."
   },
-  "Plasma bomber- High Damage. Attacks land and naval.": {
+  "Bomber- High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
     "message": "Plasma Bomber - Hoher Schaden. Greift Land und Marine einheiten an."
   },
-  "Builds basic structures- Fast. Can build exclusive flyer units.": {
+  "Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "Baut einfache Konstruktionen - Schnell. Kann nur Lufteinheiten bauen."
   },
-  "Builds advanced structures- Can build exclusive flyer units.": {
+  "Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "Baut verbesserte Konstruktionen - Kann nur Lufteinheiten bauen."
   },
-  "Fast air interceptor- Attacks air.": {
+  "Fighter- Fast. High damage. Forward firing only. Only attacks air targets.": {
     "message": "Schneller Abfangjäger - Attackiert Lufteinheiten."
   },
-  "Interplanetary fighter- Fast and armored. Attacks air.": {
+  "Interplanetary Fighter- Fast. Can move between planets. Can only attack air targets.": {
     "message": "Interplanetarischer Fighter - Schnell und gepanzert. Greift Lufteinheiten an."
   },
-  "Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.": {
-    "message": "Einfacher Turm - Ausgerüstet mit direkt feuernde Land- und Schiffabwehr waffen."
+  "Light Turret- Rapid fire. Attacks land, sea and seabed targets.": {
+    "message": "Leichter Verteidigungsturm - Kurze Reichweite. Greift Land- und Marineeinheiten an."
   },
-  "Flame deployment bomber- Heavy damage over an area. Well armored. Can deploy light flamethrower turret.": {
+  "Napalm Bomber- High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
     "message": "Flammen Bomber- Großer Schaden über einem bestimmten Gebiet. Gut gepanzert. Kann leichten Flammenwerferturm absetzen."
   },
-  "Interplanetary mobile teleporter- Heavily armored.": {
+  "Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
     "message": "Interplanetarischer mobiler Teleporter - Stark gepanzert."
   },
-  "Gunship- Heavily armored. Equipped with seeking missiles and a light machine gun.": {
+  "Gunship- Heavily armored. Attacks land, sea and seabed targets.": {
     "message": "Kampfhubschrauber - Schwer gepanzert. Ausgestattet mit Suchraketen und einem leichten Maschinengewehr."
   },
-  "Raider- Lightly armored. Armed with light anti-ground Lasers. Very fast.": {
+  "Raider- Fast. Can see far away. Attacks land and sea targets.": {
     "message": "Raider - Leicht gepanzert. Bewaffnet mit leichten Anti-Ground-Lasern. Sehr schnell."
   },
-  "Flying fortress- Heavily armored. Equipped with long range cannons and rapid-fire machine guns.": {
+  "Flying Fortress Titan- Heavy damage over a wide area. Attacks any targets except orbital.": {
     "message": "Fliegende Festung - Schwer Gepanzert. Ausgestatet mit Langstrecken Kanonen und schnell feuernden Maschinengeweheren."
   },
-  "Unit transport- Quick. Unarmed.": {
+  "Transport- Load a land unit for rapid long distance travel.": {
     "message": "Einheiten Transporter - Schnell. Unbewaffnet."
   },
-  "Legion Class Commander- If you're seeing this, something is wrong in your commander.": {
+  "Legion Commander Description- If you're seeing this, something is wrong in your commander.": {
     "message": "Kommandant der Legion Klasse - Wenn du das hier siehst ist etwas falsch mit deinem Kommandanten gelaufen."
   },
   "Imperial Cyclops Commander": {
@@ -68,268 +68,265 @@
   "Imperial Wasushi Commander": {
     "message": "Legion Wasushi Kommandant"
   },
-  "Basic AA turret- Equipped with a light machine gun.": {
+  "Anti-Air Turret- Equipped with homing tracer rounds. Only attacks air targets.": {
     "message": "Einfacher AA Turm - Ausgerüstet mit einem leichtem Maschinengewehr."
   },
-  "Advanced anti-air tower- Long range. Attacks air units.": {
+  "Advanced Anti-Air Turret- Fires homing rockets which deal splash damage. Only attacks air targets.": {
     "message": "Erweiterter Luftabwehr Turm - Langstrecken. Attackiert Lufteinheiten."
   },
-  "Nuke defense- Intercepts and destroys incoming nuclear missiles.": {
+  "Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons.": {
     "message": "Nukleare Verteidigung - Fängt ab und zerstört anfliegende Nuklear Raketen."
   },
-  "Magnetic accelerator cannon- Fires high damage projectiles.": {
+  "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
     "message": "Magnetische Beschleunigungskanone - Feuert Projektile mit hohem Schaden ab."
   },
-  "Medium anti-ship and anti-land railgun- Requires energy to fire.": {
+  "Artillery- High splash damage. Attacks land, sea and seabed targets.": {
     "message": "Mittlere Anti-Naval und Anti-Lönd Railgun- Benötigt Energie zum feuern."
   },
-  "Assault walker- Attacks land and naval.": {
+  "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.": {
     "message": "Assault-Walker - Attackiert Land und Marineeinheiten."
   },
-  "Anti-air walker- Short range. Attacks air.": {
+  "Anti-Air Walker- Equipped with homing missiles. Only attacks air targets.": {
     "message": "Anti-Lufteinheiten Läufer- Kurze Reichweite. Attackiert Lufteinheiten"
   },
-  "Advanced mobile AA- Attacks air.": {
+  "Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets.": {
     "message": "Verbesserte mobile AA- Attackiert Lufteinheiten."
   },
-  "Heavy siege walker- Long range. Launches self-exploding sticky plasma mines.": {
+  "Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "Schwere Belagerungswalker - Lange Reichweite. Startet selbstexplodierende klebrige Plasma-Minen."
   },
-  "Heavy assault walker- Heavily armored. Equipped with strong cannons and a heavy laser.": {
+  "Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets.": {
     "message": "Schwerer Attack Läufer- Schwer gepanzert. Ausgerüstet mit starken Kanonen und einem schweren Laser."
   },
-  "Leaping boombot spider- Launches at enemies and up cliffs with alt fire.": {
+  "Leaping Bomb Bot- Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
     "message": "Sprungbombenspinne- Springt auf Gegner und kann Klippen überwinden mit ALT-Fire."
   },
-  "Basic manufacturing- Builds Legion walkers.": {
+  "Basic Manufacturing- Builds basic bot units.": {
     "message": "Grundlegender Hersteller- Baut Legion Wanderer."
   },
-  "Advanced manufacturing- Builds advanced Legion walkers.": {
+  "Advanced Manufacturing- Builds advanced bot units.": {
     "message": "Verbesserter Hersteller- Baut verbesserte Legion Wanderer."
   },
-  "Auxiliary commander- Can build structures. High health and heavily armed.": {
+  "Auxiliary Commander- Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
     "message": "Hilfs Kommandant - Kann Gebäude bauen. Viel leben und schwer gepanzert."
   },
-  "Basic economy- Generates power.": {
+  "Basic Economy- Generates power.": {
     "message": "Grundökonomie - Erzeugt Power"
   },
-  "Advanced power generator- Fabricates black holes and harnesses their energy. Damages allies upon death.": {
+  "Advanced Economy- Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
     "message": "Verbesserter Energie Generator- Fabriziert Schwarze Löcher und nutzt deren Energie. Schadet Verbündete bei Tod."
   },
-  "Fabricator- Builds basic structures. Can build exclusive walker units.": {
+  "Builder- Builds basic structures. Cheap. Less powerful than other builders.": {
     "message": "Hersteller- Baut grundlegende Strukturen. Kann exklusive Wanderereinheiten bauen."
   },
-  "Advanced fabrication walker- Builds advanced structures and exclusive walker units.": {
+  "Advanced Builder- Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
     "message": "Verbesserter Fabrikations Wanderer- Baut verbesserte Strukturen und exklusive Wanderereinheiten."
   },
-  "Fabricator- Builds basic structures. Can build exclusive vehicle units.": {
+  "Builder- Builds basic structures. Durable. More powerful than other basic land and air builders.": {
     "message": "Hersteller- Baut grundlegende Strukturen. Kann exklusive Fahrzeug Einheiten bauen."
   },
-  "Fabricator- Builds advanced structures. Can build exclusive armor units.": {
+  "Advanced Builder- Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
     "message": "Hersteller- Baut verbesserte Strukturen. Kann exklusive gepanzerte Einheiten bauen."
   },
-  "Combat fabrication vehicle- Builds mines and radar and repairs friendly units. Can reclaim.": {
+  "Combat Builder- Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "Kampffabrikatorfahrzeug- Baut Minen, Radar und repariert freundliche Einheiten. Kann wiederverwerten."
   },
-  "Flame defense turret- Spews high-damage napalm.": {
+  "Flame Turret- High splash damage. Attacks land and sea targets.": {
     "message": "Flammenturm - Spuckt Napalm. Hoher Schadensausput."
   },
-  "Hover artillery- Medium range. Attacks land and naval.": {
+  "Hover Artillery- Can cross water and lava. Attacks land, sea and seabed targets.": {
     "message": "Schwebe Artillerie- Mittlere Reichweite. Attackiert Land und Marineeinheiten."
   },
-  "Hover assault- Medium range rockets. Attacks land, air, naval, and orbital.": {
+  "Hover Assault- Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
     "message": "Hover Sturm- Mittelstreckenraketen. Attackiert Land, Luft, Marine und Orbitaleinheiten."
   },
-  "Heavily armored siege defense barrier.": {
+  "Wall- Very durable. Blocks enemy fire only.": {
     "message": "Schwer bewaffnete Belagerungsbarriere."
   },
-  "Pop-up landmine- Sprays shrapnel then explodes after four seconds.": {
+  "Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
     "message": "Pop-up Landmine- Verteilt Schrapnelle die nach vier Sekunde explodieren."
   },
-  "Extracts metal- Can only be placed on metal deposits.": {
+  "Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
     "message": "Metallexktrator - Kann nur auf Metallablagerungen platziert werden."
   },
-  "Fast amphibious attack tank- Equipped with torpedoes and a light cannon.": {
+  "Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
     "message": "Schneller Amphibien Sturm Panzer - Ausgestattet mit Torpedos und leichten Kanonen."
   },
-  "Mobile siege walker- Summons purgers from the ground below. Massive explosion upon death.": {
+  "Siege Walker- Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
     "message": "Mobiler Belagerungswanderer- Beschwört Säüberer vom Boden aus. Massive Explosion beim Tod."
   },
-  "Long range ballistic nuclear launcher- High damage and high aoe.": {
+  "Nuclear Missile Launcher- Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
     "message": "Ballistischer nuklearer Launcher mit großer Reichweite - hoher Schaden und großer Aoe."
   },
-  "Long range, high damage ballistic missile.": {
+  "Nuclear Missile- Long range, high damage ballistic missile.": {
     "message": "Ballistische Rakete mit hoher Reichweite und hohem Schadenspotenzial"
   },
-  "Basic radar- Detects nearby enemy units.": {
+  "Basic Radar- Short-range enemy unit detection. Requires energy.": {
     "message": "Einfaches Radar - entdeckt feindliche Einheiten in der Nähe."
   },
-  "Advanced radar- Detects enemy units inside a large area.": {
+  "Advanced Radar- Long-range enemy unit detection. Requires energy.": {
     "message": "Verbessertes Radar- entdeckt feindliche Einheiten in ein Größeres Gebiet."
   },
-  "Advanced assault walker- High damage gatling guns. Attacks land and naval.": {
+  "Assault Walker- High DPS. Attacks land, sea and seabed targets.": {
     "message": "Verbesserter Kampfwanderer- Gattlinggeschütze mit hohem Schaden. Attackiert Land und Marineeinheiten."
   },
-  "Advanced defense- Heavy rocket pods. Attacks land and naval.": {
+  "Rocket Turret- High damage. Attacks land and sea targets.": {
     "message": "Verbesserte Verteidigung- Schwere Raketen. Attackiert Land und Marineeinheiten."
   },
-  "Scout bot- Deploys into a hidden short range radar via alt-fire detectable by radar.": {
+  "Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
     "message": "Scout Roboter- Kann sich mit ALT-Fire in ein verstecktes Radar mit kleiner Reichweite entwickeln wird von Radar erkannt.\n"
   },
-  "Radar vision but immobile.": {
+  "Radar- Immobile. Use alt fire to change into a fast-moving mine detector.": {
     "message": "Gibt Radarabdeckung aber Standort gebunden"
   },
-  "Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit.": {
+  "Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
     "message": "Schild - Absorbiert eingehende Schüsse. Benötigt Energie. Überlappung der Schilde bietet nur einen geringen Vorteil."
   },
-  "Close range shotgun tank- Attacks land and naval.": {
+  "Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets.": {
     "message": "Shotgun Panzer mit kleiner Reichweite - Attackiert Land-und Marineeinheiten."
   },
-  "Laser walker- Medium range laser weapon. Attacks land and naval.": {
+  "Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.": {
     "message": "Laser Wanderer- Laser mit mittlerer Reichweite. Attackiert Land und Marineeinheiten."
   },
-  "Sniper- Equipped with a high-damage beam cannon. Attacks land and naval.": {
+  "Siege Tank- Long range. Attacks land, sea and seabed.": {
     "message": "Sniper - Ausgestattet mit einer Kanone mit hohem Schaden. Greift Land- und Marineeinheiten an."
   },
-  "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
+  "Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
     "message": "Lager - Schöpft die Kraft schwarzer Löcher aus, um überschüssiges Metall und Energie zu komprimieren und somit zu speichern."
   },
-  "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
+  "Swarm Turret- Spawns nanoswarms. Attacks land, sea and seabed targets.": {
     "message": "Schwarm Aufstellung- Fabriziert Schwarmeinheiten. Attackiert Land und Marineeinheiten."
   },
-  "Medium defense turret- Attacks land and naval targets.": {
+  "Heavy Turret- High damage. Attacks land, sea and seabed targets.": {
     "message": "Mittlerer Verteidigungsturm - Greift Land- und Marineeinheiten an."
   },
-  "Light defense turret- Short range. Attacks land and naval targets.": {
-    "message": "Leichter Verteidigungsturm - Kurze Reichweite. Greift Land- und Marineeinheiten an."
-  },
-  "Seismic tank- Decimates units that get too close.": {
+  "Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
     "message": "Seismischer Panzer - Dezimiert Einheiten, die zu nahe kommen."
   },
-  "Advanced battle tank- Heavily armored. Attacks land and naval.": {
+  "Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
     "message": "Verbesserter Kampfpanzer- Stark gepanzert. Greift Land und Marineeinheiten an."
   },
-  "Main battle tank- Slow but reliable. Attacks land and naval.": {
+  "Medium Tank- Splash damage. Attacks land, sea and seabed targets.": {
     "message": "Kampfpanzer - Langsam aber verlässlich. Greift Land und Marine an."
   },
-  "Advanced lightning tank- High damage. Electrifies land and naval targets.": {
+  "Lightning Tank- Shoots timed electric mines. Attacks land and sea targets.": {
     "message": "Fortgeschrittener Blitzpanzer - Hoher Schaden. Verpufft Land- und Marineeinheiten."
   },
-  "Teleportation device- Teleports units from one to another.": {
+  "Teleporter- Link teleporters to move units around the system.": {
     "message": "Teleporter - Teleportiert Einheiten von einem zu einem anderen."
   },
-  "Experimental assault titan- Equipped with an arsenal of highly destructive weapons.": {
+  "Siege Titan- Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
     "message": "Experimetneller Angriffstitan- Ausgerüstet mit einem Arsenal von höchst zerstörerrischen Waffen."
   },
-  "Doomsday device- Destroys the planet it's built on once finished.": {
+  "Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside.": {
     "message": "Weltuntergangsmaschine - Zerstört den Planeten auf dem es gebaut wurde."
   },
-  "Experimental rolling fortress- Long range. Heavily armored and deals very high damage.": {
+  "Assault Titan- High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
     "message": "Experimentelle rollende Festung - Langstrecken Waffen. Schwer gepanzert und fügt sehr starken Schaden zu."
   },
-  "Basic manufacturing- Builds Legion armor.": {
+  "Basic Manufacturing- Builds basic tank units.": {
     "message": "Einfache Konstruktion - Baut Legion Panzer."
   },
-  "Advanced manufacturing- Builds advanced Legion armor.": {
+  "Advanced Manufacturing- Builds advanced tank units.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Legion Panzer."
   },
-  "Orbital defense- Heavy defensive satellite. Attacks anything.": {
+  "Orbital Turret- Rapid fire. Attacks land, air, sea and orbital targets.": {
     "message": "Orbitare verteidigung - Schwerer Verteidigungssatellit. Greift alles an."
   },
-  "Planet engine- Used to smash celestial bodies.": {
+  "Planet Engine- Used to smash celestial bodies into each other. Build as many as the planet requires.": {
     "message": "Planetenantrieb - Wird gebraucht um Himmeslkörper zu zerschmettern."
   },
-  "Anti-orbital ion cannon- Attacks orbital units.": {
+  "Anti-Orbital Turret- Attacks orbital targets and drop pods.": {
     "message": "Anti-Orbital Ionen Kanone- Attackiert Orbitaleinheiten."
   },
-  "Gas planet economy structure- Produces metal and energy. Only works above gas giant planets.": {
+  "Orbital Economy- Produces metal and energy. Only buildable on gas giants.": {
     "message": "Wirtschaftsstruktur für den Gasplaneten - Produziert Metall und Energie. Kann nur auf Gasplaneten plaziert werden."
   },
-  "Orbital battleship- Heavily armored. Attacks everything.": {
+  "Orbital Battleship- Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
     "message": "Orbitale Kriegsschiff - Schwer gepanzert. Attackiert alles."
   },
-  "Orbital unit cannon- Relays reinforcement units to the surface below.": {
+  "Planetary Transport- Builds and launches up to 14 units at once to the planet below.": {
     "message": "Orbitale Einheitenkanone -Übertraägt Verstärkungseinheiten auf die darunter leigenden Oberfläche."
   },
-  "Advanced fabricator- Builds Legion orbital satellites and ships.": {
+  "Advanced Builder- Builds orbital structures. Builds all titans.": {
     "message": "Fortgeschrittener Fabrikator - Errichtet Orbitalsatelliten und Marineeinheiten der Legion."
   },
-  "Advanced manufacturing- Builds advanced orbital units.": {
+  "Advanced Manufacturing- Builds advanced orbital units.": {
     "message": "Fortschrittliche Herstellung - Baut erweiterte Orbitaleinheiten."
   },
-  "Orbital fighter- Attacks orbital units. Fast.": {
+  "Orbital Fighter- Fast. Attacks orbital targets only.": {
     "message": "Orbitaler Kämpfer- Attackiert Orbitaleinheiten. Schnell."
   },
-  "Orbital lander- Interplanetary transportation carrier.": {
+  "Interplanetary Transport- Moves land and air units between planets.": {
     "message": "Orbitaltransporter - Interplanetare Transporteinheit"
   },
-  "Orbital laser- Equipped with a high damage plasma cannon. Attacks land and naval.": {
+  "Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets.": {
     "message": "Orbitallaser - Ausgerüstet mit einer Plasmakanone mit hohem Schaden. Attackiert Land- und Marineeinheiten."
   },
-  "Basic orbital factory- Launches satellites and basic orbital units into space.": {
+  "Basic Manufacturing- Builds basic orbital units.": {
     "message": "Einfache Orbitalfabrik - Startet Satelliten und Basisorbitaleinheiten in den Weltraum."
   },
-  "Orbital radar probe- Fast. Small vision radius.": {
+  "Orbital Scout- Fast. Provides small amount of vision of the planet below": {
     "message": "Orbitale Radar Sonde - Schnell. Kleiner Sichtbereich."
   },
-  "Orbital railgun- High damage. Attacks orbital.": {
+  "Orbital Siege- Long range. High damage. Attacks orbital targets only.": {
     "message": "Orbital Railgun - Hoher Schaden. Attackiert Orbitaleinheiten."
   },
-  "Basic radar satellite- Detects enemy units within a medium-sized area.": {
+  "Basic Radar Satellite- Short-range enemy unit detection. Requires energy.": {
     "message": "Einfacher Radarsatellit - Erkennt gegnerische Einheiten in einem mittelgroßen Bereich."
   },
-  "Armored advanced radar satellite- Detects units within a massive area. Attacks land.": {
+  "Advanced Radar Satellite- Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
     "message": "Gepanzerter fortschrittlicher Radarsatellit - Erkennt Einheiten in einem riesigen Gebiet. Greift Landeinheiten an."
   },
-  "Orbital mega-laser- Purifies the surface below with its laser.": {
+  "Orbital Mega-Laser- Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
     "message": "Orbital-Mega-Laser - Reinigt die darunter liegende Oberfläche mit seinem Laser."
   },
-  "Attack submarine- Equipped with torpedoes. Fast.": {
+  "Submarine- Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
     "message": "Angriffs-U-Boot - Ausgestattet mit Torpedos. Schnell."
   },
-  "Battleship- Equipped with high-damage laser cannons. Attacks land and naval targets.": {
+  "Battleship- High damage. Heavily armored. Long range. Attacks land and sea targets.": {
     "message": "Schlachtschiff - Ausgestattet mit Laser-Kanonen, hoher Schaden. Greift Land- und Marineziele an."
   },
-  "Destroyer- Equipped with heavy cannons. Attacks naval and land.": {
+  "Destroyer- High damage. Long range. Attacks land and sea targets.": {
     "message": "Zerstörer - Ausgestattet mit schweren Kanonen. Angriffe Marine- und Landeinheiten an."
   },
-  "Builds basic structures- Can build exclusive ship units.": {
+  "Builder- Builds basic structures. Most powerful basic planetary fabricator.": {
     "message": "Baut grundlegende Strukturen- Kann exklusive Marine Einheiten bauen."
   },
-  "Builds advanced structures- Can build exclusive ship units.": {
+  "Builder- Builds advanced structures. Most powerful fabricator.": {
     "message": "Baut verbesserte Strukturen- Kann exklusive Marineeinheiten bauen."
   },
-  "Combat fabrication- Places sea mines and repairs friendly units. Lightly armored.": {
+  "Combat Builder- Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "Kampffabrikator- Platziert Seeminen und repariert freundliche Einheiten. Leicht gepanzert."
   },
-  "Frigate- Only attacks air.": {
+  "Frigate- High damage precision laser strikes. Only attacks air targets.": {
     "message": "Fregatte - Attackiert nur Lufteinheiten."
   },
-  "Hover ship- Equipped with heavy cannons. Can travel on any surface. Attacks land and naval.": {
+  "Hover Railgun- Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
     "message": "Schwebeflugschiff - Ausgestattet mit schweren Kanonen. Kann auf jeder Oberfläche fahren. Greift Land und Marine an."
   },
-  "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons.": {
+  "Advanced Frigate- Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "Ballistisches Raketenschiff - Ausgestattet mit schweren Raketen und Luftabwehr Kanonen."
   },
-  "Basic manufacturing- Builds naval ships.": {
+  "Basic Manufacturing- Builds basic ship units.": {
     "message": "Einfache Konstruktion - Baut Marine Schiffe."
   },
-  "Advanced manufacturing- Builds advanced naval ships.": {
+  "Advanced Manufacturing- Builds advanced ship units.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Marine Schiffe."
   },
-  "Proximity bomb- Destroys naval units that get too close.": {
+  "Sea Mine- High damage. Invisible to most units.": {
     "message": "Annäherungsbombe - Zerstört Marine einheiten welche zu nahe kommen."
   },
-  "Corvette- Fast. Attacks naval, land and subs.": {
+  "Corvette- Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
     "message": "Korvette- Schnell - Attakiert Marine-, Land- und Lufteinheiten."
   },
-  "Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.": {
+  "Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
     "message": "Schwer gepanzerter Lastkahn - Rammt feindliche Schiffe. Ausgestattet mit schweren direkt feuernden Kanonen."
   },
-  "Wave maker and torpedo launcher- Attacks naval.": {
+  "Wave Turret- Attacks sea, seabed and undersea targets.": {
     "message": "Wellenerzeuger und Torpedowerfer - Greift Marineeinheiten an."
   },
-  "Heavy anti-ship wave machine- Attacks naval.": {
+  "Advanced Wave Turret- Attacks sea, seabed and undersea targets.": {
     "message": "Schwerer Wellenerzeuger - Greift Marine an."
   },
   "Legion Expansion": {
@@ -356,17 +353,11 @@
   "click or press space to close": {
     "message": "Drück die Leertaste oder klicke mit der Maus zum schließen"
   },
-  "BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES!": {
+  "Metal Parasite- Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
     "message": "Bieneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeen!"
   },
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
     "message": "Fügt eine komplette neue Faktion mit über hundert neuen Einheiten hinzu, die sowohl im Multiplayer als auch im Singleplayer gespielt werden kann. Benötigt Titans. Nicht kompatible mit anderen Mods die neue Einheiten zum Spiel hinzufügen. \nDas Legion-Theme kann in den Einstellungen ausgeschaltete werden."
-  },
-  "To MLA": {
-    "message": "Zur MLA"
-  },
-  "To Legion": {
-    "message": "Zur Legion"
   },
   "To play as the Legion select one of the red Commanders.": {
     "message": "Wähle einen roten Kommandanten um mit der Legionerweiterung zu spielen."
