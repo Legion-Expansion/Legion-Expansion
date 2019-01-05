@@ -5,7 +5,6 @@
 ### General
 
  - Update Legion Intro button to display correctly in 112474 and later
- - Removed button to change AI to Legion as you can now pick AI commanders
  - Removed custom FX from the Rockteeth Commander
 
 ### Translations
