@@ -9,6 +9,7 @@
 
 ### Balance
 
+ - Air
    - Osprey
      - Movement increased from 70 to 80
  - Commanders
