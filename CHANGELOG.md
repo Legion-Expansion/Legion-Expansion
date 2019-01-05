@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## v1.6.0 - 2019-01-05
 
 ### General
 
