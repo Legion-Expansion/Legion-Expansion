@@ -9,7 +9,6 @@
 
 ### Balance
 
- - Air
    - Osprey
      - Movement increased from 70 to 80
  - Commanders
@@ -21,6 +20,10 @@
  - Titans
    - Loki
      - Lowered shot velocity and increased tracking to improve accuracy
+
+### Fixes
+
+ - Firebird can now fire its long-range weapons
 
 
 ## v1.5.0 - 2018-10-30
