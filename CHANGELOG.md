@@ -15,6 +15,9 @@
  - Commanders
    - Rockteeth
      - Removed custom weapons so that it is using the exact same weapon stats as all other Commanders
+ - Land
+   - Praetorian
+     - Decreased health from 10000 to 8000
  - Orbital
    - Kosmos
      - Able to shoot sea surface targets in addition to land
