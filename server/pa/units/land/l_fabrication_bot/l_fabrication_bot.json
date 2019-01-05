@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Walker",
-  "description": "!LOC:Fabricator- Builds basic structures. Can build exclusive walker units.",
+  "description": "!LOC:Builder- Builds basic structures. Cheap. Less powerful than other builders.",
   "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Maul",
-  "description": "!LOC:Close range shotgun tank- Attacks land and naval.",
+  "description": "!LOC:Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 14.523,
   "attachable": {
     "offsets": {

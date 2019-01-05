@@ -1,5 +1,46 @@
 # CHANGELOG
 
+## v1.6.0 - 2019-01-05
+
+### General
+
+ - Update Legion Intro button to display correctly in 112474 and later
+ - Removed custom FX from the Rockteeth Commander
+
+### Translations
+
+ - All unit descriptions overhauled for accuracy and clarity
+ - Updated translations will be provided as they become available
+
+### Balance
+
+ - Air
+   - Firebird
+     - Removed target priorities
+   - Osprey
+     - Movement increased from 70 to 80
+ - Commanders
+   - Rockteeth
+     - Removed custom weapons so that it is using the exact same weapon stats as all other Commanders
+ - Land
+   - Praetorian
+     - Decreased health from 10000 to 8000
+ - Orbital
+   - Kosmos
+     - Able to shoot sea surface targets in addition to land
+ - Titans
+   - Loki
+     - Lowered shot velocity and increased tracking to improve accuracy
+
+### Fixes
+
+ - Firebird can now fire its long-range weapon
+
+### Known Issues
+
+ - You cannot pick which Commander model the AI will use only which faction it will play as
+
+
 ## v1.5.0 - 2018-10-30
 
 ### Balance

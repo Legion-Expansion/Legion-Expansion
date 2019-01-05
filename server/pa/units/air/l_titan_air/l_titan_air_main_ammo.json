@@ -21,9 +21,7 @@
       0.0
     ]
   },
-  "initial_velocity": 250,
   "lifetime": 1,
-  "max_velocity": 250,
   "model": null,
   "physics": {
     "add_to_spatial_db": false,
@@ -34,6 +32,5 @@
   },
   "splash_damage": 300,
   "splash_damages_allies": false,
-  "splash_radius": 40,
-  "turn_rate": 160
+  "splash_radius": 40
 }

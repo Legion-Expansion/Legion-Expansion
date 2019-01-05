@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Decimator",
-  "description": "!LOC:Advanced defense- Heavy rocket pods. Attacks land and naval.",
+  "description": "!LOC:Rocket Turret- High damage. Attacks land and sea targets.",
   "TEMP_texelinfo": 15.8261,
   "atrophy_cool_down": 15,
   "atrophy_rate": 33.333,

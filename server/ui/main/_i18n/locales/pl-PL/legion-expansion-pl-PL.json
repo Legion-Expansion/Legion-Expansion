@@ -1,131 +1,131 @@
 {
-  "Heavily armored siege defense barrier.": {
-    "message": "Mocno opancerzona bariera oblężnicza."
-  },
-  "Pop-up landmine- Sprays shrapnel then explodes after four seconds.": {
-    "message": "Wyskakująca mina lądowa - Rozpyla szrapnel a potem wybucha po czterech sekunach."
-  },
-  "Extracts metal- Can only be placed on metal deposits.": {
-    "message": "Wydobywa metal - można to umieścić tylko na złożach metalu."
-  },
-  "Fast amphibious attack tank- Equipped with torpedoes and a light cannon.": {
-    "message": "Szybki czołg ziemnowodny - Wyposażony w torpedy i lekkie działo."
-  },
-  "Long range ballistic nuclear launcher- High damage and high aoe.": {
-    "message": "Bombowy pocisk balistyczny dalekiego zasięgu - Wysokie obrażenia i wysoki obszar efektów."
-  },
-  "Long range, high damage ballistic missile.": {
-    "message": "Rakieta balistyczna o dużym zasięgu i dużych obrażeniach."
-  },
-  "Basic radar- Detects nearby enemy units.": {
-    "message": "Podstawowy radar - wykrywa pobliskie jednostki wroga."
-  },
-  "Advanced radar- Detects enemy units inside a large area.": {
-    "message": "Zaawansowany radar - wykrywa wrogie jednostki na dużym obszarze."
-  },
-  "Advanced assault walker- High damage gatling guns. Attacks land and naval.": {
-    "message": "Zaawansowany chodzik szturmowy - Wysokie bronie gatlingowe. Atakuje ląd i marynarkę."
-  },
-  "Advanced defense- Heavy rocket pods. Attacks land and naval.": {
-    "message": "Zaawansowana obrona - Ciężkie kapsuły rakietowe. Atakuje ląd i marynarkę."
-  },
-  "Scout bot- Deploys into a hidden short range radar via alt-fire detectable by radar.": {
-    "message": "Bot zwiadowczy - Wdraża ukryty radar o krótkim zasięgu przez alternatywny ogień (alt-fire) wykrywalny przez radar."
-  },
-  "Radar vision but immobile.": {
-    "message": "Wizja radarowa, nieruchoma."
-  },
-  "Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit.": {
-    "message": "Tarcza - Absorbuje nadchodzące strzały. Wymaga energii. Pokrywanie się wałów zapewnia niewielką korzyść."
-  },
-  "Close range shotgun tank- Attacks land and naval.": {
-    "message": "Czołg bliskiego zasięgu ze strzelbą - Atakuje ląd i marynarkę."
-  },
-  "Laser walker- Medium range laser weapon. Attacks land and naval.": {
-    "message": "Piechur laserowy - broń laserowa średniego zasięgu. Atakuje ląd i marynarkę."
-  },
-  "Sniper- Equipped with a high-damage beam cannon. Attacks land and naval.": {
-    "message": "Snajper - Wyposażony w działko o dużych obrażeniach. Atakuje ląd i marynarkę."
-  },
-  "Storage- Harnesses the power of black holes to compress and store excess metal and energy.": {
-    "message": "Magazyn - Wykorzystuje moc czarnych dziur do kompresowania i magazynowania nadmiaru metalu i energii."
-  },
-  "Swarm deployment- Fabricates swarm units. Attacks land and naval.": {
-    "message": "Twórca roju. Tworzy jednostki roju. Atakuje ląd i marynarkę."
-  },
-  "Medium defense turret- Attacks land and naval targets.": {
-    "message": "Wieża średniej obrony - atakuje cele lądowe i morskie."
-  },
-  "Light defense turret- Short range. Attacks land and naval targets.": {
+  "Light Turret- Rapid fire. Attacks land, sea and seabed targets.": {
     "message": "Lekka wieża obronna - Krótki zasięg. Atakuje cele lądowe i morskie."
   },
-  "Seismic tank- Decimates units that get too close.": {
+  "Wall- Very durable. Blocks enemy fire only.": {
+    "message": "Mocno opancerzona bariera oblężnicza."
+  },
+  "Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
+    "message": "Wyskakująca mina lądowa - Rozpyla szrapnel a potem wybucha po czterech sekunach."
+  },
+  "Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
+    "message": "Wydobywa metal - można to umieścić tylko na złożach metalu."
+  },
+  "Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Szybki czołg ziemnowodny - Wyposażony w torpedy i lekkie działo."
+  },
+  "Nuclear Missile Launcher- Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
+    "message": "Bombowy pocisk balistyczny dalekiego zasięgu - Wysokie obrażenia i wysoki obszar efektów."
+  },
+  "Nuclear Missile- Long range, high damage ballistic missile.": {
+    "message": "Rakieta balistyczna o dużym zasięgu i dużych obrażeniach."
+  },
+  "Basic Radar- Short-range enemy unit detection. Requires energy.": {
+    "message": "Podstawowy radar - wykrywa pobliskie jednostki wroga."
+  },
+  "Advanced Radar- Long-range enemy unit detection. Requires energy.": {
+    "message": "Zaawansowany radar - wykrywa wrogie jednostki na dużym obszarze."
+  },
+  "Assault Walker- High DPS. Attacks land, sea and seabed targets.": {
+    "message": "Zaawansowany chodzik szturmowy - Wysokie bronie gatlingowe. Atakuje ląd i marynarkę."
+  },
+  "Rocket Turret- High damage. Attacks land and sea targets.": {
+    "message": "Zaawansowana obrona - Ciężkie kapsuły rakietowe. Atakuje ląd i marynarkę."
+  },
+  "Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
+    "message": "Bot zwiadowczy - Wdraża ukryty radar o krótkim zasięgu przez alternatywny ogień (alt-fire) wykrywalny przez radar."
+  },
+  "Radar- Immobile. Use alt fire to change into a fast-moving mine detector.": {
+    "message": "Wizja radarowa, nieruchoma."
+  },
+  "Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
+    "message": "Tarcza - Absorbuje nadchodzące strzały. Wymaga energii. Pokrywanie się wałów zapewnia niewielką korzyść."
+  },
+  "Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Czołg bliskiego zasięgu ze strzelbą - Atakuje ląd i marynarkę."
+  },
+  "Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.": {
+    "message": "Piechur laserowy - broń laserowa średniego zasięgu. Atakuje ląd i marynarkę."
+  },
+  "Siege Tank- Long range. Attacks land, sea and seabed.": {
+    "message": "Snajper - Wyposażony w działko o dużych obrażeniach. Atakuje ląd i marynarkę."
+  },
+  "Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
+    "message": "Magazyn - Wykorzystuje moc czarnych dziur do kompresowania i magazynowania nadmiaru metalu i energii."
+  },
+  "Swarm Turret- Spawns nanoswarms. Attacks land, sea and seabed targets.": {
+    "message": "Twórca roju. Tworzy jednostki roju. Atakuje ląd i marynarkę."
+  },
+  "Heavy Turret- High damage. Attacks land, sea and seabed targets.": {
+    "message": "Wieża średniej obrony - atakuje cele lądowe i morskie."
+  },
+  "Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
     "message": "Czołg sejsmiczny - Dziesiątkuje jednostki, które znajdują się zbyt blisko."
   },
-  "Advanced battle tank- Heavily armored. Attacks land and naval.": {
+  "Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
     "message": "Zaawansowany czołg bojowy - Mocno opancerzony. Atakuje ląd i marynarkę."
   },
-  "Main battle tank- Slow but reliable. Attacks land and naval.": {
+  "Medium Tank- Splash damage. Attacks land, sea and seabed targets.": {
     "message": "Główny czołg - Powolny, ale niezawodny. Atakuje ląd i marynarkę."
   },
-  "Advanced lightning tank- High damage. Electrifies land and naval targets.": {
+  "Lightning Tank- Shoots timed electric mines. Attacks land and sea targets.": {
     "message": "Zaawansowany czołg elektryczny - Wysokie obrażenia. Elektryzuje cele lądowe i morskie."
   },
-  "Teleportation device- Teleports units from one to another.": {
+  "Teleporter- Link teleporters to move units around the system.": {
     "message": "Urządzenie teleportujące - Przenosi jednostki z jednego teleportu do drugiego."
   },
-  "Experimental assault titan- Equipped with an arsenal of highly destructive weapons.": {
+  "Siege Titan- Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
     "message": "Eksperymentalny tytan szturmowy - Wyposażony w arsenał wysoce niszczycielskich broni."
   },
-  "Doomsday device- Destroys the planet it's built on once finished.": {
+  "Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside.": {
     "message": "Urządzenie Dnia Sądu Ostatecznego - Niszczy planetę, na której zostało zbudowane po zakończeniu."
   },
-  "Orbital unit cannon- Relays reinforcement units to the surface below.": {
+  "Planetary Transport- Builds and launches up to 14 units at once to the planet below.": {
     "message": "Działo orbitalne - Wyrzuca jednosktki do powierzchni poniżej."
   },
-  "Advanced fabricator- Builds Legion orbital satellites and ships.": {
+  "Advanced Builder- Builds orbital structures. Builds all titans.": {
     "message": "Zaawansowany budowniczy - buduje satelity orbitalne i jednostki orbitalne."
   },
-  "Advanced manufacturing- Builds advanced orbital units.": {
+  "Advanced Manufacturing- Builds advanced orbital units.": {
     "message": "Zaawansowane wytwarzanie - Buduje zaawansowane jednostki orbitalne."
   },
-  "Orbital fighter- Attacks orbital units. Fast.": {
+  "Orbital Fighter- Fast. Attacks orbital targets only.": {
     "message": "Orbitalny myśliwiec - Atakuje jednostki orbitalne. Szybki."
   },
-  "Orbital lander- Interplanetary transportation carrier.": {
+  "Interplanetary Transport- Moves land and air units between planets.": {
     "message": "Lądownik orbitalny - Transporter międzyplanetarny."
   },
-  "Orbital laser- Equipped with a high damage plasma cannon. Attacks land and naval.": {
+  "Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets.": {
     "message": "Laser orbitalny - Wyposażony w działo plasmowe zadające dużo obrażeń. Atakuje wojska lądowe oraz wodne."
   },
-  "Basic orbital factory- Launches satellites and basic orbital units into space.": {
+  "Basic Manufacturing- Builds basic orbital units.": {
     "message": "Podstawowa fabryka orbitalna - Wyrzuca satelity i podstawowe jednostki orbitalne do przestrzeni."
   },
-  "Orbital radar probe- Fast. Small vision radius.": {
-    "message": "Radarowa sonda orbitalna - Szybka. Mały zasięg widzenia.\n"
+  "Orbital Scout- Fast. Provides small amount of vision of the planet below": {
+    "message": "Radarowa sonda orbitalna - Szybka. Mały zasięg widzenia."
   },
-  "Ballistic missile ship- Equipped with heavy rockets and anti-air cannons.": {
+  "Advanced Frigate- Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "Łódz z pociskami balistycznymi - Wyposażona w ciężkie rakiety i działa przeciw powietrzne."
   },
-  "Basic manufacturing- Builds naval ships.": {
+  "Basic Manufacturing- Builds basic ship units.": {
     "message": "Podstawowa produkcja - Buduje okręty wojenne."
   },
-  "Advanced manufacturing- Builds advanced naval ships.": {
+  "Advanced Manufacturing- Builds advanced ship units.": {
     "message": "Zaawansowana produkcja - Buduje zaawansowane okręty wojenne."
   },
-  "Proximity bomb- Destroys naval units that get too close.": {
+  "Sea Mine- High damage. Invisible to most units.": {
     "message": "Bomba zbliżeniowa - Niszczy jednostki wodne w zasięgu."
   },
-  "Corvette- Fast. Attacks naval, land and subs.": {
+  "Corvette- Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
     "message": "Korweta - Szybka. Atakuje jednostki wodne, jednostki lądowe oraz łodzie podwodne."
   },
-  "Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.": {
+  "Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
     "message": "Ciężko uzbrojona barka. Taranuje wrogie łodzie. Wyposażona w Ciężkie działa ognia bezpośredniego."
   },
-  "Wave maker and torpedo launcher- Attacks naval.": {
+  "Wave Turret- Attacks sea, seabed and undersea targets.": {
     "message": "Atakuje jednostki wodne przy użyciu fal oraz torped."
   },
-  "Heavy anti-ship wave machine- Attacks naval.": {
+  "Advanced Wave Turret- Attacks sea, seabed and undersea targets.": {
     "message": "Ciężka maszyna  przeciw okrętom - Atakuje jednostki wodne."
   },
   "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
@@ -136,8 +136,5 @@
   },
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
     "message": "Dodaje całkowicie nową frakcję z ponad tysiącem jednostek do użycia w grze jednoosobowej i wieloosobowej. Wymaga rozszerzenia Titans. Nie jest kompatybilne z innymi modami dodającymi dodatkowe jednostki. Jeśli nielubisz nowej skórki może zostać wyłączona w menu."
-  },
-  "Legion 1.5.0": {
-    "message": "Legion 1.5.0"
   }
 }

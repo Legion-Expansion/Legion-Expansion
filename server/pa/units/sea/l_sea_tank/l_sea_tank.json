@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Hammerhead",
-  "description": "!LOC:Heavily armored barge- Rams enemy ships. Equipped with heavy direct-fire cannons.",
+  "description": "!LOC:Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.",
   "TEMP_texelinfo": 24.7645,
   "audio": {
     "loops": {

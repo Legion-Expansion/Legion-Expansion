@@ -47,7 +47,7 @@
     }
   },
   "spawn_layers": "WL_Air",
-  "spawn_unit_on_death": "/pa/units/air/l_air_scout_adv/vision/vision.json",
+  "spawn_unit_on_death": "/pa/units/air/l_air_scout_adv/l_vision/l_vision.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0,

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Orbweaver",
-  "description": "!LOC:Advanced mobile AA- Attacks air.",
+  "description": "!LOC:Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets.",
   "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {

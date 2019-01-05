@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Holocene",
-  "description": "!LOC:Doomsday device- Destroys the planet it's built on once finished.",
+  "description": "!LOC:Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside.",
   "TEMP_texelinfo": 32.0,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,

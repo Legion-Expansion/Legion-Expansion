@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Sea Urchin",
-  "description": "!LOC:Proximity bomb- Destroys naval units that get too close.",
+  "description": "!LOC:Sea Mine- High damage. Invisible to most units.",
   "TEMP_texelinfo": 2.37699,
   "area_build_pattern": [
     [

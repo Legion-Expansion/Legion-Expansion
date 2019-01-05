@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Spectre",
-  "description": "!LOC:Orbital radar probe- Fast. Small vision radius.",
+  "description": "!LOC:Orbital Scout- Fast. Provides small amount of vision of the planet below",
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {

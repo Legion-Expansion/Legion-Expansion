@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Monstrosity",
-  "description": "!LOC:Heavy assault walker- Heavily armored. Equipped with strong cannons and a heavy laser.",
+  "description": "!LOC:Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 13,
   "attachable": {
     "offsets": {

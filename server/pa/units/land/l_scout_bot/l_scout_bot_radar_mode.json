@@ -1,6 +1,6 @@
 {
-  "display_name": "!LOC:Investigator Radar mode",
-  "description": "!LOC:Radar vision but immobile.",
+  "display_name": "!LOC:Investigator Radar",
+  "description": "!LOC:Radar- Immobile. Use alt fire to change into a fast-moving mine detector.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

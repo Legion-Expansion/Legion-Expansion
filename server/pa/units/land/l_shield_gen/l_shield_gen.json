@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Rampart",
-  "description": "!LOC:Shield- Absorbs incoming shots. Requires energy. Overlapping ramparts provides little benefit.",
+  "description": "!LOC:Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.",
   "TEMP_texelinfo": 27,
   "area_build_separation": 50,
   "atrophy_cool_down": 15,

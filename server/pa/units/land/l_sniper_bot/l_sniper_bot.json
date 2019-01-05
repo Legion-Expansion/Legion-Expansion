@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Lancer",
-  "description": "!LOC:Laser walker- Medium range laser weapon. Attacks land and naval.",
+  "description": "!LOC:Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 16,
   "attachable": {
     "offsets": {

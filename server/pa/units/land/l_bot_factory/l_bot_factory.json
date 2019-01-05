@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Walker Foundry",
-  "description": "!LOC:Basic manufacturing- Builds Legion walkers.",
+  "description": "!LOC:Basic Manufacturing- Builds basic bot units.",
   "TEMP_texelinfo": 33.4936,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,

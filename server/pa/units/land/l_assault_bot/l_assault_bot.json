@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Peacekeeper",
-  "description": "!LOC:Assault walker- Attacks land and naval.",
+  "description": "!LOC:Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

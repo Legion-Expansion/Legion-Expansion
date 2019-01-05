@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Miniman",
-  "description": "!LOC:Heavy siege walker- Long range. Launches self-exploding sticky plasma mines.",
+  "description": "!LOC:Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
