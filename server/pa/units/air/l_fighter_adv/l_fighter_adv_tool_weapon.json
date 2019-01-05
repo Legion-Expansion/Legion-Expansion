@@ -11,10 +11,6 @@
   "target_layers": [
     "WL_Air"
   ],
-  "target_priorities": [
-    "Air & Fighter",
-    "Air & Mobile"
-  ],
   "yaw_range": 40,
   "yaw_rate": 3600
 }
