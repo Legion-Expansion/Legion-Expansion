@@ -27,7 +27,7 @@
 
 ### Fixes
 
- - Firebird can now fire its long-range weapons
+ - Firebird can now fire its long-range weapon
 
 
 ## v1.5.0 - 2018-10-30
