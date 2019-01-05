@@ -36,6 +36,10 @@
 
  - Firebird can now fire its long-range weapon
 
+### Known Issues
+
+ - You cannot pick which Commander model the AI will use only which faction it will play as
+
 
 ## v1.5.0 - 2018-10-30
 
