@@ -6,6 +6,7 @@
 
  - Update Legion Intro button to display correctly in 112474 and later
  - All unit descriptions updated for accuracy and clarity
+ - Removed button to change AI to Legion as you can now pick AI commanders
 
 ### Balance
 

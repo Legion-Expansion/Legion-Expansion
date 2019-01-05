@@ -115,30 +115,6 @@ if (!legionExpansionLoaded) {
 
             //Style Slot Legion
             $('.slot-player').attr("data-bind", "css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), mlaslot: model.isMLA($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
-
-            model.changeLegionAI = function (playerid) {
-                //console.log("change to legion");
-                model.send_message('set_ai_commander', {
-                    id: playerid,
-                    ai_commander: legioncommanders[_.random(legioncommanders.length - 1)]
-                });
-            }
-
-            model.changeVanillaAI = function (playerid) {
-                //console.log("change to vanilla");
-                model.send_message('set_ai_commander', {
-                    id: playerid,
-                    ai_commander: vanillacommanders[_.random(vanillacommanders.length - 1)]
-                });
-            }
-
-            //NEED PATCHED lobby.js
-            //To Legion Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && model.isNotLegion(slot.commander()),click: function() { model.changeLegionAI(slot.playerId());}"><loc>To Legion</loc></div>');
-            //To Vanilla Button
-            $('.army-button.slot-remove-button.slot-remove-button-team').parent().append('<div class="army-button btn_add_ai" data-bind="visible: slot.ai() && !model.isNotLegion(slot.commander()),click: function() { model.changeVanillaAI(slot.playerId());}"><loc>To MLA</loc></div>');
-            locUpdateDocument();
-            //ENDOF NEED PATCHED lobby.js
         }
 
         if (_.intersection(model.gameModIdentifiers(), ['com.pa.legion-expansion-server', 'com.pa.legion-expansion-server-master', 'com.pa.legion-expansion-server-balance', 'com.pa.legion-expansion-server-dev']).length > 0) {
