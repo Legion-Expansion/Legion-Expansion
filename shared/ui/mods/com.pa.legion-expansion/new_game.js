@@ -98,7 +98,7 @@ if (!legionExpansionLoaded) {
                The "To Legion"/"To MLA" buttons should then be removed
                It is currently left in place as a workaround for Legion breaking the ability to pick an AI Commander
             */
-           
+
             var legioncommanders = legionglobal.commanders;
             var vanillacommanders = ["/pa/units/commanders/quad_osiris/quad_osiris.json", "/pa/units/commanders/imperial_delta/imperial_delta.json"];
 
