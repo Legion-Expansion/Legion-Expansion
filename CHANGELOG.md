@@ -8,6 +8,11 @@
  - All unit descriptions updated for accuracy and clarity
  - Removed button to change AI to Legion as you can now pick AI commanders
 
+### Translations
+
+ - All unit descriptions overhauled for accuracy and clarity
+ - Updated translations will be provided as they become available
+
 ### Balance
 
  - Air
