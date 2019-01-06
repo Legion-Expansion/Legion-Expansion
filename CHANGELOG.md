@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## 1.6.1 - 2019-01-06
 
 ### Fixes
 
@@ -10,7 +10,6 @@
 ### Known Issues
 
  - You cannot pick which Commander model the AI will use only which faction it will play as
-
 
 
 ## v1.6.0 - 2019-01-05
