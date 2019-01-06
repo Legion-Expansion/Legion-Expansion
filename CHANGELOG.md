@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 1.6.1 - 2019-01-06
+
+### Fixes
+
+ - Infiltrator Spy Camera no longer causes the game to crash - thanks to Kire for the report
+ - Rockteeth's weapons assigned to correct aim and muzzle bones
+
+### Known Issues
+
+ - You cannot pick which Commander model the AI will use only which faction it will play as
+
+
 ## v1.6.0 - 2019-01-05
 
 ### General

@@ -126,8 +126,8 @@
       "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
     },
     {
-      "aim_bone": "turret",
-      "muzzle_bone": "muzzle",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
       "primary_weapon": true,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
     },
@@ -138,8 +138,8 @@
       "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
     },
     {
-      "aim_bone": "turret",
-      "muzzle_bone": "muzzle",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
       "primary_weapon": false,
       "show_range": false,
       "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"

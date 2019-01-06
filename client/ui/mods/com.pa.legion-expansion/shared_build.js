@@ -94,7 +94,7 @@ if ( ! legionExpansion_sharedbuildLoaded )
           "/pa/units/air/l_air_bomb/l_air_bomb.json": [ "L_air", 17 ],
           "/pa/units/air/l_firestarter/l_firestarter.json": [ "L_air", 10 ],
           "/pa/units/air/l_air_scout_adv/l_air_scout_adv.json": [ "L_air", 11 ],          
-          "/pa/units/air/l_air_scout_adv/vision/vision.json": [ "L_air", 0 ],
+          "/pa/units/air/l_air_scout_adv/l_vision/l_vision.json": [ "L_air", 0 ],
 
           "/pa/units/sea/l_hover_ship/l_hover_ship.json": [ "L_sea", 0 ],
           "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json": [ "L_sea", 6 ],
