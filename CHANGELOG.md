@@ -5,7 +5,7 @@
 ### Fixes
 
  - Infiltrator Spy Camera no longer causes the game to crash - thanks to Kire for the report
- - Rockteeth's weapons assigned to correct muzzle bone
+ - Rockteeth's weapons assigned to correct aim and muzzle bones
 
 ### Known Issues
 
