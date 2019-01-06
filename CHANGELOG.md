@@ -1,5 +1,10 @@
 # CHANGELOG
 
+##
+
+ - Fix for Infiltrator Spy Camera causing the game to crash
+
+
 ## v1.6.0 - 2019-01-05
 
 ### General
