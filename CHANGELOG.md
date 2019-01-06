@@ -2,7 +2,15 @@
 
 ##
 
- - Fix for Infiltrator Spy Camera causing the game to crash
+### Fixes
+
+ - Infiltrator Spy Camera no longer causes the game to crash - thanks to Kire for the report
+ - Rockteeth's weapons assigned to correct muzzle bone
+
+### Known Issues
+
+ - You cannot pick which Commander model the AI will use only which faction it will play as
+
 
 
 ## v1.6.0 - 2019-01-05
