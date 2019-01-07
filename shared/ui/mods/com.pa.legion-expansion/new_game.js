@@ -119,7 +119,8 @@ if (!legionExpansionLoaded) {
 
 
             //Style Commander Picker Legion
-            $('.div-commander-picker-item.btn_std_ix').attr("data-bind", "css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'");
+            $('#commander-picker .div-commander-picker-item.btn_std_ix').attr("data-bind", "css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'");
+            $('#ai-commander-picker .div-commander-picker-item.btn_std_ix').attr("data-bind", "css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setAICommander(model.selectedAI(), $data) }, click_sound: 'default', rollover_sound: 'default'");
 
             //Style Slot Legion
             $('.slot-player').attr("data-bind", "css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), mlaslot: model.isMLA($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}");
