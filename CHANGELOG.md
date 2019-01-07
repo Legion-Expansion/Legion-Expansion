@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.6.2 - 2019-01-07
+
+### Fixes
+
+ - Increased Theodor's max_firing_velocity from 150 to 200 to allow it to fire its full range on large radius planets
+ - Removed To Legion button in lobby as you can now directly select the AI's Commander
+
+
 ## 1.6.1 - 2019-01-06
 
 ### Fixes
