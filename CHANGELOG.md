@@ -1,5 +1,12 @@
 # CHANGELOG
 
+##
+
+### Fixes
+
+ - Increased Theodor's max_firing_velocity from 150 to 200 to allow it to fire its full range on large radius planets
+ 
+
 ## 1.6.1 - 2019-01-06
 
 ### Fixes
