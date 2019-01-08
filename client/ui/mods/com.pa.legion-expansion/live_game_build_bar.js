@@ -8,11 +8,9 @@ if ( ! legionExpansionLoaded )
     function legionExpansion()
     {
 
-        var buildVersion = decode( sessionStorage.build_version );
-
         var patchName = 'legionExpansion live_game_build_bar.js';
 
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
+        console.log(patchName + ' on ' + gBuild + ' last tested on 89755');
 
         if (model.BuildSet && model.BuildSet.tabsTemplate) {
             model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
