@@ -91,14 +91,6 @@ if (!legionExpansionLoaded) {
 
             loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-
-            /* 
-               All this needs replacing
-               Players should be able to pick an AI Commander directly
-               The "To Legion"/"To MLA" buttons should then be removed
-               It is currently left in place as a workaround for Legion breaking the ability to pick an AI Commander
-            */
-
             var legioncommanders = legionglobal.commanders;
 
             model.isNotLegion = function (commander, isEmpty) {
