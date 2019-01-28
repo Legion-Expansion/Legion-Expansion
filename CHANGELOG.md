@@ -1,5 +1,12 @@
 # CHANGELOG
 
+##
+
+### Fixes
+
+ - POV button uses correct UI theming
+
+
 ## 1.6.2 - 2019-01-07
 
 ### Fixes
@@ -540,7 +547,7 @@ Translations added:
  - Improved Stoke textures
  - Firebird now uses the same laser effect as the Scythe to improve performance
  - Remove numerous redundant files
- - Optimise Legion ubercannon sim performance
+ - Optimise Legion Ubercannon sim performance
  - Changed Firebird description to mention it's interplanetary
  - Enforcer now displays FX on death
 
