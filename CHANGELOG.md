@@ -2,6 +2,10 @@
 
 ##
 
+### Translations
+
+ - Simplified Chinese will use Traditional Chinese until we have a translation
+
 ### Fixes
 
  - POV button uses correct UI theming
