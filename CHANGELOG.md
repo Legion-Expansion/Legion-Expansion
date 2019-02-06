@@ -2,6 +2,10 @@
 
 ##
 
+## AI
+
+ - Update for 112809 artillery placement changes
+
 ### Translations
 
  - Simplified Chinese will use Traditional Chinese until we have a translation

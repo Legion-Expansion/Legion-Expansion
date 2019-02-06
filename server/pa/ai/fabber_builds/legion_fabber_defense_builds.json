@@ -724,13 +724,6 @@
         },
         "unit_count_rules": [
           {
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 260,
-            "unit_type_string": "Structure"
-          },
-          {
             "alliance": "Ally",
             "compare_type": "<",
             "count": 2,
