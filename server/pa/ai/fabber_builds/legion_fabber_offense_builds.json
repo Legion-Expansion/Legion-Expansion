@@ -212,7 +212,7 @@
       "placement_rules": {
         "buffer": 2
       },
-      "priority": 0,
+      "priority": 360,
       "shared_instance_count": "UnitCannon",
       "to_build": "LegionOrbitalAdvancedCannon"
     },

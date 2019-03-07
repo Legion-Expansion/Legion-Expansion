@@ -5,6 +5,7 @@
 ## AI
 
  - Update for 112809 artillery placement changes
+ - Enabled the Starcannon again
 
 ### Translations
 
