@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## v1.7 - 2019-03-08
 
 ## AI
 
@@ -17,7 +17,7 @@
  - Increased Osprey's brake value from 20 to 40 to meet best practice braking rules for PA
  
 
-## 1.6.2 - 2019-01-07
+## v1.6.2 - 2019-01-07
 
 ### Fixes
 
