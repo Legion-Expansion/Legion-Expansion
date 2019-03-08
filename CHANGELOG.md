@@ -5,7 +5,6 @@
 ## AI
 
  - Update for 113034 artillery placement changes
- - Enabled the Starcannon again
 
 ### Translations
 
@@ -15,7 +14,7 @@
 
  - POV button uses correct UI theming
  - Increased Osprey's brake value from 20 to 40 to meet best practice braking rules for PA
- 
+
 
 ## v1.6.2 - 2019-01-07
 
