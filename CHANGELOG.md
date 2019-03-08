@@ -1,6 +1,23 @@
 # CHANGELOG
 
-## 1.6.2 - 2019-01-07
+## v1.7.0 - 2019-03-08
+
+## AI
+
+ - Update for 113034 artillery placement changes
+ - Enabled the Starcannon again
+
+### Translations
+
+ - Simplified Chinese will use Traditional Chinese until we have a translation
+
+### Fixes
+
+ - POV button uses correct UI theming
+ - Increased Osprey's brake value from 20 to 40 to meet best practice braking rules for PA
+ 
+
+## v1.6.2 - 2019-01-07
 
 ### Fixes
 
@@ -540,7 +557,7 @@ Translations added:
  - Improved Stoke textures
  - Firebird now uses the same laser effect as the Scythe to improve performance
  - Remove numerous redundant files
- - Optimise Legion ubercannon sim performance
+ - Optimise Legion Ubercannon sim performance
  - Changed Firebird description to mention it's interplanetary
  - Enforcer now displays FX on death
 

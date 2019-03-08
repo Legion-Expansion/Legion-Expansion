@@ -212,7 +212,7 @@
       "placement_rules": {
         "buffer": 2
       },
-      "priority": 0,
+      "priority": 360,
       "shared_instance_count": "UnitCannon",
       "to_build": "LegionOrbitalAdvancedCannon"
     },
@@ -273,16 +273,7 @@
           "influence_type": "AntiSurface",
           "radius": 10,
           "value": 50
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Enemy",
-            "compare_type": ">=",
-            "count": 5,
-            "range": 500,
-            "unit_type_string": "Structure"
-          }
-        ]
+        }
       },
       "priority": 360,
       "to_build": "LegionDefenseAdvancedArtillery"

@@ -9,11 +9,9 @@ if ( ! legionExpansionLoaded )
     function legionExpansion()
     {
 
-        var buildVersion = decode( sessionStorage.build_version );
-
         var patchName = 'legionExpansion live_game_players.js';
 
-        console.log(patchName + ' on ' + buildVersion + ' last tested on 89755');
+        console.log(patchName + ' on ' + gBuild + ' last tested on 89755');
         
         
         //LOAD CUSTOM LEGION CSS
