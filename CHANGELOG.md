@@ -2,7 +2,7 @@
 
 ## v1.7.0 - 2019-03-08
 
-## AI
+### AI
 
  - Update for 113034 artillery placement changes
 
