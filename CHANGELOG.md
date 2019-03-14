@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## DEV
+
+### AI
+
+ - Enabled Starcannon builds
+
+
 ## v1.7.0 - 2019-03-08
 
 ### AI
