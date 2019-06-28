@@ -2,10 +2,6 @@
 
 ## BALANCE
 
-### AI
-
- - Enabled Starcannon builds
-
 ### Balance
 
  - Land
