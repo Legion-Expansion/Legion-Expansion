@@ -1,10 +1,17 @@
 # CHANGELOG
 
-## DEV
+## BALANCE
 
 ### AI
 
  - Enabled Starcannon builds
+
+### Balance
+
+ - Land
+   - Advanced Mass Extractor
+     - Increased cost from 1700 to 2200
+     - Decreased metal income from 19 to 14
 
 
 ## v1.7.0 - 2019-03-08
@@ -23,7 +30,7 @@
  - Increased Osprey's brake value from 20 to 40 to meet best practice braking rules for PA
 
 
-## v1.6.2 - 2019-01-07
+## 1.6.2 - 2019-01-07
 
 ### Fixes
 
