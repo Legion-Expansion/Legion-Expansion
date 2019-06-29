@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.7.1 - 2019-06-29
 
 ### Balance
 
