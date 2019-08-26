@@ -10,7 +10,7 @@ if ( ! legionExpansionLoaded )
 
         var patchName = 'legionExpansion live_game_build_bar.js';
 
-        console.log(patchName + ' on ' + gBuild + ' last tested on 89755');
+        console.log(patchName + ' on ' + gBuild + ' last tested on 113558');
 
         if (model.BuildSet && model.BuildSet.tabsTemplate) {
             model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
@@ -26,7 +26,7 @@ if ( ! legionExpansionLoaded )
                 ['L_ammo', '!LOC:ammo', true],
             ]);
         }
-                    
+
         ko.computed(function() {
             var buildSet = model.buildSet();
             if (!buildSet)
@@ -48,7 +48,7 @@ if ( ! legionExpansionLoaded )
                 });
             }, 0)
         })
-        
+
         handlers.start_build_sequence = model.startBuildSequence = function(params) {
             var group = params.group;
             var locked = params.locked;
@@ -63,9 +63,9 @@ if ( ! legionExpansionLoaded )
             if (locked)
                 model.activeBuildGroupLocked(locked);
         };
-        
+
         var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
-        if(themesetting === "ON"){ 
+        if(themesetting === "ON"){
             //LOAD CUSTOM LEGION BUILDBAR CSS
             loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css");
             loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
@@ -74,16 +74,16 @@ if ( ! legionExpansionLoaded )
             var legionspecids = legionglobal.builders;
 
             model.isLegionOrMixedOrVanilla = function (data) {
-                    try{                         
+                    try{
                         var legioncount = 0;
                         var specslength = 0;
                         var selectedspecs = data.buildSet().selectedSpecs();
-                        
+
                         _.forOwn(selectedspecs, function(value, key){
                             if(_.includes(legionspecids, key)){
                                 legioncount++;
                             }
-                            specslength++; 
+                            specslength++;
                         });
                         if(legioncount == specslength){
                             return "legion";
