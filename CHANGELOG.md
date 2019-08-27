@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## 1.8.0 - 2019-08-27
 
 ### General
 
