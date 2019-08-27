@@ -11,7 +11,7 @@
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
-  "description": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.",
+  "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
   "display_name": "Legion Expansion Client",
   "forum": "https://forums.planetaryannihilation.com/threads/rel-legion-expansion-released.71680/",
   "icon": "https://i.imgur.com/Eal5t9L.png",
