@@ -12,7 +12,9 @@
  - Land
    - Monstrosity
      - Decreased health from 6000 to 4000
-
+ - Sea
+   - Bowhead
+     - Increased speed from 9 to 12
 
 ## v1.7.1 - 2019-06-29
 
