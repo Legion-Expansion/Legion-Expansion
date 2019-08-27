@@ -20,6 +20,7 @@
    - Manta
      - Increased speed from 8 to 11
 
+
 ## v1.7.1 - 2019-06-29
 
 ### Balance
