@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## 1.8.0 - 2019-08-27
+
+### General
+
+ - Updated for the introduction of the dynamic build bar
+ - Removed dependency on HodgePodge framework
+
+### Balance
+
+ - Land
+   - Monstrosity
+     - Decreased health from 6000 to 4000
+ - Sea
+   - Bowhead
+     - Increased speed from 9 to 12
+   - Epoch
+     - Increased speed from 8 to 11
+   - Manta
+     - Increased speed from 8 to 11
+
+
 ## v1.7.1 - 2019-06-29
 
 ### Balance
