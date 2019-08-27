@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## DEV
+
+### General
+
+ - Updated for the introduction of the dynamic build bar
+ - Removed dependency on HodgePodge framework
+
+
 ## v1.7.1 - 2019-06-29
 
 ### Balance
