@@ -15,6 +15,8 @@
  - Sea
    - Bowhead
      - Increased speed from 9 to 12
+   - Epoch
+     - Increased speed from 8 to 11
    - Manta
      - Increased speed from 8 to 11
 
