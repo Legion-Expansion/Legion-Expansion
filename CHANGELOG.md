@@ -7,6 +7,12 @@
  - Updated for the introduction of the dynamic build bar
  - Removed dependency on HodgePodge framework
 
+### Balance
+
+ - Land
+   - Monstrosity
+     - Decreased health from 6000 to 4000
+
 
 ## v1.7.1 - 2019-06-29
 
