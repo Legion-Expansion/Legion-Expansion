@@ -119,7 +119,7 @@ if ( ! legionExpansion_sharedbuildLoaded )
           "/pa/units/orbital/l_radar_satellite/l_radar_satellite.json": [ "L_orbital", 14, {row: 2, column: 2, titans: true}],
           "/pa/units/orbital/l_defense_satellite/l_defense_satellite.json": [ "L_orbital_structure", 12, {row: 2, column: 0, titans: true}],
 
-          "/pa/units/land/l_land_mine/l_land_mine.json": [ "L_ammo", 10, {row: 1, column: 4, titans: true}],
+          "/pa/units/land/l_land_mine/l_land_mine.json": [ "L_ammo", 10, {row: 2, column: 4, titans: true}],
           "/pa/units/sea/l_sea_mine/l_sea_mine.json": [ "L_ammo", 12, {row: 2, column: 0, titans: true}],
           "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json": [ "L_ammo", 13, {row: 2, column: 1, titans: true}],
           "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json": [ "L_ammo", 14, {row: 2, column: 2, titans: true}],
