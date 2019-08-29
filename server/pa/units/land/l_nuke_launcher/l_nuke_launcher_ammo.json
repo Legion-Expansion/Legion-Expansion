@@ -1,6 +1,7 @@
 {
   "display_name": "!LOC:Supernova Strategic Warhead",
   "description": "!LOC:Nuclear Missile- Long range, high damage ballistic missile.",
+  "si_name": "l_nuke_launcher_ammo",
   "ammo_type": "Projectile",
   "armor_damage_map": {
     "AT_Commander": 0.33,
