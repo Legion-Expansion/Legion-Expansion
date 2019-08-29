@@ -6,6 +6,7 @@
 
  - Updated for the introduction of the dynamic build bar
  - Removed dependency on HodgePodge framework
+ - Updated for the changes to ammo handling in the latest PA build
 
 ### Balance
 
