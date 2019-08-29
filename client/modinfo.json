@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "client",
-  "date": "2019/08/27",
+  "date": "2019/08/29",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
@@ -28,9 +28,6 @@
     ],
     "shared_build": [
       "coui://ui/mods/com.pa.legion-expansion/shared_build.js"
-    ],
-    "live_game": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game.js"
     ],
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
