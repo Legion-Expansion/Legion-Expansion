@@ -2,6 +2,10 @@
 
 ## DEV
 
+### General
+
+ - Added support for Horsefly
+
 ### Balance
 
  - Air
