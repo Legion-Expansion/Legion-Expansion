@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## DEV
+
+### Balance
+
+ - Air
+   - Osprey
+     - Increased health from 40 to 55
+     - Increased speed from 80 to 100
+
 ## v1.8.0 - 2019-08-29
 
 ### General
