@@ -12,6 +12,10 @@
   - Osprey
     - Increased health from 40 to 55
     - Increased speed from 80 to 100
+- Land
+  - Rampart
+    - Blocks shots from the Horsefly
+    - Blocks shots from the Stryker
 
 ## v1.8.0 - 2019-08-29
 
