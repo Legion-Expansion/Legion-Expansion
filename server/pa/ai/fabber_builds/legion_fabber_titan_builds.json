@@ -91,9 +91,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionVehicleAdvancedFabber"
-      ],
+      "builders": ["LegionVehicleAdvancedFabber"],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
@@ -146,9 +144,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionAirAdvancedFabber"
-      ],
+      "builders": ["LegionAirAdvancedFabber"],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
@@ -193,9 +189,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
@@ -280,9 +274,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberAdvanced"],
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,

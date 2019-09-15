@@ -1,40 +1,33 @@
-
 var legionExpansionLoaded;
 
-if ( ! legionExpansionLoaded )
-{
+if (!legionExpansionLoaded) {
+  legionExpansionLoaded = true;
 
-    legionExpansionLoaded = true;
+  function legionExpansion() {
+    var patchName = "legionExpansion live_game_econ.js";
 
-    function legionExpansion()
-    {
+    console.log(patchName + " on " + gBuild + " last tested on 89755");
 
-        var patchName = 'legionExpansion live_game_econ.js';
-
-        console.log(patchName + ' on ' + gBuild + ' last tested on 89755');
-        
-        var themesetting = api.settings.isSet('ui','legionThemeFunction',true) || 'ON';
-        if(themesetting === "ON"){  
-            loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_econ.css");
-        }
-        handlers.legionui = function(payload){
-            console.log("SET UI : " + payload);
-            if(payload === "legion"){
-                $('.body_panel').addClass("legionui");
-            }
-            if(payload === "mixed"){
-                $('.body_panel').addClass("mixedui");
-            }
-        }
+    var themesetting =
+      api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
+    if (themesetting === "ON") {
+      loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_econ.css");
     }
+    handlers.legionui = function(payload) {
+      console.log("SET UI : " + payload);
+      if (payload === "legion") {
+        $(".body_panel").addClass("legionui");
+      }
+      if (payload === "mixed") {
+        $(".body_panel").addClass("mixedui");
+      }
+    };
+  }
 
-    try
-    {
-        legionExpansion();
-    }
-    catch (e)
-    {
-        console.log(e);
-        console.log(JSON.stringify(e));
-    }
+  try {
+    legionExpansion();
+  } catch (e) {
+    console.log(e);
+    console.log(JSON.stringify(e));
+  }
 }

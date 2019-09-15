@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 7.11877,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -81,11 +73,7 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 85,
-  "mesh_bounds": [
-    9.8,
-    5.58409,
-    3.74006
-  ],
+  "mesh_bounds": [9.8, 5.58409, 3.74006],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_fabrication_aircraft/l_fabrication_aircraft_fly.papa"

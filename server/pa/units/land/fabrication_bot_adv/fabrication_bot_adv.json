@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0.25,
-        4.5
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0.25, 4.5],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -61,41 +53,21 @@
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_leftMuzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 150,
-  "mesh_bounds": [
-    6,
-    6,
-    5
-  ],
+  "mesh_bounds": [6, 6, 5],
   "model": {
     "animations": {
       "aim_down": "/pa/units/land/fabrication_bot_adv/fabrication_bot_adv_anim_aimDown.papa",

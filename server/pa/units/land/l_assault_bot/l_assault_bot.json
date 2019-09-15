@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        3.5
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 3.5],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -31,11 +23,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 140,
-  "mesh_bounds": [
-    4,
-    2.5,
-    4
-  ],
+  "mesh_bounds": [4, 2.5, 4],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_assault_bot/l_assault_bot_idle.papa",
@@ -80,9 +68,7 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": [
-        "socket_muzzle"
-      ],
+      "muzzle_bone": ["socket_muzzle"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_assault_bot/l_assault_bot_tool_weapon.json"
     }

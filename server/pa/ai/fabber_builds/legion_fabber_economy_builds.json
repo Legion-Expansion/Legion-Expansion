@@ -24,9 +24,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire - Area",
       "placement_rules": {
@@ -111,9 +109,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand - Area 1",
       "placement_rules": {
@@ -204,9 +200,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
       "placement_rules": {
@@ -252,9 +246,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
       "placement_rules": {
@@ -289,9 +281,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire",
       "placement_rules": {
@@ -367,9 +357,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand 1",
       "placement_rules": {
@@ -408,9 +396,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri",
       "placement_rules": {
@@ -487,9 +473,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "max_num_assisters": 3,

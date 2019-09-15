@@ -85,9 +85,9 @@ Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successfu
 
 MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-BALANCE - development; forked to RELEASE-x.x.x and FEATURE-*name*
+BALANCE - development; forked to RELEASE-x.x.x and FEATURE-_name_
 
-FEATURE-*name* - a feature which is still in development; merged into BALANCE on completion
+FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
@@ -99,7 +99,7 @@ Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
 
 When working with Legion units please:
 
-- prefix all Legion units directories and filenames with l_
+- prefix all Legion units directories and filenames with l\_
 - follow Uber's naming conventions i.e. l_type_unit_adv (although some are different eg dox)
 - for all Legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
 - check area builds i.e. area_build_separation

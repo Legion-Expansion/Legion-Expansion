@@ -10,11 +10,7 @@
   "rate_of_fire": 10,
   "self_destruct": true,
   "spread_fire": true,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface",
-    "WL_Air"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
   "yaw_range": 360,
   "yaw_rate": 3600
 }

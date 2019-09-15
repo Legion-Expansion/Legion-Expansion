@@ -29,9 +29,7 @@
     "ORDER_Use"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_c_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
   "events": {
     "died": {
@@ -43,41 +41,21 @@
     {
       "bone": "socket_muzzle01",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_muzzle02",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "debug": false,
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
@@ -85,82 +63,38 @@
       "near_distance": 5,
       "near_height": 12,
       "near_width": 12,
-      "offset": [
-        -8.1,
-        0,
-        10.58
-      ],
-      "orientation": [
-        45,
-        0,
-        0
-      ]
+      "offset": [-8.1, 0, 10.58],
+      "orientation": [45, 0, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -8.1,
-        0,
-        10
-      ],
+      "offset": [-8.1, 0, 10],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -8.1,
-        0,
-        11.4
-      ],
+      "offset": [-8.1, 0, 11.4],
       "radius": 4
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        12.63,
-        0,
-        9.15
-      ],
+      "offset": [12.63, 0, 9.15],
       "radius": 8
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -15.47,
-        0,
-        9.94
-      ],
+      "offset": [-15.47, 0, 9.94],
       "radius": 4
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    29.5,
-    30.5,
-    15.2
-  ],
+  "mesh_bounds": [29.5, 30.5, 15.2],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/bot_factory/bot_factory_anim_end.papa",
@@ -175,10 +109,7 @@
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
-  "placement_size": [
-    40,
-    55
-  ],
+  "placement_size": [40, 55],
   "recon": {
     "observer": {
       "items": [
@@ -197,18 +128,7 @@
       ]
     }
   },
-  "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
-  ],
+  "rolloff_dirs": [[0, 1, 0], [0, -1, 0]],
   "selection_icon": {
     "diameter": 49.5
   },

@@ -15,11 +15,7 @@
   "full_damage_splash_radius": 5,
   "fx_trail": {
     "filename": "/pa/units/air/bomber_heavy/bomber_heavy_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      1.0,
-      0.0
-    ]
+    "offset": [0.0, 1.0, 0.0]
   },
   "initial_velocity": 15.0,
   "lifetime": 5,

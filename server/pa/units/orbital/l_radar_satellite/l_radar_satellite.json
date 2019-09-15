@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 10.6806,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -18,11 +14,7 @@
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 800,
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Assist"
-  ],
+  "command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Assist"],
   "consumption": {
     "energy": 700
   },
@@ -42,41 +34,21 @@
     {
       "bone": "bone_top_rotate",
       "filename": "/pa/units/land/radar/radar_on.pfx",
-      "offset": [
-        6,
-        0.0,
-        0.0
-      ],
-      "orientation": [
-        -90,
-        -90,
-        0
-      ],
+      "offset": [6, 0.0, 0.0],
+      "orientation": [-90, -90, 0],
       "type": "energy"
     },
     {
       "bone": "bone_top_rotate",
       "filename": "/pa/units/land/radar/radar_on.pfx",
-      "offset": [
-        -6,
-        0.0,
-        0.0
-      ],
-      "orientation": [
-        90,
-        -90,
-        0
-      ],
+      "offset": [-6, 0.0, 0.0],
+      "orientation": [90, -90, 0],
       "type": "energy"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
   "max_health": 1000,
-  "mesh_bounds": [
-    20,
-    20,
-    15
-  ],
+  "mesh_bounds": [20, 20, 15],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/l_radar_satellite/l_radar_satellite_closed.papa",

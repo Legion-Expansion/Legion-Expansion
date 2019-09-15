@@ -3,11 +3,7 @@
   "attachable": {
     "default_attach_bone": "socket_payload",
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio_loop": "/SE/Movement/missile/orbital_missile_fly_loop",
@@ -24,11 +20,7 @@
   "flight_type": "Staged",
   "fx_trail": {
     "filename": "/pa/units/air/missile_orbital/missile_orbital_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "offset": [0.0, 0.0, 0.0]
   },
   "influence_radius": 400,
   "initial_velocity": 75.0,

@@ -27,9 +27,7 @@
     "ORDER_Assist"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_titan_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_titan_01.json"]
   },
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/titan_bot/titan_bot_ammo_death.json"
@@ -64,42 +62,26 @@
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/units/land/l_titan_bot/electricity_field.pfx",
-      "offset": [
-        0,
-        -3,
-        0
-      ],
+      "offset": [0, -3, 0],
       "type": "idle"
     },
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/units/land/l_titan_bot/back_smoke.pfx",
-      "offset": [
-        20,
-        35.5,
-        15
-      ],
+      "offset": [20, 35.5, 15],
       "type": "idle"
     },
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/units/land/l_titan_bot/back_fire.pfx",
-      "offset": [
-        20,
-        36.5,
-        15
-      ],
+      "offset": [20, 36.5, 15],
       "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "has_death_effects": true,
   "max_health": 80000,
-  "mesh_bounds": [
-    25,
-    25,
-    60
-  ],
+  "mesh_bounds": [25, 25, 60],
   "model": {
     "animations": {
       "walk": "/pa/units/land/l_titan_bot/l_titan_bot_walk.papa"
@@ -182,10 +164,7 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "socket_muzzleLeftBottom",
-        "socket_muzzleLeftTop"
-      ],
+      "muzzle_bone": ["socket_muzzleLeftBottom", "socket_muzzleLeftTop"],
       "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/land/l_titan_bot/l_titan_bot_cannon_tool_weapon.json"

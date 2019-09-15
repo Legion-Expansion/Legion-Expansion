@@ -16,15 +16,8 @@
   "pitch_rate": 180,
   "rate_of_fire": 2.5,
   "spread_fire": true,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
-  "target_priorities": [
-    "Mobile",
-    "Structure - Wall",
-    "Wall"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
+  "target_priorities": ["Mobile", "Structure - Wall", "Wall"],
   "yaw_range": 0,
   "yaw_rate": 180
 }

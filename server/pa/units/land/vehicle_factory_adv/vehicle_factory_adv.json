@@ -39,241 +39,113 @@
     {
       "bone": "socket_nozzle01",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle02",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle03",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle04",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle05",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle06",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle07",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_nozzle08",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "debug": false,
       "far_distance": 30,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "near_distance": 15,
       "near_height": 30,
       "near_width": 30,
-      "offset": [
-        0,
-        0,
-        30
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ]
+      "offset": [0, 0, 30],
+      "orientation": [0, 0, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        18.671,
-        -17.929,
-        15.64
-      ],
+      "offset": [18.671, -17.929, 15.64],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        22.812,
-        -17.929,
-        11.32
-      ],
+      "offset": [22.812, -17.929, 11.32],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        18.671,
-        17.929,
-        15.64
-      ],
+      "offset": [18.671, 17.929, 15.64],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        22.812,
-        17.929,
-        11.32
-      ],
+      "offset": [22.812, 17.929, 11.32],
       "radius": 8
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -17.05,
-        25.28,
-        5.68
-      ],
+      "offset": [-17.05, 25.28, 5.68],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -17.05,
-        -25.28,
-        5.68
-      ],
+      "offset": [-17.05, -25.28, 5.68],
       "radius": 4
     }
   ],
   "max_health": 30000,
-  "mesh_bounds": [
-    50,
-    50,
-    23
-  ],
+  "mesh_bounds": [50, 50, 23],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_anim_end.papa",
@@ -288,10 +160,7 @@
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
-  "placement_size": [
-    60,
-    80
-  ],
+  "placement_size": [60, 80],
   "recon": {
     "observer": {
       "items": [
@@ -310,18 +179,7 @@
       ]
     }
   },
-  "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
-  ],
+  "rolloff_dirs": [[0, 1, 0], [0, -1, 0]],
   "selection_icon": {
     "diameter": 74
   },

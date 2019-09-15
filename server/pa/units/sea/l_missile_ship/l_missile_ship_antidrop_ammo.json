@@ -6,11 +6,7 @@
   "flight_type": "Seeking",
   "fx_trail": {
     "filename": "/pa/units/orbital/ion_defense/ion_defense_antidrop_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      1.4,
-      0.0
-    ]
+    "offset": [0.0, 1.4, 0.0]
   },
   "initial_velocity": 10.0,
   "lifetime": 3,

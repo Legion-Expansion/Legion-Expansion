@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 9.31488,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        3.1
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 3.1],
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
@@ -55,35 +47,19 @@
   "headlights": [
     {
       "bone": "bone_root",
-      "color": [
-        0.75,
-        1,
-        1
-      ],
+      "color": [0.75, 1, 1],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1,
       "near_height": 1.5,
       "near_width": 1.5,
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ]
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0]
     }
   ],
   "max_health": 450,
-  "mesh_bounds": [
-    7,
-    7.5,
-    3.8
-  ],
+  "mesh_bounds": [7, 7.5, 3.8],
   "model": {
     "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
     "arrows": 5,
@@ -127,10 +103,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "gun001",
-        "gun002"
-      ],
+      "muzzle_bone": ["gun001", "gun002"],
       "projectiles_per_fire": 2,
       "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_tool_weapon.json"
     }

@@ -11,11 +11,7 @@
   "full_damage_splash_radius": 5,
   "fx_trail": {
     "filename": "/pa/units/sea/l_battleship/main_gun_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "offset": [0.0, 0.0, 0.0]
   },
   "initial_velocity": 150.0,
   "lifetime": 5,

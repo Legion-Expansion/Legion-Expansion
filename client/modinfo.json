@@ -1,16 +1,10 @@
 {
   "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
   "build": "113578",
-  "category": [
-    "titans",
-    "units",
-    "faction"
-  ],
+  "category": ["titans", "units", "faction"],
   "context": "client",
   "date": "2019/08/29",
-  "dependencies": [
-    "com.pa.legion-expansion-server"
-  ],
+  "dependencies": ["com.pa.legion-expansion-server"],
   "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
   "display_name": "Legion Expansion Client",
   "forum": "https://forums.planetaryannihilation.com/threads/rel-legion-expansion-released.71680/",
@@ -20,15 +14,9 @@
     "server_browser": [
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
     ],
-    "load_planet": [
-       "coui://ui/mods/com.pa.legion-expansion/load_planet.js"
-    ],
-    "settings": [
-      "coui://ui/mods/com.pa.legion-expansion/settings.js"
-    ],
-    "shared_build": [
-      "coui://ui/mods/com.pa.legion-expansion/shared_build.js"
-    ],
+    "load_planet": ["coui://ui/mods/com.pa.legion-expansion/load_planet.js"],
+    "settings": ["coui://ui/mods/com.pa.legion-expansion/settings.js"],
+    "shared_build": ["coui://ui/mods/com.pa.legion-expansion/shared_build.js"],
     "live_game_players": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_players.js"
     ],
@@ -65,12 +53,8 @@
     "live_game_menu": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_menu.js"
     ],
-    "new_game": [
-      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
-    ],
-    "start": [
-      "coui://ui/mods/com.pa.legion-expansion/start.js"
-    ]
+    "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"],
+    "start": ["coui://ui/mods/com.pa.legion-expansion/start.js"]
   },
   "priority": 100,
   "signature": "(not yet implemented)",

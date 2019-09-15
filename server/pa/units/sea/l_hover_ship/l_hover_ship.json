@@ -39,131 +39,63 @@
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        1.89,
-        -11.64,
-        1.79
-      ],
-      "orientation": [
-        0,
-        0,
-        -188.5
-      ],
+      "offset": [1.89, -11.64, 1.79],
+      "orientation": [0, 0, -188.5],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_02.pfx",
-      "offset": [
-        4.1,
-        -4.85,
-        2.36
-      ],
-      "orientation": [
-        0,
-        0,
-        -19
-      ],
+      "offset": [4.1, -4.85, 2.36],
+      "orientation": [0, 0, -19],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_02.pfx",
-      "offset": [
-        3.96,
-        2.22,
-        1.72
-      ],
-      "orientation": [
-        0,
-        0,
-        -10.75
-      ],
+      "offset": [3.96, 2.22, 1.72],
+      "orientation": [0, 0, -10.75],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        2.34,
-        10.47,
-        2.77
-      ],
-      "orientation": [
-        0,
-        0,
-        203.8
-      ],
+      "offset": [2.34, 10.47, 2.77],
+      "orientation": [0, 0, 203.8],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        -1.89,
-        -11.64,
-        1.79
-      ],
-      "orientation": [
-        0,
-        0,
-        8.5
-      ],
+      "offset": [-1.89, -11.64, 1.79],
+      "orientation": [0, 0, 8.5],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_02.pfx",
-      "offset": [
-        -4.1,
-        -4.85,
-        2.36
-      ],
-      "orientation": [
-        0,
-        0,
-        199
-      ],
+      "offset": [-4.1, -4.85, 2.36],
+      "orientation": [0, 0, 199],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_02.pfx",
-      "offset": [
-        -3.96,
-        2.22,
-        1.72
-      ],
-      "orientation": [
-        0,
-        0,
-        190.75
-      ],
+      "offset": [-3.96, 2.22, 1.72],
+      "orientation": [0, 0, 190.75],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        -2.34,
-        10.47,
-        2.77
-      ],
-      "orientation": [
-        0,
-        0,
-        -23.8
-      ],
+      "offset": [-2.34, 10.47, 2.77],
+      "orientation": [0, 0, -23.8],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 1600,
-  "mesh_bounds": [
-    16.721,
-    26.856,
-    7
-  ],
+  "mesh_bounds": [16.721, 26.856, 7],
   "model": {
     "animations": {
       "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
@@ -215,9 +147,7 @@
     {
       "aim_bone": "bone_turret_main",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "socket_muzzle_main"
-      ],
+      "muzzle_bone": ["socket_muzzle_main"],
       "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_hover_ship/l_hover_ship_tool_weapon.json"

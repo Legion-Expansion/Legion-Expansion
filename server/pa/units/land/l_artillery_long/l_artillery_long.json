@@ -11,9 +11,7 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 9600,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -31,11 +29,7 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_artillery_long/energy_rod.pfx",
-      "offset": [
-        0,
-        0,
-        6
-      ],
+      "offset": [0, 0, 6],
       "type": "idle"
     }
   ],
@@ -43,26 +37,14 @@
   "lamps": [
     {
       "bone": "bone_pitch",
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        0,
-        -11.21,
-        3.69
-      ],
+      "offset": [0, -11.21, 3.69],
       "radius": 4
     }
   ],
   "max_health": 5000,
-  "mesh_bounds": [
-    22.227,
-    35.329,
-    14.856
-  ],
+  "mesh_bounds": [22.227, 35.329, 14.856],
   "model": [
     {
       "animations": {

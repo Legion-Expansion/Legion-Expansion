@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        2.7
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 2.7],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -96,11 +88,7 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 160,
-  "mesh_bounds": [
-    10.5,
-    7.52258,
-    3.9
-  ],
+  "mesh_bounds": [10.5, 7.52258, 3.9],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv_fly.papa"
@@ -144,10 +132,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "turret_left",
-        "turret_right"
-      ],
+      "muzzle_bone": ["turret_left", "turret_right"],
       "spec_id": "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv_build_arm.json"
     }
   ],

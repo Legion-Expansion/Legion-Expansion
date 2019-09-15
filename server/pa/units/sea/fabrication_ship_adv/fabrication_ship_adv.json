@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 11.3243,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -57,31 +49,15 @@
     {
       "bone": "socket_rightMuzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_leftMuzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
@@ -90,11 +66,7 @@
     }
   ],
   "max_health": 600,
-  "mesh_bounds": [
-    6.8,
-    15,
-    6.6
-  ],
+  "mesh_bounds": [6.8, 15, 6.6],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
     "filename": "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv.papa"

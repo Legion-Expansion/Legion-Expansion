@@ -5,16 +5,8 @@
   "armor_type": "AT_Hover",
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        2.7
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 2.7],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -42,119 +34,59 @@
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        -2.86,
-        -4,
-        0.96
-      ],
-      "orientation": [
-        0,
-        0,
-        -202.5
-      ],
+      "offset": [-2.86, -4, 0.96],
+      "orientation": [0, 0, -202.5],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        2.86,
-        -4,
-        0.96
-      ],
-      "orientation": [
-        0,
-        0,
-        22.5
-      ],
+      "offset": [2.86, -4, 0.96],
+      "orientation": [0, 0, 22.5],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        3,
-        3.56,
-        0.96
-      ],
-      "orientation": [
-        0,
-        0,
-        -15
-      ],
+      "offset": [3, 3.56, 0.96],
+      "orientation": [0, 0, -15],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/hover_idle_01.pfx",
-      "offset": [
-        -3,
-        3.56,
-        0.96
-      ],
-      "orientation": [
-        0,
-        0,
-        195
-      ],
+      "offset": [-3, 3.56, 0.96],
+      "orientation": [0, 0, 195],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "headlights": [
     {
-      "color": [
-        0.9,
-        0.92,
-        1
-      ],
+      "color": [0.9, 0.92, 1],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1.2,
       "near_height": 2,
       "near_width": 2,
-      "offset": [
-        1.8,
-        -2,
-        1
-      ],
-      "orientation": [
-        0,
-        65,
-        0
-      ]
+      "offset": [1.8, -2, 1],
+      "orientation": [0, 65, 0]
     },
     {
-      "color": [
-        0.9,
-        0.92,
-        1
-      ],
+      "color": [0.9, 0.92, 1],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1.2,
       "near_height": 2,
       "near_width": 2,
-      "offset": [
-        -1.8,
-        -2,
-        1
-      ],
-      "orientation": [
-        0,
-        65,
-        0
-      ]
+      "offset": [-1.8, -2, 1],
+      "orientation": [0, 65, 0]
     }
   ],
   "max_health": 200,
-  "mesh_bounds": [
-    4.93769,
-    6.4,
-    2.6835
-  ],
+  "mesh_bounds": [4.93769, 6.4, 2.6835],
   "model": {
     "animations": {
       "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
@@ -197,57 +129,43 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleRight01"
-      ],
+      "muzzle_bone": ["socket_muzzleRight01"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleRight02"
-      ],
+      "muzzle_bone": ["socket_muzzleRight02"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleRight03"
-      ],
+      "muzzle_bone": ["socket_muzzleRight03"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleLeft01"
-      ],
+      "muzzle_bone": ["socket_muzzleLeft01"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleLeft02"
-      ],
+      "muzzle_bone": ["socket_muzzleLeft02"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleLeft03"
-      ],
+      "muzzle_bone": ["socket_muzzleLeft03"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_tool_weapon.json"
     },
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": [
-        "socket_muzzleLeft02"
-      ],
+      "muzzle_bone": ["socket_muzzleLeft02"],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_anti_drop_tool_weapon.json"
     }
