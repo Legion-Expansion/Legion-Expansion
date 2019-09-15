@@ -6,6 +6,10 @@
 
 - Added support for Horsefly
 
+### Bugfix
+
+- Removed invalid ammo types from the Rampart
+
 ### Balance
 
 - Air
