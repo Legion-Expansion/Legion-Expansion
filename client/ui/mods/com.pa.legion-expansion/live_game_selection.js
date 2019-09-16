@@ -73,7 +73,7 @@ if (!legionExpansionLoaded) {
       if (payload === "mixed") {
         $(".body_panel").addClass("mixedui");
 
-        var imageSourceForType = function(type) {
+        imageSourceForType = function(type) {
           return (
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/purple/icon_category_" +
             type.toLowerCase() +

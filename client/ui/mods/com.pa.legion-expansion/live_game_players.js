@@ -113,7 +113,7 @@ if (!legionExpansionLoaded) {
             );
           }
           if (ui === "mixed") {
-            var toggleImage = function(open) {
+            toggleImage = function(open) {
               return open
                 ? "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png"
                 : "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png";
