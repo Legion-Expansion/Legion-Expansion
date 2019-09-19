@@ -11,7 +11,12 @@
   "rate_of_fire": 0.2,
   "spread_fire": true,
   "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Seafloor"],
-  "target_priorities": ["Titan"],
+  "target_priorities": [
+    "Commander",
+    "Titan & ( Land | Naval )",
+    "Artillery & Advanced & ( Land | Naval )",
+    "Nuke | NukeDefense"
+  ],
   "yaw_range": 180,
   "yaw_rate": 20
 }

@@ -27,6 +27,15 @@
       - Titan & (Land | Naval)
       - Artillery & Advanced & (Land | Naval)
       - Nuke | NukeDefense
+  - Odin
+    - Primary weapon priorities changed:
+      - Commander
+      - Titan & (Land | Naval)
+      - Artillery & Advanced & (Land | Naval)
+      - Nuke | NukeDefense
+    - AA priorities changed:
+      - Air & (Transport | Bomber | Gunship | Titan)
+      - Mobile & Air
   - Patriot
     - Target priorities changed to equal priority for main threats:
       - Air & (Transport | Bomber | Gunship | Titan)
