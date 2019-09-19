@@ -17,6 +17,10 @@
     - Increased health from 40 to 55
     - Increased speed from 80 to 100
 - Land
+  - Patriot
+    - Target priorities changed to equal priority for main threats:
+      - Air & ( Transport | Bomber | Gunship | Titan)
+      - Mobile & Air
   - Rampart
     - Blocks shots from the Horsefly
     - Blocks shots from the Stryker
