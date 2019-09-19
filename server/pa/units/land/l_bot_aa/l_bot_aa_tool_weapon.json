@@ -17,7 +17,7 @@
   "spread_fire": true,
   "target_layers": ["WL_Air"],
   "target_priorities": [
-    "Air & ( Transport | Bomber | Gunship | Titan )",
+    "Air & (Transport | Bomber | Gunship | Titan)",
     "Mobile & Air"
   ],
   "yaw_range": 180,
