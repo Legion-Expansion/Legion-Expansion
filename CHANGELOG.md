@@ -20,6 +20,13 @@
       - Titan & (Land | Naval)
       - Artillery & Advanced & (Land | Naval)
       - Nuke | NukeDefense
+  - Firestarter
+    - Target priorities added:
+      - Commander
+      - AirDefense & (Land | Naval)
+      - Titan & (Land | Naval)
+      - Artillery & Advanced & (Land | Naval)
+      - Nuke | NukeDefense
   - Lockhead
     - Can no longer shoot amphibious units
     - Target priorities changed:
