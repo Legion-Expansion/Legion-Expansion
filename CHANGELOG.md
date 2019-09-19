@@ -69,14 +69,14 @@
       - Air & (Transport | Bomber | Gunship | Titan)
       - Mobile & Air
   - Patriot
-    - Target priorities changed to equal priority for main threats:
+    - Target priorities changed:
       - Air & (Transport | Bomber | Gunship | Titan)
       - Mobile & Air
   - Rampart
     - Blocks shots from the Horsefly
     - Blocks shots from the Stryker
   - Shredder
-    - Target priorities changed to equal priority for main threats:
+    - Target priorities changed:
       - Air & (Transport | Bomber | Gunship | Titan)
       - Mobile & Air
 
