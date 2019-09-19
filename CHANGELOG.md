@@ -15,6 +15,12 @@
 - Air
   - Lockhead
     - Can no longer shoot amphibious units
+    - Target priorities changed:
+      - Commander
+      - AirDefense & (Land | Naval)
+      - Titan & (Land | Naval)
+      - Artillery & Advanced & (Land | Naval)
+      - Nuke | NukeDefense
   - Osprey
     - Increased health from 40 to 55
     - Increased speed from 80 to 100
