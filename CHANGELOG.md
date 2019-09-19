@@ -27,7 +27,7 @@
       - Titan & (Land | Naval)
       - Artillery & Advanced & (Land | Naval)
       - Nuke | NukeDefense
-  - Lockhead
+  - Lockheed
     - Can no longer shoot amphibious units
     - Target priorities changed:
       - Commander
@@ -46,7 +46,9 @@
     - Increased speed from 80 to 100
 - Land
   - Archer
-    - First target priority changed to Air & (Bomber | Gunship)
+    - Target priorities changed:
+      - Air & (Bomber | Gunship)
+      - Air & Mobile
   - Gustav
     - Target priorities added:
       - Commander
