@@ -14,7 +14,7 @@
 
 - Air
   - Dauntless
-    - Target priorities changed:
+    - Target priorities added:
       - Commander
       - AirDefense & (Land | Naval)
       - Titan & (Land | Naval)
