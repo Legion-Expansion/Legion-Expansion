@@ -13,6 +13,8 @@
 ### Balance
 
 - Air
+  - Lockhead
+    - Can no longer shoot amphibious units
   - Osprey
     - Increased health from 40 to 55
     - Increased speed from 80 to 100
