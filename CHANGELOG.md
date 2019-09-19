@@ -21,6 +21,12 @@
 - Land
   - Archer
     - First target priority changed to Air & (Bomber | Gunship)
+  - Gustav
+    - Target priorities added:
+      - Commander
+      - Titan & (Land | Naval)
+      - Artillery & Advanced & (Land | Naval)
+      - Nuke | NukeDefense
   - Patriot
     - Target priorities changed to equal priority for main threats:
       - Air & (Transport | Bomber | Gunship | Titan)
