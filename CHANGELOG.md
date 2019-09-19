@@ -64,6 +64,10 @@
     - AA priorities changed:
       - Air & (Transport | Bomber | Gunship | Titan)
       - Mobile & Air
+  - Orbweaver
+    - Target priorities changed:
+      - Air & (Transport | Bomber | Gunship | Titan)
+      - Mobile & Air
   - Patriot
     - Target priorities changed to equal priority for main threats:
       - Air & (Transport | Bomber | Gunship | Titan)
