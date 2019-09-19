@@ -19,6 +19,8 @@
     - Increased health from 40 to 55
     - Increased speed from 80 to 100
 - Land
+  - Archer
+    - First target priority changed to Air & (Bomber | Gunship)
   - Patriot
     - Target priorities changed to equal priority for main threats:
       - Air & ( Transport | Bomber | Gunship | Titan)
