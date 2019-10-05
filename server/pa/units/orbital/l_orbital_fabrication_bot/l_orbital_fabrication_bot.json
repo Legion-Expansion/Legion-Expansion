@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 38.253,
   "attachable": {
     "offsets": {
-      "root": [
-        45,
-        0,
-        0
-      ]
+      "root": [45, 0, 0]
     }
   },
   "audio": {
@@ -69,11 +65,7 @@
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "max_health": 100,
-  "mesh_bounds": [
-    20,
-    10,
-    21
-  ],
+  "mesh_bounds": [20, 10, 21],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot_closed.papa",

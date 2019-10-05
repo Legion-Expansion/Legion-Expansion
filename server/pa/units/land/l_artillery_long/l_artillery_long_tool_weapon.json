@@ -19,6 +19,12 @@
     "WL_WaterSurface",
     "WL_Underwater"
   ],
+  "target_priorities": [
+    "Commander",
+    "Titan & (Land | Naval)",
+    "Artillery & Advanced & (Land | Naval)",
+    "Nuke | NukeDefense"
+  ],
   "yaw_range": 360,
   "yaw_rate": 10
 }

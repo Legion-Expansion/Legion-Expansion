@@ -24,12 +24,7 @@
     "WL_Orbital",
     "WL_Air"
   ],
-  "target_priorities": [
-    "Orbital & Mobile",
-    "Bomber",
-    "Gunship",
-    "Mobile"
-  ],
+  "target_priorities": ["Orbital & Mobile", "Bomber", "Gunship", "Mobile"],
   "yaw_range": 180,
   "yaw_rate": 120
 }

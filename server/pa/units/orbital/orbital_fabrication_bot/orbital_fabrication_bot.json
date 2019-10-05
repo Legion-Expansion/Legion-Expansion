@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -51,27 +47,15 @@
     {
       "bone": "bone_nozzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        1.755,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        -90
-      ],
+      "offset": [1.755, 0, 0],
+      "orientation": [0, 0, -90],
       "type": "build"
     }
   ],
   "gravwell_velocity_multiplier": 6,
   "guard_layer": "WL_Orbital",
   "max_health": 100,
-  "mesh_bounds": [
-    20,
-    10,
-    21
-  ],
+  "mesh_bounds": [20, 10, 21],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot_anim_closed.papa",

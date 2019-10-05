@@ -4,16 +4,8 @@
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        10
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 10],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -64,11 +56,7 @@
     }
   ],
   "max_health": 12500,
-  "mesh_bounds": [
-    12.6,
-    8.71255,
-    15.6193
-  ],
+  "mesh_bounds": [12.6, 8.71255, 15.6193],
   "navigation": {
     "acceleration": 60,
     "brake": -1,

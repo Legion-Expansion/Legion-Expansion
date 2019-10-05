@@ -1,0 +1,20 @@
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 12,
+  "splash_damage": 0,
+  "splash_radius": 0,
+  "initial_velocity": 120.0,
+  "max_velocity": 120.0,
+  "lifetime": 1.0,
+  "model": null,
+  "fx_trail": {
+    "filename": "/pa/units/land/attack_vehicle/attack_vehicle_ammo_trail.pfx",
+    "offset": [0.0, 0.0, 0.0]
+  },
+  "physics": { "add_to_spatial_db": true },
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/land/attack_vehicle/attack_vehicle_ammo_hit.pfx"
+    }
+  }
+}

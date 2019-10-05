@@ -33,291 +33,139 @@
   },
   "factory": {
     "deploy_projectile": "/pa/units/orbital/orbital_launcher/orbital_launcher_deploy.json",
-    "spawn_points": [
-      "bone_missile01"
-    ]
+    "spawn_points": ["bone_missile01"]
   },
   "fx_offsets": [
     {
       "bone": "socket_muzzle01",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_muzzle02",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "headlights": [
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 40,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 5,
       "near_height": 4.5,
       "near_width": 4.5,
-      "offset": [
-        -8,
-        0,
-        5
-      ],
-      "orientation": [
-        160,
-        0,
-        0
-      ]
+      "offset": [-8, 0, 5],
+      "orientation": [160, 0, 0]
     },
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 40,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 5,
       "near_height": 4.5,
       "near_width": 4.5,
-      "offset": [
-        8,
-        0,
-        5
-      ],
-      "orientation": [
-        -160,
-        0,
-        0
-      ]
+      "offset": [8, 0, 5],
+      "orientation": [-160, 0, 0]
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "far_distance": 25,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
-      "offset": [
-        -5,
-        -21.47,
-        8.99
-      ],
-      "orientation": [
-        0,
-        35,
-        0
-      ]
+      "offset": [-5, -21.47, 8.99],
+      "orientation": [0, 35, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        -5,
-        23.37,
-        33.65
-      ],
+      "offset": [-5, 23.37, 33.65],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        -5,
-        18.6,
-        36.19
-      ],
+      "offset": [-5, 18.6, 36.19],
       "radius": 8
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        1.57,
-        13.49,
-        9.7
-      ],
+      "offset": [1.57, 13.49, 9.7],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        25.3,
-        16.16,
-        12.23
-      ],
+      "offset": [25.3, 16.16, 12.23],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -5,
-        25.04,
-        29.88
-      ],
+      "offset": [-5, 25.04, 29.88],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -5,
-        -21.47,
-        8.99
-      ],
+      "offset": [-5, -21.47, 8.99],
       "radius": 5
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -5,
-        7.5,
-        58.92
-      ],
+      "offset": [-5, 7.5, 58.92],
       "radius": 3
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -5,
-        12.88,
-        58.92
-      ],
+      "offset": [-5, 12.88, 58.92],
       "radius": 3
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -2.38,
-        10.25,
-        58.92
-      ],
+      "offset": [-2.38, 10.25, 58.92],
       "radius": 3
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -7.55,
-        10.25,
-        58.92
-      ],
+      "offset": [-7.55, 10.25, 58.92],
       "radius": 3
     },
     {
       "bone": "bone_gantry01",
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        4.14,
-        -10.278,
-        0
-      ],
+      "offset": [4.14, -10.278, 0],
       "radius": 4
     },
     {
       "bone": "bone_gantry02",
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        4.14,
-        -10.278,
-        0
-      ],
+      "offset": [4.14, -10.278, 0],
       "radius": 4
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    50.0454,
-    50.0306,
-    58
-  ],
+  "mesh_bounds": [50.0454, 50.0306, 58],
   "model": [
     {
       "animations": {
@@ -344,10 +192,7 @@
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
-  "placement_size": [
-    65,
-    65
-  ],
+  "placement_size": [65, 65],
   "recon": {
     "observer": {
       "items": [

@@ -13,14 +13,8 @@
   "pitch_range": 80,
   "pitch_rate": 60,
   "rate_of_fire": 0.142,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_Seafloor",
-    "WL_WaterSurface"
-  ],
-  "target_priorities": [
-    "Mobile"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"],
+  "target_priorities": ["Mobile"],
   "yaw_range": 180,
   "yaw_rate": 60
 }

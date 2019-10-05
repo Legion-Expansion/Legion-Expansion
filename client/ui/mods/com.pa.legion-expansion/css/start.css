@@ -3,96 +3,104 @@
 }
 
 .legion .secondary_bar {
-  background: rgba(0,0,0,.15) !important;
+  background: rgba(0, 0, 0, 0.15) !important;
 }
 
-.legion #start_column{
-  background: rgba(0,0,0,.15) !important;
+.legion #start_column {
+  background: rgba(0, 0, 0, 0.15) !important;
 }
 
-.legion .full_update{
-  background: linear-gradient(to top, rgba(50, 0, 0, 0.8) 0%, rgba(60, 0, 0, 1) 85%) !important;
+.legion .full_update {
+  background: linear-gradient(
+    to top,
+    rgba(50, 0, 0, 0.8) 0%,
+    rgba(60, 0, 0, 1) 85%
+  ) !important;
   border: 1px solid rgba(255, 0, 0, 0.2) !important;
-  box-shadow: 0px 0px 30px rgba(0,0,0,0.7) !important;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7) !important;
   color: white;
 }
 
-.legion .ytv-list a{
+.legion .ytv-list a {
   color: white;
 }
 
 .legion .ytv-views {
-    color: rgb(180,180,180);
-    opacity: 1;
+  color: rgb(180, 180, 180);
+  opacity: 1;
 }
 
-.legion .username{
-  text-shadow: 0px 0px 20px rgba(70,0,0,0.9) !important;
+.legion .username {
+  text-shadow: 0px 0px 20px rgba(70, 0, 0, 0.9) !important;
 }
 
-.legion .update_title{
+.legion .update_title {
   color: white !important;
 }
 
-.legion .copyright{
+.legion .copyright {
   color: white;
 }
 
-.legion .div_kickstarter_watermark{
-  background: url(coui://ui/main/game/start/img/img_kickstarter_logo_hover.png) top center no-repeat !important;
+.legion .div_kickstarter_watermark {
+  background: url(coui://ui/main/game/start/img/img_kickstarter_logo_hover.png)
+    top center no-repeat !important;
   background-size: 32px 32px;
 }
 
-.legion .div_uber_watermark{
-  background: url(coui://ui/main/game/start/img/img_uber_logo_hover.png) top center no-repeat !important;
+.legion .div_uber_watermark {
+  background: url(coui://ui/main/game/start/img/img_uber_logo_hover.png) top
+    center no-repeat !important;
   background-size: 44px 44px;
 }
 
-.legion .div_kickstarter_watermark:hover{
-  background: url(coui://ui/main/game/start/img/img_kickstarter_logo_rest.png) top center no-repeat !important;
+.legion .div_kickstarter_watermark:hover {
+  background: url(coui://ui/main/game/start/img/img_kickstarter_logo_rest.png)
+    top center no-repeat !important;
   background-size: 32px 32px;
 }
 
-.legion .div_uber_watermark:hover{
-  background: url(coui://ui/main/game/start/img/img_uber_logo_rest.png) top center no-repeat !important;
+.legion .div_uber_watermark:hover {
+  background: url(coui://ui/main/game/start/img/img_uber_logo_rest.png) top
+    center no-repeat !important;
   background-size: 32px 44px;
 }
 
-.legion .input_text{
-    background:rgba(70, 0, 0, 1) !important;
-    border:1px solid rgba(158, 0, 0, 0.1) !important;
+.legion .input_text {
+  background: rgba(70, 0, 0, 1) !important;
+  border: 1px solid rgba(158, 0, 0, 0.1) !important;
 }
 
 .legionplayerOpen {
-  position: fixed; 
-  left: 10%; 
-  top: 10%; 
+  position: fixed;
+  left: 10%;
+  top: 10%;
   width: 80%; /*really css*/
-  height: 80%; 
-  z-index: 11111; 
+  height: 80%;
+  z-index: 11111;
   /*background-color: black;*/
-  border:none;
+  border: none;
 }
 
 .legionplayerClosed {
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  width: 1%; 
-  height: 1%; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1%;
+  height: 1%;
   z-index: -11111;
-  border:none;
+  border: none;
 }
 
 #legionplayer {
   outline: 1.5px solid rgba(110, 0, 0, 1);
   outline-offset: -1px;
-  box-shadow: 0px 0px 25px rgba(240,0,0,0.3);
+  box-shadow: 0px 0px 25px rgba(240, 0, 0, 0.3);
 }
 
 .legion .tooltip-inner {
-    max-width: 190px !important;
-    padding: 6px 8px;
-    background-color: rgba(70,0,0,1) !important;
-    box-shadow: 0px 0px 25px rgba(255,0,0,0.7) !important;
+  max-width: 190px !important;
+  padding: 6px 8px;
+  background-color: rgba(70, 0, 0, 1) !important;
+  box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.7) !important;
 }

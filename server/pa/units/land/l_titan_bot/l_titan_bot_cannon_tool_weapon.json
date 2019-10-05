@@ -9,13 +9,8 @@
   "pitch_rate": 90,
   "rate_of_fire": 0.33,
   "spread_fire": false,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
-  "target_priorities": [
-    "Titan"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
+  "target_priorities": ["Titan"],
   "yaw_range": 180,
   "yaw_rate": 35
 }

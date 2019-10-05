@@ -245,9 +245,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "max_num_assisters": 3,
       "name": "Legion - Orbital Factory",
@@ -342,9 +340,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "name": "Legion - Defense Satellite",
       "placement_rules": {
@@ -495,9 +491,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
@@ -568,9 +562,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "name": "Legion - Move Orbital Fabber To Planet",
       "priority": 800,
@@ -596,9 +588,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "name": "Legion - Move Orbital Fabber To Safe Planet",
       "priority": 800,

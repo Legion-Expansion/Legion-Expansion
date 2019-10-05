@@ -1,8 +1,5 @@
 {
-  "assist_layers": [
-    "WL_Orbital",
-    "WL_Air"
-  ],
+  "assist_layers": ["WL_Orbital", "WL_Air"],
   "base_spec": "/pa/tools/engineer_build_arm_adv/engineer_build_arm_adv.json",
   "construction_demand": {
     "energy": 1500,
@@ -13,13 +10,8 @@
   "max_range": 30,
   "pitch_range": 180,
   "pitch_rate": 360,
-  "reclaim_layers": [
-    "WL_AnyLayer"
-  ],
-  "reclaim_types": [
-    "Wreckage",
-    "Feature"
-  ],
+  "reclaim_layers": ["WL_AnyLayer"],
+  "reclaim_types": ["Wreckage", "Feature"],
   "yaw_range": 180,
   "yaw_rate": 360
 }

@@ -18,6 +18,12 @@
     "WL_SeaFloor",
     "WL_Underwater"
   ],
+  "target_priorities": [
+    "Commander",
+    "AirDefense & (Land | Naval)",
+    "Artillery & Advanced & (Land | Naval)",
+    "Nuke | NukeDefense"
+  ],
   "yaw_range": 180,
   "yaw_rate": 40
 }

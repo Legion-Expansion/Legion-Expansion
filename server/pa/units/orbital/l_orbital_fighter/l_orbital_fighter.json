@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
@@ -32,16 +28,8 @@
     {
       "bone": "bone_body",
       "filename": "/pa/units/orbital/l_orbital_fighter/thrusters.pfx",
-      "offset": [
-        0,
-        2,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 2, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
@@ -49,11 +37,7 @@
   "guard_layer": "WL_Orbital",
   "guard_radius": 60,
   "max_health": 100,
-  "mesh_bounds": [
-    12,
-    11,
-    2.5
-  ],
+  "mesh_bounds": [12, 11, 2.5],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_open.papa"

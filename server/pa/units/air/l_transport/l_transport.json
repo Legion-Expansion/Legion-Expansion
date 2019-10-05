@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 10.4837,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -66,12 +62,8 @@
       "type": "moving_forward"
     }
   ],
-  "max_health": 40,
-  "mesh_bounds": [
-    13.42,
-    22.2,
-    7.561
-  ],
+  "max_health": 55,
+  "mesh_bounds": [13.42, 22.2, 7.561],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_transport/l_transport_fly.papa"
@@ -82,7 +74,7 @@
   "navigation": {
     "acceleration": 30,
     "brake": 40,
-    "move_speed": 80,
+    "move_speed": 100,
     "turn_speed": 180,
     "vertical_speed": 100
   },

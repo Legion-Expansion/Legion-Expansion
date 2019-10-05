@@ -10,11 +10,13 @@
     "/pa/units/air/fighter/fighter_ammo.json",
     "/pa/units/air/fighter_adv/fighter_adv_ammo.json",
     "/pa/units/air/gunship/gunship_ammo.json",
+    "/pa/units/air/strafer/strafer_ammo.json",
     "/pa/units/land/air_defense/air_defense_ammo.json",
     "/pa/units/land/artillery_long/artillery_long_ammo.json",
     "/pa/units/land/artillery_short/artillery_short_ammo.json",
     "/pa/units/land/assault_bot/assault_bot_ammo.json",
     "/pa/units/land/assault_bot_adv/assault_bot_adv_ammo.json",
+    "/pa/units/land/attack_vehicle/attack_vehicle_ammo.json",
     "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
     "/pa/units/land/bot_support_commander/bot_support_commander_ammo.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
@@ -60,10 +62,8 @@
     "/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json",
     "/pa/units/land/l_shotgun_tank/l_shotgun_tank_ammo.json",
     "/pa/units/land/l_sniper_bot/l_sniper_bot_ammo.json",
-    "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_ammo.json",
     "/pa/units/land/l_t1_turret_adv/l_t1_turret_adv_ammo.json",
     "/pa/units/land/l_t1_turret_basic/l_t1_turret_basic_ammo.json",
-    "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_ammo.json",
     "/pa/units/land/l_tank_laser_adv/l_tank_laser_adv_ammo.json",
     "/pa/units/land/l_tank_shank/l_tank_shank_ammo.json",
     "/pa/units/land/l_tank_swarm/chain/chain2_ammo.json",
@@ -84,7 +84,5 @@
   "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
   "energy_efficiency_requirement": 1,
   "start_fully_charged": false,
-  "target_layers": [
-    "WL_Air"
-  ]
+  "target_layers": ["WL_Air"]
 }

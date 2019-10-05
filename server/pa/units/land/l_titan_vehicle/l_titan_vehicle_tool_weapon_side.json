@@ -11,11 +11,10 @@
   "pitch_rate": 360,
   "rate_of_fire": 3,
   "spread_fire": true,
-  "target_layers": [
-    "WL_Air"
-  ],
+  "target_layers": ["WL_Air"],
   "target_priorities": [
-    "Titan"
+    "Air & (Transport | Bomber | Gunship | Titan)",
+    "Mobile & Air"
   ],
   "yaw_range": 180,
   "yaw_rate": 280

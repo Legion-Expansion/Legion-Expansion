@@ -312,6 +312,7 @@
     "/pa/units/land/l_titan_structure/l_titan_structure.json",
     "/pa/units/land/l_swarm_hive/l_swarm_hive.json",
     "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm.json",
-    "/pa/units/land/attack_vehicle/attack_vehicle.json"
+    "/pa/units/land/attack_vehicle/attack_vehicle.json",
+    "/pa/units/air/strafer/strafer.json"
   ]
 }

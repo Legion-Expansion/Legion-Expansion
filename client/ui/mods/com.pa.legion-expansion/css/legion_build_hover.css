@@ -1,17 +1,17 @@
 .legionui .div_build_bar_unit_hover_detail .wrapper .detail .description .text {
-    color: white !important;
+  color: white !important;
 }
 
 .legionui .div_build_bar_unit_hover_detail .wrapper {
-    text-shadow: 0px 0px 20px rgba(160,0,0,0.5) !important;
-    color: white;
+  text-shadow: 0px 0px 20px rgba(160, 0, 0, 0.5) !important;
+  color: white;
 }
 
 .mixedui .div_build_bar_unit_hover_detail .wrapper .detail .description .text {
-    color: white !important;
+  color: white !important;
 }
 
 .mixednui .div_build_bar_unit_hover_detail .wrapper {
-    text-shadow: 0px 0px 20px rgba(99, 14, 138, 0.5) !important;
-    color: white;
+  text-shadow: 0px 0px 20px rgba(99, 14, 138, 0.5) !important;
+  color: white;
 }

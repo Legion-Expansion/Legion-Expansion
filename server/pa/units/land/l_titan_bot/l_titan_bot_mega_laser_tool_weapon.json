@@ -23,9 +23,7 @@
     "WL_Underwater",
     "WL_WaterSurface"
   ],
-  "target_priorities": [
-    "Titan"
-  ],
+  "target_priorities": ["Titan"],
   "yaw_range": 180,
   "yaw_rate": 40
 }

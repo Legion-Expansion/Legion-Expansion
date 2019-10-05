@@ -10,9 +10,7 @@
   "pitch_range": 90,
   "pitch_rate": 360,
   "rate_of_fire": 6,
-  "target_layers": [
-    "WL_Air"
-  ],
+  "target_layers": ["WL_Air"],
   "yaw_range": 120,
   "yaw_rate": 360
 }

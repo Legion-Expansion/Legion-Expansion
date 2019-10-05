@@ -14,9 +14,7 @@
     "radius_velocity": 95
   },
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_b_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_b_01.json"]
   },
   "full_damage_splash_radius": 15,
   "sim_fire_effect": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor_shake.json",

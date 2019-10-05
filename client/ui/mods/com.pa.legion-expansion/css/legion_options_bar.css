@@ -1,60 +1,60 @@
 /* STYLES CAUSE COMM IS LEGION OR MIXED */
 .legionui .div_pip_toggle_cont {
-    border:1px solid rgba(255,0,0,0.8) !important;
+  border: 1px solid rgba(255, 0, 0, 0.8) !important;
 }
 
 .legionui .div_ingame_timer {
-    color: rgba(255,0,0,0.8);
-    text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0px 0px 30px rgba(255, 0, 0, 0.8);
 }
 
 .legionui .div_ingame_server_rate {
-    color: rgba(255,0,0,0.8);
-    text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0px 0px 30px rgba(255, 0, 0, 0.8);
 }
 
 .legionui .btn_std_ix:hover {
-    background: rgba(255,0,0,0.8);
-    border:1px solid rgba(158, 0, 0, 0.5) !important;
-    box-shadow: 0px 0px 10px rgba(255,0,0,0.8) !important;
+  background: rgba(255, 0, 0, 0.8);
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8) !important;
 }
 
 .legionui .tooltip-inner {
-    box-shadow: 0px 0px 20px rgba(255,0,0,0.5) !important;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5) !important;
 }
 
 .legionui .div_sim_speed {
-  color: rgba(255,0,0,0.8) !important;
-  text-shadow: 0px 0px 30px rgba(255,0,0,0.8) !important;
+  color: rgba(255, 0, 0, 0.8) !important;
+  text-shadow: 0px 0px 30px rgba(255, 0, 0, 0.8) !important;
 }
 
 .legionui .span_tooltip_hotkey {
-    border:1px solid rgba(255, 0, 0, 1) !important;
-    color: rgba(255,0,0,1) !important;
+  border: 1px solid rgba(255, 0, 0, 1) !important;
+  color: rgba(255, 0, 0, 1) !important;
 }
 
 .mixedui .div_pip_toggle_cont {
-    border:1px solid rgba(99, 14, 138, 0.5) !important;
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
 }
 
 .mixedui .div_ingame_timer {
-    color: #663399;
-    text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+  color: #663399;
+  text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
 }
 
 .mixedui .div_ingame_server_rate {
-    color: #663399;
-    text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
+  color: #663399;
+  text-shadow: 0px 0px 30px rgba(99, 14, 138, 0.5);
 }
 
 .mixedui .btn_std_ix:hover {
-    color: #663399;
-    text-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
+  color: #663399;
+  text-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
 }
 
 .mixedui .span_tooltip_hotkey {
-    border:1px solid rgba(99, 14, 138, 0.5) !important;
-    color: #663399 !important;
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+  color: #663399 !important;
 }
 
 .mixedui .div_sim_speed {
@@ -63,40 +63,40 @@
 }
 
 .mixedui .tooltip-inner {
-    box-shadow: 0px 0px 20px rgba(99,14,138,0.5) !important;
+  box-shadow: 0px 0px 20px rgba(99, 14, 138, 0.5) !important;
 }
 
 .mixedui .span_tooltip_hotkey {
-    border:1px solid rgba(159,64,198,1) !important;
-    color: rgba(159,64,198,1) !important;
+  border: 1px solid rgba(159, 64, 198, 1) !important;
+  color: rgba(159, 64, 198, 1) !important;
 }
 
 .watermark {
-    color: rgba(255,0,0,0.8);
-    text-shadow: 0px 0px 30px rgba(255,0,0,0.8);
-    font-family: 'Trebuchet MS Bold';
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right:6px;
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0px 0px 30px rgba(255, 0, 0, 0.8);
+  font-family: "Trebuchet MS Bold";
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
 }
 .watermark > span {
-    color: rgba(255,255,255,0.8);
-    text-shadow: 0px 0px 30px rgba(255,255,255,0.8);
-    /**background-image: repeating-linear-gradient(45deg, #FFC800 50%, black 50%);**/
-background: repeating-linear-gradient(
-        45deg,
-        #FFC800,
-        #FFC800 10px,
-        black 10px,
-        black 20px
-    );
-    background-size: 100% 100px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation: stripes 15s linear infinite;
-    animation: stripes 15s linear infinite;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+  /**background-image: repeating-linear-gradient(45deg, #FFC800 50%, black 50%);**/
+  background: repeating-linear-gradient(
+    45deg,
+    #ffc800,
+    #ffc800 10px,
+    black 10px,
+    black 20px
+  );
+  background-size: 100% 100px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 15s linear infinite;
+  animation: stripes 15s linear infinite;
 }
 @-webkit-keyframes stripes {
   100% {
@@ -104,5 +104,6 @@ background: repeating-linear-gradient(
   }
 }
 .div_ingame_options_bar {
-    border-image: url(coui://ui/main/shared/img/build_bar/img_build_bar_bground_fill.png) 19 45 19 53 fill;
+  border-image: url(coui://ui/main/shared/img/build_bar/img_build_bar_bground_fill.png)
+    19 45 19 53 fill;
 }

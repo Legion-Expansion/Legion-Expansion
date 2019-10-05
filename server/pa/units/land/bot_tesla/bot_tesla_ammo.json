@@ -1,26 +1,26 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
   "damage": 160,
+  "splash_damage": 50,
+  "splash_radius": 10,
+  "full_damage_splash_radius": 2,
+  "initial_velocity": 180.0,
+  "max_velocity": 180.0,
+  "lifetime": 1,
+  "fx_trail": {
+    "filename": "/pa/units/land/bot_tesla/bot_tesla_ammo_trail.pfx"
+  },
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bot_spark_impact",
       "effect_spec": "/pa/units/land/bot_tesla/bot_tesla_ammo_hit.pfx"
     }
   },
-  "full_damage_splash_radius": 2,
-  "fx_trail": {
-    "filename": "/pa/units/land/bot_tesla/bot_tesla_ammo_trail.pfx"
-  },
-  "initial_velocity": 180.0,
-  "lifetime": 1,
-  "max_velocity": 180.0,
   "physics": {
-    "add_to_spatial_db": true,
-    "allow_underground": true,
-    "gravity_scalar": 8,
+    "type": "Projectile",
     "radius": 1,
-    "type": "Projectile"
-  },
-  "splash_damage": 50,
-  "splash_radius": 10
+    "gravity_scalar": 8,
+    "add_to_spatial_db": true,
+    "allow_underground": true
+  }
 }

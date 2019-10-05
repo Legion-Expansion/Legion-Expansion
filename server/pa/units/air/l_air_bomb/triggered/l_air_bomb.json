@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 10.4837,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -46,26 +42,14 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_Air",
   "max_health": 500,
-  "mesh_bounds": [
-    6,
-    6,
-    4
-  ],
+  "mesh_bounds": [6, 6, 4],
   "model": {
     "animations": {
       "idle": "/pa/units/air/l_air_bomb/l_air_bomb_idle.papa"

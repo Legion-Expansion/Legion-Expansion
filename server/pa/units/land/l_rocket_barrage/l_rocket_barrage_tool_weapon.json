@@ -11,10 +11,7 @@
   "pitch_rate": 70,
   "rate_of_fire": 0.8,
   "spread_fire": true,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 360,
   "yaw_rate": 70

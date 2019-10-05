@@ -15,11 +15,7 @@
                   "parameters": {
                     "attached": true,
                     "bone": "bone_main_turret",
-                    "bone_offset": [
-                      0,
-                      0,
-                      0
-                    ],
+                    "bone_offset": [0, 0, 0],
                     "death_effect": true,
                     "effect_scale": 1.0,
                     "spec": "/pa/units/land/titan_vehicle/titan_vehicle_death.pfx"
@@ -55,11 +51,7 @@
                   "parameters": {
                     "attached": false,
                     "bone": "bone_root",
-                    "bone_offset": [
-                      0,
-                      0,
-                      20
-                    ],
+                    "bone_offset": [0, 0, 20],
                     "death_effect": true,
                     "effect_scale": 1.0,
                     "spec": "/pa/units/land/titan_vehicle/titan_vehicle_death_world.pfx"
@@ -71,11 +63,7 @@
                   "parameters": {
                     "attached": true,
                     "bone": "bone_left_turret",
-                    "bone_offset": [
-                      2,
-                      -0.68,
-                      0.88
-                    ],
+                    "bone_offset": [2, -0.68, 0.88],
                     "death_effect": true,
                     "effect_scale": 1.2,
                     "spec": "/pa/effects/specs/titan_smoke_01.pfx"
@@ -87,11 +75,7 @@
                   "parameters": {
                     "attached": true,
                     "bone": "bone_main_turret",
-                    "bone_offset": [
-                      2.63,
-                      0.96,
-                      4.33
-                    ],
+                    "bone_offset": [2.63, 0.96, 4.33],
                     "death_effect": true,
                     "effect_scale": 1.4,
                     "spec": "/pa/effects/specs/titan_smoke_01.pfx"
@@ -103,11 +87,7 @@
                   "parameters": {
                     "attached": true,
                     "bone": "bone_root",
-                    "bone_offset": [
-                      -7.4,
-                      12.8,
-                      10.15
-                    ],
+                    "bone_offset": [-7.4, 12.8, 10.15],
                     "death_effect": true,
                     "effect_scale": 1.0,
                     "spec": "/pa/effects/specs/titan_smoke_01.pfx"
@@ -119,11 +99,7 @@
                   "parameters": {
                     "attached": true,
                     "bone": "bone_root",
-                    "bone_offset": [
-                      -13.3,
-                      -17.6,
-                      5.98
-                    ],
+                    "bone_offset": [-13.3, -17.6, 5.98],
                     "death_effect": true,
                     "effect_scale": 1.0,
                     "spec": "/pa/effects/specs/titan_smoke_01.pfx"
@@ -135,11 +111,7 @@
                   "parameters": {
                     "attached": false,
                     "bone": "bone_main_turret",
-                    "bone_offset": [
-                      0,
-                      0,
-                      0
-                    ],
+                    "bone_offset": [0, 0, 0],
                     "effect_scale": 1.0,
                     "spec": "/pa/units/land/titan_vehicle/titan_vehicle_death_fall.pfx"
                   },
