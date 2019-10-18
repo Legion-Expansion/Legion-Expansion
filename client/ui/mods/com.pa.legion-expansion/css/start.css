@@ -1,3 +1,13 @@
+body.legion #background
+{
+    background-image: url('coui://ui/mods/com.pa.legion-expansion/backgrounds/default.png');
+}
+
+body.legion #logo-background
+{
+  background-image: url('coui://ui/mods/com.pa.legion-expansion/logos/logo.png');
+}
+
 .legion .nav_sub_item {
   border: 0px !important;
 }

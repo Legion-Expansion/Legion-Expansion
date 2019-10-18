@@ -1,9 +1,9 @@
 {
   "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
-  "build": "113783",
+  "build": "113867",
   "category": ["titans", "units", "faction"],
   "context": "server",
-  "date": "2019/10/05",
+  "date": "2019/10/18",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"

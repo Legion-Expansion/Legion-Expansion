@@ -1,7 +1,7 @@
 /* btn_std_ix */
 .legion .btn_std_ix {
   background: rgba(70, 0, 0, 1) !important;
-  border: 1px solid rgba(255, 0, 0, 0.2) !important;
+  /* border: 1px solid rgba(255, 0, 0, 0.2) !important; */
   box-shadow: inset 0px 0px 8px rgba(255, 0, 0, 0.1) !important;
   text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5) !important;
   color: white !important;
@@ -207,7 +207,7 @@
     44 17 0 17 fill;
 }
 
-/* army button 
+/* army button
 .legion .army-button {
     background: rgba(70,0,0,1) !important;
     border: 1px solid rgba(255, 0, 0, 0.2) !important;
