@@ -8,6 +8,11 @@ body.legion #logo-background
   background-image: url('coui://ui/mods/com.pa.legion-expansion/logos/logo.png');
 }
 
+body.legion
+{
+  background-image: url('coui://ui/mods/com.pa.legion-expansion/img/splash.png');
+}
+
 .legion .nav_sub_item {
   border: 0px !important;
 }
