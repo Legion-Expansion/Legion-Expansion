@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 6.8],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        6.8
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -53,14 +61,26 @@
     {
       "bone": "socket_muzzleBack",
       "filename": "/pa/effects/specs/fab_combat_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 150,
-  "mesh_bounds": [4.4, 7.5, 10],
+  "mesh_bounds": [
+    4.4,
+    7.5,
+    10
+  ],
   "model": {
     "animations": {
       "death01": "/pa/units/land/fabrication_bot_combat_adv/fabrication_bot_combat_adv_anim_death01.papa",

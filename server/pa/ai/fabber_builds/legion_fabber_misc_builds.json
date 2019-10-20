@@ -175,7 +175,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalBasicFabber"],
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,

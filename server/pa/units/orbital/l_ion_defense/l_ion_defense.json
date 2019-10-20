@@ -8,7 +8,9 @@
   "atrophy_rate": 29.16667,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1000,
-  "command_caps": ["ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -27,7 +29,11 @@
   },
   "guard_layer": "WL_Orbital",
   "max_health": 1000,
-  "mesh_bounds": [18.162, 18.162, 32.964],
+  "mesh_bounds": [
+    18.162,
+    18.162,
+    32.964
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/one_turret_static_anim_tree.json",
@@ -77,14 +83,18 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": ["socket_muzzle"],
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
       "record_index": 0,
       "spec_id": "/pa/units/orbital/l_ion_defense/l_ion_defense_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired1",
-      "muzzle_bone": ["socket_muzzle"],
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
       "record_index": 1,
       "spec_id": "/pa/units/orbital/l_ion_defense/l_ion_defense_tool_antidrop.json"
     }

@@ -5,7 +5,9 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": ["bone_root"],
+      "muzzle_bone": [
+        "bone_root"
+      ],
       "projectiles_per_fire": 1,
       "record_index": 0,
       "show_range": false,

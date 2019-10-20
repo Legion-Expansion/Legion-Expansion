@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 16,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 7.4],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        7.4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -36,7 +44,11 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 130,
-  "mesh_bounds": [4, 2.5, 4],
+  "mesh_bounds": [
+    4,
+    2.5,
+    4
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_sniper_bot/l_sniper_bot_idle.papa",

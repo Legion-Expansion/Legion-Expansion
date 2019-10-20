@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 6.38729,
   "attachable": {
     "offsets": {
-      "head": [0, 0.5, 5],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0.5,
+        5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -53,14 +61,26 @@
     {
       "bone": "socket_muzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 400,
-  "mesh_bounds": [5.2, 6, 4.6],
+  "mesh_bounds": [
+    5.2,
+    6,
+    4.6
+  ],
   "model": {
     "animations": {
       "death01": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_death01.papa",

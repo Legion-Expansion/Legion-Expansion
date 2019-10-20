@@ -38,138 +38,286 @@
     {
       "bone": "socket_nozzle01",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle02",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle03",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle04",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle05",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle06",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle07",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "socket_nozzle08",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     }
   ],
   "headlights": [
     {
       "bone": "bone_platform",
-      "color": [1.5, 1.52, 1.6],
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 3,
       "near_width": 3,
-      "offset": [9.5, 9.5, 2.5],
-      "orientation": [-35, 31, 0]
+      "offset": [
+        9.5,
+        9.5,
+        2.5
+      ],
+      "orientation": [
+        -35,
+        31,
+        0
+      ]
     },
     {
       "bone": "bone_platform",
-      "color": [1.5, 1.52, 1.6],
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 3,
       "near_width": 3,
-      "offset": [9.5, -9.5, 2.5],
-      "orientation": [-35, -31, 0]
+      "offset": [
+        9.5,
+        -9.5,
+        2.5
+      ],
+      "orientation": [
+        -35,
+        -31,
+        0
+      ]
     },
     {
       "bone": "bone_platform",
-      "color": [1.5, 1.52, 1.6],
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 3,
       "near_width": 3,
-      "offset": [-9.5, 9.5, 2.5],
-      "orientation": [35, 31, 0]
+      "offset": [
+        -9.5,
+        9.5,
+        2.5
+      ],
+      "orientation": [
+        35,
+        31,
+        0
+      ]
     },
     {
       "bone": "bone_platform",
-      "color": [1.5, 1.52, 1.6],
+      "color": [
+        1.5,
+        1.52,
+        1.6
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 3,
       "near_width": 3,
-      "offset": [-9.5, -9.5, 2.5],
-      "orientation": [35, -31, 0]
+      "offset": [
+        -9.5,
+        -9.5,
+        2.5
+      ],
+      "orientation": [
+        35,
+        -31,
+        0
+      ]
     }
   ],
   "lamps": [
     {
-      "color": [0.1, 1, 0.1],
+      "color": [
+        0.1,
+        1,
+        0.1
+      ],
       "intensity": 2,
-      "offset": [8.02, -20.88, 12.04],
+      "offset": [
+        8.02,
+        -20.88,
+        12.04
+      ],
       "radius": 8
     },
     {
-      "color": [0.1, 1, 0.1],
+      "color": [
+        0.1,
+        1,
+        0.1
+      ],
       "intensity": 2,
-      "offset": [0, -20.88, 12.04],
+      "offset": [
+        0,
+        -20.88,
+        12.04
+      ],
       "radius": 8
     },
     {
-      "color": [0.1, 1, 0.1],
+      "color": [
+        0.1,
+        1,
+        0.1
+      ],
       "intensity": 2,
-      "offset": [-8.02, -20.88, 12.04],
+      "offset": [
+        -8.02,
+        -20.88,
+        12.04
+      ],
       "radius": 8
     },
     {
-      "color": [1, 0, 0],
+      "color": [
+        1,
+        0,
+        0
+      ],
       "intensity": 2,
-      "offset": [-4, -23.79, 8.44],
+      "offset": [
+        -4,
+        -23.79,
+        8.44
+      ],
       "radius": 4
     }
   ],
   "max_health": 30000,
-  "mesh_bounds": [50, 50, 25],
+  "mesh_bounds": [
+    50,
+    50,
+    25
+  ],
   "model": [
     {
       "animations": {
@@ -196,7 +344,10 @@
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
-  "placement_size": [60, 60],
+  "placement_size": [
+    60,
+    60
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -215,7 +366,28 @@
       ]
     }
   },
-  "rolloff_dirs": [[1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0]],
+  "rolloff_dirs": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
   "selection_icon": {
     "diameter": 72.5
   },

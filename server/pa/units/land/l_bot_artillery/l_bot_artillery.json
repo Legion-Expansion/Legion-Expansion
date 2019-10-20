@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 4],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -41,19 +49,35 @@
   "headlights": [
     {
       "bone": "bone_root",
-      "color": [0.75, 1, 1],
+      "color": [
+        0.75,
+        1,
+        1
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1,
       "near_height": 1.5,
       "near_width": 1.5,
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0]
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ]
     }
   ],
   "max_health": 125,
-  "mesh_bounds": [5, 5, 4.7],
+  "mesh_bounds": [
+    5,
+    5,
+    4.7
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_artillery/l_bot_artillery_idle.papa",
@@ -96,7 +120,11 @@
   "tools": [
     {
       "aim_bone": "bone_pitch01",
-      "muzzle_bone": ["socket_muzzle01", "socket_muzzle02", "socket_muzzle03"],
+      "muzzle_bone": [
+        "socket_muzzle01",
+        "socket_muzzle02",
+        "socket_muzzle03"
+      ],
       "projectiles_per_fire": 3,
       "spec_id": "/pa/units/land/l_bot_artillery/l_bot_artillery_tool_weapon.json"
     }

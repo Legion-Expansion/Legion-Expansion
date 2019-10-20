@@ -39,7 +39,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicAir"],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
       "instance_count": 1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Fabber",
@@ -124,7 +126,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicAir"],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Fighter",
@@ -155,7 +159,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicAir"],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Bomb",
@@ -199,7 +205,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicAir"],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Bomber",
@@ -243,7 +251,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicAir"],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Gunship",
@@ -291,7 +301,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": 1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Air Fabber",
@@ -389,7 +401,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": 1,
       "name": "Legion - Air Scout",
       "priority": 199,
@@ -473,7 +487,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Air Fighter",
@@ -517,7 +533,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Air Bomber",
@@ -561,7 +579,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Gunship",
@@ -585,7 +605,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedAir"],
+      "builders": [
+        "LegionFactoryAdvancedAir"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Advanced Air Carrier",

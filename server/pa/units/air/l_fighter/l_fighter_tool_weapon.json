@@ -10,8 +10,12 @@
   "pitch_rate": 360,
   "rate_of_fire": 1,
   "spread_fire": true,
-  "target_layers": ["WL_Air"],
-  "target_priorities": ["Fighter"],
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Fighter"
+  ],
   "yaw_range": 70,
   "yaw_rate": 3600
 }

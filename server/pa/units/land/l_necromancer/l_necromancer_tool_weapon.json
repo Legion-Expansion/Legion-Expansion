@@ -25,7 +25,9 @@
   "rate_of_fire": 1,
   "spread_fire": true,
   "start_fully_charged": true,
-  "target_layers": ["WL_LandHorizontal"],
+  "target_layers": [
+    "WL_LandHorizontal"
+  ],
   "yaw_range": 180,
   "yaw_rate": 3600
 }

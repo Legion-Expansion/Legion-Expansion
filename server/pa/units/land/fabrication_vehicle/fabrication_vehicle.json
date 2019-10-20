@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -52,14 +60,26 @@
     {
       "bone": "bone_pitch",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, -4.198, 0.381],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        -4.198,
+        0.381
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 150,
-  "mesh_bounds": [4.5, 6, 3],
+  "mesh_bounds": [
+    4.5,
+    6,
+    3
+  ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
     "arrows": 5,

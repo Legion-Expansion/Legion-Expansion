@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -33,26 +41,46 @@
     {
       "bone": "bone_turret",
       "filename": "/pa/units/land/l_sniper_tank/energy_rods.pfx",
-      "offset": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "headlights": [
     {
-      "color": [0.9, 0.92, 1],
+      "color": [
+        0.9,
+        0.92,
+        1
+      ],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1.2,
       "near_height": 2,
       "near_width": 2,
-      "offset": [0, -1, 1.5],
-      "orientation": [0, 65, 0]
+      "offset": [
+        0,
+        -1,
+        1.5
+      ],
+      "orientation": [
+        0,
+        65,
+        0
+      ]
     }
   ],
   "max_health": 250,
-  "mesh_bounds": [6.985, 12.365, 4.067],
+  "mesh_bounds": [
+    6.985,
+    12.365,
+    4.067
+  ],
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
     "arrows": 5,

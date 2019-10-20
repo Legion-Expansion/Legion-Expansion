@@ -13,7 +13,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Assault Bot",
@@ -33,7 +35,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Sniper Bot",
@@ -53,7 +57,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": 1,
       "name": "Legion - Basic AA Bot",
       "priority": 100,
@@ -72,7 +78,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Light Laser Tank",
@@ -92,7 +100,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Amphibious Tank",
@@ -112,7 +122,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Hover Artillery",
@@ -132,7 +144,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Advanced AA Bot",
@@ -153,7 +167,9 @@
           }
         ]
       ],
-      "builders": ["LegionOrbitalAdvancedCannon"],
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Laser Tank",

@@ -7,7 +7,9 @@
   "atrophy_rate": 3.33,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 350,
-  "command_caps": ["ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -23,7 +25,11 @@
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
   "max_health": 750,
-  "mesh_bounds": [10, 13.799, 10.112],
+  "mesh_bounds": [
+    10,
+    13.799,
+    10.112
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
@@ -62,7 +68,9 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": ["socket_muzzle"],
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
       "spec_id": "/pa/units/land/l_t1_turret_basic/l_t1_turret_basic_tool_weapon.json"
     }
   ],

@@ -7,7 +7,9 @@
   "atrophy_rate": 26.66667,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 900,
-  "command_caps": ["ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -23,7 +25,11 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 3000,
-  "mesh_bounds": [16.6, 16.6, 12.1],
+  "mesh_bounds": [
+    16.6,
+    16.6,
+    12.1
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
@@ -64,7 +70,12 @@
     {
       "aim_bone": "bone_pitch",
       "fire_event": "fired",
-      "muzzle_bone": ["rocket001", "rocket002", "rocket003", "rocket004"],
+      "muzzle_bone": [
+        "rocket001",
+        "rocket002",
+        "rocket003",
+        "rocket004"
+      ],
       "projectiles_per_fire": 4,
       "spec_id": "/pa/units/land/l_air_defense_adv/l_air_defense_adv_tool_weapon.json"
     }

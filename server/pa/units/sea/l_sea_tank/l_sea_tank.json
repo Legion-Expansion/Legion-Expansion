@@ -47,7 +47,11 @@
     }
   ],
   "max_health": 14000,
-  "mesh_bounds": [15.396, 35.345, 15],
+  "mesh_bounds": [
+    15.396,
+    35.345,
+    15
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/sea/l_sea_tank/l_sea_tank_idle.papa"

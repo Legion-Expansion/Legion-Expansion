@@ -11,7 +11,9 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 900,
-  "command_caps": ["ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -29,14 +31,26 @@
   "lamps": [
     {
       "bone": "bone_pitch",
-      "color": [1, 1, 1],
+      "color": [
+        1,
+        1,
+        1
+      ],
       "intensity": 2,
-      "offset": [0, -4.24, 1.77],
+      "offset": [
+        0,
+        -4.24,
+        1.77
+      ],
       "radius": 1.75
     }
   ],
   "max_health": 1000,
-  "mesh_bounds": [12.728, 14.757, 10.603],
+  "mesh_bounds": [
+    12.728,
+    14.757,
+    10.603
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",

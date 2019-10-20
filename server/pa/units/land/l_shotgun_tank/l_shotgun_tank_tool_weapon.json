@@ -9,8 +9,16 @@
   "max_range": 50,
   "rate_of_fire": 1,
   "spread_fire": false,
-  "target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"],
-  "target_priorities": ["Mobile - Air", "Mobile", "Structure - Wall"],
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_Seafloor",
+    "WL_WaterSurface"
+  ],
+  "target_priorities": [
+    "Mobile - Air",
+    "Mobile",
+    "Structure - Wall"
+  ],
   "yaw_range": 180,
   "yaw_rate": 240
 }

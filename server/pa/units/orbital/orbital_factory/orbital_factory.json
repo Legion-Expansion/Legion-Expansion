@@ -40,48 +40,100 @@
     {
       "bone": "bone_centerHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [17, 0, 0],
-      "orientation": [0, 0, 90],
+      "offset": [
+        17,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        90
+      ],
       "type": "build"
     },
     {
       "bone": "bone_centerHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [-17, 0, 0],
-      "orientation": [0, 0, -90],
+      "offset": [
+        -17,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        -90
+      ],
       "type": "build"
     },
     {
       "bone": "bone_frontHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [9.5, 0, 9.5],
-      "orientation": [0, 0, 135],
+      "offset": [
+        9.5,
+        0,
+        9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        135
+      ],
       "type": "build"
     },
     {
       "bone": "bone_frontHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [-9.5, 0, -9.5],
-      "orientation": [0, 0, -135],
+      "offset": [
+        -9.5,
+        0,
+        -9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        -135
+      ],
       "type": "build"
     },
     {
       "bone": "bone_backHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [9.5, 0, 9.5],
-      "orientation": [0, 0, 135],
+      "offset": [
+        9.5,
+        0,
+        9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        135
+      ],
       "type": "build"
     },
     {
       "bone": "bone_backHalo",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [-9.5, 0, -9.5],
-      "orientation": [0, 0, -135],
+      "offset": [
+        -9.5,
+        0,
+        -9.5
+      ],
+      "orientation": [
+        0,
+        0,
+        -135
+      ],
       "type": "build"
     }
   ],
   "max_health": 9000,
-  "mesh_bounds": [45, 40, 24],
+  "mesh_bounds": [
+    45,
+    40,
+    24
+  ],
   "model": [
     {
       "animations": {
@@ -99,7 +151,10 @@
     "ignore_gravity": true,
     "radius": 20
   },
-  "placement_size": [100, 100],
+  "placement_size": [
+    100,
+    100
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -112,7 +167,18 @@
       ]
     }
   },
-  "rolloff_dirs": [[0, 1, 0], [0, -1, 0]],
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
   "selection_icon": {
     "diameter": 73
   },

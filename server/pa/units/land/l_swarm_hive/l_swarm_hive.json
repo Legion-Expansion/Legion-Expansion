@@ -21,14 +21,26 @@
     {
       "bone": "bone_radar",
       "filename": "/pa/units/land/l_swarm_hive/idle.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 1000,
-  "mesh_bounds": [17.627, 17.627, 20.365],
+  "mesh_bounds": [
+    17.627,
+    17.627,
+    20.365
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
@@ -68,25 +80,37 @@
   "tools": [
     {
       "aim_bone": "socket001",
-      "muzzle_bone": ["socket001", "socket002"],
+      "muzzle_bone": [
+        "socket001",
+        "socket002"
+      ],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket003",
-      "muzzle_bone": ["socket003", "socket004"],
+      "muzzle_bone": [
+        "socket003",
+        "socket004"
+      ],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket005",
-      "muzzle_bone": ["socket005", "socket006"],
+      "muzzle_bone": [
+        "socket005",
+        "socket006"
+      ],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     },
     {
       "aim_bone": "socket007",
-      "muzzle_bone": ["socket007", "socket008"],
+      "muzzle_bone": [
+        "socket007",
+        "socket008"
+      ],
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_swarm_hive/l_swarm_hive_tool_weapon.json"
     }

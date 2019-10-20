@@ -9,7 +9,11 @@
   "pitch_rate": 0,
   "rate_of_fire": 5,
   "self_destruct": true,
-  "target_layers": ["WL_WaterSurface", "WL_Underwater", "WL_Seafloor"],
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
   "yaw_rate": 0

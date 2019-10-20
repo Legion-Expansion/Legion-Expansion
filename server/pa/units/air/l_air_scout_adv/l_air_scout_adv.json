@@ -37,30 +37,50 @@
     {
       "bone": "thrust01",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [0, 0, 180],
+      "orientation": [
+        0,
+        0,
+        180
+      ],
       "type": "moving_forward"
     },
     {
       "bone": "thrust02",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [0, 0, 180],
+      "orientation": [
+        0,
+        0,
+        180
+      ],
       "type": "moving_forward"
     },
     {
       "bone": "thrust03",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [0, 0, 180],
+      "orientation": [
+        0,
+        0,
+        180
+      ],
       "type": "moving_forward"
     },
     {
       "bone": "thrust04",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [0, 0, 180],
+      "orientation": [
+        0,
+        0,
+        180
+      ],
       "type": "moving_forward"
     }
   ],
   "max_health": 250,
-  "mesh_bounds": [23.7, 17.7, 5.7],
+  "mesh_bounds": [
+    23.7,
+    17.7,
+    5.7
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_idle.papa"

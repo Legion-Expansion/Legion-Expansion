@@ -32,158 +32,338 @@
     {
       "bone": "bone_thrust001",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
-      "offset": [0, -10, 0],
-      "orientation": [0, 90, 0],
+      "offset": [
+        0,
+        -10,
+        0
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "enabled"
     },
     {
       "bone": "bone_thrust002",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
-      "offset": [0, -10, 0],
-      "orientation": [0, 90, 0],
+      "offset": [
+        0,
+        -10,
+        0
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "enabled"
     },
     {
       "bone": "bone_thrust003",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
-      "offset": [0, -10, 0],
-      "orientation": [0, 90, 0],
+      "offset": [
+        0,
+        -10,
+        0
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "enabled"
     },
     {
       "bone": "bone_thrust004",
       "filename": "/pa/units/orbital/l_delta_v_engine/delta_v_jet.pfx",
-      "offset": [0, -10, 0],
-      "orientation": [0, 90, 0],
+      "offset": [
+        0,
+        -10,
+        0
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "enabled"
     }
   ],
   "headlights": [
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3.0,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
-      "offset": [20.4, 20.4, 15.6],
-      "orientation": [25.0, -23.0, 0.0]
+      "offset": [
+        20.4,
+        20.4,
+        15.6
+      ],
+      "orientation": [
+        25.0,
+        -23.0,
+        0.0
+      ]
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3.0,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
-      "offset": [20.4, -20.4, 15.6],
-      "orientation": [25.0, 23.0, 0.0]
+      "offset": [
+        20.4,
+        -20.4,
+        15.6
+      ],
+      "orientation": [
+        25.0,
+        23.0,
+        0.0
+      ]
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3.0,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
-      "offset": [-20.4, 20.4, 15.6],
-      "orientation": [-25.0, -23.0, 0.0]
+      "offset": [
+        -20.4,
+        20.4,
+        15.6
+      ],
+      "orientation": [
+        -25.0,
+        -23.0,
+        0.0
+      ]
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3.0,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
-      "offset": [-20.4, -20.4, 15.6],
-      "orientation": [-25.0, 23.0, 0.0]
+      "offset": [
+        -20.4,
+        -20.4,
+        15.6
+      ],
+      "orientation": [
+        -25.0,
+        23.0,
+        0.0
+      ]
     }
   ],
   "lamps": [
     {
-      "color": [1.0, 0.0, 0.0],
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
       "intensity": 2.0,
-      "offset": [-21.39, 9.9, 11.25],
+      "offset": [
+        -21.39,
+        9.9,
+        11.25
+      ],
       "radius": 4.0
     },
     {
-      "color": [1.0, 0.0, 0.0],
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
       "intensity": 2.0,
-      "offset": [-21.39, -9.9, 11.25],
+      "offset": [
+        -21.39,
+        -9.9,
+        11.25
+      ],
       "radius": 4.0
     },
     {
-      "color": [1.0, 0.0, 0.0],
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
       "intensity": 2.0,
-      "offset": [25.44, 0.0, 12.4],
+      "offset": [
+        25.44,
+        0.0,
+        12.4
+      ],
       "radius": 4.0
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [-23.8, 0.0, 14.7],
+      "offset": [
+        -23.8,
+        0.0,
+        14.7
+      ],
       "radius": 3.0
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [20.4, 20.4, 15.6],
+      "offset": [
+        20.4,
+        20.4,
+        15.6
+      ],
       "radius": 3.0
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [20.4, -20.4, 15.6],
+      "offset": [
+        20.4,
+        -20.4,
+        15.6
+      ],
       "radius": 3.0
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [-20.4, 20.4, 15.6],
+      "offset": [
+        -20.4,
+        20.4,
+        15.6
+      ],
       "radius": 3.0
     },
     {
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [-20.4, -20.4, 15.6],
+      "offset": [
+        -20.4,
+        -20.4,
+        15.6
+      ],
       "radius": 3.0
     },
     {
       "bone": "bone_cross01",
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [14.38, 0.0, 2.0],
+      "offset": [
+        14.38,
+        0.0,
+        2.0
+      ],
       "radius": 3.0
     },
     {
       "bone": "bone_cross02",
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [14.38, 0.0, 2.0],
+      "offset": [
+        14.38,
+        0.0,
+        2.0
+      ],
       "radius": 3.0
     },
     {
       "bone": "bone_cross03",
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [14.38, 0.0, 2.0],
+      "offset": [
+        14.38,
+        0.0,
+        2.0
+      ],
       "radius": 3.0
     },
     {
       "bone": "bone_cross04",
-      "color": [1.0, 1.0, 1.0],
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
       "intensity": 2.0,
-      "offset": [14.38, 0.0, 2.0],
+      "offset": [
+        14.38,
+        0.0,
+        2.0
+      ],
       "radius": 3.0
     }
   ],
   "max_health": 20000,
-  "mesh_bounds": [65.192, 60.94, 58.53],
+  "mesh_bounds": [
+    65.192,
+    60.94,
+    58.53
+  ],
   "model": {
     "animations": {
       "end": "/pa/units/orbital/l_delta_v_engine/l_delta_v_engine_end.papa",
