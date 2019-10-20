@@ -15,7 +15,11 @@
   "rate_of_fire": 2,
   "spawn_layers": "WL_Underwater",
   "spread_fire": true,
-  "target_layers": ["WL_WaterSurface", "WL_Underwater", "WL_Seafloor"],
+  "target_layers": [
+    "WL_WaterSurface",
+    "WL_Underwater",
+    "WL_Seafloor"
+  ],
   "yaw_range": 10,
   "yaw_rate": 180
 }

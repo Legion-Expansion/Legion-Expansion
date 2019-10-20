@@ -32,13 +32,25 @@
     {
       "bone": "bone_void",
       "filename": "/pa/units/land/l_shield_gen/shield.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "energy"
     }
   ],
   "max_health": 750,
-  "mesh_bounds": [5, 5, 14],
+  "mesh_bounds": [
+    5,
+    5,
+    14
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
@@ -55,7 +67,10 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "placement_size": [20, 20],
+  "placement_size": [
+    20,
+    20
+  ],
   "recon": {
     "observer": {
       "items": [

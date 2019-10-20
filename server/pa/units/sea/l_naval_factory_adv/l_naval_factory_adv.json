@@ -83,7 +83,11 @@
     }
   ],
   "max_health": 30000,
-  "mesh_bounds": [70, 48, 21],
+  "mesh_bounds": [
+    70,
+    48,
+    21
+  ],
   "model": {
     "animations": {
       "build_end": "/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv_end.papa",
@@ -93,7 +97,10 @@
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
     "filename": "/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv.papa"
   },
-  "placement_size": [75, 65],
+  "placement_size": [
+    75,
+    65
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -106,7 +113,18 @@
       ]
     }
   },
-  "rolloff_dirs": [[0, 1, 0], [0, -1, 0]],
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
   "selection_icon": {
     "diameter": -75
   },

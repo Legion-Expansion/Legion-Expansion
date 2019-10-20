@@ -25,14 +25,22 @@
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/none.pfx",
-      "offset": [0, 0, 5],
+      "offset": [
+        0,
+        0,
+        5
+      ],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 0,
   "max_health": 500,
-  "mesh_bounds": [0.01, 0.01, 0.01],
+  "mesh_bounds": [
+    0.01,
+    0.01,
+    0.01
+  ],
   "navigation": {
     "acceleration": 0,
     "brake": 0,

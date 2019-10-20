@@ -33,35 +33,71 @@
     {
       "bone": "engines_back",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [-2.5, 0, -3.1],
-      "orientation": [0, 90, 0],
+      "offset": [
+        -2.5,
+        0,
+        -3.1
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     },
     {
       "bone": "engines_back",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [2.5, 0, -3.1],
-      "orientation": [0, 90, 0],
+      "offset": [
+        2.5,
+        0,
+        -3.1
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     },
     {
       "bone": "engines_front",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [-4.6, 0, -3.3],
-      "orientation": [0, 90, 0],
+      "offset": [
+        -4.6,
+        0,
+        -3.3
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     },
     {
       "bone": "engines_front",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [4.6, 0, -3.3],
-      "orientation": [0, 90, 0],
+      "offset": [
+        4.6,
+        0,
+        -3.3
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     }
   ],
   "guard_layer": "WL_Anysurface",
   "max_health": 400,
-  "mesh_bounds": [8.5, 11.5, 3.6193],
+  "mesh_bounds": [
+    8.5,
+    11.5,
+    3.6193
+  ],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_gunship/l_gunship_fly.papa"

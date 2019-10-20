@@ -16,7 +16,11 @@
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
   "max_health": 1500,
-  "mesh_bounds": [10, 10, 8],
+  "mesh_bounds": [
+    10,
+    10,
+    8
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_defense_turret_no_recoil_anim_tree.json",

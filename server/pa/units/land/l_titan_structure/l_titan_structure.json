@@ -18,7 +18,9 @@
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 60000,
   "death": {
-    "decals": ["/pa/effects/specs/scorch_titan_01.json"]
+    "decals": [
+      "/pa/effects/specs/scorch_titan_01.json"
+    ]
   },
   "events": {
     "build_complete": {
@@ -36,8 +38,16 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_titan_structure/l_titan_structure.pfx",
-      "offset": [0, 0, 50],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        50
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "idle"
     },
     {
@@ -103,7 +113,11 @@
   ],
   "has_death_effects": true,
   "max_health": 15000,
-  "mesh_bounds": [106, 106, 57],
+  "mesh_bounds": [
+    106,
+    106,
+    57
+  ],
   "model": {
     "animations": {
       "dead": "/pa/units/land/titan_structure/titan_structure_anim_dead.papa",

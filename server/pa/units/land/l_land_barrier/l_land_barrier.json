@@ -18,7 +18,11 @@
     }
   },
   "max_health": 2000,
-  "mesh_bounds": [5, 5, 14],
+  "mesh_bounds": [
+    5,
+    5,
+    14
+  ],
   "model": [
     {
       "filename": "/pa/units/land/l_land_barrier/l_land_barrier.papa",
@@ -29,7 +33,10 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "placement_size": [4, 4],
+  "placement_size": [
+    4,
+    4
+  ],
   "recon": {
     "observer": {
       "items": [

@@ -652,7 +652,10 @@
           }
         ]
       ],
-      "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
+      "builders": [
+        "LegionVehicleBasicFabber",
+        "LegionVehicleAdvancedFabber"
+      ],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
@@ -800,7 +803,10 @@
           }
         ]
       ],
-      "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
+      "builders": [
+        "LegionVehicleBasicFabber",
+        "LegionVehicleAdvancedFabber"
+      ],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,

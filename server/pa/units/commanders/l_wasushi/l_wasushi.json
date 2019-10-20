@@ -3,8 +3,16 @@
   "description": "!LOC:Imperial Wasushi Commander",
   "attachable": {
     "offsets": {
-      "head": [0, 0, 15.6],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        15.6
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "base_spec": "/pa/units/commanders/l_base/l_base.json",
@@ -31,35 +39,67 @@
   "headlights": [
     {
       "bone": "bone_spine",
-      "color": [1, 1, 1],
+      "color": [
+        1,
+        1,
+        1
+      ],
       "far_distance": 30,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 6,
       "near_distance": 3,
       "near_height": 5,
       "near_width": 5,
-      "offset": [0, -2.215, 3.802],
-      "orientation": [0, 45, 0],
+      "offset": [
+        0,
+        -2.215,
+        3.802
+      ],
+      "orientation": [
+        0,
+        45,
+        0
+      ],
       "shadow_resolution": 128
     }
   ],
   "lamps": [
     {
       "bone": "bone_spine",
-      "color": [1, 1, 1],
+      "color": [
+        1,
+        1,
+        1
+      ],
       "intensity": 5,
-      "offset": [0, -2.215, 3.802],
+      "offset": [
+        0,
+        -2.215,
+        3.802
+      ],
       "radius": 2
     },
     {
       "bone": "bone_leftShoulder",
-      "color": [0.4, 1, 0.01],
+      "color": [
+        0.4,
+        1,
+        0.01
+      ],
       "intensity": 2,
-      "offset": [0.4, -4.06, -1.1],
+      "offset": [
+        0.4,
+        -4.06,
+        -1.1
+      ],
       "radius": 4
     }
   ],
-  "mesh_bounds": [12.6, 6, 15.6193],
+  "mesh_bounds": [
+    12.6,
+    6,
+    15.6193
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/commanders/l_wasushi/l_wasushi_idle.papa",

@@ -28,14 +28,22 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_bot_artillery/exp.pfx",
-      "offset": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 30,
   "max_health": 130,
-  "mesh_bounds": [1, 1, 1],
+  "mesh_bounds": [
+    1,
+    1,
+    1
+  ],
   "navigation": {
     "acceleration": 400,
     "brake": 400,

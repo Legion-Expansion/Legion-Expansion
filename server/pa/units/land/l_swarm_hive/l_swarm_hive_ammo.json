@@ -2,7 +2,9 @@
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
   "damage": 0,
   "death": {
-    "decals": [""]
+    "decals": [
+      ""
+    ]
   },
   "events": {
     "died": {
@@ -12,7 +14,11 @@
   "fx_trail": {
     "bone": "bone_body",
     "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
-    "offset": [0, 0, 0]
+    "offset": [
+      0,
+      0,
+      0
+    ]
   },
   "initial_velocity": 15.0,
   "lifetime": 3.0,

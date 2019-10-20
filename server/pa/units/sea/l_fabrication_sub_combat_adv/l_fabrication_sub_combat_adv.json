@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 20,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 4],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -60,7 +68,11 @@
     }
   ],
   "max_health": 800,
-  "mesh_bounds": [10, 22, 9],
+  "mesh_bounds": [
+    10,
+    22,
+    9
+  ],
   "model": {
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
     "filename": "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.papa"

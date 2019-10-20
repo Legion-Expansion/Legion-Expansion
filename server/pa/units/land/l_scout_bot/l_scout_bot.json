@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 3.5],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        3.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -42,7 +50,11 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 60,
-  "mesh_bounds": [4, 2, 4],
+  "mesh_bounds": [
+    4,
+    2,
+    4
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_scout_bot/l_scout_bot_idle.papa",

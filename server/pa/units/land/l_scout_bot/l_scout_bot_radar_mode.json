@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 3.5],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        3.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -23,7 +31,9 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 150,
-  "command_caps": ["ORDER_FireSecondaryWeapon"],
+  "command_caps": [
+    "ORDER_FireSecondaryWeapon"
+  ],
   "consumption": {
     "energy": 100
   },
@@ -53,14 +63,26 @@
   "guard_layer": "WL_AnySurface",
   "lamps": [
     {
-      "color": [1, 1, 1],
+      "color": [
+        1,
+        1,
+        1
+      ],
       "intensity": 2,
-      "offset": [0, 3.68, 5.53],
+      "offset": [
+        0,
+        3.68,
+        5.53
+      ],
       "radius": 3
     }
   ],
   "max_health": 60,
-  "mesh_bounds": [2, 2, 4],
+  "mesh_bounds": [
+    2,
+    2,
+    4
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_idle.papa"
@@ -72,7 +94,9 @@
   "physics": {
     "allow_pushing": false,
     "allow_underground": false,
-    "collide_with_types": ["Projectile"],
+    "collide_with_types": [
+      "Projectile"
+    ],
     "collision_layers": "WL_LandHorizontal",
     "push_sideways": false,
     "radius": 0,

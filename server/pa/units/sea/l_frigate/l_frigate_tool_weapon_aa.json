@@ -6,8 +6,14 @@
   "pitch_range": 180,
   "pitch_rate": 360,
   "rate_of_fire": 1,
-  "target_layers": ["WL_Air"],
-  "target_priorities": ["Air & Bomber", "Air & Gunship", "Air & Mobile"],
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & Bomber",
+    "Air & Gunship",
+    "Air & Mobile"
+  ],
   "yaw_range": 180,
   "yaw_rate": 360
 }

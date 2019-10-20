@@ -3,7 +3,11 @@
   "attachable": {
     "default_attach_bone": "bone_root",
     "offsets": {
-      "root": [0, 0, 0]
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio_loop": "/SE/Movement/missile/bot_tactical_missile_fly_loop",

@@ -23,12 +23,20 @@
   "fx_offsets": [
     {
       "filename": "/pa/units/land/l_energy_plant/energy_plant_idle.pfx",
-      "offset": [0, 0, 5],
+      "offset": [
+        0,
+        0,
+        5
+      ],
       "type": "idle"
     }
   ],
   "max_health": 1000,
-  "mesh_bounds": [9.426, 9.426, 9.764],
+  "mesh_bounds": [
+    9.426,
+    9.426,
+    9.764
+  ],
   "model": [
     {
       "animations": {
@@ -48,7 +56,10 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "placement_size": [12, 12],
+  "placement_size": [
+    12,
+    12
+  ],
   "production": {
     "energy": 600
   },

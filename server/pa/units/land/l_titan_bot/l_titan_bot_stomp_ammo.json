@@ -6,7 +6,9 @@
   "base_spec": "/pa/ammo/base_bomb/base_bomb.json",
   "damage": 500,
   "death": {
-    "decals": [""]
+    "decals": [
+      ""
+    ]
   },
   "events": {
     "died": {

@@ -12,7 +12,10 @@
   "pitch_range": 180,
   "pitch_rate": 0,
   "rate_of_fire": 1.0,
-  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
   "yaw_rate": 0
