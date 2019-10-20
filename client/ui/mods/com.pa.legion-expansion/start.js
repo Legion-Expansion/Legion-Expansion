@@ -62,11 +62,11 @@ if (!legionExpansionLoaded) {
     // includes some temp CSS until next PTE
 
     $("div.view_intro:contains(View Intro)")
-      .css("padding", "flex")
-      .css("text-align", "center")
-      .css("flex-grow", "1")
-      .css("justify-content", "center")
-      .css("flex-direction", "column")
+      // .css("padding", "flex")
+      // .css("text-align", "center")
+      // .css("flex-grow", "1")
+      // .css("justify-content", "center")
+      // .css("flex-direction", "column")
       .after(
         '<div class="btn_std_ix view_intro" style="display: flex; text-align: center; flex-grow: 1; justify-content: center; flex-direction: column" data-bind="click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'"><loc>Legion Intro</loc></div>'
       );
@@ -87,7 +87,6 @@ if (!legionExpansionLoaded) {
     if (themesetting === "ON") {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
-      loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_logo.css");
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
       $("body").addClass("legion");
     }

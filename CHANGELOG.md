@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.9.1 - 2019-10-20
+
+### General
+
+- Compatability with 113867+
+
 ## v1.9.0 - 2019-10-05
 
 ### General
