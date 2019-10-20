@@ -9,7 +9,9 @@
   "pitch_rate": 360,
   "rate_of_fire": 8,
   "spread_fire": true,
-  "target_layers": ["WL_Air"],
+  "target_layers": [
+    "WL_Air"
+  ],
   "yaw_range": 360,
   "yaw_rate": 360
 }

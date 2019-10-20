@@ -21,7 +21,9 @@
   "pitch_rate": 3600,
   "rate_of_fire": 2,
   "spread_fire": true,
-  "target_layers": ["WL_Air"],
+  "target_layers": [
+    "WL_Air"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
   "yaw_rate": 3600

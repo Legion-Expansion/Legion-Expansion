@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 4.03457,
   "attachable": {
     "offsets": {
-      "head": [0, -0.2, 1.6],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        -0.2,
+        1.6
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -23,7 +31,12 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 75,
-  "command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Assist", "ORDER_Use"],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
   "events": {
     "died": {
       "audio_cue": "/SE/Death/Veh_small",
@@ -35,7 +48,11 @@
     }
   },
   "max_health": 10,
-  "mesh_bounds": [3.5, 4.5, 2],
+  "mesh_bounds": [
+    3.5,
+    4.5,
+    2
+  ],
   "model": {
     "animations": {
       "drive": "/pa/units/land/land_scout/land_scout_anim_drive.papa"

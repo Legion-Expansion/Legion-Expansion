@@ -6,7 +6,11 @@
   "pitch_range": 70,
   "pitch_rate": 60,
   "rate_of_fire": 1,
-  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air"
+  ],
   "yaw_range": 120,
   "yaw_rate": 60
 }

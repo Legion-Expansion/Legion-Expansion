@@ -11,7 +11,11 @@
   "full_damage_splash_radius": 0,
   "fx_trail": {
     "filename": "/pa/effects/specs/long_bullet.pfx",
-    "offset": [0.0, 0.4, 0.0]
+    "offset": [
+      0.0,
+      0.4,
+      0.0
+    ]
   },
   "lifetime": 0.6,
   "max_velocity": 250,

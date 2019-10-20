@@ -7,7 +7,9 @@
   "atrophy_rate": 13,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 800,
-  "command_caps": ["ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -35,7 +37,11 @@
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 4000,
-  "mesh_bounds": [13.397, 17.409, 10.889],
+  "mesh_bounds": [
+    13.397,
+    17.409,
+    10.889
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
@@ -74,7 +80,10 @@
   "tools": [
     {
       "aim_bone": "bone_pitch",
-      "muzzle_bone": ["socket_muzzleRight", "socket_muzzleLeft"],
+      "muzzle_bone": [
+        "socket_muzzleRight",
+        "socket_muzzleLeft"
+      ],
       "spec_id": "/pa/units/land/l_flame_turret/l_flame_turret_tool_weapon.json"
     }
   ],

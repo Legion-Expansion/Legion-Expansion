@@ -16,7 +16,9 @@
           }
         ]
       ],
-      "builders": ["LegionDefenseAdvancedNukeSilo"],
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
       "instance_count": -1,
       "name": "Legion - Nuke Missile",
       "priority": 151,
@@ -44,7 +46,9 @@
           }
         ]
       ],
-      "builders": ["LegionDefenseAdvancedNukeSilo"],
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
       "instance_count": 2,
       "max_num_assisters": 12,
       "min_num_assisters": 3,
@@ -68,7 +72,9 @@
           }
         ]
       ],
-      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
       "instance_count": -1,
       "name": "Legion - Anti Nuke Missile",
       "priority": 151,
@@ -97,7 +103,9 @@
           }
         ]
       ],
-      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
       "instance_count": -1,
       "max_num_assisters": 12,
       "min_num_assisters": 5,

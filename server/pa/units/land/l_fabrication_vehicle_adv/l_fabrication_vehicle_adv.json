@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 12,
   "attachable": {
     "offsets": {
-      "head": [0, 0.5, 5],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0.5,
+        5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -61,7 +69,11 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 500,
-  "mesh_bounds": [5.2, 5.8, 3.5],
+  "mesh_bounds": [
+    5.2,
+    5.8,
+    3.5
+  ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
     "filename": "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.papa"

@@ -7,8 +7,12 @@
   "pitch_range": 90,
   "pitch_rate": 90,
   "rate_of_fire": 1,
-  "target_layers": ["WL_Orbital"],
-  "target_priorities": ["Orbital"],
+  "target_layers": [
+    "WL_Orbital"
+  ],
+  "target_priorities": [
+    "Orbital"
+  ],
   "yaw_range": 180,
   "yaw_rate": 90
 }

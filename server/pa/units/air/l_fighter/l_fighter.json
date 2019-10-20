@@ -46,19 +46,31 @@
     {
       "bone": "thrust_left",
       "filename": "/pa/units/air/l_fighter/fighter_lines.pfx",
-      "offset": [1.828, -2.175, -1.316],
+      "offset": [
+        1.828,
+        -2.175,
+        -1.316
+      ],
       "type": "moving_forward"
     },
     {
       "bone": "thrust_right",
       "filename": "/pa/units/air/l_fighter/fighter_lines.pfx",
-      "offset": [-1.828, -2.175, -1.31],
+      "offset": [
+        -1.828,
+        -2.175,
+        -1.31
+      ],
       "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_Air",
   "max_health": 150,
-  "mesh_bounds": [9, 6.5, 3.1],
+  "mesh_bounds": [
+    9,
+    6.5,
+    3.1
+  ],
   "model": {
     "arrows": 5,
     "filename": "/pa/units/air/l_fighter/l_fighter.papa"
@@ -94,7 +106,10 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": ["socket_muzzleLeft", "socket_muzzleRight"],
+      "muzzle_bone": [
+        "socket_muzzleLeft",
+        "socket_muzzleRight"
+      ],
       "projectiles_per_fire": 2,
       "spec_id": "/pa/units/air/l_fighter/l_fighter_tool_weapon.json"
     }

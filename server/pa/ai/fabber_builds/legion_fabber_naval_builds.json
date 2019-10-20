@@ -314,7 +314,10 @@
           }
         ]
       ],
-      "builders": ["LegionNavalBasicFabber", "LegionNavalAdvancedFabber"],
+      "builders": [
+        "LegionNavalBasicFabber",
+        "LegionNavalAdvancedFabber"
+      ],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
@@ -382,7 +385,10 @@
           }
         ]
       ],
-      "builders": ["LegionNavalBasicFabber", "LegionNavalAdvancedFabber"],
+      "builders": [
+        "LegionNavalBasicFabber",
+        "LegionNavalAdvancedFabber"
+      ],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,

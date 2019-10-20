@@ -4,7 +4,7 @@
 
 ### General
 
-- Compatability with 113867+
+- Compatibility with 113867+
 
 ## v1.9.0 - 2019-10-05
 

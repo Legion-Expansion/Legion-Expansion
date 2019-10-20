@@ -63,7 +63,11 @@
     }
   ],
   "max_health": 9000,
-  "mesh_bounds": [45, 40, 24],
+  "mesh_bounds": [
+    45,
+    40,
+    24
+  ],
   "model": [
     {
       "animations": {
@@ -80,7 +84,10 @@
     "ignore_gravity": true,
     "radius": 20
   },
-  "placement_size": [100, 100],
+  "placement_size": [
+    100,
+    100
+  ],
   "recon": {
     "observer": {
       "items": [
@@ -93,7 +100,18 @@
       ]
     }
   },
-  "rolloff_dirs": [[0, 1, 0], [0, -1, 0]],
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
   "selection_icon": {
     "diameter": -77
   },

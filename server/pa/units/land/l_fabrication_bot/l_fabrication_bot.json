@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 3.6],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        3.6
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -59,7 +67,11 @@
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 65,
-  "mesh_bounds": [3, 2, 4.5],
+  "mesh_bounds": [
+    3,
+    2,
+    4.5
+  ],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_fabrication_bot/l_fabrication_bot_idle.papa",

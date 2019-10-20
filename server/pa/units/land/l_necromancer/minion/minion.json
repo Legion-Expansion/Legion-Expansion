@@ -5,8 +5,16 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_necromancer/minion/rocket_trail.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "moving"
     }
   ],

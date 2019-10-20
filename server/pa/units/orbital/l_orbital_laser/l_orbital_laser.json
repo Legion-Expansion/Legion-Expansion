@@ -4,12 +4,20 @@
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {
-      "root": [0, 0, 0]
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 5000,
-  "command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack"],
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack"
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -26,7 +34,11 @@
   "guard_layer": "WL_AnySurface",
   "maintain_priority_target": true,
   "max_health": 900,
-  "mesh_bounds": [38, 38, 40],
+  "mesh_bounds": [
+    38,
+    38,
+    40
+  ],
   "model": {
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/l_orbital_laser/l_orbital_laser.papa"

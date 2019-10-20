@@ -4,8 +4,16 @@
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
-      "root": [0, 0, 0]
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
     }
   },
   "audio": {
@@ -53,28 +61,56 @@
     {
       "bone": "socket_muzzle",
       "filename": "/pa/effects/specs/fab_spray.pfx",
-      "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
       "type": "build"
     },
     {
       "bone": "bone_rightWing",
       "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
-      "offset": [1.386, 0, -1.139],
-      "orientation": [0, 90, 0],
+      "offset": [
+        1.386,
+        0,
+        -1.139
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     },
     {
       "bone": "bone_leftWing",
       "filename": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_jets.pfx",
-      "offset": [-1.386, 0, -1.139],
-      "orientation": [0, 90, 0],
+      "offset": [
+        -1.386,
+        0,
+        -1.139
+      ],
+      "orientation": [
+        0,
+        90,
+        0
+      ],
       "type": "moving"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 100,
-  "mesh_bounds": [10.5, 7.52258, 3.9],
+  "mesh_bounds": [
+    10.5,
+    7.52258,
+    3.9
+  ],
   "model": {
     "animations": {
       "fly": "/pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv_anim_fly.papa"
