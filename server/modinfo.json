@@ -3,7 +3,7 @@
   "build": "113867",
   "category": ["titans", "units", "faction"],
   "context": "server",
-  "date": "2019/10/20",
+  "date": "2019/10/21",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"
