@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.9.2 - 2019-10-21
+
+### Bugfix
+
+- Add support for Pumpkin Commander
+
 ## v1.9.1 - 2019-10-20
 
 ### General
