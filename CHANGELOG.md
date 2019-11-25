@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### Bugfix
+
+- Restored missing UNITTYPE tags to Necromancer minion
+
 ## v1.9.2 - 2019-10-21
 
 ### Bugfix
