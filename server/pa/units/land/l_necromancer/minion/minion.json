@@ -36,6 +36,8 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
+    "UNITTYPE_Offense",
+    "UNITTYPE_SelfDestruct",
     "UNITTYPE_Custom1"
   ]
 }
