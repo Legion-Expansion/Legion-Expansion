@@ -1,6 +1,16 @@
 # CHANGELOG
 
-## 1.9.2 - 2019-10-21
+## v1.9.3 - 2019-11-26
+
+### General
+
+- Update Rampart ammo mirroring for 113932
+
+### Bugfix
+
+- Restored missing UNITTYPE tags to Necromancer minion
+
+## v1.9.2 - 2019-10-21
 
 ### Bugfix
 
