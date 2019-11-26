@@ -58,7 +58,7 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "balance",
+  "version": "1.9.3",
   "titansOnly": true,
   "hidden": true
 }
