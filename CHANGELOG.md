@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.9.3 - 2019-11-26
 
 ### General
 
