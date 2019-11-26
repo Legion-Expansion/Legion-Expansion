@@ -2,6 +2,10 @@
 
 ## DEV
 
+### General
+
+- Update Rampart ammo mirroring for 113932
+
 ### Bugfix
 
 - Restored missing UNITTYPE tags to Necromancer minion
