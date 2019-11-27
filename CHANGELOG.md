@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.9.4 - 2019-11-27
+
+### General
+
+- Update Rampart ammo mirroring for 113936
+
 ## v1.9.3 - 2019-11-26
 
 ### General
