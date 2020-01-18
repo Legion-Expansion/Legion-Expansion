@@ -1619,6 +1619,29 @@
             "test_type": "AloneOnPlanet"
           },
           {
+            "boolean": false,
+            "string0": "Tutorial",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
+          }
+        ],
+        [
+          ({
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1631,7 +1654,7 @@
             "unit_type_string0": "Tank & (Hover | Sub)",
             "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
-          }
+          })
         ],
         [
           {
@@ -1662,29 +1685,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "test_type": "CanDeployLandFromBase"
           }
         ]
       ],
