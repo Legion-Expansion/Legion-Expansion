@@ -5,13 +5,13 @@
 ### AI
 
 - Added AI Bugfixes and Enhancements as a dependency to avoid the need to duplicate some of its work
-- Prevent the inclusion of factories in mobile unit ratio checks.
-- Removes unnecessary economy checks from Titan builds.
-- Uncaps the Hover Tank build ratios when there is no land route.
+- Prevent the inclusion of factories in mobile unit ratio checks
+- Removes unnecessary economy checks from Titan builds
+- Uncaps the Hover Tank build ratios when there is no land route
 
 ### Bugfix
 
-- Add missing Titan UNITTYPE to Holocene
+- Added missing Titan UNITTYPE to Holocene
 
 ## v1.9.4 - 2019-11-27
 
