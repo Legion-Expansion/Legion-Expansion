@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v1.9.5 - 2020-01-18
+
+### AI
+
+- Prevent the inclusion of factories in mobile unit ratio checks
+- Removes unnecessary economy checks from Titan builds
+- Uncaps the amphibious and hover tank build ratios when there is no land route
+- Recognises that Vehicle Foundries can be effective even without a land route
+- Recognises that the Advanced Naval Foundry can be effective even without a naval route
+- Can place amphibious units into their own platoon
+- Builds the Thor Titan
+- Builds the Odin Titan
+- Prevents hover units getting stuck on islands with land armies or in ponds with naval fleets
+- Recognise that the Investigator is amphibious
+- Fixed Enforcers being built on islands
+- Uncaps the Necromancer Advanced Suicide Bot build ratio when there is no land route
+- Fixed Deathmarks being built on islands
+
+### General
+
+- Update Rampart ammo mirroring for 113953
+
+### Bugfix
+
+- Added missing Titan UNITTYPE to Holocene
+
 ## v1.9.4 - 2019-11-27
 
 ### General

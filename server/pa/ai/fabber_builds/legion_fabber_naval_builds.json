@@ -276,10 +276,6 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
             "string0": "LegionFactoryAdvancedNaval",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -303,10 +299,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
             "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedNaval",
@@ -370,10 +362,6 @@
           {
             "boolean": false,
             "test_type": "NeedAdvancedNavalFactory"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedNaval",

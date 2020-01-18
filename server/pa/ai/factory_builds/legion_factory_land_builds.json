@@ -121,10 +121,6 @@
             "value0": 150
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "boolean": false,
             "test_type": "HaveFullPlanetIntel"
           }
@@ -150,10 +146,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Scout",
             "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "boolean": false,
@@ -186,14 +178,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Scout",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.05
           }
         ],
@@ -214,7 +202,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Land & Scout",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.05
           },
           {
@@ -360,13 +348,6 @@
           {
             "boolean": true,
             "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.35
           }
         ],
         [
@@ -381,13 +362,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "value0": 0.35
           },
           {
             "boolean": true,
@@ -433,7 +407,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           }
         ],
@@ -454,7 +428,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           },
           {
@@ -507,7 +481,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           }
         ],
@@ -539,7 +513,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.25
           }
         ],
@@ -574,7 +548,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           },
           {
@@ -620,7 +594,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank & Construction) - Fabber",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           }
         ],
@@ -641,7 +615,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank & Construction) - Fabber",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           },
           {
@@ -741,7 +715,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           }
         ],
@@ -762,7 +736,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           },
           {
@@ -802,11 +776,33 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -826,7 +822,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
           },
           {
@@ -866,11 +862,33 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -890,7 +908,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
           },
           {
@@ -1027,6 +1045,10 @@
             "test_type": "AloneOnPlanet"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
@@ -1087,7 +1109,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           }
         ],
@@ -1108,7 +1130,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           },
           {
@@ -1155,7 +1177,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           }
         ],
@@ -1176,7 +1198,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           },
           {
@@ -1259,8 +1281,26 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & SelfDestruct",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -1280,7 +1320,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & SelfDestruct",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           },
           {
@@ -1333,7 +1373,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           }
         ],
@@ -1365,7 +1405,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.25
           }
         ],
@@ -1400,7 +1440,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.1
           },
           {
@@ -1501,7 +1541,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           }
         ],
@@ -1522,7 +1562,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.5
           },
           {
@@ -1562,10 +1602,14 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           }
         ],
@@ -1586,7 +1630,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           },
           {
@@ -1614,11 +1658,33 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -1638,7 +1704,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
           },
           {
@@ -1678,10 +1744,14 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           }
         ],
@@ -1702,7 +1772,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           },
           {
@@ -1749,7 +1819,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           }
         ],
@@ -1770,7 +1840,7 @@
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.35
           },
           {

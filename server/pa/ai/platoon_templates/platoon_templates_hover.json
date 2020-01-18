@@ -1,0 +1,84 @@
+{
+  "platoon_templates": {
+    "Hover_Raid_Large": {
+      "units": [
+        {
+          "max_count": 19,
+          "min_count": 0,
+          "squad": "General",
+          "unit_types": "(Hover & Mobile) - Artillery - Fabber - Deconstruction - Titan"
+        },
+        {
+          "max_count": 19,
+          "min_count": 0,
+          "squad": "Artillery",
+          "unit_types": "(Hover & Mobile) & Artillery - Fabber - Deconstruction - Titan"
+        }
+      ]
+    },
+    "Hover_Raid_Max": {
+      "units": [
+        {
+          "max_count": -1,
+          "min_count": 0,
+          "squad": "General",
+          "unit_types": "(Hover & Mobile) - Artillery - Fabber - Deconstruction - Titan"
+        },
+        {
+          "max_count": -1,
+          "min_count": 0,
+          "squad": "Artillery",
+          "unit_types": "(Hover & Mobile) & Artillery - Fabber - Deconstruction - Titan"
+        }
+      ]
+    },
+    "Hover_Raid_Medium": {
+      "units": [
+        {
+          "max_count": 9,
+          "min_count": 0,
+          "squad": "General",
+          "unit_types": "(Hover & Mobile) - Artillery - Fabber - Deconstruction - Titan"
+        },
+        {
+          "max_count": 9,
+          "min_count": 0,
+          "squad": "Artillery",
+          "unit_types": "(Hover & Mobile) & Artillery - Fabber - Deconstruction - Titan"
+        }
+      ]
+    },
+    "Hover_Raid_Small": {
+      "units": [
+        {
+          "max_count": 3,
+          "min_count": 0,
+          "squad": "General",
+          "unit_types": "(Hover & Mobile) - Artillery - Fabber - Deconstruction - Titan"
+        },
+        {
+          "max_count": 3,
+          "min_count": 0,
+          "squad": "Artillery",
+          "unit_types": "(Hover & Mobile) & Artillery - Fabber - Deconstruction - Titan"
+        }
+      ]
+    },
+    "Hover_Raid_XLarge": {
+      "units": [
+        {
+          "max_count": 39,
+          "min_count": 0,
+          "squad": "General",
+          "unit_types": "(Hover & Mobile) - Artillery - Fabber - Deconstruction - Titan"
+        },
+        {
+          "max_count": 39,
+          "min_count": 0,
+          "squad": "Artillery",
+          "unit_types": "(Hover & Mobile) & Artillery - Fabber - Deconstruction - Titan"
+        }
+      ]
+    }
+  }
+}

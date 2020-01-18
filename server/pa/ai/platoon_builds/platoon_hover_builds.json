@@ -1,0 +1,164 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
+            "value0": 1
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Hover Raid Platoon Small",
+      "priority": 109,
+      "task_type": "LandAttack",
+      "to_build": "Hover_Raid_Small"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
+            "value0": 4
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Hover Raid Platoon Medium",
+      "priority": 108,
+      "task_type": "LandAttack",
+      "to_build": "Hover_Raid_Medium"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
+            "value0": 10
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Hover Raid Platoon Large",
+      "priority": 107,
+      "task_type": "LandAttack",
+      "to_build": "Hover_Raid_Large"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
+            "value0": 20
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Hover Raid Platoon XLarge",
+      "priority": 106,
+      "task_type": "LandAttack",
+      "to_build": "Hover_Raid_XLarge"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
+            "value0": 40
+          },
+          {
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "instance_count": 1,
+      "name": "Hover Raid Platoon Max",
+      "priority": 105,
+      "task_type": "LandAttack",
+      "to_build": "Hover_Raid_Max"
+    }
+  ]
+}
