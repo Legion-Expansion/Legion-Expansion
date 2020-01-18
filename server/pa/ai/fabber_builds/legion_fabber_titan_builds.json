@@ -20,10 +20,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "string0": "LegionTitanAdvancedBot",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
             "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
@@ -74,10 +70,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "string0": "LegionTitanAdvancedVehicle",
-            "test_type": "CanAffordPotentialDrain"
           },
           {
             "compare0": ">=",
@@ -131,10 +123,6 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "string0": "LegionTitanAdvancedAir",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
             "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
@@ -176,10 +164,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "string0": "LegionTitanAdvancedOrbital",
-            "test_type": "CanAffordPotentialDrain"
           },
           {
             "compare0": ">=",
@@ -242,10 +226,6 @@
             "compare0": ">=",
             "test_type": "PlanetCount",
             "value0": 2
-          },
-          {
-            "string0": "LegionTitanAdvancedStructure",
-            "test_type": "CanAffordPotentialDrain"
           },
           {
             "boolean": false,

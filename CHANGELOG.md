@@ -5,6 +5,7 @@
 ### AI
 
 - Prevent the inclusion of factories in mobile unit ratio checks.
+- Removes unnecessary economy checks from Titan builds.
 
 ### Bugfix
 
