@@ -18,7 +18,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover & Mobile) & Custom1) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -55,7 +55,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover & Mobile) & Custom1) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -92,7 +92,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover & Mobile) & Custom1) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -129,7 +129,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover & Mobile) & Custom1) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -166,7 +166,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Hover & Mobile) & Custom1) - Fabber - Deconstruction - Titan",
+            "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
             "compare0": ">=",
             "value0": 40
           },
