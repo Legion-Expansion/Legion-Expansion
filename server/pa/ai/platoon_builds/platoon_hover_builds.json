@@ -45,11 +45,6 @@
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
@@ -80,11 +75,6 @@
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
           },
           {
             "compare0": ">=",
@@ -119,11 +109,6 @@
             "test_type": "EnemySurfacePresenceOnPlanet"
           },
           {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Hover & Mobile & Custom1) - Fabber - Deconstruction - Titan",
@@ -154,11 +139,6 @@
           {
             "boolean": true,
             "test_type": "EnemySurfacePresenceOnPlanet"
-          },
-          {
-            "boolean": false,
-            "string0": "Tutorial",
-            "test_type": "HasPersonalityTag"
           },
           {
             "compare0": ">=",
