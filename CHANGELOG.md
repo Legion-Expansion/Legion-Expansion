@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### AI
+
+- Prevent the inclusion of factories in mobile unit ratio checks.
+
 ## v1.9.4 - 2019-11-27
 
 ### General
