@@ -21,6 +21,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -42,6 +46,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -71,6 +79,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -293,6 +305,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -334,6 +350,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -503,6 +523,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
             "string0": "LegionFactoryAdvancedBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -624,10 +648,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionVehicleBasicFabber",
-        "LegionVehicleAdvancedFabber"
-      ],
+      "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
@@ -690,6 +711,10 @@
           {
             "string0": "LegionFactoryAdvancedBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           },
           {
             "string0": "LegionFactoryAdvancedBot",
@@ -771,10 +796,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionVehicleBasicFabber",
-        "LegionVehicleAdvancedFabber"
-      ],
+      "builders": ["LegionVehicleBasicFabber", "LegionVehicleAdvancedFabber"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
