@@ -19,6 +19,6 @@
     "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"]
   },
   "signature": "not yet implemented",
-  "version": "balance",
+  "version": "1.9.5",
   "titansOnly": true
 }
