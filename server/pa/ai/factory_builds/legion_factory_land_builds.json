@@ -1264,6 +1264,24 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
             "boolean": true,
             "test_type": "AloneOnPlanet"
           },

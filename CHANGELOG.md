@@ -16,6 +16,7 @@
 - Prevents hover units getting stuck on islands with land armies or in ponds with naval fleets
 - Recognise that the Investigator is amphibious
 - Fixed Enforcers being built on islands
+- Uncaps the Necromancer Advanced Suicide Bot build ratio when there is no land route
 
 ### Bugfix
 
