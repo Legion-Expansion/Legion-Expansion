@@ -802,11 +802,38 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
             "unit_type_string1": "((Tank | Bot) & Mobile) - Fabber",
             "value0": 0.2
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": false,
+            "string0": "Tutorial",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -1562,6 +1589,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & Artillery",
@@ -1614,6 +1645,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Tank & (Hover | Sub)",
@@ -1650,6 +1685,29 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": false,
+            "string0": "Tutorial",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "boolean": false,
+            "test_type": "CanDeployLandFromBase"
           }
         ]
       ],

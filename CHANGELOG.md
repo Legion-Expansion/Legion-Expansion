@@ -6,6 +6,7 @@
 
 - Prevent the inclusion of factories in mobile unit ratio checks.
 - Removes unnecessary economy checks from Titan builds.
+- Uncaps the Hover Tank build ratios when there is no land route.
 
 ### Bugfix
 
