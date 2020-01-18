@@ -11,6 +11,8 @@
 - Recognises that Vehicle Foundries can be effective even without a land route
 - Recognises that the Advanced Naval Foundry can be effective even without a naval route
 - Can place amphibious units into their own platoon
+- Builds the Thor Titan
+- Builds the Odin Titan
 
 ### Bugfix
 

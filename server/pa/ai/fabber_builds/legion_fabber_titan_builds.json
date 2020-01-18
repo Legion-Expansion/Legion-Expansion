@@ -48,7 +48,7 @@
           "value": 50
         }
       },
-      "priority": 0,
+      "priority": 480,
       "shared_instance_count": "Titan",
       "to_build": "LegionTitanAdvancedBot"
     },
@@ -99,7 +99,7 @@
           "value": 50
         }
       },
-      "priority": 0,
+      "priority": 480,
       "shared_instance_count": "Titan",
       "to_build": "LegionTitanAdvancedVehicle"
     },
