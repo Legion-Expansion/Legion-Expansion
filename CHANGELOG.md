@@ -17,6 +17,7 @@
 - Recognise that the Investigator is amphibious
 - Fixed Enforcers being built on islands
 - Uncaps the Necromancer Advanced Suicide Bot build ratio when there is no land route
+- Fixed Deathmarks being built on islands
 
 ### Bugfix
 
