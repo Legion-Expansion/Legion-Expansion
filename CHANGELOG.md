@@ -10,7 +10,6 @@
 - Uncaps the Hover Tank build ratios when there is no land route
 - Recognises that Vehicle Foundries can be effective even without a land route
 - Recognises that the Advanced Naval Foundry can be effective even without a naval route
-- Only builds the Walker Foundries if a land route is available
 
 ### Bugfix
 
