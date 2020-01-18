@@ -7,7 +7,7 @@
 - Added AI Bugfixes and Enhancements as a dependency to avoid the need to duplicate some of its work
 - Prevent the inclusion of factories in mobile unit ratio checks
 - Removes unnecessary economy checks from Titan builds
-- Uncaps the Hover Tank build ratios when there is no land route
+- Uncaps the amphibious and hover tank build ratios when there is no land route
 - Recognises that Vehicle Foundries can be effective even without a land route
 - Recognises that the Advanced Naval Foundry can be effective even without a naval route
 - Can place amphibious units into their own platoon
@@ -15,7 +15,6 @@
 - Builds the Odin Titan
 - Prevents hover units getting stuck on islands with land armies or in ponds with naval fleets
 - Recognise that the Investigator is amphibious
-- Fixed Lancer ratio check
 
 ### Bugfix
 
