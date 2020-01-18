@@ -4,7 +4,6 @@
 
 ### AI
 
-- Added AI Bugfixes and Enhancements as a dependency to avoid the need to duplicate some of its work
 - Prevent the inclusion of factories in mobile unit ratio checks
 - Removes unnecessary economy checks from Titan builds
 - Uncaps the amphibious and hover tank build ratios when there is no land route
