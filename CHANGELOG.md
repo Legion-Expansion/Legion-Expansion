@@ -19,6 +19,10 @@
 - Uncaps the Necromancer Advanced Suicide Bot build ratio when there is no land route
 - Fixed Deathmarks being built on islands
 
+### General
+
+- Update Rampart ammo mirroring for 113953
+
 ### Bugfix
 
 - Added missing Titan UNITTYPE to Holocene

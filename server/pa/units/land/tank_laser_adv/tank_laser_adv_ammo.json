@@ -11,7 +11,7 @@
     "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_trail.pfx"
   },
   "initial_velocity": 160.0,
-  "lifetime": 2,
+  "lifetime": 1,
   "max_velocity": 160.0,
   "physics": {
     "add_to_spatial_db": true,
