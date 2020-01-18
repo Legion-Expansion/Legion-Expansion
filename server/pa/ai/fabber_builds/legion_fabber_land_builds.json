@@ -147,10 +147,6 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -172,10 +168,6 @@
           {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -205,10 +197,6 @@
           {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -413,10 +401,6 @@
             "test_type": "NeedBasicVehicleFactory"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
           },
@@ -458,10 +442,6 @@
           {
             "boolean": true,
             "test_type": "NeedBasicVehicleFactory"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -608,10 +588,6 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "string0": "LegionFactoryAdvancedVehicle",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -641,10 +617,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
             "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedVehicle",
@@ -788,10 +760,6 @@
           {
             "boolean": true,
             "test_type": "NeedAdvancedVehicleFactory"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedVehicle",
