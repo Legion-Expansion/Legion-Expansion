@@ -6,6 +6,10 @@
 
 - Prevent the inclusion of factories in mobile unit ratio checks.
 
+### Bugfix
+
+- Add missing Titan UNITTYPE to Holocene
+
 ## v1.9.4 - 2019-11-27
 
 ### General
