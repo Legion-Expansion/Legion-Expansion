@@ -13,6 +13,7 @@
       ]
     }
   },
+  "attack_range_frac": 0,
   "audio": {
     "loops": {
       "enabled": {
