@@ -6,8 +6,7 @@
   "date": "2019/11/27",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
-    "com.pa.legion-expansion-client",
-    "com.pa.quitch.AIBugfixEnhancement"
+    "com.pa.legion-expansion-client"
   ],
   "companions": ["com.pa.legion-expansion-client"],
   "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
