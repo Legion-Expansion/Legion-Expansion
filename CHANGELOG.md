@@ -14,6 +14,7 @@
 - Builds the Thor Titan
 - Builds the Odin Titan
 - Prevents hover units getting stuck on islands with land armies or in ponds with naval fleets
+- Recognise that the Investigator is amphibious
 
 ### Bugfix
 

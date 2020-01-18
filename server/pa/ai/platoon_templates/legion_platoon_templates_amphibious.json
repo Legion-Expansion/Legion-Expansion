@@ -19,6 +19,12 @@
           "min_count": 0,
           "squad": "Suicide",
           "unit_types": "(Bot & Advanced & SelfDestruct & Mobile) - Fabber - Titan"
+        },
+        {
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense",
+          "unit_types": "Land & Scout & Custom1 - Titan"
         }
       ]
     },
@@ -41,6 +47,12 @@
           "min_count": 0,
           "squad": "Suicide",
           "unit_types": "(Bot & Advanced & SelfDestruct & Mobile) - Fabber - Titan"
+        },
+        {
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense",
+          "unit_types": "Land & Scout & Custom1 - Titan"
         }
       ]
     },
@@ -63,6 +75,12 @@
           "min_count": 0,
           "squad": "Suicide",
           "unit_types": "(Bot & Advanced & SelfDestruct & Mobile) - Fabber - Titan"
+        },
+        {
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense",
+          "unit_types": "Land & Scout & Custom1 - Titan"
         }
       ]
     },
@@ -85,6 +103,12 @@
           "min_count": 0,
           "squad": "Suicide",
           "unit_types": "(Bot & Advanced & SelfDestruct & Mobile) - Fabber - Titan"
+        },
+        {
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense",
+          "unit_types": "Land & Scout & Custom1 - Titan"
         }
       ]
     },
@@ -107,6 +131,12 @@
           "min_count": 0,
           "squad": "Suicide",
           "unit_types": "(Bot & Advanced & SelfDestruct & Mobile) - Fabber - Titan"
+        },
+        {
+          "min_count": 0,
+          "percent": 0.05,
+          "squad": "Defense",
+          "unit_types": "Land & Scout & Custom1 - Titan"
         }
       ]
     }

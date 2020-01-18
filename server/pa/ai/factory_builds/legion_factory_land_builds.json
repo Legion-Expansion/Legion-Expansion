@@ -121,10 +121,6 @@
             "value0": 150
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
             "boolean": false,
             "test_type": "HaveFullPlanetIntel"
           }
@@ -150,10 +146,6 @@
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Land & Scout",
             "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "boolean": false,
@@ -184,10 +176,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
           },
           {
             "compare0": "<",
