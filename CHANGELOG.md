@@ -26,6 +26,12 @@
 
 - Added missing Titan UNITTYPE to Holocene
 
+### Balance
+
+- Orbital
+  - Tyr
+    - Moves closer to the target when attacking to maximise the damage done
+
 ## v1.9.4 - 2019-11-27
 
 ### General
