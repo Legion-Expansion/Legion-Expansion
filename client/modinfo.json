@@ -3,7 +3,7 @@
   "build": "113953",
   "category": ["titans", "units", "faction"],
   "context": "client",
-  "date": "2020/01/18",
+  "date": "2020/01/19",
   "dependencies": ["com.pa.legion-expansion-server"],
   "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
   "display_name": "Legion Expansion Client",
@@ -58,7 +58,7 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "1.9.5",
+  "version": "1.9.6",
   "titansOnly": true,
   "hidden": true
 }

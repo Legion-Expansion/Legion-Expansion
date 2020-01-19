@@ -21,6 +21,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -42,6 +46,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -71,6 +79,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -147,6 +159,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -168,6 +184,10 @@
           {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -197,6 +217,10 @@
           {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -293,6 +317,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -334,6 +362,10 @@
           {
             "string0": "LegionFactoryBasicBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicBot",
@@ -405,6 +437,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -446,6 +482,10 @@
           {
             "string0": "LegionFactoryBasicVehicle",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryBasicVehicle",
@@ -501,6 +541,10 @@
           {
             "string0": "LegionFactoryAdvancedBot",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedBot",
@@ -586,6 +630,10 @@
           {
             "string0": "LegionFactoryAdvancedVehicle",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedVehicle",
@@ -692,6 +740,10 @@
             "test_type": "CanAffordPotentialDrain"
           },
           {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
+          },
+          {
             "string0": "LegionFactoryAdvancedBot",
             "test_type": "CanFindPlaceToBuild"
           }
@@ -764,6 +816,10 @@
           {
             "string0": "LegionFactoryAdvancedVehicle",
             "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployLandFromBase"
           },
           {
             "string0": "LegionFactoryAdvancedVehicle",

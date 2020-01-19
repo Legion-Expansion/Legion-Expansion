@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.9.6 - 2020-01-19
+
+### AI
+
+- Reversal of island approach, now tries to avoid putting land factories on islands
+- Workaround for AI not building for several seconds when starting air
+
 ## v1.9.5 - 2020-01-18
 
 ### AI
