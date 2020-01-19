@@ -3,7 +3,7 @@
   "build": "113953",
   "category": ["titans", "units", "faction"],
   "context": "server",
-  "date": "2020/01/18",
+  "date": "2020/01/19",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"
@@ -19,6 +19,6 @@
     "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"]
   },
   "signature": "not yet implemented",
-  "version": "balance",
+  "version": "1.9.6",
   "titansOnly": true
 }
