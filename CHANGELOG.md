@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## DEV
+
+### Balance
+
+- Orbital
+  - Fabrication Starship
+    - Can now build the Basic Mass Extractor
+
 ## v1.9.6 - 2020-01-19
 
 ### AI
