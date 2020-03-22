@@ -10,6 +10,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "DesireMetal"
           },
           {
@@ -60,6 +64,10 @@
           },
           {
             "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
+            "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -89,6 +97,10 @@
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
           },
           {
             "boolean": false,
@@ -146,6 +158,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -179,6 +195,10 @@
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -240,6 +260,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -284,6 +308,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "DesireMetal"
           },
           {
@@ -326,6 +354,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "boolean": true,
             "test_type": "CanFindMetalSpotToBuildBasic"
           },
@@ -352,6 +384,10 @@
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
           },
           {
             "boolean": true,
@@ -403,6 +439,10 @@
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
           },
           {
             "test_type": "CanAffordBuildDemand"
