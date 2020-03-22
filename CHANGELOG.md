@@ -2,6 +2,10 @@
 
 ## DEV
 
+### AI
+
+- Updated for Fabrication Starship change
+
 ### Balance
 
 - Orbital

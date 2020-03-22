@@ -25,7 +25,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire - Area",
@@ -205,7 +206,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
@@ -253,7 +255,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
@@ -290,7 +293,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire",
@@ -368,7 +372,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand 1",
@@ -409,7 +414,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri",
