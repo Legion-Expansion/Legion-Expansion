@@ -125,7 +125,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand - Area 1",
