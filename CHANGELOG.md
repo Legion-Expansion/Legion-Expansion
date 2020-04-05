@@ -11,6 +11,9 @@
 - Orbital
   - Fabrication Starship
     - Can now build the Basic Mass Extractor
+- Sea
+  - Meteoroid
+    - Commander now first target priority
 
 ## v1.9.6 - 2020-01-19
 

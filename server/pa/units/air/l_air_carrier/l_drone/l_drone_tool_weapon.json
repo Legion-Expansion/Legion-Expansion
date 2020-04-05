@@ -12,6 +12,7 @@
     "WL_Air"
   ],
   "target_priorities": [
+    "Commander",
     "Air",
     "Mobile",
     "Structure - Wall",
