@@ -20,6 +20,8 @@
 - Orbital
   - Fabrication Starship
     - Can now build the Basic Mass Extractor
+  - Meteoroid
+    - Updated targeting priorities to include those of its sea counterpart
   - Tyr
     - Aligned targeting priorities with those of the Helios
 - Sea
