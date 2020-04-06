@@ -8,9 +8,15 @@
 
 ### Balance
 
+- Air
+  - Loki
+    - Added the Rampart to the priority list
 - Land
+  - Odin
+    - Added the Rampart to the priority list
   - Thor
     - Fixed targeting priorities
+    - Added the Rampart to the priority list
 - Orbital
   - Fabrication Starship
     - Can now build the Basic Mass Extractor
