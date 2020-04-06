@@ -113,9 +113,9 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Fighter",
     "UNITTYPE_Mobile",
     "UNITTYPE_Air",
-    "UNITTYPE_Basic"
+    "UNITTYPE_Basic",
+    "UNITTYPE_Custom1"
   ]
 }

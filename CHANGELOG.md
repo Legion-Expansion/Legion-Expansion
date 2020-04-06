@@ -28,6 +28,12 @@
   - Meteoroid
     - Commander now first target priority
 
+### Bugfix
+
+- Corrected UNITTYPE on Meteroid
+- Corrected UNITTYPE on Nanoswarm
+- Corrected UNITTYPE on Purifier
+
 ## v1.9.6 - 2020-01-19
 
 ### AI
