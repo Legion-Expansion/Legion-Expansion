@@ -8,6 +8,9 @@
 
 ### Balance
 
+- Land
+  - Thor
+    - Fixed targeting priorities
 - Orbital
   - Fabrication Starship
     - Can now build the Basic Mass Extractor

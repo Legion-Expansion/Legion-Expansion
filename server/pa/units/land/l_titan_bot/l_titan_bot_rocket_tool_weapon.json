@@ -15,7 +15,10 @@
     "WL_WaterSurface"
   ],
   "target_priorities": [
-    "Titan"
+    "Commander",
+    "Titan & ( Land | Naval )",
+    "Artillery & Advanced & ( Land | Naval )",
+    "Nuke | NukeDefense"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
