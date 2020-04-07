@@ -18,7 +18,7 @@ if (!legionExpansionLoaded) {
 
       model.isLegion = function(type) {
         if (themesetting === "ON") {
-          haslegionunit = false;
+          var haslegionunit = false;
           try {
             if (type.indexOf("/l_") > 2) {
               haslegionunit = true;
