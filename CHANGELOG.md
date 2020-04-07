@@ -579,9 +579,9 @@ Translations added:
 - The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
 - Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
 - Report any crashes experienced while playing with Legion
-  - Windows - https://wiki.palobby.com/wiki/Windows#Reporting_Windows_Issues
-  - OS X - https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues
-  - Linux - https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues
+  - [Windows](https://wiki.palobby.com/wiki/Windows#Reporting_Windows_Issues)
+  - [OS X](https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues)
+  - [Linux](https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues)
 
 ### General
 
@@ -750,7 +750,7 @@ Translations added:
 
 ### Balance
 
-Full unit stats - https://palobby.com/legion-expansion/units
+[Full unit stats](https://palobby.com/legion-expansion/units)
 
 - Tyr buff:
   - Can now target underwater and seafloor units
