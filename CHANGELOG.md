@@ -14,6 +14,8 @@
   - Loki
     - Added the Rampart to the priority list
 - Land
+  - Iron Dome
+    - Metal cost increased from 12000 to 15600
   - Odin
     - Added the Rampart to the priority list
   - Thor
