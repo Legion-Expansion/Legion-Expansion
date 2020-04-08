@@ -32,9 +32,9 @@
 
 ### Bugfix
 
-- Corrected UNITTYPE on Meteroid
-- Corrected UNITTYPE on Nanoswarm
-- Corrected UNITTYPE on Purifier
+- Corrected UNITTYPEs on Meteroid
+- Corrected UNITTYPEs on Nanoswarm
+- Corrected UNITTYPEs on Purifier
 
 ## v1.9.6 - 2020-01-19
 
