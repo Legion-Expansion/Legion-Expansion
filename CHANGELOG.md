@@ -12,15 +12,15 @@
 
 - Air
   - Loki
-    - Added the Rampart to the priority list
+    - Added the Rampart to the priority target list
 - Land
   - Iron Dome
     - Metal cost increased from 12000 to 15600
   - Odin
-    - Added the Rampart to the priority list
+    - Added the Rampart to the priority target list
   - Thor
     - Fixed targeting priorities
-    - Added the Rampart to the priority list
+    - Added the Rampart to the priority target list
 - Orbital
   - Fabrication Starship
     - Can now build the Basic Mass Extractor
