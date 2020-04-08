@@ -5,6 +5,8 @@
 ### AI
 
 - Updated for Fabrication Starship change
+- Will now build the Ripple
+- Will now build the Tsunami
 
 ### Balance
 
