@@ -2,7 +2,7 @@
   var processGameBeacon = model.processGameBeacon;
   model.processGameBeacon = function(beacon, region, lobby_id, host, port) {
     var result = processGameBeacon.apply(model, arguments);
-    if (result.hasOwnProperty("mod_names")) {
+    if (Object.prototype.hasOwnProperty.call(result, "mod_names")) {
       for (var i = 0; i < result["mod_names"].length; i++) {
         if (result["mod_names"][i].startsWith("Legion Expansion")) {
           result["legion"] = true;
