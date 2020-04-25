@@ -1,10 +1,16 @@
 # CHANGELOG
 
-## 1.10.0 - 2020-04-25
+## v1.10.1 - 2020-04-25
+
+### Bugfix
+
+- Fabrication Starship can now build the Basic Mass Extractor for real
+
+## v1.10.0 - 2020-04-25
 
 ### General
 
-- Update Rampart ammo mirroring for 114218
+- Updated Rampart ammo mirroring for 114218
 
 ### Balance
 
