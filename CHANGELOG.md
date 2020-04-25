@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## 1.10.0 - 2020-04-25
+
+### General
+
+- Update Rampart ammo mirroring for 114218
+
+### Balance
+
+- Air
+  - Loki
+    - Added the Rampart to the priority target list
+- Land
+  - Iron Dome
+    - Metal cost increased from 12000 to 15600
+  - Odin
+    - Added the Rampart to the priority target list
+  - Thor
+    - Fixed targeting priorities
+    - Added the Rampart to the priority target list
+- Orbital
+  - Fabrication Starship
+    - Can now build the Basic Mass Extractor
+  - Meteoroid
+    - Updated targeting priorities to include those of its sea counterpart
+  - Tyr
+    - Aligned targeting priorities with those of the Helios
+- Sea
+  - Meteoroid
+    - Commander now first target priority
+
+### AI
+
+- Updated for Fabrication Starship change
+- Builds the Ripple
+- Builds the Tsunami
+
+### Bugfix
+
+- Corrected UNITTYPEs on Meteroid
+- Corrected UNITTYPEs on Nanoswarm
+- Corrected UNITTYPEs on Purifier
+
 ## v1.9.6 - 2020-01-19
 
 ### AI
@@ -545,9 +587,9 @@ Translations added:
 - The server mod HodgePodge has been added as a dependency. If your strategic icons are missing you need to install this mod in CMM.
 - Please uninstall Weapons Tracking as the required changes have been merged directly into Legion.
 - Report any crashes experienced while playing with Legion
-  - Windows - https://wiki.palobby.com/wiki/Windows#Reporting_Windows_Issues
-  - OS X - https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues
-  - Linux - https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues
+  - [Windows](https://wiki.palobby.com/wiki/Windows#Reporting_Windows_Issues)
+  - [OS X](https://wiki.palobby.com/wiki/OS_X#Reporting_OS_X_Issues)
+  - [Linux](https://wiki.palobby.com/wiki/Linux/SteamOS#Reporting_Linux_Issues)
 
 ### General
 
@@ -716,7 +758,7 @@ Translations added:
 
 ### Balance
 
-Full unit stats - https://palobby.com/legion-expansion/units
+[Full unit stats](https://palobby.com/legion-expansion/units)
 
 - Tyr buff:
   - Can now target underwater and seafloor units

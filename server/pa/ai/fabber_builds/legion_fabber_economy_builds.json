@@ -10,6 +10,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "DesireMetal"
           },
           {
@@ -25,7 +29,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire - Area",
@@ -59,6 +64,10 @@
           },
           {
             "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
+            "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -91,6 +100,10 @@
           },
           {
             "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
+            "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -112,7 +125,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand - Area 1",
@@ -145,6 +159,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -180,6 +198,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -205,7 +227,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
@@ -238,6 +261,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -253,7 +280,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
@@ -281,6 +309,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "DesireMetal"
           },
           {
@@ -290,7 +322,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire",
@@ -322,6 +355,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "boolean": true,
             "test_type": "CanFindMetalSpotToBuildBasic"
           },
@@ -350,6 +387,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "boolean": true,
             "test_type": "CanFindMetalSpotToBuildBasic"
           },
@@ -368,7 +409,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Expand 1",
@@ -400,6 +442,10 @@
             "test_type": "HasPersonalityTag"
           },
           {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -409,7 +455,8 @@
         ]
       ],
       "builders": [
-        "AnyLegionFabberBasic"
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
       "name": "Legion - Basic Metal Extractor - Expand Low Pri",

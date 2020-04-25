@@ -73,6 +73,7 @@ if (!legionExpansionLoaded) {
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
       //see global.js
+      // eslint-disable-next-line no-undef
       var legionspecids = legionglobal.builders;
 
       model.isLegionOrMixedOrVanilla = function(data) {

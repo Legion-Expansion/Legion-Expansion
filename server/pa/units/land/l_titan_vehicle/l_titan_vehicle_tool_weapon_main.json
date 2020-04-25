@@ -19,7 +19,8 @@
     "Commander",
     "Titan & (Land | Naval)",
     "Artillery & Advanced & (Land | Naval)",
-    "Nuke | NukeDefense"
+    "Nuke | NukeDefense",
+    "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1"
   ],
   "yaw_range": 180,
   "yaw_rate": 20
