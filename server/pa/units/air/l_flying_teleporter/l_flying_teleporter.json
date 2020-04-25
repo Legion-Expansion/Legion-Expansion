@@ -143,7 +143,7 @@
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
-  "guard_layer": "WL_Anysurface",
+  "guard_layer": "WL_AnySurface",
   "max_health": 1900,
   "mesh_bounds": [
     35,

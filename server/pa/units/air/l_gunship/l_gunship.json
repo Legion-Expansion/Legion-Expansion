@@ -91,7 +91,7 @@
       "type": "moving"
     }
   ],
-  "guard_layer": "WL_Anysurface",
+  "guard_layer": "WL_AnySurface",
   "max_health": 400,
   "mesh_bounds": [
     8.5,
