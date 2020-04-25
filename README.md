@@ -1,4 +1,6 @@
-# Legion Expansion Licensing
+# Legion Expansion for Planetary Annihilation: TITANS
+
+## Licensing
 
 Legion Expansion is dual licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
 
@@ -12,7 +14,7 @@ Using a GitHub fork containing all changes will satisfy the [Creative Commons At
 
 See [Best Practices for Attribution](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution).
 
-## Example Attribution
+### Example Attribution
 
 This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
 
@@ -44,7 +46,7 @@ This project is not the work of one, but of a legion.
 | WPMarshall      | Playtester                         |
 | xankar          | Playtester                         |
 
-# Installation
+## Installation
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager. You will need to [enable Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
@@ -56,13 +58,13 @@ To create a copy for testing local changes:
 4. Run install_local.py - requires the pa_tools submodule
 5. Within PA's Community Mods enable the '[DEVELOPMENT]' version of the mod
 
-# Translations
+## Translations
 
 If you would like to help translate Legion Expansion to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
 
-# Legion Expansion Development
+## Legion Expansion Development
 
-## Structure
+### Structure
 
 Please remove all unnecessary files from the pa and ui directories.
 
@@ -74,7 +76,7 @@ Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and
 
 Latest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
-## Committing
+### Committing
 
 1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
 2. Run format.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
@@ -93,7 +95,7 @@ HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merge
 
 RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
 
-## Units
+### Units
 
 Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
 
