@@ -6,12 +6,6 @@
 
 - Update Rampart ammo mirroring for 114218
 
-### AI
-
-- Updated for Fabrication Starship change
-- Builds the Ripple
-- Builds the Tsunami
-
 ### Balance
 
 - Air
@@ -35,6 +29,12 @@
 - Sea
   - Meteoroid
     - Commander now first target priority
+
+### AI
+
+- Updated for Fabrication Starship change
+- Builds the Ripple
+- Builds the Tsunami
 
 ### Bugfix
 
