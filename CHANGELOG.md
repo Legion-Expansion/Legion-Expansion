@@ -4,7 +4,7 @@
 
 ### General
 
-- Update Rampart ammo mirroring for 114218
+- Updated Rampart ammo mirroring for 114218
 
 ### Balance
 
