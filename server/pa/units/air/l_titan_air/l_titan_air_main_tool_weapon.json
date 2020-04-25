@@ -15,7 +15,7 @@
     "WL_LandHorizontal",
     "WL_WaterSurface",
     "WL_Air",
-    "WL_SeaFloor",
+    "WL_Seafloor",
     "WL_Underwater"
   ],
   "target_priorities": [
