@@ -2,6 +2,10 @@
 
 ## DEV
 
+### General
+
+- Update Rampart ammo mirroring for 114218
+
 ### AI
 
 - Updated for Fabrication Starship change
