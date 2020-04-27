@@ -6,6 +6,7 @@
 
 - Corrected layout of theme settings in the gameplay tab
 - Legion version number correctly formatted when in-game theme is disabled
+- Fixed colour and position errors when the Legion menu theme was active
 
 ## v1.10.1 - 2020-04-25
 
