@@ -21,7 +21,11 @@ if (!legionExpansionLoaded) {
   function legionExpansion() {
     var patchName = "legionExpansion live_game_options_bar.js";
 
-    console.log(patchName + " on " + gBuild + " last tested on 89755");
+    console.log(patchName + " on " + gBuild + " last tested on 114218");
+
+    loadCSS(
+      "coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css"
+    );
 
     var themesetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
