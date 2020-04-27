@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### Bugfix
+
+- Corrected layout of theme settings on the gameplay tab
+
 ## v1.10.1 - 2020-04-25
 
 ### Bugfix
