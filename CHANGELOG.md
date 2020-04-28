@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.10.2 - 2020-04-28
 
 ### Bugfix
 

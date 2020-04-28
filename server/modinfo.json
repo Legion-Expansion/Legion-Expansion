@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2020/04/25",
+  "date": "2020/04/28",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"
