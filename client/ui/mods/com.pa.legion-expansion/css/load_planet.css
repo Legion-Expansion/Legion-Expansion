@@ -12,12 +12,6 @@
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
 }
 
-.legion .tab-wrapper {
-  height: 100% !important;
-  margin: 0px 0px;
-  padding: 10px 0px 0px 20px;
-}
-
 .legion .section_content .col_1 {
   background: rgba(15, 0, 0, 0.3);
 }

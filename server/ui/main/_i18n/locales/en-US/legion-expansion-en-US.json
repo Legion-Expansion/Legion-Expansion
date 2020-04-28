@@ -368,8 +368,8 @@
   "Legion Intro": {
     "message": "Legion Intro"
   },
-  "Legion 1.10.1": {
-    "message": "Legion 1.10.1"
+  "Legion 1.10.2": {
+    "message": "Legion 1.10.2"
   },
   "Flying Bomb- In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only.": {
     "message": "Flying Bomb- In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only."
@@ -385,5 +385,8 @@
   },
   "Advanced Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor.": {
     "message": "Advanced Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor."
+  },
+  "Legion UI": {
+    "message": "Legion UI"
   }
 }

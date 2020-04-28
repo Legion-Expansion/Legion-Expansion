@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v1.10.2 - 2020-04-28
+
+### Bugfix
+
+- Corrected layout of theme settings in the gameplay tab
+- Legion version number correctly formatted when in-game theme is disabled
+- Fixed colour and position errors when the Legion menu theme was active
+- Fit the same number of map tabs on a row in the Legion theme as the standard theme
+
 ## v1.10.1 - 2020-04-25
 
 ### Bugfix

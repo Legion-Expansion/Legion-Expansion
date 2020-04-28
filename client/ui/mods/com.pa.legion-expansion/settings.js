@@ -6,7 +6,7 @@ if (!legionExpansionLoaded) {
   function legionExpansion() {
     var patchName = "legionExpansion settings.js";
 
-    console.log(patchName + " on " + gBuild + " last tested on 89755");
+    console.log(patchName + " on " + gBuild + " last tested on 114218");
     _.extend(api.settings.definitions.ui.settings, {
       legionThemeFunction: {
         title: "Theme In Game",
