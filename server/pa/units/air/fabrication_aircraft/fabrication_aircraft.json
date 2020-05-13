@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Aircraft",
-  "description": "!LOC:Builder- Builds structures. Very mobile. Vulnerable.",
+  "description": "!LOC:Basic Fabricator - Build basic structures. Weaker than other fabricators.",
   "TEMP_texelinfo": 7.11877,
   "attachable": {
     "offsets": {
@@ -149,7 +149,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 16
+    "diameter": 16.0
   },
   "tools": [
     {
@@ -160,6 +160,7 @@
   "transportable": {
     "size": 1
   },
+  "unit_name": "Fabrication Aircraft",
   "unit_types": [
     "UNITTYPE_Air",
     "UNITTYPE_Fabber",

@@ -1,6 +1,6 @@
 {
-  "display_name": "!LOC:Orbital Fabrication Bot",
-  "description": "!LOC:Advanced fabricator- Builds orbital satellites and ships.",
+  "display_name": "Orbital Fabrication Bot",
+  "description": "!LOC:Orbital Fabricator - Builds orbital satellites, spaceships and TITANS.",
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
@@ -64,8 +64,9 @@
       "type": "build"
     }
   ],
-  "gravwell_velocity_multiplier": 6,
+  "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
+  "localised_display_name": "!LOC:Orbital Fabrication Bot",
   "max_health": 100,
   "mesh_bounds": [
     20,
@@ -87,7 +88,7 @@
     "aggressive_distance": 120,
     "bank_factor": 10,
     "brake": 10,
-    "hover_time": -1,
+    "hover_time": -1.0,
     "move_speed": 20,
     "turn_speed": 75,
     "type": "orbital"
@@ -120,10 +121,10 @@
     }
   },
   "selection_icon": {
-    "diameter": 32
+    "diameter": 32.0
   },
   "spawn_layers": "WL_Orbital",
-  "system_velocity_multiplier": 15,
+  "system_velocity_multiplier": 15.0,
   "tools": [
     {
       "aim_bone": "bone_shoulder",

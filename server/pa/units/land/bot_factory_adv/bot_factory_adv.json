@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Advanced Bot Factory",
-  "description": "!LOC:Advanced manufacturing- Builds bots.",
+  "description": "!LOC:Advanced Manufacturing - Builds basic and advanced bots.",
   "TEMP_texelinfo": 63.0516,
   "area_build_separation": 2,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 80,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 80.0,
   "audio": {
     "loops": {
       "build": {
@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 4500,
+  "build_metal_cost": 4800,
   "buildable_types": "(Bot & Mobile & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
@@ -30,7 +30,7 @@
   ],
   "events": {
     "died": {
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
@@ -90,108 +90,108 @@
         1.6
       ],
       "debug": false,
-      "far_distance": 40,
+      "far_distance": 40.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 2,
-      "near_distance": 5,
-      "near_height": 12,
-      "near_width": 12,
+      "intensity": 2.0,
+      "near_distance": 5.0,
+      "near_height": 12.0,
+      "near_width": 12.0,
       "offset": [
         -14.29,
-        0,
+        0.0,
         16.6
       ],
       "orientation": [
-        45,
-        0,
-        0
+        45.0,
+        0.0,
+        0.0
       ]
     }
   ],
   "lamps": [
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -14.29,
-        0,
-        16
+        0.0,
+        16.0
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -14.29,
-        0,
+        0.0,
         17.2
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        19,
-        0,
+        19.0,
+        0.0,
         9.67
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         22.73,
-        0,
+        0.0,
         14.32
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -25.27,
-        0,
+        0.0,
         14.65
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -14.24,
         -19.53,
-        7
+        7.0
       ],
-      "radius": 4
+      "radius": 4.0
     }
   ],
   "max_health": 30000,
@@ -256,6 +256,7 @@
       "spec_id": "/pa/units/land/bot_factory_adv/bot_factory_adv_build_arm.json"
     }
   ],
+  "unit_name": "Advanced Bot Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",

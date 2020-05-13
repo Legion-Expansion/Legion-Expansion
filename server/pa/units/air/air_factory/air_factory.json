@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Air Factory",
-  "description": "!LOC:Basic manufacturing- Builds air units.",
+  "description": "!LOC:Basic Manufacturing - Builds basic air units.",
   "TEMP_texelinfo": 37.6046,
   "area_build_separation": 2,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 12,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 12.0,
   "audio": {
     "loops": {
       "build": {
@@ -34,7 +34,7 @@
   },
   "events": {
     "died": {
-      "effect_scale": 1
+      "effect_scale": 1.0
     }
   },
   "factory_cooldown_time": 2,
@@ -108,10 +108,10 @@
         1.52,
         1.6
       ],
-      "far_distance": 15,
+      "far_distance": 15.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 1,
+      "intensity": 3.0,
+      "near_distance": 1.0,
       "near_height": 2.4,
       "near_width": 2.4,
       "offset": [
@@ -120,9 +120,9 @@
         2.5
       ],
       "orientation": [
-        -35,
-        31,
-        0
+        -35.0,
+        31.0,
+        0.0
       ]
     },
     {
@@ -132,10 +132,10 @@
         1.52,
         1.6
       ],
-      "far_distance": 15,
+      "far_distance": 15.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 1,
+      "intensity": 3.0,
+      "near_distance": 1.0,
       "near_height": 2.4,
       "near_width": 2.4,
       "offset": [
@@ -144,9 +144,9 @@
         2.5
       ],
       "orientation": [
-        -35,
-        -31,
-        0
+        -35.0,
+        -31.0,
+        0.0
       ]
     },
     {
@@ -156,10 +156,10 @@
         1.52,
         1.6
       ],
-      "far_distance": 15,
+      "far_distance": 15.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 1,
+      "intensity": 3.0,
+      "near_distance": 1.0,
       "near_height": 2.4,
       "near_width": 2.4,
       "offset": [
@@ -168,9 +168,9 @@
         2.5
       ],
       "orientation": [
-        35,
-        31,
-        0
+        35.0,
+        31.0,
+        0.0
       ]
     },
     {
@@ -180,10 +180,10 @@
         1.52,
         1.6
       ],
-      "far_distance": 15,
+      "far_distance": 15.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 1,
+      "intensity": 3.0,
+      "near_distance": 1.0,
       "near_height": 2.4,
       "near_width": 2.4,
       "offset": [
@@ -192,9 +192,9 @@
         2.5
       ],
       "orientation": [
-        35,
-        -31,
-        0
+        35.0,
+        -31.0,
+        0.0
       ]
     }
   ],
@@ -202,44 +202,44 @@
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        4,
+        4.0,
         -11.1,
-        6
+        6.0
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -4,
+        -4.0,
         -11.1,
-        6
+        6.0
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        5,
+        5.0,
         14.12,
         4.54
       ],
-      "radius": 4
+      "radius": 4.0
     }
   ],
   "max_health": 6000,
@@ -328,6 +328,7 @@
       "spec_id": "/pa/units/air/air_factory/air_factory_build_arm.json"
     }
   ],
+  "unit_name": "Air Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",

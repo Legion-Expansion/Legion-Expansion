@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Advanced Vehicle Factory",
-  "description": "!LOC:Advanced manufacturing- Builds land vehicles.",
+  "description": "!LOC:Advanced Manufacturing - Builds basic and advanced land vehicles.",
   "TEMP_texelinfo": 62.1789,
   "area_build_separation": 2,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 80,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 80.0,
   "audio": {
     "loops": {
       "build": {
@@ -16,7 +16,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 4500,
+  "build_metal_cost": 4800,
   "buildable_types": "(Mobile & Tank & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
@@ -30,7 +30,7 @@
   ],
   "events": {
     "died": {
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
@@ -165,20 +165,20 @@
         1.6
       ],
       "debug": false,
-      "far_distance": 30,
+      "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "near_distance": 15,
-      "near_height": 30,
-      "near_width": 30,
+      "near_distance": 15.0,
+      "near_height": 30.0,
+      "near_width": 30.0,
       "offset": [
-        0,
-        0,
-        30
+        0.0,
+        0.0,
+        30.0
       ],
       "orientation": [
-        0,
-        0,
-        0
+        0.0,
+        0.0,
+        0.0
       ]
     }
   ],
@@ -186,86 +186,86 @@
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         18.671,
         -17.929,
         15.64
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         22.812,
         -17.929,
         11.32
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         18.671,
         17.929,
         15.64
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         22.812,
         17.929,
         11.32
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -17.05,
         25.28,
         5.68
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -17.05,
         -25.28,
         5.68
       ],
-      "radius": 4
+      "radius": 4.0
     }
   ],
   "max_health": 30000,
@@ -323,7 +323,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 74
+    "diameter": 74.0
   },
   "tools": [
     {
@@ -331,6 +331,7 @@
       "spec_id": "/pa/units/land/vehicle_factory_adv/vehicle_factory_adv_build_arm.json"
     }
   ],
+  "unit_name": "Advanced Vehicle Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
