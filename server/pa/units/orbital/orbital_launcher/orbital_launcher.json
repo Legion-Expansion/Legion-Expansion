@@ -15,7 +15,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1500,
   "buildable_types": "(Orbital & FactoryBuild & Basic) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
@@ -388,5 +388,10 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Important"
   ],
-  "wait_to_rolloff_time": 3
+  "wait_to_rolloff_time": 3,
+  "wreckage_mesh_bounds": [
+    50.0454,
+    50.0306,
+    58
+  ]
 }

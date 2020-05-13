@@ -27,10 +27,6 @@
     "/pa/units/commanders/imperial_tykus24/imperial_tykus24.json",
     "/pa/units/commanders/imperial_vidicarus/imperial_vidicarus.json",
     "/pa/units/commanders/imperial_visionik/imperial_visionik.json",
-    "/pa/units/commanders/l_cyclops/l_cyclops.json",
-    "/pa/units/commanders/l_overwatch/l_overwatch.json",
-    "/pa/units/commanders/l_rockteeth/l_rockteeth.json",
-    "/pa/units/commanders/l_wasushi/l_wasushi.json",
     "/pa/units/commanders/quad_ajax/quad_ajax.json",
     "/pa/units/commanders/quad_armalisk/quad_armalisk.json",
     "/pa/units/commanders/quad_calyx/quad_calyx.json",
@@ -72,6 +68,10 @@
     "/pa/units/commanders/tank_aeson/tank_aeson.json",
     "/pa/units/commanders/tank_banditks/tank_banditks.json",
     "/pa/units/commanders/tank_reaver/tank_reaver.json",
-    "/pa/units/commanders/tank_sadiga/tank_sadiga.json"
+    "/pa/units/commanders/tank_sadiga/tank_sadiga.json",
+    "/pa/units/commanders/l_overwatch/l_overwatch.json",
+    "/pa/units/commanders/l_rockteeth/l_rockteeth.json",
+    "/pa/units/commanders/l_cyclops/l_cyclops.json",
+    "/pa/units/commanders/l_wasushi/l_wasushi.json"
   ]
 }
