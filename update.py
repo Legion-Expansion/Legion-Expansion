@@ -189,3 +189,5 @@ for file_path, unit in file_cache.items():
     os.makedirs('server' + os.path.dirname(file_path), exist_ok=True)
     with open("server" + file_path, "w", encoding="utf-8") as unit_file:
         pajson.dump_effect(unit, unit_file)
+
+exec(open('format.py').read())
