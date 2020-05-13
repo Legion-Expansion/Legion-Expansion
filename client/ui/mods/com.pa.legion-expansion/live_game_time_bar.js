@@ -14,7 +14,7 @@ if (!legionExpansionLoaded) {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_time_bar.css");
     }
 
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");

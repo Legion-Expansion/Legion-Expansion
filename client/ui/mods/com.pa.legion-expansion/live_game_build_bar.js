@@ -19,19 +19,19 @@ if (!legionExpansionLoaded) {
         ["L_sea", "!LOC:sea"],
         ["L_orbital", "!LOC:orbital", true],
         ["L_orbital_structure", "orbital structure", true],
-        ["L_ammo", "!LOC:ammo", true]
+        ["L_ammo", "!LOC:ammo", true],
       ]);
     }
 
-    ko.computed(function() {
+    ko.computed(function () {
       var buildSet = model.buildSet();
       if (!buildSet) return;
       var hotkeys = model.hotkeys();
       var groups = buildSet.tabsByGroup();
 
-      setTimeout(function() {
+      setTimeout(function () {
         // Get tab hotkeys
-        _.forEach(buildSet.tabs(), function(tab) {
+        _.forEach(buildSet.tabs(), function (tab) {
           var baseTab = tab.group().replace("L_", "");
           if (!tab.label()) {
             tab.label(groups[baseTab].label());
@@ -44,7 +44,7 @@ if (!legionExpansionLoaded) {
       }, 0);
     });
 
-    handlers.start_build_sequence = model.startBuildSequence = function(
+    handlers.start_build_sequence = model.startBuildSequence = function (
       params
     ) {
       var group = params.group;
@@ -53,7 +53,7 @@ if (!legionExpansionLoaded) {
       var tabs = model
         .buildSet()
         .tabs()
-        .filter(function(tab) {
+        .filter(function (tab) {
           return tab.visible() && tab.buildGroup() == group;
         });
       if (tabs.length < 1) return;
@@ -76,13 +76,13 @@ if (!legionExpansionLoaded) {
       // eslint-disable-next-line no-undef
       var legionspecids = legionglobal.builders;
 
-      model.isLegionOrMixedOrVanilla = function(data) {
+      model.isLegionOrMixedOrVanilla = function (data) {
         try {
           var legioncount = 0;
           var specslength = 0;
           var selectedspecs = data.buildSet().selectedSpecs();
 
-          _.forOwn(selectedspecs, function(value, key) {
+          _.forOwn(selectedspecs, function (value, key) {
             if (_.includes(legionspecids, key)) {
               legioncount++;
             }
@@ -102,7 +102,7 @@ if (!legionExpansionLoaded) {
         }
       };
 
-      model.isLegion = function(data) {
+      model.isLegion = function (data) {
         if (model.isLegionOrMixedOrVanilla(data) === "legion") {
           return true;
         } else {
@@ -110,7 +110,7 @@ if (!legionExpansionLoaded) {
         }
       };
 
-      model.isMixed = function(data) {
+      model.isMixed = function (data) {
         if (model.isLegionOrMixedOrVanilla(data) === "mixed") {
           return true;
         } else {

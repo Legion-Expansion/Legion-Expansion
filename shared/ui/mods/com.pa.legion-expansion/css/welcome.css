@@ -1,7 +1,6 @@
 /* legion welcome */
 
-#legion-welcome
-{
+#legion-welcome {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,9 +12,8 @@
   display: flex;
 }
 
-#legion-welcome-container
-{
-  background-image: url('coui://ui/mods/com.pa.legion-expansion/backgrounds/default.png');
+#legion-welcome-container {
+  background-image: url("coui://ui/mods/com.pa.legion-expansion/backgrounds/default.png");
   background-size: contain;
   background-position: top center;
   display: flex;
@@ -25,8 +23,7 @@
   width: 100%;
 }
 
-#legion-welcome-content
-{
+#legion-welcome-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,25 +31,21 @@
   font-size: 1.5em;
 }
 
-#legion-welcome-logo
-{
+#legion-welcome-logo {
   max-width: 960px;
 }
 
-#legion-welecome-message
-{
+#legion-welecome-message {
   margin-top: 50px;
 }
 
-#legion-welcome-links a
-{
+#legion-welcome-links a {
   display: inline-block;
   padding: 10px;
   text-transform: uppercase;
 }
 
-#legion-welcome-close
-{
+#legion-welcome-close {
   margin-top: 20px;
   text-transform: uppercase;
 }

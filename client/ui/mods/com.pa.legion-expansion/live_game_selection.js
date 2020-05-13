@@ -16,7 +16,7 @@ if (!legionExpansionLoaded) {
         "coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css"
       );
 
-      model.isLegion = function(type) {
+      model.isLegion = function (type) {
         if (themesetting === "ON") {
           var haslegionunit = false;
           try {
@@ -39,12 +39,12 @@ if (!legionExpansionLoaded) {
       );
     }
 
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");
 
-        var imageSourceForType = function(type) {
+        var imageSourceForType = function (type) {
           return (
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/red/icon_category_" +
             type.toLowerCase() +
@@ -52,17 +52,17 @@ if (!legionExpansionLoaded) {
           );
         };
 
-        model.typeArray = ko.computed(function() {
+        model.typeArray = ko.computed(function () {
           var group = model.selectionTypeCounts();
 
           var result = _.compact(
-            _.map(model.types(), function(element) {
+            _.map(model.types(), function (element) {
               if (!group[element]) return null;
 
               return {
                 type: element,
                 count: group[element],
-                source: imageSourceForType(element)
+                source: imageSourceForType(element),
               };
             })
           );
@@ -73,7 +73,7 @@ if (!legionExpansionLoaded) {
       if (payload === "mixed") {
         $(".body_panel").addClass("mixedui");
 
-        imageSourceForType = function(type) {
+        imageSourceForType = function (type) {
           return (
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/purple/icon_category_" +
             type.toLowerCase() +
@@ -81,17 +81,17 @@ if (!legionExpansionLoaded) {
           );
         };
 
-        model.typeArray = ko.computed(function() {
+        model.typeArray = ko.computed(function () {
           var group = model.selectionTypeCounts();
 
           var result = _.compact(
-            _.map(model.types(), function(element) {
+            _.map(model.types(), function (element) {
               if (!group[element]) return null;
 
               return {
                 type: element,
                 count: group[element],
-                source: imageSourceForType(element)
+                source: imageSourceForType(element),
               };
             })
           );

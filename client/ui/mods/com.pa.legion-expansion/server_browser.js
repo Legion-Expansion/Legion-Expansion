@@ -1,6 +1,6 @@
-(function() {
+(function () {
   var processGameBeacon = model.processGameBeacon;
-  model.processGameBeacon = function(beacon, region, lobby_id, host, port) {
+  model.processGameBeacon = function (beacon, region, lobby_id, host, port) {
     var result = processGameBeacon.apply(model, arguments);
     if (Object.prototype.hasOwnProperty.call(result, "mod_names")) {
       for (var i = 0; i < result["mod_names"].length; i++) {

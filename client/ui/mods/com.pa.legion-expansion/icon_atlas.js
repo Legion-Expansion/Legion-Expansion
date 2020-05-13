@@ -129,7 +129,7 @@ if (!legionExpansionLoaded) {
       "l_titan_bot",
       "l_titan_vehicle",
       "l_titan_orbital",
-      "l_titan_structure"
+      "l_titan_structure",
     ];
 
     model.strategicIcons(model.strategicIcons().concat(legionIcons));

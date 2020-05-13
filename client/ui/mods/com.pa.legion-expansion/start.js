@@ -8,7 +8,7 @@ if (!legionExpansionLoaded) {
 
     model.showLegionGuidesMenu = ko.observable(false);
 
-    model.legionToggleGuides = function() {
+    model.legionToggleGuides = function () {
       if (model.showLegionGuidesMenu()) {
         model.showLegionGuidesMenu(false);
       } else {
@@ -17,7 +17,7 @@ if (!legionExpansionLoaded) {
         model.showMultiplayerMenu(false);
       }
     };
-    model.navToLegionGuide1 = function() {
+    model.navToLegionGuide1 = function () {
       engine.call(
         "web.launchPage",
         "http://exodusesports.com/article/planetary-annihilation-titans/"
@@ -25,7 +25,7 @@ if (!legionExpansionLoaded) {
       model.showLegionGuidesMenu(false);
     };
 
-    model.navToLegionGuide2 = function() {
+    model.navToLegionGuide2 = function () {
       engine.call(
         "web.launchPage",
         "http://exodusesports.com/article/legion-expansion-community-faction-mod/"
@@ -42,17 +42,17 @@ if (!legionExpansionLoaded) {
     var legionOriginalToggleMultiplayerPlayerMenu = model.toggleMultiplayerMenu;
     var legionOriginalHideSubMenus = model.hideSubMenus;
 
-    model.toggleSinglePlayerMenu = function() {
+    model.toggleSinglePlayerMenu = function () {
       legionOriginalToggleSinglePlayerMenu();
       model.showLegionGuidesMenu(false);
     };
 
-    model.toggleMultiplayerMenu = function() {
+    model.toggleMultiplayerMenu = function () {
       legionOriginalToggleMultiplayerPlayerMenu();
       model.showLegionGuidesMenu(false);
     };
 
-    model.hideSubMenus = function(data, event) {
+    model.hideSubMenus = function (data, event) {
       legionOriginalHideSubMenus(data, event);
       if (document.getElementById("navigation_panel").contains(event.target))
         return;
@@ -74,7 +74,7 @@ if (!legionExpansionLoaded) {
 
     $("div.div_watermarks").css("bottom", "95px");
 
-    model.legionPlayVideo = function() {
+    model.legionPlayVideo = function () {
       engine.call(
         "web.launchPage",
         "https://gaming.youtube.com/embed/aqzdPnJfKMo?autoplay=1"

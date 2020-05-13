@@ -15,7 +15,7 @@ if (!legionExpansionLoaded) {
         "coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css"
       );
     }
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");

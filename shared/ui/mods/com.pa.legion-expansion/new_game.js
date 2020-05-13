@@ -8,7 +8,7 @@ if (!legionExpansionLoaded) {
 
     var legionExpansionEnabled = false;
 
-    model.enableLegion = function() {
+    model.enableLegion = function () {
       if (legionExpansionEnabled) {
         return;
       }
@@ -35,30 +35,28 @@ if (!legionExpansionLoaded) {
         .observable(false)
         .extend({ local: "legion_welcome_dontshow" });
 
-      model.legionToggleDoNotShowWelcome = function() {
+      model.legionToggleDoNotShowWelcome = function () {
         model.legionDoNotShowWelcome(!model.legionDoNotShowWelcome());
       };
 
-      model.legionUrlClicked = function(data, event) {
+      model.legionUrlClicked = function (data, event) {
         if (event && event.target && event.target.href) {
           model.legionOpenUrl(event.target.href);
         }
       };
 
-      model.legionOpenUrl = function(url) {
+      model.legionOpenUrl = function (url) {
         engine.call("web.launchPage", url);
       };
 
-      model.legionCloseWelcome = function() {
+      model.legionCloseWelcome = function () {
         $("#legion-welcome").fadeOut();
         $("body").off("keypress", model.legionCloseWelcome);
       };
 
-      model.legionShowWelcome = function() {
+      model.legionShowWelcome = function () {
         $("body").on("keypress", model.legionCloseWelcome);
-        $("#legion-welcome")
-          .delay(1000)
-          .fadeIn();
+        $("#legion-welcome").delay(1000).fadeIn();
       };
 
       var themesetting =
@@ -85,13 +83,13 @@ if (!legionExpansionLoaded) {
         loadHtml("coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html")
       );
 
-      api.mods.getMountedMods("client", function(mods) {
+      api.mods.getMountedMods("client", function (mods) {
         var legionClientLoaded =
           _.intersection(_.pluck(mods, "identifier"), [
             "com.pa.legion-expansion-client",
             "com.pa.legion-expansion-client-master",
             "com.pa.legion-expansion-client-balance",
-            "com.pa.legion-expansion-client-dev"
+            "com.pa.legion-expansion-client-dev",
           ]).length > 0;
 
         model.legionClientModLoaded(legionClientLoaded);
@@ -119,7 +117,7 @@ if (!legionExpansionLoaded) {
       // eslint-disable-next-line no-undef
       var legioncommanders = legionglobal.commanders;
 
-      model.isNotLegion = function(commander, isEmpty) {
+      model.isNotLegion = function (commander, isEmpty) {
         if (!isEmpty) {
           return !_.includes(legioncommanders, commander);
         } else {
@@ -127,7 +125,7 @@ if (!legionExpansionLoaded) {
         }
       };
 
-      model.isMLA = function(commander, isEmpty) {
+      model.isMLA = function (commander, isEmpty) {
         if (!isEmpty) {
           return !_.includes(legioncommanders, commander);
         }
@@ -155,13 +153,13 @@ if (!legionExpansionLoaded) {
         "com.pa.legion-expansion-server",
         "com.pa.legion-expansion-server-master",
         "com.pa.legion-expansion-server-balance",
-        "com.pa.legion-expansion-server-dev"
+        "com.pa.legion-expansion-server-dev",
       ]).length > 0
     ) {
       model.enableLegion();
     }
 
-    _.defer(function() {
+    _.defer(function () {
       model.localChatMessage(
         loc("!LOC:Legion Expansion"),
         loc("!LOC:To play as the Legion select one of the red Commanders.")
