@@ -43,7 +43,7 @@ def walkObject(data, source):
 
     elif isinstance(data, (dict)):
 
-        for index, key in enumerate(data):
+        for _, key in enumerate(data):
 
             value = data[key]
 
