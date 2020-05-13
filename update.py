@@ -190,4 +190,5 @@ for file_path, unit in file_cache.items():
     with open("server" + file_path, "w", encoding="utf-8") as unit_file:
         pajson.dump_effect(unit, unit_file)
 
-exec(open('format.py').read())
+# Format the files to match Legion's style
+from format import validateJSON
