@@ -2,6 +2,12 @@
 
 ## DEV
 
+### Balance
+
+- Orbital
+  - Starship Projector
+    - Metal cost decreased from 2000 to 1500
+
 ### Bugfix
 
 - Fixed broken MLA translations

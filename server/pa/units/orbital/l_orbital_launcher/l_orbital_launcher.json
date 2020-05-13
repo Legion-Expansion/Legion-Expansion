@@ -15,7 +15,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1500,
   "buildable_types": "Custom1 & ( Orbital & FactoryBuild & Basic )",
   "command_caps": [
     "ORDER_Move",
