@@ -2,6 +2,10 @@
 
 ## DEV
 
+### General
+
+- Updated Rampart ammo mirroring for 114232
+
 ### Balance
 
 - Orbital
