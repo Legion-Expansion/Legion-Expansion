@@ -110,8 +110,8 @@ for tool in map(load, anti_drop_tools):
 
 ################
 # Patch the unit_list and commander_list
-load("/pa/units/unit_list.json")["units"] += load("/pa/units/legion_unit_list.json")["units"]
-load("/pa/units/commanders/commander_list.json")["commanders"] += load("/pa/units/commanders/legion_commander_list.json")["commanders"]
+load("/pa/units/unit_list.json")["units"] += load("/pa/units/unit_list_legion.json")["units"]
+load("/pa/units/commanders/commander_list.json")["commanders"] += load("/pa/units/commanders/commander_list_legion.json")["commanders"]
 
 ## Get the list of ammo entities that are targeted by the shield
 #########################################################################################
