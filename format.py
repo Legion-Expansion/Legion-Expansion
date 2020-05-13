@@ -18,8 +18,8 @@ if not os.path.isdir(PA_MEDIA_PATH):
   print("\nCheck your PA_MEDIA_PATH in papaths.py: " + PA_MEDIA_PATH + "\n")
   sys.exit()
 
-missing = [];
-badJSON = [];
+missing = []
+badJSON = []
 
 #
 
@@ -92,9 +92,9 @@ def validateFile(filename):
         
           missing.append( filename2 )
         
-        return;
+        return
        
-      return;
+      return
     
   if filename[-5:] == ".json" or filename[-4:] == ".pfx":
 
@@ -156,7 +156,7 @@ def validateJSON(filename):
   if 'description' in data:
     ordered['description'] = data['description']
   
-  ordered.update(sorted(data.items()));
+  ordered.update(sorted(data.items()))
   
   data = walkJSON(ordered,True)
   
