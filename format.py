@@ -9,7 +9,10 @@ from collections import OrderedDict
 
 # update papaths.py with your paths
 
-from papaths import PA_MEDIA_PATH
+
+from pa_tools.pa import paths
+PA_MEDIA_PATH = paths.PA_MEDIA_DIR
+
 
 if not os.path.isdir(PA_MEDIA_PATH):
   print("\nCheck your PA_MEDIA_PATH in papaths.py: " + PA_MEDIA_PATH + "\n")
@@ -129,7 +132,7 @@ def validateJSON(filename):
    return
   
   try:
-      data = json.load(fp)
+      data = json.load(fp, object_pairs_hook=OrderedDict)
   except ValueError:
     print("\nINVALID %s\n" % filename)
     badJSON.append(filename)

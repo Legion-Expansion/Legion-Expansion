@@ -1,6 +1,6 @@
 {
-  "display_name": "!LOC:Stitch",
-  "description": "!LOC:Support Fabricator- Repairs damaged units. Can build and detect mines. Can't help build other structures.",
+  "display_name": "Stitch",
+  "description": "!LOC:Combat Fabricator - Repairs damaged units. Can build and detect mines. Can build teleporters. Can't help build other structures.",
   "TEMP_texelinfo": 5.11028,
   "attachable": {
     "offsets": {
@@ -37,7 +37,7 @@
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 250,
-  "buildable_types": "CombatFabBuild - Custom1",
+  "buildable_types": "(CombatFabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -52,6 +52,7 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
+      "audio_cue": "/SE/Death/Bot",
       "effect_scale": 1.3
     }
   },
@@ -91,6 +92,7 @@
   },
   "navigation": {
     "acceleration": 120,
+    "brake": -1,
     "group_preference": "back",
     "move_speed": 12,
     "turn_speed": 720,
@@ -110,13 +112,6 @@
           "shape": "capsule"
         },
         {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 100,
-          "shape": "capsule",
-          "uses_energy": true
-        },
-        {
           "channel": "sight",
           "layer": "underwater",
           "radius": 100,
@@ -127,6 +122,13 @@
           "layer": "mine",
           "radius": 100,
           "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule",
+          "uses_energy": true
         }
       ]
     }

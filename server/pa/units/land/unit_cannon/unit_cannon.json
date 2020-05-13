@@ -1,9 +1,9 @@
 {
   "display_name": "!LOC:Unit Cannon",
-  "description": "!LOC:Interplanetary Transport- Builds and launches up to 12 units at once anywhere in the system.",
+  "description": "!LOC:Interplanetary Transport - Builds and launches up to 12 units at once anywhere in the system.",
   "TEMP_texelinfo": 62.1789,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 140,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 140.0,
   "audio": {
     "loops": {
       "build": {
@@ -30,7 +30,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/unit_cannon",
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     },
     "fired": {
@@ -59,7 +59,7 @@
     ],
     "store_units": true
   },
-  "factory_cooldown_time": 3,
+  "factory_cooldown_time": 3.0,
   "fx_offsets": [
     {
       "bone": "bone_buildSpray01",
@@ -123,7 +123,7 @@
     65
   ],
   "selection_icon": {
-    "diameter": 78
+    "diameter": 78.0
   },
   "tools": [
     {
@@ -138,6 +138,7 @@
       "spec_id": "/pa/units/land/unit_cannon/unit_cannon_build_arm.json"
     }
   ],
+  "unit_name": "Unit Cannon",
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Factory",
@@ -146,5 +147,5 @@
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important"
   ],
-  "wait_to_rolloff_time": 3
+  "wait_to_rolloff_time": 3.0
 }

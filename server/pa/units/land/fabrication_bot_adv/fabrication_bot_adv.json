@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Bot",
-  "description": "!LOC:Builder- Builds advanced structures. Cheap. Fast. Less powerful than other builders.",
+  "description": "!LOC:Advanced Fabricator - Build basic and advanced structures.",
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
@@ -53,7 +53,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     }
   },
@@ -139,7 +139,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 12
+    "diameter": 12.0
   },
   "spawn_layers": "WL_LandHorizontal",
   "tools": [
@@ -151,6 +151,7 @@
   "transportable": {
     "size": 1
   },
+  "unit_name": "Advanced Fabrication Bot",
   "unit_types": [
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",

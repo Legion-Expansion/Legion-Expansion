@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Advanced Naval Factory",
-  "description": "!LOC:Advanced manufacturing- Builds naval units.",
+  "description": "!LOC:Advanced Manufacturing - Builds basic and advanced naval units.",
   "TEMP_texelinfo": 69.307,
   "area_build_separation": 5,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 80,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 80.0,
   "audio": {
     "loops": {
       "build": {
@@ -19,7 +19,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 4500,
+  "build_metal_cost": 4800,
   "buildable_types": "(Naval & Mobile & FactoryBuild) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
@@ -36,7 +36,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Sea_large",
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
@@ -147,7 +147,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 64
+    "diameter": 64.0
   },
   "spawn_layers": "WL_DeepWater",
   "tools": [
@@ -156,6 +156,7 @@
       "spec_id": "/pa/units/sea/naval_factory_adv/naval_factory_adv_build_arm.json"
     }
   ],
+  "unit_name": "Advanced Naval Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",

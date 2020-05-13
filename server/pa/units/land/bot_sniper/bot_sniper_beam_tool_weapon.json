@@ -4,6 +4,7 @@
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
     "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
+    "/pa/units/sea/missile_ship/missile_ship_ammo.json",
     "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"
   ],
   "anti_entity_targets_units": false,

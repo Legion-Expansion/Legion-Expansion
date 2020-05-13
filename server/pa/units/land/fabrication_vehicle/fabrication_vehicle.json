@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Vehicle",
-  "description": "!LOC:Builder- Builds structures. Durable. More powerful than other builders.",
+  "description": "!LOC:Basic Fabricator - Builds basic structures. Durable. More powerful than other fabricators.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
@@ -116,7 +116,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 12
+    "diameter": 12.0
   },
   "tools": [
     {
@@ -127,6 +127,7 @@
   "transportable": {
     "size": 1
   },
+  "unit_name": "Fabrication Vehicle",
   "unit_types": [
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
