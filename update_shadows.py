@@ -213,4 +213,4 @@ for file_path, unit in file_cache.items():
         pajson.dump_effect(unit, unit_file)
 
 # Format the files to match Legion's style
-from format_json import validateJSON
+import format_json
