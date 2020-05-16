@@ -56,7 +56,7 @@ To create a copy for testing local changes:
 2. Checkout origin/balance
 3. Create and configure papaths.py in the root directory - see papaths.py.example
 4. Run install_local.py - requires the pa_tools submodule
-5. Within PA's Community Mods enable the '[DEVELOPMENT]' version of the mod
+5. Within PA's Community Mods enable the "DEVELOPMENT" version of the mod
 
 ## Translations
 
