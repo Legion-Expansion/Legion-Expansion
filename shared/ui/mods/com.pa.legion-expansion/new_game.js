@@ -114,7 +114,6 @@ if (!legionExpansionLoaded) {
 
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-      // eslint-disable-next-line no-undef
       var legioncommanders = legionglobal.commanders;
 
       model.isNotLegion = function (commander, isEmpty) {
