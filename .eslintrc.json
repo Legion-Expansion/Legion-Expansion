@@ -29,8 +29,7 @@
     "loadScript": "readonly",
     "gBuild": "readonly",
     "Build": "readonly",
-    "handlers": "readonly",
-    "legionglobal": "readonly"
+    "handlers": "readonly"
   },
   "plugins": ["lodash"],
   "rules": {
