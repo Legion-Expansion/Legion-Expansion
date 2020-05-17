@@ -5,6 +5,7 @@
 ### General
 
 - Updated Rampart ammo mirroring
+- Removed FX files we don't need to shadow
 
 ### Balance
 
@@ -18,7 +19,6 @@
 - Fixed incorrect build costs for MLA T2 factories
 - Fixed Gil-E not shooting down Stingray missiles
 - Fixed Skitter navigation type and build completion sound
-- Removed FX files we don't need to shadow
 
 ## v1.10.2 - 2020-04-28
 
