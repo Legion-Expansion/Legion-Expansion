@@ -24,7 +24,9 @@ if (!legionExpansionLoaded) {
               haslegionunit = true;
               return haslegionunit;
             }
-          } catch (e) {}
+          } catch (e) {
+            /* empty */
+          }
 
           return haslegionunit;
         } else {
