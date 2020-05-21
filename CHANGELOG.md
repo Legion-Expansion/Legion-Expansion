@@ -12,7 +12,7 @@
 ### AI
 
 - Adjusted how unit ratios are measured to avoid units sitting in the base without a platoon
-- Build Marauders for scouting
+- Prioritise building Marauders when intel is required
 
 ### Balance
 
