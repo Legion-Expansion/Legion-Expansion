@@ -565,7 +565,7 @@ if (!legionExpansion_sharedbuildLoaded) {
       ],
     };
 
-    if (_.has(Build.HotkeyModel, "SpecIdToGridMap"))
+    if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
       _.extend(Build.HotkeyModel.SpecIdToGridMap, legionBuild);
   }
 
