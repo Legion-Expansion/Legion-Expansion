@@ -9,6 +9,10 @@
 - Code cleanup
 - Legion commanders moved to the bottom of the commander selection list
 
+### AI
+
+- Adjusted how unit ratios are measured to avoid units sitting in the base without a platoon
+
 ### Balance
 
 - Orbital
