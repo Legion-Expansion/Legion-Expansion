@@ -4,7 +4,7 @@ if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
   function legionExpansion() {
-    console.log("legionExpansion new_game.js last tested on 94533+");
+    console.log("legionExpansion new_game.js last tested on 114220");
 
     var legionExpansionEnabled = false;
 

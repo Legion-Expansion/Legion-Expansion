@@ -6,7 +6,7 @@ if (!legionExpansion_sharedbuildLoaded) {
   function legionExpansion() {
     var patchName = "LegionExpansion shared_build.js";
 
-    console.log(patchName + " on " + gBuild + " last tested on 113558");
+    console.log(patchName + " on " + gBuild + " last tested on 114220");
 
     var legionBuild = {
       "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
