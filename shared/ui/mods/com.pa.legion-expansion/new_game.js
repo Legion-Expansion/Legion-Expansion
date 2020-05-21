@@ -40,9 +40,7 @@ if (!legionExpansionLoaded) {
       };
 
       model.legionUrlClicked = function (data, event) {
-        if (event && event.target && event.target.href) {
-          model.legionOpenUrl(event.target.href);
-        }
+        if (_.has(event, "target.href")) model.legionOpenUrl(event.target.href);
       };
 
       model.legionOpenUrl = function (url) {
