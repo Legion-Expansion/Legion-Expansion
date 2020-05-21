@@ -1,4 +1,3 @@
-//check if we can't get this from blueprint unit infoframework but will need dependency.
 var legionglobal = {};
 
 legionglobal.commanders = [
