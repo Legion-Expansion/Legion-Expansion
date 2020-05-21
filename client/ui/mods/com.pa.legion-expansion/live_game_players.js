@@ -23,7 +23,7 @@ if (!legionExpansionLoaded) {
         var legioncount = 0;
         var specslength = 0;
         if (commanders !== undefined) {
-          _.forOwn(commanders, function (value, key) {
+          _.forOwn(commanders, function (value) {
             if (_.includes(legioncomms, value)) {
               legioncount++;
             }
@@ -73,7 +73,7 @@ if (!legionExpansionLoaded) {
 
     model.legionstart = ko.observable(false);
 
-    model.player.subscribe(function (newval) {
+    model.player.subscribe(function () {
       if (!model.legionstart()) {
         if (themesetting === "ON") {
           var ui = model.isLegionOrMixedOrVanilla();
