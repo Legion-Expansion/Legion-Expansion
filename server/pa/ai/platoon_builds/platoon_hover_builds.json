@@ -30,7 +30,7 @@
       "name": "Legion - Hover Raid Platoon Small",
       "priority": 109,
       "task_type": "LandAttack",
-      "to_build": "Hover_Raid_Small"
+      "to_build": "Legion_Hover_Raid_Small"
     },
     {
       "build_conditions": [
@@ -62,7 +62,7 @@
       "name": "Legion - Hover Raid Platoon Medium",
       "priority": 108,
       "task_type": "LandAttack",
-      "to_build": "Hover_Raid_Medium"
+      "to_build": "Legion_Hover_Raid_Medium"
     },
     {
       "build_conditions": [
@@ -94,7 +94,7 @@
       "name": "Legion - Hover Raid Platoon Large",
       "priority": 107,
       "task_type": "LandAttack",
-      "to_build": "Hover_Raid_Large"
+      "to_build": "Legion_Hover_Raid_Large"
     },
     {
       "build_conditions": [
@@ -126,7 +126,7 @@
       "name": "Legion - Hover Raid Platoon XLarge",
       "priority": 106,
       "task_type": "LandAttack",
-      "to_build": "Hover_Raid_XLarge"
+      "to_build": "Legion_Hover_Raid_XLarge"
     },
     {
       "build_conditions": [
@@ -158,7 +158,7 @@
       "name": "Legion - Hover Raid Platoon Max",
       "priority": 105,
       "task_type": "LandAttack",
-      "to_build": "Hover_Raid_Max"
+      "to_build": "Legion_Hover_Raid_Max"
     }
   ]
 }

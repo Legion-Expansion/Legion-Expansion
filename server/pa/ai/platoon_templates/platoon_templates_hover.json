@@ -1,6 +1,6 @@
 {
   "platoon_templates": {
-    "Hover_Raid_Large": {
+    "Legion_Hover_Raid_Large": {
       "units": [
         {
           "max_count": 19,
@@ -16,7 +16,7 @@
         }
       ]
     },
-    "Hover_Raid_Max": {
+    "Legion_Hover_Raid_Max": {
       "units": [
         {
           "max_count": -1,
@@ -32,7 +32,7 @@
         }
       ]
     },
-    "Hover_Raid_Medium": {
+    "Legion_Hover_Raid_Medium": {
       "units": [
         {
           "max_count": 9,
@@ -48,7 +48,7 @@
         }
       ]
     },
-    "Hover_Raid_Small": {
+    "Legion_Hover_Raid_Small": {
       "units": [
         {
           "max_count": 3,
@@ -64,7 +64,7 @@
         }
       ]
     },
-    "Hover_Raid_XLarge": {
+    "Legion_Hover_Raid_XLarge": {
       "units": [
         {
           "max_count": 39,

@@ -30,7 +30,7 @@
       "name": "Legion - Amphibious Platoon Small",
       "priority": 109,
       "task_type": "LandAttack",
-      "to_build": "Amphibious_Attack_Small"
+      "to_build": "Legion_Amphibious_Attack_Small"
     },
     {
       "build_conditions": [
@@ -62,7 +62,7 @@
       "name": "Legion - Amphibious Platoon Medium",
       "priority": 108,
       "task_type": "LandAttack",
-      "to_build": "Amphibious_Attack_Medium"
+      "to_build": "Legion_Amphibious_Attack_Medium"
     },
     {
       "build_conditions": [
@@ -94,7 +94,7 @@
       "name": "Legion - Amphibious Platoon Large",
       "priority": 107,
       "task_type": "LandAttack",
-      "to_build": "Amphibious_Attack_Large"
+      "to_build": "Legion_Amphibious_Attack_Large"
     },
     {
       "build_conditions": [
@@ -126,7 +126,7 @@
       "name": "Legion - Amphibious Platoon XLarge",
       "priority": 106,
       "task_type": "LandAttack",
-      "to_build": "Amphibious_Attack_XLarge"
+      "to_build": "Legion_Amphibious_Attack_XLarge"
     },
     {
       "build_conditions": [
@@ -158,7 +158,7 @@
       "name": "Legion - Amphibious Platoon Max",
       "priority": 105,
       "task_type": "LandAttack",
-      "to_build": "Amphibious_Attack_Max"
+      "to_build": "Legion_Amphibious_Attack_Max"
     }
   ]
 }
