@@ -6,6 +6,7 @@
 
 - Updated Rampart ammo mirroring
 - Removed FX files we don't need to shadow
+- Code cleanup
 
 ### Balance
 
