@@ -290,6 +290,7 @@
       "instance_count": 1,
       "name": "Legion - Basic Air Gunship - Intel",
       "priority": 98,
+      "shared_instance_count": "AirScout",
       "to_build": "LegionAirBasicGunship"
     },
     {
@@ -336,6 +337,7 @@
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Gunship",
       "priority": 97,
+      "shared_instance_count": "AirScout",
       "to_build": "LegionAirBasicGunship"
     },
     {
