@@ -14,6 +14,7 @@
 - Adjusted how unit ratios are measured to avoid units sitting in the base without a platoon
 - Prioritise building Marauders when intel is required
 - Ensure platoon names don't conflict with other mods
+- May scout with Catfish
 
 ### Balance
 

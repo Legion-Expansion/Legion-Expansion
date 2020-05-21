@@ -208,6 +208,80 @@
           },
           {
             "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Naval & Scout",
+            "value0": 150
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Naval & Scout",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "name": "Legion - Corvette - Intel",
+      "priority": 98,
+      "to_build": "LegionNavalBasicScout"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
