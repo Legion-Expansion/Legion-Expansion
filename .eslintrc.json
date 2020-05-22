@@ -9,12 +9,6 @@
     "jquery": true,
     "amd": true
   },
-  "settings": {
-    "lodash": {
-      "version": 3,
-      "pragma": "_"
-    }
-  },
   "extends": ["eslint:recommended", "plugin:lodash/v3", "prettier"],
   "globals": {
     "api": "readonly",
