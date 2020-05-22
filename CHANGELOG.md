@@ -11,10 +11,10 @@
 
 ### AI
 
-- Adjusted how unit ratios are measured to avoid units sitting in the base without a platoon
+- Adjusted how spcialist unit ratios are measured to avoid them sitting in the base without a platoon
 - Prioritise building Marauders when intel is required
-- Ensure platoon names don't conflict with other mods
-- May scout with Catfish
+- Ensure platoons don't conflict with other mods
+- Scout with the Catfish if air is unavailable
 
 ### Balance
 
