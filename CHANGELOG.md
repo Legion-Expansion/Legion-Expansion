@@ -27,6 +27,9 @@
     - Health reduced from 2500 to 250
   - Purger
     - Removed target priorities
+- Sea
+  - Manta
+    - Prioritise bombers and gunships first
 - Orbital
   - Rig
     - Metal cost reduced from 3600 to 3000
