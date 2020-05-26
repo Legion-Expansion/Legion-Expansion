@@ -5,6 +5,7 @@
 ### General
 
 - Updated Rampart ammo mirroring
+- Updated MLA unit file shadows
 - Removed FX files we don't need to shadow
 - Code cleanup
 - Legion commanders moved to the bottom of the commander selection list
