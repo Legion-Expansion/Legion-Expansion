@@ -16,7 +16,7 @@
 - Adjusted how spcialist unit ratios are measured to avoid them sitting in the base without a platoon
 - Prioritise building Marauders when intel is required
 - Ensure platoons don't conflict with other mods
-- Scout with the Catfish if air is unavailable
+- Scouts with the Catfish if air is unavailable
 - Builds the Necromancer
 
 ### Balance
@@ -29,7 +29,7 @@
     - Removed target priorities
 - Sea
   - Manta
-    - Prioritise bombers and gunships first
+    - Prioritises bombers and gunships first
 - Orbital
   - Centurion
     - Anti-ground weapon range reduced from 100 to 80
