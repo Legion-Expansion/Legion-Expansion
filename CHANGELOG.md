@@ -20,6 +20,10 @@
 
 ### Balance
 
+- Land
+  - Necromancer
+    - Explosion on death removed
+    - Health reduced from 2500 to 250
 - Orbital
   - Rig
     - Death explosion damage reduced from 4000 to 2000
