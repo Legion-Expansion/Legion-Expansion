@@ -19,6 +19,10 @@
 ### Balance
 
 - Orbital
+  - Rig
+    - Death explosion damage reduced from 4000 to 2000
+    - Death explosion full damage range reduced from 50 to 20
+    - Death explosion splash damage range reduced from 250 to 75
   - Starship Projector
     - Metal cost decreased from 2000 to 1500
 
