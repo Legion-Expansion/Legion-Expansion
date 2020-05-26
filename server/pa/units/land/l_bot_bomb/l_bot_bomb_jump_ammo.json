@@ -7,7 +7,7 @@
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/land/l_bot_bomb/rocket_trail.pfx"
+    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb_rocket_trail.pfx"
   },
   "impact_decals": [],
   "initial_velocity": 75,
