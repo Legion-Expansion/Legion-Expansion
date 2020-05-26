@@ -26,6 +26,11 @@
     - Explosion on death removed
     - Health reduced from 2500 to 250
 - Orbital
+  - Rig
+    - Metal cost reduced from 3600 to 3000
+    - Health reduced from 3600 to 3000
+    - Energy income reduced from 10800 to 7500
+    - Metal income reduced from 43 to 30
   - Starship Projector
     - Metal cost decreased from 2000 to 1500
 

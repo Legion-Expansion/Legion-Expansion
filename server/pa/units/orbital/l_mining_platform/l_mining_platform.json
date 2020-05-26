@@ -17,7 +17,7 @@
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
-  "build_metal_cost": 3600,
+  "build_metal_cost": 3000,
   "build_restrictions": "Terrainless",
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/orbital/mining_platform/mining_platform_nuke.json"
@@ -42,7 +42,7 @@
       "type": "idle"
     }
   ],
-  "max_health": 3600,
+  "max_health": 3000,
   "mesh_bounds": [
     118.558,
     118.558,
@@ -64,8 +64,8 @@
     100
   ],
   "production": {
-    "energy": 10800,
-    "metal": 43
+    "energy": 7500,
+    "metal": 30
   },
   "recon": {
     "observer": {
