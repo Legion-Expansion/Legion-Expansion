@@ -31,6 +31,8 @@
   - Manta
     - Prioritise bombers and gunships first
 - Orbital
+  - Centurion
+    - Anti-ground weapon range reduced from 100 to 80
   - Rig
     - Metal cost reduced from 3600 to 3000
     - Health reduced from 3600 to 3000
