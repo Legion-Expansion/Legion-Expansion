@@ -17,7 +17,6 @@
   "initial_velocity": 80,
   "lifetime": 30,
   "max_velocity": 150,
-  "min_velocity": 40,
   "model": {
     "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
   },
