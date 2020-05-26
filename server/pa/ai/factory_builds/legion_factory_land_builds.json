@@ -1280,9 +1280,9 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & SelfDestruct",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.1
+            "value0": 0.35
           }
         ],
         [
@@ -1315,14 +1315,14 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
+          },,
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & SelfDestruct",
+            "unit_type_string0": "(Tank | Bot) & Artillery",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.1
-          },
+            "value0": 0.35
+          }
           {
             "boolean": true,
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance"
