@@ -258,7 +258,7 @@
     "/pa/units/land/l_mex_adv/l_mex_adv.json",
     "/pa/units/land/l_mortar_tank/l_mortar_tank.json",
     "/pa/units/land/l_necromancer/l_necromancer.json",
-    "/pa/units/land/l_necromancer/minion/minion.json",
+    "/pa/units/land/l_necromancer/l_minion/l_minion.json",
     "/pa/units/land/l_nuke_launcher/l_nuke_launcher.json",
     "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json",
     "/pa/units/land/l_radar/l_radar.json",

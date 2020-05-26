@@ -21,7 +21,7 @@
   "model": {
     "filename": ""
   },
-  "spawn_unit_on_death": "/pa/units/land/l_necromancer/minion/minion_spawner.json",
+  "spawn_unit_on_death": "/pa/units/land/l_necromancer/l_minion/l_minion_spawner.json",
   "spawn_unit_on_death_with_velocity": false,
   "splash_damage": 0,
   "splash_radius": 0

@@ -4,7 +4,7 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/land/l_necromancer/minion/rocket_trail.pfx",
+      "filename": "/pa/units/land/l_necromancer/l_minion/l_minon_rocket_trail.pfx",
       "offset": [
         0,
         0,
@@ -23,12 +23,12 @@
     {
       "aim_bone": "bone_root",
       "primary_weapon": true,
-      "spec_id": "/pa/units/land/l_necromancer/minion/minion_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_necromancer/l_minion/l_minion_tool_weapon.json"
     },
     {
       "aim_bone": "bone_root",
       "secondary_weapon": true,
-      "spec_id": "/pa/units/land/l_necromancer/minion/minion_jump_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_necromancer/l_minion/l_minion_jump_tool_weapon.json"
     }
   ],
   "unit_types": [
