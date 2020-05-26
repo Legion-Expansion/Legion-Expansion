@@ -17,6 +17,7 @@
 - Prioritise building Marauders when intel is required
 - Ensure platoons don't conflict with other mods
 - Scout with the Catfish if air is unavailable
+- Builds the Necromancer
 
 ### Balance
 
