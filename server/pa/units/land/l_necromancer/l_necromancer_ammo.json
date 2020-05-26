@@ -8,7 +8,7 @@
   },
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/l_necromancer/death_weapon/teleport.pfx"
+      "effect_spec": "/pa/units/land/l_necromancer/death_weapon/l_necromancer_teleport.pfx"
     }
   },
   "fx_trail": {
