@@ -147,10 +147,5 @@
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important"
   ],
-  "wait_to_rolloff_time": 3.0,
-  "wreckage_mesh_bounds": [
-    50,
-    50,
-    15
-  ]
+  "wait_to_rolloff_time": 3.0
 }
