@@ -16,7 +16,6 @@
       ]
     }
   },
-  "attack_range_frac": 0.1,
   "audio": {
     "loops": {
       "move": {
