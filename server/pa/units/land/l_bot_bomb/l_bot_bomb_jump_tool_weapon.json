@@ -12,7 +12,7 @@
   "firing_standard_deviation": 2,
   "idle_aim_delay": 0,
   "manual_fire": true,
-  "max_range": 55,
+  "max_range": 40,
   "min_firing_velocity": 80,
   "no_busy_auto_attack": true,
   "pitch_range": 90,

@@ -40,6 +40,7 @@
 - Fixed incorrect build costs for MLA T2 factories
 - Fixed Gil-E not shooting down Stingray missiles
 - Fixed Skitter navigation type and build completion sound
+- Fixed Purgers not attacking in some situations
 
 ## v1.10.2 - 2020-04-28
 
