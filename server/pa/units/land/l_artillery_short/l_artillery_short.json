@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Theodor",
-  "description": "!LOC:Artillery- High splash damage. Attacks land, sea and seabed targets.",
+  "description": "!LOC:Artillery- Medium range. Attacks land, sea, seabed and underwater targets.",
   "TEMP_texelinfo": 22.48734,
   "atrophy_cool_down": 15,
   "atrophy_rate": 25,

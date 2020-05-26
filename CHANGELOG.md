@@ -8,6 +8,7 @@
 - Removed FX files we don't need to shadow
 - Code cleanup
 - Legion commanders moved to the bottom of the commander selection list
+- Improved the Theodor's description
 
 ### AI
 
