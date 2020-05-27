@@ -34,12 +34,12 @@
   - Centurion
     - Anti-ground weapon range reduced from 100 to 80
   - Rig
-    - Metal cost reduced from 3600 to 3000
+    - Build cost reduced from 3600 to 3000
     - Health reduced from 3600 to 3000
     - Energy income reduced from 10800 to 7500
     - Metal income reduced from 43 to 30
   - Starship Projector
-    - Metal cost reduced from 2000 to 1500
+    - Build cost reduced from 2000 to 1500
 
 ### Bugfix
 
