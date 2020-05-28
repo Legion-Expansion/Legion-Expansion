@@ -18,6 +18,7 @@
 - Ensure platoons don't conflict with other mods
 - Scouts with the Catfish if air is unavailable
 - Builds the Necromancer
+- Fixed error resulting in too many Purgers being built
 
 ### Balance
 
