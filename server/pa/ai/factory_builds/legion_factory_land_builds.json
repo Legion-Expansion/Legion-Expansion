@@ -1814,13 +1814,6 @@
           {
             "boolean": true,
             "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.35
           }
         ],
         [
@@ -1835,13 +1828,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.35
           },
           {
             "boolean": true,
