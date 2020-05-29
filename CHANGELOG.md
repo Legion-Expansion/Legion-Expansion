@@ -26,6 +26,7 @@
     - Range increased from 100 to 115
   - Miniman
     - Range increased from 180 to 220
+    - Speed increased from 7 to 8
   - Monstrosity
     - LOS decreased from 150 to 100
     - Weapon #1 range increased from 150 to 170
