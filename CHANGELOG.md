@@ -23,6 +23,8 @@
   - Monstrosity
     - Weapon #1 range increased from 150 to 180
     - Weapon #2 range decreased from 90 to 75
+  - Peacekeeper
+    - Range increased from 75 to 85
   - Walker Foundry
     - Rolloff time reduced from 4 to 3 seconds
 - Orbital
