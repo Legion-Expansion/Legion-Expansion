@@ -14,7 +14,7 @@
   - Comet
     - Removed Bomber UNITTYPE
     - Added Transport UNITTYPE
-    - All weapons removed from the unit
+    - Both weapons removed
 - Land
   - Advanced Armour Foundry
     - Build cost increased from 4500 to 4800
