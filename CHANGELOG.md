@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### AI
+
+- Clean-up of some build condition oddities
+
 ## v1.11.0 - 2020-05-29
 
 ### General
