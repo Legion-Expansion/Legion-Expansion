@@ -233,7 +233,7 @@
   ],
   "unit_types": [
     "UNITTYPE_Air",
-    "UNITTYPE_Bomber",
+    "UNITTYPE_Transport",
     "UNITTYPE_Teleporter",
     "UNITTYPE_Mobile",
     "UNITTYPE_Advanced",
