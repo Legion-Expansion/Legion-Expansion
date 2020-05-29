@@ -20,6 +20,9 @@
     - Range increased from 100 to 110
   - Miniman
     - Range increased from 180 to 220
+  - Monstrosity
+    - Weapon #1 range increased from 150 to 180
+    - Weapon #2 range decreased from 90 to 75
   - Walker Foundry
     - Rolloff time reduced from 4 to 3 seconds
 - Orbital
