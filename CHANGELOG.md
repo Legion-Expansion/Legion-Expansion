@@ -6,6 +6,20 @@
 
 - Clean-up of some build condition oddities
 
+### Balance
+
+- Air
+  - Advanced Flyer Foundry
+    - Build cost increased from 4500 to 4800
+- Land
+  - Advanced Armour Foundry
+    - Build cost increased from 4500 to 4800
+  - Advanced Walker Foundry
+    - Build cost increased from 4500 to 4800
+- Sea
+  - Advanced Ship Foundry
+    - Build cost increased from 4500 to 4800
+
 ## v1.11.0 - 2020-05-29
 
 ### General
