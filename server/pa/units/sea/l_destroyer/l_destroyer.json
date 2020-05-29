@@ -64,13 +64,13 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 180,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 180,
           "shape": "capsule"
         }
       ]

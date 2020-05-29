@@ -37,6 +37,8 @@
 - Sea
   - Advanced Ship Foundry
     - Build cost increased from 4500 to 4800
+  - Bowhead
+    - LOS increased from 150 to 180
 
 ## v1.11.0 - 2020-05-29
 
