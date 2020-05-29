@@ -6,9 +6,7 @@
 
 - Land
   - Shredder
-    - Increase damage from 10 to 25
-    - Decreased rate of fire from 8 to 4
-    - Prioritises anti-ground air units
+    - Stats and behaviour now identical to the Galata
 
 ## v1.12.0 - 2020-05-29
 
