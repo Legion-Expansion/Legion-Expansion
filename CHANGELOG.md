@@ -16,6 +16,9 @@
     - Build cost increased from 4500 to 4800
   - Advanced Walker Foundry
     - Build cost increased from 4500 to 4800
+- Orbital
+  - Starcannon
+    - Build cost increased from 900 to 1700
 - Sea
   - Advanced Ship Foundry
     - Build cost increased from 4500 to 4800
