@@ -7,13 +7,13 @@
 - Updated Rampart ammo mirroring
 - Updated MLA unit file shadows
 - Removed FX files we don't need to shadow
-- Code cleanup
+- Code clean-up
 - Legion commanders moved to the bottom of the commander selection list
 - Improved the Theodor's description
 
 ### AI
 
-- Adjusted how spcialist unit ratios are measured to avoid them sitting in the base without a platoon
+- Adjusted how specialist unit ratios are measured to avoid them sitting in the base without a platoon
 - Prioritise building Marauders when intel is required
 - Ensure platoons don't conflict with other mods
 - Scouts with the Catfish if air is unavailable
