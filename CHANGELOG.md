@@ -19,6 +19,7 @@
 - Orbital
   - Starcannon
     - Build cost increased from 900 to 1700
+    - Rolloff time increased from 3 to 4 seconds
 - Sea
   - Advanced Ship Foundry
     - Build cost increased from 4500 to 4800

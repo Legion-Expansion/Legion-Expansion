@@ -162,5 +162,5 @@
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
   ],
-  "wait_to_rolloff_time": 3.0
+  "wait_to_rolloff_time": 4.0
 }
