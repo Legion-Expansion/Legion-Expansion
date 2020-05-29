@@ -17,7 +17,7 @@
   - Advanced Walker Foundry
     - Build cost increased from 4500 to 4800
   - Havoc
-    - Range increased from 100 to 110
+    - Range increased from 100 to 115
   - Miniman
     - Range increased from 180 to 220
   - Monstrosity
