@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Vehicle Factory",
-  "description": "!LOC:Basic manufacturing- Builds land vehicles.",
+  "description": "!LOC:Basic Manufacturing - Builds basic land vehicles.",
   "TEMP_texelinfo": 39.6154,
   "area_build_separation": 2,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 10,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 10.0,
   "audio": {
     "loops": {
       "build": {
@@ -35,7 +35,7 @@
   },
   "events": {
     "died": {
-      "effect_scale": 1
+      "effect_scale": 1.0
     }
   },
   "factory_cooldown_time": 4,
@@ -109,20 +109,20 @@
         1.6
       ],
       "debug": false,
-      "far_distance": 30,
+      "far_distance": 30.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "near_distance": 10,
-      "near_height": 20,
-      "near_width": 20,
+      "near_distance": 10.0,
+      "near_height": 20.0,
+      "near_width": 20.0,
       "offset": [
-        0,
-        0,
-        20
+        0.0,
+        0.0,
+        20.0
       ],
       "orientation": [
-        0,
-        0,
-        0
+        0.0,
+        0.0,
+        0.0
       ]
     }
   ],
@@ -130,44 +130,44 @@
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         5.47,
         -12.71,
-        11
+        11.0
       ],
-      "radius": 6
+      "radius": 6.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -5.47,
         -12.71,
-        11
+        11.0
       ],
-      "radius": 6
+      "radius": 6.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         9.81,
         10.88,
         5.49
       ],
-      "radius": 4
+      "radius": 4.0
     }
   ],
   "max_health": 6000,
@@ -225,7 +225,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 50
+    "diameter": 50.0
   },
   "tools": [
     {
@@ -233,6 +233,7 @@
       "spec_id": "/pa/units/land/vehicle_factory/vehicle_factory_build_arm.json"
     }
   ],
+  "unit_name": "Vehicle Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",

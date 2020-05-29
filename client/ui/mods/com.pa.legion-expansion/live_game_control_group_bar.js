@@ -16,12 +16,12 @@ if (!legionExpansionLoaded) {
       );
     }
 
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");
 
-        model.imageSourceForType = function(type) {
+        model.imageSourceForType = function (type) {
           return (
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/red/icon_category_" +
             type.toLowerCase() +
@@ -74,7 +74,7 @@ if (!legionExpansionLoaded) {
       if (payload === "mixed") {
         $(".body_panel").addClass("mixedui");
 
-        model.imageSourceForType = function(type) {
+        model.imageSourceForType = function (type) {
           return (
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/purple/icon_category_" +
             type.toLowerCase() +

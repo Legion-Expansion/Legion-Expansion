@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 2,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/land/l_necromancer/minion/minion_spawner_ammo.json",
+  "ammo_id": "/pa/units/land/l_necromancer/l_minion/l_minion_spawner_ammo.json",
   "ammo_per_shot": 2,
   "ammo_source": "time",
   "auto_fire_when_charged": true,

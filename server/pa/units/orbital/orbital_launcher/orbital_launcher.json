@@ -1,9 +1,9 @@
 {
   "display_name": "!LOC:Orbital Launcher",
-  "description": "!LOC:Basic manufacturing- Builds and launches satellites and other units.",
+  "description": "!LOC:Basic Manufacturing - Builds and launches basic orbital units.",
   "TEMP_texelinfo": 63.4807,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 45,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 45.0,
   "audio": {
     "loops": {
       "build": {
@@ -15,7 +15,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1500,
   "buildable_types": "(Orbital & FactoryBuild & Basic) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
@@ -27,7 +27,7 @@
   "enable_orbital_shell": true,
   "events": {
     "died": {
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
@@ -42,7 +42,7 @@
       "bone": "socket_muzzle01",
       "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
-        0,
+        0.0,
         0
       ],
       "orientation": [
@@ -56,7 +56,7 @@
       "bone": "socket_muzzle02",
       "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
-        0,
+        0.0,
         0
       ],
       "orientation": [
@@ -75,21 +75,21 @@
         1.52,
         1.6
       ],
-      "far_distance": 40,
+      "far_distance": 40.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 5,
+      "intensity": 3.0,
+      "near_distance": 5.0,
       "near_height": 4.5,
       "near_width": 4.5,
       "offset": [
-        -8,
-        0,
-        5
+        -8.0,
+        0.0,
+        5.0
       ],
       "orientation": [
-        160,
-        0,
-        0
+        160.0,
+        0.0,
+        0.0
       ]
     },
     {
@@ -99,44 +99,44 @@
         1.52,
         1.6
       ],
-      "far_distance": 40,
+      "far_distance": 40.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
-      "near_distance": 5,
+      "intensity": 3.0,
+      "near_distance": 5.0,
       "near_height": 4.5,
       "near_width": 4.5,
       "offset": [
-        8,
-        0,
-        5
+        8.0,
+        0.0,
+        5.0
       ],
       "orientation": [
-        -160,
-        0,
-        0
+        -160.0,
+        0.0,
+        0.0
       ]
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "far_distance": 25,
+      "far_distance": 25.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 3,
+      "intensity": 3.0,
       "near_distance": 2.5,
       "near_height": 5.5,
       "near_width": 5.5,
       "offset": [
-        -5,
+        -5.0,
         -21.47,
         8.99
       ],
       "orientation": [
-        0,
-        35,
-        0
+        0.0,
+        35.0,
+        0.0
       ]
     }
   ],
@@ -144,172 +144,172 @@
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         23.37,
         33.65
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
         0.1,
-        1,
+        1.0,
         0.1
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         18.6,
         36.19
       ],
-      "radius": 8
+      "radius": 8.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         1.57,
         13.49,
         9.7
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         25.3,
         16.16,
         12.23
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        0,
-        0
+        1.0,
+        0.0,
+        0.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         25.04,
         29.88
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         -21.47,
         8.99
       ],
-      "radius": 5
+      "radius": 5.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         7.5,
         58.92
       ],
-      "radius": 3
+      "radius": 3.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
-        -5,
+        -5.0,
         12.88,
         58.92
       ],
-      "radius": 3
+      "radius": 3.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -2.38,
         10.25,
         58.92
       ],
-      "radius": 3
+      "radius": 3.0
     },
     {
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         -7.55,
         10.25,
         58.92
       ],
-      "radius": 3
+      "radius": 3.0
     },
     {
       "bone": "bone_gantry01",
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         4.14,
         -10.278,
-        0
+        0.0
       ],
-      "radius": 4
+      "radius": 4.0
     },
     {
       "bone": "bone_gantry02",
       "color": [
-        1,
-        1,
-        1
+        1.0,
+        1.0,
+        1.0
       ],
-      "intensity": 2,
+      "intensity": 2.0,
       "offset": [
         4.14,
         -10.278,
-        0
+        0.0
       ],
-      "radius": 4
+      "radius": 4.0
     }
   ],
   "max_health": 6000,
@@ -367,7 +367,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 75
+    "diameter": 75.0
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
@@ -376,6 +376,7 @@
       "spec_id": "/pa/units/orbital/orbital_launcher/orbital_launcher_build_arm.json"
     }
   ],
+  "unit_name": "Orbital Launcher",
   "unit_types": [
     "UNITTYPE_Orbital",
     "UNITTYPE_Factory",
@@ -387,5 +388,10 @@
     "UNITTYPE_Basic",
     "UNITTYPE_Important"
   ],
-  "wait_to_rolloff_time": 3
+  "wait_to_rolloff_time": 3,
+  "wreckage_mesh_bounds": [
+    50.0454,
+    50.0306,
+    58
+  ]
 }

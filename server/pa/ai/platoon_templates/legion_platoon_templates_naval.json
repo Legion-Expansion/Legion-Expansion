@@ -1,0 +1,12 @@
+{
+  "platoon_templates": {
+    "Legion_Naval_Scout": {
+      "units": [
+        {
+          "max_count": 1,
+          "unit_types": "Naval & Scout & Custom1"
+        }
+      ]
+    }
+  }
+}

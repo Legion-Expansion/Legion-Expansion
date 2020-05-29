@@ -12,8 +12,8 @@ if (!legionExpansionLoaded) {
         title: "Theme In Game",
         type: "select",
         default: "ON",
-        options: ["ON", "OFF"]
-      }
+        options: ["ON", "OFF"],
+      },
     });
 
     _.extend(api.settings.definitions.ui.settings, {
@@ -21,8 +21,8 @@ if (!legionExpansionLoaded) {
         title: "Theme Menu",
         type: "select",
         default: "ON",
-        options: ["ON", "OFF"]
-      }
+        options: ["ON", "OFF"],
+      },
     });
 
     model.settingDefinitions(api.settings.definitions);
@@ -31,7 +31,7 @@ if (!legionExpansionLoaded) {
       $.ajax({
         type: "GET",
         url: "coui://ui/mods/com.pa.legion-expansion/settings.html",
-        async: false
+        async: false,
       }).responseText
     );
   }

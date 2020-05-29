@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Naval Factory",
-  "description": "!LOC:Basic manufacturing- Builds naval units.",
+  "description": "!LOC:Basic Manufacturing - Builds basic naval units.",
   "TEMP_texelinfo": 44.3722,
   "area_build_separation": 2,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 10,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 10.0,
   "audio": {
     "loops": {
       "build": {
@@ -124,6 +124,7 @@
       "spec_id": "/pa/units/sea/naval_factory/naval_factory_build_arm.json"
     }
   ],
+  "unit_name": "Naval Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",

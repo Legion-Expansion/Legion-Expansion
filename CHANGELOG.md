@@ -1,5 +1,55 @@
 # CHANGELOG
 
+## v1.11.0 - 2020-05-29
+
+### General
+
+- Updated Rampart ammo mirroring
+- Updated MLA unit file shadows
+- Removed FX files we don't need to shadow
+- Code cleanup
+- Legion commanders moved to the bottom of the commander selection list
+- Improved the Theodor's description
+
+### AI
+
+- Adjusted how spcialist unit ratios are measured to avoid them sitting in the base without a platoon
+- Prioritise building Marauders when intel is required
+- Ensure platoons don't conflict with other mods
+- Scouts with the Catfish if air is unavailable
+- Builds the Necromancer
+- Fixed error resulting in too many Purgers being built
+
+### Balance
+
+- Land
+  - Necromancer
+    - Explosion on death removed
+    - Health reduced from 2500 to 250
+  - Purger
+    - Removed target priorities
+- Sea
+  - Manta
+    - Prioritises bombers and gunships first
+- Orbital
+  - Centurion
+    - Anti-ground weapon range reduced from 100 to 80
+  - Rig
+    - Build cost reduced from 3600 to 3000
+    - Health reduced from 3600 to 3000
+    - Energy income reduced from 10800 to 7500
+    - Metal income reduced from 43 to 30
+  - Starship Projector
+    - Build cost reduced from 2000 to 1500
+
+### Bugfix
+
+- Fixed broken MLA translations
+- Fixed incorrect build costs for MLA T2 factories
+- Fixed Gil-E not shooting down Stingray missiles
+- Fixed Skitter navigation type and build completion sound
+- Fixed Purgers not attacking in some situations
+
 ## v1.10.2 - 2020-04-28
 
 ### Bugfix

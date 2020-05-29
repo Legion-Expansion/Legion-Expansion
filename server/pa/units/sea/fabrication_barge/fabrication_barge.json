@@ -1,6 +1,6 @@
 {
-  "display_name": "!LOC:Barnacle",
-  "description": "!LOC:Support Barge- Repairs damaged ships. Builds and detects mines. Cannot help build things.",
+  "display_name": "Barnacle",
+  "description": "!LOC:Support Barge - Repairs damaged ships. Builds and detects mines. Cannot help build units.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {
@@ -59,8 +59,8 @@
       "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         0.25,
-        0,
-        0
+        0.0,
+        0.0
       ],
       "orientation": [
         0,
@@ -74,8 +74,8 @@
       "filename": "/pa/effects/specs/fab_spray.pfx",
       "offset": [
         -0.25,
-        0,
-        0
+        0.0,
+        0.0
       ],
       "orientation": [
         0,
@@ -134,12 +134,19 @@
           "layer": "mine",
           "radius": 150,
           "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 150,
+          "shape": "capsule",
+          "uses_energy": true
         }
       ]
     }
   },
   "selection_icon": {
-    "diameter": 21
+    "diameter": 21.0
   },
   "spawn_layers": "WL_WaterSurface",
   "tools": [

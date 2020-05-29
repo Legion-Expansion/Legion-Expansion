@@ -1,0 +1,33 @@
+{
+  "build_list": [
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "Naval & Scout & Custom1",
+            "value0": 1
+          }
+        ]
+      ],
+      "instance_count": 5,
+      "name": "Legion - Naval Scout Platoon",
+      "priority": 100,
+      "shared_instance_count": "NavalScout",
+      "task_type": "Scout",
+      "to_build": "Legion_Naval_Scout"
+    }
+  ]
+}

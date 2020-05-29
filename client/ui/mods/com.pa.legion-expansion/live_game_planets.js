@@ -14,12 +14,12 @@ if (!legionExpansionLoaded) {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_planets.css");
     }
 
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");
 
-        model.toggleImage = ko.computed(function() {
+        model.toggleImage = ko.computed(function () {
           return model.showCelestialViewModels()
             ? "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png";
@@ -36,7 +36,7 @@ if (!legionExpansionLoaded) {
       if (payload === "mixed") {
         $(".body_panel").addClass("mixedui");
 
-        model.toggleImage = ko.computed(function() {
+        model.toggleImage = ko.computed(function () {
           return model.showCelestialViewModels()
             ? "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png";

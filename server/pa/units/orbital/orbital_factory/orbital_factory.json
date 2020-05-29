@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Orbital Factory",
-  "description": "!LOC:Advanced manufacturing- Builds orbital satellites.",
+  "description": "!LOC:Advanced Manufacturing - Builds orbital satellites and spaceships.",
   "TEMP_texelinfo": 65.6074,
   "area_build_separation": 7,
-  "atrophy_cool_down": 15,
-  "atrophy_rate": 90,
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 90.0,
   "audio": {
     "loops": {
       "build": {
@@ -31,7 +31,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Death/orbital",
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx"
     }
   },
@@ -180,7 +180,7 @@
     ]
   ],
   "selection_icon": {
-    "diameter": 73
+    "diameter": 73.0
   },
   "spawn_layers": "WL_Orbital",
   "tools": [
@@ -189,6 +189,7 @@
       "spec_id": "/pa/units/orbital/orbital_factory/orbital_factory_build_arm.json"
     }
   ],
+  "unit_name": "!Orbital Factory",
   "unit_types": [
     "UNITTYPE_Factory",
     "UNITTYPE_Construction",
@@ -199,5 +200,5 @@
     "UNITTYPE_Important"
   ],
   "wait_to_rolloff_time": 0,
-  "wreckage_health_frac": 0
+  "wreckage_health_frac": 0.0
 }

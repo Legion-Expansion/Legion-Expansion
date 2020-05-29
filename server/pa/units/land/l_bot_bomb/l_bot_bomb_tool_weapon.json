@@ -19,9 +19,6 @@
     "WL_LandHorizontal",
     "WL_WaterSurface"
   ],
-  "target_priorities": [
-    "Mobile"
-  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
   "yaw_rate": 3000

@@ -80,7 +80,7 @@
   "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
     "message": "磁軌大砲 - 拋射高傷害砲彈"
   },
-  "Artillery- High splash damage. Attacks land, sea and seabed targets.": {
+  "Artillery- Medium range. Attacks land, sea, seabed and underwater targets.": {
     "message": "中型磁軌砲 - 需要額外能源，攻擊海陸單位"
   },
   "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.": {
@@ -368,7 +368,7 @@
   "Legion Intro": {
     "message": "\"軍團\"陣營介紹影片"
   },
-  "Legion 1.10.2": {
-    "message": "軍團擴展模組 1.10.2"
+  "Legion 1.11.0": {
+    "message": "軍團擴展模組 1.11.0"
   }
 }

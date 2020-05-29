@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Vehicle",
-  "description": "!LOC:Builder- Builds advanced structures. Durable. More powerful than other builders.",
+  "description": "!LOC:Advanced Fabricator - Builds basic and advanced structures. Durable. More powerful than other fabricators.",
   "TEMP_texelinfo": 6.38729,
   "attachable": {
     "offsets": {
@@ -53,7 +53,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1,
+      "effect_scale": 1.0,
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
     }
   },
@@ -121,7 +121,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 13
+    "diameter": 13.0
   },
   "tools": [
     {
@@ -132,6 +132,7 @@
   "transportable": {
     "size": 1
   },
+  "unit_name": "Advanced Fabrication Vehicle",
   "unit_types": [
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",

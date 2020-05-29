@@ -16,7 +16,6 @@
       ]
     }
   },
-  "attack_range_frac": 0.1,
   "audio": {
     "loops": {
       "move": {
@@ -40,9 +39,6 @@
     "ORDER_Use",
     "ORDER_FireSecondaryWeapon"
   ],
-  "death_weapon": {
-    "ground_ammo_spec": "/pa/units/land/l_necromancer/death_weapon/pbaoe.json"
-  },
   "events": {
     "died": {},
     "fired": {
@@ -51,7 +47,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 2500,
+  "max_health": 250,
   "mesh_bounds": [
     8.05,
     6.214,
@@ -119,7 +115,7 @@
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_SelfDestruct",
+    "UNITTYPE_Artillery",
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",

@@ -1,6 +1,6 @@
 {
   "platoon_templates": {
-    "Amphibious_Attack_Large": {
+    "Legion_Amphibious_Attack_Large": {
       "units": [
         {
           "max_count": 19,
@@ -28,7 +28,7 @@
         }
       ]
     },
-    "Amphibious_Attack_Max": {
+    "Legion_Amphibious_Attack_Max": {
       "units": [
         {
           "max_count": -1,
@@ -56,7 +56,7 @@
         }
       ]
     },
-    "Amphibious_Attack_Medium": {
+    "Legion_Amphibious_Attack_Medium": {
       "units": [
         {
           "max_count": 9,
@@ -84,7 +84,7 @@
         }
       ]
     },
-    "Amphibious_Attack_Small": {
+    "Legion_Amphibious_Attack_Small": {
       "units": [
         {
           "max_count": 3,
@@ -112,7 +112,7 @@
         }
       ]
     },
-    "Amphibious_Attack_XLarge": {
+    "Legion_Amphibious_Attack_XLarge": {
       "units": [
         {
           "max_count": 39,

@@ -1,17 +1,17 @@
 var legionExpansionLoaded;
 
 if (!legionExpansionLoaded) {
-  api.mods.getMountedMods("server", function(mods) {
+  api.mods.getMountedMods("server", function (mods) {
     var legionServerLoaded =
       _.intersection(_.pluck(mods, "identifier"), [
         "com.pa.legion-expansion-server",
         "com.pa.legion-expansion-server-master",
         "com.pa.legion-expansion-server-balance",
-        "com.pa.legion-expansion-server-dev"
+        "com.pa.legion-expansion-server-dev",
       ]).length > 0;
     if (legionServerLoaded) {
       $(".div_ingame_options_bar_cont").prepend(
-        "<div class='watermark'><loc>Legion 1.10.2</loc></div>"
+        "<div class='watermark'><loc>Legion 1.11.0</loc></div>"
       );
       locUpdateDocument();
     }
@@ -23,9 +23,7 @@ if (!legionExpansionLoaded) {
 
     console.log(patchName + " on " + gBuild + " last tested on 114218");
 
-    loadCSS(
-      "coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css"
-    );
+    loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css");
 
     var themesetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -35,20 +33,20 @@ if (!legionExpansionLoaded) {
       );
     }
 
-    handlers.legionui = function(payload) {
+    handlers.legionui = function (payload) {
       console.log("SET UI : " + payload);
       //temporary watermark
 
       if (payload === "legion") {
         $(".body_panel").addClass("legionui");
 
-        model.pipImage = ko.computed(function() {
+        model.pipImage = ko.computed(function () {
           return model.pip()
             ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_off.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_on.png";
         });
 
-        model.uberBarImage = ko.computed(function() {
+        model.uberBarImage = ko.computed(function () {
           return model.uberBar()
             ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_hide.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_show.png";
@@ -87,13 +85,13 @@ if (!legionExpansionLoaded) {
       if (payload === "mixed") {
         $(".body_panel").addClass("mixedui");
 
-        model.pipImage = ko.computed(function() {
+        model.pipImage = ko.computed(function () {
           return model.pip()
             ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_off.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_on.png";
         });
 
-        model.uberBarImage = ko.computed(function() {
+        model.uberBarImage = ko.computed(function () {
           return model.uberBar()
             ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_hide.png"
             : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_show.png";

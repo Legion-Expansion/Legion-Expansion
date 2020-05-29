@@ -18,12 +18,12 @@ if (!legionExpansionLoaded) {
     var themesetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
-    model.checkCommanders = function(commanders) {
+    model.checkCommanders = function (commanders) {
       try {
         var legioncount = 0;
         var specslength = 0;
         if (commanders !== undefined) {
-          _.forOwn(commanders, function(value, key) {
+          _.forOwn(commanders, function (value) {
             if (_.includes(legioncomms, value)) {
               legioncount++;
             }
@@ -46,7 +46,7 @@ if (!legionExpansionLoaded) {
       }
     };
 
-    model.isLegionOrMixedOrVanilla = ko.computed(function() {
+    model.isLegionOrMixedOrVanilla = ko.computed(function () {
       try {
         var selectedspecs = model.player().commanders;
         return model.checkCommanders(selectedspecs);
@@ -55,7 +55,7 @@ if (!legionExpansionLoaded) {
       }
     });
 
-    model.isLegion = ko.computed(function() {
+    model.isLegion = ko.computed(function () {
       if (model.isLegionOrMixedOrVanilla() === "legion") {
         return true;
       } else {
@@ -63,7 +63,7 @@ if (!legionExpansionLoaded) {
       }
     });
 
-    model.isMixed = ko.computed(function() {
+    model.isMixed = ko.computed(function () {
       if (model.isLegionOrMixedOrVanilla() === "mixed") {
         return true;
       } else {
@@ -73,7 +73,7 @@ if (!legionExpansionLoaded) {
 
     model.legionstart = ko.observable(false);
 
-    model.player.subscribe(function(newval) {
+    model.player.subscribe(function () {
       if (!model.legionstart()) {
         if (themesetting === "ON") {
           var ui = model.isLegionOrMixedOrVanilla();
@@ -87,16 +87,16 @@ if (!legionExpansionLoaded) {
           api.Panel.message("menu", "legionui", ui);
 
           if (ui === "legion") {
-            var toggleImage = function(open) {
+            var toggleImage = function (open) {
               return open
                 ? "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png"
                 : "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png";
             };
 
-            model.playerPanelToggleImage = ko.computed(function() {
+            model.playerPanelToggleImage = ko.computed(function () {
               return toggleImage(model.showPlayerListPanel());
             });
-            model.spectatorPanelToggleImage = ko.computed(function() {
+            model.spectatorPanelToggleImage = ko.computed(function () {
               return toggleImage(model.showSpectatorPanel());
             });
 
@@ -114,16 +114,16 @@ if (!legionExpansionLoaded) {
             );
           }
           if (ui === "mixed") {
-            toggleImage = function(open) {
+            toggleImage = function (open) {
               return open
                 ? "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png"
                 : "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png";
             };
 
-            model.playerPanelToggleImage = ko.computed(function() {
+            model.playerPanelToggleImage = ko.computed(function () {
               return toggleImage(model.showPlayerListPanel());
             });
-            model.spectatorPanelToggleImage = ko.computed(function() {
+            model.spectatorPanelToggleImage = ko.computed(function () {
               return toggleImage(model.showSpectatorPanel());
             });
 
@@ -153,7 +153,7 @@ if (!legionExpansionLoaded) {
     }
 
     //COMMANDER IMAGE
-    model.commanderImage = function(d) {
+    model.commanderImage = function (d) {
       var result = "";
       switch (model.checkCommanders(d.commanders)) {
         case "vanilla":
@@ -176,7 +176,7 @@ if (!legionExpansionLoaded) {
       return result;
     };
 
-    model.commanderImageMaskLeg = function(d) {
+    model.commanderImageMaskLeg = function (d) {
       if (model.checkCommanders(d.commanders) === "legion") {
         return true;
       } else {
@@ -184,7 +184,7 @@ if (!legionExpansionLoaded) {
       }
     };
 
-    model.commanderImageMaskMix = function(d) {
+    model.commanderImageMaskMix = function (d) {
       if (model.checkCommanders(d.commanders) === "mixed") {
         return true;
       } else {

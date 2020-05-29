@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fab Aircraft",
-  "description": "!LOC:Builder- Builds structures. Very mobile. Vulnerable",
+  "description": "!LOC:Advanced Fabricator - Builds basic and advanced structures.",
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {
@@ -151,7 +151,7 @@
     }
   },
   "selection_icon": {
-    "diameter": 17
+    "diameter": 17.0
   },
   "tools": [
     {
@@ -162,6 +162,7 @@
   "transportable": {
     "size": 1
   },
+  "unit_name": "Advanced Fab Aircraft",
   "unit_types": [
     "UNITTYPE_Air",
     "UNITTYPE_Fabber",

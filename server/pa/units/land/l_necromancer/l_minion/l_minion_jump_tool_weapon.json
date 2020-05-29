@@ -1,4 +1,4 @@
 {
-  "ammo_id": "/pa/units/land/l_necromancer/minion/minion_jump_ammo.json",
+  "ammo_id": "/pa/units/land/l_necromancer/l_minion/l_minion_jump_ammo.json",
   "base_spec": "/pa/units/land/l_bot_bomb/l_bot_bomb_jump_tool_weapon.json"
 }

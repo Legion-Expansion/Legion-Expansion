@@ -224,6 +224,85 @@
           },
           {
             "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "value0": 150
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "value0": 1
+          },
+          {
+            "boolean": false,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ],
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
+            "test_type": "BaseThreatened"
+          },
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveFullPlanetIntel"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryBasicAir"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Basic Air Gunship - Intel",
+      "priority": 98,
+      "shared_instance_count": "AirScout",
+      "to_build": "LegionAirBasicGunship"
+    },
+    {
+      "build_conditions": [
+        [
+          {
+            "boolean": true,
+            "string0": "Vanilla",
+            "test_type": "HasPersonalityTag"
+          },
+          {
+            "boolean": false,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -258,6 +337,7 @@
       "max_num_assisters": 10,
       "name": "Legion - Basic Air Gunship",
       "priority": 97,
+      "shared_instance_count": "AirScout",
       "to_build": "LegionAirBasicGunship"
     },
     {
