@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## DEV
+
+### Balance
+
+- Land
+  - Shredder
+    - Increase damage from 10 to 25
+    - Decreased rate of fire from 8 to 4
+    - Prioritises anti-ground air units
+
 ## v1.12.0 - 2020-05-29
 
 ### AI
