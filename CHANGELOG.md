@@ -34,8 +34,6 @@
     - LOS decreased from 150 to 100
   - Orbweaver
     - LOS decreased from 150 to 100
-  - Peacekeeper
-    - Range increased from 75 to 85
   - Scorpion
     - Range increased from 140 to 150
   - Walker Foundry
