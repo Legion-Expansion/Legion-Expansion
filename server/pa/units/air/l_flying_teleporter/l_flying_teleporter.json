@@ -201,36 +201,6 @@
     "spawn_radius": 1,
     "type": "orbital"
   },
-  "tools": [
-    {
-      "aim_bone": "bone_root",
-      "fire_event": "fired0",
-      "muzzle_bone": [
-        "rocket001",
-        "rocket006",
-        "rocket002",
-        "rocket005",
-        "rocket003",
-        "rocket004"
-      ],
-      "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "fire_event": "fired1",
-      "muzzle_bone": [
-        "rocket009",
-        "rocket012",
-        "rocket008",
-        "rocket011",
-        "rocket007",
-        "rocket010"
-      ],
-      "projectiles_per_fire": 2,
-      "spec_id": "/pa/units/air/l_flying_teleporter/l_tele_rocket_tool_weapon.json"
-    }
-  ],
   "unit_types": [
     "UNITTYPE_Air",
     "UNITTYPE_Transport",
