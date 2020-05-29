@@ -26,7 +26,7 @@
   - Peacekeeper
     - Range increased from 75 to 85
   - Scorpion
-    - Range increased from 140 to 160
+    - Range increased from 140 to 150
   - Walker Foundry
     - Rolloff time reduced from 4 to 3 seconds
 - Orbital
