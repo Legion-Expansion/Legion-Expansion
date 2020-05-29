@@ -12,8 +12,8 @@
   - Advanced Flyer Foundry
     - Build cost increased from 4500 to 4800
   - Comet
-    - Removed Bomber UNITTYPE
-    - Added Transport UNITTYPE
+    - Removed Bomber tag
+    - Added Transport tag
     - Both weapons removed
 - Land
   - Advanced Armour Foundry
