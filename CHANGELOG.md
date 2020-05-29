@@ -28,11 +28,11 @@
   - Scorpion
     - Range increased from 140 to 150
   - Walker Foundry
-    - Rolloff time reduced from 4 to 3 seconds
+    - Roll-off time reduced from 4 to 3 seconds
 - Orbital
   - Starcannon
     - Build cost increased from 900 to 1700
-    - Rolloff time increased from 3 to 4 seconds
+    - Roll-off time increased from 3 to 4 seconds
 - Sea
   - Advanced Ship Foundry
     - Build cost increased from 4500 to 4800
