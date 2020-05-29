@@ -16,6 +16,8 @@
     - Build cost increased from 4500 to 4800
   - Advanced Walker Foundry
     - Build cost increased from 4500 to 4800
+  - Deathmark
+    - Underwater LOS decreased from 120 to 100
   - Havoc
     - Range increased from 100 to 115
   - Miniman
