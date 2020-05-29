@@ -34,6 +34,8 @@
     - LOS decreased from 150 to 100
   - Orbweaver
     - LOS decreased from 150 to 100
+  - Peacekeeper
+    - Health increased from 140 to 150
   - Scorpion
     - Range increased from 140 to 150
   - Walker Foundry
