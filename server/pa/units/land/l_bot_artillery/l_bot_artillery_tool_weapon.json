@@ -13,7 +13,7 @@
   "idle_aim_delay": 1,
   "manual_attack": true,
   "max_firing_velocity": 110,
-  "max_range": 180,
+  "max_range": 220,
   "min_firing_velocity": 40,
   "pitch_range": 90,
   "pitch_rate": 360,
