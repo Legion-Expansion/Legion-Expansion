@@ -24,6 +24,8 @@
     - Underwater LOS decreased from 120 to 100
   - Havoc
     - Range increased from 100 to 115
+  - Lancer
+    - Health reduced from 130 to 120
   - Miniman
     - Range increased from 180 to 220
     - Speed increased from 7 to 8
