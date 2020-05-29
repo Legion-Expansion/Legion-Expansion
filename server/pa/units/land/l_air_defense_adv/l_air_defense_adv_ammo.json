@@ -11,7 +11,7 @@
   },
   "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
-  "damage": 25,
+  "damage": 30,
   "damage_volume": {
     "delay": 0,
     "initial_radius": 10,
@@ -45,7 +45,7 @@
     "add_to_spatial_db": true,
     "gravity_scalar": 10
   },
-  "splash_damage": 25,
-  "splash_radius": 15,
+  "splash_damage": 30,
+  "splash_radius": 30,
   "turn_rate": 720
 }
