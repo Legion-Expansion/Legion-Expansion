@@ -265,60 +265,6 @@
             "unit_type_string0": "Structure & Teleporter",
             "value0": 0
           }
-        ],
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": false,
-            "test_type": "BaseThreatened"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank | Air) & Factory",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Fighter",
-            "value0": 200
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveFullPlanetIntel"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": false,
-            "test_type": "BaseThreatened"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank | Air) & Factory",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Fighter",
-            "value0": 1
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveFullPlanetIntel"
-          }
         ]
       ],
       "builders": [
@@ -1814,13 +1760,6 @@
           {
             "boolean": true,
             "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.35
           }
         ],
         [
@@ -1835,13 +1774,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Fighter",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.35
           },
           {
             "boolean": true,

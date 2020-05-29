@@ -1,5 +1,58 @@
 # CHANGELOG
 
+## v1.12.0 - 2020-05-29
+
+### AI
+
+- Clean-up of some build condition oddities
+
+### Balance
+
+- Air
+  - Advanced Flyer Foundry
+    - Build cost increased from 4500 to 4800
+  - Comet
+    - Removed Bomber tag
+    - Added Transport tag
+    - Both weapons removed
+- Land
+  - Advanced Armour Foundry
+    - Build cost increased from 4500 to 4800
+  - Advanced Walker Foundry
+    - Build cost increased from 4500 to 4800
+  - Deathmark
+    - Underwater LOS decreased from 120 to 100
+  - Havoc
+    - Range increased from 100 to 115
+  - Lancer
+    - Health reduced from 130 to 120
+  - Miniman
+    - Range increased from 180 to 220
+    - Speed increased from 7 to 8
+  - Monstrosity
+    - LOS decreased from 150 to 100
+    - Weapon #1 range increased from 150 to 170
+    - Weapon #2 range decreased from 90 to 75
+  - Necromancer
+    - LOS decreased from 150 to 100
+  - Orbweaver
+    - LOS decreased from 150 to 100
+  - Peacekeeper
+    - Health increased from 140 to 150
+  - Scorpion
+    - Range increased from 140 to 150
+  - Walker Foundry
+    - Roll-off time reduced from 4 to 3 seconds
+- Orbital
+  - Starcannon
+    - Build cost increased from 900 to 1700
+    - Roll-off time increased from 3 to 4 seconds
+- Sea
+  - Advanced Ship Foundry
+    - Build cost increased from 4500 to 4800
+  - Bowhead
+    - LOS increased from 150 to 180
+
 ## v1.11.0 - 2020-05-29
 
 ### General
