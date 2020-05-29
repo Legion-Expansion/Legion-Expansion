@@ -30,6 +30,8 @@
     - LOS decreased from 150 to 100
     - Weapon #1 range increased from 150 to 170
     - Weapon #2 range decreased from 90 to 75
+  - Necromancer
+    - LOS decreased from 150 to 100
   - Orbweaver
     - LOS decreased from 150 to 100
   - Peacekeeper
