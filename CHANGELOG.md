@@ -6,9 +6,9 @@
 
 - Land
   - Archer
-    - Damage per projectile increased from 25 to 30
-    - Splash damage increased from 25 to 30
-    - Splash range increase from 15 to 30
+    - Damage per projectile increased from 25 to 27
+    - Splash damage increased from 25 to 27
+    - Splash range increase from 15 to 20
   - Shredder
     - Stats and behaviour now identical to the Galata
 
