@@ -4,14 +4,17 @@
   "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
   "firing_arc_pitch": 5,
   "firing_arc_yaw": 2,
-  "idle_aim_delay": 3,
   "max_range": 150,
   "pitch_range": 90,
   "pitch_rate": 720,
-  "rate_of_fire": 8,
+  "rate_of_fire": 10,
   "spread_fire": false,
   "target_layers": [
     "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & (Transport | Bomber | Gunship | Titan )",
+    "Mobile & Air"
   ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,

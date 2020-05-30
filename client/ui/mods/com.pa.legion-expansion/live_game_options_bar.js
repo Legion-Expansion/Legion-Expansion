@@ -11,7 +11,7 @@ if (!legionExpansionLoaded) {
       ]).length > 0;
     if (legionServerLoaded) {
       $(".div_ingame_options_bar_cont").prepend(
-        "<div class='watermark'><loc>Legion 1.12.0</loc></div>"
+        "<div class='watermark'><loc>Legion 1.13.0</loc></div>"
       );
       locUpdateDocument();
     }

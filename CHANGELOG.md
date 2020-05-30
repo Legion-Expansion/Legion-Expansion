@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## v1.13.0 - 2020-05-30
+
+### Balance
+
+- Land
+  - Archer
+    - Splash range increase from 15 to 20
+  - Shredder
+    - Rate of fire increased from 8 to 10
+    - Can no longer damage non-air units
+  - Theodor
+    - Range reduced from 260 to 240
+
+### Bugfix
+
+- Assigned Shredder target priorities to the correct weapon
+
 ## v1.12.0 - 2020-05-29
 
 ### AI

@@ -46,6 +46,6 @@
     "gravity_scalar": 10
   },
   "splash_damage": 25,
-  "splash_radius": 15,
+  "splash_radius": 20,
   "turn_rate": 720
 }
