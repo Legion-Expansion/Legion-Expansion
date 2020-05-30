@@ -13,6 +13,10 @@
   "target_layers": [
     "WL_Air"
   ],
+  "target_priorities": [
+    "Air & (Transport | Bomber | Gunship | Titan )",
+    "Mobile & Air"
+  ],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
   "yaw_rate": 720
