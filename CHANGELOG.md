@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### Bugfix
+
+- Corrected Infiltrator moving slower between planets than other interplanetary aircraft
+
 ## v1.13.0 - 2020-05-30
 
 ### Balance
