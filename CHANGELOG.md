@@ -9,6 +9,8 @@
     - Splash range increase from 15 to 20
   - Shredder
     - Stats and behaviour now identical to the Galata
+  - Theodor
+    - Range reduced from 260 to 240
 
 ## v1.12.0 - 2020-05-29
 
