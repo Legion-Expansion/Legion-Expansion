@@ -10,7 +10,7 @@
   "firing_arc_yaw": 0,
   "firing_standard_deviation": 0.25,
   "max_firing_velocity": 200,
-  "max_range": 260,
+  "max_range": 240,
   "min_firing_velocity": 100,
   "physics": {
     "add_to_spatial_db": true,
