@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 2200,
+  "build_metal_cost": 2000,
   "consumption": {
     "energy": 0
   },
@@ -63,7 +63,7 @@
     16
   ],
   "production": {
-    "metal": 14
+    "metal": 15
   },
   "recon": {
     "observer": {
@@ -84,6 +84,7 @@
     }
   },
   "replaceable_units": [
+    "/pa/units/land/metal_extractor/metal_extractor.json",
     "/pa/units/land/l_mex/l_mex.json"
   ],
   "selection_icon": {

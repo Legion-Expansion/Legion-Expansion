@@ -39,7 +39,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 150,
+  "build_metal_cost": 135,
   "buildable_types": "Custom1 & ( Land & Structure & Basic | Factory & Basic | Factory & Advanced & Bot & Land | FabBuild )",
   "command_caps": [
     "ORDER_Move",
@@ -85,7 +85,7 @@
     "acceleration": 240,
     "brake": 120,
     "group_preference": "back",
-    "move_speed": 14,
+    "move_speed": 15,
     "turn_speed": 360
   },
   "physics": {

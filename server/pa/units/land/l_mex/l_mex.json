@@ -77,6 +77,7 @@
     }
   },
   "replaceable_units": [
+    "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
     "/pa/units/land/l_mex_adv/l_mex_adv.json"
   ],
   "selection_icon": {
