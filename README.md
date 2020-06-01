@@ -54,3 +54,32 @@
 - Metal Usage: 16 -> 14
 - Energy Usage: 850 -> 800
 - Movement Speed: 9 -> 10
+
+### Advanced Fabrication Walker
+*We decided to take a similar approach here to the approach we took with the T1 Armour Fabricator*
+
+- Cost: 2000 -> 1800
+- Metal Usage: 50 -> 45
+- Energy Usage: 2200 -> 1800
+- Movement Speed: 14 -> 15
+- Build Range: 45 -> 60
+- Health: 150 -> 250
+
+### Advanced Armour Fabricator
+- Cost: 2250 -> 2025
+- Metal Usage: 70 -> 60
+- Energy Usage: 2750 -> 2250
+- Movement Speed: 10 -> 11
+- Build Range: 45 -> 60
+
+### Advanced Fabrication Flyer
+- Cost: 2400 -> 1950
+- Metal Usage: 60 -> 54
+- Energy Usage: 2500 -> 2250
+- Does not show up on enemy radar.
+
+### Advanced Fabrication Vessel
+- Cost: 2700 -> 2400
+- Metal Usage: 90 -> 80
+- Movement Speed: 9 -> 10
+- Health: 675 -> 600
