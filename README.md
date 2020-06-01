@@ -41,3 +41,16 @@
 - Metal Usage: 13 -> 11
 - Energy Usage: 850 -> 700
 - Build Range: 45 -> 55
+
+### Fabrication Flyer
+- Cost: 225 -> 210
+- Metal Usage: 10 -> 9
+- Does not show up on enemy radar.
+
+### Fabrication Ship
+*Due to the sensitive nature of naval openings and the fact that MLA naval fabricators are already excruciatingly slow, we decided that it was best for the Fabrication Ship to have the same statistics as its MLA counterpart for now.*
+
+- Cost: 240 -> 200
+- Metal Usage: 16 -> 14
+- Energy Usage: 850 -> 800
+- Movement Speed: 9 -> 10
