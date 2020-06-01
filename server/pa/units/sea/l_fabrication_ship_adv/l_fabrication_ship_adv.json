@@ -33,7 +33,7 @@
     }
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "build_metal_cost": 2700,
+  "build_metal_cost": 2400,
   "buildable_types": "Custom1 & ( Naval & Structure & Advanced | Naval & Factory & Advanced | FabAdvBuild | FabBuild )",
   "command_caps": [
     "ORDER_Move",
@@ -63,7 +63,7 @@
       "type": "build"
     }
   ],
-  "max_health": 675,
+  "max_health": 600,
   "mesh_bounds": [
     6.309,
     15.39,
@@ -76,7 +76,7 @@
   "navigation": {
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 9,
+    "move_speed": 10,
     "park_stamp_cost": 10,
     "park_stamp_type": "sphere",
     "turn_speed": 90

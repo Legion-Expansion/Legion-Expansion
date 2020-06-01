@@ -39,7 +39,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1800,
   "buildable_types": "Custom1 & (Land & Structure & Advanced - Factory| Factory & Advanced & Bot & Land | FabAdvBuild | FabBuild | Bot & Titan)",
   "command_caps": [
     "ORDER_Move",
@@ -71,7 +71,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 150,
+  "max_health": 250,
   "mesh_bounds": [
     4,
     2,
@@ -90,7 +90,7 @@
     "acceleration": 120,
     "brake": 120,
     "group_preference": "back",
-    "move_speed": 14,
+    "move_speed": 15,
     "turn_speed": 720
   },
   "physics": {
