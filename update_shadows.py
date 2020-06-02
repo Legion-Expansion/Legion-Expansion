@@ -91,6 +91,19 @@ for unit_path in mla_units["units"]:
             "(" + old_buildable_types + ") - Custom1 - Custom2 - Custom3 - Custom4"
         )
 
+# Allow MLA metal to stack with Legion
+load("/pa/units/land/metal_extractor/metal_extractor.json")[
+    "replaceable_units"
+] += [
+    "/pa/units/land/l_mex_adv/l_mex_adv.json"
+]
+
+load("/pa/units/land/metal_extractor_adv/metal_extractor_adv.json")[
+    "replaceable_units"
+] += [
+    "/pa/units/land/l_mex/l_mex.json"
+]
+
 # Anti AA missile
 load("/pa/units/air/support_platform/support_platform_tool_interception.json")[
     "anti_entity_targets"

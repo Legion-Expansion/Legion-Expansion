@@ -15,10 +15,10 @@
 - Cost: 2200 -> 2000
 - Can now be built on top of MLA Metal Extractor.
 
-### (MLA) Metal Extractor (TBD)
+### (MLA) Metal Extractor
 - Can now be built on top of Legion Advanced Mass Extractor.
 
-### (MLA) Advanced Metal Extractor (TBD)
+### (MLA) Advanced Metal Extractor
 - Can now be built on top of Legion Mass Extractor.
 
 ## FABRICATORS
