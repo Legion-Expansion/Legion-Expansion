@@ -18,7 +18,10 @@
   "lifetime": 3,
   "max_velocity": 170.0,
   "physics": {
-    "add_to_spatial_db": true
+    "radius": 1,
+    "gravity_scalar": 7,
+    "add_to_spatial_db": false,
+    "allow_underground": true
   },
   "splash_radius": 0
 }

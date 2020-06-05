@@ -5,6 +5,7 @@
 ### Bugfix
 
 - Corrected Infiltrator moving slower between planets than other interplanetary aircraft
+- Fixed Bowhead weapons not always finding a firing solution
 
 ## v1.13.0 - 2020-05-30
 
