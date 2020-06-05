@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## 1.13.1 - 2020-06-05
 
 ### Bugfix
 

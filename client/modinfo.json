@@ -1,13 +1,13 @@
 {
   "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
-  "build": "114351",
+  "build": "114353",
   "category": [
     "titans",
     "units",
     "faction"
   ],
   "context": "client",
-  "date": "2020/05/30",
+  "date": "2020/06/05",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
