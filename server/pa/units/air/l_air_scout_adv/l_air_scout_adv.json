@@ -75,6 +75,7 @@
       "type": "moving_forward"
     }
   ],
+  "gravwell_velocity_multiplier": 6.0,
   "max_health": 250,
   "mesh_bounds": [
     23.7,
