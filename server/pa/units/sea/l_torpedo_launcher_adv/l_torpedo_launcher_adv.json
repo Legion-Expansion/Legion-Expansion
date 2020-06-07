@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Tsunami",
-  "description": "!LOC:Advanced Wave Turret- Attacks sea, seabed and undersea targets.",
+  "description": "!LOC:Advanced Wave Turret - Attacks sea, seabed and undersea targets.",
   "TEMP_texelinfo": 10.4007,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,

@@ -1,60 +1,60 @@
 {
-  "Flying Bomb- Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
-    "message": "Flying Bomb- Self-destructs to deal very heavy damage over an area over time. Attacks air targets only."
+  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
+    "message": "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only."
   },
-  "Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
-    "message": "Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets."
+  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
+    "message": "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets."
   },
-  "Drone- Fast. Fragile. Attacks land, sea and air targets.": {
-    "message": "Drone- Fast. Fragile. Attacks land, sea and air targets."
+  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
+    "message": "Drone - Fast. Fragile. Attacks land, sea and air targets."
   },
-  "Basic Manufacturing- Builds basic air units.": {
-    "message": "Basic Manufacturing- Builds basic air units."
+  "Basic Manufacturing - Builds basic air units.": {
+    "message": "Basic Manufacturing - Builds basic air units."
   },
-  "Advanced Manufacturing- Builds advanced air units.": {
-    "message": "Advanced Manufacturing- Builds advanced air units."
+  "Advanced Manufacturing - Builds advanced air units.": {
+    "message": "Advanced Manufacturing - Builds advanced air units."
   },
-  "Advanced Stealth Scout- Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
-    "message": "Advanced Stealth Scout- Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets."
+  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
+    "message": "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets."
   },
-  "Bomber- High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Bomber- High damage to a single target. Attacks land, sea, seabed and undersea targets."
+  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets."
   },
-  "Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
-    "message": "Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders."
+  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
-    "message": "Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders."
+  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders."
   },
-  "Fighter- Fast. High damage. Forward firing only. Only attacks air targets.": {
-    "message": "Fighter- Fast. High damage. Forward firing only. Only attacks air targets."
+  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
+    "message": "Fighter - Fast. High damage. Forward firing only. Only attacks air targets."
   },
-  "Interplanetary Fighter- Fast. Can move between planets. Can only attack air targets.": {
-    "message": "Interplanetary Fighter- Fast. Can move between planets. Can only attack air targets."
+  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
+    "message": "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets."
   },
-  "Light Turret- Rapid fire. Attacks land, sea and seabed targets.": {
-    "message": "Light Turret- Rapid fire. Attacks land, sea and seabed targets."
+  "Light Turret - Rapid fire. Attacks land, sea and seabed targets.": {
+    "message": "Light Turret - Rapid fire. Attacks land, sea and seabed targets."
   },
-  "Napalm Bomber- High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
-    "message": "Napalm Bomber- High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets."
+  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
+    "message": "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets."
   },
-  "Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
-    "message": "Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets."
+  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
+    "message": "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets."
   },
-  "Gunship- Heavily armored. Attacks land, sea and seabed targets.": {
-    "message": "Gunship- Heavily armored. Attacks land, sea and seabed targets."
+  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Gunship - Heavily armored. Attacks land, sea and seabed targets."
   },
-  "Raider- Fast. Can see far away. Attacks land and sea targets.": {
-    "message": "Raider- Fast. Can see far away. Attacks land and sea targets."
+  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
+    "message": "Raider - Fast. Can see far away. Attacks land and sea targets."
   },
-  "Flying Fortress Titan- Heavy damage over a wide area. Attacks any targets except orbital.": {
-    "message": "Flying Fortress Titan- Heavy damage over a wide area. Attacks any targets except orbital."
+  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
+    "message": "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital."
   },
-  "Transport- Load a land unit for rapid long distance travel.": {
-    "message": "Transport- Load a land unit for rapid long distance travel."
+  "Transport - Load a land unit for rapid long distance travel.": {
+    "message": "Transport - Load a land unit for rapid long distance travel."
   },
-  "Legion Commander Description- If you're seeing this, something is wrong in your commander.": {
-    "message": "Legion Commander Description- If you're seeing this, something is wrong in your commander."
+  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
+    "message": "Legion Commander Description - If you're seeing this, something is wrong in your commander."
   },
   "Imperial Cyclops Commander": {
     "message": "Imperial Cyclops Commander"
@@ -68,266 +68,266 @@
   "Imperial Wasushi Commander": {
     "message": "Imperial Wasushi Commander"
   },
-  "Anti-Air Turret- Equipped with homing tracer rounds. Only attacks air targets.": {
-    "message": "Anti-Air Turret- Equipped with homing tracer rounds. Only attacks air targets."
+  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
+    "message": "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets."
   },
-  "Advanced Anti-Air Turret- Fires homing rockets which deal splash damage. Only attacks air targets.": {
-    "message": "Advanced Anti-Air Turret- Fires homing rockets which deal splash damage. Only attacks air targets."
+  "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
+    "message": "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets."
   },
-  "Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons.": {
-    "message": "Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons."
+  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
+    "message": "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons."
   },
-  "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
-    "message": "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets."
+  "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets."
   },
-  "Artillery- Medium range. Attacks land, sea, seabed and underwater targets.": {
-    "message": "Artillery- Medium range. Attacks land, sea, seabed and underwater targets."
+  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
+    "message": "Artillery - Medium range. Attacks land, sea, seabed and underwater targets."
   },
-  "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.": {
-    "message": "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets."
+  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
+    "message": "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets."
   },
-  "Anti-Air Walker- Equipped with homing missiles. Only attacks air targets.": {
-    "message": "Anti-Air Walker- Equipped with homing missiles. Only attacks air targets."
+  "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.": {
+    "message": "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets."
   },
-  "Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets.": {
-    "message": "Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets."
+  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
+    "message": "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets."
   },
-  "Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
-    "message": "Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets."
+  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
+    "message": "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets."
   },
-  "Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets.": {
-    "message": "Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets."
+  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
+    "message": "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets."
   },
-  "Leaping Bomb Bot- Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
-    "message": "Leaping Bomb Bot- Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets."
+  "Leaping Bomb Bot - Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
+    "message": "Leaping Bomb Bot - Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets."
   },
-  "Basic Manufacturing- Builds basic bot units.": {
-    "message": "Basic Manufacturing- Builds basic bot units."
+  "Basic Manufacturing - Builds basic bot units.": {
+    "message": "Basic Manufacturing - Builds basic bot units."
   },
-  "Advanced Manufacturing- Builds advanced bot units.": {
-    "message": "Advanced Manufacturing- Builds advanced bot units."
+  "Advanced Manufacturing - Builds advanced bot units.": {
+    "message": "Advanced Manufacturing - Builds advanced bot units."
   },
-  "Auxiliary Commander- Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
-    "message": "Auxiliary Commander- Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital."
+  "Auxiliary Commander - Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
+    "message": "Auxiliary Commander - Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital."
   },
-  "Basic Economy- Generates power.": {
-    "message": "Basic Economy- Generates power."
+  "Basic Economy - Generates power.": {
+    "message": "Basic Economy - Generates power."
   },
-  "Advanced Economy- Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
-    "message": "Advanced Economy- Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe."
+  "Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
+    "message": "Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe."
   },
-  "Builder- Builds basic structures. Cheap. Less powerful than other builders.": {
-    "message": "Builder- Builds basic structures. Cheap. Less powerful than other builders."
+  "Builder - Builds basic structures. Cheap. Less powerful than other builders.": {
+    "message": "Builder - Builds basic structures. Cheap. Less powerful than other builders."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
-    "message": "Advanced Builder- Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders."
+  "Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
+    "message": "Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders."
   },
-  "Builder- Builds basic structures. Durable. More powerful than other basic land and air builders.": {
-    "message": "Builder- Builds basic structures. Durable. More powerful than other basic land and air builders."
+  "Builder - Builds basic structures. Durable. More powerful than other basic land and air builders.": {
+    "message": "Builder - Builds basic structures. Durable. More powerful than other basic land and air builders."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
-    "message": "Advanced Builder- Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders."
+  "Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
+    "message": "Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders."
   },
-  "Combat Builder- Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
-    "message": "Combat Builder- Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures."
+  "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
+    "message": "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures."
   },
-  "Flame Turret- High splash damage. Attacks land and sea targets.": {
-    "message": "Flame Turret- High splash damage. Attacks land and sea targets."
+  "Flame Turret - High splash damage. Attacks land and sea targets.": {
+    "message": "Flame Turret - High splash damage. Attacks land and sea targets."
   },
-  "Hover Artillery- Can cross water and lava. Attacks land, sea and seabed targets.": {
-    "message": "Hover Artillery- Can cross water and lava. Attacks land, sea and seabed targets."
+  "Hover Artillery - Can cross water and lava. Attacks land, sea and seabed targets.": {
+    "message": "Hover Artillery - Can cross water and lava. Attacks land, sea and seabed targets."
   },
-  "Hover Assault- Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
-    "message": "Hover Assault- Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets."
+  "Hover Assault - Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
+    "message": "Hover Assault - Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets."
   },
-  "Wall- Very durable. Blocks enemy fire only.": {
-    "message": "Wall- Very durable. Blocks enemy fire only."
+  "Wall - Very durable. Blocks enemy fire only.": {
+    "message": "Wall - Very durable. Blocks enemy fire only."
   },
-  "Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
-    "message": "Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units."
+  "Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
+    "message": "Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units."
   },
-  "Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
-    "message": "Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor."
+  "Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
+    "message": "Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor."
   },
-  "Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets."
+  "Light Tank - Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Light Tank - Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets."
   },
-  "Siege Walker- Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
-    "message": "Siege Walker- Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only."
+  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+    "message": "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only."
   },
-  "Nuclear Missile Launcher- Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
-    "message": "Nuclear Missile Launcher- Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets."
+  "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
+    "message": "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets."
   },
-  "Nuclear Missile- Long range, high damage ballistic missile.": {
-    "message": "Nuclear Missile- Long range, high damage ballistic missile."
+  "Nuclear Missile - Long range, high damage ballistic missile.": {
+    "message": "Nuclear Missile - Long range, high damage ballistic missile."
   },
-  "Basic Radar- Short-range enemy unit detection. Requires energy.": {
-    "message": "Basic Radar- Short-range enemy unit detection. Requires energy."
+  "Basic Radar - Short-range enemy unit detection. Requires energy.": {
+    "message": "Basic Radar - Short-range enemy unit detection. Requires energy."
   },
-  "Advanced Radar- Long-range enemy unit detection. Requires energy.": {
-    "message": "Advanced Radar- Long-range enemy unit detection. Requires energy."
+  "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
+    "message": "Advanced Radar - Long-range enemy unit detection. Requires energy."
   },
-  "Assault Walker- High DPS. Attacks land, sea and seabed targets.": {
-    "message": "Assault Walker- High DPS. Attacks land, sea and seabed targets."
+  "Assault Walker - High DPS. Attacks land, sea and seabed targets.": {
+    "message": "Assault Walker - High DPS. Attacks land, sea and seabed targets."
   },
-  "Rocket Turret- High damage. Attacks land and sea targets.": {
-    "message": "Rocket Turret- High damage. Attacks land and sea targets."
+  "Rocket Turret - High damage. Attacks land and sea targets.": {
+    "message": "Rocket Turret - High damage. Attacks land and sea targets."
   },
-  "Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
-    "message": "Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar."
+  "Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
+    "message": "Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar."
   },
-  "Radar- Immobile. Use alt fire to change into a fast-moving mine detector.": {
-    "message": "Radar- Immobile. Use alt fire to change into a fast-moving mine detector."
+  "Radar - Immobile. Use alt fire to change into a fast-moving mine detector.": {
+    "message": "Radar - Immobile. Use alt fire to change into a fast-moving mine detector."
   },
-  "Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
-    "message": "Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire."
+  "Shield - Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
+    "message": "Shield - Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire."
   },
-  "Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets.": {
-    "message": "Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets."
+  "Shotgun Tank - Close range. Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Shotgun Tank - Close range. Heavily armored. Attacks land, sea and seabed targets."
   },
-  "Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.": {
-    "message": "Laser Walker- Short range. High damage. Attacks land, sea and seabed targets."
+  "Laser Walker - Short range. High damage. Attacks land, sea and seabed targets.": {
+    "message": "Laser Walker - Short range. High damage. Attacks land, sea and seabed targets."
   },
-  "Siege Tank- Long range. Attacks land, sea and seabed.": {
-    "message": "Siege Tank- Long range. Attacks land, sea and seabed."
+  "Siege Tank - Long range. Attacks land, sea and seabed.": {
+    "message": "Siege Tank - Long range. Attacks land, sea and seabed."
   },
-  "Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
-    "message": "Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe."
+  "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
+    "message": "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe."
   },
-  "Swarm Turret- Spawns nanoswarms. Attacks land, sea and seabed targets.": {
-    "message": "Swarm Turret- Spawns nanoswarms. Attacks land, sea and seabed targets."
+  "Swarm Turret - Spawns nanoswarms. Attacks land, sea and seabed targets.": {
+    "message": "Swarm Turret - Spawns nanoswarms. Attacks land, sea and seabed targets."
   },
-  "Heavy Turret- High damage. Attacks land, sea and seabed targets.": {
-    "message": "Heavy Turret- High damage. Attacks land, sea and seabed targets."
+  "Heavy Turret - High damage. Attacks land, sea and seabed targets.": {
+    "message": "Heavy Turret - High damage. Attacks land, sea and seabed targets."
   },
-  "Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
-    "message": "Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets."
+  "Seismic Tank - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
+    "message": "Seismic Tank - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets."
   },
-  "Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
-    "message": "Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets."
+  "Assault Tank - Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Assault Tank - Heavily armored. Splash damage. Attacks land, sea and seabed targets."
   },
-  "Medium Tank- Splash damage. Attacks land, sea and seabed targets.": {
-    "message": "Medium Tank- Splash damage. Attacks land, sea and seabed targets."
+  "Medium Tank - Splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Medium Tank - Splash damage. Attacks land, sea and seabed targets."
   },
-  "Lightning Tank- Shoots timed electric mines. Attacks land and sea targets.": {
-    "message": "Lightning Tank- Shoots timed electric mines. Attacks land and sea targets."
+  "Lightning Tank - Shoots timed electric mines. Attacks land and sea targets.": {
+    "message": "Lightning Tank - Shoots timed electric mines. Attacks land and sea targets."
   },
-  "Teleporter- Link teleporters to move units around the system.": {
-    "message": "Teleporter- Link teleporters to move units around the system."
+  "Teleporter - Link teleporters to move units around the system.": {
+    "message": "Teleporter - Link teleporters to move units around the system."
   },
-  "Siege Titan- Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Siege Titan- Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets."
+  "Siege Titan - Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Siege Titan - Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets."
   },
-  "Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside.": {
-    "message": "Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside."
+  "Doomsday Titan - Drops an explosive into the planet's core, breaking it apart from the inside.": {
+    "message": "Doomsday Titan - Drops an explosive into the planet's core, breaking it apart from the inside."
   },
-  "Assault Titan- High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
-    "message": "Assault Titan- High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets."
+  "Assault Titan - High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
+    "message": "Assault Titan - High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets."
   },
-  "Basic Manufacturing- Builds basic tank units.": {
-    "message": "Basic Manufacturing- Builds basic tank units."
+  "Basic Manufacturing - Builds basic tank units.": {
+    "message": "Basic Manufacturing - Builds basic tank units."
   },
-  "Advanced Manufacturing- Builds advanced tank units.": {
-    "message": "Advanced Manufacturing- Builds advanced tank units."
+  "Advanced Manufacturing - Builds advanced tank units.": {
+    "message": "Advanced Manufacturing - Builds advanced tank units."
   },
-  "Orbital Turret- Rapid fire. Attacks land, air, sea and orbital targets.": {
-    "message": "Orbital Turret- Rapid fire. Attacks land, air, sea and orbital targets."
+  "Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets.": {
+    "message": "Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets."
   },
-  "Planet Engine- Used to smash celestial bodies into each other. Build as many as the planet requires.": {
-    "message": "Planet Engine- Used to smash celestial bodies into each other. Build as many as the planet requires."
+  "Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires.": {
+    "message": "Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires."
   },
-  "Anti-Orbital Turret- Attacks orbital targets and drop pods.": {
-    "message": "Anti-Orbital Turret- Attacks orbital targets and drop pods."
+  "Anti-Orbital Turret - Attacks orbital targets and drop pods.": {
+    "message": "Anti-Orbital Turret - Attacks orbital targets and drop pods."
   },
-  "Orbital Economy- Produces metal and energy. Only buildable on gas giants.": {
-    "message": "Orbital Economy- Produces metal and energy. Only buildable on gas giants."
+  "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
+    "message": "Orbital Economy - Produces metal and energy. Only buildable on gas giants."
   },
-  "Orbital Battleship- Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
-    "message": "Orbital Battleship- Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets."
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
+    "message": "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets."
   },
-  "Planetary Transport- Builds and launches up to 14 units at once to the planet below.": {
-    "message": "Planetary Transport- Builds and launches up to 14 units at once to the planet below."
+  "Planetary Transport - Builds and launches up to 14 units at once to the planet below.": {
+    "message": "Planetary Transport - Builds and launches up to 14 units at once to the planet below."
   },
-  "Advanced Builder- Builds orbital structures. Builds all titans.": {
-    "message": "Advanced Builder- Builds orbital structures. Builds all titans."
+  "Advanced Builder - Builds orbital structures. Builds all titans.": {
+    "message": "Advanced Builder - Builds orbital structures. Builds all titans."
   },
-  "Advanced Manufacturing- Builds advanced orbital units.": {
-    "message": "Advanced Manufacturing- Builds advanced orbital units."
+  "Advanced Manufacturing - Builds advanced orbital units.": {
+    "message": "Advanced Manufacturing - Builds advanced orbital units."
   },
-  "Orbital Fighter- Fast. Attacks orbital targets only.": {
-    "message": "Orbital Fighter- Fast. Attacks orbital targets only."
+  "Orbital Fighter - Fast. Attacks orbital targets only.": {
+    "message": "Orbital Fighter - Fast. Attacks orbital targets only."
   },
-  "Interplanetary Transport- Moves land and air units between planets.": {
-    "message": "Interplanetary Transport- Moves land and air units between planets."
+  "Interplanetary Transport - Moves land and air units between planets.": {
+    "message": "Interplanetary Transport - Moves land and air units between planets."
   },
-  "Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets.": {
-    "message": "Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets."
+  "Orbital Laser - High splash damage. Attacks land, air, sea and seabed targets.": {
+    "message": "Orbital Laser - High splash damage. Attacks land, air, sea and seabed targets."
   },
-  "Basic Manufacturing- Builds basic orbital units.": {
-    "message": "Basic Manufacturing- Builds basic orbital units."
+  "Basic Manufacturing - Builds basic orbital units.": {
+    "message": "Basic Manufacturing - Builds basic orbital units."
   },
-  "Orbital Scout- Fast. Provides small amount of vision of the planet below": {
-    "message": "Orbital Scout- Fast. Provides small amount of vision of the planet below"
+  "Orbital Scout - Fast. Provides small amount of vision of the planet below": {
+    "message": "Orbital Scout - Fast. Provides small amount of vision of the planet below"
   },
-  "Orbital Siege- Long range. High damage. Attacks orbital targets only.": {
-    "message": "Orbital Siege- Long range. High damage. Attacks orbital targets only."
+  "Orbital Siege - Long range. High damage. Attacks orbital targets only.": {
+    "message": "Orbital Siege - Long range. High damage. Attacks orbital targets only."
   },
-  "Basic Radar Satellite- Short-range enemy unit detection. Requires energy.": {
-    "message": "Basic Radar Satellite- Short-range enemy unit detection. Requires energy."
+  "Basic Radar Satellite - Short-range enemy unit detection. Requires energy.": {
+    "message": "Basic Radar Satellite - Short-range enemy unit detection. Requires energy."
   },
-  "Advanced Radar Satellite- Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
-    "message": "Advanced Radar Satellite- Long-range enemy unit detection. Requires energy. Attacks land and sea targets."
+  "Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
+    "message": "Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets."
   },
-  "Orbital Mega-Laser- Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
-    "message": "Orbital Mega-Laser- Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital."
+  "Orbital Mega-Laser - Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
+    "message": "Orbital Mega-Laser - Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital."
   },
-  "Submarine- Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
-    "message": "Submarine- Fast. Fires in salvos. Attacks sea, seabed and undersea targets."
+  "Submarine - Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
+    "message": "Submarine - Fast. Fires in salvos. Attacks sea, seabed and undersea targets."
   },
-  "Battleship- High damage. Heavily armored. Long range. Attacks land and sea targets.": {
-    "message": "Battleship- High damage. Heavily armored. Long range. Attacks land and sea targets."
+  "Battleship - High damage. Heavily armored. Long range. Attacks land and sea targets.": {
+    "message": "Battleship - High damage. Heavily armored. Long range. Attacks land and sea targets."
   },
-  "Destroyer- High damage. Long range. Attacks land and sea targets.": {
-    "message": "Destroyer- High damage. Long range. Attacks land and sea targets."
+  "Destroyer - High damage. Long range. Attacks land and sea targets.": {
+    "message": "Destroyer - High damage. Long range. Attacks land and sea targets."
   },
-  "Builder- Builds basic structures. Most powerful basic planetary fabricator.": {
-    "message": "Builder- Builds basic structures. Most powerful basic planetary fabricator."
+  "Builder - Builds basic structures. Most powerful basic planetary fabricator.": {
+    "message": "Builder - Builds basic structures. Most powerful basic planetary fabricator."
   },
-  "Builder- Builds advanced structures. Most powerful fabricator.": {
-    "message": "Builder- Builds advanced structures. Most powerful fabricator."
+  "Builder - Builds advanced structures. Most powerful fabricator.": {
+    "message": "Builder - Builds advanced structures. Most powerful fabricator."
   },
-  "Combat Builder- Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
-    "message": "Combat Builder- Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures."
+  "Combat Builder - Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
+    "message": "Combat Builder - Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures."
   },
-  "Frigate- High damage precision laser strikes. Only attacks air targets.": {
-    "message": "Frigate- High damage precision laser strikes. Only attacks air targets."
+  "Frigate - High damage precision laser strikes. Only attacks air targets.": {
+    "message": "Frigate - High damage precision laser strikes. Only attacks air targets."
   },
-  "Hover Railgun- Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
-    "message": "Hover Railgun- Fast. Long range. Can cross water and lava. Attacks land, air and sea targets."
+  "Hover Railgun - Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
+    "message": "Hover Railgun - Fast. Long range. Can cross water and lava. Attacks land, air and sea targets."
   },
-  "Advanced Frigate- Long range. High damage. Attacks land, air, sea, and orbital targets.": {
-    "message": "Advanced Frigate- Long range. High damage. Attacks land, air, sea, and orbital targets."
+  "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
+    "message": "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets."
   },
-  "Basic Manufacturing- Builds basic ship units.": {
-    "message": "Basic Manufacturing- Builds basic ship units."
+  "Basic Manufacturing - Builds basic ship units.": {
+    "message": "Basic Manufacturing - Builds basic ship units."
   },
-  "Advanced Manufacturing- Builds advanced ship units.": {
-    "message": "Advanced Manufacturing- Builds advanced ship units."
+  "Advanced Manufacturing - Builds advanced ship units.": {
+    "message": "Advanced Manufacturing - Builds advanced ship units."
   },
-  "Sea Mine- High damage. Invisible to most units.": {
-    "message": "Sea Mine- High damage. Invisible to most units."
+  "Sea Mine - High damage. Invisible to most units.": {
+    "message": "Sea Mine - High damage. Invisible to most units."
   },
-  "Corvette- Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Corvette- Fast. Cheap. Attacks land, sea, seabed and undersea targets."
+  "Corvette - Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Corvette - Fast. Cheap. Attacks land, sea, seabed and undersea targets."
   },
-  "Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets."
+  "Trireme - Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Trireme - Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets."
   },
-  "Wave Turret- Attacks sea, seabed and undersea targets.": {
-    "message": "Wave Turret- Attacks sea, seabed and undersea targets."
+  "Wave Turret - Attacks sea, seabed and undersea targets.": {
+    "message": "Wave Turret - Attacks sea, seabed and undersea targets."
   },
-  "Advanced Wave Turret- Attacks sea, seabed and undersea targets.": {
-    "message": "Advanced Wave Turret- Attacks sea, seabed and undersea targets."
+  "Advanced Wave Turret - Attacks sea, seabed and undersea targets.": {
+    "message": "Advanced Wave Turret - Attacks sea, seabed and undersea targets."
   },
   "Legion Expansion": {
     "message": "Legion Expansion"
@@ -353,8 +353,8 @@
   "click or press space to close": {
     "message": "click or press space to close"
   },
-  "Metal Parasite- Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
-    "message": "Metal Parasite- Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets."
+  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
+    "message": "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets."
   },
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
     "message": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War."
@@ -371,20 +371,20 @@
   "Legion #.##.#": {
     "message": "Legion #.##.#"
   },
-  "Flying Bomb- In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only.": {
-    "message": "Flying Bomb- In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only."
+  "Flying Bomb - In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only.": {
+    "message": "Flying Bomb - In the process of exploding. Deals very heavy damage over an area over time. Attacks air targets only."
   },
-  "Sneaky Spy Camera- Grants vision for a short time at the location.": {
-    "message": "Sneaky Spy Camera- Grants vision for a short time at the location."
+  "Sneaky Spy Camera - Grants vision for a short time at the location.": {
+    "message": "Sneaky Spy Camera - Grants vision for a short time at the location."
   },
-  "Flame Turret- Splash damage weapon. Attacks land and sea targets.": {
-    "message": "Flame Turret- Splash damage weapon. Attacks land and sea targets."
+  "Flame Turret - Splash damage weapon. Attacks land and sea targets.": {
+    "message": "Flame Turret - Splash damage weapon. Attacks land and sea targets."
   },
-  "Anti-Nuke Missile- Intercepts and destroys incoming nuclear missiles.": {
-    "message": "Anti-Nuke Missile- Intercepts and destroys incoming nuclear missiles."
+  "Anti-Nuke Missile - Intercepts and destroys incoming nuclear missiles.": {
+    "message": "Anti-Nuke Missile - Intercepts and destroys incoming nuclear missiles."
   },
-  "Advanced Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor.": {
-    "message": "Advanced Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor."
+  "Advanced Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor.": {
+    "message": "Advanced Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor."
   },
   "Legion UI": {
     "message": "Legion UI"

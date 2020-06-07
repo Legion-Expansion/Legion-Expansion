@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Lancer",
-  "description": "!LOC:Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.",
+  "description": "!LOC:Laser Walker - Short range. High damage. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 16,
   "attachable": {
     "offsets": {

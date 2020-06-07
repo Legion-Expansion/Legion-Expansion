@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Power Catalyst",
-  "description": "!LOC:Advanced Economy- Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.",
+  "description": "!LOC:Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.",
   "TEMP_texelinfo": 32.6108,
   "area_build_separation": 2,
   "area_build_type": "Line",

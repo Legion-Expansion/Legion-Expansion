@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Ship Foundry",
-  "description": "!LOC:Advanced Manufacturing- Builds advanced ship units.",
+  "description": "!LOC:Advanced Manufacturing - Builds advanced ship units.",
   "TEMP_texelinfo": 67.307,
   "area_build_separation": 5,
   "atrophy_cool_down": 15,

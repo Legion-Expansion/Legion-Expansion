@@ -1,59 +1,59 @@
 {
-  "Flying Bomb- Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
+  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
     "message": "자폭 비행기-공중 공격만 가능합니다."
   },
-  "Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
+  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
     "message": "공중 항공모함- 매우 빠르게 날아다니는 드론을 적에게 발사합니다. 궤도를 제외한 모든 적을 공격합니다."
   },
-  "Drone- Fast. Fragile. Attacks land, sea and air targets.": {
+  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
     "message": "미사일 드론- 빠르고, 잘부서지고, 지상과 공중의 적을 공격합니다."
   },
-  "Basic Manufacturing- Builds basic air units.": {
+  "Basic Manufacturing - Builds basic air units.": {
     "message": "기본 제조공장-리전 T1 항공기 유닛을 만듭니다."
   },
-  "Advanced Manufacturing- Builds advanced air units.": {
+  "Advanced Manufacturing - Builds advanced air units.": {
     "message": "향상된 제조공장-리전 T2 항공기 유닛을 만듭니다."
   },
-  "Advanced Stealth Scout- Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
+  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
     "message": "향상된 스텔스 항공기-스니키 스파이 카메라를 장착하고 있고, 에너지를 소모하며,성간이동이 가능합니다."
   },
-  "Bomber- High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
+  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
     "message": "플라스마 폭격기-높은 대미지. 지상과 해상의 적을 공격할 수 있습니다."
   },
-  "Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
+  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "기본 구조를 구축합니다-빠르다,독점적인 항공 유닛들을 만들 수 있습니다."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
+  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "향상된 구조를 구축합니다-독점적인 항공 유닛들을 만들 수 있습니다."
   },
-  "Fighter- Fast. High damage. Forward firing only. Only attacks air targets.": {
+  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
     "message": "요격기-공중 공격이 가능합니다."
   },
-  "Interplanetary Fighter- Fast. Can move between planets. Can only attack air targets.": {
+  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
     "message": "성간전투기-빠르고 단단하며 항공을 공격합니다."
   },
-  "Light Turret- Rapid fire. Attacks land, sea and seabed targets.": {
+  "Light Turret - Rapid fire. Attacks land, sea and seabed targets.": {
     "message": "소형 방어 터렛- 근거리. 지상과 해상을 대상을 공격합니다."
   },
-  "Napalm Bomber- High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
+  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
     "message": "화염융단폭격기-강력한 대미지를 넓은 범위에 투사합니다. 중장갑을 갖추고 있고 경화염타워를 투하 할 수 있습니다."
   },
-  "Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
+  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
     "message": "성간텔포유닛-중장갑을 갖추고 있습니다."
   },
-  "Gunship- Heavily armored. Attacks land, sea and seabed targets.": {
+  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
     "message": "건쉽-중장갑. 경기관포와 미사일을 장착했습니다."
   },
-  "Raider- Fast. Can see far away. Attacks land and sea targets.": {
+  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
     "message": "레이더-경장갑. 경레이저로 무장했고 매우 빠릅니다."
   },
-  "Flying Fortress Titan- Heavy damage over a wide area. Attacks any targets except orbital.": {
+  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
     "message": "공중요새-중장갑. 장거리 캐논과 속사기관포를 장착했습니다."
   },
-  "Transport- Load a land unit for rapid long distance travel.": {
+  "Transport - Load a land unit for rapid long distance travel.": {
     "message": "유닛 수송기-빠르고 비무장."
   },
-  "Legion Commander Description- If you're seeing this, something is wrong in your commander.": {
+  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
     "message": "리전 클래스 커맨더-당신이 이 메시지를 확인한다면 커맨더에 문제가 생긴것입니다."
   },
   "Imperial Cyclops Commander": {
@@ -68,265 +68,265 @@
   "Imperial Wasushi Commander": {
     "message": "리전 와스시 커맨더"
   },
-  "Anti-Air Turret- Equipped with homing tracer rounds. Only attacks air targets.": {
+  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
     "message": "기본 AA 터렛- 경기관총이 장착되어 있습니다."
   },
-  "Advanced Anti-Air Turret- Fires homing rockets which deal splash damage. Only attacks air targets.": {
+  "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
     "message": "향상된 대공 방어 타워- 장거리. 항공 유닛을 공격합니다."
   },
-  "Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons.": {
+  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
     "message": "핵 요격시설- 들어오는 핵 미사일을 가로 막고 파괴합니다."
   },
-  "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
+  "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
     "message": "자기가속포- 높은 데미지의 발사체를 발사합니다."
   },
-  "Artillery- Medium range. Attacks land, sea, seabed and underwater targets.": {
+  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
     "message": "대함 및 대지 레일건- 발사에 에너지가 필요합니다."
   },
-  "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.": {
+  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
     "message": "돌격워커- 지상과 해상을 공격합니다."
   },
-  "Anti-Air Walker- Equipped with homing missiles. Only attacks air targets.": {
+  "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.": {
     "message": "대공워커- 단거리. 항공을 공격합니다."
   },
-  "Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets.": {
+  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
     "message": "향상된 대공워커- 항공을 공격합니다."
   },
-  "Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
+  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "중공성 워커- 장거리. 점착 플라즈마 지뢰를 발사합니다."
   },
-  "Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets.": {
+  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
     "message": "중강습 워커- 중무장. 강력한 캐논과 중레이저를 장착했습니다."
   },
-  "Leaping Bomb Bot- Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
+  "Leaping Bomb Bot - Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
     "message": "깡충폭탄거미-적을 향해서 뛰어올라 자폭합니다."
   },
-  "Basic Manufacturing- Builds basic bot units.": {
+  "Basic Manufacturing - Builds basic bot units.": {
     "message": "기본 제조공장-리전 워커를 생산합니다."
   },
-  "Advanced Manufacturing- Builds advanced bot units.": {
+  "Advanced Manufacturing - Builds advanced bot units.": {
     "message": "향상된 제조공장- 향상된 리전 워커를 생산합니다."
   },
-  "Auxiliary Commander- Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
+  "Auxiliary Commander - Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
     "message": "보조 커맨더- 건물을 지을 수 있습니다. 높은 체력과 중무장."
   },
-  "Basic Economy- Generates power.": {
+  "Basic Economy - Generates power.": {
     "message": "기본 경제 구조물- 에너지를 생산합니다."
   },
-  "Advanced Economy- Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
+  "Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
     "message": "향상된 파워 발전기-  블랙홀을 이용해 에너지를 생산합니다. 파괴 시 아군에게 피해를 입힙니다."
   },
-  "Builder- Builds basic structures. Cheap. Less powerful than other builders.": {
+  "Builder - Builds basic structures. Cheap. Less powerful than other builders.": {
     "message": "제작자- 기본적인 건물을 건설합니다. 전용 워커를 생산합니다."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
+  "Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
     "message": "향상된 제작 워커- 향상된 건물을 건설하고 전용 워커를 생산합니다."
   },
-  "Builder- Builds basic structures. Durable. More powerful than other basic land and air builders.": {
+  "Builder - Builds basic structures. Durable. More powerful than other basic land and air builders.": {
     "message": "제작자- 기본적인 건물을 건설합니다. 차량 유닛을 생산 할 수 있습니다."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
+  "Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
     "message": "제작자- 향상된 건물을 건설합니다. 아머 유닛을 생산 할 수 있습니다."
   },
-  "Combat Builder- Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
+  "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "야전 제작 차량- 지뢰를 생산하고 감지하며 아군 부대를 수리합니다. 회수 할 수 있습니다."
   },
-  "Flame Turret- High splash damage. Attacks land and sea targets.": {
+  "Flame Turret - High splash damage. Attacks land and sea targets.": {
     "message": "화염 방어 터렛- 높은 데미지를 입히는 네이팜을 발사합니다."
   },
-  "Hover Artillery- Can cross water and lava. Attacks land, sea and seabed targets.": {
+  "Hover Artillery - Can cross water and lava. Attacks land, sea and seabed targets.": {
     "message": "호버 자주포- 중거리. 지상과 해상을 공격합니다."
   },
-  "Hover Assault- Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
+  "Hover Assault - Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
     "message": "강습 호버- 중거리 로켓. 지상, 항공, 해상 궤도를 공격합니다."
   },
-  "Wall- Very durable. Blocks enemy fire only.": {
+  "Wall - Very durable. Blocks enemy fire only.": {
     "message": "중장갑 방벽"
   },
-  "Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
+  "Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
     "message": "팝업 지뢰- 4 초 후에 스프레이 파편이 폭발합니다"
   },
-  "Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
+  "Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
     "message": "금속 추출기- 금속 침전물에만 놓을 수 있습니다."
   },
-  "Light Tank- Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
+  "Light Tank - Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
     "message": "빠른 수륙양용 전차- 어뢰 및 라이트 캐논 장착했습니다."
   },
-  "Siege Walker- Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
     "message": "공성워커-퍼저를 지상에 소환합니다. 죽게되면 광역폭발을 일으킵니다."
   },
-  "Nuclear Missile Launcher- Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
+  "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
     "message": "성간 탄도핵 발사기- 광역으로 높은 데미지를 줍니다."
   },
-  "Nuclear Missile- Long range, high damage ballistic missile.": {
+  "Nuclear Missile - Long range, high damage ballistic missile.": {
     "message": "장거리, 높은 데미지의 탄도 미사일"
   },
-  "Basic Radar- Short-range enemy unit detection. Requires energy.": {
+  "Basic Radar - Short-range enemy unit detection. Requires energy.": {
     "message": "기본 레이더- 근처의 적을 탐지합니다."
   },
-  "Advanced Radar- Long-range enemy unit detection. Requires energy.": {
+  "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
     "message": "향상된 레이더- 넓은 지역의 적을 탐지합니다."
   },
-  "Assault Walker- High DPS. Attacks land, sea and seabed targets.": {
+  "Assault Walker - High DPS. Attacks land, sea and seabed targets.": {
     "message": "향상된 강습 워커- 높은 데미지를 주는 개틀링건. 지상과 해상을 공격합니다."
   },
-  "Rocket Turret- High damage. Attacks land and sea targets.": {
+  "Rocket Turret - High damage. Attacks land and sea targets.": {
     "message": "향상된 방어- 중로켓 포드. 지상과 해상을 공격합니다."
   },
-  "Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
+  "Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
     "message": "정찰봇- alt-fire 기능을 통해서 짧은 탐지 범위를 가진 육안으로 보이지 않는 레이더로 배치가 가능합니다. 적 레이더에 의해 탐지가 됩니다."
   },
-  "Radar- Immobile. Use alt fire to change into a fast-moving mine detector.": {
+  "Radar - Immobile. Use alt fire to change into a fast-moving mine detector.": {
     "message": "레이더 비전이지만 움직일 수 없습니다."
   },
-  "Shield- Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
+  "Shield - Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
     "message": "쉴드- 들어오는 탄을 흡수합니다. 에너지가 필요합니다. 겹치는 성벽은 거의 도움이 되지 않습니다."
   },
-  "Shotgun Tank- Close range. Heavily armored. Attacks land, sea and seabed targets.": {
+  "Shotgun Tank - Close range. Heavily armored. Attacks land, sea and seabed targets.": {
     "message": "근접 샷건 전차- 지상과 해상을 공격합니다."
   },
-  "Laser Walker- Short range. High damage. Attacks land, sea and seabed targets.": {
+  "Laser Walker - Short range. High damage. Attacks land, sea and seabed targets.": {
     "message": "레이저 워커- 중거리 레이저 무기. 지상과 해상을 공격합니다."
   },
-  "Siege Tank- Long range. Attacks land, sea and seabed.": {
+  "Siege Tank - Long range. Attacks land, sea and seabed.": {
     "message": "스나이퍼- 큰 데미지를 주는 빔 캐논. 지상과 해상을 공격합니다."
   },
-  "Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
+  "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
     "message": "저장고- 블랙 홀의 힘을 이용해 초과한 금속과 에너지를 압축하고 저장합니다."
   },
-  "Swarm Turret- Spawns nanoswarms. Attacks land, sea and seabed targets.": {
+  "Swarm Turret - Spawns nanoswarms. Attacks land, sea and seabed targets.": {
     "message": "쓰웜 터렛- 나노봇 군단을 만듭니다. 지상과 해군을 공격합니다."
   },
-  "Heavy Turret- High damage. Attacks land, sea and seabed targets.": {
+  "Heavy Turret - High damage. Attacks land, sea and seabed targets.": {
     "message": "중형 방어 터렛- 지상과 해상 대상을 공격합니다."
   },
-  "Seismic Tank- Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
+  "Seismic Tank - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
     "message": "지진전차- 가까운 유닛을 소멸시킵니다."
   },
-  "Assault Tank- Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
+  "Assault Tank - Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
     "message": "향상된 주력전차- 중장갑. 지상과 해상을 공격합니다."
   },
-  "Medium Tank- Splash damage. Attacks land, sea and seabed targets.": {
+  "Medium Tank - Splash damage. Attacks land, sea and seabed targets.": {
     "message": "주력전차- 느리지만 안정적. 지상과 해상을 공격합니다."
   },
-  "Lightning Tank- Shoots timed electric mines. Attacks land and sea targets.": {
+  "Lightning Tank - Shoots timed electric mines. Attacks land and sea targets.": {
     "message": "향상된 테슬라전차- 높은 데미지. 지상과 해상을 공격합니다."
   },
-  "Teleporter- Link teleporters to move units around the system.": {
+  "Teleporter - Link teleporters to move units around the system.": {
     "message": "순간 이동 장치- 유닛을 다른 장치로 전송합니다."
   },
-  "Siege Titan- Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
+  "Siege Titan - Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
     "message": "실험급 강습티탄-매우 파괴적인 집합적 무기를 장착했습니다."
   },
-  "Doomsday Titan- Drops an explosive into the planet's core, breaking it apart from the inside.": {
+  "Doomsday Titan - Drops an explosive into the planet's core, breaking it apart from the inside.": {
     "message": "최후의 심판 장치- 일단 완성되면 행성을 파괴합니다."
   },
-  "Assault Titan- High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
+  "Assault Titan - High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
     "message": "실험급 기동요새-장거리. 초중갑을 두르고 있으며 매우 높은 대미지를 광역으로 분배합니다."
   },
-  "Basic Manufacturing- Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tank units.": {
     "message": "기본 제조공장-리전 아머유닛을 생산합니다."
   },
-  "Advanced Manufacturing- Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tank units.": {
     "message": "향상된 제조공장-향상된 리전 아머 유닛을 생산합니다."
   },
-  "Orbital Turret- Rapid fire. Attacks land, air, sea and orbital targets.": {
+  "Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets.": {
     "message": "궤도방어기- 견고한 방어 위성. 무엇이든 공격합니다."
   },
-  "Planet Engine- Used to smash celestial bodies into each other. Build as many as the planet requires.": {
+  "Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires.": {
     "message": "행성 엔진- 천체를 부수는데 사용됩니다."
   },
-  "Anti-Orbital Turret- Attacks orbital targets and drop pods.": {
+  "Anti-Orbital Turret - Attacks orbital targets and drop pods.": {
     "message": "대궤도 이온 캐논- 궤도유닛을 공격합니다."
   },
-  "Orbital Economy- Produces metal and energy. Only buildable on gas giants.": {
+  "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
     "message": "가스행성 자원 추출기- 메탈과 에너지를 생산합니다. 가스행성 위에서만 효과가 있습니다."
   },
-  "Orbital Battleship- Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
     "message": "궤도 전함- 중무장. 무엇이든 공격합니다."
   },
-  "Planetary Transport- Builds and launches up to 14 units at once to the planet below.": {
+  "Planetary Transport - Builds and launches up to 14 units at once to the planet below.": {
     "message": "궤도 유닛 캐논- 생산된 유닛을 사거리내 행성표면으로 발사합니다."
   },
-  "Advanced Builder- Builds orbital structures. Builds all titans.": {
+  "Advanced Builder - Builds orbital structures. Builds all titans.": {
     "message": "향상된 제작자-리전의 궤도 위성과 함선을 생산합니다."
   },
-  "Advanced Manufacturing- Builds advanced orbital units.": {
+  "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "향상된 제조공장- 향상된 궤도 유닛을 생산합니다."
   },
-  "Orbital Fighter- Fast. Attacks orbital targets only.": {
+  "Orbital Fighter - Fast. Attacks orbital targets only.": {
     "message": "궤도 전투기- 궤도 유닛을 공격합니다. 빠르다."
   },
-  "Interplanetary Transport- Moves land and air units between planets.": {
+  "Interplanetary Transport - Moves land and air units between planets.": {
     "message": "궤도 착륙선- 행성 간 운송 운반선."
   },
-  "Orbital Laser- High splash damage. Attacks land, air, sea and seabed targets.": {
+  "Orbital Laser - High splash damage. Attacks land, air, sea and seabed targets.": {
     "message": "궤도 레이저- 높은 데미지의 플라즈마 캐논을 장착했습니다. 지상과 해상을 공격합니다."
   },
-  "Basic Manufacturing- Builds basic orbital units.": {
+  "Basic Manufacturing - Builds basic orbital units.": {
     "message": "기본 궤도 공장- 위성과 기본 궤도 유닛을 우주로 쏘아 올립니다."
   },
-  "Orbital Scout- Fast. Provides small amount of vision of the planet below": {
+  "Orbital Scout - Fast. Provides small amount of vision of the planet below": {
     "message": "궤도 레이더 프로브- 빠르다. 작은 시야 반경."
   },
-  "Orbital Siege- Long range. High damage. Attacks orbital targets only.": {
+  "Orbital Siege - Long range. High damage. Attacks orbital targets only.": {
     "message": "궤도 레일건- 높은 데미지. 궤도를 공격합니다."
   },
-  "Basic Radar Satellite- Short-range enemy unit detection. Requires energy.": {
+  "Basic Radar Satellite - Short-range enemy unit detection. Requires energy.": {
     "message": "기본 레이더 위성- 중간 규모 영역내에서 적군을 탐지합니다."
   },
-  "Advanced Radar Satellite- Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
+  "Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
     "message": "향상된 장갑 레이더 위성- 광대한 범위를 감지합니다. 지상을 공격합니다."
   },
-  "Orbital Mega-Laser- Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
+  "Orbital Mega-Laser - Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
     "message": "오비탈 메가레이저-레이저로 표면을 정화합니다."
   },
-  "Submarine- Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
+  "Submarine - Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
     "message": "공격잠수함- 어뢰를 장착했습니다. 빠르다."
   },
-  "Battleship- High damage. Heavily armored. Long range. Attacks land and sea targets.": {
+  "Battleship - High damage. Heavily armored. Long range. Attacks land and sea targets.": {
     "message": "전함- 높은 데미지의 레이저 캐논을 장착했습니다. 지상과 해상 목표를 공격합니다."
   },
-  "Destroyer- High damage. Long range. Attacks land and sea targets.": {
+  "Destroyer - High damage. Long range. Attacks land and sea targets.": {
     "message": "구축함- 중(重)포를 장착했습니다. 해상과 지상을 공격합니다."
   },
-  "Builder- Builds basic structures. Most powerful basic planetary fabricator.": {
+  "Builder - Builds basic structures. Most powerful basic planetary fabricator.": {
     "message": "기본 구조물 제작- 전용 선박 유닛을 생산할 수 있습니다."
   },
-  "Builder- Builds advanced structures. Most powerful fabricator.": {
+  "Builder - Builds advanced structures. Most powerful fabricator.": {
     "message": "향상된 구조물 제작- 전용 선박 유닛을 생산할 수 있습니다."
   },
-  "Combat Builder- Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
+  "Combat Builder - Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "야전 제작자- 기뢰를 설치하고 아군 유닛을 수리합니다. 경장갑."
   },
-  "Frigate- High damage precision laser strikes. Only attacks air targets.": {
+  "Frigate - High damage precision laser strikes. Only attacks air targets.": {
     "message": "호위함- 공중만 공격합니다."
   },
-  "Hover Railgun- Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
+  "Hover Railgun - Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
     "message": "호버쉽-중(重)포를 장착했습니다. 어떤 표면이든 움직일 수 있습니다. 지상과 해상을 공격합니다."
   },
-  "Advanced Frigate- Long range. High damage. Attacks land, air, sea, and orbital targets.": {
+  "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "순양함-중(重)로켓과 대공포를 장착했습니다.\n"
   },
-  "Basic Manufacturing- Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ship units.": {
     "message": "기본 제조공장- 선박을 생산합니다."
   },
-  "Advanced Manufacturing- Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds advanced ship units.": {
     "message": "향상된 제조공장- 향상된 선박을 생산합니다."
   },
-  "Sea Mine- High damage. Invisible to most units.": {
+  "Sea Mine - High damage. Invisible to most units.": {
     "message": "근접 폭탄- 가까운 해상 유닛을 파괴합니다."
   },
-  "Corvette- Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
+  "Corvette - Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
     "message": "초계정- 빠르다. 해상, 지상과 잠수함을 공격합니다."
   },
-  "Trireme- Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
+  "Trireme - Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
     "message": "중장갑 바지선- 적 선박을 들이받습니다. 중형 직사 캐논을 장착했습니다."
   },
-  "Wave Turret- Attacks sea, seabed and undersea targets.": {
+  "Wave Turret - Attacks sea, seabed and undersea targets.": {
     "message": "조파기 및 어뢰 발사관-해상을 공격합니다."
   },
-  "Advanced Wave Turret- Attacks sea, seabed and undersea targets.": {
+  "Advanced Wave Turret - Attacks sea, seabed and undersea targets.": {
     "message": "중(重)대함 조파기- 해상을 공격합니다."
   },
   "Legion Expansion": {
@@ -353,7 +353,7 @@
   "click or press space to close": {
     "message": "클릭 또는 스페이스바를 눌러서 닫습니다."
   },
-  "Metal Parasite- Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
+  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
     "message": "브어어어어어어어어어어어ㅓ어어어어얼!!!!!!"
   },
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {

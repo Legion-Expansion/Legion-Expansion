@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Lockheed",
-  "description": "!LOC:Gunship- Heavily armored. Attacks land, sea and seabed targets.",
+  "description": "!LOC:Gunship - Heavily armored. Attacks land, sea and seabed targets.",
   "audio": {
     "loops": {
       "move": {

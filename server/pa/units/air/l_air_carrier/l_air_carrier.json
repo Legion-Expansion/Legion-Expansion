@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Meteor",
-  "description": "!LOC:Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets.",
+  "description": "!LOC:Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.",
   "TEMP_texelinfo": 10,
   "audio": {
     "loops": {

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Iron Dome",
-  "description": "!LOC:Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons.",
+  "description": "!LOC:Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.",
   "TEMP_texelinfo": 24,
   "area_build_separation": 100,
   "area_build_type": "Sphere",

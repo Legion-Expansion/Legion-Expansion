@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Comet",
-  "description": "!LOC:Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets.",
+  "description": "!LOC:Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.",
   "TEMP_texelinfo": 23.6108,
   "atrophy_cool_down": 15,
   "atrophy_rate": 20.833,

@@ -1,56 +1,56 @@
 {
-  "Flying Bomb- Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
+  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
     "message": "Drone Suicidaire - Attaque seulement unités volantes"
   },
-  "Carrier- Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
+  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
     "message": "Porte-avion volant - envoie des drones rapides contre l’ennemi. Attaque Tout sauf orbite."
   },
-  "Drone- Fast. Fragile. Attacks land, sea and air targets.": {
+  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
     "message": "Drone à Missille - Rapide, fragile, attaque terre et mer."
   },
-  "Basic Manufacturing- Builds basic air units.": {
+  "Basic Manufacturing - Builds basic air units.": {
     "message": "Production basique - Construit Drones Volant de Legion"
   },
-  "Advanced Manufacturing- Builds advanced air units.": {
+  "Advanced Manufacturing - Builds advanced air units.": {
     "message": "Production avancée - Construit Drones Volant de Légion"
   },
-  "Advanced Stealth Scout- Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
+  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
     "message": "Drone furtif avancé - équipe avec camera à espion. Consume de l’énergie. Interplanétaire."
   },
-  "Bomber- High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
+  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
     "message": "Bombardier à plasma - Haut damage. Attaque sol et mer."
   },
-  "Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
+  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "Construit structures basique - Rapide. Peut construire des Drones exclusifs."
   },
-  "Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
+  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "Construit structures avancées - Peut construire des Drones exclusifs."
   },
-  "Fighter- Fast. High damage. Forward firing only. Only attacks air targets.": {
+  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
     "message": "Intercepter de Drones rapide - Attaque air."
   },
-  "Interplanetary Fighter- Fast. Can move between planets. Can only attack air targets.": {
+  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
     "message": "Chasseur Interplanétaire - Rapide et Blindé. Attaque air."
   },
-  "Napalm Bomber- High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
+  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
     "message": "Bombardier Incinérateur - haut dommage sur aire. Bonne armure. Peut déployer tourelle lance-flamme légère."
   },
-  "Interplanetary Teleporter- Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
-    "message": "Téléporter mobile Interplanétaire- Armure lourde."
+  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
+    "message": "Téléporter mobile Interplanétaire - Armure lourde."
   },
-  "Gunship- Heavily armored. Attacks land, sea and seabed targets.": {
+  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
     "message": "Gunship - Armure lourde. Équipe avec missiles à tête chercheuse et LMG."
   },
-  "Raider- Fast. Can see far away. Attacks land and sea targets.": {
+  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
     "message": "Prédateur - Armure légère. Armé de Lasers anti-sol. Très rapide."
   },
-  "Flying Fortress Titan- Heavy damage over a wide area. Attacks any targets except orbital.": {
+  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
     "message": "Forteresse volante - armure lourde. Équipé avec cannons à longue portée et miniguns."
   },
-  "Transport- Load a land unit for rapid long distance travel.": {
+  "Transport - Load a land unit for rapid long distance travel.": {
     "message": "Transporteur d’unités - Rapide. Sans défense."
   },
-  "Legion Commander Description- If you're seeing this, something is wrong in your commander.": {
+  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
     "message": "Commandant classe: Légion - Si vous voyer ceci, il y a un problème avec votre commandant."
   },
   "Imperial Cyclops Commander": {
@@ -65,34 +65,34 @@
   "Imperial Wasushi Commander": {
     "message": "Commandant Légion Wasushi"
   },
-  "Anti-Air Turret- Equipped with homing tracer rounds. Only attacks air targets.": {
+  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
     "message": "Tourelle AA basique - Équipée avec LMG"
   },
-  "Advanced Anti-Air Turret- Fires homing rockets which deal splash damage. Only attacks air targets.": {
+  "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
     "message": "Tourelle anti-air avancée - Haute Range. Attaque air"
   },
-  "Anti-Nuke Launcher- Space for four advanced anti-nuclear missile weapons.": {
+  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
     "message": "Défense Nucléaire - intercepte et détruit missiles nucléaire"
   },
-  "Advanced Artillery- Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
+  "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
     "message": "Canon accélérateur magnétique - Tire projectiles à haut dommages."
   },
-  "Artillery- Medium range. Attacks land, sea, seabed and underwater targets.": {
+  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
     "message": "Anti-mer, anti-terre Railgun moyen. Coûte de l’énergie pour tirer."
   },
-  "Basic Infantry- Durable. Amphibious. Attacks land, sea and seabed targets.": {
+  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
     "message": "Bipèdes d'assaut - Attaque terre et mer."
   },
-  "Anti-Air Walker- Equipped with homing missiles. Only attacks air targets.": {
+  "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.": {
     "message": "Bipèdes anti-air - Courte range. Attaque air."
   },
-  "Advanced Anti-Air Walker- High damage precision laser strikes. Only attacks air targets.": {
+  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
     "message": "AA mobile avancé."
   },
-  "Siege Walker- Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
+  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "Bipèdes arme de siège - Haute Range. Tire mines au plasma, collante, auto-explosive."
   },
-  "Heavy Walker- Heavily armored. Long range. Attacks land, sea and seabed targets.": {
+  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
     "message": "Bipèdes d’assaut lourd - Armure lourde. Équipe avec gros canons et laser lourd."
   },
   "Legion Expansion": {
@@ -119,7 +119,7 @@
   "click or press space to close": {
     "message": "cliquer ou appuyez sur espace"
   },
-  "Metal Parasite- Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
+  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
     "message": "ABEEEEEEEEEEEIIIIIIIILLES!"
   },
   "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {

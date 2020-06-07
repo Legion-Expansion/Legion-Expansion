@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Praetorian",
-  "description": "!LOC:Auxiliary Commander- Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.",
+  "description": "!LOC:Auxiliary Commander - Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.",
   "TEMP_texelinfo": 25,
   "armor_type": "AT_Commander",
   "attachable": {

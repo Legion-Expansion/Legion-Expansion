@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Kosmos",
-  "description": "!LOC:Advanced Radar Satellite- Long-range enemy unit detection. Requires energy. Attacks land and sea targets.",
+  "description": "!LOC:Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets.",
   "TEMP_texelinfo": 22.7385,
   "attachable": {
     "offsets": {
