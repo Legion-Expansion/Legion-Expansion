@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### General
+
+- Update unit description formatting to match MLA
+
 ## 1.13.1 - 2020-06-05
 
 ### Bugfix
