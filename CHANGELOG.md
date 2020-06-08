@@ -4,7 +4,7 @@
 
 ### General
 
-- Updated unit descriptions formatting to match MLA
+- Updated the formatting of unit descriptions to match the MLA
 
 ### Translations
 
