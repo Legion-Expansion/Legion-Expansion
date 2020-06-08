@@ -1,111 +1,84 @@
 {
-  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
-    "message": "Zelfmoord Bom Vlieger - Valt enkel lucht-eenheden aan."
-  },
-  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
-    "message": "Vliegdekschip - Lanceert snelle vliegende drones naar vijanden. Valt alles aan behalve ruimte-eenheden."
-  },
-  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
-    "message": "Raket drone - Snel, kwetsbaar, valt land en lucht aan."
-  },
-  "Basic Manufacturing - Builds basic air units.": {
-    "message": "Standaard Luchthaven - Bouwt Legion lucht eenheden."
-  },
-  "Advanced Manufacturing - Builds advanced air units.": {
-    "message": "Gevanceerde Luchthaven - Bouwt geavanceerde Legion lucht eenheden."
-  },
-  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
-    "message": "Geavanceerde Stealth-vlieger : Uitgerust met een spionnen camera. Verbruikt energie. Interplanetair."
-  },
-  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Plasma Bommenwerper - Zware aanval. Valt land en zee eenheden aan."
-  },
-  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
-    "message": "Bouwt basis gebouwen - Snel. Kan vlieger exclusieve eenheden bouwen."
-  },
-  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
-    "message": "Bouwt geavanceerde gebouwen - Snel. Kan vlieger exclusieve eenheden bouwen."
-  },
-  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
-    "message": "Snelle lucht onderschepper - Valt lucht aan."
-  },
-  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
-    "message": "Interplanetaire vechter - Snel en gepantserd. Valt lucht aan."
-  },
-  "Light Turret - Rapid fire. Attacks land, sea and seabed targets.": {
-    "message": "Lichte defensie toren - Korte afstand. Valt land en zee eenheden aan."
-  },
-  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
-    "message": "Vlammen bommer - Hoge schade over een gebied. Goed gepantserd. Kan lichte flammenwerper torens neerzetten."
-  },
-  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
-    "message": "Interplanetaire mobiele teleporteerder - Goed gepantserd."
-  },
-  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
-    "message": "Gunship - Zwaar bepantserd. Uitgerust met zoekende raketten en een licht machinegeweer."
-  },
-  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
-    "message": "Aanvaller - Licht gepantserd. Bewapend met lichte anti grond lazers."
-  },
-  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
-    "message": "Vliegend Ford - Zwaar gepantserd. Uitgerust met langeafstandskanonnen en snel vuren machine geweren."
-  },
-  "Transport - Load a land unit for rapid long distance travel.": {
-    "message": "Eenheden transport - Snel. Onbewapend."
-  },
-  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
-    "message": "Legioen-klasse Commandant - Als je dit ziet is er iets mis in je Commandant."
-  },
-  "Imperial Cyclops Commander": {
-    "message": "Legion Cycloops Commandant."
-  },
-  "Imperial Overwatch Commander": {
-    "message": "Legion Overzicht Commandant."
-  },
-  "Tank Rockteeth Commander": {
-    "message": "Steentand Tank Commandant."
-  },
-  "Imperial Wasushi Commander": {
-    "message": "Legioen Wasushi Commandant."
-  },
-  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
-    "message": "Standaard Anti Lucht Kanon - Uitgerust met een lichte machinegeweer."
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Voegt een totaal nieuwe speelbare factie toe met meer dan 100 eenheden, bruikbaar zowel in single als in multiplayer. Niet compatibel met andere mods die zelf eenheden toevoegen. Als je het nieuwe thema (kleuren) niet leuk vind kan je deze uitschakelen in de Instellingen. Kan niet gebruikt worden in galactische oorlog."
   },
   "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
     "message": "Gevanceerde anti lucht toren.- Lange afstand. Valt luchttroepen aan."
   },
-  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
-    "message": "Nucleare Defensie - Onderschept en vernietigt inkomende nucleaire raketten."
+  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
+    "message": "Geavanceerde mobiele luchtsverdediging - Valt lucht aan."
   },
   "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
     "message": "Magnetische acceleratie kanon - Vuurt zwaar beschadigende projectielen."
   },
-  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
-    "message": "Middenklasse anti schip en anti land railgun - Vereist energie om te schieten."
+  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Bouwt geavanceerde gebouwen - Snel. Kan vlieger exclusieve eenheden bouwen."
   },
-  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
-    "message": "Aanvals loper - Valt land en zee aan."
+  "Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
+    "message": "Geavanceerde fabricatie loper - Bouwt geavanceerde structuren en exclusieve loper eenheden."
+  },
+  "Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
+    "message": "Fabricator - Bouwt geavanceerde structuren. Kan exclusieve voertuig eenheden bouwen."
+  },
+  "Advanced Builder - Builds orbital structures. Builds all titans.": {
+    "message": "Geavanceerde fabricator - Bouwt Legion ruimte satellieten en schepen."
+  },
+  "Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
+    "message": "Gevanceerde Stroomgenerator - Zuigt energie uit zwarte gaten. Doet schade bij vernietiging."
+  },
+  "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
+    "message": "Ballistisch raket schip - Uitgerust met zware raketten en anti-lucht kanonnen."
+  },
+  "Advanced Manufacturing - Builds advanced air units.": {
+    "message": "Gevanceerde Luchthaven - Bouwt geavanceerde Legion lucht eenheden."
+  },
+  "Advanced Manufacturing - Builds advanced bot units.": {
+    "message": "Geavanceerde fabricatie - Bouwt geavanceerde Legioenlopers."
+  },
+  "Advanced Manufacturing - Builds advanced orbital units.": {
+    "message": "Geavanceerde fabricage - Bouwt geavanceerde ruimte eenheden."
+  },
+  "Advanced Manufacturing - Builds advanced ship units.": {
+    "message": "Gevanceerde fabricage - Bouwt geavanceerdere schepen."
+  },
+  "Advanced Manufacturing - Builds advanced tank units.": {
+    "message": "Geavanceerde fabricage - Bouwt geavanceerde Legion tanks."
+  },
+  "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
+    "message": "Gevanceerde Radar - Ontdekt vijandige eenheden in een grote omgeving."
+  },
+  "Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
+    "message": "Gepantserde geavanceerde radar satteliet - Ontdekt eenheden binnen een heel grote oppervlakte. Valt land aan."
+  },
+  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
+    "message": "Geavanceerde Stealth-vlieger : Uitgerust met een spionnen camera. Verbruikt energie. Interplanetair."
+  },
+  "Advanced Wave Turret - Attacks sea, seabed and undersea targets.": {
+    "message": "Zwaar anti-schepen golvenmachine - Valt water aan."
+  },
+  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
+    "message": "Standaard Anti Lucht Kanon - Uitgerust met een lichte machinegeweer."
   },
   "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.": {
     "message": "Luchtverdedigingsloper - Korte afstand. Valt lucht aan."
   },
-  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
-    "message": "Geavanceerde mobiele luchtsverdediging - Valt lucht aan."
+  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
+    "message": "Nucleare Defensie - Onderschept en vernietigt inkomende nucleaire raketten."
   },
-  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
-    "message": "Zware belegerings loper - Lange afstand - Lanceert zelf-ontploffende plakkende plasma mijnen."
+  "Anti-Orbital Turret - Attacks orbital targets and drop pods.": {
+    "message": "Anti-ruimte ionen kanon - Valt ruimte eenheden aan."
   },
-  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
-    "message": "Zware aanvals loper - Zwaar bepantserd - Uitgerust met sterke kanonnen en een zware laser."
+  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
+    "message": "Middenklasse anti schip en anti land railgun - Vereist energie om te schieten."
   },
-  "Leaping Bomb Bot - Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
-    "message": "Springende zelfmoordbot spin - Lanceert zich naar vijanden en kan kliffen klimmen via alternatief vuren."
+  "Assault Tank - Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Geavanceerde aanvals tank - Zwaar bepantserd. Valt land en zee eenheden aan."
   },
-  "Basic Manufacturing - Builds basic bot units.": {
-    "message": "Basisfabricatie - Bouwt Legioenlopers."
+  "Assault Titan - High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
+    "message": "Experimentele rijden fort - Lange afstand. Zwaar bepantserd en kan zeer zware schade toebrengen."
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
-    "message": "Geavanceerde fabricatie - Bouwt geavanceerde Legioenlopers."
+  "Assault Walker - High DPS. Attacks land, sea and seabed targets.": {
+    "message": "Geavanceerde aanvals loper - Hoge schade machine geweren. Valt land en zee aan."
   },
   "Auxiliary Commander - Can build advanced structures. Heavily armored. High damage. Attacks any targets except orbital.": {
     "message": "Hulpcommandant - Kan gebouwen maken. Veel gezondheid en zwaar gepantserd."
@@ -113,26 +86,104 @@
   "Basic Economy - Generates power.": {
     "message": "Basis stroomgenerator."
   },
-  "Advanced Economy - Fabricates black holes and harnesses their energy. Explodes on death, damaging friend and foe.": {
-    "message": "Gevanceerde Stroomgenerator - Zuigt energie uit zwarte gaten. Doet schade bij vernietiging."
+  "Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
+    "message": "Ontgint metaal - Kan alleen op metal bron geplaatst worden."
+  },
+  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
+    "message": "Aanvals loper - Valt land en zee aan."
+  },
+  "Basic Manufacturing - Builds basic air units.": {
+    "message": "Standaard Luchthaven - Bouwt Legion lucht eenheden."
+  },
+  "Basic Manufacturing - Builds basic bot units.": {
+    "message": "Basisfabricatie - Bouwt Legioenlopers."
+  },
+  "Basic Manufacturing - Builds basic orbital units.": {
+    "message": "Basis ruimte fabriek - Lanceert satellieten en basis ruimte eenheden in baan rond de planeet."
+  },
+  "Basic Manufacturing - Builds basic ship units.": {
+    "message": "Basis fabricage - Bouwt schepen."
+  },
+  "Basic Manufacturing - Builds basic tank units.": {
+    "message": "Standaard fabricage - Bouwt Legion tanks."
+  },
+  "Basic Radar - Short-range enemy unit detection. Requires energy.": {
+    "message": "Standaard Radar - Ontdekt vijandige eenheden in de buurt."
+  },
+  "Basic Radar Satellite - Short-range enemy unit detection. Requires energy.": {
+    "message": "Standaard radar satteliet - Ontdekt vijandige eenheden binnen een gemiddelde oppervlakte."
+  },
+  "Battleship - High damage. Heavily armored. Long range. Attacks land and sea targets.": {
+    "message": "Slagschip - Uitgerust met zware-schade laser kanonnen. Valt land en zee eenheden aan."
+  },
+  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Plasma Bommenwerper - Zware aanval. Valt land en zee eenheden aan."
+  },
+  "Builder - Builds advanced structures. Most powerful fabricator.": {
+    "message": "Bouwt gevanceerde structuren - Kan enkel schepen bouwen."
   },
   "Builder - Builds basic structures. Cheap. Less powerful than other builders.": {
     "message": "Fabricator - Bouwt basis structuren. Can enkele exlusieve loper eenheden bouwen."
   },
-  "Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.": {
-    "message": "Geavanceerde fabricatie loper - Bouwt geavanceerde structuren en exclusieve loper eenheden."
-  },
   "Builder - Builds basic structures. Durable. More powerful than other basic land and air builders.": {
     "message": "Fabricator - Bouwt basis gebouwen. Kan exclusieve voertuig eenheden bouwen."
   },
-  "Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.": {
-    "message": "Fabricator - Bouwt geavanceerde structuren. Kan exclusieve voertuig eenheden bouwen."
+  "Builder - Builds basic structures. Most powerful basic planetary fabricator.": {
+    "message": "Bouwt basis structuren - Kan enkel schepen bouwen."
+  },
+  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Bouwt basis gebouwen - Snel. Kan vlieger exclusieve eenheden bouwen."
+  },
+  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
+    "message": "Vliegdekschip - Lanceert snelle vliegende drones naar vijanden. Valt alles aan behalve ruimte-eenheden."
   },
   "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "Gevechts fabricator voertuig - Bouwt mijnen, radar, repareert vriendelijke eenheden. Kan herwinnen."
   },
+  "Combat Builder - Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
+    "message": "Militaire fabricator - Kan zee mijnen plaatsen en team eenheden repareren. Licht bepantserd."
+  },
+  "Corvette - Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Korvet - Snel. Valt zee land en onderzeeërs aan."
+  },
+  "Destroyer - High damage. Long range. Attacks land and sea targets.": {
+    "message": "Torpedojager - Uitgerust met zware kannonen. Valt zee en landeenheden aan."
+  },
+  "Discuss": {
+    "message": "Bespreken"
+  },
+  "Do not show this again": {
+    "message": "Laat niet meer zien"
+  },
+  "Doomsday Titan - Drops an explosive into the planet's core, breaking it apart from the inside.": {
+    "message": "Einde van de wereld machine - Vernietigt de planeet waarop het gebouwd wordt wanneer het klaar is."
+  },
+  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
+    "message": "Raket drone - Snel, kwetsbaar, valt land en lucht aan."
+  },
+  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
+    "message": "Snelle lucht onderschepper - Valt lucht aan."
+  },
   "Flame Turret - High splash damage. Attacks land and sea targets.": {
     "message": "Vlammen toren - Spuwt erg schadelijke napalm."
+  },
+  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
+    "message": "Zelfmoord Bom Vlieger - Valt enkel lucht-eenheden aan."
+  },
+  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
+    "message": "Vliegend Ford - Zwaar gepantserd. Uitgerust met langeafstandskanonnen en snel vuren machine geweren."
+  },
+  "Frigate - High damage precision laser strikes. Only attacks air targets.": {
+    "message": "Fregat - Valt enkel luchteenheden aan."
+  },
+  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Gunship - Zwaar bepantserd. Uitgerust met zoekende raketten en een licht machinegeweer."
+  },
+  "Heavy Turret - High damage. Attacks land, sea and seabed targets.": {
+    "message": "Gemiddelde defensie toren - Valt land en zee eenheden aan."
+  },
+  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
+    "message": "Zware aanvals loper - Zwaar bepantserd - Uitgerust met sterke kanonnen en een zware laser."
   },
   "Hover Artillery - Can cross water and lava. Attacks land, sea and seabed targets.": {
     "message": "Zweef artillerie - gemiddelde afstand. Valt land en water aan."
@@ -140,131 +191,86 @@
   "Hover Assault - Can cross water and lava. Fires in salvos. Attacks land, air, sea and orbital targets.": {
     "message": "Zweef aanval - gemiddelde afstandsrakketen. Valt land,lucht, water and ruimte."
   },
-  "Wall - Very durable. Blocks enemy fire only.": {
-    "message": "Zwaar gepantserde belegering barriere."
+  "Hover Railgun - Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
+    "message": "Zweef schip - uitgerust met zware kanonnen. Kan over iedere oppervlak reizen. Valt land en zee eenheden aan."
   },
-  "Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
-    "message": "Pop-up landmijn - Sproeit schroot en ontploft after 4 seconden."
+  "Imperial Cyclops Commander": {
+    "message": "Legion Cycloops Commandant."
   },
-  "Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.": {
-    "message": "Ontgint metaal - Kan alleen op metal bron geplaatst worden."
+  "Imperial Overwatch Commander": {
+    "message": "Legion Overzicht Commandant."
   },
-  "Light Tank - Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Snelle zweef aanvals tank - Uitgerust met torpedo's en een licht kanon."
+  "Imperial Wasushi Commander": {
+    "message": "Legioen Wasushi Commandant."
   },
-  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
-    "message": "Mobiele belegerings loper - Roept Purgers op van onder de grond. Zeer grote ontploffing bij dood."
+  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
+    "message": "Interplanetaire vechter - Snel en gepantserd. Valt lucht aan."
   },
-  "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
-    "message": "Lanceerplatform voor lange afstand ballistische nucleaire raketten - Doet heel grote schade over een groot oppervlakte."
-  },
-  "Nuclear Missile - Long range, high damage ballistic missile.": {
-    "message": "Lange afstand, destructieve ballistische raket."
-  },
-  "Basic Radar - Short-range enemy unit detection. Requires energy.": {
-    "message": "Standaard Radar - Ontdekt vijandige eenheden in de buurt."
-  },
-  "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
-    "message": "Gevanceerde Radar - Ontdekt vijandige eenheden in een grote omgeving."
-  },
-  "Assault Walker - High DPS. Attacks land, sea and seabed targets.": {
-    "message": "Geavanceerde aanvals loper - Hoge schade machine geweren. Valt land en zee aan."
-  },
-  "Rocket Turret - High damage. Attacks land and sea targets.": {
-    "message": "Geavanceerde defensie - Zware raketten. Valt land en zee aan."
-  },
-  "Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
-    "message": "Verkenners loper - Kan veranderen in een ontzichtbare korte afstands radar als je op alt-fire klikt. Ontdekbaar via radar."
-  },
-  "Radar - Immobile. Use alt fire to change into a fast-moving mine detector.": {
-    "message": "Heeft Radar visie maar kan niet bewegen."
-  },
-  "Shield - Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
-    "message": "Schild - Absorbeert binnenkomende schoten. Heeft energie nodig. Wallen bouwen voegt weinig toe."
-  },
-  "Shotgun Tank - Close range. Heavily armored. Attacks land, sea and seabed targets.": {
-    "message": "Korte afstand jachtgeweer tank - Valt land en zee aan."
-  },
-  "Laser Walker - Short range. High damage. Attacks land, sea and seabed targets.": {
-    "message": "Laser loper - Gemiddelde afstand laser wapen. Valt land en zee aan."
-  },
-  "Siege Tank - Long range. Attacks land, sea and seabed.": {
-    "message": "Sluipschutter - Uitgerust met een hoge-schade straal kanon. Valt land en zee aan."
-  },
-  "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
-    "message": "Opslag - Gebruikt de energie van zwarte gaten om overtollige metaal en energie op te slaan."
-  },
-  "Swarm Turret - Spawns nanoswarms. Attacks land, sea and seabed targets.": {
-    "message": "Zwerm inzet - Bouwt zwerm eenheden. Valt land en zee aan."
-  },
-  "Heavy Turret - High damage. Attacks land, sea and seabed targets.": {
-    "message": "Gemiddelde defensie toren - Valt land en zee eenheden aan."
-  },
-  "Seismic Tank - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
-    "message": "Seismische tank - Vernietigt eenheden dat te dicht komen."
-  },
-  "Assault Tank - Heavily armored. Splash damage. Attacks land, sea and seabed targets.": {
-    "message": "Geavanceerde aanvals tank - Zwaar bepantserd. Valt land en zee eenheden aan."
-  },
-  "Medium Tank - Splash damage. Attacks land, sea and seabed targets.": {
-    "message": "Zware tank - Langzaam maar betrouwbaar. Valt land en zee aan."
-  },
-  "Lightning Tank - Shoots timed electric mines. Attacks land and sea targets.": {
-    "message": "Geavanceerde bliksemtank - Veel schade. Elektrocuteert land - en zeedoelen."
-  },
-  "Teleporter - Link teleporters to move units around the system.": {
-    "message": "Teleportatiemachine - Teleporteert eenheden van de een naar de ander."
-  },
-  "Siege Titan - Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Experimentele aanvals Titan - Uitgerust met een arsenaal van hoog destructieve wapens."
-  },
-  "Doomsday Titan - Drops an explosive into the planet's core, breaking it apart from the inside.": {
-    "message": "Einde van de wereld machine - Vernietigt de planeet waarop het gebouwd wordt wanneer het klaar is."
-  },
-  "Assault Titan - High splash damage for dealing with large armies. Attacks land, air, sea and seabed targets.": {
-    "message": "Experimentele rijden fort - Lange afstand. Zwaar bepantserd en kan zeer zware schade toebrengen."
-  },
-  "Basic Manufacturing - Builds basic tank units.": {
-    "message": "Standaard fabricage - Bouwt Legion tanks."
-  },
-  "Advanced Manufacturing - Builds advanced tank units.": {
-    "message": "Geavanceerde fabricage - Bouwt geavanceerde Legion tanks."
-  },
-  "Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets.": {
-    "message": "Ruimte defensie - Zware defensie satteliet. Valt alles aan."
-  },
-  "Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires.": {
-    "message": "Planeet motor - Gebruik dit om planeten tegen elkaar te botsen."
-  },
-  "Anti-Orbital Turret - Attacks orbital targets and drop pods.": {
-    "message": "Anti-ruimte ionen kanon - Valt ruimte eenheden aan."
-  },
-  "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
-    "message": "Gas planeet economische gebouw - Produceert metaal en energie. Werkt enkel boven gas planeten."
-  },
-  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
-    "message": "Ruimte slagschip - Zwaar bepantserd. Valt alles aan."
-  },
-  "Planetary Transport - Builds and launches up to 14 units at once to the planet below.": {
-    "message": "Ruimte eenheden kanon - Stuurt versterkings eenheden naar het oppervlakte van de planeet."
-  },
-  "Advanced Builder - Builds orbital structures. Builds all titans.": {
-    "message": "Geavanceerde fabricator - Bouwt Legion ruimte satellieten en schepen."
-  },
-  "Advanced Manufacturing - Builds advanced orbital units.": {
-    "message": "Geavanceerde fabricage - Bouwt geavanceerde ruimte eenheden."
-  },
-  "Orbital Fighter - Fast. Attacks orbital targets only.": {
-    "message": "Ruimte jager - Valt ruimte eenheden aan. Snel."
+  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
+    "message": "Interplanetaire mobiele teleporteerder - Goed gepantserd."
   },
   "Interplanetary Transport - Moves land and air units between planets.": {
     "message": "Ruimte lander - Interplanetaire transport vervoer."
   },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Het lijkt erop dat je de Legion Expansion client mod niet geïnstalleerd hebt."
+  },
+  "Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.": {
+    "message": "Pop-up landmijn - Sproeit schroot en ontploft after 4 seconden."
+  },
+  "Laser Walker - Short range. High damage. Attacks land, sea and seabed targets.": {
+    "message": "Laser loper - Gemiddelde afstand laser wapen. Valt land en zee aan."
+  },
+  "Leaping Bomb Bot - Self-destructs. Leaps at enemies. Jumps with alt fire.  Attacks land and sea targets.": {
+    "message": "Springende zelfmoordbot spin - Lanceert zich naar vijanden en kan kliffen klimmen via alternatief vuren."
+  },
+  "Learn More": {
+    "message": "Meer weten"
+  },
+  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
+    "message": "Legioen-klasse Commandant - Als je dit ziet is er iets mis in je Commandant."
+  },
+  "Legion Expansion": {
+    "message": "Legion Expansie"
+  },
+  "Light Tank - Amphibious. Armed with torpedoes. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Snelle zweef aanvals tank - Uitgerust met torpedo's en een licht kanon."
+  },
+  "Light Turret - Rapid fire. Attacks land, sea and seabed targets.": {
+    "message": "Lichte defensie toren - Korte afstand. Valt land en zee eenheden aan."
+  },
+  "Lightning Tank - Shoots timed electric mines. Attacks land and sea targets.": {
+    "message": "Geavanceerde bliksemtank - Veel schade. Elektrocuteert land - en zeedoelen."
+  },
+  "Medium Tank - Splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Zware tank - Langzaam maar betrouwbaar. Valt land en zee aan."
+  },
+  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
+    "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!"
+  },
+  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
+    "message": "Vlammen bommer - Hoge schade over een gebied. Goed gepantserd. Kan lichte flammenwerper torens neerzetten."
+  },
+  "Nuclear Missile - Long range, high damage ballistic missile.": {
+    "message": "Lange afstand, destructieve ballistische raket."
+  },
+  "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
+    "message": "Lanceerplatform voor lange afstand ballistische nucleaire raketten - Doet heel grote schade over een groot oppervlakte."
+  },
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
+    "message": "Ruimte slagschip - Zwaar bepantserd. Valt alles aan."
+  },
+  "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
+    "message": "Gas planeet economische gebouw - Produceert metaal en energie. Werkt enkel boven gas planeten."
+  },
+  "Orbital Fighter - Fast. Attacks orbital targets only.": {
+    "message": "Ruimte jager - Valt ruimte eenheden aan. Snel."
+  },
   "Orbital Laser - High splash damage. Attacks land, air, sea and seabed targets.": {
     "message": "Ruimte laser - Uitgerust met een zware schade plasma kanon. Kan land en zee aanvallen."
   },
-  "Basic Manufacturing - Builds basic orbital units.": {
-    "message": "Basis ruimte fabriek - Lanceert satellieten en basis ruimte eenheden in baan rond de planeet."
+  "Orbital Mega-Laser - Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
+    "message": "Ruimte mega-laser - Vernietigt alles wat de laser raakt."
   },
   "Orbital Scout - Fast. Provides small amount of vision of the planet below": {
     "message": "Ruimte rader sonde - Snel. Kan alles zien binnen een kleine oppervlakte."
@@ -272,97 +278,91 @@
   "Orbital Siege - Long range. High damage. Attacks orbital targets only.": {
     "message": "Ruimte railgun - Zware schade. Valt ruimte-eenheden aan."
   },
-  "Basic Radar Satellite - Short-range enemy unit detection. Requires energy.": {
-    "message": "Standaard radar satteliet - Ontdekt vijandige eenheden binnen een gemiddelde oppervlakte."
+  "Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets.": {
+    "message": "Ruimte defensie - Zware defensie satteliet. Valt alles aan."
   },
-  "Advanced Radar Satellite - Long-range enemy unit detection. Requires energy. Attacks land and sea targets.": {
-    "message": "Gepantserde geavanceerde radar satteliet - Ontdekt eenheden binnen een heel grote oppervlakte. Valt land aan."
+  "Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires.": {
+    "message": "Planeet motor - Gebruik dit om planeten tegen elkaar te botsen."
   },
-  "Orbital Mega-Laser - Purifies planetary surfaces of both enemies and allies. Attacks any targets except orbital.": {
-    "message": "Ruimte mega-laser - Vernietigt alles wat de laser raakt."
+  "Planetary Transport - Builds and launches up to 14 units at once to the planet below.": {
+    "message": "Ruimte eenheden kanon - Stuurt versterkings eenheden naar het oppervlakte van de planeet."
   },
-  "Submarine - Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
-    "message": "Aanval duikboot - Uitgerust met torpedos, Snel."
+  "Radar - Immobile. Use alt fire to change into a fast-moving mine detector.": {
+    "message": "Heeft Radar visie maar kan niet bewegen."
   },
-  "Battleship - High damage. Heavily armored. Long range. Attacks land and sea targets.": {
-    "message": "Slagschip - Uitgerust met zware-schade laser kanonnen. Valt land en zee eenheden aan."
+  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
+    "message": "Aanvaller - Licht gepantserd. Bewapend met lichte anti grond lazers."
   },
-  "Destroyer - High damage. Long range. Attacks land and sea targets.": {
-    "message": "Torpedojager - Uitgerust met zware kannonen. Valt zee en landeenheden aan."
+  "Rocket Turret - High damage. Attacks land and sea targets.": {
+    "message": "Geavanceerde defensie - Zware raketten. Valt land en zee aan."
   },
-  "Builder - Builds basic structures. Most powerful basic planetary fabricator.": {
-    "message": "Bouwt basis structuren - Kan enkel schepen bouwen."
-  },
-  "Builder - Builds advanced structures. Most powerful fabricator.": {
-    "message": "Bouwt gevanceerde structuren - Kan enkel schepen bouwen."
-  },
-  "Combat Builder - Builds mines, shields and turrets. Detects mines. Repairs friendly units. Can't help build other structures.": {
-    "message": "Militaire fabricator - Kan zee mijnen plaatsen en team eenheden repareren. Licht bepantserd."
-  },
-  "Frigate - High damage precision laser strikes. Only attacks air targets.": {
-    "message": "Fregat - Valt enkel luchteenheden aan."
-  },
-  "Hover Railgun - Fast. Long range. Can cross water and lava. Attacks land, air and sea targets.": {
-    "message": "Zweef schip - uitgerust met zware kanonnen. Kan over iedere oppervlak reizen. Valt land en zee eenheden aan."
-  },
-  "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
-    "message": "Ballistisch raket schip - Uitgerust met zware raketten en anti-lucht kanonnen."
-  },
-  "Basic Manufacturing - Builds basic ship units.": {
-    "message": "Basis fabricage - Bouwt schepen."
-  },
-  "Advanced Manufacturing - Builds advanced ship units.": {
-    "message": "Gevanceerde fabricage - Bouwt geavanceerdere schepen."
+  "Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.": {
+    "message": "Verkenners loper - Kan veranderen in een ontzichtbare korte afstands radar als je op alt-fire klikt. Ontdekbaar via radar."
   },
   "Sea Mine - High damage. Invisible to most units.": {
     "message": "Zee-mijn - Vernietigt zee eenheden dat te dichtbij komen."
   },
-  "Corvette - Fast. Cheap. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Korvet - Snel. Valt zee land en onderzeeërs aan."
-  },
-  "Trireme - Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
-    "message": "Zwaar gepantserde sloep - Ramt vijandelijke schepen. Uitgerust met zware kannonen."
-  },
-  "Wave Turret - Attacks sea, seabed and undersea targets.": {
-    "message": "Golvenmaker en torpedolanceerder - Valt water aan."
-  },
-  "Advanced Wave Turret - Attacks sea, seabed and undersea targets.": {
-    "message": "Zwaar anti-schepen golvenmachine - Valt water aan."
-  },
-  "Legion Expansion": {
-    "message": "Legion Expansie"
-  },
-  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
-    "message": "De Legion Expansie voegt een gehele nieuwe factie toe in Planetary Annihilation."
+  "Seismic Tank - Heavily armored. Short range. Huge splash damage. Attacks land and sea targets.": {
+    "message": "Seismische tank - Vernietigt eenheden dat te dicht komen."
   },
   "Select a blue Commander for MLA and a red one for Legion.": {
     "message": "Selecteer een blauwe Commandant voor MLA en een rode voor Legion."
   },
-  "It looks like you don't have the Legion Expansion client mod installed.": {
-    "message": "Het lijkt erop dat je de Legion Expansion client mod niet geïnstalleerd hebt."
+  "Shield - Blocks enemy projectiles. Requires energy. Overlapping Ramparts provides little benefit. Overwhelmed by rapid fire.": {
+    "message": "Schild - Absorbeert binnenkomende schoten. Heeft energie nodig. Wallen bouwen voegt weinig toe."
   },
-  "You won't be able to play without it, but installing is easy!": {
-    "message": "Je kunt zonder deze mod spelen, maar hem installeren is eenvoudig!"
+  "Shotgun Tank - Close range. Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Korte afstand jachtgeweer tank - Valt land en zee aan."
   },
-  "Learn More": {
-    "message": "Meer weten"
+  "Siege Tank - Long range. Attacks land, sea and seabed.": {
+    "message": "Sluipschutter - Uitgerust met een hoge-schade straal kanon. Valt land en zee aan."
   },
-  "Discuss": {
-    "message": "Bespreken"
+  "Siege Titan - Equipped with an arsenal of highly destructive weapons. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Experimentele aanvals Titan - Uitgerust met een arsenaal van hoog destructieve wapens."
   },
-  "click or press space to close": {
-    "message": "klik of druk op spatie om te sluiten"
+  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
+    "message": "Zware belegerings loper - Lange afstand - Lanceert zelf-ontploffende plakkende plasma mijnen."
   },
-  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
-    "message": "BIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEN!"
+  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+    "message": "Mobiele belegerings loper - Roept Purgers op van onder de grond. Zeer grote ontploffing bij dood."
   },
-  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
-    "message": "Voegt een totaal nieuwe speelbare factie toe met meer dan 100 eenheden, bruikbaar zowel in single als in multiplayer. Niet compatibel met andere mods die zelf eenheden toevoegen. Als je het nieuwe thema (kleuren) niet leuk vind kan je deze uitschakelen in de Instellingen. Kan niet gebruikt worden in galactische oorlog."
+  "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
+    "message": "Opslag - Gebruikt de energie van zwarte gaten om overtollige metaal en energie op te slaan."
+  },
+  "Submarine - Fast. Fires in salvos. Attacks sea, seabed and undersea targets.": {
+    "message": "Aanval duikboot - Uitgerust met torpedos, Snel."
+  },
+  "Swarm Turret - Spawns nanoswarms. Attacks land, sea and seabed targets.": {
+    "message": "Zwerm inzet - Bouwt zwerm eenheden. Valt land en zee aan."
+  },
+  "Tank Rockteeth Commander": {
+    "message": "Steentand Tank Commandant."
+  },
+  "Teleporter - Link teleporters to move units around the system.": {
+    "message": "Teleportatiemachine - Teleporteert eenheden van de een naar de ander."
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "De Legion Expansie voegt een gehele nieuwe factie toe in Planetary Annihilation."
   },
   "To play as the Legion select one of the red Commanders.": {
     "message": "Om als Legion te spelen, selecteer een rode Commandant."
   },
-  "Do not show this again": {
-    "message": "Laat niet meer zien"
+  "Transport - Load a land unit for rapid long distance travel.": {
+    "message": "Eenheden transport - Snel. Onbewapend."
+  },
+  "Trireme - Rams enemy ships. Fast. Heavily armored. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Zwaar gepantserde sloep - Ramt vijandelijke schepen. Uitgerust met zware kannonen."
+  },
+  "Wall - Very durable. Blocks enemy fire only.": {
+    "message": "Zwaar gepantserde belegering barriere."
+  },
+  "Wave Turret - Attacks sea, seabed and undersea targets.": {
+    "message": "Golvenmaker en torpedolanceerder - Valt water aan."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Je kunt zonder deze mod spelen, maar hem installeren is eenvoudig!"
+  },
+  "click or press space to close": {
+    "message": "klik of druk op spatie om te sluiten"
   }
 }
