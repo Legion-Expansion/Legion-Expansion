@@ -6,6 +6,10 @@
 
 - Update unit description formatting to match MLA
 
+### Translations
+
+- We've moved to a new translation service. Help [translate the Legion Expansion](https://crowdl.io/legionexpansion/entries) to your local language.
+
 ## 1.13.1 - 2020-06-05
 
 ### Bugfix
