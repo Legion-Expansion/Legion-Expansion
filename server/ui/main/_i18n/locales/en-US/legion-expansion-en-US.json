@@ -1,6 +1,6 @@
 {
-  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
-    "message": "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War."
+  "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.": {
+    "message": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War."
   },
   "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
     "message": "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets."
@@ -146,6 +146,9 @@
   "Chain Lightning": {
     "message": "Chain Lightning"
   },
+  "click or press space to close": {
+    "message": "click or press space to close"
+  },
   "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.": {
     "message": "Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures."
   },
@@ -254,6 +257,9 @@
   "Legion Expansion": {
     "message": "Legion Expansion"
   },
+  "Legion Guides": {
+    "message": "Legion Guides"
+  },
   "Legion Intro": {
     "message": "Legion Intro"
   },
@@ -356,6 +362,9 @@
   "Sneaky Spy Camera - Grants vision for a short time at the location.": {
     "message": "Sneaky Spy Camera - Grants vision for a short time at the location."
   },
+  "Spawns Purger": {
+    "message": "Spawns Purger"
+  },
   "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {
     "message": "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe."
   },
@@ -391,8 +400,5 @@
   },
   "You won't be able to play without it, but installing is easy!": {
     "message": "You won't be able to play without it, but installing is easy!"
-  },
-  "click or press space to close": {
-    "message": "click or press space to close"
   }
 }
