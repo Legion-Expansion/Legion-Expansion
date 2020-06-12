@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "client",
-  "date": "2020/06/05",
+  "date": "2020/06/12",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
