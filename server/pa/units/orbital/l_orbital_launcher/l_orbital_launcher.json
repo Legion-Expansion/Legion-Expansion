@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Starship Projector",
-  "description": "!LOC:Basic Manufacturing- Builds basic orbital units.",
+  "description": "!LOC:Basic Manufacturing - Builds basic orbital units.",
   "TEMP_texelinfo": 47.5342,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 45.0,

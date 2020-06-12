@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Flyer",
-  "description": "!LOC:Builder- Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.",
+  "description": "!LOC:Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.",
   "TEMP_texelinfo": 7.11877,
   "attachable": {
     "offsets": {

@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "server",
-  "date": "2020/06/05",
+  "date": "2020/06/12",
   "dependencies": [
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"
@@ -29,6 +29,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "titansOnly": true
 }

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Vessel",
-  "description": "!LOC:Builder- Builds advanced structures. Most powerful fabricator.",
+  "description": "!LOC:Builder - Builds advanced structures. Most powerful fabricator.",
   "TEMP_texelinfo": 11.3243,
   "attachable": {
     "offsets": {

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Mass Extractor",
-  "description": "!LOC:Basic Economy- Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.",
+  "description": "!LOC:Basic Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with an Advanced Mass Extractor.",
   "TEMP_texelinfo": 24.0973,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15,

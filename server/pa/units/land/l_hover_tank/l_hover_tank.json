@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Corsair",
-  "description": "!LOC:Hover Artillery- Can cross water and lava. Attacks land, sea and seabed targets.",
+  "description": "!LOC:Hover Artillery - Can cross water and lava. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 20.4238,
   "armor_type": "AT_Hover",
   "attachable": {

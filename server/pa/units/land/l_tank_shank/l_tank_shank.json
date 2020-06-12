@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Shank",
-  "description": "!LOC:Medium Tank- Splash damage. Attacks land, sea and seabed targets.",
+  "description": "!LOC:Medium Tank - Splash damage. Attacks land, sea and seabed targets.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Investigator Radar Collision Check",
-  "description": "!LOC:Radar- Immobile. Use alt fire to change into a fast-moving mine detector.",
+  "description": "!LOC:Radar - Immobile. Use alt fire to change into a fast-moving mine detector.",
   "TEMP_texelinfo": 4.07719,
   "audio": {
     "loops": {

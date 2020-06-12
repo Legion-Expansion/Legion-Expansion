@@ -1,0 +1,128 @@
+{
+  "Adds an entirely new faction with over a hundred units for use in skirmish and multiplayer. Not compatible with mods which add additional units. If you don't like the new theme it can be disabled in Settings. Cannot be used in Galactic War.": {
+    "message": "Ajoute une complétement nouvelle faction avec plus de cent unités à utiliser en skirmish comme en multijoueur. Pas compatible avec les mods qui rajoutent des unités. Si vous n'aimez pas le nouveau thèmes, vous pouvez le changer dans les paramètres."
+  },
+  "Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.": {
+    "message": "Tourelle anti-air avancée - Haute Range. Attaque air"
+  },
+  "Advanced Anti-Air Walker - High damage precision laser strikes. Only attacks air targets.": {
+    "message": "AA mobile avancé."
+  },
+  "Advanced Artillery - Very accurate. High splash damage. Attacks land, sea and seabed targets.": {
+    "message": "Canon accélérateur magnétique - Tire projectiles à haut dommages."
+  },
+  "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Construit structures avancées - Peut construire des Drones exclusifs."
+  },
+  "Advanced Manufacturing - Builds advanced air units.": {
+    "message": "Production avancée - Construit Drones Volant de Légion"
+  },
+  "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {
+    "message": "Drone furtif avancé - équipe avec camera à espion. Consume de l’énergie. Interplanétaire."
+  },
+  "Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.": {
+    "message": "Tourelle AA basique - Équipée avec LMG"
+  },
+  "Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.": {
+    "message": "Bipèdes anti-air - Courte range. Attaque air."
+  },
+  "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
+    "message": "Défense Nucléaire - intercepte et détruit missiles nucléaire"
+  },
+  "Artillery - Medium range. Attacks land, sea, seabed and underwater targets.": {
+    "message": "Anti-mer, anti-terre Railgun moyen. Coûte de l’énergie pour tirer."
+  },
+  "Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.": {
+    "message": "Bipèdes d'assaut - Attaque terre et mer."
+  },
+  "Basic Manufacturing - Builds basic air units.": {
+    "message": "Production basique - Construit Drones Volant de Legion"
+  },
+  "Bomber - High damage to a single target. Attacks land, sea, seabed and undersea targets.": {
+    "message": "Bombardier à plasma - Haut damage. Attaque sol et mer."
+  },
+  "Builder - Builds basic structures. Very mobile. Vulnerable. Less efficient than other builders.": {
+    "message": "Construit structures basique - Rapide. Peut construire des Drones exclusifs."
+  },
+  "Carrier - Launches fast-flying drones at enemies. Attacks land, air and sea targets.": {
+    "message": "Porte-avion volant - envoie des drones rapides contre l’ennemi. Attaque Tout sauf orbite."
+  },
+  "Discuss": {
+    "message": "Discutez"
+  },
+  "Drone - Fast. Fragile. Attacks land, sea and air targets.": {
+    "message": "Drone à Missille - Rapide, fragile, attaque terre et mer."
+  },
+  "Fighter - Fast. High damage. Forward firing only. Only attacks air targets.": {
+    "message": "Intercepter de Drones rapide - Attaque air."
+  },
+  "Flying Bomb - Self-destructs to deal very heavy damage over an area over time. Attacks air targets only.": {
+    "message": "Drone Suicidaire - Attaque seulement unités volantes"
+  },
+  "Flying Fortress Titan - Heavy damage over a wide area. Attacks any targets except orbital.": {
+    "message": "Forteresse volante - armure lourde. Équipé avec cannons à longue portée et miniguns."
+  },
+  "Gunship - Heavily armored. Attacks land, sea and seabed targets.": {
+    "message": "Gunship - Armure lourde. Équipe avec missiles à tête chercheuse et LMG."
+  },
+  "Heavy Walker - Heavily armored. Long range. Attacks land, sea and seabed targets.": {
+    "message": "Bipèdes d’assaut lourd - Armure lourde. Équipe avec gros canons et laser lourd."
+  },
+  "Imperial Cyclops Commander": {
+    "message": "Commandant Légion Cyclopes"
+  },
+  "Imperial Overwatch Commander": {
+    "message": "Commandant Légion Overwatch."
+  },
+  "Imperial Wasushi Commander": {
+    "message": "Commandant Légion Wasushi"
+  },
+  "Interplanetary Fighter - Fast. Can move between planets. Can only attack air targets.": {
+    "message": "Chasseur Interplanétaire - Rapide et Blindé. Attaque air."
+  },
+  "Interplanetary Teleporter - Can link with a teleporter and send units directly to a planet's surface. Can move between planets.": {
+    "message": "Téléporter mobile Interplanétaire - Armure lourde."
+  },
+  "It looks like you don't have the Legion Expansion client mod installed.": {
+    "message": "Il Semble que vous n'avez pas le mod Légion Expansion Client installé."
+  },
+  "Learn More": {
+    "message": "Apprenez plus"
+  },
+  "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
+    "message": "Commandant classe: Légion - Si vous voyer ceci, il y a un problème avec votre commandant."
+  },
+  "Legion Expansion": {
+    "message": "Expansion Légion"
+  },
+  "Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.": {
+    "message": "ABEEEEEEEEEEEIIIIIIIILLES!"
+  },
+  "Napalm Bomber - High damage over a wide area. Heavily armored. Deploys flamethrower turrets. Attacks land and sea targets.": {
+    "message": "Bombardier Incinérateur - haut dommage sur aire. Bonne armure. Peut déployer tourelle lance-flamme légère."
+  },
+  "Raider - Fast. Can see far away. Attacks land and sea targets.": {
+    "message": "Prédateur - Armure légère. Armé de Lasers anti-sol. Très rapide."
+  },
+  "Select a blue Commander for MLA and a red one for Legion.": {
+    "message": "Selectionez un Commandant bleu pour MLA et un rouge pour Légion."
+  },
+  "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
+    "message": "Bipèdes arme de siège - Haute Range. Tire mines au plasma, collante, auto-explosive."
+  },
+  "Tank Rockteeth Commander": {
+    "message": "Commandant Tank RockTeeth"
+  },
+  "The Legion Expansion adds an entirely new faction in Planetary Annihilation.": {
+    "message": "L'expansion de Légion ajoute une faction complétement nouvelle à Planetary Annihilation."
+  },
+  "Transport - Load a land unit for rapid long distance travel.": {
+    "message": "Transporteur d’unités - Rapide. Sans défense."
+  },
+  "You won't be able to play without it, but installing is easy!": {
+    "message": "Vous ne serrez pas capable de jouer sans, mais l'installer est facile."
+  },
+  "click or press space to close": {
+    "message": "cliquer ou appuyez sur espace"
+  }
+}

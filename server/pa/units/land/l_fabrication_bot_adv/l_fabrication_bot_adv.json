@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Walker",
-  "description": "!LOC:Advanced Builder- Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.",
+  "description": "!LOC:Advanced Builder - Builds basic and advanced structures. Builds bot titan. Cheap. Less powerful than other builders.",
   "TEMP_texelinfo": 5,
   "attachable": {
     "offsets": {

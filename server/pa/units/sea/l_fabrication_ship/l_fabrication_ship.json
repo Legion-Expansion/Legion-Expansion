@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Vessel",
-  "description": "!LOC:Builder- Builds basic structures. Most powerful basic planetary fabricator.",
+  "description": "!LOC:Builder - Builds basic structures. Most powerful basic planetary fabricator.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {

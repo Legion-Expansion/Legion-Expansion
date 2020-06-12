@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Talos",
-  "description": "!LOC:Frigate- High damage precision laser strikes. Only attacks air targets.",
+  "description": "!LOC:Frigate - High damage precision laser strikes. Only attacks air targets.",
   "TEMP_texelinfo": 21.4,
   "audio": {
     "loops": {
