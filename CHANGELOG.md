@@ -11,6 +11,7 @@
 - We've moved to a new translation service. Help [translate the Legion Expansion](https://crowdl.io/legionexpansion/entries) to your local language.
 - Updated the Dutch (nl) translation to match the new unit descriptions with thanks to Viporizer
 - Added an English (not US) translation for those not using English (US)
+- Updated the Korean (ko) translation with thanks to R.O.S.S
 
 ## 1.13.1 - 2020-06-05
 
