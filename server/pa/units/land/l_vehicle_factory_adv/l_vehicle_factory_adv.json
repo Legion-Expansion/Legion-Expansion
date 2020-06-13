@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Armour Foundry",
-  "description": "!LOC:Advanced Manufacturing - Builds advanced tank units.",
+  "description": "!LOC:Advanced Manufacturing - Builds advanced tanks.",
   "TEMP_texelinfo": 38.0812,
   "area_build_separation": 7,
   "atrophy_cool_down": 15,

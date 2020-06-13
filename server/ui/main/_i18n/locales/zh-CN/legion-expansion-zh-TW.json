@@ -32,16 +32,16 @@
   "Advanced Manufacturing - Builds advanced air units.": {
     "message": "進階製造 - 生產\"軍團\"進階飛行單位"
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
+  "Advanced Manufacturing - Builds advanced bots.": {
     "message": "進階製造 - 生產\"軍團\"進階機甲單位"
   },
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "進階製造 - 生產進階軌道單位"
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds advanced ships.": {
     "message": "進階製造 - 生產\"軍團\"進階海上單位"
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tanks.": {
     "message": "進階製造 - 生產\"軍團\"進階裝甲單位"
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
@@ -95,16 +95,16 @@
   "Basic Manufacturing - Builds basic air units.": {
     "message": "基礎製造 - 生產\"軍團\"飛行單位"
   },
-  "Basic Manufacturing - Builds basic bot units.": {
+  "Basic Manufacturing - Builds basic bots.": {
     "message": "基礎製造 - 生產\"軍團\"機甲單位"
   },
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "基礎軌道單位工廠 - 發射衛星和基本軌道單位到太空"
   },
-  "Basic Manufacturing - Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ships.": {
     "message": "基礎製造 - 生產\"軍團\"海上單位"
   },
-  "Basic Manufacturing - Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tanks.": {
     "message": "基礎製造 - 生產\"軍團\"裝甲單位"
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {

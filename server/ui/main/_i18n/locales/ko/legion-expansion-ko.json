@@ -35,16 +35,16 @@
   "Advanced Manufacturing - Builds advanced air units.": {
     "message": "상급 생산시설 - 상급 항공기들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
+  "Advanced Manufacturing - Builds advanced bots.": {
     "message": "상급 생산시설 - 상급 봇들을 제작합니다."
   },
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "상급 생산시설 - 상급  궤도유닛들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds advanced ships.": {
     "message": "상급 생산시설 - 상급 선박들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tanks.": {
     "message": "상급 생산시설 - 상급 전차들을 제작합니다."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
@@ -101,16 +101,16 @@
   "Basic Manufacturing - Builds basic air units.": {
     "message": "기본 생산시설 - 기본 항공기들을 제작합니다."
   },
-  "Basic Manufacturing - Builds basic bot units.": {
+  "Basic Manufacturing - Builds basic bots.": {
     "message": "기본 생산시설 - 기본 봇들을 제작합니다."
   },
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "기본 생산시설 - 기본 궤도유닛들을 제작합니다."
   },
-  "Basic Manufacturing - Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ships.": {
     "message": "기본 생산시설 - 기본 선박들을 제작합니다."
   },
-  "Basic Manufacturing - Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tanks.": {
     "message": "기본 생산시설 - 기본 전차들을 생산합니다."
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {

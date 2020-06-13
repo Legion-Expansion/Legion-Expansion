@@ -35,17 +35,17 @@
   "Advanced Manufacturing - Builds advanced air units.": {
     "message": "Advanced Manufacturing - Builds advanced air units."
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
-    "message": "Advanced Manufacturing - Builds advanced bot units."
+  "Advanced Manufacturing - Builds advanced bots.": {
+    "message": "Advanced Manufacturing - Builds advanced bots."
   },
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "Advanced Manufacturing - Builds advanced orbital units."
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
-    "message": "Advanced Manufacturing - Builds advanced ship units."
+  "Advanced Manufacturing - Builds advanced ships.": {
+    "message": "Advanced Manufacturing - Builds advanced ships."
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
-    "message": "Advanced Manufacturing - Builds advanced tank units."
+  "Advanced Manufacturing - Builds advanced tanks.": {
+    "message": "Advanced Manufacturing - Builds advanced tanks."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
     "message": "Advanced Radar - Long-range enemy unit detection. Requires energy."
@@ -101,17 +101,17 @@
   "Basic Manufacturing - Builds basic air units.": {
     "message": "Basic Manufacturing - Builds basic air units."
   },
-  "Basic Manufacturing - Builds basic bot units.": {
-    "message": "Basic Manufacturing - Builds basic bot units."
+  "Basic Manufacturing - Builds basic bots.": {
+    "message": "Basic Manufacturing - Builds basic bots."
   },
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "Basic Manufacturing - Builds basic orbital units."
   },
-  "Basic Manufacturing - Builds basic ship units.": {
-    "message": "Basic Manufacturing - Builds basic ship units."
+  "Basic Manufacturing - Builds basic ships.": {
+    "message": "Basic Manufacturing - Builds basic ships."
   },
-  "Basic Manufacturing - Builds basic tank units.": {
-    "message": "Basic Manufacturing - Builds basic tank units."
+  "Basic Manufacturing - Builds basic tanks.": {
+    "message": "Basic Manufacturing - Builds basic tanks."
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {
     "message": "Basic Radar - Short-range enemy unit detection. Requires energy."

@@ -35,16 +35,16 @@
   "Advanced Manufacturing - Builds advanced air units.": {
     "message": "Geavanceerde Productie - Bouwt geavanceerde vliegtuigen."
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
+  "Advanced Manufacturing - Builds advanced bots.": {
     "message": "Geavanceerde Productie - Bouwt geavanceerde robots."
   },
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "Geavanceerde Productie - Bouwt geavanceerde ruimte schepen."
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds advanced ships.": {
     "message": "Geavanceerde Productie - Bouwt geavanceerde schepen."
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tanks.": {
     "message": "Geavanceerde Productie - Bouwt geavanceerde tanks."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
@@ -101,16 +101,16 @@
   "Basic Manufacturing - Builds basic air units.": {
     "message": "Basis Productie - Bouwt basis vliegtuigen."
   },
-  "Basic Manufacturing - Builds basic bot units.": {
+  "Basic Manufacturing - Builds basic bots.": {
     "message": "Basis Productie - Bouwt basis robots"
   },
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "Basis Productie - Bouwt basis ruimte schepen"
   },
-  "Basic Manufacturing - Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ships.": {
     "message": "Basis Productie - Bouwt basis schepen."
   },
-  "Basic Manufacturing - Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tanks.": {
     "message": "Basis Productie - Bouwt basis tanks."
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {

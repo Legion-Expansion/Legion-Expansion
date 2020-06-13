@@ -11,7 +11,7 @@
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "Продвинутое производство - Строит продвинутых орбитальных юнитов."
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tanks.": {
     "message": "Продвинутое производство - Создаёт продвинутую броню Легиона"
   },
   "Anti-Nuke Launcher - Space for four advanced anti-nuclear missile weapons.": {
@@ -29,7 +29,7 @@
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "Базовый орбитальный завод - Запускает спутники и базовые орбитальные юниты в космос."
   },
-  "Basic Manufacturing - Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tanks.": {
     "message": "Базовое производство - создает броню Легиона"
   },
   "Basic Radar Satellite - Short-range enemy unit detection. Requires energy.": {

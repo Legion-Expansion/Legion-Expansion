@@ -32,16 +32,16 @@
   "Advanced Manufacturing - Builds advanced air units.": {
     "message": "Erweiterte Konstruktion - Baut erweiterte Legion Lufteinheiten."
   },
-  "Advanced Manufacturing - Builds advanced bot units.": {
+  "Advanced Manufacturing - Builds advanced bots.": {
     "message": "Verbesserter Hersteller - Baut verbesserte Legion Wanderer."
   },
   "Advanced Manufacturing - Builds advanced orbital units.": {
     "message": "Fortschrittliche Herstellung - Baut erweiterte Orbitaleinheiten."
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds advanced ships.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Marine Schiffe."
   },
-  "Advanced Manufacturing - Builds advanced tank units.": {
+  "Advanced Manufacturing - Builds advanced tanks.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Legion Panzer."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
@@ -95,16 +95,16 @@
   "Basic Manufacturing - Builds basic air units.": {
     "message": "Einfache Konstruktion - Baut Legion Lufteinheiten."
   },
-  "Basic Manufacturing - Builds basic bot units.": {
+  "Basic Manufacturing - Builds basic bots.": {
     "message": "Grundlegender Hersteller - Baut Legion Wanderer."
   },
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "Einfache Orbitalfabrik - Startet Satelliten und Basisorbitaleinheiten in den Weltraum."
   },
-  "Basic Manufacturing - Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ships.": {
     "message": "Einfache Konstruktion - Baut Marine Schiffe."
   },
-  "Basic Manufacturing - Builds basic tank units.": {
+  "Basic Manufacturing - Builds basic tanks.": {
     "message": "Einfache Konstruktion - Baut Legion Panzer."
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {
