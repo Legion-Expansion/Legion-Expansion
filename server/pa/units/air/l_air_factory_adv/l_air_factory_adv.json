@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Flyer Foundry",
-  "description": "!LOC:Advanced Manufacturing - Builds advanced air units.",
+  "description": "!LOC:Advanced Manufacturing - Builds basic and advanced air units.",
   "TEMP_texelinfo": 42.821,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,

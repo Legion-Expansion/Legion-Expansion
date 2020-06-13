@@ -29,19 +29,19 @@
   "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "Ballistisches Raketenschiff - Ausgestattet mit schweren Raketen und Luftabwehr Kanonen."
   },
-  "Advanced Manufacturing - Builds advanced air units.": {
+  "Advanced Manufacturing - Builds basic and advanced air units.": {
     "message": "Erweiterte Konstruktion - Baut erweiterte Legion Lufteinheiten."
   },
-  "Advanced Manufacturing - Builds advanced bots.": {
+  "Advanced Manufacturing - Builds basic and advanced bots.": {
     "message": "Verbesserter Hersteller - Baut verbesserte Legion Wanderer."
   },
-  "Advanced Manufacturing - Builds advanced orbital units.": {
+  "Advanced Manufacturing - Builds basic and advanced orbital units.": {
     "message": "Fortschrittliche Herstellung - Baut erweiterte Orbitaleinheiten."
   },
-  "Advanced Manufacturing - Builds advanced ships.": {
+  "Advanced Manufacturing - Builds basic and advanced ships.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Marine Schiffe."
   },
-  "Advanced Manufacturing - Builds advanced tanks.": {
+  "Advanced Manufacturing - Builds basic and advanced tanks.": {
     "message": "Verbesserte Konstruktion - Baut verbesserte Legion Panzer."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {

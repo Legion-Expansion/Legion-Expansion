@@ -32,19 +32,19 @@
   "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "상급 프리깃함 - 긴 사거리와 높은 화력을 가집니다. 지상, 공중, 해상 그리고 궤도의 적을 공격합니다."
   },
-  "Advanced Manufacturing - Builds advanced air units.": {
+  "Advanced Manufacturing - Builds basic and advanced air units.": {
     "message": "상급 생산시설 - 상급 항공기들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced bots.": {
+  "Advanced Manufacturing - Builds basic and advanced bots.": {
     "message": "상급 생산시설 - 상급 봇들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced orbital units.": {
+  "Advanced Manufacturing - Builds basic and advanced orbital units.": {
     "message": "상급 생산시설 - 상급  궤도유닛들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced ships.": {
+  "Advanced Manufacturing - Builds basic and advanced ships.": {
     "message": "상급 생산시설 - 상급 선박들을 제작합니다."
   },
-  "Advanced Manufacturing - Builds advanced tanks.": {
+  "Advanced Manufacturing - Builds basic and advanced tanks.": {
     "message": "상급 생산시설 - 상급 전차들을 제작합니다."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {

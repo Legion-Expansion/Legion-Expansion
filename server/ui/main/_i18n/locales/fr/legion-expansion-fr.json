@@ -14,7 +14,7 @@
   "Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.": {
     "message": "Construit structures avancées - Peut construire des Drones exclusifs."
   },
-  "Advanced Manufacturing - Builds advanced air units.": {
+  "Advanced Manufacturing - Builds basic and advanced air units.": {
     "message": "Production avancée - Construit Drones Volant de Légion"
   },
   "Advanced Stealth Scout - Launches a sneaky spy camera. Invisible to radar. Consumes energy. Can move between planets.": {

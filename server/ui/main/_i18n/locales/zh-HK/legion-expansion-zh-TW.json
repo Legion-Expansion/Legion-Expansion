@@ -29,19 +29,19 @@
   "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "彈道飛彈艦 - 裝備重型飛彈和對空火砲"
   },
-  "Advanced Manufacturing - Builds advanced air units.": {
+  "Advanced Manufacturing - Builds basic and advanced air units.": {
     "message": "進階製造 - 生產\"軍團\"進階飛行單位"
   },
-  "Advanced Manufacturing - Builds advanced bots.": {
+  "Advanced Manufacturing - Builds basic and advanced bots.": {
     "message": "進階製造 - 生產\"軍團\"進階機甲單位"
   },
-  "Advanced Manufacturing - Builds advanced orbital units.": {
+  "Advanced Manufacturing - Builds basic and advanced orbital units.": {
     "message": "進階製造 - 生產進階軌道單位"
   },
-  "Advanced Manufacturing - Builds advanced ships.": {
+  "Advanced Manufacturing - Builds basic and advanced ships.": {
     "message": "進階製造 - 生產\"軍團\"進階海上單位"
   },
-  "Advanced Manufacturing - Builds advanced tanks.": {
+  "Advanced Manufacturing - Builds basic and advanced tanks.": {
     "message": "進階製造 - 生產\"軍團\"進階裝甲單位"
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
