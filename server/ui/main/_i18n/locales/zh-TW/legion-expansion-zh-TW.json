@@ -263,7 +263,7 @@
   "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
     "message": "星際彈道飛彈發射設施 - 可生產並裝載一個核彈，飛彈完成時需手動命令目標"
   },
-  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air, sea and orbital targets.": {
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
     "message": "軌道戰艦 - 重武裝，攻擊潛艦以外的所有單位"
   },
   "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
