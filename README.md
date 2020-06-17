@@ -90,20 +90,14 @@
 *We've also had to adjust some Legion Foundry energy usage to bring them in line with MLA too.*
 
 ### Walker Foundry
-*We've also adjusted the walk-off time on the Walker Foundry in order to make it more competitive against the Bot Factory in the very early game. This might have some unintended mid-game side-effects since the T1 Walker Foundry already scales nicely.*
-
-*For reference, the MLA Bot Factory has a walk-off time of 3, and all other T1 Legion Foundries share walk-off times with their MLA equivalents.*
-
 - Cost: 660 -> 600
 - Energy Usage: 640 -> 675
-- Walk-off Time: 4 -> 3.5
 
 ### Armour Foundry
 - Cost: 660 -> 600
 - Energy Usage: 640 -> 675
 
 ### Flyer Foundry
-*The Flyer Foundry inexplicably already uses 675 energy per second, unlike its fellow T1 non-Naval Foundries. Legion is a well-polished mod.*
 - Cost: 660 -> 600
 
 ### Ship Foundry
@@ -124,42 +118,6 @@
 ### Advanced Ship Foundry
 - Metal Usage: 65 -> 60
 - Energy Usage: 1900 -> 1750
-
-### Starcannon
-*No factory in the game builds as fast as the Starcannon for its cost. For only 1700 metal, you get production comparable to a 4500-metal T2 factory.*
-
-*Additionally, the Starcannon can be assisted by Starship Fabricators, which are extremely efficient. Therefore, we have dramatically increased their walk-off.*
-
-- Metal Usage: 45 -> 35
-- Cooldown: 4 -> 10
-
-## DEFENSES
-*Legion defensive structures are currently notorious for being difficult to deal with. We've shifted balance a bit in order to make turtling slightly weaker as Legion.*
-
-### Jackal
-*Legion's ability to expand is partially impacted by the high expense of its defensive structures. We've thus made the Jackal both cheaper and weaker to encourage a slightly more rapid expansion rate for Legion players.*
-
-- Cost: 350 -> 300
-- Health: 750 -> 500
-- Fire Rate: 15 -> 12
-
-### Scarab
-- Cost: 500 -> 400
-- Health: 2500 -> 1750
-- Fire Rate: 1 -> 0.7
-
-
-### Hive
-- Health: 1000 -> 750
-- Ammo capacity: 2800 -> 3000
-- Ammo per shot: 1400 -> 1500
-- Range: 180 -> 165
-- Spawned Swarm:
-  * Fire Rate: 5 -> 4
-
-### Centurion
-*The Centurion was inexplicably strictly better than the Anchor previously. The Centurion is now conditionally better or worse than the Anchor, and has identical performance on average.*
-- Fire Rate: 4 -> 2
 
 ## ARMOUR
 
