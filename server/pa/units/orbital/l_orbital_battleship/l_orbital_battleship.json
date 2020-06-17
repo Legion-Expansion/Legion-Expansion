@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Imperator",
-  "description": "!LOC:Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.",
+  "description": "!LOC:Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air, sea and orbital targets.",
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {

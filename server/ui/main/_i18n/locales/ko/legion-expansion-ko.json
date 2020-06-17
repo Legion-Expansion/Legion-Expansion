@@ -290,7 +290,7 @@
   "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
     "message": "핵 미사일 발사대 - 핵미사일을 제작하여 발사하고 사거리 제한이 없습니다. 광역피해를 줍니다. 성간 발사가 가능합니다."
   },
-  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air, sea and orbital targets.": {
     "message": "궤도 전함 - 중장갑이며 행성의 적들에게 드론무리를 발사합니다. 지상, 공중, 해상 그리고 궤도의 적을 공격합니다."
   },
   "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {
