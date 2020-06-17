@@ -8,10 +8,10 @@
   "Advanced Frigate - Long range. High damage. Attacks land, air, sea, and orbital targets.": {
     "message": "Łódz z pociskami balistycznymi - Wyposażona w ciężkie rakiety i działa przeciw powietrzne."
   },
-  "Advanced Manufacturing - Builds advanced orbital units.": {
+  "Advanced Manufacturing - Builds basic and advanced orbital units.": {
     "message": "Zaawansowane wytwarzanie - Buduje zaawansowane jednostki orbitalne."
   },
-  "Advanced Manufacturing - Builds advanced ship units.": {
+  "Advanced Manufacturing - Builds basic and advanced ships.": {
     "message": "Zaawansowana produkcja - Buduje zaawansowane okręty wojenne."
   },
   "Advanced Radar - Long-range enemy unit detection. Requires energy.": {
@@ -32,7 +32,7 @@
   "Basic Manufacturing - Builds basic orbital units.": {
     "message": "Podstawowa fabryka orbitalna - Wyrzuca satelity i podstawowe jednostki orbitalne do przestrzeni."
   },
-  "Basic Manufacturing - Builds basic ship units.": {
+  "Basic Manufacturing - Builds basic ships.": {
     "message": "Podstawowa produkcja - Buduje okręty wojenne."
   },
   "Basic Radar - Short-range enemy unit detection. Requires energy.": {

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Ship Foundry",
-  "description": "!LOC:Basic Manufacturing - Builds basic ship units.",
+  "description": "!LOC:Basic Manufacturing - Builds basic ships.",
   "TEMP_texelinfo": 44.3722,
   "area_build_separation": 2,
   "atrophy_cool_down": 15,

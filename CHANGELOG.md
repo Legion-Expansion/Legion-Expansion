@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v1.13.3 - 2020-06-17
+
+### General
+
+- Update file shadows for TITANS 114445
+
+### Translations
+
+- Removed community translations replaced by professional translations now shipping with PA
+- Ensured all client strings are being translated
+
 ## v1.13.2 - 2020-06-12
 
 ### General
@@ -9,7 +20,7 @@
 ### Translations
 
 - We've moved to a new translation service. Help [translate the Legion Expansion](https://crowdl.io/legionexpansion/entries) to your local language.
-- Updated the Dutch (nl) translation to match the new unit descriptions with thanks to Viporizer
+- Updated the Dutch (nl) translation with thanks to Viporizer
 - Added an English (not US) translation for those not using English (US)
 - Updated the Korean (ko) translation with thanks to R.O.S.S
 
