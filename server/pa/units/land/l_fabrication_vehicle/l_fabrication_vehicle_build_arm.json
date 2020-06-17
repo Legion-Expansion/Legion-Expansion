@@ -5,7 +5,7 @@
     "metal": 11
   },
   "fx_trail": "/pa/effects/specs/legion_fab_spray.pfx",
+  "max_range": 55,
   "pitch_rate": 180,
-  "yaw_rate": 180,
-  "max_range": 55
+  "yaw_rate": 180
 }

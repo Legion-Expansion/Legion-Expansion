@@ -1,0 +1,114 @@
+{
+  "display_name": "!LOC:Metal Extractor",
+  "description": "!LOC:Basic Economy - Produces metal, can only be placed on metal deposits.",
+  "TEMP_texelinfo": 15.0973,
+  "area_build_type": "Sphere",
+  "atrophy_cool_down": 15.0,
+  "atrophy_rate": 2.5,
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/metal"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 170,
+  "consumption": {
+    "energy": 0
+  },
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/metal"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 0.75
+    }
+  },
+  "feature_requirements": [
+    "metal_spot"
+  ],
+  "force_snap_to_feature_orientation": true,
+  "lamps": [
+    {
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 1.0,
+      "offset": [
+        -0.72,
+        -1.922,
+        6.515
+      ],
+      "radius": 2.0
+    }
+  ],
+  "max_health": 1000,
+  "mesh_bounds": [
+    9.2,
+    10.0407,
+    23.5
+  ],
+  "model": [
+    {
+      "animations": {
+        "idle": "/pa/units/land/metal_extractor/metal_extractor_anim_work.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+      "filename": "/pa/units/land/metal_extractor/metal_extractor.papa",
+      "layer": "WL_LandHorizontal"
+    },
+    {
+      "animations": {
+        "idle": "/pa/units/sea/sea_metal_extractor/sea_metal_extractor_anim_work.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
+      "filename": "/pa/units/sea/sea_metal_extractor/sea_metal_extractor.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "placement_size": [
+    16,
+    16
+  ],
+  "production": {
+    "metal": 7
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "replaceable_units": [
+    "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
+    "/pa/units/land/l_mex_adv/l_mex_adv.json"
+  ],
+  "selection_icon": {
+    "diameter": 24.0
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "unit_name": "!Metal Extractor",
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_MetalProduction",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_Economy",
+    "UNITTYPE_FabOrbBuild"
+  ]
+}
