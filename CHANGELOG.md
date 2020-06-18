@@ -11,6 +11,9 @@
 - Air
   - Scythe
     - No longer prioritises fighters
+- Land
+  - Deathmark
+    - No longer prioritises mobile units
 
 ### Translations
 
