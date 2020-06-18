@@ -248,8 +248,8 @@
   "Learn More": {
     "message": "자세한 정보"
   },
-  "Legion 1.13.3": {
-    "message": "리전 1.13.3"
+  "Legion": {
+    "message": "리전"
   },
   "Legion Commander Description - If you're seeing this, something is wrong in your commander.": {
     "message": "리전 사령관 설명 - 만약 당신이 이것을 보고 있다면, 당신의 사령관에 뭔가 잘못된것이 있다."
@@ -290,7 +290,7 @@
   "Nuclear Missile Launcher - Builds and launches unlimited range, large splash damage, nuclear missiles. Can fire at other planets.": {
     "message": "핵 미사일 발사대 - 핵미사일을 제작하여 발사하고 사거리 제한이 없습니다. 광역피해를 줍니다. 성간 발사가 가능합니다."
   },
-  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.": {
+  "Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air, sea and orbital targets.": {
     "message": "궤도 전함 - 중장갑이며 행성의 적들에게 드론무리를 발사합니다. 지상, 공중, 해상 그리고 궤도의 적을 공격합니다."
   },
   "Orbital Economy - Produces metal and energy. Only buildable on gas giants.": {

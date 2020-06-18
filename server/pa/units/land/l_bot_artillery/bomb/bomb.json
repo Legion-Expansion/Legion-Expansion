@@ -86,10 +86,9 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Bot",
     "UNITTYPE_Land",
-    "UNITTYPE_Basic",
-    "UNITTYPE_Offense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_NoBuild",
     "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
