@@ -6,6 +6,12 @@
 
 - Update file shadows for TITANS 114445
 
+### Balance
+
+- Air
+  - Scythe
+    - No longer prioritises fighters
+
 ### Translations
 
 - Removed community translations replaced by professional translations now shipping with PA
