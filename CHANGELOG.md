@@ -14,6 +14,9 @@
 - Land
   - Deathmark
     - No longer prioritises mobile units
+- Sea
+  - Talos
+    - Give equal weighting to transports, bombers, gunships, and titans
 
 ### Translations
 
