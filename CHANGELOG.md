@@ -14,6 +14,9 @@
 - Land
   - Deathmark
     - No longer prioritises mobile units
+    - Removed splash damage
+    - Reduced health from 250 to 125
+    - Reduced turn speed from 90 to 60
 - Sea
   - Talos
     - Give equal weighting to transports, bombers, gunships, and titans
