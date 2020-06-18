@@ -11,6 +11,10 @@
 - Removed community translations replaced by professional translations now shipping with PA
 - Ensured all client strings are being translated
 
+### Bugfix
+
+- Correct UNITTYPE tags for spawned weapons
+
 ## v1.13.2 - 2020-06-12
 
 ### General
