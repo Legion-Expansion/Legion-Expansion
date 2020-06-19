@@ -356,7 +356,7 @@
   "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "공성 워커 - 긴 사거리를 가지며 시간 제한이 있는 접착식 플라즈마 지뢰를 발사합니다. 지상, 해상 그리고 해저의 적을 공격합니다."
   },
-  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+  "Siege Walker - Spawns Purgers. Can attack land targets only.": {
     "message": "공성 워커 - 퍼저를 소환합니다. 파괴시에 폭발을 일으키며 피아구분없이 피해를 입힙니다. 오직 지상의 적만 공격합니다."
   },
   "Sneaky Spy Camera - Grants vision for a short time at the location.": {

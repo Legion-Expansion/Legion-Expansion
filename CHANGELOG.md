@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## DEV
+
+### Translations
+
+- Corrected Necromancer description
+
 ## v1.14.0 - 2020-06-18
 
 ### General

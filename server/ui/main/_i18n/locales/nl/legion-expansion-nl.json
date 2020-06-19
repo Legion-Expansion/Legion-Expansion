@@ -356,7 +356,7 @@
   "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "Belegering Loper - Lange afstand. Lanceert getimede plakkerige plasma mijnen. Valt land, zee en zeebodem doelen aan."
   },
-  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+  "Siege Walker - Spawns Purgers. Can attack land targets only.": {
     "message": "Belegering Loper - Creëert zuiveraars. Explodeert bij destructie, brengt schade aan vriend en vijand. Valt enkel land doelen aan."
   },
   "Sneaky Spy Camera - Grants vision for a short time at the location.": {
