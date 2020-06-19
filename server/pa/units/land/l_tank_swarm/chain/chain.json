@@ -1,6 +1,6 @@
 {
   "display_name": "Chain1",
-  "description": "Chain Lightning",
+  "description": "!LOC:Chain Lightning",
   "TEMP_texelinfo": 5.39039,
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "build_metal_cost": 90,
@@ -77,7 +77,9 @@
   ],
   "unit_types": [
     "UNITTYPE_Land",
-    "UNITTYPE_Hover"
+    "UNITTYPE_Advanced",
+    "UNITTYPE_NoBuild",
+    "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Sky Bridge",
-  "description": "!LOC:Teleporter- Link teleporters to move units around the system.",
+  "description": "!LOC:Teleporter - Link teleporters to move units around the system.",
   "TEMP_texelinfo": 30.032139,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,

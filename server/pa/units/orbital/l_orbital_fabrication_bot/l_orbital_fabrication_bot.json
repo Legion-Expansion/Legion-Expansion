@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Fabrication Starship",
-  "description": "!LOC:Advanced Builder- Builds orbital structures. Builds all titans.",
+  "description": "!LOC:Advanced Builder - Builds orbital structures. Builds all titans.",
   "TEMP_texelinfo": 38.253,
   "attachable": {
     "offsets": {

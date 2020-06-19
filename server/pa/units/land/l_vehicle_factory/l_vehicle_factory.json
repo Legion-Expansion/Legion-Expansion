@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Armour Foundry",
-  "description": "!LOC:Basic Manufacturing- Builds basic tank units.",
+  "description": "!LOC:Basic Manufacturing - Builds basic tanks.",
   "TEMP_texelinfo": 32.98346,
   "area_build_separation": 3,
   "atrophy_cool_down": 15,

@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Armour Fabricator",
-  "description": "!LOC:Advanced Builder- Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.",
+  "description": "!LOC:Advanced Builder - Builds basic and advanced structures. Builds vehicle titan. Durable. More powerful than other land and air builders.",
   "TEMP_texelinfo": 12,
   "attachable": {
     "offsets": {

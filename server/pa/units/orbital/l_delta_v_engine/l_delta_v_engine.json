@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Diplomat",
-  "description": "!LOC:Planet Engine- Used to smash celestial bodies into each other. Build as many as the planet requires.",
+  "description": "!LOC:Planet Engine - Used to smash celestial bodies into each other. Build as many as the planet requires.",
   "TEMP_texelinfo": 39.9237,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 650,

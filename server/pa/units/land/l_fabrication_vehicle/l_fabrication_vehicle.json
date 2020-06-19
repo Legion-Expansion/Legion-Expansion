@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Armour Fabricator",
-  "description": "!LOC:Builder- Builds basic structures. Durable. More powerful than other basic land and air builders.",
+  "description": "!LOC:Builder - Builds basic structures. Durable. More powerful than other basic land and air builders.",
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {

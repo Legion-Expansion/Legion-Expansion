@@ -65,9 +65,9 @@
   ],
   "max_health": 12500,
   "mesh_bounds": [
-    12.6,
-    8.71255,
-    15.6193
+    10,
+    10,
+    12
   ],
   "navigation": {
     "acceleration": 60,

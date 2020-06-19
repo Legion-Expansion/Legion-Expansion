@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Overseer",
-  "description": "!LOC:Advanced Radar- Long-range enemy unit detection. Requires energy.",
+  "description": "!LOC:Advanced Radar - Long-range enemy unit detection. Requires energy.",
   "TEMP_texelinfo": 36.63,
   "area_build_separation": 200,
   "area_build_type": "Sphere",

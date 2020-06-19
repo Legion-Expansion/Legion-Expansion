@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Spoiler",
-  "description": "!LOC:Land Mine- Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.",
+  "description": "!LOC:Land Mine - Sprays shrapnel then explodes after four seconds. Can be detonated manually using alt fire. Invisible to most units.",
   "TEMP_texelinfo": 24,
   "area_build_pattern": [
     [

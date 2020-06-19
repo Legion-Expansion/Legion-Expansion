@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Havoc",
-  "description": "!LOC:Lightning Tank- Shoots timed electric mines. Attacks land and sea targets.",
+  "description": "!LOC:Lightning Tank - Shoots timed electric mines. Attacks land and sea targets.",
   "TEMP_texelinfo": 9.31488,
   "attachable": {
     "offsets": {

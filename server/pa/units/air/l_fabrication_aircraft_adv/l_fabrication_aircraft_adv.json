@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Advanced Fabrication Flyer",
-  "description": "!LOC:Advanced Builder- Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.",
+  "description": "!LOC:Advanced Builder - Builds basic and advanced structures. Builds air titan. Very mobile. Vulnerable. Less efficient than other builders.",
   "TEMP_texelinfo": 7.54279,
   "attachable": {
     "offsets": {

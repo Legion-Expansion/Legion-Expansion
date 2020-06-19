@@ -1,10 +1,55 @@
 # CHANGELOG
 
-## DEV
+## v1.14.0 - 2020-06-18
+
+### General
+
+- Update file shadows for TITANS 114445
+
+### Balance
+
+- Air
+  - Scythe
+    - No longer prioritises fighters
+- Land
+  - Deathmark
+    - No longer prioritises mobile units
+    - Removed splash damage
+    - Reduced health from 250 to 125
+    - Reduced turn speed from 90 to 55
+    - Reduced turret yaw rate from 60 to 30
+- Sea
+  - Talos
+    - Give equal weighting to transports, bombers, gunships, and titans
+
+### Translations
+
+- Removed community translations replaced by professional translations now shipping with PA
+- Ensured all client strings are being translated
+
+### Bugfix
+
+- Correct UNITTYPE tags for spawned weapons
+
+## v1.13.2 - 2020-06-12
+
+### General
+
+- Updated the formatting of unit descriptions to match the MLA
+
+### Translations
+
+- We've moved to a new translation service. Help [translate the Legion Expansion](https://crowdl.io/legionexpansion/entries) to your local language.
+- Updated the Dutch (nl) translation with thanks to Viporizer
+- Added an English (not US) translation for those not using English (US)
+- Updated the Korean (ko) translation with thanks to R.O.S.S
+
+## 1.13.1 - 2020-06-05
 
 ### Bugfix
 
 - Corrected Infiltrator moving slower between planets than other interplanetary aircraft
+- Fixed Bowhead weapons not always finding a firing solution
 
 ## v1.13.0 - 2020-05-30
 

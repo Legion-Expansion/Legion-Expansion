@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:OmniSilo Storage Device",
-  "description": "!LOC:Storage- Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.",
+  "description": "!LOC:Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.",
   "TEMP_texelinfo": 27.2827,
   "area_build_type": "Line",
   "atrophy_cool_down": 15,

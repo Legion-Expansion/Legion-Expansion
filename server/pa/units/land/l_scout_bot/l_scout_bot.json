@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Investigator",
-  "description": "!LOC:Scout- Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.",
+  "description": "!LOC:Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.",
   "TEMP_texelinfo": 4.07719,
   "attachable": {
     "offsets": {

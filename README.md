@@ -58,10 +58,6 @@ To create a copy for testing local changes:
 4. Run install_local_full.py - requires the pa_tools submodule
 5. Within PA's Community Mods enable the "DEVELOPMENT" version of the mod
 
-## Translations
-
-If you would like to help translate Legion Expansion to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
-
 ## Development
 
 ### Structure

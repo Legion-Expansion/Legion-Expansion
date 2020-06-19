@@ -1,6 +1,6 @@
 {
   "display_name": "!LOC:Deathmark",
-  "description": "!LOC:Siege Tank- Long range. Attacks land, sea and seabed.",
+  "description": "!LOC:Siege Tank - Long range. Attacks land, sea and seabed.",
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {
@@ -75,7 +75,7 @@
       ]
     }
   ],
-  "max_health": 250,
+  "max_health": 125,
   "mesh_bounds": [
     6.985,
     12.365,
@@ -90,7 +90,7 @@
     "acceleration": 100,
     "brake": 100,
     "move_speed": 8,
-    "turn_speed": 90
+    "turn_speed": 60
   },
   "physics": {
     "radius": 4
