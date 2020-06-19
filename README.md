@@ -118,9 +118,3 @@
 ### Advanced Ship Foundry
 - Metal Usage: 65 -> 60
 - Energy Usage: 1900 -> 1750
-
-## ARMOUR
-
-### Deathmark
-- Damage: 1000 -> 300
-- Targeting Priorities: Now prioritizes opposing artillery/tactical.

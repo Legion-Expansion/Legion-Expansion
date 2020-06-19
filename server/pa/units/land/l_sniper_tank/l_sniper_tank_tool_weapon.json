@@ -19,9 +19,6 @@
     "WL_WaterSurface"
   ],
   "target_priorities": [
-    "Commander",
-    "Mobile & Advanced & (Artillery | Tactical)",
-    "Mobile & (Artillery | Tactical)",
     "Mobile"
   ],
   "yaw_range": 180,
