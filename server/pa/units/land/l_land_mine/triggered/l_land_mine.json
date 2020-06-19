@@ -83,6 +83,8 @@
   ],
   "unit_types": [
     "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_NoBuild",
     "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0
