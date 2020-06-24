@@ -2,6 +2,10 @@
 
 ## DEV
 
+### General
+
+- Add support for the Unicorn Commander
+
 ### Translations
 
 - Corrected Necromancer description
