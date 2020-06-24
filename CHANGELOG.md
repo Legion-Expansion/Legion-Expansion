@@ -5,6 +5,7 @@
 ### General
 
 - Add support for the Unicorn Commander
+- Updated MLA unit file shadows
 
 ### Translations
 
