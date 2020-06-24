@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -53,11 +48,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -111,11 +101,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
@@ -220,11 +205,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -283,21 +263,11 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "PlanetHasUseablePlanetWeapon"
           },
           {
             "boolean": false,
             "test_type": "EnemyPresenceOnPlanet"
-          },
-          {
-            "boolean": false,
-            "string0": "GWAlly",
-            "test_type": "HasPersonalityTag"
           },
           {
             "test_type": "CanAffordBuildDemand"

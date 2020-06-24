@@ -7,6 +7,10 @@
 - Add support for the Unicorn Commander
 - Updated MLA unit file shadows
 
+### AI
+
+- Removed redundent personality tag checks
+
 ### Translations
 
 - Corrected Necromancer description

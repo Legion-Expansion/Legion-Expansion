@@ -5,11 +5,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
           },
@@ -53,11 +48,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -88,11 +78,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "string0": "SlowerExpansion",
@@ -149,11 +134,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -187,11 +167,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "string0": "SlowerExpansion",
@@ -251,11 +226,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -304,11 +274,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "PlanetIsGasGiant"
           },
@@ -345,11 +310,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -376,11 +336,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "string0": "SlowerExpansion",
@@ -432,11 +387,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -477,11 +427,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -508,11 +453,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "DesireEnergy"
           },
@@ -560,11 +500,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "DesireMetal"
           },
           {
@@ -605,11 +540,6 @@
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "string0": "SlowerExpansion",
@@ -659,11 +589,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -712,11 +637,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "DesireMetal"
           },
           {
@@ -750,11 +670,6 @@
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "string0": "SlowerExpansion",
@@ -793,11 +708,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "string0": "SlowerExpansion",
             "test_type": "HasPersonalityTag"
@@ -834,11 +744,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "DesireEnergy"
           },
           {
@@ -874,11 +779,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "compare0": "<",
             "test_type": "EnergyStorageToProductionRatio",
             "value0": 5
@@ -892,11 +792,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": "<",
             "test_type": "MetalStorageToProductionRatio",
