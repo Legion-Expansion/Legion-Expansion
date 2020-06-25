@@ -329,7 +329,7 @@
   "Siege Walker - Long range. Launches timed sticky plasma mines. Attacks land, sea and seabed targets.": {
     "message": "重型攻城機甲 - 遠程發射電漿炸彈"
   },
-  "Siege Walker - Spawns Purgers. Explodes on death, damaging friend and foe. Can attack land targets only.": {
+  "Siege Walker - Spawns Purgers. Can attack land targets only.": {
     "message": "機動工程機甲 - 召喚淨化者，被摧毀時產生大爆炸"
   },
   "Storage - Increases maximum energy and metal storage capacity. Explodes on death, damaging friend and foe.": {

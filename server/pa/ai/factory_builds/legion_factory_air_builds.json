@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -24,11 +19,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -52,11 +42,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -73,11 +58,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -91,11 +71,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -112,11 +87,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": ">",
             "string0": "Air",
@@ -138,11 +108,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -172,11 +137,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -185,11 +145,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -218,11 +173,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -239,11 +189,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -259,11 +204,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -297,11 +237,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -310,11 +245,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -344,11 +274,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -364,11 +289,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -394,11 +314,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -422,11 +337,6 @@
         ],
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "BaseThreatened"
           },
@@ -449,11 +359,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "BaseThreatened"
@@ -493,11 +398,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -514,11 +414,6 @@
         [
           {
             "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "boolean": true,
             "test_type": "AloneOnPlanet"
           },
           {
@@ -532,11 +427,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -553,11 +443,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": ">",
             "string0": "Air",
@@ -580,11 +465,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -593,11 +473,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -626,11 +501,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "boolean": false,
             "test_type": "AloneOnPlanet"
           },
@@ -639,11 +509,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "AloneOnPlanet"
@@ -671,11 +536,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"

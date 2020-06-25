@@ -4,11 +4,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -27,11 +22,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -60,11 +50,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -83,11 +68,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },

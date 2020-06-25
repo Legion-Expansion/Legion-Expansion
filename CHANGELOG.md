@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v1.15.0 - 2020-06-25
+
+### General
+
+- Add support for the Unicorn Commander
+- Updated MLA unit file shadows
+
+### AI
+
+- Removed redundent personality tag checks
+- Removed community translations replaced by professional translations now shipping with PA
+
+### Translations
+
+- Corrected Necromancer description
+
 ## v1.14.0 - 2020-06-18
 
 ### General
