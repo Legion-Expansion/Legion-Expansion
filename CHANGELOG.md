@@ -10,6 +10,7 @@
 ### AI
 
 - Removed redundent personality tag checks
+- Removed community translations replaced by professional translations now shipping with PA
 
 ### Translations
 
