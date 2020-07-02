@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.15.1 - 2020-07-02
+
+### Bugfix
+
+- Removed attack command from the Comet
+
 ## v1.15.0 - 2020-06-25
 
 ### General

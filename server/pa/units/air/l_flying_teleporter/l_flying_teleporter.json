@@ -18,7 +18,6 @@
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
-    "ORDER_Attack",
     "ORDER_Assist",
     "ORDER_Use",
     "ORDER_SpecialMove"
