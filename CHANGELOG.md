@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.15.2 - 2020-07-05
+
+### Bugfix
+
+- Restored attack command to the Comet following a crash fix being deployed by PA Inc
+
 ## v1.15.1 - 2020-07-02
 
 ### Bugfix
