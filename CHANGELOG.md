@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.15.3 - 2020-07-13
 
 ### Translations
 
