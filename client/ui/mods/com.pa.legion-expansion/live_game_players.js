@@ -6,7 +6,7 @@ if (!legionExpansionLoaded) {
   function legionExpansion() {
     var patchName = "legionExpansion live_game_players.js";
 
-    console.log(patchName + " on " + gBuild + " last tested on 89755");
+    console.log(patchName + " on " + gBuild + " last tested on 114750");
 
     //LOAD CUSTOM LEGION CSS
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");

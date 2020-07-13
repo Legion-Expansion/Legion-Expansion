@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.15.3 - 2020-07-13
+
+### Translations
+
+- Removed community translations replaced by professional translations now shipping with PA
+
 ## v1.15.2 - 2020-07-05
 
 ### Bugfix
