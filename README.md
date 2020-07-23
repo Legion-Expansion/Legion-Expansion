@@ -1,120 +1,152 @@
-## ECONOMY
-*One major issue with Legion and MLA together in shared armies is that they cannot build their metal on the same spot together. In the past, this would be problematic because Legion T1 Mass Extractor + MLA T2 Advanced Metal Extractor would generate 1 more metal per second than a pure Legion-only T1/T2 Mass setup or a pure MLA-only T1/T2 Mass setup.*
+# Legion Expansion for Planetary Annihilation: TITANS
 
-*These changes seek to amend that, and also to make balancing Legion across different types of maps easier.*
+## Licensing
 
-*There are a lot of ripple effects caused by this, and a good majority of the changes in this mod seek to address the effects this has on Legion's early-game economy.*
+Legion Expansion is dual licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
 
-### Mass Extractor
-- Metal Production: 8 -> 7
-- Cost: 220 -> 170
-- Can now be built on top of MLA Advanced Metal Extractor.
+Licensing is automatically revoked for any projects that do not follow the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) terms, alter / remove licenses or distribute from private repositories.
 
-### Advanced Mass Extractor
-- Metal Production: 14 -> 15
-- Cost: 2200 -> 2000
-- Can now be built on top of MLA Metal Extractor.
+You must publicly distribute your contributions using the same dual licence of [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
 
-### (MLA) Metal Extractor
-- Can now be built on top of Legion Advanced Mass Extractor.
+You cannot use Legion Expansion for commercial advantage or any form of monetary compensation.
 
-### (MLA) Advanced Metal Extractor
-- Can now be built on top of Legion Mass Extractor.
+Using a GitHub fork containing all changes will satisfy the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) requirement to indicate changes made.
 
-## FABRICATORS
+See [Best Practices for Attribution](https://wiki.creativecommons.org/wiki/Best_practices_for_attribution).
 
-### Fabrication Walker
-*Most competitive non-naval openings revolve heavily around the usage of MLA Bot Fabricators or Legion Fabrication Walkers. In order to compensate for the changes with T1 metal, we'll be adjusting the Fabrication Walker so it's a bit faster (albeit still slower than its MLA counterpart), costs less, and has the same fabrication rates as its MLA counterpart.*
+### Example Attribution
 
-*We hope the cheaper cost of a Fabrication Walker will help allow Legion players to get combat units onto the field earlier.*
+This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
 
-- Cost: 150 -> 135
-- Metal Usage: 9 -> 8
-- Energy Usage: 650 -> 600
-- Movement Speed: 14 -> 15
-- Health: 65 -> 50
+## Full Credits
 
-### Armour Fabricator
-*The MLA Fabrication Vehicle and Legion Armour Fabricator are much less commonly seen in openings. As a result, the speed of the Armour Fabricator is less important to the viability of Legion earlygame expansion.*
+This project is not the work of one, but of a legion.
 
-- Cost: 200 -> 185
-- Metal Usage: 13 -> 11
-- Energy Usage: 850 -> 700
-- Build Range: 45 -> 55
+| Name            | Role                               |
+| --------------- | ---------------------------------- |
+| nicb1           | Project Lead / Models              |
+| Crembels        | Concept Artist                     |
+| KillerKiwiJuice | Models / Textures / Code / Effects |
+| mgmetal13       | Textures                           |
+| zx0             | Textures                           |
+| Alpha2546       | Effects / Balance                  |
+| PRoeleert       | UI                                 |
+| wondible        | Code                               |
+| mikeyh          | Code                               |
+| Quitch          | AI / Media                         |
+| Stuart98        | Code / Strategic Icons             |
+| dom314          | Effects                            |
+| CptConundrum    | UI                                 |
+| Elodea          | Balance Lead / Effects / Media     |
+| AndreasG        | Balance Lead                       |
+| Clopse          | Balance                            |
+| Graushwein      | Balance                            |
+| N30N            | Playtester                         |
+| Qzipco          | Playtester                         |
+| WPMarshall      | Playtester                         |
+| xankar          | Playtester                         |
 
-### Fabrication Flyer
-- Cost: 225 -> 210
-- Metal Usage: 10 -> 9
-- Does not show up on enemy radar.
+## Installation
 
-### Fabrication Ship
-*Due to the sensitive nature of naval openings and the fact that MLA naval fabricators are already excruciatingly slow, we decided that it was best for the Fabrication Ship to have the same statistics as its MLA counterpart for now.*
+You should download and install this mod via the Planetary Annihilation TITANS in-game Community Mod Manager. You will need to [enable Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
-- Cost: 240 -> 200
-- Metal Usage: 16 -> 14
-- Energy Usage: 850 -> 800
-- Movement Speed: 9 -> 10
+To create a copy for testing local changes:
 
-### Advanced Fabrication Walker
-*We decided to take a similar approach here to the approach we took with the T1 Armour Fabricator*
+1. Install [Python 3](https://www.python.org/)
+2. Checkout origin/balance
+3. Create and configure papaths.py in the root directory - see papaths.py.example
+4. Run install_local_full.py - requires the pa_tools submodule
+5. Within PA's Community Mods enable the "DEVELOPMENT" version of the mod
 
-- Cost: 2000 -> 1800
-- Metal Usage: 50 -> 45
-- Energy Usage: 2200 -> 1800
-- Movement Speed: 14 -> 15
-- Build Range: 45 -> 60
-- Health: 150 -> 250
+## Translations
 
-### Advanced Armour Fabricator
-- Cost: 2250 -> 2025
-- Metal Usage: 70 -> 60
-- Energy Usage: 2750 -> 2250
-- Movement Speed: 10 -> 11
-- Build Range: 45 -> 60
+If you would like to help translate Legion Expansion to one of PA's languages then please drop us a line in the [Legion Expansion forum thread](https://forums.uberent.com/threads/rel-legion-expansion-released.71680/).
 
-### Advanced Fabrication Flyer
-- Cost: 2400 -> 1950
-- Metal Usage: 60 -> 54
-- Energy Usage: 2500 -> 2250
-- Does not show up on enemy radar.
+## Development
 
-### Advanced Fabrication Vessel
-- Cost: 2700 -> 2400
-- Metal Usage: 90 -> 80
-- Movement Speed: 9 -> 10
-- Health: 675 -> 600
+### Structure
 
-##  FOUNDRIES
-*Legion Foundries currently cost a bit more; their T1 Foundries specifically cost 10% more than MLA counterparts (without faster fabrication speed). This is particularly noticeable in T1. We've brought down Legion Foundry buildcosts to be in line with MLA. This will hopefully allow them to act more aggressively in the earlygame.*
+Please remove all unnecessary files from the pa and ui directories.
 
-*We've also had to adjust some Legion Foundry energy usage to bring them in line with MLA too.*
+Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
 
-### Walker Foundry
-- Cost: 660 -> 600
-- Energy Usage: 640 -> 675
+JavaScript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
 
-### Armour Foundry
-- Cost: 660 -> 600
-- Energy Usage: 640 -> 675
+Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
 
-### Flyer Foundry
-- Cost: 660 -> 600
+Latest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
-### Ship Foundry
-- Cost: 660 -> 600
+### Committing
 
-### Advanced Walker Foundry
-- Metal Usage: 50 -> 45
-- Energy Usage: 1650 -> 1500
+1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
+2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
+3. Fix any MISSING FILE references in the format_json.py output
+4. Use correct casing when referencing files so as to prevent issues on Linux
 
-### Advanced Armour Foundry
-- Metal Usage: 50 -> 45
-- Energy Usage: 1650 -> 1500
+Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
-### Advanced Flyer Foundry
-- Metal Usage: 50 -> 45
-- Energy Usage: 1650 -> 1500
+MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-### Advanced Ship Foundry
-- Metal Usage: 65 -> 60
-- Energy Usage: 1900 -> 1750
+BALANCE - development; forked to RELEASE-x.x.x and FEATURE-_name_
+
+FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
+
+HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
+
+RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
+
+### Units
+
+Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
+
+When working with Legion units please:
+
+- prefix all Legion units directories and filenames with l\_
+- follow Uber's naming conventions i.e. l_type_unit_adv (although some are different eg dox)
+- for all Legion units that can build change buildable_types to "CUSTOM1 & ( existing_buildable_types )"
+- check area builds i.e. area_build_separation
+- create sea versions when needed in pa/units/sea/
+- update pa/units/unit_list.json
+- update pa/ai/unit_maps/imperial_legion.json
+- update ui/mods/com.pa.legion-expansion/global.js
+- add a build bar image
+- add a strategic icon
+
+If replacing existing vanilla units:
+
+- use the same naming conventions for directories and files as the vanilla units
+- set the base_spec to the vanilla unit to reduce copy / paste of duplicate information in unit JSON files
+- add only changed properties to unit JSON files (everything else will inherit from the base_spec)
+
+If you rename a unit directory:
+
+- rename in pa/units/unit_list.json
+- update pa/ai/unit_maps/imperial_legion.json
+- rename in ui/mods/com.pa.legion-expansion/global.js
+- rename the build bar image
+- rename the strategic icon
+
+### Strategic Icons
+
+These should resemble existing strategic icons for similar units. All weapon capabilities must be indicated by the icon.
+
+Add to ui/main/atlas/icon_atlas/img/strategic_icons/:
+
+- filename format: `icon_si_l_unit.png`
+- 52px x 52px
+- #FFFF00 mask
+- PNG32
+
+### Build Bar Images
+
+These should use a red tint.
+
+Add to the same path as the unit's JSON file:
+
+- filename format: `l_unit_icon_buildbar.png`
+- 60px x 60px
+- PNG32
+
+### Projectiles
+
+If you're changing projectiles and anti-projectiles remember to update anti_entity_targets e.g. nukes
