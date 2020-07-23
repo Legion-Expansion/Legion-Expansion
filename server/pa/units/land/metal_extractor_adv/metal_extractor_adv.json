@@ -1,9 +1,9 @@
 {
-  "display_name": "!LOC:Advanced Mass Extractor",
-  "description": "!LOC:Advanced Economy - Produces metal. Can only be placed on metal deposits. Can share a metal deposit with a Mass Extractor.",
+  "display_name": "!LOC:Advanced Metal Extractor",
+  "description": "!LOC:Advanced Economy - Produces metal, can only be placed on metal deposits.",
   "TEMP_texelinfo": 24.4307,
   "area_build_type": "Sphere",
-  "atrophy_cool_down": 15,
+  "atrophy_cool_down": 15.0,
   "atrophy_rate": 33.3333,
   "audio": {
     "selection_response": {
@@ -50,15 +50,26 @@
     13.3685,
     23.2
   ],
-  "model": {
-    "animations": {
-      "idle": "/pa/units/land/l_mex_adv/l_metal_extractor_adv_idle.papa"
+  "model": [
+    {
+      "animations": {
+        "idle": "/pa/units/land/metal_extractor_adv/metal_extractor_adv_anim_work.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "arrows": 10,
+      "filename": "/pa/units/land/metal_extractor_adv/metal_extractor_adv.papa",
+      "layer": "WL_LandHorizontal"
     },
-    "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
-    "arrows": 10,
-    "filename": "/pa/units/land/l_mex_adv/l_metal_extractor_adv.papa",
-    "layer": "WL_LandHorizontal"
-  },
+    {
+      "animations": {
+        "idle": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv_anim_work.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+      "arrows": 10,
+      "filename": "/pa/units/sea/sea_metal_extractor_adv/sea_metal_extractor_adv.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
   "placement_size": [
     16,
     16
@@ -89,16 +100,16 @@
     "/pa/units/land/metal_extractor/metal_extractor.json"
   ],
   "selection_icon": {
-    "diameter": -28
+    "diameter": 28.0
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "strategic_icon_priority": 5,
+  "unit_name": "Advanced Metal Extractor",
   "unit_types": [
     "UNITTYPE_Structure",
     "UNITTYPE_Advanced",
     "UNITTYPE_MetalProduction",
     "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Economy",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Economy"
   ]
 }

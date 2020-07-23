@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## DEV
+
+### Balance
+
+- Land
+  - Mass Extractor
+    - Reduced build cost from 220 to 170
+    - Reduced metal production from 8 to 7
+    - Can be built on the same spot as an Advanced Metal Extractor
+  - Advanced Mass Extractor
+    - Reduced build cost from 2200 to 2000
+    - Increased metal production from 14 to 15
+    - Can be built on the same spot as a Metal Extractor
+
 ## v1.15.3 - 2020-07-13
 
 ### Translations
