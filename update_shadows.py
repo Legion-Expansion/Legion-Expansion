@@ -123,6 +123,14 @@ for tool in map(load, anti_drop_tools):
         "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"
     ]
 
+# Metal Extractors
+load("/pa/units/land/metal_extractor/metal_extractor.json")["replaceable_units"] += [
+    "/pa/units/land/l_mex_adv/l_mex_adv.json"
+]
+load("/pa/units/land/metal_extractor_adv/metal_extractor_adv.json")[
+    "replaceable_units"
+] += ["/pa/units/land/l_mex/l_mex.json"]
+
 ################
 # Patch the unit_list and commander_list
 load("/pa/units/unit_list.json")["units"] += load("/pa/units/unit_list_legion.json")[
