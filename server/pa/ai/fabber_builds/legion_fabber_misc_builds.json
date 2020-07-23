@@ -4,20 +4,10 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "compare0": ">",
             "test_type": "CurrentMetalEfficiency",
@@ -51,11 +41,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -74,11 +59,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -101,11 +81,6 @@
           }
         ],
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -154,11 +129,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -199,11 +169,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
@@ -254,11 +219,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -299,11 +259,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": false,
             "test_type": "AloneOnPlanet"
@@ -349,11 +304,6 @@
     {
       "build_conditions": [
         [
-          {
-            "boolean": true,
-            "string0": "Vanilla",
-            "test_type": "HasPersonalityTag"
-          },
           {
             "boolean": true,
             "test_type": "PlanetWithoutFabberWithTeleporter"

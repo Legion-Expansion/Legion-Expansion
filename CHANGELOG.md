@@ -1,5 +1,39 @@
 # CHANGELOG
 
+## v1.15.3 - 2020-07-13
+
+### Translations
+
+- Removed community translations replaced by professional translations now shipping with PA
+
+## v1.15.2 - 2020-07-05
+
+### Bugfix
+
+- Restored attack command to the Comet following a crash fix being deployed by PA Inc
+
+## v1.15.1 - 2020-07-02
+
+### Bugfix
+
+- Removed attack command from the Comet
+
+## v1.15.0 - 2020-06-25
+
+### General
+
+- Add support for the Unicorn Commander
+- Updated MLA unit file shadows
+
+### AI
+
+- Removed redundant personality tag checks
+- Removed community translations replaced by professional translations now shipping with PA
+
+### Translations
+
+- Corrected Necromancer description
+
 ## v1.14.0 - 2020-06-18
 
 ### General
