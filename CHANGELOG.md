@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.16.1 - 2020-07-30
 
 ### General
 
