@@ -34,7 +34,7 @@
   },
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
   "build_metal_cost": 550,
-  "buildable_types": "(CombatFabBuild - Teleporter) - Custom1 - Custom2 - Custom3 - Custom4",
+  "buildable_types": "(CombatFabBuild) - Custom1 - Custom2 - Custom3 - Custom4",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -85,7 +85,12 @@
       "type": "build"
     },
     {
-      "filename": "/pa/units/sea/fabrication_barge/fabrication_barge_wake.pfx",
+      "filename": "/pa/units/sea/fabrication_barge/fabrication_barge_thrust.pfx",
+      "offset": [
+        0,
+        8,
+        0.9
+      ],
       "type": "moving_forward"
     }
   ],
@@ -107,7 +112,7 @@
     "park_stamp_type": "sphere",
     "turn_accel": 45,
     "turn_speed": 90,
-    "type": "deepwater"
+    "type": "water-hover"
   },
   "physics": {
     "allow_pushing": true,
