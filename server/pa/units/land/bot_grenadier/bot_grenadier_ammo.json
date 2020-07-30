@@ -17,9 +17,9 @@
       0.0
     ]
   },
-  "initial_velocity": 90.0,
+  "initial_velocity": 80.0,
   "lifetime": 5,
-  "max_velocity": 90.0,
+  "max_velocity": 80.0,
   "model": null,
   "physics": {
     "add_to_spatial_db": true,
@@ -28,5 +28,5 @@
     "radius": 1
   },
   "splash_damage": 40,
-  "splash_radius": 6
+  "splash_radius": 5
 }
