@@ -19,7 +19,7 @@
   },
   "initial_velocity": 80.0,
   "lifetime": 5,
-  "max_velocity": 80.0,
+  "max_velocity": 90.0,
   "model": null,
   "physics": {
     "add_to_spatial_db": true,
