@@ -2,6 +2,8 @@
 
 ## v1.16.2 - 2020-08-13
 
+### General
+
 - Update file shadows for 114823
 
 ## v1.16.1 - 2020-07-30
