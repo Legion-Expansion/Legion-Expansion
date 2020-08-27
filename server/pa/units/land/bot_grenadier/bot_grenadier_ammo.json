@@ -27,6 +27,6 @@
     "gravity_scalar": 6,
     "radius": 1
   },
-  "splash_damage": 40,
+  "splash_damage": 30,
   "splash_radius": 5
 }
