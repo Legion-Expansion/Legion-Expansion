@@ -6,7 +6,7 @@ if (!legionExpansionLoaded) {
   function legionExpansion() {
     var patchName = "legionExpansion icon_atlas.js";
 
-    console.log(patchName + " last tested on 112209");
+    console.log(patchName + " last tested on 114849-pte");
 
     var legionIcons = [
       "l_commander",
@@ -132,7 +132,7 @@ if (!legionExpansionLoaded) {
       "l_titan_structure",
     ];
 
-    model.strategicIcons(model.strategicIcons().concat(legionIcons));
+    model.strategicIcons().push.apply(model.strategicIcons(), legionIcons);
   }
 
   try {
