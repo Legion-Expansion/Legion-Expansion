@@ -10,7 +10,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(((Bot & ((Basic - SelfDestruct) | (Advanced & SelfDestruct))) | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Fighter - Titan",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "value0": 1
           },
           {
@@ -37,7 +37,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(((Bot & ((Basic - SelfDestruct) | (Advanced & SelfDestruct))) | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Fighter - Titan",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "value0": 4
           },
           {
@@ -64,7 +64,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(((Bot & ((Basic - SelfDestruct) | (Advanced & SelfDestruct))) | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Fighter - Titan",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "value0": 10
           },
           {
@@ -91,7 +91,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(((Bot & ((Basic - SelfDestruct) | (Advanced & SelfDestruct))) | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Fighter - Titan",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "value0": 20
           },
           {
@@ -118,7 +118,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(((Bot & ((Basic - SelfDestruct) | (Advanced & SelfDestruct))) | (Tank & Sub)) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - Fighter - Titan",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
             "value0": 40
           },
           {

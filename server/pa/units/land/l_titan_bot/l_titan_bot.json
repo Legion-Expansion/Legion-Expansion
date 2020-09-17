@@ -246,7 +246,8 @@
     "UNITTYPE_Titan",
     "UNITTYPE_Important",
     "UNITTYPE_FabOrbBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Amphibious"
   ],
   "wreckage_health_frac": 0.7
 }
