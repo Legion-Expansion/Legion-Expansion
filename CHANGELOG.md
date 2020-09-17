@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Added support for new UNITTYPEs
+
 ## v1.16.3 - 2020-08-27
 
 ### General
