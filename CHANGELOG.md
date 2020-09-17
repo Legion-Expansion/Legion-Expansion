@@ -5,6 +5,7 @@
 ### General
 
 - Added support for new UNITTYPEs
+- Updated file shadows
 
 ## v1.16.3 - 2020-08-27
 
