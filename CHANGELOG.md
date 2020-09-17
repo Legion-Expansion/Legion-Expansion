@@ -6,6 +6,7 @@
 
 - Added support for new UNITTYPEs
 - Updated file shadows
+- Removed Legion theming from all menu screens except the main menu
 
 ## v1.16.3 - 2020-08-27
 
