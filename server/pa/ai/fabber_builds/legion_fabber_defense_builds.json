@@ -1589,6 +1589,58 @@
       "to_build": "LegionStructureBasicWall"
     },
     {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - AirDefense",
+            "value0": 1
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Shield",
+            "value0": 1
+          },
+          {
+            "string0": "LegionStructureBasicWall",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Shield",
+      "placement_rules": {
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Defense - AirDefense"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 125,
+            "unit_type_string": "Structure & Shield"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "LegionDefenseAdvancedShield"
+    },
+    {
       "build_conditions": [
         [
           {

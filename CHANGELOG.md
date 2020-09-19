@@ -11,6 +11,7 @@
 ### AI
 
 - Use new UNITTYPEs when making platoon decisions
+- Builds Ramparts
 
 ## v1.16.3 - 2020-08-27
 
