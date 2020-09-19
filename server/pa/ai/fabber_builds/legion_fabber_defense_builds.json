@@ -1596,6 +1596,10 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "string0": "LegionDefenseAdvancedShield",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
             "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - AirDefense",
