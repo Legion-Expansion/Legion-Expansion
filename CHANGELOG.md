@@ -8,6 +8,10 @@
 - Updated file shadows
 - Removed Legion theming from all menu screens except the main menu
 
+### AI
+
+- Use new UNITTYPEs when making platoon decisions
+
 ## v1.16.3 - 2020-08-27
 
 ### General
