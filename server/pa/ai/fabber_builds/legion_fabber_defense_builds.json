@@ -1612,7 +1612,7 @@
             "value0": 1
           },
           {
-            "string0": "LegionStructureBasicWall",
+            "string0": "LegionDefenseAdvancedShield",
             "test_type": "CanFindPlaceToBuild"
           }
         ]
