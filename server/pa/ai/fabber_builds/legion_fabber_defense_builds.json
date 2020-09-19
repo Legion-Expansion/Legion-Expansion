@@ -1593,6 +1593,10 @@
       "build_conditions": [
         [
           {
+            "boolean": true,
+            "test_type": "EnemySurfacePresenceOnPlanet"
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           },
           {
