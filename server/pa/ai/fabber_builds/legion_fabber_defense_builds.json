@@ -1593,10 +1593,6 @@
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "EnemySurfacePresenceOnPlanet"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {
@@ -1614,6 +1610,11 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Shield",
             "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Land | Naval) & Advanced"
           },
           {
             "string0": "LegionDefenseAdvancedShield",
