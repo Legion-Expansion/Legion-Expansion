@@ -28,7 +28,6 @@
   "plugins": ["lodash"],
   "rules": {
     "no-inner-declarations": "off",
-    "lodash/preferred-alias": [2, { "ignoreMethods": ["extend", "any"] }],
     "lodash/prefer-lodash-method": 0
   }
 }
