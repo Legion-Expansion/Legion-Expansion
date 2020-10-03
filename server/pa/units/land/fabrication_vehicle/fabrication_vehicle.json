@@ -132,7 +132,6 @@
     "UNITTYPE_Fabber",
     "UNITTYPE_Construction",
     "UNITTYPE_Tank",
-    "UNITTYPE_Vehicle",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_Land",
