@@ -13,6 +13,12 @@
 - Use new UNITTYPEs when making platoon decisions
 - Builds Ramparts
 
+### Balance
+
+- Sea
+  - Fabrication Vessel
+    - Changed movement type from water to water-hover
+
 ## v1.16.3 - 2020-08-27
 
 ### General

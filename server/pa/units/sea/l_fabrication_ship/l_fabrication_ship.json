@@ -71,6 +71,7 @@
     "filename": "/pa/units/sea/l_fabrication_ship/l_fabrication_ship.papa"
   },
   "navigation": {
+    "type": "water-hover",
     "acceleration": 100,
     "brake": 100,
     "move_speed": 9,
@@ -119,6 +120,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_WaterHover"
   ]
 }
