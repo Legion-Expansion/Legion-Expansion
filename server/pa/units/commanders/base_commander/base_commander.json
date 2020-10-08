@@ -88,6 +88,10 @@
         {
           "move_type": "hover",
           "stamp_type": "simple"
+        },
+        {
+          "move_type": "water-hover",
+          "stamp_type": "simple"
         }
       ]
     },
