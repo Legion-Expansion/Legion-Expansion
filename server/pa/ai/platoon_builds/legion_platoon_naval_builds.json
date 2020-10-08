@@ -12,7 +12,7 @@
           {
             "compare0": ">=",
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Naval & Scout & Custom1",
+            "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
             "value0": 1
           }
         ]

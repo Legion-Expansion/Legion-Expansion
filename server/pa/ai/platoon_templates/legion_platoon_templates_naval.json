@@ -4,7 +4,7 @@
       "units": [
         {
           "max_count": 1,
-          "unit_types": "Naval & Scout & Custom1"
+          "unit_types": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan"
         }
       ]
     }
