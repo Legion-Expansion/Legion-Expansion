@@ -13,6 +13,7 @@
 
 - Use new UNITTYPEs when making platoon decisions
 - Builds Ramparts
+- Require some space around land titan builds
 
 ### Balance
 
