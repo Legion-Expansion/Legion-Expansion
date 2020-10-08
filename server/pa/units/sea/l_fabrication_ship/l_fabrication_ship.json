@@ -71,13 +71,13 @@
     "filename": "/pa/units/sea/l_fabrication_ship/l_fabrication_ship.papa"
   },
   "navigation": {
-    "type": "water-hover",
     "acceleration": 100,
     "brake": 100,
     "move_speed": 9,
     "park_stamp_cost": 10,
     "park_stamp_type": "sphere",
-    "turn_speed": 90
+    "turn_speed": 90,
+    "type": "water-hover"
   },
   "physics": {
     "allow_pushing": true,
