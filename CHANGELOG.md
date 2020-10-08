@@ -7,6 +7,7 @@
 - Added support for new UNITTYPEs
 - Updated file shadows
 - Removed Legion theming from all menu screens except the main menu
+- Add UNITTYPE_Tactical to Panzer
 
 ### AI
 
