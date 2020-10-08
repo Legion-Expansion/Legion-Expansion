@@ -869,7 +869,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           }
@@ -885,7 +885,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           },
@@ -1016,7 +1016,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           }
@@ -1045,7 +1045,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           },
@@ -1289,7 +1289,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           }
@@ -1305,7 +1305,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           },
@@ -1406,7 +1406,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           }
@@ -1422,7 +1422,7 @@
           {
             "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "value0": 0.35
           },
