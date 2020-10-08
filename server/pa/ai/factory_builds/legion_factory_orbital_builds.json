@@ -366,14 +366,6 @@
             "test_type": "PlanetIsGasGiant"
           },
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "boolean": false,
-            "test_type": "PlanetIsGasGiant"
-          },
-          {
             "test_type": "CanAffordBuildDemand"
           },
           {

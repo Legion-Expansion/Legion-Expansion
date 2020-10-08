@@ -14,6 +14,7 @@
 - Use new UNITTYPEs when making platoon decisions
 - Builds Ramparts
 - Require some space around land titan builds
+- Builds Black Knights even when alone on the planet
 
 ### Balance
 
