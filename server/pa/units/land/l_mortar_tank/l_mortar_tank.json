@@ -108,11 +108,11 @@
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_Sub",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_CannonBuildable",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Amphibious"
   ]
 }

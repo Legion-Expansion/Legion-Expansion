@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v1.17.0 - 2020-10-08
+
+### General
+
+- Added support for new UNITTYPEs
+- Updated file shadows
+- Removed Legion theming from all menu screens except the main menu
+- Add UNITTYPE_Tactical to Panzer
+
+### AI
+
+- Use new UNITTYPEs when making platoon decisions
+- Builds Ramparts
+- Require some space around land titan builds
+- Builds Black Knights even when alone on the planet
+
+### Balance
+
+- Sea
+  - Fabrication Vessel
+    - Changed movement type from water to water-hover
+
 ## v1.16.3 - 2020-08-27
 
 ### General

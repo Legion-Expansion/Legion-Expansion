@@ -92,7 +92,6 @@
   ],
   "unit_types": [
     "UNITTYPE_Naval",
-    "UNITTYPE_Scout",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Basic",

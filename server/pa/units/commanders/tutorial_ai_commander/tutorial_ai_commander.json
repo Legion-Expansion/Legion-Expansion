@@ -63,6 +63,7 @@
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
-    "UNITTYPE_Land"
+    "UNITTYPE_Land",
+    "UNITTYPE_Amphibious"
   ]
 }

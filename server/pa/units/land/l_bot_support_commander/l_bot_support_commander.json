@@ -146,7 +146,8 @@
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Amphibious"
   ],
   "wreckage_health_frac": 0.5
 }

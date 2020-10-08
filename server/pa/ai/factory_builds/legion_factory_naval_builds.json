@@ -184,7 +184,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Naval & Scout",
+            "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
             "value0": 150
           },
           {
@@ -210,7 +210,7 @@
           {
             "compare0": "<",
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Naval & Scout",
+            "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
             "value0": 1
           },
           {

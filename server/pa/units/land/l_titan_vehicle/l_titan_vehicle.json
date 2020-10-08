@@ -297,6 +297,10 @@
           "stamp_type": "structure"
         },
         {
+          "move_type": "water-hover",
+          "stamp_type": "structure"
+        },
+        {
           "move_type": "hover-large",
           "stamp_type": "simple"
         },

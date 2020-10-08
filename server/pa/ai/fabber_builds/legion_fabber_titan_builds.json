@@ -35,6 +35,7 @@
       "min_num_assisters": 3,
       "name": "Legion - Bot Titan",
       "placement_rules": {
+        "buffer": 5,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "compare_type": "<",
@@ -81,6 +82,7 @@
       "min_num_assisters": 3,
       "name": "Legion - Vehicle Titan",
       "placement_rules": {
+        "buffer": 5,
         "placement_type": "FromMainBaseCenter",
         "threat": {
           "compare_type": "<",

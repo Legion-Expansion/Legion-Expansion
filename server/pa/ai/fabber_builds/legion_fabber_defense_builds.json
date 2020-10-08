@@ -1589,6 +1589,135 @@
       "to_build": "LegionStructureBasicWall"
     },
     {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionDefenseAdvancedShield",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Shield",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - AirDefense",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Land | Naval) & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedShield",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Shield",
+      "placement_rules": {
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Defense - AirDefense"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 125,
+            "unit_type_string": "Structure & Shield"
+          }
+        ]
+      },
+      "priority": 255,
+      "to_build": "LegionDefenseAdvancedShield"
+    },
+    {
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "string0": "LegionDefenseAdvancedShield",
+            "test_type": "CanAffordPotentialDrain"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Shield",
+            "value0": 1
+          },
+          {
+            "compare0": ">",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "value0": 1
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense - AirDefense",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & (Land | Naval) & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedShield",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
+      "instance_count": 1,
+      "name": "Legion - Shield - Threat",
+      "placement_rules": {
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "count": 1,
+            "range": 50,
+            "unit_type_string": "Structure & Defense - AirDefense"
+          },
+          {
+            "alliance": "Ally",
+            "compare_type": "<",
+            "count": 1,
+            "range": 125,
+            "unit_type_string": "Structure & Shield"
+          }
+        ]
+      },
+      "priority": 379,
+      "to_build": "LegionDefenseAdvancedShield"
+    },
+    {
       "build_conditions": [
         [
           {

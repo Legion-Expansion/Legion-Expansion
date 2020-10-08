@@ -7,7 +7,7 @@ if (!legionExpansionLoaded) {
     var patchName = "legionExpansion settings.js";
 
     console.log(patchName + " on " + gBuild + " last tested on 114218");
-    _.extend(api.settings.definitions.ui.settings, {
+    _.assign(api.settings.definitions.ui.settings, {
       legionThemeFunction: {
         title: "Theme In Game",
         type: "select",
@@ -16,7 +16,7 @@ if (!legionExpansionLoaded) {
       },
     });
 
-    _.extend(api.settings.definitions.ui.settings, {
+    _.assign(api.settings.definitions.ui.settings, {
       legionMenuThemeFunction: {
         title: "Theme Menu",
         type: "select",
@@ -42,15 +42,4 @@ if (!legionExpansionLoaded) {
     console.log(e);
     console.log(JSON.stringify(e));
   }
-}
-
-var themesetting =
-  api.settings.isSet("ui", "legionMenuThemeFunction", true) || "ON";
-if (themesetting === "ON") {
-  //load legion theme
-  loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
-  loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
-  loadCSS("coui://ui/mods/com.pa.legion-expansion/css/background_no_logo.css");
-  loadCSS("coui://ui/mods/com.pa.legion-expansion/css/settings.css");
-  $("body").addClass("legion");
 }

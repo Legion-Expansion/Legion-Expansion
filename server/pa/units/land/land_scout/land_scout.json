@@ -113,6 +113,7 @@
   },
   "unit_types": [
     "UNITTYPE_Tank",
+    "UNITTYPE_Vehicle",
     "UNITTYPE_Scout",
     "UNITTYPE_Mobile",
     "UNITTYPE_Land",

@@ -98,6 +98,7 @@
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Amphibious"
   ]
 }

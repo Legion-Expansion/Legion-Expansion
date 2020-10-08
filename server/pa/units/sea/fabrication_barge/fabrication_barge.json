@@ -1,6 +1,6 @@
 {
   "display_name": "Barnacle",
-  "description": "!LOC:Support Barge - Repairs damaged ships. Builds and detects mines. Cannot help build units.",
+  "description": "!LOC:Support Barge - Repairs damaged ships. Builds and detects mines. Cannot help build units. Water hover.",
   "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {
@@ -169,6 +169,7 @@
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild"
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_WaterHover"
   ]
 }
