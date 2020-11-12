@@ -79,7 +79,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 3. Fix any MISSING FILE references in the format_json.py output
 4. Use correct casing when referencing files so as to prevent issues on Linux
 
-Our branch structure is based on the [GitFlow](http://nvie.com/posts/a-successful-git-branching-model/) model:
+Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
 MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
