@@ -30,5 +30,6 @@
   },
   "signature": "not yet implemented",
   "version": "balance",
-  "titansOnly": true
+  "titansOnly": true,
+  "github": "https://github.com/Legion-Expansion/Legion-Expansion"
 }

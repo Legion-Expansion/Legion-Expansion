@@ -76,5 +76,6 @@
   "signature": "(not yet implemented)",
   "version": "balance",
   "titansOnly": true,
-  "hidden": true
+  "hidden": true,
+  "github": "https://github.com/Legion-Expansion/Legion-Expansion"
 }
