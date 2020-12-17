@@ -100,7 +100,7 @@
     "observer": {
       "items": [
         {
-          "channel": "sight",
+          "channel": "radar",
           "layer": "surface_and_air",
           "radius": 100,
           "shape": "capsule"
@@ -137,7 +137,6 @@
     "UNITTYPE_Construction",
     "UNITTYPE_Mobile",
     "UNITTYPE_Basic",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Interplanetary"
+    "UNITTYPE_FactoryBuild"
   ]
 }
