@@ -4,7 +4,7 @@
 
 ### General
 
-- Update file shadpws
+- Update file shadows
 
 ## v1.17.0 - 2020-10-08
 
