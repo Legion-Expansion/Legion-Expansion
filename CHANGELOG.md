@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.17.1 - 2020-12-17
 
 ### General
 
