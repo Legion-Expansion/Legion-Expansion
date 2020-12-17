@@ -6,6 +6,12 @@
 
 - Update file shadows
 
+### Balance
+
+- Land
+  - Advanced Mass Extractor
+    - Increased metal income from 15 to 16
+
 ## v1.17.0 - 2020-10-08
 
 ### General
