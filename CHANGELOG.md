@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Added UNITTYPE_Recon and removed UNITTYPE_Structure from Investigator when in radar mode
+
 ## v1.17.1 - 2020-12-17
 
 ### General
