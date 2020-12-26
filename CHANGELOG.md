@@ -6,6 +6,10 @@
 
 - Added UNITTYPE_Recon and removed UNITTYPE_Structure from Investigator when in radar mode
 
+### AI
+
+- Add check for UNITTYPE_Mobile to all new platoons
+
 ## v1.17.1 - 2020-12-17
 
 ### General
