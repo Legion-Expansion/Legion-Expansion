@@ -3,11 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion live_game_time_bar.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 89755");
-
+  try {
     var themesetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themesetting === "ON") {
@@ -23,10 +19,6 @@ if (!legionExpansionLoaded) {
         $(".body_panel").addClass("mixedui");
       }
     };
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));

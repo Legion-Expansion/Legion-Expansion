@@ -3,11 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion icon_atlas.js";
-
-    console.log(patchName + " last tested on 114849-pte");
-
+  try {
     var legionIcons = [
       "l_air_bomb",
       "l_air_carrier",
@@ -133,10 +129,6 @@ if (!legionExpansionLoaded) {
     ];
 
     model.strategicIcons().push.apply(model.strategicIcons(), legionIcons);
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.error(e);
     console.error(JSON.stringify(e));

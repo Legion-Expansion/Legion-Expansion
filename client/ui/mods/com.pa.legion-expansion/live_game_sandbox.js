@@ -3,11 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion live_game_sandbox.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 89755");
-
+  try {
     if (model.baseGroups) {
       model.baseGroups.splice(
         99,
@@ -30,10 +26,6 @@ if (!legionExpansionLoaded) {
         "L_orbital"
       );
     }
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));
