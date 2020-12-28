@@ -10,6 +10,10 @@
 
 - Add check for UNITTYPE_Mobile to all new platoons
 
+### Bugfix
+
+- Fixed icon assignment for Infiltrator's spy camera
+
 ## v1.17.1 - 2020-12-17
 
 ### General

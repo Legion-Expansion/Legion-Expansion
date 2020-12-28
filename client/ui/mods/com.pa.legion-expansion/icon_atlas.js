@@ -95,7 +95,7 @@ if (!legionExpansionLoaded) {
       "l_air_bomb",
       "l_air_scout_adv",
       "l_firestarter",
-      "vision",
+      "l_vision",
       "l_hover_ship",
       "l_fabrication_ship_adv",
       "l_sea_tank",
