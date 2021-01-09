@@ -141,7 +141,7 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite",
+      "name": "Legion - Basic Radar Satellite",
       "priority": 100,
       "to_build": "LegionOrbitalBasicRadar"
     },
@@ -172,7 +172,7 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite - Pri",
+      "name": "Legion - Basic Radar Satellite - Pri",
       "priority": 102,
       "to_build": "LegionOrbitalBasicRadar"
     },
@@ -204,7 +204,7 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Basic Radar Sattelite - Other planet",
+      "name": "Legion - Basic Radar Satellite - Other planet",
       "priority": 199,
       "shared_instance_count": "ReconAssistance",
       "to_build": "LegionOrbitalBasicRadar"
@@ -434,7 +434,7 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Advanced Radar Sattelite",
+      "name": "Legion - Advanced Radar Satellite",
       "priority": 196,
       "shared_instance_count": "ReconAssistance",
       "to_build": "LegionOrbitalAdvancedRadar"
