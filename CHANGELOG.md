@@ -14,6 +14,8 @@
 - Orbital
   - Starship Projector
     - Reduced build cost from 1500 to 600
+  - Starship Factory
+    - Increased build cost from 3600 to 6000
 
 ### AI
 
