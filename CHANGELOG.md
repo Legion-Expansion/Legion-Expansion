@@ -6,6 +6,11 @@
 
 - Added UNITTYPE_Recon and removed UNITTYPE_Structure from Investigator when in radar mode
 
+### Balance
+
+- Commander
+  - Can build the Starship Projector
+
 ### AI
 
 - Add check for UNITTYPE_Mobile to all new platoons
