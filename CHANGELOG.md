@@ -5,6 +5,7 @@
 ### General
 
 - Added UNITTYPE_Recon and removed UNITTYPE_Structure from Investigator when in radar mode
+- Updated file shadows
 
 ### Balance
 
