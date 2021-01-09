@@ -8,16 +8,16 @@
 
 ### Balance
 
-- Commander
-  - Can build the Starship Projector
-  - Can build the Tola
 - Land
   - Corsair
     - Increased LOS from 100 to 115
     - Removed underwater LOS
+  - Tola
+    - Can now be built by the Commander
 - Orbital
   - Starship Projector
     - Reduced build cost from 1500 to 600
+    - Can now be built by the Commander
   - Starship Factory
     - Increased build cost from 3600 to 6000
 
