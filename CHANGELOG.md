@@ -11,6 +11,9 @@
 - Commander
   - Can build the Starship Projector
   - Can build the Tola
+- Orbital
+  - Starship Projector
+    - Reduced build cost from 1500 to 600
 
 ### AI
 
