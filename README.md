@@ -58,6 +58,10 @@ To create a copy for testing local changes:
 4. Run install_local_full.py - requires the pa_tools submodule
 5. Within PA's Community Mods enable the "DEVELOPMENT" version of the mod
 
+## Unit Stats
+
+A full breakdown of all unit stats can be found at the [Planetary Annihilation TITANS & Legion Expansion Units Database](https://palobby.com/legion-expansion/units).
+
 ## Development
 
 ### Structure
