@@ -1802,6 +1802,7 @@
         ]
       ],
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
       ],
@@ -1908,6 +1909,7 @@
         ]
       ],
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
       ],

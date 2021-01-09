@@ -10,6 +10,7 @@
 
 - Commander
   - Can build the Starship Projector
+  - Can build the Tola
 
 ### AI
 
