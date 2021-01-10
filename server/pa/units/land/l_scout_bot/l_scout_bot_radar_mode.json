@@ -160,11 +160,10 @@
   "unit_types": [
     "UNITTYPE_NoBuild",
     "UNITTYPE_Land",
+    "UNITTYPE_Structure",
     "UNITTYPE_Basic",
-    "UNITTYPE_Custom1",
-    "UNITTYPE_Amphibious",
     "UNITTYPE_Recon",
-    "UNITTYPE_Structure"
+    "UNITTYPE_Custom1"
   ],
   "wreckage_health_frac": 0.0
 }
