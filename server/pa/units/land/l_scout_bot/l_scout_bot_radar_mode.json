@@ -158,14 +158,13 @@
     "size": 1
   },
   "unit_types": [
-    "UNITTYPE_Bot",
-    "UNITTYPE_Scout",
     "UNITTYPE_NoBuild",
     "UNITTYPE_Land",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom1",
     "UNITTYPE_Amphibious",
-    "UNITTYPE_Recon"
+    "UNITTYPE_Recon",
+    "UNITTYPE_Structure"
   ],
   "wreckage_health_frac": 0.0
 }
