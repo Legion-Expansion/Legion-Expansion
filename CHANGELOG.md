@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## Version 1.18.0 - 2021-01-15
 
 ### General
 
