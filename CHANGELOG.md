@@ -1,10 +1,18 @@
 # CHANGELOG
 
-## Version 1.18.0 - 2021-01-15
+## v1.19.0 - 2021-01-15
+
+### Balance
+
+- Orbital
+  - Starcannon
+    - Increased build cost from 1700 to 2600
+
+## v1.18.0 - 2021-01-15
 
 ### General
 
-- Change UNITTYPE tags assigned to Investigator when in radar mode
+- Changed UNITTYPE tags assigned to Investigator when in radar mode
 - Updated file shadows
 
 ### Balance
