@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Orbital
+  - Starcannon
+    - Increased build cost from 1700 to 2600
+
 ## Version 1.18.0 - 2021-01-15
 
 ### General
