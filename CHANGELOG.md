@@ -4,7 +4,7 @@
 
 ### General
 
-- Change UNITTYPE tags assigned to Investigator when in radar mode
+- Changed UNITTYPE tags assigned to Investigator when in radar mode
 - Updated file shadows
 
 ### Balance
