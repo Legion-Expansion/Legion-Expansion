@@ -106,6 +106,7 @@
     "UNITTYPE_OrbitalDefense",
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_CmdBuild",
     "UNITTYPE_Custom1"
   ]
 }

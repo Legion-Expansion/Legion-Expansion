@@ -3,10 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion settings.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 114218");
+  try {
     _.assign(api.settings.definitions.ui.settings, {
       legionThemeFunction: {
         title: "Theme In Game",
@@ -34,10 +31,6 @@ if (!legionExpansionLoaded) {
         async: false,
       }).responseText
     );
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));

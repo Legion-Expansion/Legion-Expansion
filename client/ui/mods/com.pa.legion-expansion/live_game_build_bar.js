@@ -3,11 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion live_game_build_bar.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 113558");
-
+  try {
     if (model.BuildSet && model.BuildSet.tabsTemplate) {
       model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
         ["L_factory", "!LOC:factory", true],
@@ -124,10 +120,6 @@ if (!legionExpansionLoaded) {
         "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
       );
     }
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));

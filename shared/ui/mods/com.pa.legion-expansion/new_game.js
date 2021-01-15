@@ -3,9 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    console.log("legionExpansion new_game.js last tested on 114220");
-
+  try {
     var legionExpansionEnabled = false;
 
     model.enableLegion = function () {
@@ -150,10 +148,6 @@ if (!legionExpansionLoaded) {
         loc("!LOC:To play as the Legion select one of the red Commanders.")
       );
     });
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.error(e);
   }

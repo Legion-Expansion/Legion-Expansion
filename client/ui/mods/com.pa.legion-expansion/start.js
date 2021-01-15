@@ -3,9 +3,7 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    console.log("legionExpansion start.js");
-
+  try {
     model.showLegionGuidesMenu = ko.observable(false);
 
     model.legionToggleGuides = function () {
@@ -92,10 +90,6 @@ if (!legionExpansionLoaded) {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
       $("body").addClass("legion");
     }
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.error(e);
   }

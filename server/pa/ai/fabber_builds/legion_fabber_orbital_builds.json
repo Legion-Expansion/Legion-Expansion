@@ -56,6 +56,7 @@
         ]
       ],
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -175,6 +176,7 @@
         ]
       ],
       "builders": [
+        "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"

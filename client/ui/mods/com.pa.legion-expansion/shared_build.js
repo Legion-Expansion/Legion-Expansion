@@ -1,13 +1,9 @@
-var legionExpansion_sharedbuildLoaded;
+var legionExpansionLoaded;
 
-if (!legionExpansion_sharedbuildLoaded) {
-  legionExpansion_sharedbuildLoaded = true;
+if (!legionExpansionLoaded) {
+  legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "LegionExpansion shared_build.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 114220");
-
+  try {
     var legionBuild = {
       "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
         "L_factory",
@@ -567,10 +563,6 @@ if (!legionExpansion_sharedbuildLoaded) {
 
     if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
       _.assign(Build.HotkeyModel.SpecIdToGridMap, legionBuild);
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));

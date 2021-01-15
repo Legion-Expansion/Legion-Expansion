@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## Version 1.18.0 - 2021-01-15
+
+### General
+
+- Change UNITTYPE tags assigned to Investigator when in radar mode
+- Updated file shadows
+
+### Balance
+
+- Land
+  - Corsair
+    - Increased LOS from 100 to 115
+    - Removed underwater LOS
+  - Tola
+    - Can now be built by the Commander
+- Orbital
+  - Starship Projector
+    - Reduced build cost from 1500 to 600
+    - Can now be built by the Commander
+  - Starship Factory
+    - Increased build cost from 3600 to 6000
+
+### AI
+
+- Add check for UNITTYPE_Mobile to all new platoons
+
+### Bugfix
+
+- Fixed icon assignment for Infiltrator's spy camera
+
 ## v1.17.1 - 2020-12-17
 
 ### General

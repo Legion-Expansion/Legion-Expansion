@@ -1,27 +1,24 @@
 var legionExpansionLoaded;
 
 if (!legionExpansionLoaded) {
-  api.mods.getMountedMods("server", function (mods) {
-    var legionServerLoaded =
-      _.intersection(_.pluck(mods, "identifier"), [
-        "com.pa.legion-expansion-server",
-        "com.pa.legion-expansion-server-master",
-        "com.pa.legion-expansion-server-balance",
-        "com.pa.legion-expansion-server-dev",
-      ]).length > 0;
-    if (legionServerLoaded) {
-      $(".div_ingame_options_bar_cont").prepend(
-        "<div class='watermark'><loc>Legion</loc>&nbsp;1.17.1</div>"
-      );
-      locUpdateDocument();
-    }
-  });
   legionExpansionLoaded = true;
 
-  function legionExpansion() {
-    var patchName = "legionExpansion live_game_options_bar.js";
-
-    console.log(patchName + " on " + gBuild + " last tested on 114218");
+  try {
+    api.mods.getMountedMods("server", function (mods) {
+      var legionServerLoaded =
+        _.intersection(_.pluck(mods, "identifier"), [
+          "com.pa.legion-expansion-server",
+          "com.pa.legion-expansion-server-master",
+          "com.pa.legion-expansion-server-balance",
+          "com.pa.legion-expansion-server-dev",
+        ]).length > 0;
+      if (legionServerLoaded) {
+        $(".div_ingame_options_bar_cont").prepend(
+          "<div class='watermark'><loc>Legion</loc>&nbsp;1.18.0</div>"
+        );
+        locUpdateDocument();
+      }
+    });
 
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css");
 
@@ -128,10 +125,6 @@ if (!legionExpansionLoaded) {
         );
       }
     };
-  }
-
-  try {
-    legionExpansion();
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));
