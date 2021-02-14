@@ -5,6 +5,7 @@
 ### General
 
 - Updated file shadows
+- Added vertical icon offset to Advanced Mass Extractor
 
 ## v1.19.0 - 2021-01-15
 
