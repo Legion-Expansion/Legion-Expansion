@@ -6,6 +6,7 @@
 
 - Updated file shadows
 - Added vertical icon offset to Advanced Mass Extractor
+- Added new UNITTYPEs to match usage by MLA
 
 ### Balance
 
