@@ -96,7 +96,7 @@
     "observer": {
       "items": [
         {
-          "channel": "radar",
+          "channel": "sight",
           "layer": "surface_and_air",
           "radius": 100,
           "shape": "capsule"
