@@ -145,7 +145,8 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Artillery",
     "UNITTYPE_FabAdvBuild",
-    "UNITTYPE_Important"
+    "UNITTYPE_Important",
+    "UNITTYPE_Interplanetary"
   ],
   "wait_to_rolloff_time": 3.0,
   "wreckage_mesh_bounds": [

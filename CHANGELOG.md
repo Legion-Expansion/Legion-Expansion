@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Updated file shadows
+
 ## v1.19.0 - 2021-01-15
 
 ### Balance
