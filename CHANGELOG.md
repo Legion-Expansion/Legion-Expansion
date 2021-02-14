@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 1.20.0 - 2021-02-14
+
+### General
+
+- Updated file shadows
+- Added vertical icon offset to Advanced Mass Extractor
+- Added new UNITTYPEs to match usage by MLA
+
+### Balance
+
+- Orbital
+  - Fabrication Starship
+    - Changed ground and air vision to sight from radar
+
 ## v1.19.0 - 2021-01-15
 
 ### Balance

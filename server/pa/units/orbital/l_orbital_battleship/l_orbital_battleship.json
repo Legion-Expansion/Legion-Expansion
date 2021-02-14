@@ -169,7 +169,8 @@
     "UNITTYPE_Heavy",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
   ],
   "wreckage_health_frac": 0.0
 }
