@@ -156,6 +156,7 @@
     "UNITTYPE_Orbital",
     "UNITTYPE_Scout",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
   ]
 }

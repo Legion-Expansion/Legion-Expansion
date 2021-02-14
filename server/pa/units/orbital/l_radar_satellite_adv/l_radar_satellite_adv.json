@@ -151,6 +151,7 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Recon",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
   ]
 }
