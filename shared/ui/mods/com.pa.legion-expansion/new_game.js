@@ -11,8 +11,6 @@ if (!legionExpansionLoaded) {
         return;
       }
 
-      console.log("legionExpansion new_game.js enabled");
-
       legionExpansionEnabled = true;
 
       var newBuild = _.isFunction(model.aiPersonalities);
