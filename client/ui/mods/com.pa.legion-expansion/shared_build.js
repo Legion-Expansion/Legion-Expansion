@@ -3,9 +3,9 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionSharedBuild() {
-    try {
-      var legionBuild = {
+  try {
+    if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
+      _.assign(Build.HotkeyModel.SpecIdToGridMap, {
         "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
           "L_factory",
           0,
@@ -560,14 +560,9 @@ if (!legionExpansionLoaded) {
           0,
           { row: 0, column: 0, titans: true },
         ],
-      };
-
-      if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
-        _.assign(Build.HotkeyModel.SpecIdToGridMap, legionBuild);
-    } catch (e) {
-      console.log(e);
-      console.log(JSON.stringify(e));
-    }
+      });
+  } catch (e) {
+    console.log(e);
+    console.log(JSON.stringify(e));
   }
-  legionSharedBuild();
 }

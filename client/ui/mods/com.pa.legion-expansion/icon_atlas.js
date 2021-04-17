@@ -3,9 +3,10 @@ var legionExpansionLoaded;
 if (!legionExpansionLoaded) {
   legionExpansionLoaded = true;
 
-  function legionIconAtlas() {
-    try {
-      var legionIcons = [
+  try {
+    model
+      .strategicIcons()
+      .push.apply(model.strategicIcons(), [
         "l_air_bomb",
         "l_air_carrier",
         "l_air_defense_adv",
@@ -127,13 +128,9 @@ if (!legionExpansionLoaded) {
         "l_vehicle_factory_adv",
         "l_vehicle_factory",
         "l_vision",
-      ];
-
-      model.strategicIcons().push.apply(model.strategicIcons(), legionIcons);
-    } catch (e) {
-      console.error(e);
-      console.error(JSON.stringify(e));
-    }
+      ]);
+  } catch (e) {
+    console.error(e);
+    console.error(JSON.stringify(e));
   }
-  legionIconAtlas();
 }
