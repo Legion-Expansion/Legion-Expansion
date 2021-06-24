@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Updated file shadows
+
 ## 1.20.0 - 2021-02-14
 
 ### General

@@ -6,6 +6,7 @@
     "/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_ammo.json",
     "/pa/units/land/air_defense/air_defense_ammo.json",
     "/pa/units/commanders/base_commander/base_commander_aa_ammo.json",
+    "/pa/units/land/bot_aa/bot_aa_ammo.json",
     "/pa/units/land/l_bot_aa/l_bot_aa_ammo.json",
     "/pa/units/land/l_air_defense_adv/l_air_defense_adv_ammo.json",
     "/pa/units/air/l_fighter_adv/l_fighter_adv_rocket_ammo.json",
