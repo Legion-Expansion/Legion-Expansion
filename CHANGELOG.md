@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.20.1 - 2021-06-24
+
+### General
+
+- Updated file shadows
+
 ## 1.20.0 - 2021-02-14
 
 ### General
