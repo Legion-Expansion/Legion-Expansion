@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.20.1 - 2021-06-24
 
 ### General
 
