@@ -93,8 +93,6 @@ FEATURE-_name_ - a feature which is still in development; merged into BALANCE on
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
-RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
-
 ### Units
 
 Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
