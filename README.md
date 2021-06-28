@@ -90,7 +90,7 @@ Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successf
 
 MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-BALANCE - development; forked to RELEASE-x.x.x and FEATURE-_name_
+BALANCE - development; forked to FEATURE-_name_
 
 FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
 
