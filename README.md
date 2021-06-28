@@ -80,9 +80,11 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 ### Committing
 
 1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
-2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
-3. Fix any MISSING FILE references in the format_json.py output
-4. Use correct casing when referencing files so as to prevent issues on Linux
+2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes.
+3. Fix any MISSING FILE references in the format_json.py output.
+4. Use correct casing when referencing files so as to prevent issues on Linux.
+5. Keep commit subjects concise, use the body to include details.
+6. Make small, single-purpose commits.
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
