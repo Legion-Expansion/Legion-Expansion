@@ -85,6 +85,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 4. Use correct casing when referencing files so as to prevent issues on Linux.
 5. Keep commit subjects concise, use the body to include details.
 6. Make small, single-purpose commits.
+7. Large files not required for the mod to run should be stored using [Git Large File Storage](https://git-lfs.github.com/)
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
