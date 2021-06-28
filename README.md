@@ -29,6 +29,7 @@ This project is not the work of one, but of a legion.
 | KillerKiwiJuice | Models / Textures / Code / Effects |
 | mgmetal13       | Textures                           |
 | zx0             | Textures                           |
+| Luther          | Textures                           |
 | Alpha2546       | Effects / Balance                  |
 | PRoeleert       | UI                                 |
 | wondible        | Code                               |
