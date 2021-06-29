@@ -15,9 +15,6 @@ import os.path as path
 import posixpath
 import copy
 
-from datetime import datetime
-from shutil import copyfile
-
 from pa_tools.pa import pafs
 from pa_tools.pa import paths
 from pa_tools.pa import spec
