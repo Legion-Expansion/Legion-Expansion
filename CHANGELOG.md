@@ -5,6 +5,9 @@
 ### Balance
 
 - Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
+- Land
+  - Stoke
+    - Torpedo can longer target WaterHover units
 - Sea
   - Catfish
     - Movement changed from water surface to a water-hover
