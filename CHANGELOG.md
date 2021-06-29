@@ -8,6 +8,7 @@
 - Sea
   - Catfish
     - Movement changed from water surface to a water-hover
+    - Torpedo can no longer target water-hover
 
 ### Fixed
 
