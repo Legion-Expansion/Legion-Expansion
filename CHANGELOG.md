@@ -9,6 +9,8 @@
   - Stoke
     - Torpedo can longer target WaterHover units
 - Sea
+  - Akula
+    - Torpedo can no longer target WaterHover
   - Catfish
     - Movement changed from deepwater to water-hover
     - Torpedo can no longer target WaterHover
