@@ -1,7 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
-  "collision_check": "target",
-  "collision_response": "impact",
+  "collision_check": "enemies",
   "damage": 175,
   "full_damage_splash_radius": 5,
   "fx_beam_spec": "/pa/units/land/l_titan_bot/beam.pfx",
