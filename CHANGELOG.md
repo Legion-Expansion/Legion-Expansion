@@ -18,6 +18,8 @@
     - Torpedo can no longer target WaterHover
   - Ripple
     - Torpedo can no longer target WaterHover
+  - Tsunami
+    - Torpedo can no longer target WaterHover
 
 ### Fixed
 
