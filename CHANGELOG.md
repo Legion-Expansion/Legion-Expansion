@@ -14,6 +14,8 @@
   - Catfish
     - Movement changed from deepwater to water-hover
     - Torpedo can no longer target WaterHover
+  - Hammerhead
+    - Torpedo can no longer target WaterHover
 
 ### Fixed
 
