@@ -39,6 +39,7 @@
     "filename": "/pa/units/sea/l_sea_scout/l_sea_scout.papa"
   },
   "navigation": {
+    "type": "water-hover",
     "acceleration": 40,
     "brake": -1,
     "move_speed": 18,
@@ -96,6 +97,7 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
+    "UNITTYPE_WaterHover",
     "UNITTYPE_Custom1"
   ]
 }

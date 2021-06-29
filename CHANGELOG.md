@@ -5,6 +5,7 @@
 ### Balance
 
 - Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
+- Catfish is now a water-hover unit
 
 ### Fixed
 
