@@ -158,25 +158,27 @@ def validateJSON(filename):
         print("PA %s" % filename)
         return
 
-    ordered = OrderedDict()
+    if not filename.startswith("./server/pa\\ai"):
 
-    if "display_name" in data:
-        ordered["display_name"] = data["display_name"]
+        ordered = OrderedDict()
 
-    if "description" in data:
-        ordered["description"] = data["description"]
+        if "display_name" in data:
+            ordered["display_name"] = data["display_name"]
 
-    ordered.update(sorted(data.items()))
+        if "description" in data:
+            ordered["description"] = data["description"]
 
-    data = walkJSON(ordered, True)
+        ordered.update(sorted(data.items()))
 
-    fp = open(filename, "w")
-    fp.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
-    fp.close()
+        data = walkJSON(ordered, True)
 
-    if "display_name" in data:
-        print("\n%s" % data["display_name"])
-        print(filename)
+        fp = open(filename, "w")
+        fp.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
+        fp.close()
+
+        if "display_name" in data:
+            print("\n%s" % data["display_name"])
+            print(filename)
 
     #  if len(data) == 1:
     #     print(filename)
