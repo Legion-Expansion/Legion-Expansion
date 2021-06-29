@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
+
+### Fixed
+
+- Added missing anti-surface target priorities to some anti-air units
+
 ## v1.20.1 - 2021-06-24
 
 ### General

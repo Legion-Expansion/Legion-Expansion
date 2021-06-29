@@ -12,8 +12,8 @@
     "WL_Air"
   ],
   "target_priorities": [
-    "Air & (Transport | Bomber | Gunship | Titan)",
-    "Mobile & Air"
+    "Air & (EnergyProduction | Transport | Bomber | Gunship | Titan)",
+    "Air & Mobile"
   ],
   "yaw_range": 360,
   "yaw_rate": 720

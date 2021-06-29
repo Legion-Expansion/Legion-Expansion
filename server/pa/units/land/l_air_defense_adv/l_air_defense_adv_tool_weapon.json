@@ -15,7 +15,7 @@
     "WL_Air"
   ],
   "target_priorities": [
-    "Air & (Bomber | Gunship)",
+    "Air & (EnergyProduction | Transport | Bomber | Gunship | Titan)",
     "Air & Mobile"
   ],
   "tool_type": "TOOL_Weapon",
