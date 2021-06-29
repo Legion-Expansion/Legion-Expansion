@@ -5,21 +5,8 @@
 ### Balance
 
 - Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
-- Land
-  - Stoke
-    - Torpedo can longer target WaterHover units
-- Sea
-  - Akula
-    - Torpedo can no longer target WaterHover
-  - Catfish
-    - Movement changed from deepwater to water-hover
-    - Torpedo can no longer target WaterHover
-  - Hammerhead
-    - Torpedo can no longer target WaterHover
-  - Ripple
-    - Torpedo can no longer target WaterHover
-  - Tsunami
-    - Torpedo can no longer target WaterHover
+- Catfish movement changed from deepwater to water-hover
+- Torpedoes can no longer target WaterHover
 
 ### Fixed
 
