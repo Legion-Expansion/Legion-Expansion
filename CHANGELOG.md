@@ -6,7 +6,7 @@
 
 - Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
 - Catfish movement changed from deepwater to water-hover
-- Torpedoes can no longer target WaterHover
+- Non-Commander torpedoes can no longer target WaterHover
 - Beam weapons impact against enemies and terrain blocking the intended target
 
 ### Fixed
