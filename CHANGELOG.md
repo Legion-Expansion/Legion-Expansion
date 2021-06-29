@@ -16,6 +16,8 @@
     - Torpedo can no longer target WaterHover
   - Hammerhead
     - Torpedo can no longer target WaterHover
+  - Ripple
+    - Torpedo can no longer target WaterHover
 
 ### Fixed
 
