@@ -21,13 +21,10 @@
   "target_layers": [
     "WL_LandHorizontal",
     "WL_WaterSurface",
-    "WL_Orbital",
-    "WL_Air"
+    "WL_Orbital"
   ],
   "target_priorities": [
     "Orbital & Mobile",
-    "Bomber",
-    "Gunship",
     "Mobile"
   ],
   "yaw_range": 180,
