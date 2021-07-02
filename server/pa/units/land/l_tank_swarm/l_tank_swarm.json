@@ -141,7 +141,6 @@
         "gun001",
         "gun002"
       ],
-      "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json"
     }
