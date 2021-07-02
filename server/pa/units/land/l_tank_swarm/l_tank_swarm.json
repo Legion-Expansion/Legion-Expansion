@@ -132,7 +132,18 @@
         "gun002"
       ],
       "projectiles_per_fire": 2,
+      "record_index": 0,
       "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun001",
+        "gun002"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 1,
+      "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json"
     }
   ],
   "transportable": {

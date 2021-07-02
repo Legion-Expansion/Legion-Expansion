@@ -8,6 +8,7 @@
 - Catfish movement changed from deepwater to water-hover
 - Non-Commander torpedoes can no longer target WaterHover
 - Beam weapons impact against enemies and terrain blocking the intended target
+- Havoc now intercepts tactical missiles
 
 ### Fixed
 
