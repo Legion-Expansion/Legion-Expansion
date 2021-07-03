@@ -5,11 +5,7 @@
 ### Balance
 
 - Air
-  - Firebird
-    - Weapon blocked by enemies and terrain
   - Marauder
-    - Weapon blocked by enemies and terrain
-  - Scythe
     - Weapon blocked by enemies and terrain
 - Land
   - Archer
