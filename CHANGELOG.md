@@ -5,6 +5,8 @@
 ### Balance
 
 - Air
+  - Lockheed
+    - Increased build cost from 800 to 900
   - Marauder
     - Weapon blocked by enemies and terrain
 - Land
