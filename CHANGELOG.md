@@ -6,25 +6,25 @@
 
 - Air
   - Lockheed
-    - Increased build cost from 800 to 900
+    - Build cost increased from 800 to 900
   - Marauder
     - Weapon blocked by enemies and terrain
 - Land
   - Archer
     - Icarus added to priority target list
   - Arsonist
-    - Increased damage from 20 to 40
-    - Increased splash from 20 to 40
+    - Damage increased from 20 to 40
+    - Splash increased from 20 to 40
   - Havoc
-    - Added ability to intercept tactical missiles
+    - Can now intercept missiles
   - Odin
     - Icarus added to priority target list for AA
   - Orbweaver
     - Weapon blocked by enemies and terrain
     - Icarus added to priority target list
-    - Increased Build cost from 600 to 750
+    - Build cost increased from 600 to 750
   - Panzer
-    - Can no longer target Air units
+    - Removed ability to shoot Air units
   - Patriot
     - Icarus added to priority target list
   - Shredder
