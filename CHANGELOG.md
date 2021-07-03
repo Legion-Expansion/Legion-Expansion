@@ -11,6 +11,10 @@
 - Havoc now intercepts tactical missiles
 - Panzer no longer attacks air
 
+### Fixed
+
+- Havoc fires from both pylons
+
 ## v1.20.1 - 2021-06-24
 
 ### General
