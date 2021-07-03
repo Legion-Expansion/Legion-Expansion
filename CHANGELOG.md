@@ -12,6 +12,9 @@
 - Land
   - Archer
     - Icarus added to priority target list
+  - Arsonist
+    - Increased damage from 20 to 40
+    - Increased splash from 20 to 40
   - Havoc
     - Added ability to intercept tactical missiles
   - Odin
