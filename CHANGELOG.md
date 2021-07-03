@@ -4,12 +4,64 @@
 
 ### Balance
 
-- Anti-Air units now target the Icarus at the same priority level as other anti-surface air threats
-- Catfish movement changed from deepwater to water-hover
-- Non-Commander torpedoes can no longer target WaterHover
-- Beam weapons impact against enemies and terrain blocking the intended target
-- Havoc now intercepts tactical missiles
-- Panzer no longer attacks air
+- Air
+  - Firebird
+    - Weapon blocked by enemies and terrain
+  - Marauder
+    - Weapon blocked by enemies and terrain
+  - Scythe
+    - Weapon blocked by enemies and terrain
+- Land
+  - Archer
+    - Icarus added to priority target list
+  - Havoc
+    - Added ability to intercept tactical missiles
+  - Odin
+    - Icarus added to priority target list for AA
+  - Orbweaver
+    - Weapon blocked by enemies and terrain
+    - Icarus added to priority target list
+  - Panzer
+    - Can no longer target Air units
+  - Patriot
+    - Icarus added to priority target list
+  - Shredder
+    - Icarus added to priority target list
+  - Stoke
+    - Torpedo can longer target WaterHover units
+  - Thor
+    - Multilaser blocked by enemies and terrain
+  - Tola
+    - Weapon blocked by enemies and terrain
+- Orbital
+  - Centurion
+    - Weapon blocked by enemies and terrain
+  - Imperator
+    - Weapon blocked by enemies and terrain
+  - Kosmos
+    - Weapon blocked by enemies and terrain
+  - Paladin
+    - Weapon blocked by enemies and terrain
+- Sea
+  - Akula
+    - Torpedo can no longer target WaterHover
+  - Catfish
+    - Movement changed from deepwater to water-hover
+    - Torpedo can no longer target WaterHover
+    - Laser blocked by enemies and terrain
+  - Hammerhead
+    - Torpedo can no longer target WaterHover
+    - Ram blocked by enemies and terrain
+  - Manta
+    - Anti-air blocked by enemies and terrain
+    - Icarus added to priority target list for AA
+  - Ripple
+    - Torpedo can no longer target WaterHover
+  - Talos
+    - Weapon blocked by enemies and terrain
+    - Icarus added to priority target list
+  - Tsunami
+    - Torpedo can no longer target WaterHover
 
 ### Fixed
 
