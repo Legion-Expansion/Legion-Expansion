@@ -19,7 +19,7 @@
   - Orbweaver
     - Weapon blocked by enemies and terrain
     - Icarus added to priority target list
-    - Build cost increased from 600 to 750
+    - Increased Build cost from 600 to 750
   - Panzer
     - Can no longer target Air units
   - Patriot
