@@ -1,5 +1,7 @@
 # Legion Expansion for Planetary Annihilation: TITANS
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/legion-Expansion/Legion-Expansion)
+
 ## Licensing
 
 Legion Expansion is dual licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
