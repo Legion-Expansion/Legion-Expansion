@@ -30,7 +30,7 @@
   - Shredder
     - Icarus added to priority target list
   - Stoke
-    - Torpedo can longer target WaterHover units
+    - Torpedo can no longer target WaterHover units
   - Thor
     - Multilaser blocked by enemies and terrain
   - Tola
