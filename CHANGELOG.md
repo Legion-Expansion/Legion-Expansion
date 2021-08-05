@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Updated icons for units given water-hover (shallow water) navigation
+
 ### Balance
 
 - Air
