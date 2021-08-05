@@ -94,6 +94,7 @@
 ### Fixed
 
 - Havoc fires from both pylons
+- Added wakes to ships and subs that didn't have one
 
 ## v1.20.1 - 2021-06-24
 
