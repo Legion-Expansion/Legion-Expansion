@@ -23,6 +23,8 @@
     - Splash increased from 20 to 40
   - Deathmark
     - Removed underwater vision
+  - Earthshaker
+    - Removed underwater vision
   - Havoc
     - Can now intercept missiles
     - Removed underwater vision
