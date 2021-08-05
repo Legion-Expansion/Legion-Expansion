@@ -54,6 +54,10 @@
         0
       ],
       "type": "idle"
+    },
+    {
+      "filename": "/pa/units/sea/battleship/battleship_wake.pfx",
+      "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
