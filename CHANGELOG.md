@@ -25,6 +25,8 @@
     - Removed underwater vision
   - Earthshaker
     - Removed underwater vision
+  - Enforcer
+    - Removed underwater vision
   - Havoc
     - Can now intercept missiles
     - Removed underwater vision
