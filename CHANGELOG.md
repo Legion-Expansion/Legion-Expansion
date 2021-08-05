@@ -36,6 +36,7 @@
     - Build cost increased from 600 to 750
   - Panzer
     - Removed ability to shoot Air units
+    - Removed underwater vision
   - Patriot
     - Icarus added to priority target list
   - Shredder
