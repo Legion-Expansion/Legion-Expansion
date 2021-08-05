@@ -7,7 +7,7 @@
     "faction"
   ],
   "context": "client",
-  "date": "2021/06/24",
+  "date": "2021/08/05",
   "dependencies": [
     "com.pa.legion-expansion-server"
   ],
@@ -74,7 +74,7 @@
   },
   "priority": 100,
   "signature": "(not yet implemented)",
-  "version": "1.20.1",
+  "version": "1.21.0",
   "titansOnly": true,
   "hidden": true,
   "github": "https://github.com/Legion-Expansion/Legion-Expansion"
