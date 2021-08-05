@@ -36,6 +36,8 @@
     - Removed underwater vision
   - Miniman
     - Removed underwater vision
+  - Monstrosity
+    - Removed underwater vision
   - Odin
     - Icarus added to priority target list for AA
   - Orbweaver
