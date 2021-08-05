@@ -58,6 +58,7 @@
     - Torpedo can no longer target WaterHover units
   - Thor
     - Multilaser blocked by enemies and terrain
+    - Removed underwater vision
   - Tola
     - Weapon blocked by enemies and terrain
 - Orbital
