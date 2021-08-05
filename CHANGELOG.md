@@ -23,6 +23,8 @@
     - Splash increased from 20 to 40
   - Havoc
     - Can now intercept missiles
+  - Maul
+    - Removed underwater vision
   - Odin
     - Icarus added to priority target list for AA
   - Orbweaver
