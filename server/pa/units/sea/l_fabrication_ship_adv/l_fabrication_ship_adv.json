@@ -61,6 +61,10 @@
       "bone": "socket_latheLeft",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
+    },
+    {
+      "filename": "/pa/units/sea/fabrication_ship_adv/fabrication_ship_adv_wake.pfx",
+      "type": "moving_forward"
     }
   ],
   "max_health": 675,
