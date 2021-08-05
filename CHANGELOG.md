@@ -9,6 +9,8 @@
 ### Balance
 
 - Air
+  - Comet
+    - Removed underwater vision
   - Lockheed
     - Build cost increased from 800 to 900
   - Marauder
