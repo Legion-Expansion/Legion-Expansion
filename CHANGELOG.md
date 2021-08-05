@@ -28,6 +28,8 @@
   - Havoc
     - Can now intercept missiles
     - Removed underwater vision
+  - Lancer
+    - Removed underwater vision
   - Maul
     - Removed underwater vision
   - Odin
