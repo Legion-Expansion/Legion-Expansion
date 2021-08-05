@@ -23,6 +23,7 @@
     - Splash increased from 20 to 40
   - Havoc
     - Can now intercept missiles
+    - Removed underwater vision
   - Maul
     - Removed underwater vision
   - Odin
