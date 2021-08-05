@@ -1,5 +1,101 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Updated icons for units given water-hover (shallow water) navigation
+
+### Balance
+
+- Air
+  - Comet
+    - Removed underwater vision
+  - Lockheed
+    - Build cost increased from 800 to 900
+  - Marauder
+    - Weapon blocked by enemies and terrain
+- Land
+  - Archer
+    - Icarus added to priority target list
+  - Arsonist
+    - Damage increased from 20 to 40
+    - Splash increased from 20 to 40
+  - Deathmark
+    - Removed underwater vision
+  - Earthshaker
+    - Removed underwater vision
+  - Enforcer
+    - Removed underwater vision
+  - Havoc
+    - Can now intercept missiles
+    - Removed underwater vision
+  - Lancer
+    - Removed underwater vision
+  - Maul
+    - Removed underwater vision
+  - Miniman
+    - Removed underwater vision
+  - Monstrosity
+    - Removed underwater vision
+  - Odin
+    - Icarus added to priority target list for AA
+  - Orbweaver
+    - Weapon blocked by enemies and terrain
+    - Icarus added to priority target list
+    - Build cost increased from 600 to 750
+    - Removed underwater vision
+  - Panzer
+    - Removed ability to shoot Air units
+    - Removed underwater vision
+  - Patriot
+    - Icarus added to priority target list
+  - Purger
+    - Removed underwater vision
+  - Shredder
+    - Icarus added to priority target list
+  - Stoke
+    - Torpedo can no longer target WaterHover units
+  - Thor
+    - Multilaser blocked by enemies and terrain
+    - Removed underwater vision
+  - Tola
+    - Weapon blocked by enemies and terrain
+- Orbital
+  - Centurion
+    - Weapon blocked by enemies and terrain
+  - Imperator
+    - Weapon blocked by enemies and terrain
+  - Kosmos
+    - Weapon blocked by enemies and terrain
+  - Paladin
+    - Weapon blocked by enemies and terrain
+- Sea
+  - Akula
+    - Torpedo can no longer target WaterHover
+  - Catfish
+    - Movement changed from deepwater to water-hover
+    - Torpedo can no longer target WaterHover
+    - Laser blocked by enemies and terrain
+  - Hammerhead
+    - Torpedo can no longer target WaterHover
+    - Ram blocked by enemies and terrain
+  - Manta
+    - Anti-air blocked by enemies and terrain
+    - Icarus added to priority target list for AA
+  - Ripple
+    - Torpedo can no longer target WaterHover
+  - Talos
+    - Weapon blocked by enemies and terrain
+    - Icarus added to priority target list
+  - Tsunami
+    - Torpedo can no longer target WaterHover
+
+### Fixed
+
+- Havoc fires from both pylons
+- Added wakes to ships and subs that didn't have one
+
 ## v1.20.1 - 2021-06-24
 
 ### General

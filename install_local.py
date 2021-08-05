@@ -1,8 +1,7 @@
 #!/usr/bin/python
 
 from os.path import join
-import os, errno
-import re
+import os
 import shutil
 import distutils.dir_util
 import json

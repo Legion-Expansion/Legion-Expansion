@@ -27,6 +27,17 @@
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire"
     }
   },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/sea_scout/sea_scout_thrust.pfx",
+      "offset": [
+        0,
+        4,
+        0.55
+      ],
+      "type": "moving_forward"
+    }
+  ],
   "guard_layer": "WL_AnySurface",
   "max_health": 255,
   "mesh_bounds": [
@@ -44,7 +55,8 @@
     "move_speed": 18,
     "turn_accel": 150,
     "turn_in_place": false,
-    "turn_speed": 150
+    "turn_speed": 150,
+    "type": "water-hover"
   },
   "recon": {
     "observer": {
@@ -96,6 +108,7 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
+    "UNITTYPE_WaterHover",
     "UNITTYPE_Custom1"
   ]
 }

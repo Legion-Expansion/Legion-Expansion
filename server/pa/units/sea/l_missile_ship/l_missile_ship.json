@@ -29,6 +29,12 @@
       "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx muzzle003 /pa/effects/specs/bullet_shells.pfx muzzle003 /pa/effects/specs/default_muzzle_flash.pfx muzzle004 /pa/effects/specs/bullet_shells.pfx muzzle004"
     }
   },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/missile_ship/missile_ship_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
   "guard_layer": "WL_AnySurface",
   "max_health": 3500,
   "mesh_bounds": [

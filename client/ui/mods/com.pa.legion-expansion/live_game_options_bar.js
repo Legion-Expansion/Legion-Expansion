@@ -5,7 +5,7 @@ if (!legionExpansionLoaded) {
 
   function legionLiveGameOptionsBar() {
     try {
-      api.mods.getMountedMods("server", function (mods) {
+      api.mods.getMounted("server").then(function (mods) {
         var legionServerLoaded =
           _.intersection(_.pluck(mods, "identifier"), [
             "com.pa.legion-expansion-server",

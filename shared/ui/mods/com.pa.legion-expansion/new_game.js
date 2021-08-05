@@ -68,7 +68,7 @@ if (!legionExpansionLoaded) {
           )
         );
 
-        api.mods.getMountedMods("client", function (mods) {
+        api.mods.getMounted("client").then(function (mods) {
           var legionClientLoaded =
             _.intersection(_.pluck(mods, "identifier"), [
               "com.pa.legion-expansion-client",

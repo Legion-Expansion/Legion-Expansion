@@ -1,5 +1,7 @@
 # Legion Expansion for Planetary Annihilation: TITANS
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/legion-Expansion/Legion-Expansion)
+
 ## Licensing
 
 Legion Expansion is dual licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and MIT for software portions containing JavaScript code.
@@ -29,6 +31,7 @@ This project is not the work of one, but of a legion.
 | KillerKiwiJuice | Models / Textures / Code / Effects |
 | mgmetal13       | Textures                           |
 | zx0             | Textures                           |
+| Luther          | Textures                           |
 | Alpha2546       | Effects / Balance                  |
 | PRoeleert       | UI                                 |
 | wondible        | Code                               |
@@ -79,21 +82,22 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 ### Committing
 
 1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
-2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes
-3. Fix any MISSING FILE references in the format_json.py output
-4. Use correct casing when referencing files so as to prevent issues on Linux
+2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes.
+3. Fix any MISSING FILE references in the format_json.py output.
+4. Use correct casing when referencing files so as to prevent issues on Linux.
+5. Keep commit subjects concise, use the body to include details.
+6. Make small, single-purpose commits.
+7. Large files not required for the mod to run should be stored using [Git Large File Storage](https://git-lfs.github.com/)
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
 MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-BALANCE - development; forked to RELEASE-x.x.x and FEATURE-_name_
+BALANCE - development; forked to FEATURE-_name_
 
 FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
-
-RELEASE-x.x.x - a version; fixes prior to release are done in this branch; forks from BALANCE and merged into MASTER and BALANCE
 
 ### Units
 

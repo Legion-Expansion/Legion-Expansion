@@ -2,7 +2,7 @@
   "ammo_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_ammo.json",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_torpedo_turret/base_torpedo_turret.json",
-  "exclude_unit_types": "Hover",
+  "exclude_unit_types": "Hover | WaterHover",
   "fire_arc_pitch": 60,
   "idle_aim_delay": 1,
   "max_range": 210,

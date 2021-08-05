@@ -3,20 +3,17 @@
 # needs to shadow for reasons:
 #  - The legion shield needs to have all blocked projectiles be added to the
 #    physics_db
-#  - Any shadowed ammo spec for PA needs to have the effects cannonicalised.
+#  - Any shadowed ammo spec for PA needs to have the effects canonicalised.
 #    (allows More Pew Pew to shadow effects without conflicting with the
 #    server mod, which needs to touch the ammo files)
 #  - Update unit and commander lists
-#  - Update anti entity target lists, to include the legion equivilants, i.e.
+#  - Update anti entity target lists, to include the legion equivalents, i.e.
 #    anti nuke must be able to shoot down the legion nuke missile
 
 import os
 import os.path as path
 import posixpath
 import copy
-
-from datetime import datetime
-from shutil import copyfile
 
 from pa_tools.pa import pafs
 from pa_tools.pa import paths
