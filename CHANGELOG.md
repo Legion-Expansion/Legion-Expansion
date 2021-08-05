@@ -41,6 +41,8 @@
     - Removed underwater vision
   - Patriot
     - Icarus added to priority target list
+  - Purger
+    - Removed underwater vision
   - Shredder
     - Icarus added to priority target list
   - Stoke
