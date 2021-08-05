@@ -35,6 +35,12 @@
       "effect_spec": "/pa/units/sea/l_destroyer/muzzle_flash.pfx socket_main_muzzle"
     }
   },
+  "fx_offsets": [
+    {
+      "filename": "/pa/units/sea/destroyer/destroyer_wake.pfx",
+      "type": "moving_forward"
+    }
+  ],
   "guard_layer": "WL_AnySurface",
   "max_health": 1900,
   "mesh_bounds": [
