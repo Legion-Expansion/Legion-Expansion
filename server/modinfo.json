@@ -18,7 +18,7 @@
   "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
   "display_name": "Legion Expansion",
   "forum": "https://forums.planetaryannihilation.com/threads/rel-legion-expansion-released.71680/",
-  "icon": "https://i.imgur.com/Eal5t9L.png",
+  "icon": "https://raw.githubusercontent.com/Legion-Expansion/Legion-Expansion/balance/icon.png",
   "identifier": "com.pa.legion-expansion-server",
   "scenes": {
     "icon_atlas": [
