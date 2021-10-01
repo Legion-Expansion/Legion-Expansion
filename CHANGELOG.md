@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Removed obsolete reference to load_planet.js
+
 ## v1.21.0 - 2021-08-05
 
 ### General

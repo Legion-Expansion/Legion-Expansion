@@ -20,9 +20,6 @@
     "server_browser": [
       "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
     ],
-    "load_planet": [
-      "coui://ui/mods/com.pa.legion-expansion/load_planet.js"
-    ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
     ],
