@@ -65,8 +65,3 @@
 .mixedui .tooltip-inner {
   box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
 }
-
-.mixedui .span_tooltip_hotkey {
-  border: 1px solid rgba(159, 64, 198, 1) !important;
-  color: rgba(159, 64, 198, 1) !important;
-}
