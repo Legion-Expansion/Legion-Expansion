@@ -1,7 +1,7 @@
 .legionui .div_group_select .bground {
   border: 1px solid #45484d;
   box-shadow: 0 0 10px rgba(158, 0, 0, 0.5);
-  background: linear-gradient(top, #45484d 0%, #000 100%);
+  background: linear-gradient(to top, #45484d 0%, #000 100%);
 }
 
 .legionui .unit_group_menu {
@@ -57,7 +57,7 @@
 .mixedui .div_group_select .bground {
   border: 1px solid #606;
   box-shadow: 0 0 10px rgba(99, 14, 138, 0.5);
-  background: linear-gradient(top, #45484d 0%, #000 100%);
+  background: linear-gradient(to top, #45484d 0%, #000 100%);
 }
 
 .mixedui .unit_group_menu {
