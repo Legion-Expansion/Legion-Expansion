@@ -36,9 +36,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Radar",
       "placement_rules": {
@@ -96,9 +94,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Radar - Need for Ranged",
       "placement_rules": {
@@ -142,9 +138,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Radar - Have none",
       "placement_rules": {

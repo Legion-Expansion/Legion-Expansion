@@ -98,10 +98,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Fabber",
@@ -136,10 +133,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "name": "Legion - Basic Radar Satellite",
       "priority": 100,
@@ -167,10 +161,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "name": "Legion - Basic Radar Satellite - Pri",
       "priority": 102,
@@ -198,10 +189,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "name": "Legion - Basic Radar Satellite - Other planet",
@@ -229,10 +217,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Fighter",
@@ -288,9 +273,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
@@ -316,9 +299,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Lander",
@@ -347,10 +328,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicOrbital",
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "name": "Legion - Probe - Other planet",
@@ -376,9 +354,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "name": "Legion - Orbital Death Laser",
       "priority": 195,
@@ -429,9 +405,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "name": "Legion - Advanced Radar Satellite",
@@ -459,9 +433,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Railgun",
@@ -517,9 +489,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
@@ -548,9 +518,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedOrbital"
-      ],
+      "builders": ["LegionFactoryAdvancedOrbital"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "name": "Legion - Orbital Battleship",

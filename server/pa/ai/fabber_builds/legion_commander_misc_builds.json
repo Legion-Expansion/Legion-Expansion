@@ -15,9 +15,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "instance_count": 1,
       "name": "Legion - Teleport Commander To Planet",
       "priority": 1001,

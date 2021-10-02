@@ -189,9 +189,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "instance_count": 1,
       "name": "Legion - Orbital Dropper",
       "placement_rules": {

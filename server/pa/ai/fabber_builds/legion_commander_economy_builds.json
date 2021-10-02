@@ -40,9 +40,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "instance_count": 1,
       "name": "Legion - Basic Metal Extractor - cdr Desire",
       "placement_rules": {
@@ -82,9 +80,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "max_num_assisters": 3,
@@ -127,9 +123,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "max_num_assisters": 3,

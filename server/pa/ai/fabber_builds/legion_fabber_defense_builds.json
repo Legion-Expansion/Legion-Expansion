@@ -56,9 +56,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Air Defense - Mex",
       "placement_rules": {
@@ -147,9 +145,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Land Defense Single - Mex",
       "placement_rules": {
@@ -228,9 +224,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Air Defense",
       "placement_rules": {
@@ -289,10 +283,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Air Defense - Threat",
       "placement_rules": {
@@ -375,9 +366,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Land Defense Single",
       "placement_rules": {
@@ -441,9 +430,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "instance_count": 1,
       "name": "Legion - Basic Land Defense Single - Threat",
       "placement_rules": {
@@ -516,9 +503,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Land Defense",
       "placement_rules": {
@@ -576,9 +561,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Land Defense - Threat",
       "placement_rules": {
@@ -636,9 +619,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
@@ -729,9 +710,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Naval Defense - Mex",
       "placement_rules": {
@@ -793,9 +772,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Naval Defense",
       "placement_rules": {
@@ -889,10 +866,7 @@
           }
         ]
       ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "instance_count": 1,
       "name": "Legion - Basic Naval Defense - Threat",
       "placement_rules": {
@@ -1560,10 +1534,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "instance_count": 1,
       "name": "Legion - Wall",
       "placement_rules": {
@@ -1622,9 +1593,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberAdvanced"],
       "instance_count": 1,
       "name": "Legion - Shield",
       "placement_rules": {
@@ -1690,9 +1659,7 @@
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberAdvanced"],
       "instance_count": 1,
       "name": "Legion - Shield - Threat",
       "placement_rules": {
