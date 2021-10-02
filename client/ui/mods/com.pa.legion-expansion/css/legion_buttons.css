@@ -33,7 +33,16 @@
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
 }
 
-/* nav pills */
+/* dropdown menus and nav pills */
+.legion .dropdown-menu .text {
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5) !important;
+}
+
+.legion .dropdown-menu {
+  background: rgba(70, 0, 0, 1) !important;
+  border: 1px solid rgba(255, 0, 0, 0.2) !important;
+}
+
 .legion .nav-pills > li > a {
   text-shadow: 0 0 15px rgba(255, 0, 0, 0.6) !important;
 }
@@ -42,17 +51,30 @@
   text-shadow: 0 0 15px rgba(255, 0, 0, 1) !important;
 }
 
+.legion .dropdown-menu > li > a:hover {
+  background: rgba(255, 0, 0, 0.85) !important;
+  border: 1px solid rgba(158, 0, 0, 0.1) !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2) !important;
+}
+
+.legion .dropdown-menu > li > a:focus {
+  background: rgba(255, 0, 0, 0.7) !important;
+  border: 1px solid rgba(158, 0, 0, 0.1) !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2) !important;
+}
+
 .legion .nav-pills > li > a:hover,
+.legion .nav-pills > li.active > a,
 .legion .nav-pills > li.active > a:hover {
   text-shadow: 0 0 15px rgba(255, 0, 0, 1);
 }
-
-.legion .nav-pills > li.active > a,
 .legion .nav-pills > li.active > a:focus {
   text-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
 }
 
 /* input boxes */
+.legion input[type="text"],
+.legion input[type="password"],
 .legion input[type="text"]:disabled,
 .legion input[type="password"]:disabled,
 .legion input[type="number"]:disabled {
@@ -70,8 +92,6 @@
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
 }
 
-.legion input[type="text"],
-.legion input[type="password"],
 .legion .sub_options input[type="number"] {
   background: rgba(70, 0, 0, 1) !important;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1) !important;
@@ -93,28 +113,6 @@
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png)
     26 21 15 21 fill;
   box-shadow: inset 500px 500px 500px 500px #000;
-}
-
-/* dropdown menus */
-.legion .dropdown-menu .text {
-  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5) !important;
-}
-
-.legion .dropdown-menu {
-  background: rgba(70, 0, 0, 1) !important;
-  border: 1px solid rgba(255, 0, 0, 0.2) !important;
-}
-
-.legion .dropdown-menu > li > a:hover {
-  background: rgba(255, 0, 0, 0.85) !important;
-  border: 1px solid rgba(158, 0, 0, 0.1) !important;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2) !important;
-}
-
-.legion .dropdown-menu > li > a:focus {
-  background: rgba(255, 0, 0, 0.7) !important;
-  border: 1px solid rgba(158, 0, 0, 0.1) !important;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2) !important;
 }
 
 /* btn_hero */

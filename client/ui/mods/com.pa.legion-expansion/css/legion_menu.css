@@ -1,3 +1,11 @@
+/* shared */
+.div_game_menu_item {
+  color: white !important;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* legion ui */
+
 .legionui .div_game_menu {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/menu/img_game_menu_bground_legion.png)
     26 26 26 26 fill !important;
@@ -39,10 +47,4 @@
 
 .mixedui .div_game_menu_cont {
   border-bottom: 1px solid rgba(99, 14, 138, 0.5);
-}
-
-/* shared */
-.div_game_menu_item {
-  color: white !important;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4) !important;
 }
