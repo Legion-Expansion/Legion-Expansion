@@ -1,13 +1,13 @@
 .legionui .div_group_select .bground {
   border: 1px solid #45484d;
-  box-shadow: 0px 0px 10px rgba(158, 0, 0, 0.5);
-  background: linear-gradient(top, #45484d 0%, #000000 100%);
+  box-shadow: 0 0 10px rgba(158, 0, 0, 0.5);
+  background: linear-gradient(top, #45484d 0%, #000 100%);
 }
 
 .legionui .unit_group_menu {
   background: #970000;
   border: 1px solid #970030;
-  box-shadow: 0px 0px 20px #000;
+  box-shadow: 0 0 20px #000;
 }
 
 .legionui .unit_group_menu .item {
@@ -18,7 +18,7 @@
 .legionui .unit_group_item {
   border: 1px solid rgba(158, 0, 0, 1);
   color: #fff;
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0 0 10px #000;
 }
 
 .legionui .unit_group_item.disabled {
@@ -43,38 +43,38 @@
 }
 
 .legionui .btn_std_ix:hover {
-  box-shadow: inset 0px 0px 10px #970000 !important;
+  box-shadow: inset 0 0 10px #970000 !important;
   background: rgba(255, 0, 0, 0.8);
   border: 1px solid rgba(158, 0, 0, 0.5) !important;
 }
 
 .legionui .tooltip-inner {
-  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
 }
 
-/*TODO MIXEDUI */
+/* TODO MIXEDUI */
 
 .mixedui .div_group_select .bground {
-  border: 1px solid #660066;
-  box-shadow: 0px 0px 10px rgba(99, 14, 138, 0.5);
-  background: linear-gradient(top, #45484d 0%, #000000 100%);
+  border: 1px solid #606;
+  box-shadow: 0 0 10px rgba(99, 14, 138, 0.5);
+  background: linear-gradient(top, #45484d 0%, #000 100%);
 }
 
 .mixedui .unit_group_menu {
-  background: #660066;
-  border: 1px solid #663399;
-  box-shadow: 0px 0px 20px #000;
+  background: #606;
+  border: 1px solid #639;
+  box-shadow: 0 0 20px #000;
 }
 
 .mixedui .unit_group_menu .item {
-  color: #663399 !important;
-  border: 1px solid #660066;
+  color: #639 !important;
+  border: 1px solid #606;
 }
 
 .mixedui .unit_group_item {
-  border: 1px solid #660066;
+  border: 1px solid #606;
   color: #fff;
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0 0 10px #000;
 }
 
 .mixedui .unit_group_item.disabled {
@@ -82,10 +82,10 @@
 }
 
 .mixedui .unit_group_item .numkey {
-  color: #660066;
+  color: #606;
   background: black;
   text-shadow: none;
-  border: 1px solid #660066;
+  border: 1px solid #606;
 }
 
 .unit_group_item .total {
@@ -95,16 +95,16 @@
 
 .mixedui .active {
   background: rgba(99, 14, 138, 0.5) !important;
-  border: 1px solid #660066 !important;
+  border: 1px solid #606 !important;
 }
 
 .mixedui .btn_std_ix:hover {
-  box-shadow: inset 0px 0px 10px #660066 !important;
-  background: #663399;
-  background: #660066;
+  box-shadow: inset 0 0 10px #606 !important;
+  background: #639;
+  background: #606;
   border: 1px solid rgba(99, 14, 138, 0.5) !important;
 }
 
 .mixedui .tooltip-inner {
-  box-shadow: 0px 0px 20px rgba(99, 14, 138, 0.5) !important;
+  box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
 }

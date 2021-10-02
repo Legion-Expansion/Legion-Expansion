@@ -3,8 +3,8 @@ body.legion {
     center right no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position-x: 0px;
-  background-position-y: 0px;
+  background-position-x: 0;
+  background-position-y: 0;
 }
 
 .legion .background_glow {
