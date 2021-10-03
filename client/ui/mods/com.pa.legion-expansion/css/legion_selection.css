@@ -1,4 +1,3 @@
-/* UNIT STYLE */
 .legion {
   border: 1px solid rgba(255, 0, 0, 1) !important;
   background: rgba(70, 0, 0, 1) !important;
@@ -28,7 +27,6 @@
   box-shadow: 0 0 20px rgba(160, 0, 0, 0.8) !important;
 }
 
-/* STYLES CAUSE COMM IS LEGION OR MIXED */
 .legionui .div_selection_cont {
   border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png)
     35 35 23 35 fill !important;

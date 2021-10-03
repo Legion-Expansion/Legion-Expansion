@@ -1,14 +1,3 @@
-/*
-.legionui .div-metal {
-    border-image: url('img/status_bar/img-econ-bar-left.png') 60 25 0 51 fill;
-}
-
-
-.legionui .div-energy {
-    border-image: url('img/status_bar/img-econ-bar-right.png') 60 51 0 25 fill;
-}
-*/
-
 .legionui .tooltip-inner {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
 }
