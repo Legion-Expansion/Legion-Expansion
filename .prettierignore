@@ -1,2 +1,3 @@
 **/*.json
 !server/pa/ai/**/*.json
+!/*.json
