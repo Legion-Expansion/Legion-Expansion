@@ -4,11 +4,11 @@
 }
 
 .legionui .div_game_menu {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/menu/img_game_menu_bground_legion.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/menu/img_game_menu_bground_legion.png")
     26 26 26 26 fill !important;
 }
 .mixedui .div_game_menu {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/menu/img_game_menu_bground_mixed.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/menu/img_game_menu_bground_mixed.png")
     26 26 26 26 fill !important;
 }
 

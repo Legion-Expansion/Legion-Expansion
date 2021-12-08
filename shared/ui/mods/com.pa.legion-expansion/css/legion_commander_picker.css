@@ -45,38 +45,38 @@
 /* legion commander outlines */
 
 .slot-player.legionslot {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png) 0
-    17 53 17 !important;
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user.png")
+    0 17 53 17 !important;
 }
 
 .slot-player.legionslot.ready {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png")
     0 17 53 17 !important;
 }
 
 .slot-player.legionslot.loading {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked.png")
     0 17 53 17 !important;
 }
 
 .slot-player.mlaslot {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_mla.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_mla.png")
     0 17 53 17 !important;
 }
 
 .slot-player.mlaslot.ready {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png")
     0 17 53 17 !important;
 }
 
 .slot-player.mlaslot.loading {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/ctrl_user_locked_mla.png")
     0 17 53 17 !important;
 }
 
 .slot-player.empty.ready {
-  border-image: url(coui://ui/main/game/new_game/img/ctrl_user_slot.png) 0 17 53
-    17 !important;
+  border-image: url("coui://ui/main/game/new_game/img/ctrl_user_slot.png") 0 17
+    53 17 !important;
 }
 
 .slot-player-commander {

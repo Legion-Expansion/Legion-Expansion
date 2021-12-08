@@ -9,22 +9,22 @@
 }
 
 .legionui .btn_video_scrubber {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_rest.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_rest.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_video_scrubber:hover {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_hover.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_hover.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_video_scrubber:active {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_active.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_scrubber_active.png")
     center center no-repeat !important;
 }
 
 .legionui .div_video_controls_cont {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/img_video_bground.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/img_video_bground.png")
     23 35 35 35 fill !important;
 }
 
@@ -33,12 +33,12 @@
 }
 
 .legionui .btn_play_pause_toggle_pause {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_pause.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_pause.png")
     top center no-repeat !important;
 }
 
 .legionui .btn_play_pause_toggle_play {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_play.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_play.png")
     top center no-repeat !important;
 }
 
@@ -47,32 +47,32 @@
 }
 
 .legionui .btn_speed_control_back0 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back0.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back0.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_speed_control_back1 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back1.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back1.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_speed_control_back2 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back2.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_back2.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_speed_control_fwd0 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd0.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd0.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_speed_control_fwd1 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd1.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd1.png")
     center center no-repeat !important;
 }
 
 .legionui .btn_speed_control_fwd2 {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd2.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_fwd2.png")
     center center no-repeat !important;
 }
 
@@ -83,12 +83,12 @@
 }
 
 .legionui .btn_jump_control_back {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_jump_back.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_jump_back.png")
     center left no-repeat !important;
 }
 
 .legionui .btn_jump_control_fwd {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_jump_fwd.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/video/red/icon_video_jump_fwd.png")
     center right no-repeat !important;
 }
 

@@ -1,11 +1,11 @@
 .legion .div_command_bar,
 .legion .div_orders_bar {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_legion.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_legion.png")
     26 24 26 26 fill !important;
 }
 .mixed .div_command_bar,
 .mixed .div_orders_bar {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_mixed.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_mixed.png")
     26 24 26 26 fill !important;
 }
 

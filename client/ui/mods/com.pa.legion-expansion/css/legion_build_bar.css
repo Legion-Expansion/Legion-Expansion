@@ -1,9 +1,9 @@
 .legion .div_build_bar_menu_cont {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png")
     35 35 23 35 fill !important;
 }
 .mixed .div_build_bar_menu_cont {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png")
     35 35 23 35 fill !important;
 }
 

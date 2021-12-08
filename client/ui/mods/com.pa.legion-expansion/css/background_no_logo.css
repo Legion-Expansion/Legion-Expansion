@@ -1,5 +1,5 @@
 body.legion {
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/splash_no_logo.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/splash_no_logo.png")
     center right no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10,7 +10,7 @@ body.legion {
 .legion .background_glow {
   height: 100%;
   width: 100%;
-  background: url(coui://ui/mods/com.pa.legion-expansion/img/background_glow.png)
+  background: url("coui://ui/mods/com.pa.legion-expansion/img/background_glow.png")
     center center no-repeat transparent;
   opacity: 0.6;
 }

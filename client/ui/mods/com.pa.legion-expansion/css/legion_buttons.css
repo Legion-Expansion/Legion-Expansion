@@ -100,34 +100,34 @@
 
 /* btn_std */
 .legion .btn_std {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png")
     26 21 15 21 fill;
 }
 
 .legion .btn_std:hover {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png")
     26 21 15 21 fill;
 }
 
 .legion .btn_std:active {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png")
     26 21 15 21 fill;
   box-shadow: inset 500px 500px 500px 500px #000;
 }
 
 /* btn_hero */
 .legion .btn_hero {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red.png")
     10 21 21 21 fill;
 }
 
 .legion .btn_hero:hover {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_hover.png")
     10 21 21 21 fill;
 }
 
 .legion .btn_hero:active {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_lrg_red_active.png")
     10 21 21 21 fill;
 }
 
@@ -181,21 +181,21 @@
 
 /* btn_std_gray */
 .legion .btn_std_gray {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png")
     44 17 0 17 fill;
 }
 
 .legion .btn_std_gray:hover {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_hover.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_hover.png")
     44 17 0 17 fill;
 }
 
 .legion .btn_std_gray:active {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_active.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_std_red_active.png")
     44 17 0 17 fill;
 }
 
 .legion .btn_std_gray_disabled {
-  border-image: url(coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png)
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/btn_std_red.png")
     44 17 0 17 fill;
 }
