@@ -4,6 +4,12 @@
     "color-function-notation": "legacy",
     "alpha-value-notation": "number",
     "selector-class-pattern": "^([a-z][a-z0-9]*)((_|-)[a-z0-9]+)*$",
-    "selector-id-pattern": "^([a-z][a-z0-9]*)((_|-)[a-z0-9]+)*$"
+    "selector-id-pattern": "^([a-z][a-z0-9]*)((_|-)[a-z0-9]+)*$",
+    "property-no-vendor-prefix": [
+      true,
+      {
+        "ignoreProperties": ["mask-image"]
+      }
+    ]
   }
 }
