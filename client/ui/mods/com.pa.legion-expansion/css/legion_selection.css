@@ -31,6 +31,7 @@
   border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png")
     35 35 23 35 fill !important;
 }
+
 .mixedui .div_selection_cont {
   border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png")
     35 35 23 35 fill !important;
@@ -40,6 +41,7 @@
   box-shadow: 0 0 50px rgba(158, 0, 0, 0.5) !important;
   border: 1px solid rgba(160, 0, 0, 0.8) !important;
 }
+
 .mixedui .div_selection_cont .wrapper {
   box-shadow: 0 0 50px rgba(99, 14, 138, 0.5) !important;
   border: 1px solid rgba(97, 14, 138, 0.5) !important;
@@ -50,6 +52,7 @@
   background: rgba(0, 20, 30, 1);
   box-shadow: inset 0 0 8px rgba(255, 18, 18, 0.5) !important;
 }
+
 .mixedui .div_unit_selection {
   border: 1px solid rgba(160, 0, 0, 0.8) !important;
   background: rgba(0, 20, 30, 1);
@@ -60,6 +63,7 @@
   border: 1px solid rgba(160, 0, 0, 0.8) !important;
   background: rgba(160, 0, 0, 0.8) !important;
 }
+
 .mixedui .div_unit_selection:hover {
   border: 1px solid rgba(160, 0, 0, 0.8) !important;
   background: rgba(160, 0, 0, 0.8) !important;
@@ -69,6 +73,7 @@
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
   background: rgba(255, 0, 0, 0.8) !important;
 }
+
 .mixedui .div_unit_selection:active {
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
   background: rgba(255, 0, 0, 0.8) !important;
@@ -77,6 +82,7 @@
 .legionui .summary_bar {
   border-top: 1px solid rgba(255, 0, 0, 0.8);
 }
+
 .mixedui .summary_bar {
   border-top: 1px solid rgba(255, 0, 0, 0.8);
 }
@@ -84,6 +90,7 @@
 .legionui .unit_total {
   text-shadow: 0 0 10px rgba(160, 0, 0, 0.8);
 }
+
 .mixedui .unit_total {
   text-shadow: 0 0 10px rgba(160, 0, 0, 0.8);
 }
@@ -93,6 +100,7 @@
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
   color: rgba(160, 0, 0, 0.8) !important;
 }
+
 .mixedui .summary_category.btn_std_ix {
   text-shadow: rgba(160, 0, 0, 0.8) !important;
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
