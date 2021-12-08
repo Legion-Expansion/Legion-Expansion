@@ -83,34 +83,6 @@ body.legion {
   border: 1px solid rgba(158, 0, 0, 0.1) !important;
 }
 
-.legionplayerOpen {
-  position: fixed;
-  left: 10%;
-  top: 10%;
-  width: 80%; /* really css */
-  height: 80%;
-  z-index: 11111;
-
-  /* background-color: black; */
-  border: none;
-}
-
-.legionplayerClosed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 1%;
-  height: 1%;
-  z-index: -11111;
-  border: none;
-}
-
-#legionplayer {
-  outline: 1.5px solid rgba(110, 0, 0, 1);
-  outline-offset: -1px;
-  box-shadow: 0 0 25px rgba(240, 0, 0, 0.3);
-}
-
 .legion .tooltip-inner {
   max-width: 190px !important;
   padding: 6px 8px;
