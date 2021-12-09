@@ -57,19 +57,11 @@ if (!legionExpansionLoaded) {
       });
 
       model.isLegion = ko.computed(function () {
-        if (model.isLegionOrMixedOrVanilla() === "legion") {
-          return true;
-        } else {
-          return false;
-        }
+        if (model.isLegionOrMixedOrVanilla() === "legion") return true;
       });
 
       model.isMixed = ko.computed(function () {
-        if (model.isLegionOrMixedOrVanilla() === "mixed") {
-          return true;
-        } else {
-          return false;
-        }
+        if (model.isLegionOrMixedOrVanilla() === "mixed") return true;
       });
 
       model.legionstart = ko.observable(false);

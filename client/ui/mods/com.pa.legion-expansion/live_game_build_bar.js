@@ -102,19 +102,11 @@ if (!legionExpansionLoaded) {
         };
 
         model.isLegion = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "legion") {
-            return true;
-          } else {
-            return false;
-          }
+          if (model.isLegionOrMixedOrVanilla(data) === "legion") return true;
         };
 
         model.isMixed = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "mixed") {
-            return true;
-          } else {
-            return false;
-          }
+          if (model.isLegionOrMixedOrVanilla(data) === "mixed") return true;
         };
 
         //ADD legion / mixed ui
