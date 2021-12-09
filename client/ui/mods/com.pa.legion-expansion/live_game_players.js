@@ -149,10 +149,6 @@ if (!legionExpansionLoaded) {
       model.commanderImage = function (d) {
         var result = "";
         switch (model.checkCommanders(d.commanders)) {
-          case "vanilla":
-            result =
-              "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png";
-            break;
           case "legion":
             result =
               "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
