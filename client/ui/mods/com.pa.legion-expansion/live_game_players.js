@@ -145,7 +145,6 @@ if (!legionExpansionLoaded) {
         );
       }
 
-      //COMMANDER IMAGE
       model.commanderImage = function (d) {
         var result = "";
         switch (model.checkCommanders(d.commanders)) {
