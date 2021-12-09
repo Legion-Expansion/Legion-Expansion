@@ -166,19 +166,11 @@ if (!legionExpansionLoaded) {
       };
 
       model.commanderImageMaskLeg = function (d) {
-        if (model.checkCommanders(d.commanders) === "legion") {
-          return true;
-        } else {
-          return false;
-        }
+        if (model.checkCommanders(d.commanders) === "legion") return true;
       };
 
       model.commanderImageMaskMix = function (d) {
-        if (model.checkCommanders(d.commanders) === "mixed") {
-          return true;
-        } else {
-          return false;
-        }
+        if (model.checkCommanders(d.commanders) === "mixed") return true;
       };
 
       $(
