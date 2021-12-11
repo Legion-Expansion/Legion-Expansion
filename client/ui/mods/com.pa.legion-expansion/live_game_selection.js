@@ -67,7 +67,7 @@ if (!legionLiveGameSelectionLoaded) {
         model.typeArray = ko.computed(function () {
           var group = model.selectionTypeCounts();
 
-          var result = _.compact(
+          return _.compact(
             _.map(model.types(), function (element) {
               if (!group[element]) return null;
 
@@ -78,8 +78,6 @@ if (!legionLiveGameSelectionLoaded) {
               };
             })
           );
-
-          return result;
         });
       };
     } catch (e) {
