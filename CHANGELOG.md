@@ -2,9 +2,9 @@
 
 ## Unreleased
 
-### Bugfix
+### Fixed
 
-- Removed obsolete scene loads
+- Obsolete scene loads
 
 ## v1.21.0 - 2021-08-05
 
