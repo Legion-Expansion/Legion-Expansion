@@ -8,7 +8,6 @@ if (!legionLiveGameSelectionLoaded) {
       var themesetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themesetting === "ON") {
-        //LOAD CUSTOM LEGION CSS
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css"
         );

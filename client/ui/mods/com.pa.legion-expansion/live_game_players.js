@@ -5,7 +5,6 @@ if (!legionLiveGamePlayersLoaded) {
 
   function legionLiveGamePlayers() {
     try {
-      //LOAD CUSTOM LEGION CSS
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
