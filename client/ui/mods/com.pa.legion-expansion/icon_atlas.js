@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionIconAtlasLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionIconAtlasLoaded) {
+  legionIconAtlasLoaded = true;
 
   try {
     model
