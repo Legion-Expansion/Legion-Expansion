@@ -15,9 +15,9 @@ if (!legionLiveGameOptionsBarLoaded) {
           ]).length > 0;
         if (legionServerLoaded) {
           $(".div_ingame_options_bar_cont").prepend(
-            "<div class='watermark'><loc>Legion</loc>&nbsp;#.##.#</div>"
+            "<div id='legion_watermark' class='watermark'><loc>Legion</loc>&nbsp;#.##.#</div>"
           );
-          locUpdateDocument();
+          locTree($("#legion_watermark"));
         }
       });
 

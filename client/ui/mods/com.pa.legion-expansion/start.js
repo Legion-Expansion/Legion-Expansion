@@ -15,7 +15,7 @@ if (!legionStartLoaded) {
       $("div.view_intro:contains(View Intro)").after(
         loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html")
       );
-      locUpdateDocument();
+      locTree($("#legion_intro"));
 
       $("div.div_watermarks").css("bottom", "95px");
 

@@ -16,6 +16,7 @@
     "_": "readonly",
     "loc": "readonly",
     "locUpdateDocument": "readonly",
+    "locTree": "readonly",
     "ko": "readonly",
     "engine": "readonly",
     "loadCSS": "readonly",
