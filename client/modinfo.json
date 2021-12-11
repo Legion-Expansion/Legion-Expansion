@@ -17,9 +17,6 @@
   "icon": "https://raw.githubusercontent.com/Legion-Expansion/Legion-Expansion/balance/icon.png",
   "identifier": "com.pa.legion-expansion-client",
   "scenes": {
-    "server_browser": [
-      "coui://ui/mods/com.pa.legion-expansion/server_browser.js"
-    ],
     "settings": [
       "coui://ui/mods/com.pa.legion-expansion/settings.js"
     ],
