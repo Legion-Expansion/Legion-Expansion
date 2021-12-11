@@ -5,19 +5,19 @@ if (!legionStartLoaded) {
 
   function legionStart() {
     try {
-      $("div.view_intro:contains(View Intro)").after(
-        loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html")
-      );
-      locUpdateDocument();
-
-      $("div.div_watermarks").css("bottom", "95px");
-
       model.legionPlayVideo = function () {
         engine.call(
           "web.launchPage",
           "https://gaming.youtube.com/embed/aqzdPnJfKMo?autoplay=1"
         );
       };
+
+      $("div.view_intro:contains(View Intro)").after(
+        loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html")
+      );
+      locUpdateDocument();
+
+      $("div.div_watermarks").css("bottom", "95px");
 
       var themesetting =
         api.settings.isSet("ui", "legionMenuThemeFunction", true) || "ON";
