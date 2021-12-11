@@ -35,7 +35,6 @@ if (!legionLiveGameOptionsBarLoaded) {
 
       handlers.legionui = function (payload) {
         console.log("SET UI : " + payload);
-        //temporary watermark
 
         if (payload === "legion") {
           $(".body_panel").addClass("legionui");
