@@ -27,7 +27,7 @@ if (!legionStartLoaded) {
       model.navToLegionGuide2 = function () {
         engine.call(
           "web.launchPage",
-          "http://exodusesports.com/article/legion-expansion-community-faction-mod/"
+          "https://planetaryannihilation.com/guides/legion-expansion-community-faction-mod/"
         );
         model.showLegionGuidesMenu(false);
       };
