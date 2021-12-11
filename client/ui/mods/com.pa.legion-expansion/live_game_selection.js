@@ -51,24 +51,6 @@ if (!legionLiveGameSelectionLoaded) {
               ".png"
             );
           };
-
-          model.typeArray = ko.computed(function () {
-            var group = model.selectionTypeCounts();
-
-            var result = _.compact(
-              _.map(model.types(), function (element) {
-                if (!group[element]) return null;
-
-                return {
-                  type: element,
-                  count: group[element],
-                  source: imageSourceForType(element),
-                };
-              })
-            );
-
-            return result;
-          });
         }
         if (payload === "mixed") {
           $(".body_panel").addClass("mixedui");
@@ -80,25 +62,25 @@ if (!legionLiveGameSelectionLoaded) {
               ".png"
             );
           };
-
-          model.typeArray = ko.computed(function () {
-            var group = model.selectionTypeCounts();
-
-            var result = _.compact(
-              _.map(model.types(), function (element) {
-                if (!group[element]) return null;
-
-                return {
-                  type: element,
-                  count: group[element],
-                  source: imageSourceForType(element),
-                };
-              })
-            );
-
-            return result;
-          });
         }
+
+        model.typeArray = ko.computed(function () {
+          var group = model.selectionTypeCounts();
+
+          var result = _.compact(
+            _.map(model.types(), function (element) {
+              if (!group[element]) return null;
+
+              return {
+                type: element,
+                count: group[element],
+                source: imageSourceForType(element),
+              };
+            })
+          );
+
+          return result;
+        });
       };
     } catch (e) {
       console.log(e);
