@@ -6,7 +6,7 @@ if (!legionStartLoaded) {
   function legionStart() {
     try {
       $("div.view_intro:contains(View Intro)").after(
-        '<div class="btn_std_ix view_intro" style="display: flex; text-align: center; flex-grow: 1; justify-content: center; flex-direction: column" data-bind="click: legionPlayVideo, click_sound: \'default\', rollover_sound: \'default\'"><loc>Legion Intro</loc></div>'
+        loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html")
       );
       locUpdateDocument();
 
