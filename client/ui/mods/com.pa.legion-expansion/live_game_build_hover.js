@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGameBuildHoverLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGameBuildHoverLoaded) {
+  legionLiveGameBuildHoverLoaded = true;
 
   function legionLiveGameBuildHover() {
     try {

@@ -5,6 +5,7 @@
 ### Fixed
 
 - Obsolete scene loads
+- Some Legion theme elements not being loaded
 
 ## v1.21.0 - 2021-08-05
 

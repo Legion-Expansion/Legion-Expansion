@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionSharedBuildLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionSharedBuildLoaded) {
+  legionSharedBuildLoaded = true;
 
   try {
     if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
@@ -199,11 +199,8 @@ if (!legionExpansionLoaded) {
           { row: 2, column: 3, titans: true },
         ],
 
-        "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.json": [
-          "L_vehicle",
-          6,
-          { row: 1, column: 0, titans: true },
-        ],
+        "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.json":
+          ["L_vehicle", 6, { row: 1, column: 0, titans: true }],
         "/pa/units/land/l_tank_laser_adv/l_tank_laser_adv.json": [
           "L_vehicle",
           7,
@@ -254,11 +251,8 @@ if (!legionExpansionLoaded) {
           16,
           { row: 2, column: 4, titans: true },
         ],
-        "/pa/units/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat.json": [
-          "L_vehicle",
-          17,
-          { row: 2, column: 5, titans: true },
-        ],
+        "/pa/units/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat.json":
+          ["L_vehicle", 17, { row: 2, column: 5, titans: true }],
 
         "/pa/units/land/l_bot_support_commander/l_bot_support_commander.json": [
           "L_bot",
@@ -326,11 +320,8 @@ if (!legionExpansionLoaded) {
           { row: 2, column: 5, titans: true },
         ],
 
-        "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json": [
-          "L_air",
-          6,
-          { row: 1, column: 0, titans: true },
-        ],
+        "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json":
+          ["L_air", 6, { row: 1, column: 0, titans: true }],
         "/pa/units/air/l_fighter_adv/l_fighter_adv.json": [
           "L_air",
           7,
@@ -417,11 +408,8 @@ if (!legionExpansionLoaded) {
           9,
           { row: 1, column: 3, titans: true },
         ],
-        "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.json": [
-          "L_sea",
-          10,
-          { row: 1, column: 4, titans: true },
-        ],
+        "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.json":
+          ["L_sea", 10, { row: 1, column: 4, titans: true }],
         "/pa/units/sea/l_fabrication_ship/l_fabrication_ship.json": [
           "L_sea",
           12,
@@ -483,11 +471,8 @@ if (!legionExpansionLoaded) {
           14,
           { row: 2, column: 2, titans: true },
         ],
-        "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json": [
-          "L_orbital",
-          12,
-          { row: 2, column: 0, titans: true },
-        ],
+        "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json":
+          ["L_orbital", 12, { row: 2, column: 0, titans: true }],
         "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter.json": [
           "L_orbital",
           13,

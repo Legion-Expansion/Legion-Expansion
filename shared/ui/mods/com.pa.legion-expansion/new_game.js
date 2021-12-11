@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionNewGameLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionNewGameLoaded) {
+  legionNewGameLoaded = true;
 
   function legionNewGame() {
     try {

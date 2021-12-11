@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionSettingsLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionSettingsLoaded) {
+  legionSettingsLoaded = true;
 
   function legionSettings() {
     try {

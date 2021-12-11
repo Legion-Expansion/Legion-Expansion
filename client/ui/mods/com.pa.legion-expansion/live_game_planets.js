@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGamePlanetsLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGamePlanetsLoaded) {
+  legionLiveGamePlanetsLoaded = true;
 
   function legionLiveGamePlanets() {
     try {

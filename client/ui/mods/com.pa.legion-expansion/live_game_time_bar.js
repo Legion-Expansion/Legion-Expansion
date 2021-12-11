@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGameTimeBarLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGameTimeBarLoaded) {
+  legionLiveGameTimeBarLoaded = true;
 
   function legionLiveGameTimeBar() {
     try {

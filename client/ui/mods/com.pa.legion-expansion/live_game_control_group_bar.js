@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGameControlGroupLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGameControlGroupLoaded) {
+  legionLiveGameControlGroupLoaded = true;
 
   function legionLiveGameControlGroup() {
     try {

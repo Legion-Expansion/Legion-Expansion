@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGameSandboxLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGameSandboxLoaded) {
+  legionLiveGameSandboxLoaded = true;
 
   try {
     if (model.baseGroups) {

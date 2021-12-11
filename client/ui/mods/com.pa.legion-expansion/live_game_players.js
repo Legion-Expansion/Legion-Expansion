@@ -1,7 +1,7 @@
-var legionExpansionLoaded;
+var legionLiveGamePlayersLoaded;
 
-if (!legionExpansionLoaded) {
-  legionExpansionLoaded = true;
+if (!legionLiveGamePlayersLoaded) {
+  legionLiveGamePlayersLoaded = true;
 
   function legionLiveGamePlayers() {
     try {
