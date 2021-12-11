@@ -8,7 +8,6 @@ if (!legionLiveGameActionBarLoaded) {
       var themesetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themesetting === "ON") {
-        //LOAD CUSTOM LEGION ACTIONBAR CSS
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css"
         );

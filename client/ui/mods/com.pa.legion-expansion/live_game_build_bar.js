@@ -63,7 +63,6 @@ if (!legionLiveGameBuildBarLoaded) {
       var themesetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themesetting === "ON") {
-        //LOAD CUSTOM LEGION BUILDBAR CSS
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css"
         );
