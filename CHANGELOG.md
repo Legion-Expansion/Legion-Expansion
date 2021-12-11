@@ -4,7 +4,7 @@
 
 ### Bugfix
 
-- Removed obsolete reference to load_planet.js
+- Removed obsolete scene loads
 
 ## v1.21.0 - 2021-08-05
 
