@@ -37,8 +37,9 @@ if (!legionNewGameLoaded) {
         };
 
         model.legionUrlClicked = function (data, event) {
-          if (_.has(event, "target.href"))
+          if (_.has(event, "target.href")) {
             model.legionOpenUrl(event.target.href);
+          }
         };
 
         model.legionOpenUrl = function (url) {
@@ -80,16 +81,18 @@ if (!legionNewGameLoaded) {
           model.legionClientModLoaded(legionClientLoaded);
 
           if (!legionClientLoaded) {
-            if (model.registerHoldReady)
+            if (model.registerHoldReady) {
               model.registerHoldReady(
                 "com.pa.legion-expansion-client",
                 "Legion Client Mod Missing"
               );
-            if (model.localChatMessage)
+            }
+            if (model.localChatMessage) {
               model.localChatMessage(
                 "Legion Expansion",
                 "Legion Expansion client mod is not installed!"
               );
+            }
           }
 
           if (!model.legionDoNotShowWelcome() && !model.returnFromLoad()) {

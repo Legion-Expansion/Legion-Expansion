@@ -39,11 +39,15 @@ if (!legionLiveGameActionBarLoaded) {
         };
 
         model.isLegion = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "legion") return true;
+          if (model.isLegionOrMixedOrVanilla(data) === "legion") {
+            return true;
+          }
         };
 
         model.isMixed = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "mixed") return true;
+          if (model.isLegionOrMixedOrVanilla(data) === "mixed") {
+            return true;
+          }
         };
 
         //ADD legion class to build_bar_menu

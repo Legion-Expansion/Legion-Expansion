@@ -27,6 +27,7 @@
   "plugins": ["lodash"],
   "rules": {
     "no-inner-declarations": "off",
-    "lodash/prefer-lodash-method": 0
+    "lodash/prefer-lodash-method": 0,
+    "curly": [2, "all"]
   }
 }

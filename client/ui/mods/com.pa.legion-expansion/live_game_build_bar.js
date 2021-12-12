@@ -22,7 +22,9 @@ if (!legionLiveGameBuildBarLoaded) {
 
       ko.computed(function () {
         var buildSet = model.buildSet();
-        if (!buildSet) return;
+        if (!buildSet) {
+          return;
+        }
         var hotkeys = model.hotkeys();
         var groups = buildSet.tabsByGroup();
 
@@ -54,11 +56,15 @@ if (!legionLiveGameBuildBarLoaded) {
             console.debug(tab.buildGroup());
             return tab.visible() && tab.buildGroup() === group;
           });
-        if (tabs.length < 1) return;
+        if (tabs.length < 1) {
+          return;
+        }
         group = tabs[0].group();
 
         model.activeBuildGroup(group);
-        if (locked) model.activeBuildGroupLocked(locked);
+        if (locked) {
+          model.activeBuildGroupLocked(locked);
+        }
       };
 
       var themesetting =
@@ -100,11 +106,15 @@ if (!legionLiveGameBuildBarLoaded) {
         };
 
         model.isLegion = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "legion") return true;
+          if (model.isLegionOrMixedOrVanilla(data) === "legion") {
+            return true;
+          }
         };
 
         model.isMixed = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "mixed") return true;
+          if (model.isLegionOrMixedOrVanilla(data) === "mixed") {
+            return true;
+          }
         };
 
         //ADD legion / mixed ui

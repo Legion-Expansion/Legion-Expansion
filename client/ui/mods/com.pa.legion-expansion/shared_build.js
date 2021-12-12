@@ -4,7 +4,7 @@ if (!legionSharedBuildLoaded) {
   legionSharedBuildLoaded = true;
 
   try {
-    if (_.has(Build, "HotkeyModel.SpecIdToGridMap"))
+    if (_.has(Build, "HotkeyModel.SpecIdToGridMap")) {
       _.assign(Build.HotkeyModel.SpecIdToGridMap, {
         "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
           "L_factory",
@@ -546,6 +546,7 @@ if (!legionSharedBuildLoaded) {
           { row: 0, column: 0, titans: true },
         ],
       });
+    }
   } catch (e) {
     console.log(e);
     console.log(JSON.stringify(e));

@@ -54,11 +54,15 @@ if (!legionLiveGamePlayersLoaded) {
       });
 
       model.isLegion = ko.computed(function () {
-        if (model.isLegionOrMixedOrVanilla() === "legion") return true;
+        if (model.isLegionOrMixedOrVanilla() === "legion") {
+          return true;
+        }
       });
 
       model.isMixed = ko.computed(function () {
-        if (model.isLegionOrMixedOrVanilla() === "mixed") return true;
+        if (model.isLegionOrMixedOrVanilla() === "mixed") {
+          return true;
+        }
       });
 
       model.legionstart = ko.observable(false);
@@ -155,11 +159,15 @@ if (!legionLiveGamePlayersLoaded) {
       };
 
       model.commanderImageMaskLeg = function (d) {
-        if (model.checkCommanders(d.commanders) === "legion") return true;
+        if (model.checkCommanders(d.commanders) === "legion") {
+          return true;
+        }
       };
 
       model.commanderImageMaskMix = function (d) {
-        if (model.checkCommanders(d.commanders) === "mixed") return true;
+        if (model.checkCommanders(d.commanders) === "mixed") {
+          return true;
+        }
       };
 
       $(

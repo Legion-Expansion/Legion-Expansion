@@ -68,7 +68,9 @@ if (!legionLiveGameSelectionLoaded) {
 
           return _.compact(
             _.map(model.types(), function (element) {
-              if (!group[element]) return null;
+              if (!group[element]) {
+                return null;
+              }
 
               return {
                 type: element,
