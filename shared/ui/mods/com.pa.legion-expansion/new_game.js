@@ -105,13 +105,6 @@ if (!legionNewGameLoaded) {
         // eslint-disable-next-line no-undef
         var legioncommanders = legionglobal.commanders;
 
-        model.isNotLegion = function (commander, isEmpty) {
-          if (!isEmpty) {
-            return !_.includes(legioncommanders, commander);
-          }
-          return true;
-        };
-
         model.isMLA = function (commander, isEmpty) {
           if (!isEmpty) {
             return !_.includes(legioncommanders, commander);
@@ -122,17 +115,17 @@ if (!legionNewGameLoaded) {
         //Style Commander Picker Legion
         $("#commander-picker .div-commander-picker-item.btn_std_ix").attr(
           "data-bind",
-          "css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'"
+          "css: {legioncommander: !model.isMLA($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'"
         );
         $("#ai-commander-picker .div-commander-picker-item.btn_std_ix").attr(
           "data-bind",
-          "css: {legioncommander: !model.isNotLegion($data)}, click: function () { model.setAICommander(model.selectedAI(), $data) }, click_sound: 'default', rollover_sound: 'default'"
+          "css: {legioncommander: !model.isMLA($data)}, click: function () { model.setAICommander(model.selectedAI(), $data) }, click_sound: 'default', rollover_sound: 'default'"
         );
 
         //Style Slot Legion
         $(".slot-player").attr(
           "data-bind",
-          "css: {legionslot: !model.isNotLegion($data.commander(),$data.isEmpty()), mlaslot: model.isMLA($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}"
+          "css: {legionslot: !model.isMLA($data.commander(),$data.isEmpty()), mlaslot: model.isMLA($data.commander(),$data.isEmpty()), ready: isReady, loading: isLoading}"
         );
       };
 
