@@ -24,7 +24,7 @@ if (!legionLiveGameActionBarLoaded) {
               }
               specslength++;
             });
-            if (legioncount == specslength) {
+            if (legioncount === specslength) {
               return "legion";
             } else {
               if (legioncount > 0 && legioncount < specslength) {

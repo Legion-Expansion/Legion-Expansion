@@ -51,7 +51,8 @@ if (!legionLiveGameBuildBarLoaded) {
           .buildSet()
           .tabs()
           .filter(function (tab) {
-            return tab.visible() && tab.buildGroup() == group;
+            console.debug(tab.buildGroup());
+            return tab.visible() && tab.buildGroup() === group;
           });
         if (tabs.length < 1) return;
         group = tabs[0].group();
@@ -84,7 +85,7 @@ if (!legionLiveGameBuildBarLoaded) {
               }
               specslength++;
             });
-            if (legioncount == specslength) {
+            if (legioncount === specslength) {
               return "legion";
             } else {
               if (legioncount > 0 && legioncount < specslength) {
