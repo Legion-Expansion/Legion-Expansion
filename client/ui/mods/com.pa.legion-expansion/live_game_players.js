@@ -57,12 +57,14 @@ if (!legionLiveGamePlayersLoaded) {
         if (model.isLegionOrMixedOrVanilla() === "legion") {
           return true;
         }
+        return false;
       });
 
       model.isMixed = ko.computed(function () {
         if (model.isLegionOrMixedOrVanilla() === "mixed") {
           return true;
         }
+        return false;
       });
 
       model.legionstart = ko.observable(false);
@@ -162,12 +164,14 @@ if (!legionLiveGamePlayersLoaded) {
         if (model.checkCommanders(d.commanders) === "legion") {
           return true;
         }
+        return false;
       };
 
       model.commanderImageMaskMix = function (d) {
         if (model.checkCommanders(d.commanders) === "mixed") {
           return true;
         }
+        return false;
       };
 
       $(

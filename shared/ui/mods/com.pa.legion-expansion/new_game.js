@@ -108,15 +108,15 @@ if (!legionNewGameLoaded) {
         model.isNotLegion = function (commander, isEmpty) {
           if (!isEmpty) {
             return !_.includes(legioncommanders, commander);
-          } else {
-            return true;
           }
+          return true;
         };
 
         model.isMLA = function (commander, isEmpty) {
           if (!isEmpty) {
             return !_.includes(legioncommanders, commander);
           }
+          return true;
         };
 
         //Style Commander Picker Legion
