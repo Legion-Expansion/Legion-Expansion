@@ -26,12 +26,10 @@ if (!legionLiveGameActionBarLoaded) {
             });
             if (legioncount === specslength) {
               return "legion";
+            } else if (legioncount > 0 && legioncount < specslength) {
+              return "mixed";
             } else {
-              if (legioncount > 0 && legioncount < specslength) {
-                return "mixed";
-              } else {
-                return "vanilla";
-              }
+              return "vanilla";
             }
           } catch (e) {
             console.log(e);
