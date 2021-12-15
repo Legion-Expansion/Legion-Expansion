@@ -85,30 +85,18 @@ if (!legionLiveGamePlayersLoaded) {
             var colour = "";
 
             var toggleImage = function (open) {
+              var imgPath =
+                "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+              var path = imgPath.concat(colour);
+
               $(
                 'img[src="coui://ui/main/shared/img/controls/pin_open.png"]'
-              ).attr(
-                "src",
-                "coui://ui/mods/com.pa.legion-expansion/img/controls/" +
-                  colour +
-                  "/pin_open.png"
-              );
+              ).attr("src", path + "/pin_open.png");
               $(
                 'img[src="coui://ui/main/shared/img/controls/pin_closed.png"]'
-              ).attr(
-                "src",
-                "coui://ui/mods/com.pa.legion-expansion/img/controls/" +
-                  colour +
-                  "/pin_closed.png"
-              );
+              ).attr("src", path + "/pin_closed.png");
 
-              return open
-                ? "coui://ui/mods/com.pa.legion-expansion/img/controls/" +
-                    colour +
-                    "/pin_open.png"
-                : "coui://ui/mods/com.pa.legion-expansion/img/controls/" +
-                    colour +
-                    "/pin_closed.png";
+              return open ? path + "/pin_open.png" : path + "/pin_closed.png";
             };
 
             if (ui === "legion") {
