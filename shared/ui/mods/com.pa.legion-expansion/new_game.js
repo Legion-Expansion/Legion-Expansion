@@ -103,7 +103,7 @@ if (!legionNewGameLoaded) {
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         // eslint-disable-next-line no-undef
-        var legioncommanders = legionglobal.commanders;
+        var legioncommanders = legionGlobal.commanders;
 
         model.isMLA = function (commander, isEmpty) {
           if (!isEmpty) {

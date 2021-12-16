@@ -77,7 +77,7 @@ if (!legionLiveGameBuildBarLoaded) {
 
         //see global.js
         // eslint-disable-next-line no-undef
-        var legionspecids = legionglobal.builders;
+        var legionspecids = legionGlobal.builders;
 
         model.isLegionOrMixedOrVanilla = function (data) {
           try {
