@@ -82,41 +82,28 @@ if (!legionLiveGamePlayersLoaded) {
             api.Panel.message("time_bar", "legionui", ui);
             api.Panel.message("menu", "legionui", ui);
 
-            var colour = "";
+            require([
+              "coui://ui/mods/com.pa.legion-expansion/legion_common_functions.js",
+            ], function (common) {
+              var src = "img[src='coui://ui/main/shared/img/controls";
+              var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+              var colour = common.uiColour();
+              var png1 = "/pin_open.png";
+              var png2 = "/pin_closed.png";
 
-            var toggleImage = function (open) {
-              var imgPath =
-                "coui://ui/mods/com.pa.legion-expansion/img/controls/";
-              var path = imgPath.concat(colour);
+              var panelPath = function (panel) {
+                return panel ? path + colour + png1 : path + colour + png2;
+              };
 
-              $(
-                'img[src="coui://ui/main/shared/img/controls/pin_open.png"]'
-              ).attr("src", path + "/pin_open.png");
-              $(
-                'img[src="coui://ui/main/shared/img/controls/pin_closed.png"]'
-              ).attr("src", path + "/pin_closed.png");
-
-              return open ? path + "/pin_open.png" : path + "/pin_closed.png";
-            };
-
-            if (ui === "legion") {
-              colour = "red";
               model.playerPanelToggleImage = ko.computed(function () {
-                return toggleImage(model.showPlayerListPanel());
+                common.toggleImage(src, path, colour, png1, png2);
+                return panelPath(model.showPlayerListPanel());
               });
               model.spectatorPanelToggleImage = ko.computed(function () {
-                return toggleImage(model.showSpectatorPanel());
+                common.toggleImage(src, path, colour, png1, png2);
+                return panelPath(model.showSpectatorPanel());
               });
-            }
-            if (ui === "mixed") {
-              colour = "purple";
-              model.playerPanelToggleImage = ko.computed(function () {
-                return toggleImage(model.showPlayerListPanel());
-              });
-              model.spectatorPanelToggleImage = ko.computed(function () {
-                return toggleImage(model.showSpectatorPanel());
-              });
-            }
+            });
           }
           model.legionstart(true);
         }
