@@ -377,11 +377,6 @@ if (!legionSharedBuildLoaded) {
           11,
           { row: 1, column: 5, titans: true },
         ],
-        "/pa/units/air/l_air_scout_adv/l_vision/l_vision.json": [
-          "L_air",
-          0,
-          { row: 0, column: 0, titans: true },
-        ],
 
         "/pa/units/sea/l_hover_ship/l_hover_ship.json": [
           "L_sea",
