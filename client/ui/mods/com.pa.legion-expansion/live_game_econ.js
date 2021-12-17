@@ -9,16 +9,8 @@ if (!legionLiveGameEconLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themesetting === "ON") {
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_econ.css");
+        loadScript("coui://ui/mods/com.pa.legion-expansion/common_handlers.js");
       }
-      handlers.legionui = function (payload) {
-        console.log("SET UI : " + payload);
-        if (payload === "legion") {
-          $(".body_panel").addClass("legionui");
-        }
-        if (payload === "mixed") {
-          $(".body_panel").addClass("mixedui");
-        }
-      };
     } catch (e) {
       console.log(e);
       console.log(JSON.stringify(e));
