@@ -14,44 +14,37 @@ if (!legionLiveGamePlanetsLoaded) {
       }
 
       handlers.legionui = function (payload) {
+        if (payload === "vanilla") {
+          return null;
+        }
+
+        var colour = "";
+
         if (payload === "legion") {
           $(".body_panel").addClass("legionui");
-
-          model.toggleImage = ko.computed(function () {
-            return model.showCelestialViewModels()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png";
-          });
-          $('img[src="coui://ui/main/shared/img/controls/pin_open.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_open.png"
-          );
-          $(
-            'img[src="coui://ui/main/shared/img/controls/pin_closed.png"]'
-          ).attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/controls/red/pin_closed.png"
-          );
-        }
-        if (payload === "mixed") {
+          colour = "red";
+        } else {
           $(".body_panel").addClass("mixedui");
+          colour = "purple";
+        }
+
+        require([
+          "coui://ui/mods/com.pa.legion-expansion/legion_common_functions.js",
+        ], function (common) {
+          var src = "img[src='coui://ui/main/shared/img/controls";
+          var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+          var png1 = "/pin_open.png";
+          var png2 = "/pin_closed.png";
+
+          var panelPath = function (panel) {
+            return panel ? path + colour + png1 : path + colour + png2;
+          };
 
           model.toggleImage = ko.computed(function () {
-            return model.showCelestialViewModels()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png";
+            common.toggleImage(src, path, colour, png1, png2);
+            return panelPath(model.showCelestialViewModels());
           });
-          $('img[src="coui://ui/main/shared/img/controls/pin_open.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_open.png"
-          );
-          $(
-            'img[src="coui://ui/main/shared/img/controls/pin_closed.png"]'
-          ).attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/controls/purple/pin_closed.png"
-          );
-        }
+        });
       };
     } catch (e) {
       console.log(e);
