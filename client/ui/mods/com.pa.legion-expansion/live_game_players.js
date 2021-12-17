@@ -61,7 +61,7 @@ if (!legionLiveGamePlayersLoaded) {
           if (themesetting === "ON") {
             var ui = model.isLegionOrMixedOrVanilla();
 
-            if (ui === "vanilla") {
+            if (ui !== "legion" && ui !== "mixed") {
               return null;
             }
 

@@ -14,18 +14,16 @@ if (!legionLiveGamePlanetsLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        if (payload === "vanilla") {
-          return null;
-        }
-
         var colour = "";
 
         if (payload === "legion") {
           $(".body_panel").addClass("legionui");
           colour = "red";
-        } else {
+        } else if (payload === "mixed") {
           $(".body_panel").addClass("mixedui");
           colour = "purple";
+        } else {
+          return null;
         }
 
         require([
