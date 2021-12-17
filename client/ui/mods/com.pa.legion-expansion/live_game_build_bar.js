@@ -119,7 +119,6 @@ if (!legionLiveGameBuildBarLoaded) {
           return false;
         };
 
-        //ADD legion / mixed ui
         $(".body_panel").attr(
           "data-bind",
           "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"

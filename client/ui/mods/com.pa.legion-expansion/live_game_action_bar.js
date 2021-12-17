@@ -52,7 +52,6 @@ if (!legionLiveGameActionBarLoaded) {
           return false;
         };
 
-        //ADD legion class to build_bar_menu
         $(".body_panel").attr(
           "data-bind",
           "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"

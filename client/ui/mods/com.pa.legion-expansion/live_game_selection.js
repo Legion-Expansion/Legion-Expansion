@@ -31,7 +31,6 @@ if (!legionLiveGameSelectionLoaded) {
           }
         };
 
-        //ADD legion class to build_bar_menu
         $(".div_unit_selection").attr(
           "data-bind",
           "css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $parent.onSelectionDisplayClick($index(), event) } }"
