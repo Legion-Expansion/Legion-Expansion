@@ -62,7 +62,7 @@ if (!legionLiveGamePlayersLoaded) {
             var ui = model.isLegionOrMixedOrVanilla();
 
             if (ui !== "legion" && ui !== "mixed") {
-              return null;
+              return;
             }
 
             api.Panel.message("selection", "legionui", ui);

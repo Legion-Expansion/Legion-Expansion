@@ -23,7 +23,7 @@ if (!legionLiveGamePlanetsLoaded) {
           $(".body_panel").addClass("mixedui");
           colour = "purple";
         } else {
-          return null;
+          return;
         }
 
         require([
