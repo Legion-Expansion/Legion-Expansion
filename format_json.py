@@ -25,7 +25,7 @@ badJSON = []
 #
 
 
-def validateBuildableTypes(value, source):
+def validate_buildable_types(value, source):
 
     print(value)
 
@@ -33,13 +33,13 @@ def validateBuildableTypes(value, source):
 #
 
 
-def walkObject(data, source):
+def walk_object(data, source):
 
     if isinstance(data, (str)):
 
         if data[:3] == "/pa":
 
-            validateFile("./server" + data)
+            validate_file("./server" + data)
 
     elif isinstance(data, (dict)):
 
@@ -57,10 +57,10 @@ def walkObject(data, source):
 
             if key == "buildable_types":
 
-                validateBuildableTypes(value, new_source)
+                validate_buildable_types(value, new_source)
                 return
 
-            walkObject(value, new_source)
+            walk_object(value, new_source)
 
     elif isinstance(data, (set)):
 
@@ -70,7 +70,7 @@ def walkObject(data, source):
 #
 
 
-def validateFile(filename):
+def validate_file(filename):
 
     # server
 
@@ -104,23 +104,23 @@ def validateFile(filename):
 
     if filename[-5:] == ".json" or filename[-4:] == ".pfx":
 
-        validateJSON(filename)
+        validate_json(filename)
 
 
 #
 
 
-def walkJSON(data, first=False):
+def walk_json(data, first=False):
 
     if isinstance(data, (dict)):
         if not first:
             data = OrderedDict(sorted(data.items()))
         for key, value in data.items():
-            data[key] = walkJSON(value)
+            data[key] = walk_json(value)
 
     if isinstance(data, (list)):
         for index, item in enumerate(data):
-            data[index] = walkJSON(item)
+            data[index] = walk_json(item)
 
     return data
 
@@ -128,7 +128,7 @@ def walkJSON(data, first=False):
 #
 
 
-def validateJSON(filename):
+def validate_json(filename):
 
     fp = None
     data = None
@@ -170,7 +170,7 @@ def validateJSON(filename):
 
         ordered.update(sorted(data.items()))
 
-        data = walkJSON(ordered, True)
+        data = walk_json(ordered, True)
 
         fp = open(filename, "w")
         fp.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
@@ -183,7 +183,7 @@ def validateJSON(filename):
     #  if len(data) == 1:
     #     print(filename)
 
-    walkObject(data, filename)
+    walk_object(data, filename)
 
 
 #
@@ -193,7 +193,7 @@ for root, dirnames, filenames in os.walk("./server/pa"):
 
         filename = join(root, filename)
 
-        validateFile(filename)
+        validate_file(filename)
 
 print("\nMISSING FILES: ", len(missing), "\n")
 
