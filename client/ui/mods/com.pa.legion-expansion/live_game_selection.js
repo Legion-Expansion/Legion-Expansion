@@ -39,7 +39,6 @@ if (!legionLiveGameSelectionLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        console.log("SET UI : " + payload);
         if (payload === "legion") {
           $(".body_panel").addClass("legionui");
 
