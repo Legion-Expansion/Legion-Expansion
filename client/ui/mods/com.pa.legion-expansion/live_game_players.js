@@ -14,42 +14,30 @@ if (!legionLiveGamePlayersLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
       model.checkCommanders = function (commanders) {
-        try {
-          var legioncount = 0;
-          var specslength = 0;
-          if (commanders !== undefined) {
-            _.forOwn(commanders, function (value) {
-              if (_.includes(legioncomms, value)) {
-                legioncount++;
-              }
-              specslength++;
-            });
-            if (legioncount === specslength) {
-              return "legion";
-            } else if (legioncount > 0 && legioncount < specslength) {
-              return "mixed";
-            } else {
-              return "vanilla";
+        var legioncount = 0;
+        var specslength = 0;
+        if (commanders !== undefined) {
+          _.forOwn(commanders, function (value) {
+            if (_.includes(legioncomms, value)) {
+              legioncount++;
             }
+            specslength++;
+          });
+          if (legioncount === specslength) {
+            return "legion";
+          } else if (legioncount > 0 && legioncount < specslength) {
+            return "mixed";
           } else {
             return "vanilla";
           }
-        } catch (e) {
-          console.log(e);
-          console.log(JSON.stringify(e));
-          return "";
+        } else {
+          return "vanilla";
         }
       };
 
       model.isLegionOrMixedOrVanilla = ko.computed(function () {
-        try {
-          var selectedspecs = model.player().commanders;
-          return model.checkCommanders(selectedspecs);
-        } catch (e) {
-          console.log(e);
-          console.log(JSON.stringify(e));
-          return "";
-        }
+        var selectedspecs = model.player().commanders;
+        return model.checkCommanders(selectedspecs);
       });
 
       model.isLegion = ko.computed(function () {

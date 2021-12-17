@@ -15,14 +15,9 @@ if (!legionLiveGameSelectionLoaded) {
         model.isLegion = function (type) {
           if (themesetting === "ON") {
             var haslegionunit = false;
-            try {
-              if (type.indexOf("/l_") > 2) {
-                haslegionunit = true;
-                return haslegionunit;
-              }
-            } catch (e) {
-              console.log(e);
-              console.log(JSON.stringify(e));
+            if (type.indexOf("/l_") > 2) {
+              haslegionunit = true;
+              return haslegionunit;
             }
 
             return haslegionunit;

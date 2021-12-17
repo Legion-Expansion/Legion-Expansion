@@ -13,28 +13,22 @@ if (!legionLiveGameActionBarLoaded) {
         );
 
         model.isLegionOrMixedOrVanilla = function (data) {
-          try {
-            var legioncount = 0;
-            var specslength = 0;
-            var selectedspecs = data.selection().spec_ids;
+          var legioncount = 0;
+          var specslength = 0;
+          var selectedspecs = data.selection().spec_ids;
 
-            _.forOwn(selectedspecs, function (value, key) {
-              if (key.indexOf("/l_") > 2) {
-                legioncount++;
-              }
-              specslength++;
-            });
-            if (legioncount === specslength) {
-              return "legion";
-            } else if (legioncount > 0 && legioncount < specslength) {
-              return "mixed";
-            } else {
-              return "vanilla";
+          _.forOwn(selectedspecs, function (value, key) {
+            if (key.indexOf("/l_") > 2) {
+              legioncount++;
             }
-          } catch (e) {
-            console.log(e);
-            console.log(JSON.stringify(e));
-            return "";
+            specslength++;
+          });
+          if (legioncount === specslength) {
+            return "legion";
+          } else if (legioncount > 0 && legioncount < specslength) {
+            return "mixed";
+          } else {
+            return "vanilla";
           }
         };
 
