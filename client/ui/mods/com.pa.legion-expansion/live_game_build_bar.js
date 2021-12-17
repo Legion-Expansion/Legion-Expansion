@@ -98,6 +98,7 @@ if (!legionLiveGameBuildBarLoaded) {
               return "vanilla";
             }
           }
+          return null;
         };
 
         model.isLegion = function (data) {
