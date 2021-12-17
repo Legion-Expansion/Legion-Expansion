@@ -8,9 +8,8 @@ if (!legionLiveGamePlayersLoaded) {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-      //see global.js
       // eslint-disable-next-line no-undef
-      var legioncomms = legionglobal.commanders;
+      var legioncomms = legion.commanders;
       var themesetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
