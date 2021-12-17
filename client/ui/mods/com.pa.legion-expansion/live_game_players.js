@@ -60,6 +60,11 @@ if (!legionLiveGamePlayersLoaded) {
         if (!model.legionstart()) {
           if (themesetting === "ON") {
             var ui = model.isLegionOrMixedOrVanilla();
+
+            if (ui === "vanilla") {
+              return null;
+            }
+
             api.Panel.message("selection", "legionui", ui);
             api.Panel.message("planets", "legionui", ui);
             api.Panel.message("control_group_bar", "legionui", ui);
