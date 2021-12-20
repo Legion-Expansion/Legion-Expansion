@@ -1,4 +1,4 @@
-define([], {
+define({
   uiColour: function () {
     var ui = model.isLegionOrMixedOrVanilla();
     var colour = "";
