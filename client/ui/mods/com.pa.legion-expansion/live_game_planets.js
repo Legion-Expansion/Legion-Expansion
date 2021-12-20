@@ -27,7 +27,7 @@ if (!legionLiveGamePlanetsLoaded) {
         }
 
         require([
-          "coui://ui/mods/com.pa.legion-expansion/legion_common_functions.js",
+          "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
         ], function (common) {
           var src = "img[src='coui://ui/main/shared/img/controls";
           var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
