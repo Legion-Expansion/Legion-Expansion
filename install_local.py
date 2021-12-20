@@ -37,11 +37,11 @@ print(f"Mod destination folder: {MOD_FOLDER}")
 # remove old directories
 try:
     distutils.dir_util.remove_tree(SERVER_DEST)
-except Exception as E:
+except OSError as E:
     print(f"No Old Server Folder: {E}")
 try:
     distutils.dir_util.remove_tree(CLIENT_DEST)
-except Exception as E:
+except OSError as E:
     print(f"No Old Client Folder: {E}")
 
 
