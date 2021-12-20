@@ -16,18 +16,13 @@ def open_json(mod_folder, modinfo_file):
 
 
 DEV_SUFFIX = "-dev"
-
 ROOT_FOLDER = os.path.dirname(os.path.realpath(__file__))
-
 MOD_FOLDER = PA_PATH.PA_DATA_DIR
-
 MODINFO = "modinfo.json"
-
 base_client_id = open_json(ROOT_FOLDER, "client/" + MODINFO)["identifier"]
 client_id = base_client_id + DEV_SUFFIX
 base_server_id = open_json(ROOT_FOLDER, "server/" + MODINFO)["identifier"]
 server_id = base_server_id + DEV_SUFFIX
-
 CLIENT_DEST = join(MOD_FOLDER, "client_mods", client_id)
 SERVER_DEST = join(MOD_FOLDER, "server_mods", server_id)
 

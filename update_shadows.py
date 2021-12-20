@@ -74,6 +74,7 @@ for unit_path in mla_units["units"]:
         continue
     if unit_path == "/pa/units/land/avatar_factory/avatar_factory.json":
         continue
+
     # Update buildable_types
     while "buildable_types" not in unit and "base_spec" in unit:
         unit_path = unit["base_spec"]
@@ -88,7 +89,7 @@ for unit_path in mla_units["units"]:
             "(" + old_buildable_types + ") - Custom1 - Custom2 - Custom3 - Custom4"
         )
 
-# Anti AA missile
+# Anti-AA missile
 load("/pa/units/air/support_platform/support_platform_tool_interception.json")[
     "anti_entity_targets"
 ] += [
@@ -98,17 +99,17 @@ load("/pa/units/air/support_platform/support_platform_tool_interception.json")[
     "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json",
 ]
 
-# Anti Nuke missile
+# Anti-Nuke missile
 load("/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json")[
     "anti_entity_targets"
 ] += ["/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"]
 
-# Anti Tac Missiles
+# Anti-Tac Missiles
 load("/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json")[
     "anti_entity_targets"
 ] += ["/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"]
 
-# Anti drop
+# Anti-Drop
 anti_drop_tools = [
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_tool_antidrop.json",
     "/pa/units/land/tactical_missile_launcher/tactical_missile_tool_antidrop.json",
@@ -128,7 +129,6 @@ load("/pa/units/land/metal_extractor_adv/metal_extractor_adv.json")[
     "replaceable_units"
 ] += ["/pa/units/land/l_mex/l_mex.json"]
 
-################
 # Patch the unit_list and commander_list
 load("/pa/units/unit_list.json")["units"] += load("/pa/units/unit_list_legion.json")[
     "units"
@@ -138,7 +138,6 @@ load("/pa/units/commanders/commander_list.json")["commanders"] += load(
 )["commanders"]
 
 ## Get the list of ammo entities that are targeted by the shield
-#########################################################################################
 legion_shield = spec.parse_spec(
     loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
 )
@@ -150,7 +149,6 @@ for target in legion_shield["anti_entity_targets"]:
     # get the spec
     full_ammo_spec = spec.parse_spec(loader, target)
     ammo = load(target)
-
     original_spec = copy.deepcopy(ammo)
 
     if "Projectile" not in full_ammo_spec["ammo_type"]:
