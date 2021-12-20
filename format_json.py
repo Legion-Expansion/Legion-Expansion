@@ -171,9 +171,8 @@ def validate_json(filename):
 
         data = walk_json(ordered, True)
 
-        fp = open(filename, "w")
-        fp.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
-        fp.close()
+        with open(filename, "w") as f:
+            f.write(json.dumps(data, indent=2, sort_keys=False) + "\n")
 
         if "display_name" in data:
             print(f"\n{data['display_name']}")
