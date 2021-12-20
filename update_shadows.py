@@ -39,7 +39,7 @@ def load(file_path):
 
 
 mla_units = spec.load_spec(loader, "/pa/units/unit_list.json")
-# The tutorial commands aren't listed in the unit file, but they still need to be modified
+# The tutorial commanders aren't listed in the unit file, but they still need to be modified
 mla_units["units"] += [
     "/pa/units/commanders/tutorial_ai_commander/tutorial_ai_commander.json",
     "/pa/units/commanders/tutorial_ai_commander_2/tutorial_ai_commander_2.json",
