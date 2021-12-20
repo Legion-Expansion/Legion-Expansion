@@ -135,7 +135,7 @@ def validate_json(filename):
 
     try:
         fp = open(filename)
-    except IOError:
+    except OSError:
         print(f"\nERROR {filename}\n")
 
         return
