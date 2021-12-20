@@ -20,7 +20,7 @@ from pa_tools.pa import paths
 from pa_tools.pa import spec
 from pa_tools.pa import pajson
 
-print("PA MEDIA DIR:", paths.PA_MEDIA_DIR)
+print(f"PA MEDIA DIR: {paths.PA_MEDIA_DIR}")
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = pafs("server")
 loader.mount("/", paths.PA_MEDIA_DIR)
@@ -143,7 +143,7 @@ legion_shield = spec.parse_spec(
     loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
 )
 for target in legion_shield["anti_entity_targets"]:
-    print("ammo:", target)
+    print(f"ammo: {target}")
     ammo_dir = path.dirname(target)
     ammo_name = path.splitext(path.basename(target))[0]
 
@@ -154,7 +154,7 @@ for target in legion_shield["anti_entity_targets"]:
     original_spec = copy.deepcopy(ammo)
 
     if "Projectile" not in full_ammo_spec["ammo_type"]:
-        print("Skipping (reason: ammo type " + full_ammo_spec["ammo_type"] + ")")
+        print(f"Skipping (reason: ammo type {full_ammo_spec['ammo_type']})")
         continue
 
     if full_ammo_spec["physics"].get("add_to_spatial_db", False):

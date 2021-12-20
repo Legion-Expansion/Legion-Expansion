@@ -16,7 +16,7 @@ PA_MEDIA_PATH = paths.PA_MEDIA_DIR
 
 
 if not os.path.isdir(PA_MEDIA_PATH):
-    print("\nCheck your PA_MEDIA_PATH in papaths.py: " + PA_MEDIA_PATH + "\n")
+    print(f"\nCheck your PA_MEDIA_PATH in papaths.py: {PA_MEDIA_PATH}\n")
     sys.exit()
 
 missing = []
@@ -94,7 +94,7 @@ def validate_file(filename):
 
                 if not os.path.isfile(filename2):
 
-                    print("\nMISSING FILE", filename2, "\n")
+                    print(f"\nMISSING FILE {filename2}\n")
 
                     missing.append(filename2)
 
@@ -136,26 +136,25 @@ def validate_json(filename):
     try:
         fp = open(filename)
     except IOError:
-
-        print("\nERROR", filename, "\n")
+        print(f"\nERROR {filename}\n")
 
         return
 
     try:
         data = json.load(fp, object_pairs_hook=OrderedDict)
     except ValueError:
-        print("\nINVALID %s\n" % filename)
+        print(f"\nINVALID {filename}\n")
         badJSON.append(filename)
         return
     finally:
         fp.close()
 
     if data is None:
-        print("EMPTY %s" % filename)
+        print(f"EMPTY {filename}")
         return
 
     if filename.startswith(PA_MEDIA_PATH):
-        print("PA %s" % filename)
+        print(f"PA {filename}")
         return
 
     if not filename.startswith("./server/pa\\ai"):
@@ -177,7 +176,7 @@ def validate_json(filename):
         fp.close()
 
         if "display_name" in data:
-            print("\n%s" % data["display_name"])
+            print(f"\n{data['display_name']}")
             print(filename)
 
     #  if len(data) == 1:
@@ -195,11 +194,11 @@ for root, dirnames, filenames in os.walk("./server/pa"):
 
         validate_file(filename)
 
-print("\nMISSING FILES: ", len(missing), "\n")
+print(f"\nMISSING FILES: {len(missing)}\n")
 
-print("\n".join(missing), "\n")
+print("\n".join(missing))
 
-print("\nBAD JSON: ", len(badJSON), "\n")
+print(f"\nBAD JSON: {len(badJSON)}\n")
 
 print("\n".join(badJSON))
 
