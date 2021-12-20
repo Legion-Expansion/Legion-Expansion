@@ -32,24 +32,7 @@ if (!legionLiveGameActionBarLoaded) {
           }
         };
 
-        model.isLegion = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "legion") {
-            return true;
-          }
-          return false;
-        };
-
-        model.isMixed = function (data) {
-          if (model.isLegionOrMixedOrVanilla(data) === "mixed") {
-            return true;
-          }
-          return false;
-        };
-
-        $(".body_panel").attr(
-          "data-bind",
-          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
-        );
+        loadScript("coui://ui/mods/com.pa.legion-expansion/common_faction.js");
       }
     } catch (e) {
       console.log(e);
