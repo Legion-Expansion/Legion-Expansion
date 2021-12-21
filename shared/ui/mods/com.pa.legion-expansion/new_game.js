@@ -73,8 +73,6 @@ if (!legionNewGameLoaded) {
           var legionClientLoaded =
             _.intersection(_.pluck(mods, "identifier"), [
               "com.pa.legion-expansion-client",
-              "com.pa.legion-expansion-client-master",
-              "com.pa.legion-expansion-client-balance",
               "com.pa.legion-expansion-client-dev",
             ]).length > 0;
 
