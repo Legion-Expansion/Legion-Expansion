@@ -8,6 +8,16 @@ define({
       return;
     }
   },
+  toggleImage: function (src, path, colour, png1, png2) {
+    var imgPath = path.concat(colour);
+    var src1 = src.concat(png1, "']");
+
+    $(src1).attr("src", imgPath + png1);
+    if (png2) {
+      var src2 = src.concat(png2, "']");
+      $(src2).attr("src", imgPath + png2);
+    }
+  },
   togglePanel: function (panel, path, colour, png1, png2) {
     return panel ? path + colour + png1 : path + colour + png2;
   },
@@ -21,15 +31,5 @@ define({
       colour = "purple";
     }
     return colour;
-  },
-  toggleImage: function (src, path, colour, png1, png2) {
-    var imgPath = path.concat(colour);
-    var src1 = src.concat(png1, "']");
-
-    $(src1).attr("src", imgPath + png1);
-    if (png2) {
-      var src2 = src.concat(png2, "']");
-      $(src2).attr("src", imgPath + png2);
-    }
   },
 });
