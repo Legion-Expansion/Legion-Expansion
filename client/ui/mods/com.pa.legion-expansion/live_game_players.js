@@ -81,8 +81,9 @@ if (!legionLiveGamePlayersLoaded) {
               var png1 = "/pin_open.png";
               var png2 = "/pin_closed.png";
 
+              common.toggleImage(src, path, colour, png1, png2);
+
               model.playerPanelToggleImage = ko.computed(function () {
-                common.toggleImage(src, path, colour, png1, png2);
                 return common.togglePanel(
                   model.showPlayerListPanel(),
                   path,
@@ -92,7 +93,6 @@ if (!legionLiveGamePlayersLoaded) {
                 );
               });
               model.spectatorPanelToggleImage = ko.computed(function () {
-                common.toggleImage(src, path, colour, png1, png2);
                 return common.togglePanel(
                   model.showSpectatorPanel(),
                   path,
