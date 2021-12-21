@@ -132,8 +132,6 @@ if (!legionNewGameLoaded) {
       if (
         _.intersection(model.gameModIdentifiers(), [
           "com.pa.legion-expansion-server",
-          "com.pa.legion-expansion-server-master",
-          "com.pa.legion-expansion-server-balance",
           "com.pa.legion-expansion-server-dev",
         ]).length > 0
       ) {

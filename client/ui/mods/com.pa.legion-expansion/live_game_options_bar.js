@@ -9,8 +9,6 @@ if (!legionLiveGameOptionsBarLoaded) {
         var legionServerLoaded =
           _.intersection(_.pluck(mods, "identifier"), [
             "com.pa.legion-expansion-server",
-            "com.pa.legion-expansion-server-master",
-            "com.pa.legion-expansion-server-balance",
             "com.pa.legion-expansion-server-dev",
           ]).length > 0;
         if (legionServerLoaded) {
