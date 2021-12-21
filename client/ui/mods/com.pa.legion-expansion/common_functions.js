@@ -1,12 +1,11 @@
 define({
-  uiColour: function () {
-    var ui = model.isLegionOrMixedOrVanilla();
+  uiColour: function (faction) {
     var colour = "";
 
-    if (ui === "legion") {
+    if (faction === "legion") {
       colour = "red";
     }
-    if (ui === "mixed") {
+    if (faction === "mixed") {
       colour = "purple";
     }
     return colour;

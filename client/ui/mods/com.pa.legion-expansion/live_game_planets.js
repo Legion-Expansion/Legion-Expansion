@@ -14,14 +14,10 @@ if (!legionLiveGamePlanetsLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        var colour = "";
-
         if (payload === "legion") {
           $(".body_panel").addClass("legionui");
-          colour = "red";
         } else if (payload === "mixed") {
           $(".body_panel").addClass("mixedui");
-          colour = "purple";
         } else {
           return;
         }
@@ -31,6 +27,7 @@ if (!legionLiveGamePlanetsLoaded) {
         ], function (common) {
           var src = "img[src='coui://ui/main/shared/img/controls";
           var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+          var colour = common.uiColour(payload);
           var png1 = "/pin_open.png";
           var png2 = "/pin_closed.png";
 
