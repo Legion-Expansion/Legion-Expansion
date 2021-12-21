@@ -77,7 +77,7 @@ if (!legionLiveGameBuildBarLoaded) {
         // eslint-disable-next-line no-undef
         var legionspecids = legion.builders;
 
-        model.isLegionOrMixedOrVanilla = function (data) {
+        var isLegionOrMixedOrVanilla = function (data) {
           if (data.buildSet()) {
             var legionCount = 0;
             var specsLength = 0;
@@ -100,7 +100,24 @@ if (!legionLiveGameBuildBarLoaded) {
           return null;
         };
 
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common_faction.js");
+        model.isLegion = function (data) {
+          if (isLegionOrMixedOrVanilla(data) === "legion") {
+            return true;
+          }
+          return false;
+        };
+
+        model.isMixed = function (data) {
+          if (isLegionOrMixedOrVanilla(data) === "mixed") {
+            return true;
+          }
+          return false;
+        };
+
+        $(".body_panel").attr(
+          "data-bind",
+          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
+        );
       }
     } catch (e) {
       console.error(e);

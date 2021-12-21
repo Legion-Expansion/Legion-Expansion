@@ -12,7 +12,7 @@ if (!legionLiveGameActionBarLoaded) {
           "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css"
         );
 
-        model.isLegionOrMixedOrVanilla = function (data) {
+        var isLegionOrMixedOrVanilla = function (data) {
           var legionCount = 0;
           var specsLength = 0;
           var selectedSpecs = data.selection().spec_ids;
@@ -32,7 +32,24 @@ if (!legionLiveGameActionBarLoaded) {
           }
         };
 
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common_faction.js");
+        model.isLegion = function (data) {
+          if (isLegionOrMixedOrVanilla(data) === "legion") {
+            return true;
+          }
+          return false;
+        };
+
+        model.isMixed = function (data) {
+          if (isLegionOrMixedOrVanilla(data) === "mixed") {
+            return true;
+          }
+          return false;
+        };
+
+        $(".body_panel").attr(
+          "data-bind",
+          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
+        );
       }
     } catch (e) {
       console.error(e);
