@@ -107,7 +107,6 @@ if (!legionLiveGamePlayersLoaded) {
       }
 
       model.commanderImage = function (d) {
-        console.log("commanderImage", d);
         var result = "";
         switch (model.checkCommanders(d.commanders)) {
           case "legion":
@@ -127,7 +126,6 @@ if (!legionLiveGamePlayersLoaded) {
       };
 
       model.commanderImageMaskLeg = function (data) {
-        console.log("commanderImageMaskLeg", data);
         if (model.checkCommanders(data.commanders) === "legion") {
           return true;
         }
@@ -135,7 +133,6 @@ if (!legionLiveGamePlayersLoaded) {
       };
 
       model.commanderImageMaskMix = function (data) {
-        console.log("commanderImageMaskMix", data);
         if (model.checkCommanders(data.commanders) === "mixed") {
           return true;
         }
