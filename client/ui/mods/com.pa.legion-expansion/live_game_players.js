@@ -75,11 +75,11 @@ if (!legionLiveGamePlayersLoaded) {
             require([
               "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
             ], function (common) {
-              var src = "img[src='coui://ui/main/shared/img/controls";
+              var src = "img[src='coui://ui/main/shared/img/controls/";
               var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
               var colour = common.uiColour(ui);
-              var png1 = "/pin_open.png";
-              var png2 = "/pin_closed.png";
+              var png1 = "pin_open.png";
+              var png2 = "pin_closed.png";
 
               common.toggleImage(src, path, colour, png1, png2);
 

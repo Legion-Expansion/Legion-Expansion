@@ -20,7 +20,7 @@ if (!legionLiveGameControlGroupLoaded) {
           common.bodyPanelClass(payload);
 
           var src =
-            "img[src='coui://ui/main/game/live_game/img/control_group_bar";
+            "img[src='coui://ui/main/game/live_game/img/control_group_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
           var colour = common.uiColour(payload);
@@ -31,25 +31,25 @@ if (!legionLiveGameControlGroupLoaded) {
             );
           };
 
-          var png1 = "/icon_category_bot.png";
+          var png1 = "icon_category_bot.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_tank.png";
+          png1 = "icon_category_tank.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_air.png";
+          png1 = "icon_category_air.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_naval.png";
+          png1 = "icon_category_naval.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_orbital.png";
+          png1 = "icon_category_orbital.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_advanced.png";
+          png1 = "icon_category_advanced.png";
           common.toggleImage(src, path, colour, png1);
 
-          png1 = "/icon_category_fabber.png";
+          png1 = "icon_category_fabber.png";
           common.toggleImage(src, path, colour, png1);
         });
       };

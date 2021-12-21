@@ -40,21 +40,21 @@ if (!legionLiveGameOptionsBarLoaded) {
           common.bodyPanelClass(payload);
 
           var colour = common.uiColour(payload);
-          var src = "img[src='img/ingame_options_bar";
+          var src = "img[src='img/ingame_options_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
 
           // PiP
-          var png1 = "/pip_off.png";
-          var png2 = "/pip_on.png";
+          var png1 = "pip_off.png";
+          var png2 = "pip_on.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.pipImage = ko.computed(function () {
             return common.togglePanel(model.pip(), path, colour, png1, png2);
           });
 
           // UberBar
-          png1 = "/uberbar_hide.png";
-          png2 = "/uberbar_show.png";
+          png1 = "uberbar_hide.png";
+          png2 = "uberbar_show.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.uberBarImage = ko.computed(function () {
             return common.togglePanel(
@@ -67,15 +67,15 @@ if (!legionLiveGameOptionsBarLoaded) {
           });
 
           // Chronocam
-          png1 = "/chronocam.png";
+          png1 = "chronocam.png";
           common.toggleImage(src, path, colour, png1);
 
           // Game Menu
-          png1 = "/game_menu.png";
+          png1 = "game_menu.png";
           common.toggleImage(src, path, colour, png1);
 
           // POV
-          png1 = "/pov.png";
+          png1 = "pov.png";
           common.toggleImage(src, path, colour, png1);
         });
       };

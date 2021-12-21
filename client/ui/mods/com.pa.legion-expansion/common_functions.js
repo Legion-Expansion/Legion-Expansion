@@ -9,7 +9,7 @@ define({
     }
   },
   toggleImage: function (src, path, colour, png1, png2) {
-    var imgPath = path.concat(colour);
+    var imgPath = path.concat(colour, "/");
 
     var src1 = src.concat(png1, "']");
     $(src1).attr("src", imgPath + png1);
@@ -20,7 +20,7 @@ define({
     }
   },
   togglePanel: function (panel, path, colour, png1, png2) {
-    return panel ? path + colour + png1 : path + colour + png2;
+    return panel ? path + colour + "/" + png1 : path + colour + "/" + png2;
   },
   uiColour: function (faction) {
     var colour = "";
