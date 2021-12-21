@@ -50,12 +50,12 @@ if (!legionLiveGamePlayersLoaded) {
         return false;
       });
 
-      model.legionstart = ko.observable(false);
+      model.legionStart = ko.observable(false);
       var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
       model.player.subscribe(function () {
-        if (!model.legionstart()) {
+        if (!model.legionStart()) {
           if (themeSetting === "ON") {
             var ui = model.isLegionOrMixedOrVanilla();
 
@@ -103,7 +103,7 @@ if (!legionLiveGamePlayersLoaded) {
               });
             });
           }
-          model.legionstart(true);
+          model.legionStart(true);
         }
       });
 
