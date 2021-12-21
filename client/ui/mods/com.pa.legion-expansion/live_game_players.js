@@ -8,16 +8,13 @@ if (!legionLiveGamePlayersLoaded) {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-      // eslint-disable-next-line no-undef
-      var legioncomms = legion.commanders;
-      var themesetting =
-        api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
-
       model.checkCommanders = function (commanders) {
         var legioncount = 0;
         var specslength = 0;
         if (commanders !== undefined) {
           _.forOwn(commanders, function (value) {
+            // eslint-disable-next-line no-undef
+            var legioncomms = legion.commanders;
             if (_.includes(legioncomms, value)) {
               legioncount++;
             }
@@ -55,6 +52,8 @@ if (!legionLiveGamePlayersLoaded) {
       });
 
       model.legionstart = ko.observable(false);
+      var themesetting =
+        api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
       model.player.subscribe(function () {
         if (!model.legionstart()) {
