@@ -5,9 +5,9 @@ if (!legionLiveGameTimeBarLoaded) {
 
   function legionLiveGameTimeBar() {
     try {
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_time_bar.css"
         );

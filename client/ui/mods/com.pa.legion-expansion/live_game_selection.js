@@ -5,15 +5,15 @@ if (!legionLiveGameSelectionLoaded) {
 
   function legionLiveGameSelection() {
     try {
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css"
         );
 
         model.isLegion = function (type) {
-          if (themesetting === "ON") {
+          if (themeSetting === "ON") {
             var haslegionunit = false;
             if (type.indexOf("/l_") > 2) {
               haslegionunit = true;

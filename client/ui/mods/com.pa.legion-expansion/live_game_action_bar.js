@@ -5,27 +5,27 @@ if (!legionLiveGameActionBarLoaded) {
 
   function legionLiveGameActionBar() {
     try {
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css"
         );
 
         model.isLegionOrMixedOrVanilla = function (data) {
-          var legioncount = 0;
-          var specslength = 0;
-          var selectedspecs = data.selection().spec_ids;
+          var legionCount = 0;
+          var specsLength = 0;
+          var selectedSpecs = data.selection().spec_ids;
 
-          _.forOwn(selectedspecs, function (value, key) {
+          _.forOwn(selectedSpecs, function (value, key) {
             if (key.indexOf("/l_") > 2) {
-              legioncount++;
+              legionCount++;
             }
-            specslength++;
+            specsLength++;
           });
-          if (legioncount === specslength) {
+          if (legionCount === specsLength) {
             return "legion";
-          } else if (legioncount > 0 && legioncount < specslength) {
+          } else if (legionCount > 0 && legionCount < specsLength) {
             return "mixed";
           } else {
             return "vanilla";

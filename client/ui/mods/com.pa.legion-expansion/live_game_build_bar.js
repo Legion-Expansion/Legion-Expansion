@@ -67,9 +67,9 @@ if (!legionLiveGameBuildBarLoaded) {
         }
       };
 
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css"
         );
@@ -80,19 +80,19 @@ if (!legionLiveGameBuildBarLoaded) {
 
         model.isLegionOrMixedOrVanilla = function (data) {
           if (data.buildSet()) {
-            var legioncount = 0;
-            var specslength = 0;
-            var selectedspecs = data.buildSet().selectedSpecs();
+            var legionCount = 0;
+            var specsLength = 0;
+            var selectedSpecs = data.buildSet().selectedSpecs();
 
-            _.forOwn(selectedspecs, function (value, key) {
+            _.forOwn(selectedSpecs, function (value, key) {
               if (_.includes(legionspecids, key)) {
-                legioncount++;
+                legionCount++;
               }
-              specslength++;
+              specsLength++;
             });
-            if (legioncount === specslength) {
+            if (legionCount === specsLength) {
               return "legion";
-            } else if (legioncount > 0 && legioncount < specslength) {
+            } else if (legionCount > 0 && legionCount < specsLength) {
               return "mixed";
             } else {
               return "vanilla";

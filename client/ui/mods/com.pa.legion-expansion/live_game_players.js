@@ -9,20 +9,19 @@ if (!legionLiveGamePlayersLoaded) {
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
       model.checkCommanders = function (commanders) {
-        var legioncount = 0;
-        var specslength = 0;
+        var legionCount = 0;
+        var specsLength = 0;
         if (commanders !== undefined) {
           _.forOwn(commanders, function (value) {
             // eslint-disable-next-line no-undef
-            var legioncomms = legion.commanders;
-            if (_.includes(legioncomms, value)) {
-              legioncount++;
+            if (_.includes(legion.commanders, value)) {
+              legionCount++;
             }
-            specslength++;
+            specsLength++;
           });
-          if (legioncount === specslength) {
+          if (legionCount === specsLength) {
             return "legion";
-          } else if (legioncount > 0 && legioncount < specslength) {
+          } else if (legionCount > 0 && legionCount < specsLength) {
             return "mixed";
           } else {
             return "vanilla";
@@ -33,8 +32,8 @@ if (!legionLiveGamePlayersLoaded) {
       };
 
       model.isLegionOrMixedOrVanilla = ko.computed(function () {
-        var selectedspecs = model.player().commanders;
-        return model.checkCommanders(selectedspecs);
+        var selectedSpecs = model.player().commanders;
+        return model.checkCommanders(selectedSpecs);
       });
 
       model.isLegion = ko.computed(function () {
@@ -52,12 +51,12 @@ if (!legionLiveGamePlayersLoaded) {
       });
 
       model.legionstart = ko.observable(false);
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
       model.player.subscribe(function () {
         if (!model.legionstart()) {
-          if (themesetting === "ON") {
+          if (themeSetting === "ON") {
             var ui = model.isLegionOrMixedOrVanilla();
 
             if (ui !== "legion" && ui !== "mixed") {
@@ -100,7 +99,7 @@ if (!legionLiveGamePlayersLoaded) {
         }
       });
 
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         $(".body_panel").attr(
           "data-bind",
           "css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show"
@@ -108,6 +107,7 @@ if (!legionLiveGamePlayersLoaded) {
       }
 
       model.commanderImage = function (d) {
+        console.log("commanderImage", d);
         var result = "";
         switch (model.checkCommanders(d.commanders)) {
           case "legion":
@@ -126,15 +126,17 @@ if (!legionLiveGamePlayersLoaded) {
         return result;
       };
 
-      model.commanderImageMaskLeg = function (d) {
-        if (model.checkCommanders(d.commanders) === "legion") {
+      model.commanderImageMaskLeg = function (data) {
+        console.log("commanderImageMaskLeg", data);
+        if (model.checkCommanders(data.commanders) === "legion") {
           return true;
         }
         return false;
       };
 
-      model.commanderImageMaskMix = function (d) {
-        if (model.checkCommanders(d.commanders) === "mixed") {
+      model.commanderImageMaskMix = function (data) {
+        console.log("commanderImageMaskMix", data);
+        if (model.checkCommanders(data.commanders) === "mixed") {
           return true;
         }
         return false;

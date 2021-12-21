@@ -19,10 +19,10 @@ if (!legionStartLoaded) {
 
       $("div.div_watermarks").css("bottom", "95px");
 
-      var themesetting =
+      var themeSetting =
         api.settings.isSet("ui", "legionMenuThemeFunction", true) || "ON";
 
-      if (themesetting === "ON") {
+      if (themeSetting === "ON") {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css"
         );
