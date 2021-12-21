@@ -33,45 +33,32 @@ if (!legionLiveGameSelectionLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        if (payload === "legion") {
-          $(".body_panel").addClass("legionui");
+        require([
+          "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
+        ], function (common) {
+          common.bodyPanelClass(payload);
 
-          var imageSourceForType = function (type) {
-            return (
-              "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/red/icon_category_" +
-              type.toLowerCase() +
-              ".png"
+          model.typeArray = ko.computed(function () {
+            var group = model.selectionTypeCounts();
+
+            var path =
+              "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
+            var colour = common.uiColour(payload);
+
+            return _.compact(
+              _.map(model.types(), function (element) {
+                if (!group[element]) {
+                  return null;
+                }
+
+                return {
+                  type: element,
+                  count: group[element],
+                  source: common.imageSourceForType(path, colour, element),
+                };
+              })
             );
-          };
-        }
-        if (payload === "mixed") {
-          $(".body_panel").addClass("mixedui");
-
-          imageSourceForType = function (type) {
-            return (
-              "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/purple/icon_category_" +
-              type.toLowerCase() +
-              ".png"
-            );
-          };
-        }
-
-        model.typeArray = ko.computed(function () {
-          var group = model.selectionTypeCounts();
-
-          return _.compact(
-            _.map(model.types(), function (element) {
-              if (!group[element]) {
-                return null;
-              }
-
-              return {
-                type: element,
-                count: group[element],
-                source: imageSourceForType(element),
-              };
-            })
-          );
+          });
         });
       };
     } catch (e) {

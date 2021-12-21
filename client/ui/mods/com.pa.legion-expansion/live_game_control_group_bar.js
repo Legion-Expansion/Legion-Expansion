@@ -19,17 +19,16 @@ if (!legionLiveGameControlGroupLoaded) {
         ], function (common) {
           common.bodyPanelClass(payload);
 
-          var src =
-            "img[src='coui://ui/main/game/live_game/img/control_group_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
           var colour = common.uiColour(payload);
 
           model.imageSourceForType = function (type) {
-            return (
-              path + colour + "icon_category_" + type.toLowerCase() + ".png"
-            );
+            return common.imageSourceForType(path, colour, type);
           };
+
+          var src =
+            "img[src='coui://ui/main/game/live_game/img/control_group_bar/";
 
           var png1 = "icon_category_bot.png";
           common.toggleImage(src, path, colour, png1);

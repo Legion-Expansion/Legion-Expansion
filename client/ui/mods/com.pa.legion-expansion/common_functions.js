@@ -8,6 +8,9 @@ define({
       return;
     }
   },
+  imageSourceForType: function (path, colour, type) {
+    return path + colour + "/icon_category_" + type.toLowerCase() + ".png";
+  },
   toggleImage: function (src, path, colour, png1, png2) {
     var imgPath = path.concat(colour, "/");
 
