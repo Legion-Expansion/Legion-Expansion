@@ -106,9 +106,9 @@ if (!legionLiveGamePlayersLoaded) {
         );
       }
 
-      model.commanderImage = function (d) {
+      model.commanderImage = function (data) {
         var result = "";
-        switch (model.checkCommanders(d.commanders)) {
+        switch (model.checkCommanders(data.commanders)) {
           case "legion":
             result =
               "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
