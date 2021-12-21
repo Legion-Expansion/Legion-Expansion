@@ -25,10 +25,10 @@ if (!legionLiveGamePlanetsLoaded) {
           var png1 = "/pin_open.png";
           var png2 = "/pin_closed.png";
 
-          common.togglePanel(src, path, colour, png1, png2);
+          common.toggleImage(src, path, colour, png1, png2);
 
           model.toggleImage = ko.computed(function () {
-            return common.panelPath(
+            return common.togglePanel(
               model.showCelestialViewModels(),
               path,
               colour,
