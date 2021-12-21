@@ -11,7 +11,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "build_metal_cost": 2000,
+  "build_metal_cost": 1800,
   "consumption": {
     "energy": 0
   },
@@ -45,7 +45,7 @@
       "radius": 5.0
     }
   ],
-  "max_health": 5000,
+  "max_health": 3000,
   "mesh_bounds": [
     15.5,
     13.3685,
@@ -65,7 +65,7 @@
     16
   ],
   "production": {
-    "metal": 16
+    "metal": 18
   },
   "recon": {
     "observer": {

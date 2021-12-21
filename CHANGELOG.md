@@ -2,6 +2,14 @@
 
 ## Unreleased
 
+### Balance
+
+- Land
+  - Advanced Mass Extractor
+    - Build cost decreased from 2000 to 1800
+    - Metal production increased from 16 to 18
+    - Health reduced from 5000 to 3000
+
 ### Fixed
 
 - Obsolete scene loads
