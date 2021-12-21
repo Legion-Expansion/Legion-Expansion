@@ -32,7 +32,7 @@ if (!legionStartLoaded) {
       }
     } catch (e) {
       console.error(e);
-      console.log(JSON.stringify(e));
+      console.error(JSON.stringify(e));
     }
   }
   legionStart();

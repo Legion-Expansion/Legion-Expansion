@@ -148,7 +148,7 @@ if (!legionNewGameLoaded) {
       });
     } catch (e) {
       console.error(e);
-      console.log(JSON.stringify(e));
+      console.error(JSON.stringify(e));
     }
   }
   legionNewGame();
