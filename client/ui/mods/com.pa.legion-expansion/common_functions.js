@@ -12,13 +12,13 @@ define({
     return path + colour + "/icon_category_" + type.toLowerCase() + ".png";
   },
   toggleImage: function (src, path, colour, png1, png2) {
-    var imgPath = path.concat(colour, "/");
+    var imgPath = path + colour + "/";
 
-    var src1 = src.concat(png1, "']");
+    var src1 = src + png1 + "']";
     $(src1).attr("src", imgPath + png1);
 
     if (png2) {
-      var src2 = src.concat(png2, "']");
+      var src2 = src + png2 + "']";
       $(src2).attr("src", imgPath + png2);
     }
   },
