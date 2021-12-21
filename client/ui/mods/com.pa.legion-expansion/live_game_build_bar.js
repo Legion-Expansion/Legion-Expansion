@@ -53,7 +53,6 @@ if (!legionLiveGameBuildBarLoaded) {
           .buildSet()
           .tabs()
           .filter(function (tab) {
-            console.debug(tab.buildGroup());
             return tab.visible() && tab.buildGroup() === group;
           });
         if (tabs.length < 1) {
