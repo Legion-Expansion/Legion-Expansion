@@ -34,96 +34,50 @@ if (!legionLiveGameOptionsBarLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        if (payload === "legion") {
-          $(".body_panel").addClass("legionui");
+        require([
+          "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
+        ], function (common) {
+          common.bodyPanelClass(payload);
 
+          var colour = common.uiColour(payload);
+          var src = "img[src='img/ingame_options_bar";
+          var path =
+            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
+
+          // PiP
+          var png1 = "/pip_off.png";
+          var png2 = "/pip_on.png";
+          common.toggleImage(src, path, colour, png1, png2);
           model.pipImage = ko.computed(function () {
-            return model.pip()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_off.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_on.png";
+            return common.togglePanel(model.pip(), path, colour, png1, png2);
           });
 
+          // UberBar
+          png1 = "/uberbar_hide.png";
+          png2 = "/uberbar_show.png";
+          common.toggleImage(src, path, colour, png1, png2);
           model.uberBarImage = ko.computed(function () {
-            return model.uberBar()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_hide.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_show.png";
+            return common.togglePanel(
+              model.uberBar(),
+              path,
+              colour,
+              png1,
+              png2
+            );
           });
 
-          //replace images
-          $('img[src="img/ingame_options_bar/pip_off.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_off.png"
-          );
-          $('img[src="img/ingame_options_bar/pip_on.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pip_on.png"
-          );
-          $('img[src="img/ingame_options_bar/uberbar_hide.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_hide.png"
-          );
-          $('img[src="img/ingame_options_bar/uberbar_show.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/uberbar_show.png"
-          );
-          $('img[src="img/ingame_options_bar/chronocam.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/chronocam.png"
-          );
-          $('img[src="img/ingame_options_bar/game_menu.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/game_menu.png"
-          );
-          $('img[src="img/ingame_options_bar/pov.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/red/pov.png"
-          );
-        }
-        if (payload === "mixed") {
-          $(".body_panel").addClass("mixedui");
+          // Chronocam
+          png1 = "/chronocam.png";
+          common.toggleImage(src, path, colour, png1);
 
-          model.pipImage = ko.computed(function () {
-            return model.pip()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_off.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_on.png";
-          });
+          // Game Menu
+          png1 = "/game_menu.png";
+          common.toggleImage(src, path, colour, png1);
 
-          model.uberBarImage = ko.computed(function () {
-            return model.uberBar()
-              ? "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_hide.png"
-              : "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_show.png";
-          });
-
-          //replace images
-          $('img[src="img/ingame_options_bar/pip_off.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_off.png"
-          );
-          $('img[src="img/ingame_options_bar/pip_on.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pip_on.png"
-          );
-          $('img[src="img/ingame_options_bar/uberbar_hide.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_hide.png"
-          );
-          $('img[src="img/ingame_options_bar/uberbar_show.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/uberbar_show.png"
-          );
-          $('img[src="img/ingame_options_bar/chronocam.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/chronocam.png"
-          );
-          $('img[src="img/ingame_options_bar/game_menu.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/game_menu.png"
-          );
-          $('img[src="img/ingame_options_bar/pov.png"]').attr(
-            "src",
-            "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/purple/pov.png"
-          );
-        }
+          // POV
+          png1 = "/pov.png";
+          common.toggleImage(src, path, colour, png1);
+        });
       };
     } catch (e) {
       console.error(e);
