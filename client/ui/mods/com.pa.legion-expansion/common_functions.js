@@ -1,4 +1,13 @@
 define({
+  bodyPanelClass: function (faction) {
+    if (faction === "legion") {
+      $(".body_panel").addClass("legionui");
+    } else if (faction === "mixed") {
+      $(".body_panel").addClass("mixedui");
+    } else {
+      return;
+    }
+  },
   uiColour: function (faction) {
     var colour = "";
 

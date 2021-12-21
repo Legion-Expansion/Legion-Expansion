@@ -11,7 +11,14 @@ if (!legionLiveGameTimeBarLoaded) {
         loadCSS(
           "coui://ui/mods/com.pa.legion-expansion/css/legion_time_bar.css"
         );
-        loadScript("coui://ui/mods/com.pa.legion-expansion/common_handlers.js");
+
+        handlers.legionui = function (payload) {
+          require([
+            "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
+          ], function (common) {
+            common.bodyPanelClass(payload);
+          });
+        };
       }
     } catch (e) {
       console.log(e);

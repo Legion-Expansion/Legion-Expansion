@@ -14,17 +14,11 @@ if (!legionLiveGamePlanetsLoaded) {
       }
 
       handlers.legionui = function (payload) {
-        if (payload === "legion") {
-          $(".body_panel").addClass("legionui");
-        } else if (payload === "mixed") {
-          $(".body_panel").addClass("mixedui");
-        } else {
-          return;
-        }
-
         require([
           "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
         ], function (common) {
+          common.bodyPanelClass(payload);
+
           var src = "img[src='coui://ui/main/shared/img/controls";
           var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
           var colour = common.uiColour(payload);
