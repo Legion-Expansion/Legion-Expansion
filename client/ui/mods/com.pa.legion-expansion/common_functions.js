@@ -8,7 +8,7 @@ define({
       return;
     }
   },
-  panelPath: function (panel, path, colour, png1, png2) {
+  togglePanel: function (panel, path, colour, png1, png2) {
     return panel ? path + colour + png1 : path + colour + png2;
   },
   uiColour: function (faction) {
