@@ -49,6 +49,8 @@ if (!legionLiveGameOptionsBarLoaded) {
           var png2 = "pip_on.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.pipImage = ko.computed(function () {
+            png1 = "pip_off.png";
+            png2 = "pip_on.png";
             return common.togglePanel(model.pip(), path, colour, png1, png2);
           });
 
@@ -57,6 +59,8 @@ if (!legionLiveGameOptionsBarLoaded) {
           png2 = "uberbar_show.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.uberBarImage = ko.computed(function () {
+            png1 = "uberbar_hide.png";
+            png2 = "uberbar_show.png";
             return common.togglePanel(
               model.uberBar(),
               path,
