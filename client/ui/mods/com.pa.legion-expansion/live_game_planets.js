@@ -25,13 +25,15 @@ if (!legionLiveGamePlanetsLoaded) {
           var png1 = "/pin_open.png";
           var png2 = "/pin_closed.png";
 
-          var panelPath = function (panel) {
-            return panel ? path + colour + png1 : path + colour + png2;
-          };
-
           model.toggleImage = ko.computed(function () {
             common.toggleImage(src, path, colour, png1, png2);
-            return panelPath(model.showCelestialViewModels());
+            return common.panelPath(
+              model.showCelestialViewModels(),
+              path,
+              colour,
+              png1,
+              png2
+            );
           });
         });
       };
