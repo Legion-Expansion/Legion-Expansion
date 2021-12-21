@@ -81,17 +81,25 @@ if (!legionLiveGamePlayersLoaded) {
               var png1 = "/pin_open.png";
               var png2 = "/pin_closed.png";
 
-              var panelPath = function (panel) {
-                return panel ? path + colour + png1 : path + colour + png2;
-              };
-
               model.playerPanelToggleImage = ko.computed(function () {
                 common.toggleImage(src, path, colour, png1, png2);
-                return panelPath(model.showPlayerListPanel());
+                return common.togglePanel(
+                  model.showPlayerListPanel(),
+                  path,
+                  colour,
+                  png1,
+                  png2
+                );
               });
               model.spectatorPanelToggleImage = ko.computed(function () {
                 common.toggleImage(src, path, colour, png1, png2);
-                return panelPath(model.showSpectatorPanel());
+                return common.togglePanel(
+                  model.showSpectatorPanel(),
+                  path,
+                  colour,
+                  png1,
+                  png2
+                );
               });
             });
           }
