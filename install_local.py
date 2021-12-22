@@ -3,7 +3,6 @@
 from os.path import join
 import os
 import shutil
-import distutils.dir_util
 import json
 from collections import OrderedDict
 
@@ -31,11 +30,11 @@ print(f"Mod destination folder: {MOD_FOLDER}")
 
 # remove old directories
 try:
-    distutils.dir_util.remove_tree(SERVER_DEST)
+    shutil.rmtree(SERVER_DEST)
 except OSError as E:
     print(f"No Old Server Folder: {E}")
 try:
-    distutils.dir_util.remove_tree(CLIENT_DEST)
+    shutil.rmtree(CLIENT_DEST)
 except OSError as E:
     print(f"No Old Client Folder: {E}")
 
@@ -46,9 +45,9 @@ shutil.copytree(join(ROOT_FOLDER, "client"), CLIENT_DEST)
 print("Copy Server")
 shutil.copytree(join(ROOT_FOLDER, "server"), SERVER_DEST)
 print("Merge Shared into Client")
-distutils.dir_util.copy_tree(join(ROOT_FOLDER, "shared"), CLIENT_DEST)
+shutil.copytree(join(ROOT_FOLDER, "shared"), CLIENT_DEST, dirs_exist_ok=True)
 print("Merge Shared into Server")
-distutils.dir_util.copy_tree(join(ROOT_FOLDER, "shared"), SERVER_DEST)
+shutil.copytree(join(ROOT_FOLDER, "shared"), SERVER_DEST, dirs_exist_ok=True)
 
 # update MODINFO data
 print(f"Update client identifier to {client_id}")
