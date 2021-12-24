@@ -2,10 +2,6 @@
 
 ## Unreleased
 
-### General
-
-- Refactored code to remove duplication and improve maintainability
-
 ### Balance
 
 - Land
