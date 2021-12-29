@@ -23,6 +23,7 @@ bad_buildable_type = []
 
 def validate_buildable_types(value, filename):
     if "Custom1" not in value:
+        print(f"\nBAD BUILDABLE TYPE {filename}\n")
         bad_buildable_type.append(filename)
 
 
