@@ -20,7 +20,6 @@ from pa_tools.pa import paths
 from pa_tools.pa import spec
 from pa_tools.pa import pajson
 
-print(f"PA MEDIA DIR: {paths.PA_MEDIA_DIR}")
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = pafs("server")
 loader.mount("/", paths.PA_MEDIA_DIR)
@@ -144,8 +143,9 @@ CLIENT = "client_shadow"
 legion_shield = spec.parse_spec(
     loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
 )
+print("Add ammo to Rampart's anti-entity targets:")
 for target in legion_shield["anti_entity_targets"]:
-    print(f"ammo: {target}")
+    print(target)
     ammo_dir = path.dirname(target)
     ammo_name = path.splitext(path.basename(target))[0]
 
