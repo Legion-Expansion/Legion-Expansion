@@ -123,12 +123,15 @@ for root, dirnames, filenames in os.walk("./server/pa"):
         filename = join(root, filename)
         validate_file(filename)
 
-print(f"\nMISSING FILES: {len(missing)}")
-print("\n".join(missing))
-print(f"\nBAD JSON: {len(badJSON)}")
-print("\n".join(badJSON))
-print(f"\nBAD BUILDABLE TYPES: {len(bad_buildable_type)}")
-print("\n".join(bad_buildable_type))
+print(f"\nMissing files: {len(missing)}")
+if len(missing) > 0:
+    print("\n".join(missing))
+print(f"\nInvalid JSON: {len(badJSON)}")
+if len(badJSON) > 0:
+    print("\n".join(badJSON))
+print(f"\nBad buildable_types: {len(bad_buildable_type)}")
+if len(bad_buildable_type) > 0:
+    print("\n".join(bad_buildable_type))
 
 # If errors need resolving then pause to show the results
 if len(missing) > 0 or len(badJSON) > 0 or len(bad_buildable_type) > 0:
