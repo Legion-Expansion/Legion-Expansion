@@ -217,6 +217,3 @@ for file_path, unit in file_cache.items():
     os.makedirs(SERVER + os.path.dirname(file_path), exist_ok=True)
     with open(SERVER + file_path, "w", encoding="utf-8") as unit_file:
         pajson.dump_effect(unit, unit_file)
-
-# Format the files to match Legion's style
-import format_json

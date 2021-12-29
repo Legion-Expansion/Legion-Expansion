@@ -8,6 +8,9 @@ from collections import OrderedDict
 
 from pa_tools.pa import paths as PA_PATH
 
+# Check JSON is valid and formatted
+import format_json
+
 
 def open_json(mod_folder, modinfo_file):
     with open(join(mod_folder, modinfo_file), encoding="utf-8") as PATH:
