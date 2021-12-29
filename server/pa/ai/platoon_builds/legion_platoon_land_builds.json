@@ -1,0 +1,34 @@
+{
+  "build_list": [
+    {
+      "name": "Stoke Scout Platoon",
+      "to_build": "Stoke_Scout",
+      "instance_count": 5,
+      "shared_instance_count": "BotScout",
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bot & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Vehicle & Amphibious & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    }
+  ]
+}

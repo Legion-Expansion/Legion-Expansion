@@ -1,0 +1,12 @@
+{
+  "platoon_templates": {
+    "Stoke_Scout": {
+      "units": [
+        {
+          "unit_types": "(Vehicle & Amphibious & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+          "max_count": 1
+        }
+      ]
+    }
+  }
+}
