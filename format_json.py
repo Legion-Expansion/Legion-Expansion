@@ -121,12 +121,9 @@ for root, dirnames, filenames in os.walk("./server/pa"):
         filename = join(root, filename)
         validate_file(filename)
 
-print(f"\nMISSING FILES: {len(missing)}\n")
-
+print(f"\nMISSING FILES: {len(missing)}")
 print("\n".join(missing))
-
-print(f"\nBAD JSON: {len(badJSON)}\n")
-
+print(f"\nBAD JSON: {len(badJSON)}")
 print("\n".join(badJSON))
 
 # If errors need resolving then pause to show the results
