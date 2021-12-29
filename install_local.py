@@ -9,7 +9,14 @@ from collections import OrderedDict
 from pa_tools.pa import paths as PA_PATH
 
 # Check JSON is valid and formatted
+print("VALIDATING AND FORMATTING LEGION JSON")
 import format_json
+
+# create shadows of vanilla files
+print("\SHADOWING BASE GAME FILES\n")
+import update_shadows
+
+print("\nCOMMENCING INSTALLATION\n")
 
 
 def open_json(mod_folder, modinfo_file):
@@ -42,9 +49,6 @@ try:
     shutil.rmtree(CLIENT_DEST)
 except OSError:
     print("No old client folder")
-
-# create shadows of vanilla files
-import update_shadows
 
 CLIENT = join(ROOT_FOLDER, "client")
 CLIENT_SHADOW = join(ROOT_FOLDER, "client_shadow")
