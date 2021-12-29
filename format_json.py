@@ -18,10 +18,12 @@ if not os.path.isdir(PA_MEDIA_PATH):
 
 missing = []
 badJSON = []
+bad_buildable_type = []
 
 
-def validate_buildable_types(value):
-    print(value)
+def validate_buildable_types(value, filename):
+    if "Custom1" not in value:
+        bad_buildable_type.append(filename)
 
 
 def walk_object(data, source):
@@ -34,8 +36,8 @@ def walk_object(data, source):
             if key == "effect_spec":
                 value = value.split(" ")[0]
             new_source = source + " " + key
-            if key == "buildable_types":
-                validate_buildable_types(value)
+            if key == "buildable_types" and not filename.startswith("./server/pa\\ai"):
+                validate_buildable_types(value, filename)
                 return
             walk_object(value, new_source)
     elif isinstance(data, (set)):
@@ -125,6 +127,8 @@ print(f"\nMISSING FILES: {len(missing)}")
 print("\n".join(missing))
 print(f"\nBAD JSON: {len(badJSON)}")
 print("\n".join(badJSON))
+print(f"\nBAD BUILDABLE TYPES: {len(bad_buildable_type)}")
+print("\n".join(bad_buildable_type))
 
 # If errors need resolving then pause to show the results
 if len(missing) > 0 or len(badJSON) > 0:
