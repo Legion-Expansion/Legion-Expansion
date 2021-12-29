@@ -33,12 +33,12 @@ try:
     print("Remove old server folder")
     shutil.rmtree(SERVER_DEST)
 except OSError:
-    print("No Old Server Folder")
+    print("No old server folder")
 try:
     print("Remove old client folder")
     shutil.rmtree(CLIENT_DEST)
 except OSError:
-    print("No Old Client Folder")
+    print("No old client folder")
 
 # create shadows of vanilla files
 import update_shadows
@@ -50,15 +50,15 @@ SERVER_SHADOW = join(ROOT_FOLDER, "server_shadow")
 SHARED = join(ROOT_FOLDER, "shared")
 
 # copy files
-print("Copy Client")
+print("Copy client")
 shutil.copytree(CLIENT, CLIENT_DEST)
 shutil.copytree(CLIENT_SHADOW, CLIENT_DEST, dirs_exist_ok=True)
-print("Copy Server")
+print("Copy server")
 shutil.copytree(SERVER, SERVER_DEST)
 shutil.copytree(SERVER_SHADOW, SERVER_DEST, dirs_exist_ok=True)
-print("Merge Shared into Client")
+print("Merge shared into client")
 shutil.copytree(SHARED, CLIENT_DEST, dirs_exist_ok=True)
-print("Merge Shared into Server")
+print("Merge shared into server")
 shutil.copytree(SHARED, SERVER_DEST, dirs_exist_ok=True)
 
 # clean-up shadows to avoid including them in repository
