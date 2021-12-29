@@ -39,15 +39,19 @@ except OSError as E:
     print(f"No Old Client Folder: {E}")
 
 
+CLIENT = join(ROOT_FOLDER, "client")
+SERVER = join(ROOT_FOLDER, "server")
+SHARED = join(ROOT_FOLDER, "shared")
 # copy files
 print("Copy Client")
-shutil.copytree(join(ROOT_FOLDER, "client"), CLIENT_DEST)
+shutil.copytree(CLIENT, CLIENT_DEST)
 print("Copy Server")
-shutil.copytree(join(ROOT_FOLDER, "server"), SERVER_DEST)
+shutil.copytree(SERVER, SERVER_DEST)
 print("Merge Shared into Client")
-shutil.copytree(join(ROOT_FOLDER, "shared"), CLIENT_DEST, dirs_exist_ok=True)
+shutil.copytree(SHARED, CLIENT_DEST, dirs_exist_ok=True)
 print("Merge Shared into Server")
-shutil.copytree(join(ROOT_FOLDER, "shared"), SERVER_DEST, dirs_exist_ok=True)
+shutil.copytree(SHARED, SERVER_DEST, dirs_exist_ok=True)
+
 
 # update MODINFO data
 print(f"Update client identifier to {client_id}")
