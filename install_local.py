@@ -32,11 +32,11 @@ print(f"Mod destination folder: {MOD_FOLDER}")
 try:
     shutil.rmtree(SERVER_DEST)
 except OSError as E:
-    print(f"No Old Server Folder: {E}")
+    print(f"No Old Server Folder")
 try:
     shutil.rmtree(CLIENT_DEST)
 except OSError as E:
-    print(f"No Old Client Folder: {E}")
+    print(f"No Old Client Folder")
 
 
 CLIENT = join(ROOT_FOLDER, "client")
