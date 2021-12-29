@@ -573,17 +573,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.2
           }
         ],
         [
@@ -593,10 +582,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": false,
-            "test_type": "CanDeployLandFromBase"
           }
         ],
         [
@@ -606,13 +591,6 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "value0": 0.2
           },
           {
             "boolean": true,

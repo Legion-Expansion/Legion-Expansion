@@ -10,6 +10,10 @@
     - Metal production increased from 16 to 18
     - Health reduced from 5000 to 3000
 
+### AI
+
+- Builds more Stokes
+
 ### Fixed
 
 - Obsolete scene loads
