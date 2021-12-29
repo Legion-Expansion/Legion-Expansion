@@ -132,3 +132,4 @@ print("\n".join(badJSON))
 # If errors need resolving then pause to show the results
 if len(missing) > 0 or len(badJSON) > 0:
     input()
+    sys.exit()
