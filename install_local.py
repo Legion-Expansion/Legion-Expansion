@@ -30,10 +30,12 @@ print(f"Mod destination folder: {MOD_FOLDER}")
 
 # remove old directories
 try:
+    print("Remove old server folder")
     shutil.rmtree(SERVER_DEST)
 except OSError:
     print("No Old Server Folder")
 try:
+    print("Remove old client folder")
     shutil.rmtree(CLIENT_DEST)
 except OSError:
     print("No Old Client Folder")
