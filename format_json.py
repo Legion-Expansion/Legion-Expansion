@@ -132,5 +132,6 @@ print("\n".join(bad_buildable_type))
 
 # If errors need resolving then pause to show the results
 if len(missing) > 0 or len(badJSON) > 0 or len(bad_buildable_type) > 0:
+    print("\nABORTING INSTALLATION!")
     input()
     sys.exit(1)
