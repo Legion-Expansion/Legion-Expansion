@@ -13,7 +13,7 @@ print("VALIDATING AND FORMATTING LEGION JSON")
 import format_json
 
 # create shadows of vanilla files
-print("\SHADOWING BASE GAME FILES\n")
+print("\nSHADOWING BASE GAME FILES\n")
 import update_shadows
 
 print("\nCOMMENCING INSTALLATION\n")
