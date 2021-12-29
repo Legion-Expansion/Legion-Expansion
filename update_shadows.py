@@ -137,6 +137,9 @@ load("/pa/units/commanders/commander_list.json")["commanders"] += load(
     "/pa/units/commanders/commander_list_legion.json"
 )["commanders"]
 
+SERVER = "server_shadow"
+CLIENT = "client_shadow"
+
 ## Get the list of ammo entities that are targeted by the shield
 legion_shield = spec.parse_spec(
     loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
@@ -193,13 +196,13 @@ for target in legion_shield["anti_entity_targets"]:
         continue
 
     # prepare files:
-    os.makedirs("server" + ammo_dir, exist_ok=True)
+    os.makedirs(SERVER + ammo_dir, exist_ok=True)
     if not is_legion:
-        os.makedirs("client" + ammo_dir, exist_ok=True)
+        os.makedirs(CLIENT + ammo_dir, exist_ok=True)
         # copy client files
-        with open("client" + dst_hit_file, "w", encoding="utf-8") as hit_file:
+        with open(CLIENT + dst_hit_file, "w", encoding="utf-8") as hit_file:
             pajson.dump_effect(spec.load_spec(loader, src_hit_file), hit_file, indent=2)
-        with open("client" + dst_trail_file, "w", encoding="utf-8") as trail_file:
+        with open(CLIENT + dst_trail_file, "w", encoding="utf-8") as trail_file:
             pajson.dump_effect(
                 spec.load_spec(loader, src_trail_file), trail_file, indent=2
             )
@@ -211,8 +214,8 @@ for file_path, unit in file_cache.items():
     if unit == spec.load_spec(loader, file_path):
         continue
 
-    os.makedirs("server" + os.path.dirname(file_path), exist_ok=True)
-    with open("server" + file_path, "w", encoding="utf-8") as unit_file:
+    os.makedirs(SERVER + os.path.dirname(file_path), exist_ok=True)
+    with open(SERVER + file_path, "w", encoding="utf-8") as unit_file:
         pajson.dump_effect(unit, unit_file)
 
 # Format the files to match Legion's style

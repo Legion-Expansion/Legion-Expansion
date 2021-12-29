@@ -38,19 +38,37 @@ try:
 except OSError:
     print("No Old Client Folder")
 
+# create shadows of vanilla files
+import update_shadows
 
 CLIENT = join(ROOT_FOLDER, "client")
+CLIENT_SHADOW = join(ROOT_FOLDER, "client_shadow")
 SERVER = join(ROOT_FOLDER, "server")
+SERVER_SHADOW = join(ROOT_FOLDER, "server_shadow")
 SHARED = join(ROOT_FOLDER, "shared")
+
 # copy files
 print("Copy Client")
 shutil.copytree(CLIENT, CLIENT_DEST)
+shutil.copytree(CLIENT_SHADOW, CLIENT_DEST, dirs_exist_ok=True)
 print("Copy Server")
 shutil.copytree(SERVER, SERVER_DEST)
+shutil.copytree(SERVER_SHADOW, SERVER_DEST, dirs_exist_ok=True)
 print("Merge Shared into Client")
 shutil.copytree(SHARED, CLIENT_DEST, dirs_exist_ok=True)
 print("Merge Shared into Server")
 shutil.copytree(SHARED, SERVER_DEST, dirs_exist_ok=True)
+
+# clean-up shadows to avoid including them in repository
+print("Delete shadow folders")
+try:
+    shutil.rmtree(CLIENT_SHADOW)
+except OSError as E:
+    print(E)
+try:
+    shutil.rmtree(SERVER_SHADOW)
+except OSError as E:
+    print(E)
 
 
 # update MODINFO data
