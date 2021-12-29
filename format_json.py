@@ -129,4 +129,6 @@ print(f"\nBAD JSON: {len(badJSON)}\n")
 
 print("\n".join(badJSON))
 
-input()
+# If errors need resolving then pause to show the results
+if len(missing) > 1 or len(badJSON) > 1:
+    input()
