@@ -14,6 +14,7 @@ PA_MEDIA_PATH = paths.PA_MEDIA_DIR
 
 if not os.path.isdir(PA_MEDIA_PATH):
     print(f"\nCheck your PA_MEDIA_PATH in papaths.py: {PA_MEDIA_PATH}\n")
+    input()
     sys.exit(1)
 
 missing = []
