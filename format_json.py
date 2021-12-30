@@ -7,13 +7,10 @@ from os.path import join
 
 from collections import OrderedDict
 
-# update papaths.py with your paths
-from pa_tools.pa import paths
-
-PA_MEDIA_PATH = paths.PA_MEDIA_DIR
-
-if not os.path.isdir(PA_MEDIA_PATH):
-    print(f"\nCheck your PA_MEDIA_PATH in papaths.py: {PA_MEDIA_PATH}\n")
+try:
+    from pa_tools.pa.paths import PA_MEDIA_DIR
+except Exception as E:
+    print(f"Could not find PA directory! {E}\n Make sure that you run it at least once and try again.")
     input()
     sys.exit(1)
 
@@ -50,9 +47,9 @@ def validate_file(filename):
     if not os.path.isfile(filename):
         filename = "./client" + filename[8:]  # strip ./server to start with /pa
         if not os.path.isfile(filename):
-            filename2 = PA_MEDIA_PATH + "/pa_ex1" + filename[11:]  # strip ./client/pa
+            filename2 = PA_MEDIA_DIR + "/pa_ex1" + filename[11:]  # strip ./client/pa
             if not os.path.isfile(filename2):
-                filename2 = PA_MEDIA_PATH + filename[8:]  # strip ./client
+                filename2 = PA_MEDIA_DIR + filename[8:]  # strip ./client
                 if not os.path.isfile(filename2):
                     print(f"\nMISSING FILE {filename2}\n")
                     missing.append(filename2)
@@ -99,7 +96,7 @@ def validate_json(filename):
         print(f"EMPTY {filename}")
         return
 
-    if filename.startswith(PA_MEDIA_PATH):
+    if filename.startswith(PA_MEDIA_DIR):
         print(f"PA {filename}")
         return
 
