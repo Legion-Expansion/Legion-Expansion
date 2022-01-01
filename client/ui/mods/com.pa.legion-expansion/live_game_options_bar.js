@@ -42,38 +42,37 @@ if (!legionLiveGameOptionsBarLoaded) {
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
 
-          var png1 = "pip_off.png";
-          var png2 = "pip_on.png";
-          common.toggleImage(src, path, colour, png1, png2);
-          model.pipImage = ko.computed(function () {
-            png1 = "pip_off.png";
-            png2 = "pip_on.png";
-            return common.togglePanel(model.pip(), path, colour, png1, png2);
-          });
+          var togglePip = function () {
+            var png1 = "pip_off.png";
+            var png2 = "pip_on.png";
+            common.toggleImage(src, path, colour, png1, png2);
+            model.pipImage = ko.computed(function () {
+              return common.togglePanel(model.pip(), path, colour, png1, png2);
+            });
+          };
+          togglePip();
 
-          png1 = "uberbar_hide.png";
-          png2 = "uberbar_show.png";
-          common.toggleImage(src, path, colour, png1, png2);
-          model.uberBarImage = ko.computed(function () {
-            png1 = "uberbar_hide.png";
-            png2 = "uberbar_show.png";
-            return common.togglePanel(
-              model.uberBar(),
-              path,
-              colour,
-              png1,
-              png2
-            );
-          });
+          var toggleUberBar = function () {
+            var png1 = "uberbar_hide.png";
+            var png2 = "uberbar_show.png";
+            common.toggleImage(src, path, colour, png1, png2);
+            model.uberBarImage = ko.computed(function () {
+              return common.togglePanel(
+                model.uberBar(),
+                path,
+                colour,
+                png1,
+                png2
+              );
+            });
+          };
+          toggleUberBar();
 
-          png1 = "chronocam.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "chronocam.png");
 
-          png1 = "game_menu.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "game_menu.png");
 
-          png1 = "pov.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "pov.png");
         });
       };
     } catch (e) {

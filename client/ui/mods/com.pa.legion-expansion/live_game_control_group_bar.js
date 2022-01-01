@@ -30,26 +30,19 @@ if (!legionLiveGameControlGroupLoaded) {
           var src =
             "img[src='coui://ui/main/game/live_game/img/control_group_bar/";
 
-          var png1 = "icon_category_bot.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_bot.png");
 
-          png1 = "icon_category_tank.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_tank.png");
 
-          png1 = "icon_category_air.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_air.png");
 
-          png1 = "icon_category_naval.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_naval.png");
 
-          png1 = "icon_category_orbital.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_orbital.png");
 
-          png1 = "icon_category_advanced.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_advanced.png");
 
-          png1 = "icon_category_fabber.png";
-          common.toggleImage(src, path, colour, png1);
+          common.toggleImage(src, path, colour, "icon_category_fabber.png");
         });
       };
     } catch (e) {
