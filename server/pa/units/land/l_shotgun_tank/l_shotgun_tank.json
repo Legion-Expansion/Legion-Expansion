@@ -41,7 +41,7 @@
       "effect_spec": "/pa/units/land/l_shotgun_tank/muzzle_flash.pfx socket_muzzle"
     }
   },
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "max_health": 1150,
   "mesh_bounds": [
     5.5,

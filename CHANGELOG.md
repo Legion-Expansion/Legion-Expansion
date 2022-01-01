@@ -19,6 +19,16 @@
 
 - Obsolete scene loads
 - Some Legion theme elements not being loaded
+- Failure to stop to engage a target while patrolling for:
+  - Purger
+  - Panzer
+  - Maul
+  - Deathmark
+  - Nanoswarms
+  - Earthshaker
+  - Scorpion
+  - Shank
+  - Epoch
 
 ## v1.21.0 - 2021-08-05
 

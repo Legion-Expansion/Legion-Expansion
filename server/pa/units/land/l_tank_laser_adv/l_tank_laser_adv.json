@@ -57,7 +57,7 @@
       "type": "idle"
     }
   ],
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "max_health": 1650,
   "mesh_bounds": [
     6.8,

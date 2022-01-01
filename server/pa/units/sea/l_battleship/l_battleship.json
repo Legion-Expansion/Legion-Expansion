@@ -60,7 +60,7 @@
       "type": "moving_forward"
     }
   ],
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "max_health": 7500,
   "mesh_bounds": [
     9,

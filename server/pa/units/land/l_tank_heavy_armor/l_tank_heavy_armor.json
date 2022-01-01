@@ -40,7 +40,7 @@
       "effect_spec": "/pa/units/land/l_tank_heavy_armor/shockwave.pfx bone_root"
     }
   },
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "max_health": 7000,
   "mesh_bounds": [
     7.792,

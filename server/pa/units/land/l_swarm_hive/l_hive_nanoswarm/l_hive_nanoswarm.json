@@ -40,7 +40,7 @@
       "type": "idle"
     }
   ],
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "guard_radius": 300,
   "max_health": 100,
   "mesh_bounds": [

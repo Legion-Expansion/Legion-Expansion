@@ -37,7 +37,7 @@
       "effect_spec": "/pa/units/land/l_tank_shank/muzzle_flash.pfx socket_muzzle"
     }
   },
-  "guard_layer": "WL_LandHorizontal",
+  "guard_layer": "WL_AnySurface",
   "headlights": [
     {
       "color": [
