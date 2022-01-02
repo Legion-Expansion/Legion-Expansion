@@ -7,12 +7,7 @@ from os.path import join
 
 from collections import OrderedDict
 
-try:
-    from pa_tools.pa.paths import PA_MEDIA_DIR
-except Exception as E:
-    print(f"Could not find PA directory! {E}\n Make sure that you run it at least once and try again.")
-    input()
-    sys.exit(1)
+from pa_tools.pa.paths import PA_MEDIA_DIR
 
 missing = []
 badJSON = []
