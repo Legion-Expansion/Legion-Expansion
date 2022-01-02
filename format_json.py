@@ -6,10 +6,10 @@ from pa_tools.pa.paths import PA_MEDIA_DIR
 
 # Format all json files in server and client
 file_list = []
-file_list.extend(Path("./server").glob('**/*.json'))
-file_list.extend(Path("./client").glob('**/*.json'))
-file_list.extend(Path("./server").glob('**/*.pfx'))
-file_list.extend(Path("./client").glob('**/*.pfx'))
+file_list.extend(Path("./server").glob("**/*.json"))
+file_list.extend(Path("./client").glob("**/*.json"))
+file_list.extend(Path("./server").glob("**/*.pfx"))
+file_list.extend(Path("./client").glob("**/*.pfx"))
 
 for file in file_list:
     # normalize paths to posix

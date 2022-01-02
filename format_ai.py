@@ -11,6 +11,7 @@ key_order = [
     "to_build",
 ]
 
+
 def reorder_keys(obj):
     if isinstance(obj, dict):
         new_obj = OrderedDict()
@@ -25,12 +26,12 @@ def reorder_keys(obj):
 
     if isinstance(obj, list):
         return list(map(reorder_keys, obj))
-    
+
     return obj
 
 
 # Format all the AI files and reorder the object keys
-for file in Path("server/pa/ai").glob('**/*.json'):
+for file in Path("server/pa/ai").glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
