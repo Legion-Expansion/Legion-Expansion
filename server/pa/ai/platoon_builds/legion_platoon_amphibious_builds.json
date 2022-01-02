@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Amphibious Platoon Small",
+      "to_build": "Legion_Amphibious_Attack_Small",
       "build_conditions": [
         [
           {
@@ -22,12 +24,12 @@
         ]
       ],
       "instance_count": 1,
-      "name": "Legion - Amphibious Platoon Small",
       "priority": 109,
-      "task_type": "LandAttack",
-      "to_build": "Legion_Amphibious_Attack_Small"
+      "task_type": "LandAttack"
     },
     {
+      "name": "Legion - Amphibious Platoon Medium",
+      "to_build": "Legion_Amphibious_Attack_Medium",
       "build_conditions": [
         [
           {
@@ -49,12 +51,12 @@
         ]
       ],
       "instance_count": 1,
-      "name": "Legion - Amphibious Platoon Medium",
       "priority": 108,
-      "task_type": "LandAttack",
-      "to_build": "Legion_Amphibious_Attack_Medium"
+      "task_type": "LandAttack"
     },
     {
+      "name": "Legion - Amphibious Platoon Large",
+      "to_build": "Legion_Amphibious_Attack_Large",
       "build_conditions": [
         [
           {
@@ -76,12 +78,12 @@
         ]
       ],
       "instance_count": 1,
-      "name": "Legion - Amphibious Platoon Large",
       "priority": 107,
-      "task_type": "LandAttack",
-      "to_build": "Legion_Amphibious_Attack_Large"
+      "task_type": "LandAttack"
     },
     {
+      "name": "Legion - Amphibious Platoon XLarge",
+      "to_build": "Legion_Amphibious_Attack_XLarge",
       "build_conditions": [
         [
           {
@@ -103,12 +105,12 @@
         ]
       ],
       "instance_count": 1,
-      "name": "Legion - Amphibious Platoon XLarge",
       "priority": 106,
-      "task_type": "LandAttack",
-      "to_build": "Legion_Amphibious_Attack_XLarge"
+      "task_type": "LandAttack"
     },
     {
+      "name": "Legion - Amphibious Platoon Max",
+      "to_build": "Legion_Amphibious_Attack_Max",
       "build_conditions": [
         [
           {
@@ -130,10 +132,8 @@
         ]
       ],
       "instance_count": 1,
-      "name": "Legion - Amphibious Platoon Max",
       "priority": 105,
-      "task_type": "LandAttack",
-      "to_build": "Legion_Amphibious_Attack_Max"
+      "task_type": "LandAttack"
     }
   ]
 }

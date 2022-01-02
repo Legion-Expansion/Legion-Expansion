@@ -1,6 +1,7 @@
 {
   "build_list": [
     {
+      "name": "Legion - Teleport Commander To Planet",
       "build_conditions": [
         [
           {
@@ -19,7 +20,6 @@
         "LegionCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Teleport Commander To Planet",
       "priority": 1001,
       "task_type": "TeleportFabberToPlanet"
     }

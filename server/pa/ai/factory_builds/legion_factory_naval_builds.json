@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Naval Fabber",
+      "to_build": "LegionNavalBasicFabber",
       "build_conditions": [
         [
           {
@@ -27,11 +29,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Naval Fabber",
-      "priority": 100,
-      "to_build": "LegionNavalBasicFabber"
+      "priority": 100
     },
     {
+      "name": "Legion - Destroyer",
+      "to_build": "LegionNavalBasicDestroyer",
       "build_conditions": [
         [
           {
@@ -52,11 +54,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Destroyer",
-      "priority": 97,
-      "to_build": "LegionNavalBasicDestroyer"
+      "priority": 97
     },
     {
+      "name": "Legion - Attack Sub",
+      "to_build": "LegionNavalBasicSub",
       "build_conditions": [
         [
           {
@@ -90,11 +92,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Attack Sub",
-      "priority": 97,
-      "to_build": "LegionNavalBasicSub"
+      "priority": 97
     },
     {
+      "name": "Legion - Frigate",
+      "to_build": "LegionNavalBasicAA",
       "build_conditions": [
         [
           {
@@ -164,11 +166,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Frigate",
-      "priority": 97,
-      "to_build": "LegionNavalBasicAA"
+      "priority": 97
     },
     {
+      "name": "Legion - Corvette - Intel",
+      "to_build": "LegionNavalBasicScout",
       "build_conditions": [
         [
           {
@@ -228,11 +230,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Corvette - Intel",
-      "priority": 98,
-      "to_build": "LegionNavalBasicScout"
+      "priority": 98
     },
     {
+      "name": "Legion - Corvette",
+      "to_build": "LegionNavalBasicScout",
       "build_conditions": [
         [
           {
@@ -253,11 +255,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Corvette",
-      "priority": 97,
-      "to_build": "LegionNavalBasicScout"
+      "priority": 97
     },
     {
+      "name": "Legion - Advanced Naval Fabber",
+      "to_build": "LegionNavalAdvancedFabber",
       "build_conditions": [
         [
           {
@@ -284,11 +286,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Naval Fabber",
-      "priority": 200,
-      "to_build": "LegionNavalAdvancedFabber"
+      "priority": 200
     },
     {
+      "name": "Legion - Fabrication Sub",
+      "to_build": "LegionNavalAdvancedFabberSub",
       "build_conditions": [
         [
           {
@@ -315,36 +317,11 @@
         "LegionFactoryAdvancedNaval"
       ],
       "instance_count": 1,
-      "name": "Legion - Fabrication Sub",
-      "priority": 199,
-      "to_build": "LegionNavalAdvancedFabberSub"
+      "priority": 199
     },
     {
-      "build_conditions": [
-        [
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ]
-      ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
       "name": "Legion - Battleship",
-      "priority": 199,
-      "to_build": "LegionNavalAdvancedBattleship"
-    },
-    {
+      "to_build": "LegionNavalAdvancedBattleship",
       "build_conditions": [
         [
           {
@@ -365,11 +342,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
+      "priority": 199
+    },
+    {
       "name": "Legion - Advanced Frigate",
-      "priority": 199,
-      "to_build": "LegionNavalAdvancedTactical"
-    },
-    {
+      "to_build": "LegionNavalAdvancedTactical",
       "build_conditions": [
         [
           {
@@ -390,11 +367,36 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Destroyer",
-      "priority": 199,
-      "to_build": "LegionNavalAdvancedDestroyer"
+      "priority": 199
     },
     {
+      "name": "Legion - Advanced Destroyer",
+      "to_build": "LegionNavalAdvancedDestroyer",
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "AloneOnPlanet"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanDeployNavalFromBase"
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199
+    },
+    {
+      "name": "Legion - Hover Ship",
+      "to_build": "LegionNavalAdvancedHover",
       "build_conditions": [
         [
           {
@@ -411,9 +413,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Hover Ship",
-      "priority": 199,
-      "to_build": "LegionNavalAdvancedHover"
+      "priority": 199
     }
   ]
 }

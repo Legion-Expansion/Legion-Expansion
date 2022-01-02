@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Orbital Fabber",
+      "to_build": "LegionOrbitalBasicFabber",
       "build_conditions": [
         [
           {
@@ -104,11 +106,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Fabber",
-      "priority": 199,
-      "to_build": "LegionOrbitalBasicFabber"
+      "priority": 199
     },
     {
+      "name": "Legion - Basic Radar Satellite",
+      "to_build": "LegionOrbitalBasicRadar",
       "build_conditions": [
         [
           {
@@ -141,11 +143,11 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Satellite",
-      "priority": 100,
-      "to_build": "LegionOrbitalBasicRadar"
+      "priority": 100
     },
     {
+      "name": "Legion - Basic Radar Satellite - Pri",
+      "to_build": "LegionOrbitalBasicRadar",
       "build_conditions": [
         [
           {
@@ -172,11 +174,11 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar Satellite - Pri",
-      "priority": 102,
-      "to_build": "LegionOrbitalBasicRadar"
+      "priority": 102
     },
     {
+      "name": "Legion - Basic Radar Satellite - Other planet",
+      "to_build": "LegionOrbitalBasicRadar",
       "build_conditions": [
         [
           {
@@ -204,12 +206,12 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Basic Radar Satellite - Other planet",
       "priority": 199,
-      "shared_instance_count": "ReconAssistance",
-      "to_build": "LegionOrbitalBasicRadar"
+      "shared_instance_count": "ReconAssistance"
     },
     {
+      "name": "Legion - Orbital Fighter",
+      "to_build": "LegionOrbitalBasicFighter",
       "build_conditions": [
         [
           {
@@ -235,11 +237,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Fighter",
-      "priority": 100,
-      "to_build": "LegionOrbitalBasicFighter"
+      "priority": 100
     },
     {
+      "name": "Legion - Orbital Fighter - Threat",
+      "to_build": "LegionOrbitalBasicFighter",
       "build_conditions": [
         [
           {
@@ -294,11 +296,11 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Orbital Fighter - Threat",
-      "priority": 200,
-      "to_build": "LegionOrbitalBasicFighter"
+      "priority": 200
     },
     {
+      "name": "Legion - Orbital Lander",
+      "to_build": "LegionOrbitalBasicTransport",
       "build_conditions": [
         [
           {
@@ -321,11 +323,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Lander",
-      "priority": 0,
-      "to_build": "LegionOrbitalBasicTransport"
+      "priority": 0
     },
     {
+      "name": "Legion - Probe - Other planet",
+      "to_build": "LegionOrbitalBasicScout",
       "build_conditions": [
         [
           {
@@ -353,12 +355,12 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Probe - Other planet",
       "priority": 200,
-      "shared_instance_count": "ReconAssistance",
-      "to_build": "LegionOrbitalBasicScout"
+      "shared_instance_count": "ReconAssistance"
     },
     {
+      "name": "Legion - Orbital Death Laser",
+      "to_build": "LegionOrbitalAdvancedLaser",
       "build_conditions": [
         [
           {
@@ -380,11 +382,11 @@
         "LegionFactoryAdvancedOrbital"
       ],
       "instance_count": 1,
-      "name": "Legion - Orbital Death Laser",
-      "priority": 195,
-      "to_build": "LegionOrbitalAdvancedLaser"
+      "priority": 195
     },
     {
+      "name": "Legion - Advanced Radar Satellite",
+      "to_build": "LegionOrbitalAdvancedRadar",
       "build_conditions": [
         [
           {
@@ -434,12 +436,12 @@
       ],
       "cross_planet_shared_count": true,
       "instance_count": 1,
-      "name": "Legion - Advanced Radar Satellite",
       "priority": 196,
-      "shared_instance_count": "ReconAssistance",
-      "to_build": "LegionOrbitalAdvancedRadar"
+      "shared_instance_count": "ReconAssistance"
     },
     {
+      "name": "Legion - Orbital Railgun",
+      "to_build": "LegionOrbitalAdvancedSniper",
       "build_conditions": [
         [
           {
@@ -464,11 +466,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Railgun",
-      "priority": 195,
-      "to_build": "LegionOrbitalAdvancedSniper"
+      "priority": 195
     },
     {
+      "name": "Legion - Orbital Railgun - Threat",
+      "to_build": "LegionOrbitalAdvancedSniper",
       "build_conditions": [
         [
           {
@@ -523,11 +525,11 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Orbital Railgun - Threat",
-      "priority": 205,
-      "to_build": "LegionOrbitalAdvancedSniper"
+      "priority": 205
     },
     {
+      "name": "Legion - Orbital Battleship",
+      "to_build": "LegionOrbitalAdvancedBattleship",
       "build_conditions": [
         [
           {
@@ -553,9 +555,7 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 5,
-      "name": "Legion - Orbital Battleship",
-      "priority": 195,
-      "to_build": "LegionOrbitalAdvancedBattleship"
+      "priority": 195
     }
   ]
 }

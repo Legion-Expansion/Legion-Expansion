@@ -1,34 +1,35 @@
 {
   "build_list": [
     {
-      "base_sort": "FromBuilder",
-      "build_conditions": [
-        [
-          {
-            "boolean": false,
-            "test_type": "PlanetIsGasGiant"
-          },
-          {
-            "test_type": "DesireMetal"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanFindMetalSpotToBuildBasic"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Factory & Construction - Orbital",
-            "value0": 0
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberBasic",
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": 2,
       "name": "Legion - Basic Metal Extractor - Desire - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "base_sort": "FromBuilder",
+      "build_conditions": [
+        [
+          {
+            "boolean": false,
+            "test_type": "PlanetIsGasGiant"
+          },
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "boolean": true,
+            "test_type": "CanFindMetalSpotToBuildBasic"
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Factory & Construction - Orbital",
+            "value0": 0
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberBasic",
+        "LegionOrbitalBasicFabber"
+      ],
+      "instance_count": 2,
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -40,10 +41,11 @@
       },
       "priority": 501,
       "shared_instance_count": "BasicMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Expand - Area 1",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -114,7 +116,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
-      "name": "Legion - Basic Metal Extractor - Expand - Area 1",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -126,10 +127,11 @@
       },
       "priority": 499,
       "shared_instance_count": "BasicMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -206,7 +208,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
-      "name": "Legion - Basic Metal Extractor - Expand - Area Alone",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -218,10 +219,11 @@
       },
       "priority": 499,
       "shared_instance_count": "BasicMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -254,7 +256,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
-      "name": "Legion - Basic Metal Extractor - Expand Low Pri - Area",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -266,10 +267,11 @@
       },
       "priority": 2,
       "shared_instance_count": "BasicMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Desire",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -291,7 +293,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
-      "name": "Legion - Basic Metal Extractor - Desire",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -302,10 +303,11 @@
         }
       },
       "priority": 501,
-      "shared_instance_count": "BasicMetal",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "shared_instance_count": "BasicMetal"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Expand 1",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -368,7 +370,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 2,
-      "name": "Legion - Basic Metal Extractor - Expand 1",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -379,10 +380,11 @@
         }
       },
       "priority": 499,
-      "shared_instance_count": "BasicMetal",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "shared_instance_count": "BasicMetal"
     },
     {
+      "name": "Legion - Basic Metal Extractor - Expand Low Pri",
+      "to_build": "LegionEcoBasicMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -409,7 +411,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 4,
-      "name": "Legion - Basic Metal Extractor - Expand Low Pri",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -420,10 +421,11 @@
         }
       },
       "priority": 2,
-      "shared_instance_count": "BasicMetal",
-      "to_build": "LegionEcoBasicMetalExtractor"
+      "shared_instance_count": "BasicMetal"
     },
     {
+      "name": "Legion - Basic Energy Generator - Desire",
+      "to_build": "LegionEcoBasicEnergyPlant",
       "build_conditions": [
         [
           {
@@ -480,7 +482,6 @@
       "cross_planet_shared_count": true,
       "instance_count": 1,
       "max_num_assisters": 3,
-      "name": "Legion - Basic Energy Generator - Desire",
       "placement_rules": {
         "buffer": 6,
         "placement_type": "FromBaseCenter",
@@ -492,10 +493,11 @@
         }
       },
       "priority": 500,
-      "shared_instance_count": "BasicEnergy",
-      "to_build": "LegionEcoBasicEnergyPlant"
+      "shared_instance_count": "BasicEnergy"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Desire - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -521,7 +523,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Advanced Metal Extractor - Desire - Area",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -533,10 +534,11 @@
       },
       "priority": 610,
       "shared_instance_count": "AdvancedMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Expand - Area",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -569,7 +571,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Metal Extractor - Expand - Area",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -581,10 +582,11 @@
       },
       "priority": 609,
       "shared_instance_count": "AdvancedMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Expand - Area Alone",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -617,7 +619,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 4,
-      "name": "Legion - Advanced Metal Extractor - Expand - Area Alone",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -629,10 +630,11 @@
       },
       "priority": 609,
       "shared_instance_count": "AdvancedMetal",
-      "task_type": "AreaBuild",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "task_type": "AreaBuild"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Desire",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -652,7 +654,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Advanced Metal Extractor - Desire",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -663,10 +664,11 @@
         }
       },
       "priority": 614,
-      "shared_instance_count": "AdvancedMetal",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "shared_instance_count": "AdvancedMetal"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Expand",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -689,7 +691,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Metal Extractor - Expand",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -700,10 +701,11 @@
         }
       },
       "priority": 609,
-      "shared_instance_count": "AdvancedMetal",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "shared_instance_count": "AdvancedMetal"
     },
     {
+      "name": "Legion - Advanced Metal Extractor - Expand 2",
+      "to_build": "LegionEcoAdvancedMetalExtractor",
       "base_sort": "FromBuilder",
       "build_conditions": [
         [
@@ -726,7 +728,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 2,
-      "name": "Legion - Advanced Metal Extractor - Expand 2",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -737,10 +738,11 @@
         }
       },
       "priority": 2,
-      "shared_instance_count": "AdvancedMetal",
-      "to_build": "LegionEcoAdvancedMetalExtractor"
+      "shared_instance_count": "AdvancedMetal"
     },
     {
+      "name": "Legion - Advanced Energy Generator - Desire",
+      "to_build": "LegionEcoAdvancedEnergyPlant",
       "build_conditions": [
         [
           {
@@ -760,7 +762,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Advanced Energy Generator - Desire",
       "placement_rules": {
         "buffer": 10,
         "placement_type": "FromBaseCenter",
@@ -772,10 +773,11 @@
         }
       },
       "priority": 615,
-      "shared_instance_count": "AdvancedEnergy",
-      "to_build": "LegionEcoAdvancedEnergyPlant"
+      "shared_instance_count": "AdvancedEnergy"
     },
     {
+      "name": "Legion - Storage",
+      "to_build": "LegionEcoBasicStorage",
       "build_conditions": [
         [
           {
@@ -812,7 +814,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Storage",
       "placement_rules": {
         "buffer": 10,
         "placement_type": "FromBaseCenter",
@@ -823,8 +824,7 @@
           "value": 50
         }
       },
-      "priority": 140,
-      "to_build": "LegionEcoBasicStorage"
+      "priority": 140
     }
   ]
 }

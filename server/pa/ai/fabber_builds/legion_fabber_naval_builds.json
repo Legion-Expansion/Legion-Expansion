@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Naval Factory",
+      "to_build": "LegionFactoryBasicNaval",
       "build_conditions": [
         [
           {
@@ -105,7 +107,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Naval Factory",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -116,10 +117,11 @@
         }
       },
       "priority": 376,
-      "shared_instance_count": "BasicFactory",
-      "to_build": "LegionFactoryBasicNaval"
+      "shared_instance_count": "BasicFactory"
     },
     {
+      "name": "Legion - Basic Naval Factory - Wasting",
+      "to_build": "LegionFactoryBasicNaval",
       "build_conditions": [
         [
           {
@@ -211,7 +213,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Naval Factory - Wasting",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -222,10 +223,11 @@
         }
       },
       "priority": 515,
-      "shared_instance_count": "BasicFactory",
-      "to_build": "LegionFactoryBasicNaval"
+      "shared_instance_count": "BasicFactory"
     },
     {
+      "name": "Legion - Advanced Naval Factory",
+      "to_build": "LegionFactoryAdvancedNaval",
       "build_conditions": [
         [
           {
@@ -273,7 +275,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Advanced Naval Factory",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -284,10 +285,11 @@
         }
       },
       "priority": 477,
-      "shared_instance_count": "AdvancedFactory",
-      "to_build": "LegionFactoryAdvancedNaval"
+      "shared_instance_count": "AdvancedFactory"
     },
     {
+      "name": "Legion - Advanced Naval Factory - Wasting",
+      "to_build": "LegionFactoryAdvancedNaval",
       "build_conditions": [
         [
           {
@@ -335,7 +337,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Advanced Naval Factory - Wasting",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -346,8 +347,7 @@
         }
       },
       "priority": 525,
-      "shared_instance_count": "AdvancedFactory",
-      "to_build": "LegionFactoryAdvancedNaval"
+      "shared_instance_count": "AdvancedFactory"
     }
   ]
 }

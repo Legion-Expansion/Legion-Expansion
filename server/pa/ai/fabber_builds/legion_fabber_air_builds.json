@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Air Factory",
+      "to_build": "LegionFactoryBasicAir",
       "build_conditions": [
         [
           {
@@ -112,7 +114,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Air Factory",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -123,10 +124,11 @@
         }
       },
       "priority": 376,
-      "shared_instance_count": "BasicFactory",
-      "to_build": "LegionFactoryBasicAir"
+      "shared_instance_count": "BasicFactory"
     },
     {
+      "name": "Legion - Basic Air Factory - Wasting",
+      "to_build": "LegionFactoryBasicAir",
       "build_conditions": [
         [
           {
@@ -209,7 +211,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Air Factory - Wasting",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -220,10 +221,11 @@
         }
       },
       "priority": 515,
-      "shared_instance_count": "BasicFactory",
-      "to_build": "LegionFactoryBasicAir"
+      "shared_instance_count": "BasicFactory"
     },
     {
+      "name": "Legion - Advanced Air Factory",
+      "to_build": "LegionFactoryAdvancedAir",
       "build_conditions": [
         [
           {
@@ -309,7 +311,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Advanced Air Factory",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -320,10 +321,11 @@
         }
       },
       "priority": 477,
-      "shared_instance_count": "AdvancedFactory",
-      "to_build": "LegionFactoryAdvancedAir"
+      "shared_instance_count": "AdvancedFactory"
     },
     {
+      "name": "Legion - Advanced Air Factory - Wasting",
+      "to_build": "LegionFactoryAdvancedAir",
       "build_conditions": [
         [
           {
@@ -377,7 +379,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Advanced Air Factory - Wasting",
       "placement_rules": {
         "buffer": 3,
         "threat": {
@@ -388,8 +389,7 @@
         }
       },
       "priority": 525,
-      "shared_instance_count": "AdvancedFactory",
-      "to_build": "LegionFactoryAdvancedAir"
+      "shared_instance_count": "AdvancedFactory"
     }
   ]
 }

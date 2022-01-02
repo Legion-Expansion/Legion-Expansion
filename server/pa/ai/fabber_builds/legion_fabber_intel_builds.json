@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Radar",
+      "to_build": "LegionIntelBasicRadar",
       "build_conditions": [
         [
           {
@@ -40,7 +42,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -51,10 +52,11 @@
         }
       },
       "priority": 90,
-      "shared_instance_count": "BasicRadar",
-      "to_build": "LegionIntelBasicRadar"
+      "shared_instance_count": "BasicRadar"
     },
     {
+      "name": "Legion - Basic Radar - Need for Ranged",
+      "to_build": "LegionIntelBasicRadar",
       "build_conditions": [
         [
           {
@@ -100,7 +102,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar - Need for Ranged",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -111,10 +112,11 @@
         }
       },
       "priority": 246,
-      "shared_instance_count": "BasicRadar",
-      "to_build": "LegionIntelBasicRadar"
+      "shared_instance_count": "BasicRadar"
     },
     {
+      "name": "Legion - Basic Radar - Have none",
+      "to_build": "LegionIntelBasicRadar",
       "build_conditions": [
         [
           {
@@ -146,7 +148,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Radar - Have none",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -157,10 +158,11 @@
         }
       },
       "priority": 605,
-      "shared_instance_count": "BasicRadar",
-      "to_build": "LegionIntelBasicRadar"
+      "shared_instance_count": "BasicRadar"
     },
     {
+      "name": "Legion - Advanced Radar",
+      "to_build": "LegionIntelAdvancedRadar",
       "build_conditions": [
         [
           {
@@ -195,7 +197,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -206,10 +207,11 @@
         }
       },
       "priority": 91,
-      "shared_instance_count": "AdvancedRadar",
-      "to_build": "LegionIntelAdvancedRadar"
+      "shared_instance_count": "AdvancedRadar"
     },
     {
+      "name": "Legion - Advanced Radar - Need for Ranged",
+      "to_build": "LegionIntelAdvancedRadar",
       "build_conditions": [
         [
           {
@@ -250,7 +252,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar - Need for Ranged",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -261,10 +262,11 @@
         }
       },
       "priority": 247,
-      "shared_instance_count": "AdvancedRadar",
-      "to_build": "LegionIntelAdvancedRadar"
+      "shared_instance_count": "AdvancedRadar"
     },
     {
+      "name": "Legion - Advanced Radar - Have none",
+      "to_build": "LegionIntelAdvancedRadar",
       "build_conditions": [
         [
           {
@@ -291,7 +293,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Radar - Have none",
       "placement_rules": {
         "buffer": 2,
         "threat": {
@@ -302,8 +303,7 @@
         }
       },
       "priority": 265,
-      "shared_instance_count": "AdvancedRadar",
-      "to_build": "LegionIntelAdvancedRadar"
+      "shared_instance_count": "AdvancedRadar"
     }
   ]
 }

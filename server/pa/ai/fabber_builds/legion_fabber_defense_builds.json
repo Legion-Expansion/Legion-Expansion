@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Air Defense - Mex",
+      "to_build": "LegionDefenseBasicAir",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -60,7 +62,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -88,10 +89,11 @@
         ]
       },
       "priority": 261,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
+      "shared_instance_count": "BasicAirDefense"
     },
     {
+      "name": "Legion - Basic Land Defense Single - Mex",
+      "to_build": "LegionDefenseBasicLand",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -151,7 +153,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -179,10 +180,11 @@
         ]
       },
       "priority": 261,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
+      "shared_instance_count": "BasicLandDefense"
     },
     {
+      "name": "Legion - Basic Air Defense",
+      "to_build": "LegionDefenseBasicAir",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -232,7 +234,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -254,10 +255,11 @@
         ]
       },
       "priority": 85,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
+      "shared_instance_count": "BasicAirDefense"
     },
     {
+      "name": "Legion - Basic Air Defense - Threat",
+      "to_build": "LegionDefenseBasicAir",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -294,7 +296,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -316,10 +317,11 @@
         ]
       },
       "priority": 262,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
+      "shared_instance_count": "BasicAirDefense"
     },
     {
+      "name": "Legion - Basic Land Defense Single",
+      "to_build": "LegionDefenseBasicLand",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -379,7 +381,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -401,10 +402,11 @@
         ]
       },
       "priority": 85,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
+      "shared_instance_count": "BasicLandDefense"
     },
     {
+      "name": "Legion - Basic Land Defense Single - Threat",
+      "to_build": "LegionDefenseBasicLand",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -445,7 +447,6 @@
         "LegionCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -467,10 +468,11 @@
         ]
       },
       "priority": 262,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
+      "shared_instance_count": "BasicLandDefense"
     },
     {
+      "name": "Legion - Basic Land Defense",
+      "to_build": "LegionDefenseBasicLandII",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -520,7 +522,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -541,10 +542,11 @@
           }
         ]
       },
-      "priority": 85,
-      "to_build": "LegionDefenseBasicLandII"
+      "priority": 85
     },
     {
+      "name": "Legion - Basic Land Defense - Threat",
+      "to_build": "LegionDefenseBasicLandII",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -580,7 +582,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -601,10 +602,11 @@
           }
         ]
       },
-      "priority": 262,
-      "to_build": "LegionDefenseBasicLandII"
+      "priority": 262
     },
     {
+      "name": "Legion - Basic Artillery",
+      "to_build": "LegionDefenseBasicArtillery",
       "build_conditions": [
         [
           {
@@ -642,7 +644,6 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 2,
-      "name": "Legion - Basic Artillery",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -662,10 +663,11 @@
           }
         ]
       },
-      "priority": 245,
-      "to_build": "LegionDefenseBasicArtillery"
+      "priority": 245
     },
     {
+      "name": "Legion - Basic Naval Defense - Mex",
+      "to_build": "LegionDefenseBasicNaval",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -733,7 +735,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Naval Defense - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -761,10 +762,11 @@
         ]
       },
       "priority": 261,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicNaval"
+      "shared_instance_count": "BasicLandDefense"
     },
     {
+      "name": "Legion - Basic Naval Defense",
+      "to_build": "LegionDefenseBasicNaval",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -797,7 +799,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Naval Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -818,10 +819,11 @@
           }
         ]
       },
-      "priority": 85,
-      "to_build": "LegionDefenseBasicNaval"
+      "priority": 85
     },
     {
+      "name": "Legion - Basic Naval Defense - Threat",
+      "to_build": "LegionDefenseBasicNaval",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -894,7 +896,6 @@
         "AnyLegionFabberBasic"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Naval Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -915,10 +916,11 @@
           }
         ]
       },
-      "priority": 262,
-      "to_build": "LegionDefenseBasicNaval"
+      "priority": 262
     },
     {
+      "name": "Legion - Advanced Air Defense",
+      "to_build": "LegionDefenseAdvancedAir",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -979,7 +981,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Air Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1000,10 +1001,11 @@
           }
         ]
       },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedAir"
+      "priority": 255
     },
     {
+      "name": "Legion - Advanced Air Defense - Threat",
+      "to_build": "LegionDefenseAdvancedAir",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1045,7 +1047,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Air Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1066,71 +1067,71 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedAir"
+      "priority": 379
     },
     {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseAdvancedTactical",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseAdvancedTactical",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
       "name": "Legion - Advanced Land Defense",
+      "to_build": "LegionDefenseAdvancedTactical",
+      "base_sort": "FromPerimeter",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "value0": 3
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedTactical",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "value0": 4
+          },
+          {
+            "compare0": ">=",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "value0": 1
+          },
+          {
+            "boolean": true,
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced"
+          },
+          {
+            "string0": "LegionDefenseAdvancedTactical",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "instance_count": 1,
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1151,10 +1152,11 @@
           }
         ]
       },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedTactical"
+      "priority": 255
     },
     {
+      "name": "Legion - Advanced Land Defense II",
+      "to_build": "LegionDefenseAdvancedLand",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1215,7 +1217,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense II",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1236,10 +1237,11 @@
           }
         ]
       },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedLand"
+      "priority": 255
     },
     {
+      "name": "Legion - Advanced Land Defense - Threat",
+      "to_build": "LegionDefenseAdvancedTactical",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1281,7 +1283,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1302,10 +1303,11 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedTactical"
+      "priority": 379
     },
     {
+      "name": "Legion - Advanced Land Defense II - Threat",
+      "to_build": "LegionDefenseAdvancedLand",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1347,7 +1349,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Land Defense II - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1368,10 +1369,11 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedLand"
+      "priority": 379
     },
     {
+      "name": "Legion - Advanced Naval Defense",
+      "to_build": "LegionDefenseAdvancedNaval",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1410,7 +1412,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Naval Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
@@ -1431,10 +1432,11 @@
           }
         ]
       },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedNaval"
+      "priority": 255
     },
     {
+      "name": "Legion - Advanced Naval Defense - Threat",
+      "to_build": "LegionDefenseAdvancedNaval",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1517,7 +1519,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Advanced Naval Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1538,10 +1539,11 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedNaval"
+      "priority": 379
     },
     {
+      "name": "Legion - Wall",
+      "to_build": "LegionStructureBasicWall",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1565,7 +1567,6 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Wall",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
@@ -1585,10 +1586,11 @@
           }
         ]
       },
-      "priority": 0,
-      "to_build": "LegionStructureBasicWall"
+      "priority": 0
     },
     {
+      "name": "Legion - Shield",
+      "to_build": "LegionDefenseAdvancedShield",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1626,7 +1628,6 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Shield",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
@@ -1646,10 +1647,11 @@
           }
         ]
       },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedShield"
+      "priority": 255
     },
     {
+      "name": "Legion - Shield - Threat",
+      "to_build": "LegionDefenseAdvancedShield",
       "base_sort": "FromPerimeter",
       "build_conditions": [
         [
@@ -1694,7 +1696,6 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Shield - Threat",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
@@ -1714,100 +1715,100 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedShield"
+      "priority": 379
     },
     {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "instance_count": 1,
       "name": "Legion - Basic Orbital Defense",
+      "to_build": "LegionDefenseBasicOrbital",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "value0": 3
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "value0": 0
+          },
+          {
+            "string0": "LegionDefenseBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "value0": 3
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "value0": 0
+          },
+          {
+            "string0": "LegionDefenseBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "compare0": ">",
+            "string0": "Orbital",
+            "test_type": "SystemThreat",
+            "value0": 0
+          },
+          {
+            "compare0": "<",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "value0": 3
+          },
+          {
+            "compare0": ">",
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "value0": 0
+          },
+          {
+            "string0": "LegionDefenseBasicOrbital",
+            "test_type": "CanFindPlaceToBuild"
+          }
+        ]
+      ],
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "instance_count": 1,
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1821,10 +1822,11 @@
           }
         ]
       },
-      "priority": 378,
-      "to_build": "LegionDefenseBasicOrbital"
+      "priority": 378
     },
     {
+      "name": "Legion - Basic Orbital Defense - Rush",
+      "to_build": "LegionDefenseBasicOrbital",
       "build_conditions": [
         [
           {
@@ -1914,7 +1916,6 @@
         "AnyLegionFabberAdvanced"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Orbital Defense - Rush",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -1928,10 +1929,11 @@
           }
         ]
       },
-      "priority": 386,
-      "to_build": "LegionDefenseBasicOrbital"
+      "priority": 386
     },
     {
+      "name": "Legion - Anti Nuke Silo",
+      "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "build_conditions": [
         [
           {
@@ -1985,7 +1987,6 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Anti Nuke Silo",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -2007,10 +2008,11 @@
         ]
       },
       "priority": 380,
-      "shared_instance_count": "AntiNukeSilo",
-      "to_build": "LegionDefenseAdvancedAntiNukeSilo"
+      "shared_instance_count": "AntiNukeSilo"
     },
     {
+      "name": "Legion - Anti Nuke Silo - Rush",
+      "to_build": "LegionDefenseAdvancedAntiNukeSilo",
       "build_conditions": [
         [
           {
@@ -2130,7 +2132,6 @@
       "instance_count": 1,
       "max_num_assisters": 12,
       "min_num_assisters": 5,
-      "name": "Legion - Anti Nuke Silo - Rush",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -2152,8 +2153,7 @@
         ]
       },
       "priority": 386,
-      "shared_instance_count": "AntiNukeSilo",
-      "to_build": "LegionDefenseAdvancedAntiNukeSilo"
+      "shared_instance_count": "AntiNukeSilo"
     }
   ]
 }

@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Bot Titan",
+      "to_build": "LegionTitanAdvancedBot",
       "build_conditions": [
         [
           {
@@ -33,7 +35,6 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Bot Titan",
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
@@ -45,10 +46,11 @@
         }
       },
       "priority": 480,
-      "shared_instance_count": "Titan",
-      "to_build": "LegionTitanAdvancedBot"
+      "shared_instance_count": "Titan"
     },
     {
+      "name": "Legion - Vehicle Titan",
+      "to_build": "LegionTitanAdvancedVehicle",
       "build_conditions": [
         [
           {
@@ -80,7 +82,6 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Vehicle Titan",
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
@@ -92,10 +93,11 @@
         }
       },
       "priority": 480,
-      "shared_instance_count": "Titan",
-      "to_build": "LegionTitanAdvancedVehicle"
+      "shared_instance_count": "Titan"
     },
     {
+      "name": "Legion - Air Titan",
+      "to_build": "LegionTitanAdvancedAir",
       "build_conditions": [
         [
           {
@@ -127,7 +129,6 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Air Titan",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -138,10 +139,11 @@
         }
       },
       "priority": 480,
-      "shared_instance_count": "Titan",
-      "to_build": "LegionTitanAdvancedAir"
+      "shared_instance_count": "Titan"
     },
     {
+      "name": "Legion - Orbital Titan",
+      "to_build": "LegionTitanAdvancedOrbital",
       "build_conditions": [
         [
           {
@@ -165,7 +167,6 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Orbital Titan",
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
@@ -176,10 +177,11 @@
         }
       },
       "priority": 480,
-      "shared_instance_count": "Titan",
-      "to_build": "LegionTitanAdvancedOrbital"
+      "shared_instance_count": "Titan"
     },
     {
+      "name": "Legion - Structure Titan",
+      "to_build": "LegionTitanAdvancedStructure",
       "build_conditions": [
         [
           {
@@ -243,7 +245,6 @@
       "instance_count": 1,
       "max_num_assisters": 15,
       "min_num_assisters": 3,
-      "name": "Legion - Structure Titan",
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
@@ -255,8 +256,7 @@
         }
       },
       "priority": 480,
-      "shared_instance_count": "Titan",
-      "to_build": "LegionTitanAdvancedStructure"
+      "shared_instance_count": "Titan"
     }
   ]
 }

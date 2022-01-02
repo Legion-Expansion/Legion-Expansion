@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Nuke Silo",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
       "build_conditions": [
         [
           {
@@ -37,15 +39,15 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "instance_count": 1,
-      "name": "Legion - Nuke Silo",
       "placement_rules": {
         "buffer": 2
       },
       "priority": 360,
-      "shared_instance_count": "NukeSilo",
-      "to_build": "LegionDefenseAdvancedNukeSilo"
+      "shared_instance_count": "NukeSilo"
     },
     {
+      "name": "Legion - Nuke Silo - Alone",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
       "build_conditions": [
         [
           {
@@ -90,15 +92,15 @@
       "instance_count": 1,
       "max_num_assisters": 12,
       "min_num_assisters": 3,
-      "name": "Legion - Nuke Silo - Alone",
       "placement_rules": {
         "buffer": 2
       },
       "priority": 505,
-      "shared_instance_count": "NukeSilo",
-      "to_build": "LegionDefenseAdvancedNukeSilo"
+      "shared_instance_count": "NukeSilo"
     },
     {
+      "name": "Legion - Nuke Silo - No Antis",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
       "build_conditions": [
         [
           {
@@ -145,15 +147,15 @@
       "instance_count": 1,
       "max_num_assisters": 12,
       "min_num_assisters": 3,
-      "name": "Legion - Nuke Silo - No Antis",
       "placement_rules": {
         "buffer": 2
       },
       "priority": 478,
-      "shared_instance_count": "NukeSilo",
-      "to_build": "LegionDefenseAdvancedNukeSilo"
+      "shared_instance_count": "NukeSilo"
     },
     {
+      "name": "Legion - Orbital Dropper",
+      "to_build": "LegionOrbitalAdvancedCannon",
       "build_conditions": [
         [
           {
@@ -193,15 +195,15 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 1,
-      "name": "Legion - Orbital Dropper",
       "placement_rules": {
         "buffer": 2
       },
       "priority": 0,
-      "shared_instance_count": "UnitCannon",
-      "to_build": "LegionOrbitalAdvancedCannon"
+      "shared_instance_count": "UnitCannon"
     },
     {
+      "name": "Legion - Long Range Artillery",
+      "to_build": "LegionDefenseAdvancedArtillery",
       "build_conditions": [
         [
           {
@@ -244,7 +246,6 @@
       "instance_count": 1,
       "max_num_assisters": 6,
       "min_num_assisters": 3,
-      "name": "Legion - Long Range Artillery",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
@@ -255,10 +256,11 @@
           "value": 50
         }
       },
-      "priority": 360,
-      "to_build": "LegionDefenseAdvancedArtillery"
+      "priority": 360
     },
     {
+      "name": "Legion - Control Module",
+      "to_build": "LegionDefenseAdvancedModule",
       "build_conditions": [
         [
           {
@@ -303,9 +305,7 @@
       "instance_count": 1,
       "max_num_assisters": 45,
       "min_num_assisters": 8,
-      "name": "Legion - Control Module",
-      "priority": 612,
-      "to_build": "LegionDefenseAdvancedModule"
+      "priority": 612
     }
   ]
 }

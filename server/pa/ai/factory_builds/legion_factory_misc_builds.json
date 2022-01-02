@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Nuke Missile",
+      "to_build": "LegionDefenseAdvancedNuke",
       "build_conditions": [
         [
           {
@@ -15,11 +17,11 @@
         "LegionDefenseAdvancedNukeSilo"
       ],
       "instance_count": -1,
-      "name": "Legion - Nuke Missile",
-      "priority": 151,
-      "to_build": "LegionDefenseAdvancedNuke"
+      "priority": 151
     },
     {
+      "name": "Legion - Nuke Missile - No Antis",
+      "to_build": "LegionDefenseAdvancedNuke",
       "build_conditions": [
         [
           {
@@ -42,11 +44,11 @@
       "instance_count": 2,
       "max_num_assisters": 12,
       "min_num_assisters": 3,
-      "name": "Legion - Nuke Missile - No Antis",
-      "priority": 387,
-      "to_build": "LegionDefenseAdvancedNuke"
+      "priority": 387
     },
     {
+      "name": "Legion - Anti Nuke Missile",
+      "to_build": "LegionDefenseAdvancedAntiNuke",
       "build_conditions": [
         [
           {
@@ -61,11 +63,11 @@
         "LegionDefenseAdvancedAntiNukeSilo"
       ],
       "instance_count": -1,
-      "name": "Legion - Anti Nuke Missile",
-      "priority": 151,
-      "to_build": "LegionDefenseAdvancedAntiNuke"
+      "priority": 151
     },
     {
+      "name": "Legion - Anti Nuke Missile - Rush",
+      "to_build": "LegionDefenseAdvancedAntiNuke",
       "build_conditions": [
         [
           {
@@ -89,9 +91,7 @@
       "instance_count": -1,
       "max_num_assisters": 12,
       "min_num_assisters": 5,
-      "name": "Legion - Anti Nuke Missile - Rush",
-      "priority": 388,
-      "to_build": "LegionDefenseAdvancedAntiNuke"
+      "priority": 388
     }
   ]
 }

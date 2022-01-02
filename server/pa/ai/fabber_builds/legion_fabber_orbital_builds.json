@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Orbital Launcher",
+      "to_build": "LegionFactoryBasicOrbital",
       "build_conditions": [
         [
           {
@@ -63,15 +65,15 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 3,
-      "name": "Legion - Orbital Launcher",
       "placement_rules": {
         "buffer": 5
       },
       "priority": 485,
-      "shared_instance_count": "OrbitalLauncher",
-      "to_build": "LegionFactoryBasicOrbital"
+      "shared_instance_count": "OrbitalLauncher"
     },
     {
+      "name": "Legion - Orbital Launcher - Rush",
+      "to_build": "LegionFactoryBasicOrbital",
       "build_conditions": [
         [
           {
@@ -184,15 +186,15 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Orbital Launcher - Rush",
       "placement_rules": {
         "buffer": 5
       },
       "priority": 486,
-      "shared_instance_count": "OrbitalLauncher",
-      "to_build": "LegionFactoryBasicOrbital"
+      "shared_instance_count": "OrbitalLauncher"
     },
     {
+      "name": "Legion - Orbital Factory",
+      "to_build": "LegionFactoryAdvancedOrbital",
       "build_conditions": [
         [
           {
@@ -222,14 +224,14 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 3,
-      "name": "Legion - Orbital Factory",
       "placement_rules": {
         "buffer": 5
       },
-      "priority": 485,
-      "to_build": "LegionFactoryAdvancedOrbital"
+      "priority": 485
     },
     {
+      "name": "Legion - Defense Satellite",
+      "to_build": "LegionDefenseBasicOrbitalII",
       "build_conditions": [
         [
           {
@@ -303,7 +305,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 1,
-      "name": "Legion - Defense Satellite",
       "placement_rules": {
         "buffer": 10,
         "placement_type": "FromMainBaseCenter",
@@ -317,10 +318,11 @@
           }
         ]
       },
-      "priority": 379,
-      "to_build": "LegionDefenseBasicOrbitalII"
+      "priority": 379
     },
     {
+      "name": "Legion - Delta V Engine",
+      "to_build": "LegionDefenseAdvancedEngine",
       "build_conditions": [
         [
           {
@@ -377,14 +379,14 @@
       "instance_count": 1,
       "max_num_assisters": 45,
       "min_num_assisters": 8,
-      "name": "Legion - Delta V Engine",
       "placement_rules": {
         "buffer": 5
       },
-      "priority": 612,
-      "to_build": "LegionDefenseAdvancedEngine"
+      "priority": 612
     },
     {
+      "name": "Legion - Orbital Mining Platform",
+      "to_build": "LegionEcoAdvancedMine",
       "build_conditions": [
         [
           {
@@ -433,14 +435,13 @@
       "instance_count": 1,
       "max_num_assisters": 5,
       "min_num_assisters": 3,
-      "name": "Legion - Orbital Mining Platform",
       "placement_rules": {
         "buffer": 75
       },
-      "priority": 360,
-      "to_build": "LegionEcoAdvancedMine"
+      "priority": 360
     },
     {
+      "name": "Legion - Move Fabber To Planet",
       "build_conditions": [
         [
           {
@@ -471,11 +472,11 @@
         "LegionAirAdvancedFabber"
       ],
       "instance_count": 1,
-      "name": "Legion - Move Fabber To Planet",
       "priority": 800,
       "task_type": "TransportToPlanet"
     },
     {
+      "name": "Legion - Move Orbital Fabber To Planet",
       "build_conditions": [
         [
           {
@@ -494,11 +495,11 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 1,
-      "name": "Legion - Move Orbital Fabber To Planet",
       "priority": 800,
       "task_type": "OrbitalFabberMoveToPlanet"
     },
     {
+      "name": "Legion - Move Orbital Fabber To Safe Planet",
       "build_conditions": [
         [
           {
@@ -517,7 +518,6 @@
         "LegionOrbitalBasicFabber"
       ],
       "instance_count": 1,
-      "name": "Legion - Move Orbital Fabber To Safe Planet",
       "priority": 800,
       "task_type": "OrbitalFabberMoveToSafePlanet"
     }

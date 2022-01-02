@@ -1,6 +1,8 @@
 {
   "build_list": [
     {
+      "name": "Legion - Basic Air Fabber",
+      "to_build": "LegionAirBasicFabber",
       "build_conditions": [
         [
           {
@@ -34,11 +36,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Fabber",
-      "priority": 100,
-      "to_build": "LegionAirBasicFabber"
+      "priority": 100
     },
     {
+      "name": "Legion - Basic Air Fighter",
+      "to_build": "LegionAirBasicFighter",
       "build_conditions": [
         [
           {
@@ -101,11 +103,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Fighter",
-      "priority": 97,
-      "to_build": "LegionAirBasicFighter"
+      "priority": 97
     },
     {
+      "name": "Legion - Basic Air Bomb",
+      "to_build": "LegionAirBasicBomb",
       "build_conditions": [
         [
           {
@@ -129,11 +131,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Bomb",
-      "priority": 97,
-      "to_build": "LegionAirBasicBomb"
+      "priority": 97
     },
     {
+      "name": "Legion - Basic Air Bomber",
+      "to_build": "LegionAirBasicBomber",
       "build_conditions": [
         [
           {
@@ -165,11 +167,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Bomber",
-      "priority": 97,
-      "to_build": "LegionAirBasicBomber"
+      "priority": 97
     },
     {
+      "name": "Legion - Basic Air Gunship - Intel",
+      "to_build": "LegionAirBasicGunship",
       "build_conditions": [
         [
           {
@@ -228,12 +230,12 @@
         "LegionFactoryBasicAir"
       ],
       "instance_count": 1,
-      "name": "Legion - Basic Air Gunship - Intel",
       "priority": 98,
-      "shared_instance_count": "AirScout",
-      "to_build": "LegionAirBasicGunship"
+      "shared_instance_count": "AirScout"
     },
     {
+      "name": "Legion - Basic Air Gunship",
+      "to_build": "LegionAirBasicGunship",
       "build_conditions": [
         [
           {
@@ -265,12 +267,12 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Basic Air Gunship",
       "priority": 97,
-      "shared_instance_count": "AirScout",
-      "to_build": "LegionAirBasicGunship"
+      "shared_instance_count": "AirScout"
     },
     {
+      "name": "Legion - Advanced Air Fabber",
+      "to_build": "LegionAirAdvancedFabber",
       "build_conditions": [
         [
           {
@@ -306,11 +308,11 @@
       ],
       "instance_count": 1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Air Fabber",
-      "priority": 200,
-      "to_build": "LegionAirAdvancedFabber"
+      "priority": 200
     },
     {
+      "name": "Legion - Air Scout",
+      "to_build": "LegionAirAdvancedScout",
       "build_conditions": [
         [
           {
@@ -390,11 +392,11 @@
         "LegionFactoryAdvancedAir"
       ],
       "instance_count": 1,
-      "name": "Legion - Air Scout",
-      "priority": 199,
-      "to_build": "LegionAirAdvancedScout"
+      "priority": 199
     },
     {
+      "name": "Legion - Advanced Air Fighter",
+      "to_build": "LegionAirAdvancedFighter",
       "build_conditions": [
         [
           {
@@ -457,11 +459,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Air Fighter",
-      "priority": 198,
-      "to_build": "LegionAirAdvancedFighter"
+      "priority": 198
     },
     {
+      "name": "Legion - Advanced Air Bomber",
+      "to_build": "LegionAirAdvancedBomber",
       "build_conditions": [
         [
           {
@@ -493,11 +495,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Air Bomber",
-      "priority": 198,
-      "to_build": "LegionAirAdvancedBomber"
+      "priority": 198
     },
     {
+      "name": "Legion - Advanced Gunship",
+      "to_build": "LegionAirAdvancedGunship",
       "build_conditions": [
         [
           {
@@ -529,11 +531,11 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 15,
-      "name": "Legion - Advanced Gunship",
-      "priority": 198,
-      "to_build": "LegionAirAdvancedGunship"
+      "priority": 198
     },
     {
+      "name": "Legion - Advanced Air Carrier",
+      "to_build": "LegionAirAdvancedCarrier",
       "build_conditions": [
         [
           {
@@ -550,9 +552,7 @@
       ],
       "instance_count": -1,
       "max_num_assisters": 10,
-      "name": "Legion - Advanced Air Carrier",
-      "priority": 198,
-      "to_build": "LegionAirAdvancedCarrier"
+      "priority": 198
     }
   ]
 }
