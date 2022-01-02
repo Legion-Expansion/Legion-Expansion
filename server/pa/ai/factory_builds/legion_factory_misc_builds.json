@@ -3,6 +3,11 @@
     {
       "name": "Legion - Nuke Missile",
       "to_build": "LegionDefenseAdvancedNuke",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
       "build_conditions": [
         [
           {
@@ -12,25 +17,25 @@
             "test_type": "FactoryHasOpenSlot"
           }
         ]
-      ],
-      "builders": [
-        "LegionDefenseAdvancedNukeSilo"
-      ],
-      "instance_count": -1,
-      "priority": 151
+      ]
     },
     {
       "name": "Legion - Nuke Missile - No Antis",
       "to_build": "LegionDefenseAdvancedNuke",
+      "instance_count": 2,
+      "priority": 387,
+      "builders": [
+        "LegionDefenseAdvancedNukeSilo"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<=",
-            "string0": "AntiNuke",
             "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
             "value0": 0
           },
           {
@@ -38,17 +43,17 @@
           }
         ]
       ],
-      "builders": [
-        "LegionDefenseAdvancedNukeSilo"
-      ],
-      "instance_count": 2,
       "max_num_assisters": 12,
-      "min_num_assisters": 3,
-      "priority": 387
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Anti Nuke Missile",
       "to_build": "LegionDefenseAdvancedAntiNuke",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
       "build_conditions": [
         [
           {
@@ -58,40 +63,35 @@
             "test_type": "FactoryHasOpenSlot"
           }
         ]
-      ],
-      "builders": [
-        "LegionDefenseAdvancedAntiNukeSilo"
-      ],
-      "instance_count": -1,
-      "priority": 151
+      ]
     },
     {
       "name": "Legion - Anti Nuke Missile - Rush",
       "to_build": "LegionDefenseAdvancedAntiNuke",
+      "instance_count": -1,
+      "priority": 388,
+      "builders": [
+        "LegionDefenseAdvancedAntiNukeSilo"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">",
-            "string0": "Nuke",
             "test_type": "PlanetThreat",
+            "string0": "Nuke",
+            "compare0": ">",
             "value0": 0
           },
           {
-            "boolean": true,
-            "test_type": "FactorySlotsEmpty"
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
           }
         ]
       ],
-      "builders": [
-        "LegionDefenseAdvancedAntiNukeSilo"
-      ],
-      "instance_count": -1,
       "max_num_assisters": 12,
-      "min_num_assisters": 5,
-      "priority": 388
+      "min_num_assisters": 5
     }
   ]
 }

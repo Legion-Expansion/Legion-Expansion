@@ -3,83 +3,88 @@
     {
       "name": "Legion - Basic Naval Fabber",
       "to_build": "LegionNavalBasicFabber",
+      "instance_count": 1,
+      "priority": 100,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "BaseThreatened"
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Fabber & Basic",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "string0": "LegionNavalBasicFabber",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalBasicFabber"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Destroyer",
       "to_build": "LegionNavalBasicDestroyer",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Attack Sub",
       "to_build": "LegionNavalBasicSub",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "compare0": ">",
-            "string0": "Naval",
             "test_type": "PlanetThreat",
+            "string0": "Naval",
+            "compare0": ">",
             "value0": 0
           },
           {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Mobile & Naval & Sub",
             "unit_type_string1": "Mobile & Naval - Fabber",
+            "compare0": "<",
             "value0": 0.25
           },
           {
@@ -87,333 +92,328 @@
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Frigate",
       "to_build": "LegionNavalBasicAA",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">",
-            "string0": "Air",
             "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
             "value0": 0
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Mobile & Naval & AirDefense",
             "unit_type_string1": "Mobile & Naval - Fabber",
+            "compare0": "<",
             "value0": 0.1
           }
         ],
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "Mobile & Naval & AirDefense",
             "unit_type_string1": "Mobile & Naval - Fabber",
+            "compare0": "<",
             "value0": 0.25
           }
         ],
         [
           {
-            "compare0": ">",
+            "test_type": "BaseThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "test_type": "BaseThreatRatio",
+            "compare0": ">",
             "value0": 1
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Corvette - Intel",
       "to_build": "LegionNavalBasicScout",
+      "instance_count": -1,
+      "priority": 98,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "BaseThreatened"
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Factory",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
+            "compare0": "<",
             "value0": 150
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "boolean": false,
-            "test_type": "HaveFullPlanetIntel"
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
           }
         ],
         [
           {
-            "boolean": false,
-            "test_type": "BaseThreatened"
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Factory",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "boolean": false,
-            "test_type": "HaveFullPlanetIntel"
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 98
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Corvette",
       "to_build": "LegionNavalBasicScout",
+      "instance_count": -1,
+      "priority": 97,
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 97
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Advanced Naval Fabber",
       "to_build": "LegionNavalAdvancedFabber",
+      "instance_count": 1,
+      "priority": 200,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "BaseThreatened"
+            "test_type": "BaseThreatened",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Naval & Fabber & Advanced",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "string0": "LegionNavalAdvancedFabber",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionNavalAdvancedFabber"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "priority": 200
+      "max_num_assisters": 15
     },
     {
       "name": "Legion - Fabrication Sub",
       "to_build": "LegionNavalAdvancedFabberSub",
+      "instance_count": 1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "compare0": "<",
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Naval & Mobile & Construction) - Fabber",
             "unit_type_string1": "(Naval & Mobile) - Fabber",
+            "compare0": "<",
             "value0": 0.1
           }
         ]
-      ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": 1,
-      "priority": 199
+      ]
     },
     {
       "name": "Legion - Battleship",
       "to_build": "LegionNavalAdvancedBattleship",
+      "instance_count": -1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 199
+      "max_num_assisters": 15
     },
     {
       "name": "Legion - Advanced Frigate",
       "to_build": "LegionNavalAdvancedTactical",
+      "instance_count": -1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 199
+      "max_num_assisters": 15
     },
     {
       "name": "Legion - Advanced Destroyer",
       "to_build": "LegionNavalAdvancedDestroyer",
+      "instance_count": -1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 199
+      "max_num_assisters": 15
     },
     {
       "name": "Legion - Hover Ship",
       "to_build": "LegionNavalAdvancedHover",
+      "instance_count": -1,
+      "priority": 199,
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
       ],
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 199
+      "max_num_assisters": 15
     }
   ]
 }

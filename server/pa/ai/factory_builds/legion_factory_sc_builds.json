@@ -3,6 +3,11 @@
     {
       "name": "Legion - Basic Assault Bot",
       "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -10,16 +15,16 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Basic Sniper Bot",
       "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -27,32 +32,32 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Basic AA Bot",
       "to_build": "LegionBotBasicAA",
+      "instance_count": 1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": 1,
-      "priority": 100
+      ]
     },
     {
       "name": "Legion - Light Laser Tank",
       "to_build": "LegionVehicleBasicLaser",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -60,16 +65,16 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Amphibious Tank",
       "to_build": "LegionVehicleBasicHover",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -77,16 +82,16 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Hover Artillery",
       "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -94,16 +99,16 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Advanced AA Bot",
       "to_build": "LegionBotAdvancedAA",
+      "instance_count": -1,
+      "priority": 100,
+      "builders": [
+        "LegionOrbitalAdvancedCannon"
+      ],
       "build_conditions": [
         [
           {
@@ -111,30 +116,25 @@
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalAdvancedCannon"
-      ],
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 100
+      "max_num_assisters": 10
     },
     {
       "name": "Legion - Advanced Laser Tank",
       "to_build": "LegionVehicleAdvancedLaser",
-      "build_conditions": [
-        [
-          {
-            "boolean": true,
-            "test_type": "CanDeployLandFromBase"
-          }
-        ]
-      ],
+      "instance_count": -1,
+      "priority": 100,
       "builders": [
         "LegionOrbitalAdvancedCannon"
       ],
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 100
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ],
+      "max_num_assisters": 15
     }
   ]
 }

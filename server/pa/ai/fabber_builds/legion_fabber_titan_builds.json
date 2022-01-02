@@ -3,260 +3,260 @@
     {
       "name": "Legion - Bot Titan",
       "to_build": "LegionTitanAdvancedBot",
-      "build_conditions": [
-        [
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "boolean": false,
-            "test_type": "PlanetIsRespawnable"
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Factory - Orbital",
-            "value0": 1
-          },
-          {
-            "string0": "LegionTitanAdvancedBot",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
+      "instance_count": 1,
+      "shared_instance_count": "Titan",
+      "priority": 480,
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionBotAdvancedSupportCommander"
       ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "min_num_assisters": 3,
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedBot"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 480,
-      "shared_instance_count": "Titan"
+      "max_num_assisters": 15,
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Vehicle Titan",
       "to_build": "LegionTitanAdvancedVehicle",
+      "instance_count": 1,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "LegionVehicleAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": false,
-            "test_type": "PlanetIsRespawnable"
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionTitanAdvancedVehicle",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedVehicle"
           }
         ]
       ],
-      "builders": [
-        "LegionVehicleAdvancedFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "min_num_assisters": 3,
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 480,
-      "shared_instance_count": "Titan"
+      "max_num_assisters": 15,
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Air Titan",
       "to_build": "LegionTitanAdvancedAir",
+      "instance_count": 1,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "LegionAirAdvancedFabber"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
+            "test_type": "AloneOnPlanet",
+            "boolean": false
           },
           {
-            "boolean": false,
-            "test_type": "PlanetIsRespawnable"
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionTitanAdvancedAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedAir"
           }
         ]
       ],
-      "builders": [
-        "LegionAirAdvancedFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "min_num_assisters": 3,
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 480,
-      "shared_instance_count": "Titan"
+      "max_num_assisters": 15,
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Orbital Titan",
       "to_build": "LegionTitanAdvancedOrbital",
+      "instance_count": 1,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory & Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionTitanAdvancedOrbital",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedOrbital"
           }
         ]
       ],
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "min_num_assisters": 3,
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiOrbital",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 480,
-      "shared_instance_count": "Titan"
+      "max_num_assisters": 15,
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Structure Titan",
       "to_build": "LegionTitanAdvancedStructure",
+      "instance_count": 1,
+      "shared_instance_count": "Titan",
+      "priority": 480,
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "EnemyPresenceOnPlanet"
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": true
           },
           {
-            "compare0": ">",
-            "string0": "Economy",
             "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
             "value0": 5000
           },
           {
-            "boolean": false,
-            "test_type": "PlanetIsRespawnable"
+            "test_type": "PlanetIsRespawnable",
+            "boolean": false
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "PlanetCount",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "boolean": false,
-            "test_type": "PlanetHasUseablePlanetWeapon"
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": false
           },
           {
-            "boolean": false,
-            "test_type": "PlanetIsMainEcoBase"
+            "test_type": "PlanetIsMainEcoBase",
+            "boolean": false
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Advanced & SelfDestruct",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "boolean": true,
-            "compare0": "<=",
             "test_type": "AlliedUnitCountOnPlanet",
             "unit_type_string0": "Structure & Advanced & SelfDestruct",
-            "value0": 0
+            "compare0": "<=",
+            "value0": 0,
+            "boolean": true
           },
           {
-            "string0": "LegionTitanAdvancedStructure",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionTitanAdvancedStructure"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 15,
-      "min_num_assisters": 3,
       "placement_rules": {
         "buffer": 5,
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 480,
-      "shared_instance_count": "Titan"
+      "max_num_assisters": 15,
+      "min_num_assisters": 3
     }
   ]
 }

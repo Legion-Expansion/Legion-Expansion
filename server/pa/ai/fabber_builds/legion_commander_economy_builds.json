@@ -3,22 +3,28 @@
     {
       "name": "Legion - Basic Metal Extractor - cdr Desire",
       "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
       "base_sort": "FromBuilder",
+      "builders": [
+        "LegionCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "DesireMetal"
           },
           {
-            "boolean": true,
-            "test_type": "CanFindMetalSpotToBuildBasic"
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Orbital",
-            "value0": 1
+            "compare0": "<",
+            "value0": 1,
+            "boolean": true
           }
         ],
         [
@@ -26,127 +32,121 @@
             "test_type": "DesireMetal"
           },
           {
-            "boolean": true,
-            "test_type": "CanFindMetalSpotToBuildBasic"
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber & (Air | Naval)",
-            "value0": 1
+            "compare0": "<",
+            "value0": 1,
+            "boolean": true
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
-      "instance_count": 1,
       "placement_rules": {
         "placement_type": "FromMainBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
-      },
-      "priority": 501,
-      "shared_instance_count": "BasicMetal"
+      }
     },
     {
       "name": "Legion - Basic Energy Generator - late Desire cdr",
       "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "shared_instance_count": "BasicEnergy",
+      "priority": 350,
+      "builders": [
+        "LegionCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "DesireEnergy"
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCount",
             "unit_type_string0": "EnergyProduction & Basic",
+            "compare0": ">=",
             "value0": 4
           },
           {
-            "compare0": "<",
             "test_type": "UnitCount",
             "unit_type_string0": "EnergyProduction & Advanced",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "string0": "LegionEcoBasicEnergyPlant",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
-      "cross_planet_shared_count": true,
-      "instance_count": 1,
-      "max_num_assisters": 3,
       "placement_rules": {
         "buffer": 6,
         "placement_type": "FromBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 350,
-      "shared_instance_count": "BasicEnergy"
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 3
     },
     {
       "name": "Legion - Basic Energy Generator - early Desire Cdr",
       "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "shared_instance_count": "BasicEnergy",
+      "priority": 500,
+      "builders": [
+        "LegionCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "DesireEnergy"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCount",
             "unit_type_string0": "EnergyProduction & Basic",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": "<",
             "test_type": "UnitCount",
             "unit_type_string0": "EnergyProduction & Advanced",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "string0": "LegionEcoBasicEnergyPlant",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
           }
         ]
       ],
-      "builders": [
-        "LegionCommander"
-      ],
-      "cross_planet_shared_count": true,
-      "instance_count": 1,
-      "max_num_assisters": 3,
       "placement_rules": {
         "buffer": 6,
         "placement_type": "FromBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 500,
-      "shared_instance_count": "BasicEnergy"
+      "cross_planet_shared_count": true,
+      "max_num_assisters": 3
     }
   ]
 }

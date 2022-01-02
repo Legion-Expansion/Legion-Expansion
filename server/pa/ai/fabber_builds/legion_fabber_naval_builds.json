@@ -3,100 +3,9 @@
     {
       "name": "Legion - Basic Naval Factory",
       "to_build": "LegionFactoryBasicNaval",
-      "build_conditions": [
-        [
-          {
-            "boolean": false,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "boolean": false,
-            "test_type": "NeedBasicNavalFactory"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "boolean": true,
-            "test_type": "NeedBasicNavalFactory"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "boolean": true,
-            "test_type": "NeedAdvancedNavalFactory"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction & Naval & Basic) - Orbital",
-            "value0": 1
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "UnableToExpand"
-          },
-          {
-            "boolean": true,
-            "test_type": "NeedBasicNavalFactory"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Construction) - Orbital",
-            "value0": 0
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 376,
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -104,105 +13,118 @@
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
       ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "NeedBasicNavalFactory",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedBasicNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedAdvancedNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Naval & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedBasicNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction) - Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 3,
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 376,
-      "shared_instance_count": "BasicFactory"
+      "max_num_assisters": 5,
+      "min_num_assisters": 2
     },
     {
       "name": "Legion - Basic Naval Factory - Wasting",
       "to_build": "LegionFactoryBasicNaval",
-      "build_conditions": [
-        [
-          {
-            "boolean": false,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "boolean": true,
-            "string0": "PreventsWaste",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "test_type": "CurrentMetalEfficiency",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "MetalStorageFrac",
-            "value0": 0.05
-          },
-          {
-            "compare0": ">=",
-            "test_type": "CurrentEnergyEfficiency",
-            "value0": 1
-          },
-          {
-            "boolean": false,
-            "test_type": "NeedBasicNavalFactory"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "boolean": true,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "compare0": ">",
-            "test_type": "CurrentMetalEfficiency",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "MetalStorageFrac",
-            "value0": 0.05
-          },
-          {
-            "compare0": ">=",
-            "test_type": "CurrentEnergyEfficiency",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "NeedBasicNavalFactory"
-          },
-          {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "string0": "LegionFactoryBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
+      "instance_count": 1,
+      "shared_instance_count": "BasicFactory",
+      "priority": 515,
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -210,144 +132,222 @@
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
       ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
-      "placement_rules": {
-        "buffer": 3,
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 515,
-      "shared_instance_count": "BasicFactory"
-    },
-    {
-      "name": "Legion - Advanced Naval Factory",
-      "to_build": "LegionFactoryAdvancedNaval",
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "HaveEcoForAdvanced"
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
           },
           {
-            "boolean": true,
-            "test_type": "NeedAdvancedNavalFactory"
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
           },
           {
-            "string0": "LegionFactoryAdvancedNaval",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
           },
           {
-            "string0": "LegionFactoryAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.05
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "NeedBasicNavalFactory",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
           }
         ],
         [
           {
-            "boolean": true,
-            "test_type": "UnableToExpand"
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "NeedAdvancedNavalFactory"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "string0": "LegionFactoryAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.05
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "NeedBasicNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryBasicNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicNaval"
           }
         ]
       ],
-      "builders": [
-        "LegionNavalBasicFabber",
-        "LegionNavalAdvancedFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 3,
       "placement_rules": {
         "buffer": 3,
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
+      "max_num_assisters": 5,
+      "min_num_assisters": 2
+    },
+    {
+      "name": "Legion - Advanced Naval Factory",
+      "to_build": "LegionFactoryAdvancedNaval",
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
       "priority": 477,
-      "shared_instance_count": "AdvancedFactory"
+      "builders": [
+        "LegionNavalBasicFabber",
+        "LegionNavalAdvancedFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedAdvancedNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
+          }
+        ],
+        [
+          {
+            "test_type": "UnableToExpand",
+            "boolean": true
+          },
+          {
+            "test_type": "NeedAdvancedNavalFactory",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Advanced) - NukeDefense - Nuke - SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 3,
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "max_num_assisters": 5,
+      "min_num_assisters": 3
     },
     {
       "name": "Legion - Advanced Naval Factory - Wasting",
       "to_build": "LegionFactoryAdvancedNaval",
-      "build_conditions": [
-        [
-          {
-            "boolean": true,
-            "test_type": "HaveEcoForAdvanced"
-          },
-          {
-            "boolean": true,
-            "string0": "PreventsWaste",
-            "test_type": "HasPersonalityTag"
-          },
-          {
-            "compare0": ">",
-            "test_type": "CurrentMetalEfficiency",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "MetalStorageFrac",
-            "value0": 0.05
-          },
-          {
-            "compare0": ">=",
-            "test_type": "CurrentEnergyEfficiency",
-            "value0": 1
-          },
-          {
-            "boolean": false,
-            "test_type": "NeedAdvancedNavalFactory"
-          },
-          {
-            "string0": "LegionFactoryAdvancedNaval",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "string0": "LegionFactoryAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
+      "instance_count": 1,
+      "shared_instance_count": "AdvancedFactory",
+      "priority": 525,
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
       ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 3,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.05
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "NeedAdvancedNavalFactory",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionFactoryAdvancedNaval"
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryAdvancedNaval"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 3,
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 525,
-      "shared_instance_count": "AdvancedFactory"
+      "max_num_assisters": 5,
+      "min_num_assisters": 3
     }
   ]
 }
