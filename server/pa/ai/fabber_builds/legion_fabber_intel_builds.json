@@ -34,8 +34,8 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Basic",
             "string0": "Ally",
-            "compare0": "<",
             "value0": 200,
+            "compare0": "<",
             "value1": 1
           },
           {
@@ -94,8 +94,8 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Basic",
             "string0": "Ally",
-            "compare0": "<",
             "value0": 200,
+            "compare0": "<",
             "value1": 1
           },
           {
@@ -189,8 +189,8 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
-            "compare0": "<",
             "value0": 350,
+            "compare0": "<",
             "value1": 1
           },
           {
@@ -244,8 +244,8 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Land & Structure & Recon & Advanced",
             "string0": "Ally",
-            "compare0": "<",
             "value0": 350,
+            "compare0": "<",
             "value1": 1
           },
           {

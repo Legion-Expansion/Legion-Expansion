@@ -35,8 +35,16 @@ key_order = [
     "string1",
     "compare0",
     "value0",
-    "value1",
     "boolean",
+]
+
+COMPARE_VALUES = [
+    "test_type",
+    "unit_type_string0",
+    "string0",
+    "value0",
+    "compare0",
+    "value1",
 ]
 
 
@@ -44,7 +52,10 @@ def reorder_keys(obj):
     if isinstance(obj, dict):
         new_obj = OrderedDict()
         for key in key_order:
-            if key in obj:
+            if key in obj and "value1" not in obj:
+                new_obj[key] = reorder_keys(obj[key])
+        for key in COMPARE_VALUES:
+            if key in obj and "value1" in obj:
                 new_obj[key] = reorder_keys(obj[key])
 
         for key, value in obj.items():

@@ -633,8 +633,8 @@
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Structure",
             "string0": "Enemy",
-            "compare0": ">=",
             "value0": 350,
+            "compare0": ">=",
             "value1": 3
           },
           {
