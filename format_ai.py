@@ -6,7 +6,7 @@ from pa_tools.pa import pajson
 from pa_tools.pa.paths import PA_MEDIA_DIR
 
 # Use this as the list of keys you want first, all other keys will appear in-order after this
-key_order = [
+KEY_ORDER = [
     "name",
     "to_build",
     "instance_count",
@@ -51,7 +51,7 @@ COMPARE_VALUES = [
 def reorder_keys(obj):
     if isinstance(obj, dict):
         new_obj = OrderedDict()
-        for key in key_order:
+        for key in KEY_ORDER:
             if key in obj and "value1" not in obj:
                 new_obj[key] = reorder_keys(obj[key])
         for key in COMPARE_VALUES:
