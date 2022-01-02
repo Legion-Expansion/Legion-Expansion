@@ -53,10 +53,9 @@ units = spec.load_spec(fs, "/pa/units/unit_list_legion.json")
 for unit_path in units["units"]:
     unit = spec.parse_spec(fs, unit_path)
     # Check that all legion factories have Custom1 as a buildable type
-    if "buildable_types" in unit:
-        if not "Custom1" in unit["buildable_types"]:
-            print(
-                f"Error: A factory is missing the Custom1 buildable type.\n unit: {unit_path}\n buildable_types: {unit['buildable_types']}"
-            )
-            input()
-            sys.exit(1)
+    if "buildable_types" in unit and "Custom1" not in unit["buildable_types"]:
+        print(
+            f"Error: A factory is missing the Custom1 buildable type.\n unit: {unit_path}\n buildable_types: {unit['buildable_types']}"
+        )
+        input()
+        sys.exit(1)
