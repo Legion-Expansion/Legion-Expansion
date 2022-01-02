@@ -22,7 +22,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": 1,
       "max_num_assisters": 10,
       "name": "Legion - Basic Naval Fabber",
@@ -45,7 +47,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Destroyer",
@@ -81,7 +85,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Attack Sub",
@@ -153,7 +159,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Frigate",
@@ -215,7 +223,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Corvette - Intel",
@@ -238,7 +248,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryBasicNaval"],
+      "builders": [
+        "LegionFactoryBasicNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 10,
       "name": "Legion - Corvette",
@@ -267,7 +279,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": 1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Naval Fabber",
@@ -297,7 +311,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": 1,
       "name": "Legion - Fabrication Sub",
       "priority": 199,
@@ -319,7 +335,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Battleship",
@@ -342,7 +360,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Frigate",
@@ -365,7 +385,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Advanced Destroyer",
@@ -384,7 +406,9 @@
           }
         ]
       ],
-      "builders": ["LegionFactoryAdvancedNaval"],
+      "builders": [
+        "LegionFactoryAdvancedNaval"
+      ],
       "instance_count": -1,
       "max_num_assisters": 15,
       "name": "Legion - Hover Ship",
