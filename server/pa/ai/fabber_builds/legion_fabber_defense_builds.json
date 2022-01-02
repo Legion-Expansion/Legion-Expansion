@@ -67,12 +67,6 @@
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 35,
-          "value": 5
-        },
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -88,7 +82,13 @@
             "range": 100,
             "count": 1
           }
-        ]
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
       }
     },
     {
@@ -158,12 +158,6 @@
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 35,
-          "value": 5
-        },
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -179,7 +173,13 @@
             "range": 100,
             "count": 1
           }
-        ]
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
       }
     },
     {
@@ -646,12 +646,6 @@
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 10,
-          "value": 50
-        },
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & Basic & Artillery",
@@ -660,7 +654,13 @@
             "range": 75,
             "count": 2
           }
-        ]
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       },
       "max_num_assisters": 5,
       "min_num_assisters": 2
@@ -740,12 +740,6 @@
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "influence_type": "AntiSurface",
-          "compare_type": "<",
-          "radius": 35,
-          "value": 5
-        },
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & MetalProduction",
@@ -761,7 +755,13 @@
             "range": 100,
             "count": 1
           }
-        ]
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
       }
     },
     {
