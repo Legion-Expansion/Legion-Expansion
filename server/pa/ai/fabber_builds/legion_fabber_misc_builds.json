@@ -1,6 +1,16 @@
 {
   "build_list": [
     {
+      "name": "Legion - Fabber Assist",
+      "instance_count": -1,
+      "priority": 1,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander",
+        "LegionOrbitalBasicFabber"
+      ],
       "build_conditions": [
         [
           {
@@ -9,52 +19,54 @@
         ],
         [
           {
-            "compare0": ">",
             "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">",
             "test_type": "MetalStorageFrac",
+            "compare0": ">",
             "value0": 0.2
           },
           {
-            "compare0": ">=",
             "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
             "value0": 1
           }
         ]
       ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": -1,
-      "name": "Legion - Fabber Assist",
-      "priority": 1,
       "task_type": "BuilderAssist"
     },
     {
+      "name": "Legion - Teleporter - Need Land",
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "shared_instance_count": "Teleporter",
+      "priority": 615,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander",
+        "LegionOrbitalBasicFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "ThisPlanetNeedsLandUnitAssistance"
+            "test_type": "ThisPlanetNeedsLandUnitAssistance",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "OtherPlanetCanProvideLandUnitAssistance"
+            "test_type": "OtherPlanetCanProvideLandUnitAssistance",
+            "boolean": true
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
             "value0": 1
           }
         ],
@@ -63,20 +75,20 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "OtherPlanetNeedsLandUnitAssistance"
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
           },
           {
-            "compare0": "<",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "Land",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": "<",
             "value0": 0.8
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
             "value0": 1
           }
         ],
@@ -85,152 +97,81 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "WantCommanderOffPlanet"
+            "test_type": "WantCommanderOffPlanet",
+            "boolean": true
           },
           {
-            "boolean": true,
-            "test_type": "PresenceOnOtherPlanet"
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
             "value0": 1
           }
         ]
       ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 3,
-      "name": "Legion - Teleporter - Need Land",
       "placement_rules": {
         "buffer": 6,
         "placement_type": "FromBaseCenter",
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 10,
           "value": 50
         }
       },
-      "priority": 615,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
+      "max_num_assisters": 5,
+      "min_num_assisters": 3
     },
     {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 1
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Fabber - Air",
-            "value0": 1
-          }
-        ]
-      ],
-      "builders": ["LegionOrbitalBasicFabber"],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 3,
       "name": "Legion - Teleporter - Need Fabber",
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "shared_instance_count": "Teleporter",
       "priority": 615,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
-    },
-    {
+      "builders": [
+        "LegionOrbitalBasicFabber"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "boolean": true,
-            "test_type": "PlanetWithoutFabberWithTeleporter"
-          },
-          {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Air",
-            "value0": 2
+            "compare0": "<",
+            "value0": 1
           }
         ]
       ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": 1,
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
       "max_num_assisters": 5,
-      "min_num_assisters": 1,
+      "min_num_assisters": 3
+    },
+    {
       "name": "Legion - Teleporter - Other Planet Needs Fabber",
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "shared_instance_count": "Teleporter",
       "priority": 606,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "boolean": true,
-            "test_type": "PresenceOnOtherPlanet"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 1
-          }
-        ]
-      ],
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -238,88 +179,132 @@
         "LegionBotAdvancedSupportCommander",
         "LegionOrbitalBasicFabber"
       ],
-      "instance_count": 1,
-      "name": "Legion - Teleporter",
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 258,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
-    },
-    {
       "build_conditions": [
         [
-          {
-            "boolean": false,
-            "test_type": "AloneOnPlanet"
-          },
-          {
-            "boolean": true,
-            "test_type": "PresenceOnOtherPlanet"
-          },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "PlanetWithoutFabberWithTeleporter",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
             "compare0": "<",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
             "value0": 1
-          }
-        ]
-      ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander",
-        "LegionOrbitalBasicFabber"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Teleporter - Not Alone",
-      "placement_rules": {
-        "buffer": 6,
-        "placement_type": "FromBaseCenter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        }
-      },
-      "priority": 380,
-      "shared_instance_count": "Teleporter",
-      "to_build": "LegionStructureBasicTeleporter"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "boolean": true,
-            "test_type": "PlanetWithoutFabberWithTeleporter"
           },
           {
-            "compare0": ">",
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "value0": 0
-          },
-          {
-            "compare0": ">=",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Fabber - Air",
+            "compare0": ">=",
             "value0": 2
           }
         ]
       ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      },
+      "max_num_assisters": 5,
+      "min_num_assisters": 1
+    },
+    {
+      "name": "Legion - Teleporter",
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "shared_instance_count": "Teleporter",
+      "priority": 258,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander",
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Teleporter - Not Alone",
+      "to_build": "LegionStructureBasicTeleporter",
+      "instance_count": 1,
+      "shared_instance_count": "Teleporter",
+      "priority": 380,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander",
+        "LegionOrbitalBasicFabber"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PresenceOnOtherPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Teleport Fabber To Planet",
+      "instance_count": 1,
+      "priority": 801,
       "builders": [
         "LegionBotBasicFabber",
         "LegionVehicleBasicFabber",
@@ -327,9 +312,26 @@
         "LegionBotAdvancedSupportCommander",
         "LegionVehicleAdvancedFabber"
       ],
-      "instance_count": 1,
-      "name": "Legion - Teleport Fabber To Planet",
-      "priority": 801,
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetWithoutFabberWithTeleporter",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Air",
+            "compare0": ">=",
+            "value0": 2
+          }
+        ]
+      ],
       "task_type": "TeleportFabberToPlanet"
     }
   ]

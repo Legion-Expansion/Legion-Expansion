@@ -1,121 +1,40 @@
 {
   "build_list": [
     {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "DistFromMainBase",
-            "value0": 150
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "LegionDefenseBasicAir",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<=",
-            "test_type": "DistFromNearestEnemyThreat",
-            "value0": 200
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & MetalProduction",
-            "value0": 2
-          },
-          {
-            "string0": "LegionDefenseBasicAir",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
       "name": "Legion - Basic Air Defense - Mex",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 35,
-          "value": 5
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & MetalProduction"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 100,
-            "unit_type_string": "Structure & Basic & AirDefense"
-          }
-        ]
-      },
-      "priority": 261,
+      "to_build": "LegionDefenseBasicAir",
+      "instance_count": 1,
       "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
-    },
-    {
+      "priority": 261,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "DistFromMainBase",
+            "compare0": ">=",
             "value0": 150
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "string0": "LegionDefenseBasicLand",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
           }
         ],
         [
@@ -123,83 +42,176 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<=",
             "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
             "value0": 200
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "string0": "LegionDefenseBasicLand",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 35,
-          "value": 5
-        },
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & MetalProduction",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & MetalProduction"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 100,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
+            "count": 1
           }
-        ]
-      },
-      "priority": 261,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
     },
     {
+      "name": "Legion - Basic Land Defense Single - Mex",
+      "to_build": "LegionDefenseBasicLand",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 261,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
+            "test_type": "DistFromMainBase",
+            "compare0": ">=",
+            "value0": 150
+          },
+          {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & AirDefense",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
             "compare0": ">=",
+            "value0": 2
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 35,
+          "value": 5
+        }
+      }
+    },
+    {
+      "name": "Legion - Basic Air Defense",
+      "to_build": "LegionDefenseBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
           }
         ],
         [
@@ -207,278 +219,141 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionDefenseBasicAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Air Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Basic & AirDefense"
+            "count": 1
           }
         ]
-      },
-      "priority": 85,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
+      }
     },
     {
+      "name": "Legion - Basic Air Defense - Threat",
+      "to_build": "LegionDefenseBasicAir",
+      "instance_count": 1,
+      "shared_instance_count": "BasicAirDefense",
+      "priority": 262,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicAir"
           }
         ]
       ],
-      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Air Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Basic & AirDefense"
+            "count": 2
           }
         ]
-      },
-      "priority": 262,
-      "shared_instance_count": "BasicAirDefense",
-      "to_build": "LegionDefenseBasicAir"
+      }
     },
     {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseBasicLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 2
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseBasicLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
       "name": "Legion - Basic Land Defense Single",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 85,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
-    },
-    {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": false,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseBasicLand",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": ["LegionCommander"],
+      "to_build": "LegionDefenseBasicLand",
       "instance_count": 1,
-      "name": "Legion - Basic Land Defense Single - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
-          }
-        ]
-      },
-      "priority": 262,
       "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicLand"
-    },
-    {
+      "priority": 85,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicLandII",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
           }
         ],
         [
@@ -486,439 +361,598 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionDefenseBasicLandII",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Land Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
+            "count": 1
           }
         ]
-      },
-      "priority": 85,
-      "to_build": "LegionDefenseBasicLandII"
+      }
     },
     {
+      "name": "Legion - Basic Land Defense Single - Threat",
+      "to_build": "LegionDefenseBasicLand",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 262,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicLandII",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": false
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLand"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Land Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Basic & SurfaceDefense"
+            "count": 2
           }
         ]
-      },
-      "priority": 262,
-      "to_build": "LegionDefenseBasicLandII"
+      }
     },
     {
+      "name": "Legion - Basic Land Defense",
+      "to_build": "LegionDefenseBasicLandII",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
             "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLandII"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLandII"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Basic Land Defense - Threat",
+      "to_build": "LegionDefenseBasicLandII",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicLandII"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Basic Artillery",
+      "to_build": "LegionDefenseBasicArtillery",
+      "instance_count": 1,
+      "priority": 245,
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Artillery",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 4
           },
           {
-            "compare0": ">=",
-            "string0": "Enemy",
             "test_type": "UnitCountAroundBase",
             "unit_type_string0": "Structure",
+            "string0": "Enemy",
             "value0": 350,
+            "compare0": ">=",
             "value1": 3
           },
           {
-            "string0": "LegionDefenseBasicArtillery",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicArtillery"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
-      "name": "Legion - Basic Artillery",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
-        "threat": {
-          "compare_type": "<",
-          "influence_type": "AntiSurface",
-          "radius": 10,
-          "value": 50
-        },
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & Basic & Artillery",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Basic & Artillery"
+            "count": 2
           }
-        ]
+        ],
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
       },
-      "priority": 245,
-      "to_build": "LegionDefenseBasicArtillery"
+      "max_num_assisters": 5,
+      "min_num_assisters": 2
     },
     {
+      "name": "Legion - Basic Naval Defense - Mex",
+      "to_build": "LegionDefenseBasicNaval",
+      "instance_count": 1,
+      "shared_instance_count": "BasicLandDefense",
+      "priority": 261,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "DistFromMainBase",
+            "compare0": ">=",
             "value0": 150
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "string0": "LegionDefenseBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
           }
         ],
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<=",
             "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
             "value0": 200
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
             "value0": 2
           },
           {
-            "string0": "LegionDefenseBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Naval Defense - Mex",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & MetalProduction",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 100,
+            "count": 1
+          }
+        ],
         "threat": {
-          "compare_type": "<",
           "influence_type": "AntiSurface",
+          "compare_type": "<",
           "radius": 35,
           "value": 5
-        },
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & MetalProduction"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 100,
-            "unit_type_string": "Structure & Basic & Naval & Defense"
-          }
-        ]
-      },
-      "priority": 261,
-      "shared_instance_count": "BasicLandDefense",
-      "to_build": "LegionDefenseBasicNaval"
+        }
+      }
     },
     {
+      "name": "Legion - Basic Naval Defense",
+      "to_build": "LegionDefenseBasicNaval",
+      "instance_count": 1,
+      "priority": 85,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 2
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Naval Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Basic & Naval & Defense"
+            "count": 1
           }
         ]
-      },
-      "priority": 85,
-      "to_build": "LegionDefenseBasicNaval"
+      }
     },
     {
+      "name": "Legion - Basic Naval Defense - Threat",
+      "to_build": "LegionDefenseBasicNaval",
+      "instance_count": 1,
+      "priority": 262,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1.0
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
           }
         ],
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Naval & Defense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1.0
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "string0": "LegionDefenseBasicNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicNaval"
           }
         ]
       ],
-      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
-      "instance_count": 1,
-      "name": "Legion - Basic Naval Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Basic & Naval & Defense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Basic & Naval & Defense"
+            "count": 2
           }
         ]
-      },
-      "priority": 262,
-      "to_build": "LegionDefenseBasicNaval"
+      }
     },
     {
+      "name": "Legion - Advanced Air Defense",
+      "to_build": "LegionDefenseAdvancedAir",
+      "instance_count": 1,
+      "priority": 255,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAir"
           }
         ],
         [
@@ -926,235 +960,150 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAir"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Air Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Advanced & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Advanced & AirDefense"
+            "count": 1
           }
         ]
-      },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedAir"
+      }
     },
     {
+      "name": "Legion - Advanced Air Defense - Threat",
+      "to_build": "LegionDefenseAdvancedAir",
+      "instance_count": 1,
+      "priority": 379,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Air & Advanced"
+            "unit_type_string0": "Mobile & Air & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedAir",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAir"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Air Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Advanced & AirDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Advanced & AirDefense"
+            "count": 2
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedAir"
+      }
     },
     {
-      "base_sort": "FromPerimeter",
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
-            "value0": 3
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseAdvancedTactical",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
-            "value0": 4
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (Tactical | Artillery)",
-            "value0": 1
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
-          },
-          {
-            "string0": "LegionDefenseAdvancedTactical",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
       "name": "Legion - Advanced Land Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
-          }
-        ]
-      },
+      "to_build": "LegionDefenseAdvancedTactical",
+      "instance_count": 1,
       "priority": 255,
-      "to_build": "LegionDefenseAdvancedTactical"
-    },
-    {
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedLand",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedTactical"
           }
         ],
         [
@@ -1162,965 +1111,1049 @@
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedLand",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedTactical"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Advanced Land Defense II",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBasePerimeter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
-          }
-        ]
-      },
+      "to_build": "LegionDefenseAdvancedLand",
+      "instance_count": 1,
       "priority": 255,
-      "to_build": "LegionDefenseAdvancedLand"
-    },
-    {
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
-            "string0": "Land",
-            "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
-            "value0": 1
-          },
-          {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedTactical",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedLand"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedLand"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Advanced Land Defense - Threat",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 1,
-            "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 2,
-            "range": 75,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
-          }
-        ]
-      },
+      "to_build": "LegionDefenseAdvancedTactical",
+      "instance_count": 1,
       "priority": 379,
-      "to_build": "LegionDefenseAdvancedTactical"
-    },
-    {
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Land & Advanced"
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedLand",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedTactical"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Land Defense II - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Advanced & SurfaceDefense"
+            "count": 2
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedLand"
+      }
     },
     {
+      "name": "Legion - Advanced Land Defense II - Threat",
+      "to_build": "LegionDefenseAdvancedLand",
+      "instance_count": 1,
+      "priority": 379,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Advanced & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "HaveSeenEnemyUnits",
+            "unit_type_string0": "Mobile & Land & Advanced",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedLand"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Advanced & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Advanced Naval Defense",
+      "to_build": "LegionDefenseAdvancedNaval",
+      "instance_count": 1,
+      "priority": 255,
+      "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Naval & Advanced"
+            "unit_type_string0": "Mobile & Naval & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Naval Defense",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Advanced & Naval & Defense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Advanced & Naval & Defense"
+            "count": 1
           }
         ]
-      },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedNaval"
+      }
     },
     {
+      "name": "Legion - Advanced Naval Defense - Threat",
+      "to_build": "LegionDefenseAdvancedNaval",
+      "instance_count": 1,
+      "priority": 379,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
       "build_conditions": [
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Naval",
             "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1.0
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Naval & Advanced"
+            "unit_type_string0": "Mobile & Naval & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
           }
         ],
         [
           {
-            "boolean": true,
-            "test_type": "CanDeployNavalFromBase"
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & Naval & Defense",
+            "compare0": "<",
             "value0": 4
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Sub",
             "string1": "AntiSub",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1.0
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
             "value0": 3
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & Sub & Advanced"
+            "unit_type_string0": "Mobile & Sub & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedNaval",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNaval"
           }
         ]
       ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
-      "name": "Legion - Advanced Naval Defense - Threat",
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Advanced & Naval & Defense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 2,
             "range": 75,
-            "unit_type_string": "Structure & Advanced & Naval & Defense"
+            "count": 2
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedNaval"
+      }
     },
     {
+      "name": "Legion - Wall",
+      "to_build": "LegionStructureBasicWall",
+      "instance_count": 1,
+      "priority": 0,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "string0": "LegionStructureBasicWall",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionStructureBasicWall"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
-      "instance_count": 1,
-      "name": "Legion - Wall",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & Defense - AirDefense",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 8,
-            "unit_type_string": "Structure & Defense - AirDefense"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Wall",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 4,
             "range": 20,
-            "unit_type_string": "Structure & Wall"
+            "count": 4
           }
         ]
-      },
-      "priority": 0,
-      "to_build": "LegionStructureBasicWall"
+      }
     },
     {
+      "name": "Legion - Shield",
+      "to_build": "LegionDefenseAdvancedShield",
+      "instance_count": 1,
+      "priority": 255,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "string0": "LegionDefenseAdvancedShield",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedShield"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Shield",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - AirDefense",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & (Land | Naval) & Advanced"
+            "unit_type_string0": "Mobile & (Land | Naval) & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedShield",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberAdvanced"],
-      "instance_count": 1,
-      "name": "Legion - Shield",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & Defense - AirDefense",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Defense - AirDefense"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 125,
-            "unit_type_string": "Structure & Shield"
+            "count": 1
           }
         ]
-      },
-      "priority": 255,
-      "to_build": "LegionDefenseAdvancedShield"
+      }
     },
     {
+      "name": "Legion - Shield - Threat",
+      "to_build": "LegionDefenseAdvancedShield",
+      "instance_count": 1,
+      "priority": 379,
       "base_sort": "FromPerimeter",
+      "builders": [
+        "AnyLegionFabberAdvanced"
+      ],
       "build_conditions": [
         [
           {
             "test_type": "CanAffordBuildDemand"
           },
           {
-            "string0": "LegionDefenseAdvancedShield",
-            "test_type": "CanAffordPotentialDrain"
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedShield"
           },
           {
-            "compare0": "<",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Shield",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">",
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
             "string0": "Land",
             "string1": "AntiSurface",
-            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "compare0": ">",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Defense - AirDefense",
+            "compare0": ">=",
             "value0": 1
           },
           {
-            "boolean": true,
             "test_type": "HaveSeenEnemyUnits",
-            "unit_type_string0": "Mobile & (Land | Naval) & Advanced"
+            "unit_type_string0": "Mobile & (Land | Naval) & Advanced",
+            "boolean": true
           },
           {
-            "string0": "LegionDefenseAdvancedShield",
-            "test_type": "CanFindPlaceToBuild"
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedShield"
           }
         ]
       ],
-      "builders": ["AnyLegionFabberAdvanced"],
-      "instance_count": 1,
-      "name": "Legion - Shield - Threat",
       "placement_rules": {
         "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & Defense - AirDefense",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 1,
             "range": 50,
-            "unit_type_string": "Structure & Defense - AirDefense"
+            "count": 1
           },
           {
+            "unit_type_string": "Structure & Shield",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 125,
-            "unit_type_string": "Structure & Shield"
+            "count": 1
           }
         ]
-      },
-      "priority": 379,
-      "to_build": "LegionDefenseAdvancedShield"
+      }
     },
     {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "SystemThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 3
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
-      "instance_count": 1,
       "name": "Legion - Basic Orbital Defense",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 150,
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital"
-          }
-        ]
-      },
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
       "priority": 378,
-      "to_build": "LegionDefenseBasicOrbital"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "compare0": ">",
-            "string0": "Orbital",
-            "test_type": "BaseThreat",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
-            "value0": 1
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Commander",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseBasicOrbital",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
         "AnyLegionFabberAdvanced"
       ],
-      "instance_count": 1,
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Basic Orbital Defense - Rush",
+      "to_build": "LegionDefenseBasicOrbital",
+      "instance_count": 1,
+      "priority": 386,
+      "builders": [
+        "LegionCommander",
+        "AnyLegionFabberBasic",
+        "AnyLegionFabberAdvanced"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "(Structure & OrbitalDefense) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Commander",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicOrbital"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "(Structure & OrbitalDefense) - Orbital",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 150,
-            "unit_type_string": "(Structure & OrbitalDefense) - Orbital"
+            "count": 1
           }
         ]
-      },
-      "priority": 386,
-      "to_build": "LegionDefenseBasicOrbital"
+      }
     },
     {
-      "build_conditions": [
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 3
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
-      "builders": [
-        "AnyLegionFabberAdvanced",
-        "LegionBotAdvancedSupportCommander"
-      ],
-      "instance_count": 1,
       "name": "Legion - Anti Nuke Silo",
-      "placement_rules": {
-        "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
-        "unit_count_rules": [
-          {
-            "alliance": "Ally",
-            "compare_type": ">=",
-            "count": 3,
-            "range": 150,
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)"
-          },
-          {
-            "alliance": "Ally",
-            "compare_type": "<",
-            "count": 1,
-            "range": 150,
-            "unit_type_string": "Structure & NukeDefense"
-          }
-        ]
-      },
-      "priority": 380,
+      "to_build": "LegionDefenseAdvancedAntiNukeSilo",
+      "instance_count": 1,
       "shared_instance_count": "AntiNukeSilo",
-      "to_build": "LegionDefenseAdvancedAntiNukeSilo"
-    },
-    {
-      "build_conditions": [
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 3
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveHadANukeEvent"
-          },
-          {
-            "compare0": ">=",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
-            "value0": 3
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "compare0": ">",
-            "string0": "Nuke",
-            "string1": "AntiNuke",
-            "test_type": "SystemToPlanetThreatRatio",
-            "value0": 1.75
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ],
-        [
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanAffordPotentialDrain"
-          },
-          {
-            "boolean": true,
-            "test_type": "HaveHadANukeEvent"
-          },
-          {
-            "compare0": ">",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
-            "value0": 0
-          },
-          {
-            "compare0": "<",
-            "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & NukeDefense",
-            "value0": 1
-          },
-          {
-            "string0": "LegionDefenseAdvancedAntiNukeSilo",
-            "test_type": "CanFindPlaceToBuild"
-          }
-        ]
-      ],
+      "priority": 380,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
       ],
-      "instance_count": 1,
-      "max_num_assisters": 12,
-      "min_num_assisters": 5,
-      "name": "Legion - Anti Nuke Silo - Rush",
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ]
+      ],
       "placement_rules": {
         "buffer": 2,
         "placement_type": "FromMainBaseCenter",
         "unit_count_rules": [
           {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
             "alliance": "Ally",
             "compare_type": ">=",
-            "count": 3,
             "range": 150,
-            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)"
+            "count": 3
           },
           {
+            "unit_type_string": "Structure & NukeDefense",
             "alliance": "Ally",
             "compare_type": "<",
-            "count": 1,
             "range": 150,
-            "unit_type_string": "Structure & NukeDefense"
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Anti Nuke Silo - Rush",
+      "to_build": "LegionDefenseAdvancedAntiNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "AntiNukeSilo",
+      "priority": 386,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "SystemToPlanetThreatRatio",
+            "string0": "Nuke",
+            "string1": "AntiNuke",
+            "compare0": ">",
+            "value0": 1.75
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          },
+          {
+            "test_type": "HaveHadANukeEvent",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (PlanetEngine | ControlModule)",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & NukeDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedAntiNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & ((EnergyProduction & Advanced) | Factory)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 150,
+            "count": 3
+          },
+          {
+            "unit_type_string": "Structure & NukeDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 150,
+            "count": 1
           }
         ]
       },
-      "priority": 386,
-      "shared_instance_count": "AntiNukeSilo",
-      "to_build": "LegionDefenseAdvancedAntiNukeSilo"
+      "max_num_assisters": 12,
+      "min_num_assisters": 5
     }
   ]
 }

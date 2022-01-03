@@ -1,28 +1,28 @@
 {
   "build_list": [
     {
+      "name": "Legion - Naval Scout Platoon",
+      "to_build": "Legion_Naval_Scout",
+      "instance_count": 5,
+      "shared_instance_count": "NavalScout",
+      "priority": 100,
       "build_conditions": [
         [
           {
-            "compare0": "<",
             "test_type": "UnitCountOnPlanet",
             "unit_type_string0": "Air & Factory",
+            "compare0": "<",
             "value0": 1
           },
           {
-            "compare0": ">=",
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Naval & Basic & Offense & Mobile & Custom1) - Fabber - Construction - AirDefense - Sub - Titan",
+            "compare0": ">=",
             "value0": 1
           }
         ]
       ],
-      "instance_count": 5,
-      "name": "Legion - Naval Scout Platoon",
-      "priority": 100,
-      "shared_instance_count": "NavalScout",
-      "task_type": "Scout",
-      "to_build": "Legion_Naval_Scout"
+      "task_type": "Scout"
     }
   ]
 }
