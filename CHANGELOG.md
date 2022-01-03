@@ -29,6 +29,7 @@
   - Scorpion
   - Shank
   - Epoch
+- Panzer description - with thanks to Thorveim for the report
 
 ## v1.21.0 - 2021-08-05
 
