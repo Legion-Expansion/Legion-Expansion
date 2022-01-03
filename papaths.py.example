@@ -1,5 +1,0 @@
-# update with your PA paths and add papaths.py to $GIT_DIR/info/exclude so you don't commit your changes
-
-PA_DATA_PATH = "%LOCALAPPDATA%/Uber Entertainment/Planetary Annihilation"
-
-PA_MEDIA_PATH = "C:/Program Files (x86)/Steam/steamapps/common/Planetary Annihilation Titans/media"
