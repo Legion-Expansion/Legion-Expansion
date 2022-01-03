@@ -9,10 +9,10 @@ from collections import OrderedDict
 from pa_tools.pa import paths as PA_PATH
 
 # Check JSON is valid and formatted
-print("VALIDATING")
+print("VALIDATING\n")
 import check
 
-print("FORMATTING LEGION JSON")
+print("\nFORMATTING LEGION JSON\n")
 import format_json
 
 # create shadows of vanilla files
