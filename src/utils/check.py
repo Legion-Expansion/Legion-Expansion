@@ -2,21 +2,13 @@ import sys
 import os
 
 from pa_tools.mod import checker
-
-from pa_tools.pa import pafs
+from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
-
-from pa_tools.pa.paths import PA_MEDIA_DIR
-
-
-# Run from this script's directory
-os.chdir(os.path.dirname(sys.argv[0]))
 
 
 def check_mod(client_output_dir, server_output_dir):
     # legion works with pa titans only, so mount that as well
-    fs = pafs(PA_MEDIA_DIR)
-    fs.mount("/pa", "/pa_ex1")
+    fs = create_pafs()
 
     # mount the client and server folders (server gets first pick)
     fs.mount("/", client_output_dir)
@@ -67,7 +59,3 @@ def check_mod(client_output_dir, server_output_dir):
             print(f" buildable_types: {unit['buildable_types']}")
             input()
             sys.exit(1)
-
-
-if __name__ == "__main__":
-    check_mod("../client", "../server")

@@ -16,10 +16,11 @@ import posixpath
 import copy
 import shutil
 
-from pa_tools.pa import pafs
-from pa_tools.pa import paths
+
 from pa_tools.pa import spec
 from pa_tools.pa import pajson
+from pa_tools.pa import pafs
+from pa_tools.pa import paths
 
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = pafs("server")
