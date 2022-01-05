@@ -12,6 +12,7 @@ from pa_tools.pa.paths import PA_MEDIA_DIR
 # Run from this script's directory
 os.chdir(os.path.dirname(sys.argv[0]))
 
+
 def check_mod(client_output_dir, server_output_dir):
     # legion works with pa titans only, so mount that as well
     fs = pafs(PA_MEDIA_DIR)
@@ -20,7 +21,6 @@ def check_mod(client_output_dir, server_output_dir):
     # mount the client and server folders (server gets first pick)
     fs.mount("/", client_output_dir)
     fs.mount("/", server_output_dir)
-
 
     # now we are going to do validation
     # mod path isn't really important in this case
