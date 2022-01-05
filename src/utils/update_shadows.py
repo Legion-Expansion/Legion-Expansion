@@ -197,8 +197,12 @@ def update_shadows(client_out_dir, server_out_dir):
         if not is_legion:
             os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
             # copy client files
-            shutil.copyfile(loader.resolveFile(src_hit_file), client_out_dir + dst_hit_file)
-            shutil.copyfile(loader.resolveFile(src_trail_file), client_out_dir + dst_trail_file)
+            shutil.copyfile(
+                loader.resolveFile(src_hit_file), client_out_dir + dst_hit_file
+            )
+            shutil.copyfile(
+                loader.resolveFile(src_trail_file), client_out_dir + dst_trail_file
+            )
 
     # Write out all changes to the mod server directory
     for file_path, unit in file_cache.items():
@@ -207,4 +211,4 @@ def update_shadows(client_out_dir, server_out_dir):
             continue
 
         os.makedirs(server_out_dir + os.path.dirname(file_path), exist_ok=True)
-        pajson.dumpf(unit, server_out_dir + file_path, indent=2)
+        pajson.dumpf(unit, server_out_dir + file_path, separators=(",", ": "))
