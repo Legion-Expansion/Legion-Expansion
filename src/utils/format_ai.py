@@ -3,7 +3,6 @@ from pathlib import Path
 from typing import OrderedDict
 
 from pa_tools.pa import pajson
-from pa_tools.pa.paths import PA_MEDIA_DIR
 
 # Use this as the list of keys you want first, all other keys will appear in-order after this
 KEY_ORDER = [
