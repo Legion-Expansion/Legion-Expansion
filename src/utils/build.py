@@ -107,10 +107,12 @@ def generate_mods(is_dev_mode):
     shutil.copytree("client", client_output_dir, dirs_exist_ok=True)
 
     # Update the modinfos
-    with open(join(server_output_dir, "modinfo.json"), "w", newline="\n") as modinfo:
-        pajson.dump(server_modinfo, modinfo, indent=2)
-    with open(join(client_output_dir, "modinfo.json"), "w", newline="\n") as modinfo:
-        pajson.dump(client_modinfo, modinfo, indent=2)
+    pajson.dumpf(server_modinfo, join(server_output_dir, "modinfo.json"), indent=2)
+    pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
+
+    print("UPDATE ui version.js")
+    with open(join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"), "w", newline='\n') as version_file:
+        print (f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")
     update_shadows(client_output_dir, server_output_dir)
