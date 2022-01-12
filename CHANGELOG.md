@@ -16,6 +16,8 @@
     - Health reduced from 5000 to 3000
   - Havoc
     - Damage to commanders increased from 67% to 100%
+  - Panzer
+    - Damage to structures decreased from 300% to 100%
 
 ### AI
 

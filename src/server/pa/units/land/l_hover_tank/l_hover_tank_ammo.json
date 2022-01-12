@@ -1,7 +1,4 @@
 {
-  "armor_damage_map": {
-    "AT_Structure": 4.0
-  },
   "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
   "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
   "damage": 60,
