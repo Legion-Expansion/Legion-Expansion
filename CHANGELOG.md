@@ -4,6 +4,9 @@
 
 ### Balance
 
+- Air
+  - Meteoroid
+    - Damage to structures decreased from 150% to 100%
 - Land
   - Advanced Mass Extractor
     - Build cost decreased from 2000 to 1800
