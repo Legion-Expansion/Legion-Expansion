@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Improved PNG compression to reduce mod size
+
 ### Balance
 
 - Air
