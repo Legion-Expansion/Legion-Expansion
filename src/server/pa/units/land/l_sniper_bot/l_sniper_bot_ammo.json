@@ -1,9 +1,4 @@
 {
-  "armor_damage_map": {
-    "AT_Commander": 1.3,
-    "AT_Structure": 1.3,
-    "AT_Vehicle": 1.3
-  },
   "base_spec": "/pa/ammo/base_shell/base_shell.json",
   "damage": 125,
   "events": {
