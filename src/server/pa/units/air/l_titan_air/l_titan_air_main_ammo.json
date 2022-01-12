@@ -1,7 +1,4 @@
 {
-  "armor_damage_map": {
-    "AT_Air": 0.5
-  },
   "audio_loop": "/SE/Weapons/commander/Commander_uber_cannon_fire",
   "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
   "damage": 800,

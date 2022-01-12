@@ -5,6 +5,8 @@
 ### Balance
 
 - Air
+  - Loki
+    - Damage to air increased from 50% to 100%
   - Meteoroid
     - Damage to structures decreased from 150% to 100%
 - Land
