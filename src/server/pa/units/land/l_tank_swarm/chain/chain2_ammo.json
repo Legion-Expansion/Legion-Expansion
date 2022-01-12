@@ -1,7 +1,4 @@
 {
-  "armor_damage_map": {
-    "AT_Commander": 0.66
-  },
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
   "damage": 1500,
   "fx_trail": {
