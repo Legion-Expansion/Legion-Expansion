@@ -22,6 +22,9 @@
     - Damage to vehicles decreased from 133% to 100%
   - Panzer
     - Damage to structures decreased from 300% to 100%
+- Sea
+  - Manta
+    - Damage to orbital increased from 25% to 100%
 
 ### AI
 
