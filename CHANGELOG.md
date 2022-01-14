@@ -24,6 +24,7 @@
     - Damage to commanders decreased from 133% to 100%
     - Damage to structures decreased from 133% to 100%
     - Damage to vehicles decreased from 133% to 100%
+    - Damage increased from 125 to 165
   - Panzer
     - Damage to structures decreased from 300% to 100%
 - Sea
