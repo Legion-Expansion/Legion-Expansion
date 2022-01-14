@@ -58,7 +58,6 @@ def generate_mods(is_dev_mode):
 
     # Construct the modinfos
     base_modinfo = load_json(fs, "/src/base_modinfo.json")
-    server_modinfo = load_json(fs, "/src/server/modinfo.json")
 
     server_modinfo = copy.deepcopy(base_modinfo)
     server_modinfo.update(load_json(fs, "/src/server/modinfo.json"))
@@ -111,8 +110,12 @@ def generate_mods(is_dev_mode):
     pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
 
     print("UPDATE ui version.js")
-    with open(join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"), "w", newline='\n') as version_file:
-        print (f'var version = "{server_modinfo["version"]}";\n', file=version_file)
+    with open(
+        join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"),
+        "w",
+        newline="\n",
+    ) as version_file:
+        print(f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")
     update_shadows(client_output_dir, server_output_dir)
