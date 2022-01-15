@@ -9,6 +9,8 @@
 ### Balance
 
 - Air
+  - Flyer Foundry
+    - Build cost decreased from 660 to 600
   - Loki
     - Damage to air increased from 50% to 100%
   - Meteoroid
