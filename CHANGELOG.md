@@ -18,6 +18,8 @@
     - Build cost decreased from 2000 to 1800
     - Metal production increased from 16 to 18
     - Health reduced from 5000 to 3000
+  - Armour Foundry
+    - Build cost decreased from 660 to 600
   - Havoc
     - Damage to commanders increased from 67% to 100%
   - Lancer
