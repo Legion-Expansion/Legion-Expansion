@@ -27,6 +27,8 @@
     - Damage increased from 125 to 167
   - Panzer
     - Damage to structures decreased from 300% to 100%
+  - Walker Foundry
+    - Build cost decreased from 660 to 600
 - Sea
   - Manta
     - Damage to orbital increased from 25% to 100%
