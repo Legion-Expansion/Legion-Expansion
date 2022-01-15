@@ -37,6 +37,9 @@
     - Build cost decreased from 660 to 600
     - Energy demand increased from 640 to 745
     - Metal demand increased from 15 to 17
+- Orbital
+  - Starcannon
+    - Energy demand increased from 1900 to 2250
 - Sea
   - Manta
     - Damage to orbital increased from 25% to 100%
