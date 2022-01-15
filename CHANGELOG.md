@@ -38,6 +38,8 @@
 - Sea
   - Manta
     - Damage to orbital increased from 25% to 100%
+  - Ship Foundry
+    - Build cost decreased from 660 to 600
 
 ### AI
 
