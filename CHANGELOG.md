@@ -22,7 +22,7 @@
     - Health reduced from 5000 to 3000
   - Armour Foundry
     - Build cost decreased from 660 to 600
-    - Energy demand increased from 640 to 745
+    - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
   - Havoc
     - Damage to commanders increased from 67% to 100%
@@ -35,7 +35,7 @@
     - Damage to structures decreased from 300% to 100%
   - Walker Foundry
     - Build cost decreased from 660 to 600
-    - Energy demand increased from 640 to 745
+    - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
 - Orbital
   - Starcannon
