@@ -43,6 +43,8 @@
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 615,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -121,9 +123,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Teleporter - Need Fabber",
@@ -131,6 +131,8 @@
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 615,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -162,9 +164,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Teleporter - Other Planet Needs Fabber",
@@ -172,6 +172,8 @@
       "instance_count": 1,
       "shared_instance_count": "Teleporter",
       "priority": 606,
+      "min_num_assisters": 1,
+      "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -211,9 +213,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 1
+      }
     },
     {
       "name": "Legion - Teleporter",

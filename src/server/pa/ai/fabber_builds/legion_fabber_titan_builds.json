@@ -6,6 +6,8 @@
       "instance_count": 1,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
       "builders": [
         "LegionBotAdvancedFabber",
         "LegionBotAdvancedSupportCommander"
@@ -44,9 +46,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 15,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Vehicle Titan",
@@ -54,6 +54,8 @@
       "instance_count": 1,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
       "builders": [
         "LegionVehicleAdvancedFabber"
       ],
@@ -91,9 +93,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 15,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Air Titan",
@@ -101,6 +101,8 @@
       "instance_count": 1,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
       "builders": [
         "LegionAirAdvancedFabber"
       ],
@@ -137,9 +139,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 15,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Orbital Titan",
@@ -147,6 +147,8 @@
       "instance_count": 1,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -175,9 +177,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 15,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Structure Titan",
@@ -185,6 +185,8 @@
       "instance_count": 1,
       "shared_instance_count": "Titan",
       "priority": 480,
+      "min_num_assisters": 3,
+      "max_num_assisters": 15,
       "builders": [
         "AnyLegionFabberAdvanced"
       ],
@@ -254,9 +256,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 15,
-      "min_num_assisters": 3
+      }
     }
   ]
 }

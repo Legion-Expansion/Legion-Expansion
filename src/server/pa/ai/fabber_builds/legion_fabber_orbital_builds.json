@@ -6,6 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
       "priority": 485,
+      "max_num_assisters": 3,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -68,8 +69,7 @@
       ],
       "placement_rules": {
         "buffer": 5
-      },
-      "max_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Orbital Launcher - Rush",
@@ -77,6 +77,8 @@
       "instance_count": 1,
       "shared_instance_count": "OrbitalLauncher",
       "priority": 486,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "AnyLegionFabberBasic",
@@ -188,15 +190,14 @@
       ],
       "placement_rules": {
         "buffer": 5
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Orbital Factory",
       "to_build": "LegionFactoryAdvancedOrbital",
       "instance_count": 1,
       "priority": 485,
+      "max_num_assisters": 3,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -226,8 +227,7 @@
       ],
       "placement_rules": {
         "buffer": 5
-      },
-      "max_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Defense Satellite",
@@ -325,6 +325,8 @@
       "to_build": "LegionDefenseAdvancedEngine",
       "instance_count": 1,
       "priority": 612,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -380,15 +382,15 @@
       ],
       "placement_rules": {
         "buffer": 5
-      },
-      "max_num_assisters": 45,
-      "min_num_assisters": 8
+      }
     },
     {
       "name": "Legion - Orbital Mining Platform",
       "to_build": "LegionEcoAdvancedMine",
       "instance_count": 1,
       "priority": 360,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionOrbitalBasicFabber"
       ],
@@ -436,9 +438,7 @@
       ],
       "placement_rules": {
         "buffer": 75
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Move Fabber To Planet",

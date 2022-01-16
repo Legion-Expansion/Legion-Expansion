@@ -5,6 +5,7 @@
       "to_build": "LegionNavalBasicFabber",
       "instance_count": 1,
       "priority": 100,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -28,14 +29,14 @@
             "string0": "LegionNavalBasicFabber"
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Destroyer",
       "to_build": "LegionNavalBasicDestroyer",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -53,14 +54,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Attack Sub",
       "to_build": "LegionNavalBasicSub",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -91,14 +92,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Frigate",
       "to_build": "LegionNavalBasicAA",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -165,14 +166,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Corvette - Intel",
       "to_build": "LegionNavalBasicScout",
       "instance_count": -1,
       "priority": 98,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -229,14 +230,14 @@
             "boolean": false
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Corvette",
       "to_build": "LegionNavalBasicScout",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicNaval"
       ],
@@ -254,14 +255,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Advanced Naval Fabber",
       "to_build": "LegionNavalAdvancedFabber",
       "instance_count": 1,
       "priority": 200,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -285,8 +286,7 @@
             "string0": "LegionNavalAdvancedFabber"
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Fabrication Sub",
@@ -324,6 +324,7 @@
       "to_build": "LegionNavalAdvancedBattleship",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -341,14 +342,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Frigate",
       "to_build": "LegionNavalAdvancedTactical",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -366,14 +367,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Destroyer",
       "to_build": "LegionNavalAdvancedDestroyer",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -391,14 +392,14 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Hover Ship",
       "to_build": "LegionNavalAdvancedHover",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedNaval"
       ],
@@ -412,8 +413,7 @@
             "test_type": "CanAffordBuildDemand"
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     }
   ]
 }

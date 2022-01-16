@@ -428,7 +428,9 @@
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
       "priority": 500,
+      "max_num_assisters": 3,
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -491,9 +493,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Advanced Metal Extractor - Desire - Area",
@@ -501,6 +501,8 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
       "priority": 610,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced",
@@ -532,8 +534,6 @@
           "value": 50
         }
       },
-      "max_num_assisters": 5,
-      "min_num_assisters": 2,
       "task_type": "AreaBuild"
     },
     {
@@ -638,6 +638,8 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedMetal",
       "priority": 614,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "base_sort": "FromBuilder",
       "builders": [
         "AnyLegionFabberAdvanced",
@@ -662,9 +664,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      }
     },
     {
       "name": "Legion - Advanced Metal Extractor - Expand",
@@ -745,7 +745,10 @@
       "to_build": "LegionEcoAdvancedEnergyPlant",
       "instance_count": 1,
       "shared_instance_count": "AdvancedEnergy",
+      "cross_planet_shared_count": true,
       "priority": 615,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -770,10 +773,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      }
     },
     {
       "name": "Legion - Storage",

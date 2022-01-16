@@ -24,6 +24,8 @@
       "to_build": "LegionDefenseAdvancedNuke",
       "instance_count": 2,
       "priority": 387,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
       "builders": [
         "LegionDefenseAdvancedNukeSilo"
       ],
@@ -42,9 +44,7 @@
             "test_type": "FactoryHasOpenSlot"
           }
         ]
-      ],
-      "max_num_assisters": 12,
-      "min_num_assisters": 3
+      ]
     },
     {
       "name": "Legion - Anti Nuke Missile",
@@ -70,6 +70,8 @@
       "to_build": "LegionDefenseAdvancedAntiNuke",
       "instance_count": -1,
       "priority": 388,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
       "builders": [
         "LegionDefenseAdvancedAntiNukeSilo"
       ],
@@ -89,9 +91,7 @@
             "boolean": true
           }
         ]
-      ],
-      "max_num_assisters": 12,
-      "min_num_assisters": 5
+      ]
     }
   ]
 }

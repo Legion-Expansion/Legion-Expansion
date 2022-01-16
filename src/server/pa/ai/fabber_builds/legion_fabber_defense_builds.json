@@ -609,6 +609,8 @@
       "to_build": "LegionDefenseBasicArtillery",
       "instance_count": 1,
       "priority": 245,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "AnyLegionFabberBasic"
       ],
@@ -661,9 +663,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      }
     },
     {
       "name": "Legion - Basic Naval Defense - Mex",
@@ -2016,6 +2016,8 @@
       "instance_count": 1,
       "shared_instance_count": "AntiNukeSilo",
       "priority": 386,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -2151,9 +2153,7 @@
             "count": 1
           }
         ]
-      },
-      "max_num_assisters": 12,
-      "min_num_assisters": 5
+      }
     }
   ]
 }

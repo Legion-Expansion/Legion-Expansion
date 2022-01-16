@@ -51,6 +51,8 @@
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
       "priority": 505,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -94,9 +96,7 @@
       ],
       "placement_rules": {
         "buffer": 2
-      },
-      "max_num_assisters": 12,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Nuke Silo - No Antis",
@@ -104,6 +104,8 @@
       "instance_count": 1,
       "shared_instance_count": "NukeSilo",
       "priority": 478,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -149,9 +151,7 @@
       ],
       "placement_rules": {
         "buffer": 2
-      },
-      "max_num_assisters": 12,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Orbital Dropper",
@@ -206,6 +206,8 @@
       "to_build": "LegionDefenseAdvancedArtillery",
       "instance_count": 1,
       "priority": 360,
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -254,15 +256,15 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 6,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Control Module",
       "to_build": "LegionDefenseAdvancedModule",
       "instance_count": 1,
       "priority": 612,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
       "builders": [
         "AnyLegionFabberAdvanced",
         "LegionBotAdvancedSupportCommander"
@@ -303,9 +305,7 @@
             "boolean": true
           }
         ]
-      ],
-      "max_num_assisters": 45,
-      "min_num_assisters": 8
+      ]
     }
   ]
 }

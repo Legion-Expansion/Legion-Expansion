@@ -5,6 +5,7 @@
       "to_build": "LegionOrbitalBasicFabber",
       "instance_count": 1,
       "priority": 199,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryBasicOrbital",
         "LegionFactoryAdvancedOrbital"
@@ -105,8 +106,7 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 5
+      ]
     },
     {
       "name": "Legion - Basic Radar Satellite",
@@ -181,6 +181,7 @@
       "to_build": "LegionOrbitalBasicRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
       "priority": 199,
       "builders": [
         "LegionFactoryBasicOrbital",
@@ -206,14 +207,14 @@
             "boolean": true
           }
         ]
-      ],
-      "cross_planet_shared_count": true
+      ]
     },
     {
       "name": "Legion - Orbital Fighter",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": 1,
       "priority": 100,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryBasicOrbital",
         "LegionFactoryAdvancedOrbital"
@@ -236,14 +237,15 @@
             "value0": 15
           }
         ]
-      ],
-      "max_num_assisters": 5
+      ]
     },
     {
       "name": "Legion - Orbital Fighter - Threat",
       "to_build": "LegionOrbitalBasicFighter",
       "instance_count": 1,
       "priority": 200,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryBasicOrbital"
       ],
@@ -294,15 +296,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      ]
     },
     {
       "name": "Legion - Orbital Lander",
       "to_build": "LegionOrbitalBasicTransport",
       "instance_count": 1,
       "priority": 0,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryBasicOrbital"
       ],
@@ -322,14 +323,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 5
+      ]
     },
     {
       "name": "Legion - Probe - Other planet",
       "to_build": "LegionOrbitalBasicScout",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
       "priority": 200,
       "builders": [
         "LegionFactoryBasicOrbital",
@@ -355,8 +356,7 @@
             "boolean": true
           }
         ]
-      ],
-      "cross_planet_shared_count": true
+      ]
     },
     {
       "name": "Legion - Orbital Death Laser",
@@ -389,6 +389,7 @@
       "to_build": "LegionOrbitalAdvancedRadar",
       "instance_count": 1,
       "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
       "priority": 196,
       "builders": [
         "LegionFactoryAdvancedOrbital"
@@ -436,14 +437,14 @@
             "boolean": true
           }
         ]
-      ],
-      "cross_planet_shared_count": true
+      ]
     },
     {
       "name": "Legion - Orbital Railgun",
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": 1,
       "priority": 195,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -465,14 +466,15 @@
             "value0": 15
           }
         ]
-      ],
-      "max_num_assisters": 5
+      ]
     },
     {
       "name": "Legion - Orbital Railgun - Threat",
       "to_build": "LegionOrbitalAdvancedSniper",
       "instance_count": 1,
       "priority": 205,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -523,15 +525,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      ]
     },
     {
       "name": "Legion - Orbital Battleship",
       "to_build": "LegionOrbitalAdvancedBattleship",
       "instance_count": 1,
       "priority": 195,
+      "max_num_assisters": 5,
       "builders": [
         "LegionFactoryAdvancedOrbital"
       ],
@@ -554,8 +555,7 @@
             "value0": 0.2
           }
         ]
-      ],
-      "max_num_assisters": 5
+      ]
     }
   ]
 }

@@ -63,7 +63,9 @@
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
       "priority": 350,
+      "max_num_assisters": 3,
       "builders": [
         "LegionCommander"
       ],
@@ -99,16 +101,16 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Basic Energy Generator - early Desire Cdr",
       "to_build": "LegionEcoBasicEnergyPlant",
       "instance_count": 1,
       "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
       "priority": 500,
+      "max_num_assisters": 3,
       "builders": [
         "LegionCommander"
       ],
@@ -144,9 +146,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "cross_planet_shared_count": true,
-      "max_num_assisters": 3
+      }
     }
   ]
 }

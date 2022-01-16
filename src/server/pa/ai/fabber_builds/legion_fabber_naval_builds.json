@@ -6,6 +6,8 @@
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 376,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -115,9 +117,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      }
     },
     {
       "name": "Legion - Basic Naval Factory - Wasting",
@@ -125,6 +125,8 @@
       "instance_count": 1,
       "shared_instance_count": "BasicFactory",
       "priority": 515,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
       "builders": [
         "LegionCommander",
         "LegionAirBasicFabber",
@@ -221,9 +223,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 2
+      }
     },
     {
       "name": "Legion - Advanced Naval Factory",
@@ -231,6 +231,8 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 477,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -283,9 +285,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     },
     {
       "name": "Legion - Advanced Naval Factory - Wasting",
@@ -293,6 +293,8 @@
       "instance_count": 1,
       "shared_instance_count": "AdvancedFactory",
       "priority": 525,
+      "min_num_assisters": 3,
+      "max_num_assisters": 5,
       "builders": [
         "LegionNavalBasicFabber",
         "LegionNavalAdvancedFabber"
@@ -345,9 +347,7 @@
           "radius": 10,
           "value": 50
         }
-      },
-      "max_num_assisters": 5,
-      "min_num_assisters": 3
+      }
     }
   ]
 }

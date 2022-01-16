@@ -5,6 +5,7 @@
       "to_build": "LegionBotBasicFabber",
       "instance_count": 1,
       "priority": 100,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicBot"
       ],
@@ -35,14 +36,14 @@
             "boolean": false
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Basic Vehicle Fabber",
       "to_build": "LegionVehicleBasicFabber",
       "instance_count": 1,
       "priority": 100,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicVehicle"
       ],
@@ -73,8 +74,7 @@
             "boolean": false
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Land Scout - Intel",
@@ -191,6 +191,7 @@
       "to_build": "LegionBotBasicAssault",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicBot"
       ],
@@ -223,14 +224,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Basic Sniper Bot",
       "to_build": "LegionBotBasicSniper",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicBot"
       ],
@@ -267,14 +268,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Suicide Bot",
       "to_build": "LegionBotBasicBomb",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicBot"
       ],
@@ -325,8 +326,7 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Basic AA Bot",
@@ -489,6 +489,7 @@
       "to_build": "LegionVehicleBasicLaser",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicVehicle"
       ],
@@ -525,14 +526,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Basic Armor Tank",
       "to_build": "LegionVehicleBasicArmor",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicVehicle"
       ],
@@ -583,14 +584,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Amphibious Tank",
       "to_build": "LegionVehicleBasicHover",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicVehicle"
       ],
@@ -676,14 +677,14 @@
             "boolean": false
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Hover Artillery",
       "to_build": "LegionVehicleBasicArtillery",
       "instance_count": -1,
       "priority": 97,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryBasicVehicle"
       ],
@@ -747,14 +748,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Advanced Bot Fabber",
       "to_build": "LegionBotAdvancedFabber",
       "instance_count": 1,
       "priority": 200,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -787,14 +788,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Vehicle Fabber",
       "to_build": "LegionVehicleAdvancedFabber",
       "instance_count": 1,
       "priority": 200,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -827,14 +828,14 @@
             "value0": 1
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Assault Bot",
       "to_build": "LegionBotAdvancedAssault",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -871,14 +872,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Artillery Bot",
       "to_build": "LegionBotAdvancedArtillery",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -929,14 +930,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Heavy Bot",
       "to_build": "LegionBotAdvancedTactical",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -987,14 +988,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Support Commander",
       "to_build": "LegionBotAdvancedSupportCommander",
       "instance_count": 1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -1018,14 +1019,14 @@
             "value0": 5
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Suicide Bot",
       "to_build": "LegionBotAdvancedBomb",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -1089,14 +1090,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Advanced AA Bot",
       "to_build": "LegionBotAdvancedAA",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 10,
       "builders": [
         "LegionFactoryAdvancedBot"
       ],
@@ -1189,14 +1190,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 10
+      ]
     },
     {
       "name": "Legion - Advanced Laser Tank",
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -1233,14 +1234,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Armor Tank",
       "to_build": "LegionVehicleAdvancedArmor",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -1291,14 +1292,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Artillery Vehicle",
       "to_build": "LegionVehicleAdvancedHover",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -1408,14 +1409,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Sniper Vehicle",
       "to_build": "LegionVehicleAdvancedSniper",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -1466,14 +1467,14 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     },
     {
       "name": "Legion - Advanced Swarm Tank",
       "to_build": "LegionVehicleAdvancedSwarm",
       "instance_count": -1,
       "priority": 199,
+      "max_num_assisters": 15,
       "builders": [
         "LegionFactoryAdvancedVehicle"
       ],
@@ -1510,8 +1511,7 @@
             "value0": 0
           }
         ]
-      ],
-      "max_num_assisters": 15
+      ]
     }
   ]
 }
