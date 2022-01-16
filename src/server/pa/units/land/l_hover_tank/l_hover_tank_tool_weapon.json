@@ -2,6 +2,7 @@
   "ammo_id": "/pa/units/land/l_hover_tank/l_hover_tank_ammo.json",
   "arc_type": "ARC_High",
   "auto_attack": true,
+  "firing_standard_deviation": 1.0,
   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
   "idle_aim_delay": 10,
   "max_firing_velocity": 150,

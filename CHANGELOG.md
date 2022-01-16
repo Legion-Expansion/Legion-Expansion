@@ -24,6 +24,8 @@
     - Build cost decreased from 660 to 600
     - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
+  - Corsair
+    - Increased standard deviation of shots from 0 to 1
   - Havoc
     - Damage to commanders increased from 67% to 100%
   - Lancer
