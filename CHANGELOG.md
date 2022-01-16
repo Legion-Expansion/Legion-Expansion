@@ -33,6 +33,8 @@
     - Damage increased from 125 to 167
   - Panzer
     - Damage to structures decreased from 300% to 100%
+  - Peacekeeper
+    - Build cost reduced from 75 to 60
   - Walker Foundry
     - Build cost decreased from 660 to 600
     - Energy demand increased from 640 to 765

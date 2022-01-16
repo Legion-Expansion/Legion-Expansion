@@ -22,7 +22,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 75,
+  "build_metal_cost": 60,
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
