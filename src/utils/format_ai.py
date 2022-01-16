@@ -10,6 +10,7 @@ KEY_ORDER = [
     "to_build",
     "instance_count",
     "shared_instance_count",
+    "cross_planet_shared_count",
     "priority",
     "min_num_assisters",
     "max_num_assisters",
