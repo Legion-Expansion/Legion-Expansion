@@ -608,15 +608,6 @@
         [
           {
             "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
             "boolean": true
           },
           {
