@@ -49,6 +49,7 @@
 ### AI
 
 - Scout with Stokes if no better options
+- Fixed the building of too many Purgers
 
 ### Fixed
 

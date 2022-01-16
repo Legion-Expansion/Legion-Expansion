@@ -297,7 +297,7 @@
             "unit_type_string0": "(Tank | Bot) & SelfDestruct",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.35
+            "value0": 0.1
           }
         ],
         [
@@ -313,7 +313,7 @@
             "unit_type_string0": "(Tank | Bot) & SelfDestruct",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.35
+            "value0": 0.1
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
