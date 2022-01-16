@@ -3,7 +3,7 @@
     "Stoke_Scout": {
       "units": [
         {
-          "unit_types": "(Vehicle & Amphibious & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+          "unit_types": "(Tank & Amphibious & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
           "max_count": 1
         }
       ]

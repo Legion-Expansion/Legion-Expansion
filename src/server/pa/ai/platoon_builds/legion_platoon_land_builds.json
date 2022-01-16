@@ -9,20 +9,12 @@
       "build_conditions": [
         [
           {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Bot & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Factory",
-            "compare0": "<",
-            "value0": 1
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "(Vehicle & Amphibious & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+            "unit_type_string0": "(Tank & Amphibious & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
             "compare0": ">=",
             "value0": 1
           }

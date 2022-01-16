@@ -48,7 +48,6 @@
 
 ### AI
 
-- Builds more Stokes
 - Scout with Stokes if no better options
 
 ### Fixed
