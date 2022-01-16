@@ -11,6 +11,8 @@ KEY_ORDER = [
     "instance_count",
     "shared_instance_count",
     "priority",
+    "min_num_assisters",
+    "max_num_assisters",
     "base_sort",
     "builders",
     "build_conditions",
