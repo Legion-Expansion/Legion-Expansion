@@ -45,6 +45,8 @@
   - Starcannon
     - Energy demand increased from 1900 to 2250
 - Sea
+  - Catfish
+    - Shots reverted to hitscan
   - Manta
     - Damage to orbital increased from 25% to 100%
   - Ship Foundry

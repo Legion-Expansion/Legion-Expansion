@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
-  "collision_check": "enemies",
+  "collision_check": "target",
   "damage": 20,
   "fx_beam_spec": "/pa/units/sea/l_sea_scout/beam_trail.pfx",
   "fx_collision_spec": "/pa/units/sea/l_sea_scout/beam_hit.pfx",
