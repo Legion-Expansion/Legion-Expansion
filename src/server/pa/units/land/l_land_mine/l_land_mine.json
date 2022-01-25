@@ -113,7 +113,7 @@
         {
           "channel": "radar",
           "layer": "surface_and_air",
-          "radius": 10,
+          "radius": 5,
           "shape": "sphere"
         },
         {
