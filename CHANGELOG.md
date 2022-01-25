@@ -73,6 +73,7 @@
   - Shank
   - Epoch
 - Panzer description - with thanks to Thorveim for the report
+- Radar jamming no longer prevents the triggering of Spoilers
 
 ## v1.21.0 - 2021-08-05
 

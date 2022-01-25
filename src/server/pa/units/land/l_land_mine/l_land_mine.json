@@ -115,6 +115,12 @@
           "layer": "surface_and_air",
           "radius": 10,
           "shape": "sphere"
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "sphere",
+          "radius": 2
         }
       ]
     }
