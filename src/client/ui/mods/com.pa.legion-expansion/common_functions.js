@@ -25,12 +25,11 @@ define({
     return panel ? folderPath + png1 : folderPath + png2;
   },
   uiColour: function (faction) {
-    var colour = "";
     if (faction === "legion") {
-      colour = "red";
+      return "red";
     } else if (faction === "mixed") {
-      colour = "purple";
+      return "purple";
     }
-    return colour;
+    return "";
   },
 });
