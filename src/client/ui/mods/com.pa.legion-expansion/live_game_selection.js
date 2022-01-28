@@ -43,7 +43,6 @@ if (!legionLiveGameSelectionLoaded) {
                 if (!group[element]) {
                   return null;
                 }
-
                 return {
                   type: element,
                   count: group[element],
