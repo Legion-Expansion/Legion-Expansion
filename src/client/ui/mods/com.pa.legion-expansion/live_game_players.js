@@ -26,9 +26,8 @@ if (!legionLiveGamePlayersLoaded) {
           } else {
             return "vanilla";
           }
-        } else {
-          return "vanilla";
         }
+        return "vanilla";
       };
 
       var isLegionOrMixedOrVanilla = ko.computed(function () {
