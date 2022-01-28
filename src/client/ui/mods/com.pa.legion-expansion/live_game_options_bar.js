@@ -41,10 +41,10 @@ if (!legionLiveGameOptionsBarLoaded) {
         ], function (common) {
           common.bodyPanelClass(payload);
 
-          var colour = common.uiColour(payload);
           var src = "img[src='img/ingame_options_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
+          var colour = common.uiColour(payload);
 
           var togglePip = function () {
             var png1 = "pip_off.png";
