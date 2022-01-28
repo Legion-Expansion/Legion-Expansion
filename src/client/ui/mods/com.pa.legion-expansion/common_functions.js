@@ -21,7 +21,8 @@ define({
     }
   },
   togglePanel: function (panel, path, colour, png1, png2) {
-    return panel ? path + colour + "/" + png1 : path + colour + "/" + png2;
+    var folderPath = path + colour + "/";
+    return panel ? folderPath + png1 : folderPath + png2;
   },
   uiColour: function (faction) {
     var colour = "";
