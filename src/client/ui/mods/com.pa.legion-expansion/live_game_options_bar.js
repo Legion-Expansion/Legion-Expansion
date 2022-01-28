@@ -14,7 +14,9 @@ if (!legionLiveGameOptionsBarLoaded) {
         if (legionServerLoaded) {
           loadScript("coui://ui/mods/com.pa.legion-expansion/version.js");
           $(".div_ingame_options_bar_cont").prepend(
-            "<div id='legion_watermark' class='watermark'><loc>Legion</loc>&nbsp;" + version + "</div>"
+            "<div id='legion_watermark' class='watermark'><loc>Legion</loc>&nbsp;" +
+              version +
+              "</div>"
           );
           locTree($("#legion_watermark"));
         }
@@ -70,9 +72,7 @@ if (!legionLiveGameOptionsBarLoaded) {
           toggleUberBar();
 
           common.toggleImage(src, path, colour, "chronocam.png");
-
           common.toggleImage(src, path, colour, "game_menu.png");
-
           common.toggleImage(src, path, colour, "pov.png");
         });
       };
