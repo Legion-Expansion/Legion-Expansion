@@ -13,17 +13,10 @@ if (!legionLiveGameSelectionLoaded) {
         );
 
         model.isLegion = function (type) {
-          if (themeSetting === "ON") {
-            var hasLegionUnit = false;
-            if (type.indexOf("/l_") > 2) {
-              hasLegionUnit = true;
-              return hasLegionUnit;
-            }
-
-            return hasLegionUnit;
-          } else {
-            return false;
+          if (themeSetting === "ON" && type.indexOf("/l_") > 2) {
+            return true;
           }
+          return false;
         };
 
         $(".div_unit_selection").attr(
