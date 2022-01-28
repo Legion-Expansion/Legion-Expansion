@@ -23,8 +23,6 @@ if (!legionLiveGamePlayersLoaded) {
             return "legion";
           } else if (legionCount > 0 && legionCount < specsLength) {
             return "mixed";
-          } else {
-            return "vanilla";
           }
         }
         return "vanilla";
