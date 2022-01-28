@@ -14,13 +14,13 @@ if (!legionLiveGameSelectionLoaded) {
 
         model.isLegion = function (type) {
           if (themeSetting === "ON") {
-            var haslegionunit = false;
+            var hasLegionUnit = false;
             if (type.indexOf("/l_") > 2) {
-              haslegionunit = true;
-              return haslegionunit;
+              hasLegionUnit = true;
+              return hasLegionUnit;
             }
 
-            return haslegionunit;
+            return hasLegionUnit;
           } else {
             return false;
           }
