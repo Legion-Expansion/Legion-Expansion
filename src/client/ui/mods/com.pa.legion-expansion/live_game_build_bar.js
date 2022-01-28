@@ -75,7 +75,7 @@ if (!legionLiveGameBuildBarLoaded) {
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
         // eslint-disable-next-line no-undef
-        var legionspecids = legion.builders;
+        var legionSpecIds = legion.builders;
 
         var isLegionOrMixedOrVanilla = function (data) {
           if (data.buildSet()) {
@@ -84,7 +84,7 @@ if (!legionLiveGameBuildBarLoaded) {
             var selectedSpecs = data.buildSet().selectedSpecs();
 
             _.forOwn(selectedSpecs, function (value, key) {
-              if (_.includes(legionspecids, key)) {
+              if (_.includes(legionSpecIds, key)) {
                 legionCount++;
               }
               specsLength++;
