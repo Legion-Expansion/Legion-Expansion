@@ -122,6 +122,8 @@ The script in `src/install_prod.py` depends on those locations.
 #### Release Using `src/install_prod.py`
 
 1. Bump the version number in `src/base_modinfo.json`
+1. Merge balance into master
+1. Create release from master and tag with version number
 1. Run `src/install_prod.py`
 1. Inspect output and check for errors or warnings
 1. cd into `../com.pa.legion-expansion-client`
