@@ -56,8 +56,8 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 To create a copy for testing local changes:
 
 1. Install [Python 3](https://www.python.org/)
-2. Checkout origin/balance: 
-    ```git clone -b balance --recurse-submodules git@github.com:Legion-Expansion/Legion-Expansion.git```
+2. Checkout origin/balance:
+   `git clone -b balance --recurse-submodules git@github.com:Legion-Expansion/Legion-Expansion.git`
 3. Run `src/install_devel.py`
 4. Run PA and click on `Community Mods`
 5. Enable the "DEVELOPMENT" version of the mod
@@ -112,11 +112,10 @@ mods by updating the submodules we have for those repositories.
 
 The first step is to make sure you have cloned the client and server mods to a
 sibling directory of this repo. After cloning the repos you should have a layout like this:
-```
-Legion-Expansion // This repo
-com.pa.legion-expansion-client // client
-com.pa.legion-expansion-server // server
-```
+
+- Legion-Expansion
+- com.pa.legion-expansion-client
+- com.pa.legion-expansion-server
 
 The script in `src/install_prod.py` depends on those locations.
 
@@ -124,12 +123,12 @@ The script in `src/install_prod.py` depends on those locations.
 
 1. Bump the version number in `src/base_modinfo.json`
 1. Run `src/install_prod.py`
-2. Inspect output and check for errors or warnings
-3. cd into `../com.pa.legion-expansion-client`
-4. Check all changes are as expected using `git diff`
-6. Add all the changes `git add .`
-7. Create a commit that describes the update
-8. Repeat those steps for `../com.pa.legion-expansion-server`
+1. Inspect output and check for errors or warnings
+1. cd into `../com.pa.legion-expansion-client`
+1. Check all changes are as expected using `git diff`
+1. Add all the changes `git add .`
+1. Create a commit that describes the update
+1. Repeat those steps for `../com.pa.legion-expansion-server`
 
 ### Units
 
