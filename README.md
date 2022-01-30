@@ -92,13 +92,13 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
-MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
+- MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-BALANCE - development; forked to FEATURE-_name_
+- BALANCE - development; forked to FEATURE-_name_
 
-FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
+- FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
 
-HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
+- HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
 
 ### Release Process
 
