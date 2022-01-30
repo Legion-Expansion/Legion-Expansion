@@ -38,7 +38,7 @@ This project is not the work of one, but of a legion.
 | mikeyh          | Code                               |
 | Quitch          | AI / Media                         |
 | Stuart98        | Code / Strategic Icons             |
-| dom314          | Effects                            |
+| dom314          | Effects / Code                     |
 | CptConundrum    | UI                                 |
 | Elodea          | Balance Lead / Effects / Media     |
 | AndreasG        | Balance Lead                       |
@@ -56,10 +56,11 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 To create a copy for testing local changes:
 
 1. Install [Python 3](https://www.python.org/)
-2. Checkout origin/balance
-3. Create and configure papaths.py in the root directory - see papaths.py.example
-4. Run install_local.py - requires the pa_tools submodule
-5. Within PA's Community Mods enable the "DEVELOPMENT" version of the mod
+2. Checkout origin/balance:
+   `git clone -b balance --recurse-submodules git@github.com:Legion-Expansion/Legion-Expansion.git`
+3. Run `src/install_devel.py`
+4. Run PA and click on `Community Mods`
+5. Enable the "DEVELOPMENT" version of the mod
 
 ## Unit Stats
 
@@ -69,22 +70,22 @@ A full breakdown of all unit stats can be found at the [Planetary Annihilation T
 
 ### Structure
 
+The repo is structured with all the source files - including unit specs, effects, and art assets - in the `src` folder.
+
 Please remove all unnecessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
 
-JavaScript and JSON are formatted for readability with 2 space indent and sorted keys. They will be compressed when packaged into the mods.
-
-Copy `papaths.py.example` to `papaths.py` then edit to update `PA_DATA_PATH` and `PA_MEDIA_PATH`.
+JavaScript and JSON are formatted for readability with 2 space indent.
 
 Latest Python 3.x is required. Please do not use Python 2.x as whitespace formatting is different.
 
 ### Committing
 
 1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
-2. Run format_json.py on your files with your PA_MEDIA_PATH in papaths.py so you don't commit unnecessary white spaces changes.
-3. Fix any MISSING FILE references in the format_json.py output.
-4. Use correct casing when referencing files so as to prevent issues on Linux.
+2. Minimise changes as much as possible. Ensure that your files are properly formatted to avoid whitespace only changes
+3. Fix all missing file issues when running `src/install_devel.py`
+4. Use correct casing when referencing files to prevent issues on Linux.
 5. Keep commit subjects concise, use the body to include details.
 6. Make small, single-purpose commits.
 7. Large files not required for the mod to run should be stored using [Git Large File Storage](https://git-lfs.github.com/)
@@ -98,6 +99,38 @@ BALANCE - development; forked to FEATURE-_name_
 FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
 
 HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
+
+### Release Process
+
+In order to update the Legion-Expansion release, the
+[client](https://github.com/Legion-Expansion/com.pa.legion-expansion-client) and
+[server](https://github.com/Legion-Expansion/com.pa.legion-expansion-server)
+Legion mods need to be updated.
+
+The `src/install_prod.py` script automates updating the the client and server
+mods by updating the submodules we have for those repositories.
+
+The first step is to make sure you have cloned the client and server mods to a
+sibling directory of this repo. After cloning the repos you should have a layout like this:
+
+- Legion-Expansion
+- com.pa.legion-expansion-client
+- com.pa.legion-expansion-server
+
+The script in `src/install_prod.py` depends on those locations.
+
+#### Release Using `src/install_prod.py`
+
+1. Bump the version number in `src/base_modinfo.json`
+1. Merge balance into master
+1. Create release from master and tag with version number
+1. Run `src/install_prod.py`
+1. Inspect output and check for errors or warnings
+1. cd into `../com.pa.legion-expansion-client`
+1. Check all changes are as expected using `git diff`
+1. Add all the changes `git add .`
+1. Create a commit that describes the update
+1. Repeat those steps for `../com.pa.legion-expansion-server`
 
 ### Units
 
