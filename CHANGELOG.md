@@ -74,6 +74,7 @@
   - Epoch
 - Panzer description - with thanks to Thorveim for the report
 - Radar jamming no longer prevents the triggering of Spoilers
+- Monstrosity secondary weapons pointing at the primary gun's target rather than their own
 
 ## v1.21.0 - 2021-08-05
 
