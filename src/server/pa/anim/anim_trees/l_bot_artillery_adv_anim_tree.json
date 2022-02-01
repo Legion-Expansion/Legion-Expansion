@@ -42,7 +42,8 @@
       "child": {
         "rotation_axis": "z",
         "rotation_bone": "bone_turret",
-        "type": "procedural_aim"
+        "type": "procedural_aim",
+        "weapon_index": 0
       },
       "lerp_func": "not_being_built",
       "type": "fader"
@@ -51,7 +52,8 @@
       "child": {
         "rotation_axis": "z",
         "rotation_bone": "bone_turretLeft",
-        "type": "procedural_aim"
+        "type": "procedural_aim",
+        "weapon_index": 1
       },
       "lerp_func": "not_being_built",
       "type": "fader"
@@ -60,7 +62,8 @@
       "child": {
         "rotation_axis": "z",
         "rotation_bone": "bone_turretRight",
-        "type": "procedural_aim"
+        "type": "procedural_aim",
+        "weapon_index": 2
       },
       "lerp_func": "not_being_built",
       "type": "fader"

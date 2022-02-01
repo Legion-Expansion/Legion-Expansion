@@ -177,7 +177,7 @@
         "socket_muzzleLeft02"
       ],
       "projectiles_per_fire": 1,
-      "record_index": 1,
+      "record_index": 2,
       "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"
     }
   ],
