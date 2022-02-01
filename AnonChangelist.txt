@@ -1,0 +1,112 @@
+# Anonemous2's Changelog
+## List of changes and justifications for them
+### Land
+- l_air_defense
+	- made hitbox sqaure: the base of the turret is sqaure, and the turret itself can fire 360*, so there is no need for a rectagular hitbox.
+	- slightly reduce selection circle: aa selection hex is slightly larger than needed.
+
+- l_air_defense_adv
+	- increased slection circle: adv aa selction hex is covered by the model (not visable).
+
+- l_artillery_long
+	- made hitbox sqaure: the base of the turret is sqaure, and the turret itself can fire 360*, so there is no need for a rectagular hitbox. Increased the height of the hitbox.
+
+- l_artillery_short
+	- made hitbox sqaure: the base of the turret is sqaure, and the turret itself can fire 360*, so there is no need for a rectagular hitbox.
+
+- l_bot_aa_adv
+	- greatly increased hitbox: the old hitbox shape and size was similar to that of a dox.
+	- greatly increased slection circle: selction hex was the same size of a dox select circle.
+
+- l_bot_artillery_adv
+	- increased slection circle: selction hex was under the monstro.'s feet.
+
+- l_fabrication_vehicle_adv
+	- increased hitbox: the old hitbox shape and size was smaller than that of the t1 legion armor fabber, and didn't fit this unit's shape and size.
+
+- l_flame_turret
+	- changed hitbox: the old hitbox shape and size was similar to the other legion turrets; rectagular and streched along the y axis, which doesn't fit the shape of the arsonist (part of the model is sticking out of the hitbox, possible to clip multiple into each other).
+
+- l_hover_tank_adv
+	- increased hitbox: another case where the t2 hitbox was smaller than it's t1 equivelent.
+	- slightly increased slection circle
+
+- l_radar_adv
+	- slightly increased slection circle: it was just barely bigger than the model, could look better
+
+- l_rocket_barrage
+	- slightly increased slection circle: it was just barely bigger than the model, could look better
+
+- l_shield_gen
+	- reduced hitbox: hitbox for the shield gen was quite a bit larger than the model and select circle.
+
+- l_sniper_bot
+	- increased height of hitbox: lancer's head was sticking out of the hitbox, which is almost the same as the dox's hitbox while being a larger unit.
+
+- l_storage
+	- increased slection circle: it was clipping with the model alot.
+
+- l_swarm_hive
+	- slightly increased slection circle: hive corner were clipping with the selction hex.
+
+- l_t1_turret_adv
+	- squred hitbox, increased hitbox height: better reflects shape of the turret
+
+- l_t1_turret_basic
+	- squred hitbox, increased hitbox height: better reflects shape of the turret
+
+- l_teleporter
+	- enlarged hitbox
+	- enlarged selection: Legion teleporters are real chonkers. Now they don't form a mega structure when you build a line of them (stopped clipping with other structures).
+
+- l_titan_bot
+	- widen hitbox: The Thor is big. it's hitbox was a pilar. now the hitbox makes abit more sense, and should stop the thor from stepping on any unlucky units escorting it.
+
+- l_titan_structure
+	- slightly reduced hitbox: Getting a Holocene off can be a challenge with its thick hitbox, but it turns out it doesn't even need to be quite that large (You can hit 4 rag hitbox inside the old hol hitbox). Slightly reducing the hitbox should improve usage and will still look and feel fine.
+	- increased selection ciricle: Select hex was getting covered by the unit. 
+
+### Air
+- l_air_bomb
+	- reduced select circle: Nova selection circle is quite big for its size, and especially compared to other air units.
+
+- l_air_carrier
+	- lengthen hitbox: old hit box short, new one good.
+
+- l_firestarter
+	- increased hitbox: Im pretty sure nobody scaled up the hitbox for this guy from gunship
+	- l_drop_turret
+		- increased select circle: you can barely see it.
+
+- l_gunship
+	- selection circle increased: should be more visable
+
+- l_titan_air
+	- reduced width of hitbox: Loki had one of the biggest hitboxs in the game, no longer includes side engines in the hitbox.
+	- selection circle increased: should be more visable
+
+### Orbital
+- l_orbital_fighter
+	- add attack range fraction 0.75: Vipers cannot shoot orbital units that are moving away; they simply trail them until the enemy stops moving. This change makes Vipers able to kill moving units.
+
+- l_radar_satellite_adv
+	- squared shape of hitbox: matches unit shape
+	- increased selection circle: old hex got covered by solar pannels.
+
+- l_orbital_railgun
+	- increased selection circle: Can you guess why?
+
+- l_orbital_battleship
+	- reduced hitbox hight: Oh boy it was tall.
+
+- l_orbital_dropper
+	- increased selection circle: More visable now and matches the girth of this factory
+
+### Naval
+- l_torpedo_launcher
+	- Tweaked hitbox: you could clip these bad boys into each other.
+	- Increased selection circle: More visable from regardless of direction aimed.
+
+- l_torpedo_launcher_adv
+	- Greatly increased hitbox: you could clip these bad boys into each other, way worse than any other unit in the game.
+	- Increased selection circle: What selection circle? I don't see one.

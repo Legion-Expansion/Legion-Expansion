@@ -114,8 +114,8 @@
   "has_death_effects": true,
   "max_health": 15000,
   "mesh_bounds": [
-    106,
-    106,
+    77,
+    77,
     57
   ],
   "model": {
@@ -155,7 +155,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -98.0
+    "diameter": -118.0
   },
   "tools": [
     {

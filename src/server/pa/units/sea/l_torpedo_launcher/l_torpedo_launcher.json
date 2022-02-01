@@ -26,7 +26,7 @@
   "max_health": 2000,
   "mesh_bounds": [
     12,
-    6,
+    12,
     5
   ],
   "model": {
@@ -64,7 +64,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -17
+    "diameter": -22
   },
   "spawn_layers": "WL_WaterSurface",
   "tools": [

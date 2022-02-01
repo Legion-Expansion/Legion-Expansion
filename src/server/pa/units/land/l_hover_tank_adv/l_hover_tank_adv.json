@@ -151,9 +151,9 @@
   ],
   "max_health": 200,
   "mesh_bounds": [
-    4.93769,
-    6.4,
-    2.6835
+    6.468,
+    8,
+    5.711
   ],
   "model": {
     "animations": {
@@ -186,7 +186,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -14
+    "diameter": -16
   },
   "tools": [
     {

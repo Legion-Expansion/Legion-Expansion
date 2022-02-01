@@ -81,7 +81,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -24
+    "diameter": -14
   },
   "spawn_unit_on_death": "/pa/units/air/l_air_bomb/triggered/l_air_bomb.json",
   "spawn_unit_on_death_with_velocity": false,

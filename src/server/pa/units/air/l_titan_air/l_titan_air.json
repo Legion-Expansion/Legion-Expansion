@@ -85,7 +85,7 @@
   "has_death_effects": true,
   "max_health": 9000,
   "mesh_bounds": [
-    84,
+    72,
     77,
     15
   ],
@@ -128,7 +128,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -72.0
+    "diameter": -82.0
   },
   "tools": [
     {

@@ -70,9 +70,9 @@
   "guard_layer": "WL_LandHorizontal",
   "max_health": 500,
   "mesh_bounds": [
-    5.2,
-    5.8,
-    3.5
+    4.925,
+    7.123,
+    4.25
   ],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",

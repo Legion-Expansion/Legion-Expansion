@@ -96,6 +96,7 @@
       "spec_id": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_tool_weapon.json"
     }
   ],
+  "attack_range_frac": 0.75,
   "unit_types": [
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",

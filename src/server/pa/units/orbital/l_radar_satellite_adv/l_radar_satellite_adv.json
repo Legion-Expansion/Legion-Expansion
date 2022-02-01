@@ -72,7 +72,7 @@
   "max_health": 2000,
   "mesh_bounds": [
     25,
-    15,
+    25,
     15
   ],
   "model": {
@@ -130,7 +130,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -33
+    "diameter": -55
   },
   "tools": [
     {

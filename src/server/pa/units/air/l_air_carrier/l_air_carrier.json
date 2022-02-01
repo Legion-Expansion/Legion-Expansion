@@ -111,9 +111,9 @@
   ],
   "max_health": 2000,
   "mesh_bounds": [
-    12,
-    7.5,
-    4
+    13,
+    18,
+    8
   ],
   "model": {
     "arrows": 5,

@@ -37,9 +37,9 @@
   "guard_layer": "WL_Air",
   "max_health": 400,
   "mesh_bounds": [
-    4.5,
-    3,
-    3.8
+    6.5,
+    6.5,
+    8
   ],
   "model": {
     "animations": {
@@ -73,7 +73,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -8
+    "diameter": -17
   },
   "tools": [
     {
