@@ -118,7 +118,7 @@
       "aim_bone": "turret001",
       "fire_event": "fired1",
       "muzzle_bone": "socket_muzzle001",
-      "projectiles_per_fire": 0,
+      "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon.json"
     },
