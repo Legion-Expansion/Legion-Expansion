@@ -28,6 +28,7 @@
     - Increased standard deviation of shots from 0 to 1
   - Havoc
     - Damage to commanders increased from 67% to 100%
+    - Range reduced from 115 to 110
   - Lancer
     - Damage to commanders decreased from 133% to 100%
     - Damage to structures decreased from 133% to 100%
