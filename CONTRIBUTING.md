@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for looking to contribute to the Legion Expansion. This project only accepts submissions from individuals who sign the Legion CLA.
+Thank you for looking to contribute to the Legion Expansion.
 
 ## Tooling
 
