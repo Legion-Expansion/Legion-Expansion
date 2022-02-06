@@ -4,13 +4,10 @@
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
+  "attack_range_frac": 0.5,
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 350,
   "command_caps": [
@@ -32,16 +29,8 @@
     {
       "bone": "bone_body",
       "filename": "/pa/units/orbital/l_orbital_fighter/thrusters.pfx",
-      "offset": [
-        0,
-        2,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 2, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
@@ -49,11 +38,7 @@
   "guard_layer": "WL_Orbital",
   "guard_radius": 60,
   "max_health": 100,
-  "mesh_bounds": [
-    12,
-    11,
-    2.5
-  ],
+  "mesh_bounds": [12, 11, 2.5],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_open.papa"
@@ -63,7 +48,6 @@
   },
   "navigation": {
     "acceleration": 65,
-    "aggressive_behavior": "point",
     "bank_factor": 1,
     "brake": 20,
     "circle_max_time": 4,
@@ -90,6 +74,11 @@
     "diameter": -30
   },
   "tools": [
+    {
+      "aim_bone": "bone_body",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_tool_fix_range.json"
+    },
     {
       "aim_bone": "bone_body",
       "muzzle_bone": "socket_muzzle",
