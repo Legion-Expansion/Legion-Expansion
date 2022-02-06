@@ -77,6 +77,7 @@
 - Radar jamming no longer prevents the triggering of Spoilers
 - Monstrosity secondary weapons pointing at the primary gun's target rather than their own
 - One of the Imperator's side-guns not firing
+- Imperator moves into range of all its guns when attacking orbital targets
 
 ## v1.21.0 - 2021-08-05
 
