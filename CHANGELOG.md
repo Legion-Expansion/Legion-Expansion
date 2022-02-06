@@ -59,6 +59,7 @@
 - Scout with Stokes if no better options
 - Fixed the building of too many Purgers
 - Won't build land titans due to pathfinding issues
+- Builds more Stokes
 - Builds more Corsairs
 
 ### Fixed
