@@ -682,10 +682,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string0": "Tank & Artillery",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.35
           }
         ],
         [
@@ -711,10 +711,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string0": "Tank & Artillery",
             "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
             "compare0": "<",
-            "value0": 0.2
+            "value0": 0.35
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
