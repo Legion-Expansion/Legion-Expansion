@@ -31,42 +31,22 @@
     {
       "bone": "bone_radar",
       "filename": "/pa/units/land/l_scout_bot/l_scout_bot_radar_on.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "energy"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "lamps": [
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        0,
-        3.68,
-        5.53
-      ],
+      "offset": [0, 3.68, 5.53],
       "radius": 3
     }
   ],
   "max_health": 60,
-  "mesh_bounds": [
-    2,
-    2,
-    4
-  ],
+  "mesh_bounds": [2, 2, 4],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_scout_bot/l_scout_bot_idle.papa",

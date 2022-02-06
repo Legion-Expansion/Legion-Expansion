@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 5.84968,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        2.7
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 2.7],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -40,35 +32,19 @@
   "guard_layer": "WL_AnySurface",
   "headlights": [
     {
-      "color": [
-        0.9,
-        0.92,
-        1.0
-      ],
+      "color": [0.9, 0.92, 1.0],
       "far_distance": 20.0,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1.2,
       "near_height": 2.0,
       "near_width": 2.0,
-      "offset": [
-        0.0,
-        -1.0,
-        1.5
-      ],
-      "orientation": [
-        0.0,
-        65.0,
-        0.0
-      ]
+      "offset": [0.0, -1.0, 1.5],
+      "orientation": [0.0, 65.0, 0.0]
     }
   ],
   "max_health": 300,
-  "mesh_bounds": [
-    4.941,
-    6,
-    2.464
-  ],
+  "mesh_bounds": [4.941, 6, 2.464],
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
     "arrows": 5,

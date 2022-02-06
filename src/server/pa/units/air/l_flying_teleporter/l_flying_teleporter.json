@@ -6,11 +6,7 @@
   "atrophy_rate": 20.833,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
@@ -54,102 +50,58 @@
     {
       "bone": "thrust_leftWing",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "thrust_rightWing",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        90,
-        0
-      ],
+      "orientation": [0, 90, 0],
       "type": "moving"
     },
     {
       "bone": "thrust_back01",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "thrust_back02",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "thrust_back03",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "thrust_back04",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/units/air/l_flying_teleporter/dust.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/units/air/l_flying_teleporter/event_horizon.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "enabled"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
   "max_health": 1900,
-  "mesh_bounds": [
-    35,
-    40,
-    15
-  ],
+  "mesh_bounds": [35, 40, 15],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_flying_teleporter/l_flying_teleporter_fly.papa",

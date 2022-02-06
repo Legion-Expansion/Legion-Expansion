@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -48,11 +40,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 250,
-  "mesh_bounds": [
-    8.05,
-    6.214,
-    9.995
-  ],
+  "mesh_bounds": [8.05, 6.214, 9.995],
   "model": {
     "animations": {
       "death01": "/pa/units/land/bot_grenadier/bot_grenadier_anim_death.papa",

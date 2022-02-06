@@ -43,11 +43,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 1900,
-  "mesh_bounds": [
-    4,
-    24,
-    7
-  ],
+  "mesh_bounds": [4, 24, 7],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_destroyer_anim_tree.json",
     "filename": "/pa/units/sea/l_destroyer/l_destroyer.papa"
@@ -90,9 +86,7 @@
     {
       "aim_bone": "bone_small_pitch_left",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "socket_small_left_muzzle"
-      ],
+      "muzzle_bone": ["socket_small_left_muzzle"],
       "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"
@@ -100,9 +94,7 @@
     {
       "aim_bone": "bone_small_pitch_right",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_small_right_muzzle"
-      ],
+      "muzzle_bone": ["socket_small_right_muzzle"],
       "projectiles_per_fire": 1,
       "record_index": 1,
       "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"
@@ -110,9 +102,7 @@
     {
       "aim_bone": "bone_pitch_main",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_main_muzzle"
-      ],
+      "muzzle_bone": ["socket_main_muzzle"],
       "projectiles_per_fire": 1,
       "record_index": 2,
       "spec_id": "/pa/units/sea/l_destroyer/l_destroyer_tool_weapon.json"

@@ -30,21 +30,13 @@
   "fx_offsets": [
     {
       "filename": "/pa/units/sea/sea_scout/sea_scout_thrust.pfx",
-      "offset": [
-        0,
-        4,
-        0.55
-      ],
+      "offset": [0, 4, 0.55],
       "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 255,
-  "mesh_bounds": [
-    4.401,
-    12.124,
-    4.762
-  ],
+  "mesh_bounds": [4.401, 12.124, 4.762],
   "model": {
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
     "filename": "/pa/units/sea/l_sea_scout/l_sea_scout.papa"

@@ -29,9 +29,7 @@
     "ORDER_Use"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_c_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
   "events": {
     "died": {
@@ -43,41 +41,25 @@
     {
       "bone": "bone_laser001",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "bone_laser002",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "bone_laser003",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "bone_laser004",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
@@ -88,21 +70,13 @@
     {
       "bone": "stacks001",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -1,
-        -12,
-        2
-      ],
+      "offset": [-1, -12, 2],
       "type": "enabled"
     },
     {
       "bone": "stacks001",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -1,
-        -16,
-        0
-      ],
+      "offset": [-1, -16, 0],
       "type": "enabled"
     },
     {
@@ -113,60 +87,36 @@
     {
       "bone": "stacks002",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -1,
-        12,
-        2
-      ],
+      "offset": [-1, 12, 2],
       "type": "enabled"
     },
     {
       "bone": "stacks002",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -1,
-        16,
-        0
-      ],
+      "offset": [-1, 16, 0],
       "type": "enabled"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_vehicle_factory_adv/energy_platform_adv.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
+      "orientation": [90, 0, 0],
       "type": "idle"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 30,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 2,
       "near_distance": 10,
       "near_height": 20,
       "near_width": 20,
-      "offset": [
-        0,
-        0,
-        20
-      ]
+      "offset": [0, 0, 20]
     }
   ],
   "max_health": 30000,
-  "mesh_bounds": [
-    52.532,
-    56.955,
-    28.88
-  ],
+  "mesh_bounds": [52.532, 56.955, 28.88],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/l_vehicle_factory_adv/l_vehicle_factory_adv_end.papa",
@@ -177,10 +127,7 @@
     "filename": "/pa/units/land/l_vehicle_factory_adv/l_vehicle_factory_adv.papa",
     "skirt_decal": "/pa/effects/specs/skirt_02.json"
   },
-  "placement_size": [
-    60,
-    80
-  ],
+  "placement_size": [60, 80],
   "recon": {
     "observer": {
       "items": [
@@ -200,16 +147,8 @@
     }
   },
   "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -78

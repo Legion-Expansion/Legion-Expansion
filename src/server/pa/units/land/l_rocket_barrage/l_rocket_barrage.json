@@ -11,9 +11,7 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 2000,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "died": {
       "effect_scale": 0.5
@@ -35,56 +33,28 @@
     {
       "bone": "laser01",
       "filename": "/pa/effects/specs/laser_beam.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     },
     {
       "bone": "laser02",
       "filename": "/pa/effects/specs/laser_beam.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     },
     {
       "bone": "laser03",
       "filename": "/pa/effects/specs/laser_beam.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 2500,
-  "mesh_bounds": [
-    19.561,
-    20.497,
-    15.962
-  ],
+  "mesh_bounds": [19.561, 20.497, 15.962],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",

@@ -54,11 +54,7 @@
                   {
                     "parameters": {
                       "bone": "bone_footRight",
-                      "bone_offset": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
+                      "bone_offset": [0.0, 0.0, 0.0],
                       "effect_scale": 1.0,
                       "spec": "/pa/effects/specs/commander_step.pfx"
                     },
@@ -75,11 +71,7 @@
                   {
                     "parameters": {
                       "bone": "bone_footLeft",
-                      "bone_offset": [
-                        0.0,
-                        0.0,
-                        0.0
-                      ],
+                      "bone_offset": [0.0, 0.0, 0.0],
                       "effect_scale": 1.0,
                       "spec": "/pa/effects/specs/commander_step.pfx"
                     },

@@ -28,221 +28,111 @@
     "ORDER_Assist"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_c_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
   "factory_cooldown_time": 2,
   "fx_offsets": [
     {
       "bone": "socket_lathe01",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_lathe02",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_lathe03",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_lathe04",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "headlights": [
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 15,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 2.4,
       "near_width": 2.4,
-      "offset": [
-        5.67,
-        5.67,
-        2.5
-      ],
-      "orientation": [
-        -35,
-        31,
-        0
-      ]
+      "offset": [5.67, 5.67, 2.5],
+      "orientation": [-35, 31, 0]
     },
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 15,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 2.4,
       "near_width": 2.4,
-      "offset": [
-        5.67,
-        -5.67,
-        2.5
-      ],
-      "orientation": [
-        -35,
-        -31,
-        0
-      ]
+      "offset": [5.67, -5.67, 2.5],
+      "orientation": [-35, -31, 0]
     },
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 15,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 2.4,
       "near_width": 2.4,
-      "offset": [
-        -5.67,
-        5.67,
-        2.5
-      ],
-      "orientation": [
-        35,
-        31,
-        0
-      ]
+      "offset": [-5.67, 5.67, 2.5],
+      "orientation": [35, 31, 0]
     },
     {
       "bone": "bone_platform",
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "far_distance": 15,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 3,
       "near_distance": 1,
       "near_height": 2.4,
       "near_width": 2.4,
-      "offset": [
-        -5.67,
-        -5.67,
-        2.5
-      ],
-      "orientation": [
-        35,
-        -31,
-        0
-      ]
+      "offset": [-5.67, -5.67, 2.5],
+      "orientation": [35, -31, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        4,
-        -11.1,
-        6
-      ],
+      "offset": [4, -11.1, 6],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        -4,
-        -11.1,
-        6
-      ],
+      "offset": [-4, -11.1, 6],
       "radius": 8
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        5,
-        14.12,
-        4.54
-      ],
+      "offset": [5, 14.12, 4.54],
       "radius": 4
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    28.843,
-    32.762,
-    16
-  ],
+  "mesh_bounds": [28.843, 32.762, 16],
   "model": [
     {
       "animations": {
@@ -266,10 +156,7 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "placement_size": [
-    40,
-    40
-  ],
+  "placement_size": [40, 40],
   "recon": {
     "observer": {
       "items": [
@@ -289,26 +176,10 @@
     }
   },
   "rolloff_dirs": [
-    [
-      1,
-      0,
-      0
-    ],
-    [
-      -1,
-      0,
-      0
-    ],
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [1, 0, 0],
+    [-1, 0, 0],
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -49

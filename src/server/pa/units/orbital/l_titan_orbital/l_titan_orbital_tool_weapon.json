@@ -16,12 +16,7 @@
     "WL_Underwater",
     "WL_Seafloor"
   ],
-  "target_priorities": [
-    "Land - Wall",
-    "Naval",
-    "Structure - Wall",
-    "Wall"
-  ],
+  "target_priorities": ["Land - Wall", "Naval", "Structure - Wall", "Wall"],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 0,
   "yaw_rate": 0

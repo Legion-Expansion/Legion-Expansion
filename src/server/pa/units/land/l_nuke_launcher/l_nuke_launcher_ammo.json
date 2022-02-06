@@ -36,9 +36,7 @@
   },
   "gravwell_velocity_multiplier": 10,
   "has_notifications": true,
-  "impact_decals": [
-    "/pa/effects/specs/nuke_scorch_01.json"
-  ],
+  "impact_decals": ["/pa/effects/specs/nuke_scorch_01.json"],
   "influence_radius": 3200,
   "initial_velocity": 40,
   "interplanetary_type": "INTER_System",
@@ -104,9 +102,5 @@
   "strategic_icon_priority": 0,
   "system_velocity_multiplier": 20,
   "turn_rate": 180,
-  "unit_types": [
-    "UNITTYPE_Mobile",
-    "UNITTYPE_Orbital",
-    "UNITTYPE_Custom1"
-  ]
+  "unit_types": ["UNITTYPE_Mobile", "UNITTYPE_Orbital", "UNITTYPE_Custom1"]
 }

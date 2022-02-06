@@ -24,9 +24,7 @@
   "buildable_projectiles": [
     "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json"
   ],
-  "command_caps": [
-    "ORDER_FactoryBuild"
-  ],
+  "command_caps": ["ORDER_FactoryBuild"],
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/structure/anti_nuke_launcher_fire"
@@ -35,53 +33,28 @@
   "factory": {
     "default_build_stance": "Continuous",
     "initial_build_spec": "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json",
-    "spawn_points": [
-      "missile01",
-      "missile02",
-      "missile03",
-      "missile04"
-    ],
+    "spawn_points": ["missile01", "missile02", "missile03", "missile04"],
     "store_units": true
   },
   "factory_cooldown_time": 5,
   "lamps": [
     {
       "bone": "bone_rightShoulder",
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 5,
-      "offset": [
-        1.64,
-        -0.7,
-        -0.87
-      ],
+      "offset": [1.64, -0.7, -0.87],
       "radius": 3
     },
     {
       "bone": "bone_leftShoulder",
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 5,
-      "offset": [
-        1.64,
-        -0.7,
-        0.87
-      ],
+      "offset": [1.64, -0.7, 0.87],
       "radius": 3
     }
   ],
   "max_health": 3500,
-  "mesh_bounds": [
-    18.5,
-    19.5,
-    15
-  ],
+  "mesh_bounds": [18.5, 19.5, 15],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",

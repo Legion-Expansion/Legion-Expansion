@@ -159,9 +159,7 @@
       "instance_count": 1,
       "shared_instance_count": "UnitCannon",
       "priority": 0,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {

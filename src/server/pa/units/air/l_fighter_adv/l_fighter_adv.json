@@ -36,92 +36,56 @@
     {
       "bone": "thrust001",
       "filename": "/pa/units/air/l_fighter_adv/fighter_jets_big.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust001",
       "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust002",
       "filename": "/pa/units/air/l_fighter_adv/fighter_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust003",
       "filename": "/pa/units/air/l_fighter_adv/fighter_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust002",
       "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust003",
       "filename": "/pa/units/air/l_fighter_adv/fighter_lines_thrust.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "muzzle_left",
       "filename": "/pa/units/air/l_fighter_adv/fighter_lines.pfx",
-      "offset": [
-        0.5,
-        8.5,
-        0
-      ],
+      "offset": [0.5, 8.5, 0],
       "type": "moving_forward"
     },
     {
       "bone": "muzzle_right",
       "filename": "/pa/units/air/l_fighter_adv/fighter_lines.pfx",
-      "offset": [
-        -0.5,
-        8.5,
-        0
-      ],
+      "offset": [-0.5, 8.5, 0],
       "type": "moving_forward"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Air",
   "max_health": 300,
-  "mesh_bounds": [
-    4.5,
-    9.2,
-    4
-  ],
+  "mesh_bounds": [4.5, 9.2, 4],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_fighter_adv_anim_tree.json",
     "filename": "/pa/units/air/l_fighter_adv/l_fighter_adv.papa"
@@ -174,12 +138,7 @@
     {
       "aim_bone": "bone_root",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "missile001",
-        "missile002",
-        "missile003",
-        "missile004"
-      ],
+      "muzzle_bone": ["missile001", "missile002", "missile003", "missile004"],
       "projectiles_per_fire": 4,
       "spec_id": "/pa/units/air/l_fighter_adv/l_fighter_adv_rocket_tool_weapon.json"
     }

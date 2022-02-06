@@ -44,40 +44,20 @@
     {
       "bone": "lathe001",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe002",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    20,
-    30,
-    12
-  ],
+  "mesh_bounds": [20, 30, 12],
   "model": {
     "animations": {
       "build_end": "/pa/units/sea/l_naval_factory/l_naval_factory_end.papa",
@@ -87,10 +67,7 @@
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
     "filename": "/pa/units/sea/l_naval_factory/l_naval_factory.papa"
   },
-  "placement_size": [
-    40,
-    50
-  ],
+  "placement_size": [40, 50],
   "recon": {
     "observer": {
       "items": [
@@ -104,16 +81,8 @@
     }
   },
   "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -43

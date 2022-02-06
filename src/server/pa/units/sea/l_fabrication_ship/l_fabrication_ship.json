@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 7.50603,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -61,20 +53,12 @@
     },
     {
       "filename": "/pa/units/sea/fabrication_ship/fabrication_ship_thrust.pfx",
-      "offset": [
-        0,
-        3.5,
-        0.6
-      ],
+      "offset": [0, 3.5, 0.6],
       "type": "moving_forward"
     }
   ],
   "max_health": 180,
-  "mesh_bounds": [
-    4,
-    12,
-    4.8
-  ],
+  "mesh_bounds": [4, 12, 4.8],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
     "filename": "/pa/units/sea/l_fabrication_ship/l_fabrication_ship.papa"

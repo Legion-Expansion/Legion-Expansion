@@ -7,9 +7,7 @@
   "atrophy_rate": 5,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 225,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -25,11 +23,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 1000,
-  "mesh_bounds": [
-    9.634,
-    13.063,
-    7.819
-  ],
+  "mesh_bounds": [9.634, 13.063, 7.819],
   "model": [
     {
       "animations": {

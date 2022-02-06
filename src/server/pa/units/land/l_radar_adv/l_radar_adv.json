@@ -30,25 +30,13 @@
     {
       "bone": "bone_slideTip",
       "filename": "/pa/units/land/l_radar_adv/l_radar_adv_top_on.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "energy"
     }
   ],
   "max_health": 1500,
-  "mesh_bounds": [
-    24,
-    22,
-    20
-  ],
+  "mesh_bounds": [24, 22, 20],
   "model": [
     {
       "animations": {

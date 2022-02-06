@@ -10,11 +10,7 @@
   },
   "flight_type": "Staged",
   "fx_trail": {
-    "offset": [
-      0.0,
-      4.6,
-      0.0
-    ]
+    "offset": [0.0, 4.6, 0.0]
   },
   "influence_radius": 400,
   "initial_velocity": 80.0,

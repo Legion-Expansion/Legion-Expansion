@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 10.4837,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -67,11 +63,7 @@
     }
   ],
   "max_health": 55,
-  "mesh_bounds": [
-    13.42,
-    22.2,
-    7.561
-  ],
+  "mesh_bounds": [13.42, 22.2, 7.561],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_transport/l_transport_fly.papa"

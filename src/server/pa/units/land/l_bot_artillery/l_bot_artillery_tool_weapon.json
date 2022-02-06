@@ -18,11 +18,7 @@
   "pitch_range": 90,
   "pitch_rate": 360,
   "rate_of_fire": 1,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_Seafloor",
-    "WL_WaterSurface"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"],
   "target_priorities": [
     "Structure & SurfaceDefense",
     "Structure & Defense",

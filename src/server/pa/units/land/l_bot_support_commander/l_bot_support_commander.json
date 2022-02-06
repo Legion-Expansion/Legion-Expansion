@@ -5,16 +5,8 @@
   "armor_type": "AT_Commander",
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        10
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 10],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -67,11 +59,7 @@
     }
   ],
   "max_health": 8000,
-  "mesh_bounds": [
-    9.97,
-    10.233,
-    11.764
-  ],
+  "mesh_bounds": [9.97, 10.233, 11.764],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_idle.papa",
@@ -124,10 +112,7 @@
     },
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": [
-        "socket_muzzle001",
-        "socket_muzzle002"
-      ],
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
       "primary_weapon": true,
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/land/l_bot_support_commander/l_bot_support_commander_tool_weapon.json"

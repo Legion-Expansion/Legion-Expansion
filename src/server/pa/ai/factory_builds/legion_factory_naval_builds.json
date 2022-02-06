@@ -6,9 +6,7 @@
       "instance_count": 1,
       "priority": 100,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -37,9 +35,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -62,9 +58,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -100,9 +94,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -174,9 +166,7 @@
       "instance_count": -1,
       "priority": 98,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -238,9 +228,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicNaval"
-      ],
+      "builders": ["LegionFactoryBasicNaval"],
       "build_conditions": [
         [
           {
@@ -263,9 +251,7 @@
       "instance_count": 1,
       "priority": 200,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {
@@ -293,9 +279,7 @@
       "to_build": "LegionNavalAdvancedFabberSub",
       "instance_count": 1,
       "priority": 199,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {
@@ -325,9 +309,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {
@@ -350,9 +332,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {
@@ -375,9 +355,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {
@@ -400,9 +378,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedNaval"
-      ],
+      "builders": ["LegionFactoryAdvancedNaval"],
       "build_conditions": [
         [
           {

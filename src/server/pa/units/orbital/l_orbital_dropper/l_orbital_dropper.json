@@ -22,10 +22,7 @@
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
   "build_metal_cost": 2600,
   "buildable_types": "Custom1 & CannonBuildable",
-  "command_caps": [
-    "ORDER_FactoryBuild",
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_FactoryBuild", "ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -96,11 +93,7 @@
     }
   ],
   "max_health": 3000,
-  "mesh_bounds": [
-    75.576,
-    85.687,
-    79.187
-  ],
+  "mesh_bounds": [75.576, 85.687, 79.187],
   "model": {
     "animations": {
       "build": "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_build.papa",
@@ -114,10 +107,7 @@
     "ignore_gravity": true,
     "radius": 20
   },
-  "placement_size": [
-    50,
-    50
-  ],
+  "placement_size": [50, 50],
   "recon": {
     "observer": {
       "items": [

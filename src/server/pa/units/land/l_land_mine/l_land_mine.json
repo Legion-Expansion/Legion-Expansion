@@ -4,71 +4,15 @@
   "TEMP_texelinfo": 24,
   "area_build_pattern": [
     [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0
     ]
   ],
   "area_build_separation": 1,
   "area_build_type": "Sphere",
   "build_metal_cost": 20,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
@@ -81,11 +25,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 10,
   "max_health": 5,
-  "mesh_bounds": [
-    4,
-    4,
-    1
-  ],
+  "mesh_bounds": [4, 4, 1],
   "model": [
     {
       "filename": "/pa/units/land/l_land_mine/l_land_mine.papa",
@@ -96,9 +36,7 @@
   "physics": {
     "allow_pushing": false,
     "allow_underground": false,
-    "collide_with_types": [
-      "Projectile"
-    ],
+    "collide_with_types": ["Projectile"],
     "push_sideways": false,
     "radius": 1,
     "shape": "Box",

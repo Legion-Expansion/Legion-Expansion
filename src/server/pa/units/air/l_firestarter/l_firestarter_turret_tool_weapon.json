@@ -13,10 +13,7 @@
   "pitch_range": 180,
   "pitch_rate": 3600,
   "rate_of_fire": 7.5,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
   "target_priorities": [
     "Commander",
     "AirDefense & (Land | Naval)",

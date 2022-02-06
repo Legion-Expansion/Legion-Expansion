@@ -7,15 +7,9 @@
     "com.pa.quitch.qAIModCompatibilityPatch",
     "com.pa.legion-expansion-client"
   ],
-  "companions": [
-    "com.pa.legion-expansion-client"
-  ],
+  "companions": ["com.pa.legion-expansion-client"],
   "scenes": {
-    "icon_atlas": [
-      "coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"
-    ],
-    "new_game": [
-      "coui://ui/mods/com.pa.legion-expansion/new_game.js"
-    ]
+    "icon_atlas": ["coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"],
+    "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"]
   }
 }

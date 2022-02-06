@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 17.7177,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
@@ -39,71 +35,35 @@
     {
       "bone": "bone_body",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        5.5,
-        1
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 5.5, 1],
+      "orientation": [0, 0, 0],
       "type": "moving"
     },
     {
       "bone": "bone_body",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        2.4,
-        2.5,
-        0.9
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [2.4, 2.5, 0.9],
+      "orientation": [0, 0, 0],
       "type": "moving"
     },
     {
       "bone": "bone_body",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        -2.4,
-        2.5,
-        0.9
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [-2.4, 2.5, 0.9],
+      "orientation": [0, 0, 0],
       "type": "moving"
     },
     {
       "bone": "bone_body",
       "filename": "/pa/units/orbital/l_orbital_probe/idle.pfx",
-      "offset": [
-        0,
-        -2.0,
-        7.8
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, -2.0, 7.8],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 50,
   "max_health": 50,
-  "mesh_bounds": [
-    9.4,
-    21.4,
-    16.6
-  ],
+  "mesh_bounds": [9.4, 21.4, 16.6],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/l_orbital_probe/l_orbital_probe_closed.papa",

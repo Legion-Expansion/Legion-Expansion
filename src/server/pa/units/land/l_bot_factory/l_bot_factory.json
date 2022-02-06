@@ -29,99 +29,53 @@
     "ORDER_Use"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_c_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
   "factory_cooldown_time": 3,
   "fx_offsets": [
     {
       "bone": "laser001",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "laser002",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "rail_muzzle001",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "rail_muzzle002",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -14,
-        -5.5,
-        19
-      ],
+      "offset": [-14, -5.5, 19],
       "type": "enabled"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -14,
-        5.5,
-        19
-      ],
+      "offset": [-14, 5.5, 19],
       "type": "enabled"
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    35.9,
-    27.9,
-    15
-  ],
+  "mesh_bounds": [35.9, 27.9, 15],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/l_bot_factory/l_bot_factory_end.papa",
@@ -133,10 +87,7 @@
     "filename": "/pa/units/land/l_bot_factory/l_bot_factory.papa",
     "skirt_decal": "/pa/effects/specs/skirt_bot.json"
   },
-  "placement_size": [
-    40,
-    55
-  ],
+  "placement_size": [40, 55],
   "recon": {
     "observer": {
       "items": [
@@ -156,16 +107,8 @@
     }
   },
   "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -49

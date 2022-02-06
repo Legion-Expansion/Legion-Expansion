@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 27,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
@@ -41,33 +37,21 @@
       "bone": "bone_root",
       "effect_scale": 2,
       "filename": "/pa/units/orbital/l_orbital_railgun/idle.pfx",
-      "offset": [
-        0,
-        13.9,
-        11
-      ],
+      "offset": [0, 13.9, 11],
       "type": "idle"
     },
     {
       "bone": "bone_root",
       "effect_scale": 1,
       "filename": "/pa/units/orbital/l_orbital_railgun/idle2.pfx",
-      "offset": [
-        0,
-        -23.9,
-        3.7
-      ],
+      "offset": [0, -23.9, 3.7],
       "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "max_health": 350,
-  "mesh_bounds": [
-    20,
-    35,
-    13.6
-  ],
+  "mesh_bounds": [20, 35, 13.6],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/l_orbital_railgun/l_orbital_railgun_closed.papa",

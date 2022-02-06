@@ -24,27 +24,17 @@
       "effect_scale": 0.75
     }
   },
-  "feature_requirements": [
-    "metal_spot"
-  ],
+  "feature_requirements": ["metal_spot"],
   "force_snap_to_feature_orientation": true,
   "fx_offsets": [
     {
       "filename": "/pa/units/land/l_mex/l_mex.pfx",
-      "offset": [
-        0,
-        0,
-        5
-      ],
+      "offset": [0, 0, 5],
       "type": "idle"
     }
   ],
   "max_health": 1000,
-  "mesh_bounds": [
-    15.741,
-    17.386,
-    7.218
-  ],
+  "mesh_bounds": [15.741, 17.386, 7.218],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_mex/l_metal_extractor_idle.papa"
@@ -52,10 +42,7 @@
     "animtree": "/pa/anim/anim_trees/simple_building_anim_tree.json",
     "filename": "/pa/units/land/l_mex/l_metal_extractor.papa"
   },
-  "placement_size": [
-    16,
-    16
-  ],
+  "placement_size": [16, 16],
   "production": {
     "metal": 7
   },

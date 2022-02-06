@@ -28,114 +28,58 @@
     {
       "bone": "ring01",
       "filename": "/pa/units/land/l_energy_plant_adv/black_hole.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "idle"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "far_distance": 25,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1,
       "near_distance": 2,
       "near_height": 4.4,
       "near_width": 4.4,
-      "offset": [
-        7.25,
-        7.25,
-        8
-      ],
-      "orientation": [
-        35.25,
-        -30,
-        125.25
-      ]
+      "offset": [7.25, 7.25, 8],
+      "orientation": [35.25, -30, 125.25]
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "far_distance": 25,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1,
       "near_distance": 2,
       "near_height": 4.4,
       "near_width": 4.4,
-      "offset": [
-        7.25,
-        -7.25,
-        8
-      ],
-      "orientation": [
-        30,
-        30,
-        17
-      ]
+      "offset": [7.25, -7.25, 8],
+      "orientation": [30, 30, 17]
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "far_distance": 25,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1,
       "near_distance": 2,
       "near_height": 4.4,
       "near_width": 4.4,
-      "offset": [
-        -7.25,
-        -7.25,
-        8
-      ],
-      "orientation": [
-        -35.25,
-        30,
-        -54.75
-      ]
+      "offset": [-7.25, -7.25, 8],
+      "orientation": [-35.25, 30, -54.75]
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "far_distance": 25,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1,
       "near_distance": 2,
       "near_height": 4.4,
       "near_width": 4.4,
-      "offset": [
-        -7.25,
-        7.25,
-        8
-      ],
-      "orientation": [
-        -35.25,
-        -30,
-        -125.25
-      ]
+      "offset": [-7.25, 7.25, 8],
+      "orientation": [-35.25, -30, -125.25]
     }
   ],
   "max_health": 2500,
-  "mesh_bounds": [
-    30,
-    30,
-    17
-  ],
+  "mesh_bounds": [30, 30, 17],
   "model": [
     {
       "animations": {

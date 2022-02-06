@@ -41,11 +41,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 650,
-  "mesh_bounds": [
-    6,
-    15,
-    8
-  ],
+  "mesh_bounds": [6, 15, 8],
   "model": {
     "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
     "filename": "/pa/units/sea/l_frigate/l_frigate.papa"
@@ -85,10 +81,7 @@
     {
       "aim_bone": "bone_pitch01",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle01a",
-        "socket_muzzle01b"
-      ],
+      "muzzle_bone": ["socket_muzzle01a", "socket_muzzle01b"],
       "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"
@@ -96,10 +89,7 @@
     {
       "aim_bone": "bone_pitch02",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle02a",
-        "socket_muzzle02b"
-      ],
+      "muzzle_bone": ["socket_muzzle02a", "socket_muzzle02b"],
       "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"
@@ -107,10 +97,7 @@
     {
       "aim_bone": "bone_pitch03",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzle03a",
-        "socket_muzzle03b"
-      ],
+      "muzzle_bone": ["socket_muzzle03a", "socket_muzzle03b"],
       "projectiles_per_fire": 2,
       "record_index": 2,
       "spec_id": "/pa/units/sea/l_frigate/l_frigate_tool_weapon_aa.json"

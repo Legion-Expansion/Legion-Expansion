@@ -23,42 +23,26 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_trail.pfx",
-      "offset": [
-        0,
-        1.5,
-        0
-      ],
+      "offset": [0, 1.5, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrust001",
       "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     },
     {
       "bone": "thrust002",
       "filename": "/pa/units/air/l_air_carrier/l_drone/l_drone_jets.pfx",
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "orientation": [0, 180, 0],
       "type": "moving"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 200,
   "max_health": 60,
-  "mesh_bounds": [
-    4,
-    4,
-    2
-  ],
+  "mesh_bounds": [4, 4, 2],
   "model": {
     "animations": {
       "deploy": "/pa/units/air/l_air_carrier/l_drone/l_drone_anim_deploy.papa",
@@ -99,10 +83,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "socket_muzzle001",
-        "socket_muzzle002"
-      ],
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
       "record_index": 0,
       "spec_id": "/pa/units/air/l_air_carrier/l_drone/l_drone_tool_weapon.json"
     },

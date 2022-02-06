@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -42,11 +34,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 500,
-  "mesh_bounds": [
-    7.5,
-    7.5,
-    7
-  ],
+  "mesh_bounds": [7.5, 7.5, 7],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_riot_bot/l_riot_bot_idle.papa",

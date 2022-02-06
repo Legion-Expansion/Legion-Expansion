@@ -29,70 +29,36 @@
     "ORDER_Use"
   ],
   "death": {
-    "decals": [
-      "/pa/effects/specs/scorch_c_01.json"
-    ]
+    "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
   "factory_cooldown_time": 4,
   "fx_offsets": [
     {
       "bone": "socket_topMuzzle01",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        180
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 180],
       "type": "build"
     },
     {
       "bone": "socket_topMuzzle02",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        180
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 180],
       "type": "build"
     },
     {
       "bone": "socket_sideMuzzle01",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "socket_sideMuzzle02",
       "filename": "/pa/effects/specs/legion_factory_spray_short.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
@@ -113,89 +79,45 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_vehicle_factory/energy_platform.pfx",
-      "orientation": [
-        90,
-        0,
-        0
-      ],
+      "orientation": [90, 0, 0],
       "type": "idle"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "debug": false,
       "far_distance": 30,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "near_distance": 10,
       "near_height": 20,
       "near_width": 20,
-      "offset": [
-        0,
-        0,
-        20
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ]
+      "offset": [0, 0, 20],
+      "orientation": [0, 0, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        5.47,
-        -12.71,
-        11
-      ],
+      "offset": [5.47, -12.71, 11],
       "radius": 6
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        -5.47,
-        -12.71,
-        11
-      ],
+      "offset": [-5.47, -12.71, 11],
       "radius": 6
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        9.81,
-        10.88,
-        5.49
-      ],
+      "offset": [9.81, 10.88, 5.49],
       "radius": 4
     }
   ],
   "max_health": 6000,
-  "mesh_bounds": [
-    32.48,
-    26.72,
-    15
-  ],
+  "mesh_bounds": [32.48, 26.72, 15],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/l_vehicle_factory/l_vehicle_factory_end.papa",
@@ -207,10 +129,7 @@
     "filename": "/pa/units/land/l_vehicle_factory/l_vehicle_factory.papa",
     "skirt_decal": "/pa/effects/specs/skirt_01.json"
   },
-  "placement_size": [
-    40,
-    60
-  ],
+  "placement_size": [40, 60],
   "recon": {
     "observer": {
       "items": [
@@ -230,16 +149,8 @@
     }
   },
   "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -50

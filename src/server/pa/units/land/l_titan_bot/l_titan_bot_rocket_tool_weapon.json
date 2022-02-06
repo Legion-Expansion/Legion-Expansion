@@ -10,10 +10,7 @@
   "pitch_rate": 180,
   "rate_of_fire": 0.09,
   "spread_fire": true,
-  "target_layers": [
-    "WL_LandHorizontal",
-    "WL_WaterSurface"
-  ],
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
   "target_priorities": [
     "Commander",
     "Titan & ( Land | Naval )",

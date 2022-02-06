@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 5.47132,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0.3,
-        3
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0.3, 3],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -39,11 +31,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 100,
-  "mesh_bounds": [
-    4.5,
-    3,
-    3.8
-  ],
+  "mesh_bounds": [4.5, 3, 3.8],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_aa/l_bot_aa_idle.papa",

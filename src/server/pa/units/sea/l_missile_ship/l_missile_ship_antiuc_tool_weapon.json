@@ -17,10 +17,7 @@
   "pitch_rate": 0,
   "rate_of_fire": 0.2,
   "spread_fire": true,
-  "target_layers": [
-    "Orbital",
-    "WL_Air"
-  ],
+  "target_layers": ["Orbital", "WL_Air"],
   "yaw_range": 0,
   "yaw_rate": 0
 }

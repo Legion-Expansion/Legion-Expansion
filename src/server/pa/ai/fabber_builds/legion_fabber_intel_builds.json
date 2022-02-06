@@ -6,9 +6,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 90,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -60,9 +58,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 246,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -120,9 +116,7 @@
       "instance_count": 1,
       "shared_instance_count": "BasicRadar",
       "priority": 605,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {

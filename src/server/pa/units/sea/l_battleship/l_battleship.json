@@ -38,21 +38,13 @@
     {
       "bone": "socket_muzzle01",
       "filename": "/pa/units/sea/l_battleship/idle.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "idle"
     },
     {
       "bone": "socket_muzzle02",
       "filename": "/pa/units/sea/l_battleship/idle.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "idle"
     },
     {
@@ -62,11 +54,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 7500,
-  "mesh_bounds": [
-    9,
-    40,
-    12
-  ],
+  "mesh_bounds": [9, 40, 12],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_battleship_anim_tree.json",
     "filename": "/pa/units/sea/l_battleship/l_battleship.papa"
@@ -105,18 +93,14 @@
     {
       "aim_bone": "bone_turret01",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "socket_muzzle01"
-      ],
+      "muzzle_bone": ["socket_muzzle01"],
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_battleship/l_battleship_upper_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret02",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_muzzle02"
-      ],
+      "muzzle_bone": ["socket_muzzle02"],
       "record_index": 1,
       "spec_id": "/pa/units/sea/l_battleship/l_battleship_lower_tool_weapon.json"
     }

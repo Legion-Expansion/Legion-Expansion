@@ -11,15 +11,8 @@
   "max_range": 20,
   "pitch_range": 90,
   "pitch_rate": 90,
-  "reclaim_layers": [
-    "WL_AnyHorizontalGroundOrWaterSurface",
-    "WL_Air"
-  ],
-  "reclaim_types": [
-    "Unit",
-    "Wreckage",
-    "Feature"
-  ],
+  "reclaim_layers": ["WL_AnyHorizontalGroundOrWaterSurface", "WL_Air"],
+  "reclaim_types": ["Unit", "Wreckage", "Feature"],
   "tool_type": "TOOL_BuildArm",
   "yaw_range": 180,
   "yaw_rate": 90

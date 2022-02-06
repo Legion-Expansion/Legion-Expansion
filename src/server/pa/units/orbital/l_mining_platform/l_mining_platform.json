@@ -43,11 +43,7 @@
     }
   ],
   "max_health": 3000,
-  "mesh_bounds": [
-    118.558,
-    118.558,
-    54.449
-  ],
+  "mesh_bounds": [118.558, 118.558, 54.449],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_mining_platform/l_mining_platform_idle.papa"
@@ -59,10 +55,7 @@
     "ignore_gravity": true,
     "radius": 40
   },
-  "placement_size": [
-    100,
-    100
-  ],
+  "placement_size": [100, 100],
   "production": {
     "energy": 7500,
     "metal": 30

@@ -10,11 +10,7 @@
   "pitch_rate": 3600,
   "rate_of_fire": 0.3,
   "spread_fire": true,
-  "target_layers": [
-    "WL_WaterSurface",
-    "WL_Underwater",
-    "WL_Seafloor"
-  ],
+  "target_layers": ["WL_WaterSurface", "WL_Underwater", "WL_Seafloor"],
   "yaw_range": 360,
   "yaw_rate": 3600
 }

@@ -38,91 +38,55 @@
     {
       "bone": "lathe001",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe002",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe003",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe004",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe005",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "lathe006",
       "filename": "/pa/effects/specs/legion_factory_spray.pfx",
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "orientation": [0, 0, 0],
       "type": "build"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -21.8,
-        -10,
-        29
-      ],
+      "offset": [-21.8, -10, 29],
       "type": "enabled"
     },
     {
       "bone": "bone_root",
       "filename": "/pa/effects/specs/factory_smoke.pfx",
-      "offset": [
-        -21.8,
-        10,
-        29
-      ],
+      "offset": [-21.8, 10, 29],
       "type": "enabled"
     }
   ],
   "headlights": [
     {
-      "color": [
-        1.5,
-        1.52,
-        1.6
-      ],
+      "color": [1.5, 1.52, 1.6],
       "debug": false,
       "far_distance": 40,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
@@ -130,110 +94,50 @@
       "near_distance": 5,
       "near_height": 12,
       "near_width": 12,
-      "offset": [
-        -14.29,
-        0,
-        16.6
-      ],
-      "orientation": [
-        45,
-        0,
-        0
-      ]
+      "offset": [-14.29, 0, 16.6],
+      "orientation": [45, 0, 0]
     }
   ],
   "lamps": [
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -14.29,
-        0,
-        16
-      ],
+      "offset": [-14.29, 0, 16],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        -14.29,
-        0,
-        17.2
-      ],
+      "offset": [-14.29, 0, 17.2],
       "radius": 4
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        19,
-        0,
-        9.67
-      ],
+      "offset": [19, 0, 9.67],
       "radius": 8
     },
     {
-      "color": [
-        0.1,
-        1,
-        0.1
-      ],
+      "color": [0.1, 1, 0.1],
       "intensity": 2,
-      "offset": [
-        22.73,
-        0,
-        14.32
-      ],
+      "offset": [22.73, 0, 14.32],
       "radius": 8
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -25.27,
-        0,
-        14.65
-      ],
+      "offset": [-25.27, 0, 14.65],
       "radius": 4
     },
     {
-      "color": [
-        1,
-        0,
-        0
-      ],
+      "color": [1, 0, 0],
       "intensity": 2,
-      "offset": [
-        -14.24,
-        -19.53,
-        7
-      ],
+      "offset": [-14.24, -19.53, 7],
       "radius": 4
     }
   ],
   "max_health": 30000,
-  "mesh_bounds": [
-    48,
-    48,
-    34
-  ],
+  "mesh_bounds": [48, 48, 34],
   "model": {
     "animations": {
       "build_end": "/pa/units/land/l_bot_factory_adv/l_bot_factory_adv_end.papa",
@@ -244,10 +148,7 @@
     "filename": "/pa/units/land/l_bot_factory_adv/l_bot_factory_adv.papa",
     "skirt_decal": "/pa/effects/specs/skirt_bot_adv.json"
   },
-  "placement_size": [
-    60,
-    80
-  ],
+  "placement_size": [60, 80],
   "recon": {
     "observer": {
       "items": [
@@ -267,16 +168,8 @@
     }
   },
   "rolloff_dirs": [
-    [
-      0,
-      1,
-      0
-    ],
-    [
-      0,
-      -1,
-      0
-    ]
+    [0, 1, 0],
+    [0, -1, 0]
   ],
   "selection_icon": {
     "diameter": -78

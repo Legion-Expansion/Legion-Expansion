@@ -22,11 +22,7 @@
   "fx_trail": {
     "bone": "bone_root",
     "filename": "/pa/units/land/l_bot_artillery/trail.pfx",
-    "offset": [
-      0,
-      0,
-      0
-    ]
+    "offset": [0, 0, 0]
   },
   "influence_radius": 20,
   "initial_velocity": 50,

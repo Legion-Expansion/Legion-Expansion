@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 6.38702,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        1.8
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 1.8],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -52,27 +44,15 @@
     {
       "bone": "bone_root",
       "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb_rocket_trail.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "moving"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 50,
   "max_health": 40,
-  "mesh_bounds": [
-    3.5,
-    3,
-    2.8
-  ],
+  "mesh_bounds": [3.5, 3, 2.8],
   "model": {
     "animations": {
       "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",

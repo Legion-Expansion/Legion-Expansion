@@ -20,11 +20,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 10,
   "max_health": 10000,
-  "mesh_bounds": [
-    4,
-    4,
-    1
-  ],
+  "mesh_bounds": [4, 4, 1],
   "model": [
     {
       "animations": {
@@ -66,11 +62,7 @@
     {
       "aim_bone": "bone_root",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "bone_kappa",
-        "bone_kappa",
-        "bone_kappa"
-      ],
+      "muzzle_bone": ["bone_kappa", "bone_kappa", "bone_kappa"],
       "projectiles_per_fire": 3,
       "spec_id": "/pa/units/land/l_land_mine/triggered/l_land_mine_main_tool_weapon.json"
     },

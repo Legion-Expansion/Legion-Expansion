@@ -24,33 +24,19 @@
       "effect_scale": 0.8
     }
   },
-  "feature_requirements": [
-    "metal_spot"
-  ],
+  "feature_requirements": ["metal_spot"],
   "force_snap_to_feature_orientation": true,
   "icon_vertical_offset": 5,
   "lamps": [
     {
-      "color": [
-        1.0,
-        0.0,
-        0.0
-      ],
+      "color": [1.0, 0.0, 0.0],
       "intensity": 1.0,
-      "offset": [
-        0.0,
-        -2.273,
-        8.746
-      ],
+      "offset": [0.0, -2.273, 8.746],
       "radius": 5.0
     }
   ],
   "max_health": 3000,
-  "mesh_bounds": [
-    15.5,
-    13.3685,
-    23.2
-  ],
+  "mesh_bounds": [15.5, 13.3685, 23.2],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_mex_adv/l_metal_extractor_adv_idle.papa"
@@ -60,10 +46,7 @@
     "filename": "/pa/units/land/l_mex_adv/l_metal_extractor_adv.papa",
     "layer": "WL_LandHorizontal"
   },
-  "placement_size": [
-    16,
-    16
-  ],
+  "placement_size": [16, 16],
   "production": {
     "metal": 18
   },

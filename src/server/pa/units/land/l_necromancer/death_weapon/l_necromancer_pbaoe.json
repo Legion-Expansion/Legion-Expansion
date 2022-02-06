@@ -14,9 +14,7 @@
     "radius_velocity": 350.0
   },
   "full_damage_splash_radius": 10,
-  "impact_decals": [
-    "/pa/effects/specs/nuke_scorch_01.json"
-  ],
+  "impact_decals": ["/pa/effects/specs/nuke_scorch_01.json"],
   "sim_fire_effect": "/pa/units/land/l_necromancer/death_weapon/l_necromancer_explosion.json",
   "splash_damages_allies": true,
   "splash_radius": 80

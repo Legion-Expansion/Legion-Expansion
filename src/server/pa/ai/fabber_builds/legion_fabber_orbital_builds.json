@@ -198,9 +198,7 @@
       "instance_count": 1,
       "priority": 485,
       "max_num_assisters": 3,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -234,9 +232,7 @@
       "to_build": "LegionDefenseBasicOrbitalII",
       "instance_count": 1,
       "priority": 379,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -391,9 +387,7 @@
       "priority": 360,
       "min_num_assisters": 3,
       "max_num_assisters": 5,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -479,9 +473,7 @@
       "name": "Legion - Move Orbital Fabber To Planet",
       "instance_count": 1,
       "priority": 800,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {
@@ -502,9 +494,7 @@
       "name": "Legion - Move Orbital Fabber To Safe Planet",
       "instance_count": 1,
       "priority": 800,
-      "builders": [
-        "LegionOrbitalBasicFabber"
-      ],
+      "builders": ["LegionOrbitalBasicFabber"],
       "build_conditions": [
         [
           {

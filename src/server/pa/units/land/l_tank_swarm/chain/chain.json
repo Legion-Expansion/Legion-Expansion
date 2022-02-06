@@ -17,11 +17,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 25,
   "max_health": 50,
-  "mesh_bounds": [
-    0.01,
-    0.01,
-    0.01
-  ],
+  "mesh_bounds": [0.01, 0.01, 0.01],
   "navigation": {
     "acceleration": 0,
     "brake": 0,
@@ -59,10 +55,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "bone_root",
-        "bone_root"
-      ],
+      "muzzle_bone": ["bone_root", "bone_root"],
       "projectiles_per_fire": 2,
       "record_index": 0,
       "show_range": false,

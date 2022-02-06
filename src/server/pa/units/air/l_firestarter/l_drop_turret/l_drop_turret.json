@@ -7,9 +7,7 @@
   "atrophy_rate": 5,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 225,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -26,11 +24,7 @@
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
   "max_health": 2500,
-  "mesh_bounds": [
-    10,
-    10,
-    8
-  ],
+  "mesh_bounds": [10, 10, 8],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_defense_turret_no_recoil_anim_tree.json",
@@ -67,10 +61,7 @@
     {
       "aim_bone": "bone_pitch",
       "fire_event": "fired",
-      "muzzle_bone": [
-        "socket_muzzleTop",
-        "socket_muzzleBottom"
-      ],
+      "muzzle_bone": ["socket_muzzleTop", "socket_muzzleBottom"],
       "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_tool_weapon.json"
     },
     {
@@ -80,9 +71,5 @@
       "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_death_tool_weapon.json"
     }
   ],
-  "unit_types": [
-    "UNITTYPE_Basic",
-    "UNITTYPE_Land",
-    "UNITTYPE_Custom1"
-  ]
+  "unit_types": ["UNITTYPE_Basic", "UNITTYPE_Land", "UNITTYPE_Custom1"]
 }

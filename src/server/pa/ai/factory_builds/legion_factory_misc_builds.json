@@ -5,9 +5,7 @@
       "to_build": "LegionDefenseAdvancedNuke",
       "instance_count": -1,
       "priority": 151,
-      "builders": [
-        "LegionDefenseAdvancedNukeSilo"
-      ],
+      "builders": ["LegionDefenseAdvancedNukeSilo"],
       "build_conditions": [
         [
           {
@@ -26,9 +24,7 @@
       "priority": 387,
       "min_num_assisters": 3,
       "max_num_assisters": 12,
-      "builders": [
-        "LegionDefenseAdvancedNukeSilo"
-      ],
+      "builders": ["LegionDefenseAdvancedNukeSilo"],
       "build_conditions": [
         [
           {
@@ -51,9 +47,7 @@
       "to_build": "LegionDefenseAdvancedAntiNuke",
       "instance_count": -1,
       "priority": 151,
-      "builders": [
-        "LegionDefenseAdvancedAntiNukeSilo"
-      ],
+      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
       "build_conditions": [
         [
           {
@@ -72,9 +66,7 @@
       "priority": 388,
       "min_num_assisters": 5,
       "max_num_assisters": 12,
-      "builders": [
-        "LegionDefenseAdvancedAntiNukeSilo"
-      ],
+      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
       "build_conditions": [
         [
           {

@@ -8,19 +8,12 @@
   "atrophy_rate": 60,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/orbital/base_orbital_structure/base_orbital_structure.json",
   "build_metal_cost": 1500,
-  "command_caps": [
-    "ORDER_Attack",
-    "ORDER_Assist"
-  ],
+  "command_caps": ["ORDER_Attack", "ORDER_Assist"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/orbital"
@@ -38,11 +31,7 @@
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "max_health": 2000,
-  "mesh_bounds": [
-    28.44,
-    26.384,
-    41.841
-  ],
+  "mesh_bounds": [28.44, 26.384, 41.841],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_defense_satellite/l_defense_satellite_idle.papa"
@@ -54,10 +43,7 @@
     "gravity_scalar": 0.001,
     "radius": 15
   },
-  "placement_size": [
-    50,
-    50
-  ],
+  "placement_size": [50, 50],
   "recon": {
     "observer": {
       "items": [
@@ -83,10 +69,7 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_muzzle001",
-        "socket_muzzle002"
-      ],
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
       "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/orbital/l_defense_satellite/l_defense_satellite_tool_weapon.json"

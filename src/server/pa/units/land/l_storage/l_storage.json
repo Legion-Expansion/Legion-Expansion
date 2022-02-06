@@ -28,20 +28,12 @@
     {
       "bone": "bone_ring001",
       "filename": "/pa/units/land/l_energy_plant_adv/black_hole.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "energy"
     }
   ],
   "max_health": 7500,
-  "mesh_bounds": [
-    28,
-    28,
-    25
-  ],
+  "mesh_bounds": [28, 28, 25],
   "model": [
     {
       "animations": {

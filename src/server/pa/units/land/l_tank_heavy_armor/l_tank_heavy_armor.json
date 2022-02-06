@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 9.04444,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        -0.5,
-        6.1
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, -0.5, 6.1],
+      "root": [0, 0, 0]
     }
   },
   "attack_range_frac": 0.1,
@@ -42,11 +34,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 7000,
-  "mesh_bounds": [
-    7.792,
-    8.354,
-    7.277
-  ],
+  "mesh_bounds": [7.792, 8.354, 7.277],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_tank_heavy_armor_anim_tree.json",
     "filename": "/pa/units/land/l_tank_heavy_armor/l_tank_heavy_armor.papa"

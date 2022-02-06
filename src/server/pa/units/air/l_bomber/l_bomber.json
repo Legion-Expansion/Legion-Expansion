@@ -61,11 +61,7 @@
   "guard_radius": 120,
   "maintain_priority_target": false,
   "max_health": 120,
-  "mesh_bounds": [
-    14,
-    7.5,
-    2.6
-  ],
+  "mesh_bounds": [14, 7.5, 2.6],
   "model": {
     "arrows": 5,
     "filename": "/pa/units/air/l_bomber/l_bomber.papa"

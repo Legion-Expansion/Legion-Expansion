@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 31.6199,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "attack_range_frac": 0.6,
@@ -70,11 +66,7 @@
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
   "max_health": 5500,
-  "mesh_bounds": [
-    45,
-    77,
-    40.958
-  ],
+  "mesh_bounds": [45, 77, 40.958],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_orbital_battleship_anim_tree.json",
     "filename": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship.papa"
@@ -149,9 +141,7 @@
     },
     {
       "aim_bone": "laser",
-      "muzzle_bone": [
-        "laser"
-      ],
+      "muzzle_bone": ["laser"],
       "record_index": -1,
       "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon_ground.json"
     },

@@ -52,11 +52,7 @@
     }
   ],
   "max_health": 9750,
-  "mesh_bounds": [
-    42.4,
-    30,
-    34
-  ],
+  "mesh_bounds": [42.4, 30, 34],
   "model": {
     "animations": {
       "end": "/pa/units/land/teleporter/teleporter_anim_end.papa",
@@ -70,10 +66,7 @@
   "orders": {
     "handler_type": "inert"
   },
-  "placement_size": [
-    50,
-    75
-  ],
+  "placement_size": [50, 75],
   "recon": {
     "observer": {
       "items": [

@@ -6,11 +6,7 @@
   "atrophy_rate": 266.666,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "attack_range_frac": 0,
@@ -26,11 +22,7 @@
   },
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 40000,
-  "command_caps": [
-    "ORDER_Move",
-    "ORDER_Patrol",
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Move", "ORDER_Patrol", "ORDER_Attack"],
   "energy_efficiency_requirement": 1.0,
   "events": {
     "build_complete": {
@@ -118,71 +110,35 @@
   "lamps": [
     {
       "bone": "bone_rotatorTop",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 3.0,
-      "offset": [
-        17.0,
-        17.0,
-        6.0
-      ],
+      "offset": [17.0, 17.0, 6.0],
       "radius": 3.0
     },
     {
       "bone": "bone_rotatorTop",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 3.0,
-      "offset": [
-        -17.0,
-        17.0,
-        6.0
-      ],
+      "offset": [-17.0, 17.0, 6.0],
       "radius": 3.0
     },
     {
       "bone": "bone_rotatorTop",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 3.0,
-      "offset": [
-        17.0,
-        -17.0,
-        6.0
-      ],
+      "offset": [17.0, -17.0, 6.0],
       "radius": 3.0
     },
     {
       "bone": "bone_rotatorTop",
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 3.0,
-      "offset": [
-        -17.0,
-        -17.0,
-        6.0
-      ],
+      "offset": [-17.0, -17.0, 6.0],
       "radius": 3.0
     }
   ],
   "max_health": 21000,
-  "mesh_bounds": [
-    116.1,
-    133.2,
-    144.328
-  ],
+  "mesh_bounds": [116.1, 133.2, 144.328],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_titan_orbital/l_titan_orbital_idle.papa"

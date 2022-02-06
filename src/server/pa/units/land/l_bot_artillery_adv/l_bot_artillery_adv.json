@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 13,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        7.4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 7.4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -52,67 +44,35 @@
   "headlights": [
     {
       "bone": "bone_turret",
-      "color": [
-        0.75,
-        1,
-        1
-      ],
+      "color": [0.75, 1, 1],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1,
       "near_height": 1.5,
       "near_width": 1.5,
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ]
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0]
     }
   ],
   "lamps": [
     {
       "bone": "bone_head",
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        0,
-        -0.6,
-        0
-      ],
+      "offset": [0, -0.6, 0],
       "radius": 1
     },
     {
       "bone": "bone_weapon",
-      "color": [
-        1,
-        1,
-        1
-      ],
+      "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [
-        2,
-        -0.9,
-        0.625
-      ],
+      "offset": [2, -0.9, 0.625],
       "radius": 1.5
     }
   ],
   "max_health": 4000,
-  "mesh_bounds": [
-    10,
-    12,
-    12
-  ],
+  "mesh_bounds": [10, 12, 12],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_idle.papa",
@@ -161,10 +121,7 @@
     {
       "aim_bone": "bone_turretLeft",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_muzzleRight01",
-        "socket_muzzleLeft01"
-      ],
+      "muzzle_bone": ["socket_muzzleRight01", "socket_muzzleLeft01"],
       "projectiles_per_fire": 1,
       "record_index": 1,
       "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"
@@ -172,10 +129,7 @@
     {
       "aim_bone": "bone_turretRight",
       "fire_event": "fired2",
-      "muzzle_bone": [
-        "socket_muzzleRight02",
-        "socket_muzzleLeft02"
-      ],
+      "muzzle_bone": ["socket_muzzleRight02", "socket_muzzleLeft02"],
       "projectiles_per_fire": 1,
       "record_index": 2,
       "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"

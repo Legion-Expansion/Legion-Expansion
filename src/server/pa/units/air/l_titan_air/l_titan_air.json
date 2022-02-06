@@ -52,31 +52,19 @@
     {
       "bone": "thrustBackMain",
       "filename": "/pa/units/air/l_titan_air/titan_back_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "moving_forward"
     },
     {
       "bone": "thrustBackMain",
       "filename": "/pa/units/air/l_titan_air/titan_side_jets.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "idle"
     },
     {
       "bone": "thrustBackMain",
       "filename": "/pa/units/air/l_titan_air/titan_back_smoke.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
       "type": "idle"
     }
   ],
@@ -84,11 +72,7 @@
   "guard_radius": 50,
   "has_death_effects": true,
   "max_health": 9000,
-  "mesh_bounds": [
-    84,
-    77,
-    15
-  ],
+  "mesh_bounds": [84, 77, 15],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_titan_air_anim_tree.json",
     "filename": "/pa/units/air/l_titan_air/l_titan_air.papa"
@@ -134,10 +118,7 @@
     {
       "aim_bone": "bone_turret_main",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "socket_muzzle001",
-        "socket_muzzle002"
-      ],
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
       "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/air/l_titan_air/l_titan_air_main_tool_weapon.json"
@@ -145,10 +126,7 @@
     {
       "aim_bone": "bone_turret_main",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_muzzle003",
-        "socket_muzzle004"
-      ],
+      "muzzle_bone": ["socket_muzzle003", "socket_muzzle004"],
       "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/air/l_titan_air/l_titan_air_main_tool_weapon.json"

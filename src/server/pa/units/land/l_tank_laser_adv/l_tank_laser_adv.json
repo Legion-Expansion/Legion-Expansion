@@ -4,16 +4,8 @@
   "TEMP_texelinfo": 19.398,
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        3.4
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 3.4],
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -44,26 +36,14 @@
     {
       "bone": "socket_muzzle",
       "filename": "/pa/units/land/l_tank_laser_adv/muzzle_ball.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ],
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0],
       "type": "idle"
     }
   ],
   "guard_layer": "WL_AnySurface",
   "max_health": 1650,
-  "mesh_bounds": [
-    6.8,
-    7.5,
-    3.6
-  ],
+  "mesh_bounds": [6.8, 7.5, 3.6],
   "model": {
     "animtree": "/pa/anim/anim_trees/one_turret_mobile_anim_tree.json",
     "arrows": 5,

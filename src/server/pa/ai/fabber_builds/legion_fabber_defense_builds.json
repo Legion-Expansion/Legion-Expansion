@@ -7,9 +7,7 @@
       "shared_instance_count": "BasicAirDefense",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -98,9 +96,7 @@
       "shared_instance_count": "BasicLandDefense",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -189,9 +185,7 @@
       "shared_instance_count": "BasicAirDefense",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -264,10 +258,7 @@
       "shared_instance_count": "BasicAirDefense",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -326,9 +317,7 @@
       "shared_instance_count": "BasicLandDefense",
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -411,9 +400,7 @@
       "shared_instance_count": "BasicLandDefense",
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionCommander"
-      ],
+      "builders": ["LegionCommander"],
       "build_conditions": [
         [
           {
@@ -476,9 +463,7 @@
       "instance_count": 1,
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -550,9 +535,7 @@
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -611,9 +594,7 @@
       "priority": 245,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -672,9 +653,7 @@
       "shared_instance_count": "BasicLandDefense",
       "priority": 261,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -770,9 +749,7 @@
       "instance_count": 1,
       "priority": 85,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -827,10 +804,7 @@
       "instance_count": 1,
       "priority": 262,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "LegionCommander",
-        "AnyLegionFabberBasic"
-      ],
+      "builders": ["LegionCommander", "AnyLegionFabberBasic"],
       "build_conditions": [
         [
           {
@@ -1547,10 +1521,7 @@
       "instance_count": 1,
       "priority": 0,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberBasic",
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberBasic", "AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1594,9 +1565,7 @@
       "instance_count": 1,
       "priority": 255,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
           {
@@ -1655,9 +1624,7 @@
       "instance_count": 1,
       "priority": 379,
       "base_sort": "FromPerimeter",
-      "builders": [
-        "AnyLegionFabberAdvanced"
-      ],
+      "builders": ["AnyLegionFabberAdvanced"],
       "build_conditions": [
         [
           {

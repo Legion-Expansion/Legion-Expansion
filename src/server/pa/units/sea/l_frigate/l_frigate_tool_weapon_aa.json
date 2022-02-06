@@ -6,9 +6,7 @@
   "pitch_range": 180,
   "pitch_rate": 360,
   "rate_of_fire": 1,
-  "target_layers": [
-    "WL_Air"
-  ],
+  "target_layers": ["WL_Air"],
   "target_priorities": [
     "Air & (EnergyProduction | Transport | Bomber | Gunship | Titan)",
     "Air & Mobile"

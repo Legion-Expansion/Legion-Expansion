@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 8,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -80,11 +76,7 @@
   "guard_layer": "WL_AnySurface",
   "guard_radius": 50,
   "max_health": 50,
-  "mesh_bounds": [
-    14,
-    7.5,
-    2.6
-  ],
+  "mesh_bounds": [14, 7.5, 2.6],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_raider_anim_tree.json",
     "arrows": 5,
@@ -133,10 +125,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle_bone": [
-        "right_muzzle",
-        "left_muzzle"
-      ],
+      "muzzle_bone": ["right_muzzle", "left_muzzle"],
       "record_index": 0,
       "spec_id": "/pa/units/air/l_raider/l_raider_tool_weapon.json"
     }

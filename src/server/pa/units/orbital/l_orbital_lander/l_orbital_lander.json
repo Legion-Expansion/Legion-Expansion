@@ -4,11 +4,7 @@
   "TEMP_texelinfo": 23.9658,
   "attachable": {
     "offsets": {
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "root": [0, 0, 0]
     }
   },
   "audio": {
@@ -60,71 +56,35 @@
     {
       "bone": "thrust005",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        1,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "offset": [0, 1, 0],
+      "orientation": [0, 180, 0],
       "type": "idle"
     },
     {
       "bone": "thrust006",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        1,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "offset": [0, 1, 0],
+      "orientation": [0, 180, 0],
       "type": "idle"
     },
     {
       "bone": "thrust007",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        1,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "offset": [0, 1, 0],
+      "orientation": [0, 180, 0],
       "type": "idle"
     },
     {
       "bone": "thrust008",
       "filename": "/pa/units/air/gunship/gunship_jets.pfx",
-      "offset": [
-        0,
-        1,
-        0
-      ],
-      "orientation": [
-        0,
-        180,
-        0
-      ],
+      "offset": [0, 1, 0],
+      "orientation": [0, 180, 0],
       "type": "idle"
     }
   ],
   "gravwell_velocity_multiplier": 5.0,
   "max_health": 150,
-  "mesh_bounds": [
-    30,
-    20,
-    10
-  ],
+  "mesh_bounds": [30, 20, 10],
   "model": {
     "animations": {
       "closed": "/pa/units/orbital/l_orbital_lander/l_orbital_lander_closed.papa",

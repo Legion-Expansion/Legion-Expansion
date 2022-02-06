@@ -6,9 +6,7 @@
       "instance_count": 1,
       "priority": 100,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -44,9 +42,7 @@
       "instance_count": 1,
       "priority": 100,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -82,9 +78,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandScout",
       "priority": 98,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -138,9 +132,7 @@
       "instance_count": 1,
       "shared_instance_count": "LandScout",
       "priority": 97,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -192,9 +184,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -232,9 +222,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -276,9 +264,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -333,9 +319,7 @@
       "to_build": "LegionBotBasicAA",
       "instance_count": 1,
       "priority": 97,
-      "builders": [
-        "LegionFactoryBasicBot"
-      ],
+      "builders": ["LegionFactoryBasicBot"],
       "build_conditions": [
         [
           {
@@ -432,9 +416,7 @@
       "to_build": "LegionVehicleBasicCFab",
       "instance_count": 1,
       "priority": 97,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -490,9 +472,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -534,9 +514,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -592,9 +570,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -683,9 +659,7 @@
       "instance_count": -1,
       "priority": 97,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryBasicVehicle"
-      ],
+      "builders": ["LegionFactoryBasicVehicle"],
       "build_conditions": [
         [
           {
@@ -754,9 +728,7 @@
       "instance_count": 1,
       "priority": 200,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -794,9 +766,7 @@
       "instance_count": 1,
       "priority": 200,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {
@@ -834,9 +804,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -878,9 +846,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -936,9 +902,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -994,9 +958,7 @@
       "instance_count": 1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -1025,9 +987,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -1096,9 +1056,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 10,
-      "builders": [
-        "LegionFactoryAdvancedBot"
-      ],
+      "builders": ["LegionFactoryAdvancedBot"],
       "build_conditions": [
         [
           {
@@ -1196,9 +1154,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {
@@ -1240,9 +1196,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {
@@ -1298,9 +1252,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {
@@ -1415,9 +1367,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {
@@ -1473,9 +1423,7 @@
       "instance_count": -1,
       "priority": 199,
       "max_num_assisters": 15,
-      "builders": [
-        "LegionFactoryAdvancedVehicle"
-      ],
+      "builders": ["LegionFactoryAdvancedVehicle"],
       "build_conditions": [
         [
           {

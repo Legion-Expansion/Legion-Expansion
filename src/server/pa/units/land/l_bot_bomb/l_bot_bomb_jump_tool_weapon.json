@@ -20,9 +20,7 @@
   "rate_of_fire": 1,
   "self_destruct": true,
   "start_fully_charged": false,
-  "target_layers": [
-    "WL_LandHorizontal"
-  ],
+  "target_layers": ["WL_LandHorizontal"],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 180,
   "yaw_rate": 3600

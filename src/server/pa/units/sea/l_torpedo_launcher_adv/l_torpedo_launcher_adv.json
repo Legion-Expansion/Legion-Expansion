@@ -7,9 +7,7 @@
   "atrophy_rate": 30.0,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 1000,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/sea"
@@ -24,11 +22,7 @@
   },
   "guard_layer": "WL_WaterSurface",
   "max_health": 4000,
-  "mesh_bounds": [
-    12,
-    6,
-    5
-  ],
+  "mesh_bounds": [12, 6, 5],
   "model": {
     "animations": {
       "idle": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_idle.papa"
@@ -74,14 +68,7 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": [
-        "gun01",
-        "gun02",
-        "gun03",
-        "gun04",
-        "gun05",
-        "gun06"
-      ],
+      "muzzle_bone": ["gun01", "gun02", "gun03", "gun04", "gun05", "gun06"],
       "projectiles_per_fire": 3,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_tool_weapon.json"
