@@ -47,8 +47,7 @@
     "move_speed": 18,
     "turn_accel": 150,
     "turn_in_place": false,
-    "turn_speed": 150,
-    "type": "water-hover"
+    "turn_speed": 150
   },
   "recon": {
     "observer": {
@@ -100,7 +99,6 @@
     "UNITTYPE_Offense",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_WaterHover",
     "UNITTYPE_Custom1"
   ]
 }

@@ -48,6 +48,7 @@
 - Sea
   - Catfish
     - Shots reverted to hitscan
+    - Movement changed from water-hover to deepwater
   - Manta
     - Damage to orbital increased from 25% to 100%
   - Ship Foundry
