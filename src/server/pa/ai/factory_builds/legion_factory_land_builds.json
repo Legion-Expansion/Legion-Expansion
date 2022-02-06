@@ -579,6 +579,13 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Amphibious",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
+            "compare0": "<",
+            "value0": 0.2
           }
         ],
         [
@@ -591,10 +598,10 @@
           },
           {
             "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Heavy",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "unit_type_string0": "Tank & Amphibious",
+            "unit_type_string1": "(Tank | Bot) - Fabber",
             "compare0": "<",
-            "value0": 0.5
+            "value0": 0.2
           },
           {
             "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
