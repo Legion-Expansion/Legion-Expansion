@@ -1,6 +1,6 @@
 # Pull Request Template
 
-# Validation
+## Validation
 
 - [ ] I have followed the requirements of the Contributing document.
 - [ ] I have checked to ensure there aren't other open [Pull Requests](../../pulls) for the same update/change.
@@ -18,6 +18,6 @@
 
 <!-- Justification for inclusion -->
 
-## How Has This Been Tested?
+## How has this been tested?
 
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration.
