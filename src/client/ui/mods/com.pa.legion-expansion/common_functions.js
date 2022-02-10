@@ -4,8 +4,6 @@ define({
       $(".body_panel").addClass("legionui");
     } else if (faction === "mixed") {
       $(".body_panel").addClass("mixedui");
-    } else {
-      return;
     }
   },
   imageSourceForType: function (path, colour, type) {
