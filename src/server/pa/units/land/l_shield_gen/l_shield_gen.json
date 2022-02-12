@@ -38,7 +38,7 @@
     }
   ],
   "max_health": 750,
-  "mesh_bounds": [5, 5, 14],
+  "mesh_bounds": [4, 4, 14],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",

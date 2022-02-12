@@ -53,7 +53,7 @@
     }
   ],
   "max_health": 125,
-  "mesh_bounds": [5, 5, 4.7],
+  "mesh_bounds": [10, 12, 8],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_artillery/l_bot_artillery_idle.papa",
@@ -85,7 +85,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -18
+    "diameter": -23
   },
   "tools": [
     {

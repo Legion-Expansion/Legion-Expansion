@@ -36,7 +36,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 120,
-  "mesh_bounds": [4, 2.5, 4],
+  "mesh_bounds": [4, 2.5, 4.5],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_sniper_bot/l_sniper_bot_idle.papa",

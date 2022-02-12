@@ -23,7 +23,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 1000,
-  "mesh_bounds": [9.634, 13.063, 7.819],
+  "mesh_bounds": [10, 10, 7.819],
   "model": [
     {
       "animations": {
@@ -63,7 +63,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -22
+    "diameter": -20
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [

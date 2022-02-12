@@ -86,7 +86,7 @@
     }
   ],
   "max_health": 200,
-  "mesh_bounds": [4.93769, 6.4, 2.6835],
+  "mesh_bounds": [6.468, 8, 5.711],
   "model": {
     "animations": {
       "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
@@ -118,7 +118,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -14
+    "diameter": -16
   },
   "tools": [
     {
