@@ -8,7 +8,6 @@
 - [ ] I have successfully tested my changes locally.
 - [ ] I have made corresponding changes to the documentation
 - [ ] I have checked my changes generate no new warnings including when `install_devel.py` is run
-- [ ] I have signed a CLA for this project
 
 ## What does the change do?
 
