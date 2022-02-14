@@ -35,7 +35,7 @@
       "radius": 5.0
     }
   ],
-  "max_health": 5000,
+  "max_health": 3000,
   "mesh_bounds": [15.5, 13.3685, 23.2],
   "model": {
     "animations": {
