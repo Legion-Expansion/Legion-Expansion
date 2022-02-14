@@ -38,6 +38,7 @@ This project is not the work of one, but of a legion.
 | mikeyh          | Code                               |
 | Quitch          | AI / Media                         |
 | Stuart98        | Code / Strategic Icons             |
+| Quildtide       | Strategic Icons                    |
 | dom314          | Effects / Code                     |
 | CptConundrum    | UI                                 |
 | Elodea          | Balance Lead / Effects / Media     |
