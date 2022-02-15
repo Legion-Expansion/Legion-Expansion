@@ -84,6 +84,7 @@
 - Viper not firing when chasing a target
 
 ### Strategic Icons
+
 - Fixed inconsistent energy symbol for:
   - Power Catalyst
   - Advanced Power Catalyst
@@ -96,7 +97,7 @@
   - Archer
   - Ripple
   - Tsunami
-- Fixed inconsistent metal symbol for Omnisilo Storage
+- Fixed inconsistent metal symbol for OmniSilo Storage
 - Fixed inconsistent walker/armour symbols for Starcannon
 - Replaced all #FFF100 with #FFFF00 for Legion Radar
 - Horizontally centered icons for:
