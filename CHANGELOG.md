@@ -80,6 +80,7 @@
 - Viper not firing when chasing a target
 - Particle shape for nuke explosions
 - Supernova causing an error to be logged when built
+- UI style errors
 
 ### Strategic Icons
 
