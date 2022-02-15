@@ -77,6 +77,7 @@
 - One of the Imperator's side-guns not firing
 - Imperator moves into range of all its guns when attacking orbital targets
 - Viper not firing when chasing a target
+- Particle shape for nuke explosions
 
 ### Strategic Icons
 
