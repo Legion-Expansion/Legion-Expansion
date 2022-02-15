@@ -28,7 +28,7 @@
     - Damage to commanders decreased from 133% to 100%
     - Damage to structures decreased from 133% to 100%
     - Damage to vehicles decreased from 133% to 100%
-    - Damage increased from 125 to 167
+    - Damage increased from 125 to 166
   - Panzer
     - Damage to structures decreased from 300% to 100%
   - Peacekeeper
