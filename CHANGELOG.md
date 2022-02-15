@@ -16,6 +16,7 @@
   - Meteoroid
     - Damage to structures decreased from 150% to 100%
     - Increased guard radius from 100 to 250
+    - Give higher priority to air defences
 - Land
   - Armour Foundry
     - Build cost decreased from 660 to 600
