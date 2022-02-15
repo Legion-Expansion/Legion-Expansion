@@ -78,6 +78,7 @@
 - Imperator moves into range of all its guns when attacking orbital targets
 - Viper not firing when chasing a target
 - Particle shape for nuke explosions
+- Supernova causing an error to be logged when built
 
 ### Strategic Icons
 
