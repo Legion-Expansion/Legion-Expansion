@@ -85,6 +85,8 @@
 
 ### Strategic Icons
 
+With thanks to Quildtide for these.
+
 - Fixed inconsistent energy symbol for:
   - Power Catalyst
   - Advanced Power Catalyst
