@@ -78,6 +78,36 @@
 - Imperator moves into range of all its guns when attacking orbital targets
 - Viper not firing when chasing a target
 
+### Strategic Icons
+
+With thanks to Quildtide for these.
+
+- Fixed inconsistent energy symbol for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+- Fixed inconsistent radar symbol for:
+  - Radar
+  - Overseer
+- Fixed inconsistent targeting symbol for:
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
+- Fixed inconsistent metal symbol for OmniSilo Storage
+- Fixed inconsistent walker/armour symbols for Starcannon
+- Replaced all #FFF100 with #FFFF00 for Radar
+- Horizontally centered icons for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+  - Starcannon
+  - Radar
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
+
 ## v1.21.0 - 2021-08-05
 
 ### General
