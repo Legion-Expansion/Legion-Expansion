@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.22.0 - 222-02-15
 
 ### General
 
