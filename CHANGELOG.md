@@ -92,7 +92,7 @@ With thanks to Quildtide for these.
   - Advanced Power Catalyst
   - OmniSilo Storage
 - Fixed inconsistent radar symbol for:
-  - Legion Radar
+  - Radar
   - Overseer
 - Fixed inconsistent targeting symbol for:
   - Shredder
@@ -101,13 +101,13 @@ With thanks to Quildtide for these.
   - Tsunami
 - Fixed inconsistent metal symbol for OmniSilo Storage
 - Fixed inconsistent walker/armour symbols for Starcannon
-- Replaced all #FFF100 with #FFFF00 for Legion Radar
+- Replaced all #FFF100 with #FFFF00 for Radar
 - Horizontally centered icons for:
   - Power Catalyst
   - Advanced Power Catalyst
   - OmniSilo Storage
   - Starcannon
-  - Legion Radar
+  - Radar
   - Shredder
   - Archer
   - Ripple
