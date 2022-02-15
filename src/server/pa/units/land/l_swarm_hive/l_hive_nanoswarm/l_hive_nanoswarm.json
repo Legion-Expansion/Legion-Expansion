@@ -1,0 +1,99 @@
+{
+  "display_name": "!LOC:Nanoswarm",
+  "description": "!LOC:Metal Parasite - Extremely fast. Close range. Devastating damage. Attacks land, sea and seabed targets.",
+  "TEMP_texelinfo": 6.38702,
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/swarm_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/bot/swarm"
+    }
+  },
+  "base_spec": "/pa/units/land/base_bot/base_bot.json",
+  "build_metal_cost": 30,
+  "command_caps": [],
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/swarm",
+      "effect_scale": 1.0
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/swarm",
+      "effect_spec": ""
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_body",
+      "filename": "/pa/effects/specs/nanoswarm_idle.pfx",
+      "offset": [0, 0, 0],
+      "type": "idle"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 300,
+  "max_health": 100,
+  "mesh_bounds": [4, 4, 4],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/bot_nanoswarm/bot_nanoswarm_anim_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json",
+    "filename": "/pa/units/land/bot_nanoswarm/bot_nanoswarm.papa"
+  },
+  "navigation": {
+    "acceleration": 60,
+    "move_speed": 50,
+    "turn_speed": 1080,
+    "type": "hover"
+  },
+  "physics": {
+    "allow_pushing": true,
+    "radius": 0
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 40,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 40,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -1
+  },
+  "spawn_layers": "WL_LandHorizontal",
+  "tools": [
+    {
+      "aim_bone": "bone_body",
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "spec_id": "/pa/units/land/l_swarm_hive/l_hive_nanoswarm/l_hive_nanoswarm_death_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Basic",
+    "UNITTYPE_Custom1"
+  ],
+  "wreckage_health_frac": 0.0
+}

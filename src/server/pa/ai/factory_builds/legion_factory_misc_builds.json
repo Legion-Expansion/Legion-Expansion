@@ -1,0 +1,89 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Nuke Missile",
+      "to_build": "LegionDefenseAdvancedNuke",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": ["LegionDefenseAdvancedNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Nuke Missile - No Antis",
+      "to_build": "LegionDefenseAdvancedNuke",
+      "instance_count": 2,
+      "priority": 387,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "builders": ["LegionDefenseAdvancedNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Anti Nuke Missile",
+      "to_build": "LegionDefenseAdvancedAntiNuke",
+      "instance_count": -1,
+      "priority": 151,
+      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "FactoryHasOpenSlot"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Anti Nuke Missile - Rush",
+      "to_build": "LegionDefenseAdvancedAntiNuke",
+      "instance_count": -1,
+      "priority": 388,
+      "min_num_assisters": 5,
+      "max_num_assisters": 12,
+      "builders": ["LegionDefenseAdvancedAntiNukeSilo"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Nuke",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "FactorySlotsEmpty",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

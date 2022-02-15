@@ -1,0 +1,10 @@
+.watermark {
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+  font-family: "Trebuchet MS Bold", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}

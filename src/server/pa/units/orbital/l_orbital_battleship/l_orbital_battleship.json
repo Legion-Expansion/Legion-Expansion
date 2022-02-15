@@ -1,0 +1,167 @@
+{
+  "display_name": "!LOC:Imperator",
+  "description": "!LOC:Orbital Battleship - Launches drones at planetary enemies. Heavily armored. Attacks land, air sea and orbital targets.",
+  "TEMP_texelinfo": 31.6199,
+  "attachable": {
+    "offsets": {
+      "root": [0, 0, 0]
+    }
+  },
+  "attack_range_frac": 0.6,
+  "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
+  "build_metal_cost": 14000,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Attack",
+    "ORDER_Assist"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/orbital",
+      "effect_scale": 2.5,
+      "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/orb/orb_ssx_laser_fire",
+      "effect_scale": 5,
+      "effect_spec": "/pa/units/orbital/l_orbital_battleship/main_muzzle_flash.pfx socket_muzzle004"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+      "effect_scale": 3,
+      "effect_spec": "/pa/units/sea/l_battleship/t2_muzzle_flash.pfx socket_muzzle001"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+      "effect_scale": 3,
+      "effect_spec": "/pa/units/sea/l_battleship/t2_muzzle_flash.pfx socket_muzzle002"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/orb/orbital_battleship_fire",
+      "effect_scale": 3,
+      "effect_spec": "/pa/units/sea/l_battleship/t2_muzzle_flash.pfx socket_muzzle003"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "thrust001",
+      "filename": "/pa/units/orbital/l_orbital_battleship/orbital_jets_big.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust002",
+      "filename": "/pa/units/orbital/l_orbital_battleship/orbital_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "thrust003",
+      "filename": "/pa/units/orbital/l_orbital_battleship/orbital_jets.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "gravwell_velocity_multiplier": 6.0,
+  "guard_layer": "WL_AnySurface",
+  "max_health": 5500,
+  "mesh_bounds": [45, 77, 40.958],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/l_orbital_battleship_anim_tree.json",
+    "filename": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship.papa"
+  },
+  "navigation": {
+    "acceleration": 30,
+    "bank_factor": 0.5,
+    "brake": 80,
+    "circle_max_time": 4,
+    "circle_min_time": 2,
+    "move_speed": 20,
+    "turn_accel": 20,
+    "turn_speed": 30
+  },
+  "physics": {
+    "radius": 10
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 400,
+          "shape": "sphere"
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 200,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -72
+  },
+  "spawn_layers": "WL_Orbital",
+  "tools": [
+    {
+      "aim_bone": "turret001",
+      "fire_event": "fired1",
+      "muzzle_bone": "socket_muzzle001",
+      "projectiles_per_fire": 1,
+      "record_index": 0,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon.json"
+    },
+    {
+      "aim_bone": "turret002",
+      "fire_event": "fired2",
+      "muzzle_bone": "socket_muzzle002",
+      "projectiles_per_fire": 1,
+      "record_index": 1,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon.json"
+    },
+    {
+      "aim_bone": "turret003",
+      "fire_event": "fired3",
+      "muzzle_bone": "socket_muzzle003",
+      "projectiles_per_fire": 1,
+      "record_index": 2,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon.json"
+    },
+    {
+      "aim_bone": "turret004",
+      "fire_event": "fired0",
+      "muzzle_bone": "socket_muzzle004",
+      "projectiles_per_fire": 1,
+      "record_index": 3,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_main_tool_weapon.json"
+    },
+    {
+      "aim_bone": "laser",
+      "muzzle_bone": ["laser"],
+      "record_index": -1,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon_ground.json"
+    },
+    {
+      "aim_bone": "laser",
+      "muzzle_bone": "laser",
+      "record_index": 4,
+      "spec_id": "/pa/units/orbital/l_orbital_battleship/l_orbital_battleship_tool_weapon_drone.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Fighter",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
+  ],
+  "wreckage_health_frac": 0.0
+}

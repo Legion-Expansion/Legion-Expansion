@@ -1,5 +1,113 @@
 # CHANGELOG
 
+## v1.22.0 - 222-02-15
+
+### General
+
+- Improved PNG compression to reduce mod size
+
+### Balance
+
+- Air
+  - Flyer Foundry
+    - Build cost decreased from 660 to 600
+  - Loki
+    - Damage to air increased from 50% to 100%
+  - Meteoroid
+    - Damage to structures decreased from 150% to 100%
+- Land
+  - Armour Foundry
+    - Build cost decreased from 660 to 600
+    - Energy demand increased from 640 to 765
+    - Metal demand increased from 15 to 17
+  - Corsair
+    - Increased standard deviation of shots from 0 to 1
+  - Havoc
+    - Damage to commanders increased from 67% to 100%
+  - Lancer
+    - Damage to commanders decreased from 133% to 100%
+    - Damage to structures decreased from 133% to 100%
+    - Damage to vehicles decreased from 133% to 100%
+    - Damage increased from 125 to 166
+  - Panzer
+    - Damage to structures decreased from 300% to 100%
+  - Peacekeeper
+    - Build cost reduced from 75 to 60
+  - Walker Foundry
+    - Build cost decreased from 660 to 600
+    - Energy demand increased from 640 to 765
+    - Metal demand increased from 15 to 17
+- Orbital
+  - Starcannon
+    - Energy demand increased from 1900 to 2250
+- Sea
+  - Catfish
+    - Shots reverted to hitscan
+    - Movement changed from water-hover to deepwater
+  - Manta
+    - Damage to orbital increased from 25% to 100%
+  - Ship Foundry
+    - Build cost decreased from 660 to 600
+
+### AI
+
+- Scout with Stokes if no better options
+- Fixed the building of too many Purgers
+- Won't build land titans due to pathfinding issues
+- Builds more Stokes
+- Builds more Corsairs
+
+### Fixed
+
+- Obsolete scene loads
+- Some Legion theme elements not being loaded
+- Failure to stop to engage a target while patrolling for:
+  - Purger
+  - Panzer
+  - Maul
+  - Deathmark
+  - Nanoswarms
+  - Earthshaker
+  - Scorpion
+  - Shank
+  - Epoch
+- Panzer description - with thanks to Thorveim for the report
+- Radar jamming no longer prevents the triggering of Spoilers
+- Monstrosity secondary weapons pointing at the primary gun's target rather than their own
+- One of the Imperator's side-guns not firing
+- Imperator moves into range of all its guns when attacking orbital targets
+- Viper not firing when chasing a target
+
+### Strategic Icons
+
+With thanks to Quildtide for these.
+
+- Fixed inconsistent energy symbol for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+- Fixed inconsistent radar symbol for:
+  - Radar
+  - Overseer
+- Fixed inconsistent targeting symbol for:
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
+- Fixed inconsistent metal symbol for OmniSilo Storage
+- Fixed inconsistent walker/armour symbols for Starcannon
+- Replaced all #FFF100 with #FFFF00 for Radar
+- Horizontally centered icons for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+  - Starcannon
+  - Radar
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
+
 ## v1.21.0 - 2021-08-05
 
 ### General

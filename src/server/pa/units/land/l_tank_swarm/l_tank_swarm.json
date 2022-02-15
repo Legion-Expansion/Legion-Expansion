@@ -1,0 +1,138 @@
+{
+  "display_name": "!LOC:Havoc",
+  "description": "!LOC:Lightning Tank - Shoots timed electric mines. Intercepts missiles. Attacks land and sea targets.",
+  "TEMP_texelinfo": 9.31488,
+  "attachable": {
+    "offsets": {
+      "head": [0, 0, 3.1],
+      "root": [0, 0, 0]
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 750,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Attack",
+    "ORDER_Patrol",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "events": {
+    "died": {
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/spark_fire",
+      "effect_spec": "/pa/units/land/l_tank_swarm/l_tank_swarm_fire.pfx gun002 /pa/units/land/l_tank_swarm/l_tank_swarm_fire.pfx gun005"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "gun002",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "gun005",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_idle_root.pfx",
+      "type": "idle"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "headlights": [
+    {
+      "bone": "bone_root",
+      "color": [0.75, 1, 1],
+      "far_distance": 20,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1,
+      "near_height": 1.5,
+      "near_width": 1.5,
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0]
+    }
+  ],
+  "max_health": 450,
+  "mesh_bounds": [7, 7.5, 3.8],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm.papa"
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 15,
+    "turn_speed": 90
+  },
+  "nearby_target_tick_update_interval": 15,
+  "physics": {
+    "radius": 6
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "scrolling_uv": {
+    "scroll_rate": 0.5,
+    "uv_split": 0.9
+  },
+  "selection_icon": {
+    "diameter": -14.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun001",
+        "gun004",
+        "gun002",
+        "gun005",
+        "gun003",
+        "gun006"
+      ],
+      "projectiles_per_fire": 2,
+      "record_index": 0,
+      "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": [
+        "gun001",
+        "gun004",
+        "gun002",
+        "gun005",
+        "gun003",
+        "gun006"
+      ],
+      "record_index": 1,
+      "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json"
+    }
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

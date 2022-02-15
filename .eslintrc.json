@@ -15,19 +15,19 @@
     "model": "readonly",
     "_": "readonly",
     "loc": "readonly",
-    "locUpdateDocument": "readonly",
+    "locTree": "readonly",
     "ko": "readonly",
     "engine": "readonly",
     "loadCSS": "readonly",
     "loadHtml": "readonly",
     "loadScript": "readonly",
-    "gBuild": "readonly",
     "Build": "readonly",
     "handlers": "readonly"
   },
   "plugins": ["lodash"],
   "rules": {
     "no-inner-declarations": "off",
-    "lodash/prefer-lodash-method": 0
+    "lodash/prefer-lodash-method": 0,
+    "curly": [2, "all"]
   }
 }

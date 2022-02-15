@@ -1,0 +1,1470 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Basic Bot Fabber",
+      "to_build": "LegionBotBasicFabber",
+      "instance_count": 1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicBotFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotBasicFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Vehicle Fabber",
+      "to_build": "LegionVehicleBasicFabber",
+      "instance_count": 1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicVehicleFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleBasicFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Land Scout - Intel",
+      "to_build": "LegionBotBasicScout",
+      "instance_count": 1,
+      "shared_instance_count": "LandScout",
+      "priority": 98,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Land & Scout",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Land & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Land Scout",
+      "to_build": "LegionBotBasicScout",
+      "instance_count": 1,
+      "shared_instance_count": "LandScout",
+      "priority": 97,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Scout",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Land & Scout",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.05
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Assault Bot",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Sniper Bot",
+      "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Suicide Bot",
+      "to_build": "LegionBotBasicBomb",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & SelfDestruct",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic AA Bot",
+      "to_build": "LegionBotBasicAA",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.25
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Combat Fabber Vehicle",
+      "to_build": "LegionVehicleBasicCFab",
+      "instance_count": 1,
+      "priority": 97,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank & Construction) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank & Construction) - Fabber",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Light Laser Tank",
+      "to_build": "LegionVehicleBasicLaser",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Armor Tank",
+      "to_build": "LegionVehicleBasicArmor",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Amphibious Tank",
+      "to_build": "LegionVehicleBasicHover",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Amphibious",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Amphibious",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Air | Land) & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "(Vehicle & Amphibious & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+            "compare0": "<",
+            "value0": 200
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Air | Land) & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Vehicle & Amphibious &  Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Hover Artillery",
+      "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Bot Fabber",
+      "to_build": "LegionBotAdvancedFabber",
+      "instance_count": 1,
+      "priority": 200,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedBotFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Vehicle Fabber",
+      "to_build": "LegionVehicleAdvancedFabber",
+      "instance_count": 1,
+      "priority": 200,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedVehicleFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionVehicleAdvancedFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Assault Bot",
+      "to_build": "LegionBotAdvancedAssault",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Artillery Bot",
+      "to_build": "LegionBotAdvancedArtillery",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Heavy Bot",
+      "to_build": "LegionBotAdvancedTactical",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Support Commander",
+      "to_build": "LegionBotAdvancedSupportCommander",
+      "instance_count": 1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionBotAdvancedSupportCommander"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "SupportCommander",
+            "compare0": "<",
+            "value0": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Suicide Bot",
+      "to_build": "LegionBotAdvancedBomb",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced AA Bot",
+      "to_build": "LegionBotAdvancedAA",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryAdvancedBot"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.25
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & AirDefense",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Laser Tank",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Armor Tank",
+      "to_build": "LegionVehicleAdvancedArmor",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Artillery Vehicle",
+      "to_build": "LegionVehicleAdvancedHover",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & (Hover | Sub)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.2
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Sniper Vehicle",
+      "to_build": "LegionVehicleAdvancedSniper",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "(Tank | Bot) & (Artillery | Tactical)",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.35
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Swarm Tank",
+      "to_build": "LegionVehicleAdvancedSwarm",
+      "instance_count": -1,
+      "priority": 199,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedVehicle"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    }
+  ]
+}

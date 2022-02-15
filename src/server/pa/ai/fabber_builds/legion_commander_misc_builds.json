@@ -1,0 +1,25 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Teleport Commander To Planet",
+      "instance_count": 1,
+      "priority": 1001,
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "WantCommanderOffPlanetByTeleporter",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ],
+      "task_type": "TeleportFabberToPlanet"
+    }
+  ]
+}

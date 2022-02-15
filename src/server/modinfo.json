@@ -1,0 +1,15 @@
+{
+  "display_name": "Legion Expansion",
+  "identifier": "com.pa.legion-expansion-server",
+  "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
+  "context": "server",
+  "dependencies": [
+    "com.pa.quitch.qAIModCompatibilityPatch",
+    "com.pa.legion-expansion-client"
+  ],
+  "companions": ["com.pa.legion-expansion-client"],
+  "scenes": {
+    "icon_atlas": ["coui://ui/mods/com.pa.legion-expansion/icon_atlas.js"],
+    "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"]
+  }
+}

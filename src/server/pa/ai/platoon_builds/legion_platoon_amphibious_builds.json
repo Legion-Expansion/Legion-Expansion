@@ -1,0 +1,139 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Amphibious Platoon Small",
+      "to_build": "Legion_Amphibious_Attack_Small",
+      "instance_count": 1,
+      "priority": 109,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Amphibious Platoon Medium",
+      "to_build": "Legion_Amphibious_Attack_Medium",
+      "instance_count": 1,
+      "priority": 108,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Amphibious Platoon Large",
+      "to_build": "Legion_Amphibious_Attack_Large",
+      "instance_count": 1,
+      "priority": 107,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Amphibious Platoon XLarge",
+      "to_build": "Legion_Amphibious_Attack_XLarge",
+      "instance_count": 1,
+      "priority": 106,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Amphibious Platoon Max",
+      "to_build": "Legion_Amphibious_Attack_Max",
+      "instance_count": 1,
+      "priority": 105,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot) & Amphibious & Mobile) - Fabber - AirDefense - Construction - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    }
+  ]
+}

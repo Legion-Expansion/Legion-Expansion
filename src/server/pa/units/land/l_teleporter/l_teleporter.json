@@ -1,0 +1,109 @@
+{
+  "display_name": "!LOC:Sky Bridge",
+  "description": "!LOC:Teleporter - Link teleporters to move units around the system.",
+  "TEMP_texelinfo": 30.032139,
+  "area_build_type": "Line",
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 6.66667,
+  "audio": {
+    "loops": {
+      "enabled": {
+        "cue": "/SE/Buildings/teleporter_loop",
+        "flag": "enable_changed",
+        "should_start_func": "is_enabled",
+        "should_stop_func": "is_disabled"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 800,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Reclaim",
+    "ORDER_Repair",
+    "ORDER_Attack",
+    "ORDER_Assist",
+    "ORDER_Use"
+  ],
+  "energy_efficiency_requirement": 1,
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/energy"
+    },
+    "died": {
+      "effect_scale": 1.5
+    },
+    "disabled": {
+      "audio_cue": "/SE/Buildings/teleporter_disabled",
+      "effect_spec": "/pa/units/land/l_teleporter/disable.pfx bone_root"
+    },
+    "enabled": {
+      "audio_cue": "/SE/Buildings/teleporter_enabled",
+      "effect_spec": "/pa/units/land/l_teleporter/enable.pfx bone_root"
+    }
+  },
+  "flip_drag_orientation": true,
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/land/l_teleporter/idle.pfx",
+      "type": "enabled"
+    }
+  ],
+  "max_health": 9750,
+  "mesh_bounds": [42.4, 30, 34],
+  "model": {
+    "animations": {
+      "end": "/pa/units/land/teleporter/teleporter_anim_end.papa",
+      "loop": "/pa/units/land/teleporter/teleporter_anim_loop.papa",
+      "start": "/pa/units/land/teleporter/teleporter_anim_start.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+    "filename": "/pa/units/land/l_teleporter/l_teleporter.papa",
+    "skirt_decal": "/pa/effects/specs/skirt_teleporter.json"
+  },
+  "orders": {
+    "handler_type": "inert"
+  },
+  "placement_size": [50, 75],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -75
+  },
+  "teleporter": {
+    "energy_demand": 1000
+  },
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Teleporter",
+    "UNITTYPE_CmdBuild",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_CombatFabBuild",
+    "UNITTYPE_FabOrbBuild",
+    "UNITTYPE_Custom1"
+  ],
+  "useable": {
+    "range": 100,
+    "type": "teleporter"
+  }
+}

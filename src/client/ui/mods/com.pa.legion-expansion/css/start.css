@@ -1,0 +1,91 @@
+body.legion #background {
+  background-image: url("coui://ui/mods/com.pa.legion-expansion/backgrounds/default.png");
+}
+
+body.legion #logo-background {
+  background-image: url("coui://ui/mods/com.pa.legion-expansion/logos/logo.png");
+}
+
+body.legion {
+  background-image: url("coui://ui/mods/com.pa.legion-expansion/img/splash.png");
+}
+
+.legion .nav_sub_item {
+  border: 0 !important;
+}
+
+.legion .secondary_bar {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.legion #start_column {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.legion .full_update {
+  background: linear-gradient(
+    to top,
+    rgba(50, 0, 0, 0.8) 0%,
+    rgba(60, 0, 0, 1) 85%
+  ) !important;
+  border: 1px solid rgba(255, 0, 0, 0.2) !important;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) !important;
+  color: white;
+}
+
+.legion .ytv-list a {
+  color: white;
+}
+
+.legion .ytv-views {
+  color: rgb(180, 180, 180);
+  opacity: 1;
+}
+
+.legion .username {
+  text-shadow: 0 0 20px rgba(70, 0, 0, 0.9) !important;
+}
+
+.legion .update_title {
+  color: white !important;
+}
+
+.legion .copyright {
+  color: white;
+}
+
+.legion .div_kickstarter_watermark {
+  background: url("coui://ui/main/game/start/img/img_kickstarter_logo_hover.png")
+    top center no-repeat !important;
+  background-size: 32px 32px;
+}
+
+.legion .div_uber_watermark {
+  background: url("coui://ui/main/game/start/img/img_uber_logo_hover.png") top
+    center no-repeat !important;
+  background-size: 44px 44px;
+}
+
+.legion .div_kickstarter_watermark:hover {
+  background: url("coui://ui/main/game/start/img/img_kickstarter_logo_rest.png")
+    top center no-repeat !important;
+  background-size: 32px 32px;
+}
+
+.legion .div_uber_watermark:hover {
+  background: url("coui://ui/main/game/start/img/img_uber_logo_rest.png") top
+    center no-repeat !important;
+  background-size: 32px 44px;
+}
+
+.legion .input_text {
+  background: rgba(70, 0, 0, 1) !important;
+  border: 1px solid rgba(158, 0, 0, 0.1) !important;
+}
+
+.legion .tooltip-inner {
+  max-width: 190px !important;
+  padding: 6px 8px;
+  background-color: rgba(70, 0, 0, 1) !important;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7) !important;
+}

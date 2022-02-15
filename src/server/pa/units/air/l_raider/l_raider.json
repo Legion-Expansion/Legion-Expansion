@@ -1,0 +1,143 @@
+{
+  "display_name": "!LOC:Marauder",
+  "description": "!LOC:Raider - Fast. Can see far away. Attacks land and sea targets.",
+  "TEMP_texelinfo": 8,
+  "attachable": {
+    "offsets": {
+      "root": [0, 0, 0]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_gunship_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving_laterally",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/air/bomber"
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 240,
+  "events": {
+    "died": {
+      "effect_scale": 0.75
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
+      "effect_scale": 2
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "extake001",
+      "filename": "/pa/units/air/l_raider/raider_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "extake002",
+      "filename": "/pa/units/air/l_raider/raider_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "extake003",
+      "filename": "/pa/units/air/l_raider/raider_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "extake001",
+      "filename": "/pa/units/air/l_raider/raider_lines_thrust.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "extake002",
+      "filename": "/pa/units/air/l_raider/raider_lines_thrust.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "extake003",
+      "filename": "/pa/units/air/l_raider/raider_lines_thrust.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "fin002",
+      "filename": "/pa/units/air/l_raider/raider_lines.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "fin003",
+      "filename": "/pa/units/air/l_raider/raider_lines.pfx",
+      "type": "moving_forward"
+    }
+  ],
+  "guard_layer": "WL_AnySurface",
+  "guard_radius": 50,
+  "max_health": 50,
+  "mesh_bounds": [14, 7.5, 2.6],
+  "model": {
+    "animtree": "/pa/anim/anim_trees/l_raider_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/air/l_raider/l_raider.papa"
+  },
+  "navigation": {
+    "acceleration": 130,
+    "aggressive_behavior": "circle",
+    "aggressive_distance": 80,
+    "bank_factor": 2,
+    "brake": 130,
+    "circle_max_time": 4.0,
+    "circle_min_time": 2.0,
+    "dodge_multiplier": 0.0,
+    "dodge_radius": 0.0,
+    "move_speed": 100,
+    "turn_speed": 140,
+    "wobble_factor": 0.05,
+    "wobble_speed": 0.1
+  },
+  "physics": {
+    "gravity_scalar": 0.001,
+    "radius": 9
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 250,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 250,
+          "shape": "capsule"
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -19
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": ["right_muzzle", "left_muzzle"],
+      "record_index": 0,
+      "spec_id": "/pa/units/air/l_raider/l_raider_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Gunship",
+    "UNITTYPE_Scout",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Air",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

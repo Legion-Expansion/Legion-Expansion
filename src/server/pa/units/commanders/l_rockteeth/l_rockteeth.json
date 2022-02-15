@@ -1,0 +1,111 @@
+{
+  "display_name": "Rockteeth Commander",
+  "description": "!LOC:Tank Rockteeth Commander",
+  "attachable": {
+    "offsets": {
+      "head": [0, 0, 15.6],
+      "root": [0, 0, 0]
+    }
+  },
+  "base_spec": "/pa/units/commanders/l_base/l_base.json",
+  "catalog_object_name": "LegionRockteeth",
+  "client": {
+    "ui": {
+      "image": "/ui/main/shared/img/commanders/img_l_rockteeth.png",
+      "profile_image": "/ui/main/shared/img/commanders/profiles/profile_l_rockteeth.png",
+      "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_l_rockteeth_thumb.png"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_laser",
+      "filename": "/pa/effects/specs/laser_beam.pfx",
+      "offset": [0, 0, 0],
+      "type": "idle"
+    },
+    {
+      "bone": "socket_leftMuzzle",
+      "filename": "/pa/effects/specs/legion_fab_spray.pfx",
+      "type": "build"
+    }
+  ],
+  "headlights": [
+    {
+      "bone": "bone_spine",
+      "color": [1, 1, 1],
+      "far_distance": 30,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 6,
+      "near_distance": 3,
+      "near_height": 5,
+      "near_width": 5,
+      "offset": [0, -2.215, 3.802],
+      "orientation": [0, 45, 0],
+      "shadow_resolution": 128
+    }
+  ],
+  "lamps": [
+    {
+      "bone": "bone_spine",
+      "color": [1, 1, 1],
+      "intensity": 5,
+      "offset": [0, -2.215, 3.802],
+      "radius": 2
+    },
+    {
+      "bone": "bone_leftShoulder",
+      "color": [0.4, 1, 0.01],
+      "intensity": 2,
+      "offset": [0.4, -4.06, -1.1],
+      "radius": 4
+    }
+  ],
+  "mesh_bounds": [11.1, 9.8, 15.4],
+  "model": {
+    "animations": {
+      "aim_down": "/pa/units/commanders/tank_base/tank_base_anim_aimDown.papa",
+      "aim_up": "/pa/units/commanders/tank_base/tank_base_anim_aimUp.papa",
+      "idle": "/pa/units/commanders/l_rockteeth/l_rockteeth_idle.papa",
+      "walk": "/pa/units/commanders/l_rockteeth/l_rockteeth_idle.papa",
+      "walk_stop": "/pa/units/commanders/l_rockteeth/l_rockteeth_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_tank_anim_tree.json",
+    "filename": "/pa/units/commanders/l_rockteeth/l_rockteeth.papa"
+  },
+  "scrolling_uv": {
+    "scroll_rate": 0.4,
+    "uv_split": 0.8
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": true,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "secondary_weapon": true,
+      "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_rightMuzzle",
+      "primary_weapon": false,
+      "show_range": false,
+      "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+    }
+  ]
+}

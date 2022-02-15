@@ -1,0 +1,11 @@
+{
+  "version": "1.22.0",
+  "author": "nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
+  "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
+  "category": ["titans", "units", "faction"],
+  "forum": "https://steamcommunity.com/app/386070/discussions/0/357284767253246444/",
+  "icon": "https://raw.githubusercontent.com/Legion-Expansion/Legion-Expansion/balance/icon.png",
+  "signature": "not yet implemented",
+  "titansOnly": true,
+  "github": "https://github.com/Legion-Expansion/Legion-Expansion"
+}

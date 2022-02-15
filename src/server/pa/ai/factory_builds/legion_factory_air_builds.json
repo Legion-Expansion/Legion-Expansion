@@ -1,0 +1,534 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Basic Air Fabber",
+      "to_build": "LegionAirBasicFabber",
+      "instance_count": 1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedBasicAirFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirBasicFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "MetMinBasicFabberCount",
+            "boolean": false
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Air Fighter",
+      "to_build": "LegionAirBasicFighter",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 50
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "unit_type_string1": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Air Bomb",
+      "to_build": "LegionAirBasicBomb",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & SelfDestruct",
+            "unit_type_string1": "Air - Fabber",
+            "compare0": "<",
+            "value0": 0.1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Air Bomber",
+      "to_build": "LegionAirBasicBomber",
+      "instance_count": -1,
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Bomber",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Air Gunship - Intel",
+      "to_build": "LegionAirBasicGunship",
+      "instance_count": 1,
+      "shared_instance_count": "AirScout",
+      "priority": 98,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Air Gunship",
+      "to_build": "LegionAirBasicGunship",
+      "instance_count": -1,
+      "shared_instance_count": "AirScout",
+      "priority": 97,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryBasicAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Gunship",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Air Fabber",
+      "to_build": "LegionAirAdvancedFabber",
+      "instance_count": 1,
+      "priority": 200,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "NeedAdvancedAirFabber"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Advanced - Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Air Scout",
+      "to_build": "LegionAirAdvancedScout",
+      "instance_count": 1,
+      "priority": 199,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedScout"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedScout"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionAirAdvancedScout"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Scout",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Air Fighter",
+      "to_build": "LegionAirAdvancedFighter",
+      "instance_count": -1,
+      "priority": 198,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 50
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Air & Fighter",
+            "compare0": "<",
+            "value0": 20
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "unit_type_string1": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreatRatio",
+            "string0": "Air",
+            "string1": "AntiAir",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Air Bomber",
+      "to_build": "LegionAirAdvancedBomber",
+      "instance_count": -1,
+      "priority": 198,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bomber",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Gunship",
+      "to_build": "LegionAirAdvancedGunship",
+      "instance_count": -1,
+      "priority": 198,
+      "max_num_assisters": 15,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Gunship",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Air Carrier",
+      "to_build": "LegionAirAdvancedCarrier",
+      "instance_count": -1,
+      "priority": 198,
+      "max_num_assisters": 10,
+      "builders": ["LegionFactoryAdvancedAir"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    }
+  ]
+}

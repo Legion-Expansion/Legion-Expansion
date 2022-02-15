@@ -1,0 +1,66 @@
+.legionui .div_pip_toggle_cont {
+  border: 1px solid rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .div_pip_toggle_cont {
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+}
+
+.legionui .div_ingame_timer {
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+}
+
+.mixedui .div_ingame_timer {
+  color: #639;
+  text-shadow: 0 0 30px rgba(99, 14, 138, 0.5);
+}
+
+.legionui .div_ingame_server_rate {
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+}
+
+.mixedui .div_ingame_server_rate {
+  color: #639;
+  text-shadow: 0 0 30px rgba(99, 14, 138, 0.5);
+}
+
+.legionui .btn_std_ix:hover {
+  background: rgba(255, 0, 0, 0.8);
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .btn_std_ix:hover {
+  color: #639;
+  text-shadow: 0 0 10px rgba(99, 14, 138, 0.5);
+}
+
+.legionui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
+}
+
+.mixedui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
+}
+
+.legionui .div_sim_speed {
+  color: rgba(255, 0, 0, 0.8) !important;
+  text-shadow: 0 0 30px rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .div_sim_speed {
+  color: #639 !important;
+  text-shadow: 0 0 30px rgba(99, 14, 138, 0.5);
+}
+
+.legionui .span_tooltip_hotkey {
+  border: 1px solid rgba(255, 0, 0, 1) !important;
+  color: rgba(255, 0, 0, 1) !important;
+}
+
+.mixedui .span_tooltip_hotkey {
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+  color: #639 !important;
+}

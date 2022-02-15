@@ -1,0 +1,27 @@
+.legion .content_titans_badge {
+  height: 0%;
+}
+
+.legion .section_title {
+  text-shadow: 0 0 20px rgba(190, 0, 0, 0.9) !important;
+}
+
+.legion .section_title .content .title {
+  text-shadow: 0 0 20px rgba(190, 0, 0, 0.9) !important;
+}
+
+.legion .body {
+  color: white !important;
+}
+
+.legion label {
+  color: white;
+}
+
+.legion label:hover {
+  color: white;
+}
+
+.legion label:active {
+  color: white;
+}

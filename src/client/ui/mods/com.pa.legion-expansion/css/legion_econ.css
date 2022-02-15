@@ -1,0 +1,7 @@
+.legionui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
+}
+
+.mixedui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
+}

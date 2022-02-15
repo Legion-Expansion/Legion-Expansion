@@ -1,0 +1,529 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Orbital Fabber",
+      "to_build": "LegionOrbitalBasicFabber",
+      "instance_count": 1,
+      "priority": 199,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicFabber"
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "Factory & Construction & Advanced - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ],
+        [
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "SafePlanetOrGasGiantWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInCelestialTransit",
+            "unit_type_string0": "Fabber & Orbital",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Radar Satellite",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "priority": 100,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicRadar"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "compare0": "<",
+            "value0": 150
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Advanced - Structure",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Radar Satellite - Pri",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "priority": 102,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & (Recon | Scout) - Structure",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Radar Satellite - Other planet",
+      "to_build": "LegionOrbitalBasicRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 199,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Fighter",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": 1,
+      "priority": 100,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 15
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Fighter - Threat",
+      "to_build": "LegionOrbitalBasicFighter",
+      "instance_count": 1,
+      "priority": 200,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryBasicOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Lander",
+      "to_build": "LegionOrbitalBasicTransport",
+      "instance_count": 1,
+      "priority": 0,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryBasicOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetWithoutPresence",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Transport",
+            "compare0": "<",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Probe - Other planet",
+      "to_build": "LegionOrbitalBasicScout",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 200,
+      "builders": ["LegionFactoryBasicOrbital", "LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalBasicScout"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Death Laser",
+      "to_build": "LegionOrbitalAdvancedLaser",
+      "instance_count": 1,
+      "priority": 195,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & LaserPlatform",
+            "compare0": "<",
+            "value0": 4
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Radar Satellite",
+      "to_build": "LegionOrbitalAdvancedRadar",
+      "instance_count": 1,
+      "shared_instance_count": "ReconAssistance",
+      "cross_planet_shared_count": true,
+      "priority": 196,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & (Recon | Scout) & Advanced - Structure",
+            "compare0": "<",
+            "value0": 250
+          }
+        ],
+        [
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedRadar"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter",
+            "compare0": ">",
+            "value0": 2
+          },
+          {
+            "test_type": "OtherPlanetNeedsReconAssistance",
+            "boolean": true
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Railgun",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": 1,
+      "priority": 195,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 15
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Railgun - Threat",
+      "to_build": "LegionOrbitalAdvancedSniper",
+      "instance_count": 1,
+      "priority": 205,
+      "min_num_assisters": 2,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "BaseThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Orbital & Fighter & Advanced",
+            "compare0": "<",
+            "value0": 3
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Orbital",
+            "string1": "AntiOrbital",
+            "compare0": ">",
+            "value0": 1
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Orbital Battleship",
+      "to_build": "LegionOrbitalAdvancedBattleship",
+      "instance_count": 1,
+      "priority": 195,
+      "max_num_assisters": 5,
+      "builders": ["LegionFactoryAdvancedOrbital"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Orbital",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Orbital & Fighter & Heavy",
+            "unit_type_string1": "Orbital & Fighter",
+            "compare0": "<",
+            "value0": 0.2
+          }
+        ]
+      ]
+    }
+  ]
+}

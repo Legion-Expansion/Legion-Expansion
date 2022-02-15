@@ -1,0 +1,109 @@
+.legion .div_command_bar,
+.legion .div_orders_bar {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_legion.png")
+    26 24 26 26 fill !important;
+}
+
+.mixed .div_command_bar,
+.mixed .div_orders_bar {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_command_bar_bground_mixed.png")
+    26 24 26 26 fill !important;
+}
+
+.legion .div_command_bar_cont,
+.legion .div_orders_bar_cont {
+  box-shadow: inset 0 0 8px rgba(255, 18, 18, 0.5);
+}
+
+.mixed .div_command_bar_cont,
+.mixed .div_orders_bar_cont {
+  box-shadow: inset 0 0 8px rgba(99, 14, 138, 0.5);
+}
+
+.legion .div_command_item_active,
+.legion a.div_command_item_active:hover {
+  background: rgba(255, 0, 0, 0.7);
+  border: 1px solid rgba(158, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.mixed .div_command_item_active,
+.mixed a.div_command_item_active:hover {
+  background: rgba(179, 74, 218, 0.7);
+  border: 1px solid rgba(99, 14, 138, 0.5);
+  box-shadow: 0 0 20px rgba(179, 74, 218, 0.7);
+}
+
+.legion .div_command_item a:hover {
+  background: rgba(255, 0, 0, 0.85);
+  border: 1px solid rgba(158, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.85);
+}
+
+.mixed .div_command_item a:hover {
+  background: rgba(179, 74, 218, 0.85);
+  border: 1px solid rgba(99, 14, 138, 0.5);
+  box-shadow: 0 0 20px rgba(179, 74, 218, 0.85);
+}
+
+.legion .span_tooltip_hotkey {
+  border: 1px solid rgba(255, 0, 0, 1) !important;
+  color: rgba(255, 0, 0, 1) !important;
+}
+
+.mixed .span_tooltip_hotkey {
+  border: 1px solid rgba(159, 64, 198, 1) !important;
+  color: rgba(159, 64, 198, 1) !important;
+}
+
+.legion .tooltip-inner {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
+}
+
+.mixed .tooltip-inner {
+  box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
+}
+
+.legion .tooltip_order {
+  color: white !important;
+}
+
+.mixed .tooltip_order {
+  color: white !important;
+}
+
+.legion .btn_std_ix:hover {
+  background: rgba(255, 0, 0, 0.85) !important;
+  border: 1px solid rgba(158, 0, 0, 0.1) !important;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.2) !important;
+}
+
+.mixed .btn_std_ix:hover {
+  background: rgba(179, 74, 218, 0.85);
+  border: 1px solid rgba(99, 14, 138, 0.5);
+  box-shadow: 0 0 20px rgba(179, 74, 218, 0.85);
+}
+
+.legion .cmd_order:hover {
+  background: rgba(255, 0, 0, 0.8);
+  border: 1px solid rgba(158, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+.mixed .cmd_order:hover {
+  background: rgba(179, 74, 218, 0.8);
+  border: 1px solid rgba(99, 14, 138, 0.5);
+  box-shadow: 0 0 20px rgba(179, 74, 218, 0.8);
+}
+
+.legion .cmd_order:active {
+  background: rgba(255, 0, 0, 1);
+  border: 1px solid rgba(158, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+}
+
+.mixed .cmd_order:active {
+  background: rgba(179, 74, 218, 1);
+  border: 1px solid rgba(99, 14, 138, 0.5);
+  box-shadow: 0 0 20px rgba(179, 74, 218, 1);
+}

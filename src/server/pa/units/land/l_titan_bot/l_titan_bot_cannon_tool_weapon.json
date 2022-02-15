@@ -1,0 +1,22 @@
+{
+  "ammo_id": "/pa/units/land/l_titan_bot/l_titan_bot_cannon_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "idle_aim_delay": 2,
+  "max_range": 400,
+  "min_firing_velocity": 270,
+  "pitch_range": 90,
+  "pitch_rate": 90,
+  "rate_of_fire": 0.33,
+  "spread_fire": false,
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
+  "target_priorities": [
+    "Commander",
+    "Titan & ( Land | Naval )",
+    "Artillery & Advanced & ( Land | Naval )",
+    "Nuke | NukeDefense",
+    "Structure & Advanced & SurfaceDefense & CombatFabAdvBuild & Custom1"
+  ],
+  "yaw_range": 180,
+  "yaw_rate": 35
+}

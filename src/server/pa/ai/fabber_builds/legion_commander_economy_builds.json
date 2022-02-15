@@ -1,0 +1,146 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Basic Metal Extractor - cdr Desire",
+      "to_build": "LegionEcoBasicMetalExtractor",
+      "instance_count": 1,
+      "shared_instance_count": "BasicMetal",
+      "priority": 501,
+      "base_sort": "FromBuilder",
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber - Orbital",
+            "compare0": "<",
+            "value0": 1,
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "DesireMetal"
+          },
+          {
+            "test_type": "CanFindMetalSpotToBuildBasic",
+            "boolean": true
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fabber & (Air | Naval)",
+            "compare0": "<",
+            "value0": 1,
+            "boolean": true
+          }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Basic Energy Generator - late Desire cdr",
+      "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 350,
+      "max_num_assisters": 3,
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Basic",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Basic Energy Generator - early Desire Cdr",
+      "to_build": "LegionEcoBasicEnergyPlant",
+      "instance_count": 1,
+      "shared_instance_count": "BasicEnergy",
+      "cross_planet_shared_count": true,
+      "priority": 500,
+      "max_num_assisters": 3,
+      "builders": ["LegionCommander"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "DesireEnergy"
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Basic",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "UnitCount",
+            "unit_type_string0": "EnergyProduction & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionEcoBasicEnergyPlant"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 6,
+        "placement_type": "FromBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    }
+  ]
+}

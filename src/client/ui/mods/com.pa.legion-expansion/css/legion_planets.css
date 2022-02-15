@@ -1,0 +1,137 @@
+.legionui .div_planet_list_cont {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-right-legionui.png")
+    17 17 47 47 fill !important;
+}
+
+.mixedui .div_planet_list_cont {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img-menu-bground-right-mixed.png")
+    17 17 47 47 fill !important;
+}
+
+.legionui .div_planet_list_item_group {
+  border: 1px solid rgba(255, 0, 0, 0.5) !important;
+  box-shadow: inset 0 0 10px rgba(255, 18, 18, 0.5) !important;
+}
+
+.mixedui .div_planet_list_item_group {
+  border: 1px solid rgba(119, 34, 158, 0.4) !important;
+  box-shadow: inset 0 0 10px rgba(119, 34, 158, 0.4) !important;
+}
+
+.legionui .div_planet_list_item_group:hover {
+  border: 1px solid rgba(255, 0, 0, 1) !important;
+  background: rgba(160, 0, 0, 0.8) !important;
+}
+
+.mixedui .div_planet_list_item_group:hover {
+  border: 1px solid #639 !important;
+  background: rgba(99, 14, 138, 0.8) !important;
+}
+
+.legionui .div_planet_list_item_group:active {
+  border: 1px solid rgba(255, 0, 0, 1) !important;
+  background: rgba(255, 0, 0, 1) !important;
+  box-shadow: inset 0 0 10px rgba(255, 0, 0, 1) !important;
+}
+
+.mixedui .div_planet_list_item_group:active {
+  border: 1px solid #639 !important;
+  background: #639 !important;
+  box-shadow: inset 0 0 10px #639 !important;
+}
+
+.legionui .div_planet_list_item_active {
+  background: rgba(160, 0, 0, 1) !important;
+  border: 1px solid rgba(220, 0, 0, 1) !important;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 1) !important;
+}
+
+.mixedui .div_planet_list_item_active {
+  background: rgba(99, 14, 138, 1) !important;
+  border: 1px solid #639 !important;
+  box-shadow: 0 0 30px #639 !important;
+}
+
+.legionui .list_control_btn:hover {
+  background: #970000;
+  border: 1px solid #970000;
+  box-shadow: inset 0 0 10px #970000;
+}
+
+.mixedui .list_control_btn:hover {
+  background: #609;
+  border: 1px solid #606;
+  box-shadow: inset 0 0 10px #606;
+}
+
+.legionui .list_control_btn:active {
+  background: #900000;
+  border: 1px solid #900000;
+  box-shadow: inset 0 0 10px #900000;
+}
+
+.mixedui .list_control_btn:active {
+  background: #609;
+  border: 1px solid #609;
+  box-shadow: inset 0 0 10px #609;
+}
+
+.legionui .div_planet_list_panel {
+  color: white !important;
+  text-shadow: 0 0 10px #970000 !important;
+}
+
+.mixedui .div_planet_list_panel {
+  color: #609 !important;
+  text-shadow: 0 0 10px #609 !important;
+}
+
+.legionui .btn_planet_thumb {
+  border: 1px solid rgba(255, 0, 0, 0.8) !important;
+  box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .btn_planet_thumb {
+  border: 1px solid #609 !important;
+  box-shadow: inset 0 0 10px rgba(99, 14, 138, 0.5) !important;
+}
+
+.legionui .btn_planet_thumb:hover {
+  background: rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .btn_planet_thumb:hover {
+  background: #609 !important;
+}
+
+.legionui .btn_planet_thumb.btn_planet_thumb_active {
+  background: rgba(255, 0, 0, 0.8) !important;
+}
+
+.mixedui .btn_planet_thumb.btn_planet_thumb_active {
+  background: #609 !important;
+}
+
+.legionui .planet_title {
+  color: #fff !important;
+}
+
+.mixedui .planet_title {
+  color: #fff !important;
+}
+
+.legionui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5) !important;
+}
+
+.mixedui .tooltip-inner {
+  box-shadow: 0 0 20px rgba(99, 14, 138, 0.5) !important;
+}
+
+.legionui .div_planet_list_item_cont {
+  box-shadow: none;
+}
+
+.mixedui .div_planet_list_item_cont {
+  box-shadow: none;
+}

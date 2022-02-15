@@ -1,0 +1,39 @@
+{
+  "armor_damage_map": {
+    "AT_Air": 1.0,
+    "AT_Bot": 0,
+    "AT_Commander": 0,
+    "AT_Hover": 0,
+    "AT_Naval": 0,
+    "AT_Orbital": 0,
+    "AT_Structure": 0,
+    "AT_Vehicle": 0
+  },
+  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
+  "base_spec": "/pa/ammo/missile_seeking/missile_seeking.json",
+  "damage": 50,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+    }
+  },
+  "full_damage_splash_radius": 5,
+  "fx_trail": {
+    "filename": "/pa/effects/specs/shell_artillery_small_proj_trail.pfx",
+    "offset": [0, 0, 0]
+  },
+  "influence_radius": 900,
+  "initial_velocity": 90,
+  "lifetime": 3,
+  "max_velocity": 180,
+  "model": {
+    "filename": "/pa/units/air/shell_large/shell_large.papa"
+  },
+  "physics": {
+    "add_to_spatial_db": true,
+    "gravity_scalar": 10
+  },
+  "splash_damage": 50,
+  "splash_radius": 3
+}

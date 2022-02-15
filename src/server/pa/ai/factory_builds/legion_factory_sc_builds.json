@@ -1,0 +1,124 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Basic Assault Bot",
+      "to_build": "LegionBotBasicAssault",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic Sniper Bot",
+      "to_build": "LegionBotBasicSniper",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Basic AA Bot",
+      "to_build": "LegionBotBasicAA",
+      "instance_count": 1,
+      "priority": 100,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Light Laser Tank",
+      "to_build": "LegionVehicleBasicLaser",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Amphibious Tank",
+      "to_build": "LegionVehicleBasicHover",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Hover Artillery",
+      "to_build": "LegionVehicleBasicArtillery",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced AA Bot",
+      "to_build": "LegionBotAdvancedAA",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 10,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Legion - Advanced Laser Tank",
+      "to_build": "LegionVehicleAdvancedLaser",
+      "instance_count": -1,
+      "priority": 100,
+      "max_num_assisters": 15,
+      "builders": ["LegionOrbitalAdvancedCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

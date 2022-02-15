@@ -1,0 +1,309 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Nuke Silo",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "priority": 360,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Legion - Nuke Silo - Alone",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "priority": 505,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 10
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction - Orbital - NukeDefense - Nuke - SelfDestruct",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Legion - Nuke Silo - No Antis",
+      "to_build": "LegionDefenseAdvancedNukeSilo",
+      "instance_count": 1,
+      "shared_instance_count": "NukeSilo",
+      "priority": 478,
+      "min_num_assisters": 3,
+      "max_num_assisters": 12,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Nuke",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory & Construction & Advanced",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "AntiNuke",
+            "compare0": "<=",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedNukeSilo"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Legion - Orbital Dropper",
+      "to_build": "LegionOrbitalAdvancedCannon",
+      "instance_count": 1,
+      "shared_instance_count": "UnitCannon",
+      "priority": 0,
+      "builders": ["LegionOrbitalBasicFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "PlanetIsGasGiant",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanAffordPotentialDrain",
+            "string0": "LegionOrbitalAdvancedCannon"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Artillery & Factory",
+            "compare0": "<",
+            "value0": 5
+          },
+          {
+            "test_type": "PlanetThreat",
+            "string0": "Economy",
+            "compare0": ">",
+            "value0": 0
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionOrbitalAdvancedCannon"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2
+      }
+    },
+    {
+      "name": "Legion - Long Range Artillery",
+      "to_build": "LegionDefenseAdvancedArtillery",
+      "instance_count": 1,
+      "priority": 360,
+      "min_num_assisters": 3,
+      "max_num_assisters": 6,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 5
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Artillery & Advanced",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountAroundBase",
+            "unit_type_string0": "Structure",
+            "string0": "Enemy",
+            "value0": 600,
+            "compare0": ">=",
+            "value1": 5
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseAdvancedArtillery"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "threat": {
+          "influence_type": "AntiSurface",
+          "compare_type": "<",
+          "radius": 10,
+          "value": 50
+        }
+      }
+    },
+    {
+      "name": "Legion - Control Module",
+      "to_build": "LegionDefenseAdvancedModule",
+      "instance_count": 1,
+      "priority": 612,
+      "min_num_assisters": 8,
+      "max_num_assisters": 45,
+      "builders": [
+        "AnyLegionFabberAdvanced",
+        "LegionBotAdvancedSupportCommander"
+      ],
+      "build_conditions": [
+        [
+          {
+            "test_type": "PlanetHasUseablePlanetWeapon",
+            "boolean": true
+          },
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "PlanetCount",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Factory - Orbital",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "AlliedUnitCountOnPlanet",
+            "unit_type_string0": "LegionDefenseAdvancedModule",
+            "compare0": "<=",
+            "value0": 0,
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindControlPointToBuild",
+            "boolean": true
+          }
+        ]
+      ]
+    }
+  ]
+}

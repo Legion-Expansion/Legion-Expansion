@@ -1,0 +1,181 @@
+{
+  "build_list": [
+    {
+      "name": "Legion - Stoke Scout Platoon",
+      "to_build": "Legion_Stoke_Scout",
+      "instance_count": 5,
+      "shared_instance_count": "BotScout",
+      "priority": 100,
+      "build_conditions": [
+        [
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Tank & Amphibious & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
+            "compare0": ">=",
+            "value0": 1
+          }
+        ]
+      ],
+      "task_type": "Scout"
+    },
+    {
+      "name": "Legion - Land Raid Platoon Small",
+      "to_build": "Legion_Land_Raid_Small",
+      "instance_count": 1,
+      "priority": 109,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Land Raid Platoon Medium",
+      "to_build": "Legion_Land_Raid_Medium",
+      "instance_count": 1,
+      "priority": 108,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 4
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Land Raid Platoon Large",
+      "to_build": "Legion_Land_Raid_Large",
+      "instance_count": 1,
+      "priority": 107,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 10
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Land Raid Platoon XLarge",
+      "to_build": "Legion_Land_Raid_XLarge",
+      "instance_count": 1,
+      "priority": 106,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 20
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    },
+    {
+      "name": "Legion - Land Raid Platoon Max",
+      "to_build": "Legion_Land_Raid_Max",
+      "instance_count": 1,
+      "priority": 105,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemySurfacePresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+            "compare0": ">=",
+            "value0": 40
+          },
+          {
+            "test_type": "CanAttackWithPoolUnitsLand",
+            "string0": "WL_AnySurface",
+            "string1": "WL_AnySurface",
+            "unit_type_string0": "Mobile | Structure"
+          }
+        ]
+      ],
+      "task_type": "LandAttack"
+    }
+  ]
+}

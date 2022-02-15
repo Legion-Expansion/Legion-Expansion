@@ -1,0 +1,121 @@
+.legion .div_build_bar_menu_cont {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_legion.png")
+    35 35 23 35 fill !important;
+}
+
+.mixed .div_build_bar_menu_cont {
+  border-image: url("coui://ui/mods/com.pa.legion-expansion/img/img_build_bar_menu_bground_mixed.png")
+    35 35 23 35 fill !important;
+}
+
+.legion .div_build_bar_page {
+  border-left: 1px solid #970000;
+  border-top: 1px solid #970000;
+  box-shadow: 0 0 50px rgba(158, 0, 0, 0.5);
+}
+
+.mixed .div_build_bar_page {
+  border-left: 1px solid #606;
+  border-top: 1px solid #606;
+  box-shadow: 0 0 50px rgba(99, 14, 138, 0.5);
+}
+
+.legion .div_build_bar_page.active_build_tab {
+  border-left: 1px solid #f00;
+  border-top: 1px solid #f00;
+  border-right: 1px solid #f00;
+  border-bottom: 1px solid #f00;
+  box-shadow: 0 0 50px #f00;
+}
+
+.mixed .div_build_bar_page.active_build_tab {
+  border-left: 1px solid #639;
+  border-top: 1px solid #639;
+  border-right: 1px solid #639;
+  border-bottom: 1px solid #639;
+  box-shadow: 0 0 50px #639;
+}
+
+.legion .div_build_item {
+  border-right-color: #970000;
+  border-bottom-color: #970000;
+}
+
+.mixed .div_build_item {
+  border-right-color: #606;
+  border-bottom-color: #606;
+}
+
+.legion .span_hotkey {
+  border: 1px solid #f00 !important;
+  color: #fff !important;
+}
+
+.mixed .span_hotkey {
+  border: 1px solid #639 !important;
+  color: #fff !important;
+}
+
+.legion .div_build_item:hover {
+  background: rgba(255, 0, 0, 0.85);
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.85) !important;
+}
+
+.mixed .div_build_item.hover {
+  background: rgba(139, 54, 178, 0.85) !important;
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+  box-shadow: 0 0 20px rgba(139, 54, 178, 0.85) !important;
+}
+
+.legion .div_build_item.active {
+  background: rgba(255, 0, 0, 0.7);
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7) !important;
+}
+
+.mixed .div_build_item:active {
+  background: #639 !important;
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+  box-shadow: 0 0 10px rgba(99, 14, 138, 0.5) !important;
+}
+
+.legion .span_build_bar_tab {
+  color: #f00;
+  text-shadow: 0 0 30px #f00;
+  border-right-color: #333;
+  border-left-color: #333;
+  border-bottom-color: #444;
+  background: #1d1d1d;
+}
+
+.mixed .span_build_bar_tab {
+  color: #609;
+  text-shadow: 0 0 30px #609;
+  border-right-color: #333;
+  border-left-color: #333;
+  border-bottom-color: #444;
+  background: #1d1d1d;
+}
+
+.legion .span_build_bar_tab:hover {
+  background: #f00;
+  text-shadow: 0 0 30px #f00;
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+}
+
+.mixed .span_build_bar_tab:hover {
+  background: #609;
+  text-shadow: 0 0 30px #609;
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+}
+
+.legion .span_build_bar_tab_active {
+  border: 1px solid rgba(158, 0, 0, 0.5) !important;
+  box-shadow: 0 0 10px #f00 !important;
+}
+
+.mixed .span_build_bar_tab_active {
+  border: 1px solid rgba(99, 14, 138, 0.5) !important;
+  box-shadow: 0 0 10px #609 !important;
+}
