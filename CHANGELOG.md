@@ -7,6 +7,8 @@
 - Air
   - Firebird
     - Health reduced from 300 to 240
+  - Loki
+    - Health increased from 9000 to 11250
   - Scythe
     - Health reduced from 150 to 120
 - Land
