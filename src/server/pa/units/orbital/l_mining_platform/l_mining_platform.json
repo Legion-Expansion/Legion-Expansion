@@ -57,7 +57,7 @@
   },
   "placement_size": [100, 100],
   "production": {
-    "energy": 7500,
+    "energy": 3750,
     "metal": 30
   },
   "recon": {

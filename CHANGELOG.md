@@ -34,6 +34,7 @@
 - Orbital
   - Rig
     - Storage removed
+    - Energy production reduced from 7000 to 3750
 
 ## v1.22.0 - 2022-02-16
 
