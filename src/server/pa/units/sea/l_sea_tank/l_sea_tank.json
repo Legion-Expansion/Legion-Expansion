@@ -56,7 +56,7 @@
     "filename": "/pa/units/sea/l_sea_tank/l_sea_tank.papa"
   },
   "navigation": {
-    "acceleration": 4,
+    "acceleration": 30,
     "brake": 25,
     "move_speed": 20,
     "turn_speed": 65

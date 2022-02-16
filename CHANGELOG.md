@@ -41,6 +41,9 @@
   - Rig
     - Storage removed
     - Energy production reduced from 7000 to 3750
+- Sea
+  - Hammerhead
+    - Acceleration increased from 4 to 30
 
 ## v1.22.0 - 2022-02-16
 
