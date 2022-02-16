@@ -40,6 +40,8 @@
     - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
 - Orbital
+  - Imperator
+    - Meteoroids can now be controlled
   - Starcannon
     - Energy demand increased from 1900 to 2250
 - Sea
