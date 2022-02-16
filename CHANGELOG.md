@@ -25,6 +25,8 @@
   - Praetorian
     - Range increased from 100 to 110
     - Build range increased from 20 to 30
+  - Scarab
+    - Cost increased from 500 to 550
   - Thor
     - Health reduced from 80,000 to 60,000
 
