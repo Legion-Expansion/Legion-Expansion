@@ -11,102 +11,99 @@
         "type": "bind_pose"
       },
       "living": {
-        "func": "has_build_target",
-        "node_0": {
-          "entries": [
-            {
-              "name": "idle",
-              "node": {
-                "type": "bind_pose"
-              },
-              "transitions": [
-                {
-                  "transition_forward": {
-                    "func": "has_build_target",
-                    "target": "build_start"
-                  },
-                  "transition_reverse": {
-                    "func": "has_build_target",
-                    "target": "build_end"
-                  }
-                }
-              ],
-              "type": "sequence_entry"
+        "entries": [
+          {
+            "name": "idle",
+            "node": {
+              "type": "bind_pose"
             },
-            {
-              "name": "build_start",
-              "node": {
-                "anim_name": "build_start",
-                "looping": false,
-                "type": "playback"
-              },
-              "reset": "playback_reset",
-              "transitions": [
-                {
-                  "transition_forward": {
-                    "func": "anim_complete",
-                    "target": "build_loop"
-                  },
-                  "transition_reverse": {
-                    "func": "anim_complete",
-                    "target": "idle"
-                  }
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "has_build_target",
+                  "target": "build_start"
+                },
+                "transition_reverse": {
+                  "func": "has_build_target",
+                  "target": "build_end"
                 }
-              ],
-              "type": "sequence_entry"
-            },
-            {
-              "name": "build_loop",
-              "node": {
-                "anim_name": "build_loop",
-                "looping": true,
-                "type": "playback"
-              },
-              "reset": "playback_reset",
-              "transitions": [
-                {
-                  "transition_forward": {
-                    "func": "no_build_target_and_anim_complete",
-                    "target": "build_end"
-                  },
-                  "transition_reverse": {
-                    "func": "no_build_target_and_anim_complete",
-                    "target": "build_start"
-                  }
-                }
-              ],
-              "type": "sequence_entry"
-            },
-            {
-              "name": "build_end",
-              "node": {
-                "anim_name": "build_end",
-                "looping": false,
-                "type": "playback"
-              },
-              "reset": "playback_reset",
-              "transitions": [
-                {
-                  "transition_forward": {
-                    "func": "anim_complete",
-                    "target": "idle"
-                  },
-                  "transition_reverse": {
-                    "func": "anim_complete",
-                    "target": "build_loop"
-                  }
-                }
-              ],
-              "type": "sequence_entry"
-            }
-          ],
-          "transition_seek": {
-            "false_target": "idle",
-            "func": "has_build_target",
-            "true_target": "build_loop"
+              }
+            ],
+            "type": "sequence_entry"
           },
-          "type": "sequence"
-        }
+          {
+            "name": "build_start",
+            "node": {
+              "anim_name": "build_start",
+              "looping": false,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "build_loop"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          },
+          {
+            "name": "build_loop",
+            "node": {
+              "anim_name": "build_loop",
+              "looping": true,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "no_build_target_and_anim_complete",
+                  "target": "build_end"
+                },
+                "transition_reverse": {
+                  "func": "no_build_target_and_anim_complete",
+                  "target": "build_start"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          },
+          {
+            "name": "build_end",
+            "node": {
+              "anim_name": "build_end",
+              "looping": false,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "idle"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "build_loop"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          }
+        ],
+        "transition_seek": {
+          "false_target": "idle",
+          "func": "has_build_target",
+          "true_target": "build_loop"
+        },
+        "type": "sequence"
       }
     },
     "type": "unit_state"

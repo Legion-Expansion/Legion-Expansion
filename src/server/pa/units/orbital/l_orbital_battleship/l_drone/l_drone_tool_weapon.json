@@ -4,6 +4,7 @@
   "target_priorities": [
     "Commander",
     "OrbitalDefense",
+    "AirDefense",
     "Air",
     "Mobile",
     "Structure - Wall",

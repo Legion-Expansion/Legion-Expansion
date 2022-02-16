@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.22.0 - 2022-02-16
 
 ### General
 
@@ -15,6 +15,8 @@
     - Damage to air increased from 50% to 100%
   - Meteoroid
     - Damage to structures decreased from 150% to 100%
+    - Increased guard radius from 100 to 250
+    - Give higher priority to air defences
 - Land
   - Advanced Mass Extractor
     - Build cost decreased from 2000 to 1800
@@ -33,7 +35,7 @@
     - Damage to commanders decreased from 133% to 100%
     - Damage to structures decreased from 133% to 100%
     - Damage to vehicles decreased from 133% to 100%
-    - Damage increased from 125 to 167
+    - Damage increased from 125 to 166
   - Panzer
     - Damage to structures decreased from 300% to 100%
   - Peacekeeper
@@ -43,6 +45,8 @@
     - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
 - Orbital
+  - Imperator
+    - Meteoroids can now be controlled
   - Starcannon
     - Energy demand increased from 1900 to 2250
 - Sea
@@ -82,6 +86,40 @@
 - One of the Imperator's side-guns not firing
 - Imperator moves into range of all its guns when attacking orbital targets
 - Viper not firing when chasing a target
+- Particle shape for nuke explosions
+- Supernova causing an error to be logged when built
+- UI style errors
+- Black Knight idle animation not playing
+
+### Strategic Icons
+
+With thanks to Quildtide for these.
+
+- Fixed inconsistent energy symbol for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+- Fixed inconsistent radar symbol for:
+  - Radar
+  - Overseer
+- Fixed inconsistent targeting symbol for:
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
+- Fixed inconsistent metal symbol for OmniSilo Storage
+- Fixed inconsistent walker/armour symbols for Starcannon
+- Replaced all #FFF100 with #FFFF00 for Radar
+- Horizontally centered icons for:
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - OmniSilo Storage
+  - Starcannon
+  - Radar
+  - Shredder
+  - Archer
+  - Ripple
+  - Tsunami
 
 ## v1.21.0 - 2021-08-05
 

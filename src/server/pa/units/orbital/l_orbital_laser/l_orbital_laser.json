@@ -28,6 +28,9 @@
   "max_health": 900,
   "mesh_bounds": [38, 38, 40],
   "model": {
+    "animations": {
+      "idle": "/pa/units/orbital/l_orbital_laser/l_orbital_laser_open.papa"
+    },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/orbital/l_orbital_laser/l_orbital_laser.papa"
   },

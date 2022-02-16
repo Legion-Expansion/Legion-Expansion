@@ -1,8 +1,6 @@
 {
   "display_name": "!LOC:Meteoroid",
   "base_spec": "/pa/units/air/l_air_carrier/l_drone/l_drone.json",
-  "command_caps": [],
-  "guard_radius": 100,
   "selection_icon": {
     "diameter": -1
   },
