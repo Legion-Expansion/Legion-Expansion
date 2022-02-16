@@ -8,8 +8,31 @@
 
 ### Balance
 
-- Jackal
-  - Cost decreased from 350 to 325
+- Air
+  - Firebird
+    - Health reduced from 300 to 240
+  - Lockheed
+    - Health reduced from 400 to 350
+  - Loki
+    - Health increased from 9000 to 11250
+  - Scythe
+    - Health reduced from 150 to 120
+- Land
+  - Advanced Mass Extractor
+    - Build cost decreased from 2000 to 1800
+    - Metal production increased from 16 to 18
+    - Health reduced from 5000 to 3000
+  - Havoc
+    - Range reduced from 115 to 110
+  - Jackal
+    - Cost decreased from 350 to 325
+  - Praetorian
+    - Range increased from 100 to 110
+    - Build range increased from 20 to 30
+  - Scarab
+    - Cost increased from 500 to 550
+  - Thor
+    - Health reduced from 80,000 to 60,000
 
 ## v1.22.0 - 2022-02-16
 
