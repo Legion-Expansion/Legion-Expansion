@@ -75,10 +75,6 @@
   "selection_icon": {
     "diameter": -83
   },
-  "storage": {
-    "energy": 50000,
-    "metal": 10000
-  },
   "unit_types": [
     "UNITTYPE_Orbital",
     "UNITTYPE_FabOrbBuild",
