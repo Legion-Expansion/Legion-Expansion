@@ -14,5 +14,6 @@
   "physics": {
     "add_to_spatial_db": true
   },
-  "turn_rate": 360
+  "turn_rate": 360,
+  "armor_damage_map": { "AT_Structure": 1.0 }
 }

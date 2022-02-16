@@ -9,6 +9,7 @@
   "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
   "target_priorities": [
     "Commander",
+    "AirDefense",
     "Air",
     "Mobile",
     "Structure - Wall",

@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.22.0 - 222-02-15
+## v1.22.0 - 2022-02-16
 
 ### General
 
@@ -15,6 +15,8 @@
     - Damage to air increased from 50% to 100%
   - Meteoroid
     - Damage to structures decreased from 150% to 100%
+    - Increased guard radius from 100 to 250
+    - Give higher priority to air defences
 - Land
   - Armour Foundry
     - Build cost decreased from 660 to 600
@@ -38,6 +40,8 @@
     - Energy demand increased from 640 to 765
     - Metal demand increased from 15 to 17
 - Orbital
+  - Imperator
+    - Meteoroids can now be controlled
   - Starcannon
     - Energy demand increased from 1900 to 2250
 - Sea
@@ -78,6 +82,9 @@
 - Imperator moves into range of all its guns when attacking orbital targets
 - Viper not firing when chasing a target
 - Particle shape for nuke explosions
+- Supernova causing an error to be logged when built
+- UI style errors
+- Black Knight idle animation not playing
 
 ### Strategic Icons
 
