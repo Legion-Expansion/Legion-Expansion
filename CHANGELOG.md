@@ -22,6 +22,7 @@
     - Range reduced from 115 to 110
   - Praetorian
     - Range increased from 100 to 110
+    - Build range increased from 20 to 30
 
 ## v1.22.0 - 2022-02-16
 
