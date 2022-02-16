@@ -26,6 +26,8 @@
     - Range reduced from 115 to 110
   - Jackal
     - Cost decreased from 350 to 325
+  - Maul
+    - Speed increased from 8 to 10
   - Monstrosity
     - Turret yaw rate increased from 30 to 45
   - Praetorian
