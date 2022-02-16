@@ -20,6 +20,8 @@
     - Health reduced from 5000 to 3000
   - Havoc
     - Range reduced from 115 to 110
+  - Praetorian
+    - Range increased from 100 to 110
 
 ## v1.22.0 - 2022-02-16
 
