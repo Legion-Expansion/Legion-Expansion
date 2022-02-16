@@ -22,6 +22,8 @@
     - Range reduced from 115 to 110
   - Jackal
     - Cost decreased from 350 to 325
+  - Monstrosity
+    - Turret yaw rate increased from 30 to 45
   - Praetorian
     - Range increased from 100 to 110
     - Build range increased from 20 to 30
