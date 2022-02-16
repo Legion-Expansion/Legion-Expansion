@@ -4,6 +4,9 @@
 
 ### Balance
 
+- Air
+  - Scythe
+    - Health reduced from 150 to 120
 - Land
   - Advanced Mass Extractor
     - Build cost decreased from 2000 to 1800
