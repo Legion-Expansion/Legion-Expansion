@@ -20,11 +20,11 @@
     - Health reduced from 5000 to 3000
   - Havoc
     - Range reduced from 115 to 110
+  - Jackal
+    - Cost decreased from 350 to 325
   - Praetorian
     - Range increased from 100 to 110
     - Build range increased from 20 to 30
-  - Jackal
-    - Cost decreased from 350 to 325
   - Thor
     - Health reduced from 80,000 to 60,000
 
