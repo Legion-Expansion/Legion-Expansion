@@ -5,6 +5,8 @@
 ### Balance
 
 - Air
+  - Firebird
+    - Health reduced from 300 to 240
   - Scythe
     - Health reduced from 150 to 120
 - Land
