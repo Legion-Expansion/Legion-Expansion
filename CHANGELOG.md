@@ -6,6 +6,11 @@
 
 - Improved Tyr effects
 
+### Balance
+
+- Jackal
+  - Cost decreased from 350 to 325
+
 ## v1.22.0 - 2022-02-16
 
 ### General
