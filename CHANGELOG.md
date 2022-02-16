@@ -23,6 +23,8 @@
   - Praetorian
     - Range increased from 100 to 110
     - Build range increased from 20 to 30
+  - Thor
+    - Health reduced from 80,000 to 60,000
 
 ## v1.22.0 - 2022-02-16
 
