@@ -7,6 +7,8 @@
 - Air
   - Firebird
     - Health reduced from 300 to 240
+  - Lockheed
+    - Health reduced from 400 to 350
   - Loki
     - Health increased from 9000 to 11250
   - Scythe

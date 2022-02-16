@@ -60,7 +60,7 @@
     }
   ],
   "guard_layer": "WL_AnySurface",
-  "max_health": 400,
+  "max_health": 350,
   "mesh_bounds": [8.5, 11.5, 3.6193],
   "model": {
     "animations": {
