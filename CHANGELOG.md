@@ -28,6 +28,8 @@
     - Range decreased from 75 to 70
   - Maul
     - Speed increased from 8 to 10
+  - Miniman
+    - Speed increased from 8 to 10
   - Monstrosity
     - Turret yaw rate increased from 30 to 45
   - Panzer
