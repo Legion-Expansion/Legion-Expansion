@@ -50,7 +50,7 @@
   - Scarab
     - Cost increased from 500 to 550
   - Scorpion
-    - Reduced range from 150 to 140
+    - Range reduced from 150 to 140
   - Thor
     - Health reduced from 80,000 to 60,000
 - Orbital
