@@ -5,6 +5,7 @@
 ### General
 
 - Improved Tyr effects
+- Bots brake instantly
 
 ### Balance
 
