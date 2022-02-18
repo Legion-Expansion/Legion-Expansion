@@ -30,6 +30,7 @@
     - Chained damage reduced from 1500 -> 750 -> 1500 to 750 -> 750 -> 750
   - Hive
     - Nanoswarm damage type changed to metal
+    - Nanoswarm damage reduced from 30 to 5
   - Investigator
     - Radar range decreased from 350 to 300
   - Jackal
