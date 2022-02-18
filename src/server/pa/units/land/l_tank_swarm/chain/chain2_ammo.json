@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 1500,
+  "damage": 750,
   "fx_trail": {
     "filename": "/pa/units/land/l_tank_swarm/l_tank_swarm_trail.pfx"
   },
