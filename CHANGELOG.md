@@ -28,6 +28,8 @@
     - Turret yaw rate increased from 30 to 45
   - Panzer
     - Speed increased from 10 to 14
+  - Purger
+    - Health reduced from 40 to 20
   - Praetorian
     - Range increased from 100 to 110
     - Build range increased from 20 to 30
