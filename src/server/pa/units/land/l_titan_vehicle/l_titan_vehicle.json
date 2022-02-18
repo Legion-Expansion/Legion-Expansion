@@ -171,7 +171,7 @@
     "filename": "/pa/units/land/l_titan_vehicle/l_titan_vehicle.papa"
   },
   "navigation": {
-    "acceleration": 5,
+    "acceleration": 100,
     "brake": 5,
     "move_speed": 10,
     "park_stamp": {
