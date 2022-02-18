@@ -25,9 +25,9 @@
     - Health reduced from 5000 to 3000
   - Havoc
     - Projectiles per shot reduced from 2 to 1
-    - Chain vision increased from 10 to 50
-    - Chain range increased from 25 to 50
-    - Chain2's damage reduced from 1500 to 750
+    - Chain jump vision increased from 10 to 50
+    - Chain jump range increased from 25 to 50
+    - Chained damage reduced from 1500 -> 750 -> 1500 to 750 -> 750 -> 750
   - Investigator
     - Radar range decreased from 350 to 300
   - Jackal
