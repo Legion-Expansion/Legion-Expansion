@@ -39,6 +39,7 @@
   - Peacekeeper
     - Cost increased from 60 to 75
     - Health increased from 150 to 165
+    - Range decreased from 75 to 70
   - Purger
     - Health reduced from 40 to 20
   - Praetorian
