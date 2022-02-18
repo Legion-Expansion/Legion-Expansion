@@ -28,6 +28,8 @@
     - Radar range decreased from 350 to 300
   - Jackal
     - Cost decreased from 350 to 325
+  - Lancer
+    - Range decreased from 75 to 70
   - Maul
     - Speed increased from 8 to 10
   - Monstrosity
