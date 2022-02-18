@@ -5,6 +5,7 @@
 ### General
 
 - Improved Tyr effects
+- Bots brake instantly
 
 ## v1.22.0 - 2022-02-16
 

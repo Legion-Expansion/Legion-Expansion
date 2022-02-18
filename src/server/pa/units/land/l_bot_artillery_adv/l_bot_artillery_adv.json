@@ -85,7 +85,7 @@
   "navigation": {
     "acceleration": 10,
     "aggressive_distance": 90,
-    "brake": 100,
+    "brake": -1,
     "group_preference": "front",
     "move_speed": 12,
     "turn_accel": 45,
