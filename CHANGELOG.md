@@ -39,7 +39,8 @@
   - Monstrosity
     - Turret yaw rate increased from 30 to 45
   - Odin
-    Acceleration increased from 5 to 100
+    - Acceleration increased from 5 to 100
+    - Braking increased from 5 to 100
   - Panzer
     - Speed increased from 10 to 14
   - Peacekeeper
