@@ -28,6 +28,7 @@
     - Range reduced from 115 to 110
     - Projectiles per shot reduced from 2 to 1
     - Chain vision increased from 10 to 50
+    - Chain range in increased from 25 to 50
   - Investigator
     - Radar range decreased from 350 to 300
   - Jackal
