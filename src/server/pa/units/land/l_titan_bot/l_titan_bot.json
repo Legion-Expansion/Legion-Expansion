@@ -91,7 +91,7 @@
     "walk_speed": 15
   },
   "navigation": {
-    "acceleration": 10,
+    "acceleration": 100,
     "brake": -1,
     "maintain_priority_target": true,
     "move_speed": 11,

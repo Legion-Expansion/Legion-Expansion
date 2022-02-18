@@ -55,6 +55,7 @@
     - Range reduced from 150 to 140
   - Thor
     - Health reduced from 80,000 to 60,000
+    - Acceleration increased from 10 to 100
 - Orbital
   - Rig
     - Storage removed
