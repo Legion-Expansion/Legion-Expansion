@@ -92,7 +92,7 @@
   },
   "navigation": {
     "acceleration": 10,
-    "brake": 10,
+    "brake": -1,
     "maintain_priority_target": true,
     "move_speed": 11,
     "park_stamp": {
