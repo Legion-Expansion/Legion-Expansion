@@ -4,7 +4,7 @@
   "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,
-  "max_range": 25,
+  "max_range": 50,
   "pitch_range": 360,
   "pitch_rate": 3600,
   "rate_of_fire": 10,
