@@ -25,6 +25,7 @@
     - Health reduced from 5000 to 3000
   - Havoc
     - Range reduced from 115 to 110
+    - Projectiles per shot reduced from 2 to 1
   - Investigator
     - Radar range decreased from 350 to 300
   - Jackal

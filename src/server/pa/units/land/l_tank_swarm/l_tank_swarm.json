@@ -105,7 +105,7 @@
         "gun003",
         "gun006"
       ],
-      "projectiles_per_fire": 2,
+      "projectiles_per_fire": 1,
       "record_index": 0,
       "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_tool_weapon.json"
     },
