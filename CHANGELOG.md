@@ -25,7 +25,6 @@
     - Metal production increased from 16 to 18
     - Health reduced from 5000 to 3000
   - Havoc
-    - Range reduced from 115 to 110
     - Projectiles per shot reduced from 2 to 1
     - Chain vision increased from 10 to 50
     - Chain range in increased from 25 to 50
