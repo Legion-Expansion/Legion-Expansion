@@ -32,6 +32,8 @@
     - Turret yaw rate increased from 30 to 45
   - Panzer
     - Speed increased from 10 to 14
+  - Peacekeeper
+    - Cost increased from 60 to 75
   - Purger
     - Health reduced from 40 to 20
   - Praetorian
