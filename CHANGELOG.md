@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Bots brake instantly
+
 ### Balance
 
 - Air
