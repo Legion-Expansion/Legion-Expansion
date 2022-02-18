@@ -6,6 +6,7 @@
 
 - Improved Tyr effects
 - Bots brake instantly
+- Tank braking aligned to acceleration
 
 ## v1.22.0 - 2022-02-16
 
