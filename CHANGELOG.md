@@ -28,6 +28,8 @@
     - Chain jump vision increased from 10 to 50
     - Chain jump range increased from 25 to 50
     - Chained damage reduced from 1500 -> 750 -> 1500 to 750 -> 750 -> 750
+  - Hive
+    - Nanoswarm damage type changed to metal
   - Investigator
     - Radar range decreased from 350 to 300
   - Jackal
