@@ -8,6 +8,10 @@
 - Bots brake instantly
 - Tank braking aligned to acceleration
 
+### AI
+
+- Builds the Hive
+
 ## v1.22.0 - 2022-02-16
 
 ### General
