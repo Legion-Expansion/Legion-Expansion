@@ -99,10 +99,6 @@
     - Increased guard radius from 100 to 250
     - Give higher priority to air defences
 - Land
-  - Advanced Mass Extractor
-    - Build cost decreased from 2000 to 1800
-    - Metal production increased from 16 to 18
-    - Health reduced from 5000 to 3000
   - Armour Foundry
     - Build cost decreased from 660 to 600
     - Energy demand increased from 640 to 765
@@ -111,7 +107,6 @@
     - Increased standard deviation of shots from 0 to 1
   - Havoc
     - Damage to commanders increased from 67% to 100%
-    - Range reduced from 115 to 110
   - Lancer
     - Damage to commanders decreased from 133% to 100%
     - Damage to structures decreased from 133% to 100%
