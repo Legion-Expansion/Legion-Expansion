@@ -23,6 +23,8 @@
     - Build cost decreased from 2000 to 1800
     - Metal production increased from 16 to 18
     - Health reduced from 5000 to 3000
+  - Deathmark
+    - Health increased from 125 to 250
   - Havoc
     - Projectiles per shot reduced from 2 to 1
     - Chain jump vision increased from 10 to 50
