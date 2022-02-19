@@ -588,6 +588,136 @@
       }
     },
     {
+      "name": "Legion - Nanoswarm Land Defense",
+      "to_build": "LegionDefenseBasicSwarm",
+      "instance_count": 1,
+      "priority": 85,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyLegionFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicSwarm"
+          }
+        ],
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 2
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (Tactical | Artillery)",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicSwarm"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 50,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "Legion - Nanoswarm Land Defense - Threat",
+      "to_build": "LegionDefenseBasicSwarm",
+      "instance_count": 1,
+      "priority": 262,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyLegionFabberBasic"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & SurfaceDefense",
+            "compare0": "<",
+            "value0": 4
+          },
+          {
+            "test_type": "PlanetHighestEnemyArmyThreatRatio",
+            "string0": "Land",
+            "string1": "AntiSurface",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & (EnergyProduction | Factory)",
+            "compare0": ">=",
+            "value0": 3
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionDefenseBasicSwarm"
+          }
+        ]
+      ],
+      "placement_rules": {
+        "buffer": 2,
+        "placement_type": "FromMainBaseCenter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 50,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Basic & SurfaceDefense",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 75,
+            "count": 2
+          }
+        ]
+      }
+    },
+    {
       "name": "Legion - Basic Artillery",
       "to_build": "LegionDefenseBasicArtillery",
       "instance_count": 1,
