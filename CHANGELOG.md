@@ -27,6 +27,7 @@
   - Deathmark
     - Health increased from 125 to 250
     - Turn speed increased from 60 to 90
+    - Turret yaw rate increased from 30 to 60
   - Havoc
     - Projectiles per shot reduced from 2 to 1
     - Chain jump vision increased from 10 to 50
