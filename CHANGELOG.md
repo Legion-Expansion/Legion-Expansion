@@ -74,6 +74,10 @@
     - Acceleration increased from 4 to 30
     - Brake increased from 25 to 80
 
+### AI
+
+- Builds the Hive
+
 ## v1.22.0 - 2022-02-16
 
 ### General
