@@ -1,5 +1,11 @@
 # CHANGELOG
 
+### Unreleased
+
+### General
+
+- Improved Tyr effects
+
 ## v1.22.0 - 2022-02-16
 
 ### General
