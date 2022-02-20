@@ -4,6 +4,7 @@
 
 ### General
 
+- Improved Tyr effects
 - Bots brake instantly
 - Tank braking aligned to acceleration
 
