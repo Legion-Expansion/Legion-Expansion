@@ -7,6 +7,7 @@
 - Improved Tyr effects
 - Bots brake instantly
 - Tank braking aligned to acceleration
+- Further improved PNG compression to reduce mod size
 
 ### AI
 
