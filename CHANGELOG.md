@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+### Fixed
+
+- Factories not blocking projectiles properly for: (With thanks to Taiga for the report) 
+  - Armour Foundry
+  - Flyer Foundry
+  - Walker Foundry
+  - Ship Foundry
+  - Advanced Armour Foundry
+  - Advanced Flyer Foundry
+  - Advanced Walker Foundry
+  - Advanced Ship Foundry
+
+
 ## v1.22.0 - 2022-02-16
 
 ### General
