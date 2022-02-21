@@ -13,6 +13,10 @@
 
 - Builds the Hive
 
+### Fixed
+
+- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo
+
 ## v1.22.0 - 2022-02-16
 
 ### General
