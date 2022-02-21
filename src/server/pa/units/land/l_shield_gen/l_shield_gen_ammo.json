@@ -2,7 +2,7 @@
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
   "collision_check": "target",
   "collision_response": "destroy",
-  "damage": 400,
+  "damage": 0,
   "fx_beam_spec": "/pa/effects/specs/none.pfx",
   "fx_collision_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_hit.pfx",
   "splash_damage": 0,
