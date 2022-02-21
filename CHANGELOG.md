@@ -7,6 +7,7 @@
 - Improved Tyr effects
 - Bots brake instantly
 - Tank braking aligned to acceleration
+- Further improved PNG compression to reduce mod size
 
 ### Balance
 
@@ -64,6 +65,10 @@
 ### AI
 
 - Builds the Hive
+
+### Fixed
+
+- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo
 
 ## v1.22.0 - 2022-02-16
 
