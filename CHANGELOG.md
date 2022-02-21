@@ -52,6 +52,7 @@
     - Build range increased from 20 to 30
   - Rampart
     - Energy consumption increased from 0 to 1200
+    - Energy efficiency requirement reduced from 100% to 90%
   - Scarab
     - Cost increased from 500 to 550
   - Scorpion

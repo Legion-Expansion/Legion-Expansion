@@ -13,7 +13,7 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/l_shield_gen/l_shield_gen_death.json"
   },
-  "energy_efficiency_requirement": 1,
+  "energy_efficiency_requirement": 0.9,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
