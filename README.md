@@ -56,8 +56,8 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 To create a copy for testing local changes:
 
 1. Install [Python 3](https://www.python.org/)
-2. Checkout origin/balance:
-   `git clone -b balance --recurse-submodules git@github.com:Legion-Expansion/Legion-Expansion.git`
+2. Checkout origin/develop:
+   `git clone -b develop --recurse-submodules git@github.com:Legion-Expansion/Legion-Expansion.git`
 3. Run `src/install_devel.py`
 4. Run PA and click on `Community Mods`
 5. Enable the "DEVELOPMENT" version of the mod
@@ -82,7 +82,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 
 ### Committing
 
-1. Don't commit broken stuff to BALANCE. Develop, test and fix in your local, a feature branch, or your own fork.
+1. Don't commit broken stuff to DEVELOP. Develop, test and fix in your local, a feature branch, or your own fork.
 2. Minimise changes as much as possible. Ensure that your files are properly formatted to avoid whitespace only changes
 3. Fix all missing file issues when running `src/install_devel.py`
 4. Use correct casing when referencing files to prevent issues on Linux.
@@ -94,11 +94,11 @@ Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successf
 
 - MASTER - release candidate; can be forked to HOTFIX-x.x.x; used to create release versions; never to be directly committed to
 
-- BALANCE - development; forked to FEATURE-_name_
+- DEVELOP - development; forked to FEATURE-_name_
 
-- FEATURE-_name_ - a feature which is still in development; merged into BALANCE on completion
+- FEATURE-_name_ - a feature which is still in development; merged into DEVELOP on completion
 
-- HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and BALANCE
+- HOTFIX-x.x.x - a critical fix for a current release; forks from MASTER and merged into MASTER and DEVELOP
 
 ### Release Process
 
@@ -122,7 +122,7 @@ The script in `src/install_prod.py` depends on those locations.
 #### Release Using `src/install_prod.py`
 
 1. Bump the version number in `src/base_modinfo.json`
-1. Merge balance into master
+1. Merge develop into master
 1. Create release from master and tag with version number
 1. Run `src/install_prod.py`
 1. Inspect output and check for errors or warnings

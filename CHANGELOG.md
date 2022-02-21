@@ -7,6 +7,63 @@
 - Improved Tyr effects
 - Bots brake instantly
 - Tank braking aligned to acceleration
+- Further improved PNG compression to reduce mod size
+
+### Balance
+
+- Land
+  - Deathmark
+    - Health increased from 125 to 250
+    - Turn speed increased from 60 to 90
+    - Turret yaw rate increased from 30 to 60
+  - Havoc
+    - Projectiles per shot reduced from 2 to 1
+    - Chain jump vision increased from 10 to 50
+    - Chain jump range increased from 25 to 50
+    - Chained damage reduced from 1500 -> 750 -> 1500 to 750 -> 750 -> 750
+  - Hive
+    - Nanoswarm damage type changed to metal
+    - Nanoswarm damage reduced from 30 to 5
+  - Investigator
+    - Radar range decreased from 350 to 300
+  - Jackal
+    - Cost decreased from 350 to 325
+  - Lancer
+    - Range decreased from 75 to 70
+  - Maul
+    - Speed increased from 8 to 10
+  - Miniman
+    - Speed increased from 8 to 10
+  - Monstrosity
+    - Turret yaw rate increased from 30 to 45
+  - Odin
+    - Acceleration increased from 5 to 100
+    - Braking increased from 5 to 100
+  - Panzer
+    - Speed increased from 10 to 14
+  - Peacekeeper
+    - Cost increased from 60 to 75
+    - Health increased from 150 to 165
+    - Range decreased from 75 to 70
+  - Purger
+    - Health reduced from 40 to 20
+  - Praetorian
+    - Range increased from 100 to 110
+    - Build range increased from 20 to 30
+  - Rampart
+    - Energy consumption increased from 0 to 1200
+    - Energy efficiency requirement reduced from 100% to 90%
+  - Scarab
+    - Cost increased from 500 to 550
+  - Scorpion
+    - Range reduced from 150 to 140
+  - Thor
+    - Health reduced from 80,000 to 60,000
+    - Acceleration increased from 10 to 100
+- Sea
+  - Hammerhead
+    - Acceleration increased from 4 to 30
+    - Brake increased from 25 to 80
 
 ### Balance
 
@@ -81,6 +138,10 @@
 ### AI
 
 - Builds the Hive
+
+### Fixed
+
+- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo
 
 ## v1.22.0 - 2022-02-16
 
