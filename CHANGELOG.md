@@ -72,6 +72,7 @@
 ### Fixed
 
 - Rampart blocking three times as many shots as intended due to change in engine's handling of ammo
+- Removed Rampart's energy efficiency requirement as it only led to the appearance of a non-operational unit
 
 ## v1.22.0 - 2022-02-16
 
