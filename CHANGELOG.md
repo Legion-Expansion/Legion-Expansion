@@ -4,9 +4,19 @@
 
 ### General
 
+- Improved Tyr effects
+- Bots brake instantly
+- Tank braking aligned to acceleration
+- Further improved PNG compression to reduce mod size
+
+### AI
+
+- Builds the Hive
+
 ### Fixed
 
-- Factories not blocking projectiles properly for: (With thanks to Taiga for the report) 
+- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo- 
+- Factories not blocking projectiles properly (with thanks to Taiga for the report):
   - Armour Foundry
   - Flyer Foundry
   - Walker Foundry
@@ -15,7 +25,6 @@
   - Advanced Flyer Foundry
   - Advanced Walker Foundry
   - Advanced Ship Foundry
-
 
 ## v1.22.0 - 2022-02-16
 

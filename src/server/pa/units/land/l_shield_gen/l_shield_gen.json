@@ -75,20 +75,6 @@
   "tools": [
     {
       "aim_bone": "bone_void",
-      "record_index": 0,
-      "show_range": true,
-      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_short_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_void",
-      "record_index": 1,
-      "show_range": true,
-      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_mid_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_void",
-      "record_index": 2,
-      "show_range": true,
       "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_long_tool_weapon.json"
     }
   ],
