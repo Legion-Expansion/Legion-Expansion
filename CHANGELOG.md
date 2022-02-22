@@ -15,7 +15,16 @@
 
 ### Fixed
 
-- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo
+- Rampart blocking three times as many shots as intended due to change in engine's handling of ammo- 
+- Factories not blocking projectiles properly (with thanks to Taiga for the report):
+  - Armour Foundry
+  - Flyer Foundry
+  - Walker Foundry
+  - Ship Foundry
+  - Advanced Armour Foundry
+  - Advanced Flyer Foundry
+  - Advanced Walker Foundry
+  - Advanced Ship Foundry
 
 ## v1.22.0 - 2022-02-16
 
