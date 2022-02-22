@@ -60,6 +60,9 @@
   - Thor
     - Health reduced from 80,000 to 60,000
     - Acceleration increased from 10 to 100
+- Orbital
+  - Starcannon
+    - Range reduced from 800 to 600
 - Sea
   - Hammerhead
     - Acceleration increased from 4 to 30
