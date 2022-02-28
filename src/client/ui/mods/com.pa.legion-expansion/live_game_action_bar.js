@@ -33,17 +33,11 @@ if (!legionLiveGameActionBarLoaded) {
         };
 
         model.isLegion = function (data) {
-          if (isLegionOrMixedOrVanilla(data) === "legion") {
-            return true;
-          }
-          return false;
+          return isLegionOrMixedOrVanilla(data) === "legion";
         };
 
         model.isMixed = function (data) {
-          if (isLegionOrMixedOrVanilla(data) === "mixed") {
-            return true;
-          }
-          return false;
+          return isLegionOrMixedOrVanilla(data) === "mixed";
         };
 
         $(".body_panel").attr(
