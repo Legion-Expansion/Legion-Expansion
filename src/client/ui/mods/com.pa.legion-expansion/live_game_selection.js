@@ -13,10 +13,7 @@ if (!legionLiveGameSelectionLoaded) {
         );
 
         model.isLegion = function (type) {
-          if (themeSetting === "ON" && type.indexOf("/l_") > 2) {
-            return true;
-          }
-          return false;
+          return themeSetting === "ON" && type.indexOf("/l_") > 2;
         };
 
         $(".div_unit_selection").attr(
