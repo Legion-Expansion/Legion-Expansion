@@ -109,13 +109,12 @@
       "to_build": "LegionVehicleAdvancedLaser",
       "instance_count": -1,
       "priority": 100,
-      "max_num_assisters": 15,
+      "max_num_assisters": 10,
       "builders": ["LegionOrbitalAdvancedCannon"],
       "build_conditions": [
         [
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]

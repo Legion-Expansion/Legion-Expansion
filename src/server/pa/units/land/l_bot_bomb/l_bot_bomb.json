@@ -51,7 +51,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 50,
-  "max_health": 40,
+  "max_health": 20,
   "mesh_bounds": [3.5, 3, 2.8],
   "model": {
     "animations": {

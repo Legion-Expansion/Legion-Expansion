@@ -84,7 +84,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Air",
-  "max_health": 300,
+  "max_health": 240,
   "mesh_bounds": [4.5, 9.2, 4],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_fighter_adv_anim_tree.json",

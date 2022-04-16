@@ -8,7 +8,7 @@
     "energy": 2500,
     "metal": 80
   },
-  "max_range": 20,
+  "max_range": 30,
   "pitch_range": 90,
   "pitch_rate": 90,
   "reclaim_layers": ["WL_AnyHorizontalGroundOrWaterSurface", "WL_Air"],

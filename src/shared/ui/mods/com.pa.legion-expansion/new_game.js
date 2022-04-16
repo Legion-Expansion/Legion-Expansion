@@ -100,11 +100,9 @@ if (!legionNewGameLoaded) {
 
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-        // eslint-disable-next-line no-undef
-        var legionCommanders = legion.commanders;
-
         model.isLegion = function (commander) {
-          return _.includes(legionCommanders, commander);
+          // eslint-disable-next-line no-undef
+          return _.includes(legion.commanders, commander);
         };
 
         //Style Commander Picker Legion

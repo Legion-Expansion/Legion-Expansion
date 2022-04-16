@@ -51,7 +51,7 @@
       "orientation": [0, 65, 0]
     }
   ],
-  "max_health": 125,
+  "max_health": 250,
   "mesh_bounds": [6.985, 12.365, 4.067],
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
@@ -62,7 +62,7 @@
     "acceleration": 100,
     "brake": 100,
     "move_speed": 8,
-    "turn_speed": 60
+    "turn_speed": 90
   },
   "physics": {
     "radius": 4

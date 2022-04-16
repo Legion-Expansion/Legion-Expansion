@@ -99,7 +99,7 @@
   },
   "navigation": {
     "acceleration": 50,
-    "brake": 100,
+    "brake": 50,
     "group_preference": "back",
     "move_speed": 10,
     "turn_speed": 50,

@@ -65,8 +65,8 @@
   },
   "navigation": {
     "acceleration": 120,
-    "brake": 120,
-    "move_speed": 8,
+    "brake": -1,
+    "move_speed": 10,
     "turn_speed": 75
   },
   "physics": {

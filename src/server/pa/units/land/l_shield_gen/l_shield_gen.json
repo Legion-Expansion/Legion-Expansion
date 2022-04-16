@@ -8,12 +8,11 @@
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 2400,
   "consumption": {
-    "energy": 0
+    "energy": 1200
   },
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/l_shield_gen/l_shield_gen_death.json"
   },
-  "energy_efficiency_requirement": 1,
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/barrier"
@@ -75,20 +74,6 @@
   "tools": [
     {
       "aim_bone": "bone_void",
-      "record_index": 0,
-      "show_range": true,
-      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_short_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_void",
-      "record_index": 1,
-      "show_range": true,
-      "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_mid_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_void",
-      "record_index": 2,
-      "show_range": true,
       "spec_id": "/pa/units/land/l_shield_gen/l_shield_gen_long_tool_weapon.json"
     }
   ],

@@ -14,7 +14,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "build_metal_cost": 60,
+  "build_metal_cost": 75,
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
@@ -22,7 +22,7 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "max_health": 150,
+  "max_health": 165,
   "mesh_bounds": [4, 2.5, 4],
   "model": {
     "animations": {

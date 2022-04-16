@@ -1317,53 +1317,7 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "compare0": "<",
-            "value0": 0.2
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Tank & (Hover | Sub)",
-            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
-            "compare0": "<",
-            "value0": 0.2
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]

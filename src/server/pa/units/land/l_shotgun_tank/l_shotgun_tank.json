@@ -43,9 +43,9 @@
   },
   "navigation": {
     "acceleration": 75,
-    "brake": -1,
+    "brake": 75,
     "group_preference": "front",
-    "move_speed": 8,
+    "move_speed": 10,
     "turn_speed": 180
   },
   "physics": {
