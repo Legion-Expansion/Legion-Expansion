@@ -72,7 +72,7 @@
   "guard_radius": 50,
   "has_death_effects": true,
   "max_health": 11250,
-  "mesh_bounds": [84, 77, 15],
+  "mesh_bounds": [72, 77, 15],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_titan_air_anim_tree.json",
     "filename": "/pa/units/air/l_titan_air/l_titan_air.papa"
@@ -112,7 +112,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -72.0
+    "diameter": -82
   },
   "tools": [
     {

@@ -81,7 +81,7 @@
   "guard_layer": "WL_AnySurface",
   "has_death_effects": true,
   "max_health": 60000,
-  "mesh_bounds": [25, 25, 60],
+  "mesh_bounds": [34, 30, 60],
   "model": {
     "animations": {
       "walk": "/pa/units/land/l_titan_bot/l_titan_bot_walk.papa"
