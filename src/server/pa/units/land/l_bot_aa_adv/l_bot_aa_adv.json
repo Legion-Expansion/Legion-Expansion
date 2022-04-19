@@ -28,7 +28,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 400,
-  "mesh_bounds": [4.5, 3, 3.8],
+  "mesh_bounds": [6.5, 6.5, 8],
   "model": {
     "animations": {
       "idle": "/pa/units/land/l_bot_aa_adv/l_bot_aa_adv_idle.papa",
@@ -61,7 +61,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -8
+    "diameter": -17
   },
   "tools": [
     {
