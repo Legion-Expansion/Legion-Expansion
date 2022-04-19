@@ -103,7 +103,7 @@
   ],
   "has_death_effects": true,
   "max_health": 15000,
-  "mesh_bounds": [106, 106, 57],
+  "mesh_bounds": [77, 77, 57],
   "model": {
     "animations": {
       "dead": "/pa/units/land/titan_structure/titan_structure_anim_dead.papa",
@@ -141,7 +141,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -98.0
+    "diameter": -118
   },
   "tools": [
     {
