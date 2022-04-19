@@ -50,7 +50,7 @@
   ],
   "gravwell_velocity_multiplier": 6.0,
   "max_health": 2000,
-  "mesh_bounds": [25, 15, 15],
+  "mesh_bounds": [25, 25, 15],
   "model": {
     "animations": {
       "idle": "/pa/units/orbital/l_radar_satellite_adv/l_radar_satellite_adv_idle.papa"
@@ -106,7 +106,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -33
+    "diameter": -55
   },
   "tools": [
     {
