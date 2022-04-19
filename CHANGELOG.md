@@ -1,5 +1,51 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Updated selection circle diameter for (with thanks to Anonemous2):
+  - Archer
+  - Decimator
+  - Gustav
+  - Hive
+  - Holocene
+  - Kosmos
+  - Lockheed
+  - Loki
+  - Miniman
+  - Monstrosity
+  - Nova
+  - OmniSilo
+  - Orbweaver
+  - Overseer
+  - Paladin
+  - Panzer
+  - Ripple
+  - Salamander Turret
+  - Sky Bridge
+  - Starcannon
+- Updated mesh bounds for (with thanks to Anonemous2):
+  - Advanced Armour Fabricator
+  - Arsonist
+  - Gustav
+  - Holocene
+  - Jackal
+  - Kosmos
+  - Lancer
+  - Loki
+  - Meteor
+  - Miniman
+  - Orbweaver
+  - Panzer
+  - Rampart
+  - Ripple
+  - Salamander
+  - Scarab
+  - Shredder
+  - Theodor
+  - Thor
+
 ## v1.23.0 - 2022-04-16
 
 ### General
