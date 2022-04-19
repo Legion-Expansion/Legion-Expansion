@@ -86,7 +86,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -75
+    "diameter": -90
   },
   "teleporter": {
     "energy_demand": 1000
