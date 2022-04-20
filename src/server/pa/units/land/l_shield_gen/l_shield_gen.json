@@ -83,16 +83,23 @@
   "mesh_bounds": [4, 4, 14],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
+      "animations": {
+        "end": "/pa/units/land/l_shield_gen/l_shield_gen_end.papa",
+        "loop": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa",
+        "start": "/pa/units/land/l_shield_gen/l_shield_gen_start.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
       "filename": "/pa/units/land/l_shield_gen/l_shield_gen.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
     },
     {
       "animations": {
-        "idle": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa"
+        "end": "/pa/units/land/l_shield_gen/l_shield_gen_end.papa",
+        "loop": "/pa/units/land/l_shield_gen/l_shield_gen_idle.papa",
+        "start": "/pa/units/land/l_shield_gen/l_shield_gen_start.papa"
       },
-      "animtree": "/pa/anim/anim_trees/bindpose_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
       "filename": "/pa/units/land/l_shield_gen/l_shield_gen.papa",
       "layer": "WL_WaterSurface"
     }
