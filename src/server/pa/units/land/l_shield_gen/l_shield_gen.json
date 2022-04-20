@@ -80,7 +80,7 @@
     }
   ],
   "max_health": 750,
-  "mesh_bounds": [4, 4, 14],
+  "mesh_bounds": [30, 30, 27],
   "model": [
     {
       "animations": {
@@ -104,7 +104,7 @@
       "layer": "WL_WaterSurface"
     }
   ],
-  "placement_size": [20, 20],
+  "placement_size": [30, 30],
   "recon": {
     "observer": {
       "items": [
