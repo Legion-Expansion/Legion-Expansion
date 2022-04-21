@@ -45,6 +45,9 @@
   - Shredder
   - Theodor
   - Thor
+- Visual improvements for Rampart
+- Rampart size increased
+- Rampart strategic icon updated
 
 ## v1.23.0 - 2022-04-16
 
