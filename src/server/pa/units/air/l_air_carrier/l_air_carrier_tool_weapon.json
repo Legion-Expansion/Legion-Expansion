@@ -15,5 +15,7 @@
   "spread_fire": true,
   "target_layers": ["WL_LandHorizontal", "WL_WaterSurface", "WL_Air"],
   "yaw_range": 0,
-  "yaw_rate": 180
+  "yaw_rate": 180,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true
 }

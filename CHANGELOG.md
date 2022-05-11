@@ -49,6 +49,12 @@
 - Rampart size increased
 - Rampart strategic icon updated
 
+### Balance
+
+- Air
+  - Meteor
+    - Won't launch Meteorites until ammo is fully reloaded
+
 ## v1.23.0 - 2022-04-16
 
 ### General
