@@ -3,19 +3,19 @@
     "Legion_Air_Attack_Titan": {
       "units": [
         {
-          "max_count": -1,
           "min_count": 1,
+          "max_count": -1,
           "unit_types": "Air & Titan"
         },
         {
-          "max_count": 2,
           "min_count": 0,
+          "max_count": 2,
           "squad": "Defense",
           "unit_types": "Air & MissileDefense"
         },
         {
-          "max_count": 15,
           "min_count": 0,
+          "max_count": 15,
           "squad": "Escort",
           "unit_types": "Air & Fighter"
         },
@@ -30,9 +30,9 @@
     "Legion_BomberGunship_Attack_Large": {
       "units": [
         {
-          "max_count": 19,
           "min_count": 10,
-          "unit_types": "Air & ((Bomber & Basic) | Gunship) - Titan"
+          "max_count": 19,
+          "unit_types": "Air & Offense  - Fighter - MissileDefense - SelfDestruct - Titan"
         },
         {
           "min_count": 0,
@@ -57,9 +57,9 @@
     "Legion_BomberGunship_Attack_Max": {
       "units": [
         {
-          "max_count": -1,
           "min_count": 40,
-          "unit_types": "Air & ((Bomber & Basic) | Gunship) - Titan"
+          "max_count": -1,
+          "unit_types": "Air & Offense  - Fighter - MissileDefense - SelfDestruct - Titan"
         },
         {
           "min_count": 0,
@@ -84,9 +84,9 @@
     "Legion_BomberGunship_Attack_Medium": {
       "units": [
         {
-          "max_count": 9,
           "min_count": 4,
-          "unit_types": "Air & ((Bomber & Basic) | Gunship) - Titan"
+          "max_count": 9,
+          "unit_types": "Air & Offense  - Fighter - MissileDefense - SelfDestruct - Titan"
         },
         {
           "min_count": 0,
@@ -111,9 +111,9 @@
     "Legion_BomberGunship_Attack_Small": {
       "units": [
         {
-          "max_count": 3,
           "min_count": 1,
-          "unit_types": "Air & ((Bomber & Basic) | Gunship) - Titan"
+          "max_count": 3,
+          "unit_types": "Air & Offense  - Fighter - MissileDefense - SelfDestruct - Titan"
         },
         {
           "min_count": 0,
@@ -138,9 +138,9 @@
     "Legion_BomberGunship_Attack_XLarge": {
       "units": [
         {
-          "max_count": 39,
           "min_count": 20,
-          "unit_types": "Air & ((Bomber & Basic) | Gunship) - Titan"
+          "max_count": 39,
+          "unit_types": "Air & Offense  - Fighter - MissileDefense - SelfDestruct - Titan"
         },
         {
           "min_count": 0,
@@ -165,8 +165,8 @@
     "Legion_Fighter_Attack_Large": {
       "units": [
         {
-          "max_count": 19,
           "min_count": 10,
+          "max_count": 19,
           "unit_types": "Air & Fighter"
         },
         {
@@ -186,8 +186,8 @@
     "Legion_Fighter_Attack_Max": {
       "units": [
         {
-          "max_count": -1,
           "min_count": 40,
+          "max_count": -1,
           "unit_types": "Air & Fighter"
         },
         {
@@ -207,8 +207,8 @@
     "Legion_Fighter_Attack_Medium": {
       "units": [
         {
-          "max_count": 9,
           "min_count": 4,
+          "max_count": 9,
           "unit_types": "Air & Fighter"
         },
         {
@@ -228,8 +228,8 @@
     "Legion_Fighter_Attack_Small": {
       "units": [
         {
-          "max_count": 3,
           "min_count": 1,
+          "max_count": 3,
           "unit_types": "Air & Fighter"
         },
         {
@@ -249,150 +249,15 @@
     "Legion_Fighter_Attack_XLarge": {
       "units": [
         {
-          "max_count": 39,
           "min_count": 20,
-          "unit_types": "Air & Fighter"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.15,
-          "squad": "Defense",
-          "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Escort",
-          "unit_types": "Air & SelfDestruct"
-        }
-      ]
-    },
-    "Legion_HeavyBomber_Attack_Large": {
-      "units": [
-        {
-          "max_count": 19,
-          "min_count": 10,
-          "unit_types": "Air & Bomber & Advanced - Titan"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.15,
-          "squad": "Defense",
-          "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.25,
-          "squad": "Escort",
-          "unit_types": "Air & Fighter"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Escort",
-          "unit_types": "Air & SelfDestruct"
-        }
-      ]
-    },
-    "Legion_HeavyBomber_Attack_Max": {
-      "units": [
-        {
-          "max_count": -1,
-          "min_count": 40,
-          "unit_types": "Air & Bomber & Advanced - Titan"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.15,
-          "squad": "Defense",
-          "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.25,
-          "squad": "Escort",
-          "unit_types": "Air & Fighter"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Escort",
-          "unit_types": "Air & SelfDestruct"
-        }
-      ]
-    },
-    "Legion_HeavyBomber_Attack_Medium": {
-      "units": [
-        {
-          "max_count": 9,
-          "min_count": 4,
-          "unit_types": "Air & Bomber & Advanced - Titan"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.15,
-          "squad": "Defense",
-          "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.25,
-          "squad": "Escort",
-          "unit_types": "Air & Fighter"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Escort",
-          "unit_types": "Air & SelfDestruct"
-        }
-      ]
-    },
-    "Legion_HeavyBomber_Attack_Small": {
-      "units": [
-        {
-          "max_count": 3,
-          "min_count": 1,
-          "unit_types": "Air & Bomber & Advanced - Titan"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.15,
-          "squad": "Defense",
-          "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.25,
-          "squad": "Escort",
-          "unit_types": "Air & Fighter"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.1,
-          "squad": "Escort",
-          "unit_types": "Air & SelfDestruct"
-        }
-      ]
-    },
-    "Legion_HeavyBomber_Attack_XLarge": {
-      "units": [
-        {
           "max_count": 39,
-          "min_count": 20,
-          "unit_types": "Air & Bomber & Advanced - Titan"
+          "unit_types": "Air & Fighter"
         },
         {
           "min_count": 0,
           "percent": 0.15,
           "squad": "Defense",
           "unit_types": "Air & MissileDefense"
-        },
-        {
-          "min_count": 0,
-          "percent": 0.25,
-          "squad": "Escort",
-          "unit_types": "Air & Fighter"
         },
         {
           "min_count": 0,

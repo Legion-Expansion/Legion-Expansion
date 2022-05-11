@@ -99,7 +99,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -16.0
+    "diameter": -20
   },
   "spawn_layers": "WL_Air",
   "tools": [

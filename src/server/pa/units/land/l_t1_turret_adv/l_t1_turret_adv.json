@@ -23,7 +23,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 2500,
-  "mesh_bounds": [13.397, 17.409, 10.889],
+  "mesh_bounds": [13.397, 13.397, 11.889],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",

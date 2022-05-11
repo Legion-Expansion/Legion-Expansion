@@ -3,20 +3,20 @@
     "Legion_Amphibious_Attack_Large": {
       "units": [
         {
-          "max_count": 19,
           "min_count": 0,
+          "max_count": 19,
           "squad": "Fast",
           "unit_types": "(Bot & Amphibious & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Scout - Titan"
         },
         {
-          "max_count": 19,
           "min_count": 0,
+          "max_count": 19,
           "squad": "General",
           "unit_types": "(Tank & Amphibious & Mobile) - Fabber - Titan"
         },
         {
-          "max_count": 19,
           "min_count": 0,
+          "max_count": 19,
           "squad": "Suicide",
           "unit_types": "(Bot & Amphibious & SelfDestruct & Mobile) - Fabber - Titan"
         },
@@ -31,20 +31,20 @@
     "Legion_Amphibious_Attack_Max": {
       "units": [
         {
-          "max_count": -1,
           "min_count": 0,
+          "max_count": -1,
           "squad": "Fast",
           "unit_types": "(Bot & Amphibious & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Scout - Titan"
         },
         {
-          "max_count": -1,
           "min_count": 0,
+          "max_count": -1,
           "squad": "General",
           "unit_types": "(Tank & Amphibious & Mobile) - Fabber - Titan"
         },
         {
-          "max_count": -1,
           "min_count": 0,
+          "max_count": -1,
           "squad": "Suicide",
           "unit_types": "(Bot & Amphibious & SelfDestruct & Mobile) - Fabber - Titan"
         },
@@ -59,20 +59,20 @@
     "Legion_Amphibious_Attack_Medium": {
       "units": [
         {
-          "max_count": 9,
           "min_count": 0,
+          "max_count": 9,
           "squad": "Fast",
           "unit_types": "(Bot & Amphibious & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Scout - Titan"
         },
         {
-          "max_count": 9,
           "min_count": 0,
+          "max_count": 9,
           "squad": "General",
           "unit_types": "(Tank & Amphibious & Mobile) - Fabber - Titan"
         },
         {
-          "max_count": 9,
           "min_count": 0,
+          "max_count": 9,
           "squad": "Suicide",
           "unit_types": "(Bot & Amphibious & SelfDestruct & Mobile) - Fabber - Titan"
         },
@@ -87,20 +87,20 @@
     "Legion_Amphibious_Attack_Small": {
       "units": [
         {
-          "max_count": 3,
           "min_count": 0,
+          "max_count": 3,
           "squad": "Fast",
           "unit_types": "(Bot & Amphibious & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Scout - Titan"
         },
         {
-          "max_count": 3,
           "min_count": 0,
+          "max_count": 3,
           "squad": "General",
           "unit_types": "(Tank & Amphibious & Mobile) - Fabber - Titan"
         },
         {
-          "max_count": 3,
           "min_count": 0,
+          "max_count": 3,
           "squad": "Suicide",
           "unit_types": "(Bot & Amphibious & SelfDestruct & Mobile) - Fabber - Titan"
         },
@@ -115,20 +115,20 @@
     "Legion_Amphibious_Attack_XLarge": {
       "units": [
         {
-          "max_count": 39,
           "min_count": 0,
+          "max_count": 39,
           "squad": "Fast",
           "unit_types": "(Bot & Amphibious & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct - Scout - Titan"
         },
         {
-          "max_count": 39,
           "min_count": 0,
+          "max_count": 39,
           "squad": "General",
           "unit_types": "(Tank & Amphibious & Mobile) - Fabber - Titan"
         },
         {
-          "max_count": 39,
           "min_count": 0,
+          "max_count": 39,
           "squad": "Suicide",
           "unit_types": "(Bot & Amphibious & SelfDestruct & Mobile) - Fabber - Titan"
         },

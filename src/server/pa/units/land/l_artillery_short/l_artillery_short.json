@@ -36,7 +36,7 @@
     }
   ],
   "max_health": 1000,
-  "mesh_bounds": [12.728, 14.757, 10.603],
+  "mesh_bounds": [12.728, 12.728, 10.603],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",

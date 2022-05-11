@@ -22,7 +22,7 @@
   },
   "guard_layer": "WL_WaterSurface",
   "max_health": 2000,
-  "mesh_bounds": [12, 6, 5],
+  "mesh_bounds": [12, 12, 5],
   "model": {
     "animtree": "/pa/anim/anim_trees/l_torpedo_launcher_anim_tree.json",
     "filename": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher.papa"
@@ -58,7 +58,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -17
+    "diameter": -22
   },
   "spawn_layers": "WL_WaterSurface",
   "tools": [

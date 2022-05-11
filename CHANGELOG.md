@@ -1,5 +1,66 @@
 # CHANGELOG
 
+## v.1.24.0 - 2022-05-11
+
+### General
+
+- Updated selection circle diameter for (with thanks to Anonemous2):
+  - Archer
+  - Decimator
+  - Gustav
+  - Hive
+  - Holocene
+  - Kosmos
+  - Lockheed
+  - Loki
+  - Miniman
+  - Monstrosity
+  - Nova
+  - OmniSilo
+  - Orbweaver
+  - Overseer
+  - Paladin
+  - Panzer
+  - Ripple
+  - Salamander Turret
+  - Sky Bridge
+  - Starcannon
+- Updated mesh bounds for (with thanks to Anonemous2):
+  - Advanced Armour Fabricator
+  - Arsonist
+  - Gustav
+  - Holocene
+  - Jackal
+  - Kosmos
+  - Lancer
+  - Loki
+  - Meteor
+  - Miniman
+  - Orbweaver
+  - Panzer
+  - Rampart
+  - Ripple
+  - Salamander
+  - Scarab
+  - Shredder
+  - Theodor
+  - Thor
+- Visual improvements for Rampart
+- Rampart size increased
+- Rampart strategic icon updated
+
+### Balance
+
+- Air
+  - Meteor
+    - Won't launch Meteorites until ammo is fully reloaded
+  - Scythe
+    - Damage reduced from 35 to 29
+
+### AI
+
+- Fixed Meteors not moving with air platoons
+
 ## v1.23.0 - 2022-04-16
 
 ### General

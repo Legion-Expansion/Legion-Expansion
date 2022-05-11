@@ -44,7 +44,7 @@
     }
   ],
   "max_health": 5000,
-  "mesh_bounds": [22.227, 35.329, 14.856],
+  "mesh_bounds": [24, 24, 16],
   "model": [
     {
       "animations": {
@@ -84,7 +84,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -36
+    "diameter": -39
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [

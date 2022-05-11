@@ -3,17 +3,17 @@
     "Stoke_Scout": {
       "units": [
         {
-          "unit_types": "(Tank & Amphibious & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct",
-          "max_count": 1
+          "max_count": 1,
+          "unit_types": "(Tank & Amphibious & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct"
         }
       ]
     },
     "Legion_Land_Raid_Small": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "min_count": 1,
           "max_count": 3,
+          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -21,9 +21,9 @@
     "Legion_Land_Raid_Medium": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "min_count": 4,
           "max_count": 9,
+          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -31,9 +31,9 @@
     "Legion_Land_Raid_Large": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "min_count": 10,
           "max_count": 19,
+          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -41,9 +41,9 @@
     "Legion_Land_Raid_XLarge": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "min_count": 20,
           "max_count": 39,
+          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -51,9 +51,9 @@
     "Legion_Land_Raid_Max": {
       "units": [
         {
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "min_count": 40,
           "max_count": -1,
+          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]

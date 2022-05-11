@@ -38,6 +38,8 @@ KEY_ORDER = [
     "compare0",
     "value0",
     "boolean",
+    "min_count",
+    "max_count",
 ]
 
 COMPARE_VALUES = [
