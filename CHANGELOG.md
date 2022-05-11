@@ -54,6 +54,8 @@
 - Air
   - Meteor
     - Won't launch Meteorites until ammo is fully reloaded
+  - Scythe
+    - Damage reduced from 35 to 29
 
 ## v1.23.0 - 2022-04-16
 

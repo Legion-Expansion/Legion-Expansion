@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/ammo/base_beam/base_beam.json",
   "collision_check": "target",
-  "damage": 35,
+  "damage": 29,
   "fx_beam_spec": "/pa/units/air/l_fighter/beam_trail.pfx",
   "fx_collision_spec": "/pa/units/air/l_fighter/beam_hit.pfx"
 }
