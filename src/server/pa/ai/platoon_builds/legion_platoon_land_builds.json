@@ -41,9 +41,9 @@
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "string1": "WL_AnySurface"
           }
         ]
       ],
@@ -73,9 +73,9 @@
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "string1": "WL_AnySurface"
           }
         ]
       ],
@@ -105,9 +105,9 @@
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "string1": "WL_AnySurface"
           }
         ]
       ],
@@ -137,9 +137,9 @@
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "string1": "WL_AnySurface"
           }
         ]
       ],
@@ -169,9 +169,9 @@
           },
           {
             "test_type": "CanAttackWithPoolUnitsLand",
+            "unit_type_string0": "Mobile | Structure",
             "string0": "WL_AnySurface",
-            "string1": "WL_AnySurface",
-            "unit_type_string0": "Mobile | Structure"
+            "string1": "WL_AnySurface"
           }
         ]
       ],
