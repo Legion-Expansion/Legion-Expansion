@@ -57,6 +57,10 @@
   - Scythe
     - Damage reduced from 35 to 29
 
+### AI
+
+- Fixed Meteors not moving with air platoons
+
 ## v1.23.0 - 2022-04-16
 
 ### General
