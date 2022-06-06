@@ -76,7 +76,7 @@
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "storage": {
-    "energy": 75000,
+    "energy": 225000,
     "metal": 15000
   },
   "unit_types": [

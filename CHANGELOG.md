@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Land
+  - Omni Silo
+    - Energy storage increased from 75,000 to 225,000
+
 ## v.1.24.0 - 2022-05-11
 
 ### General
