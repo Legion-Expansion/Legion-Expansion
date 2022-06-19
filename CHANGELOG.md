@@ -11,6 +11,7 @@
 ### Fixed
 
 - Manta not showing DPS for any weapon on its unit card
+- Manta's anti-drop-pod weapon being linked to its missile targeting system
 
 ## v.1.24.0 - 2022-05-11
 

@@ -87,13 +87,6 @@
       "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_rocket_tool_weapon.json"
     },
     {
-      "aim_bone": "rocket002",
-      "fire_event": "fired5",
-      "muzzle_bone": ["rocket001", "rocket002", "rocket003"],
-      "record_index": 0,
-      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_antiuc_tool_weapon.json"
-    },
-    {
       "aim_bone": "pitch001",
       "muzzle_bone": ["muzzle001", "muzzle002"],
       "projectiles_per_fire": 2,
@@ -122,6 +115,13 @@
       "projectiles_per_fire": 2,
       "record_index": 3,
       "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_light_tool_weapon.json"
+    },
+    {
+      "aim_bone": "rocket002",
+      "fire_event": "fired5",
+      "muzzle_bone": ["rocket001", "rocket002", "rocket003"],
+      "record_index": 4,
+      "spec_id": "/pa/units/sea/l_missile_ship/l_missile_ship_antiuc_tool_weapon.json"
     }
   ],
   "unit_types": [
