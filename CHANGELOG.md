@@ -8,6 +8,10 @@
   - Omni Silo
     - Energy storage increased from 75,000 to 225,000
 
+### Fixed
+
+- Manta not showing DPS for any weapon on its unit card
+
 ## v.1.24.0 - 2022-05-11
 
 ### General
