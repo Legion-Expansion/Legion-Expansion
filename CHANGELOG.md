@@ -7,6 +7,9 @@
 - Land
   - Omni Silo
     - Energy storage increased from 75,000 to 225,000
+- Orbital
+  - Rig
+    - Cost increased from 3000 to 4000
 
 ### Fixed
 
