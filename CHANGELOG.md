@@ -16,6 +16,7 @@
 - Manta not showing DPS for any weapon on its unit card
 - Manta's anti-drop-pod weapon being linked to its missile targeting system
 - Manta AA effects not being tied to where it was shooting
+- Interplanetary speeds and unittype tags for Infiltrator - with thanks to Dreadnought for the report
 
 ## v.1.24.0 - 2022-05-11
 
