@@ -9,6 +9,8 @@
     - Removed stomp weapon
   - Omni Silo
     - Energy storage increased from 75,000 to 225,000
+  - Thor
+    - Removed stomp weapon
 - Orbital
   - Rig
     - Cost increased from 3000 to 4000
