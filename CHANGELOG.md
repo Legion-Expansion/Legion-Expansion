@@ -5,6 +5,8 @@
 ### Balance
 
 - Land
+  - Odin
+    - Removed stomp weapon
   - Omni Silo
     - Energy storage increased from 75,000 to 225,000
 - Orbital
