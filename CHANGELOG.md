@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Added support for the Bugs' Faction metal extractors
+
 ### Balance
 
 - Land
