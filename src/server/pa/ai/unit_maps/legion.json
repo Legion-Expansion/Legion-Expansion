@@ -1,5 +1,8 @@
 {
   "unit_map": {
+    "LegionCommander": {
+      "unit_types": "Commander & Custom1"
+    },
     "AnyLegionFabberAdvanced": {
       "unit_types": "(Fabber & (Advanced | Debug) & Custom1) - Orbital"
     },
@@ -104,9 +107,6 @@
     },
     "LegionBotBasicSniper": {
       "spec_id": "/pa/units/land/l_sniper_bot/l_sniper_bot.json"
-    },
-    "LegionCommander": {
-      "unit_types": "Commander & Custom1"
     },
     "LegionDefenseAdvancedAir": {
       "spec_id": "/pa/units/land/l_air_defense_adv/l_air_defense_adv.json"

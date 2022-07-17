@@ -6,25 +6,25 @@ legion.commanders = [
   "/pa/units/commanders/l_cyclops/l_cyclops.json",
   "/pa/units/commanders/l_wasushi/l_wasushi.json",
 ];
-legion.basicfactories = [
+legion.basicFactories = [
   "/pa/units/air/l_air_factory/l_air_factory.json",
   "/pa/units/land/l_bot_factory/l_bot_factory.json",
   "/pa/units/land/l_vehicle_factory/l_vehicle_factory.json",
   "/pa/units/sea/l_naval_factory/l_naval_factory.json",
   "/pa/units/orbital/l_orbital_launcher/l_orbital_launcher.json",
 ];
-legion.advfactories = [
+legion.advFactories = [
   "/pa/units/air/l_air_factory_adv/l_air_factory_adv.json",
   "/pa/units/land/l_bot_factory_adv/l_bot_factory_adv.json",
   "/pa/units/land/l_vehicle_factory_adv/l_vehicle_factory_adv.json",
   "/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv.json",
   "/pa/units/orbital/l_orbital_factory/l_orbital_factory.json",
 ];
-legion.airfabbers = [
+legion.airFabbers = [
   "/pa/units/air/l_fabrication_aircraft/l_fabrication_aircraft.json",
   "/pa/units/air/l_fabrication_aircraft_adv/l_fabrication_aircraft_adv.json",
 ];
-legion.landfabbers = [
+legion.landFabbers = [
   "/pa/units/land/l_fabrication_vehicle/l_fabrication_vehicle.json",
   "/pa/units/land/l_fabrication_vehicle_adv/l_fabrication_vehicle_adv.json",
   "/pa/units/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat.json",
@@ -32,10 +32,10 @@ legion.landfabbers = [
   "/pa/units/land/l_fabrication_bot/l_fabrication_bot.json",
   "/pa/units/land/l_fabrication_bot_adv/l_fabrication_bot_adv.json",
 ];
-legion.orbitalfabbers = [
+legion.orbitalFabbers = [
   "/pa/units/orbital/l_orbital_fabrication_bot/l_orbital_fabrication_bot.json",
 ];
-legion.navalfabbers = [
+legion.navalFabbers = [
   "/pa/units/sea/l_fabrication_ship/l_fabrication_ship.json",
   "/pa/units/sea/l_fabrication_ship_adv/l_fabrication_ship_adv.json",
   "/pa/units/sea/l_fabrication_sub_combat_adv/l_fabrication_sub_combat_adv.json",
@@ -47,11 +47,11 @@ legion.launchers = [
 ];
 legion.builders = _.union(
   legion.commanders,
-  legion.basicfactories,
-  legion.advfactories,
-  legion.airfabbers,
-  legion.landfabbers,
-  legion.orbitalfabbers,
-  legion.navalfabbers,
+  legion.basicFactories,
+  legion.advFactories,
+  legion.airFabbers,
+  legion.landFabbers,
+  legion.orbitalFabbers,
+  legion.navalFabbers,
   legion.launchers
 );

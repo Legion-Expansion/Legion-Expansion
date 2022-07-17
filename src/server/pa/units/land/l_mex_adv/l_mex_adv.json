@@ -70,7 +70,8 @@
   },
   "replaceable_units": [
     "/pa/units/land/l_mex/l_mex.json",
-    "/pa/units/land/metal_extractor/metal_extractor.json"
+    "/pa/units/land/metal_extractor/metal_extractor.json",
+    "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json"
   ],
   "selection_icon": {
     "diameter": -28

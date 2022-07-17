@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## v1.25.0 - 2022-07-17
+
+### General
+
+- Added support for the Bugs' Faction metal extractors
+
+### Balance
+
+- Land
+  - Odin
+    - Removed stomp weapon
+  - Omni Silo
+    - Energy storage increased from 75,000 to 225,000
+  - Thor
+    - Removed stomp weapon
+- Orbital
+  - Rig
+    - Cost increased from 3000 to 4000
+
+### Fixed
+
+- Manta not showing DPS for any weapon on its unit card
+- Manta's anti-drop-pod weapon being linked to its missile targeting system
+- Manta AA effects not being tied to where it was shooting
+- Interplanetary speeds and unittype tags for Infiltrator - with thanks to Dreadnought for the report
+- Havoc missing UNITTYPE_TacticalDefense
+
 ## v.1.24.0 - 2022-05-11
 
 ### General

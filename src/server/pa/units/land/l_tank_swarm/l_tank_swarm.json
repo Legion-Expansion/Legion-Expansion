@@ -132,6 +132,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
+    "UNITTYPE_TacticalDefense",
     "UNITTYPE_Custom1"
   ]
 }

@@ -1,9 +1,11 @@
 define({
   bodyPanelClass: function (faction) {
-    if (faction === "legion") {
-      $(".body_panel").addClass("legionui");
-    } else if (faction === "mixed") {
-      $(".body_panel").addClass("mixedui");
+    switch (faction) {
+      case "legion":
+        $(".body_panel").addClass("legionui");
+        break;
+      case "mixed":
+        $(".body_panel").addClass("mixedui");
     }
   },
   imageSourceForType: function (path, colour, type) {
@@ -23,11 +25,13 @@ define({
     return panel ? folderPath + png1 : folderPath + png2;
   },
   uiColour: function (faction) {
-    if (faction === "legion") {
-      return "red";
-    } else if (faction === "mixed") {
-      return "purple";
+    switch (faction) {
+      case "legion":
+        return "red";
+      case "mixed":
+        return "purple";
+      default:
+        return "";
     }
-    return "";
   },
 });

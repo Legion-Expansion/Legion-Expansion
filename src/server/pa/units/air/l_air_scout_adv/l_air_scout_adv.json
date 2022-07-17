@@ -76,7 +76,8 @@
     "brake": 60,
     "inter_planetary_type": "system",
     "move_speed": 100,
-    "turn_speed": 180
+    "turn_speed": 180,
+    "vertical_speed": 50
   },
   "recon": {
     "observable": {
@@ -126,6 +127,7 @@
   "selection_icon": {
     "diameter": -33
   },
+  "system_velocity_multiplier": 15.0,
   "tools": [
     {
       "aim_bone": "bone_root",
@@ -140,6 +142,7 @@
     "UNITTYPE_Air",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
   ]
 }
