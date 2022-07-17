@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.25.0 - 2022-07-17
 
 ### General
 
