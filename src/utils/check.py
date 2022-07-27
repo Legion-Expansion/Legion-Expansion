@@ -36,6 +36,12 @@ def check_mod(client_output_dir, server_output_dir):
         sys.exit(1)
 
     checker.find_missing_files(report, fs)
+    # For compatibility with other mods, we may need to refer to their files
+    # without actually requiring that they are present.
+    # We specifically exclude them from the reporting of missing files here:
+    report.file_issues.pop("/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json", None)
+    report.file_issues.pop("/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json", None)
+
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printJsonIssueReport())
