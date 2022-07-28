@@ -38,12 +38,12 @@ def check_mod(client_output_dir, server_output_dir):
     checker.find_missing_files(report, fs)
     # For compatibility with other mods, we may need to refer to their files
     # without actually requiring that they are present.
-    allow_missing_files = [
+    ALLOW_MISSING_FILES = [
         # Bugs Faction
         "/pa/units/structure/bug_basic_extractor/bug_basic_extractor.json",
         "/pa/units/structure/bug_advanced_extractor/bug_advanced_extractor.json",
     ]
-    for allowed_missing in allow_missing_files:
+    for allowed_missing in ALLOW_MISSING_FILES:
         report.file_issues.pop(allowed_missing, None)
 
     if report.getIssueCount() > 0:
