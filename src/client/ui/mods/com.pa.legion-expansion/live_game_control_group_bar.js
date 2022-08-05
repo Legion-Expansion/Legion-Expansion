@@ -19,8 +19,7 @@ if (!legionLiveGameControlGroupLoaded) {
         ], function (common) {
           common.bodyPanelClass(payload);
 
-          var src =
-            "img[src='coui://ui/main/game/live_game/img/control_group_bar/";
+          var src = "coui://ui/main/game/live_game/img/control_group_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
           var colour = common.uiColour(payload);
