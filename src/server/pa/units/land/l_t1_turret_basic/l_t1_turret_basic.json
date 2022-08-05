@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Jackal",
   "description": "!LOC:Light Turret - Rapid fire. Attacks land, sea and seabed targets.",
-  "TEMP_texelinfo": 23.76123,
+  "TEMP_texelinfo": 15.2314,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 3.33,
