@@ -16,9 +16,9 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.5
     },
-    "fired": {
+    "fired0": {
       "audio_cue": "/SE/Weapons/structure/air_defense_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle /pa/effects/specs/bullet_shells.pfx socket_muzzle"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle /pa/effects/specs/bullet_shells.pfx bone_shells"
     }
   },
   "guard_layer": "WL_Air",
@@ -72,7 +72,8 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/land/l_air_defense/l_air_defense_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_air_defense/l_air_defense_tool_weapon.json",
+      "fire_event": "fired0"
     },
     {
       "aim_bone": "bone_turret",
