@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Scarab",
   "description": "!LOC:Heavy Turret - High damage. Attacks land, sea and seabed targets.",
-  "TEMP_texelinfo": 23.9812,
+  "TEMP_texelinfo": 25.2224,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 8.7,
