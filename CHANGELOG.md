@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Visual update for Jackal
+
+### Balance
+- Land
+  - Jackal
+    - Attack changed to burst fire
+    - Damage increased from 10 to 40
+    - Splash increased from 0 to 20
+    - Splash range increased from 0 to 6
+    - Standard deviation of shots increased from 0 to 1
+
 ## v1.25.0 - 2022-07-17
 
 ### General
