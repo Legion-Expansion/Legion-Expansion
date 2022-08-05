@@ -15,13 +15,16 @@ define({
     var prefixedSource = "img[src='" + src;
     return prefixedSource + png + "']";
   },
-  toggleImage: function (src, path, colour, png1, png2) {
+  setSourceAttribute: function (src, path, colour, png) {
     var imgPath = path + colour + "/";
+    $(src).attr("src", imgPath + png);
+  },
+  toggleImage: function (src, path, colour, png1, png2) {
     var src1 = this.setupSourcePath(src, png1);
-    $(src1).attr("src", imgPath + png1);
+    this.setSourceAttribute(src1, path, colour, png1);
     if (png2) {
       var src2 = this.setupSourcePath(src, png2);
-      $(src2).attr("src", imgPath + png2);
+      this.setSourceAttribute(src2, path, colour, png2);
     }
   },
   togglePanel: function (panel, path, colour, png1, png2) {
