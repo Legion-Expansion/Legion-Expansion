@@ -5,6 +5,7 @@
 ### General
 
 - Visual update for Jackal
+- Visual update for Scarab
 
 ### Balance
 - Land
