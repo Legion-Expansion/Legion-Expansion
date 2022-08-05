@@ -6,6 +6,7 @@
 
 - Visual update for Jackal
 - Visual update for Scarab
+- Visual update for Shredder
 
 ### Balance
 - Land
