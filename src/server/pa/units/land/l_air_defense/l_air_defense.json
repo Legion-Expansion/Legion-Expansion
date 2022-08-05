@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Shredder",
   "description": "!LOC:Anti-Air Turret - Equipped with homing tracer rounds. Only attacks air targets.",
-  "TEMP_texelinfo": 15,
+  "TEMP_texelinfo": 21.7004,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 5,
