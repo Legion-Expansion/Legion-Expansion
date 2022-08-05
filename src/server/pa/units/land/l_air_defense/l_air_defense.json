@@ -27,18 +27,20 @@
   "model": [
     {
       "animations": {
-        "idle": "/pa/units/land/l_air_defense/l_air_defense_idle.papa"
+        "fire": "/pa/units/land/l_air_defense/l_air_defense_anim_fire.papa",
+        "idle": "/pa/units/land/l_air_defense/l_air_defense_anim_idle.papa"
       },
-      "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/l_air_defense_basic_anim_tree.json",
       "filename": "/pa/units/land/l_air_defense/l_air_defense.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
       "animations": {
-        "idle": "/pa/units/land/l_air_defense/l_air_defense_idle.papa"
+        "fire": "/pa/units/land/l_air_defense/l_air_defense_anim_fire.papa",
+        "idle": "/pa/units/land/l_air_defense/l_air_defense_anim_idle.papa"
       },
-      "animtree": "/pa/anim/anim_trees/one_turret_mobile_idle_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/l_air_defense_basic_anim_tree.json",
       "filename": "/pa/units/land/l_air_defense/l_air_defense.papa",
       "layer": "WL_WaterSurface"
     }
