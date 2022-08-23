@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### AI
+
+- Enabled usage of Star Cannon following crash fix in base game
+
 ## v1.25.0 - 2022-07-17
 
 ### General
