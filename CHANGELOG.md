@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Balance
+
+- Land
+  - Peacekeeper
+    - Health increased from 165 to 170
+
 ### AI
 
 - Enabled usage of Star Cannon following crash fix in base game
