@@ -65,5 +65,12 @@
       "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_tool_weapon.json"
     }
   ],
-  "unit_types": ["UNITTYPE_Basic", "UNITTYPE_Land", "UNITTYPE_Custom1"]
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Land",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Custom1"
+  ]
 }

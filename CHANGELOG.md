@@ -23,6 +23,10 @@
 
 - Enabled usage of Star Cannon following crash fix in base game
 
+### Fixed
+
+- Unit types for Purifier
+
 ## v1.25.0 - 2022-07-17
 
 ### General
