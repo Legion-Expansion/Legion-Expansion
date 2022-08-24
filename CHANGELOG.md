@@ -9,6 +9,9 @@
     - Health decreased from 120 to 100
   - Peacekeeper
     - Health increased from 165 to 170
+- Orbital
+  - Starcannon
+    - Health decreased from 3000 to 2000
 
 ### AI
 
