@@ -22,8 +22,7 @@
     "ORDER_Patrol",
     "ORDER_Attack",
     "ORDER_Assist",
-    "ORDER_Use",
-    "ORDER_FireSecondaryWeapon"
+    "ORDER_Use"
   ],
   "events": {
     "died": {

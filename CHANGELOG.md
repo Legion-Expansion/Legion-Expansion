@@ -4,6 +4,9 @@
 
 ### Balance
 
+- Air
+  - Salamander
+    - Removed secondary fire
 - Land
   - Lancer
     - Health decreased from 120 to 100
