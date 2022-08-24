@@ -63,12 +63,6 @@
       "fire_event": "fired",
       "muzzle_bone": ["socket_muzzleTop", "socket_muzzleBottom"],
       "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_tool_weapon.json"
-    },
-    {
-      "aim_bone": "bone_root",
-      "fire_event": "fired0",
-      "record_index": 0,
-      "spec_id": "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_death_tool_weapon.json"
     }
   ],
   "unit_types": ["UNITTYPE_Basic", "UNITTYPE_Land", "UNITTYPE_Custom1"]

@@ -7,6 +7,7 @@
 - Air
   - Salamander
     - Removed secondary fire
+    - Purifier no longer self-destructs
 - Land
   - Lancer
     - Health decreased from 120 to 100
