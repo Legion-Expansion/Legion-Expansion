@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Added AOE iconography to Scorpion strategic icon
+
 ### Balance
 
 - Air
