@@ -28,7 +28,6 @@
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
     }
   },
-  "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_Orbital",
   "max_health": 2000,
   "mesh_bounds": [28.44, 26.384, 41.841],

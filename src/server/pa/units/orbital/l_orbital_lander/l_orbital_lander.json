@@ -82,7 +82,6 @@
       "type": "idle"
     }
   ],
-  "gravwell_velocity_multiplier": 5.0,
   "max_health": 150,
   "mesh_bounds": [30, 20, 10],
   "model": {
@@ -131,7 +130,6 @@
   "selection_icon": {
     "diameter": -39
   },
-  "system_velocity_multiplier": 10.0,
   "transporter": {
     "capacity": 1,
     "transportable_attach_offset": "head",
