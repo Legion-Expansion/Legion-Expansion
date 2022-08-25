@@ -39,6 +39,10 @@
       "build_conditions": [
         [
           {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
+          {
             "test_type": "CanAffordBuildDemand"
           }
         ]
@@ -113,6 +117,10 @@
       "builders": ["LegionOrbitalAdvancedCannon"],
       "build_conditions": [
         [
+          {
+            "test_type": "EnemyAirPresenceOnPlanet",
+            "boolean": true
+          },
           {
             "test_type": "CanAffordBuildDemand"
           }
