@@ -24,6 +24,8 @@
     - Health decreased from 3000 to 2000
     - Unit slots reduced from 14 to 9
     - Added Enforcer as a buildable unit
+  - Viper
+    - Removed the 100 range weapon
 
 ### AI
 

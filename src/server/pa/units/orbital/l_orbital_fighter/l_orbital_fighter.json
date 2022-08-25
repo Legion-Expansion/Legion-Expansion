@@ -77,11 +77,6 @@
     {
       "aim_bone": "bone_body",
       "muzzle_bone": "socket_muzzle",
-      "spec_id": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_tool_fix_range.json"
-    },
-    {
-      "aim_bone": "bone_body",
-      "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/orbital/l_orbital_fighter/l_orbital_fighter_tool_weapon.json"
     }
   ],
