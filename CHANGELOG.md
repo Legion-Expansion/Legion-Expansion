@@ -4,7 +4,6 @@
 
 ### General
 
-- Added AOE iconography to Scorpion strategic icon
 - Aligned Legion orbital travel speeds with those of MLA
 
 ### Balance
