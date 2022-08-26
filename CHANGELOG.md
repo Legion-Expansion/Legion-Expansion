@@ -13,6 +13,8 @@
     - Removed secondary fire
     - Purifier no longer self-destructs
 - Land
+  - Havoc
+    - Cost increased from 750 to 800
   - Lancer
     - Health decreased from 120 to 100
   - Peacekeeper
