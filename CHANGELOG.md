@@ -26,6 +26,7 @@
     - Added Enforcer as a buildable unit
   - Viper
     - Removed the 100 range weapon
+    - Attacks at full range
 
 ### AI
 

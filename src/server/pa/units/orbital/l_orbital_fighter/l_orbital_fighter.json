@@ -7,7 +7,6 @@
       "root": [0, 0, 0]
     }
   },
-  "attack_range_frac": 0.5,
   "base_spec": "/pa/units/orbital/base_orbital/base_orbital.json",
   "build_metal_cost": 350,
   "command_caps": [
