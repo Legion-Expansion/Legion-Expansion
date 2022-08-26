@@ -19,6 +19,7 @@
     - Health increased from 165 to 170
   - Scorpion
     - Range reduced from 130 to 120
+    - Cost increased from 800 to 900
 - Orbital
   - Starcannon
     - Health decreased from 3000 to 2000
