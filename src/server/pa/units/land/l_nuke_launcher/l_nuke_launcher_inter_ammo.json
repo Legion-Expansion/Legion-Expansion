@@ -11,7 +11,7 @@
     "bone": "socket_exhaust001",
     "filename": "/pa/units/air/missile_nuke/missile_nuke_trail.pfx"
   },
-  "gravwell_velocity_multiplier": 15.0,
+  "gravwell_velocity_multiplier": 10.0,
   "influence_radius": 400,
   "initial_velocity": 40.0,
   "interplanetary_type": "INTER_GravWell",
@@ -65,6 +65,6 @@
       "stage_turn_rate": 1080
     }
   ],
-  "system_velocity_multiplier": 15.0,
+  "system_velocity_multiplier": 30.0,
   "turn_rate": 180
 }

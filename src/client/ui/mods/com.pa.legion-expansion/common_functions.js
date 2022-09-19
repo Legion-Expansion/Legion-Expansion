@@ -11,13 +11,20 @@ define({
   imageSourceForType: function (path, colour, type) {
     return path + colour + "/icon_category_" + type.toLowerCase() + ".png";
   },
-  toggleImage: function (src, path, colour, png1, png2) {
+  setupSourcePath: function (src, png) {
+    var prefixedSource = "img[src='" + src;
+    return prefixedSource + png + "']";
+  },
+  setSourceAttribute: function (src, path, colour, png) {
     var imgPath = path + colour + "/";
-    var src1 = src + png1 + "']";
-    $(src1).attr("src", imgPath + png1);
+    $(src).attr("src", imgPath + png);
+  },
+  toggleImage: function (src, path, colour, png1, png2) {
+    var src1 = this.setupSourcePath(src, png1);
+    this.setSourceAttribute(src1, path, colour, png1);
     if (png2) {
-      var src2 = src + png2 + "']";
-      $(src2).attr("src", imgPath + png2);
+      var src2 = this.setupSourcePath(src, png2);
+      this.setSourceAttribute(src2, path, colour, png2);
     }
   },
   togglePanel: function (panel, path, colour, png1, png2) {

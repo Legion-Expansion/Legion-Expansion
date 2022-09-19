@@ -50,11 +50,6 @@
       "bone_rotate",
       "bone_rotate",
       "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
-      "bone_rotate",
       "bone_rotate"
     ],
     "store_units": true
@@ -92,7 +87,7 @@
       "type": "build"
     }
   ],
-  "max_health": 3000,
+  "max_health": 2000,
   "mesh_bounds": [75.576, 85.687, 79.187],
   "model": {
     "animations": {

@@ -82,7 +82,7 @@
       "type": "moving_forward"
     }
   ],
-  "gravwell_velocity_multiplier": 6.0,
+  "gravwell_velocity_multiplier": 10.0,
   "guard_layer": "WL_Air",
   "max_health": 240,
   "mesh_bounds": [4.5, 9.2, 4],
@@ -121,7 +121,7 @@
     "diameter": -20.0,
     "vertical_offset": -2.0
   },
-  "system_velocity_multiplier": 15.0,
+  "system_velocity_multiplier": 30.0,
   "tools": [
     {
       "aim_bone": "recoil_right",

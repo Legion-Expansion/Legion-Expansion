@@ -19,7 +19,7 @@ if (!legionLiveGamePlanetsLoaded) {
         ], function (common) {
           common.bodyPanelClass(payload);
 
-          var src = "img[src='coui://ui/main/shared/img/controls/";
+          var src = "coui://ui/main/shared/img/controls/";
           var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
           var colour = common.uiColour(payload);
           var png1 = "pin_open.png";

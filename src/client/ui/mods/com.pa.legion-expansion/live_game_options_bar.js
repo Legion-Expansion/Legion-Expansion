@@ -41,7 +41,7 @@ if (!legionLiveGameOptionsBarLoaded) {
         ], function (common) {
           common.bodyPanelClass(payload);
 
-          var src = "img[src='img/ingame_options_bar/";
+          var src = "img/ingame_options_bar/";
           var path =
             "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
           var colour = common.uiColour(payload);

@@ -22,7 +22,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 800,
+  "build_metal_cost": 900,
   "events": {
     "died": {
       "effect_scale": 1.6

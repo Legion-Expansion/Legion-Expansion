@@ -34,7 +34,7 @@
     "bone": "socket_exhaust001",
     "filename": "/pa/units/air/missile_nuke/missile_nuke_trail.pfx"
   },
-  "gravwell_velocity_multiplier": 10,
+  "gravwell_velocity_multiplier": 10.0,
   "has_notifications": true,
   "impact_decals": ["/pa/effects/specs/nuke_scorch_01.json"],
   "influence_radius": 3200,
@@ -100,7 +100,7 @@
     }
   ],
   "strategic_icon_priority": 0,
-  "system_velocity_multiplier": 20,
+  "system_velocity_multiplier": 30.0,
   "turn_rate": 180,
   "unit_types": ["UNITTYPE_Mobile", "UNITTYPE_Orbital", "UNITTYPE_Custom1"]
 }

@@ -66,7 +66,7 @@ if (!legionLiveGamePlayersLoaded) {
             require([
               "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
             ], function (common) {
-              var src = "img[src='coui://ui/main/shared/img/controls/";
+              var src = "coui://ui/main/shared/img/controls/";
               var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
               var colour = common.uiColour(ui);
               var png1 = "pin_open.png";
