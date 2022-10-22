@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Sea Urchin",
   "description": "!LOC:Sea Mine - High damage. Invisible to most units.",
-  "TEMP_texelinfo": 2.37699,
+  "TEMP_texelinfo": 10.2285,
   "area_build_pattern": [
     [
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -34,9 +34,6 @@
       "filename": "/pa/units/sea/l_sea_mine/l_sea_mine.papa"
     }
   ],
-  "physics": {
-    "ignore_collisions": true
-  },
   "recon": {
     "observable": {
       "layer": "mine"
