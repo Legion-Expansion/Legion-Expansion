@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Ripple",
   "description": "!LOC:Wave Turret - Attacks sea, seabed and undersea targets.",
-  "TEMP_texelinfo": 15,
+  "TEMP_texelinfo": 26.60,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 7.14,
