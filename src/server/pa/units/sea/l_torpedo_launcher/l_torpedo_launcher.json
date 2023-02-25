@@ -66,10 +66,10 @@
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_turretMain",
+      "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": ["gun001", "gun002", "gun003", "gun004", "gun005"],
-      "projectiles_per_fire": 5,
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
+      "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher_wave_tool_weapon.json"
     }
