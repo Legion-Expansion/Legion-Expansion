@@ -1,68 +1,19 @@
 {
   "blend_root": {
-    "nodes": {
-      "being_built": {
-        "type": "bind_pose"
-      },
-      "dead": {
-        "type": "bind_pose"
-      },
-      "ghost": {
-        "type": "bind_pose"
-      },
-      "living": {
-        "entries": [
-          {
-            "name": "idle",
-            "node": {
-              "type": "bind_pose"
-            },
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "is_firing",
-                  "target": "start"
-                },
-                "transition_reverse": {
-                  "func": "is_firing",
-                  "target": "start"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          },
-          {
-            "name": "start",
-            "node": {
-              "anim_name": "fire",
-              "looping": false,
-              "type": "playback"
-            },
-            "reset": "playback_reset",
-            "transitions": [
-              {
-                "transition_forward": {
-                  "func": "anim_complete",
-                  "target": "idle"
-                },
-                "transition_reverse": {
-                  "func": "anim_complete",
-                  "target": "idle"
-                }
-              }
-            ],
-            "type": "sequence_entry"
-          }
-        ],
-        "transition_seek": {
-          "false_target": "idle",
-          "func": "fired0",
-          "true_target": "start"
-        },
-        "type": "sequence"
-      }
+    "aim_bone_root": "bone_turret",
+    "child": {
+      "type": "bind_pose"
     },
-    "type": "unit_state"
+    "node_aim_down": {
+      "type": "bind_pose"
+    },
+    "node_aim_neutral": {
+      "type": "bind_pose"
+    },
+    "node_aim_up": {
+      "type": "bind_pose"
+    },
+    "type": "aim_blend"
   },
   "skeleton_controls": [
     {
@@ -85,14 +36,8 @@
     },
     {
       "bone": "bone_recoil001",
-      "recoil_dist": 6.0,
-      "restore_time": 6,
-      "type": "recoil"
-    },
-    {
-      "bone": "bone_recoil002",
-      "recoil_dist": 3,
-      "restore_time": 3,
+      "recoil_dist": 1.4,
+      "restore_time": 2.5,
       "type": "recoil"
     }
   ]
