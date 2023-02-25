@@ -2,7 +2,7 @@
   "display_name": "!LOC:Clot",
   "description": "!LOC:Wall - Very durable. Blocks enemy fire only.",
   "TEMP_texelinfo": 16.140,
-  "area_build_separation": 1.2,
+  "area_build_separation": 1,
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
