@@ -47,18 +47,12 @@
   "mesh_bounds": [24, 24, 18],
   "model": [
     {
-      "animations": {
-        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
-      },
       "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
       "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
     },
     {
-      "animations": {
-        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
-      },
       "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
       "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_WaterSurface"
