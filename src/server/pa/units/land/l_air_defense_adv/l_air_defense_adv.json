@@ -64,7 +64,7 @@
     {
       "aim_bone": "bone_pitch",
       "fire_event": "fired",
-      "muzzle_bone": ["rocket001", "rocket002", "rocket003", "rocket004"],
+      "muzzle_bone": ["socket_muzzleRight001", "socket_muzzleLeft001", "socket_muzzleRight002", "socket_muzzleLeft002", "socket_muzzleRight003", "socket_muzzleLeft003", "socket_muzzleRight004", "socket_muzzleLeft004", "socket_muzzleRight005", "socket_muzzleLeft005", "socket_muzzleRight006", "socket_muzzleLeft006" ],
       "projectiles_per_fire": 4,
       "spec_id": "/pa/units/land/l_air_defense_adv/l_air_defense_adv_tool_weapon.json"
     }
