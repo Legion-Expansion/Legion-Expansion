@@ -23,7 +23,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 3000,
-  "mesh_bounds": [16.6, 16.6, 12.1],
+  "mesh_bounds": [14.4, 14.4, 14],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
