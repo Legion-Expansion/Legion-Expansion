@@ -18,7 +18,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket005 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket006 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket007 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket008"
+      "effect_spec": "/pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustRight001 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustRight002 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustLeft001 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustLeft002"
     }
   },
   "guard_layer": "WL_Air",
