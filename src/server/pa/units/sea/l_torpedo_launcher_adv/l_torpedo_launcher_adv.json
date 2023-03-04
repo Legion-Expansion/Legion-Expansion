@@ -68,7 +68,7 @@
     {
       "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": ["gun01", "gun02", "gun03", "gun04", "gun05", "gun06"],
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002", "socket_muzzle003"],
       "projectiles_per_fire": 3,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv_wave_tool_weapon.json"
