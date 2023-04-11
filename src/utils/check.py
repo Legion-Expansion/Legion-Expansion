@@ -64,7 +64,7 @@ def check_mod(client_output_dir, server_output_dir):
 
         # Check that all legion factories have Custom1 as a buildable type
         if "Custom1" not in unit["buildable_types"]:
-            print(f"Error: A factory is missing the Custom1 buildable type.")
+            print("Error: A factory is missing the Custom1 buildable type.")
             print(f"  unit: {unit_path}")
             print(f" buildable_types: {unit['buildable_types']}")
             input()
