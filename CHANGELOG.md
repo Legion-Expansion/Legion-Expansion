@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Orbital
+  - Chariot
+    - Brake increased from 25 to 30
+    - Speed increased from 25 to 50
+
 ## v1.26.0 - 2022-09-19
 
 ### General
