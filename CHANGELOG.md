@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- Transports always move to units, units never move to Transports
+
 ### Balance
 
 - Orbital
