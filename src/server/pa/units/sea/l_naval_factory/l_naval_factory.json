@@ -67,7 +67,7 @@
     "animtree": "/pa/anim/anim_trees/factory_anim_tree.json",
     "filename": "/pa/units/sea/l_naval_factory/l_naval_factory.papa"
   },
-  "placement_size": [40, 50],
+  "placement_size": [40, 80],
   "recon": {
     "observer": {
       "items": [

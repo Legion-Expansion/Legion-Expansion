@@ -13,6 +13,10 @@
     - Brake increased from 25 to 30
     - Speed increased from 25 to 50
 
+### Bugfix
+
+- Naval Factory can no longer be blocked in a way that prevents production
+
 ## v1.26.0 - 2022-09-19
 
 ### General
