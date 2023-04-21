@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v1.27.0 - 2023-04-21
+
+### General
+
+- Transports always move to units, units never move to Transports
+- Updated for PA 116931
+- Ship Foundry can no longer be blocked in a way that prevents production
+
+### Balance
+
+- Orbital
+  - Chariot
+    - Brake increased from 25 to 30
+    - Speed increased from 25 to 50
+
+### Bugfix
+
+- Naval Factory can no longer be blocked in a way that prevents production
+
 ## v1.26.0 - 2022-09-19
 
 ### General
