@@ -34,21 +34,21 @@
       "bone": "laser01",
       "filename": "/pa/effects/specs/laser_beam.pfx",
       "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "orientation": [0, 0, 90],
       "type": "idle"
     },
     {
       "bone": "laser02",
       "filename": "/pa/effects/specs/laser_beam.pfx",
       "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "orientation": [0, 0, 90],
       "type": "idle"
     },
     {
       "bone": "laser03",
       "filename": "/pa/effects/specs/laser_beam.pfx",
       "offset": [0, 0, 0],
-      "orientation": [0, 0, 0],
+      "orientation": [0, 0, 90],
       "type": "idle"
     }
   ],
