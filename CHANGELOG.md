@@ -17,6 +17,63 @@
     - Splash range increased from 0 to 6
     - Standard deviation of shots increased from 0 to 1
 
+## v1.27.0 - 2023-04-21
+
+### General
+
+- Transports always move to units, units never move to Transports
+- Updated for PA 116931
+
+### Balance
+
+- Orbital
+  - Chariot
+    - Brake increased from 25 to 30
+    - Speed increased from 25 to 50
+
+### Bugfix
+
+- Ship Foundry can no longer be blocked in a way that prevents production
+
+## v1.26.0 - 2022-09-19
+
+### General
+
+- Aligned Legion orbital travel speeds with those of MLA
+
+### Balance
+
+- Air
+  - Salamander
+    - Removed secondary fire
+    - Purifier no longer self-destructs
+- Land
+  - Havoc
+    - Cost increased from 750 to 800
+  - Lancer
+    - Health decreased from 120 to 100
+  - Peacekeeper
+    - Health increased from 165 to 170
+  - Scorpion
+    - Range reduced from 130 to 120
+    - Cost increased from 800 to 900
+- Orbital
+  - Starcannon
+    - Health decreased from 3000 to 2000
+    - Unit slots reduced from 14 to 9
+    - Added Enforcer as a buildable unit
+  - Viper
+    - Removed the 100 range weapon
+    - Attacks at full range
+
+### AI
+
+- Enabled usage of Star Cannon following crash fix in base game
+
+### Fixed
+
+- Unit types for Purifier
+
 ## v1.25.0 - 2022-07-17
 
 ### General

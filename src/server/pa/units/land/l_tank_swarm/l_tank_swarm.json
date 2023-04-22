@@ -9,7 +9,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 750,
+  "build_metal_cost": 800,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Attack",

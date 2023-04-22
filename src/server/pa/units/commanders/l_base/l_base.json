@@ -23,5 +23,9 @@
     "UNITTYPE_Land",
     "UNITTYPE_NoBuild",
     "UNITTYPE_Custom1"
-  ]
+  ],
+  "ai_metal_extractor_names": {
+    "basic": "LegionEcoBasicMetalExtractor",
+    "advanced": "LegionEcoAdvancedMetalExtractor"
+  }
 }

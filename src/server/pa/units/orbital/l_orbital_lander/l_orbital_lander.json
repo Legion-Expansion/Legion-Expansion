@@ -82,7 +82,6 @@
       "type": "idle"
     }
   ],
-  "gravwell_velocity_multiplier": 5.0,
   "max_health": 150,
   "mesh_bounds": [30, 20, 10],
   "model": {
@@ -96,8 +95,8 @@
   },
   "navigation": {
     "acceleration": 25,
-    "brake": 25,
-    "move_speed": 25,
+    "brake": 30,
+    "move_speed": 50,
     "turn_speed": 360,
     "vertical_speed": 200
   },
@@ -131,7 +130,6 @@
   "selection_icon": {
     "diameter": -39
   },
-  "system_velocity_multiplier": 10.0,
   "transporter": {
     "capacity": 1,
     "transportable_attach_offset": "head",
@@ -149,7 +147,7 @@
   ],
   "usable": true,
   "useable": {
-    "range": 10,
+    "range": 4084,
     "type": "transport"
   }
 }

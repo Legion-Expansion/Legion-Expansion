@@ -59,7 +59,7 @@
       "type": "moving_forward"
     }
   ],
-  "gravwell_velocity_multiplier": 6.0,
+  "gravwell_velocity_multiplier": 10.0,
   "max_health": 250,
   "mesh_bounds": [23.7, 17.7, 5.7],
   "model": {
@@ -127,7 +127,7 @@
   "selection_icon": {
     "diameter": -33
   },
-  "system_velocity_multiplier": 15.0,
+  "system_velocity_multiplier": 30.0,
   "tools": [
     {
       "aim_bone": "bone_root",

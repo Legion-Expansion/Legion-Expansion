@@ -105,7 +105,6 @@
       "type": "idle"
     }
   ],
-  "gravwell_velocity_multiplier": 6.0,
   "guard_layer": "WL_AnySurface",
   "lamps": [
     {
