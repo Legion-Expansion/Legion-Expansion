@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Archer",
   "description": "!LOC:Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.",
-  "TEMP_texelinfo": 24.10,
+  "TEMP_texelinfo": 21.7624,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 26.66667,
