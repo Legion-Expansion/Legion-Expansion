@@ -26,15 +26,6 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "lamps": [
-    {
-      "bone": "bone_pitch",
-      "color": [1, 1, 1],
-      "intensity": 2,
-      "offset": [0, -4.24, 1.77],
-      "radius": 1.75
-    }
-  ],
   "max_health": 1000,
   "mesh_bounds": [12.728, 12.728, 10.603],
   "model": [
