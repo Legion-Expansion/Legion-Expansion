@@ -27,7 +27,11 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 1000,
-  "mesh_bounds": [12.728, 12.728, 10.603],
+  "mesh_bounds": [
+    12,
+    12,
+    10
+  ],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",
