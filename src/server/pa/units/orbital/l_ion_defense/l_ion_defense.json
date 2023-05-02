@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Tola",
   "description": "!LOC:Anti-Orbital Turret - Attacks orbital targets and drop pods.",
-  "TEMP_texelinfo": 35,
+  "TEMP_texelinfo": 33.1862,
   "area_build_separation": 50,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
