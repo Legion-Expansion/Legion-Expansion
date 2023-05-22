@@ -4,11 +4,27 @@
 
 ### General
 
-- Visual update for Jackal
-- Visual update for Scarab
-- Visual update for Shredder
+- Visual update for:
+  - Archer
+  - Arsonist
+  - Centurion
+  - Clot
+  - Decimator
+  - Gustav
+  - Hive
+  - Jackal
+  - Purifier
+  - Ripple
+  - Scarab
+  - Sea Urchin
+  - Shredder
+  - Spoiler
+  - Theodor
+  - Tola
+  - Tsunami
 
 ### Balance
+
 - Land
   - Jackal
     - Attack changed to burst fire
@@ -16,6 +32,19 @@
     - Splash increased from 0 to 20
     - Splash range increased from 0 to 6
     - Standard deviation of shots increased from 0 to 1
+  - Theodor
+    - Ammo capacity decreased from 1000 to 100
+    - Ammo per shot decreased from 1000 to 100
+    - Damage decreased from 200 to 20
+    - Max firing velocity increased from 200 to 250
+    - Rate of fire increased from 0.2 to 2
+    - Standard deviation of shots increased from 0.25 to 0.66
+    - Splash damage decreased from 200 to 20
+    - Splash range decreased from 18 to 12
+- Sea
+  - Ripple
+    - Damage increased from 50 to 125
+    - Projectiles per fire decreased from 5 to 2
 
 ## v1.27.0 - 2023-04-21
 
