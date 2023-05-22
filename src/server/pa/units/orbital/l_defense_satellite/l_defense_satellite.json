@@ -68,27 +68,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "pfx_socket_9",
-      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_smoke_stack.pfx",
-      "type": "idle"
-    },
-    {
-      "bone": "pfx_socket_8",
-      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_smoke_stack.pfx",
-      "type": "idle"
-    },
-    {
-      "bone": "pfx_socket_5",
-      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
-      "type": "idle"
-    },
-    {
-      "bone": "pfx_socket_4",
-      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
-      "type": "idle"
-    },
-    {
-      "bone": "pfx_socket_3",
+      "bone": "pfx_socket_1",
       "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_dot.pfx",
       "type": "idle"
     },
@@ -98,8 +78,18 @@
       "type": "idle"
     },
     {
-      "bone": "pfx_socket_1",
+      "bone": "pfx_socket_3",
       "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_dot.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_4",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_5",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
       "type": "idle"
     }
   ],
