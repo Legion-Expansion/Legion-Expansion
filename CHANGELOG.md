@@ -1,10 +1,11 @@
 # CHANGELOG
 
-## Unreleased
+## v1.28.0 - 2023-06-12
 
 ### General
 
 - Meteroids don't leave wreckage due to potential sim speed impact over time
+- Updated for PA 116982
 
 ## v1.27.0 - 2023-04-21
 
