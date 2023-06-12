@@ -1,12 +1,18 @@
 # CHANGELOG
 
+## v1.28.0 - 2023-06-12
+
+### General
+
+- Meteroids don't leave wreckage due to potential sim speed impact over time
+- Updated for PA 116982
+
 ## v1.27.0 - 2023-04-21
 
 ### General
 
 - Transports always move to units, units never move to Transports
 - Updated for PA 116931
-- Ship Foundry can no longer be blocked in a way that prevents production
 
 ### Balance
 
@@ -17,7 +23,7 @@
 
 ### Bugfix
 
-- Naval Factory can no longer be blocked in a way that prevents production
+- Ship Foundry can no longer be blocked in a way that prevents production
 
 ## v1.26.0 - 2022-09-19
 

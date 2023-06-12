@@ -18,7 +18,7 @@ See [Best Practices for Attribution](https://wiki.creativecommons.org/wiki/Best_
 
 ### Example Attribution
 
-This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
+This work, ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is a derivative of [Legion Expansion](https://github.com/Legion-Expansion/Legion-Expansion/) by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). ["YOUR-PROJECT-NAME-WITH-GITHUB-FORK-LINK"](https://github.com/) is licenced under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) by [YOUR-NAME-HERE] and MIT for software portions containing JavaScript code.
 
 ## Full Credits
 

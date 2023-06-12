@@ -13,7 +13,6 @@ You will need the following to ensure your submissions adhere to the requirement
 - prettier
 - sonarlint
 - stylelint
-- stylelint-config-prettier
 - stylelint-config-standard
 
 The project is not tied to a specific version of these tools and will use the latest versions where possible.

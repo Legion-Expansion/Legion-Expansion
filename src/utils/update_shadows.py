@@ -71,26 +71,6 @@ def update_shadows(client_out_dir, server_out_dir):
                     }
                 )
 
-        # Avatar units should be able to build everything
-        if unit_path == "/pa/units/commanders/avatar/avatar.json":
-            continue
-        if unit_path == "/pa/units/land/avatar_factory/avatar_factory.json":
-            continue
-
-        # Update buildable_types
-        while "buildable_types" not in unit and "base_spec" in unit:
-            unit_path = unit["base_spec"]
-            unit = load(unit_path)
-
-        old_buildable_types = unit.get("buildable_types", None)
-
-        if old_buildable_types and not old_buildable_types.endswith(
-            " - Custom1 - Custom2 - Custom3 - Custom4"
-        ):
-            unit["buildable_types"] = (
-                "(" + old_buildable_types + ") - Custom1 - Custom2 - Custom3 - Custom4"
-            )
-
     # Anti-AA missile
     load("/pa/units/air/support_platform/support_platform_tool_interception.json")[
         "anti_entity_targets"
