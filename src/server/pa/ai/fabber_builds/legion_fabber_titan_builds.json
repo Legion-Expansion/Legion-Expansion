@@ -8,7 +8,7 @@
       "priority": 480,
       "min_num_assisters": 3,
       "max_num_assisters": 15,
-      "builders": ["LegionAirAdvancedFabber"],
+      "builders": ["LegionBotAdvancedFabber"],
       "build_conditions": [
         [
           {
@@ -58,7 +58,7 @@
       "priority": 480,
       "min_num_assisters": 3,
       "max_num_assisters": 15,
-      "builders": ["LegionAirAdvancedFabber"],
+      "builders": ["LegionVehicleAdvancedFabber"],
       "build_conditions": [
         [
           {
