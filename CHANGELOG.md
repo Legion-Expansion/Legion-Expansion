@@ -7,6 +7,12 @@
 - Build Titans only when the threat level on the planet is high enough to justify their usage
 - Build all titan types
 
+### Balance
+
+- Sea
+  - Jaeger
+    - Can now travel through teleporters
+
 ## v1.28.0 - 2023-06-12
 
 ### General
