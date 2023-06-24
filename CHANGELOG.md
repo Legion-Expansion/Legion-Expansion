@@ -5,6 +5,7 @@
 ### AI
 
 - Build Titans only when the threat level on the planet is high enough to justify their usage
+- Build all titan types
 
 ## v1.28.0 - 2023-06-12
 
