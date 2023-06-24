@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### AI
+
+- Build Titans only when the threat level on the planet is high enough to justify their usage
+
 ## v1.28.0 - 2023-06-12
 
 ### General
