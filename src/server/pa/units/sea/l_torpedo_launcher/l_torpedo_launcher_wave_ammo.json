@@ -1,14 +1,17 @@
 {
   "base_spec": "/pa/ammo/torpedo/torpedo.json",
   "cruise_height": 2,
-  "damage": 50,
-  "fx_trail": {
-    "filename": "/pa/effects/specs/wave.pfx"
-  },
-  "initial_velocity": 65.0,
+  "damage": 125,
+  "initial_velocity": 60.0,
   "lifetime": 3.5,
   "max_velocity": 75.0,
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 15,
+    "add_to_spatial_db": false,
+    "allow_underground": true
+  },
   "splash_damage": 0,
   "splash_radius": 0,
-  "turn_rate": 60
+  "turn_rate": 1080
 }

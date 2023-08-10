@@ -2,6 +2,27 @@
 
 ## Unreleased
 
+### General
+
+- Visual update for:
+  - Archer
+  - Arsonist
+  - Centurion
+  - Clot
+  - Decimator
+  - Gustav
+  - Hive
+  - Jackal
+  - Purifier
+  - Ripple
+  - Scarab
+  - Sea Urchin
+  - Shredder
+  - Spoiler
+  - Theodor
+  - Tola
+  - Tsunami
+
 ### AI
 
 - Build Titans only when the threat level on the planet is high enough to justify their usage
@@ -12,6 +33,26 @@
 - Sea
   - Jaeger
     - Can now travel through teleporters
+- Land
+  - Jackal
+    - Attack changed to burst fire
+    - Damage increased from 10 to 40
+    - Splash increased from 0 to 20
+    - Splash range increased from 0 to 6
+    - Standard deviation of shots increased from 0 to 1
+  - Theodor
+    - Ammo capacity decreased from 1000 to 100
+    - Ammo per shot decreased from 1000 to 100
+    - Damage decreased from 200 to 20
+    - Max firing velocity increased from 200 to 250
+    - Rate of fire increased from 0.2 to 2
+    - Standard deviation of shots increased from 0.25 to 0.66
+    - Splash damage decreased from 200 to 20
+    - Splash range decreased from 18 to 12
+- Sea
+  - Ripple
+    - Damage increased from 50 to 125
+    - Projectiles per fire decreased from 5 to 2
 
 ## v1.28.0 - 2023-06-12
 

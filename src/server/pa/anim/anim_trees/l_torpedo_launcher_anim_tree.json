@@ -11,23 +11,85 @@
         "type": "bind_pose"
       },
       "living": {
-        "type": "bind_pose"
+        "entries": [
+          {
+            "name": "idle",
+            "node": {
+              "type": "bind_pose"
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "is_firing",
+                  "target": "fire"
+                },
+                "transition_reverse": {
+                  "func": "is_firing",
+                  "target": "fire"
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          },
+          {
+            "name": "fire",
+            "node": {
+              "anim_name": "fire",
+              "looping": false,
+              "type": "playback"
+            },
+            "reset": "playback_reset",
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "idle",
+                  "duration": 0
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "idle",
+                  "duration": 0
+                }
+              },
+              {
+                "transition_forward": {
+                  "func": "is_firing",
+                  "target": "fire",
+                  "duration": 0
+                },
+                "transition_reverse": {
+                  "func": "is_firing",
+                  "target": "fire",
+                  "duration": 0
+                }
+              }
+            ],
+            "type": "sequence_entry"
+          }
+        ],
+        "transition_seek": {
+          "false_target": "idle",
+          "func": "is_firing",
+          "true_target": "fire"
+        },
+        "type": "sequence"
       }
     },
     "type": "unit_state"
   },
   "skeleton_controls": [
     {
-      "bone": "bone_push",
-      "recoil_dist": 3.0,
-      "restore_time": 3.0,
+      "bone": "bone_recoil",
+      "recoil_dist": 0.5,
+      "restore_time": 1.5,
       "type": "recoil",
       "unit_event": "fired0"
     },
     {
       "child": {
         "rotation_axis": "z",
-        "rotation_bone": "bone_turretMain",
+        "rotation_bone": "bone_turret",
         "type": "procedural_aim"
       },
       "lerp_func": "not_being_built",

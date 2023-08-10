@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Ripple",
   "description": "!LOC:Wave Turret - Attacks sea, seabed and undersea targets.",
-  "TEMP_texelinfo": 15,
+  "TEMP_texelinfo": 26.6,
   "area_build_separation": 18,
   "atrophy_cool_down": 15.0,
   "atrophy_rate": 7.14,
@@ -24,6 +24,9 @@
   "max_health": 2000,
   "mesh_bounds": [12, 12, 5],
   "model": {
+    "animations": {
+      "fire": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher_anim_fire.papa"
+    },
     "animtree": "/pa/anim/anim_trees/l_torpedo_launcher_anim_tree.json",
     "filename": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher.papa"
   },
@@ -63,10 +66,10 @@
   "spawn_layers": "WL_WaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_turretMain",
+      "aim_bone": "bone_turret",
       "fire_event": "fired0",
-      "muzzle_bone": ["gun001", "gun002", "gun003", "gun004", "gun005"],
-      "projectiles_per_fire": 5,
+      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
+      "projectiles_per_fire": 2,
       "record_index": 0,
       "spec_id": "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher_wave_tool_weapon.json"
     }

@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Centurion",
   "description": "!LOC:Orbital Turret - Rapid fire. Attacks land, air, sea and orbital targets.",
-  "TEMP_texelinfo": 26.4194,
+  "TEMP_texelinfo": 18.6929,
   "area_build_separation": 75,
   "area_build_type": "Sphere",
   "atrophy_cool_down": 15.0,
@@ -22,7 +22,9 @@
       "audio_cue": "/SE/Death/orbital"
     },
     "fired1": {
-      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
+      "audio_cue": "/SE/Weapons/orb/defense_satellite_fire",
+      "effect_scale": 1.0,
+      "effect_spec": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_laser_flash.pfx socket_muzzle001 /pa/units/orbital/l_defense_satellite/l_defence_satellite_laser_flash.pfx socket_muzzle002"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/orb/defense_satellite_fire"
@@ -64,6 +66,33 @@
   "selection_icon": {
     "diameter": -43
   },
+  "fx_offsets": [
+    {
+      "bone": "pfx_socket_1",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_dot.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_2",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_dot.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_3",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_dot.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_4",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
+      "type": "idle"
+    },
+    {
+      "bone": "pfx_socket_5",
+      "filename": "/pa/units/orbital/l_defense_satellite/l_defence_satellite_lightning.pfx",
+      "type": "idle"
+    }
+  ],
   "tools": [
     {
       "aim_bone": "bone_turret",
