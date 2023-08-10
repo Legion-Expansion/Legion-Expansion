@@ -11,69 +11,69 @@
         "type": "bind_pose"
       },
       "living": {
-        "entries":[
+        "entries": [
           {
-            "name":"idle",
-            "node":{
-              "type":"bind_pose"
+            "name": "idle",
+            "node": {
+              "type": "bind_pose"
             },
-            "transitions":[
+            "transitions": [
               {
-                "transition_forward":{
-                  "func":"is_firing",
-                  "target":"fire"
+                "transition_forward": {
+                  "func": "is_firing",
+                  "target": "fire"
                 },
-                "transition_reverse":{
-                  "func":"is_firing",
-                  "target":"fire"
+                "transition_reverse": {
+                  "func": "is_firing",
+                  "target": "fire"
                 }
               }
             ],
-            "type":"sequence_entry"
+            "type": "sequence_entry"
           },
           {
-            "name":"fire",
-            "node":{
-              "anim_name":"fire",
-              "looping":false,
-              "type":"playback"
+            "name": "fire",
+            "node": {
+              "anim_name": "fire",
+              "looping": false,
+              "type": "playback"
             },
-            "reset":"playback_reset",
-            "transitions":[
+            "reset": "playback_reset",
+            "transitions": [
               {
-                "transition_forward":{
-                  "func":"anim_complete",
-                  "target":"idle",
-                  "duration":0
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "idle",
+                  "duration": 0
                 },
-                "transition_reverse":{
-                  "func":"anim_complete",
-                  "target":"idle",
-                  "duration":0
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "idle",
+                  "duration": 0
                 }
               },
               {
-                "transition_forward":{
-                  "func":"is_firing",
-                  "target":"fire",
-                  "duration":0
+                "transition_forward": {
+                  "func": "is_firing",
+                  "target": "fire",
+                  "duration": 0
                 },
-                "transition_reverse":{
-                  "func":"is_firing",
-                  "target":"fire",
-                  "duration":0
+                "transition_reverse": {
+                  "func": "is_firing",
+                  "target": "fire",
+                  "duration": 0
                 }
               }
             ],
-            "type":"sequence_entry"
+            "type": "sequence_entry"
           }
         ],
-        "transition_seek":{
-          "false_target":"idle",
-          "func":"is_firing",
-          "true_target":"fire"
+        "transition_seek": {
+          "false_target": "idle",
+          "func": "is_firing",
+          "true_target": "fire"
         },
-        "type":"sequence"
+        "type": "sequence"
       }
     },
     "type": "unit_state"

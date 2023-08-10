@@ -23,11 +23,7 @@
   },
   "guard_layer": "WL_Air",
   "max_health": 1000,
-  "mesh_bounds": [
-    9.776,
-    9.776,
-    9.429
-  ],
+  "mesh_bounds": [9.776, 9.776, 9.429],
   "model": [
     {
       "animations": {
