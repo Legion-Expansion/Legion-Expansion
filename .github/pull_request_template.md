@@ -3,7 +3,7 @@
 ## Validation
 
 - [ ] I have followed the requirements of the Contributing document.
-- [ ] I have checked to ensure there aren't other open [Pull Requests](../../pulls) for the same update/change.
+- [ ] I have checked to ensure there aren't other open [Pull Requests](../pulls) for the same update/change.
 - [ ] I have commented my code, particularly in hard-to-understand areas.
 - [ ] I have successfully tested my changes locally.
 - [ ] I have made corresponding changes to the documentation.
