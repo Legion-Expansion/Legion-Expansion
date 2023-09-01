@@ -30,7 +30,7 @@ if (!legionSettingsLoaded) {
           type: "GET",
           url: "coui://ui/mods/com.pa.legion-expansion/settings.html",
           async: false,
-        }).responseText
+        }).responseText,
       );
     } catch (e) {
       console.error(e);

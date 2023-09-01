@@ -9,7 +9,7 @@ if (!legionLiveGameSelectionLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css"
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_selection.css",
         );
 
         model.isLegion = function (type) {
@@ -18,7 +18,7 @@ if (!legionLiveGameSelectionLoaded) {
 
         $(".div_unit_selection").attr(
           "data-bind",
-          "css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $parent.onSelectionDisplayClick($index(), event) } }"
+          "css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $parent.onSelectionDisplayClick($index(), event) } }",
         );
       }
 
@@ -45,7 +45,7 @@ if (!legionLiveGameSelectionLoaded) {
                   count: group[element],
                   source: common.imageSourceForType(path, colour, element),
                 };
-              })
+              }),
             );
           });
         });

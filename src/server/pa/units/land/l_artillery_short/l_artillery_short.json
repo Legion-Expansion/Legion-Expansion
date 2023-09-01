@@ -11,9 +11,7 @@
   },
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
   "build_metal_cost": 900,
-  "command_caps": [
-    "ORDER_Attack"
-  ],
+  "command_caps": ["ORDER_Attack"],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/structure_small"
@@ -29,11 +27,7 @@
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 1000,
-  "mesh_bounds": [
-    17.5,
-    17.5,
-    10
-  ],
+  "mesh_bounds": [17.5, 17.5, 10],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",

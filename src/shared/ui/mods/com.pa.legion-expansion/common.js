@@ -53,5 +53,5 @@ legion.builders = _.union(
   legion.landFabbers,
   legion.orbitalFabbers,
   legion.navalFabbers,
-  legion.launchers
+  legion.launchers,
 );

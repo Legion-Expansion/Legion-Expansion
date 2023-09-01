@@ -9,7 +9,7 @@ if (!legionLiveGameBuildHoverLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css"
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css",
         );
 
         handlers.legionui = function (payload) {

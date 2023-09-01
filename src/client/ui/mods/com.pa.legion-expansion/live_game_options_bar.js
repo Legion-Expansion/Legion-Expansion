@@ -17,21 +17,21 @@ if (!legionLiveGameOptionsBarLoaded) {
             "<div id='legion_watermark' class='watermark'><loc>Legion</loc>&nbsp;" +
               // eslint-disable-next-line no-undef
               version +
-              "</div>"
+              "</div>",
           );
           locTree($("#legion_watermark"));
         }
       });
 
       loadCSS(
-        "coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css"
+        "coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css",
       );
 
       var themeSetting =
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_options_bar.css"
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_options_bar.css",
         );
       }
 
@@ -66,7 +66,7 @@ if (!legionLiveGameOptionsBarLoaded) {
                 path,
                 colour,
                 png1,
-                png2
+                png2,
               );
             });
           };

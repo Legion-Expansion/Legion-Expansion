@@ -58,15 +58,15 @@ if (!legionNewGameLoaded) {
 
         //legion commander picker colouring
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_commander_picker.css"
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_commander_picker.css",
         );
 
         //legion welcome screen
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/welcome.css");
         $("body").append(
           loadHtml(
-            "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html"
-          )
+            "coui://ui/mods/com.pa.legion-expansion/new_game/welcome.html",
+          ),
         );
 
         api.mods.getMounted("client").then(function (mods) {
@@ -82,13 +82,13 @@ if (!legionNewGameLoaded) {
             if (model.registerHoldReady) {
               model.registerHoldReady(
                 "com.pa.legion-expansion-client",
-                "Legion Client Mod Missing"
+                "Legion Client Mod Missing",
               );
             }
             if (model.localChatMessage) {
               model.localChatMessage(
                 "Legion Expansion",
-                "Legion Expansion client mod is not installed!"
+                "Legion Expansion client mod is not installed!",
               );
             }
           }
@@ -108,17 +108,17 @@ if (!legionNewGameLoaded) {
         //Style Commander Picker Legion
         $("#commander-picker .div-commander-picker-item.btn_std_ix").attr(
           "data-bind",
-          "css: {legioncommander: model.isLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'"
+          "css: {legioncommander: model.isLegion($data)}, click: function () { model.setCommander($index()) }, click_sound: 'default', rollover_sound: 'default'",
         );
         $("#ai-commander-picker .div-commander-picker-item.btn_std_ix").attr(
           "data-bind",
-          "css: {legioncommander: model.isLegion($data)}, click: function () { model.setAICommander(model.selectedAI(), $data) }, click_sound: 'default', rollover_sound: 'default'"
+          "css: {legioncommander: model.isLegion($data)}, click: function () { model.setAICommander(model.selectedAI(), $data) }, click_sound: 'default', rollover_sound: 'default'",
         );
 
         //Style Slot Legion
         $(".slot-player").attr(
           "data-bind",
-          "css: {legionslot: !$data.isEmpty() && model.isLegion($data.commander()), mlaslot: !$data.isEmpty() && !model.isLegion($data.commander()), ready: isReady, loading: isLoading}"
+          "css: {legionslot: !$data.isEmpty() && model.isLegion($data.commander()), mlaslot: !$data.isEmpty() && !model.isLegion($data.commander()), ready: isReady, loading: isLoading}",
         );
       };
 
@@ -134,7 +134,7 @@ if (!legionNewGameLoaded) {
       _.defer(function () {
         model.localChatMessage(
           loc("!LOC:Legion Expansion"),
-          loc("!LOC:To play as the Legion select one of the red Commanders.")
+          loc("!LOC:To play as the Legion select one of the red Commanders."),
         );
       });
     } catch (e) {
