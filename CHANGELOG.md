@@ -54,6 +54,10 @@
     - Damage increased from 50 to 125
     - Projectiles per fire decreased from 5 to 2
 
+### Bugfix
+
+- Fix Theodor referencing nonexistent bone for aiming
+
 ## v1.28.0 - 2023-06-12
 
 ### General
