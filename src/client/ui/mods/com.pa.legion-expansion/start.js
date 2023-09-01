@@ -8,12 +8,12 @@ if (!legionStartLoaded) {
       model.legionPlayVideo = function () {
         engine.call(
           "web.launchPage",
-          "https://gaming.youtube.com/embed/aqzdPnJfKMo?autoplay=1",
+          "https://gaming.youtube.com/embed/aqzdPnJfKMo?autoplay=1"
         );
       };
 
       $("div.view_intro:contains(View Intro)").after(
-        loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html"),
+        loadHtml("coui://ui/mods/com.pa.legion-expansion/legion_intro.html")
       );
       locTree($("#legion_intro"));
 
@@ -24,7 +24,7 @@ if (!legionStartLoaded) {
 
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css",
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css"
         );
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
         loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");

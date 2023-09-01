@@ -9,7 +9,7 @@ if (!legionLiveGamePlanetsLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_planets.css",
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_planets.css"
         );
       }
 
@@ -33,7 +33,7 @@ if (!legionLiveGamePlanetsLoaded) {
               path,
               colour,
               png1,
-              png2,
+              png2
             );
           });
         });

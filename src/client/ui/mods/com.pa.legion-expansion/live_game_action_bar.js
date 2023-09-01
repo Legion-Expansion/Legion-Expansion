@@ -9,7 +9,7 @@ if (!legionLiveGameActionBarLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css",
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css"
         );
 
         var isLegionOrMixedOrVanilla = function (data) {
@@ -42,7 +42,7 @@ if (!legionLiveGameActionBarLoaded) {
 
         $(".body_panel").attr(
           "data-bind",
-          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}",
+          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
         );
       }
     } catch (e) {

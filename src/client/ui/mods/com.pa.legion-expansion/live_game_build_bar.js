@@ -44,7 +44,7 @@ if (!legionLiveGameBuildBarLoaded) {
       });
 
       handlers.start_build_sequence = model.startBuildSequence = function (
-        params,
+        params
       ) {
         var group = params.group;
         var locked = params.locked;
@@ -70,7 +70,7 @@ if (!legionLiveGameBuildBarLoaded) {
         api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
       if (themeSetting === "ON") {
         loadCSS(
-          "coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css",
+          "coui://ui/mods/com.pa.legion-expansion/css/legion_build_bar.css"
         );
         loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
@@ -110,7 +110,7 @@ if (!legionLiveGameBuildBarLoaded) {
 
         $(".body_panel").attr(
           "data-bind",
-          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}",
+          "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
         );
       }
     } catch (e) {

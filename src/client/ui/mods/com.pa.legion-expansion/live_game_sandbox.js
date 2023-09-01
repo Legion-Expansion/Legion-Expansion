@@ -12,7 +12,7 @@ if (!legionLiveGameSandboxLoaded) {
         "L_combat",
         "L_utility",
         "L_orbital_structure",
-        "L_ammo",
+        "L_ammo"
       );
     }
     if (model.mobileGroups) {
@@ -23,7 +23,7 @@ if (!legionLiveGameSandboxLoaded) {
         "L_bot",
         "L_air",
         "L_sea",
-        "L_orbital",
+        "L_orbital"
       );
     }
   } catch (e) {
