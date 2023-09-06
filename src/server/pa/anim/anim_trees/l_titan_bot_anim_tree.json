@@ -52,6 +52,9 @@
             "looping": true,
             "type": "playback"
           },
+          "node_idle": {
+            "type": "bind_pose"
+          },
           "type": "walk"
         },
         "node_aim_down": {
