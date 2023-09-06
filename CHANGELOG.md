@@ -57,7 +57,7 @@
 ### Bugfix
 
 - Fix Theodor referencing nonexistent bone for aiming
-- Fix missing node_walk entry in Thor animation tree
+- Fix missing node_idle entry in Thor animation tree
 - Fix missing being_built entry in Manta animation tree
 
 ## v1.28.0 - 2023-06-12
