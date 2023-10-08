@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Peacekeeper",
   "description": "!LOC:Basic Infantry - Durable. Amphibious. Attacks land, sea and seabed targets.",
-  "TEMP_texelinfo": 4.07719,
+  "TEMP_texelinfo": 20.8258,
   "attachable": {
     "offsets": {
       "head": [0, 0, 3.5],
@@ -26,12 +26,14 @@
   "mesh_bounds": [4, 2.5, 4],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_assault_bot/l_assault_bot_idle.papa",
-      "walk": "/pa/units/land/l_assault_bot/l_assault_bot_walk.papa"
+      "idle": "/pa/units/land/l_assault_bot/l_assault_bot_anim_idle.papa",
+      "walk": "/pa/units/land/l_assault_bot/l_assault_bot_anim_walk.papa",
+      "walk_start": "/pa/units/land/l_assault_bot/l_assault_bot_anim_walk_start.papa",
+	    "walk_stop": "/pa/units/land/l_assault_bot/l_assault_bot_anim_idle_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
     "filename": "/pa/units/land/l_assault_bot/l_assault_bot.papa",
-    "walk_speed": 3
+    "walk_speed": 15
   },
   "navigation": {
     "acceleration": 50,

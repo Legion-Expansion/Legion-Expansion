@@ -16,7 +16,7 @@
   "max_velocity": 150,
   "min_velocity": 90,
   "model": {
-    "filename": "/pa/units/land/l_scout_bot/l_scout_bot.papa"
+    "filename": "/pa/units/land/l_scout_bot/jump/l_scout_bot_jump.papa"
   },
   "recon": {
     "observer": {

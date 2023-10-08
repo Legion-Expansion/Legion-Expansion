@@ -45,7 +45,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_radar",
+      "bone": "bone_radar_small",
       "filename": "/pa/units/land/l_scout_bot/l_scout_bot_radar_on.pfx",
       "type": "energy"
     }
@@ -59,11 +59,26 @@
       "radius": 3
     }
   ],
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [0.0, -0.8, 1.3],
+      "orientation": [0.0, 75.0, 0.0],
+      "near_width": 2.0,
+      "near_height": 2.0,
+      "near_distance": 1.0,
+      "far_distance": 90.0,
+      "color": [1.0, 1.0, 1.0],
+      "intensity": 9.0,
+      "bone": "bone_head",
+      "shadow_resolution": 32
+    }
+  ],
   "max_health": 60,
   "mesh_bounds": [2, 2, 4],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_idle.papa"
+      "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_anim_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",

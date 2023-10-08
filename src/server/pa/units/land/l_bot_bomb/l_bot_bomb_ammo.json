@@ -16,7 +16,7 @@
   "lifetime": 30,
   "max_velocity": 150,
   "model": {
-    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
+    "filename": "/pa/units/land/l_bot_bomb/projectile/l_bot_bomb_projectile.papa"
   },
   "physics": {
     "add_to_spatial_db": false

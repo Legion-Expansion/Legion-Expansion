@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Investigator",
   "description": "!LOC:Scout - Fast. Detects mines. Use alt fire to change into a short-range radar detectable only by radar.",
-  "TEMP_texelinfo": 4.07719,
+  "TEMP_texelinfo": 28.7454,
   "attachable": {
     "offsets": {
       "head": [0, 0, 3.5],
@@ -45,12 +45,12 @@
   "mesh_bounds": [4, 2, 4],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_scout_bot/l_scout_bot_idle.papa",
-      "walk": "/pa/units/land/l_scout_bot/l_scout_bot_walk.papa"
+      "idle": "/pa/units/land/l_scout_bot/l_scout_bot_anim_idle.papa",
+      "walk": "/pa/units/land/l_scout_bot/l_scout_bot_anim_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_scout_bot_anim_tree.json",
     "filename": "/pa/units/land/l_scout_bot/l_scout_bot.papa",
-    "walk_speed": 2.75
+    "walk_speed": 30
   },
   "navigation": {
     "acceleration": 350,
