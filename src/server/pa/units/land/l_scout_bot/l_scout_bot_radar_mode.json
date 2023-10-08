@@ -63,7 +63,7 @@
   "mesh_bounds": [2, 2, 4],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_idle.papa"
+      "idle": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode_anim_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
     "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",
