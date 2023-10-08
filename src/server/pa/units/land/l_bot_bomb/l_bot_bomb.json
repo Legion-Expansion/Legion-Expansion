@@ -55,13 +55,13 @@
   "mesh_bounds": [3.5, 3, 2.8],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
-      "idle": "/pa/units/land/l_bot_bomb/l_bot_bomb_idle.papa",
-      "walk": "/pa/units/land/l_bot_bomb/l_bot_bomb_walk.papa"
+      "idle": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_idle.papa",
+      "walk": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_walk.papa",
+      "death": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_dead.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_bot_bomb_anim_tree.json",
     "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa",
-    "walk_speed": 1
+    "walk_speed": 25
   },
   "navigation": {
     "acceleration": 200,
@@ -114,5 +114,6 @@
     "UNITTYPE_SelfDestruct",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0
+  "wreckage_health_frac": 0,
+  "has_death_effects": true
 }
