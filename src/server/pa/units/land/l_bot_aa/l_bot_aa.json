@@ -34,12 +34,12 @@
   "mesh_bounds": [4.5, 3, 3.8],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_bot_aa/l_bot_aa_idle.papa",
-      "walk": "/pa/units/land/l_bot_aa/l_bot_aa_walk.papa"
+      "idle": "/pa/units/land/l_bot_aa/l_bot_aa_anim_idle.papa",
+      "walk": "/pa/units/land/l_bot_aa/l_bot_aa_anim_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/l_bot_aa_anim_tree.json",
     "filename": "/pa/units/land/l_bot_aa/l_bot_aa.papa",
-    "walk_speed": 3
+    "walk_speed": 15
   },
   "navigation": {
     "acceleration": 120,
