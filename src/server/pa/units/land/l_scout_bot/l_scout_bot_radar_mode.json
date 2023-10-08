@@ -45,7 +45,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_radar",
+      "bone": "bone_radar_small",
       "filename": "/pa/units/land/l_scout_bot/l_scout_bot_radar_on.pfx",
       "type": "energy"
     }
@@ -57,6 +57,21 @@
       "intensity": 2,
       "offset": [0, 3.68, 5.53],
       "radius": 3
+    }
+  ],
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [0.0, -0.8, 1.3],
+      "orientation": [0.0, 75.0, 0.0],
+      "near_width": 2.0,
+      "near_height": 2.0,
+      "near_distance": 1.0,
+      "far_distance": 90.0,
+      "color": [1.0, 1.0, 1.0],
+      "intensity": 9.0,
+      "bone": "bone_head",
+      "shadow_resolution": 32
     }
   ],
   "max_health": 60,
