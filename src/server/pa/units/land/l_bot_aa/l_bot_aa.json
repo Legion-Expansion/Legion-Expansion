@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Patriot",
   "description": "!LOC:Anti-Air Walker - Equipped with homing missiles. Only attacks air targets.",
-  "TEMP_texelinfo": 5.47132,
+  "TEMP_texelinfo": 16.0388,
   "attachable": {
     "offsets": {
       "head": [0, 0.3, 3],
