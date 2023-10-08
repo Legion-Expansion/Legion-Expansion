@@ -12,7 +12,11 @@
   - Decimator
   - Gustav
   - Hive
+  - Investigator
   - Jackal
+  - Lancer
+  - Peacekeeper
+  - Purger
   - Purifier
   - Ripple
   - Scarab
@@ -49,6 +53,8 @@
     - Standard deviation of shots increased from 0.25 to 0.66
     - Splash damage decreased from 200 to 20
     - Splash range decreased from 18 to 12
+  - Purger
+    - Turret yaw rate decreased from 3000 to 540
 - Sea
   - Ripple
     - Damage increased from 50 to 125
