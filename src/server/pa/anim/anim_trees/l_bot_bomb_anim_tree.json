@@ -5,7 +5,7 @@
         "type": "bind_pose"
       },
       "dead": {
-        "anim_name": "death01",
+        "anim_name": "death",
         "looping": false,
         "type": "playback"
       },
@@ -30,7 +30,7 @@
     {
       "child": {
         "rotation_axis": "z",
-        "rotation_bone": "bone_root",
+        "rotation_bone": "bone_turret",
         "type": "procedural_aim"
       },
       "lerp_func": "is_active",
