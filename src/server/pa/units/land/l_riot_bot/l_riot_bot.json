@@ -40,7 +40,7 @@
       "idle": "/pa/units/land/l_riot_bot/l_riot_bot_idle.papa",
       "walk": "/pa/units/land/l_riot_bot/l_riot_bot_walk.papa"
     },
-    "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
+    "animtree": "/pa/anim/anim_trees/l_riot_bot_anim_tree.json",
     "filename": "/pa/units/land/l_riot_bot/l_riot_bot.papa",
     "walk_speed": 3
   },
