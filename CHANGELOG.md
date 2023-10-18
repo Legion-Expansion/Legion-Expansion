@@ -66,6 +66,8 @@
 - Fix Theodor referencing nonexistent bone for aiming
 - Fix missing node_idle entry in Thor animation tree
 - Fix missing being_built entry in Manta animation tree
+- Correct invalid shapes in effects
+- Remove broken particle emitter from Odin
 
 ## v1.28.0 - 2023-06-12
 
