@@ -23,6 +23,66 @@
       "task_type": "Scout"
     },
     {
+      "name": "Legion - Land Transfer To Planet - Alone",
+      "to_build": "Legion_Land_Attack_Max_Transfer",
+      "instance_count": -1,
+      "shared_instance_count": "LandTransferToPlanet",
+      "priority": 119,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot | (Hover & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction",
+            "compare0": ">=",
+            "value0": 5
+          }
+        ]
+      ],
+      "task_type": "TeleportLandToPlanet"
+    },
+    {
+      "name": "Legion - Land Transfer To Planet",
+      "to_build": "Legion_Land_Attack_XLarge_Transfer",
+      "instance_count": 1,
+      "shared_instance_count": "LandTransferToPlanet",
+      "priority": 118,
+      "build_conditions": [
+        [
+          {
+            "test_type": "EnemyPresenceOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "OtherPlanetNeedsLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "CanProvideLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitPoolCount",
+            "unit_type_string0": "((Tank | Bot | (Hover & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction",
+            "compare0": ">=",
+            "value0": 5
+          }
+        ]
+      ],
+      "task_type": "TeleportLandToPlanet"
+    },
+    {
       "name": "Legion - Land Raid Platoon Small",
       "to_build": "Legion_Land_Raid_Small",
       "instance_count": 1,
@@ -61,11 +121,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
@@ -91,11 +146,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",
@@ -125,11 +175,6 @@
             "boolean": true
           },
           {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
-          },
-          {
             "test_type": "UnitPoolCount",
             "unit_type_string0": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
             "compare0": ">=",
@@ -155,11 +200,6 @@
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
             "boolean": true
-          },
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Tutorial",
-            "boolean": false
           },
           {
             "test_type": "UnitPoolCount",

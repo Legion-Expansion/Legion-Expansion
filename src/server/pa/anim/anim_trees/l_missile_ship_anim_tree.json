@@ -1,6 +1,9 @@
 {
   "blend_root": {
     "nodes": {
+      "being_built": {
+        "type": "bind_pose"
+      },
       "dead": {
         "type": "bind_pose"
       },

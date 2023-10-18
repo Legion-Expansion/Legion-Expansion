@@ -1,19 +1,105 @@
 {
   "blend_root": {
-    "aim_bone_root": "bone_turret",
-    "child": {
-      "type": "bind_pose"
-    },
-    "node_aim_down": {
-      "type": "bind_pose"
-    },
-    "node_aim_neutral": {
-      "type": "bind_pose"
-    },
-    "node_aim_up": {
-      "type": "bind_pose"
-    },
-    "type": "aim_blend"
+    "type": "unit_state",
+    "nodes": {
+      "being_built": {
+        "type": "playback",
+        "looping": false,
+        "anim_name": "idle"
+      },
+      "living": {
+        "type": "aim_blend",
+        "aim_bone_root": "bone_turret",
+        "node_aim_down": {
+          "type": "playback",
+          "anim_name": "aim_down"
+        },
+        "node_aim_neutral": {
+          "type": "bind_pose"
+        },
+        "node_aim_up": {
+          "type": "playback",
+          "anim_name": "aim_up"
+        },
+        "child": {
+          "entries": [
+            {
+              "name": "idle",
+              "node": {
+                "anim_name": "idle",
+                "looping": false,
+                "type": "playback"
+              },
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "is_firing",
+                    "target": "fire"
+                  },
+                  "transition_reverse": {
+                    "func": "is_firing",
+                    "target": "fire"
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            },
+            {
+              "name": "fire",
+              "node": {
+                "anim_name": "fire",
+                "looping": false,
+                "type": "playback"
+              },
+              "reset": "playback_reset",
+              "transitions": [
+                {
+                  "transition_forward": {
+                    "func": "anim_complete",
+                    "target": "idle",
+                    "duration": 0
+                  },
+                  "transition_reverse": {
+                    "func": "anim_complete",
+                    "target": "idle",
+                    "duration": 0
+                  }
+                },
+                {
+                  "transition_forward": {
+                    "func": "is_firing",
+                    "target": "fire",
+                    "duration": 0
+                  },
+                  "transition_reverse": {
+                    "func": "is_firing",
+                    "target": "fire",
+                    "duration": 0
+                  }
+                }
+              ],
+              "type": "sequence_entry"
+            }
+          ],
+          "transition_seek": {
+            "false_target": "idle",
+            "func": "is_firing",
+            "true_target": "fire"
+          },
+          "type": "sequence"
+        }
+      },
+      "dead": {
+        "type": "playback",
+        "looping": false,
+        "anim_name": "idle"
+      },
+      "ghost": {
+        "type": "playback",
+        "looping": false,
+        "anim_name": "idle"
+      }
+    }
   },
   "skeleton_controls": [
     {
@@ -26,18 +112,15 @@
       "type": "fader"
     },
     {
-      "child": {
-        "rotation_axis": "x",
-        "rotation_bone": "bone_pitch",
-        "type": "procedural_aim"
-      },
-      "lerp_func": "is_active",
-      "type": "fader"
+      "bone": "bone_recoil_inner",
+      "recoil_dist": 1,
+      "restore_time": 0.5,
+      "type": "recoil"
     },
     {
-      "bone": "bone_recoil",
-      "recoil_dist": 3.5,
-      "restore_time": 2.5,
+      "bone": "bone_recoil_outer",
+      "recoil_dist": 2,
+      "restore_time": 0.5,
       "type": "recoil"
     }
   ]

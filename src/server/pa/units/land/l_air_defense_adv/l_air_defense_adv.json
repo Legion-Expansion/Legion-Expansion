@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Archer",
   "description": "!LOC:Advanced Anti-Air Turret - Fires homing rockets which deal splash damage. Only attacks air targets.",
-  "TEMP_texelinfo": 18.3,
+  "TEMP_texelinfo": 21.7624,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 26.66667,
@@ -18,12 +18,12 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket005 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket006 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket007 /pa/units/land/l_air_defense_adv/launch_smoke.pfx rocket008"
+      "effect_spec": "/pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustRight001 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustRight002 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustLeft001 /pa/units/land/l_air_defense_adv/launch_smoke.pfx socket_exhaustLeft002"
     }
   },
   "guard_layer": "WL_Air",
   "max_health": 3000,
-  "mesh_bounds": [16.6, 16.6, 12.1],
+  "mesh_bounds": [14.4, 14.4, 14],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
@@ -64,7 +64,20 @@
     {
       "aim_bone": "bone_pitch",
       "fire_event": "fired",
-      "muzzle_bone": ["rocket001", "rocket002", "rocket003", "rocket004"],
+      "muzzle_bone": [
+        "socket_muzzleRight001",
+        "socket_muzzleLeft001",
+        "socket_muzzleRight002",
+        "socket_muzzleLeft002",
+        "socket_muzzleRight003",
+        "socket_muzzleLeft003",
+        "socket_muzzleRight004",
+        "socket_muzzleLeft004",
+        "socket_muzzleRight005",
+        "socket_muzzleLeft005",
+        "socket_muzzleRight006",
+        "socket_muzzleLeft006"
+      ],
       "projectiles_per_fire": 4,
       "spec_id": "/pa/units/land/l_air_defense_adv/l_air_defense_adv_tool_weapon.json"
     }

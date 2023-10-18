@@ -143,6 +143,7 @@
     "diameter": -34.0
   },
   "spawn_layers": "WL_DeepWater",
+  "teleportable": {},
   "tools": [
     {
       "aim_bone": "bone_turret_main",

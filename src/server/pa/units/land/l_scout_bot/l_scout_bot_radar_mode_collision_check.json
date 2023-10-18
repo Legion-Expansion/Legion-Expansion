@@ -49,8 +49,8 @@
   "mesh_bounds": [2, 2, 4],
   "model": {
     "animations": {
-      "idle": "/pa/units/land/l_scout_bot/l_scout_bot_idle.papa",
-      "walk": "/pa/units/land/l_scout_bot/l_scout_bot_walk.papa"
+      "idle": "/pa/units/land/l_scout_bot/l_scout_bot_anim_idle.papa",
+      "walk": "/pa/units/land/l_scout_bot/l_scout_bot_anim_walk.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_scout_bot_anim_tree.json",
     "filename": "/pa/units/land/l_scout_bot/radar_mode/l_scout_bot_radar_mode.papa",

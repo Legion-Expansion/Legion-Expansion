@@ -5,6 +5,7 @@
 import copy
 import shutil
 import glob
+from datetime import date
 
 from os.path import join
 
@@ -83,9 +84,12 @@ def generate_mods(is_dev_mode):
 
     old_modinfo = load_json(fs, "/mod/modinfo.json")
 
-    # Update build version and date
+    # Update build version
     server_modinfo = update_modinfo(server_modinfo, old_modinfo)
     client_modinfo = update_modinfo(client_modinfo, old_modinfo)
+    # Update dates
+    server_modinfo["date"] = date.today().strftime("%Y-%m-%d")
+    client_modinfo["date"] = date.today().strftime("%Y-%m-%d")
 
     # Remove old files
     print(f"CLEAN {server_output_dir}")

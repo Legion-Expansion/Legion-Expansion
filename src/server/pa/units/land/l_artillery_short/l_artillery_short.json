@@ -26,26 +26,29 @@
     }
   },
   "guard_layer": "WL_AnySurface",
-  "lamps": [
-    {
-      "bone": "bone_pitch",
-      "color": [1, 1, 1],
-      "intensity": 2,
-      "offset": [0, -4.24, 1.77],
-      "radius": 1.75
-    }
-  ],
   "max_health": 1000,
-  "mesh_bounds": [12.728, 12.728, 10.603],
+  "mesh_bounds": [17.5, 17.5, 10],
   "model": [
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",
+      "animations": {
+        "aim_up": "/pa/units/land/l_artillery_short/l_artillery_short_aim_up.papa",
+        "idle": "/pa/units/land/l_artillery_short/l_artillery_short_idle.papa",
+        "fire": "/pa/units/land/l_artillery_short/l_artillery_short_fire.papa",
+        "aim_down": "/pa/units/land/l_artillery_short/l_artillery_short_aim_down.papa"
+      },
       "filename": "/pa/units/land/l_artillery_short/l_artillery_short.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_short.json"
     },
     {
       "animtree": "/pa/anim/anim_trees/l_artillery_anim_tree.json",
+      "animations": {
+        "aim_up": "/pa/units/land/l_artillery_short/l_artillery_short_aim_up.papa",
+        "idle": "/pa/units/land/l_artillery_short/l_artillery_short_idle.papa",
+        "fire": "/pa/units/land/l_artillery_short/l_artillery_short_fire.papa",
+        "aim_down": "/pa/units/land/l_artillery_short/l_artillery_short_aim_down.papa"
+      },
       "filename": "/pa/units/land/l_artillery_short/l_artillery_short.papa",
       "layer": "WL_WaterSurface"
     }
@@ -75,7 +78,7 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch",
+      "aim_bone": "bone_turret",
       "muzzle_bone": "socket_muzzle",
       "spec_id": "/pa/units/land/l_artillery_short/l_artillery_short_tool_weapon.json"
     }

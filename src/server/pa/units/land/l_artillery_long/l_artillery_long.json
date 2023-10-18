@@ -39,26 +39,34 @@
       "bone": "bone_pitch",
       "color": [1, 1, 1],
       "intensity": 2,
-      "offset": [0, -11.21, 3.69],
+      "offset": [0, -2.13, 4.11],
+      "radius": 4
+    },
+    {
+      "bone": "bone_turret",
+      "color": [1, 1, 1],
+      "intensity": 2,
+      "offset": [5.13, 0, 4.54],
+      "radius": 4
+    },
+    {
+      "bone": "bone_turret",
+      "color": [1, 1, 1],
+      "intensity": 2,
+      "offset": [-5.13, 0, 4.54],
       "radius": 4
     }
   ],
   "max_health": 5000,
-  "mesh_bounds": [24, 24, 16],
+  "mesh_bounds": [24, 24, 18],
   "model": [
     {
-      "animations": {
-        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
-      },
       "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
       "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_long.json"
     },
     {
-      "animations": {
-        "fire": "/pa/units/land/l_artillery_long/l_artillery_long_fire.papa"
-      },
       "animtree": "/pa/anim/anim_trees/l_artillery_long_anim_tree.json",
       "filename": "/pa/units/land/l_artillery_long/l_artillery_long.papa",
       "layer": "WL_WaterSurface"

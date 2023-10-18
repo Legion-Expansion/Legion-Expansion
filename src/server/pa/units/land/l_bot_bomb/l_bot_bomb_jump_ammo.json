@@ -14,7 +14,7 @@
   "lifetime": 30,
   "max_velocity": 150,
   "model": {
-    "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa"
+    "filename": "/pa/units/land/l_bot_bomb/jump/l_bot_bomb_jump.papa"
   },
   "recon": {
     "observer": {

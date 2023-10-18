@@ -42,10 +42,11 @@
   },
   "fx_offsets": [
     {
-      "bone": "bone_root",
+      "bone": "socket_rocket",
       "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb_rocket_trail.pfx",
       "offset": [0, 0, 0],
       "orientation": [0, 0, 0],
+      "effect_scale": 0.7,
       "type": "moving"
     }
   ],
@@ -55,13 +56,13 @@
   "mesh_bounds": [3.5, 3, 2.8],
   "model": {
     "animations": {
-      "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01.papa",
-      "idle": "/pa/units/land/l_bot_bomb/l_bot_bomb_idle.papa",
-      "walk": "/pa/units/land/l_bot_bomb/l_bot_bomb_walk.papa"
+      "idle": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_idle.papa",
+      "walk": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_walk.papa",
+      "death": "/pa/units/land/l_bot_bomb/l_bot_bomb_anim_dead.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_bot_bomb_anim_tree.json",
     "filename": "/pa/units/land/l_bot_bomb/l_bot_bomb.papa",
-    "walk_speed": 1
+    "walk_speed": 25
   },
   "navigation": {
     "acceleration": 200,
@@ -91,12 +92,12 @@
   "spawn_layers": "WL_LandHorizontal",
   "tools": [
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_turret",
       "primary_weapon": true,
       "spec_id": "/pa/units/land/l_bot_bomb/l_bot_bomb_tool_weapon.json"
     },
     {
-      "aim_bone": "bone_root",
+      "aim_bone": "bone_turret",
       "secondary_weapon": true,
       "spec_id": "/pa/units/land/l_bot_bomb/l_bot_bomb_jump_tool_weapon.json"
     }
@@ -114,5 +115,6 @@
     "UNITTYPE_SelfDestruct",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0
+  "wreckage_health_frac": 0,
+  "has_death_effects": true
 }

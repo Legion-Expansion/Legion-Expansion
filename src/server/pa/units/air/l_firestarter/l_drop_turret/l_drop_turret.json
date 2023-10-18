@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Purifier",
   "description": "!LOC:Flame Turret - Splash damage weapon. Attacks land and sea targets.",
-  "TEMP_texelinfo": 10.2184,
+  "TEMP_texelinfo": 12.6894,
   "area_build_separation": 18,
   "atrophy_cool_down": 15,
   "atrophy_rate": 5,

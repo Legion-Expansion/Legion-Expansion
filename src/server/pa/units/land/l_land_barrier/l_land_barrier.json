@@ -1,8 +1,8 @@
 {
   "display_name": "!LOC:Clot",
   "description": "!LOC:Wall - Very durable. Blocks enemy fire only.",
-  "TEMP_texelinfo": 7.58193,
-  "area_build_separation": 1.2,
+  "TEMP_texelinfo": 16.14,
+  "area_build_separation": 1,
   "atrophy_cool_down": 0.5,
   "atrophy_rate": 20,
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
@@ -43,7 +43,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -9
+    "diameter": -12
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "structure": {
