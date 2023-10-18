@@ -67,7 +67,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "((Tank | Bot | (Hover & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Tank | Bot | (Hover & Naval & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 40,
           "squad": "General"
@@ -119,7 +119,7 @@
           "squad": "Fast"
         },
         {
-          "unit_types": "((Tank | Bot | (Hover & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Tank | Bot | (Hover & Naval & Custom1)) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "General"
