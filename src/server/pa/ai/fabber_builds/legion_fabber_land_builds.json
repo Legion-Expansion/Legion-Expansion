@@ -329,6 +329,50 @@
             "boolean": false
           },
           {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicBot"
+          }
+        ],
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "NeedBasicBotFactory",
+            "boolean": false
+          },
+          {
             "test_type": "CanAffordPotentialDrain",
             "string0": "LegionFactoryBasicBot"
           },
@@ -409,6 +453,50 @@
         "LegionBotAdvancedSupportCommander"
       ],
       "build_conditions": [
+        [
+          {
+            "test_type": "HaveEcoForAdvanced",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PreventsWaste",
+            "boolean": true
+          },
+          {
+            "test_type": "CurrentMetalEfficiency",
+            "compare0": ">",
+            "value0": 1
+          },
+          {
+            "test_type": "MetalStorageFrac",
+            "compare0": ">",
+            "value0": 0.2
+          },
+          {
+            "test_type": "CurrentEnergyEfficiency",
+            "compare0": ">=",
+            "value0": 1
+          },
+          {
+            "test_type": "NeedBasicVehicleFactory",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Factory & Construction & Basic) - Orbital",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanFindPlaceToBuild",
+            "string0": "LegionFactoryBasicVehicle"
+          }
+        ],
         [
           {
             "test_type": "HaveEcoForAdvanced",
