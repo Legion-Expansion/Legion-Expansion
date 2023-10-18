@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.29.0 - 2023-10-18
 
 ### General
 
