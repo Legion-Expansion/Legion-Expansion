@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-## General
+### General
 
 - Fixed minor visual issue on Purger
 
