@@ -1,7 +1,0 @@
-{
-  "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "events": null,
-  "fx_trail": null,
-  "model": null,
-  "spawn_layers": "WL_Orbital"
-}
