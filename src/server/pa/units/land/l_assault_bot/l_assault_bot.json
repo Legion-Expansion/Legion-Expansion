@@ -33,7 +33,7 @@
     },
     "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
     "filename": "/pa/units/land/l_assault_bot/l_assault_bot.papa",
-    "walk_speed": 15
+    "walk_speed": 16
   },
   "navigation": {
     "acceleration": 50,
