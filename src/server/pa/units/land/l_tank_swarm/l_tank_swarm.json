@@ -119,7 +119,7 @@
         "gun006"
       ],
       "record_index": 1,
-      "spec_id": "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json"
+      "spec_id": "/pa/units/land/l_tank_swarm/l_tank_swarm_beam_tool_weapon.json"
     }
   ],
   "transportable": {
