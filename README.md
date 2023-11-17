@@ -44,6 +44,7 @@ This project is not the work of one, but of a legion.
 | AndreasG        | Balance Lead                       |
 | Clopse          | Balance                            |
 | Graushwein      | Balance                            |
+| Taiga           | Balance                            |
 | N30N            | Playtester                         |
 | Qzipco          | Playtester                         |
 | WPMarshall      | Playtester                         |
