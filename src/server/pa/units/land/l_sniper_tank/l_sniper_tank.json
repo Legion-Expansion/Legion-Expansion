@@ -85,7 +85,12 @@
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle",
+      "muzzle_bone": [
+        "socket_muzzle001",
+        "socket_muzzle002",
+        "socket_muzzle003"
+      ],
+      "projectiles_per_fire": 3,
       "spec_id": "/pa/units/land/l_sniper_tank/l_sniper_tank_tool_weapon.json"
     }
   ],
