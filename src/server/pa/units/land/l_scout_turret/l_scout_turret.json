@@ -30,13 +30,13 @@
   "mesh_bounds": [6, 6, 10],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/l_turret_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/l_scout_turret_anim_tree.json",
       "filename": "/pa/units/land/l_scout_turret/l_scout_turret.papa",
       "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_defense.json"
     },
     {
-      "animtree": "/pa/anim/anim_trees/l_turret_anim_tree.json",
+      "animtree": "/pa/anim/anim_trees/l_scout_turret_anim_tree.json",
       "filename": "/pa/units/land/l_scout_turret/l_scout_turret.papa",
       "layer": "WL_WaterSurface"
     }
