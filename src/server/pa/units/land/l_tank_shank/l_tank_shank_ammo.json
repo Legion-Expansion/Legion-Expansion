@@ -18,7 +18,5 @@
   },
   "physics": {
     "add_to_spatial_db": true
-  },
-  "splash_damage": 20,
-  "splash_radius": 5
+  }
 }
