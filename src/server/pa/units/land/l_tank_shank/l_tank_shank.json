@@ -43,7 +43,7 @@
       "orientation": [0.0, 65.0, 0.0]
     }
   ],
-  "max_health": 300,
+  "max_health": 400,
   "mesh_bounds": [4.941, 6, 2.464],
   "model": {
     "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
