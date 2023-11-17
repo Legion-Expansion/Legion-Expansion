@@ -39,7 +39,7 @@
     },
     "animtree": "/pa/anim/anim_trees/l_bot_aa_anim_tree.json",
     "filename": "/pa/units/land/l_bot_aa/l_bot_aa.papa",
-    "walk_speed": 15
+    "walk_speed": 14
   },
   "navigation": {
     "acceleration": 120,
