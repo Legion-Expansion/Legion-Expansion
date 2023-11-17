@@ -5,6 +5,46 @@
 ### General
 
 - Fixed minor visual issue on Purger
+- Added Liberator scout turret
+
+### Balance
+
+- Land
+  - Advanced Power Catalyst
+    - Death weapon no longer hits air units
+  - Deathmark
+    - Damage decreased from 1000 to 333
+    - Projectiles per fire increased from 1 to 3
+    - Target priorities added
+  - Havoc
+    - Anti missle rate of fire increased from 0.25 to 0.5
+    - Vision radius increased from 100 to 150
+  - Lancer
+    - Speed reduced from 15 to 14
+  - Maul
+    - Health increased from 1150 to 1250
+  - Patriot
+    - Speed reduced from 15 to 14
+  - Peacekeeper
+    - Health increased from 170 to 200
+    - Speed increased from 15 to 16
+  - Shank
+    - Health increased from 300 to 400
+    - Now fires an opening volley of two shots
+    - Splash range decreased from 5 to 0
+  - Spoiler
+    - Cannot be targeted once triggered
+    - Triggered health reduced from 10000 to 1000
+  - Stoke
+    - Cost reduced from 210 to 190
+    - Damage increased from 39 to 40
+    - Increased radar range from 0 to 150
+    - Speed increased from 14 to 16
+  - Theodor
+    - Health increased from 1000 to 1500
+- Air
+  - Nova
+    - Vision radius reduced from 150 to 0
 
 ## v1.29.0 - 2023-10-18
 
