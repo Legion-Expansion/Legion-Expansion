@@ -81,7 +81,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 100,
+          "radius": 150,
           "shape": "capsule"
         }
       ]
