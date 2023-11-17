@@ -1,0 +1,13 @@
+{
+  "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
+  "damage": 19.5,
+  "fx_trail": {
+    "filename": "/pa/units/land/l_assault_bot/ammo_trail.pfx"
+  },
+  "initial_velocity": 150.0,
+  "lifetime": 1.0,
+  "max_velocity": 150.0,
+  "physics": {
+    "add_to_spatial_db": true
+  }
+}
