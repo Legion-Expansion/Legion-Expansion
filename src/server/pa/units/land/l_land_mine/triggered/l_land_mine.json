@@ -35,6 +35,7 @@
   "physics": {
     "allow_pushing": false,
     "allow_underground": false,
+    "add_to_spatial_db": false,
     "ignore_collisions": true,
     "push_sideways": false,
     "radius": 1,
