@@ -17,7 +17,7 @@
     - Projectiles per fire increased from 1 to 3
     - Target priorities added
   - Havoc
-    - Anti missle rate of fire increased from 0.25 to 0.5
+    - Anti-missile rate of fire increased from 0.25 to 0.5
     - Vision radius increased from 100 to 150
   - Lancer
     - Speed reduced from 15 to 14
