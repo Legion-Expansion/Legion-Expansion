@@ -1,0 +1,129 @@
+{
+    "base_spec": "/pa/units/commanders/l_quad/l_quad_base.json",
+    "display_name": "Core Commander",
+    "description": "Legion Core Commander",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                -0.5,
+                10.6
+            ]
+        }
+    },
+    "mesh_bounds": [
+        10,
+        10,
+        12
+    ],
+    "model": {
+        "filename": "/pa/units/commanders/l_quad/l_quad.papa"
+    },
+    "selection_icon": {
+        "diameter": -20.6
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0.0,
+                -1.2,
+                4.3
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0.0,
+                -2.017,
+                0.656
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.025,
+                3.68,
+                -1.0
+            ],
+            "radius": 4.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_leftShoulder"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+            "aim_bone": "bone_turret"
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_laser_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": true
+        },
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "secondary_weapon": true,
+            "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": false,
+            "show_range": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": false,
+            "show_range": false
+        }
+    ],
+    "catalog_object_name": "LegionCore",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_l_quad.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_l_quad_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_l_quad.png"
+        }
+    }
+}

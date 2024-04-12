@@ -12,7 +12,7 @@
     }
   ],
   "selection_icon": {
-    "diameter": -16.6
+    "diameter": -20.6
   },
   "si_name": "l_commander",
   "unit_types": [
@@ -23,9 +23,5 @@
     "UNITTYPE_Land",
     "UNITTYPE_NoBuild",
     "UNITTYPE_Custom1"
-  ],
-  "ai_metal_extractor_names": {
-    "basic": "LegionEcoBasicMetalExtractor",
-    "advanced": "LegionEcoAdvancedMetalExtractor"
-  }
+  ]
 }

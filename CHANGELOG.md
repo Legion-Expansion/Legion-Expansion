@@ -6,6 +6,14 @@
 
 - Fixed minor visual issue on Purger
 
+- Visual Update for Commanders
+  - Replaced Wasushi (with Cataphract)
+  - Replaced Rockteeth (with Reclaimer)
+  - Updated Cyclops
+  - Updated Overwatch
+  - Added Core
+  - Added Scion
+
 ## v1.29.0 - 2023-10-18
 
 ### General
