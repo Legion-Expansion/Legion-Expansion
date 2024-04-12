@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.30.0 - 2024-04-12
 
 ### General
 
