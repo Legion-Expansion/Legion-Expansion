@@ -16,6 +16,13 @@
   "death_weapon": {
     "ground_ammo_spec": "/pa/units/land/l_energy_plant_adv/death_weapon.json"
   },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/l_energy_plant_adv/death_range.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root"
+    }
+  ],
   "events": {
     "build_complete": {
       "audio_cue": "/SE/Build_Complete/energy"
@@ -26,60 +33,19 @@
   },
   "fx_offsets": [
     {
-      "bone": "ring01",
+      "bone": "socket_effect",
       "filename": "/pa/units/land/l_energy_plant_adv/black_hole.pfx",
       "offset": [0, 0, 0],
       "type": "idle"
     }
   ],
-  "headlights": [
-    {
-      "color": [1, 1, 1],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [7.25, 7.25, 8],
-      "orientation": [35.25, -30, 125.25]
-    },
-    {
-      "color": [1, 1, 1],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [7.25, -7.25, 8],
-      "orientation": [30, 30, 17]
-    },
-    {
-      "color": [1, 1, 1],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [-7.25, -7.25, 8],
-      "orientation": [-35.25, 30, -54.75]
-    },
-    {
-      "color": [1, 1, 1],
-      "far_distance": 25,
-      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "intensity": 1,
-      "near_distance": 2,
-      "near_height": 4.4,
-      "near_width": 4.4,
-      "offset": [-7.25, 7.25, 8],
-      "orientation": [-35.25, -30, -125.25]
-    }
-  ],
+  "headlights": [],
   "max_health": 2500,
-  "mesh_bounds": [30, 30, 17],
+  "mesh_bounds": [
+    25,
+    25,
+    12
+  ],
   "model": [
     {
       "animations": {
@@ -87,16 +53,7 @@
       },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "filename": "/pa/units/land/l_energy_plant_adv/l_energy_plant_adv.papa",
-      "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
-    },
-    {
-      "animations": {
-        "idle": "/pa/units/land/l_energy_plant_adv/l_energy_plant_adv_idle.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "filename": "/pa/units/land/l_energy_plant_adv/sea/l_energy_plant_adv.papa",
-      "layer": "WL_WaterSurface"
     }
   ],
   "production": {
@@ -121,7 +78,7 @@
     }
   },
   "selection_icon": {
-    "diameter": -55
+    "diameter": -50
   },
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "unit_types": [

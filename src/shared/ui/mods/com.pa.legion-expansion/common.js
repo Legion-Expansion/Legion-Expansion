@@ -1,10 +1,12 @@
 var legion = {};
 
 legion.commanders = [
-  "/pa/units/commanders/l_rockteeth/l_rockteeth.json",
   "/pa/units/commanders/l_overwatch/l_overwatch.json",
   "/pa/units/commanders/l_cyclops/l_cyclops.json",
-  "/pa/units/commanders/l_wasushi/l_wasushi.json",
+  "/pa/units/commanders/l_cataphract/l_cataphract.json",
+  "/pa/units/commanders/l_raptor/l_raptor.json",
+  "/pa/units/commanders/l_quad/l_quad.json",
+  "/pa/units/commanders/l_tank/l_tank.json",
 ];
 legion.basicFactories = [
   "/pa/units/air/l_air_factory/l_air_factory.json",

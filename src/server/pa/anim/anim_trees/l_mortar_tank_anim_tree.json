@@ -29,15 +29,9 @@
       "type": "procedural_aim"
     },
     {
-      "bone": "bone_recoil001",
-      "recoil_dist": 0.95,
-      "restore_time": 0.9,
-      "type": "recoil"
-    },
-    {
-      "bone": "bone_recoil002",
-      "recoil_dist": 0.95,
-      "restore_time": 0.9,
+      "bone": "bone_recoil",
+      "recoil_dist": 0.85,
+      "restore_time": 0.6,
       "type": "recoil"
     }
   ]
