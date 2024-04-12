@@ -23,7 +23,7 @@
   "fx_offsets": [
     {
       "filename": "/pa/units/land/l_energy_plant/energy_plant_idle.pfx",
-      "offset": [0, 0, 5],
+      "offset": [0, 0, 6],
       "type": "idle"
     }
   ],
@@ -31,21 +31,9 @@
   "mesh_bounds": [9.426, 9.426, 9.764],
   "model": [
     {
-      "animations": {
-        "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
-      },
       "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "filename": "/pa/units/land/l_energy_plant/l_energy_plant.papa",
-      "layer": "WL_LandHorizontal",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
-    },
-    {
-      "animations": {
-        "idle": "/pa/units/land/energy_plant/energy_plant_anim_work.papa"
-      },
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-      "filename": "/pa/units/land/l_energy_plant/sea/l_energy_plant.papa",
-      "layer": "WL_WaterSurface"
     }
   ],
   "placement_size": [12, 12],
