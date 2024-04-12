@@ -11,6 +11,7 @@
   - Added Reclaimer
   - Removed Wasushi
   - Removed Rockteeth
+- Investigator can attack move and will stop short of enemies
 
 ### Balance
 

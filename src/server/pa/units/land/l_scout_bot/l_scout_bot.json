@@ -28,7 +28,8 @@
     "ORDER_Patrol",
     "ORDER_Assist",
     "ORDER_Use",
-    "ORDER_FireSecondaryWeapon"
+    "ORDER_FireSecondaryWeapon",
+    "ORDER_Attack"
   ],
   "death": {
     "decals": []
@@ -90,6 +91,12 @@
     "diameter": -8
   },
   "tools": [
+    {
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "spec_id": "/pa/units/land/land_scout/land_scout_tool_dummy_weapon.json",
+      "show_range": false
+    },
     {
       "aim_bone": "bone_root",
       "primary_weapon": false,
