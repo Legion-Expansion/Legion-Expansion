@@ -71,16 +71,22 @@
   "selection_icon": {
     "diameter": -11.0
   },
+  "scrolling_uv": {
+    "scroll_rate": -0.6,
+    "uv_split": 0.93
+  },
   "tools": [
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": ["socket_muzzle001", "socket_muzzle002"],
+      "muzzle_bone": [
+        "bone_pitch"
+      ],
       "primary_weapon": true,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": "socket_muzzle001",
+      "muzzle_bone": "bone_pitch",
       "primary_weapon": false,
       "show_range": false,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_tool_weapon.json"
