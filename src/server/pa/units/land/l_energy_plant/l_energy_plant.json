@@ -31,7 +31,6 @@
   "mesh_bounds": [9.426, 9.426, 9.764],
   "model": [
     {
-      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
       "filename": "/pa/units/land/l_energy_plant/l_energy_plant.papa",
       "skirt_decal": "/pa/effects/specs/skirt_energy.json"
     }
