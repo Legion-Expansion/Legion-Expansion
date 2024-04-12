@@ -27,6 +27,7 @@
 ### Visual
 
 - Fixed minor visual issue on Purger
+- Icons for Iron Dome and Supernova aligned to the MLA icon style
 - Updated:
   - Orb Weaver
   - Monstrosity
