@@ -6,7 +6,10 @@
 
 - Fixed minor visual issue on Purger
 
-- Visual Update for Commanders
+- Visual update for:
+  - Orb Weaver
+
+- Visual Update for Commanders:
   - Replaced Wasushi (with Cataphract)
   - Replaced Rockteeth (with Reclaimer)
   - Updated Cyclops
