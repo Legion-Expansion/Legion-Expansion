@@ -17,6 +17,11 @@
 - Land
   - Praetorian
     - Build range increased from 30 to 45
+  - Tola
+    - Antidrop shot velocity increased from 200 to 400
+- Sea
+  - Manta
+    - Antidrop shot velocity increased from 200 to 400
 
 ### Visual
 
