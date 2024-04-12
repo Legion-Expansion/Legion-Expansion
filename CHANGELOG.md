@@ -12,6 +12,12 @@
   - Removed Wasushi
   - Removed Rockteeth
 
+### Balance
+
+- Land
+  - Praetorian
+    - Build range increased from 30 to 45
+
 ### Visual
 
 - Fixed minor visual issue on Purger
