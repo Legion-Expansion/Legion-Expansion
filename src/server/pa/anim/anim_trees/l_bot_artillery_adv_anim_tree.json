@@ -65,12 +65,12 @@
               {
                 "transition_forward": {
                   "func": "not_moving",
-                  "target": "walk_stop",
+                  "target": "idle",
                   "duration": 0.5
                 },
                 "transition_reverse": {
                   "func": "not_moving",
-                  "target": "walk_stop",
+                  "target": "idle",
                   "duration": 0.5
                 }
               }
@@ -79,10 +79,10 @@
           },
           {
             "type": "item",
-            "name": "walk_stop",
+            "name": "idle",
             "node": {
               "type": "playback",
-              "anim_name": "walk_stop",
+              "anim_name": "idle",
               "looping": false,
               "events": []
             },
