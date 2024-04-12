@@ -5,6 +5,7 @@
 ### General
 
 - Fixed minor visual issue on Purger
+- Updated nuke and anti-nuke icons for consistency with MLA
 
 ## v1.29.0 - 2023-10-18
 
