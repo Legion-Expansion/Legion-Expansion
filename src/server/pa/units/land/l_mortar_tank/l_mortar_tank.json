@@ -79,14 +79,14 @@
     {
       "aim_bone": "bone_turret",
       "muzzle_bone": [
-        "bone_pitch"
+        "socket_muzzle"
       ],
       "primary_weapon": true,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_tool_weapon.json"
     },
     {
       "aim_bone": "bone_turret",
-      "muzzle_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
       "primary_weapon": false,
       "show_range": false,
       "spec_id": "/pa/units/land/l_mortar_tank/l_mortar_tank_torpedo_tool_weapon.json"
