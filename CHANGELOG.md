@@ -4,19 +4,27 @@
 
 ### General
 
-- Fixed minor visual issue on Purger
-- Updated nuke and anti-nuke icons for consistency with MLA
-
-- Visual update for:
-  - Orb Weaver
-
-- Visual Update for Commanders:
-  - Replaced Wasushi (with Cataphract)
-  - Replaced Rockteeth (with Reclaimer)
-  - Updated Cyclops
-  - Updated Overwatch
+- Commander updates:
   - Added Core
   - Added Scion
+  - Added Cataphract
+  - Added Reclaimer
+  - Removed Wasushi
+  - Removed Rockteeth
+
+### Visual
+
+- Fixed minor visual issue on Purger
+- Updated:
+  - Orb Weaver
+  - Monstrosity
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - Stoke
+  - Necromancer
+  - Maul
+  - Cyclops Commander
+  - Overwatch Commander
 
 ## v1.29.0 - 2023-10-18
 
