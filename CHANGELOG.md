@@ -32,6 +32,10 @@
   - Cyclops Commander
   - Overwatch Commander
 
+### Bugfix
+
+- Air units will automatically engage underwater units
+
 ## v1.29.0 - 2023-10-18
 
 ### General
