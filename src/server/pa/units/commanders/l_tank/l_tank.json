@@ -1,0 +1,125 @@
+{
+    "base_spec": "/pa/units/commanders/l_tank/l_tank_base.json",
+    "display_name": "Reclaimer Commander",
+    "description": "Legion Reclaimer Commander",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                15.6
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/commanders/l_tank/l_tank.papa"
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                0,
+                -2.215,
+                3.802
+            ],
+            "orientation": [
+                0.0,
+                45.0,
+                0.0
+            ],
+            "near_width": 5.0,
+            "near_height": 5.0,
+            "near_distance": 3.0,
+            "far_distance": 30.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 6.0,
+            "bone": "bone_spine",
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                0,
+                -4.85,
+                0.58
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 5.0,
+            "bone": "bone_spine"
+        },
+        {
+            "offset": [
+                0.4,
+                -4.06,
+                -1.1
+            ],
+            "radius": 4.0,
+            "color": [
+                0.4,
+                1.0,
+                0.01
+            ],
+            "intensity": 2.0,
+            "bone": "bone_leftShoulder"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/tools/commander_build_arm/commander_build_arm.json",
+            "aim_bone": "bone_turret"
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_laser_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": true
+        },
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "secondary_weapon": true,
+            "spec_id": "/pa/tools/l_uber_cannon/l_uber_cannon.json"
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": false,
+            "show_range": false
+        },
+        {
+            "spec_id": "/pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json",
+            "aim_bone": "bone_turret",
+            "muzzle_bone": "socket_rightMuzzle",
+            "primary_weapon": false,
+            "show_range": false
+        }
+    ],
+    "catalog_object_name": "TankReclaimer",
+    "client": {
+        "ui": {
+            "image": "/ui/main/shared/img/commanders/img_l_tank.png",
+            "thumb_image": "/ui/main/shared/img/commanders/thumbs/img_l_tank_thumb.png",
+            "profile_image": "/ui/main/shared/img/commanders/profiles/profile_l_tank.png"
+        }
+    },
+    "scrolling_uv": {
+        "scroll_rate": -0.3,
+        "uv_split": 0.8926
+    }
+}

@@ -4,35 +4,263 @@
       "being_built": {
         "type": "bind_pose"
       },
-      "dead": {
-        "type": "bind_pose"
-      },
       "ghost": {
         "type": "bind_pose"
       },
       "living": {
-        "aim_bone_root": "bone_turret",
-        "child": {
-          "node_idle": {
-            "anim_name": "idle",
-            "type": "playback"
+        "type": "sequence",
+        "entries": [
+          {
+            "type": "item",
+            "name": "not_moving",
+            "node": {
+              "type": "playback",
+              "anim_name": "idle",
+              "looping": true,
+              "events": []
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "is_moving_faster_than",
+                  "speed": 0.1,
+                  "target": "walking",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "is_moving_faster_than",
+                  "speed": 0.1,
+                  "target": "walking",
+                  "duration": 0.5
+                }
+              },
+              {
+                "transition_forward": {
+                  "func": "is_turning_faster_than",
+                  "turn_rate": 15.0,
+                  "target": "turning",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "is_turning_faster_than",
+                  "turn_rate": 15.0,
+                  "target": "turning",
+                  "duration": 0.5
+                }
+              }
+            ],
+            "reset": "playback_reset"
           },
-          "node_walk": {
-            "anim_name": "walk",
-            "type": "playback"
+          {
+            "type": "item",
+            "name": "walking",
+            "scale_to_move_speed": true,
+            "node": {
+              "type": "playback",
+              "anim_name": "walk",
+              "looping": true,
+              "events": []
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "not_moving",
+                  "target": "idle",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "not_moving",
+                  "target": "idle",
+                  "duration": 0.5
+                }
+              }
+            ],
+            "reset": "playback_reset"
           },
-          "type": "walk"
-        },
-        "node_aim_down": {
-          "type": "bind_pose"
-        },
-        "node_aim_neutral": {
-          "type": "bind_pose"
-        },
-        "node_aim_up": {
-          "type": "bind_pose"
-        },
-        "type": "aim_blend"
+          {
+            "type": "item",
+            "name": "idle",
+            "node": {
+              "type": "playback",
+              "anim_name": "idle",
+              "looping": false,
+              "events": []
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "not_moving"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "not_moving"
+                }
+              },
+              {
+                "transition_forward": {
+                  "func": "is_moving_faster_than",
+                  "speed": 0.1,
+                  "target": "walking",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "is_moving_faster_than",
+                  "speed": 0.1,
+                  "target": "walking",
+                  "duration": 0.5
+                }
+              },
+              {
+                "transition_forward": {
+                  "func": "is_turning_faster_than",
+                  "turn_rate": 15.0,
+                  "target": "turning",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "is_turning_faster_than",
+                  "turn_rate": 15.0,
+                  "target": "turning",
+                  "duration": 0.5
+                }
+              }
+            ],
+            "reset": "playback_reset"
+          },
+          {
+            "type": "item",
+            "name": "turning",
+            "node": {
+              "type": "sequence",
+              "entries": [
+                {
+                  "type": "item",
+                  "name": "turn_left",
+                  "node": {
+                    "type": "playback",
+                    "anim_name": "turn_left",
+                    "looping": true,
+                    "events": []
+                  },
+                  "transitions": [
+                    {
+                      "transition_forward": {
+                        "func": "is_turning_right",
+                        "target": "turn_right"
+                      },
+                      "transition_reverse": {
+                        "func": "is_turning_right",
+                        "target": "turn_right"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "turn_right",
+                  "node": {
+                    "type": "playback",
+                    "anim_name": "turn_right",
+                    "looping": true,
+                    "events": []
+                  },
+                  "transitions": [
+                    {
+                      "transition_forward": {
+                        "func": "is_turning_left",
+                        "target": "turn_left"
+                      },
+                      "transition_reverse": {
+                        "func": "is_turning_left",
+                        "target": "turn_left"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "is_moving_faster_than",
+                  "target": "walking",
+                  "speed": 0.1,
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "is_moving_faster_than",
+                  "target": "walking",
+                  "speed": 0.1,
+                  "duration": 0.5
+                }
+              },
+              {
+                "transition_forward": {
+                  "func": "not_turning",
+                  "target": "not_moving",
+                  "duration": 0.5
+                },
+                "transition_reverse": {
+                  "func": "not_turning",
+                  "target": "not_moving",
+                  "duration": 0.5
+                }
+              }
+            ],
+            "reset": "turning_reset"
+          }
+        ]
+      },
+      "dead": {
+        "type": "sequence",
+        "entries": [
+          {
+            "type": "item",
+            "name": "death",
+            "node": {
+              "type": "playback",
+              "anim_name": "death",
+              "looping": false,
+              "events": []
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "anim_complete",
+                  "target": "dead"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "dead"
+                }
+              }
+            ],
+            "reset": "playback_reset"
+          },
+          {
+            "type": "item",
+            "name": "dead",
+            "node": {
+              "type": "playback",
+              "anim_name": "dead",
+              "looping": false
+            },
+            "transitions": [
+              {
+                "transition_forward": {
+                  "func": "false_func",
+                  "target": "death"
+                },
+                "transition_reverse": {
+                  "func": "anim_complete",
+                  "target": "death"
+                }
+              }
+            ],
+            "reset": "playback_reset"
+          }
+        ]
       }
     },
     "type": "unit_state"
@@ -51,7 +279,7 @@
     {
       "child": {
         "rotation_axis": "z",
-        "rotation_bone": "bone_turretLeft",
+        "rotation_bone": "bone_mini_turret",
         "type": "procedural_aim",
         "weapon_index": 1
       },
@@ -59,17 +287,7 @@
       "type": "fader"
     },
     {
-      "child": {
-        "rotation_axis": "z",
-        "rotation_bone": "bone_turretRight",
-        "type": "procedural_aim",
-        "weapon_index": 2
-      },
-      "lerp_func": "not_being_built",
-      "type": "fader"
-    },
-    {
-      "bone": "bone_recoilRight01",
+      "bone": "bone_mini_recoil_right",
       "recoil_dist": 0.75,
       "restore_time": 0.25,
       "type": "recoil",
@@ -77,28 +295,12 @@
       "weapon_index": 1
     },
     {
-      "bone": "bone_recoilRight02",
+      "bone": "bone_mini_recoil_left",
       "recoil_dist": 0.75,
       "restore_time": 0.25,
       "type": "recoil",
       "unit_event": "fired1",
       "weapon_index": 1
-    },
-    {
-      "bone": "bone_recoilLeft01",
-      "recoil_dist": 0.75,
-      "restore_time": 0.25,
-      "type": "recoil",
-      "unit_event": "fired2",
-      "weapon_index": 2
-    },
-    {
-      "bone": "bone_recoilLeft02",
-      "recoil_dist": 0.75,
-      "restore_time": 0.25,
-      "type": "recoil",
-      "unit_event": "fired2",
-      "weapon_index": 2
     }
   ]
 }

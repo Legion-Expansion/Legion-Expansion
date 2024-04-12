@@ -8,6 +8,7 @@
 - [ ] I have successfully tested my changes locally.
 - [ ] I have made corresponding changes to the documentation.
 - [ ] I have checked my changes generate no new warnings including when `install_devel.py` is run.
+- [ ] I have checked that this change creates no new errors in the server or client logs.
 
 ## What does the change do?
 

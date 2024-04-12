@@ -36,7 +36,7 @@
     },
     "animtree": "/pa/anim/anim_trees/l_sniper_bot_anim_tree.json",
     "filename": "/pa/units/land/l_bot_aa_adv/l_bot_aa_adv.papa",
-    "walk_speed": 3
+    "walk_speed": 6
   },
   "navigation": {
     "acceleration": 120,

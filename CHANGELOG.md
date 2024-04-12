@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## v1.30.0 - 2024-04-12
+
+### General
+
+- Commander updates:
+  - Added Core
+  - Added Scion
+  - Added Cataphract
+  - Added Reclaimer
+  - Removed Wasushi
+  - Removed Rockteeth
+- Investigator can attack move and will stop short of enemies
+
+### Balance
+
+- Land
+  - Praetorian
+    - Build range increased from 30 to 45
+  - Tola
+    - Antidrop shot velocity increased from 200 to 400
+- Sea
+  - Manta
+    - Antidrop shot velocity increased from 200 to 400
+
+### Visual
+
+- Fixed minor visual issue on Purger
+- Updated:
+  - Orb Weaver
+  - Monstrosity
+  - Power Catalyst
+  - Advanced Power Catalyst
+  - Stoke
+  - Necromancer
+  - Maul
+  - Cyclops Commander
+  - Overwatch Commander
+
+### Bugfix
+
+- Air units will automatically engage underwater units
+
 ## v1.29.0 - 2023-10-18
 
 ### General

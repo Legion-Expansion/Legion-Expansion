@@ -64,8 +64,8 @@
     }
   },
   "scrolling_uv": {
-    "scroll_rate": 0.71,
-    "uv_split": 0.875
+    "scroll_rate": -0.6,
+    "uv_split": 0.86
   },
   "selection_icon": {
     "diameter": -13

@@ -10,7 +10,7 @@
   },
   "initial_velocity": 10.0,
   "lifetime": 3,
-  "max_velocity": 200.0,
+  "max_velocity": 400.0,
   "model": {
     "filename": "/pa/units/air/missile/missile.papa"
   },

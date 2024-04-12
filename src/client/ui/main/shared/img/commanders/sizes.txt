@@ -1,0 +1,4 @@
+img 890x890
+thumb 300x300
+profiles 150x40
+5 blur levels for outline
