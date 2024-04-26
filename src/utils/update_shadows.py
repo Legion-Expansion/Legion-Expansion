@@ -177,11 +177,11 @@ def update_shadows(client_out_dir, server_out_dir):
         # prepare files:
         if not is_legion:
             os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
-            # copy client files
 
             src_hit_file_path = loader.resolveFile(src_hit_file)
             src_trail_file_path = loader.resolveFile(src_trail_file)
 
+            # copy client files
             if src_hit_file_path:
                 shutil.copyfile(src_hit_file_path, client_out_dir + dst_hit_file)
             if src_trail_file_path:
