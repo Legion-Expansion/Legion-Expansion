@@ -5,6 +5,7 @@
 ### Bugfix
 
 - Added missing unit type to Spoiler
+- Fixed some ammos not being properly intercepted
 
 ## v1.30.0 - 2024-04-12
 
