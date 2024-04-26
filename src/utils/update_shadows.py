@@ -33,7 +33,7 @@ file_cache = {}
 
 
 def load(file_path):
-    if not file_path in file_cache:
+    if file_path not in file_cache:
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
