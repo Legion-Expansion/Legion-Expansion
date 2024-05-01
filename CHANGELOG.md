@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.30.1 - 2024-05-01
 
 ### Bugfix
 
