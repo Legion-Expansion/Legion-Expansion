@@ -33,7 +33,7 @@ file_cache = {}
 
 
 def load(file_path):
-    if not file_path in file_cache:
+    if file_path not in file_cache:
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
@@ -177,13 +177,15 @@ def update_shadows(client_out_dir, server_out_dir):
         # prepare files:
         if not is_legion:
             os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
+
+            src_hit_file_path = loader.resolveFile(src_hit_file)
+            src_trail_file_path = loader.resolveFile(src_trail_file)
+
             # copy client files
-            shutil.copyfile(
-                loader.resolveFile(src_hit_file), client_out_dir + dst_hit_file
-            )
-            shutil.copyfile(
-                loader.resolveFile(src_trail_file), client_out_dir + dst_trail_file
-            )
+            if src_hit_file_path:
+                shutil.copyfile(src_hit_file_path, client_out_dir + dst_hit_file)
+            if src_trail_file_path:
+                shutil.copyfile(src_trail_file_path, client_out_dir + dst_trail_file)
 
     # Write out all changes to the mod server directory
     for file_path, unit in file_cache.items():

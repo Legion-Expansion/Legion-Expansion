@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.30.1 - 2024-05-01
+
+### Bugfix
+
+- Added missing unit type to Spoiler
+- Fixed some ammos not being properly intercepted
+
 ## v1.30.0 - 2024-04-12
 
 ### General
@@ -27,6 +34,7 @@
 ### Visual
 
 - Fixed minor visual issue on Purger
+- Icons for Iron Dome and Supernova aligned to the MLA icon style
 - Updated:
   - Orb Weaver
   - Monstrosity
