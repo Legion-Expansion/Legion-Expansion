@@ -68,7 +68,7 @@
     }
   ],
   "unit_types": [
-    "UNITTYPE_Basic",
+    "UNITTYPE_Structure",
     "UNITTYPE_Naval",
     "UNITTYPE_Defense",
     "UNITTYPE_CombatFabAdvBuild",

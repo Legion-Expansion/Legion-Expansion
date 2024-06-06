@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Add missing unit type to Sea Urchin
+
 ## v1.30.1 - 2024-05-01
 
 ### Bugfix
