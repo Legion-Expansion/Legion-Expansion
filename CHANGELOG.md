@@ -5,6 +5,7 @@
 ### Bugfix
 
 - Add missing unit type to Sea Urchin
+- Prevent regular fabricators building Spoilers
 
 ## v1.30.1 - 2024-05-01
 
