@@ -51,9 +51,9 @@ function legionNewGame() {
 
       legionExpansionEnabled = true;
 
-      var newBuild = _.isFunction(model.aiPersonalities);
+      const newBuild = _.isFunction(model.aiPersonalities);
 
-      var aiPersonalities = newBuild
+      const aiPersonalities = newBuild
         ? model.aiPersonalities()
         : model.aiPersonalities;
 
@@ -75,7 +75,7 @@ function legionNewGame() {
       );
 
       api.mods.getMounted("client").then(function (mods) {
-        var legionClientLoaded =
+        const legionClientLoaded =
           _.intersection(_.pluck(mods, "identifier"), [
             "com.pa.legion-expansion-client",
             "com.pa.legion-expansion-client-dev",

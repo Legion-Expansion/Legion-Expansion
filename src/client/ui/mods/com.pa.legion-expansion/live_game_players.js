@@ -10,7 +10,7 @@ function legionLiveGamePlayers() {
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
     loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-    var checkCommanders = function (commanders) {
+    const checkCommanders = function (commanders) {
       var legionCount = 0;
       var specsLength = 0;
       if (commanders !== undefined) {
@@ -30,8 +30,8 @@ function legionLiveGamePlayers() {
       return "vanilla";
     };
 
-    var isLegionOrMixedOrVanilla = ko.computed(function () {
-      var selectedSpecs = model.player().commanders;
+    const isLegionOrMixedOrVanilla = ko.computed(function () {
+      const selectedSpecs = model.player().commanders;
       return checkCommanders(selectedSpecs);
     });
 
@@ -43,14 +43,14 @@ function legionLiveGamePlayers() {
       return isLegionOrMixedOrVanilla() === "mixed";
     });
 
-    var legionStart = ko.observable(false);
-    var themeSetting =
+    const legionStart = ko.observable(false);
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
     model.player.subscribe(function () {
       if (!legionStart()) {
         if (themeSetting === "ON") {
-          var ui = isLegionOrMixedOrVanilla();
+          const ui = isLegionOrMixedOrVanilla();
 
           if (ui !== "legion" && ui !== "mixed") {
             return;
@@ -68,11 +68,11 @@ function legionLiveGamePlayers() {
           require([
             "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
           ], function (common) {
-            var src = "coui://ui/main/shared/img/controls/";
-            var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
-            var colour = common.uiColour(ui);
-            var png1 = "pin_open.png";
-            var png2 = "pin_closed.png";
+            const src = "coui://ui/main/shared/img/controls/";
+            const path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+            const colour = common.uiColour(ui);
+            const png1 = "pin_open.png";
+            const png2 = "pin_closed.png";
 
             common.toggleImage(src, path, colour, png1, png2);
 
@@ -109,22 +109,14 @@ function legionLiveGamePlayers() {
     }
 
     model.commanderImage = function (data) {
-      var result = "";
       switch (checkCommanders(data.commanders)) {
         case "legion":
-          result =
-            "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
-          break;
+          return "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_l.png";
         case "mixed":
-          result =
-            "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_m.png";
-          break;
+          return "coui://ui/mods/com.pa.legion-expansion/img/icon_player_outline_m.png";
         default:
-          result =
-            "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png";
-          break;
+          return "coui://ui/main/game/live_game/img/players_list_panel/icon_player_outline.png";
       }
-      return result;
     };
 
     model.commanderImageMaskLeg = function (data) {

@@ -8,7 +8,7 @@ function legionLiveGameOptionsBar() {
 
   try {
     api.mods.getMounted("server").then(function (mods) {
-      var legionServerLoaded =
+      const legionServerLoaded =
         _.intersection(_.pluck(mods, "identifier"), [
           "com.pa.legion-expansion-server",
           "com.pa.legion-expansion-server-dev",
@@ -27,7 +27,7 @@ function legionLiveGameOptionsBar() {
 
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css");
 
-    var themeSetting =
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS(
@@ -41,14 +41,14 @@ function legionLiveGameOptionsBar() {
       ], function (common) {
         common.bodyPanelClass(payload);
 
-        var src = "img/ingame_options_bar/";
-        var path =
+        const src = "img/ingame_options_bar/";
+        const path =
           "coui://ui/mods/com.pa.legion-expansion/img/ingame_options_bar/";
-        var colour = common.uiColour(payload);
+        const colour = common.uiColour(payload);
 
-        var togglePip = function () {
-          var png1 = "pip_off.png";
-          var png2 = "pip_on.png";
+        const togglePip = function () {
+          const png1 = "pip_off.png";
+          const png2 = "pip_on.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.pipImage = ko.computed(function () {
             return common.togglePanel(model.pip(), path, colour, png1, png2);
@@ -56,9 +56,9 @@ function legionLiveGameOptionsBar() {
         };
         togglePip();
 
-        var toggleUberBar = function () {
-          var png1 = "uberbar_hide.png";
-          var png2 = "uberbar_show.png";
+        const toggleUberBar = function () {
+          const png1 = "uberbar_hide.png";
+          const png2 = "uberbar_show.png";
           common.toggleImage(src, path, colour, png1, png2);
           model.uberBarImage = ko.computed(function () {
             return common.togglePanel(

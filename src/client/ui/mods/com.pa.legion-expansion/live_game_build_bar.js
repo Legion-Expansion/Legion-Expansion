@@ -23,17 +23,17 @@ function legionLiveGameBuildBar() {
     }
 
     ko.computed(function () {
-      var buildSet = model.buildSet();
+      const buildSet = model.buildSet();
       if (!buildSet) {
         return;
       }
-      var hotkeys = model.hotkeys();
-      var groups = buildSet.tabsByGroup();
+      const hotkeys = model.hotkeys();
+      const groups = buildSet.tabsByGroup();
 
       setTimeout(function () {
         // Get tab hotkeys
         _.forEach(buildSet.tabs(), function (tab) {
-          var baseTab = tab.group().replace("L_", "");
+          const baseTab = tab.group().replace("L_", "");
           if (!tab.label()) {
             tab.label(groups[baseTab].label());
           }
@@ -49,9 +49,9 @@ function legionLiveGameBuildBar() {
       params
     ) {
       var group = params.group;
-      var locked = params.locked;
+      const locked = params.locked;
 
-      var tabs = model
+      const tabs = model
         .buildSet()
         .tabs()
         .filter(function (tab) {
@@ -68,7 +68,7 @@ function legionLiveGameBuildBar() {
       }
     };
 
-    var themeSetting =
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS(
@@ -77,13 +77,13 @@ function legionLiveGameBuildBar() {
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
       // eslint-disable-next-line no-undef
-      var legionSpecIds = legion.builders;
+      const legionSpecIds = legion.builders;
 
-      var isLegionOrMixedOrVanilla = function (data) {
+      const isLegionOrMixedOrVanilla = function (data) {
         if (data.buildSet()) {
           var legionCount = 0;
           var specsLength = 0;
-          var selectedSpecs = data.buildSet().selectedSpecs();
+          const selectedSpecs = data.buildSet().selectedSpecs();
 
           _.forOwn(selectedSpecs, function (value, key) {
             if (_.includes(legionSpecIds, key)) {
