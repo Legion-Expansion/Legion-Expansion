@@ -1,4 +1,4 @@
-const legionIconAtlasLoaded;
+var legionIconAtlasLoaded;
 
 if (!legionIconAtlasLoaded) {
   legionIconAtlasLoaded = true;
