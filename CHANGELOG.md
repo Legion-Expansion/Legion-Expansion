@@ -4,6 +4,9 @@
 
 ### Balance
 
+- Shredder
+  - Reduced range from 150 to 110
+
 - Orbital
   - Starship Foundry
     - Build cost decreased from 6000 to 4200
