@@ -2,6 +2,11 @@
 
 ## v1.30.3 - 2024-08-23
 
+### Visual
+
+- Theodor
+  - Trail pfx changed
+
 ### Balance
 
 - Shredder
