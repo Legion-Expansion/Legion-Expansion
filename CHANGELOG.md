@@ -19,6 +19,7 @@
   - Flyer Fabricator
   - Scythe
   - Havoc
+  - Osprey
 
 - Updated SI icon
   - Corsair
@@ -186,6 +187,11 @@
     - Attack Frac 0.8
 
 - Air
+  - Osprey
+    - Increased metal cost from 100 to 140
+    - Increased braking from 40 to 80
+    - Increased vision radius from 70 to 120
+
   - Lockheed
     - Reduced gun range from 80 to 60
     - Reduced gun rate of fire from 4 to 2
