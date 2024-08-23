@@ -51,8 +51,16 @@
       - 20 Damage (x2)
       - 1 Rate of Fire
 
+  - Shield Generator
+    - Health increased from 750 to 500
+    - Increased ammo capacity from 36000 to 60000
+    - Increased ammo demand from 1000 to 1200
+
   - Shredder
     - Reduced range from 150 to 110
+
+  - Jackel
+    - Health increased from 750 to 100
 
 - Land
   - Deathmark
@@ -73,11 +81,6 @@
     - Increased vision radius from 150 to 200
     - Deployed version
       - Increased vision radius from 0 to 100
-
-  - Shield Generator
-    - Health increased from 750 to 500
-    - Increased ammo capacity from 36000 to 60000
-    - Increased ammo demand from 1000 to 1200
 
   - Radar
     - Health increased from 500 to 750

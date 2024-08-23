@@ -22,7 +22,7 @@
     }
   },
   "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
-  "max_health": 750,
+  "max_health": 1000,
   "mesh_bounds": [12, 12, 12.7],
   "model": [
     {
