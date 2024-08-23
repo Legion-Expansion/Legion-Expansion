@@ -232,6 +232,11 @@
     - Reduced Energy rate from 1650 to 1500
 
 - Orbital
+  - Viper
+    - Added attack fraction 0.75
+    - Increased damage from 40 to 500
+    - Reduced range from 200 to 100
+
   - Starcannon
     - Updated description for max units held
     - Lowered strat icon priority to 4 (units being built will now show on top of the starcannon)
