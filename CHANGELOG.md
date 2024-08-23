@@ -12,6 +12,7 @@
   - Panzer
   - Stoke
   - Radar
+  - Deathmark
 
 - Updated SI icon
   - Corsair
@@ -54,6 +55,16 @@
     - Reduced range from 150 to 110
 
 - Land
+  - Deathmark
+    - Decreased Projectile speed from 200 to 100
+    - Decreased Gravity from 26 to 20
+    - Given Target Priorities:
+      "Advanced - Structure"
+      "Tank - Structure"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
+
   - Maul
     - Health increased from 1150 to 1250
 
