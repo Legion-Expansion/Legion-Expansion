@@ -60,7 +60,7 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 500,
+  "max_health": 200,
   "mesh_bounds": [4.925, 7.123, 4.25],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
@@ -70,7 +70,7 @@
     "acceleration": 120,
     "brake": 120,
     "group_preference": "back",
-    "move_speed": 10,
+    "move_speed": 18,
     "turn_speed": 360
   },
   "physics": {
