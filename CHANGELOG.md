@@ -180,6 +180,10 @@
     - Attack Frac 0.8
 
 - Air
+  - Firebird
+    - Reduced missile range from 180 to 160
+    - Reduced rate of fire from 0.33 to 0.25
+
   - Scythe
     - Reduced Fire angle from 70 to 45 degrees
     - Increased damage from 29 to 35
