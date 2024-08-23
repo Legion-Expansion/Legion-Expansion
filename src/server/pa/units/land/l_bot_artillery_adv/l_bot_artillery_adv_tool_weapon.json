@@ -10,5 +10,12 @@
   "spread_fire": true,
   "target_layers": ["WL_LandHorizontal", "WL_Seafloor", "WL_WaterSurface"],
   "yaw_range": 180,
-  "yaw_rate": 45
+  "yaw_rate": 45,
+  "target_priorities": [
+    "Advanced - Structure",
+    "Tank - Structure",
+    "Mobile - Air",
+    "Structure - Wall",
+    "Wall"
+  ]
 }

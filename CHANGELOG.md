@@ -61,6 +61,14 @@
     - Increased Ammo from 7 to 8
     - Removed AT Multiplier for Structures
 
+- Monstrosity
+  - Given Target Priorities:
+      "Advanced - Structure"
+      "Tank - Structure"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
+
 - Air
   - Advanced Flyer Foundry
     - Reduced Metal rate from 50 to 45
