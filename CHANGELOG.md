@@ -182,6 +182,9 @@
     - Drone Health reduced from 60 to 30
     - Drones made uncontrolable.
 
+  - Infiltrator
+    - Added UNITTYPE_Offense type (So it will stay with offensive air units)
+
   - Nova
     - Untargetable once triggered
     - Reduced death splash radius from 70 to 40
