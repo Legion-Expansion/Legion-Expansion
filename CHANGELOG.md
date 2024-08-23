@@ -54,6 +54,9 @@
     - Reduced range from 150 to 110
 
 - Land
+  - Maul
+    - Health increased from 1150 to 1250
+
   - Investigator
     - Removed fire effect
     - Increased vision radius from 150 to 200
