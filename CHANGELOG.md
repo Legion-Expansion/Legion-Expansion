@@ -7,6 +7,10 @@
 - New models
   - Fabrication Walker
 
+- Updated SI icon
+  - Corsair
+  - Marauder
+
 - Updated attachment point
   - Peacekeeper
   - Patriot
