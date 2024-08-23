@@ -177,6 +177,15 @@
     - Attack Frac 0.8
 
 - Air
+  - Nova
+    - Untargetable once triggered
+    - Reduced death splash radius from 70 to 40
+    - Reduced attack splash radius from 80 to 50
+    - Reduced Triggered lifespan from 20 to 5
+    - Reduced Triggered Vision radius from 150 to 10
+    - Added Triggered Radar 70
+    - Reduced speed from 95 to 75
+
   - Advanced Flyer Foundry
     - Reduced Metal rate from 50 to 45
     - Reduced Energy rate from 1650 to 1500
