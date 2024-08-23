@@ -26,12 +26,40 @@
 
 ### Balance
 
-- Shredder
-  - Reduced range from 150 to 110
+- Defense
+  - Shredder
+    - Reduced range from 150 to 110
+
+- Land
+  - Armour Foundry
+    - Reduced Metal rate from 17 to 15
+    - Reduced Energy rate from 765 to 675
+
+  - Advanced Walker Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
+
+  - Walker Foundry
+    - Reduced Metal rate from 17 to 15
+    - Reduced Energy rate from 765 to 675
+
+  - Advanced Armour Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
+
+- Air
+  - Advanced Flyer Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
 
 - Orbital
   - Starship Foundry
     - Build cost decreased from 6000 to 4200
+
+- Naval
+  - Advanced Ship Foundry
+    - Reduced Metal rate from 65 to 60
+    - Reduced Energy rate from 1900 to 1750
 
 ## v1.30.2 - 2024-08-01
 
