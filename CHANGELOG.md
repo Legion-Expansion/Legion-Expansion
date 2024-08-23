@@ -27,6 +27,16 @@
 ### Balance
 
 - Defense
+  - Liberator
+    - New unit only buildable by combat fabbers
+    - 75 Metal
+    - 150 Health
+    - 230 Vision
+    - Weapon
+      - 90 Range
+      - 20 Damage (x2)
+      - 1 Rate of Fire
+
   - Shredder
     - Reduced range from 150 to 110
 
@@ -46,6 +56,10 @@
   - Advanced Armour Foundry
     - Reduced Metal rate from 50 to 45
     - Reduced Energy rate from 1650 to 1500
+
+  - Miniman
+    - Increased Ammo from 7 to 8
+    - Removed AT Multiplier for Structures
 
 - Air
   - Advanced Flyer Foundry
