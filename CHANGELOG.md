@@ -82,6 +82,12 @@
     - Increased Metal rate from 9 to 10
     - Reduced Energy rate from 650 to 635
 
+  - Advanced Fabrication Walker
+    - Speed reduced from 14 to 12
+    - Reduced Metal cost from 2000 to 1900
+    - Health increased to 400 from 150
+    - Reduced Energy rate from 2200 to 1900
+
   - Purger
     - Given missile target tracking
     - Auto attacks targets when moving into range. When given a target, will not auto attack other units.
