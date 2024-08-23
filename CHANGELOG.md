@@ -13,6 +13,7 @@
   - Stoke
   - Radar
   - Deathmark
+  - Scorpion
 
 - Updated SI icon
   - Corsair
