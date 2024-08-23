@@ -7,6 +7,9 @@
 - New models
   - Fabrication Walker
   - Armour Fabricator
+  - Guardian
+  - Corsair
+  - Panzer
 
 - Updated SI icon
   - Corsair
@@ -99,6 +102,25 @@
     - Speed increased from 10 to 18
     - Health reduced from 500 to 200
     - Reduced Metal rate from 70 to 60
+
+  - Guardian
+    - Reduced Metal cost from 350 to 300
+    - Reduced Metal rate from 45 to 30
+    - Reduced Energy rate from 600 to 400
+    - Can Build Shredders
+    - Can build Liberators
+
+  - Corsair
+    - Health reduced from 175 to 100
+    - Damage reduced from 60 to 40
+    - Increased range from 160 to 240
+    - Given Grenadier target priorities:
+      "Structure & SurfaceDefense"
+      "Structure & Defense"
+      "Commander"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
 
   - Purger
     - Given missile target tracking

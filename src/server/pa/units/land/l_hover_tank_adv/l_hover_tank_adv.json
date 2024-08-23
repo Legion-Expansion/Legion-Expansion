@@ -5,7 +5,7 @@
   "armor_type": "AT_Hover",
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
+      "head": [0, 0, 6.2],
       "root": [0, 0, 0]
     }
   },
@@ -86,7 +86,7 @@
     }
   ],
   "max_health": 200,
-  "mesh_bounds": [6.468, 8, 5.711],
+  "mesh_bounds": [7, 9, 6],
   "model": {
     "animations": {
       "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
