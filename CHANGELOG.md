@@ -186,6 +186,12 @@
     - Attack Frac 0.8
 
 - Air
+  - Lockheed
+    - Reduced gun range from 80 to 60
+    - Reduced gun rate of fire from 4 to 2
+    - Reduced missile range from 100 to 75
+    - Increased missile volley from 2 to 3
+
   - Comet
     - No longer Fabricator Buildable
     - Buildable from the Advanced Flyer Foundry

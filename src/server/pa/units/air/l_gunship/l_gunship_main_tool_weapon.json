@@ -3,10 +3,10 @@
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
   "idle_aim_delay": 0.25,
-  "max_range": 80,
+  "max_range": 60,
   "pitch_range": 100,
   "pitch_rate": 360,
-  "rate_of_fire": 4,
+  "rate_of_fire": 2,
   "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
   "target_priorities": [
     "Commander",
