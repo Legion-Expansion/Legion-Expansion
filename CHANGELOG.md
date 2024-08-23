@@ -10,6 +10,7 @@
   - Guardian
   - Corsair
   - Panzer
+  - Stoke
 
 - Updated SI icon
   - Corsair
@@ -121,6 +122,10 @@
       "Mobile - Air"
       "Structure - Wall"
       "Wall"
+
+  - Stoke
+    - Reduced Metal cost from 210 to 180
+    - Increased move speed from 14 to 16
 
   - Purger
     - Given missile target tracking
