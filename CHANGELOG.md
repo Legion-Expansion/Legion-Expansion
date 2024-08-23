@@ -16,6 +16,7 @@
   - Scorpion
   - Shank
   - Dauntless
+  - Flyer Fabricator
 
 - Updated SI icon
   - Corsair
