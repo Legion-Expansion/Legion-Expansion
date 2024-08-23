@@ -4,6 +4,23 @@
 
 ### Visual
 
+- Updated attachment point
+  - Peacekeeper
+  - Patriot
+  - Orbweaver
+  - Miniman
+  - Monstrosity
+  - Purger
+  - Praetorian
+  - Advanced Fabrication Walker
+  - Advanced Armour Fabricator
+  - Necromancer
+  - Enforcer
+  - Investigator
+  - Maul
+  - Lancer
+  - Earthshaker
+
 - Theodor
   - Trail pfx changed
 

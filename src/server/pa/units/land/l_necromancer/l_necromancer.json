@@ -4,7 +4,7 @@
   "TEMP_texelinfo": 10,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 4],
+      "head": [0, 0, 8.5],
       "root": [0, 0, 0]
     }
   },
