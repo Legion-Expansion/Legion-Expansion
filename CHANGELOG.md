@@ -18,6 +18,7 @@
   - Dauntless
   - Flyer Fabricator
   - Scythe
+  - Havoc
 
 - Updated SI icon
   - Corsair
@@ -68,6 +69,11 @@
     - Health increased from 750 to 100
 
 - Land
+  - Havoc
+    - Split off anti-missile beam from the Gile
+    - Increased anti-missile beam firerate from 0.25 to 0.333
+    - Reduced range of anti-missile beam from 140 to 115
+
   - Shank
     - Removed Splash damage
 
