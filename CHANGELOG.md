@@ -180,6 +180,10 @@
     - Attack Frac 0.8
 
 - Air
+  - Comet
+    - No longer Fabricator Buildable
+    - Buildable from the Advanced Flyer Foundry
+
   - Firebird
     - Reduced missile range from 180 to 160
     - Reduced rate of fire from 0.33 to 0.25

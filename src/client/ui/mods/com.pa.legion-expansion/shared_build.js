@@ -5,28 +5,28 @@ if (!legionSharedBuildLoaded) {
 
   try {
     if (_.has(Build, "HotkeyModel.SpecIdToGridMap")) {
-      const r0c0 = { row: 0, column: 0, titans: true };
-      const r0c1 = { row: 0, column: 1, titans: true };
-      const r0c2 = { row: 0, column: 2, titans: true };
-      const r0c3 = { row: 0, column: 3, titans: true };
-      const r0c4 = { row: 0, column: 4, titans: true };
-      const r0c5 = { row: 0, column: 5, titans: true };
-      const r1c0 = { row: 1, column: 0, titans: true };
-      const r1c1 = { row: 1, column: 1, titans: true };
-      const r1c2 = { row: 1, column: 2, titans: true };
-      const r1c3 = { row: 1, column: 3, titans: true };
-      const r1c4 = { row: 1, column: 4, titans: true };
-      const r1c5 = { row: 1, column: 5, titans: true };
-      const r2c0 = { row: 2, column: 0, titans: true };
-      const r2c1 = { row: 2, column: 1, titans: true };
-      const r2c2 = { row: 2, column: 2, titans: true };
-      const r2c3 = { row: 2, column: 3, titans: true };
-      const r2c4 = { row: 2, column: 4, titans: true };
-      const r2c5 = { row: 2, column: 5, titans: true };
+      var r0c0 = { row: 0, column: 0, titans: true };
+      var r0c1 = { row: 0, column: 1, titans: true };
+      var r0c2 = { row: 0, column: 2, titans: true };
+      var r0c3 = { row: 0, column: 3, titans: true };
+      var r0c4 = { row: 0, column: 4, titans: true };
+      var r0c5 = { row: 0, column: 5, titans: true };
+      var r1c0 = { row: 1, column: 0, titans: true };
+      var r1c1 = { row: 1, column: 1, titans: true };
+      var r1c2 = { row: 1, column: 2, titans: true };
+      var r1c3 = { row: 1, column: 3, titans: true };
+      var r1c4 = { row: 1, column: 4, titans: true };
+      var r1c5 = { row: 1, column: 5, titans: true };
+      var r2c0 = { row: 2, column: 0, titans: true };
+      var r2c1 = { row: 2, column: 1, titans: true };
+      var r2c2 = { row: 2, column: 2, titans: true };
+      var r2c3 = { row: 2, column: 3, titans: true };
+      var r2c4 = { row: 2, column: 4, titans: true };
+      var r2c5 = { row: 2, column: 5, titans: true };
 
       _.assign(Build.HotkeyModel.SpecIdToGridMap, {
         "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
-          "L_factory",
+          "L_air",
           0,
           r0c0,
         ],
