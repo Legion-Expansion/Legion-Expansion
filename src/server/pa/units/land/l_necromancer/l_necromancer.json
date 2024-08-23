@@ -83,6 +83,9 @@
   "selection_icon": {
     "diameter": -15
   },
+  "transportable": {
+    "size": 1
+  },
   "tools": [
     {
       "aim_bone": "bone_root",
@@ -93,9 +96,16 @@
         "drop004",
         "drop002",
         "drop006",
-        "drop003"
+        "drop003",
+        "drop001.001",
+        "drop005.001",
+        "drop007.001",
+        "drop004.001",
+        "drop002.001",
+        "drop006.001",
+        "drop003.001"
       ],
-      "projectiles_per_fire": 7,
+      "projectiles_per_fire": 12,
       "spec_id": "/pa/units/land/l_necromancer/l_necromancer_tool_weapon.json"
     }
   ],

@@ -123,6 +123,12 @@
       "Structure - Wall"
       "Wall"
 
+  - Necromancer
+    - Increased waves of Purgers from 6 to 12
+    - Increased ammo capacity from 420 to 750
+    - Increased ammo per shot from 420 to 750
+    - Increased ammo demand from 35 to 45
+
   - Stoke
     - Reduced Metal cost from 210 to 180
     - Increased move speed from 14 to 16
