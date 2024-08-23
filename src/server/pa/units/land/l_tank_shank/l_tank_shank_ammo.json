@@ -17,8 +17,12 @@
     "filename": ""
   },
   "physics": {
-    "add_to_spatial_db": true
+    "type": "Projectile",
+    "radius": 1,
+    "gravity_scalar": 5,
+    "add_to_spatial_db": true,
+    "allow_underground": true
   },
-  "splash_damage": 20,
+  "splash_damage": 0,
   "splash_radius": 5
 }

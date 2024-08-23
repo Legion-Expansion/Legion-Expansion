@@ -14,6 +14,7 @@
   - Radar
   - Deathmark
   - Scorpion
+  - Shank
 
 - Updated SI icon
   - Corsair
@@ -64,6 +65,9 @@
     - Health increased from 750 to 100
 
 - Land
+  - Shank
+    - Removed Splash damage
+
   - Deathmark
     - Decreased Projectile speed from 200 to 100
     - Decreased Gravity from 26 to 20
