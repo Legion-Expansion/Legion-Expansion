@@ -232,6 +232,10 @@
     - Reduced Energy rate from 1650 to 1500
 
 - Orbital
+  - Starcannon
+    - Updated description for max units held
+    - Lowered strat icon priority to 4 (units being built will now show on top of the starcannon)
+
   - Starship Foundry
     - Build cost decreased from 6000 to 4200
 
