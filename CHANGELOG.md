@@ -15,6 +15,7 @@
   - Deathmark
   - Scorpion
   - Shank
+  - Dauntless
 
 - Updated SI icon
   - Corsair
