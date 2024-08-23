@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.30.3 - 2024-08-23
 
 ### Balance
 
