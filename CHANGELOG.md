@@ -4,6 +4,9 @@
 
 ### Visual
 
+- New models
+  - Fabrication Walker
+
 - Updated attachment point
   - Peacekeeper
   - Patriot
@@ -68,6 +71,12 @@
       "Mobile - Air"
       "Structure - Wall"
       "Wall"
+
+  - Fabrication Walker
+    - Speed reduced from 14 to 12
+    - Health increased to 200 from 65
+    - Increased Metal rate from 9 to 10
+    - Reduced Energy rate from 650 to 635
 
   - Purger
     - Given missile target tracking
