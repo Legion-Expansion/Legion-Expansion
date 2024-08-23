@@ -61,13 +61,18 @@
     - Increased Ammo from 7 to 8
     - Removed AT Multiplier for Structures
 
-- Monstrosity
-  - Given Target Priorities:
+  - Monstrosity
+    - Given Target Priorities:
       "Advanced - Structure"
       "Tank - Structure"
       "Mobile - Air"
       "Structure - Wall"
       "Wall"
+
+  - Purger
+    - Given missile target tracking
+    - Auto attacks targets when moving into range. When given a target, will not auto attack other units.
+    - Attack Frac 0.8
 
 - Air
   - Advanced Flyer Foundry

@@ -50,6 +50,7 @@
       "type": "moving"
     }
   ],
+  "attack_range_frac": 0.8,
   "guard_layer": "WL_AnySurface",
   "guard_radius": 50,
   "max_health": 20,
@@ -102,6 +103,7 @@
       "spec_id": "/pa/units/land/l_bot_bomb/l_bot_bomb_jump_tool_weapon.json"
     }
   ],
+  "maintain_priority_target": false,
   "transportable": {
     "size": 1
   },
