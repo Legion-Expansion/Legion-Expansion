@@ -149,6 +149,12 @@ if (!legionSharedBuildLoaded) {
           r2c4,
         ],
 
+        "/pa/units/land/l_scout_turret/l_scout_turret.json": [
+          "L_combat",
+          18,
+          r1c5,
+        ],
+
         "/pa/units/land/l_control_module/l_control_module.json": [
           "L_utility",
           1,
