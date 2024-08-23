@@ -7,7 +7,7 @@ function legionLiveGamePlanets() {
   legionLiveGamePlanetsLoaded = true;
 
   try {
-    var themeSetting =
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_planets.css");
@@ -19,11 +19,11 @@ function legionLiveGamePlanets() {
       ], function (common) {
         common.bodyPanelClass(payload);
 
-        var src = "coui://ui/main/shared/img/controls/";
-        var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
-        var colour = common.uiColour(payload);
-        var png1 = "pin_open.png";
-        var png2 = "pin_closed.png";
+        const src = "coui://ui/main/shared/img/controls/";
+        const path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+        const colour = common.uiColour(payload);
+        const png1 = "pin_open.png";
+        const png2 = "pin_closed.png";
 
         common.toggleImage(src, path, colour, png1, png2);
 

@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v1.30.3 - 2024-08-23
+
+### Balance
+
+- Orbital
+  - Starship Foundry
+    - Build cost decreased from 6000 to 4200
+
 ## v1.30.2 - 2024-08-01
 
 ### Bugfix

@@ -1,4 +1,4 @@
-var legion = {};
+const legion = {};
 
 legion.commanders = [
   "/pa/units/commanders/l_overwatch/l_overwatch.json",

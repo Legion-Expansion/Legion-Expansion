@@ -7,17 +7,17 @@ function legionLiveGameActionBar() {
   legionLiveGameActionBarLoaded = true;
 
   try {
-    var themeSetting =
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS(
         "coui://ui/mods/com.pa.legion-expansion/css/legion_action_bar.css"
       );
 
-      var isLegionOrMixedOrVanilla = function (data) {
+      const isLegionOrMixedOrVanilla = function (data) {
         var legionCount = 0;
         var specsLength = 0;
-        var selectedSpecs = data.selection().spec_ids;
+        const selectedSpecs = data.selection().spec_ids;
 
         _.forOwn(selectedSpecs, function (value, key) {
           if (key.indexOf("/l_") > 2) {

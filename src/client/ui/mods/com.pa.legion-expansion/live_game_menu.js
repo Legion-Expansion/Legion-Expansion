@@ -7,7 +7,7 @@ function legionLiveGameMenu() {
   legionLiveGameMenuLoaded = true;
 
   try {
-    var themeSetting =
+    const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_menu.css");
