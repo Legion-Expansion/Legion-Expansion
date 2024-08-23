@@ -17,6 +17,7 @@
   - Shank
   - Dauntless
   - Flyer Fabricator
+  - Scythe
 
 - Updated SI icon
   - Corsair
@@ -179,6 +180,10 @@
     - Attack Frac 0.8
 
 - Air
+  - Scythe
+    - Reduced Fire angle from 70 to 45 degrees
+    - Increased damage from 29 to 35
+
   - Meteor
     - Health reduced from 2000 to 750
     - Drone Health reduced from 60 to 30
