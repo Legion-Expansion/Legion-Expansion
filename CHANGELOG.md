@@ -177,6 +177,11 @@
     - Attack Frac 0.8
 
 - Air
+  - Meteor
+    - Health reduced from 2000 to 750
+    - Drone Health reduced from 60 to 30
+    - Drones made uncontrolable.
+
   - Nova
     - Untargetable once triggered
     - Reduced death splash radius from 70 to 40
