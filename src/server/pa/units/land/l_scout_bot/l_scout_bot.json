@@ -36,10 +36,7 @@
   },
   "events": {
     "died": {},
-    "fired": {
-      "audio_cue": "/SE/Weapons/bot/assault_fire",
-      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
-    }
+    "fired": null
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 60,
@@ -69,19 +66,19 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 150,
+          "radius": 200,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 150,
+          "radius": 200,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "mine",
-          "radius": 150,
+          "radius": 200,
           "shape": "capsule"
         }
       ]

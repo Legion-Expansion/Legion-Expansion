@@ -11,6 +11,7 @@
   - Corsair
   - Panzer
   - Stoke
+  - Radar
 
 - Updated SI icon
   - Corsair
@@ -53,6 +54,16 @@
     - Reduced range from 150 to 110
 
 - Land
+  - Investigator
+    - Removed fire effect
+    - Increased vision radius from 150 to 200
+    - Deployed version
+      - Increased vision radius from 0 to 100
+
+  - Radar
+    - Health increased from 500 to 750
+    - Increased vision radius from 100 to 200
+
   - Armour Foundry
     - Reduced Metal rate from 17 to 15
     - Reduced Energy rate from 765 to 675
