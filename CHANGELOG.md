@@ -232,6 +232,9 @@
     - Reduced Energy rate from 1650 to 1500
 
 - Orbital
+  - Paladin
+    - Added attack fraction 0.9
+
   - Viper
     - Added attack fraction 0.75
     - Increased damage from 40 to 500
