@@ -60,6 +60,11 @@
     - Deployed version
       - Increased vision radius from 0 to 100
 
+  - Shield Generator
+    - Health increased from 750 to 500
+    - Increased ammo capacity from 36000 to 60000
+    - Increased ammo demand from 1000 to 1200
+
   - Radar
     - Health increased from 500 to 750
     - Increased vision radius from 100 to 200
