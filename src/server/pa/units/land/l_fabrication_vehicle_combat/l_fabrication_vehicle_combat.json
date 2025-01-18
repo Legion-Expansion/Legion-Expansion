@@ -1,7 +1,7 @@
 {
   "display_name": "!LOC:Guardian",
   "description": "!LOC:Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.",
-  "TEMP_texelinfo": 6.20134,
+  "TEMP_texelinfo": 20.0295,
   "attachable": {
     "offsets": {
       "head": [0, 0, 2.7],
