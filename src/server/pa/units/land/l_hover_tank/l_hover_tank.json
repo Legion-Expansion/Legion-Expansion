@@ -77,7 +77,7 @@
     }
   ],
   "influence_radius": 400,
-  "max_health": 175,
+  "max_health": 100,
   "mesh_bounds": [6.468, 8, 5.711],
   "model": {
     "animations": {
