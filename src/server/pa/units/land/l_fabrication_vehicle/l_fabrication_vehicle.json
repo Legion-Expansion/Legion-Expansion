@@ -49,7 +49,7 @@
   },
   "fx_offsets": [
     {
-      "bone": "socket_lathe",
+      "bone": "socket_fab",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     }
