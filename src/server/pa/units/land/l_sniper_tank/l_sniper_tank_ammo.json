@@ -11,14 +11,14 @@
     "filename": "/pa/units/land/l_sniper_tank/trail.pfx",
     "offset": [0, 0, 0]
   },
-  "initial_velocity": 200,
+  "initial_velocity": 100,
   "lifetime": 3,
-  "max_velocity": 500,
+  "max_velocity": 300,
   "min_velocity": 90,
   "physics": {
     "add_to_spatial_db": false,
     "allow_underground": true,
-    "gravity_scalar": 26,
+    "gravity_scalar": 20,
     "radius": 1
   }
 }

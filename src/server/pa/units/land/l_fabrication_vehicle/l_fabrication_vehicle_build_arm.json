@@ -1,8 +1,8 @@
 {
   "base_spec": "/pa/tools/engineer_build_arm/engineer_build_arm.json",
   "construction_demand": {
-    "energy": 850,
-    "metal": 13
+    "energy": 750,
+    "metal": 10
   },
   "fx_trail": "/pa/effects/specs/legion_fab_spray.pfx",
   "pitch_rate": 180,

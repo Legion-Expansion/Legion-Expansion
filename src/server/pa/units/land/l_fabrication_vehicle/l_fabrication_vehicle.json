@@ -4,7 +4,7 @@
   "TEMP_texelinfo": 6.20134,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
+      "head": [0, 0, 3.5],
       "root": [0, 0, 0]
     }
   },
@@ -29,7 +29,7 @@
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
   "build_metal_cost": 200,
-  "buildable_types": "Custom1 & (Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild )",
+  "buildable_types": "Custom1 & (Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild)",
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -49,24 +49,29 @@
   },
   "fx_offsets": [
     {
-      "bone": "socket_lathe",
+      "bone": "socket_fab",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 185,
+  "max_health": 75,
   "mesh_bounds": [4.925, 7.123, 3.68],
   "model": {
-    "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
+    "animations": {
+      "death01": "/pa/units/land/l_fabrication_vehicle/l_fabrication_vehicle_death.papa",
+      "drive": "/pa/units/land/l_fabrication_vehicle/l_fabrication_vehicle_run.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/turret_wheels_anim_tree.json",
     "arrows": 5,
     "filename": "/pa/units/land/l_fabrication_vehicle/l_fabrication_vehicle.papa"
   },
+  "has_death_effects": true,
   "navigation": {
     "acceleration": 180,
     "brake": 180,
     "group_preference": "back",
-    "move_speed": 11,
+    "move_speed": 18,
     "turn_speed": 360
   },
   "physics": {
@@ -90,10 +95,6 @@
         }
       ]
     }
-  },
-  "scrolling_uv": {
-    "scroll_rate": 0.5,
-    "uv_split": 0.875
   },
   "selection_icon": {
     "diameter": -12

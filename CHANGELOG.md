@@ -1,12 +1,215 @@
 # CHANGELOG
 
-## v1.30.3 - 2024-08-23
+## v1.31.0 - 2025-05-01
+
+### Visual
+
+- New models
+  - Fabrication Walker
+  - Armour Fabricator
+  - Guardian
+  - Corsair
+  - Panzer
+  - Stoke
+  - Radar
+  - Deathmark
+  - Scorpion
+  - Shank
+  - Dauntless
+  - Flyer Fabricator
+  - Scythe
+  - Havoc
+  - Osprey
+- Updated strategic icons
+  - Corsair
+  - Marauder
+- Updated attachment points
+  - Peacekeeper
+  - Patriot
+  - Orbweaver
+  - Miniman
+  - Monstrosity
+  - Purger
+  - Praetorian
+  - Advanced Fabrication Walker
+  - Advanced Armour Fabricator
+  - Necromancer
+  - Enforcer
+  - Investigator
+  - Maul
+  - Lancer
+  - Earthshaker
+- Theodor
+  - Trail pfx changed
 
 ### Balance
 
+- Defense
+  - Liberator
+    - New unit only buildable by combat fabbers
+    - 75 Metal
+    - 150 Health
+    - 230 Vision
+    - Weapon
+      - 90 Range
+      - 20 Damage (x2)
+      - 1 Rate of Fire
+  - Shield Generator
+    - Health increased from 750 to 500
+    - Increased ammo capacity from 36000 to 60000
+    - Increased ammo demand from 1000 to 1200
+  - Shredder
+    - Reduced range from 150 to 110
+  - Jackal
+    - Health increased from 750 to 100
+- Land
+  - Havoc
+    - Split off anti-missile beam from the Gile
+    - Increased anti-missile beam fire rate from 0.25 to 0.333
+    - Reduced range of anti-missile beam from 140 to 115
+  - Shank
+    - Removed Splash damage
+  - Deathmark
+    - Decreased Projectile speed from 200 to 100
+    - Decreased Gravity from 26 to 20
+    - Given Target Priorities:
+      "Advanced - Structure"
+      "Tank - Structure"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
+  - Maul
+    - Health increased from 1150 to 1250
+  - Investigator
+    - Removed fire effect
+    - Increased vision radius from 150 to 200
+    - Deployed version
+      - Increased vision radius from 0 to 100
+  - Radar
+    - Health increased from 500 to 750
+    - Increased vision radius from 100 to 200
+  - Armour Foundry
+    - Reduced Metal rate from 17 to 15
+    - Reduced Energy rate from 765 to 675
+  - Advanced Walker Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
+  - Walker Foundry
+    - Reduced Metal rate from 17 to 15
+    - Reduced Energy rate from 765 to 675
+  - Advanced Armour Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
+  - Miniman
+    - Increased Ammo from 7 to 8
+    - Removed AT Multiplier for Structures
+  - Monstrosity
+    - Given Target Priorities:
+      "Advanced - Structure"
+      "Tank - Structure"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
+  - Fabrication Walker
+    - Speed reduced from 14 to 12
+    - Health increased to 200 from 65
+    - Increased Metal rate from 9 to 10
+    - Reduced Energy rate from 650 to 635
+  - Advanced Fabrication Walker
+    - Speed reduced from 14 to 12
+    - Reduced Metal cost from 2000 to 1900
+    - Health increased to 400 from 150
+    - Reduced Energy rate from 2200 to 1900
+  - Armour Fabricator
+    - Speed increased from 11 to 18
+    - Health reduced from 185 to 75
+    - Reduced Metal rate from 13 to 10
+    - Reduced Energy rate from 850 to 750
+  - Advanced Fabrication Armour
+    - Speed increased from 10 to 18
+    - Health reduced from 500 to 200
+    - Reduced Metal rate from 70 to 60
+  - Guardian
+    - Reduced Metal cost from 350 to 300
+    - Reduced Metal rate from 45 to 30
+    - Reduced Energy rate from 600 to 400
+    - Can Build Shredders
+    - Can build Liberators
+  - Corsair
+    - Health reduced from 175 to 100
+    - Damage reduced from 60 to 40
+    - Increased range from 160 to 240
+    - Given Grenadier target priorities:
+      "Structure & SurfaceDefense"
+      "Structure & Defense"
+      "Commander"
+      "Mobile - Air"
+      "Structure - Wall"
+      "Wall"
+  - Necromancer
+    - Increased waves of Purgers from 6 to 12
+    - Increased ammo capacity from 420 to 750
+    - Increased ammo per shot from 420 to 750
+    - Increased ammo demand from 35 to 45
+  - Stoke
+    - Reduced Metal cost from 210 to 180
+    - Increased move speed from 14 to 16
+  - Purger
+    - Given missile target tracking
+    - Auto attacks targets when moving into range. When given a target, will not auto attack other units.
+    - Attack Frac 0.8
+- Air
+  - Osprey
+    - Increased metal cost from 100 to 140
+    - Increased braking from 40 to 80
+    - Increased vision radius from 70 to 120
+  - Lockheed
+    - Reduced gun range from 80 to 60
+    - Reduced gun rate of fire from 4 to 2
+    - Reduced missile range from 100 to 75
+    - Increased missile volley from 2 to 3
+  - Comet
+    - No longer Fabricator Buildable
+    - Buildable from the Advanced Flyer Foundry
+  - Firebird
+    - Reduced missile range from 180 to 160
+    - Reduced rate of fire from 0.33 to 0.25
+  - Scythe
+    - Reduced Fire angle from 70 to 45 degrees
+    - Increased damage from 29 to 35
+  - Meteor
+    - Health reduced from 2000 to 750
+    - Drone Health reduced from 60 to 30
+    - Drones made uncontrollable.
+  - Infiltrator
+    - Added UNITTYPE_Offense type (So it will stay with offensive air units)
+  - Nova
+    - Untargetable once triggered
+    - Reduced death splash radius from 70 to 40
+    - Reduced attack splash radius from 80 to 50
+    - Reduced Triggered lifespan from 20 to 5
+    - Reduced Triggered Vision radius from 150 to 10
+    - Added Triggered Radar 70
+    - Reduced speed from 95 to 75
+  - Advanced Flyer Foundry
+    - Reduced Metal rate from 50 to 45
+    - Reduced Energy rate from 1650 to 1500
 - Orbital
+  - Paladin
+    - Added attack fraction 0.9
+  - Viper
+    - Added attack fraction 0.75
+    - Increased damage from 40 to 500
+    - Reduced range from 200 to 100
+  - Starcannon
+    - Updated description for max units held
+    - Lowered strategic icon priority to 4 (units being built will now show on top of the starcannon)
   - Starship Foundry
     - Build cost decreased from 6000 to 4200
+- Naval
+  - Advanced Ship Foundry
+    - Reduced Metal rate from 65 to 60
+    - Reduced Energy rate from 1900 to 1750
 
 ## v1.30.2 - 2024-08-01
 

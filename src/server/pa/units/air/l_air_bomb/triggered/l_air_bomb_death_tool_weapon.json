@@ -1,8 +1,8 @@
 {
-  "ammo_capacity": 20,
+  "ammo_capacity": 5,
   "ammo_demand": 1,
   "ammo_id": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_death_ammo.json",
-  "ammo_per_shot": 20,
+  "ammo_per_shot": 5,
   "ammo_source": "time",
   "auto_fire_when_charged": true,
   "base_spec": "/pa/tools/base_artillery_turret/base_artillery_turret.json",

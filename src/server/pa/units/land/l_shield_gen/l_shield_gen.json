@@ -71,7 +71,7 @@
       "type": "energy"
     }
   ],
-  "max_health": 750,
+  "max_health": 1500,
   "mesh_bounds": [30, 30, 27],
   "model": [
     {

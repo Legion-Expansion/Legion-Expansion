@@ -139,6 +139,7 @@
   "unit_types": [
     "UNITTYPE_Scout",
     "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
     "UNITTYPE_Air",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",

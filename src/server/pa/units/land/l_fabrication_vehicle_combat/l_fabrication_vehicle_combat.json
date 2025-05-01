@@ -1,10 +1,10 @@
 {
   "display_name": "!LOC:Guardian",
   "description": "!LOC:Combat Builder - Builds mines, radar and teleporters. Detects mines. Repairs friendly units. Can't help build other structures.",
-  "TEMP_texelinfo": 6.20134,
+  "TEMP_texelinfo": 20.0295,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 2.7],
+      "head": [0, 0, 3],
       "root": [0, 0, 0]
     }
   },
@@ -28,7 +28,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 350,
+  "build_metal_cost": 300,
   "buildable_types": "Custom1 & CombatFabBuild",
   "command_caps": [
     "ORDER_Move",
@@ -58,10 +58,7 @@
   "max_health": 200,
   "mesh_bounds": [4.925, 7.123, 3.68],
   "model": {
-    "animations": {
-      "drive": "/pa/units/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat_drive.papa"
-    },
-    "animtree": "/pa/anim/anim_trees/l_fabrication_vehicle_combat_anim.json",
+    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json",
     "arrows": 5,
     "filename": "/pa/units/land/l_fabrication_vehicle_combat/l_fabrication_vehicle_combat.papa"
   },

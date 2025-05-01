@@ -1,0 +1,92 @@
+{
+  "display_name": "!LOC:Liberator",
+  "description": "!LOC:Light Turret - Perimeter defense turret- Can see far away. Attacks surface targets.",
+  "TEMP_texelinfo": 15.2314,
+  "area_build_separation": 100,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 3.33,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 75,
+  "si_name": "l_scout_turret",
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.35
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
+      "effect_spec": "/pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzle01 /pa/units/land/l_t1_turret_basic/muzzle_flash.pfx socket_muzzle02"
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/orbital/radar"
+    }
+  },
+  "guard_layer": "WL_AnyHorizontalGroundOrWaterSurface",
+  "max_health": 150,
+  "mesh_bounds": [
+    3,
+    3,
+    5
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/l_scout_turret_anim.json",
+      "filename": "/pa/units/land/l_scout_turret/l_scout_turret.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/l_scout_turret_anim.json",
+      "filename": "/pa/units/land/l_scout_turret/l_scout_turret.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 230,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 230,
+          "shape": "capsule",
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": -19
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": [
+        "socket_muzzle01",
+        "socket_muzzle02"
+      ],
+      "projectiles_per_fire": 2,
+      "spec_id": "/pa/units/land/l_scout_turret/l_scout_turret_tool_weapon.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_Defense",
+    "UNITTYPE_CombatFabBuild",
+    "UNITTYPE_Custom1"
+  ]
+}

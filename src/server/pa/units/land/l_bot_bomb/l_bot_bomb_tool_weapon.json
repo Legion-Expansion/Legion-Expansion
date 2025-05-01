@@ -1,6 +1,9 @@
 {
   "ammo_id": "/pa/units/land/l_bot_bomb/l_bot_bomb_ammo.json",
-  "auto_attack": true,
+  "ammo_capacity": 1,
+  "ammo_demand": 10,
+  "ammo_per_shot": 1,
+  "ammo_source": "energy",
   "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
   "carpet_fire": false,
   "firing_arc_pitch": 1,
@@ -8,15 +11,15 @@
   "firing_standard_deviation": 2,
   "force_fire_from_muzzle": true,
   "idle_aim_delay": 0,
-  "manual_fire": false,
   "max_range": 40,
-  "no_busy_auto_attack": true,
   "pitch_range": 180,
   "pitch_rate": 1500,
   "rate_of_fire": 1,
-  "self_destruct": true,
-  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"],
   "tool_type": "TOOL_Weapon",
   "yaw_range": 360,
-  "yaw_rate": 540
+  "yaw_rate": 540,
+  "auto_attack": true,
+  "self_destruct": true,
+  "no_busy_auto_attack": false,
+  "target_layers": ["WL_LandHorizontal", "WL_WaterSurface"]
 }

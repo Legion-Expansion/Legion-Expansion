@@ -91,6 +91,7 @@
     "UNITTYPE_FabBuild",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_CombatFabBuild",
     "UNITTYPE_Custom1"
   ]
 }

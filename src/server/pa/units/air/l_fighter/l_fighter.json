@@ -24,44 +24,47 @@
   },
   "fx_offsets": [
     {
-      "bone": "thrust_right",
+      "bone": "socket_thrustRight",
       "filename": "/pa/units/air/l_fighter/fighter_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_left",
+      "bone": "socket_thrustLeft",
       "filename": "/pa/units/air/l_fighter/fighter_lines_thrust.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_right",
+      "bone": "socket_thrustRight",
       "filename": "/pa/units/air/l_fighter/fighter_jets.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_left",
+      "bone": "socket_thrustLeft",
       "filename": "/pa/units/air/l_fighter/fighter_jets.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_left",
+      "bone": "bone_wingLeft",
       "filename": "/pa/units/air/l_fighter/fighter_lines.pfx",
-      "offset": [1.828, -2.175, -1.316],
+      "offset": [1.65, 0, 0],
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_right",
+      "bone": "bone_wingRight",
       "filename": "/pa/units/air/l_fighter/fighter_lines.pfx",
-      "offset": [-1.828, -2.175, -1.31],
+      "offset": [-1.65, 0, 0],
       "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_Air",
   "max_health": 120,
-  "mesh_bounds": [9, 6.5, 3.1],
+  "mesh_bounds": [6.5, 9, 3.1],
   "model": {
-    "arrows": 5,
-    "filename": "/pa/units/air/l_fighter/l_fighter.papa"
+    "filename": "/pa/units/air/l_fighter/l_fighter.papa",
+    "animations": {
+      "fly":    "/pa/units/air/l_fighter/l_fighter_anim_fly.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/transport_anim_tree.json"
   },
   "navigation": {
     "acceleration": 180,

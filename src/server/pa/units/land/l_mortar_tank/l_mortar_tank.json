@@ -5,7 +5,7 @@
   "armor_type": "AT_Bot",
   "attachable": {
     "offsets": {
-      "head": [0, 0, 3.1],
+      "head": [0, 0, 3.0],
       "root": [0, 0, 0]
     }
   },
@@ -20,7 +20,7 @@
     }
   },
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "build_metal_cost": 210,
+  "build_metal_cost": 180,
   "events": {
     "died": {
       "effect_scale": 1.4
@@ -43,7 +43,7 @@
   "navigation": {
     "acceleration": 40,
     "brake": 40,
-    "move_speed": 14,
+    "move_speed": 16,
     "turn_speed": 100,
     "type": "amphibious"
   },

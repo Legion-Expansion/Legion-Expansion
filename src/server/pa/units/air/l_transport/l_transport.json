@@ -21,7 +21,7 @@
     }
   },
   "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
-  "build_metal_cost": 100,
+  "build_metal_cost": 140,
   "command_caps": [
     "ORDER_Move",
     "ORDER_Patrol",
@@ -42,28 +42,38 @@
   },
   "fx_offsets": [
     {
-      "bone": "thrust_side001",
+      "bone": "socket_thrustLeft",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "idle"
     },
     {
-      "bone": "thrust_side002",
+      "bone": "socket_thrustRight",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "idle"
     },
     {
-      "bone": "thrust_back001",
+      "bone": "socket_thrustRearLower",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving_forward"
     },
     {
-      "bone": "thrust_back002",
+      "bone": "socket_thrustRearUpper",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "socket_trailLeft",
+      "filename": "/pa/units/air/l_bomber/bomber_lines.pfx",
+      "type": "moving_forward"
+    },
+    {
+      "bone": "socket_trailRight",
+      "filename": "/pa/units/air/l_bomber/bomber_lines.pfx",
       "type": "moving_forward"
     }
   ],
   "max_health": 55,
-  "mesh_bounds": [13.42, 22.2, 7.561],
+  "mesh_bounds": [12, 16, 5],
   "model": {
     "animations": {
       "fly": "/pa/units/air/l_transport/l_transport_fly.papa"
@@ -73,7 +83,7 @@
   },
   "navigation": {
     "acceleration": 30,
-    "brake": 40,
+    "brake": 80,
     "move_speed": 100,
     "turn_speed": 180,
     "vertical_speed": 100
@@ -87,7 +97,7 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 70,
+          "radius": 120,
           "shape": "capsule"
         }
       ]

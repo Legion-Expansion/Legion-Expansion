@@ -34,6 +34,7 @@
     }
   ],
   "guard_layer": "WL_Orbital",
+  "attack_range_frac": 0.75,
   "guard_radius": 60,
   "max_health": 100,
   "mesh_bounds": [12, 11, 2.5],

@@ -19,6 +19,7 @@
       "audio_cue": "/SE/Weapons/air/carrier_drone_fire"
     }
   },
+  "command_caps": [],
   "fx_offsets": [
     {
       "bone": "bone_root",
@@ -41,7 +42,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "guard_radius": 250,
-  "max_health": 60,
+  "max_health": 30,
   "mesh_bounds": [4, 4, 2],
   "model": {
     "animations": {
