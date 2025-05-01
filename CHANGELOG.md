@@ -21,11 +21,11 @@
   - Havoc
   - Osprey
 
-- Updated SI icon
+- Updated strategic icons
   - Corsair
   - Marauder
 
-- Updated attachment point
+- Updated attachment points
   - Peacekeeper
   - Patriot
   - Orbweaver
@@ -66,13 +66,13 @@
   - Shredder
     - Reduced range from 150 to 110
 
-  - Jackel
+  - Jackal
     - Health increased from 750 to 100
 
 - Land
   - Havoc
     - Split off anti-missile beam from the Gile
-    - Increased anti-missile beam firerate from 0.25 to 0.333
+    - Increased anti-missile beam fire rate from 0.25 to 0.333
     - Reduced range of anti-missile beam from 140 to 115
 
   - Shank
@@ -213,7 +213,7 @@
   - Meteor
     - Health reduced from 2000 to 750
     - Drone Health reduced from 60 to 30
-    - Drones made uncontrolable.
+    - Drones made uncontrollable.
 
   - Infiltrator
     - Added UNITTYPE_Offense type (So it will stay with offensive air units)
@@ -242,7 +242,7 @@
 
   - Starcannon
     - Updated description for max units held
-    - Lowered strat icon priority to 4 (units being built will now show on top of the starcannon)
+    - Lowered strategic icon priority to 4 (units being built will now show on top of the starcannon)
 
   - Starship Foundry
     - Build cost decreased from 6000 to 4200
