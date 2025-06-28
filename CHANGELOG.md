@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Removed Investigator wreckage to prevent it giving away its cloaking spot
+
 ## v1.31.0 - 2025-06-28
 
 ### General
