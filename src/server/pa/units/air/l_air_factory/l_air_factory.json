@@ -30,7 +30,7 @@
   "death": {
     "decals": ["/pa/effects/specs/scorch_c_01.json"]
   },
-  "factory_cooldown_time": 2,
+  "factory_cooldown_time": 4,
   "fx_offsets": [
     {
       "bone": "socket_lathe01",
