@@ -5,6 +5,8 @@
 ### Balance
 
 - Air
+  - Advanced Flyer Foundry
+    - Cooldown time increased from 2 to 4
   - Comet
     - Wreckage value increased from 0.5 to 1
   - Flyer Foundry
