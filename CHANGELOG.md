@@ -18,6 +18,8 @@
   - Meteoroid
     - Now leaves wreckage
 - Land
+  - Hive Nanoswarm
+    - Health increased from 100 to 150
   - Investigator
     - Mobile form's wreckage value increased from 0 to 1
   - Odin
