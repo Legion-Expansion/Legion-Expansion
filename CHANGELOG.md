@@ -16,8 +16,6 @@
   - Loki
     - Wreckage value increased from 0.5 to 1
 - Land
-  - Hive's Nanoswarm
-    - Health increased from 100 to 150
   - Investigator
     - Mobile form's wreckage value increased from 0 to 1
   - Odin
