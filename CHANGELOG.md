@@ -20,6 +20,9 @@
     - Wreckage value increased from 0.5 to 1
   - Rampart
     - Wreckage value increased from 0.4 to 1
+  - Sky Bridge
+    - Health decreased from 9750 to 7000
+    - Cost increased from 800 to 1000
   - Thor
     - Wreckage value increased from 0.7 to 1
 
