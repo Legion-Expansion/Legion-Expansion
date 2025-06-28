@@ -117,6 +117,6 @@
     "UNITTYPE_SelfDestruct",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0,
+  "wreckage_health_frac": 0.0,
   "has_death_effects": true
 }

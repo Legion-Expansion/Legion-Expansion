@@ -57,7 +57,7 @@
       "type": "moving_forward"
     }
   ],
-  "max_health": 180,
+  "max_health": 270,
   "mesh_bounds": [4, 12, 4.8],
   "model": {
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
@@ -66,10 +66,10 @@
   "navigation": {
     "acceleration": 100,
     "brake": 100,
-    "move_speed": 9,
+    "move_speed": 10,
     "park_stamp_cost": 10,
     "park_stamp_type": "sphere",
-    "turn_speed": 90,
+    "turn_speed": 120,
     "type": "water-hover"
   },
   "physics": {

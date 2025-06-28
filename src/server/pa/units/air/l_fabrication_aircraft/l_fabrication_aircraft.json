@@ -82,8 +82,8 @@
     }
   ],
   "guard_layer": "WL_LandHorizontal",
-  "max_health": 85,
-  "mesh_bounds": [7, 7, 4],
+  "max_health": 165,
+  "mesh_bounds": [9.8, 5.58409, 3.74006],
   "model": {
     "animations": {},
     "animtree": "/pa/anim/anim_trees/fabrication_aircraft_anim_tree.json",

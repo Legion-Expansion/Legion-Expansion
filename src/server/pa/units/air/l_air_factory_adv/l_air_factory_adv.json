@@ -32,7 +32,7 @@
       "effect_scale": 2
     }
   },
-  "factory_cooldown_time": 2,
+  "factory_cooldown_time": 4,
   "fx_offsets": [
     {
       "bone": "arm_lathe001",

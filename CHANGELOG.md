@@ -1,46 +1,41 @@
 # CHANGELOG
 
-## v1.31.0 - 2025-05-01
+## v1.31.0 - 2025-06-28
 
-### Visual
+### Balance
 
-- New models
-  - Fabrication Walker
-  - Armour Fabricator
-  - Guardian
-  - Corsair
-  - Panzer
-  - Stoke
-  - Radar
-  - Deathmark
-  - Scorpion
-  - Shank
-  - Dauntless
-  - Flyer Fabricator
-  - Scythe
-  - Havoc
-  - Osprey
-- Updated strategic icons
-  - Corsair
-  - Marauder
-- Updated attachment points
-  - Peacekeeper
-  - Patriot
-  - Orbweaver
-  - Miniman
-  - Monstrosity
-  - Purger
-  - Praetorian
-  - Advanced Fabrication Walker
-  - Advanced Armour Fabricator
-  - Necromancer
-  - Enforcer
+- Air
+  - Advanced Flyer Foundry
+    - Cooldown time increased from 2 to 4
+  - Comet
+    - Wreckage value increased from 0.5 to 1
+  - Fabrication Flyer
+    - Health increased from 85 to 165
+  - Flyer Foundry
+    - Cooldown time increased from 2 to 4
+  - Loki
+    - Wreckage value increased from 0.5 to 1
+- Land
   - Investigator
-  - Maul
-  - Lancer
-  - Earthshaker
-- Theodor
-  - Trail pfx changed
+    - Mobile form's wreckage value increased from 0 to 1
+  - Odin
+    - Wreckage value increased from 0.7 to 1
+  - Praetorian
+    - Wreckage value increased from 0.5 to 1
+  - Rampart
+    - Wreckage value increased from 0.4 to 1
+  - Sky Bridge
+    - Health decreased from 9750 to 7000
+    - Cost increased from 800 to 1000
+  - Thor
+    - Wreckage value increased from 0.7 to 1
+  - Sea
+    - Fabrication Vessel
+      - Health increased from 180 to 270
+      - Speed increased from 9 to 10
+      - Turn speed increased from 90 to 120
+
+## v1.30.3 - 2024-08-23
 
 ### Balance
 

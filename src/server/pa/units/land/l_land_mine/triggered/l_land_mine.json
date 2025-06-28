@@ -79,5 +79,5 @@
     "UNITTYPE_NoBuild",
     "UNITTYPE_Custom1"
   ],
-  "wreckage_health_frac": 0
+  "wreckage_health_frac": 0.0
 }
