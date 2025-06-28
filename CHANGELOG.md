@@ -15,8 +15,6 @@
     - Cooldown time increased from 2 to 4
   - Loki
     - Wreckage value increased from 0.5 to 1
-  - Meteor's Meteoroid
-    - Now leaves wreckage
 - Land
   - Hive's Nanoswarm
     - Health increased from 100 to 150
