@@ -98,6 +98,5 @@
     "UNITTYPE_Air",
     "UNITTYPE_Basic",
     "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0
+  ]
 }

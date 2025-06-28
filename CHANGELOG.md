@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Air
+  - Comet
+    - Wreckage value increased from 0.5 to 1
+  - Loki
+    - Wreckage value increased from 0.5 to 1
+  - Meteoroid
+    - Now leaves wreckage
+- Land
+  - Investigator
+    - Mobile form's wreckage value increased from 0 to 1
+  - Odin
+    - Wreckage value increased from 0.7 to 1
+  - Praetorian
+    - Wreckage value increased from 0.5 to 1
+  - Rampart
+    - Wreckage value increased from 0.4 to 1
+  - Thor
+    - Wreckage value increased from 0.7 to 1
+
 ## v1.30.3 - 2024-08-23
 
 ### Balance

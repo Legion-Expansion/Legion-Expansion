@@ -168,6 +168,5 @@
     "UNITTYPE_Important",
     "UNITTYPE_FabOrbBuild",
     "UNITTYPE_Custom1"
-  ],
-  "wreckage_health_frac": 0.5
+  ]
 }
