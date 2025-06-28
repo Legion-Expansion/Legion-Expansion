@@ -39,11 +39,11 @@
     - Cost increased from 800 to 1000
   - Thor
     - Wreckage value increased from 0.7 to 1
-  - Sea
-    - Fabrication Vessel
-      - Health increased from 180 to 270
-      - Speed increased from 9 to 10
-      - Turn speed increased from 90 to 120
+- Sea
+  - Fabrication Vessel
+    - Health increased from 180 to 270
+    - Speed increased from 9 to 10
+    - Turn speed increased from 90 to 120
 
 ## v1.30.3 - 2024-08-23
 
