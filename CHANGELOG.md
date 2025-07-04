@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.32.0 - 202-07-04
+
+### General
+
+- Updated file shadows
+
 ## v1.31.1 - 2025-06-28
 
 ### Bugfix
