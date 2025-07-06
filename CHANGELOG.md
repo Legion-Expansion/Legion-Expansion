@@ -6,6 +6,10 @@
 
 - Removed the Legion version watermark from the UI
 
+### Bugfix
+
+- Revert unintended unit changes
+
 ## v1.32.0 - 202-07-04
 
 ### General
