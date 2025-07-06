@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Removed the Legion version watermark from the UI
+
 ## v1.32.0 - 202-07-04
 
 ### General

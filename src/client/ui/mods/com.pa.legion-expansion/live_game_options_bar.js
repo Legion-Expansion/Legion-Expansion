@@ -7,26 +7,6 @@ function legionLiveGameOptionsBar() {
   legionLiveGameOptionsBarLoaded = true;
 
   try {
-    api.mods.getMounted("server").then(function (mods) {
-      const legionServerLoaded =
-        _.intersection(_.pluck(mods, "identifier"), [
-          "com.pa.legion-expansion-server",
-          "com.pa.legion-expansion-server-dev",
-        ]).length > 0;
-      if (legionServerLoaded) {
-        loadScript("coui://ui/mods/com.pa.legion-expansion/version.js");
-        $(".div_ingame_options_bar_cont").prepend(
-          "<div id='legion_watermark' class='watermark'><loc>Legion</loc>&nbsp;" +
-            // eslint-disable-next-line no-undef
-            version +
-            "</div>"
-        );
-        locTree($("#legion_watermark"));
-      }
-    });
-
-    loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_watermark.css");
-
     const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
