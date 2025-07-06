@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.32.1 - 2025-07-06
 
 ### General
 
@@ -10,7 +10,7 @@
 
 - Revert unintended unit changes
 
-## v1.32.0 - 202-07-04
+## v1.32.0 - 2025-07-04
 
 ### General
 
