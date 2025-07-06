@@ -1,7 +1,6 @@
 {
   "display_name": "!LOC:Starcannon",
-  "description": "!LOC:Planetary Transport - Builds and launches up to 9 units at once to the planet below.",
-  "strategic_icon_priority": 4,
+  "description": "!LOC:Planetary Transport - Builds and launches up to 14 units at once to the planet below.",
   "TEMP_texelinfo": 36,
   "area_build_separation": 50,
   "area_build_type": "Line",

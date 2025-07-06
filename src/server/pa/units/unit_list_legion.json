@@ -119,7 +119,6 @@
     "/pa/units/sea/l_sea_scout/l_sea_scout.json",
     "/pa/units/sea/l_sea_tank/l_sea_tank.json",
     "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher.json",
-    "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv.json",
-    "/pa/units/land/l_scout_turret/l_scout_turret.json"
+    "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv.json"
   ]
 }

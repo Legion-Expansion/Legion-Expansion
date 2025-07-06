@@ -7,7 +7,7 @@
     "AT_Hover": 1.0,
     "AT_Naval": 1.0,
     "AT_Orbital": 0.0,
-    "AT_Structure": 1.0,
+    "AT_Structure": 3.0,
     "AT_Vehicle": 1.0
   },
   "damage": 500,

@@ -1,5 +1,5 @@
 {
-  "ammo_capacity": 8,
+  "ammo_capacity": 7,
   "ammo_demand": 1,
   "ammo_id": "/pa/units/land/l_bot_artillery/l_bot_artillery_ammo.json",
   "ammo_per_shot": 4,

@@ -16,8 +16,8 @@
   "damage_volume": {
     "initial_radius": 100.0
   },
-  "full_splash_damage_radius": 50,
+  "full_splash_damage_radius": 80,
   "splash_damage": 6,
   "splash_damages_allies": false,
-  "splash_radius": 50
+  "splash_radius": 80
 }

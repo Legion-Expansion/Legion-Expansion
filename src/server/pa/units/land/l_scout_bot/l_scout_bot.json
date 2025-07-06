@@ -4,7 +4,7 @@
   "TEMP_texelinfo": 28.7454,
   "attachable": {
     "offsets": {
-      "head": [0, 0, 4.2],
+      "head": [0, 0, 3.5],
       "root": [0, 0, 0]
     }
   },
@@ -36,7 +36,10 @@
   },
   "events": {
     "died": {},
-    "fired": null
+    "fired": {
+      "audio_cue": "/SE/Weapons/bot/assault_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle"
+    }
   },
   "guard_layer": "WL_AnySurface",
   "max_health": 60,
@@ -66,19 +69,19 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 200,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "underwater",
-          "radius": 200,
+          "radius": 150,
           "shape": "capsule"
         },
         {
           "channel": "sight",
           "layer": "mine",
-          "radius": 200,
+          "radius": 150,
           "shape": "capsule"
         }
       ]

@@ -16,7 +16,8 @@
     "ORDER_Attack",
     "ORDER_Patrol",
     "ORDER_Assist",
-    "ORDER_Use"
+    "ORDER_Use",
+    "ORDER_SpecialMove"
   ],
   "energy_efficiency_requirement": 1,
   "events": {
@@ -152,7 +153,7 @@
     "UNITTYPE_Teleporter",
     "UNITTYPE_Mobile",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important",
     "UNITTYPE_Custom1",
     "UNITTYPE_Interplanetary"

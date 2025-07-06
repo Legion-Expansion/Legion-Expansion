@@ -46,47 +46,39 @@
   },
   "fx_offsets": [
     {
-      "bone": "socket_fab",
+      "bone": "muzzle",
       "filename": "/pa/effects/specs/legion_fab_spray.pfx",
       "type": "build"
     },
     {
-      "bone": "socket_thruster_1",
+      "bone": "thrust001",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
     },
     {
-      "bone": "socket_thruster_2",
+      "bone": "thrust002",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
     },
     {
-      "bone": "socket_thruster_3",
+      "bone": "thrust003",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
     },
     {
-      "bone": "socket_thruster_4",
+      "bone": "thrust004",
       "filename": "/pa/units/air/fabrication_aircraft/fabrication_aircraft_jets.pfx",
       "type": "moving"
-    },
-    {
-      "bone": "socket_thrusterRearRight",
-      "filename": "/pa/units/air/l_fighter/fighter_jets.pfx",
-      "type": "moving_forward"
-    },
-    {
-      "bone": "socket_thrusterRearLeft",
-      "filename": "/pa/units/air/l_fighter/fighter_jets.pfx",
-      "type": "moving_forward"
     }
   ],
   "guard_layer": "WL_LandHorizontal",
   "max_health": 165,
   "mesh_bounds": [9.8, 5.58409, 3.74006],
   "model": {
-    "animations": {},
-    "animtree": "/pa/anim/anim_trees/fabrication_aircraft_anim_tree.json",
+    "animations": {
+      "fly": "/pa/units/air/l_fabrication_aircraft/l_fabrication_aircraft_fly.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/l_fabrication_aircraft_anim_tree.json",
     "filename": "/pa/units/air/l_fabrication_aircraft/l_fabrication_aircraft.papa"
   },
   "navigation": {

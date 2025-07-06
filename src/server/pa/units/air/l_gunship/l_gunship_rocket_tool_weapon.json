@@ -1,5 +1,5 @@
 {
-  "ammo_capacity": 7.5,
+  "ammo_capacity": 5,
   "ammo_demand": 1,
   "ammo_id": "/pa/units/air/l_gunship/l_gunship_rocket_ammo.json",
   "ammo_per_shot": 2.5,
@@ -11,7 +11,7 @@
   "firing_arc_pitch": 180,
   "firing_arc_yaw": 180,
   "firing_standard_deviation": 30,
-  "max_range": 75,
+  "max_range": 100,
   "pitch_range": 0,
   "pitch_rate": 180,
   "rate_of_fire": 2.5,

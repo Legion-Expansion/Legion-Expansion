@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_laser_blast/base_laser_blast.json",
-  "damage": 50,
+  "damage": 40,
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/cannon_uber",

@@ -68,8 +68,7 @@
   "physics": {
     "allow_pushing": false,
     "gravity_scalar": 0.001,
-    "push_sideways": false,
-    "add_to_spatial_db": false
+    "push_sideways": false
   },
   "recon": {
     "observer": {
@@ -77,15 +76,8 @@
         {
           "channel": "sight",
           "layer": "surface_and_air",
-          "radius": 10,
+          "radius": 150,
           "shape": "capsule"
-        },
-        {
-          "channel": "radar",
-          "layer": "surface_and_air",
-          "radius": 80,
-          "shape": "capsule",
-          "uses_energy": false
         }
       ]
     }

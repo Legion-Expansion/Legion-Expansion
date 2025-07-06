@@ -12,11 +12,10 @@
       },
       "living": {
         "node_idle": {
-          "anim_name": "idle",
-          "type": "playback"
+          "type": "bind_pose"
         },
         "node_walk": {
-          "anim_name": "walk",
+          "anim_name": "drive",
           "type": "playback"
         },
         "type": "walk"
@@ -28,19 +27,19 @@
     {
       "child": {
         "rotation_axis": "z",
-        "rotation_bone": "turret00",
+        "rotation_bone": "bone_turret",
         "type": "procedural_aim"
       },
-      "lerp_func": "is_active",
+      "lerp_func": "not_being_built",
       "type": "fader"
     },
     {
       "child": {
         "rotation_axis": "x",
-        "rotation_bone": "pitch00",
+        "rotation_bone": "bone_pitch",
         "type": "procedural_aim"
       },
-      "lerp_func": "is_active",
+      "lerp_func": "not_being_built",
       "type": "fader"
     }
   ]

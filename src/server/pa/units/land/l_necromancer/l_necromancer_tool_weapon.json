@@ -1,13 +1,13 @@
 {
-  "ammo_capacity": 750,
-  "ammo_demand": 45,
+  "ammo_capacity": 420,
+  "ammo_demand": 35,
   "ammo_id": [
     {
       "id": "/pa/units/land/l_necromancer/l_necromancer_ammo.json",
       "layer": "WL_AnyLand"
     }
   ],
-  "ammo_per_shot": 750,
+  "ammo_per_shot": 420,
   "ammo_source": "metal",
   "auto_attack": true,
   "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",

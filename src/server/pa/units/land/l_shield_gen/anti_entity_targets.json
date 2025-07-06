@@ -1,6 +1,6 @@
 {
-  "ammo_capacity": 60000,
-  "ammo_demand": 1200,
+  "ammo_capacity": 36000,
+  "ammo_demand": 1000,
   "ammo_per_shot": 1500,
   "ammo_source": "energy",
   "anti_entity_targets": [
