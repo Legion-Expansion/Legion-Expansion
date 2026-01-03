@@ -9,6 +9,7 @@ function legionLiveGameControlGroup() {
   try {
     const themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
+
     if (themeSetting === "ON") {
       loadCSS(
         "coui://ui/mods/com.pa.legion-expansion/css/legion_control_group_bar.css"
