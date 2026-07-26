@@ -57,10 +57,10 @@ function legionNewGame() {
         ? model.aiPersonalities()
         : model.aiPersonalities;
 
-      if (newBuild) {
+      if (_.isFunction(model.aiPersonalities)) {
         model.aiPersonalities.valueHasMutated();
       } else {
-        model.aiPersonalityNames(_.keys(aiPersonalities));
+        model.aiPersonalityNames(_.keys(model.aiPersonalities));
       }
 
       //legion commander picker colouring
