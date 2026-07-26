@@ -385,7 +385,7 @@ if (!legionSharedBuildLoaded) {
           r2c0,
         ],
 
-        "/pa/units/land/l_land_mine/l_land_mine.json": ["L_ammo", 10, r2c4],
+        "/pa/units/land/l_land_mine/l_land_mine.json": ["L_ammo", 16, r2c4],
         "/pa/units/sea/l_sea_mine/l_sea_mine.json": ["L_ammo", 12, r2c0],
         "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json": [
           "L_ammo",
