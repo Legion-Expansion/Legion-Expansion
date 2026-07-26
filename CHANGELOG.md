@@ -10,6 +10,7 @@
 - Fixed filename casing that could cause breakage on Linux and Mac OS
 - Added missing units to the unit_list
 - Remove invalid entry from the icon atlas
+- Remove unused animations
 
 ## v1.32.1 - 2025-07-06
 
