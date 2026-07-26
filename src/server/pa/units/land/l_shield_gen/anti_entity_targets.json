@@ -77,7 +77,8 @@
     "/pa/units/sea/l_hover_ship/l_hover_ship_ammo.json",
     "/pa/units/sea/l_hover_ship/l_hover_ship_ammo_side.json",
     "/pa/units/sea/l_missile_ship/l_missile_ship_rocket_ammo.json",
-    "/pa/units/sea/l_sea_tank/l_sea_tank_ammo.json"
+    "/pa/units/sea/l_sea_tank/l_sea_tank_ammo.json",
+    "/pa/units/sea/l_destroyer/l_destroyer_ammo.json"
   ],
   "anti_entity_targets_units": false,
   "auto_task_type": "anti_entity",

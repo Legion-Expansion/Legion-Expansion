@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Rampart properly intercepts Bowhead shots
+
 ## v1.32.1 - 2025-07-06
 
 ### General
