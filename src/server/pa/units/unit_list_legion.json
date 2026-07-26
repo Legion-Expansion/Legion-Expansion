@@ -119,6 +119,11 @@
     "/pa/units/sea/l_sea_scout/l_sea_scout.json",
     "/pa/units/sea/l_sea_tank/l_sea_tank.json",
     "/pa/units/sea/l_torpedo_launcher/l_torpedo_launcher.json",
-    "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv.json"
+    "/pa/units/sea/l_torpedo_launcher_adv/l_torpedo_launcher_adv.json",
+    "/pa/units/air/l_firestarter/l_drop_turret/l_drop_turret_collision_check.json",
+    "/pa/units/land/l_land_mine/triggered/l_land_mine.json",
+    "/pa/units/land/l_necromancer/l_minion/l_minion_spawner.json",
+    "/pa/units/land/l_scout_bot/l_scout_bot_radar_mode_collision_check.json",
+    "/pa/units/land/l_tank_swarm/chain/chain.json"
   ]
 }
