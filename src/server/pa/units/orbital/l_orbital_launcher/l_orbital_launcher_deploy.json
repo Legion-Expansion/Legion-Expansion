@@ -43,7 +43,7 @@
     }
   },
   "splash_damage": 0,
-  "splash_damages_allies": "false",
+  "splash_damages_allies": false,
   "splash_radius": 0,
   "stages": [
     {
