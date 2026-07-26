@@ -126,7 +126,6 @@ if (!legionIconAtlasLoaded) {
       "l_vehicle_factory_adv",
       "l_vehicle_factory",
       "l_vision",
-      "l_scout_turret",
     ];
 
     model.strategicIcons(model.strategicIcons().concat(legionIcons));
