@@ -51,12 +51,6 @@ function legionNewGame() {
 
       legionExpansionEnabled = true;
 
-      var newBuild = _.isFunction(model.aiPersonalities);
-
-      var aiPersonalities = newBuild
-        ? model.aiPersonalities()
-        : model.aiPersonalities;
-
       if (_.isFunction(model.aiPersonalities)) {
         model.aiPersonalities.valueHasMutated();
       } else {
