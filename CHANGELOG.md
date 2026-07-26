@@ -5,6 +5,7 @@
 ### Bugfix
 
 - Rampart properly intercepts Bowhead shots
+- Omega doesn't use an invalid record_index for its laser
 
 ## v1.32.1 - 2025-07-06
 
