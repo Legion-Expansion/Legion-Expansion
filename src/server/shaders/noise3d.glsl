@@ -28,8 +28,8 @@ vec4 taylorInvSqrt(vec4 r)
 
 float snoise(vec3 v)
   { 
-  var vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
-  var vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
+  const vec2  C = vec2(1.0/6.0, 1.0/3.0) ;
+  const vec4  D = vec4(0.0, 0.5, 1.0, 2.0);
 
 // First corner
   vec3 i  = floor(v + dot(v, C.yyy) );
