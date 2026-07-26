@@ -4,7 +4,7 @@ if (!legionIconAtlasLoaded) {
   legionIconAtlasLoaded = true;
 
   try {
-    const legionIcons = [
+    var legionIcons = [
       "l_air_bomb",
       "l_air_carrier",
       "l_air_defense_adv",

@@ -7,7 +7,7 @@ function legionLiveGameTimeBar() {
   legionLiveGameTimeBarLoaded = true;
 
   try {
-    const themeSetting =
+    var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
     if (themeSetting !== "ON") {

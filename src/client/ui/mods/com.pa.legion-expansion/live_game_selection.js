@@ -7,7 +7,7 @@ function legionLiveGameSelection() {
   legionLiveGameSelectionLoaded = true;
 
   try {
-    const themeSetting =
+    var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
     if (themeSetting === "ON") {
@@ -32,11 +32,11 @@ function legionLiveGameSelection() {
         common.bodyPanelClass(payload);
 
         model.typeArray = ko.computed(function () {
-          const group = model.selectionTypeCounts();
+          var group = model.selectionTypeCounts();
 
-          const path =
+          var path =
             "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
-          const colour = common.uiColour(payload);
+          var colour = common.uiColour(payload);
 
           return _.compact(
             _.map(model.types(), function (element) {
