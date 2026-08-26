@@ -7,7 +7,7 @@
 - Rampart properly intercepts Bowhead shots
 - Omega doesn't use an invalid record_index for its laser
 - Fixed AI trying to build a platoon that didn't exist
-- Fixed filename casing that could cause breakage on Linux and Mac OS
+- Fixed filename casing that could cause breakage on Linux and macOS
 - Added missing units to the unit_list
 - Remove invalid entry from the icon atlas
 - Remove unused files
