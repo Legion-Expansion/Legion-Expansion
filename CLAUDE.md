@@ -215,6 +215,44 @@ checklist enumerates every registry a new or renamed unit has to touch.
 - Use exact filename casing everywhere — the mod runs on Linux and macOS.
 - 2-space indent for JS and JSON; camelCase variables; HTML in its own file, never inlined in JS.
 
+### Comments
+
+Code here carries a comment only where the code itself cannot explain something: base-game or
+engine behaviour, a bug workaround, a dependency that lives outside this repo, or a
+counter-intuitive ordering. Most shipped scene scripts have none, and that is correct — the
+absence is the default, not an oversight.
+
+That bar sets the length too: past a line or two a comment is documentation, and this repo has no
+`docs/` tree to hold it. Subsystem-level prose goes in this file, naming conventions and per-asset
+formats in `README.md` under "Development", and process in `CONTRIBUTING.md`. Rejected
+alternatives, tuning history and "this used to live elsewhere" belong in `CHANGELOG.md`; a comment
+states the rule that holds now.
+
+Verify a comment against the code before writing it. Every path, filename and identifier it names
+must exist, and the claim must match the lines beside it — a confidently wrong comment is worse
+than none, and it is the easiest defect to introduce here.
+
+Comments in `src/**` JSON and `.pfx` files are parsed and thrown away: `pajson` treats them as
+ignored tokens, so `format_json.py` never writes them into the built mod. Explain a spec in the
+prose above, not in a file whose comment cannot ship.
+
+Never removed, because they are not prose:
+
+- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the three
+  `// eslint-disable-next-line no-undef` lines covering the `legion` global in
+  `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
+  `npm run lint` into a failure.
+- Knockout `<!-- ko -->` / `<!-- /ko -->` in HTML (`new_game/welcome.html`), which are executable
+  virtual bindings rather than markup comments.
+- Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
+  `lib/patcher.py` — are not this repo's to edit; fix them upstream or leave them.
+- The attribution and licence headers third-party art and code arrive with, and the credits in
+  `README.md` they point at. Those are a licence condition, not commentary.
+
+Generated output carries no comments at all, and is not the place to add any: shadows come out of
+`update_shadows.py`, so a note about why a shadow looks the way it does belongs beside the code
+that generates it.
+
 ## Workflow
 
 git-flow: `master` (release only, never commit directly) ← `develop` ← `feature-<name>`, with
