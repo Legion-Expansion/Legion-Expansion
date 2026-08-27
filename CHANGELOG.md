@@ -6,6 +6,7 @@
 
 - The mod now ships with its licence and credits
 - Anonemous2 is credited in the mod's author list
+- Mod icon is served from the master branch so it survives branch churn
 
 ### Bugfix
 

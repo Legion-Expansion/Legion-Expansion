@@ -17,3 +17,5 @@
 *.blend1 filter=lfs diff=lfs merge=lfs -text
 *.xcf filter=lfs diff=lfs merge=lfs -text
 package-lock.json linguist-generated=true -diff
+# Referenced by modinfo.json as a raw URL on master; kept out of source archives
+icon.png export-ignore
