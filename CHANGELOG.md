@@ -13,6 +13,7 @@
 - Remove unused files
 - Fix broken CSS
 - Particle effects no longer ignore some of their tuned settings
+- Selection rings for non-Legion units keep their two-tone inner falloff
 
 ## v1.32.1 - 2025-07-06
 

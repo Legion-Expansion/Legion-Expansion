@@ -22,7 +22,7 @@ void main()
     float d = sqrt(dot(dxy, dxy));
 
     vec3 ring_color1 = vec3(0.0, 0.702, 1.0);
-    vec3 ring_color2 = vec3(0.0, 0.702, 1.0);
+    vec3 ring_color2 = vec3(0.102, 0.733, 1.0);
 
     // this is the new bit, test to see if the selection circle size is negative
     // then use a new formula for computing the distance field value d
