@@ -51,12 +51,9 @@ function legionLiveGameBuildBar() {
       var group = params.group;
       var locked = params.locked;
 
-      var tabs = model
-        .buildSet()
-        .tabs()
-        .filter(function (tab) {
-          return tab.visible() && tab.buildGroup() === group;
-        });
+      var tabs = _.filter(model.buildSet().tabs(), function (tab) {
+        return tab.visible() && tab.buildGroup() === group;
+      });
       if (tabs.length < 1) {
         return;
       }
