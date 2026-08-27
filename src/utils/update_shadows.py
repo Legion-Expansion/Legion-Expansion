@@ -32,14 +32,30 @@ loader.mount("/pa", "/pa_ex1")
 file_cache = {}
 
 
+# Every vanilla path below is hardcoded, so a PA patch that renames or removes
+# one would otherwise skip the edit and take the interaction with it.
+def resolve(file_path):
+    resolved = loader.resolveFile(file_path)
+    if resolved is None:
+        loader.resolveFile(file_path, True)
+        raise FileNotFoundError(
+            f"{file_path} is not in the PA install; a patch has renamed or "
+            "removed it. Update src/utils/update_shadows.py."
+        )
+
+    return resolved
+
+
 def load(file_path):
     if file_path not in file_cache:
+        resolve(file_path)
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
 
 
 def update_shadows(client_out_dir, server_out_dir):
+    resolve("/pa/units/unit_list.json")
     mla_units = spec.load_spec(loader, "/pa/units/unit_list.json")
     # The tutorial commanders aren't listed in the unit file, but they still need to be modified
     mla_units["units"] += [
@@ -120,6 +136,7 @@ def update_shadows(client_out_dir, server_out_dir):
     )["commanders"]
 
     ## Get the list of ammo entities that are targeted by the shield
+    resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
     legion_shield = spec.parse_spec(
         loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
     )
@@ -129,6 +146,7 @@ def update_shadows(client_out_dir, server_out_dir):
         ammo_name = path.splitext(path.basename(target))[0]
 
         # get the spec
+        resolve(target)
         full_ammo_spec = spec.parse_spec(loader, target)
         ammo = load(target)
         original_spec = copy.deepcopy(ammo)
@@ -178,14 +196,9 @@ def update_shadows(client_out_dir, server_out_dir):
         if not is_legion:
             os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
 
-            src_hit_file_path = loader.resolveFile(src_hit_file)
-            src_trail_file_path = loader.resolveFile(src_trail_file)
-
             # copy client files
-            if src_hit_file_path:
-                shutil.copyfile(src_hit_file_path, client_out_dir + dst_hit_file)
-            if src_trail_file_path:
-                shutil.copyfile(src_trail_file_path, client_out_dir + dst_trail_file)
+            shutil.copyfile(resolve(src_hit_file), client_out_dir + dst_hit_file)
+            shutil.copyfile(resolve(src_trail_file), client_out_dir + dst_trail_file)
 
     # Write out all changes to the mod server directory
     for file_path, unit in file_cache.items():
