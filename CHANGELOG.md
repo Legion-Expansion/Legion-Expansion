@@ -5,6 +5,7 @@
 ### General
 
 - The mod now ships with its licence and credits
+- Anonemous2 is credited in the mod's author list
 
 ### Bugfix
 
