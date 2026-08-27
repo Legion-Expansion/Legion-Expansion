@@ -89,7 +89,6 @@
 
 .mixedui .btn_std_ix:hover {
   box-shadow: inset 0 0 10px #606 !important;
-  background: #639;
   background: #606;
   border: 1px solid rgba(99, 14, 138, 0.5) !important;
 }
