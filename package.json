@@ -1,0 +1,16 @@
+{
+  "name": "legion-expansion",
+  "private": true,
+  "description": "Lint tooling for the Legion Expansion build source. The mod itself is built by src/install_devel.py.",
+  "scripts": {
+    "lint:js": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-es-x": "^9.7.0",
+    "eslint-plugin-lodash": "^8.0.0",
+    "globals": "^17.11.0"
+  }
+}
