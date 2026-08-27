@@ -1,7 +1,6 @@
 #version 140
 
 // unit_ring_selection.fs
-uniform vec4 Time;
 
 in vec4 v_Color;
 in vec2 v_TexCoord;
