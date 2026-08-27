@@ -42,7 +42,7 @@ def load_json(loader, path):
 
 def change_to_develop(modinfo, client_id, server_id):
     # update MODINFO data
-    id_map = dict()
+    id_map = {}
     id_map[client_id] = client_id + DEV_IDENTIFIER_SUFFIX
     id_map[server_id] = server_id + DEV_IDENTIFIER_SUFFIX
 

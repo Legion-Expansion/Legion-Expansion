@@ -52,20 +52,23 @@ COMPARE_VALUES = [
 ]
 
 
+def _reorder_dict(obj):
+    new_obj = OrderedDict()
+    preferred = COMPARE_VALUES if "value1" in obj else KEY_ORDER
+
+    for key in preferred:
+        if key in obj:
+            new_obj[key] = reorder_keys(obj[key])
+
+    for key, value in obj.items():
+        new_obj[key] = reorder_keys(value)
+
+    return new_obj
+
+
 def reorder_keys(obj):
     if isinstance(obj, dict):
-        new_obj = OrderedDict()
-        for key in KEY_ORDER:
-            if key in obj and "value1" not in obj:
-                new_obj[key] = reorder_keys(obj[key])
-        for key in COMPARE_VALUES:
-            if key in obj and "value1" in obj:
-                new_obj[key] = reorder_keys(obj[key])
-
-        for key, value in obj.items():
-            new_obj[key] = reorder_keys(value)
-
-        return new_obj
+        return _reorder_dict(obj)
 
     if isinstance(obj, list):
         return list(map(reorder_keys, obj))

@@ -40,6 +40,8 @@ SHADOWED_SHADERS = {
     "/shaders/unit_ring_selection.fs": "e2e86648fe7dba4a62aaceabb7469f5d5e64b1d78fc9e4817f33bb23207893fd",
 }
 
+UNIT_LIST = "/pa/units/unit_list.json"
+
 # Load file and add it to the 'cache'
 # This is to allow modifying the same unit spec multiple times.
 file_cache = {}
@@ -82,11 +84,9 @@ def check_shadowed_shaders():
             )
 
 
-def update_shadows(client_out_dir, server_out_dir):
-    check_shadowed_shaders()
-
-    resolve("/pa/units/unit_list.json")
-    mla_units = spec.load_spec(loader, "/pa/units/unit_list.json")
+def patch_mine_sight_layers():
+    resolve(UNIT_LIST)
+    mla_units = spec.load_spec(loader, UNIT_LIST)
     # The tutorial commanders aren't listed in the unit file, but they still need to be modified
     mla_units["units"] += [
         "/pa/units/commanders/tutorial_ai_commander/tutorial_ai_commander.json",
@@ -117,6 +117,8 @@ def update_shadows(client_out_dir, server_out_dir):
                     }
                 )
 
+
+def patch_anti_entity_targets():
     # Anti-AA missile
     load("/pa/units/air/support_platform/support_platform_tool_interception.json")[
         "anti_entity_targets"
@@ -157,14 +159,15 @@ def update_shadows(client_out_dir, server_out_dir):
         "replaceable_units"
     ] += ["/pa/units/land/l_mex/l_mex.json"]
 
-    # Patch the unit_list and commander_list
-    load("/pa/units/unit_list.json")["units"] += load(
-        "/pa/units/unit_list_legion.json"
-    )["units"]
+
+def patch_unit_and_commander_lists():
+    load(UNIT_LIST)["units"] += load("/pa/units/unit_list_legion.json")["units"]
     load("/pa/units/commanders/commander_list.json")["commanders"] += load(
         "/pa/units/commanders/commander_list_legion.json"
     )["commanders"]
 
+
+def patch_shield_blocked_ammo(client_out_dir):
     ## Get the list of ammo entities that are targeted by the shield
     resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
     legion_shield = spec.parse_spec(
@@ -188,48 +191,50 @@ def update_shadows(client_out_dir, server_out_dir):
         if full_ammo_spec["physics"].get("add_to_spatial_db", False):
             continue
 
-        is_legion = "/l_" in target
-        if not is_legion:
-            # If this is not a legion ammo spec, then we need to add it to the
-            # spacial database.
-            ammo["physics"] = ammo.get("physics", {})
-            ammo["physics"]["add_to_spatial_db"] = True
+        if "/l_" in target:
+            continue
 
-            # However, this has consequences. It makes it impossible for mods like
-            # More Pew Pew to override individual effects, since in normal PA a
-            # lot of effects are shared between units. Because Legion makes this
-            # changes in the server mod, more pew pew can't shadow the projectile
-            # fx_trail anymore.
+        # If this is not a legion ammo spec, then we need to add it to the
+        # spacial database.
+        ammo["physics"] = ammo.get("physics", {})
+        ammo["physics"]["add_to_spatial_db"] = True
 
-            # We solve this by duplicating the vanilla effects and making sure
-            # that each ammo has it's own unique effects specs. This lets other
-            # mods shadow these effects individually.
-            src_trail_file = full_ammo_spec["fx_trail"]["filename"]
-            src_hit_file = full_ammo_spec["events"]["died"]["effect_spec"]
+        # However, this has consequences. It makes it impossible for mods like
+        # More Pew Pew to override individual effects, since in normal PA a
+        # lot of effects are shared between units. Because Legion makes this
+        # changes in the server mod, more pew pew can't shadow the projectile
+        # fx_trail anymore.
 
-            # construct the new effect names relative to the location of the actual ammo file
-            dst_trail_file = posixpath.join(ammo_dir, ammo_name + "_trail.pfx")
-            dst_hit_file = posixpath.join(ammo_dir, ammo_name + "_hit.pfx")
+        # We solve this by duplicating the vanilla effects and making sure
+        # that each ammo has it's own unique effects specs. This lets other
+        # mods shadow these effects individually.
+        src_trail_file = full_ammo_spec["fx_trail"]["filename"]
+        src_hit_file = full_ammo_spec["events"]["died"]["effect_spec"]
 
-            ammo["fx_trail"] = ammo.get("fx_trail", {})
-            ammo["fx_trail"]["filename"] = dst_trail_file
+        # construct the new effect names relative to the location of the actual ammo file
+        dst_trail_file = posixpath.join(ammo_dir, ammo_name + "_trail.pfx")
+        dst_hit_file = posixpath.join(ammo_dir, ammo_name + "_hit.pfx")
 
-            ammo["events"] = ammo.get("events", {})
-            ammo["events"]["died"] = ammo["events"].get("died", {})
-            ammo["events"]["died"]["effect_spec"] = dst_hit_file
+        ammo["fx_trail"] = ammo.get("fx_trail", {})
+        ammo["fx_trail"]["filename"] = dst_trail_file
+
+        ammo["events"] = ammo.get("events", {})
+        ammo["events"]["died"] = ammo["events"].get("died", {})
+        ammo["events"]["died"]["effect_spec"] = dst_hit_file
 
         # If there was no change, skip
         if ammo == original_spec:
             continue
 
         # prepare files:
-        if not is_legion:
-            os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
+        os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
 
-            # copy client files
-            shutil.copyfile(resolve(src_hit_file), client_out_dir + dst_hit_file)
-            shutil.copyfile(resolve(src_trail_file), client_out_dir + dst_trail_file)
+        # copy client files
+        shutil.copyfile(resolve(src_hit_file), client_out_dir + dst_hit_file)
+        shutil.copyfile(resolve(src_trail_file), client_out_dir + dst_trail_file)
 
+
+def write_changed_specs(server_out_dir):
     # Write out all changes to the mod server directory
     for file_path, unit in file_cache.items():
         # If we have made no changes, ignore them
@@ -238,3 +243,12 @@ def update_shadows(client_out_dir, server_out_dir):
 
         os.makedirs(server_out_dir + os.path.dirname(file_path), exist_ok=True)
         pajson.dumpf(unit, server_out_dir + file_path, separators=(",", ": "))
+
+
+def update_shadows(client_out_dir, server_out_dir):
+    check_shadowed_shaders()
+    patch_mine_sight_layers()
+    patch_anti_entity_targets()
+    patch_unit_and_commander_lists()
+    patch_shield_blocked_ammo(client_out_dir)
+    write_changed_specs(server_out_dir)
