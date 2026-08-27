@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### General
+
+- Improved the contrast of build bar tabs and control group hotkey numbers against their backgrounds
+
 ## v1.32.2 - 2026-08-27
 
 ### General
