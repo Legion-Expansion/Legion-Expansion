@@ -114,6 +114,15 @@ function legionNewGame() {
         "data-bind",
         "css: {legionslot: !$data.isEmpty() && model.isLegion($data.commander()), mlaslot: !$data.isEmpty() && !model.isLegion($data.commander()), ready: isReady, loading: isLoading}"
       );
+
+      _.defer(function () {
+        if (model.localChatMessage) {
+          model.localChatMessage(
+            loc("!LOC:Legion Expansion"),
+            loc("!LOC:To play as the Legion select one of the red Commanders.")
+          );
+        }
+      });
     };
 
     if (
@@ -124,13 +133,6 @@ function legionNewGame() {
     ) {
       model.enableLegion();
     }
-
-    _.defer(function () {
-      model.localChatMessage(
-        loc("!LOC:Legion Expansion"),
-        loc("!LOC:To play as the Legion select one of the red Commanders.")
-      );
-    });
   } catch (e) {
     console.error(e);
     console.error(JSON.stringify(e));

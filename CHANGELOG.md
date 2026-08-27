@@ -16,6 +16,7 @@
 - Selection rings for non-Legion units keep their two-tone inner falloff
 - Legion nuke launcher and its missile are flagged as interplanetary again
 - Fabber build effect no longer depends on a shader include shipped in the wrong mod
+- Legion lobby greeting no longer appears in games without the Legion server mod
 
 ## v1.32.1 - 2025-07-06
 
