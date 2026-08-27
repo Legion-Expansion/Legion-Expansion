@@ -12,6 +12,7 @@
 - Remove invalid entry from the icon atlas
 - Remove unused files
 - Fix broken CSS
+- Particle effects no longer ignore some of their tuned settings
 
 ## v1.32.1 - 2025-07-06
 
