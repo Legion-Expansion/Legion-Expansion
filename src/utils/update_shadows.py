@@ -9,7 +9,10 @@
 #  - Update unit and commander lists
 #  - Update anti entity target lists, to include the legion equivalents, i.e.
 #    anti nuke must be able to shoot down the legion nuke missile
+# It also guards the shaders under src/client/shaders, which are hand-maintained
+# whole-file copies that nothing here regenerates.
 
+import hashlib
 import os
 import os.path as path
 import posixpath
@@ -27,19 +30,62 @@ loader = pafs("server")
 loader.mount("/", paths.PA_MEDIA_DIR)
 loader.mount("/pa", "/pa_ex1")
 
+# Shaders have no include or partial-override mechanism, so src/client/shaders
+# holds whole-file copies of these stock files. Each is pinned to the install
+# version it was last diffed against, so a stock fix landing in one of them
+# fails the build instead of being silently reverted for everyone running Legion.
+SHADOWED_SHADERS = {
+    "/shaders/prelight_pa_unit_fab.fs": "e88d598fd60a67ca745d0b53a81cce16191ec372571b4f820d3403493c2764b2",
+    "/shaders/unit_ring_hover.fs": "033d0d40a89c2464c20607ce17c4654c6b916400a0b1f8f7642e1d1a85174b8b",
+    "/shaders/unit_ring_selection.fs": "e2e86648fe7dba4a62aaceabb7469f5d5e64b1d78fc9e4817f33bb23207893fd",
+}
+
 # Load file and add it to the 'cache'
 # This is to allow modifying the same unit spec multiple times.
 file_cache = {}
 
 
+# Every vanilla path below is hardcoded, so a PA patch that renames or removes
+# one would otherwise skip the edit and take the interaction with it.
+def resolve(file_path):
+    resolved = loader.resolveFile(file_path)
+    if resolved is None:
+        loader.resolveFile(file_path, True)
+        raise FileNotFoundError(
+            f"{file_path} is not in the PA install; a patch has renamed or "
+            "removed it. Update src/utils/update_shadows.py."
+        )
+
+    return resolved
+
+
 def load(file_path):
     if file_path not in file_cache:
+        resolve(file_path)
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
 
 
+def check_shadowed_shaders():
+    for shader_path, expected in SHADOWED_SHADERS.items():
+        with open(resolve(shader_path), "rb") as shader:
+            actual = hashlib.sha256(shader.read()).hexdigest()
+
+        if actual != expected:
+            raise RuntimeError(
+                f"{shader_path} has changed in the PA install.\n"
+                f"  pinned: {expected}\n"
+                f"  actual: {actual}\n"
+                f"Re-diff src/client{shader_path} against the install, then "
+                "update SHADOWED_SHADERS in src/utils/update_shadows.py."
+            )
+
+
 def update_shadows(client_out_dir, server_out_dir):
+    check_shadowed_shaders()
+
+    resolve("/pa/units/unit_list.json")
     mla_units = spec.load_spec(loader, "/pa/units/unit_list.json")
     # The tutorial commanders aren't listed in the unit file, but they still need to be modified
     mla_units["units"] += [
@@ -120,6 +166,7 @@ def update_shadows(client_out_dir, server_out_dir):
     )["commanders"]
 
     ## Get the list of ammo entities that are targeted by the shield
+    resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
     legion_shield = spec.parse_spec(
         loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
     )
@@ -129,6 +176,7 @@ def update_shadows(client_out_dir, server_out_dir):
         ammo_name = path.splitext(path.basename(target))[0]
 
         # get the spec
+        resolve(target)
         full_ammo_spec = spec.parse_spec(loader, target)
         ammo = load(target)
         original_spec = copy.deepcopy(ammo)
@@ -178,14 +226,9 @@ def update_shadows(client_out_dir, server_out_dir):
         if not is_legion:
             os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
 
-            src_hit_file_path = loader.resolveFile(src_hit_file)
-            src_trail_file_path = loader.resolveFile(src_trail_file)
-
             # copy client files
-            if src_hit_file_path:
-                shutil.copyfile(src_hit_file_path, client_out_dir + dst_hit_file)
-            if src_trail_file_path:
-                shutil.copyfile(src_trail_file_path, client_out_dir + dst_trail_file)
+            shutil.copyfile(resolve(src_hit_file), client_out_dir + dst_hit_file)
+            shutil.copyfile(resolve(src_trail_file), client_out_dir + dst_trail_file)
 
     # Write out all changes to the mod server directory
     for file_path, unit in file_cache.items():

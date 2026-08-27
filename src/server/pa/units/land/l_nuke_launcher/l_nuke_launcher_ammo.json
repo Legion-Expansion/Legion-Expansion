@@ -102,5 +102,10 @@
   "strategic_icon_priority": 0,
   "system_velocity_multiplier": 30.0,
   "turn_rate": 180,
-  "unit_types": ["UNITTYPE_Mobile", "UNITTYPE_Orbital", "UNITTYPE_Custom1"]
+  "unit_types": [
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Orbital",
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
+  ]
 }
