@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## v1.32.2 - 2026-08-27
+
+### General
+
+- Anonemous2 is credited in the mod's author list
+- Improved the contrast of build bar tabs and control group hotkey numbers against their backgrounds
+
+### Bugfix
+
+- Rampart properly intercepts Bowhead shots
+- Omega doesn't use an invalid record_index for its laser
+- Fixed AI trying to build a platoon that didn't exist
+- Fixed filename casing that could cause breakage on Linux and macOS
+- Added missing units to the unit_list
+- Remove invalid entry from the icon atlas
+- Remove unused files
+- Fix broken CSS
+- Particle effects no longer ignore some of their tuned settings
+- Selection rings for non-Legion units keep their two-tone inner falloff
+- Legion nuke launcher and its missile are flagged as interplanetary again
+- Fabber build effect no longer depends on a shader include shipped in the wrong mod
+- Legion lobby greeting no longer appears in games without the Legion server mod
+
 ## v1.32.1 - 2025-07-06
 
 ### General

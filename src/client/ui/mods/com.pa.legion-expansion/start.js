@@ -21,7 +21,7 @@ function legionStart() {
 
     $("div.div_watermarks").css("bottom", "95px");
 
-    const themeSetting =
+    var themeSetting =
       api.settings.isSet("ui", "legionMenuThemeFunction", true) || "ON";
 
     if (themeSetting === "ON") {

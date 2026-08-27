@@ -1,17 +1,17 @@
 {
-    "base_spec": "/pa/units/commanders/l_base/l_base.json",
-    "display_name": "Legion Imperial Class Commander",
-    "description": "Legion Imperial Class Commander. - If you're seeing this, something is wrong in your commander.",
-    "model": {
-        "filename": "/pa/units/commanders/imperial_delta/imperial_delta.papa",
-        "animations": {
-            "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa",
-            "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle.papa",
-            "walk_stop": "/pa/units/commanders/imperial_base/imperial_base_anim_walkStop.papa",
-            "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
-        "walk_speed": 6.0
-    }
+  "base_spec": "/pa/units/commanders/l_base/l_base.json",
+  "display_name": "Legion Imperial Class Commander",
+  "description": "Legion Imperial Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "model": {
+    "filename": "/pa/units/commanders/imperial_delta/imperial_delta.papa",
+    "animations": {
+      "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa",
+      "idle": "/pa/units/commanders/imperial_base/imperial_base_anim_idle.papa",
+      "walk_stop": "/pa/units/commanders/imperial_base/imperial_base_anim_walkStop.papa",
+      "aim_up": "/pa/units/commanders/imperial_base/imperial_base_anim_aimUp.papa",
+      "aim_down": "/pa/units/commanders/imperial_base/imperial_base_anim_aimDown.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/commander_imperial_anim_tree.json",
+    "walk_speed": 6.0
+  }
 }

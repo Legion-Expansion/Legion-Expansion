@@ -51,16 +51,10 @@ function legionNewGame() {
 
       legionExpansionEnabled = true;
 
-      const newBuild = _.isFunction(model.aiPersonalities);
-
-      const aiPersonalities = newBuild
-        ? model.aiPersonalities()
-        : model.aiPersonalities;
-
-      if (newBuild) {
+      if (_.isFunction(model.aiPersonalities)) {
         model.aiPersonalities.valueHasMutated();
       } else {
-        model.aiPersonalityNames(_.keys(aiPersonalities));
+        model.aiPersonalityNames(_.keys(model.aiPersonalities));
       }
 
       //legion commander picker colouring
@@ -75,7 +69,7 @@ function legionNewGame() {
       );
 
       api.mods.getMounted("client").then(function (mods) {
-        const legionClientLoaded =
+        var legionClientLoaded =
           _.intersection(_.pluck(mods, "identifier"), [
             "com.pa.legion-expansion-client",
             "com.pa.legion-expansion-client-dev",
@@ -120,6 +114,15 @@ function legionNewGame() {
         "data-bind",
         "css: {legionslot: !$data.isEmpty() && model.isLegion($data.commander()), mlaslot: !$data.isEmpty() && !model.isLegion($data.commander()), ready: isReady, loading: isLoading}"
       );
+
+      _.defer(function () {
+        if (model.localChatMessage) {
+          model.localChatMessage(
+            loc("!LOC:Legion Expansion"),
+            loc("!LOC:To play as the Legion select one of the red Commanders.")
+          );
+        }
+      });
     };
 
     if (
@@ -130,13 +133,6 @@ function legionNewGame() {
     ) {
       model.enableLegion();
     }
-
-    _.defer(function () {
-      model.localChatMessage(
-        loc("!LOC:Legion Expansion"),
-        loc("!LOC:To play as the Legion select one of the red Commanders.")
-      );
-    });
   } catch (e) {
     console.error(e);
     console.error(JSON.stringify(e));

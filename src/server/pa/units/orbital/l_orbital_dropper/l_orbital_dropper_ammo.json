@@ -53,7 +53,7 @@
   "show_in_orbital_layer": true,
   "show_strategic_icon": true,
   "splash_damage": 0,
-  "splash_damages_allies": "false",
+  "splash_damages_allies": false,
   "splash_radius": 0,
   "stages": [
     {

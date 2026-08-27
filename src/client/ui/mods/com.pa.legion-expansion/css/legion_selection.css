@@ -96,13 +96,13 @@
 }
 
 .legionui .summary_category.btn_std_ix {
-  text-shadow: rgba(160, 0, 0, 0.8) !important;
+  text-shadow: 0 0 10px rgba(160, 0, 0, 0.8) !important;
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
   color: rgba(160, 0, 0, 0.8) !important;
 }
 
 .mixedui .summary_category.btn_std_ix {
-  text-shadow: rgba(160, 0, 0, 0.8) !important;
+  text-shadow: 0 0 10px rgba(160, 0, 0, 0.8) !important;
   border: 1px solid rgba(255, 0, 0, 0.8) !important;
   color: rgba(160, 0, 0, 0.8) !important;
 }

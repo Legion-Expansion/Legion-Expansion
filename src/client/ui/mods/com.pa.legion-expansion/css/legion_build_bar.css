@@ -81,7 +81,7 @@
 }
 
 .legion .span_build_bar_tab {
-  color: #f00;
+  color: #f44;
   text-shadow: 0 0 30px #f00;
   border-right-color: #333;
   border-left-color: #333;
@@ -90,7 +90,7 @@
 }
 
 .mixed .span_build_bar_tab {
-  color: #609;
+  color: #b366ff;
   text-shadow: 0 0 30px #609;
   border-right-color: #333;
   border-left-color: #333;

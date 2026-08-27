@@ -5,35 +5,29 @@ if (!legionSharedBuildLoaded) {
 
   try {
     if (_.has(Build, "HotkeyModel.SpecIdToGridMap")) {
-      const r0c0 = { row: 0, column: 0, titans: true };
-      const r0c1 = { row: 0, column: 1, titans: true };
-      const r0c2 = { row: 0, column: 2, titans: true };
-      const r0c3 = { row: 0, column: 3, titans: true };
-      const r0c4 = { row: 0, column: 4, titans: true };
-      const r0c5 = { row: 0, column: 5, titans: true };
-      const r1c0 = { row: 1, column: 0, titans: true };
-      const r1c1 = { row: 1, column: 1, titans: true };
-      const r1c2 = { row: 1, column: 2, titans: true };
-      const r1c3 = { row: 1, column: 3, titans: true };
-      const r1c4 = { row: 1, column: 4, titans: true };
-      const r1c5 = { row: 1, column: 5, titans: true };
-      const r2c0 = { row: 2, column: 0, titans: true };
-      const r2c1 = { row: 2, column: 1, titans: true };
-      const r2c2 = { row: 2, column: 2, titans: true };
-      const r2c3 = { row: 2, column: 3, titans: true };
-      const r2c4 = { row: 2, column: 4, titans: true };
-      const r2c5 = { row: 2, column: 5, titans: true };
+      var r0c0 = { row: 0, column: 0, titans: true };
+      var r0c1 = { row: 0, column: 1, titans: true };
+      var r0c2 = { row: 0, column: 2, titans: true };
+      var r0c3 = { row: 0, column: 3, titans: true };
+      var r0c4 = { row: 0, column: 4, titans: true };
+      var r1c0 = { row: 1, column: 0, titans: true };
+      var r1c1 = { row: 1, column: 1, titans: true };
+      var r1c2 = { row: 1, column: 2, titans: true };
+      var r1c3 = { row: 1, column: 3, titans: true };
+      var r1c4 = { row: 1, column: 4, titans: true };
+      var r1c5 = { row: 1, column: 5, titans: true };
+      var r2c0 = { row: 2, column: 0, titans: true };
+      var r2c1 = { row: 2, column: 1, titans: true };
+      var r2c2 = { row: 2, column: 2, titans: true };
+      var r2c3 = { row: 2, column: 3, titans: true };
+      var r2c4 = { row: 2, column: 4, titans: true };
+      var r2c5 = { row: 2, column: 5, titans: true };
 
       _.assign(Build.HotkeyModel.SpecIdToGridMap, {
         "/pa/units/air/l_flying_teleporter/l_flying_teleporter.json": [
           "L_factory",
           0,
           r0c0,
-        ],
-        "/pa/units/land/l_unit_cannon/l_unit_cannon.json": [
-          "L_factory",
-          6,
-          r1c0,
         ],
         "/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv.json": [
           "L_factory",
@@ -160,11 +154,6 @@ if (!legionSharedBuildLoaded) {
           r0c3,
         ],
         "/pa/units/land/l_mex_adv/l_mex_adv.json": ["L_utility", 4, r0c4],
-        "/pa/units/orbital/l_deep_space_radar/l_deep_space_radar.json": [
-          "L_utility",
-          5,
-          r0c5,
-        ],
         "/pa/units/orbital/l_delta_v_engine/l_delta_v_engine.json": [
           "L_utility",
           7,
@@ -385,7 +374,7 @@ if (!legionSharedBuildLoaded) {
           r2c0,
         ],
 
-        "/pa/units/land/l_land_mine/l_land_mine.json": ["L_ammo", 10, r2c4],
+        "/pa/units/land/l_land_mine/l_land_mine.json": ["L_ammo", 16, r2c4],
         "/pa/units/sea/l_sea_mine/l_sea_mine.json": ["L_ammo", 12, r2c0],
         "/pa/units/land/l_anti_nuke_launcher/l_anti_nuke_launcher_ammo.json": [
           "L_ammo",

@@ -7,8 +7,9 @@ function legionLiveGameControlGroup() {
   legionLiveGameControlGroupLoaded = true;
 
   try {
-    const themeSetting =
+    var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
+
     if (themeSetting === "ON") {
       loadCSS(
         "coui://ui/mods/com.pa.legion-expansion/css/legion_control_group_bar.css"
@@ -21,10 +22,10 @@ function legionLiveGameControlGroup() {
       ], function (common) {
         common.bodyPanelClass(payload);
 
-        const src = "coui://ui/main/game/live_game/img/control_group_bar/";
-        const path =
+        var src = "coui://ui/main/game/live_game/img/control_group_bar/";
+        var path =
           "coui://ui/mods/com.pa.legion-expansion/img/control_group_bar/";
-        const colour = common.uiColour(payload);
+        var colour = common.uiColour(payload);
 
         model.imageSourceForType = function (type) {
           return common.imageSourceForType(path, colour, type);

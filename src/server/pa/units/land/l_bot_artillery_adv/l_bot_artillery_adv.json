@@ -41,27 +41,15 @@
   "headlights": [
     {
       "bone": "bone_turret",
-      "color": [
-        0.75,
-        1,
-        1
-      ],
+      "color": [0.75, 1, 1],
       "far_distance": 20,
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
       "intensity": 1.4,
       "near_distance": 1,
       "near_height": 1.5,
       "near_width": 1.5,
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "orientation": [
-        0,
-        0,
-        0
-      ]
+      "offset": [0, 0, 0],
+      "orientation": [0, 0, 0]
     }
   ],
   "lamps": [],
@@ -121,10 +109,7 @@
     {
       "aim_bone": "bone_mini_turret",
       "fire_event": "fired1",
-      "muzzle_bone": [
-        "socket_mini_muzzle_right",
-        "socket_mini_muzzle_left"
-      ],
+      "muzzle_bone": ["socket_mini_muzzle_right", "socket_mini_muzzle_left"],
       "projectiles_per_fire": 2,
       "record_index": 1,
       "spec_id": "/pa/units/land/l_bot_artillery_adv/l_bot_artillery_adv_light_tool_weapon.json"

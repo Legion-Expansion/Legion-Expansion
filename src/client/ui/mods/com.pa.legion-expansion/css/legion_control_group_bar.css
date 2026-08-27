@@ -58,14 +58,14 @@
 }
 
 .legionui .unit_group_item .numkey {
-  color: #970000;
+  color: #f00;
   text-shadow: none;
   background: black;
   border: 1px solid #4d0000;
 }
 
 .mixedui .unit_group_item .numkey {
-  color: #606;
+  color: #d0d;
   background: black;
   text-shadow: none;
   border: 1px solid #606;
@@ -89,7 +89,6 @@
 
 .mixedui .btn_std_ix:hover {
   box-shadow: inset 0 0 10px #606 !important;
-  background: #639;
   background: #606;
   border: 1px solid rgba(99, 14, 138, 0.5) !important;
 }

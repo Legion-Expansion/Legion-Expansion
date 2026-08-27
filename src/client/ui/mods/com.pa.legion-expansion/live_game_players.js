@@ -10,7 +10,7 @@ function legionLiveGamePlayers() {
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
     loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
-    const checkCommanders = function (commanders) {
+    var checkCommanders = function (commanders) {
       var legionCount = 0;
       var specsLength = 0;
       if (commanders !== undefined) {
@@ -30,8 +30,8 @@ function legionLiveGamePlayers() {
       return "vanilla";
     };
 
-    const isLegionOrMixedOrVanilla = ko.computed(function () {
-      const selectedSpecs = model.player().commanders;
+    var isLegionOrMixedOrVanilla = ko.computed(function () {
+      var selectedSpecs = model.player().commanders;
       return checkCommanders(selectedSpecs);
     });
 
@@ -43,14 +43,14 @@ function legionLiveGamePlayers() {
       return isLegionOrMixedOrVanilla() === "mixed";
     });
 
-    const legionStart = ko.observable(false);
-    const themeSetting =
+    var legionStart = ko.observable(false);
+    var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
 
     model.player.subscribe(function () {
       if (!legionStart()) {
         if (themeSetting === "ON") {
-          const ui = isLegionOrMixedOrVanilla();
+          var ui = isLegionOrMixedOrVanilla();
 
           if (ui !== "legion" && ui !== "mixed") {
             return;
@@ -68,11 +68,11 @@ function legionLiveGamePlayers() {
           require([
             "coui://ui/mods/com.pa.legion-expansion/common_functions.js",
           ], function (common) {
-            const src = "coui://ui/main/shared/img/controls/";
-            const path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
-            const colour = common.uiColour(ui);
-            const png1 = "pin_open.png";
-            const png2 = "pin_closed.png";
+            var src = "coui://ui/main/shared/img/controls/";
+            var path = "coui://ui/mods/com.pa.legion-expansion/img/controls/";
+            var colour = common.uiColour(ui);
+            var png1 = "pin_open.png";
+            var png2 = "pin_closed.png";
 
             common.toggleImage(src, path, colour, png1, png2);
 

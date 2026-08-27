@@ -23,17 +23,17 @@ function legionLiveGameBuildBar() {
     }
 
     ko.computed(function () {
-      const buildSet = model.buildSet();
+      var buildSet = model.buildSet();
       if (!buildSet) {
         return;
       }
-      const hotkeys = model.hotkeys();
-      const groups = buildSet.tabsByGroup();
+      var hotkeys = model.hotkeys();
+      var groups = buildSet.tabsByGroup();
 
       setTimeout(function () {
         // Get tab hotkeys
         _.forEach(buildSet.tabs(), function (tab) {
-          const baseTab = tab.group().replace("L_", "");
+          var baseTab = tab.group().replace("L_", "");
           if (!tab.label()) {
             tab.label(groups[baseTab].label());
           }
@@ -49,14 +49,11 @@ function legionLiveGameBuildBar() {
       params
     ) {
       var group = params.group;
-      const locked = params.locked;
+      var locked = params.locked;
 
-      const tabs = model
-        .buildSet()
-        .tabs()
-        .filter(function (tab) {
-          return tab.visible() && tab.buildGroup() === group;
-        });
+      var tabs = _.filter(model.buildSet().tabs(), function (tab) {
+        return tab.visible() && tab.buildGroup() === group;
+      });
       if (tabs.length < 1) {
         return;
       }
@@ -68,7 +65,7 @@ function legionLiveGameBuildBar() {
       }
     };
 
-    const themeSetting =
+    var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
     if (themeSetting === "ON") {
       loadCSS(
@@ -77,13 +74,13 @@ function legionLiveGameBuildBar() {
       loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
 
       // eslint-disable-next-line no-undef
-      const legionSpecIds = legion.builders;
+      var legionSpecIds = legion.builders;
 
-      const isLegionOrMixedOrVanilla = function (data) {
+      var isLegionOrMixedOrVanilla = function (data) {
         if (data.buildSet()) {
           var legionCount = 0;
           var specsLength = 0;
-          const selectedSpecs = data.buildSet().selectedSpecs();
+          var selectedSpecs = data.buildSet().selectedSpecs();
 
           _.forOwn(selectedSpecs, function (value, key) {
             if (_.includes(legionSpecIds, key)) {

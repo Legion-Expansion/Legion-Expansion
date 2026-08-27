@@ -21,8 +21,6 @@ void main()
 
     vec2 dxy = 2.0 * v_TexCoord.xy - 1.0;
 
-    vec3 t_color = vec3(0, 0, 0);
-
     float d = sqrt(dot(dxy, dxy));
 
     // this is the new bit, test to see if the selection circle size is negative

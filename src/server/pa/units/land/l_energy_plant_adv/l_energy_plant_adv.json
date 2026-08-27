@@ -41,11 +41,7 @@
   ],
   "headlights": [],
   "max_health": 2500,
-  "mesh_bounds": [
-    25,
-    25,
-    12
-  ],
+  "mesh_bounds": [25, 25, 12],
   "model": [
     {
       "animations": {

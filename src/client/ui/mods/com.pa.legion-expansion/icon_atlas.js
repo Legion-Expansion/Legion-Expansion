@@ -4,7 +4,7 @@ if (!legionIconAtlasLoaded) {
   legionIconAtlasLoaded = true;
 
   try {
-    const legionIcons = [
+    var legionIcons = [
       "l_air_bomb",
       "l_air_carrier",
       "l_air_defense_adv",
@@ -68,6 +68,7 @@ if (!legionIconAtlasLoaded) {
       "l_minion_ammo",
       "l_minion_jump_ammo",
       "l_minion",
+      "l_minion_spawner",
       "l_missile_ship",
       "l_mortar_tank",
       "l_naval_factory_adv",
@@ -105,7 +106,6 @@ if (!legionIconAtlasLoaded) {
       "l_shotgun_tank",
       "l_sniper_bot",
       "l_sniper_tank",
-      "l_solar_array",
       "l_storage",
       "l_swarm_hive",
       "l_t1_turret_adv",
@@ -126,7 +126,6 @@ if (!legionIconAtlasLoaded) {
       "l_vehicle_factory_adv",
       "l_vehicle_factory",
       "l_vision",
-      "l_scout_turret",
     ];
 
     model.strategicIcons(model.strategicIcons().concat(legionIcons));

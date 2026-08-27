@@ -46,3 +46,11 @@ Temporary Items
 .apdisk
 *.dict
 .vscode/settings.json
+
+# =========================
+# Node lint tooling
+# =========================
+
+node_modules/
+npm-debug.log*
+.eslintcache
