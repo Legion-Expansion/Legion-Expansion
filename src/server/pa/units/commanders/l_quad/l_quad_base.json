@@ -1,27 +1,27 @@
 {
-    "base_spec": "/pa/units/commanders/l_base/l_base.json",
-    "display_name": "L Quadruped Class Commander",
-    "description": "L Quadruped Class Commander. - If you're seeing this, something is wrong in your commander.",
-    "model": {
-        "filename": "/pa/units/commanders/quad_osiris/quad_osiris.papa",
-        "animations": {
-            "walk": "/pa/units/commanders/quad_base/quad_base_anim_walk.papa",
-            "idle": "/pa/units/commanders/quad_base/quad_base_anim_idle.papa",
-            "walk_stop": "/pa/units/commanders/quad_base/quad_base_anim_walkStop.papa",
-            "aim_up": "/pa/units/commanders/quad_base/quad_base_anim_aimUp.papa",
-            "aim_down": "/pa/units/commanders/quad_base/quad_base_anim_aimDown.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/commander_quad_anim_tree.json",
-        "walk_speed": 5.0
+  "base_spec": "/pa/units/commanders/l_base/l_base.json",
+  "display_name": "L Quadruped Class Commander",
+  "description": "L Quadruped Class Commander. - If you're seeing this, something is wrong in your commander.",
+  "model": {
+    "filename": "/pa/units/commanders/quad_osiris/quad_osiris.papa",
+    "animations": {
+      "walk": "/pa/units/commanders/quad_base/quad_base_anim_walk.papa",
+      "idle": "/pa/units/commanders/quad_base/quad_base_anim_idle.papa",
+      "walk_stop": "/pa/units/commanders/quad_base/quad_base_anim_walkStop.papa",
+      "aim_up": "/pa/units/commanders/quad_base/quad_base_anim_aimUp.papa",
+      "aim_down": "/pa/units/commanders/quad_base/quad_base_anim_aimDown.papa"
     },
-    "audio": {
-        "loops": {
-            "build": {
-                "cue": "/SE/Construction/Commander_contruction_beam_loop",
-                "flag": "build_target_changed",
-                "should_start_func": "has_build_target",
-                "should_stop_func": "no_build_target"
-            }
-        }
+    "animtree": "/pa/anim/anim_trees/commander_quad_anim_tree.json",
+    "walk_speed": 5.0
+  },
+  "audio": {
+    "loops": {
+      "build": {
+        "cue": "/SE/Construction/Commander_contruction_beam_loop",
+        "flag": "build_target_changed",
+        "should_start_func": "has_build_target",
+        "should_stop_func": "no_build_target"
+      }
     }
+  }
 }

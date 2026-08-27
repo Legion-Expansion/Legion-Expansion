@@ -3,16 +3,8 @@
   "description": "!LOC:Imperial Cataphract Commander",
   "attachable": {
     "offsets": {
-      "head": [
-        0,
-        0,
-        15.6
-      ],
-      "root": [
-        0,
-        0,
-        0
-      ]
+      "head": [0, 0, 15.6],
+      "root": [0, 0, 0]
     }
   },
   "base_spec": "/pa/units/commanders/l_base/l_base.json",
@@ -39,25 +31,13 @@
   "headlights": [
     {
       "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
-      "offset": [
-        0.0,
-        -1.7,
-        1.9
-      ],
-      "orientation": [
-        0.0,
-        45.0,
-        0.0
-      ],
+      "offset": [0.0, -1.7, 1.9],
+      "orientation": [0.0, 45.0, 0.0],
       "near_width": 5.0,
       "near_height": 5.0,
       "near_distance": 3.0,
       "far_distance": 30.0,
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 6.0,
       "bone": "bone_spine",
       "shadow_resolution": 128
@@ -65,41 +45,21 @@
   ],
   "lamps": [
     {
-      "offset": [
-        0.0,
-        -1.7,
-        1.9
-      ],
+      "offset": [0.0, -1.7, 1.9],
       "radius": 2.0,
-      "color": [
-        1.0,
-        1.0,
-        1.0
-      ],
+      "color": [1.0, 1.0, 1.0],
       "intensity": 5.0,
       "bone": "bone_spine"
     },
     {
-      "offset": [
-        0.07,
-        -3.85,
-        0.2
-      ],
+      "offset": [0.07, -3.85, 0.2],
       "radius": 4.0,
-      "color": [
-        0.4,
-        1.0,
-        0.01
-      ],
+      "color": [0.4, 1.0, 0.01],
       "intensity": 2.0,
       "bone": "bone_leftElbow"
     }
   ],
-  "mesh_bounds": [
-    10,
-    10,
-    12
-  ],
+  "mesh_bounds": [10, 10, 12],
   "model": {
     "animations": {
       "walk": "/pa/units/commanders/imperial_base/imperial_base_anim_walk.papa",

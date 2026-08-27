@@ -29,7 +29,7 @@
       "idle": "/pa/units/land/l_assault_bot/l_assault_bot_anim_idle.papa",
       "walk": "/pa/units/land/l_assault_bot/l_assault_bot_anim_walk.papa",
       "walk_start": "/pa/units/land/l_assault_bot/l_assault_bot_anim_walk_start.papa",
-	    "walk_stop": "/pa/units/land/l_assault_bot/l_assault_bot_anim_idle_start.papa"
+      "walk_stop": "/pa/units/land/l_assault_bot/l_assault_bot_anim_idle_start.papa"
     },
     "animtree": "/pa/anim/anim_trees/l_assault_bot_anim_tree.json",
     "filename": "/pa/units/land/l_assault_bot/l_assault_bot.papa",
