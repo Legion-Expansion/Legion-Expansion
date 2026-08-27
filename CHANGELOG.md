@@ -4,9 +4,7 @@
 
 ### General
 
-- The mod now ships with its licence and credits
 - Anonemous2 is credited in the mod's author list
-- Mod icon is served from the master branch so it survives branch churn
 
 ### Bugfix
 
@@ -23,7 +21,6 @@
 - Legion nuke launcher and its missile are flagged as interplanetary again
 - Fabber build effect no longer depends on a shader include shipped in the wrong mod
 - Legion lobby greeting no longer appears in games without the Legion server mod
-- Minion Spawner shows its strategic icon
 
 ## v1.32.1 - 2025-07-06
 
