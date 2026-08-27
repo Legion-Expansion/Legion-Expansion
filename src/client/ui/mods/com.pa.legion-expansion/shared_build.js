@@ -10,7 +10,6 @@ if (!legionSharedBuildLoaded) {
       var r0c2 = { row: 0, column: 2, titans: true };
       var r0c3 = { row: 0, column: 3, titans: true };
       var r0c4 = { row: 0, column: 4, titans: true };
-      var r0c5 = { row: 0, column: 5, titans: true };
       var r1c0 = { row: 1, column: 0, titans: true };
       var r1c1 = { row: 1, column: 1, titans: true };
       var r1c2 = { row: 1, column: 2, titans: true };
@@ -29,11 +28,6 @@ if (!legionSharedBuildLoaded) {
           "L_factory",
           0,
           r0c0,
-        ],
-        "/pa/units/land/l_unit_cannon/l_unit_cannon.json": [
-          "L_factory",
-          6,
-          r1c0,
         ],
         "/pa/units/sea/l_naval_factory_adv/l_naval_factory_adv.json": [
           "L_factory",
@@ -160,11 +154,6 @@ if (!legionSharedBuildLoaded) {
           r0c3,
         ],
         "/pa/units/land/l_mex_adv/l_mex_adv.json": ["L_utility", 4, r0c4],
-        "/pa/units/orbital/l_deep_space_radar/l_deep_space_radar.json": [
-          "L_utility",
-          5,
-          r0c5,
-        ],
         "/pa/units/orbital/l_delta_v_engine/l_delta_v_engine.json": [
           "L_utility",
           7,
