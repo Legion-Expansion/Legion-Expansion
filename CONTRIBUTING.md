@@ -4,18 +4,24 @@ Thank you for looking to contribute to the Legion Expansion.
 
 ## Tooling
 
-You will need the following to ensure your submissions adhere to the requirements and formatting of this project:
+Every linter this project uses is a dev dependency, so `npm install` is all that is needed to get
+them:
 
-- eslint
-- eslint-config-prettier
-- eslint-plugin-lodash
-- markdownlint
-- prettier
-- sonarlint
-- stylelint
-- stylelint-config-standard
+```sh
+npm install
+npm run lint        # eslint, stylelint, markdownlint and prettier in turn
+npm run lint:js     # or run one at a time: lint:js, lint:css, lint:md, lint:format
+npm run format      # prettier --write
+```
 
-The project is not tied to a specific version of these tools and will use the latest versions where possible.
+Each dependency is pinned to a major version in `package.json`; minor and patch updates are picked
+up automatically. Note that ESLint is held at 9.x because `eslint-plugin-lodash` is unmaintained and
+does not run on 10.
+
+SonarLint is the exception - it is an IDE extension rather than an npm package. `.vscode/settings.json`
+wires it to this project in connected mode.
+
+The build itself is Python and has no npm involvement; see [installation](README.md#installation).
 
 ## Submissions
 

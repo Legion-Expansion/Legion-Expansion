@@ -2,8 +2,16 @@
   "name": "legion-expansion",
   "private": true,
   "description": "Lint tooling for the Legion Expansion build source. The mod itself is built by src/install_devel.py.",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "lint:js": "eslint ."
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:md && npm run lint:format",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:md": "markdownlint \"**/*.md\" --ignore node_modules",
+    "lint:format": "prettier --check .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
@@ -11,6 +19,11 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-es-x": "^9.7.0",
     "eslint-plugin-lodash": "^8.0.0",
-    "globals": "^17.11.0"
+    "globals": "^17.11.0",
+    "markdownlint-cli": "^0.49.1",
+    "prettier": "^3.9.6",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-no-unsupported-browser-features": "^8.1.1"
   }
 }

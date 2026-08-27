@@ -188,18 +188,21 @@ Add to the same path as the unit's JSON file:
 ### Commander UI Images
 
 #### Large Render Image
+
 - filename format: 'img_l_unit.png'
 - ui/main/shared/img/commanders
 - 890px x 890px
 - PNG32
 
 #### Render Image
+
 - filename format: 'img_l_unit_thumb.png'
 - ui/main/shared/img/commanders/thumbs
 - 300px x 300px
 - PNG32
 
 #### Profile Image
+
 - filename format: 'profile_l_unit.png'
 - ui/main/shared/img/commanders/profiles
 - 150px x 40px

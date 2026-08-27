@@ -7,8 +7,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Build source for the **Legion Expansion**, a new faction for Planetary Annihilation: TITANS. It is
 _not_ a mod directory. The repo generates a **pair** of mods that must ship together:
 
-| Output                           | Built from                  | Contains                                                  |
-| -------------------------------- | --------------------------- | --------------------------------------------------------- |
+| Output                           | Built from                  | Contains                                                   |
+| -------------------------------- | --------------------------- | ---------------------------------------------------------- |
 | `com.pa.legion-expansion-server` | `src/shared` + `src/server` | unit/ammo/tool JSON, AI build data, generated shadows      |
 | `com.pa.legion-expansion-client` | `src/shared` + `src/client` | `.papa` models, textures, `.pfx` effects, UI JS/CSS, icons |
 
@@ -23,9 +23,8 @@ The mod cannot be used in Galactic War.
 
 ## Commands
 
-No test suite. Python 3 (latest 3.x; not 2.x) for the build; `package.json` carries the ESLint
-tooling only (`npm install`, then `npm run lint:js`). The other three linters are still expected
-globally on PATH.
+No test suite. Python 3 (latest 3.x; not 2.x) drives the build; every linter is a dev dependency,
+so `npm install` gets the lot. Node >= 22 (markdownlint-cli's floor).
 
 ```sh
 python src/install_devel.py   # build + install into %LOCALAPPDATA%\...\{client,server}_mods as *-dev
@@ -39,14 +38,19 @@ names, so the dev build coexists with a Community Mods install. Enable the `[DEV
 Both scripts locate the PA install by **reading the newest PA log file** for the Coherent host dir
 (`src/pa_tools/pa/paths.py`). PA must have been run at least once or the build aborts.
 
-Lint (tools are expected on PATH at their latest versions; config lives in the repo-root dotfiles):
+Lint — `npm run lint` runs all four in turn, or one at a time:
 
 ```sh
-npm run lint:js   # flat config in eslint.config.mjs
-prettier --check .
-stylelint "**/*.css"
-markdownlint "**/*.md"
+npm run lint:js      # eslint . — flat config in eslint.config.mjs
+npm run lint:css     # stylelint — config in stylelint.config.mjs
+npm run lint:md      # markdownlint — config in .markdownlint.json
+npm run lint:format  # prettier --check . — config in .prettierrc
+npm run format       # prettier --write .
 ```
+
+Every dependency is pinned to a **major** version, so minors and patches float. `.browserslistrc`
+(`chrome 40`) is not decoration — `stylelint-no-unsupported-browser-features` reads it, and without
+it that whole automatic half of the CSS config silently checks against the wrong browser.
 
 `eslint.config.mjs` layers four things over `js/recommended`: the PA globals, `lodash/v3` with
 `prefer-lodash-method`, `curly: all`, and — for everything under `src/` — `eslint-plugin-es-x`'s
