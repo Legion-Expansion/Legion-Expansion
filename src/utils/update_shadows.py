@@ -9,7 +9,10 @@
 #  - Update unit and commander lists
 #  - Update anti entity target lists, to include the legion equivalents, i.e.
 #    anti nuke must be able to shoot down the legion nuke missile
+# It also guards the shaders under src/client/shaders, which are hand-maintained
+# whole-file copies that nothing here regenerates.
 
+import hashlib
 import os
 import os.path as path
 import posixpath
@@ -26,6 +29,16 @@ from pa_tools.pa import paths
 loader = pafs("server")
 loader.mount("/", paths.PA_MEDIA_DIR)
 loader.mount("/pa", "/pa_ex1")
+
+# Shaders have no include or partial-override mechanism, so src/client/shaders
+# holds whole-file copies of these stock files. Each is pinned to the install
+# version it was last diffed against, so a stock fix landing in one of them
+# fails the build instead of being silently reverted for everyone running Legion.
+SHADOWED_SHADERS = {
+    "/shaders/prelight_pa_unit_fab.fs": "e88d598fd60a67ca745d0b53a81cce16191ec372571b4f820d3403493c2764b2",
+    "/shaders/unit_ring_hover.fs": "033d0d40a89c2464c20607ce17c4654c6b916400a0b1f8f7642e1d1a85174b8b",
+    "/shaders/unit_ring_selection.fs": "e2e86648fe7dba4a62aaceabb7469f5d5e64b1d78fc9e4817f33bb23207893fd",
+}
 
 # Load file and add it to the 'cache'
 # This is to allow modifying the same unit spec multiple times.
@@ -54,7 +67,24 @@ def load(file_path):
     return file_cache[file_path]
 
 
+def check_shadowed_shaders():
+    for shader_path, expected in SHADOWED_SHADERS.items():
+        with open(resolve(shader_path), "rb") as shader:
+            actual = hashlib.sha256(shader.read()).hexdigest()
+
+        if actual != expected:
+            raise RuntimeError(
+                f"{shader_path} has changed in the PA install.\n"
+                f"  pinned: {expected}\n"
+                f"  actual: {actual}\n"
+                f"Re-diff src/client{shader_path} against the install, then "
+                "update SHADOWED_SHADERS in src/utils/update_shadows.py."
+            )
+
+
 def update_shadows(client_out_dir, server_out_dir):
+    check_shadowed_shaders()
+
     resolve("/pa/units/unit_list.json")
     mla_units = spec.load_spec(loader, "/pa/units/unit_list.json")
     # The tutorial commanders aren't listed in the unit file, but they still need to be modified
