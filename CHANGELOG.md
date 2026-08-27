@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### General
+
+- The mod now ships with its licence and credits
+
 ### Bugfix
 
 - Rampart properly intercepts Bowhead shots

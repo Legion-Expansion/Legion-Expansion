@@ -109,6 +109,14 @@ def generate_mods(is_dev_mode):
     print(f"COPY client to {client_output_dir}")
     shutil.copytree("client", client_output_dir, dirs_exist_ok=True)
 
+    # CC BY-NC-SA and MIT both require the licence to travel with the
+    # distributed copy; README.md carries the dual-licence statement and the
+    # credits the LICENSE text does not.
+    for output_dir in (server_output_dir, client_output_dir):
+        print(f"COPY licence to {output_dir}")
+        shutil.copyfile(join("..", "LICENSE"), join(output_dir, "LICENSE"))
+        shutil.copyfile(join("..", "README.md"), join(output_dir, "README.md"))
+
     # Update the modinfos
     pajson.dumpf(server_modinfo, join(server_output_dir, "modinfo.json"), indent=2)
     pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
