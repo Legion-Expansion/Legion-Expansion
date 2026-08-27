@@ -131,6 +131,7 @@
     "UNITTYPE_Factory",
     "UNITTYPE_FabAdvBuild",
     "UNITTYPE_Important",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Interplanetary"
   ]
 }
