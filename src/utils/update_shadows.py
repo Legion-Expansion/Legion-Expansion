@@ -59,6 +59,7 @@ ANTI_ENTITY_PATCHES = {
     "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_tool_weapon.json": [
         L_NUKE_AMMO
     ],
+    "/pa/units/land/tank_anti_nuke/tank_anti_nuke_tool_weapon.json": [L_NUKE_AMMO],
     # Anti-Tac missile
     "/pa/units/land/bot_sniper/bot_sniper_beam_tool_weapon.json": [
         L_HOVER_TANK_ADV_AMMO

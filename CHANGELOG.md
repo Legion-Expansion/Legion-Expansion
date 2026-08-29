@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Ward intercepts Legion nuclear missiles
+
 ## v1.32.2 - 2026-08-27
 
 ### General
