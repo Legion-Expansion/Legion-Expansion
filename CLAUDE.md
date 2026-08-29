@@ -130,8 +130,9 @@ useful when minimising a unit override). Clone with `--recurse-submodules`.
 ## Faction mechanics
 
 `Custom1` is the Legion faction bit. Legion units carry it; every Legion builder's
-`buildable_types` is `"Custom1 & ( ... )"`, and vanilla builders must be adjusted to exclude
-`Custom1` so the two tech trees stay separate. AI unit-map entries in
+`buildable_types` is `"Custom1 & ( ... )"`. Nothing has to be done on the vanilla side: stock
+units carry `Custom58` and stock builders already require it, which keeps the two tech trees
+separate on its own. AI unit-map entries in
 `src/server/pa/ai/unit_maps/legion.json` are the vanilla type expressions intersected with
 `Custom1` (e.g. `"(Factory & Advanced) & Custom1"`).
 

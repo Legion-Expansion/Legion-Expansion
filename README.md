@@ -133,7 +133,8 @@ The script in `src/install_prod.py` depends on those locations.
 
 ### Units
 
-Vanilla units with `buildable_types` must be adjusted to ignore `Custom1`.
+Vanilla units carry `Custom58` and their `buildable_types` already require it, so the two tech
+trees stay separate without Legion touching a vanilla unit.
 
 When working with Legion units please:
 
