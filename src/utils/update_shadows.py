@@ -10,7 +10,8 @@
 #  - Update anti entity target lists, to include the legion equivalents, i.e.
 #    anti nuke must be able to shoot down the legion nuke missile
 # It also guards the shaders under src/client/shaders, which are hand-maintained
-# whole-file copies that nothing here regenerates.
+# whole-file copies that nothing here regenerates, and checks that no vanilla
+# file has grown an anti entity target or upgrade path the tables below miss.
 
 import hashlib
 import os
@@ -46,7 +47,8 @@ L_HOVER_TANK_ADV_AMMO = "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.j
 L_NUKE_AMMO = "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"
 L_ORBITAL_DROPPER_AMMO = "/pa/units/orbital/l_orbital_dropper/l_orbital_dropper_ammo.json"
 
-# Vanilla interceptors, and the Legion projectiles each has to be able to shoot down.
+# Vanilla interceptors, and the Legion projectiles each has to be able to shoot
+# down. check_patch_coverage() holds this to every vanilla file carrying the key.
 ANTI_ENTITY_PATCHES = {
     # Anti-AA missile
     "/pa/units/air/support_platform/support_platform_tool_interception.json": [
@@ -79,7 +81,7 @@ ANTI_ENTITY_PATCHES = {
     ],
 }
 
-# Cross-faction mex upgrade paths.
+# Cross-faction mex upgrade paths, checked the same way.
 REPLACEABLE_UNIT_PATCHES = {
     "/pa/units/land/metal_extractor/metal_extractor.json": [
         "/pa/units/land/l_mex_adv/l_mex_adv.json"
@@ -133,6 +135,45 @@ def check_shadowed_shaders():
                 f"  actual: {actual}\n"
                 f"Re-diff src/client{shader_path} against the install, then "
                 "update SHADOWED_SHADERS in src/utils/update_shadows.py."
+            )
+
+
+def vanilla_files_with_key(key):
+    needle = f'"{key}"'.encode()
+    found = set()
+
+    for mount in ("pa", "pa_ex1"):
+        root = path.join(paths.PA_MEDIA_DIR, mount)
+        for dir_path, _, file_names in os.walk(root):
+            for file_name in file_names:
+                if not file_name.endswith(".json"):
+                    continue
+
+                file_path = path.join(dir_path, file_name)
+                with open(file_path, "rb") as spec_file:
+                    if needle not in spec_file.read():
+                        continue
+
+                relative = path.relpath(file_path, root).replace(os.sep, "/")
+                found.add(f"/pa/{relative}")
+
+    return found
+
+
+# The tables above are hardcoded, so a PA patch that adds an interceptor or an
+# upgrade path would otherwise drop the Legion side of the interaction in
+# silence. resolve() covers the opposite case, a vanilla path that goes away.
+def check_patch_coverage():
+    for key, table in PATCH_TABLES.items():
+        unhandled = sorted(vanilla_files_with_key(key) - set(table))
+
+        if unhandled:
+            listing = "\n  ".join(unhandled)
+            raise RuntimeError(
+                f"The PA install has {key} in files Legion does not patch:\n"
+                f"  {listing}\n"
+                "Add the Legion equivalents to the matching table in "
+                "src/utils/update_shadows.py."
             )
 
 
@@ -263,6 +304,7 @@ def write_changed_specs(server_out_dir):
 
 def update_shadows(client_out_dir, server_out_dir):
     check_shadowed_shaders()
+    check_patch_coverage()
     patch_mine_sight_layers()
     patch_anti_entity_targets()
     patch_unit_and_commander_lists()
