@@ -75,6 +75,8 @@ function legionLiveGameBuildBar() {
 
       // eslint-disable-next-line no-undef
       var legionSpecIds = legion.builders;
+      // eslint-disable-next-line no-undef
+      var specPath = legion.specPath;
 
       var isLegionOrMixedOrVanilla = function (data) {
         if (data.buildSet()) {
@@ -83,7 +85,7 @@ function legionLiveGameBuildBar() {
           var selectedSpecs = data.buildSet().selectedSpecs();
 
           _.forOwn(selectedSpecs, function (value, key) {
-            if (_.includes(legionSpecIds, key)) {
+            if (_.includes(legionSpecIds, specPath(key))) {
               legionCount++;
             }
             specsLength++;

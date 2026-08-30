@@ -16,7 +16,7 @@ function legionLiveGamePlayers() {
       if (commanders !== undefined) {
         _.forOwn(commanders, function (value) {
           // eslint-disable-next-line no-undef
-          if (_.includes(legion.commanders, value)) {
+          if (_.includes(legion.commanders, legion.specPath(value))) {
             legionCount++;
           }
           specsLength++;

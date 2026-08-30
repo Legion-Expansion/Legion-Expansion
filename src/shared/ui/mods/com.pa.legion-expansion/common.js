@@ -57,3 +57,11 @@ legion.builders = _.union(
   legion.navalFabbers,
   legion.launchers
 );
+
+// The sim reports a unit spec path with the army's spec tag appended when a mod
+// applies per-army spec changes, as Galactic War does: /pa/x/x.json.player,
+// /pa/x/x.json.ai0. The lists above hold the untagged path, so anything
+// comparing against them normalises the reported path first.
+legion.specPath = function (path) {
+  return _.isString(path) ? path.replace(/\.json\..*$/, ".json") : path;
+};
