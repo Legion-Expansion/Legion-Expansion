@@ -18,7 +18,7 @@
     "radius_accel": -25.0,
     "radius_velocity": 140.0
   },
-  "full_splash_damage_radius": 0,
+  "full_damage_splash_radius ": 0,
   "sim_fire_effect": "/pa/units/air/l_air_bomb/triggered/l_air_bomb_air_death_ent.json",
   "splash_damages_allies": false,
   "splash_radius": 70
