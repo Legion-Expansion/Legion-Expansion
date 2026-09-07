@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## Unreleased
+## v1.33.0 - 2026-09-07
+
+### General
+
+- Update file shadows
 
 ### Bugfix
 
