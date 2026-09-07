@@ -131,7 +131,7 @@
   "tools": [
     {
       "aim_bone": "bone_root",
-      "muzzle": "light",
+      "muzzle_bone": "light",
       "projectiles_per_fire": 1,
       "spec_id": "/pa/units/air/l_air_scout_adv/l_air_scout_adv_vision_tool_weapon.json"
     }

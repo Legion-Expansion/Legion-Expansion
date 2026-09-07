@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v1.33.1 - 2026-09-07
+
+### AI
+
+- Fixed the AI building engines and Control Modules on planets where allies were already building them
+- Stopped the AI building too many Stokes when it needed scouts and had nothing else
+
+### Bugfix
+
+- Nova, Purger, and Miniman now correctly deal full damage within a subset of their radius
+- Infiltrator uses the correct bone as a muzzle
+
 ## v1.33.0 - 2026-09-07
 
 ### General
