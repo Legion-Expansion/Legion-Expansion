@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v1.33.0 - 2026-09-07
+
+### General
+
+- Update file shadows
+
+### Bugfix
+
+- Ward intercepts Legion nuclear missiles
+- The player list icon and the build bar theme recognise Legion units in a game that tags unit specs per army, such as Galactic War
+
 ## v1.32.2 - 2026-08-27
 
 ### General
