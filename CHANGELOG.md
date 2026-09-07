@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.33.1 - 2026-09-07
 
 ### AI
 
