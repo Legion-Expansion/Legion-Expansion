@@ -4,8 +4,8 @@
 
 ### AI
 
-- Fixed the AI building engines and Control Modules on planets allies were already building them
-- Stopped the AI spamming Stokes when it needed scouts and had nothing else
+- Fixed the AI building engines and Control Modules on planets where allies were already building them
+- Stopped the AI building too many Stokes when it needed scouts and had nothing else
 
 ### Bugfix
 
