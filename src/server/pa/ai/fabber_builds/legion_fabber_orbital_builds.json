@@ -365,7 +365,7 @@
           },
           {
             "test_type": "AlliedUnitCountOnPlanet",
-            "unit_type_string0": "LegionDefenseAdvancedEngine",
+            "unit_type_string0": "PlanetEngine",
             "compare0": "<=",
             "value0": 0,
             "boolean": true

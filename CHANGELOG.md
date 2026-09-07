@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Unreleased
+
+### AI
+
+- Fixed the AI building engines and Control Modules on planets allies were already building them
+- Stopped the AI spamming Stokes when it needed scouts and had nothing else
+
 ## v1.33.0 - 2026-09-07
 
 ### General
