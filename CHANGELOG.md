@@ -10,6 +10,7 @@
 ### Bugfix
 
 - Nova, Purger, and Miniman now correctly deal full damage within a subset of their radius
+- Infiltrator uses the correct bone as a muzzle
 
 ## v1.33.0 - 2026-09-07
 
