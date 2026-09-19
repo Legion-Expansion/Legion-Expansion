@@ -3,7 +3,9 @@ body.legion #background {
 }
 
 body.legion #logo-background {
+  display: block;
   background-image: url("coui://ui/mods/com.pa.legion-expansion/logos/logo.png");
+  opacity: 0.1;
 }
 
 body.legion {
