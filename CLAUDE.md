@@ -143,7 +143,11 @@ prefix. Those directories are scanned by the game, not indexed — there is no r
 One entry script per scene, registered in `src/client/modinfo.json` `scenes`. The server modinfo
 also registers `icon_atlas` and `new_game` scripts — those files are supplied by the client/shared
 half and resolve through the merged VFS, which is why the server mod can hold the scene binding
-while the client mod ships the file.
+while the client mod ships the file. The exception is the four body-panel-only scenes
+(`live_game_econ`, `live_game_menu`, `live_game_time_bar`, `live_game_build_hover`), which share
+`live_game_body_panel.js`: it reads its panel name from `api.Panel.pageName` (the `<panel id>` in
+`live_game.html`) and loads `css/legion_<pageName>.css`. A new panel that only needs the class swap
+is added by registering that script on its scene and adding a matching CSS file.
 
 House pattern for every scene script — deviate only with reason:
 

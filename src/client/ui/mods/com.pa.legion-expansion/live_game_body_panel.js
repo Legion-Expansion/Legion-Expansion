@@ -8,7 +8,9 @@
     }
 
     loadCSS(
-      "coui://ui/mods/com.pa.legion-expansion/css/legion_build_hover.css"
+      "coui://ui/mods/com.pa.legion-expansion/css/legion_" +
+        api.Panel.pageName +
+        ".css"
     );
 
     handlers.legionui = function (payload) {
