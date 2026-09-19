@@ -80,14 +80,232 @@ body.legion {
   background-size: 32px 44px;
 }
 
-.legion .input_text {
-  background: rgba(70, 0, 0, 1) !important;
-  border: 1px solid rgba(158, 0, 0, 0.1) !important;
+.legion label,
+.legion label:hover,
+.legion label:active {
+  color: white;
 }
 
-.legion .tooltip-inner {
-  max-width: 190px !important;
-  padding: 6px 8px;
-  background-color: rgba(70, 0, 0, 1) !important;
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7) !important;
+/* top bar */
+.legion #top-bar {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(25, 0, 0, 0.85) 100%
+  );
+  border-bottom-color: rgba(255, 0, 0, 0.25);
+}
+
+.legion .social-btn-active {
+  background: rgba(255, 0, 0, 0.15) !important;
+  border-color: rgba(255, 0, 0, 0.4) !important;
+}
+
+.legion .top-nav-dropdown {
+  background: rgba(40, 0, 0, 0.97);
+  border-color: rgba(160, 0, 0, 0.8);
+}
+
+.legion .dropdown-section-label {
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+  background: linear-gradient(
+    to top,
+    rgba(70, 0, 0, 0.95) 0%,
+    rgba(150, 0, 0, 0.95) 100%
+  );
+  border-color: #f00;
+}
+
+.legion .resume-label {
+  color: rgba(255, 92, 92, 0.5);
+}
+
+/* left panel */
+.legion #left-panel-tabs {
+  background: rgba(30, 0, 0, 0.85);
+  border-bottom-color: rgba(255, 0, 0, 0.2);
+}
+
+.legion .left-tab:hover {
+  color: #ff5c5c;
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.legion .left-tab-active {
+  color: #ff5c5c !important;
+  background: rgba(255, 0, 0, 0.1) !important;
+  border-bottom-color: #f00;
+}
+
+.legion
+  .left-section-header:not(.left-section-header-twitch):not(
+    .left-section-header-youtube
+  ) {
+  color: rgba(255, 92, 92, 0.55);
+  border-bottom-color: rgba(255, 0, 0, 0.15);
+}
+
+.legion #copyright:hover,
+.legion #ladder-details:hover,
+.legion .message-container:hover,
+.legion .stream-content:hover,
+.legion .video-content:hover,
+.legion .left-section-close:hover,
+.legion .news-read-more:hover,
+.legion .btn_dismiss_popup:hover,
+.legion .view_intro:hover {
+  background: rgba(160, 0, 0, 0.8);
+}
+
+.legion .view_intro {
+  color: rgba(255, 92, 92, 0.4);
+}
+
+.legion .view_intro:hover {
+  color: #ff5c5c;
+  text-shadow: 0 0 8px #f00;
+}
+
+.legion .news-card,
+.legion .news-article-card {
+  background: linear-gradient(
+    to bottom,
+    rgba(102, 6, 6, 0.75) 0%,
+    rgba(30, 0, 0, 0.8) 100%
+  );
+  border-color: rgba(255, 0, 0, 0.25);
+}
+
+.legion .news-card-header:hover {
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.legion .news-card-title,
+.legion .news-article-title {
+  color: #ff5c5c;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+.legion .news-card-chevron,
+.legion .news-article-expand {
+  color: rgba(255, 92, 92, 0.5);
+}
+
+.legion .news-card-body {
+  border-top-color: rgba(255, 0, 0, 0.15);
+  color: #fff;
+}
+
+.legion #news-articles-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.25);
+}
+
+.legion .news-card-body::-webkit-scrollbar {
+  background: rgba(28, 0, 0, 0.8);
+}
+
+.legion .news-card-body::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+.legion .news-read-more {
+  color: #ff5c5c;
+}
+
+.legion .links-item:hover {
+  background: rgba(255, 0, 0, 0.14);
+}
+
+.legion .links-item-name {
+  color: #ff5c5c;
+  text-shadow: 0 0 8px #f00;
+}
+
+.legion .links-desc {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* right panel */
+.legion #right-panel::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.legion #player-profile {
+  background: linear-gradient(
+    to bottom,
+    rgba(60, 0, 0, 0.7) 0%,
+    rgba(25, 0, 0, 0.5) 100%
+  );
+  border-bottom-color: rgba(255, 0, 0, 0.2);
+}
+
+.legion #player-portrait-wrap {
+  border-color: rgba(255, 0, 0, 0.35);
+}
+
+.legion #player-display-name {
+  text-shadow: 0 0 14px rgba(255, 0, 0, 0.8);
+}
+
+.legion #armory-btn {
+  color: #ff5c5c;
+  border-color: rgba(255, 0, 0, 0.25);
+}
+
+.legion #armory-btn:hover {
+  background: rgba(255, 0, 0, 0.15);
+  text-shadow: 0 0 8px #f00;
+}
+
+.legion #login input {
+  background: rgba(70, 0, 0, 1);
+  border-color: rgba(255, 0, 0, 0.2);
+}
+
+.legion .right-panel-card-header {
+  border-bottom-color: rgba(255, 0, 0, 0.12);
+}
+
+.legion .right-panel-card-title {
+  color: #fff;
+}
+
+.legion .right-panel-card-btn {
+  color: #ff5c5c;
+  border-color: rgba(255, 0, 0, 0.25);
+}
+
+.legion .right-panel-card-btn:hover {
+  background: rgba(255, 0, 0, 0.15);
+}
+
+.legion .featured-mod:hover {
+  background: rgba(255, 0, 0, 0.16);
+}
+
+.legion .featured-mod-name {
+  color: #fff;
+}
+
+.legion .event-card {
+  border-color: rgba(255, 0, 0, 0.25);
+}
+
+.legion .event-title {
+  color: #fff;
+}
+
+.legion .event-subtitle {
+  color: #ff5c5c;
+  text-shadow: 0 0 8px #f00;
+}
+
+.legion .event-btn {
+  color: #ff5c5c;
+  text-shadow: 0 0 8px #f00;
+  border-color: rgba(255, 0, 0, 0.35);
+}
+
+.legion .event-btn:hover {
+  background: rgba(255, 0, 0, 0.2);
 }

@@ -24,7 +24,6 @@ function legionStart() {
 
     if (themeSetting === "ON") {
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_buttons.css");
-      loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_shared.css");
       loadCSS("coui://ui/mods/com.pa.legion-expansion/css/start.css");
       $("body").addClass("legion");
       // stock start.js pins the computed logo image inline before mod CSS loads

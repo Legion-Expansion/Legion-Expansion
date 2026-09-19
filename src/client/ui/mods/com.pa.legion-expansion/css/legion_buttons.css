@@ -1,22 +1,44 @@
-/* btn_std_ix */
-.legion .btn_std_ix {
-  background: rgba(70, 0, 0, 1) !important;
-  border: 1px solid rgba(255, 0, 0, 0.2) !important;
-  box-shadow: inset 0 0 8px rgba(255, 0, 0, 0.1) !important;
-  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5) !important;
-  color: white !important;
+/* top nav bar */
+.legion
+  .top-nav-btn:not(.top-nav-mods):not(.top-nav-primary):not(.top-nav-quit),
+.legion .top-nav-sub-btn,
+.legion .social-btn {
+  background: rgba(70, 0, 0, 1);
+  border-color: rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0 0 8px rgba(255, 0, 0, 0.1);
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  color: white;
 }
 
-.legion .btn_std_ix:hover {
-  background: rgba(255, 0, 0, 0.7) !important;
-  border: 1px solid rgba(158, 0, 0, 0.1) !important;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) !important;
+.legion
+  .top-nav-btn:not(.top-nav-mods):not(.top-nav-primary):not(
+    .top-nav-quit
+  ):hover,
+.legion
+  .top-nav-btn-active:not(.top-nav-mods):not(.top-nav-primary):not(
+    .top-nav-quit
+  ),
+.legion .top-nav-sub-btn:hover,
+.legion .social-btn:hover {
+  background: rgba(255, 0, 0, 0.7);
 }
 
-.legion .btn_std_ix:active {
-  background: rgba(255, 0, 0, 0.85) !important;
-  border: 1px solid rgba(158, 0, 0, 0.1) !important;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.85) !important;
+/* btn_std_ix hover and click accents */
+.legion
+  .btn_std_ix:not(.top-nav-mods):not(.top-nav-primary):not(
+    .top-nav-quit
+  ):hover {
+  border-color: rgba(255, 0, 0, 0.5);
+  box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.legion
+  .btn_std_ix:not(.top-nav-mods):not(.top-nav-primary):not(
+    .top-nav-quit
+  ):active {
+  background: rgba(255, 0, 0, 0.85);
+  border-color: rgba(158, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.85);
 }
 
 /* button */
