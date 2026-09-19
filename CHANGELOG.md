@@ -5,6 +5,7 @@
 ### General
 
 - Reduced mod size
+- Removed the lobby welcome screen and the redundant client-mod-missing warning
 
 ### Bugfix
 

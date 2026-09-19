@@ -193,8 +193,7 @@ Key pieces:
   `Build.HotkeyModel.SpecIdToGridMap` under those `L_` groups. A new buildable unit needs an entry
   in both, plus `icon_atlas.js`.
 - `new_game.js` (shared) detects the server mod via `model.gameModIdentifiers()` — always checking
-  **both** the plain and `-dev` identifiers — colours Legion commanders in the picker, shows the
-  welcome overlay, and calls `model.registerHoldReady` if the client half is missing.
+  **both** the plain and `-dev` identifiers — and colours Legion commanders in the picker.
 
 Engine constraints: Coherent UI on Chromium 40, ES5 plus a little ES6 — no `let`, arrow functions,
 template literals or `class`; a parse error kills the whole shared scene scope. lodash is **3.9.3**
@@ -243,8 +242,8 @@ Never removed, because they are not prose:
   `// eslint-disable-next-line no-undef` lines covering the `legion` global in
   `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
   `npm run lint` into a failure.
-- Knockout `<!-- ko -->` / `<!-- /ko -->` in HTML (`new_game/welcome.html`), which are executable
-  virtual bindings rather than markup comments.
+- Knockout `<!-- ko -->` / `<!-- /ko -->` virtual bindings in HTML, which are executable rather
+  than markup comments.
 - Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
   `lib/patcher.py` — are not this repo's to edit; fix them upstream or leave them.
 - The attribution and licence headers third-party art and code arrive with, and the credits in
