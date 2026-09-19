@@ -1,21 +1,39 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-# Custom for Visual Studio
-*.cs     diff=csharp
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
-*.blend filter=lfs diff=lfs merge=lfs -text
-*.blend1 filter=lfs diff=lfs merge=lfs -text
-*.xcf filter=lfs diff=lfs merge=lfs -text
 package-lock.json linguist-generated=true -diff
+
+# Source archives (git archive, GitHub ZIP) carry only what the build needs:
+# src/{shared,server,client}, base_modinfo.json, the install/build scripts,
+# and LICENSE + README.md (build.py copies both into each output mod).
+# .gitmodules stays: pa_tools is a submodule, so it is absent from any archive
+# and the URL is the only pointer to it. Everything else is export-ignored.
+
+# Repo metadata and lint tooling
+.browserslistrc export-ignore
+.gitattributes export-ignore
+.github export-ignore
+.gitignore export-ignore
+.markdownlint.json export-ignore
+.prettierrc export-ignore
+.sonarcloud.properties export-ignore
+eslint.config.mjs export-ignore
+stylelint.config.mjs export-ignore
+package.json export-ignore
+package-lock.json export-ignore
+
+# Docs for contributors, not for the build
+CHANGELOG.md export-ignore
+CLAUDE.md export-ignore
+CONTRIBUTING.md export-ignore
+
 # Referenced by modinfo.json as a raw URL on master; kept out of source archives
 icon.png export-ignore
+
+# Source art (FBX, PSD, scripts) and artist/papatran notes; the build ships .papa/.png only
+src/art export-ignore
+src/client/pa/units/land/l_land_barrier/default.settings export-ignore
+src/client/pa/units/land/l_land_barrier/sea/default.settings export-ignore
+src/client/ui/main/shared/img/commanders/sizes.txt export-ignore
+
+# Dev-only reformatter; nothing in the build imports it
+src/utils/format_ai.py export-ignore
