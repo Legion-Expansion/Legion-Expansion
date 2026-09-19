@@ -6,6 +6,11 @@
 
 - Reduced mod size
 
+### Bugfix
+
+- Restored the Legion logo and theme on the redesigned main menu
+- Legion Intro button no longer depends on the English button label
+
 ## v1.33.1 - 2026-09-07
 
 ### AI
