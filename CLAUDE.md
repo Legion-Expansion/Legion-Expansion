@@ -19,8 +19,6 @@ client mod is `"hidden": true` — users only ever see the server mod in the mod
 `src/client/modinfo.json` and `src/server/modinfo.json` overlay the per-context fields. The build
 merges them — **never** duplicate a shared field into the two halves.
 
-The mod cannot be used in Galactic War.
-
 ## Commands
 
 No test suite. Python 3 (latest 3.x; not 2.x) drives the build; every linter is a dev dependency,
