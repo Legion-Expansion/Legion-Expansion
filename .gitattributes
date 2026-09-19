@@ -1,6 +1,26 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Windows-only art pipeline scripts; cmd.exe and WSH want CRLF
+*.bat text eol=crlf
+*.vbs text eol=crlf
+
+# Binary assets - never normalise line endings or attempt a text diff
+*.papa binary
+*.fbx binary
+*.FBX binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.exe binary
+*.xlsx binary
+
+# GitHub (Linguist): language detection and generated/vendored markers.
+# PA particle effects are JSON, not PKCS#12; the .fs shaders are GLSL, not F#/Forth.
+*.pfx linguist-language=JSON
+*.fs linguist-language=GLSL
 package-lock.json linguist-generated=true -diff
+# Unmodified fork of domdom/pa_tools, pulled in as a submodule
+src/pa_tools linguist-vendored
 
 # Source archives (git archive, GitHub ZIP) carry only what the build needs:
 # src/{shared,server,client}, base_modinfo.json, the install/build scripts,
@@ -8,14 +28,17 @@ package-lock.json linguist-generated=true -diff
 # .gitmodules stays: pa_tools is a submodule, so it is absent from any archive
 # and the URL is the only pointer to it. Everything else is export-ignored.
 
-# Repo metadata and lint tooling
+# Repo metadata, editor/LLM config, and lint tooling
 .browserslistrc export-ignore
+.claude/ export-ignore
 .gitattributes export-ignore
-.github export-ignore
+.github/ export-ignore
 .gitignore export-ignore
 .markdownlint.json export-ignore
 .prettierrc export-ignore
 .sonarcloud.properties export-ignore
+.sonarlint/ export-ignore
+.vscode/ export-ignore
 eslint.config.mjs export-ignore
 stylelint.config.mjs export-ignore
 package.json export-ignore
@@ -30,7 +53,7 @@ CONTRIBUTING.md export-ignore
 icon.png export-ignore
 
 # Source art (FBX, PSD, scripts) and artist/papatran notes; the build ships .papa/.png only
-src/art export-ignore
+src/art/ export-ignore
 src/client/pa/units/land/l_land_barrier/default.settings export-ignore
 src/client/pa/units/land/l_land_barrier/sea/default.settings export-ignore
 src/client/ui/main/shared/img/commanders/sizes.txt export-ignore
