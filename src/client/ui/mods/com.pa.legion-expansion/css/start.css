@@ -8,78 +8,6 @@ body.legion #logo-background {
   opacity: 0.1;
 }
 
-body.legion {
-  background-image: url("coui://ui/mods/com.pa.legion-expansion/img/splash.png");
-}
-
-.legion .nav_sub_item {
-  border: 0 !important;
-}
-
-.legion .secondary_bar {
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-
-.legion #start_column {
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-
-.legion .full_update {
-  background: linear-gradient(
-    to top,
-    rgba(50, 0, 0, 0.8) 0%,
-    rgba(60, 0, 0, 1) 85%
-  ) !important;
-  border: 1px solid rgba(255, 0, 0, 0.2) !important;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7) !important;
-  color: white;
-}
-
-.legion .ytv-list a {
-  color: white;
-}
-
-.legion .ytv-views {
-  color: rgb(180, 180, 180);
-  opacity: 1;
-}
-
-.legion .username {
-  text-shadow: 0 0 20px rgba(70, 0, 0, 0.9) !important;
-}
-
-.legion .update_title {
-  color: white !important;
-}
-
-.legion .copyright {
-  color: white;
-}
-
-.legion .div_kickstarter_watermark {
-  background: url("coui://ui/main/game/start/img/img_kickstarter_logo_hover.png")
-    top center no-repeat !important;
-  background-size: 32px 32px;
-}
-
-.legion .div_uber_watermark {
-  background: url("coui://ui/main/game/start/img/img_uber_logo_hover.png") top
-    center no-repeat !important;
-  background-size: 44px 44px;
-}
-
-.legion .div_kickstarter_watermark:hover {
-  background: url("coui://ui/main/game/start/img/img_kickstarter_logo_rest.png")
-    top center no-repeat !important;
-  background-size: 32px 32px;
-}
-
-.legion .div_uber_watermark:hover {
-  background: url("coui://ui/main/game/start/img/img_uber_logo_rest.png") top
-    center no-repeat !important;
-  background-size: 32px 44px;
-}
-
 .legion label,
 .legion label:hover,
 .legion label:active {
@@ -145,6 +73,14 @@ body.legion {
   border-bottom-color: rgba(255, 0, 0, 0.15);
 }
 
+.legion .view_intro {
+  color: rgba(255, 92, 92, 0.4);
+}
+
+.legion .news-read-more {
+  color: #ff5c5c;
+}
+
 .legion #copyright:hover,
 .legion #ladder-details:hover,
 .legion .message-container:hover,
@@ -155,10 +91,6 @@ body.legion {
 .legion .btn_dismiss_popup:hover,
 .legion .view_intro:hover {
   background: rgba(160, 0, 0, 0.8);
-}
-
-.legion .view_intro {
-  color: rgba(255, 92, 92, 0.4);
 }
 
 .legion .view_intro:hover {
@@ -206,10 +138,6 @@ body.legion {
 
 .legion .news-card-body::-webkit-scrollbar-thumb {
   background: #f00;
-}
-
-.legion .news-read-more {
-  color: #ff5c5c;
 }
 
 .legion .links-item:hover {
