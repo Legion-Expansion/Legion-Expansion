@@ -1,11 +1,4 @@
-var legionLiveGameTimeBarLoaded;
-
-function legionLiveGameTimeBar() {
-  if (legionLiveGameTimeBarLoaded) {
-    return;
-  }
-  legionLiveGameTimeBarLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -24,7 +17,6 @@ function legionLiveGameTimeBar() {
       });
     };
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameTimeBar();
+})();

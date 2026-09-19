@@ -1,11 +1,4 @@
-var legionLiveGameMenuLoaded;
-
-function legionLiveGameMenu() {
-  if (legionLiveGameMenuLoaded) {
-    return;
-  }
-  legionLiveGameMenuLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -24,7 +17,6 @@ function legionLiveGameMenu() {
       });
     };
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameMenu();
+})();

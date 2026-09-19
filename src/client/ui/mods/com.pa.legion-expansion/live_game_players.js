@@ -1,11 +1,4 @@
-var legionLiveGamePlayersLoaded;
-
-function legionLiveGamePlayers() {
-  if (legionLiveGamePlayersLoaded) {
-    return;
-  }
-  legionLiveGamePlayersLoaded = true;
-
+(function () {
   try {
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
     loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
@@ -135,7 +128,6 @@ function legionLiveGamePlayers() {
       "style: { backgroundColor: color }, css: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
     );
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGamePlayers();
+})();

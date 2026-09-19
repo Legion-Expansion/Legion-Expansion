@@ -1,8 +1,4 @@
-var legionIconAtlasLoaded;
-
-if (!legionIconAtlasLoaded) {
-  legionIconAtlasLoaded = true;
-
+(function () {
   try {
     var legionIcons = [
       "l_air_bomb",
@@ -130,6 +126,6 @@ if (!legionIconAtlasLoaded) {
 
     model.strategicIcons(model.strategicIcons().concat(legionIcons));
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
+})();
