@@ -1,11 +1,4 @@
-var legionLiveGamePlanetsLoaded;
-
-function legionLiveGamePlanets() {
-  if (legionLiveGamePlanetsLoaded) {
-    return;
-  }
-  legionLiveGamePlanetsLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -40,7 +33,6 @@ function legionLiveGamePlanets() {
       });
     };
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGamePlanets();
+})();

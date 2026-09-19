@@ -1,11 +1,4 @@
-var legionNewGameLoaded;
-
-function legionNewGame() {
-  if (legionNewGameLoaded) {
-    return;
-  }
-  legionNewGameLoaded = true;
-
+(function () {
   try {
     var legionExpansionEnabled = false;
 
@@ -69,7 +62,6 @@ function legionNewGame() {
       model.enableLegion();
     }
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionNewGame();
+})();

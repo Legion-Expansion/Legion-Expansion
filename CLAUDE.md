@@ -148,24 +148,19 @@ while the client mod ships the file.
 House pattern for every scene script — deviate only with reason:
 
 ```js
-var legionXLoaded;
-function legionX() {
-  if (legionXLoaded) {
-    return;
-  }
-  legionXLoaded = true;
+(function () {
   try {
     /* ... */
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionX();
+})();
 ```
 
-The re-entrancy guard exists because a scene's scripts can load more than once, and the blanket
-try/catch stops one failure taking out the shared scene scope. SonarLint's complexity rule may be
-ignored for that outer function.
+The IIFE keeps a script's `var`s out of the shared scene scope. There is no re-entrancy guard
+because the engine unions the client and server scene lists, so a script registered by both
+modinfos loads once. The blanket try/catch stops one failure taking out the shared scene scope.
+SonarLint's complexity rule may be ignored for the IIFE.
 
 Key pieces:
 

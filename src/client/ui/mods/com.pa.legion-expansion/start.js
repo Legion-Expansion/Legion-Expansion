@@ -1,11 +1,4 @@
-var legionStartLoaded;
-
-function legionStart() {
-  if (legionStartLoaded) {
-    return;
-  }
-  legionStartLoaded = true;
-
+(function () {
   try {
     model.legionPlayVideo = function () {
       engine.call(
@@ -30,7 +23,6 @@ function legionStart() {
       $("#logo-background").css("background-image", "");
     }
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionStart();
+})();

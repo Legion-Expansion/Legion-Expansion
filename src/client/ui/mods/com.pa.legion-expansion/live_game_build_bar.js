@@ -1,11 +1,4 @@
-var legionLiveGameBuildBarLoaded;
-
-function legionLiveGameBuildBar() {
-  if (legionLiveGameBuildBarLoaded) {
-    return;
-  }
-  legionLiveGameBuildBarLoaded = true;
-
+(function () {
   try {
     if (model.BuildSet && model.BuildSet.tabsTemplate) {
       model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
@@ -115,7 +108,6 @@ function legionLiveGameBuildBar() {
       );
     }
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameBuildBar();
+})();

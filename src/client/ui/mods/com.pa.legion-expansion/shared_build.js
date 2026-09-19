@@ -1,8 +1,4 @@
-var legionSharedBuildLoaded;
-
-if (!legionSharedBuildLoaded) {
-  legionSharedBuildLoaded = true;
-
+(function () {
   try {
     if (_.has(Build, "HotkeyModel.SpecIdToGridMap")) {
       var r0c0 = { row: 0, column: 0, titans: true };
@@ -407,6 +403,6 @@ if (!legionSharedBuildLoaded) {
       });
     }
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
+})();

@@ -1,11 +1,4 @@
-var legionLiveGameActionBarLoaded;
-
-function legionLiveGameActionBar() {
-  if (legionLiveGameActionBarLoaded) {
-    return;
-  }
-  legionLiveGameActionBarLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -49,7 +42,6 @@ function legionLiveGameActionBar() {
       "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
     );
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameActionBar();
+})();

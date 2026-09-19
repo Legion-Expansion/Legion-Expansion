@@ -1,9 +1,4 @@
-var legionSettingsLoaded;
-function legionSettings() {
-  if (legionSettingsLoaded) {
-    return;
-  }
-  legionSettingsLoaded = true;
+(function () {
   try {
     _.assign(api.settings.definitions.ui.settings, {
       legionThemeFunction: {
@@ -33,7 +28,6 @@ function legionSettings() {
       }).responseText
     );
   } catch (e) {
-    "Legion Expansion: " + (e.stack || e.message || e);
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionSettings();
+})();
