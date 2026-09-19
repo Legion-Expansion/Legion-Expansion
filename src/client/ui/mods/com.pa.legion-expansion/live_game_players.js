@@ -135,8 +135,7 @@ function legionLiveGamePlayers() {
       "style: { backgroundColor: color }, css: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
     );
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    "Legion Expansion: " + (e.stack || e.message || e);
   }
 }
 legionLiveGamePlayers();

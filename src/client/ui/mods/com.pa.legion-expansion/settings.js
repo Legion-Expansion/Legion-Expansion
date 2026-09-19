@@ -33,8 +33,7 @@ function legionSettings() {
       }).responseText
     );
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    "Legion Expansion: " + (e.stack || e.message || e);
   }
 }
 legionSettings();

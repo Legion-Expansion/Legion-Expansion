@@ -30,8 +30,7 @@ function legionStart() {
       $("#logo-background").css("background-image", "");
     }
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    "Legion Expansion: " + (e.stack || e.message || e);
   }
 }
 legionStart();

@@ -49,8 +49,7 @@ function legionLiveGameActionBar() {
       "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
     );
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    "Legion Expansion: " + (e.stack || e.message || e);
   }
 }
 legionLiveGameActionBar();

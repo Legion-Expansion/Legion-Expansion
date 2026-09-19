@@ -130,7 +130,6 @@ if (!legionIconAtlasLoaded) {
 
     model.strategicIcons(model.strategicIcons().concat(legionIcons));
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    "Legion Expansion: " + (e.stack || e.message || e);
   }
 }
