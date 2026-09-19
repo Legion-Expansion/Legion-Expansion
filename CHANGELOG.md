@@ -10,6 +10,7 @@
 
 - Restored the Legion logo and theme on the redesigned main menu
 - Legion Intro button no longer depends on the English button label
+- Featured Mods card on the main menu now follows the Legion theme
 
 ## v1.33.1 - 2026-09-07
 

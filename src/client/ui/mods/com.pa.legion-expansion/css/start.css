@@ -191,6 +191,7 @@ body.legion #logo-background {
 }
 
 .legion .right-panel-card-header {
+  background: rgba(30, 0, 0, 0.5);
   border-bottom-color: rgba(255, 0, 0, 0.12);
 }
 
@@ -200,11 +201,18 @@ body.legion #logo-background {
 
 .legion .right-panel-card-btn {
   color: #ff5c5c;
+  text-shadow: 0 0 8px #f00;
   border-color: rgba(255, 0, 0, 0.25);
 }
 
 .legion .right-panel-card-btn:hover {
   background: rgba(255, 0, 0, 0.15);
+}
+
+.legion .featured-mod {
+  background: rgba(60, 0, 0, 0.4);
+  border-color: rgba(255, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 .legion .featured-mod:hover {
@@ -213,6 +221,14 @@ body.legion #logo-background {
 
 .legion .featured-mod-name {
   color: #fff;
+}
+
+.legion .featured-mod-author {
+  color: rgba(255, 92, 92, 0.55);
+}
+
+.legion .content-empty {
+  color: rgba(255, 92, 92, 0.55);
 }
 
 .legion .event-card {
