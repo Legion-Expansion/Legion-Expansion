@@ -1,7 +1,7 @@
 {
   "version": "1.33.1",
   "author": "nicb1, Crembels, KillerKiwiJuice, Anonemous2, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar",
-  "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Cannot be used in Galactic War.",
+  "description": "Adds an entirely new faction with over a hundred new units for use in skirmish and multiplayer. Can be used in Galactic War when combined with Galactic War Server Mods and Galactic War Overhaul.",
   "category": ["titans", "units", "faction"],
   "forum": "https://steamcommunity.com/app/386070/discussions/0/357284767253246444/",
   "icon": "https://raw.githubusercontent.com/Legion-Expansion/Legion-Expansion/master/icon.png",
