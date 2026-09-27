@@ -3,6 +3,7 @@ name: Bug report
 about: Report unexpected behaviours
 title: "[BUG] INSERT_SUMMARY_OF_BUG_HERE"
 labels: bug, unverified
+assignees: Quitch
 ---
 
 ## Attestation
