@@ -25,5 +25,14 @@
     "stylelint": "^17.16.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-no-unsupported-browser-features": "^8.1.1"
+  },
+  "overrides": {
+    "markdownlint-cli": {
+      "js-yaml": "^5.4.1",
+      "smol-toml": "^1.9.0"
+    },
+    "micromark-extension-math": {
+      "katex": "^0.18.2"
+    }
   }
 }
