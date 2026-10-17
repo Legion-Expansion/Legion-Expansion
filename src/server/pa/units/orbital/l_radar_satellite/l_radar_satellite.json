@@ -46,7 +46,7 @@
       "type": "energy"
     }
   ],
-  "max_health": 1000,
+  "max_health": 600,
   "mesh_bounds": [20, 20, 15],
   "model": {
     "animations": {
@@ -114,6 +114,7 @@
     "UNITTYPE_Recon",
     "UNITTYPE_FactoryBuild",
     "UNITTYPE_Custom1",
-    "UNITTYPE_Interplanetary"
+    "UNITTYPE_Interplanetary",
+    "UNITTYPE_Radar"
   ]
 }
