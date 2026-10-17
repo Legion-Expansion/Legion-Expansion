@@ -3,6 +3,7 @@
 # Generate Legion-Expansion client and server mods
 
 import copy
+import os
 import shutil
 import glob
 from datetime import date
@@ -22,6 +23,11 @@ from utils.common import DEV_SERVER_OUTPUT_DIR
 from utils.update_shadows import update_shadows
 from utils.check import check_mod
 from utils.format_json import format_files
+
+LEGION_LIST_INPUTS = [
+    "pa/units/unit_list_legion.json",
+    "pa/units/commanders/commander_list_legion.json",
+]
 
 
 def clean_output(output_dir):
@@ -134,6 +140,10 @@ def generate_mods(is_dev_mode):
 
     print("CHECK MOD")
     check_mod(client_output_dir, server_output_dir)
+
+    # update_shadows and check_mod read these, and PA never does.
+    for build_input in LEGION_LIST_INPUTS:
+        os.remove(join(server_output_dir, build_input))
 
     format_files(client_output_dir)
     format_files(server_output_dir)
