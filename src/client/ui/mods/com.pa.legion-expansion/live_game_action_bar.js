@@ -37,9 +37,12 @@
       return isLegionOrMixedOrVanilla(data) === "mixed";
     };
 
-    $(".body_panel").attr(
-      "data-bind",
-      "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
+    loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
+
+    // eslint-disable-next-line no-undef
+    legion.appendBinding(
+      ".body_panel",
+      "legionCss: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
     );
   } catch (e) {
     console.error("Legion Expansion: " + (e.stack || e.message || e));

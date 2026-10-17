@@ -85,7 +85,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 6. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
-7. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
+7. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
+   reader there.
+8. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
 
 ### Generated shadows — do not hand-author
@@ -96,7 +98,8 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and
   `src/server/pa/units/commanders/commander_list_legion.json` to the vanilla lists. Add new units
-  to the `_legion` list only.
+  to the `_legion` list only. The `_legion` lists are build inputs: `build.py` removes them from
+  the server output once `check_mod` has run.
 - **`anti_entity_targets`** — vanilla interceptors (anti-nuke, anti-AA, anti-tac, anti-drop) get the
   Legion ammo specs appended. Adding or renaming a Legion projectile means editing the matching
   hard-coded list in this script.
@@ -172,7 +175,10 @@ Key pieces:
 - `shared/.../common.js` — the `legion` global: hand-maintained arrays of Legion commander,
   factory, fabber and launcher spec paths, unioned into `legion.builders`. Loaded on demand with
   `loadScript(...)`; reference it behind `// eslint-disable-next-line no-undef`. **Adding or
-  renaming a Legion builder means editing this file.**
+  renaming a Legion builder means editing this file.** It also holds `legion.appendBinding`,
+  which adds a binding to a stock element's `data-bind` instead of replacing it, so a stock
+  binding a PA patch adds survives. Legion theme classes go in `legionCss`, an alias of
+  Knockout's `css` handler, because one binding takes only one `css` key.
 - `client/.../common_functions.js` — an AMD `define({...})` module pulled in with `require([...])`,
   holding the theme helpers (`uiColour`, `toggleImage`, `bodyPanelClass`, …).
 - **Theming**: `live_game_players.js` classifies the local player's commanders as
@@ -235,10 +241,9 @@ prose above, not in a file whose comment cannot ship.
 
 Never removed, because they are not prose:
 
-- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the three
-  `// eslint-disable-next-line no-undef` lines covering the `legion` global in
-  `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
-  `npm run lint` into a failure.
+- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the
+  `// eslint-disable-next-line no-undef` lines covering each use of the `legion` global in the
+  scene scripts — dropping one turns a clean `npm run lint` into a failure.
 - Knockout `<!-- ko -->` / `<!-- /ko -->` virtual bindings in HTML, which are executable rather
   than markup comments.
 - Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
