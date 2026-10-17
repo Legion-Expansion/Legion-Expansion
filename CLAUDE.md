@@ -111,7 +111,9 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
   and its shared vanilla `fx_trail`/death effect is _copied_ to a per-ammo `.pfx` beside the ammo
   file. This is deliberate: it keeps More Pew Pew able to shadow individual effects despite the
   server mod having to touch the ammo specs. An effect the vanilla ammo already keeps at that
-  per-ammo path is not copied, so the client never ships an unchanged shadow of it.
+  per-ammo path is not copied, so the client never ships an unchanged shadow of it. A copy is
+  re-serialised with the base-game `emissionBurts` typo renamed to `emissionBursts`, so the copies
+  differ from the vanilla files in that key.
 
 Only files that actually differ from the resolved vanilla spec are written out.
 
