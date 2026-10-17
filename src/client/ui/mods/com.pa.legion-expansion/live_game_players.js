@@ -95,9 +95,10 @@
     });
 
     if (themeSetting === "ON") {
-      $(".body_panel").attr(
-        "data-bind",
-        "css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show"
+      // eslint-disable-next-line no-undef
+      legion.appendBinding(
+        ".body_panel",
+        "legionCss: { legionui: model.isLegion(), mixedui: model.isMixed()}"
       );
     }
 
@@ -120,12 +121,15 @@
       return checkCommanders(data.commanders) === "mixed";
     };
 
-    $('img[src="img/players_list_panel/icon_player_outline.png"]').replaceWith(
-      '<img data-bind="attr:{src: model.commanderImage($data)}" />'
+    // eslint-disable-next-line no-undef
+    legion.appendBinding(
+      'img[src="img/players_list_panel/icon_player_outline.png"]',
+      "attr: {src: model.commanderImage($data)}"
     );
-    $(".player_masked").attr(
-      "data-bind",
-      "style: { backgroundColor: color }, css: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
+    // eslint-disable-next-line no-undef
+    legion.appendBinding(
+      ".player_masked",
+      "legionCss: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
     );
   } catch (e) {
     console.error("Legion Expansion: " + (e.stack || e.message || e));
