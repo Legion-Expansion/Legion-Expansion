@@ -185,7 +185,6 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Hover",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1",
-    "UNITTYPE_AirDefense"
+    "UNITTYPE_Custom1"
   ]
 }

@@ -131,7 +131,6 @@
     "UNITTYPE_Advanced",
     "UNITTYPE_Tactical",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1",
-    "UNITTYPE_AirDefense"
+    "UNITTYPE_Custom1"
   ]
 }
