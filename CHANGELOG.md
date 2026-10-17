@@ -7,11 +7,17 @@
 - Reduced mod size
 - Removed the lobby welcome screen and the redundant client-mod-missing warning
 
+### Balance
+
+- Sputnik health reduced from 1000 to 600, matching the TITANS radar satellite
+
 ### Bugfix
 
 - Restored the Legion logo and theme on the redesigned main menu
 - Legion Intro button no longer depends on the English button label
 - Featured Mods card on the main menu now follows the Legion theme
+- Legion radars, Sputnik, and Kosmos count as radar units for AIs and other mods
+- Osprey counts as an offensive unit for AIs and other mods
 
 ## v1.33.1 - 2026-09-07
 

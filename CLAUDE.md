@@ -174,7 +174,10 @@ Key pieces:
 - `shared/.../common.js` — the `legion` global: hand-maintained arrays of Legion commander,
   factory, fabber and launcher spec paths, unioned into `legion.builders`. Loaded on demand with
   `loadScript(...)`; reference it behind `// eslint-disable-next-line no-undef`. **Adding or
-  renaming a Legion builder means editing this file.**
+  renaming a Legion builder means editing this file.** It also holds `legion.appendBinding`,
+  which adds a binding to a stock element's `data-bind` instead of replacing it, so a stock
+  binding a PA patch adds survives. Legion theme classes go in `legionCss`, an alias of
+  Knockout's `css` handler, because one binding takes only one `css` key.
 - `client/.../common_functions.js` — an AMD `define({...})` module pulled in with `require([...])`,
   holding the theme helpers (`uiColour`, `toggleImage`, `bodyPanelClass`, …).
 - **Theming**: `live_game_players.js` classifies the local player's commanders as
@@ -237,10 +240,9 @@ prose above, not in a file whose comment cannot ship.
 
 Never removed, because they are not prose:
 
-- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the three
-  `// eslint-disable-next-line no-undef` lines covering the `legion` global in
-  `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
-  `npm run lint` into a failure.
+- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the
+  `// eslint-disable-next-line no-undef` lines covering each use of the `legion` global in the
+  scene scripts — dropping one turns a clean `npm run lint` into a failure.
 - Knockout `<!-- ko -->` / `<!-- /ko -->` virtual bindings in HTML, which are executable rather
   than markup comments.
 - Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
