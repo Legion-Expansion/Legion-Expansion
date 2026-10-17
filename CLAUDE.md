@@ -107,7 +107,8 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
   `l_shield_gen/anti_entity_targets.json` not already in the spatial DB gets `add_to_spatial_db`,
   and its shared vanilla `fx_trail`/death effect is _copied_ to a per-ammo `.pfx` beside the ammo
   file. This is deliberate: it keeps More Pew Pew able to shadow individual effects despite the
-  server mod having to touch the ammo specs.
+  server mod having to touch the ammo specs. An effect the vanilla ammo already keeps at that
+  per-ammo path is not copied, so the client never ships an unchanged shadow of it.
 
 Only files that actually differ from the resolved vanilla spec are written out.
 

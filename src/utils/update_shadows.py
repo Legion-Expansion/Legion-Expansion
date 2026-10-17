@@ -224,6 +224,15 @@ def patch_unit_and_commander_lists():
     )["commanders"]
 
 
+# A vanilla ammo can already point at its own per-ammo path, and a copy onto
+# that path would ship an unchanged shadow of the vanilla effect.
+def copy_effect(src_file, dst_file, client_out_dir):
+    if src_file == dst_file:
+        return
+
+    shutil.copyfile(resolve(src_file), client_out_dir + dst_file)
+
+
 def patch_shield_blocked_ammo(client_out_dir):
     ## Get the list of ammo entities that are targeted by the shield
     resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
@@ -286,9 +295,8 @@ def patch_shield_blocked_ammo(client_out_dir):
         # prepare files:
         os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
 
-        # copy client files
-        shutil.copyfile(resolve(src_hit_file), client_out_dir + dst_hit_file)
-        shutil.copyfile(resolve(src_trail_file), client_out_dir + dst_trail_file)
+        copy_effect(src_hit_file, dst_hit_file, client_out_dir)
+        copy_effect(src_trail_file, dst_trail_file, client_out_dir)
 
 
 def write_changed_specs(server_out_dir):
