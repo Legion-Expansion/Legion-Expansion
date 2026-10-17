@@ -85,7 +85,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 6. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
-7. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
+7. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
+   reader there.
+8. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
 
 ### Generated shadows — do not hand-author

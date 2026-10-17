@@ -141,7 +141,7 @@ def generate_mods(is_dev_mode):
     print("CHECK MOD")
     check_mod(client_output_dir, server_output_dir)
 
-    # update_shadows and check_mod read these, and PA never does.
+    # check_mod reads these from the output, and PA never does.
     for build_input in LEGION_LIST_INPUTS:
         os.remove(join(server_output_dir, build_input))
 
