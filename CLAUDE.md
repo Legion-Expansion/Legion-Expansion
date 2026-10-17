@@ -171,7 +171,10 @@ Key pieces:
 - `shared/.../common.js` — the `legion` global: hand-maintained arrays of Legion commander,
   factory, fabber and launcher spec paths, unioned into `legion.builders`. Loaded on demand with
   `loadScript(...)`; reference it behind `// eslint-disable-next-line no-undef`. **Adding or
-  renaming a Legion builder means editing this file.**
+  renaming a Legion builder means editing this file.** It also holds `legion.appendBinding`,
+  which adds a binding to a stock element's `data-bind` instead of replacing it, so a stock
+  binding a PA patch adds survives. Legion theme classes go in `legionCss`, an alias of
+  Knockout's `css` handler, because one binding takes only one `css` key.
 - `client/.../common_functions.js` — an AMD `define({...})` module pulled in with `require([...])`,
   holding the theme helpers (`uiColour`, `toggleImage`, `bodyPanelClass`, …).
 - **Theming**: `live_game_players.js` classifies the local player's commanders as
