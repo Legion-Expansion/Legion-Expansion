@@ -18,6 +18,7 @@
 - Featured Mods card on the main menu now follows the Legion theme
 - Legion radars, Sputnik, and Kosmos count as radar units for AIs and other mods
 - Manta and Jaeger count as anti-air units for AIs and other mods
+- Osprey counts as an offensive unit for AIs and other mods
 
 ## v1.33.1 - 2026-09-07
 
