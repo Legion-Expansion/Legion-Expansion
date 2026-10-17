@@ -96,7 +96,8 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and
   `src/server/pa/units/commanders/commander_list_legion.json` to the vanilla lists. Add new units
-  to the `_legion` list only.
+  to the `_legion` list only. The `_legion` lists are build inputs: `build.py` removes them from
+  the server output once `check_mod` has run.
 - **`anti_entity_targets`** — vanilla interceptors (anti-nuke, anti-AA, anti-tac, anti-drop) get the
   Legion ammo specs appended. Adding or renaming a Legion projectile means editing the matching
   hard-coded list in this script.
