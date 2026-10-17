@@ -237,10 +237,9 @@ prose above, not in a file whose comment cannot ship.
 
 Never removed, because they are not prose:
 
-- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the three
-  `// eslint-disable-next-line no-undef` lines covering the `legion` global in
-  `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
-  `npm run lint` into a failure.
+- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the
+  `// eslint-disable-next-line no-undef` lines covering each use of the `legion` global in the
+  scene scripts — dropping one turns a clean `npm run lint` into a failure.
 - Knockout `<!-- ko -->` / `<!-- /ko -->` virtual bindings in HTML, which are executable rather
   than markup comments.
 - Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
