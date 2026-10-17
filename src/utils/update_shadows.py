@@ -18,7 +18,6 @@ import os
 import os.path as path
 import posixpath
 import copy
-import shutil
 
 
 from pa_tools.pa import spec
@@ -230,7 +229,19 @@ def copy_effect(src_file, dst_file, client_out_dir):
     if src_file == dst_file:
         return
 
-    shutil.copyfile(resolve(src_file), client_out_dir + dst_file)
+    effect, _ = pajson.loadf(resolve(src_file))
+
+    # Base-game effects misspell emissionBursts, and PA ignores the unknown key.
+    for emitter in effect.get("emitters", []):
+        if "emissionBurts" in emitter:
+            renamed = [
+                ("emissionBursts" if key == "emissionBurts" else key, value)
+                for key, value in emitter.items()
+            ]
+            emitter.clear()
+            emitter.update(renamed)
+
+    pajson.dumpf(effect, client_out_dir + dst_file)
 
 
 def patch_shield_blocked_ammo(client_out_dir):
