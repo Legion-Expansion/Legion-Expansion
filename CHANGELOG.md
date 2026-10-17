@@ -9,6 +9,7 @@
 
 ### Bugfix
 
+- Ant, Drifter, and Leveler shot trails now emit their particle bursts, which a base-game typo had switched off
 - Restored the Legion logo and theme on the redesigned main menu
 - Legion Intro button no longer depends on the English button label
 - Featured Mods card on the main menu now follows the Legion theme
