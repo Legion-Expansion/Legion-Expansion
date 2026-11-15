@@ -1,11 +1,12 @@
 # CHANGELOG
 
-## Unreleased
+## v1.34.0 - 2026-11-15
 
 ### General
 
 - Reduced mod size
 - Removed the lobby welcome screen and the redundant client-mod-missing warning
+- Updated for PA 124720
 
 ### Balance
 
