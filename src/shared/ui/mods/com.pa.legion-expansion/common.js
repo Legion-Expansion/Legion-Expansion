@@ -65,3 +65,13 @@ legion.builders = _.union(
 legion.specPath = function (path) {
   return _.isString(path) ? path.replace(/\.json\..*$/, ".json") : path;
 };
+
+// A binding takes one css key, so Legion classes go in legionCss beside any
+// stock css key.
+ko.bindingHandlers.legionCss = ko.bindingHandlers.css;
+
+legion.appendBinding = function (selector, binding) {
+  $(selector).attr("data-bind", function (index, stockBinding) {
+    return stockBinding ? stockBinding + ", " + binding : binding;
+  });
+};

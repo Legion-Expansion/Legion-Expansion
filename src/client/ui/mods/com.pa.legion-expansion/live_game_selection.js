@@ -1,11 +1,4 @@
-var legionLiveGameSelectionLoaded;
-
-function legionLiveGameSelection() {
-  if (legionLiveGameSelectionLoaded) {
-    return;
-  }
-  legionLiveGameSelectionLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -19,9 +12,12 @@ function legionLiveGameSelection() {
         return themeSetting === "ON" && type.indexOf("/l_") > 2;
       };
 
-      $(".div_unit_selection").attr(
-        "data-bind",
-        "css: { legion: model.isLegion($data.type)}, event: { mousedown: function (data, event) { $parent.onSelectionDisplayClick($index(), event) } }"
+      loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
+
+      // eslint-disable-next-line no-undef
+      legion.appendBinding(
+        ".div_unit_selection",
+        "legionCss: { legion: model.isLegion($data.type)}"
       );
     }
 
@@ -54,8 +50,6 @@ function legionLiveGameSelection() {
       });
     };
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameSelection();
+})();

@@ -108,7 +108,8 @@
     "UNITTYPE_Transport",
     "UNITTYPE_Basic",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_Custom1"
+    "UNITTYPE_Custom1",
+    "UNITTYPE_Offense"
   ],
   "usable": true,
   "useable": {

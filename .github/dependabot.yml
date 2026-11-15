@@ -1,11 +1,23 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*"
+    ignore:
+      # eslint, @eslint/js and eslint-plugin-es-x are held on 9.x: eslint-plugin-lodash
+      # calls context.getSourceCode, which ESLint 10 removed, and es-x 10.x requires
+      # ESLint >= 10.6. A major bump of any of the three breaks lint.
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@eslint/js"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "eslint-plugin-es-x"
+        update-types: ["version-update:semver-major"]

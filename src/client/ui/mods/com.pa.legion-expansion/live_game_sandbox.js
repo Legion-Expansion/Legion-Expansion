@@ -1,8 +1,4 @@
-var legionLiveGameSandboxLoaded;
-
-if (!legionLiveGameSandboxLoaded) {
-  legionLiveGameSandboxLoaded = true;
-
+(function () {
   try {
     if (model.baseGroups) {
       model.baseGroups.splice(
@@ -27,7 +23,6 @@ if (!legionLiveGameSandboxLoaded) {
       );
     }
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
+})();

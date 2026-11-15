@@ -1,11 +1,4 @@
-var legionLiveGameBuildBarLoaded;
-
-function legionLiveGameBuildBar() {
-  if (legionLiveGameBuildBarLoaded) {
-    return;
-  }
-  legionLiveGameBuildBarLoaded = true;
-
+(function () {
   try {
     if (model.BuildSet && model.BuildSet.tabsTemplate) {
       model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
@@ -109,14 +102,13 @@ function legionLiveGameBuildBar() {
         return isLegionOrMixedOrVanilla(data) === "mixed";
       };
 
-      $(".body_panel").attr(
-        "data-bind",
-        "css: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
+      // eslint-disable-next-line no-undef
+      legion.appendBinding(
+        ".body_panel",
+        "legionCss: { legion: model.isLegion($data), mixed: model.isMixed($data)}"
       );
     }
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameBuildBar();
+})();

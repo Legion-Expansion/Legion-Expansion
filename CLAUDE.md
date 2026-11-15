@@ -19,8 +19,6 @@ client mod is `"hidden": true` — users only ever see the server mod in the mod
 `src/client/modinfo.json` and `src/server/modinfo.json` overlay the per-context fields. The build
 merges them — **never** duplicate a shared field into the two halves.
 
-The mod cannot be used in Galactic War.
-
 ## Commands
 
 No test suite. Python 3 (latest 3.x; not 2.x) drives the build; every linter is a dev dependency,
@@ -87,7 +85,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 6. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
-7. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
+7. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
+   reader there.
+8. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
 
 ### Generated shadows — do not hand-author
@@ -98,7 +98,8 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and
   `src/server/pa/units/commanders/commander_list_legion.json` to the vanilla lists. Add new units
-  to the `_legion` list only.
+  to the `_legion` list only. The `_legion` lists are build inputs: `build.py` removes them from
+  the server output once `check_mod` has run.
 - **`anti_entity_targets`** — vanilla interceptors (anti-nuke, anti-AA, anti-tac, anti-drop) get the
   Legion ammo specs appended. Adding or renaming a Legion projectile means editing the matching
   hard-coded list in this script.
@@ -109,7 +110,10 @@ copies of vanilla files into the **output** dirs. It is the only place these bel
   `l_shield_gen/anti_entity_targets.json` not already in the spatial DB gets `add_to_spatial_db`,
   and its shared vanilla `fx_trail`/death effect is _copied_ to a per-ammo `.pfx` beside the ammo
   file. This is deliberate: it keeps More Pew Pew able to shadow individual effects despite the
-  server mod having to touch the ammo specs.
+  server mod having to touch the ammo specs. An effect the vanilla ammo already keeps at that
+  per-ammo path is not copied, so the client never ships an unchanged shadow of it. A copy is
+  re-serialised with the base-game `emissionBurts` typo renamed to `emissionBursts`, so the copies
+  differ from the vanilla files in that key.
 
 Only files that actually differ from the resolved vanilla spec are written out.
 
@@ -145,37 +149,38 @@ prefix. Those directories are scanned by the game, not indexed — there is no r
 One entry script per scene, registered in `src/client/modinfo.json` `scenes`. The server modinfo
 also registers `icon_atlas` and `new_game` scripts — those files are supplied by the client/shared
 half and resolve through the merged VFS, which is why the server mod can hold the scene binding
-while the client mod ships the file.
+while the client mod ships the file. The exception is the four body-panel-only scenes
+(`live_game_econ`, `live_game_menu`, `live_game_time_bar`, `live_game_build_hover`), which share
+`live_game_body_panel.js`: it reads its panel name from `api.Panel.pageName` (the `<panel id>` in
+`live_game.html`) and loads `css/legion_<pageName>.css`. A new panel that only needs the class swap
+is added by registering that script on its scene and adding a matching CSS file.
 
 House pattern for every scene script — deviate only with reason:
 
 ```js
-var legionXLoaded;
-function legionX() {
-  if (legionXLoaded) {
-    return;
-  }
-  legionXLoaded = true;
+(function () {
   try {
     /* ... */
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionX();
+})();
 ```
 
-The re-entrancy guard exists because a scene's scripts can load more than once, and the blanket
-try/catch stops one failure taking out the shared scene scope. SonarLint's complexity rule may be
-ignored for that outer function.
+The IIFE keeps a script's `var`s out of the shared scene scope. There is no re-entrancy guard
+because the engine unions the client and server scene lists, so a script registered by both
+modinfos loads once. The blanket try/catch stops one failure taking out the shared scene scope.
+SonarLint's complexity rule may be ignored for the IIFE.
 
 Key pieces:
 
 - `shared/.../common.js` — the `legion` global: hand-maintained arrays of Legion commander,
   factory, fabber and launcher spec paths, unioned into `legion.builders`. Loaded on demand with
   `loadScript(...)`; reference it behind `// eslint-disable-next-line no-undef`. **Adding or
-  renaming a Legion builder means editing this file.**
+  renaming a Legion builder means editing this file.** It also holds `legion.appendBinding`,
+  which adds a binding to a stock element's `data-bind` instead of replacing it, so a stock
+  binding a PA patch adds survives. Legion theme classes go in `legionCss`, an alias of
+  Knockout's `css` handler, because one binding takes only one `css` key.
 - `client/.../common_functions.js` — an AMD `define({...})` module pulled in with `require([...])`,
   holding the theme helpers (`uiColour`, `toggleImage`, `bodyPanelClass`, …).
 - **Theming**: `live_game_players.js` classifies the local player's commanders as
@@ -193,8 +198,7 @@ Key pieces:
   `Build.HotkeyModel.SpecIdToGridMap` under those `L_` groups. A new buildable unit needs an entry
   in both, plus `icon_atlas.js`.
 - `new_game.js` (shared) detects the server mod via `model.gameModIdentifiers()` — always checking
-  **both** the plain and `-dev` identifiers — colours Legion commanders in the picker, shows the
-  welcome overlay, and calls `model.registerHoldReady` if the client half is missing.
+  **both** the plain and `-dev` identifiers — and colours Legion commanders in the picker.
 
 Engine constraints: Coherent UI on Chromium 40, ES5 plus a little ES6 — no `let`, arrow functions,
 template literals or `class`; a parse error kills the whole shared scene scope. lodash is **3.9.3**
@@ -239,12 +243,11 @@ prose above, not in a file whose comment cannot ship.
 
 Never removed, because they are not prose:
 
-- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the three
-  `// eslint-disable-next-line no-undef` lines covering the `legion` global in
-  `live_game_build_bar.js`, `live_game_players.js` and `new_game.js` — dropping one turns a clean
-  `npm run lint` into a failure.
-- Knockout `<!-- ko -->` / `<!-- /ko -->` in HTML (`new_game/welcome.html`), which are executable
-  virtual bindings rather than markup comments.
+- `eslint-disable`, `prettier-ignore` and `stylelint-disable` directives. Today that is the
+  `// eslint-disable-next-line no-undef` lines covering each use of the `legion` global in the
+  scene scripts — dropping one turns a clean `npm run lint` into a failure.
+- Knockout `<!-- ko -->` / `<!-- /ko -->` virtual bindings in HTML, which are executable rather
+  than markup comments.
 - Anything inside `src/pa_tools/`. It is a submodule, so its comments — including the `TODO`s in
   `lib/patcher.py` — are not this repo's to edit; fix them upstream or leave them.
 - The attribution and licence headers third-party art and code arrive with, and the credits in

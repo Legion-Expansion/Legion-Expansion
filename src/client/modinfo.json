@@ -19,16 +19,16 @@
       "coui://ui/mods/com.pa.legion-expansion/live_game_options_bar.js"
     ],
     "live_game_econ": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_econ.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_body_panel.js"
     ],
     "live_game_time_bar": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_time_bar.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_body_panel.js"
     ],
     "live_game_build_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_build_bar.js"
     ],
     "live_game_build_hover": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_build_hover.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_body_panel.js"
     ],
     "live_game_action_bar": [
       "coui://ui/mods/com.pa.legion-expansion/live_game_action_bar.js"
@@ -40,7 +40,7 @@
       "coui://ui/mods/com.pa.legion-expansion/live_game_sandbox.js"
     ],
     "live_game_menu": [
-      "coui://ui/mods/com.pa.legion-expansion/live_game_menu.js"
+      "coui://ui/mods/com.pa.legion-expansion/live_game_body_panel.js"
     ],
     "new_game": ["coui://ui/mods/com.pa.legion-expansion/new_game.js"],
     "start": ["coui://ui/mods/com.pa.legion-expansion/start.js"]

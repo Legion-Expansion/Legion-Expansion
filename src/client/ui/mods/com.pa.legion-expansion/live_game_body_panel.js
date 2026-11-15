@@ -1,11 +1,4 @@
-var legionLiveGameTimeBarLoaded;
-
-function legionLiveGameTimeBar() {
-  if (legionLiveGameTimeBarLoaded) {
-    return;
-  }
-  legionLiveGameTimeBarLoaded = true;
-
+(function () {
   try {
     var themeSetting =
       api.settings.isSet("ui", "legionThemeFunction", true) || "ON";
@@ -14,7 +7,11 @@ function legionLiveGameTimeBar() {
       return;
     }
 
-    loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_time_bar.css");
+    loadCSS(
+      "coui://ui/mods/com.pa.legion-expansion/css/legion_" +
+        api.Panel.pageName +
+        ".css"
+    );
 
     handlers.legionui = function (payload) {
       require([
@@ -24,8 +21,6 @@ function legionLiveGameTimeBar() {
       });
     };
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGameTimeBar();
+})();

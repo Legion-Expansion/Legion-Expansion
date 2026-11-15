@@ -1,11 +1,4 @@
-var legionLiveGamePlayersLoaded;
-
-function legionLiveGamePlayers() {
-  if (legionLiveGamePlayersLoaded) {
-    return;
-  }
-  legionLiveGamePlayersLoaded = true;
-
+(function () {
   try {
     loadCSS("coui://ui/mods/com.pa.legion-expansion/css/legion_players.css");
     loadScript("coui://ui/mods/com.pa.legion-expansion/common.js");
@@ -102,9 +95,10 @@ function legionLiveGamePlayers() {
     });
 
     if (themeSetting === "ON") {
-      $(".body_panel").attr(
-        "data-bind",
-        "css: { legionui: model.isLegion(), mixedui: model.isMixed()}, visible: show"
+      // eslint-disable-next-line no-undef
+      legion.appendBinding(
+        ".body_panel",
+        "legionCss: { legionui: model.isLegion(), mixedui: model.isMixed()}"
       );
     }
 
@@ -127,16 +121,17 @@ function legionLiveGamePlayers() {
       return checkCommanders(data.commanders) === "mixed";
     };
 
-    $('img[src="img/players_list_panel/icon_player_outline.png"]').replaceWith(
-      '<img data-bind="attr:{src: model.commanderImage($data)}" />'
+    // eslint-disable-next-line no-undef
+    legion.appendBinding(
+      'img[src="img/players_list_panel/icon_player_outline.png"]',
+      "attr: {src: model.commanderImage($data)}"
     );
-    $(".player_masked").attr(
-      "data-bind",
-      "style: { backgroundColor: color }, css: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
+    // eslint-disable-next-line no-undef
+    legion.appendBinding(
+      ".player_masked",
+      "legionCss: { legcom: model.commanderImageMaskLeg($data), mixcom: model.commanderImageMaskMix($data)}"
     );
   } catch (e) {
-    console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Legion Expansion: " + (e.stack || e.message || e));
   }
-}
-legionLiveGamePlayers();
+})();
