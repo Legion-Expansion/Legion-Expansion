@@ -16,8 +16,8 @@
 // half.
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
-// an entry qualifies when NN > 40. All CSS in this repo is shipped to PA,
-// so every file gets these rules; Node-side CSS, if it ever appears, would need
+// an entry qualifies when NN > 40. All CSS in this repo is shipped to PA, so
+// every file gets these rules; Node-side CSS, if it ever appears, would need
 // an `overrides` entry. The `overrides` block at the end turns the
 // legion/theme-class rule, defined below, on for the in-game sheets and off
 // for the two main menu sheets.
