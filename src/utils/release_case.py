@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from os.path import abspath, exists, join, relpath
+from os.path import exists, join, relpath
 
 
 def tracked_paths(repo_dir):
@@ -42,19 +42,11 @@ def case_only_renames(repo_dir):
     return renames
 
 
-def check_release_case(*repo_dirs):
-    commands = []
-
+def record_case_renames(*repo_dirs):
     for repo_dir in repo_dirs:
         for tracked, current in case_only_renames(repo_dir):
-            commands.append(
-                f'git -C "{abspath(repo_dir)}" mv -f "{tracked}" "{current}"'
+            print(f"RENAME {tracked} -> {current} in {repo_dir}")
+            subprocess.run(
+                ["git", "-C", repo_dir, "mv", "-f", tracked, current],
+                check=True,
             )
-
-    if commands:
-        listing = "\n  ".join(commands)
-        raise RuntimeError(
-            "The release repos track files whose built names differ only in "
-            "case, which git add does not record. Run these before git add:\n"
-            f"  {listing}"
-        )

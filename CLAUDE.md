@@ -283,4 +283,4 @@ release → run `install_prod.py` → review, commit and push each of the two re
 
 The release clones have `core.ignorecase` on, so `git add` records nothing when a built file
 changes only the case of its name, and the old name ships. After the build, `install_prod.py`
-(`src/utils/check_release_case.py`) raises with the `git mv -f` commands that record each such rename.
+(`src/utils/release_case.py`) records each such rename with `git mv -f` and prints a `RENAME` line.
