@@ -110,12 +110,14 @@ LEGION_MISSING = (
 )
 SHIELD_ENTRY_MISSING = (
     "is not in src/server or the PA install. Correct or remove its entry in "
-    f"src/server{SHIELD_TARGETS}."
+    f"src/server{SHIELD_TARGETS}, and each other reference to it."
 )
 
 
 # Every vanilla path below is hardcoded, so a PA patch that renames or removes
-# one would otherwise skip the edit and take the interaction with it.
+# one would otherwise skip the edit and take the interaction with it. A Legion
+# file, or a path read from one, is not the install's to lose: its caller
+# passes its own message.
 def resolve(file_path, missing=VANILLA_MISSING):
     resolved = loader.resolveFile(file_path)
     if resolved is None:
@@ -269,9 +271,8 @@ def patch_shield_blocked_ammo():
         ammo_name = path.splitext(path.basename(target))[0]
 
         # get the spec
-        resolve(target, SHIELD_ENTRY_MISSING)
+        ammo = load(target, SHIELD_ENTRY_MISSING)
         full_ammo_spec = spec.parse_spec(loader, target)
-        ammo = load(target)
         original_spec = copy.deepcopy(ammo)
 
         if "Projectile" not in full_ammo_spec["ammo_type"]:
