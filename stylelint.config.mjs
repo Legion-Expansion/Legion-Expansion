@@ -2,29 +2,39 @@
 // built, bundled or autoprefixed, and the engine drops what it cannot parse
 // silently - no error, no console warning, just a declaration that never applies.
 //
-// Two nets catch that. The plugin below checks every declaration against caniuse
-// for .browserslistrc's `chrome 40`. The hand-written rules cover what it cannot
-// see: at-rules, selectors, and the notation rules stylelint-config-standard
-// otherwise *forces* into syntax the engine rejects.
+// Two nets catch that. The stylelint-no-unsupported-browser-features plugin
+// checks every declaration against caniuse for .browserslistrc's `chrome 40`.
+// The hand-written rules cover what it cannot see: at-rules, selectors, and the
+// notation rules stylelint-config-standard otherwise *forces* into syntax the
+// engine rejects.
 //
 // Unlike eslint.config.mjs's ES5 whitelist, these lists are curated rather than
-// exhaustive - CSS-since-2015 is not a finite gap. The plugin is the exhaustive
+// exhaustive - CSS-since-2015 is not a finite gap. That plugin is the exhaustive
 // half. See docs/constraints.md.
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
 // an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
 // so every file gets these rules; Node-side CSS, if it ever appears, would need
-// an `overrides` entry. The one `overrides` block, at the end, turns on the
-// legion/theme-class rule below for the in-game sheets.
+// an `overrides` entry. The `overrides` block at the end turns the
+// legion/theme-class rule, defined below, on for the in-game sheets and off
+// for the two main menu sheets.
 
 import stylelint from "stylelint";
 
 const themeClassRule = "legion/theme-class";
+const themeClasses = [
+  "legionui",
+  "mixedui",
+  "legion",
+  "mixed",
+  "legcom",
+  "mixcom",
+];
+const themeClass = new RegExp(`\\.(?:${themeClasses.join("|")})(?![\\w-])`);
 const themeClassMessages = stylelint.utils.ruleMessages(themeClassRule, {
   rejected: (selector) =>
-    `Expected selector "${selector}" to include a Legion theme class (.legionui, .mixedui, .legion, .mixed, .legcom or .mixcom)`,
+    `Expected selector "${selector}" to include a Legion theme class (${themeClasses.map((name) => "." + name).join(", ")})`,
 });
-const themeClass = /\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-])/;
 
 // The in-game sheets load in every game, whatever the commanders are, so a
 // selector without a Legion theme class restyles vanilla games too.
