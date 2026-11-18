@@ -24,11 +24,10 @@ from utils.update_shadows import plan_shadows
 from utils.update_shadows import write_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
-from utils.check import source_files
+from utils.check import LICENCE_FILES
+from utils.check import VERSION_JS
+from utils.check import written_paths
 from utils.format_json import format_files
-
-LICENCE_FILES = ("LICENSE", "README.md")
-VERSION_JS = "ui/mods/com.pa.legion-expansion/version.js"
 
 LEGION_LIST_INPUTS = [
     "pa/units/unit_list_legion.json",
@@ -45,9 +44,9 @@ def clean_output(output_dir):
             os.remove(path)
 
 
-def copy_source(source_dir, output_dir):
+def copy_source(files, source_dir, output_dir):
     print(f"COPY {source_dir} to {output_dir}")
-    for path in source_files(source_dir):
+    for path in files:
         target = join(output_dir, path)
         os.makedirs(os.path.dirname(target), exist_ok=True)
         shutil.copy2(join(source_dir, path), target)
@@ -77,22 +76,12 @@ def change_to_develop(modinfo, client_id, server_id):
         modinfo["companions"] = [id_map.get(x, x) for x in modinfo["companions"]]
 
 
-# modinfo.json is not listed: the build reads each half's copy.
-def written_paths(shadows):
-    written = {name: {"client", "server"} for name in LICENCE_FILES}
-    written[VERSION_JS] = {"client"}
-    for mod, files in shadows.items():
-        for path in files:
-            written.setdefault(path.lstrip("/"), set()).add(mod)
-    return written
-
-
 def generate_mods(is_dev_mode):
     print("PLAN SHADOWS")
     shadows = plan_shadows()
 
     print("CHECK SOURCES")
-    check_source_paths(written_paths(shadows))
+    source_files = check_source_paths(written_paths(shadows))
 
     fs = create_pafs(True)
     fs.mount("/src", ".")
@@ -138,12 +127,12 @@ def generate_mods(is_dev_mode):
     clean_output(client_output_dir)
 
     # Copy shared stuff to both mods
-    copy_source("shared", server_output_dir)
-    copy_source("shared", client_output_dir)
+    copy_source(source_files["shared"], "shared", server_output_dir)
+    copy_source(source_files["shared"], "shared", client_output_dir)
 
     # Copy server and client specific files
-    copy_source("server", server_output_dir)
-    copy_source("client", client_output_dir)
+    copy_source(source_files["server"], "server", server_output_dir)
+    copy_source(source_files["client"], "client", client_output_dir)
 
     # CC BY-NC-SA and MIT both require the licence to travel with the
     # distributed copy; README.md carries the dual-licence statement and the

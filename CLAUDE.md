@@ -77,6 +77,13 @@ Loading PA with the dev build enabled and starting a skirmish is the only real v
 clean `install_devel.py` run (no warnings, no missing files) is the pre-commit gate — see the PR
 template checklist.
 
+Each pull request to `develop` or `master` runs `.github/workflows/checks.yml` on Linux: the
+`check_source_paths` gate (with stdin from `/dev/null`, so a failure ends in `EOFError`) and
+`npm run lint`. The rest of the build reads the PA install, so CI cannot run it. `check.py`
+imports `pa_tools` inside `check_mod` for that reason: importing `pa_tools.pa.paths` looks for
+a PA install. For the same reason CI cannot plan the shadows, so its gate checks the source paths
+against the other paths that the build writes (`written_paths({})`), not against the shadows.
+
 ## Build pipeline (`src/utils/build.py`)
 
 Worth understanding because **a large part of what ships is generated, not committed**:
@@ -90,20 +97,23 @@ Worth understanding because **a large part of what ships is generated, not commi
    character that is not ASCII stops it too, and so does a source path that clashes with a path
    that the build writes into a mod after the step 4 copy (see the gates below), and a file or
    folder name in the path of a file that ships that the `core.protectNTFS` check of Git for
-   Windows refuses, such as one that ends in a dot or a space, or `con.js`. It reads the same file
-   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
-   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   Windows refuses, such as one that ends in a dot or a space, or `con.js`. It stops if it cannot
+   read a folder in the three source folders, and it gives the step 4 copy the file lists that
+   it checked. It stops the way the step 7 gate does, so it also calls `input()` and blocks on
+   stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
-   one another program holds open, stops the build with an error. The copy skips each untracked
-   file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
-   untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
-   ships under its case on disk, a new file before `git add`. Git does not look inside a
-   symlinked directory or a nested repository, so every file in one ships, as before. The build
-   needs git on the `PATH` and runs only in a clone.
+   one another program holds open, stops the build with an error. The copy takes the file lists
+   that step 1 checked, so a file added after step 1 does not ship, and a listed file that is
+   removed before the copy stops the build with an error after the wipe. The copy skips each
+   untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
+   file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
+   on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
+   inside a symlinked directory or a nested repository, so every file in one ships, as before. The
+   build needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -160,9 +170,14 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - Among the file paths that the build copies from one of those folders, or from `src/shared` and
   one of the other two (the sources of one mod), no file and directory, and no two spellings of
   one directory, compare equal in that way. A directory's name is each folder prefix of one of
-  those paths. No folder holds a file and a directory of one name. A file in `src/shared` and a
-  directory in `src/client` stop the step 4 copy part-way, after the wipe; the other way round,
-  the copy puts the file inside the directory with no message. A build on Windows puts a directory
+  those paths. No folder holds a file and a directory of one name. Where the file system that holds
+  the outputs treats the two names as one (the same name, or a case variant such as `data` and
+  `Data/` on a case-insensitive file system), the step 4 copy stops part-way, after the wipe, if it
+  writes the file first. If it makes the directory first, it copies the file into the directory
+  under its own name with no message, writing over a file of that name there; a folder of that name
+  there stops the copy. The copy writes `src/shared` before `src/client` and `src/server`. Where the
+  file system treats them as two, such as a case variant on a case-sensitive file system (the Linux
+  default), the copy succeeds and the mod ships both names. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - No file that ships from those three folders has a file or folder name in its path that the
   `core.protectNTFS` check of Git for Windows refuses, so a clone on Windows does not check it
@@ -179,8 +194,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   NON-JOINER when it compares names.
 - No file that the build copies from `src/shared`, `src/client`, or `src/server`, and no folder
   that holds one at any depth, compares equal, after NFD and a full Unicode case fold, to a path
-  that the build writes into a mod after the step 4 copy. `build.py` lists those paths in
-  `written_paths`: the repository's `LICENSE` and `README.md` (both mods),
+  that the build writes into a mod after the step 4 copy. `written_paths` in `check.py` lists
+  those paths: the repository's `LICENSE` and `README.md` (both mods),
   `ui/mods/com.pa.legion-expansion/version.js` (client), and the shadows that `update_shadows.py`
   plans (specs and lists in the server, `.pfx` copies in the client). At a written file path the
   build writes over a file and fails on a folder; at a written folder path it fails on a file.
