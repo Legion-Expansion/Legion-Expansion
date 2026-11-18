@@ -2,9 +2,9 @@
 
 ## Unreleased
 
-### Bugfix
+### General
 
-- Removed 21 files from unfinished work that v1.34.0 shipped by mistake, among them a second Radar model in the server mod
+- Reduced mod size by removing files that v1.34.0 included by mistake
 
 ## v1.34.0 - 2026-11-15
 
