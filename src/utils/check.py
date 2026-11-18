@@ -11,6 +11,7 @@ from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
+LICENCE_FILES = ("LICENSE", "README.md")
 
 
 def git_name(path):
@@ -94,18 +95,32 @@ def cross_folder_duplicates(found):
     return duplicates
 
 
+def licence_file_names(found):
+    keys = {path_key(name) for name in LICENCE_FILES}
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for key in sorted(paths.keys() & keys)
+        for path in sorted(paths[key])
+    ]
+
+
+def print_escaped(line):
+    # A redirected stdout can use a code page, such as Windows cp1252,
+    # that cannot hold every name. Escaping also shows each name's form.
+    print(line.encode("unicode_escape").decode("ascii"))
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # A redirected stdout can use a code page, such as Windows cp1252,
-        # that cannot hold every name. Escaping also shows each name's form.
-        line = f"  src/{first} and src/{second}"
-        print(line.encode("unicode_escape").decode("ascii"))
+        print_escaped(f"  src/{first} and src/{second}")
 
 
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
+    licence_names = licence_file_names(found)
 
     if same_folder:
         print(
@@ -129,7 +144,20 @@ def check_source_paths():
         )
         print_duplicates(cross_folder)
 
-    if same_folder or cross_folder:
+    if licence_names:
+        print(
+            "Error: A file at the root of src/shared, src/client, or src/server "
+            f"has the name {' or '.join(LICENCE_FILES)}, compared after NFD and a "
+            "full Unicode case fold."
+        )
+        print(
+            "  The build copies the repository's file of that name to the same "
+            "path in each mod."
+        )
+        for path in licence_names:
+            print_escaped(f"  src/{path}")
+
+    if same_folder or cross_folder or licence_names:
         input()
         sys.exit(1)
 
