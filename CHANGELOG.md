@@ -6,6 +6,10 @@
 
 - Reduced mod size by removing files included by mistake
 
+### Bugfix
+
+- Restored the Radar model, which v1.34.0 replaced by mistake with an unreleased one
+
 ## v1.34.0 - 2026-11-15
 
 ### General
