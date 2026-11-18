@@ -167,12 +167,12 @@ Only files that actually differ from the resolved vanilla spec are written out.
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
   NON-JOINER when it compares names.
 - At the root of `src/shared`, `src/client`, or `src/server`, no file that the build copies, and no
-  folder that holds one, is named `LICENSE` or `README.md`, compared after NFD and a full Unicode
-  case fold. After the step 4 copy, the build copies the repository's `LICENSE` and `README.md`
-  into the root of each mod. Where the file system finds the name there (the exact name, or a
-  variant such as `license` on a case-insensitive file system), the copy writes over that file,
-  which keeps its own name, or fails on that folder after the outputs are wiped. Where it does not,
-  the mod ships both names, and a case-insensitive file system holds only one of them.
+  folder that holds one at any depth, is named `LICENSE` or `README.md`, compared after NFD and a
+  full Unicode case fold. After the step 4 copy, the build copies the repository's `LICENSE` and
+  `README.md` into the root of each mod. Where the file system finds the name there (the exact
+  name, or a variant such as `license` on a case-insensitive file system), the copy writes over
+  that file, which keeps its own name, or fails on that folder after the outputs are wiped. Where
+  it does not, the mod ships both names, and a case-insensitive file system holds only one of them.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
