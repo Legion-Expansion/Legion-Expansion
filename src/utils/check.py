@@ -147,15 +147,15 @@ def dir_spelling_duplicates(dirs):
     return duplicates
 
 
-def licence_file_names(found):
+def licence_file_names(found, dirs):
     keys = {path_key(name) for name in LICENCE_FILES}
-    names = set()
-    for name, paths in found.items():
-        for path in itertools.chain.from_iterable(paths.values()):
-            root, separator, _ = path.partition("/")
-            if path_key(root) in keys:
-                names.add(f"{name}/{root}{separator}")
-    return sorted(names)
+    names = []
+    for name in found:
+        for key in sorted(keys & found[name].keys()):
+            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(keys & dirs[name].keys()):
+            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
+    return names
 
 
 def print_escaped(line):
@@ -176,7 +176,7 @@ def check_source_paths():
     cross_folder = cross_folder_duplicates(found)
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
-    licence_names = licence_file_names(found)
+    licence_names = licence_file_names(found, dirs)
 
     if same_folder:
         print(
@@ -233,9 +233,10 @@ def check_source_paths():
             "NFD and a full Unicode case fold."
         )
         print(
-            "  The build copies the repository's file of that name to the same "
-            "path in each mod. It writes over a file there, or fails on a folder "
-            "there after the outputs are wiped."
+            "  In each mod that src/shared, src/client, or src/server goes into, the "
+            "build copies the repository's file of that name to the same path. It "
+            "writes over a file there, or fails on a folder there after the outputs "
+            "are wiped."
         )
         print(
             "  On a case-sensitive file system, a variant such as license ships "
