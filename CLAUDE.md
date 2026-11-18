@@ -87,23 +87,26 @@ Worth understanding because **a large part of what ships is generated, not commi
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a file or folder at the root of one of
-   them whose name compares equal in that way to `LICENSE` or `README.md`, or starts with a dot,
-   and a file or folder name that ends in a dot or a space in the path of a file that ships. It
-   reads the same file list as the step 4 copy, and stops if it cannot read a folder in the three
-   source folders. It stops the way the step 7 gate does, so it also calls `input()` and blocks on
+   them whose name compares equal in that way to `LICENSE` or `README.md`, or starts with a dot, and
+   a file or folder name in the path of a file that ships that the `core.protectNTFS` check of Git
+   for Windows refuses, such as one that ends in a dot or a space, or `con.js`. It stops if it
+   cannot read a folder in the three source folders, and it gives the step 4 copy the file lists
+   that it checked. It stops the way the step 7 gate does, so it also calls `input()` and blocks on
    stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
-   one another program holds open, stops the build with an error. The copy skips each untracked
-   file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
-   untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
-   ships under its case on disk, a new file before `git add`. Git does not look inside a
-   symlinked directory or a nested repository below a source root, so every file in one ships, as
-   before. Step 1 stops on a `.git` at a source root, unless it is a folder that holds no file,
-   which the copy skips. The build needs git on the `PATH` and runs only in a clone.
+   one another program holds open, stops the build with an error. The copy takes the file lists
+   that step 1 checked, so a file added after step 1 does not ship, and a listed file that is
+   removed before the copy stops the build with an error after the wipe. The copy skips each
+   untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
+   file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
+   on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
+   inside a symlinked directory or a nested repository below a source root, so every file in one
+   ships, as before. Step 1 stops on a `.git` at a source root, unless it is a folder that holds no
+   file, which the copy skips. The build needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -161,11 +164,15 @@ Only files that actually differ from the resolved vanilla spec are written out.
   directory in `src/client` stop the step 4 copy part-way, after the wipe; the other way round,
   the copy puts the file inside the directory with no message. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
-- No file that ships from those three folders has a file or folder name in its path that ends in
-  a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
-  as `d/a.json`, and it drops a trailing space when it makes a file or a folder. Git for Windows
-  does not check the name out. A build on Windows cannot read such a folder, so it stops on one
-  whatever the folder holds.
+- No file that ships from those three folders has a file or folder name in its path that the
+  `core.protectNTFS` check of Git for Windows refuses, so a clone on Windows does not check it
+  out: a name that ends in a dot or a space, holds one of `< > : " | ? * \` or a character from
+  U+0000 to U+001F, is a Windows device name (`con`, `prn`, `aux`, `nul`, `conin$`, `conout$`,
+  `com1` to `com9`, or `lpt0` to `lpt9`, in any case) alone or before a dot, with or without
+  spaces before the dot, or is `git~1` in any case, a short name Windows can give `.git`. Windows
+  reads `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it
+  drops a trailing space when it makes a file or a folder. A build on Windows cannot read a folder
+  whose name ends in a dot or a space, so it stops on one whatever the folder holds.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
