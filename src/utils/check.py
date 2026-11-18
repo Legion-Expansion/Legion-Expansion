@@ -1,5 +1,7 @@
 import sys
 import os
+import subprocess
+import unicodedata
 
 from os.path import join
 
@@ -10,16 +12,44 @@ from pa_tools.pa import spec
 MODINFO = "modinfo.json"
 
 
-def source_paths(source_dir):
-    found = {}
+def git_name(path):
+    # git on macOS prints NFC names, and the disk can hold NFD ones. A macOS
+    # volume cannot hold both forms of one name, so NFC cannot merge two files.
+    if sys.platform == "darwin":
+        return unicodedata.normalize("NFC", path)
+    return path
 
+
+def source_files(source_dir):
+    try:
+        ignored = subprocess.run(
+            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
+            cwd=source_dir,
+            stdout=subprocess.PIPE,
+            check=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError) as error:
+        print(f"Error: git could not list the ignored files in src/{source_dir}.")
+        print(f"  The build needs git on the PATH and runs only in a clone. {error}")
+        input()
+        sys.exit(1)
+
+    ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
+    found = []
+
+    # Walk the disk, not git's index: the index can keep a file's old case.
     for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
         for file_name in file_names:
             relative = os.path.relpath(join(dir_path, file_name), source_dir)
             relative = relative.replace(os.sep, "/")
-            found[relative.lower()] = relative
+            if git_name(relative) not in ignored:
+                found.append(relative)
 
     return found
+
+
+def source_paths(source_dir):
+    return {path.lower(): path for path in source_files(source_dir)}
 
 
 def check_source_paths():

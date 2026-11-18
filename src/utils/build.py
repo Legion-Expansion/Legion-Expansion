@@ -23,6 +23,7 @@ from utils.common import DEV_SERVER_OUTPUT_DIR
 from utils.update_shadows import update_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
+from utils.check import source_files
 from utils.format_json import format_files
 
 LEGION_LIST_INPUTS = [
@@ -38,6 +39,14 @@ def clean_output(output_dir):
             shutil.rmtree(path)
         else:
             os.remove(path)
+
+
+def copy_source(source_dir, output_dir):
+    print(f"COPY {source_dir} to {output_dir}")
+    for path in source_files(source_dir):
+        target = join(output_dir, path)
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        shutil.copy2(join(source_dir, path), target)
 
 
 def load_json(loader, path):
@@ -112,16 +121,12 @@ def generate_mods(is_dev_mode):
     clean_output(client_output_dir)
 
     # Copy shared stuff to both mods
-    print(f"COPY shared to {server_output_dir}")
-    shutil.copytree("shared", server_output_dir, dirs_exist_ok=True)
-    print(f"COPY shared to {client_output_dir}")
-    shutil.copytree("shared", client_output_dir, dirs_exist_ok=True)
+    copy_source("shared", server_output_dir)
+    copy_source("shared", client_output_dir)
 
     # Copy server and client specific files
-    print(f"COPY server to {server_output_dir}")
-    shutil.copytree("server", server_output_dir, dirs_exist_ok=True)
-    print(f"COPY client to {client_output_dir}")
-    shutil.copytree("client", client_output_dir, dirs_exist_ok=True)
+    copy_source("server", server_output_dir)
+    copy_source("client", client_output_dir)
 
     # CC BY-NC-SA and MIT both require the licence to travel with the
     # distributed copy; README.md carries the dual-licence statement and the
