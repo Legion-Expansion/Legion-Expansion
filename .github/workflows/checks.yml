@@ -2,6 +2,9 @@ name: Checks
 
 on:
   pull_request:
+    # edited covers a pull request retargeted to develop or master, such as a
+    # stacked one. It also runs on a title or description edit.
+    types: [opened, synchronize, reopened, edited]
     branches: [develop, master]
 
 permissions:
