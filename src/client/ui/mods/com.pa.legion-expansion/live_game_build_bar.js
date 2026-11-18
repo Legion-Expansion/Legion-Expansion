@@ -43,7 +43,11 @@
       params
     ) {
       var tab = _.find(model.buildSet().tabs(), function (candidate) {
-        return candidate.visible() && candidate.buildGroup() === params.group;
+        return (
+          candidate.visible() &&
+          (candidate.group() === params.group ||
+            candidate.buildGroup() === params.group)
+        );
       });
       if (tab) {
         stockStartBuildSequence(_.assign({}, params, { group: tab.group() }));
