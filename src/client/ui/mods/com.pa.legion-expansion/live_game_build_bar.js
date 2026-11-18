@@ -31,9 +31,6 @@
             tab.label(groups[baseTab].label());
           }
           tab.hotkey(hotkeys["tab_" + baseTab] || "");
-
-          tab.buildGroup = tab.buildGroup || ko.observable(baseTab);
-          tab.buildGroup(baseTab);
         });
       }, 0);
     });
@@ -45,7 +42,10 @@
       var buildSet = model.buildSet();
       var tabsByGroup = buildSet.tabsByGroup();
       var group = _.find([params.group, "L_" + params.group], function (key) {
-        return _.has(tabsByGroup, key) && tabsByGroup[key].visible();
+        return (
+          Object.prototype.hasOwnProperty.call(tabsByGroup, key) &&
+          tabsByGroup[key].visible()
+        );
       });
       var tab = group && tabsByGroup[group];
       if (!tab) {
