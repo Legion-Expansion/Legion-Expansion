@@ -101,9 +101,9 @@ Worth understanding because **a large part of what ships is generated, not commi
    file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
    untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
    ships under its case on disk, a new file before `git add`. Git does not look inside a
-   symlinked directory or a nested repository, so every file in one ships, as before, but step 1
-   stops on the `.git` of a repository at a source root. The build needs git on the `PATH` and
-   runs only in a clone.
+   symlinked directory or a nested repository below a source root, so every file in one ships, as
+   before. Step 1 stops on a `.git` at a source root. The build needs git on the `PATH` and runs
+   only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -182,7 +182,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   `.gitattributes`. Step 4 keeps the dot entries at the root of each mod, so a later build does not
   remove the copy. In a release clone, the files of a `.git` folder go into the clone's own `.git`,
   and a `.gitignore` or `.gitattributes` changes what `git add -A` records. A pattern for those
-  folders goes in the repository's root `.gitattributes` or `.gitignore`.
+  folders goes in the repository's root `.gitattributes` or `.gitignore`, with a path that starts
+  at `src/`.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

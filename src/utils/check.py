@@ -65,7 +65,15 @@ def walk_source(source_dir):
         ).stdout
     except (OSError, subprocess.CalledProcessError) as error:
         print(f"Error: git could not list the ignored files in src/{source_dir}.")
-        print(f"  The build needs git on the PATH and runs only in a clone. {error}")
+        if isinstance(error, subprocess.CalledProcessError) and os.path.lexists(
+            os.path.join(source_dir, ".git")
+        ):
+            print(
+                f"  git reads src/{source_dir}/.git as the repository of "
+                f"src/{source_dir}. Remove it. {error}"
+            )
+        else:
+            print(f"  The build needs git on the PATH and runs only in a clone. {error}")
         input()
         sys.exit(1)
 
@@ -205,15 +213,17 @@ def licence_file_names(found, dirs):
     return names
 
 
+def is_root_dot(key):
+    return key.startswith(".") and "/" not in key
+
+
 def root_dot_names(found, dirs):
     names = []
     for name in found:
-        for key in sorted(found[name]):
-            if key.startswith(".") and "/" not in key:
-                names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
-        for key in sorted(dirs[name]):
-            if key.startswith(".") and "/" not in key:
-                names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
+        for key in sorted(filter(is_root_dot, found[name])):
+            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(filter(is_root_dot, dirs[name])):
+            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
     return names
 
 
@@ -374,7 +384,8 @@ def check_source_paths():
         )
         print(
             "  Move or remove the entry. A .gitignore or .gitattributes pattern for "
-            "these folders goes in the repository's root file."
+            "these folders goes in the repository's root file, with a path that "
+            "starts at src/."
         )
         for path in dot_names:
             print_escaped(f"  src/{path}")
