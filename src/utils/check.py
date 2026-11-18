@@ -1,9 +1,56 @@
 import sys
 import os
 
+from os.path import join
+
 from pa_tools.mod import checker
 from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
+
+MODINFO = "modinfo.json"
+
+
+def source_paths(source_dir):
+    found = {}
+
+    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
+        for file_name in file_names:
+            relative = os.path.relpath(join(dir_path, file_name), source_dir)
+            relative = relative.replace(os.sep, "/")
+            found[relative.lower()] = relative
+
+    return found
+
+
+def check_source_paths():
+    found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    pairs = [
+        # build.py reads each half's modinfo.json to make that mod's own.
+        ("client", "server", {MODINFO}),
+        ("shared", "client", set()),
+        ("shared", "server", set()),
+    ]
+    duplicates = []
+
+    for first, second, allowed in pairs:
+        for folded in sorted((found[first].keys() & found[second].keys()) - allowed):
+            duplicates.append(
+                (f"{first}/{found[first][folded]}", f"{second}/{found[second][folded]}")
+            )
+
+    if duplicates:
+        print(
+            "Error: A file path is in more than one of src/shared, src/client, "
+            "and src/server."
+        )
+        print(
+            "  Both mods ship the path. PA loads the server mod's copy in a lobby "
+            "or a game, and the client mod's copy elsewhere."
+        )
+        for first, second in duplicates:
+            print(f"  src/{first} and src/{second}")
+        input()
+        sys.exit(1)
 
 
 def check_mod(client_output_dir, server_output_dir):
@@ -19,7 +66,7 @@ def check_mod(client_output_dir, server_output_dir):
     report = checker.ModReport(server_output_dir)
 
     # Check the server modinfo
-    checker.check_modinfo(report, os.path.join(server_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(server_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
@@ -28,7 +75,7 @@ def check_mod(client_output_dir, server_output_dir):
 
     report = checker.ModReport(client_output_dir)
     # Check the client mod info
-    checker.check_modinfo(report, os.path.join(client_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(client_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
