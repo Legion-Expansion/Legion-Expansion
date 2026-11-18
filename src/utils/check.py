@@ -156,9 +156,8 @@ def non_ascii_paths(found):
 
 
 def print_escaped(line):
-    # A name can hold a character that does not show, such as U+200C, and two
-    # names can look the same, such as the NFC and NFD forms of one name.
-    # Escaping shows each character.
+    # A name can hold a character that does not show, such as U+200C, or look
+    # like another name, such as its NFD form. Escaping shows each character.
     print(line.encode("unicode_escape").decode("ascii"))
 
 
