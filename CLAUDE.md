@@ -31,8 +31,9 @@ python src/utils/format_ai.py # key-reorder everything under src/server/pa/ai, t
 ```
 
 `format_ai.py` needs `npm install` first, because it formats its output with the repo's prettier.
-It reads each file as strict JSON, and stops before it writes any file if one does not parse or
-holds a comment, a trailing comma, or a repeated key, none of which its output could keep.
+It reads each file as strict JSON: a file that does not parse, or that holds a comment, a trailing
+comma, a repeated key, `NaN`, `Infinity`, or a number too large for a float, stops it before it
+writes any file.
 
 `install_devel.py` appends `-dev` to both identifiers and a `[DEVELOPMENT]` tag to the display
 names, so the dev build coexists with a Community Mods install. Enable the `[DEVELOPMENT]` entry in-game.
@@ -124,11 +125,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    `.pfx` uses the effect-specific dumper).
 
 `pajson` raises `ParseError` on a `.json` or `.pfx` file whose UTF-8 text neither of its parsers
-can parse. The
-build stops at the first step that reads such a file: `install_devel.py` and `install_prod.py`
-print the error, call `input()` as the step 7 gate does, and exit with code 1. Step 7 lists the
-file as a JSON issue in its report instead. A stop after the step 4 wipe leaves the outputs
-part-built until a clean run.
+can parse. The build stops at the first step that reads such a file: `install_devel.py` and
+`install_prod.py` print the error, call `input()` as the step 7 gate does, and exit with code 1.
+Step 7 lists the file as a JSON issue in its report instead. A stop after the step 4 wipe leaves
+the outputs part-built until a clean run.
 
 ### Generated shadows — do not hand-author
 

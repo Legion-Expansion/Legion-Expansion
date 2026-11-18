@@ -7,6 +7,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
 import json
+import math
 import os
 import subprocess
 from pathlib import Path
@@ -113,11 +114,22 @@ def reject_constant(name):
     raise ValueError(f"{name} is not JSON")
 
 
-# The output keeps no comment and only one value of a key, so stop on either
+def finite_float(text):
+    value = float(text)
+    if not math.isfinite(value):
+        raise ValueError(f"{text} is too large for a float")
+    return value
+
+
+# Strict JSON only: the rewrite would drop comments and all but the last value of a
+# repeated key, and turn a number too large for a float into Infinity
 def read_strict_json(file, raw):
     try:
         return json.loads(
-            raw.decode("utf-8"), object_pairs_hook=unique_keys, parse_constant=reject_constant
+            raw.decode("utf-8"),
+            object_pairs_hook=unique_keys,
+            parse_constant=reject_constant,
+            parse_float=finite_float,
         )
     except ValueError as error:
         sys.exit(
