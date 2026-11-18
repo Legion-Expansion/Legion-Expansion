@@ -75,6 +75,12 @@ Loading PA with the dev build enabled and starting a skirmish is the only real v
 clean `install_devel.py` run (no warnings, no missing files) is the pre-commit gate — see the PR
 template checklist.
 
+Each pull request to `develop` or `master` runs `.github/workflows/checks.yml` on Linux: the
+`check_source_paths` gate (with stdin from `/dev/null`, so a failure ends in `EOFError`) and
+`npm run lint`. The rest of the build reads the PA install, so CI cannot run it. `check.py`
+imports `pa_tools` inside `check_mod` for that reason: importing `pa_tools.pa.paths` looks for
+a PA install.
+
 ## Build pipeline (`src/utils/build.py`)
 
 Worth understanding because **a large part of what ships is generated, not committed**:
