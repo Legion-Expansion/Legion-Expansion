@@ -12,19 +12,31 @@ MODINFO = "modinfo.json"
 
 
 def source_files(source_dir):
-    # git leaves out .gitignore'd files but lists tracked files deleted on disk.
-    listed = subprocess.run(
-        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
-        cwd=source_dir,
-        stdout=subprocess.PIPE,
-        check=True,
-    ).stdout.decode("utf-8")
+    try:
+        ignored = subprocess.run(
+            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
+            cwd=source_dir,
+            stdout=subprocess.PIPE,
+            check=True,
+        ).stdout.decode("utf-8")
+    except (OSError, subprocess.CalledProcessError) as error:
+        print(f"Error: git could not list the ignored files in src/{source_dir}.")
+        print(f"  The build needs git on the PATH and runs only in a clone. {error}")
+        input()
+        sys.exit(1)
 
-    return sorted(
-        path
-        for path in set(listed.split("\0"))
-        if path and os.path.isfile(join(source_dir, path))
-    )
+    ignored = set(ignored.split("\0"))
+    found = []
+
+    # Walk the disk, not git's index: the index can keep a file's old case.
+    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
+        for file_name in file_names:
+            relative = os.path.relpath(join(dir_path, file_name), source_dir)
+            relative = relative.replace(os.sep, "/")
+            if relative not in ignored:
+                found.append(relative)
+
+    return found
 
 
 def source_paths(source_dir):
