@@ -42,19 +42,13 @@ def case_only_renames(repo_dir):
     return renames
 
 
-def check_release_case(*repo_dirs):
-    commands = []
-
+def record_case_renames(*repo_dirs):
     for repo_dir in repo_dirs:
-        for tracked, current in case_only_renames(repo_dir):
-            commands.append(
-                f'git -C "{abspath(repo_dir)}" mv -f "{tracked}" "{current}"'
+        repo_path = abspath(repo_dir)
+        print(f"CHECK CASE {repo_path}", flush=True)
+        for tracked, current in case_only_renames(repo_path):
+            subprocess.run(
+                ["git", "-C", repo_path, "mv", "-f", tracked, current],
+                check=True,
             )
-
-    if commands:
-        listing = "\n  ".join(commands)
-        raise RuntimeError(
-            "The release repos track files whose built names differ only in "
-            "case, which git add does not record. Run these before git add:\n"
-            f"  {listing}"
-        )
+            print(f"RENAME {tracked} -> {current} in {repo_path}", flush=True)

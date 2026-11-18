@@ -125,10 +125,14 @@ The script in `src/install_prod.py` depends on those locations.
 1. Create release from master and tag with version number
 1. Run `src/install_prod.py`
 1. Inspect output and check for errors or warnings
-1. If it stops on files whose names changed only in case, run the `git mv -f` commands it prints
-   (`git status` lists the renames they stage)
+1. Check that the output has a `CHECK CASE` line for each release repo. The `RENAME` lines under
+   it are case-only renames that the script staged with `git mv -f`. Keep them staged, because
+   `git add .` cannot record them. After a `git reset`, run the script again to restage them. If
+   the script stops on a git error, fix the cause and run it again: it skips the renames already
+   staged
 1. cd into `../com.pa.legion-expansion-client`
-1. Check all changes are as expected using `git diff`
+1. Check all changes are as expected using `git status`, which lists new files, and `git diff HEAD`,
+   which includes the staged renames
 1. Add all the changes `git add .`
 1. Create a commit that describes the update
 1. Repeat those steps for `../com.pa.legion-expansion-server`
