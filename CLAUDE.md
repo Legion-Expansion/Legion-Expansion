@@ -80,11 +80,13 @@ template checklist.
 Worth understanding because **a large part of what ships is generated, not committed**:
 
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
-   path that is in more than one of `src/shared`, `src/client`, and `src/server`, on two paths in
-   one of them that compare equal after NFD and a full Unicode case fold, and on a file or folder
-   name in them that ends in a dot or a space. It reads the same file list as the step 4 copy, and
-   stops if it cannot read a folder in them. It stops the way the step 7 gate does, so it also
-   calls `input()` and blocks on stdin.
+   path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
+   in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
+   file and a directory, or two spellings of one directory, that compare equal in that way in one
+   of them, or in `src/shared` and one of the other two, and on a file or folder name in them that
+   ends in a dot or a space. It reads the same file list as the step 4 copy, and stops if it cannot
+   read a folder in them. It stops the way the step 7 gate does, so it also calls `input()` and
+   blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -145,6 +147,13 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - No two file paths in one of those three folders compare equal in that way. The default file
   systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
   two files: a git clone there keeps one and warns.
+- No file and directory, and no two spellings of one directory, compare equal in that way in one
+  of those folders, or in `src/shared` and one of the other two: the sources of one mod. A
+  directory's name is each folder prefix of a file path. No folder holds a file and a directory
+  of one name. A file in `src/shared` and a directory in `src/client` stop the step 4 copy
+  part-way, after the wipe; the other way round, the copy puts the file inside the directory with
+  no message. A build on Windows puts a directory spelled two ways, such as `L_bot` and `l_bot`,
+  in one folder named after the first one written.
 - No file or folder name in those three folders ends in a dot or a space. Windows cannot hold the
   name: it reads `a.json.` as `a.json` and `d./a.json` as `d/a.json`, and it drops a trailing
   space when it makes a file or a folder. Git for Windows does not check the name out.
