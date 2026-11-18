@@ -13,7 +13,7 @@ import re
 import subprocess
 from json import decoder, scanner
 from pathlib import Path
-from typing import OrderedDict
+from collections import OrderedDict
 
 SRC_DIR = Path(os.path.abspath(__file__)).parent.parent
 REPO_DIR = SRC_DIR.parent
@@ -111,7 +111,7 @@ def unique_keys(pairs):
     obj = OrderedDict()
     for key, value in pairs:
         if key in obj:
-            raise RepeatedKey(f"repeated key {json.dumps(key)} in an object")
+            raise RepeatedKey(f"repeated key {json.dumps(key, ensure_ascii=False)} in an object")
         obj[key] = value
     return obj
 
@@ -121,7 +121,7 @@ def located_object(s_and_end, *args):
         return decoder.JSONObject(s_and_end, *args)
     except RepeatedKey as error:
         text, end = s_and_end
-        raise json.JSONDecodeError(str(error), text, end - 1) from None
+        raise json.JSONDecodeError(f"{error} that starts at", text, end - 1) from None
 
 
 def reject_constant(name):
