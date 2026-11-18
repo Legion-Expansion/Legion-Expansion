@@ -153,9 +153,13 @@ def check_source_paths():
         )
         print(
             "  The build copies the repository's file of that name to the same "
-            "path in each mod. On the default file systems of Windows and macOS, "
-            "the copy writes over the file, or fails on the folder after the "
-            "outputs are wiped."
+            "path in each mod. It writes over a file there, or fails on a folder "
+            "there after the outputs are wiped."
+        )
+        print(
+            "  On a case-sensitive file system, a variant such as license ships "
+            "beside LICENSE instead, and a case-insensitive one keeps only one of "
+            "the two."
         )
         for path in licence_names:
             print_escaped(f"  src/{path}")
