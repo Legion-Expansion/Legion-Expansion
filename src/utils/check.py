@@ -39,6 +39,14 @@ def stop_on_unreadable_folder(error):
     sys.exit(1)
 
 
+def trailing_name(path):
+    parts = path.split("/")
+    for end, part in enumerate(parts, 1):
+        if part.endswith((".", " ")):
+            return "/".join(parts[:end]) + ("/" if end < len(parts) else "")
+    return None
+
+
 def walk_source(source_dir):
     try:
         ignored = subprocess.run(
@@ -55,7 +63,7 @@ def walk_source(source_dir):
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
-    windows_names = []
+    windows_names = set()
 
     # Walk the disk, not git's index: the index can keep a file's old case.
     for dir_path, dir_names, file_names in os.walk(
@@ -64,19 +72,24 @@ def walk_source(source_dir):
         # Keep each name as os.walk lists it: on Windows, path functions such
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
-        # Windows opens a folder "d." as "d", so do not walk into one.
-        trailing = [name for name in dir_names if name.endswith((".", " "))]
-        windows_names += [
-            posixpath.join(relative_dir, name) + "/" for name in trailing
-        ]
-        dir_names[:] = [name for name in dir_names if name not in trailing]
+        if os.name == "nt":
+            # Windows opens a folder "d." as "d", so do not walk into one, and
+            # report it whatever it holds.
+            kept = []
+            for name in dir_names:
+                if name.endswith((".", " ")):
+                    windows_names.add(posixpath.join(relative_dir, name) + "/")
+                else:
+                    kept.append(name)
+            dir_names[:] = kept
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) in ignored:
                 continue
             found.append(relative)
-            if file_name.endswith((".", " ")):
-                windows_names.append(relative)
+            name = trailing_name(relative)
+            if name:
+                windows_names.add(name)
 
     return found, windows_names
 
