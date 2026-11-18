@@ -81,7 +81,7 @@ Worth understanding because **a large part of what ships is generated, not commi
 
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
    path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
-   in one of them that differ only in case or Unicode normalisation form. It reads the same file
+   in one of them that compare equal after NFD and a full Unicode case fold. It reads the same file
    list as the step 4 copy. It stops the way the step 7 gate does, so it also calls
    `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.

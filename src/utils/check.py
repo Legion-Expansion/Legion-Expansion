@@ -110,7 +110,7 @@ def check_source_paths():
     if same_folder:
         print(
             "Error: Two file paths in one of src/shared, src/client, and src/server "
-            "differ only in case or Unicode normalisation form."
+            "compare equal after NFD and a full Unicode case fold."
         )
         print(
             "  macOS, and Windows for a pair such as A.json and a.json, treat the "
