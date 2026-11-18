@@ -113,8 +113,8 @@ def check_source_paths():
             "compare equal after NFD and a full Unicode case fold."
         )
         print(
-            "  macOS, and Windows for a pair such as A.json and a.json, treat the "
-            "two paths as one path, so only one of the two files can exist there."
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "A.json and a.json, hold only one of the two files."
         )
         print_duplicates(same_folder)
 
