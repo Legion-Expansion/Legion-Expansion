@@ -23,6 +23,7 @@ from utils.common import DEV_SERVER_OUTPUT_DIR
 from utils.update_shadows import update_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
+from utils.check import LICENCE_FILES
 from utils.check import source_files
 from utils.format_json import format_files
 
@@ -133,8 +134,8 @@ def generate_mods(is_dev_mode):
     # credits the LICENSE text does not.
     for output_dir in (server_output_dir, client_output_dir):
         print(f"COPY licence to {output_dir}")
-        shutil.copyfile(join("..", "LICENSE"), join(output_dir, "LICENSE"))
-        shutil.copyfile(join("..", "README.md"), join(output_dir, "README.md"))
+        for name in LICENCE_FILES:
+            shutil.copyfile(join("..", name), join(output_dir, name))
 
     # Update the modinfos
     pajson.dumpf(server_modinfo, join(server_output_dir, "modinfo.json"), indent=2)
