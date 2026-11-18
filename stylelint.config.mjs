@@ -1,6 +1,9 @@
-// PA renders its UI with Coherent UI, which embeds Chrome 40. Shipped CSS is not
-// built, bundled or autoprefixed, and the engine drops what it cannot parse
-// silently - no error, no console warning, just a declaration that never applies.
+// PA renders its UI with CEF (Chromium 150) by default, but it can fall back to
+// Coherent UI, which embeds Chrome 40, and a launch option also selects it.
+// So shipped CSS targets Chrome 40, and "the engine" below means Chrome 40.
+// Shipped CSS is not built, bundled or autoprefixed, and the engine drops what
+// it cannot parse silently - no error, no console warning, just a declaration
+// that never applies.
 //
 // Two nets catch that. The stylelint-no-unsupported-browser-features plugin
 // checks every declaration against caniuse for .browserslistrc's `chrome 40`.
@@ -13,8 +16,8 @@
 // half.
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
-// an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
-// so every file gets these rules; Node-side CSS, if it ever appears, would need
+// an entry qualifies when NN > 40. All CSS in this repo is shipped to PA, so
+// every file gets these rules; Node-side CSS, if it ever appears, would need
 // an `overrides` entry. The `overrides` block at the end turns the
 // legion/theme-class rule, defined below, on for the in-game sheets and off
 // for the two main menu sheets.
