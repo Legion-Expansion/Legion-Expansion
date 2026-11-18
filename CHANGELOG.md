@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Removed 21 files from unfinished work that v1.34.0 shipped by mistake, among them a second Radar model in the server mod
+
 ## v1.34.0 - 2026-11-15
 
 ### General
