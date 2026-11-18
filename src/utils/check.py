@@ -1,6 +1,7 @@
 import sys
 import os
 import subprocess
+import unicodedata
 
 from os.path import join
 
@@ -9,6 +10,10 @@ from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
+
+
+def nfc(path):
+    return unicodedata.normalize("NFC", path)
 
 
 def source_files(source_dir):
@@ -25,7 +30,8 @@ def source_files(source_dir):
         input()
         sys.exit(1)
 
-    ignored = set(os.fsdecode(ignored).split("\0"))
+    # git on macOS prints NFC names, and the disk can hold NFD ones.
+    ignored = {nfc(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
@@ -33,7 +39,7 @@ def source_files(source_dir):
         for file_name in file_names:
             relative = os.path.relpath(join(dir_path, file_name), source_dir)
             relative = relative.replace(os.sep, "/")
-            if relative not in ignored:
+            if nfc(relative) not in ignored:
                 found.append(relative)
 
     return found
