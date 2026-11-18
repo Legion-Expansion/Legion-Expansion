@@ -114,10 +114,6 @@ def walk_source(source_dir):
     return found, windows_names, unreadable
 
 
-def source_files(source_dir):
-    return walk_source(source_dir)[0]
-
-
 def path_key(path):
     # Case-insensitive APFS compares names after NFD and a full case fold. NFD goes
     # first: casefold() can split a letter, moving a later mark to the new letter.
@@ -242,15 +238,14 @@ def print_duplicates(duplicates):
 
 
 def walk_sources():
-    found = {}
+    files = {}
     windows_names = []
     unreadable = []
     for name in ("shared", "client", "server"):
-        files, names, errors = walk_source(name)
-        found[name] = source_paths(files)
+        files[name], names, errors = walk_source(name)
         windows_names += [f"{name}/{path}" for path in names]
         unreadable += errors
-    return found, sorted(windows_names), unreadable
+    return files, sorted(windows_names), unreadable
 
 
 def print_unreadable(unreadable):
@@ -286,7 +281,8 @@ def print_windows_names(windows_names):
 
 
 def check_source_paths():
-    found, windows_names, unreadable = walk_sources()
+    files, windows_names, unreadable = walk_sources()
+    found = {name: source_paths(paths) for name, paths in files.items()}
     non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
@@ -393,6 +389,8 @@ def check_source_paths():
     ):
         input()
         sys.exit(1)
+
+    return files
 
 
 def check_mod(client_output_dir, server_output_dir):
