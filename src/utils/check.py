@@ -75,10 +75,14 @@ def skip_trailing_folders(relative_dir, dir_names):
 
 
 def walk_source(source_dir):
+    prefix = f"src/{source_dir}/"
     try:
+        # Run from the repository's root, so that a .git in src cannot make git
+        # read another repository.
         ignored = subprocess.run(
-            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
-            cwd=source_dir,
+            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"]
+            + ["--", prefix],
+            cwd="..",
             stdout=subprocess.PIPE,
             check=True,
         ).stdout
@@ -88,7 +92,9 @@ def walk_source(source_dir):
         input()
         sys.exit(1)
 
-    ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
+    ignored = {
+        git_name(path[len(prefix) :]) for path in os.fsdecode(ignored).split("\0")
+    }
     found = []
     windows_names = set()
     unreadable = []
@@ -310,6 +316,20 @@ def print_written_paths(written_names):
         print_escaped(f"  src/{source} and {path}, which the build writes into {where}")
 
 
+def is_root_dot(key):
+    return key.startswith(".") and "/" not in key
+
+
+def root_dot_names(found, dirs):
+    names = []
+    for name in found:
+        for key in sorted(filter(is_root_dot, found[name])):
+            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(filter(is_root_dot, dirs[name])):
+            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
+    return names
+
+
 def escaped(text):
     # A name can hold a character that does not show, such as U+200C, or look
     # like another name, such as its NFD form. Escaping shows each character.
@@ -380,6 +400,7 @@ def check_source_paths(written):
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
     written_names = written_path_names(found, dirs, written)
+    dot_names = root_dot_names(found, dirs)
 
     if unreadable:
         print_unreadable(unreadable)
@@ -450,6 +471,25 @@ def check_source_paths(written):
     if written_names:
         print_written_paths(written_names)
 
+    if dot_names:
+        print(
+            "Error: A file or folder at the root of src/shared, src/client, or "
+            "src/server has a name that starts with a dot."
+        )
+        print(
+            "  The build keeps the dot entries at the root of each mod, so a later "
+            "build does not remove the copy. In a release clone, the files of a .git "
+            "folder go into the clone's own .git, and a .gitignore or .gitattributes "
+            "changes what git records."
+        )
+        print(
+            "  Move or remove the entry. A .gitignore or .gitattributes pattern for "
+            "these folders goes in the repository's root file, with a path that "
+            "starts at src/."
+        )
+        for path in dot_names:
+            print_escaped(f"  src/{path}")
+
     if (
         unreadable
         or windows_names
@@ -459,6 +499,7 @@ def check_source_paths(written):
         or file_dir
         or dir_spelling
         or written_names
+        or dot_names
     ):
         input()
         sys.exit(1)
