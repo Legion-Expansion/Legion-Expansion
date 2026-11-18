@@ -5,7 +5,7 @@
 ### Bugfix
 
 - Game menu items keep their normal colours when you are not playing a Legion commander
-- Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux and macOS
+- Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux
 
 ## v1.34.0 - 2026-11-15
 
