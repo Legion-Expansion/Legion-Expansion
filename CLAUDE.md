@@ -145,8 +145,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
   two files: a git clone there keeps one and warns.
 - No file or folder name in those three folders ends in a dot or a space. Windows cannot hold the
-  name: it reads `a.json.` as `a.json` and `d./a.json` as `d/a.json`, and it removes a trailing
-  space from a file name the same way. Git for Windows does not check the name out.
+  name: it reads `a.json.` as `a.json` and `d./a.json` as `d/a.json`, and it drops a trailing
+  space when it makes a file or a folder. Git for Windows does not check the name out.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

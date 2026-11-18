@@ -131,7 +131,7 @@ def check_source_paths():
         )
         print(
             '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
-            '"a.json". Git for Windows does not check the name out.'
+            '"a.json", and "d./" as "d/". Git for Windows does not check the name out.'
         )
         for path in windows_names:
             print_escaped(f'  "src/{path}"')
