@@ -274,3 +274,7 @@ only what the request needs — no drive-by reformatting or clean-up.
 `../com.pa.legion-expansion-server` — sibling clones of this repo's directory, which must exist
 first. Order: bump the `src/base_modinfo.json` version → merge `develop` into `master` → tag the
 release → run `install_prod.py` → review, commit and push each of the two repos separately.
+
+The release clones have `core.ignorecase` on, so `git add` records nothing when a built file
+changes only the case of its name, and the old name ships. After the build, `install_prod.py`
+(`utils/check_release_case.py`) raises with the `git mv -f` commands that record each such rename.
