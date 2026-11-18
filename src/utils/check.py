@@ -186,9 +186,9 @@ def check_source_paths():
 
     if file_dir:
         print(
-            "Error: A file name and a directory name in src/shared and src/client, "
-            "or in src/shared and src/server, compare equal after NFD and a full "
-            "Unicode case fold."
+            "Error: A file name and a directory name in one of src/shared, src/client, "
+            "and src/server, or in src/shared and one of the other two, compare equal "
+            "after NFD and a full Unicode case fold."
         )
         print(
             "  No folder can hold a file and a directory of one name, and the default "
@@ -199,9 +199,9 @@ def check_source_paths():
 
     if dir_spelling:
         print(
-            "Error: Two directory names in src/shared and src/client, or in "
-            "src/shared and src/server, are spelled differently and compare equal "
-            "after NFD and a full Unicode case fold."
+            "Error: Two directory names in one of src/shared, src/client, and "
+            "src/server, or in src/shared and one of the other two, are spelled "
+            "differently and compare equal after NFD and a full Unicode case fold."
         )
         print(
             "  The default file systems of macOS, and of Windows for a pair such as "
