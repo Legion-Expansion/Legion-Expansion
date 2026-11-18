@@ -107,8 +107,8 @@ def licence_file_names(found):
 
 
 def print_escaped(line):
-    # A redirected stdout can use a code page, such as Windows cp1252,
-    # that cannot hold every name. Escaping also shows each name's form.
+    # A name can look the same as another, such as the NFC and NFD forms of
+    # one name. Escaping shows how they differ.
     print(line.encode("unicode_escape").decode("ascii"))
 
 
