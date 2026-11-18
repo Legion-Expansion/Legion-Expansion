@@ -102,8 +102,8 @@ def generate_mods(is_dev_mode):
         server_output_dir = PROD_SERVER_OUTPUT_DIR
         client_output_dir = PROD_CLIENT_OUTPUT_DIR
 
-    # Update build version. With an old modinfo, update_modinfo would only
-    # keep its date, which the next lines replace.
+    # Update build version. update_modinfo uses an old modinfo only to keep
+    # its date, which the next lines set.
     server_modinfo = update_modinfo(server_modinfo, None)
     client_modinfo = update_modinfo(client_modinfo, None)
     # Update dates
