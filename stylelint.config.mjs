@@ -1,9 +1,8 @@
 // PA renders its UI with CEF (Chromium 150) by default, but it can fall back to
 // Coherent UI, which embeds Chrome 40, and a launch option also selects it. So
-// shipped CSS must parse in Chrome 40, and "the engine" below means Chrome 40.
-// Shipped CSS is not built, bundled or autoprefixed, and the engine drops what
-// it cannot parse silently - no error, no console warning, just a declaration
-// that never applies.
+// shipped CSS targets Chrome 40, and "the engine" below means Chrome 40. It is
+// not built, bundled or autoprefixed, and the engine drops what it cannot parse
+// silently - no error, no console warning, just a declaration that never applies.
 //
 // Two nets catch that. The stylelint-no-unsupported-browser-features plugin
 // checks every declaration against caniuse for .browserslistrc's `chrome 40`.
