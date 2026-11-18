@@ -41,9 +41,9 @@ def clean_output(output_dir):
             os.remove(path)
 
 
-def copy_source(source_files, source_dir, output_dir):
+def copy_source(files, source_dir, output_dir):
     print(f"COPY {source_dir} to {output_dir}")
-    for path in source_files[source_dir]:
+    for path in files:
         target = join(output_dir, path)
         os.makedirs(os.path.dirname(target), exist_ok=True)
         shutil.copy2(join(source_dir, path), target)
@@ -121,12 +121,12 @@ def generate_mods(is_dev_mode):
     clean_output(client_output_dir)
 
     # Copy shared stuff to both mods
-    copy_source(source_files, "shared", server_output_dir)
-    copy_source(source_files, "shared", client_output_dir)
+    copy_source(source_files["shared"], "shared", server_output_dir)
+    copy_source(source_files["shared"], "shared", client_output_dir)
 
     # Copy server and client specific files
-    copy_source(source_files, "server", server_output_dir)
-    copy_source(source_files, "client", client_output_dir)
+    copy_source(source_files["server"], "server", server_output_dir)
+    copy_source(source_files["client"], "client", client_output_dir)
 
     # CC BY-NC-SA and MIT both require the licence to travel with the
     # distributed copy; README.md carries the dual-licence statement and the
