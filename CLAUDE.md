@@ -94,13 +94,13 @@ Worth understanding because **a large part of what ships is generated, not commi
    in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
-   character that is not ASCII stops it too, and so does a source path that clashes with a path
-   that the build writes into a mod after the step 4 copy (see the gates below), and a file or
-   folder name in the path of a file that ships that the `core.protectNTFS` check of Git for
-   Windows refuses, such as one that ends in a dot or a space, or `con.js`. It stops if it cannot
-   read a folder in the three source folders, and it gives the step 4 copy the file lists that
-   it checked. It stops the way the step 7 gate does, so it also calls `input()` and blocks on
-   stdin.
+   character that is not ASCII stops it too, and so does a source path that clashes with a path that
+   the build writes into a mod after the step 4 copy (see the gates below), a file or folder at the
+   root of one of them whose name starts with a dot, and a file or folder name in the path of a file
+   that ships that the `core.protectNTFS` check of Git for Windows refuses, such as one that ends in
+   a dot or a space, or `con.js`. It stops if it cannot read a folder in the three source folders,
+   and it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
+   does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -112,8 +112,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
-   inside a symlinked directory or a nested repository, so every file in one ships, as before. The
-   build needs git on the `PATH` and runs only in a clone.
+   inside a symlinked directory, or inside a nested repository in a folder where git tracks no
+   file, so every file in one ships, as before. Step 1 stops on a `.git` at a source root, unless it
+   is a folder that holds no file, which the copy skips. The build needs git on the `PATH` and runs
+   only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -206,6 +208,13 @@ Only files that actually differ from the resolved vanilla spec are written out.
   into one mod only makes both mods ship that path if it is in `src/shared` or in the other mod's
   folder. Folders are compared only within one mod's sources. `modinfo.json` is not listed: the
   build reads each half's copy.
+- At the root of `src/shared`, `src/client`, or `src/server`, no file that the build copies, and no
+  folder that holds one at any depth, has a name that starts with a dot, such as `.git` or
+  `.gitattributes`. Step 4 keeps the dot entries at the root of each mod, so a later build does not
+  remove the copy. In a release clone, the files of a `.git` folder go into the clone's own `.git`,
+  and a `.gitignore` or `.gitattributes` changes what `git add -A` records. A pattern for those
+  folders goes in the repository's root `.gitattributes` or `.gitignore`, with a path that starts
+  at `src/`.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
