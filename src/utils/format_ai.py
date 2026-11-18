@@ -90,14 +90,24 @@ def reorder_keys(obj):
     return obj
 
 
-def prettier_runs():
-    try:
-        return subprocess.run([PRETTIER, "--version"], capture_output=True).returncode == 0
-    except OSError:
-        return False
+def prettier(*args, **kwargs):
+    sys.stdout.flush()
+    return subprocess.run([PRETTIER, *args], cwd=REPO_DIR, **kwargs).returncode
 
 
-if not prettier_runs():
+# The ending at the first CR, as prettier's endOfLine "auto" picks it
+def line_ending(raw):
+    cr = raw.find(b"\r")
+    if cr == -1:
+        return "\n"
+    return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
+
+
+try:
+    prettier_runs = prettier("--version", stdout=subprocess.DEVNULL) == 0
+except OSError:
+    prettier_runs = False
+if not prettier_runs:
     sys.exit(f"{PRETTIER} does not run; run npm install in the repository root, with node on PATH")
 
 # Format all the AI files and reorder the object keys
@@ -106,15 +116,14 @@ for file in AI_DIR.glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
-    # prettier's endOfLine "auto" keeps the first line's ending
-    with file.open("rb") as f:
-        newline = "\r\n" if f.readline().endswith(b"\r\n") else "\n"
-    reordered.append((file, reorder_keys(data), newline))
+    text = pajson.dumps(reorder_keys(data), indent=2, ensure_ascii=False) + "\n"
+    text = text.replace("\n", line_ending(file.read_bytes()))
+    # A lone surrogate goes back as its \u escape
+    reordered.append((file, text.encode("utf-8", errors="backslashreplace")))
 
-for file, data, newline in reordered:
-    with open(file, "w", encoding="utf-8", newline=newline) as f:
-        f.write(pajson.dumps(data, indent=2, ensure_ascii=False))
-        f.write("\n")
-
-prettier_args = [PRETTIER, "--write", AI_DIR.relative_to(REPO_DIR).as_posix()]
-sys.exit(subprocess.run(prettier_args, cwd=REPO_DIR).returncode)
+try:
+    for file, content in reordered:
+        file.write_bytes(content)
+finally:
+    exit_code = prettier("--write", AI_DIR.relative_to(REPO_DIR).as_posix())
+sys.exit(exit_code)
