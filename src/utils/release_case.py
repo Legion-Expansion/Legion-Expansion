@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from os.path import exists, join, relpath
+from os.path import basename, exists, join, relpath
 
 
 def tracked_paths(repo_dir):
@@ -45,8 +45,11 @@ def case_only_renames(repo_dir):
 def record_case_renames(*repo_dirs):
     for repo_dir in repo_dirs:
         for tracked, current in case_only_renames(repo_dir):
-            print(f"RENAME {tracked} -> {current} in {repo_dir}")
             subprocess.run(
                 ["git", "-C", repo_dir, "mv", "-f", tracked, current],
                 check=True,
+            )
+            print(
+                f"RENAME {tracked} -> {current} in {basename(repo_dir)}",
+                flush=True,
             )
