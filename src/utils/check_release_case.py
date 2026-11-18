@@ -25,6 +25,8 @@ def built_paths(repo_dir):
     return found
 
 
+# With core.ignorecase on, git add keeps the tracked name when a built file
+# changes only its case, as long as the old name still resolves on disk.
 def case_only_renames(repo_dir):
     built = built_paths(repo_dir)
     built_by_folded = {path.lower(): path for path in built}
@@ -40,8 +42,6 @@ def case_only_renames(repo_dir):
     return renames
 
 
-# On a case-insensitive file system (Windows, macOS) a tracked name still
-# resolves after the build changes only its case, so git add records nothing.
 def check_release_case(*repo_dirs):
     commands = []
 
