@@ -227,10 +227,10 @@ Key pieces:
 
 Engine constraints: PA renders the UI with CEF (Chromium 150) by default, but it can fall back to
 Coherent UI on Chrome 40, and the launch option `--ui-backend coherent` also selects it. So shipped
-code targets Chrome 40: ES5 plus a little ES6 — no `let`, arrow functions, template literals
-or `class`; a parse error kills the whole shared scene scope. lodash is **3.9.3**
-(`_.pluck`, `_.forOwn` exist; v4 names do not). `curly: all` and `lodash/prefer-lodash-method` are
-enforced as errors.
+code targets Chrome 40: ES5 plus a little ES6 — no `let`, arrow functions, template literals or
+`class`; a parse error kills the whole shared scene scope. lodash is **3.9.3** (`_.pluck`,
+`_.forOwn` exist; v4 names do not). `curly: all` and `lodash/prefer-lodash-method` are enforced as
+errors.
 
 ## Assets and conventions
 
