@@ -32,7 +32,7 @@ LEGION_LIST_INPUTS = [
 
 def clean_output(output_dir):
     # "*" skips dot entries, which keeps the release clones' .git.
-    for path in glob.glob(join(output_dir, "*")):
+    for path in glob.glob(join(glob.escape(output_dir), "*")):
         if os.path.isdir(path):
             shutil.rmtree(path)
         else:
