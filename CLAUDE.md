@@ -139,9 +139,9 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
-- Each file path that the build copies, compared after NFD and a full Unicode case fold
-  (case-insensitive APFS, the macOS default, treats `ß` and `ss` as one name), is in only one of
-  `src/shared`, `src/client`, and `src/server`. Only the exact name `modinfo.json` may be in both
+- Each file path that the build copies from `src/shared`, `src/client`, and `src/server`, compared
+  after NFD and a full Unicode case fold (case-insensitive APFS, the macOS default, treats `ß` and
+  `ss` as one name), is in only one of them. Only the exact name `modinfo.json` may be in both
   `src/client` and `src/server`: the build reads each half's copy to make that mod's own. The two
   outputs mount at the same root, so a path in both mods ships twice: PA loads the server mod's
   copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need in
