@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux and macOS
+
 ## v1.34.0 - 2026-11-15
 
 ### General
