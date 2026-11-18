@@ -216,7 +216,7 @@ def print_duplicates(duplicates):
         print_escaped(f"  src/{first} and src/{second}")
 
 
-def check_source_paths():
+def walk_sources():
     found = {}
     windows_names = []
     unreadable = []
@@ -225,7 +225,35 @@ def check_source_paths():
         found[name] = source_paths(files)
         windows_names += [f"{name}/{path}" for path in names]
         unreadable += errors
-    windows_names.sort()
+    return found, sorted(windows_names), unreadable
+
+
+def print_unreadable(unreadable):
+    print(
+        "Error: The build could not read a folder in src/shared, src/client, or "
+        "src/server."
+    )
+    print("  The build would ship without the files in it.")
+    for error in unreadable:
+        path = os.fsdecode(error.filename).replace(os.sep, "/")
+        print(f'  "src/{path}/": {error.strerror}')
+
+
+def print_windows_names(windows_names):
+    print(
+        "Error: A file or folder name in src/shared, src/client, or src/server "
+        "ends in a dot or a space."
+    )
+    print(
+        '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
+        '"a.json", and "d./" as "d/". Git for Windows does not check the name out.'
+    )
+    for path in windows_names:
+        print(f'  "src/{path}"')
+
+
+def check_source_paths():
+    found, windows_names, unreadable = walk_sources()
     non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
@@ -235,26 +263,10 @@ def check_source_paths():
     licence_names = licence_file_names(found, dirs)
 
     if unreadable:
-        print(
-            "Error: The build could not read a folder in src/shared, src/client, or "
-            "src/server."
-        )
-        print("  The build would ship without the files in it.")
-        for error in unreadable:
-            path = os.fsdecode(error.filename).replace(os.sep, "/")
-            print(f'  "src/{path}/": {error.strerror}')
+        print_unreadable(unreadable)
 
     if windows_names:
-        print(
-            "Error: A file or folder name in src/shared, src/client, or src/server "
-            "ends in a dot or a space."
-        )
-        print(
-            '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
-            '"a.json", and "d./" as "d/". Git for Windows does not check the name out.'
-        )
-        for path in windows_names:
-            print(f'  "src/{path}"')
+        print_windows_names(windows_names)
 
     if non_ascii:
         print(
