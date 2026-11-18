@@ -82,9 +82,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
    path that is in more than one of `src/shared`, `src/client`, and `src/server`, on two paths
    in one of them that compare equal after NFD and a full Unicode case fold, and on a file or
-   folder at the root of one of them named `LICENSE` or `README.md`. It reads the same file list
-   as the step 4 copy. It stops the way the step 7 gate does, so it also calls `input()` and
-   blocks on stdin.
+   folder at the root of one of them whose name compares equal in that way to `LICENSE` or
+   `README.md`. It reads the same file list as the step 4 copy. It stops the way the step 7 gate
+   does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
