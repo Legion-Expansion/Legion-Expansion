@@ -20,7 +20,8 @@ from utils.common import PROD_SERVER_OUTPUT_DIR
 from utils.common import DEV_IDENTIFIER_SUFFIX
 from utils.common import DEV_CLIENT_OUTPUT_DIR
 from utils.common import DEV_SERVER_OUTPUT_DIR
-from utils.update_shadows import update_shadows
+from utils.update_shadows import plan_shadows
+from utils.update_shadows import write_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
 from utils.check import LICENCE_FILES
@@ -75,6 +76,9 @@ def change_to_develop(modinfo, client_id, server_id):
 
 
 def generate_mods(is_dev_mode):
+    print("PLAN SHADOWS")
+    shadows = plan_shadows()
+
     print("CHECK SOURCES")
     check_source_paths()
 
@@ -150,7 +154,7 @@ def generate_mods(is_dev_mode):
         print(f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")
-    update_shadows(client_output_dir, server_output_dir)
+    write_shadows(shadows, client_output_dir, server_output_dir)
 
     print("CHECK MOD")
     check_mod(client_output_dir, server_output_dir)
