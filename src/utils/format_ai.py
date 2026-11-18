@@ -6,7 +6,6 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
-import shutil
 import subprocess
 from pathlib import Path
 from typing import OrderedDict
@@ -14,6 +13,7 @@ from typing import OrderedDict
 SRC_DIR = Path(__file__).resolve().parent.parent
 REPO_DIR = SRC_DIR.parent
 AI_DIR = SRC_DIR / "server" / "pa" / "ai"
+PRETTIER = REPO_DIR / "node_modules" / ".bin" / ("prettier.cmd" if sys.platform == "win32" else "prettier")
 sys.path.insert(0, str(SRC_DIR))
 
 from pa_tools.pa import pajson
@@ -90,9 +90,15 @@ def reorder_keys(obj):
     return obj
 
 
-prettier = shutil.which("prettier", path=str(REPO_DIR / "node_modules" / ".bin"))
-if prettier is None:
-    sys.exit("prettier not found in node_modules; run npm install in the repository root")
+def prettier_runs():
+    try:
+        return subprocess.run([PRETTIER, "--version"], capture_output=True).returncode == 0
+    except OSError:
+        return False
+
+
+if not prettier_runs():
+    sys.exit(f"{PRETTIER} does not run; run npm install in the repository root, with node on PATH")
 
 # Format all the AI files and reorder the object keys
 reordered = []
@@ -100,7 +106,9 @@ for file in AI_DIR.glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
-    newline = "\r\n" if b"\r\n" in file.read_bytes() else "\n"
+    # prettier's endOfLine "auto" keeps the first line's ending
+    with file.open("rb") as f:
+        newline = "\r\n" if f.readline().endswith(b"\r\n") else "\n"
     reordered.append((file, reorder_keys(data), newline))
 
 for file, data, newline in reordered:
@@ -108,5 +116,5 @@ for file, data, newline in reordered:
         f.write(pajson.dumps(data, indent=2, ensure_ascii=False))
         f.write("\n")
 
-prettier_args = [prettier, "--write", AI_DIR.relative_to(REPO_DIR).as_posix()]
+prettier_args = [PRETTIER, "--write", AI_DIR.relative_to(REPO_DIR).as_posix()]
 sys.exit(subprocess.run(prettier_args, cwd=REPO_DIR).returncode)
