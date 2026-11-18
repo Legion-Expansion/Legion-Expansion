@@ -12,6 +12,15 @@ from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
 
+# build.py copies shared and client into one mod, and shared and server into the other.
+ONE_MOD = [
+    ("shared", "shared"),
+    ("client", "client"),
+    ("server", "server"),
+    ("shared", "client"),
+    ("shared", "server"),
+]
+
 
 def git_name(path):
     # git on macOS prints NFC names, and the disk can hold NFD ones. A macOS
@@ -62,6 +71,16 @@ def source_paths(source_dir):
     return paths
 
 
+def source_dirs(paths):
+    dirs = {}
+    for path in itertools.chain.from_iterable(paths.values()):
+        parts = path.split("/")
+        for end in range(1, len(parts)):
+            prefix = "/".join(parts[:end])
+            dirs.setdefault(path_key(prefix), set()).add(prefix)
+    return dirs
+
+
 def same_folder_duplicates(found):
     duplicates = []
     for name, paths in found.items():
@@ -94,6 +113,39 @@ def cross_folder_duplicates(found):
     return duplicates
 
 
+def file_dir_duplicates(found, dirs):
+    duplicates = []
+    reverse = [(second, first) for first, second in ONE_MOD if first != second]
+    for file_tree, dir_tree in ONE_MOD + reverse:
+        for key in sorted(found[file_tree].keys() & dirs[dir_tree].keys()):
+            for file_path, dir_path in itertools.product(
+                sorted(found[file_tree][key]), sorted(dirs[dir_tree][key])
+            ):
+                duplicates.append(
+                    (f"{file_tree}/{file_path}", f"{dir_tree}/{dir_path}/")
+                )
+    return duplicates
+
+
+def dir_spelling_duplicates(dirs):
+    duplicates = []
+    for first, second in ONE_MOD:
+        for key in sorted(dirs[first].keys() & dirs[second].keys()):
+            if first == second:
+                pairs = itertools.combinations(sorted(dirs[first][key]), 2)
+            else:
+                pairs = itertools.product(
+                    sorted(dirs[first][key]), sorted(dirs[second][key])
+                )
+            for first_path, second_path in pairs:
+                # Equal last names mean that a parent differs. It has its own pair.
+                if first_path.rsplit("/", 1)[-1] != second_path.rsplit("/", 1)[-1]:
+                    duplicates.append(
+                        (f"{first}/{first_path}/", f"{second}/{second_path}/")
+                    )
+    return duplicates
+
+
 def non_ascii_paths(found):
     return [
         f"{name}/{path}"
@@ -118,8 +170,11 @@ def print_duplicates(duplicates):
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     non_ascii = non_ascii_paths(found)
+    dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
+    file_dir = file_dir_duplicates(found, dirs)
+    dir_spelling = dir_spelling_duplicates(dirs)
 
     if non_ascii:
         print(
@@ -155,7 +210,33 @@ def check_source_paths():
         )
         print_duplicates(cross_folder)
 
-    if non_ascii or same_folder or cross_folder:
+    if file_dir:
+        print(
+            "Error: A file name and a directory name in one of src/shared, src/client, "
+            "and src/server, or in src/shared and one of the other two, compare equal "
+            "after NFD and a full Unicode case fold."
+        )
+        print(
+            "  No folder can hold a file and a directory of one name, and the default "
+            "file systems of macOS, and of Windows for a pair such as a and A, treat "
+            "the two as one name."
+        )
+        print_duplicates(file_dir)
+
+    if dir_spelling:
+        print(
+            "Error: Two directory names in one of src/shared, src/client, and "
+            "src/server, or in src/shared and one of the other two, are spelled "
+            "differently and compare equal after NFD and a full Unicode case fold."
+        )
+        print(
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "L_bot and l_bot, treat the two as one name, so a build there ships one "
+            "folder and a Linux build ships two."
+        )
+        print_duplicates(dir_spelling)
+
+    if non_ascii or same_folder or cross_folder or file_dir or dir_spelling:
         input()
         sys.exit(1)
 
