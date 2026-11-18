@@ -77,14 +77,18 @@ template checklist.
 Worth understanding because **a large part of what ships is generated, not committed**:
 
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
-   path that is in more than one of `src/shared`, `src/client`, and `src/server`. It stops the way
-   the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   path that is in more than one of `src/shared`, `src/client`, and `src/server`. It reads the
+   same file list as the step 4 copy. It stops the way the step 7 gate does, so it also calls
+   `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
-   one another program holds open, stops the build with an error.
+   one another program holds open, stops the build with an error. The copy takes the files that
+   `git ls-files` lists: the tracked files, and the untracked files that `.gitignore` does not
+   exclude. So an operating system file such as `.DS_Store` or `desktop.ini` never ships, and a
+   new file ships before `git add`. The build needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -228,9 +232,9 @@ enforced as errors.
 (strategic icons, build-bar images, commander UI renders, unit directory prefixes), and its "Units"
 checklist enumerates every registry a new or renamed unit has to touch.
 
-- Everything in `src/client` and `src/server` ships. Anything not needed at runtime — source
-  models, working textures — belongs in `src/art/` (~169 MB, excluded from the build). Large binary
-  sources use Git LFS (`.blend`, `.blend1`, `.xcf`).
+- Every file in `src/client` and `src/server` that `.gitignore` does not exclude ships. Anything
+  not needed at runtime — source models, working textures — belongs in `src/art/` (~169 MB,
+  excluded from the build). Large binary sources use Git LFS (`.blend`, `.blend1`, `.xcf`).
 - Legion units and files are prefixed `l_`, otherwise following Uber's naming (`l_type_unit_adv`).
 - When replacing a vanilla unit, set `base_spec` to the vanilla spec and list **only** the changed
   properties.
