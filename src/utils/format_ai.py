@@ -10,6 +10,7 @@ import json
 import math
 import os
 import subprocess
+from json import decoder, scanner
 from pathlib import Path
 from typing import OrderedDict
 
@@ -101,20 +102,25 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
-def brief(value):
-    text = json.dumps(value)
-    return text if len(text) <= 40 else text[:37] + "..."
+class RepeatedKey(ValueError):
+    pass
 
 
 def unique_keys(pairs):
-    seen = {}
+    obj = OrderedDict()
     for key, value in pairs:
-        if key in seen:
-            raise ValueError(
-                f"repeated key {json.dumps(key)}, with values {brief(seen[key])} and {brief(value)}"
-            )
-        seen[key] = value
-    return OrderedDict(pairs)
+        if key in obj:
+            raise RepeatedKey(f"repeated key {json.dumps(key)} in an object")
+        obj[key] = value
+    return obj
+
+
+def located_object(s_and_end, *args):
+    try:
+        return decoder.JSONObject(s_and_end, *args)
+    except RepeatedKey as error:
+        text, end = s_and_end
+        raise json.JSONDecodeError(str(error), text, end - 1) from None
 
 
 def reject_constant(name):
@@ -128,16 +134,24 @@ def finite_float(text):
     return value
 
 
-# Strict JSON only: the rewrite would drop comments and all but the last value of a
-# repeated key, and turn a fraction or exponent too large for a float into Infinity
-def read_strict_json(file, raw):
-    try:
-        return json.loads(
-            raw.decode("utf-8"),
+class StrictDecoder(json.JSONDecoder):
+    def __init__(self):
+        super().__init__(
             object_pairs_hook=unique_keys,
             parse_constant=reject_constant,
             parse_float=finite_float,
         )
+        # The C scanner tells no hook where an object starts; the Python one
+        # calls parse_object with the offset, so a repeated key gets a line
+        self.parse_object = located_object
+        self.scan_once = scanner.py_make_scanner(self)
+
+
+# Strict JSON only: the rewrite would drop comments and all but the last value of a
+# repeated key, and turn a fraction or exponent too large for a float into Infinity
+def read_strict_json(file, raw):
+    try:
+        return json.loads(raw.decode("utf-8"), cls=StrictDecoder)
     except ValueError as error:
         sys.exit(
             f"{file}: {error}. format_ai.py reads strict JSON only. No file was written."
