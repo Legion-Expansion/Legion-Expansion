@@ -155,9 +155,13 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - Among the file paths that the build copies from one of those folders, or from `src/shared` and
   one of the other two (the sources of one mod), no file and directory, and no two spellings of
   one directory, compare equal in that way. A directory's name is each folder prefix of one of
-  those paths. No folder holds a file and a directory of one name. A file in `src/shared` and a
-  directory in `src/client` stop the step 4 copy part-way, after the wipe; the other way round,
-  the copy puts the file inside the directory with no message. A build on Windows puts a directory
+  those paths. No folder holds a file and a directory of one name. Where the file system that
+  holds the outputs treats the two names as one (the same name, or a case variant such as `data`
+  and `Data/` on a case-insensitive file system), a file in `src/shared` and a directory in
+  `src/client` stop the step 4 copy part-way, after the wipe; the other way round, the copy puts
+  the file inside the directory with no message. Where it treats them as two, such as a case variant
+  on a case-sensitive file system (the Linux default), the copy gives no error: the mod ships both
+  names; a case-insensitive file system holds only one of them. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - No file that ships from those three folders has a file or folder name in its path that ends in
   a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
