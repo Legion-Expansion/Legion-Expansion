@@ -42,13 +42,17 @@
     handlers.start_build_sequence = model.startBuildSequence = function (
       params
     ) {
-      var tab = _.find(model.buildSet().tabs(), function (candidate) {
-        return (
-          candidate.visible() &&
-          (candidate.group() === params.group ||
-            candidate.buildGroup() === params.group)
-        );
-      });
+      var buildSet = model.buildSet();
+      var tab = buildSet.tabsByGroup()[params.group];
+      if (!tab || !tab.visible()) {
+        tab = _.find(buildSet.tabs(), function (candidate) {
+          return (
+            candidate.visible() &&
+            candidate.buildGroup &&
+            candidate.buildGroup() === params.group
+          );
+        });
+      }
       if (tab) {
         stockStartBuildSequence(_.assign({}, params, { group: tab.group() }));
       }
