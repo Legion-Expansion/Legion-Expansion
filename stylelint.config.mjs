@@ -14,12 +14,54 @@
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
 // an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
 // so every file gets these rules; Node-side CSS, if it ever appears, would need
-// an `overrides` entry. The one `overrides` block, at the end, adds a Legion rule
-// for the in-game sheets.
+// an `overrides` entry. The one `overrides` block, at the end, turns on the
+// legion/theme-class rule below for the in-game sheets.
+
+import stylelint from "stylelint";
+
+const themeClassRule = "legion/theme-class";
+const themeClassMessages = stylelint.utils.ruleMessages(themeClassRule, {
+  rejected: (selector) =>
+    `Expected selector "${selector}" to include a Legion theme class (.legionui, .mixedui, .legion, .mixed, .legcom or .mixcom)`,
+});
+const themeClass = /\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-])/;
+
+// The in-game sheets load in every game, whatever the commanders are, so a
+// selector without a Legion theme class restyles vanilla games too.
+const themeClassPlugin = stylelint.createPlugin(
+  themeClassRule,
+  (enabled) => (root, result) => {
+    if (!enabled) {
+      return;
+    }
+    root.walkRules((rule) => {
+      if (
+        rule.parent.type === "atrule" &&
+        /keyframes$/i.test(rule.parent.name)
+      ) {
+        return;
+      }
+      for (const selector of rule.selectors) {
+        const counted = selector
+          .replace(/:not\([^)]*\)/gi, "")
+          .replace(/\[[^\]]*\]/g, "");
+        if (!themeClass.test(counted)) {
+          stylelint.utils.report({
+            result,
+            ruleName: themeClassRule,
+            message: themeClassMessages.rejected(selector),
+            node: rule,
+            word: selector,
+          });
+        }
+      }
+    });
+  }
+);
 
 export default {
   extends: ["stylelint-config-standard"],
-  plugins: ["stylelint-no-unsupported-browser-features"],
+  plugins: ["stylelint-no-unsupported-browser-features", themeClassPlugin],
   rules: {
     // The automatic net. severity is "error" against the plugin's own advice:
     // there is no fallback tier here, and stylelint exits 0 on warnings, which
@@ -495,23 +537,10 @@ export default {
   },
 
   overrides: [
-    // The in-game sheets load in every game, whatever the commanders are, so a
-    // selector without a Legion theme class restyles vanilla games too. A theme
-    // class inside :not() or an attribute selector does not count. The pattern
-    // passes a selector that is only from, to or N% wherever it appears,
-    // because the rule's keyframe-selectors option does not recognise
-    // @-webkit-keyframes.
     {
-      files: ["src/client/ui/mods/com.pa.legion-expansion/css/*.css"],
+      files: ["src/client/ui/mods/com.pa.legion-expansion/css/**/*.css"],
       rules: {
-        "selector-disallowed-list": [
-          /^(?!(?:from|to|\d*\.?\d+%)$)(?![\s\S]*(?<!:[Nn][Oo][Tt]\(\s*)(?<!\[[^\]]*)\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
-          {
-            splitList: true,
-            message: (selector) =>
-              `Expected selector "${selector}" to include a Legion theme class (.legionui, .mixedui, .legion, .mixed, .legcom or .mixcom)`,
-          },
-        ],
+        [themeClassRule]: true,
       },
     },
     // The main menu sheets: start.js loads them only when it also adds .legion
@@ -522,7 +551,7 @@ export default {
         "src/client/ui/mods/com.pa.legion-expansion/css/start.css",
       ],
       rules: {
-        "selector-disallowed-list": null,
+        [themeClassRule]: null,
       },
     },
   ],
