@@ -74,9 +74,7 @@ def walk_source(source_dir):
         sys.exit(1)
 
     ignored = {
-        git_name(path[len(prefix) :])
-        for path in os.fsdecode(ignored).split("\0")
-        if path.startswith(prefix)
+        git_name(path[len(prefix) :]) for path in os.fsdecode(ignored).split("\0")
     }
     found = []
     windows_names = set()
