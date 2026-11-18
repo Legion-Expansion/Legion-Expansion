@@ -128,8 +128,7 @@ def check_source_paths():
         )
         print(
             "  File systems compare such names in different ways, so the build "
-            "cannot find every pair of names that a player's file system treats "
-            "as one."
+            "cannot find every pair of names that one of them treats as one."
         )
         for path in non_ascii:
             print_escaped(f"  src/{path}")
