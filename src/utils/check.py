@@ -46,6 +46,18 @@ def trailing_names(path):
             yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
 
 
+def skip_trailing_folders(relative_dir, dir_names, windows_names):
+    # Windows opens a folder "d." as "d", so do not walk into one, and report
+    # it whatever it holds.
+    kept = []
+    for name in dir_names:
+        if name.endswith((".", " ")):
+            windows_names.add(posixpath.join(relative_dir, name) + "/")
+        else:
+            kept.append(name)
+    dir_names[:] = kept
+
+
 def walk_source(source_dir):
     try:
         ignored = subprocess.run(
@@ -72,15 +84,7 @@ def walk_source(source_dir):
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
         if os.name == "nt":
-            # Windows opens a folder "d." as "d", so do not walk into one, and
-            # report it whatever it holds.
-            kept = []
-            for name in dir_names:
-                if name.endswith((".", " ")):
-                    windows_names.add(posixpath.join(relative_dir, name) + "/")
-                else:
-                    kept.append(name)
-            dir_names[:] = kept
+            skip_trailing_folders(relative_dir, dir_names, windows_names)
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) in ignored:
