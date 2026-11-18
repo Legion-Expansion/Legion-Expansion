@@ -20,6 +20,16 @@ def git_name(path):
     return path
 
 
+def stop_on_unreadable_folder(error):
+    print(
+        "Error: The build could not read a folder in src/shared, src/client, or "
+        "src/server."
+    )
+    print(f"  The build would ship without the files in it. {error}")
+    input()
+    sys.exit(1)
+
+
 def source_files(source_dir):
     try:
         ignored = subprocess.run(
@@ -36,15 +46,14 @@ def source_files(source_dir):
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
-    root = source_dir
-    if os.name == "nt":
-        # Windows drops a trailing dot or space from a name in a path, except
-        # in an extended-length path. relpath would drop it as well.
-        root = "\\\\?\\" + os.path.abspath(source_dir)
 
     # Walk the disk, not git's index: the index can keep a file's old case.
-    for dir_path, _, file_names in os.walk(root, followlinks=True):
-        relative_dir = dir_path[len(root) + 1 :].replace(os.sep, "/")
+    for dir_path, _, file_names in os.walk(
+        source_dir, onerror=stop_on_unreadable_folder, followlinks=True
+    ):
+        # Keep each name as os.walk lists it: on Windows, path functions such
+        # as relpath drop a trailing dot or space.
+        relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) not in ignored:
