@@ -12,6 +12,15 @@ from pa_tools.pa import spec
 MODINFO = "modinfo.json"
 LICENCE_FILES = ("LICENSE", "README.md")
 
+# Git for Windows refuses these device names and characters in a path name
+# (is_valid_win32_path in compat/mingw.c, and verify_path for the backslash).
+WINDOWS_DEVICES = (
+    {"CON", "PRN", "AUX", "NUL", "CONIN$", "CONOUT$"}
+    | {f"COM{digit}" for digit in "123456789"}
+    | {f"LPT{digit}" for digit in "0123456789"}
+)
+WINDOWS_CHARACTERS = set('<>:"|?*\\') | {chr(code) for code in range(0x20)}
+
 # build.py copies shared and client into one mod, and shared and server into the other.
 ONE_MOD = [
     ("shared", "shared"),
@@ -34,10 +43,22 @@ def is_trailing(name):
     return name.endswith((".", " "))
 
 
-def trailing_names(path):
+def is_windows_invalid(name):
+    # git~1 is a short name Windows can give .git. Git compares the device names
+    # in ASCII only, and upper() maps some other letters to ASCII.
+    stem = name.partition(".")[0].rstrip(" ")
+    return (
+        is_trailing(name)
+        or not WINDOWS_CHARACTERS.isdisjoint(name)
+        or (stem.isascii() and stem.upper() in WINDOWS_DEVICES)
+        or name.lower() == "git~1"
+    )
+
+
+def windows_invalid_names(path):
     parts = path.split("/")
     for end, part in enumerate(parts, 1):
-        if is_trailing(part):
+        if is_windows_invalid(part):
             yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
 
 
@@ -88,7 +109,7 @@ def walk_source(source_dir):
             if git_name(relative) in ignored:
                 continue
             found.append(relative)
-            windows_names.update(trailing_names(relative))
+            windows_names.update(windows_invalid_names(relative))
 
     return found, windows_names, unreadable
 
@@ -201,10 +222,14 @@ def licence_file_names(found, dirs):
     return names
 
 
-def print_escaped(line):
+def escaped(text):
     # A name can hold a character that does not show, such as U+200C, or look
     # like another name, such as its NFD form. Escaping shows each character.
-    print(line.encode("unicode_escape").decode("ascii"))
+    return text.encode("unicode_escape").decode("ascii")
+
+
+def print_escaped(line):
+    print(escaped(line))
 
 
 def print_duplicates(duplicates):
@@ -237,14 +262,22 @@ def print_unreadable(unreadable):
 def print_windows_names(windows_names):
     print(
         "Error: A file or folder name in src/shared, src/client, or src/server "
-        "ends in a dot or a space."
+        "is one that Git for Windows does not check out."
     )
     print(
-        '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
-        '"a.json", and "d./" as "d/". Git for Windows does not check the name out.'
+        "  The name ends in a dot or a space, holds one of < > : \" | ? * \\ or a "
+        "character from U+0000 to U+001F, is a Windows device name such as con, "
+        "aux, or com1, alone or before a dot, with or without spaces before the "
+        "dot, or is git~1. Case does not matter."
+    )
+    print(
+        '  Windows reads "a.json." and "a.json " as "a.json", "d./" as "d/", and '
+        '"a:b" as a stream of "a".'
     )
     for path in windows_names:
-        print(f'  "src/{path}"')
+        # escaped() doubles each backslash, so \" can only be a quote in the name.
+        quoted = escaped(f"src/{path}").replace('"', '\\"')
+        print(f'  "{quoted}"')
 
 
 def check_source_paths():
