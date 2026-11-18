@@ -23,7 +23,7 @@ def source_paths(source_dir):
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     pairs = [
-        # Each mod needs its own modinfo.json; build.py writes it over the copied one.
+        # build.py reads each half's modinfo.json to make that mod's own.
         ("client", "server", {"modinfo.json"}),
         ("shared", "client", set()),
         ("shared", "server", set()),
