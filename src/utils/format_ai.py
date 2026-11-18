@@ -6,6 +6,7 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
+import json
 import os
 import subprocess
 from pathlib import Path
@@ -99,6 +100,26 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
+def unique_keys(pairs):
+    seen = set()
+    for key, _ in pairs:
+        if key in seen:
+            raise ValueError(f"repeated key {json.dumps(key)}")
+        seen.add(key)
+    return OrderedDict(pairs)
+
+
+# The output keeps no comment and only one value of a key, so stop on either
+def read_strict_json(file, raw):
+    try:
+        return json.loads(raw.decode("utf-8"), object_pairs_hook=unique_keys)
+    except ValueError as error:
+        sys.exit(
+            f"{file}: {error}. format_ai.py reads strict JSON only: no comments, "
+            "trailing commas, or repeated keys. No file was written."
+        )
+
+
 def find_node():
     name = "node.exe" if sys.platform == "win32" else "node"
     # Only node.exe from an absolute PATH folder: a node.cmd shim would run through cmd.exe,
@@ -138,8 +159,7 @@ if not PRETTIER.is_file():
 formatted = []
 for file in AI_DIR.glob("**/*.json"):
     raw = file.read_bytes()
-    data, warnings = pajson.loadf(file)
-    list(map(print, warnings))
+    data = read_strict_json(file, raw)
 
     text = pajson.dumps(reorder_keys(data), indent=2, ensure_ascii=False) + "\n"
     text = text.replace("\n", line_ending(raw))

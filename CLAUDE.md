@@ -31,6 +31,8 @@ python src/utils/format_ai.py # key-reorder everything under src/server/pa/ai, t
 ```
 
 `format_ai.py` needs `npm install` first, because it formats its output with the repo's prettier.
+It reads each file as strict JSON, and stops before it writes any file if one does not parse or
+holds a comment, a trailing comma, or a repeated key, none of which its output could keep.
 
 `install_devel.py` appends `-dev` to both identifiers and a `[DEVELOPMENT]` tag to the display
 names, so the dev build coexists with a Community Mods install. Enable the `[DEVELOPMENT]` entry in-game.
