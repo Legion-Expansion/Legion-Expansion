@@ -39,12 +39,11 @@ def stop_on_unreadable_folder(error):
     sys.exit(1)
 
 
-def trailing_name(path):
+def trailing_names(path):
     parts = path.split("/")
     for end, part in enumerate(parts, 1):
         if part.endswith((".", " ")):
-            return "/".join(parts[:end]) + ("/" if end < len(parts) else "")
-    return None
+            yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
 
 
 def walk_source(source_dir):
@@ -87,9 +86,7 @@ def walk_source(source_dir):
             if git_name(relative) in ignored:
                 continue
             found.append(relative)
-            name = trailing_name(relative)
-            if name:
-                windows_names.add(name)
+            windows_names.update(trailing_names(relative))
 
     return found, windows_names
 
