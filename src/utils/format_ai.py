@@ -101,16 +101,13 @@ def line_ending(raw):
 
 def find_node():
     name = "node.exe" if sys.platform == "win32" else "node"
-    # Not which(): on Windows it can return a node.cmd, or look in the current folder first
+    # Only node.exe from an absolute PATH folder: a node.cmd shim would run through cmd.exe,
+    # which splits a file name at "&", and the current folder may hold any node.exe
     for folder in os.environ.get("PATH", "").split(os.pathsep):
         node = os.path.join(folder.strip('"'), name)
         if os.path.isabs(node) and os.path.isfile(node) and os.access(node, os.X_OK):
-            break
-    else:
-        sys.exit(f"{name} is not in any folder on PATH. No file was written.")
-    if not PRETTIER.is_file():
-        sys.exit(f"{PRETTIER} is missing. Run npm install in the repository root. No file was written.")
-    return node
+            return node
+    sys.exit(f"{name} is not in any folder on PATH. No file was written.")
 
 
 def prettier_format(file, text):
@@ -134,6 +131,8 @@ def prettier_format(file, text):
 
 
 NODE = find_node()
+if not PRETTIER.is_file():
+    sys.exit(f"{PRETTIER} is missing. Run npm install in the repository root. No file was written.")
 
 # Reorder and format every file in memory, so that a prettier failure writes nothing
 formatted = []
