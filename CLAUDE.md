@@ -142,8 +142,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   client mod's copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the
   sources, not the outputs, where every `src/shared` file is in both mods.
 - No two file paths in one of those three folders compare equal in that way. macOS, and Windows
-  for a pair such as `A.json` and `a.json`, treat the two paths as one path, so one file replaces
-  the other when a player installs the mod.
+  for a pair such as `A.json` and `a.json`, treat the two paths as one path, so only one of the two
+  files can exist there: a git clone there keeps one and warns.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

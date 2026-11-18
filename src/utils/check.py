@@ -114,7 +114,7 @@ def check_source_paths():
         )
         print(
             "  macOS, and Windows for a pair such as A.json and a.json, treat the "
-            "two paths as one path, so one file replaces the other."
+            "two paths as one path, so only one of the two files can exist there."
         )
         print_duplicates(same_folder)
 
