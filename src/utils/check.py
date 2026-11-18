@@ -61,7 +61,8 @@ def source_paths(source_dir):
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     pairs = [
-        # build.py reads each half's modinfo.json to make that mod's own.
+        # build.py reads each half's modinfo.json to make that mod's own. Only
+        # that exact name is exempt: another name that folds to it ships twice.
         ("client", "server", {MODINFO}),
         ("shared", "client", set()),
         ("shared", "server", set()),
@@ -69,10 +70,11 @@ def check_source_paths():
     duplicates = []
 
     for first, second, allowed in pairs:
-        for folded in sorted((found[first].keys() & found[second].keys()) - allowed):
-            duplicates.append(
-                (f"{first}/{found[first][folded]}", f"{second}/{found[second][folded]}")
-            )
+        for folded in sorted(found[first].keys() & found[second].keys()):
+            names = (found[first][folded], found[second][folded])
+            if set(names) <= allowed:
+                continue
+            duplicates.append((f"{first}/{names[0]}", f"{second}/{names[1]}"))
 
     if duplicates:
         print(
