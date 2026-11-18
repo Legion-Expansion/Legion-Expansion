@@ -80,8 +80,9 @@ template checklist.
 Worth understanding because **a large part of what ships is generated, not committed**:
 
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
-   path that is in more than one of `src/shared`, `src/client`, and `src/server`. It reads the
-   same file list as the step 4 copy. It stops the way the step 7 gate does, so it also calls
+   path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
+   in one of them that compare equal after NFD and a full Unicode case fold. It reads the same file
+   list as the step 4 copy. It stops the way the step 7 gate does, so it also calls
    `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
@@ -140,6 +141,9 @@ Only files that actually differ from the resolved vanilla spec are written out.
   so a path in both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the
   client mod's copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the
   sources, not the outputs, where every `src/shared` file is in both mods.
+- No two file paths in one of those three folders compare equal in that way. The default file
+  systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
+  two files: a git clone there keeps one and warns.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
