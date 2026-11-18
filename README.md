@@ -73,7 +73,7 @@ The repo is structured with all the source files - including unit specs, effects
 
 A file both mods need goes in `src/shared`, and a file for one mod goes in `src/client` or `src/server` only. The build (`src/install_devel.py` and `src/install_prod.py`) stops on a file path that is in more than one of them, except `modinfo.json` in `src/client` and `src/server`.
 
-The build copies only the files that git lists, so a file that `.gitignore` excludes, such as `.DS_Store` or `desktop.ini`, does not ship. A new file ships before you run `git add` on it.
+The build does not copy an untracked file that git ignores, such as `.DS_Store` or `Thumbs.db`. A new file that git does not ignore ships before you run `git add` on it.
 
 Please remove all unnecessary files from the pa and ui directories.
 

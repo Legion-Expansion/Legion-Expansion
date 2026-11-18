@@ -85,10 +85,11 @@ Worth understanding because **a large part of what ships is generated, not commi
    `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
-   one another program holds open, stops the build with an error. The copy takes the files that
-   `git ls-files` lists: the tracked files, and the untracked files that `.gitignore` does not
-   exclude. So an operating system file such as `.DS_Store` or `desktop.ini` never ships, and a
-   new file ships before `git add`. The build needs git on the `PATH` and runs only in a clone.
+   one another program holds open, stops the build with an error. The copy skips each untracked
+   file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
+   untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
+   ships under its case on disk, a new file before `git add`. The build needs git on the `PATH`
+   and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -232,9 +233,10 @@ enforced as errors.
 (strategic icons, build-bar images, commander UI renders, unit directory prefixes), and its "Units"
 checklist enumerates every registry a new or renamed unit has to touch.
 
-- Every file in `src/client` and `src/server` that `.gitignore` does not exclude ships. Anything
-  not needed at runtime — source models, working textures — belongs in `src/art/` (~169 MB,
-  excluded from the build). Large binary sources use Git LFS (`.blend`, `.blend1`, `.xcf`).
+- Every file in `src/client` and `src/server` ships, except an untracked file that git ignores.
+  Anything not needed at runtime — source models, working textures — belongs in `src/art/`
+  (~169 MB, excluded from the build). Large binary sources use Git LFS (`.blend`, `.blend1`,
+  `.xcf`).
 - Legion units and files are prefixed `l_`, otherwise following Uber's naming (`l_type_unit_adv`).
 - When replacing a vanilla unit, set `base_spec` to the vanilla spec and list **only** the changed
   properties.
