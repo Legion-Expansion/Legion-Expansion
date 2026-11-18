@@ -7,6 +7,8 @@ from pa_tools.mod import checker
 from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
 
+MODINFO = "modinfo.json"
+
 
 def source_paths(source_dir):
     found = {}
@@ -24,7 +26,7 @@ def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     pairs = [
         # build.py reads each half's modinfo.json to make that mod's own.
-        ("client", "server", {"modinfo.json"}),
+        ("client", "server", {MODINFO}),
         ("shared", "client", set()),
         ("shared", "server", set()),
     ]
@@ -64,7 +66,7 @@ def check_mod(client_output_dir, server_output_dir):
     report = checker.ModReport(server_output_dir)
 
     # Check the server modinfo
-    checker.check_modinfo(report, os.path.join(server_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(server_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
@@ -73,7 +75,7 @@ def check_mod(client_output_dir, server_output_dir):
 
     report = checker.ModReport(client_output_dir)
     # Check the client mod info
-    checker.check_modinfo(report, os.path.join(client_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(client_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
