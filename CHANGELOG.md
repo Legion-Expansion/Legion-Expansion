@@ -4,7 +4,7 @@
 
 ### General
 
-- Reduced mod size by removing files that v1.34.0 included by mistake
+- Reduced mod size by removing files included by mistake
 
 ## v1.34.0 - 2026-11-15
 
