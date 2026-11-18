@@ -83,10 +83,12 @@ Worth understanding because **a large part of what ships is generated, not commi
    path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
    in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
    file and a directory, or two spellings of one directory, that compare equal in that way in one
-   of them, or in `src/shared` and one of the other two, and on a file or folder name that ends in
-   a dot or a space in the path of a file that ships. It reads the same file list as the step 4
-   copy, and stops if it cannot read a folder in the three source folders. It stops the way the
-   step 7 gate does, so it also calls `input()` and blocks on stdin.
+   of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
+   character that is not ASCII stops it too, and so does a file or folder at the root of one of
+   them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
+   name that ends in a dot or a space in the path of a file that ships. It reads the same file
+   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
+   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -159,6 +161,17 @@ Only files that actually differ from the resolved vanilla spec are written out.
   as `d/a.json`, and it drops a trailing space when it makes a file or a folder. Git for Windows
   does not check the name out. A build on Windows cannot read such a folder, so it stops on one
   whatever the folder holds.
+- Every file path that the build copies from those three folders is ASCII. File systems compare
+  other characters in different ways, so the comparison above cannot find every pair that one of
+  them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
+  NON-JOINER when it compares names.
+- No file or folder at the root of `src/shared`, `src/client`, or `src/server` is named `LICENSE`
+  or `README.md`, compared after NFD and a full Unicode case fold. After the step 4 copy, the build
+  copies the repository's `LICENSE` and `README.md` into the root of each mod. Where the file
+  system finds the name there (the exact name, or a variant such as `license` on a
+  case-insensitive file system), the copy writes over that file, which keeps its own name, or
+  fails on that folder after the outputs are wiped. Where it does not, the mod ships both names,
+  and a case-insensitive file system holds only one of them.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

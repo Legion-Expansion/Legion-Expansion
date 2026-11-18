@@ -10,6 +10,7 @@ from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
+LICENCE_FILES = ("LICENSE", "README.md")
 
 # build.py copies shared and client into one mod, and shared and server into the other.
 ONE_MOD = [
@@ -184,12 +185,35 @@ def dir_spelling_duplicates(dirs):
     return duplicates
 
 
+def non_ascii_paths(found):
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for path in sorted(itertools.chain.from_iterable(paths.values()))
+        if not path.isascii()
+    ]
+
+
+def licence_file_names(found, dirs):
+    keys = {path_key(name) for name in LICENCE_FILES}
+    names = []
+    for name in found:
+        for key in sorted(keys & found[name].keys()):
+            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(keys & dirs[name].keys()):
+            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
+    return names
+
+
+def print_escaped(line):
+    # A name can hold a character that does not show, such as U+200C, or look
+    # like another name, such as its NFD form. Escaping shows each character.
+    print(line.encode("unicode_escape").decode("ascii"))
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # The two names can look the same, such as the NFC and NFD forms of
-        # one name. Escaping shows how they differ.
-        line = f"  src/{first} and src/{second}"
-        print(line.encode("unicode_escape").decode("ascii"))
+        print_escaped(f"  src/{first} and src/{second}")
 
 
 def check_source_paths():
@@ -202,11 +226,13 @@ def check_source_paths():
         windows_names += [f"{name}/{path}" for path in names]
         unreadable += errors
     windows_names.sort()
+    non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
+    licence_names = licence_file_names(found, dirs)
 
     if unreadable:
         print(
@@ -229,6 +255,18 @@ def check_source_paths():
         )
         for path in windows_names:
             print(f'  "src/{path}"')
+
+    if non_ascii:
+        print(
+            "Error: A file path in src/shared, src/client, or src/server holds a "
+            "character that is not ASCII."
+        )
+        print(
+            "  File systems compare such names in different ways, so the build "
+            "cannot find every pair of names that one of them treats as one."
+        )
+        for path in non_ascii:
+            print_escaped(f"  src/{path}")
 
     if same_folder:
         print(
@@ -278,13 +316,35 @@ def check_source_paths():
         )
         print_duplicates(dir_spelling)
 
+    if licence_names:
+        print(
+            "Error: A file or folder at the root of src/shared, src/client, or "
+            f"src/server has the name {' or '.join(LICENCE_FILES)}, compared after "
+            "NFD and a full Unicode case fold."
+        )
+        print(
+            "  In each mod that src/shared, src/client, or src/server goes into, the "
+            "build copies the repository's file of that name to the same path. It "
+            "writes over a file there, or fails on a folder there after the outputs "
+            "are wiped."
+        )
+        print(
+            "  On a case-sensitive file system, a variant such as license ships "
+            "beside LICENSE instead, and a case-insensitive one keeps only one of "
+            "the two."
+        )
+        for path in licence_names:
+            print_escaped(f"  src/{path}")
+
     if (
         unreadable
         or windows_names
+        or non_ascii
         or same_folder
         or cross_folder
         or file_dir
         or dir_spelling
+        or licence_names
     ):
         input()
         sys.exit(1)
