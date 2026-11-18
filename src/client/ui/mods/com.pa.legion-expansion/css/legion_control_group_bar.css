@@ -10,11 +10,6 @@
   background: linear-gradient(to top, #45484d 0%, #000 100%);
 }
 
-.unit_group_item .total {
-  flex-grow: 1;
-  color: #000;
-}
-
 .legionui .unit_group_menu {
   background: #970000;
   border: 1px solid #970030;
