@@ -97,12 +97,13 @@ def cross_folder_duplicates(found):
 
 def licence_file_names(found):
     keys = {path_key(name) for name in LICENCE_FILES}
-    return [
-        f"{name}/{path}"
-        for name, paths in found.items()
-        for key in sorted(paths.keys() & keys)
-        for path in sorted(paths[key])
-    ]
+    names = set()
+    for name, paths in found.items():
+        for path in itertools.chain.from_iterable(paths.values()):
+            root, separator, _ = path.partition("/")
+            if path_key(root) in keys:
+                names.add(f"{name}/{root}{separator}")
+    return sorted(names)
 
 
 def print_escaped(line):
@@ -146,9 +147,9 @@ def check_source_paths():
 
     if licence_names:
         print(
-            "Error: A file at the root of src/shared, src/client, or src/server "
-            f"has the name {' or '.join(LICENCE_FILES)}, compared after NFD and a "
-            "full Unicode case fold."
+            "Error: A file or folder at the root of src/shared, src/client, or "
+            f"src/server has the name {' or '.join(LICENCE_FILES)}, compared after "
+            "NFD and a full Unicode case fold."
         )
         print(
             "  The build copies the repository's file of that name to the same "
