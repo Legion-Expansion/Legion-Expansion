@@ -10,7 +10,7 @@
 
 - Game menu items keep their normal colours when you are not playing a Legion commander
 - Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux
-- Fixed the Radar showing a model with textures that do not fit it
+- Fixed the Radar showing a model with textures that do not fit it, a v1.32.1 fault that v1.34.0 brought back
 - Deployed Investigator counts as a radar unit for AIs and other mods
 
 ## v1.34.0 - 2026-11-15
@@ -89,10 +89,11 @@
 
 ### Bugfix
 
-- Reverted the unintended changes that v1.31.0 shipped, which are listed under v1.31.0:
+- Reverted the unintended changes that v1.31.0 shipped. The ones a player sees are listed under v1.31.0:
   - Removed the Liberator
-  - Restored the previous models of the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Hive, Necromancer, Osprey, Panzer, Scorpion, Scythe, Shank, and Stoke
-  - Restored the Radar's previous textures and radar wave effect, but not its previous model, so it showed the v1.31.0 model with textures that do not fit it
+  - Restored the previous models and build bar images of the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Hive, Necromancer, Osprey, Panzer, Scorpion, Scythe, Shank, and Stoke
+  - Restored the Radar's previous textures, build bar image, and radar wave effect, but not its previous model, so it showed the v1.31.0 model with textures that do not fit it
+  - Restored the previous strategic icons of the Corsair and the Marauder
   - Restored the Theodor's previous shell trail
   - Restored the previous values of the Advanced Armour Fabricator, Advanced Armour Foundry, Advanced Fabrication Walker, Advanced Flyer Foundry, Advanced Ship Foundry, Advanced Walker Foundry, Armour Fabricator, Armour Foundry, Comet, Corsair, Deathmark, Fabrication Walker, Firebird, Guardian, Havoc, Infiltrator, Investigator, Jackal, Lockheed, Maul, Meteor, Miniman, Monstrosity, Necromancer, Nova, Osprey, Paladin, Purger, Radar, Rampart, Scythe, Shank, Shredder, Starcannon, Stoke, Viper, and Walker Foundry
 
@@ -124,7 +125,7 @@
   - Changed model files for the Hive and the Necromancer
   - New radar wave effect for the Radar
   - New shell trail for the Theodor
-  - New strategic icon for the Corsair
+  - New strategic icons for the Corsair and the Marauder
 
 ### Balance
 
@@ -238,8 +239,9 @@
       - Metal cost decreased from 350 to 300
       - Can build the Liberator and the Shredder
     - Havoc
-      - Beam rate of fire increased from 0.25 to 0.333
-      - Beam range decreased from 140 to 115
+      - Anti-missile beam rate of fire increased from 0.25 to 0.333
+      - Anti-missile beam range decreased from 140 to 115
+      - Anti-missile beam no longer shoots down Panzer shells
     - Investigator
       - Vision increased from 150 to 200
       - Deployed vision increased from 0 to 100
@@ -261,6 +263,7 @@
     - Purger
       - Shots track their target
       - Attacks targets in range while it moves
+      - Jump attack fires automatically
       - Attacks from 80% of its range instead of full range
     - Radar
       - Health increased from 500 to 750
