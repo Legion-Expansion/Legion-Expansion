@@ -226,11 +226,11 @@ Key pieces:
   **both** the plain and `-dev` identifiers — and colours Legion commanders in the picker.
 
 Engine constraints: PA renders the UI with CEF (Chromium 150) by default, but it falls back to
-Coherent UI on Chromium 40 when CEF cannot start, and `--ui-backend coherent` also selects Coherent
-UI, so shipped code must parse on Chromium 40: ES5 plus a little ES6 — no `let`, arrow functions,
-template literals or `class`; a parse error kills the whole shared scene scope. lodash is **3.9.3**
-(`_.pluck`, `_.forOwn` exist; v4 names do not). `curly: all` and `lodash/prefer-lodash-method` are
-enforced as errors.
+Coherent UI on Chrome 40 for the rest of that build when CEF cannot start, and the launch option
+`--ui-backend coherent` also selects Coherent UI, so shipped code must parse on Chrome 40: ES5 plus
+a little ES6 — no `let`, arrow functions, template literals or `class`; a parse error kills the
+whole shared scene scope. lodash is **3.9.3** (`_.pluck`, `_.forOwn` exist; v4 names do not).
+`curly: all` and `lodash/prefer-lodash-method` are enforced as errors.
 
 ## Assets and conventions
 
