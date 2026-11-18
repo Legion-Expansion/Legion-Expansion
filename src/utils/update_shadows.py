@@ -109,8 +109,9 @@ LEGION_MISSING = (
     "is not in src/server. Restore the file, or update each file that refers to it."
 )
 SHIELD_ENTRY_MISSING = (
-    "is not in src/server or the PA install; a Legion change or a PA patch has "
-    "renamed or removed it. Correct or remove its entry in "
+    "is not in src/server or the PA install: the entry is wrong, or a Legion "
+    "change or a PA patch has renamed or removed the file. Correct or remove its "
+    "entry in "
     f"src/server{SHIELD_TARGETS}, and each other reference to it."
 )
 
