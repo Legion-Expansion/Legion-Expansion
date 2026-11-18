@@ -7,7 +7,6 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
 import os
-import shutil
 import subprocess
 from pathlib import Path
 from typing import OrderedDict
@@ -101,11 +100,14 @@ def line_ending(raw):
 
 
 def find_node():
-    # Without this, which() on Windows looks in the current folder before PATH
-    os.environ["NoDefaultCurrentDirectoryInExePath"] = "1"
-    node = shutil.which("node")
-    if node is None or not os.path.isabs(node):
-        sys.exit("node is not on PATH, or is only in the current folder. No file was written.")
+    name = "node.exe" if sys.platform == "win32" else "node"
+    # Not which(): on Windows it can return a node.cmd, or look in the current folder first
+    for folder in os.environ.get("PATH", "").split(os.pathsep):
+        node = os.path.join(folder.strip('"'), name)
+        if os.path.isabs(node) and os.path.isfile(node) and os.access(node, os.X_OK):
+            break
+    else:
+        sys.exit(f"{name} is not in any folder on PATH. No file was written.")
     if not PRETTIER.is_file():
         sys.exit(f"{PRETTIER} is missing. Run npm install in the repository root. No file was written.")
     return node
