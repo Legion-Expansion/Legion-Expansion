@@ -62,7 +62,7 @@ def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
     pairs = [
         # build.py reads each half's modinfo.json to make that mod's own. Only
-        # that exact name is exempt: another name that folds to it ships twice.
+        # that exact name is exempt: a variant ships as or beside the real one.
         ("client", "server", {MODINFO}),
         ("shared", "client", set()),
         ("shared", "server", set()),
