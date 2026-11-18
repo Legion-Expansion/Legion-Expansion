@@ -75,6 +75,15 @@ def skip_trailing_folders(relative_dir, dir_names):
     return skipped
 
 
+def skip_ignored_folders(relative_dir, dir_names, ignored):
+    # git lists an ignored nested repository as its folder, not as its files.
+    dir_names[:] = [
+        name
+        for name in dir_names
+        if git_name(posixpath.join(relative_dir, name)) + "/" not in ignored
+    ]
+
+
 def walk_source(source_dir):
     try:
         ignored = subprocess.run(
@@ -90,8 +99,6 @@ def walk_source(source_dir):
         sys.exit(1)
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
-    # git lists an ignored nested repository as its folder, not as its files.
-    ignored_dirs = tuple(path for path in ignored if path.endswith("/"))
     found = []
     windows_names = set()
     unreadable = []
@@ -103,12 +110,12 @@ def walk_source(source_dir):
         # Keep each name as os.walk lists it: on Windows, path functions such
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
+        skip_ignored_folders(relative_dir, dir_names, ignored)
         if os.name == "nt":
             windows_names.update(skip_trailing_folders(relative_dir, dir_names))
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
-            name = git_name(relative)
-            if name in ignored or name.startswith(ignored_dirs):
+            if git_name(relative) in ignored:
                 continue
             found.append(relative)
             windows_names.update(windows_invalid_names(relative))
