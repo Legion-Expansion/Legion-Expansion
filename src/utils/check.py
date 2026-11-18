@@ -193,12 +193,15 @@ def print_duplicates(duplicates):
 
 
 def check_source_paths():
-    walked = {name: walk_source(name) for name in ("shared", "client", "server")}
-    found = {name: source_paths(files) for name, (files, _, _) in walked.items()}
-    windows_names = sorted(
-        f"{name}/{path}" for name, (_, paths, _) in walked.items() for path in paths
-    )
-    unreadable = [error for _, _, errors in walked.values() for error in errors]
+    found = {}
+    windows_names = []
+    unreadable = []
+    for name in ("shared", "client", "server"):
+        files, names, errors = walk_source(name)
+        found[name] = source_paths(files)
+        windows_names += [f"{name}/{path}" for path in names]
+        unreadable += errors
+    windows_names.sort()
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
@@ -212,7 +215,8 @@ def check_source_paths():
         )
         print("  The build would ship without the files in it.")
         for error in unreadable:
-            print(f"  {error}")
+            path = os.fsdecode(error.filename).replace(os.sep, "/")
+            print(f'  "src/{path}/": {error.strerror}')
 
     if windows_names:
         print(

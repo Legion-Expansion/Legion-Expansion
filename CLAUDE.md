@@ -85,8 +85,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two, and on a file or folder name that ends in
    a dot or a space in the path of a file that ships. It reads the same file list as the step 4
-   copy, and stops if it cannot read a folder in them. It stops the way the step 7 gate does, so it
-   also calls `input()` and blocks on stdin.
+   copy, and stops if it cannot read a folder in the three source folders. It stops the way the
+   step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
