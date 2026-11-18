@@ -426,6 +426,8 @@ def print_windows_names(windows_names):
 
 
 def print_dot_git_names(git_names):
+    if not git_names:
+        return
     print(
         "Error: A file or folder name in src/shared, src/client, or src/server is "
         ".git, in any case."
@@ -454,8 +456,7 @@ def check_source_paths(written):
     git_names = dot_git_names(files)
 
     # Other reports can also list files inside a .git, so print its cause first.
-    if git_names:
-        print_dot_git_names(git_names)
+    print_dot_git_names(git_names)
 
     if unreadable:
         print_unreadable(unreadable)
