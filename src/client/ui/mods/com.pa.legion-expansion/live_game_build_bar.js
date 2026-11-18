@@ -40,6 +40,9 @@
       params
     ) {
       var buildSet = model.buildSet();
+      if (!buildSet) {
+        return;
+      }
       var tabsByGroup = buildSet.tabsByGroup();
       var group = _.find([params.group, "L_" + params.group], function (key) {
         return (
