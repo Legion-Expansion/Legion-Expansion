@@ -116,9 +116,8 @@ SHIELD_ENTRY_MISSING = (
 )
 
 
-# A PA patch that renames or removes a vanilla file below would otherwise skip
-# the edit and take the interaction with it. A caller that resolves a Legion
-# file, or a path read from one, passes its own message.
+# A caller that resolves a Legion file, or a path read from one, passes its own
+# message.
 def resolve(file_path, missing=VANILLA_MISSING):
     resolved = loader.resolveFile(file_path)
     if resolved is None:
