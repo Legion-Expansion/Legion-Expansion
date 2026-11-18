@@ -111,8 +111,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
    inside a symlinked directory, so every file in one ships, as before. A nested repository stops
-   step 1, because its `.git` would ship too, unless git ignores its folder: then none of its files
-   ship. The build needs git on the `PATH` and runs only in a clone.
+   step 1, because its `.git` would ship too, unless git ignores its folder: git lists that folder
+   as one entry, and step 1 leaves the whole folder out. Git never lists a `.git` as ignored, so a
+   `.git` that git does not read as a repository would still ship from an ignored folder, and stops
+   step 1. The build needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
