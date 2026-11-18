@@ -104,8 +104,9 @@ def non_ascii_paths(found):
 
 
 def print_escaped(line):
-    # A redirected stdout can use a code page, such as Windows cp1252,
-    # that cannot hold every name. Escaping also shows each name's form.
+    # A name can hold a character that does not show, such as U+200C, and two
+    # names can look the same, such as the NFC and NFD forms of one name.
+    # Escaping shows each character.
     print(line.encode("unicode_escape").decode("ascii"))
 
 
