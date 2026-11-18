@@ -69,8 +69,8 @@ def walk_source(source_dir):
             os.path.join(source_dir, ".git")
         ):
             print(
-                f"  git reads src/{source_dir}/.git as the repository of "
-                f"src/{source_dir}. Remove it. {error}"
+                f"  git may read src/{source_dir}/.git as the repository of "
+                f"src/{source_dir}. Move it out of src/. {error}"
             )
         else:
             print(f"  The build needs git on the PATH and runs only in a clone. {error}")
