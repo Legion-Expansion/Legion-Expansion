@@ -144,9 +144,10 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - No two file paths in one of those three folders compare equal in that way. The default file
   systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
   two files: a git clone there keeps one and warns.
-- Every file path in those three folders is ASCII. File systems compare other characters in
-  different ways, so the comparison above cannot find every pair that one of them treats as one
-  name. For example, HFS Plus skips U+200C ZERO WIDTH NON-JOINER when it compares names.
+- Every file path that the build copies from those three folders is ASCII. File systems compare
+  other characters in different ways, so the comparison above cannot find every pair that one of
+  them treats as one name. For example, HFS Plus skips U+200C ZERO WIDTH NON-JOINER when it
+  compares names.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
