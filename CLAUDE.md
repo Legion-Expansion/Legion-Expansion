@@ -179,8 +179,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   build writes over a file and fails on a folder; at a written folder path it fails on a file.
   Where the name is spelled another way, such as `license`, or a folder `Land_Scout/` for a shadow
   in `land_scout/`, the default file systems of macOS and Windows keep that spelling, and a
-  case-sensitive one ships the name beside the written one. A folder of the same spelling is not
-  reported. A file at a path that the build writes into one mod only makes both mods ship that
+  case-sensitive one ships the name beside the written one. A source folder with the same spelling
+  as a folder that the build writes into is not reported. A file at a path that the build writes into one mod only makes both mods ship that
   path if it is in `src/shared` or in the other mod's folder. Folders are compared only within one
   mod's sources. `modinfo.json` is not listed: the build reads each half's copy.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
