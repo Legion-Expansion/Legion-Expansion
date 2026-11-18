@@ -85,10 +85,11 @@ Worth understanding because **a large part of what ships is generated, not commi
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a file or folder at the root of one of
-   them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
-   name that ends in a dot or a space in the path of a file that ships. It reads the same file
-   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
-   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   them whose name compares equal in that way to `LICENSE` or `README.md`, or starts with a dot,
+   and a file or folder name that ends in a dot or a space in the path of a file that ships. It
+   reads the same file list as the step 4 copy, and stops if it cannot read a folder in the three
+   source folders. It stops the way the step 7 gate does, so it also calls `input()` and blocks on
+   stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -98,8 +99,9 @@ Worth understanding because **a large part of what ships is generated, not commi
    file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
    untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
    ships under its case on disk, a new file before `git add`. Git does not look inside a
-   symlinked directory or a nested repository, so every file in one ships, as before. The build
-   needs git on the `PATH` and runs only in a clone.
+   symlinked directory or a nested repository, so every file in one ships, as before, but step 1
+   stops on the `.git` of a repository at a source root. The build needs git on the `PATH` and
+   runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -172,6 +174,13 @@ Only files that actually differ from the resolved vanilla spec are written out.
   case-insensitive file system), the copy writes over that file, which keeps its own name, or
   fails on that folder after the outputs are wiped. Where it does not, the mod ships both names,
   and a case-insensitive file system holds only one of them.
+- No file or folder at the root of `src/shared`, `src/client`, or `src/server` has a name that
+  starts with a dot, such as `.git` or `.gitattributes`. Only the files that the build copies
+  count, so an ignored `.DS_Store` passes. Step 4 keeps the dot entries at the root of each mod, so
+  a later build does not remove the copy. In a release clone, the files of a `.git` folder go into
+  the clone's own `.git`, and a `.gitignore` or `.gitattributes` changes what `git add -A`
+  records. A pattern for those folders goes in the repository's root `.gitattributes` or
+  `.gitignore`.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
