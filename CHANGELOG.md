@@ -4,7 +4,7 @@
 
 ### Bugfix
 
-- Game menu items keep their normal colours in games without a Legion commander
+- Game menu items keep their normal colours when you are not playing a Legion commander
 
 ## v1.34.0 - 2026-11-15
 
