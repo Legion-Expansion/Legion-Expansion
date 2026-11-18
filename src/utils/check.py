@@ -1,10 +1,9 @@
 import itertools
 import sys
 import os
+import posixpath
 import subprocess
 import unicodedata
-
-from os.path import join
 
 from pa_tools.mod import checker
 from pa_tools.mod.utils import create_pafs
@@ -37,12 +36,17 @@ def source_files(source_dir):
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
+    root = source_dir
+    if os.name == "nt":
+        # Windows drops a trailing dot or space from a name in a path, except
+        # in an extended-length path. relpath would drop it as well.
+        root = "\\\\?\\" + os.path.abspath(source_dir)
 
     # Walk the disk, not git's index: the index can keep a file's old case.
-    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
+    for dir_path, _, file_names in os.walk(root, followlinks=True):
+        relative_dir = dir_path[len(root) + 1 :].replace(os.sep, "/")
         for file_name in file_names:
-            relative = os.path.relpath(join(dir_path, file_name), source_dir)
-            relative = relative.replace(os.sep, "/")
+            relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) not in ignored:
                 found.append(relative)
 
