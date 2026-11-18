@@ -10,7 +10,7 @@ def tracked_paths(repo_dir):
         stdout=subprocess.PIPE,
         check=True,
     ).stdout.decode("utf-8")
-    return [tracked for tracked in listing.split("\0") if tracked]
+    return sorted({tracked for tracked in listing.split("\0") if tracked})
 
 
 def built_paths(repo_dir):
@@ -55,6 +55,6 @@ def check_release_case(*repo_dirs):
         listing = "\n  ".join(commands)
         raise RuntimeError(
             "The release repos track files whose built names differ only in "
-            "case, which git add does not record. Run these, then commit:\n"
+            "case, which git add does not record. Run these before git add:\n"
             f"  {listing}"
         )
