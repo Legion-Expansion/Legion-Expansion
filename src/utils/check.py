@@ -1,10 +1,9 @@
 import itertools
 import sys
 import os
+import posixpath
 import subprocess
 import unicodedata
-
-from os.path import join
 
 from pa_tools.mod import checker
 from pa_tools.mod.utils import create_pafs
@@ -31,7 +30,32 @@ def git_name(path):
     return path
 
 
-def source_files(source_dir):
+def is_trailing(name):
+    return name.endswith((".", " "))
+
+
+def trailing_names(path):
+    parts = path.split("/")
+    for end, part in enumerate(parts, 1):
+        if is_trailing(part):
+            yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
+
+
+def skip_trailing_folders(relative_dir, dir_names):
+    # Windows opens a folder "d." as "d", so do not walk into one, and report
+    # it whatever it holds.
+    kept = []
+    skipped = []
+    for name in dir_names:
+        if is_trailing(name):
+            skipped.append(posixpath.join(relative_dir, name) + "/")
+        else:
+            kept.append(name)
+    dir_names[:] = kept
+    return skipped
+
+
+def walk_source(source_dir):
     try:
         ignored = subprocess.run(
             ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
@@ -47,16 +71,30 @@ def source_files(source_dir):
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
+    windows_names = set()
+    unreadable = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
-    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
+    for dir_path, dir_names, file_names in os.walk(
+        source_dir, onerror=unreadable.append, followlinks=True
+    ):
+        # Keep each name as os.walk lists it: on Windows, path functions such
+        # as relpath drop a trailing dot or space.
+        relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
+        if os.name == "nt":
+            windows_names.update(skip_trailing_folders(relative_dir, dir_names))
         for file_name in file_names:
-            relative = os.path.relpath(join(dir_path, file_name), source_dir)
-            relative = relative.replace(os.sep, "/")
-            if git_name(relative) not in ignored:
-                found.append(relative)
+            relative = posixpath.join(relative_dir, file_name)
+            if git_name(relative) in ignored:
+                continue
+            found.append(relative)
+            windows_names.update(trailing_names(relative))
 
-    return found
+    return found, windows_names, unreadable
+
+
+def source_files(source_dir):
+    return walk_source(source_dir)[0]
 
 
 def path_key(path):
@@ -65,9 +103,9 @@ def path_key(path):
     return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
 
 
-def source_paths(source_dir):
+def source_paths(files):
     paths = {}
-    for path in source_files(source_dir):
+    for path in files:
         paths.setdefault(path_key(path), []).append(path)
     return paths
 
@@ -178,8 +216,44 @@ def print_duplicates(duplicates):
         print_escaped(f"  src/{first} and src/{second}")
 
 
+def walk_sources():
+    found = {}
+    windows_names = []
+    unreadable = []
+    for name in ("shared", "client", "server"):
+        files, names, errors = walk_source(name)
+        found[name] = source_paths(files)
+        windows_names += [f"{name}/{path}" for path in names]
+        unreadable += errors
+    return found, sorted(windows_names), unreadable
+
+
+def print_unreadable(unreadable):
+    print(
+        "Error: The build could not read a folder in src/shared, src/client, or "
+        "src/server."
+    )
+    print("  The build would ship without the files in it.")
+    for error in unreadable:
+        path = os.fsdecode(error.filename).replace(os.sep, "/")
+        print(f'  "src/{path}/": {error.strerror}')
+
+
+def print_windows_names(windows_names):
+    print(
+        "Error: A file or folder name in src/shared, src/client, or src/server "
+        "ends in a dot or a space."
+    )
+    print(
+        '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
+        '"a.json", and "d./" as "d/". Git for Windows does not check the name out.'
+    )
+    for path in windows_names:
+        print(f'  "src/{path}"')
+
+
 def check_source_paths():
-    found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    found, windows_names, unreadable = walk_sources()
     non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
@@ -187,6 +261,12 @@ def check_source_paths():
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
     licence_names = licence_file_names(found, dirs)
+
+    if unreadable:
+        print_unreadable(unreadable)
+
+    if windows_names:
+        print_windows_names(windows_names)
 
     if non_ascii:
         print(
@@ -269,7 +349,9 @@ def check_source_paths():
             print_escaped(f"  src/{path}")
 
     if (
-        non_ascii
+        unreadable
+        or windows_names
+        or non_ascii
         or same_folder
         or cross_folder
         or file_dir

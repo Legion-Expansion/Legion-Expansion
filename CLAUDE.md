@@ -85,9 +85,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a file or folder at the root of one of
-   them whose name compares equal in that way to `LICENSE` or `README.md`. It reads the same file
-   list as the step 4 copy. It stops the way the step 7 gate does, so it also calls `input()` and
-   blocks on stdin.
+   them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
+   name that ends in a dot or a space in the path of a file that ships. It reads the same file
+   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
+   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -155,6 +156,11 @@ Only files that actually differ from the resolved vanilla spec are written out.
   part-way, after the wipe; the other way round, the copy puts the file inside the directory with
   no message. A build on Windows puts a directory spelled two ways, such as `L_bot` and `l_bot`,
   in one folder named after the first one written.
+- No file that ships from those three folders has a file or folder name in its path that ends in
+  a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
+  as `d/a.json`, and it drops a trailing space when it makes a file or a folder. Git for Windows
+  does not check the name out. A build on Windows cannot read such a folder, so it stops on one
+  whatever the folder holds.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
