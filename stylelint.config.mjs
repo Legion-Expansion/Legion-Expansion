@@ -496,14 +496,16 @@ export default {
 
   overrides: [
     // The in-game sheets load in every game, whatever the commanders are, so a
-    // selector without a Legion theme class restyles vanilla games too.
-    // Keyframe selectors are exempt in the pattern, because the rule's own
-    // keyframe-selectors option does not recognise @-webkit-keyframes.
+    // selector without a Legion theme class restyles vanilla games too. A theme
+    // class inside :not() or an attribute selector does not count. The pattern
+    // passes a selector that is only from, to or N% wherever it appears,
+    // because the rule's keyframe-selectors option does not recognise
+    // @-webkit-keyframes.
     {
       files: ["src/client/ui/mods/com.pa.legion-expansion/css/legion_*.css"],
       rules: {
         "selector-disallowed-list": [
-          /^(?!(?:from|to|\d+(?:\.\d+)?%)$)(?![\s\S]*\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
+          /^(?!(?:from|to|\d+(?:\.\d+)?%)$)(?![\s\S]*(?<!:[Nn][Oo][Tt]\(\s*)(?<!\[[^\]]*)\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
           {
             splitList: true,
             message: (selector) =>
@@ -512,7 +514,8 @@ export default {
         ],
       },
     },
-    // start.js loads this sheet in the main menu, under the menu theme.
+    // A main menu sheet: start.js loads it only when it also adds .legion to the
+    // body, so its selectors cannot apply without the theme.
     {
       files: [
         "src/client/ui/mods/com.pa.legion-expansion/css/legion_buttons.css",
