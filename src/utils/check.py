@@ -18,14 +18,14 @@ def source_files(source_dir):
             cwd=source_dir,
             stdout=subprocess.PIPE,
             check=True,
-        ).stdout.decode("utf-8")
+        ).stdout
     except (OSError, subprocess.CalledProcessError) as error:
         print(f"Error: git could not list the ignored files in src/{source_dir}.")
         print(f"  The build needs git on the PATH and runs only in a clone. {error}")
         input()
         sys.exit(1)
 
-    ignored = set(ignored.split("\0"))
+    ignored = set(os.fsdecode(ignored).split("\0"))
     found = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
