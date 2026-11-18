@@ -44,13 +44,12 @@
     ) {
       var buildSet = model.buildSet();
       var tabsByGroup = buildSet.tabsByGroup();
-      var tab = _.find(
-        [tabsByGroup[params.group], tabsByGroup["L_" + params.group]],
-        function (candidate) {
-          return candidate && candidate.visible();
-        }
-      );
+      var group = _.find([params.group, "L_" + params.group], function (key) {
+        return _.has(tabsByGroup, key) && tabsByGroup[key].visible();
+      });
+      var tab = group && tabsByGroup[group];
       if (!tab) {
+        // Bugs Faction's tab_hotkeys.js sets buildGroup to map its tabs to a base group.
         tab = _.find(buildSet.tabs(), function (candidate) {
           return (
             candidate.visible() &&
