@@ -12,6 +12,7 @@
 - Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux
 - Fixed the Radar showing a model with textures that do not fit it, a v1.32.1 fault that v1.34.0 brought back
 - Deployed Investigator counts as a radar unit for AIs and other mods
+- Starcannon description gives its capacity as 9 units, not 14
 
 ## v1.34.0 - 2026-11-15
 
