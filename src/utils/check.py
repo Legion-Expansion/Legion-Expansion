@@ -83,8 +83,8 @@ def check_source_paths():
             "or a game, and the client mod's copy elsewhere."
         )
         for first, second in duplicates:
-            # Windows encodes a redirected stdout in the ANSI code page, which
-            # cannot hold every name; escaping also shows each name's form.
+            # A redirected stdout can use a code page, such as Windows cp1252,
+            # that cannot hold every name. Escaping also shows each name's form.
             line = f"  src/{first} and src/{second}"
             print(line.encode("unicode_escape").decode("ascii"))
         input()
