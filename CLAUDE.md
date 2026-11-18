@@ -80,8 +80,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    path that is in more than one of `src/shared`, `src/client`, and `src/server`. It stops the way
    the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
-3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>`, sets `build`, and keeps
-   the previous `date` if the PA build has not changed.
+3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
+   `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
    one another program holds open, stops the build with an error.
