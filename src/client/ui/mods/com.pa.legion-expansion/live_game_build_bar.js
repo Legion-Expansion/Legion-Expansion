@@ -31,9 +31,6 @@
             tab.label(groups[baseTab].label());
           }
           tab.hotkey(hotkeys["tab_" + baseTab] || "");
-
-          tab.buildGroup = tab.buildGroup || ko.observable(baseTab);
-          tab.buildGroup(baseTab);
         });
       }, 0);
     });
@@ -42,9 +39,25 @@
     handlers.start_build_sequence = model.startBuildSequence = function (
       params
     ) {
-      var tab = _.find(model.buildSet().tabs(), function (candidate) {
-        return candidate.visible() && candidate.buildGroup() === params.group;
+      var buildSet = model.buildSet();
+      var tabsByGroup = buildSet.tabsByGroup();
+      var group = _.find([params.group, "L_" + params.group], function (key) {
+        return (
+          Object.prototype.hasOwnProperty.call(tabsByGroup, key) &&
+          tabsByGroup[key].visible()
+        );
       });
+      var tab = group && tabsByGroup[group];
+      if (!tab) {
+        // Bugs Faction's tab_hotkeys.js sets buildGroup to map its tabs to a base group.
+        tab = _.find(buildSet.tabs(), function (candidate) {
+          return (
+            candidate.visible() &&
+            candidate.buildGroup &&
+            candidate.buildGroup() === params.group
+          );
+        });
+      }
       if (tab) {
         stockStartBuildSequence(_.assign({}, params, { group: tab.group() }));
       }
