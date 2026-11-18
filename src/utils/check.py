@@ -96,8 +96,8 @@ def cross_folder_duplicates(found):
 
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # A redirected stdout can use a code page, such as Windows cp1252,
-        # that cannot hold every name. Escaping also shows each name's form.
+        # The two names can look the same, such as the NFC and NFD forms of
+        # one name. Escaping shows how they differ.
         line = f"  src/{first} and src/{second}"
         print(line.encode("unicode_escape").decode("ascii"))
 
