@@ -103,12 +103,12 @@ def check_source_paths():
 
     if same_folder:
         print(
-            "Error: Two file names in one of src/shared, src/client, and src/server "
+            "Error: Two file paths in one of src/shared, src/client, and src/server "
             "differ only in case or Unicode normalisation form."
         )
         print(
-            "  On a file system that treats the two names as one name, such as "
-            "macOS's, one file replaces the other."
+            "  macOS, and Windows where only the case differs, treat the two paths "
+            "as one path, so one file replaces the other."
         )
         print_duplicates(same_folder)
 
