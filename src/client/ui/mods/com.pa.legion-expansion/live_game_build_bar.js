@@ -38,23 +38,15 @@
       }, 0);
     });
 
+    var stockStartBuildSequence = model.startBuildSequence;
     handlers.start_build_sequence = model.startBuildSequence = function (
       params
     ) {
-      var group = params.group;
-      var locked = params.locked;
-
-      var tabs = _.filter(model.buildSet().tabs(), function (tab) {
-        return tab.visible() && tab.buildGroup() === group;
+      var tab = _.find(model.buildSet().tabs(), function (candidate) {
+        return candidate.visible() && candidate.buildGroup() === params.group;
       });
-      if (tabs.length < 1) {
-        return;
-      }
-      group = tabs[0].group();
-
-      model.activeBuildGroup(group);
-      if (locked) {
-        model.activeBuildGroupLocked(locked);
+      if (tab) {
+        stockStartBuildSequence(_.assign({}, params, { group: tab.group() }));
       }
     };
 
