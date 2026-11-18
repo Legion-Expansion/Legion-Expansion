@@ -51,11 +51,14 @@ def is_windows_invalid(name):
     )
 
 
-def windows_invalid_names(path):
+def name_prefixes(path):
     parts = path.split("/")
     for end, part in enumerate(parts, 1):
-        if is_windows_invalid(part):
-            yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
+        yield part, "/".join(parts[:end]) + ("/" if end < len(parts) else "")
+
+
+def windows_invalid_names(path):
+    return (prefix for name, prefix in name_prefixes(path) if is_windows_invalid(name))
 
 
 def skip_trailing_folders(relative_dir, dir_names):
@@ -224,11 +227,10 @@ def licence_file_names(found, dirs):
 def dot_git_path(path):
     # Git records no path with a .git name, in any case, on any platform
     # (verify_dotfile in read-cache.c).
-    parts = path.split("/")
-    for end, part in enumerate(parts, 1):
-        if part.lower() == ".git":
-            return "/".join(parts[:end]) + ("/" if end < len(parts) else "")
-    return None
+    return next(
+        (prefix for name, prefix in name_prefixes(path) if name.lower() == ".git"),
+        None,
+    )
 
 
 def dot_git_names(files):
