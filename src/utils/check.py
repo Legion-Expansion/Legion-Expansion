@@ -205,15 +205,15 @@ def licence_file_names(found, dirs):
     return names
 
 
-def root_dot_names(found):
+def root_dot_names(found, dirs):
     names = []
-    for name, paths in found.items():
-        roots = set()
-        for path in itertools.chain.from_iterable(paths.values()):
-            root, slash, _ = path.partition("/")
-            if root.startswith("."):
-                roots.add(root + slash)
-        names.extend(f"{name}/{root}" for root in sorted(roots))
+    for name in found:
+        for key in sorted(found[name]):
+            if key.startswith(".") and "/" not in key:
+                names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(dirs[name]):
+            if key.startswith(".") and "/" not in key:
+                names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
     return names
 
 
@@ -273,7 +273,7 @@ def check_source_paths():
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
     licence_names = licence_file_names(found, dirs)
-    dot_names = root_dot_names(found)
+    dot_names = root_dot_names(found, dirs)
 
     if unreadable:
         print_unreadable(unreadable)
@@ -371,6 +371,10 @@ def check_source_paths():
             "build does not remove the copy. In a release clone, the files of a .git "
             "folder go into the clone's own .git, and a .gitignore or .gitattributes "
             "changes what git records."
+        )
+        print(
+            "  Move or remove the entry. A .gitignore or .gitattributes pattern for "
+            "these folders goes in the repository's root file."
         )
         for path in dot_names:
             print_escaped(f"  src/{path}")
