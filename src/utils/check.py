@@ -213,7 +213,7 @@ def mod_trees(mods):
     return sorted({tree for mod in mods for tree in MOD_TREES[mod]})
 
 
-def written_file_clashes(written, found, dirs):
+def written_file_clashes(found, dirs, written):
     clashes = []
     for path, mods in written.items():
         key = path_key(path)
@@ -229,7 +229,7 @@ def written_file_clashes(written, found, dirs):
     return clashes
 
 
-def written_dir_clashes(written, found, dirs):
+def written_dir_clashes(found, dirs, written):
     clashes = []
     for path, mods in written_dirs(written).items():
         key = path_key(path)
@@ -250,8 +250,8 @@ def written_dir_clashes(written, found, dirs):
 
 def written_path_names(found, dirs, written):
     return sorted(
-        written_file_clashes(written, found, dirs)
-        + written_dir_clashes(written, found, dirs),
+        written_file_clashes(found, dirs, written)
+        + written_dir_clashes(found, dirs, written),
         key=lambda clash: clash[:2],
     )
 
@@ -263,8 +263,9 @@ def print_written_paths(written_names):
         "writes into a mod after the copy."
     )
     print(
-        "  written_paths in src/utils/build.py lists those paths. A folder that the "
-        "build writes into under the same spelling is not listed."
+        "  written_paths in src/utils/build.py lists those paths. This report leaves "
+        "out a source folder with the same spelling as a folder that the build "
+        "writes into."
     )
     print(
         "  At a file path that it writes, the build writes over a file and fails on "

@@ -87,9 +87,9 @@ Worth understanding because **a large part of what ships is generated, not commi
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a source path that clashes with a path
    that the build writes into a mod after the step 4 copy (see the gates below), and a file or
-   folder name that ends in a dot or a space in the path of a file that ships. It reads the same file list as the
-   step 4 copy, and stops if it cannot read a folder in the three source folders. It stops the way
-   the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   folder name that ends in a dot or a space in the path of a file that ships. It reads the same
+   file list as the step 4 copy, and stops if it cannot read a folder in the three source folders.
+   It stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
