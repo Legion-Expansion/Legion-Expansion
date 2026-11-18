@@ -108,14 +108,10 @@ def generate_mods(is_dev_mode):
         server_output_dir = PROD_SERVER_OUTPUT_DIR
         client_output_dir = PROD_CLIENT_OUTPUT_DIR
 
-    fs.mount("/mod", client_output_dir)
-    fs.mount("/mod", server_output_dir)
-
-    old_modinfo = load_json(fs, "/mod/modinfo.json")
-
-    # Update build version
-    server_modinfo = update_modinfo(server_modinfo, old_modinfo)
-    client_modinfo = update_modinfo(client_modinfo, old_modinfo)
+    # Update build version. update_modinfo uses an old modinfo only to keep
+    # its date, which the next lines set.
+    server_modinfo = update_modinfo(server_modinfo, None)
+    client_modinfo = update_modinfo(client_modinfo, None)
     # Update dates
     server_modinfo["date"] = date.today().strftime("%Y-%m-%d")
     client_modinfo["date"] = date.today().strftime("%Y-%m-%d")
