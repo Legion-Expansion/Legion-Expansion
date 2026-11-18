@@ -91,7 +91,8 @@
 
 - Reverted the unintended changes that v1.31.0 shipped. The ones a player sees are listed under v1.31.0:
   - Removed the Liberator
-  - Restored the previous models and build bar images of the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Hive, Necromancer, Osprey, Panzer, Scorpion, Scythe, Shank, and Stoke
+  - Restored the previous models of the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Hive, Necromancer, Osprey, Panzer, Scorpion, Scythe, Shank, and Stoke
+  - Restored the previous build bar images of the same units, except the Hive, Necromancer, and Stoke
   - Restored the Radar's previous textures, build bar image, and radar wave effect, but not its previous model, so it showed the v1.31.0 model with textures that do not fit it
   - Restored the previous strategic icons of the Corsair and the Marauder
   - Restored the Theodor's previous shell trail
@@ -177,6 +178,7 @@
       - Gun rate of fire decreased from 4 to 2
       - Rocket range decreased from 100 to 75
       - Rockets per volley increased from 2 to 3
+      - Time between rocket volleys increased from 5 to 7.5 seconds
     - Meteor
       - Health decreased from 2000 to 750
       - Circles its target when attacking
@@ -274,6 +276,7 @@
       - Shield energy recharge rate increased from 1000 to 1200
     - Shank
       - Splash damage decreased from 20 to 0
+      - Shell gravity changed from the engine default to 5
     - Shredder
       - Range decreased from 150 to 110
     - Stoke
