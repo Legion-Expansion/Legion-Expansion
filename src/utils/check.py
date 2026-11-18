@@ -430,9 +430,9 @@ def print_dot_git_names(git_names):
     )
     print(
         "  Git does not record a path that holds that name, so a release commit "
-        "leaves the .git out. Where git finds a repository in it, git add -A records "
-        "the folder that holds it as one gitlink entry, and none of the files in "
-        "that folder."
+        "leaves the .git out. Where git finds a repository in it, git add -A can "
+        "record the folder that holds it as one gitlink entry, with none of the "
+        "files in that folder."
     )
     print("  Remove the .git, or move the repository out of the source folders.")
     for path in git_names:

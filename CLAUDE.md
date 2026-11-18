@@ -114,11 +114,12 @@ Worth understanding because **a large part of what ships is generated, not commi
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
    inside a symlinked directory, so every file in one ships, as before. A nested repository stops
-   step 1, because its `.git` would ship too, unless git ignores its folder: git lists that folder
-   as one entry, and step 1 leaves the whole folder out. Git never lists a `.git` as ignored, so a
-   `.git` that git does not read as a repository would still ship from an ignored folder, and stops
-   step 1. A `.git` folder that holds no file ships nothing, so it passes. The build needs git on
-   the `PATH` and runs only in a clone.
+   step 1, because its `.git` would ship too, unless git ignores its folder and tracks no file in
+   it: git then lists that folder as one entry, and step 1 leaves the whole folder out. Git never
+   lists a `.git` as ignored, so a `.git` in an ignored folder that git does not list as one entry
+   (one where git tracks a file, or a `.git` that git does not read as a repository) would still
+   ship, and stops step 1. A `.git` folder that holds no file ships nothing, so it passes. The
+   build needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -195,13 +196,16 @@ Only files that actually differ from the resolved vanilla spec are written out.
   whose name ends in a dot or a space, so it stops on one whatever the folder holds.
 - No file that ships from those three folders has a file or folder named `.git`, in any case, in
   its path. Git records no path that holds that name, on any platform (`verify_dotfile` in
-  `read-cache.c`), so a release commit leaves the `.git` out. Where git finds a repository in it
-  (a `.git` folder that holds one, a `.GIT` folder on a case-insensitive file system, or a `.git`
-  file whose `gitdir:` path reaches one from the release clone), `git add -A` in a release clone
-  records the folder that holds it as one gitlink entry, and none of the files in that folder. The
-  other names that git refuses as `.git` stop other checks: `.git` or `git~1` followed by dots,
-  spaces, or a `:` stops the check above, and `.git` with an ignorable character such as U+200C
-  stops the ASCII check below.
+  `read-cache.c`), so a release commit leaves the `.git` out. Where git finds a repository with a
+  commit in it (a `.git` folder that holds one, a `.GIT` folder on a case-insensitive file system,
+  or a `.git` file whose `gitdir:` path reaches one from the release clone), and the clone's index
+  tracks no file in the folder that holds it, `git add -A` in a release clone records that folder
+  as one gitlink entry, and none of the files in it. Otherwise it records the other files and
+  leaves the `.git` out. The copy skips empty folders, so the copy of a repository with no commit
+  has no `refs/` or `objects/`, and git does not read it as a repository. A `.git` at a source root
+  is also listed by the dot-name check below. The other names that git refuses as `.git` stop
+  other checks: `.git` or `git~1` followed by dots, spaces, or a `:` stops the check above, and
+  `.git` with an ignorable character such as U+200C stops the ASCII check below.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
