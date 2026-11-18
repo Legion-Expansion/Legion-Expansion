@@ -1,5 +1,6 @@
 import sys
 import os
+import subprocess
 
 from os.path import join
 
@@ -10,16 +11,24 @@ from pa_tools.pa import spec
 MODINFO = "modinfo.json"
 
 
+def source_files(source_dir):
+    # git leaves out .gitignore'd files but lists tracked files deleted on disk.
+    listed = subprocess.run(
+        ["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
+        cwd=source_dir,
+        stdout=subprocess.PIPE,
+        check=True,
+    ).stdout.decode("utf-8")
+
+    return sorted(
+        path
+        for path in set(listed.split("\0"))
+        if path and os.path.isfile(join(source_dir, path))
+    )
+
+
 def source_paths(source_dir):
-    found = {}
-
-    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
-        for file_name in file_names:
-            relative = os.path.relpath(join(dir_path, file_name), source_dir)
-            relative = relative.replace(os.sep, "/")
-            found[relative.lower()] = relative
-
-    return found
+    return {path.lower(): path for path in source_files(source_dir)}
 
 
 def check_source_paths():
