@@ -62,6 +62,16 @@ def source_paths(source_dir):
     return paths
 
 
+def source_dirs(paths):
+    dirs = {}
+    for path in itertools.chain.from_iterable(paths.values()):
+        parts = path.split("/")
+        for end in range(1, len(parts)):
+            prefix = "/".join(parts[:end])
+            dirs.setdefault(path_key(prefix), set()).add(prefix)
+    return dirs
+
+
 def same_folder_duplicates(found):
     duplicates = []
     for name, paths in found.items():
@@ -94,6 +104,36 @@ def cross_folder_duplicates(found):
     return duplicates
 
 
+def file_dir_duplicates(found, dirs):
+    duplicates = []
+    for first, second in itertools.product(found, repeat=2):
+        for key in sorted(found[first].keys() & dirs[second].keys()):
+            for file_path, dir_path in itertools.product(
+                sorted(found[first][key]), sorted(dirs[second][key])
+            ):
+                duplicates.append((f"{first}/{file_path}", f"{second}/{dir_path}/"))
+    return duplicates
+
+
+def dir_spelling_duplicates(dirs):
+    duplicates = []
+    for first, second in itertools.combinations_with_replacement(dirs, 2):
+        for key in sorted(dirs[first].keys() & dirs[second].keys()):
+            if first == second:
+                pairs = itertools.combinations(sorted(dirs[first][key]), 2)
+            else:
+                pairs = itertools.product(
+                    sorted(dirs[first][key]), sorted(dirs[second][key])
+                )
+            for first_path, second_path in pairs:
+                # Equal last names mean that a parent differs. It has its own pair.
+                if first_path.rsplit("/", 1)[-1] != second_path.rsplit("/", 1)[-1]:
+                    duplicates.append(
+                        (f"{first}/{first_path}/", f"{second}/{second_path}/")
+                    )
+    return duplicates
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
         # A redirected stdout can use a code page, such as Windows cp1252,
@@ -104,8 +144,11 @@ def print_duplicates(duplicates):
 
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
+    file_dir = file_dir_duplicates(found, dirs)
+    dir_spelling = dir_spelling_duplicates(dirs)
 
     if same_folder:
         print(
@@ -129,7 +172,31 @@ def check_source_paths():
         )
         print_duplicates(cross_folder)
 
-    if same_folder or cross_folder:
+    if file_dir:
+        print(
+            "Error: A file name and a directory name in src/shared, src/client, and "
+            "src/server compare equal after NFD and a full Unicode case fold."
+        )
+        print(
+            "  No folder can hold a file and a directory of one name, and the default "
+            "file systems of macOS, and of Windows for a pair such as a and A, treat "
+            "the two as one name."
+        )
+        print_duplicates(file_dir)
+
+    if dir_spelling:
+        print(
+            "Error: Two directory names in src/shared, src/client, and src/server "
+            "compare equal after NFD and a full Unicode case fold, and are spelled "
+            "differently."
+        )
+        print(
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "L_bot and l_bot, treat the two as one name, and Linux does not."
+        )
+        print_duplicates(dir_spelling)
+
+    if same_folder or cross_folder or file_dir or dir_spelling:
         input()
         sys.exit(1)
 
