@@ -10,7 +10,7 @@ import subprocess
 from pathlib import Path
 from typing import OrderedDict
 
-SRC_DIR = Path(__file__).resolve().parent.parent
+SRC_DIR = Path(__file__).absolute().parent.parent
 REPO_DIR = SRC_DIR.parent
 AI_DIR = SRC_DIR / "server" / "pa" / "ai"
 PRETTIER = REPO_DIR / "node_modules" / ".bin" / ("prettier.cmd" if sys.platform == "win32" else "prettier")
@@ -90,11 +90,6 @@ def reorder_keys(obj):
     return obj
 
 
-def prettier(*args, **kwargs):
-    sys.stdout.flush()
-    return subprocess.run([PRETTIER, *args], cwd=REPO_DIR, **kwargs).returncode
-
-
 # The ending at the first CR, as prettier's endOfLine "auto" picks it
 def line_ending(raw):
     cr = raw.find(b"\r")
@@ -103,27 +98,32 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
-try:
-    prettier_runs = prettier("--version", stdout=subprocess.DEVNULL) == 0
-except OSError:
-    prettier_runs = False
-if not prettier_runs:
-    sys.exit(f"{PRETTIER} does not run; run npm install in the repository root, with node on PATH")
+def prettier_format(file, text):
+    sys.stdout.flush()
+    try:
+        result = subprocess.run(
+            [PRETTIER, "--stdin-filepath", str(file)],
+            # A lone surrogate goes back as its \u escape
+            input=text.encode("utf-8", errors="backslashreplace"),
+            stdout=subprocess.PIPE,
+            cwd=REPO_DIR,
+        )
+    except OSError as error:
+        sys.exit(f"{PRETTIER}: {error}. Run npm install in the repository root. No file was written.")
+    if result.returncode != 0:
+        sys.exit(f"prettier failed on {file}. No file was written.")
+    return result.stdout
 
-# Format all the AI files and reorder the object keys
-reordered = []
+
+# Reorder and format every file in memory, so that a failure writes nothing
+formatted = []
 for file in AI_DIR.glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
     text = pajson.dumps(reorder_keys(data), indent=2, ensure_ascii=False) + "\n"
     text = text.replace("\n", line_ending(file.read_bytes()))
-    # A lone surrogate goes back as its \u escape
-    reordered.append((file, text.encode("utf-8", errors="backslashreplace")))
+    formatted.append((file, prettier_format(file, text)))
 
-try:
-    for file, content in reordered:
-        file.write_bytes(content)
-finally:
-    exit_code = prettier("--write", AI_DIR.relative_to(REPO_DIR).as_posix())
-sys.exit(exit_code)
+for file, content in formatted:
+    file.write_bytes(content)
