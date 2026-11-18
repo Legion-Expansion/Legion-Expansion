@@ -71,7 +71,7 @@ A full breakdown of all unit stats can be found at the [Planetary Annihilation T
 
 The repo is structured with all the source files - including unit specs, effects, and art assets - in the `src` folder.
 
-A file both mods need goes in `src/shared`, and a file for one mod goes in `src/client` or `src/server` only. `src/install_devel.py` stops on a file path that is in more than one of them, except `modinfo.json` in `src/client` and `src/server`.
+A file both mods need goes in `src/shared`, and a file for one mod goes in `src/client` or `src/server` only. The build (`src/install_devel.py` and `src/install_prod.py`) stops on a file path that is in more than one of them, except `modinfo.json` in `src/client` and `src/server`.
 
 Please remove all unnecessary files from the pa and ui directories.
 

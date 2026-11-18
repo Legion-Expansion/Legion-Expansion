@@ -38,10 +38,13 @@ def check_source_paths():
 
     if duplicates:
         print(
-            "Error: A file path is in more than one of src/shared, src/client "
+            "Error: A file path is in more than one of src/shared, src/client, "
             "and src/server."
         )
-        print("  Both mods ship the path, and PA loads the server mod's copy.")
+        print(
+            "  Both mods ship the path. PA loads the server mod's copy in a lobby "
+            "or a game, and the client mod's copy elsewhere."
+        )
         for first, second in duplicates:
             print(f"  src/{first} and src/{second}")
         input()
