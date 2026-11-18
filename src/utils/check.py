@@ -94,18 +94,43 @@ def cross_folder_duplicates(found):
     return duplicates
 
 
+def trailing_dot_or_space(found):
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for path in sorted(itertools.chain.from_iterable(paths.values()))
+        if any(part.endswith((".", " ")) for part in path.split("/"))
+    ]
+
+
+def print_escaped(line):
+    # A redirected stdout can use a code page, such as Windows cp1252,
+    # that cannot hold every name. Escaping also shows each name's form.
+    print(line.encode("unicode_escape").decode("ascii"))
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # A redirected stdout can use a code page, such as Windows cp1252,
-        # that cannot hold every name. Escaping also shows each name's form.
-        line = f"  src/{first} and src/{second}"
-        print(line.encode("unicode_escape").decode("ascii"))
+        print_escaped(f"  src/{first} and src/{second}")
 
 
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    windows_names = trailing_dot_or_space(found)
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
+
+    if windows_names:
+        print(
+            "Error: A file or folder name in src/shared, src/client, or src/server "
+            "ends in a dot or a space."
+        )
+        print(
+            '  Windows cannot hold the name: it reads "a.json." and "a.json " as '
+            '"a.json". Git for Windows does not check the name out.'
+        )
+        for path in windows_names:
+            print_escaped(f'  "src/{path}"')
 
     if same_folder:
         print(
@@ -129,7 +154,7 @@ def check_source_paths():
         )
         print_duplicates(cross_folder)
 
-    if same_folder or cross_folder:
+    if windows_names or same_folder or cross_folder:
         input()
         sys.exit(1)
 
