@@ -39,7 +39,7 @@ def stop_on_unreadable_folder(error):
     sys.exit(1)
 
 
-def source_files(source_dir):
+def walk_source(source_dir):
     try:
         ignored = subprocess.run(
             ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
@@ -55,20 +55,34 @@ def source_files(source_dir):
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
+    windows_names = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
-    for dir_path, _, file_names in os.walk(
+    for dir_path, dir_names, file_names in os.walk(
         source_dir, onerror=stop_on_unreadable_folder, followlinks=True
     ):
         # Keep each name as os.walk lists it: on Windows, path functions such
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
+        # Windows opens a folder "d." as "d", so do not walk into one.
+        trailing = [name for name in dir_names if name.endswith((".", " "))]
+        windows_names += [
+            posixpath.join(relative_dir, name) + "/" for name in trailing
+        ]
+        dir_names[:] = [name for name in dir_names if name not in trailing]
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
-            if git_name(relative) not in ignored:
-                found.append(relative)
+            if git_name(relative) in ignored:
+                continue
+            found.append(relative)
+            if file_name.endswith((".", " ")):
+                windows_names.append(relative)
 
-    return found
+    return found, windows_names
+
+
+def source_files(source_dir):
+    return walk_source(source_dir)[0]
 
 
 def path_key(path):
@@ -77,9 +91,9 @@ def path_key(path):
     return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
 
 
-def source_paths(source_dir):
+def source_paths(files):
     paths = {}
-    for path in source_files(source_dir):
+    for path in files:
         paths.setdefault(path_key(path), []).append(path)
     return paths
 
@@ -159,15 +173,6 @@ def dir_spelling_duplicates(dirs):
     return duplicates
 
 
-def trailing_dot_or_space(found):
-    return [
-        f"{name}/{path}"
-        for name, paths in found.items()
-        for path in sorted(itertools.chain.from_iterable(paths.values()))
-        if any(part.endswith((".", " ")) for part in path.split("/"))
-    ]
-
-
 def print_duplicates(duplicates):
     for first, second in duplicates:
         # The two names can look the same, such as the NFC and NFD forms of
@@ -177,8 +182,11 @@ def print_duplicates(duplicates):
 
 
 def check_source_paths():
-    found = {name: source_paths(name) for name in ("shared", "client", "server")}
-    windows_names = trailing_dot_or_space(found)
+    walked = {name: walk_source(name) for name in ("shared", "client", "server")}
+    found = {name: source_paths(files) for name, (files, _) in walked.items()}
+    windows_names = sorted(
+        f"{name}/{path}" for name, (_, paths) in walked.items() for path in paths
+    )
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
