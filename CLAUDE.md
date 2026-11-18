@@ -27,8 +27,10 @@ so `npm install` gets the lot. Node >= 22 (markdownlint-cli's floor).
 ```sh
 python src/install_devel.py   # build + install into %LOCALAPPDATA%\...\{client,server}_mods as *-dev
 python src/install_prod.py    # build into the sibling release repos (see Releases)
-python src/utils/format_ai.py # reformat + key-reorder everything under src/server/pa/ai
+python src/utils/format_ai.py # key-reorder everything under src/server/pa/ai, then run prettier on it
 ```
+
+`format_ai.py` needs `npm install` first, because it formats its output with the repo's prettier.
 
 `install_devel.py` appends `-dev` to both identifiers and a `[DEVELOPMENT]` tag to the display
 names, so the dev build coexists with a Community Mods install. Enable the `[DEVELOPMENT]` entry in-game.

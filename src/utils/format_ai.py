@@ -6,10 +6,13 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
+import shutil
+import subprocess
 from pathlib import Path
 from typing import OrderedDict
 
 SRC_DIR = Path(__file__).resolve().parent.parent
+REPO_DIR = SRC_DIR.parent
 AI_DIR = SRC_DIR / "server" / "pa" / "ai"
 sys.path.insert(0, str(SRC_DIR))
 
@@ -87,13 +90,23 @@ def reorder_keys(obj):
     return obj
 
 
+prettier = shutil.which("prettier", path=str(REPO_DIR / "node_modules" / ".bin"))
+if prettier is None:
+    sys.exit("prettier not found in node_modules; run npm install in the repository root")
+
 # Format all the AI files and reorder the object keys
+reordered = []
 for file in AI_DIR.glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
-    data = reorder_keys(data)
+    newline = "\r\n" if b"\r\n" in file.read_bytes() else "\n"
+    reordered.append((file, reorder_keys(data), newline))
 
-    with open(file, "w") as f:
-        f.write(pajson.dumps(data, indent=2))
+for file, data, newline in reordered:
+    with open(file, "w", encoding="utf-8", newline=newline) as f:
+        f.write(pajson.dumps(data, indent=2, ensure_ascii=False))
         f.write("\n")
+
+prettier_args = [prettier, "--write", AI_DIR.relative_to(REPO_DIR).as_posix()]
+sys.exit(subprocess.run(prettier_args, cwd=REPO_DIR).returncode)
