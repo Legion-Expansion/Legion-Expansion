@@ -33,10 +33,10 @@ def case_only_renames(repo_dir):
     renames = []
 
     for tracked in tracked_paths(repo_dir):
-        if tracked in built or not exists(join(repo_dir, tracked)):
+        if tracked in built:
             continue
         current = built_by_folded.get(tracked.lower())
-        if current is not None:
+        if current is not None and exists(join(repo_dir, tracked)):
             renames.append((tracked, current))
 
     return renames
