@@ -1,42 +1,39 @@
 (function () {
   try {
+    var legionTabs = [
+      ["L_factory", "!LOC:factory", true],
+      ["L_combat", "!LOC:combat", true],
+      ["L_utility", "!LOC:utility", true],
+      ["L_vehicle", "!LOC:vehicle"],
+      ["L_bot", "!LOC:bot"],
+      ["L_air", "!LOC:air"],
+      ["L_sea", "!LOC:sea"],
+      ["L_orbital", "!LOC:orbital", true],
+      ["L_orbital_structure", "orbital structure", true],
+      ["L_ammo", "!LOC:ammo", true],
+    ];
+
     if (model.BuildSet && model.BuildSet.tabsTemplate) {
-      model.BuildSet.tabsTemplate = model.BuildSet.tabsTemplate.concat([
-        ["L_factory", "!LOC:factory", true],
-        ["L_combat", "!LOC:combat", true],
-        ["L_utility", "!LOC:utility", true],
-        ["L_vehicle", "!LOC:vehicle"],
-        ["L_bot", "!LOC:bot"],
-        ["L_air", "!LOC:air"],
-        ["L_sea", "!LOC:sea"],
-        ["L_orbital", "!LOC:orbital", true],
-        ["L_orbital_structure", "orbital structure", true],
-        ["L_ammo", "!LOC:ammo", true],
-      ]);
+      model.BuildSet.tabsTemplate =
+        model.BuildSet.tabsTemplate.concat(legionTabs);
     }
 
-    ko.computed(function () {
-      var buildSet = model.buildSet();
-      if (!buildSet) {
-        return;
+    // Stock sets every tab's hotkey to hotkeys["tab_" + group] on each tab switch.
+    var addLegionTabHotkeys = function (hotkeys) {
+      var aliases = {};
+      _.forEach(legionTabs, function (tab) {
+        var key = "tab_" + tab[0];
+        var baseHotkey = hotkeys["tab_" + tab[0].substring(2)];
+        if (hotkeys[key] !== baseHotkey) {
+          aliases[key] = baseHotkey;
+        }
+      });
+      if (!_.isEmpty(aliases)) {
+        model.hotkeys(_.assign({}, hotkeys, aliases));
       }
-      var hotkeys = model.hotkeys();
-      var groups = buildSet.tabsByGroup();
-
-      setTimeout(function () {
-        // Get tab hotkeys
-        _.forEach(buildSet.tabs(), function (tab) {
-          var baseTab = String(tab.group()).replace(/^L_/, "");
-          if (
-            !tab.label() &&
-            Object.prototype.hasOwnProperty.call(groups, baseTab)
-          ) {
-            tab.label(groups[baseTab].label());
-          }
-          tab.hotkey(hotkeys["tab_" + baseTab] || "");
-        });
-      }, 0);
-    });
+    };
+    model.hotkeys.subscribe(addLegionTabHotkeys);
+    addLegionTabHotkeys(model.hotkeys());
 
     var stockStartBuildSequence = model.startBuildSequence;
     handlers.start_build_sequence = model.startBuildSequence = function (
