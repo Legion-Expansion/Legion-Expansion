@@ -142,23 +142,24 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
-- Each file path, compared after NFD and a full Unicode case fold (case-insensitive APFS, the macOS
-  default, treats `ß` and `ss` as one name), is in only one of `src/shared`, `src/client`, and
-  `src/server`. Only the exact name `modinfo.json` may be in both `src/client` and `src/server`:
-  the build reads each half's copy to make that mod's own. The two outputs mount at the same root,
-  so a path in both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the
-  client mod's copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the
-  sources, not the outputs, where every `src/shared` file is in both mods.
-- No two file paths in one of those three folders compare equal in that way. The default file
-  systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
-  two files: a git clone there keeps one and warns.
-- No file and directory, and no two spellings of one directory, compare equal in that way in one
-  of those folders, or in `src/shared` and one of the other two: the sources of one mod. A
-  directory's name is each folder prefix of a file path. No folder holds a file and a directory
-  of one name. A file in `src/shared` and a directory in `src/client` stop the step 4 copy
-  part-way, after the wipe; the other way round, the copy puts the file inside the directory with
-  no message. A build on Windows puts a directory spelled two ways, such as `L_bot` and `l_bot`,
-  in one folder named after the first one written.
+- Each file path that the build copies from `src/shared`, `src/client`, and `src/server`, compared
+  after NFD and a full Unicode case fold (case-insensitive APFS, the macOS default, treats `ß` and
+  `ss` as one name), is in only one of them. Only the exact name `modinfo.json` may be in both
+  `src/client` and `src/server`: the build reads each half's copy to make that mod's own. The two
+  outputs mount at the same root, so a path in both mods ships twice: PA loads the server mod's
+  copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need in
+  `src/shared`. This gate reads the sources, not the outputs, where every `src/shared` file is in
+  both mods.
+- No two file paths that the build copies from one of those three folders compare equal in that
+  way. The default file systems of macOS, and of Windows for a pair such as `A.json` and `a.json`,
+  hold only one of the two files: a git clone there keeps one and warns.
+- Among the file paths that the build copies from one of those folders, or from `src/shared` and
+  one of the other two (the sources of one mod), no file and directory, and no two spellings of
+  one directory, compare equal in that way. A directory's name is each folder prefix of one of
+  those paths. No folder holds a file and a directory of one name. A file in `src/shared` and a
+  directory in `src/client` stop the step 4 copy part-way, after the wipe; the other way round,
+  the copy puts the file inside the directory with no message. A build on Windows puts a directory
+  spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - No file that ships from those three folders has a file or folder name in its path that ends in
   a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
   as `d/a.json`, and it drops a trailing space when it makes a file or a folder. Git for Windows
@@ -169,18 +170,18 @@ Only files that actually differ from the resolved vanilla spec are written out.
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
   NON-JOINER when it compares names.
 - No file that the build copies from `src/shared`, `src/client`, or `src/server`, and no folder
-  that holds one, compares equal, after NFD and a full Unicode case fold, to a path that the build
-  writes into a mod after the step 4 copy. `build.py` lists those paths in `written_paths`: the
-  repository's `LICENSE` and `README.md` (both mods), `ui/mods/com.pa.legion-expansion/version.js`
-  (client), and the shadows that `update_shadows.py` plans (specs and lists in the server, `.pfx`
-  copies in the client). At a written file path the build writes over a file and fails on a
-  folder; at a written folder path it fails on a file. Where the name is spelled another way, such
-  as `license`, or a folder `Land_Scout/` for a shadow in `land_scout/`, the default file systems
-  of macOS and Windows keep that spelling, and a case-sensitive one ships the name beside the
-  written one. A folder of the same spelling is not reported. A file at a path that the build
-  writes into one mod only makes both mods ship that path if it is in `src/shared` or in the other
-  mod's folder. Folders are compared only within one mod's sources. `modinfo.json` is not listed:
-  the build reads each half's copy.
+  that holds one at any depth, compares equal, after NFD and a full Unicode case fold, to a path
+  that the build writes into a mod after the step 4 copy. `build.py` lists those paths in
+  `written_paths`: the repository's `LICENSE` and `README.md` (both mods),
+  `ui/mods/com.pa.legion-expansion/version.js` (client), and the shadows that `update_shadows.py`
+  plans (specs and lists in the server, `.pfx` copies in the client). At a written file path the
+  build writes over a file and fails on a folder; at a written folder path it fails on a file.
+  Where the name is spelled another way, such as `license`, or a folder `Land_Scout/` for a shadow
+  in `land_scout/`, the default file systems of macOS and Windows keep that spelling, and a
+  case-sensitive one ships the name beside the written one. A folder of the same spelling is not
+  reported. A file at a path that the build writes into one mod only makes both mods ship that
+  path if it is in `src/shared` or in the other mod's folder. Folders are compared only within one
+  mod's sources. `modinfo.json` is not listed: the build reads each half's copy.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
