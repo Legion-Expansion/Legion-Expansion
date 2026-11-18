@@ -7,6 +7,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
 import os
+import shutil
 import subprocess
 from pathlib import Path
 from typing import OrderedDict
@@ -14,7 +15,7 @@ from typing import OrderedDict
 SRC_DIR = Path(os.path.abspath(__file__)).parent.parent
 REPO_DIR = SRC_DIR.parent
 AI_DIR = SRC_DIR / "server" / "pa" / "ai"
-PRETTIER = REPO_DIR / "node_modules" / ".bin" / ("prettier.cmd" if sys.platform == "win32" else "prettier")
+PRETTIER = REPO_DIR / "node_modules" / "prettier" / "bin" / "prettier.cjs"
 sys.path.insert(0, str(SRC_DIR))
 
 from pa_tools.pa import pajson
@@ -99,18 +100,29 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
+def find_node():
+    # Without this, which() on Windows looks in the current folder before PATH
+    os.environ["NoDefaultCurrentDirectoryInExePath"] = "1"
+    node = shutil.which("node")
+    if node is None or not os.path.isabs(node):
+        sys.exit("node is not on PATH, or is only in the current folder. No file was written.")
+    if not PRETTIER.is_file():
+        sys.exit(f"{PRETTIER} is missing. Run npm install in the repository root. No file was written.")
+    return node
+
+
 def prettier_format(file, text):
     sys.stdout.flush()
     try:
         result = subprocess.run(
-            [PRETTIER, "--stdin-filepath", str(file)],
+            [NODE, PRETTIER, "--stdin-filepath", str(file)],
             # A lone surrogate goes back as its \u escape
             input=text.encode("utf-8", errors="backslashreplace"),
             stdout=subprocess.PIPE,
             cwd=REPO_DIR,
         )
     except OSError as error:
-        sys.exit(f"{PRETTIER}: {error}. Run npm install in the repository root. No file was written.")
+        sys.exit(f"{NODE}: {error}. No file was written.")
     if result.returncode != 0:
         sys.exit(
             f"prettier exited with code {result.returncode} while it formatted {file}; "
@@ -118,6 +130,8 @@ def prettier_format(file, text):
         )
     return result.stdout
 
+
+NODE = find_node()
 
 # Reorder and format every file in memory, so that a prettier failure writes nothing
 formatted = []
@@ -132,9 +146,13 @@ for file in AI_DIR.glob("**/*.json"):
 
 skipped = 0
 for file, raw, content in formatted:
-    if file.read_bytes() != raw:
+    try:
+        changed = file.read_bytes() != raw
+    except FileNotFoundError:
+        changed = True
+    if changed:
         print(f"{file} changed during the run, so it was not written")
         skipped += 1
-        continue
-    file.write_bytes(content)
+    elif content != raw:
+        file.write_bytes(content)
 sys.exit(1 if skipped else 0)
