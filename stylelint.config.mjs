@@ -13,8 +13,9 @@
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
 // an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
-// so there is no `overrides` block; Node-side CSS, if it ever appears, would need
-// one.
+// so every file gets these rules; Node-side CSS, if it ever appears, would need
+// an `overrides` entry. The one `overrides` block, at the end, adds a Legion rule
+// for the in-game sheets.
 
 export default {
   extends: ["stylelint-config-standard"],
@@ -492,4 +493,33 @@ export default {
       },
     ],
   },
+
+  overrides: [
+    // The in-game sheets load in every game, whatever the commanders are, so a
+    // selector without a Legion theme class restyles vanilla games too.
+    // Keyframe selectors are exempt in the pattern, because the rule's own
+    // keyframe-selectors option does not recognise @-webkit-keyframes.
+    {
+      files: ["src/client/ui/mods/com.pa.legion-expansion/css/legion_*.css"],
+      rules: {
+        "selector-disallowed-list": [
+          /^(?!(?:from|to|\d+(?:\.\d+)?%)$)(?![\s\S]*\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
+          {
+            splitList: true,
+            message: (selector) =>
+              `Expected selector "${selector}" to include a Legion theme class (.legionui, .mixedui, .legion, .mixed, .legcom or .mixcom)`,
+          },
+        ],
+      },
+    },
+    // start.js loads this sheet in the main menu, under the menu theme.
+    {
+      files: [
+        "src/client/ui/mods/com.pa.legion-expansion/css/legion_buttons.css",
+      ],
+      rules: {
+        "selector-disallowed-list": null,
+      },
+    },
+  ],
 };
