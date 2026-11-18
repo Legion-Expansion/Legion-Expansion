@@ -1,3 +1,4 @@
+import itertools
 import sys
 import os
 import subprocess
@@ -55,11 +56,22 @@ def path_key(path):
 
 
 def source_paths(source_dir):
-    return {path_key(path): path for path in source_files(source_dir)}
+    paths = {}
+    for path in source_files(source_dir):
+        paths.setdefault(path_key(path), []).append(path)
+    return paths
 
 
-def check_source_paths():
-    found = {name: source_paths(name) for name in ("shared", "client", "server")}
+def same_folder_duplicates(found):
+    duplicates = []
+    for name, paths in found.items():
+        for key in sorted(paths):
+            for first, second in itertools.combinations(sorted(paths[key]), 2):
+                duplicates.append((f"{name}/{first}", f"{name}/{second}"))
+    return duplicates
+
+
+def cross_folder_duplicates(found):
     pairs = [
         # build.py reads each half's modinfo.json to make that mod's own. Only
         # that exact name is exempt: a variant ships as or beside the real one.
@@ -71,12 +83,42 @@ def check_source_paths():
 
     for first, second, allowed in pairs:
         for folded in sorted(found[first].keys() & found[second].keys()):
-            names = (found[first][folded], found[second][folded])
-            if set(names) <= allowed:
-                continue
-            duplicates.append((f"{first}/{names[0]}", f"{second}/{names[1]}"))
+            for first_path, second_path in itertools.product(
+                sorted(found[first][folded]), sorted(found[second][folded])
+            ):
+                if {first_path, second_path} <= allowed:
+                    continue
+                duplicates.append(
+                    (f"{first}/{first_path}", f"{second}/{second_path}")
+                )
+    return duplicates
 
-    if duplicates:
+
+def print_duplicates(duplicates):
+    for first, second in duplicates:
+        # A redirected stdout can use a code page, such as Windows cp1252,
+        # that cannot hold every name. Escaping also shows each name's form.
+        line = f"  src/{first} and src/{second}"
+        print(line.encode("unicode_escape").decode("ascii"))
+
+
+def check_source_paths():
+    found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    same_folder = same_folder_duplicates(found)
+    cross_folder = cross_folder_duplicates(found)
+
+    if same_folder:
+        print(
+            "Error: Two file paths in one of src/shared, src/client, and src/server "
+            "compare equal after NFD and a full Unicode case fold."
+        )
+        print(
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "A.json and a.json, hold only one of the two files."
+        )
+        print_duplicates(same_folder)
+
+    if cross_folder:
         print(
             "Error: A file path is in more than one of src/shared, src/client, "
             "and src/server."
@@ -85,11 +127,9 @@ def check_source_paths():
             "  Both mods ship the path. PA loads the server mod's copy in a lobby "
             "or a game, and the client mod's copy elsewhere."
         )
-        for first, second in duplicates:
-            # A redirected stdout can use a code page, such as Windows cp1252,
-            # that cannot hold every name. Escaping also shows each name's form.
-            line = f"  src/{first} and src/{second}"
-            print(line.encode("unicode_escape").decode("ascii"))
+        print_duplicates(cross_folder)
+
+    if same_folder or cross_folder:
         input()
         sys.exit(1)
 
