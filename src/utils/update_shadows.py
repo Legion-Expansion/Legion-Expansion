@@ -41,6 +41,8 @@ SHADOWED_SHADERS = {
 }
 
 UNIT_LIST = "/pa/units/unit_list.json"
+SHIELD_TARGETS = "/pa/units/land/l_shield_gen/anti_entity_targets.json"
+THIS_SCRIPT = "src/utils/update_shadows.py"
 
 L_HOVER_TANK_ADV_AMMO = "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"
 L_NUKE_AMMO = "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"
@@ -101,22 +103,28 @@ file_cache = {}
 
 
 # Every vanilla path below is hardcoded, so a PA patch that renames or removes
-# one would otherwise skip the edit and take the interaction with it.
-def resolve(file_path):
+# one would otherwise skip the edit and take the interaction with it. For a
+# Legion file, or a path read from one, listed_in names the file to correct.
+def resolve(file_path, listed_in=None):
     resolved = loader.resolveFile(file_path)
     if resolved is None:
         loader.resolveFile(file_path, True)
+        if listed_in is None:
+            raise FileNotFoundError(
+                f"{file_path} is not in the PA install; a patch has renamed or "
+                f"removed it. Update {THIS_SCRIPT}."
+            )
         raise FileNotFoundError(
-            f"{file_path} is not in the PA install; a patch has renamed or "
-            "removed it. Update src/utils/update_shadows.py."
+            f"{file_path} is not in src/server or the PA install. Correct the "
+            f"path in {listed_in}, or restore the file."
         )
 
     return resolved
 
 
-def load(file_path):
+def load(file_path, listed_in=None):
     if file_path not in file_cache:
-        resolve(file_path)
+        resolve(file_path, listed_in)
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
@@ -217,9 +225,11 @@ def patch_anti_entity_targets():
 
 
 def patch_unit_and_commander_lists():
-    load(UNIT_LIST)["units"] += load("/pa/units/unit_list_legion.json")["units"]
+    load(UNIT_LIST)["units"] += load(
+        "/pa/units/unit_list_legion.json", THIS_SCRIPT
+    )["units"]
     load("/pa/units/commanders/commander_list.json")["commanders"] += load(
-        "/pa/units/commanders/commander_list_legion.json"
+        "/pa/units/commanders/commander_list_legion.json", THIS_SCRIPT
     )["commanders"]
 
 
@@ -248,17 +258,15 @@ def patch_shield_blocked_ammo():
     effects = {}
 
     ## Get the list of ammo entities that are targeted by the shield
-    resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
-    legion_shield = spec.parse_spec(
-        loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
-    )
+    resolve(SHIELD_TARGETS, THIS_SCRIPT)
+    legion_shield = spec.parse_spec(loader, SHIELD_TARGETS)
 
     for target in legion_shield["anti_entity_targets"]:
         ammo_dir = path.dirname(target)
         ammo_name = path.splitext(path.basename(target))[0]
 
         # get the spec
-        resolve(target)
+        resolve(target, "src/server" + SHIELD_TARGETS)
         full_ammo_spec = spec.parse_spec(loader, target)
         ammo = load(target)
         original_spec = copy.deepcopy(ammo)
