@@ -192,6 +192,10 @@ Key pieces:
 - **Theming is opt-out**: gate theme work on
   `api.settings.isSet("ui", "legionThemeFunction", true)` in game and `legionMenuThemeFunction` in
   menus, both defaulting to `"ON"`; the settings are registered in `settings.js`.
+- **Legion CSS loads before stock CSS.** `loadCSS` appends to `<head>`, but every stock scene Legion
+  styles opens its `<head>` with a `<noloc>` element, which ends the head, so the stock `<link>`s
+  are parsed into `<body>` and come after Legion's. A Legion rule must outrank the stock selector
+  it overrides (the theme class usually does it); one of equal specificity silently loses.
 - **Build bar**: `live_game_build_bar.js` appends `L_`-prefixed tab groups to
   `model.BuildSet.tabsTemplate` and remaps labels/hotkeys back to the vanilla group name;
   `shared_build.js` registers every Legion spec's grid position in
