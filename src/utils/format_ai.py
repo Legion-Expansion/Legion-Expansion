@@ -9,6 +9,7 @@ if hasattr(sys.stdout, "reconfigure"):
 import json
 import math
 import os
+import re
 import subprocess
 from json import decoder, scanner
 from pathlib import Path
@@ -134,24 +135,43 @@ def finite_float(text):
     return value
 
 
-class StrictDecoder(json.JSONDecoder):
+STRICT = {
+    "object_pairs_hook": unique_keys,
+    "parse_constant": reject_constant,
+    "parse_float": finite_float,
+}
+
+
+class LocatingDecoder(json.JSONDecoder):
     def __init__(self):
-        super().__init__(
-            object_pairs_hook=unique_keys,
-            parse_constant=reject_constant,
-            parse_float=finite_float,
-        )
+        super().__init__(**STRICT)
         # The C scanner tells no hook where an object starts; the Python one
         # calls parse_object with the offset, so a repeated key gets a line
         self.parse_object = located_object
         self.scan_once = scanner.py_make_scanner(self)
 
 
+def located_error(text):
+    # JSONDecodeError counts lines at LF only, so a lone CR becomes LF, one for one
+    try:
+        json.loads(re.sub("\r(?!\n)", "\n", text), cls=LocatingDecoder)
+    except json.JSONDecodeError as error:
+        return error
+    except RecursionError:
+        # The Python scanner nests less deeply than the C one
+        return None
+    return None
+
+
 # Strict JSON only: the rewrite would drop comments and all but the last value of a
 # repeated key, and turn a fraction or exponent too large for a float into Infinity
 def read_strict_json(file, raw):
     try:
-        return json.loads(raw.decode("utf-8"), cls=StrictDecoder)
+        text = raw.decode("utf-8")
+        try:
+            return json.loads(text, **STRICT)
+        except RepeatedKey as error:
+            raise (located_error(text) or error) from None
     except ValueError as error:
         sys.exit(
             f"{file}: {error}. format_ai.py reads strict JSON only. No file was written."
