@@ -122,11 +122,11 @@ Only files that actually differ from the resolved vanilla spec are written out.
 ### `check.py` gates
 
 - Each file path, compared without case, is in only one of `src/shared`, `src/client`, and
-  `src/server`; only `modinfo.json` may be in both halves, because the build merges the two. The
-  two outputs mount at the same root, so a path in both mods ships twice: PA loads the server
-  mod's copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need
-  in `src/shared`. This gate reads the sources, not the outputs, where every `src/shared` file is
-  in both mods.
+  `src/server`. Only `modinfo.json` may be in both halves: each mod needs its own, and the build
+  writes it over the copied file. The two outputs mount at the same root, so a path in both mods
+  ships twice: PA loads the server mod's copy in a lobby or a game, and the client mod's copy
+  elsewhere. Put a file both mods need in `src/shared`. This gate reads the sources, not the
+  outputs, where every `src/shared` file is in both mods.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

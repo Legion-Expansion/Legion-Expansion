@@ -11,7 +11,7 @@ from pa_tools.pa import spec
 def source_paths(source_dir):
     found = {}
 
-    for dir_path, _, file_names in os.walk(source_dir):
+    for dir_path, _, file_names in os.walk(source_dir, followlinks=True):
         for file_name in file_names:
             relative = os.path.relpath(join(dir_path, file_name), source_dir)
             relative = relative.replace(os.sep, "/")
@@ -21,19 +21,19 @@ def source_paths(source_dir):
 
 
 def check_source_paths():
-    shared = source_paths("shared")
-    client = source_paths("client")
-    server = source_paths("server")
+    found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    pairs = [
+        # Each mod needs its own modinfo.json; build.py writes it over the copied one.
+        ("client", "server", {"modinfo.json"}),
+        ("shared", "client", set()),
+        ("shared", "server", set()),
+    ]
     duplicates = []
 
-    # build.py merges the two modinfo.json files instead of copying them.
-    for folded in sorted((client.keys() & server.keys()) - {"modinfo.json"}):
-        duplicates.append((f"client/{client[folded]}", f"server/{server[folded]}"))
-
-    for half_name, half in (("client", client), ("server", server)):
-        for folded in sorted(shared.keys() & half.keys()):
+    for first, second, allowed in pairs:
+        for folded in sorted((found[first].keys() & found[second].keys()) - allowed):
             duplicates.append(
-                (f"shared/{shared[folded]}", f"{half_name}/{half[folded]}")
+                (f"{first}/{found[first][folded]}", f"{second}/{found[second][folded]}")
             )
 
     if duplicates:
