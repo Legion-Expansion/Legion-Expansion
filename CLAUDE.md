@@ -95,7 +95,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    character that is not ASCII stops it too, and so does a file or folder at the root of one of
    them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
    name in the path of a file that ships that the `core.protectNTFS` check of Git for Windows
-   refuses, such as one that ends in a dot or a space, or `con.js`. It stops if it cannot read a
+   refuses, such as one that ends in a dot or a space, or `con.js`. A file or folder named `.git`,
+   in any case, in the path of a file that ships stops it as well. It stops if it cannot read a
    folder in the three source folders, and it gives the step 4 copy the file lists that it checked.
    It stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
@@ -109,8 +110,9 @@ Worth understanding because **a large part of what ships is generated, not commi
    untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
-   inside a symlinked directory or a nested repository, so every file in one ships, as before. The
-   build needs git on the `PATH` and runs only in a clone.
+   inside a symlinked directory, so every file in one ships, as before. A nested repository stops
+   step 1, because its `.git` would ship too. The build needs git on the `PATH` and runs only in a
+   clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -182,6 +184,15 @@ Only files that actually differ from the resolved vanilla spec are written out.
   reads `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it
   drops a trailing space when it makes a file or a folder. A build on Windows cannot read a folder
   whose name ends in a dot or a space, so it stops on one whatever the folder holds.
+- No file that ships from those three folders has a file or folder named `.git`, in any case, in
+  its path. Git records no path that holds that name, on any platform (`verify_dotfile` in
+  `read-cache.c`), so a release commit leaves the `.git` out. Where git finds a repository in it
+  (a `.git` folder that holds one, a `.GIT` folder on a case-insensitive file system, or a `.git`
+  file whose `gitdir:` path reaches one from the release clone), `git add -A` in a release clone
+  records the folder that holds it as one gitlink entry, and none of the files in that folder. The
+  other names that git refuses as `.git` stop other checks: `.git` or `git~1` followed by dots,
+  spaces, or a `:` stops the check above, and `.git` with an ignorable character such as U+200C
+  stops the ASCII check below.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH

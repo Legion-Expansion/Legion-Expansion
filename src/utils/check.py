@@ -218,6 +218,27 @@ def licence_file_names(found, dirs):
     return names
 
 
+def dot_git_path(path):
+    # Git records no path with a .git name, in any case, on any platform
+    # (verify_dotfile in read-cache.c).
+    parts = path.split("/")
+    for end, part in enumerate(parts, 1):
+        if part.lower() == ".git":
+            return "/".join(parts[:end]) + ("/" if end < len(parts) else "")
+    return None
+
+
+def dot_git_names(files):
+    return sorted(
+        {
+            f"{name}/{git_path}"
+            for name, paths in files.items()
+            for git_path in map(dot_git_path, paths)
+            if git_path
+        }
+    )
+
+
 def escaped(text):
     # A name can hold a character that does not show, such as U+200C, or look
     # like another name, such as its NFD form. Escaping shows each character.
@@ -276,6 +297,22 @@ def print_windows_names(windows_names):
         print(f'  "{quoted}"')
 
 
+def print_dot_git_names(git_names):
+    print(
+        "Error: A file or folder name in src/shared, src/client, or src/server is "
+        ".git, in any case."
+    )
+    print(
+        "  Git does not record a path that holds that name, so a release commit "
+        "leaves the .git out. Where git finds a repository in it, git add -A records "
+        "the folder that holds it as one gitlink entry, and none of the files in "
+        "that folder."
+    )
+    print("  Remove the .git, or move the repository out of the source folders.")
+    for path in git_names:
+        print_escaped(f"  src/{path}")
+
+
 def check_source_paths():
     files, windows_names, unreadable = walk_sources()
     found = {name: source_paths(paths) for name, paths in files.items()}
@@ -286,6 +323,7 @@ def check_source_paths():
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
     licence_names = licence_file_names(found, dirs)
+    git_names = dot_git_names(files)
 
     if unreadable:
         print_unreadable(unreadable)
@@ -373,6 +411,9 @@ def check_source_paths():
         for path in licence_names:
             print_escaped(f"  src/{path}")
 
+    if git_names:
+        print_dot_git_names(git_names)
+
     if (
         unreadable
         or windows_names
@@ -382,6 +423,7 @@ def check_source_paths():
         or file_dir
         or dir_spelling
         or licence_names
+        or git_names
     ):
         input()
         sys.exit(1)
