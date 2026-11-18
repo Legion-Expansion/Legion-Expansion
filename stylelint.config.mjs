@@ -10,7 +10,7 @@
 //
 // Unlike eslint.config.mjs's ES5 whitelist, these lists are curated rather than
 // exhaustive - CSS-since-2015 is not a finite gap. That plugin is the exhaustive
-// half. See docs/constraints.md.
+// half.
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
 // an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
