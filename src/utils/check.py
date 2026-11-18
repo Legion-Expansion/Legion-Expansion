@@ -56,28 +56,28 @@ def skip_trailing_folders(relative_dir, dir_names):
 
 
 def walk_source(source_dir):
+    prefix = f"src/{source_dir}/"
     try:
+        # Run from the repository's root, so that a .git in src cannot make git
+        # read another repository.
         ignored = subprocess.run(
-            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"],
-            cwd=source_dir,
+            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"]
+            + ["--", prefix],
+            cwd="..",
             stdout=subprocess.PIPE,
             check=True,
         ).stdout
     except (OSError, subprocess.CalledProcessError) as error:
         print(f"Error: git could not list the ignored files in src/{source_dir}.")
-        if isinstance(error, subprocess.CalledProcessError) and os.path.lexists(
-            os.path.join(source_dir, ".git")
-        ):
-            print(
-                f"  git may read src/{source_dir}/.git as the repository of "
-                f"src/{source_dir}. Move it out of src/. {error}"
-            )
-        else:
-            print(f"  The build needs git on the PATH and runs only in a clone. {error}")
+        print(f"  The build needs git on the PATH and runs only in a clone. {error}")
         input()
         sys.exit(1)
 
-    ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
+    ignored = {
+        git_name(path[len(prefix) :])
+        for path in os.fsdecode(ignored).split("\0")
+        if path.startswith(prefix)
+    }
     found = []
     windows_names = set()
     unreadable = []
