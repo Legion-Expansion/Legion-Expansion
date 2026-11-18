@@ -44,11 +44,13 @@ def is_trailing(name):
 
 
 def is_windows_invalid(name):
-    # git~1 is a short name Windows can give .git.
+    # git~1 is a short name Windows can give .git. Git compares the device names
+    # in ASCII only, and upper() maps some other letters to ASCII.
+    stem = name.partition(".")[0].rstrip(" ")
     return (
         is_trailing(name)
         or not WINDOWS_CHARACTERS.isdisjoint(name)
-        or name.partition(".")[0].rstrip(" ").upper() in WINDOWS_DEVICES
+        or (stem.isascii() and stem.upper() in WINDOWS_DEVICES)
         or name.lower() == "git~1"
     )
 
@@ -266,7 +268,8 @@ def print_windows_names(windows_names):
     print(
         "  The name ends in a dot or a space, holds one of < > : \" | ? * \\ or a "
         "character from U+0000 to U+001F, is a Windows device name such as con, "
-        "aux, or com1, alone or before a dot, or is git~1."
+        "aux, or com1, alone or before a dot, with or without spaces before the "
+        "dot, or is git~1."
     )
     print(
         '  Windows reads "a.json." and "a.json " as "a.json", "d./" as "d/", and '
