@@ -33,10 +33,11 @@ python src/utils/format_ai.py # reformat + key-reorder everything under src/serv
 `install_devel.py` appends `-dev` to both identifiers and a `[DEVELOPMENT]` tag to the display
 names, so the dev build coexists with a Community Mods install. Enable the `[DEVELOPMENT]` entry in-game.
 
-Both scripts locate the PA install by **reading the newest PA log file** for the directory PA
-mounts as `/` (`src/pa_tools/pa/paths.py`). Both UI backends log that mount. The script also still
-reads the `Coherent host dir` line, which CEF does not log. PA must have been run at least once or
-the build aborts.
+Both scripts locate the PA install by **reading the PA client logs, newest first**, for the
+directory PA mounts as `/` (`src/pa_tools/pa/paths.py`). Both UI backends log that mount. The
+script also still reads the `Coherent host dir` line, which CEF does not log. The first match
+decides. The build aborts if no log has a match, or if the directory the match names no longer
+exists (for example, after the install moved). Run PA once from the current install, then build.
 
 Lint — `npm run lint` runs all four in turn, or one at a time:
 
