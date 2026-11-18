@@ -5,10 +5,6 @@ import posixpath
 import subprocess
 import unicodedata
 
-from pa_tools.mod import checker
-from pa_tools.mod.utils import create_pafs
-from pa_tools.pa import spec
-
 MODINFO = "modinfo.json"
 LICENCE_FILES = ("LICENSE", "README.md")
 
@@ -394,6 +390,12 @@ def check_source_paths():
 
 
 def check_mod(client_output_dir, server_output_dir):
+    # Importing checker or create_pafs looks for a PA install (pa_tools.pa.paths).
+    # Import pa_tools here, so that the source-path gate runs without PA, as in CI.
+    from pa_tools.mod import checker
+    from pa_tools.mod.utils import create_pafs
+    from pa_tools.pa import spec
+
     # legion works with pa titans only, so mount that as well
     fs = create_pafs()
 
