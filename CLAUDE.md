@@ -161,7 +161,7 @@ Only files that actually differ from the resolved vanilla spec are written out.
   `src/client` stop the step 4 copy part-way, after the wipe; the other way round, the copy puts
   the file inside the directory with no message. Where it treats them as two, such as a case variant
   on a case-sensitive file system (the Linux default), the copy gives no error: the mod ships both
-  names; a case-insensitive file system holds only one of them. A build on Windows puts a directory
+  names, and no case-insensitive file system can hold both. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - No file that ships from those three folders has a file or folder name in its path that ends in
   a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
