@@ -31,10 +31,11 @@ jobs:
           python-version: "3.x"
 
       # On a failure the gate prints its report and calls input(), which raises
-      # EOFError with no stdin, so the job fails.
+      # EOFError with no stdin, so the job fails. Planning the shadows needs a PA
+      # install, so the gate checks the other paths that the build writes.
       - name: Run check_source_paths
         working-directory: src
-        run: python -c "from utils.check import check_source_paths; check_source_paths()" < /dev/null
+        run: python -c "from utils.check import check_source_paths, written_paths; check_source_paths(written_paths({}))" < /dev/null
 
   lint:
     name: Lint

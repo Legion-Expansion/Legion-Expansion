@@ -20,10 +20,13 @@ from utils.common import PROD_SERVER_OUTPUT_DIR
 from utils.common import DEV_IDENTIFIER_SUFFIX
 from utils.common import DEV_CLIENT_OUTPUT_DIR
 from utils.common import DEV_SERVER_OUTPUT_DIR
-from utils.update_shadows import update_shadows
+from utils.update_shadows import plan_shadows
+from utils.update_shadows import write_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
 from utils.check import LICENCE_FILES
+from utils.check import VERSION_JS
+from utils.check import written_paths
 from utils.format_json import format_files
 
 LEGION_LIST_INPUTS = [
@@ -74,8 +77,11 @@ def change_to_develop(modinfo, client_id, server_id):
 
 
 def generate_mods(is_dev_mode):
+    print("PLAN SHADOWS")
+    shadows = plan_shadows()
+
     print("CHECK SOURCES")
-    source_files = check_source_paths()
+    source_files = check_source_paths(written_paths(shadows))
 
     fs = create_pafs(True)
     fs.mount("/src", ".")
@@ -102,14 +108,10 @@ def generate_mods(is_dev_mode):
         server_output_dir = PROD_SERVER_OUTPUT_DIR
         client_output_dir = PROD_CLIENT_OUTPUT_DIR
 
-    fs.mount("/mod", client_output_dir)
-    fs.mount("/mod", server_output_dir)
-
-    old_modinfo = load_json(fs, "/mod/modinfo.json")
-
-    # Update build version
-    server_modinfo = update_modinfo(server_modinfo, old_modinfo)
-    client_modinfo = update_modinfo(client_modinfo, old_modinfo)
+    # Update build version. update_modinfo uses an old modinfo only to keep
+    # its date, which the next lines set.
+    server_modinfo = update_modinfo(server_modinfo, None)
+    client_modinfo = update_modinfo(client_modinfo, None)
     # Update dates
     server_modinfo["date"] = date.today().strftime("%Y-%m-%d")
     client_modinfo["date"] = date.today().strftime("%Y-%m-%d")
@@ -141,15 +143,11 @@ def generate_mods(is_dev_mode):
     pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
 
     print("UPDATE ui version.js")
-    with open(
-        join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"),
-        "w",
-        newline="\n",
-    ) as version_file:
+    with open(join(client_output_dir, VERSION_JS), "w", newline="\n") as version_file:
         print(f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")
-    update_shadows(client_output_dir, server_output_dir)
+    write_shadows(shadows, client_output_dir, server_output_dir)
 
     print("CHECK MOD")
     check_mod(client_output_dir, server_output_dir)
