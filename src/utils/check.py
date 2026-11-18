@@ -106,7 +106,7 @@ def walk_source(source_dir):
     ignored = {
         git_name(path[len(prefix) :]) for path in os.fsdecode(ignored).split("\0")
     }
-    # git lists an ignored nested repository as its folder, not as its files.
+    # git can list an ignored nested repository as its folder, not as its files.
     ignored_dirs = {path for path in ignored if path.endswith("/")}
     found = []
     windows_names = set()
@@ -431,10 +431,9 @@ def print_dot_git_names(git_names):
         ".git, in any case."
     )
     print(
-        "  Git does not record a path that holds that name, so a release commit "
-        "leaves the .git out. Where git finds a repository in it, git add -A can "
-        "record the folder that holds it as one gitlink entry, with none of the "
-        "files in that folder."
+        "  Git does not record a path that holds that name. Where git finds a "
+        "repository in it, git add -A in a release clone can also record the folder "
+        "that holds it as one gitlink entry, with none of its files, or fail."
     )
     print("  Remove the .git, or move the repository out of the source folders.")
     for path in git_names:
