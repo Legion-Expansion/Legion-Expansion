@@ -133,8 +133,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
-- Each file path, compared without case or Unicode normalisation form (macOS treats the NFC and
-  NFD forms of a name as one name), is in only one of `src/shared`, `src/client`, and
+- Each file path, compared after NFD and a full Unicode case fold (a case-insensitive macOS volume
+  treats `ß` and `ss` as one name), is in only one of `src/shared`, `src/client`, and
   `src/server`. Only `modinfo.json` may be in both `src/client` and `src/server`: the build reads
   each half's copy to make that mod's own. The two outputs mount at the same root, so a path in
   both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the client mod's

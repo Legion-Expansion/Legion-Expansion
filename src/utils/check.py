@@ -48,13 +48,14 @@ def source_files(source_dir):
     return found
 
 
+def path_key(path):
+    # A case-insensitive macOS volume compares names after NFD and a full
+    # case fold, so the micro sign and the Greek mu are one name there.
+    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
+
+
 def source_paths(source_dir):
-    # macOS treats the NFC and NFD forms of a name as one name. NFC runs after
-    # lower(), which can leave a letter and a mark that NFC composes into one.
-    return {
-        unicodedata.normalize("NFC", path.lower()): path
-        for path in source_files(source_dir)
-    }
+    return {path_key(path): path for path in source_files(source_dir)}
 
 
 def check_source_paths():
