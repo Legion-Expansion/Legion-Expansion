@@ -104,9 +104,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
-   inside a symlinked directory or a nested repository below a source root, so every file in one
-   ships, as before. Step 1 stops on a `.git` at a source root, unless it is a folder that holds no
-   file, which the copy skips. The build needs git on the `PATH` and runs only in a clone.
+   inside a symlinked directory, or inside a nested repository in a folder where git tracks no
+   file, so every file in one ships, as before. Step 1 stops on a `.git` at a source root, unless it
+   is a folder that holds no file, which the copy skips. The build needs git on the `PATH` and runs
+   only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
