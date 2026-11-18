@@ -134,16 +134,16 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
-- Each file path, compared without case or Unicode normalisation form (macOS treats the NFC and
-  NFD forms of a name as one name), is in only one of `src/shared`, `src/client`, and
-  `src/server`. Only `modinfo.json` may be in both `src/client` and `src/server`: the build reads
-  each half's copy to make that mod's own. The two outputs mount at the same root, so a path in
-  both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the client mod's
-  copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the sources, not the
-  outputs, where every `src/shared` file is in both mods.
+- Each file path, compared after NFD and a full Unicode case fold (case-insensitive APFS, the macOS
+  default, treats `ß` and `ss` as one name), is in only one of `src/shared`, `src/client`, and
+  `src/server`. Only the exact name `modinfo.json` may be in both `src/client` and `src/server`:
+  the build reads each half's copy to make that mod's own. The two outputs mount at the same root,
+  so a path in both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the
+  client mod's copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the
+  sources, not the outputs, where every `src/shared` file is in both mods.
 - No two file paths in one of those three folders compare equal in that way. macOS, and Windows
-  where only the case differs, treat the two paths as one path, so one file replaces the other when
-  a player installs the mod.
+  for a pair such as `A.json` and `a.json`, treat the two paths as one path, so one file replaces
+  the other when a player installs the mod.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
@@ -226,7 +226,8 @@ Key pieces:
   `stylelint.config.mjs`, on every sheet in `src/client/.../css/` except `legion_buttons.css` and
   `start.css`, which `start.js` loads in the main menu.
 - **Build bar**: `live_game_build_bar.js` appends `L_`-prefixed tab groups to
-  `model.BuildSet.tabsTemplate` and remaps labels/hotkeys back to the vanilla group name;
+  `model.BuildSet.tabsTemplate` with the vanilla labels, and adds a `tab_L_<group>` copy of each
+  vanilla `tab_<group>` key to `model.hotkeys()`, which stock reads for every tab's hotkey;
   `shared_build.js` registers every Legion spec's grid position in
   `Build.HotkeyModel.SpecIdToGridMap` under those `L_` groups. A new buildable unit needs an entry
   in both, plus `icon_atlas.js`.

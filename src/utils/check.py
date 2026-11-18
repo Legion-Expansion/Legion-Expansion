@@ -49,13 +49,16 @@ def source_files(source_dir):
     return found
 
 
+def path_key(path):
+    # Case-insensitive APFS compares names after NFD and a full case fold. NFD goes
+    # first: casefold() can split a letter, moving a later mark to the new letter.
+    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
+
+
 def source_paths(source_dir):
     paths = {}
     for path in source_files(source_dir):
-        # macOS treats the NFC and NFD forms of a name as one name. NFC runs after
-        # lower(), which can leave a letter and a mark that NFC composes into one.
-        key = unicodedata.normalize("NFC", path.lower())
-        paths.setdefault(key, []).append(path)
+        paths.setdefault(path_key(path), []).append(path)
     return paths
 
 
@@ -70,7 +73,8 @@ def same_folder_duplicates(found):
 
 def cross_folder_duplicates(found):
     pairs = [
-        # build.py reads each half's modinfo.json to make that mod's own.
+        # build.py reads each half's modinfo.json to make that mod's own. Only
+        # that exact name is exempt: a variant ships as or beside the real one.
         ("client", "server", {MODINFO}),
         ("shared", "client", set()),
         ("shared", "server", set()),
@@ -78,10 +82,12 @@ def cross_folder_duplicates(found):
     duplicates = []
 
     for first, second, allowed in pairs:
-        for folded in sorted((found[first].keys() & found[second].keys()) - allowed):
+        for folded in sorted(found[first].keys() & found[second].keys()):
             for first_path, second_path in itertools.product(
                 sorted(found[first][folded]), sorted(found[second][folded])
             ):
+                if {first_path, second_path} <= allowed:
+                    continue
                 duplicates.append(
                     (f"{first}/{first_path}", f"{second}/{second_path}")
                 )
@@ -107,8 +113,8 @@ def check_source_paths():
             "differ only in case or Unicode normalisation form."
         )
         print(
-            "  macOS, and Windows where only the case differs, treat the two paths "
-            "as one path, so one file replaces the other."
+            "  macOS, and Windows for a pair such as A.json and a.json, treat the "
+            "two paths as one path, so one file replaces the other."
         )
         print_duplicates(same_folder)
 
