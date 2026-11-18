@@ -53,8 +53,8 @@ const themeClassPlugin = stylelint.createPlugin(
       }
       for (const selector of rule.selectors) {
         const counted = selector
-          .replace(/:not\([^)]*\)/gi, "")
-          .replace(/\[[^\]]*\]/g, "");
+          .replace(/:not\([^)]*\)?/gi, "")
+          .replace(/\[[^\]]*\]?/g, "");
         if (!themeClass.test(counted)) {
           stylelint.utils.report({
             result,
