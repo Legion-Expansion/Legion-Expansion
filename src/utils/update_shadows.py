@@ -225,7 +225,7 @@ def patch_unit_and_commander_lists():
 
 # A vanilla ammo can already point at its own per-ammo path, and a copy onto
 # that path would ship an unchanged shadow of the vanilla effect.
-def copy_effect(src_file, dst_file, client_out_dir):
+def copy_effect(src_file, dst_file, effects):
     if src_file == dst_file:
         return
 
@@ -241,10 +241,12 @@ def copy_effect(src_file, dst_file, client_out_dir):
             emitter.clear()
             emitter.update(renamed)
 
-    pajson.dumpf(effect, client_out_dir + dst_file)
+    effects[dst_file] = effect
 
 
-def patch_shield_blocked_ammo(client_out_dir):
+def patch_shield_blocked_ammo():
+    effects = {}
+
     ## Get the list of ammo entities that are targeted by the shield
     resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
     legion_shield = spec.parse_spec(
@@ -303,29 +305,39 @@ def patch_shield_blocked_ammo(client_out_dir):
         if ammo == original_spec:
             continue
 
-        # prepare files:
-        os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
+        copy_effect(src_hit_file, dst_hit_file, effects)
+        copy_effect(src_trail_file, dst_trail_file, effects)
 
-        copy_effect(src_hit_file, dst_hit_file, client_out_dir)
-        copy_effect(src_trail_file, dst_trail_file, client_out_dir)
-
-
-def write_changed_specs(server_out_dir):
-    # Write out all changes to the mod server directory
-    for file_path, unit in file_cache.items():
-        # If we have made no changes, ignore them
-        if unit == spec.load_spec(loader, file_path):
-            continue
-
-        os.makedirs(server_out_dir + os.path.dirname(file_path), exist_ok=True)
-        pajson.dumpf(unit, server_out_dir + file_path, separators=(",", ": "))
+    return effects
 
 
-def update_shadows(client_out_dir, server_out_dir):
+def changed_specs():
+    return {
+        file_path: unit
+        for file_path, unit in file_cache.items()
+        if unit != spec.load_spec(loader, file_path)
+    }
+
+
+# Reads only the PA install and src/server, so the build can check the paths
+# against the sources before it wipes the outputs.
+def plan_shadows():
     check_shadowed_shaders()
     check_patch_coverage()
     patch_mine_sight_layers()
     patch_anti_entity_targets()
     patch_unit_and_commander_lists()
-    patch_shield_blocked_ammo(client_out_dir)
-    write_changed_specs(server_out_dir)
+    effects = patch_shield_blocked_ammo()
+    return {"client": effects, "server": changed_specs()}
+
+
+def write_shadow(output_dir, file_path, data, **kwargs):
+    os.makedirs(output_dir + os.path.dirname(file_path), exist_ok=True)
+    pajson.dumpf(data, output_dir + file_path, **kwargs)
+
+
+def write_shadows(shadows, client_out_dir, server_out_dir):
+    for file_path, effect in shadows["client"].items():
+        write_shadow(client_out_dir, file_path, effect)
+    for file_path, unit in shadows["server"].items():
+        write_shadow(server_out_dir, file_path, unit, separators=(",", ": "))
