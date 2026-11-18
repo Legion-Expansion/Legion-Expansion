@@ -8,7 +8,8 @@ import sys
 
 # On Windows, Python before 3.15 writes a redirected stdout in the ANSI code
 # page, and print() stops on a character that the code page does not have.
-sys.stdout.reconfigure(errors="backslashreplace")
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="backslashreplace")
 
 from utils.build import generate_mods
 from utils.common import PROD_CLIENT_OUTPUT_DIR
