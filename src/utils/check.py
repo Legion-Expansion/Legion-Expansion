@@ -49,7 +49,12 @@ def source_files(source_dir):
 
 
 def source_paths(source_dir):
-    return {path.lower(): path for path in source_files(source_dir)}
+    # macOS treats the NFC and NFD forms of a name as one name. NFC runs after
+    # lower(), which can leave a letter and a mark that NFC composes into one.
+    return {
+        unicodedata.normalize("NFC", path.lower()): path
+        for path in source_files(source_dir)
+    }
 
 
 def check_source_paths():
@@ -78,7 +83,10 @@ def check_source_paths():
             "or a game, and the client mod's copy elsewhere."
         )
         for first, second in duplicates:
-            print(f"  src/{first} and src/{second}")
+            # A redirected stdout can use a code page, such as Windows cp1252,
+            # that cannot hold every name. Escaping also shows each name's form.
+            line = f"  src/{first} and src/{second}"
+            print(line.encode("unicode_escape").decode("ascii"))
         input()
         sys.exit(1)
 
