@@ -51,14 +51,17 @@
         );
       });
       var tab = group && tabsByGroup[group];
-      if (!tab) {
-        // Bugs Faction's tab_hotkeys.js sets buildGroup to map its tabs to a base group.
+      if (!tab && params.group) {
+        // Other mods set buildGroup to map a tab to a base group: Bugs Faction's
+        // tab_hotkeys.js as an observable, Dynastiya's build_bar.js as a string.
         tab = _.find(buildSet.tabs(), function (candidate) {
-          return (
-            candidate.visible() &&
-            candidate.buildGroup &&
-            candidate.buildGroup() === params.group
-          );
+          if (!candidate.visible()) {
+            return false;
+          }
+          var buildGroup = _.isFunction(candidate.buildGroup)
+            ? candidate.buildGroup()
+            : candidate.buildGroup;
+          return buildGroup === params.group;
         });
       }
       if (tab) {
