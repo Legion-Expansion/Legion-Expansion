@@ -10,7 +10,16 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
-from utils.build import generate_mods
+from pa_tools.pa.pajson import ParseError
 
-# Installs directly to the server_mods and client_mods directories
-generate_mods(is_dev_mode=True)
+try:
+    # utils.common parses the modinfos when it is imported
+    from utils.build import generate_mods
+
+    # Installs directly to the server_mods and client_mods directories
+    generate_mods(is_dev_mode=True)
+except ParseError as error:
+    print("Error: pajson cannot parse a .json or .pfx file, so the build stopped.")
+    print(*error.warnings, error, sep="\n")
+    input()
+    sys.exit(1)
