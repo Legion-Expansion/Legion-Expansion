@@ -222,7 +222,8 @@ Key pieces:
   `stylelint.config.mjs`, on every sheet in `src/client/.../css/` except `legion_buttons.css` and
   `start.css`, which `start.js` loads in the main menu.
 - **Build bar**: `live_game_build_bar.js` appends `L_`-prefixed tab groups to
-  `model.BuildSet.tabsTemplate` and remaps labels/hotkeys back to the vanilla group name;
+  `model.BuildSet.tabsTemplate` with the vanilla labels, and adds a `tab_L_<group>` copy of each
+  vanilla `tab_<group>` key to `model.hotkeys()`, which stock reads for every tab's hotkey;
   `shared_build.js` registers every Legion spec's grid position in
   `Build.HotkeyModel.SpecIdToGridMap` under those `L_` groups. A new buildable unit needs an entry
   in both, plus `icon_atlas.js`.
