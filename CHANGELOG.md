@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Game menu items keep their normal colours when you are not playing a Legion commander
+
 ## v1.34.0 - 2026-11-15
 
 ### General
