@@ -85,9 +85,9 @@ Worth understanding because **a large part of what ships is generated, not commi
    in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
-   character that is not ASCII stops it too, and so does a file or folder at a path that the build
-   writes into a mod after the step 4 copy, compared in that way, and a file or folder name that
-   ends in a dot or a space in the path of a file that ships. It reads the same file list as the
+   character that is not ASCII stops it too, and so does a source path that clashes with a path
+   that the build writes into a mod after the step 4 copy (see the gates below), and a file or
+   folder name that ends in a dot or a space in the path of a file that ships. It reads the same file list as the
    step 4 copy, and stops if it cannot read a folder in the three source folders. It stops the way
    the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
@@ -115,8 +115,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 
 `src/utils/update_shadows.py` mounts the real PA install (`pa_ex1` over `pa`) and writes shadowed
 copies of vanilla files into the **output** dirs. It is the only place these belong, and the
-step 1 gate stops on a source file or folder at a shadow's path. It reads only the PA install and
-`src/server`, so it works the shadows out before the wipe and writes them at step 6:
+step 1 gate stops on a source path that clashes with a shadow's path (see the `check.py` gates).
+It reads only the PA install and `src/server`, so it works the shadows out before the wipe and
+writes them at step 6:
 
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and

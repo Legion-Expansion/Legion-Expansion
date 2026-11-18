@@ -110,12 +110,15 @@ def source_paths(files):
     return paths
 
 
+def folder_prefixes(path):
+    parts = path.split("/")
+    return ["/".join(parts[:end]) for end in range(1, len(parts))]
+
+
 def source_dirs(paths):
     dirs = {}
     for path in itertools.chain.from_iterable(paths.values()):
-        parts = path.split("/")
-        for end in range(1, len(parts)):
-            prefix = "/".join(parts[:end])
+        for prefix in folder_prefixes(path):
             dirs.setdefault(path_key(prefix), set()).add(prefix)
     return dirs
 
@@ -197,9 +200,8 @@ def non_ascii_paths(found):
 def written_dirs(written):
     dirs = {}
     for path, mods in written.items():
-        parts = path.split("/")
-        for end in range(1, len(parts)):
-            dirs.setdefault("/".join(parts[:end]), set()).update(mods)
+        for prefix in folder_prefixes(path):
+            dirs.setdefault(prefix, set()).update(mods)
     return dirs
 
 
@@ -261,9 +263,7 @@ def print_written_paths(written_names):
         "writes into a mod after the copy."
     )
     print(
-        "  The build writes LICENSE and README.md into both mods, "
-        "ui/mods/com.pa.legion-expansion/version.js into the client mod, and the "
-        "shadows from src/utils/update_shadows.py into each mod. A folder that the "
+        "  written_paths in src/utils/build.py lists those paths. A folder that the "
         "build writes into under the same spelling is not listed."
     )
     print(
@@ -280,7 +280,7 @@ def print_written_paths(written_names):
     )
     for source, path, mods in written_names:
         where = "both mods" if len(mods) > 1 else f"the {min(mods)} mod"
-        print_escaped(f"  src/{source} and {path} in {where}")
+        print_escaped(f"  src/{source} and {path}, which the build writes into {where}")
 
 
 def print_escaped(line):

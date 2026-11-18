@@ -77,8 +77,7 @@ def change_to_develop(modinfo, client_id, server_id):
         modinfo["companions"] = [id_map.get(x, x) for x in modinfo["companions"]]
 
 
-# Each path that the build writes into a mod after the copy, with the mods it
-# goes into. modinfo.json is not listed: the build reads each half's copy.
+# modinfo.json is not listed: the build reads each half's copy.
 def written_paths(shadows):
     written = {name: {"client", "server"} for name in LICENCE_FILES}
     written[VERSION_JS] = {"client"}
