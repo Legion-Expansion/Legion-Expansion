@@ -146,21 +146,46 @@ def dir_spelling_duplicates(dirs):
     return duplicates
 
 
+def non_ascii_paths(found):
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for path in sorted(itertools.chain.from_iterable(paths.values()))
+        if not path.isascii()
+    ]
+
+
+def print_escaped(line):
+    # A name can hold a character that does not show, such as U+200C, or look
+    # like another name, such as its NFD form. Escaping shows each character.
+    print(line.encode("unicode_escape").decode("ascii"))
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # The two names can look the same, such as the NFC and NFD forms of
-        # one name. Escaping shows how they differ.
-        line = f"  src/{first} and src/{second}"
-        print(line.encode("unicode_escape").decode("ascii"))
+        print_escaped(f"  src/{first} and src/{second}")
 
 
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
+
+    if non_ascii:
+        print(
+            "Error: A file path in src/shared, src/client, or src/server holds a "
+            "character that is not ASCII."
+        )
+        print(
+            "  File systems compare such names in different ways, so the build "
+            "cannot find every pair of names that one of them treats as one."
+        )
+        for path in non_ascii:
+            print_escaped(f"  src/{path}")
 
     if same_folder:
         print(
@@ -210,7 +235,7 @@ def check_source_paths():
         )
         print_duplicates(dir_spelling)
 
-    if same_folder or cross_folder or file_dir or dir_spelling:
+    if non_ascii or same_folder or cross_folder or file_dir or dir_spelling:
         input()
         sys.exit(1)
 

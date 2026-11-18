@@ -92,6 +92,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 5. Keep commit subjects concise, use the body to include details.
 6. Make small, single-purpose commits.
 7. Large files not required for the mod to run should be stored using [Git Large File Storage](https://git-lfs.github.com/)
+8. Use only ASCII characters in file and folder names under `src/shared`, `src/client`, and `src/server`. The build stops if a path that it copies holds any other character.
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
