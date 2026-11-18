@@ -139,23 +139,24 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
-- Each file path, compared after NFD and a full Unicode case fold (case-insensitive APFS, the macOS
-  default, treats `ß` and `ss` as one name), is in only one of `src/shared`, `src/client`, and
-  `src/server`. Only the exact name `modinfo.json` may be in both `src/client` and `src/server`:
-  the build reads each half's copy to make that mod's own. The two outputs mount at the same root,
-  so a path in both mods ships twice: PA loads the server mod's copy in a lobby or a game, and the
-  client mod's copy elsewhere. Put a file both mods need in `src/shared`. This gate reads the
-  sources, not the outputs, where every `src/shared` file is in both mods.
-- No two file paths in one of those three folders compare equal in that way. The default file
-  systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
-  two files: a git clone there keeps one and warns.
-- No file and directory, and no two spellings of one directory, compare equal in that way in one
-  of those folders, or in `src/shared` and one of the other two: the sources of one mod. A
-  directory's name is each folder prefix of a file path. No folder holds a file and a directory
-  of one name. A file in `src/shared` and a directory in `src/client` stop the step 4 copy
-  part-way, after the wipe; the other way round, the copy puts the file inside the directory with
-  no message. A build on Windows puts a directory spelled two ways, such as `L_bot` and `l_bot`,
-  in one folder named after the first one written.
+- Each file path that the build copies from `src/shared`, `src/client`, and `src/server`, compared
+  after NFD and a full Unicode case fold (case-insensitive APFS, the macOS default, treats `ß` and
+  `ss` as one name), is in only one of them. Only the exact name `modinfo.json` may be in both
+  `src/client` and `src/server`: the build reads each half's copy to make that mod's own. The two
+  outputs mount at the same root, so a path in both mods ships twice: PA loads the server mod's
+  copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need in
+  `src/shared`. This gate reads the sources, not the outputs, where every `src/shared` file is in
+  both mods.
+- No two file paths that the build copies from one of those three folders compare equal in that
+  way. The default file systems of macOS, and of Windows for a pair such as `A.json` and `a.json`,
+  hold only one of the two files: a git clone there keeps one and warns.
+- Among the file paths that the build copies from one of those folders, or from `src/shared` and
+  one of the other two (the sources of one mod), no file and directory, and no two spellings of
+  one directory, compare equal in that way. A directory's name is each folder prefix of one of
+  those paths. No folder holds a file and a directory of one name. A file in `src/shared` and a
+  directory in `src/client` stop the step 4 copy part-way, after the wipe; the other way round,
+  the copy puts the file inside the directory with no message. A build on Windows puts a directory
+  spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - No file that ships from those three folders has a file or folder name in its path that ends in
   a dot or a space. Windows cannot hold the name: it reads `a.json.` as `a.json` and `d./a.json`
   as `d/a.json`, and it drops a trailing space when it makes a file or a folder. Git for Windows
@@ -165,13 +166,13 @@ Only files that actually differ from the resolved vanilla spec are written out.
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
   NON-JOINER when it compares names.
-- No file or folder at the root of `src/shared`, `src/client`, or `src/server` is named `LICENSE`
-  or `README.md`, compared after NFD and a full Unicode case fold. After the step 4 copy, the build
-  copies the repository's `LICENSE` and `README.md` into the root of each mod. Where the file
-  system finds the name there (the exact name, or a variant such as `license` on a
-  case-insensitive file system), the copy writes over that file, which keeps its own name, or
-  fails on that folder after the outputs are wiped. Where it does not, the mod ships both names,
-  and a case-insensitive file system holds only one of them.
+- At the root of `src/shared`, `src/client`, or `src/server`, no file that the build copies, and no
+  folder that holds one at any depth, is named `LICENSE` or `README.md`, compared after NFD and a
+  full Unicode case fold. After the step 4 copy, the build copies the repository's `LICENSE` and
+  `README.md` into the root of each mod. Where the file system finds the name there (the exact
+  name, or a variant such as `license` on a case-insensitive file system), the copy writes over
+  that file, which keeps its own name, or fails on that folder after the outputs are wiped. Where
+  it does not, the mod ships both names, and a case-insensitive file system holds only one of them.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
