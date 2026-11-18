@@ -252,7 +252,8 @@ def print_unreadable(unreadable):
     print("  The build would ship without the files in it.")
     for error in unreadable:
         path = os.fsdecode(error.filename).replace(os.sep, "/")
-        print(f'  "src/{path}/": {error.strerror}')
+        quoted = escaped(f"src/{path}/").replace('"', '\\"')
+        print(f'  "{quoted}": {error.strerror}')
 
 
 def print_windows_names(windows_names):
