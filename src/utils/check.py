@@ -29,33 +29,29 @@ def git_name(path):
     return path
 
 
-def stop_on_unreadable_folder(error):
-    print(
-        "Error: The build could not read a folder in src/shared, src/client, or "
-        "src/server."
-    )
-    print(f"  The build would ship without the files in it. {error}")
-    input()
-    sys.exit(1)
+def is_trailing(name):
+    return name.endswith((".", " "))
 
 
 def trailing_names(path):
     parts = path.split("/")
     for end, part in enumerate(parts, 1):
-        if part.endswith((".", " ")):
+        if is_trailing(part):
             yield "/".join(parts[:end]) + ("/" if end < len(parts) else "")
 
 
-def skip_trailing_folders(relative_dir, dir_names, windows_names):
+def skip_trailing_folders(relative_dir, dir_names):
     # Windows opens a folder "d." as "d", so do not walk into one, and report
     # it whatever it holds.
     kept = []
+    skipped = []
     for name in dir_names:
-        if name.endswith((".", " ")):
-            windows_names.add(posixpath.join(relative_dir, name) + "/")
+        if is_trailing(name):
+            skipped.append(posixpath.join(relative_dir, name) + "/")
         else:
             kept.append(name)
     dir_names[:] = kept
+    return skipped
 
 
 def walk_source(source_dir):
@@ -75,16 +71,17 @@ def walk_source(source_dir):
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
     windows_names = set()
+    unreadable = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
     for dir_path, dir_names, file_names in os.walk(
-        source_dir, onerror=stop_on_unreadable_folder, followlinks=True
+        source_dir, onerror=unreadable.append, followlinks=True
     ):
         # Keep each name as os.walk lists it: on Windows, path functions such
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
         if os.name == "nt":
-            skip_trailing_folders(relative_dir, dir_names, windows_names)
+            windows_names.update(skip_trailing_folders(relative_dir, dir_names))
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) in ignored:
@@ -92,7 +89,7 @@ def walk_source(source_dir):
             found.append(relative)
             windows_names.update(trailing_names(relative))
 
-    return found, windows_names
+    return found, windows_names, unreadable
 
 
 def source_files(source_dir):
@@ -197,15 +194,25 @@ def print_duplicates(duplicates):
 
 def check_source_paths():
     walked = {name: walk_source(name) for name in ("shared", "client", "server")}
-    found = {name: source_paths(files) for name, (files, _) in walked.items()}
+    found = {name: source_paths(files) for name, (files, _, _) in walked.items()}
     windows_names = sorted(
-        f"{name}/{path}" for name, (_, paths) in walked.items() for path in paths
+        f"{name}/{path}" for name, (_, paths, _) in walked.items() for path in paths
     )
+    unreadable = [error for _, _, errors in walked.values() for error in errors]
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
+
+    if unreadable:
+        print(
+            "Error: The build could not read a folder in src/shared, src/client, or "
+            "src/server."
+        )
+        print("  The build would ship without the files in it.")
+        for error in unreadable:
+            print(f"  {error}")
 
     if windows_names:
         print(
@@ -267,7 +274,14 @@ def check_source_paths():
         )
         print_duplicates(dir_spelling)
 
-    if windows_names or same_folder or cross_folder or file_dir or dir_spelling:
+    if (
+        unreadable
+        or windows_names
+        or same_folder
+        or cross_folder
+        or file_dir
+        or dir_spelling
+    ):
         input()
         sys.exit(1)
 
