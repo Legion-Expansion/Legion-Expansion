@@ -81,7 +81,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>`, sets `build`, and keeps
    the previous `date` if the PA build has not changed.
-4. Wipe the two output dirs, then copy `shared` → both, `server` → server, `client` → client.
+4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
+   `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
+   one another program holds open, stops the build with an error.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — generates the base-game shadow files (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -291,4 +293,5 @@ release → run `install_prod.py` → review, commit and push each of the two re
 
 The release clones have `core.ignorecase` on, so `git add` records nothing when a built file
 changes only the case of its name, and the old name ships. After the build, `install_prod.py`
-(`src/utils/check_release_case.py`) raises with the `git mv -f` commands that record each such rename.
+(`src/utils/release_case.py`) prints a `CHECK CASE` line for each release repo, then records each
+such rename with `git mv -f` and prints a `RENAME` line for it.

@@ -32,8 +32,12 @@ LEGION_LIST_INPUTS = [
 
 
 def clean_output(output_dir):
-    for file in glob.glob(join(output_dir, "*")):
-        shutil.rmtree(file, ignore_errors=True)
+    # "*" skips dot entries, which keeps the release clones' .git.
+    for path in glob.glob(join(glob.escape(output_dir), "*")):
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+        else:
+            os.remove(path)
 
 
 def load_json(loader, path):
