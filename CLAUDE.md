@@ -163,10 +163,10 @@ Only files that actually differ from the resolved vanilla spec are written out.
   out: a name that ends in a dot or a space, holds one of `< > : " | ? * \` or a character from
   U+0000 to U+001F, is a Windows device name (`con`, `prn`, `aux`, `nul`, `conin$`, `conout$`,
   `com1` to `com9`, or `lpt0` to `lpt9`, in any case) alone or before a dot, with or without
-  spaces before the dot, or is `git~1`, a short name Windows can give `.git`. Windows reads
-  `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it drops a
-  trailing space when it makes a file or a folder. A build on Windows cannot read a folder whose
-  name ends in a dot or a space, so it stops on one whatever the folder holds.
+  spaces before the dot, or is `git~1` in any case, a short name Windows can give `.git`. Windows
+  reads `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it
+  drops a trailing space when it makes a file or a folder. A build on Windows cannot read a folder
+  whose name ends in a dot or a space, so it stops on one whatever the folder holds.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH

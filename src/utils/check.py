@@ -226,10 +226,14 @@ def licence_file_names(found, dirs):
     return names
 
 
-def print_escaped(line):
+def escaped(text):
     # A name can hold a character that does not show, such as U+200C, or look
     # like another name, such as its NFD form. Escaping shows each character.
-    print(line.encode("unicode_escape").decode("ascii"))
+    return text.encode("unicode_escape").decode("ascii")
+
+
+def print_escaped(line):
+    print(escaped(line))
 
 
 def print_duplicates(duplicates):
@@ -269,14 +273,16 @@ def print_windows_names(windows_names):
         "  The name ends in a dot or a space, holds one of < > : \" | ? * \\ or a "
         "character from U+0000 to U+001F, is a Windows device name such as con, "
         "aux, or com1, alone or before a dot, with or without spaces before the "
-        "dot, or is git~1."
+        "dot, or is git~1. Case does not matter."
     )
     print(
         '  Windows reads "a.json." and "a.json " as "a.json", "d./" as "d/", and '
         '"a:b" as a stream of "a".'
     )
     for path in windows_names:
-        print_escaped(f'  "src/{path}"')
+        # escaped() doubles each backslash, so \" can only be a quote in the name.
+        quoted = escaped(f"src/{path}").replace('"', '\\"')
+        print(f'  "{quoted}"')
 
 
 def check_source_paths():
