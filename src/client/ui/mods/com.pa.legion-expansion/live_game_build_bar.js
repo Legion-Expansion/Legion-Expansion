@@ -58,11 +58,10 @@
           if (!candidate.visible()) {
             return false;
           }
-          var buildGroup = candidate.buildGroup;
-          return (
-            (_.isFunction(buildGroup) ? buildGroup() : buildGroup) ===
-            params.group
-          );
+          var buildGroup = _.isFunction(candidate.buildGroup)
+            ? candidate.buildGroup()
+            : candidate.buildGroup;
+          return buildGroup === params.group;
         });
       }
       if (tab) {
