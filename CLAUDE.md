@@ -88,18 +88,20 @@ Worth understanding because **a large part of what ships is generated, not commi
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a file or folder at the root of one of
    them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
-   name that ends in a dot or a space in the path of a file that ships. It reads the same file
-   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
-   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   name that ends in a dot or a space in the path of a file that ships. It stops if it cannot read
+   a folder in the three source folders, and it gives the step 4 copy the file lists that it
+   checked. It stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
 4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
    `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
-   one another program holds open, stops the build with an error. The copy skips each untracked
-   file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes file), so an
-   untracked operating system file such as `.DS_Store` does not ship. Every other file on disk
-   ships under its case on disk, a new file before `git add`. Git does not look inside a
+   one another program holds open, stops the build with an error. The copy takes the file lists
+   that step 1 checked, so a file added after step 1 does not ship, and a listed file that is
+   removed before the copy stops the build with an error after the wipe. The copy skips each
+   untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
+   file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
+   on disk ships under its case on disk, a new file before `git add`. Git does not look inside a
    symlinked directory or a nested repository, so every file in one ships, as before. The build
    needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
