@@ -24,9 +24,11 @@ from utils.update_shadows import plan_shadows
 from utils.update_shadows import write_shadows
 from utils.check import check_mod
 from utils.check import check_source_paths
-from utils.check import LICENCE_FILES
 from utils.check import source_files
 from utils.format_json import format_files
+
+LICENCE_FILES = ("LICENSE", "README.md")
+VERSION_JS = "ui/mods/com.pa.legion-expansion/version.js"
 
 LEGION_LIST_INPUTS = [
     "pa/units/unit_list_legion.json",
@@ -75,12 +77,23 @@ def change_to_develop(modinfo, client_id, server_id):
         modinfo["companions"] = [id_map.get(x, x) for x in modinfo["companions"]]
 
 
+# Each path that the build writes into a mod after the copy, with the mods it
+# goes into. modinfo.json is not listed: the build reads each half's copy.
+def written_paths(shadows):
+    written = {name: {"client", "server"} for name in LICENCE_FILES}
+    written[VERSION_JS] = {"client"}
+    for mod, files in shadows.items():
+        for path in files:
+            written.setdefault(path.lstrip("/"), set()).add(mod)
+    return written
+
+
 def generate_mods(is_dev_mode):
     print("PLAN SHADOWS")
     shadows = plan_shadows()
 
     print("CHECK SOURCES")
-    check_source_paths()
+    check_source_paths(written_paths(shadows))
 
     fs = create_pafs(True)
     fs.mount("/src", ".")
@@ -146,11 +159,7 @@ def generate_mods(is_dev_mode):
     pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
 
     print("UPDATE ui version.js")
-    with open(
-        join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"),
-        "w",
-        newline="\n",
-    ) as version_file:
+    with open(join(client_output_dir, VERSION_JS), "w", newline="\n") as version_file:
         print(f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")

@@ -79,16 +79,17 @@ template checklist.
 
 Worth understanding because **a large part of what ships is generated, not committed**:
 
-1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
+1. `plan_shadows` (`update_shadows.py`) works out the step 6 shadow files in memory. Then
+   `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
    path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
    in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
-   character that is not ASCII stops it too, and so does a file or folder at the root of one of
-   them whose name compares equal in that way to `LICENSE` or `README.md`, and a file or folder
-   name that ends in a dot or a space in the path of a file that ships. It reads the same file
-   list as the step 4 copy, and stops if it cannot read a folder in the three source folders. It
-   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
+   character that is not ASCII stops it too, and so does a file or folder at a path that the build
+   writes into a mod after the step 4 copy, compared in that way, and a file or folder name that
+   ends in a dot or a space in the path of a file that ships. It reads the same file list as the
+   step 4 copy, and stops if it cannot read a folder in the three source folders. It stops the way
+   the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -101,7 +102,7 @@ Worth understanding because **a large part of what ships is generated, not commi
    symlinked directory or a nested repository, so every file in one ships, as before. The build
    needs git on the `PATH` and runs only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
-6. **`update_shadows.py`** — generates the base-game shadow files (see below).
+6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
@@ -113,7 +114,9 @@ Worth understanding because **a large part of what ships is generated, not commi
 ### Generated shadows — do not hand-author
 
 `src/utils/update_shadows.py` mounts the real PA install (`pa_ex1` over `pa`) and writes shadowed
-copies of vanilla files into the **output** dirs. It is the only place these belong:
+copies of vanilla files into the **output** dirs. It is the only place these belong, and the
+step 1 gate stops on a source file or folder at a shadow's path. It reads only the PA install and
+`src/server`, so it works the shadows out before the wipe and writes them at step 6:
 
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and
@@ -165,13 +168,19 @@ Only files that actually differ from the resolved vanilla spec are written out.
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
   NON-JOINER when it compares names.
-- No file or folder at the root of `src/shared`, `src/client`, or `src/server` is named `LICENSE`
-  or `README.md`, compared after NFD and a full Unicode case fold. After the step 4 copy, the build
-  copies the repository's `LICENSE` and `README.md` into the root of each mod. Where the file
-  system finds the name there (the exact name, or a variant such as `license` on a
-  case-insensitive file system), the copy writes over that file, which keeps its own name, or
-  fails on that folder after the outputs are wiped. Where it does not, the mod ships both names,
-  and a case-insensitive file system holds only one of them.
+- No file that the build copies from `src/shared`, `src/client`, or `src/server`, and no folder
+  that holds one, compares equal, after NFD and a full Unicode case fold, to a path that the build
+  writes into a mod after the step 4 copy. `build.py` lists those paths in `written_paths`: the
+  repository's `LICENSE` and `README.md` (both mods), `ui/mods/com.pa.legion-expansion/version.js`
+  (client), and the shadows that `update_shadows.py` plans (specs and lists in the server, `.pfx`
+  copies in the client). At a written file path the build writes over a file and fails on a
+  folder; at a written folder path it fails on a file. Where the name is spelled another way, such
+  as `license`, or a folder `Land_Scout/` for a shadow in `land_scout/`, the default file systems
+  of macOS and Windows keep that spelling, and a case-sensitive one ships the name beside the
+  written one. A folder of the same spelling is not reported. A file at a path that the build
+  writes into one mod only makes both mods ship that path if it is in `src/shared` or in the other
+  mod's folder. Folders are compared only within one mod's sources. `modinfo.json` is not listed:
+  the build reads each half's copy.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

@@ -10,9 +10,9 @@ from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
-LICENCE_FILES = ("LICENSE", "README.md")
 
 # build.py copies shared and client into one mod, and shared and server into the other.
+MOD_TREES = {"client": ("shared", "client"), "server": ("shared", "server")}
 ONE_MOD = [
     ("shared", "shared"),
     ("client", "client"),
@@ -194,15 +194,93 @@ def non_ascii_paths(found):
     ]
 
 
-def licence_file_names(found, dirs):
-    keys = {path_key(name) for name in LICENCE_FILES}
-    names = []
-    for name in found:
-        for key in sorted(keys & found[name].keys()):
-            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
-        for key in sorted(keys & dirs[name].keys()):
-            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
-    return names
+def written_dirs(written):
+    dirs = {}
+    for path, mods in written.items():
+        parts = path.split("/")
+        for end in range(1, len(parts)):
+            dirs.setdefault("/".join(parts[:end]), set()).update(mods)
+    return dirs
+
+
+def last_name(path):
+    return path.rsplit("/", 1)[-1]
+
+
+def mod_trees(mods):
+    return sorted({tree for mod in mods for tree in MOD_TREES[mod]})
+
+
+def written_file_clashes(written, found, dirs):
+    clashes = []
+    for path, mods in written.items():
+        key = path_key(path)
+        # A file at the path ships even from the other mod's source folder.
+        for tree in found:
+            clashes += [
+                (f"{tree}/{name}", path, mods) for name in found[tree].get(key, ())
+            ]
+        for tree in mod_trees(mods):
+            clashes += [
+                (f"{tree}/{name}/", path, mods) for name in dirs[tree].get(key, ())
+            ]
+    return clashes
+
+
+def written_dir_clashes(written, found, dirs):
+    clashes = []
+    for path, mods in written_dirs(written).items():
+        key = path_key(path)
+        for tree in mod_trees(mods):
+            clashes += [
+                (f"{tree}/{name}", path + "/", mods)
+                for name in found[tree].get(key, ())
+            ]
+            # Equal last names mean the same folder, or a parent spelled another
+            # way, which has its own line.
+            clashes += [
+                (f"{tree}/{name}/", path + "/", mods)
+                for name in dirs[tree].get(key, ())
+                if last_name(name) != last_name(path)
+            ]
+    return clashes
+
+
+def written_path_names(found, dirs, written):
+    return sorted(
+        written_file_clashes(written, found, dirs)
+        + written_dir_clashes(written, found, dirs),
+        key=lambda clash: clash[:2],
+    )
+
+
+def print_written_paths(written_names):
+    print(
+        "Error: A file or folder in src/shared, src/client, or src/server compares "
+        "equal, after NFD and a full Unicode case fold, to a path that the build "
+        "writes into a mod after the copy."
+    )
+    print(
+        "  The build writes LICENSE and README.md into both mods, "
+        "ui/mods/com.pa.legion-expansion/version.js into the client mod, and the "
+        "shadows from src/utils/update_shadows.py into each mod. A folder that the "
+        "build writes into under the same spelling is not listed."
+    )
+    print(
+        "  At a file path that it writes, the build writes over a file and fails on "
+        "a folder. At a folder path that it writes, it fails on a file. Where a name "
+        "is spelled another way, the default file systems of macOS and Windows keep "
+        "that spelling, and a case-sensitive one ships the name beside the written "
+        "one."
+    )
+    print(
+        "  Where the build writes a path into one mod only, a file at that path in "
+        "src/shared or in the other mod's folder makes both mods ship the path. PA "
+        "loads the server mod's copy in a lobby or a game."
+    )
+    for source, path, mods in written_names:
+        where = "both mods" if len(mods) > 1 else f"the {min(mods)} mod"
+        print_escaped(f"  src/{source} and {path} in {where}")
 
 
 def print_escaped(line):
@@ -252,7 +330,7 @@ def print_windows_names(windows_names):
         print(f'  "src/{path}"')
 
 
-def check_source_paths():
+def check_source_paths(written):
     found, windows_names, unreadable = walk_sources()
     non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
@@ -260,7 +338,7 @@ def check_source_paths():
     cross_folder = cross_folder_duplicates(found)
     file_dir = file_dir_duplicates(found, dirs)
     dir_spelling = dir_spelling_duplicates(dirs)
-    licence_names = licence_file_names(found, dirs)
+    written_names = written_path_names(found, dirs, written)
 
     if unreadable:
         print_unreadable(unreadable)
@@ -328,25 +406,8 @@ def check_source_paths():
         )
         print_duplicates(dir_spelling)
 
-    if licence_names:
-        print(
-            "Error: A file or folder at the root of src/shared, src/client, or "
-            f"src/server has the name {' or '.join(LICENCE_FILES)}, compared after "
-            "NFD and a full Unicode case fold."
-        )
-        print(
-            "  In each mod that src/shared, src/client, or src/server goes into, the "
-            "build copies the repository's file of that name to the same path. It "
-            "writes over a file there, or fails on a folder there after the outputs "
-            "are wiped."
-        )
-        print(
-            "  On a case-sensitive file system, a variant such as license ships "
-            "beside LICENSE instead, and a case-insensitive one keeps only one of "
-            "the two."
-        )
-        for path in licence_names:
-            print_escaped(f"  src/{path}")
+    if written_names:
+        print_written_paths(written_names)
 
     if (
         unreadable
@@ -356,7 +417,7 @@ def check_source_paths():
         or cross_folder
         or file_dir
         or dir_spelling
-        or licence_names
+        or written_names
     ):
         input()
         sys.exit(1)
