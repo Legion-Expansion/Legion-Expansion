@@ -1,6 +1,17 @@
 #!/usr/bin/python
+import sys
+
+# On Windows, Python before 3.15 writes a redirected stdout in the ANSI code
+# page, and print() stops on a character that the code page does not have.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="backslashreplace")
+
 from pathlib import Path
 from typing import OrderedDict
+
+SRC_DIR = Path(__file__).resolve().parent.parent
+AI_DIR = SRC_DIR / "server" / "pa" / "ai"
+sys.path.insert(0, str(SRC_DIR))
 
 from pa_tools.pa import pajson
 
@@ -77,7 +88,7 @@ def reorder_keys(obj):
 
 
 # Format all the AI files and reorder the object keys
-for file in Path("server/pa/ai").glob("**/*.json"):
+for file in AI_DIR.glob("**/*.json"):
     data, warnings = pajson.loadf(file)
     list(map(print, warnings))
 
