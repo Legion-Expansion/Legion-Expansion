@@ -87,6 +87,8 @@ def walk_source(source_dir):
         sys.exit(1)
 
     ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
+    # git lists an ignored nested repository as its folder, not as its files.
+    ignored_dirs = tuple(path for path in ignored if path.endswith("/"))
     found = []
     windows_names = set()
     unreadable = []
@@ -102,7 +104,8 @@ def walk_source(source_dir):
             windows_names.update(skip_trailing_folders(relative_dir, dir_names))
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
-            if git_name(relative) in ignored:
+            name = git_name(relative)
+            if name in ignored or name.startswith(ignored_dirs):
                 continue
             found.append(relative)
             windows_names.update(windows_invalid_names(relative))
