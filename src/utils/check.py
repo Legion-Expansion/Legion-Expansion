@@ -328,6 +328,10 @@ def check_source_paths():
     licence_names = licence_file_names(found, dirs)
     git_names = dot_git_names(files)
 
+    # The other reports also list the files inside a .git, so print its cause first.
+    if git_names:
+        print_dot_git_names(git_names)
+
     if unreadable:
         print_unreadable(unreadable)
 
@@ -413,9 +417,6 @@ def check_source_paths():
         )
         for path in licence_names:
             print_escaped(f"  src/{path}")
-
-    if git_names:
-        print_dot_git_names(git_names)
 
     if (
         unreadable
