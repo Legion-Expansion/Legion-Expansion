@@ -49,8 +49,8 @@ def source_files(source_dir):
 
 
 def path_key(path):
-    # A case-insensitive macOS volume compares names after NFD and a full
-    # case fold, so the micro sign and the Greek mu are one name there.
+    # Case-insensitive APFS compares names after NFD and a full case fold. NFD goes
+    # first: casefold() can split a letter, moving a later mark to the new letter.
     return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
 
 
