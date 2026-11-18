@@ -109,10 +109,16 @@ def unique_keys(pairs):
     return OrderedDict(pairs)
 
 
+def reject_constant(name):
+    raise ValueError(f"{name} is not JSON")
+
+
 # The output keeps no comment and only one value of a key, so stop on either
 def read_strict_json(file, raw):
     try:
-        return json.loads(raw.decode("utf-8"), object_pairs_hook=unique_keys)
+        return json.loads(
+            raw.decode("utf-8"), object_pairs_hook=unique_keys, parse_constant=reject_constant
+        )
     except ValueError as error:
         sys.exit(
             f"{file}: {error}. format_ai.py reads strict JSON only: no comments, "

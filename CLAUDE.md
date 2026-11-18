@@ -123,7 +123,8 @@ Worth understanding because **a large part of what ships is generated, not commi
 9. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
 
-`pajson` raises `ParseError` on a `.json` or `.pfx` file that neither of its parsers can read. The
+`pajson` raises `ParseError` on a `.json` or `.pfx` file whose UTF-8 text neither of its parsers
+can parse. The
 build stops at the first step that reads such a file: `install_devel.py` and `install_prod.py`
 print the error, call `input()` as the step 7 gate does, and exit with code 1. Step 7 lists the
 file as a JSON issue in its report instead. A stop after the step 4 wipe leaves the outputs
