@@ -43,8 +43,14 @@
       params
     ) {
       var buildSet = model.buildSet();
-      var tab = buildSet.tabsByGroup()[params.group];
-      if (!tab || !tab.visible()) {
+      var tabsByGroup = buildSet.tabsByGroup();
+      var tab = _.find(
+        [tabsByGroup[params.group], tabsByGroup["L_" + params.group]],
+        function (candidate) {
+          return candidate && candidate.visible();
+        }
+      );
+      if (!tab) {
         tab = _.find(buildSet.tabs(), function (candidate) {
           return (
             candidate.visible() &&
