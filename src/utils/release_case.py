@@ -45,6 +45,7 @@ def case_only_renames(repo_dir):
 def record_case_renames(*repo_dirs):
     for repo_dir in repo_dirs:
         repo_path = abspath(repo_dir)
+        print(f"CHECK CASE {repo_path}", flush=True)
         for tracked, current in case_only_renames(repo_path):
             subprocess.run(
                 ["git", "-C", repo_path, "mv", "-f", tracked, current],
