@@ -100,7 +100,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    that ships that the `core.protectNTFS` check of Git for Windows refuses, such as one that ends in
    a dot or a space, or `con.js`. A file or folder named `.git`, in any case, in the path of a file
    that ships stops it as well. It stops if it cannot read a folder in the three source folders,
-   and it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
+   except inside an ignored folder that git lists as one entry, which it does not walk (see step
+   4), and it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
    does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
@@ -191,7 +192,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
   spaces before the dot, or is `git~1` in any case, a short name Windows can give `.git`. Windows
   reads `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it
   drops a trailing space when it makes a file or a folder. A build on Windows cannot read a folder
-  whose name ends in a dot or a space, so it stops on one whatever the folder holds.
+  whose name ends in a dot or a space, so it stops on one whatever the folder holds, unless the
+  folder is inside an ignored folder that git lists as one entry, which the build does not walk.
 - No file that ships from those three folders has a file or folder named `.git`, in any case, in
   its path. Git records no path that holds that name, on any platform (`verify_dotfile` in
   `read-cache.c`). In a release clone, `git add -A` then leaves the `.git` out, records the folder

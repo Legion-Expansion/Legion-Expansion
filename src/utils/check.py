@@ -453,7 +453,7 @@ def check_source_paths(written):
     dot_names = root_dot_names(found, dirs)
     git_names = dot_git_names(files)
 
-    # The other reports also list the files inside a .git, so print its cause first.
+    # Other reports can also list files inside a .git, so print its cause first.
     if git_names:
         print_dot_git_names(git_names)
 
