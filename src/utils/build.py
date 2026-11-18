@@ -22,6 +22,7 @@ from utils.common import DEV_CLIENT_OUTPUT_DIR
 from utils.common import DEV_SERVER_OUTPUT_DIR
 from utils.update_shadows import update_shadows
 from utils.check import check_mod
+from utils.check import check_source_paths
 from utils.format_json import format_files
 
 LEGION_LIST_INPUTS = [
@@ -60,6 +61,9 @@ def change_to_develop(modinfo, client_id, server_id):
 
 
 def generate_mods(is_dev_mode):
+    print("CHECK SOURCES")
+    check_source_paths()
+
     fs = create_pafs(True)
     fs.mount("/src", ".")
 

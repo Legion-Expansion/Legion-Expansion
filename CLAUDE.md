@@ -76,18 +76,20 @@ template checklist.
 
 Worth understanding because **a large part of what ships is generated, not committed**:
 
-1. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
-2. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>`, sets `build`, and keeps
+1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
+   path that is in more than one of `src/shared`, `src/client` and `src/server`.
+2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
+3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>`, sets `build`, and keeps
    the previous `date` if the PA build has not changed.
-3. Wipe the two output dirs, then copy `shared` → both, `server` → server, `client` → client.
-4. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
-5. **`update_shadows.py`** — generates the base-game shadow files (see below).
-6. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
+4. Wipe the two output dirs, then copy `shared` → both, `server` → server, `client` → client.
+5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
+6. **`update_shadows.py`** — generates the base-game shadow files (see below).
+7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
-7. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
+8. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
    reader there.
-8. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
+9. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
 
 ### Generated shadows — do not hand-author
@@ -119,6 +121,11 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
+- Each file path, compared without case, is in only one of `src/shared`, `src/client` and
+  `src/server`; only `modinfo.json` may be in both halves, because the build merges the two. The
+  two outputs mount at the same root, so a path in both mods ships twice and PA loads the server
+  mod's copy. Put a file both mods need in `src/shared`. This gate reads the sources, not the
+  outputs, where every `src/shared` file is in both mods.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

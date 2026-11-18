@@ -1,9 +1,51 @@
 import sys
 import os
 
+from os.path import join
+
 from pa_tools.mod import checker
 from pa_tools.mod.utils import create_pafs
 from pa_tools.pa import spec
+
+
+def source_paths(source_dir):
+    found = {}
+
+    for dir_path, _, file_names in os.walk(source_dir):
+        for file_name in file_names:
+            relative = os.path.relpath(join(dir_path, file_name), source_dir)
+            relative = relative.replace(os.sep, "/")
+            found[relative.lower()] = relative
+
+    return found
+
+
+def check_source_paths():
+    shared = source_paths("shared")
+    client = source_paths("client")
+    server = source_paths("server")
+    duplicates = []
+
+    # build.py merges the two modinfo.json files instead of copying them.
+    for folded in sorted((client.keys() & server.keys()) - {"modinfo.json"}):
+        duplicates.append((f"client/{client[folded]}", f"server/{server[folded]}"))
+
+    for half_name, half in (("client", client), ("server", server)):
+        for folded in sorted(shared.keys() & half.keys()):
+            duplicates.append(
+                (f"shared/{shared[folded]}", f"{half_name}/{half[folded]}")
+            )
+
+    if duplicates:
+        print(
+            "Error: A file path is in more than one of src/shared, src/client "
+            "and src/server."
+        )
+        print("  Both mods ship the path, and PA loads the server mod's copy.")
+        for first, second in duplicates:
+            print(f"  src/{first} and src/{second}")
+        input()
+        sys.exit(1)
 
 
 def check_mod(client_output_dir, server_output_dir):
