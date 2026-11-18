@@ -44,12 +44,10 @@ def case_only_renames(repo_dir):
 
 def record_case_renames(*repo_dirs):
     for repo_dir in repo_dirs:
-        for tracked, current in case_only_renames(repo_dir):
+        repo_path = abspath(repo_dir)
+        for tracked, current in case_only_renames(repo_path):
             subprocess.run(
-                ["git", "-C", repo_dir, "mv", "-f", tracked, current],
+                ["git", "-C", repo_path, "mv", "-f", tracked, current],
                 check=True,
             )
-            print(
-                f"RENAME {tracked} -> {current} in {abspath(repo_dir)}",
-                flush=True,
-            )
+            print(f"RENAME {tracked} -> {current} in {repo_path}", flush=True)
