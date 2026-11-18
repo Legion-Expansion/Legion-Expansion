@@ -42,10 +42,7 @@ const themeClassMessages = stylelint.utils.ruleMessages(themeClassRule, {
 // selector without a Legion theme class restyles vanilla games too.
 const themeClassPlugin = stylelint.createPlugin(
   themeClassRule,
-  (enabled) => (root, result) => {
-    if (!enabled) {
-      return;
-    }
+  () => (root, result) => {
     root.walkRules((rule) => {
       if (
         rule.parent.type === "atrule" &&
