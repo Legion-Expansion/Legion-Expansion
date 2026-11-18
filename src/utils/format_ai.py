@@ -101,12 +101,19 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
+def brief(value):
+    text = json.dumps(value)
+    return text if len(text) <= 40 else text[:37] + "..."
+
+
 def unique_keys(pairs):
-    seen = set()
-    for key, _ in pairs:
+    seen = {}
+    for key, value in pairs:
         if key in seen:
-            raise ValueError(f"repeated key {json.dumps(key)}")
-        seen.add(key)
+            raise ValueError(
+                f"repeated key {json.dumps(key)}, with values {brief(seen[key])} and {brief(value)}"
+            )
+        seen[key] = value
     return OrderedDict(pairs)
 
 
@@ -122,7 +129,7 @@ def finite_float(text):
 
 
 # Strict JSON only: the rewrite would drop comments and all but the last value of a
-# repeated key, and turn a number too large for a float into Infinity
+# repeated key, and turn a fraction or exponent too large for a float into Infinity
 def read_strict_json(file, raw):
     try:
         return json.loads(
@@ -133,8 +140,7 @@ def read_strict_json(file, raw):
         )
     except ValueError as error:
         sys.exit(
-            f"{file}: {error}. format_ai.py reads strict JSON only: no comments, "
-            "trailing commas, or repeated keys. No file was written."
+            f"{file}: {error}. format_ai.py reads strict JSON only. No file was written."
         )
 
 
