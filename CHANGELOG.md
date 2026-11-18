@@ -8,7 +8,7 @@
 
 ### Bugfix
 
-- Restored the Radar model, which v1.34.0 replaced by mistake with an unreleased one
+- Fixed the Radar showing a model with textures that do not fit it
 
 ## v1.34.0 - 2026-11-15
 
