@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from os.path import basename, exists, join, relpath
+from os.path import abspath, exists, join, relpath
 
 
 def tracked_paths(repo_dir):
@@ -50,6 +50,6 @@ def record_case_renames(*repo_dirs):
                 check=True,
             )
             print(
-                f"RENAME {tracked} -> {current} in {basename(repo_dir)}",
+                f"RENAME {tracked} -> {current} in {abspath(repo_dir)}",
                 flush=True,
             )
