@@ -12,8 +12,12 @@ from pa_tools.pa import spec
 MODINFO = "modinfo.json"
 
 
-def nfc(path):
-    return unicodedata.normalize("NFC", path)
+def git_name(path):
+    # git on macOS prints NFC names, and the disk can hold NFD ones. A macOS
+    # volume cannot hold both forms of one name, so NFC cannot merge two files.
+    if sys.platform == "darwin":
+        return unicodedata.normalize("NFC", path)
+    return path
 
 
 def source_files(source_dir):
@@ -30,8 +34,7 @@ def source_files(source_dir):
         input()
         sys.exit(1)
 
-    # git on macOS prints NFC names, and the disk can hold NFD ones.
-    ignored = {nfc(path) for path in os.fsdecode(ignored).split("\0")}
+    ignored = {git_name(path) for path in os.fsdecode(ignored).split("\0")}
     found = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
@@ -39,7 +42,7 @@ def source_files(source_dir):
         for file_name in file_names:
             relative = os.path.relpath(join(dir_path, file_name), source_dir)
             relative = relative.replace(os.sep, "/")
-            if nfc(relative) not in ignored:
+            if git_name(relative) not in ignored:
                 found.append(relative)
 
     return found
