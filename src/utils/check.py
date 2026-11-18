@@ -12,6 +12,15 @@ from pa_tools.pa import spec
 
 MODINFO = "modinfo.json"
 
+# build.py copies shared and client into one mod, and shared and server into the other.
+ONE_MOD = [
+    ("shared", "shared"),
+    ("client", "client"),
+    ("server", "server"),
+    ("shared", "client"),
+    ("shared", "server"),
+]
+
 
 def git_name(path):
     # git on macOS prints NFC names, and the disk can hold NFD ones. A macOS
@@ -106,18 +115,21 @@ def cross_folder_duplicates(found):
 
 def file_dir_duplicates(found, dirs):
     duplicates = []
-    for first, second in itertools.product(found, repeat=2):
-        for key in sorted(found[first].keys() & dirs[second].keys()):
+    reverse = [(second, first) for first, second in ONE_MOD if first != second]
+    for file_tree, dir_tree in ONE_MOD + reverse:
+        for key in sorted(found[file_tree].keys() & dirs[dir_tree].keys()):
             for file_path, dir_path in itertools.product(
-                sorted(found[first][key]), sorted(dirs[second][key])
+                sorted(found[file_tree][key]), sorted(dirs[dir_tree][key])
             ):
-                duplicates.append((f"{first}/{file_path}", f"{second}/{dir_path}/"))
+                duplicates.append(
+                    (f"{file_tree}/{file_path}", f"{dir_tree}/{dir_path}/")
+                )
     return duplicates
 
 
 def dir_spelling_duplicates(dirs):
     duplicates = []
-    for first, second in itertools.combinations_with_replacement(dirs, 2):
+    for first, second in ONE_MOD:
         for key in sorted(dirs[first].keys() & dirs[second].keys()):
             if first == second:
                 pairs = itertools.combinations(sorted(dirs[first][key]), 2)
@@ -174,8 +186,9 @@ def check_source_paths():
 
     if file_dir:
         print(
-            "Error: A file name and a directory name in src/shared, src/client, and "
-            "src/server compare equal after NFD and a full Unicode case fold."
+            "Error: A file name and a directory name in src/shared and src/client, "
+            "or in src/shared and src/server, compare equal after NFD and a full "
+            "Unicode case fold."
         )
         print(
             "  No folder can hold a file and a directory of one name, and the default "
@@ -186,13 +199,14 @@ def check_source_paths():
 
     if dir_spelling:
         print(
-            "Error: Two directory names in src/shared, src/client, and src/server "
-            "compare equal after NFD and a full Unicode case fold, and are spelled "
-            "differently."
+            "Error: Two directory names in src/shared and src/client, or in "
+            "src/shared and src/server, are spelled differently and compare equal "
+            "after NFD and a full Unicode case fold."
         )
         print(
             "  The default file systems of macOS, and of Windows for a pair such as "
-            "L_bot and l_bot, treat the two as one name, and Linux does not."
+            "L_bot and l_bot, treat the two as one name, so a build there ships one "
+            "folder and a Linux build ships two."
         )
         print_duplicates(dir_spelling)
 
