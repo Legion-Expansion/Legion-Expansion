@@ -30,7 +30,9 @@ const themeClasses = [
   "legcom",
   "mixcom",
 ];
-const themeClass = new RegExp(`\\.(?:${themeClasses.join("|")})(?![\\w-])`);
+const themeClass = new RegExp(
+  String.raw`\.(?:${themeClasses.join("|")})(?![\w-])`
+);
 const themeClassMessages = stylelint.utils.ruleMessages(themeClassRule, {
   rejected: (selector) =>
     `Expected selector "${selector}" to include a Legion theme class (${themeClasses.map((name) => "." + name).join(", ")})`,
@@ -53,8 +55,8 @@ const themeClassPlugin = stylelint.createPlugin(
       }
       for (const selector of rule.selectors) {
         const counted = selector
-          .replace(/:not\([^)]*\)?/gi, "")
-          .replace(/\[[^\]]*\]?/g, "");
+          .replace(/\[[^\]]*\]?/g, "")
+          .replace(/:not\([^)]*\)?/gi, "");
         if (!themeClass.test(counted)) {
           stylelint.utils.report({
             result,
