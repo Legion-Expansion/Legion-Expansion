@@ -109,15 +109,15 @@ LEGION_MISSING = (
     "is not in src/server. Restore the file, or update each file that refers to it."
 )
 SHIELD_ENTRY_MISSING = (
-    "is not in src/server or the PA install. Correct or remove its entry in "
+    "is not in src/server or the PA install; a Legion change or a PA patch has "
+    "renamed or removed it. Correct or remove its entry in "
     f"src/server{SHIELD_TARGETS}, and each other reference to it."
 )
 
 
-# Every vanilla path below is hardcoded, so a PA patch that renames or removes
-# one would otherwise skip the edit and take the interaction with it. A Legion
-# file, or a path read from one, is not the install's to lose: its caller
-# passes its own message.
+# A PA patch that renames or removes a vanilla file below would otherwise skip
+# the edit and take the interaction with it. A caller with a Legion file, or
+# with a path read from one, passes its own message.
 def resolve(file_path, missing=VANILLA_MISSING):
     resolved = loader.resolveFile(file_path)
     if resolved is None:
