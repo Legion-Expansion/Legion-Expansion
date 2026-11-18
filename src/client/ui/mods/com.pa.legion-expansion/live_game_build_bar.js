@@ -26,8 +26,11 @@
       setTimeout(function () {
         // Get tab hotkeys
         _.forEach(buildSet.tabs(), function (tab) {
-          var baseTab = tab.group().replace("L_", "");
-          if (!tab.label()) {
+          var baseTab = String(tab.group()).replace(/^L_/, "");
+          if (
+            !tab.label() &&
+            Object.prototype.hasOwnProperty.call(groups, baseTab)
+          ) {
             tab.label(groups[baseTab].label());
           }
           tab.hotkey(hotkeys["tab_" + baseTab] || "");
