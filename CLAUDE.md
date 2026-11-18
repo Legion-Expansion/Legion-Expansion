@@ -199,8 +199,8 @@ Key pieces:
   `<link>`s are parsed into `<body>` and come after Legion's. A Legion rule must outrank the stock
   selector it overrides (the theme class usually does it); one of equal specificity silently loses.
   The in-game sheets load whatever the commanders are, so every selector in them needs a Legion
-  theme class. `npm run lint:css` enforces this on `src/client/.../css/legion_*.css`, except
-  `legion_buttons.css`, which `start.js` loads in the main menu.
+  theme class. `npm run lint:css` enforces this on every sheet in `src/client/.../css/` except
+  `legion_buttons.css` and `start.css`, which `start.js` loads in the main menu.
 - **Build bar**: `live_game_build_bar.js` appends `L_`-prefixed tab groups to
   `model.BuildSet.tabsTemplate` and remaps labels/hotkeys back to the vanilla group name;
   `shared_build.js` registers every Legion spec's grid position in

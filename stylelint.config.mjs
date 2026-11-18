@@ -502,10 +502,10 @@ export default {
     // because the rule's keyframe-selectors option does not recognise
     // @-webkit-keyframes.
     {
-      files: ["src/client/ui/mods/com.pa.legion-expansion/css/legion_*.css"],
+      files: ["src/client/ui/mods/com.pa.legion-expansion/css/*.css"],
       rules: {
         "selector-disallowed-list": [
-          /^(?!(?:from|to|\d+(?:\.\d+)?%)$)(?![\s\S]*(?<!:[Nn][Oo][Tt]\(\s*)(?<!\[[^\]]*)\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
+          /^(?!(?:from|to|\d*\.?\d+%)$)(?![\s\S]*(?<!:[Nn][Oo][Tt]\(\s*)(?<!\[[^\]]*)\.(?:legionui|mixedui|legion|mixed|legcom|mixcom)(?![\w-]))/,
           {
             splitList: true,
             message: (selector) =>
@@ -514,11 +514,12 @@ export default {
         ],
       },
     },
-    // A main menu sheet: start.js loads it only when it also adds .legion to the
-    // body, so its selectors cannot apply without the theme.
+    // The main menu sheets: start.js loads them only when it also adds .legion
+    // to the body, so their selectors cannot apply without the theme.
     {
       files: [
         "src/client/ui/mods/com.pa.legion-expansion/css/legion_buttons.css",
+        "src/client/ui/mods/com.pa.legion-expansion/css/start.css",
       ],
       rules: {
         "selector-disallowed-list": null,
