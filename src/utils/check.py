@@ -94,18 +94,44 @@ def cross_folder_duplicates(found):
     return duplicates
 
 
+def non_ascii_paths(found):
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for path in sorted(itertools.chain.from_iterable(paths.values()))
+        if not path.isascii()
+    ]
+
+
+def print_escaped(line):
+    # A redirected stdout can use a code page, such as Windows cp1252,
+    # that cannot hold every name. Escaping also shows each name's form.
+    print(line.encode("unicode_escape").decode("ascii"))
+
+
 def print_duplicates(duplicates):
     for first, second in duplicates:
-        # A redirected stdout can use a code page, such as Windows cp1252,
-        # that cannot hold every name. Escaping also shows each name's form.
-        line = f"  src/{first} and src/{second}"
-        print(line.encode("unicode_escape").decode("ascii"))
+        print_escaped(f"  src/{first} and src/{second}")
 
 
 def check_source_paths():
     found = {name: source_paths(name) for name in ("shared", "client", "server")}
+    non_ascii = non_ascii_paths(found)
     same_folder = same_folder_duplicates(found)
     cross_folder = cross_folder_duplicates(found)
+
+    if non_ascii:
+        print(
+            "Error: A file path in src/shared, src/client, or src/server holds a "
+            "character that is not ASCII."
+        )
+        print(
+            "  File systems compare such names in different ways, so the build "
+            "cannot find every pair of names that a player's file system treats "
+            "as one."
+        )
+        for path in non_ascii:
+            print_escaped(f"  src/{path}")
 
     if same_folder:
         print(
@@ -129,7 +155,7 @@ def check_source_paths():
         )
         print_duplicates(cross_folder)
 
-    if same_folder or cross_folder:
+    if non_ascii or same_folder or cross_folder:
         input()
         sys.exit(1)
 

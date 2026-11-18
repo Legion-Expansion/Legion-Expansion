@@ -80,10 +80,10 @@ template checklist.
 Worth understanding because **a large part of what ships is generated, not committed**:
 
 1. `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
-   path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
-   in one of them that compare equal after NFD and a full Unicode case fold. It reads the same file
-   list as the step 4 copy. It stops the way the step 7 gate does, so it also calls
-   `input()` and blocks on stdin.
+   path that is in more than one of `src/shared`, `src/client`, and `src/server`, on two paths in
+   one of them that compare equal after NFD and a full Unicode case fold, and on a path in them
+   that holds a character that is not ASCII. It reads the same file list as the step 4 copy. It
+   stops the way the step 7 gate does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
    `build.py` sets `date` in both modinfos to the current date on every build.
@@ -144,6 +144,9 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - No two file paths in one of those three folders compare equal in that way. The default file
   systems of macOS, and of Windows for a pair such as `A.json` and `a.json`, hold only one of the
   two files: a git clone there keeps one and warns.
+- Every file path in those three folders is ASCII. File systems compare other characters in
+  different ways, so the comparison above cannot find every pair that one of them treats as one
+  name. For example, HFS Plus skips U+200C ZERO WIDTH NON-JOINER when it compares names.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
