@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.34.1 - 2026-11-19
 
 ### General
 
