@@ -29,20 +29,6 @@ def git_name(path):
     return path
 
 
-def name_prefixes(path):
-    parts = path.split("/")
-    for end, part in enumerate(parts, 1):
-        yield part, "/".join(parts[:end]) + ("/" if end < len(parts) else "")
-
-
-def skip_ignored_folders(relative_dir, dir_names, ignored_dirs):
-    dir_names[:] = [
-        name
-        for name in dir_names
-        if git_name(posixpath.join(relative_dir, name)) + "/" not in ignored_dirs
-    ]
-
-
 def walk_source(source_dir):
     prefix = f"src/{source_dir}/"
     try:
@@ -64,8 +50,6 @@ def walk_source(source_dir):
     ignored = {
         git_name(path[len(prefix) :]) for path in os.fsdecode(ignored).split("\0")
     }
-    # git can list an ignored nested repository as its folder, not as its files.
-    ignored_dirs = {path for path in ignored if path.endswith("/")}
     found = []
     unreadable = []
 
@@ -76,8 +60,6 @@ def walk_source(source_dir):
         # Keep each name as os.walk lists it: on Windows, path functions such
         # as relpath drop a trailing dot or space.
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
-        if ignored_dirs:
-            skip_ignored_folders(relative_dir, dir_names, ignored_dirs)
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
             if git_name(relative) not in ignored:
@@ -313,26 +295,6 @@ def nested_git_control_files(found):
     )
 
 
-def dot_git_path(path):
-    # Git records no path with a .git name, in any case, on any platform
-    # (verify_dotfile in read-cache.c).
-    return next(
-        (prefix for name, prefix in name_prefixes(path) if name.lower() == ".git"),
-        None,
-    )
-
-
-def dot_git_names(files):
-    return sorted(
-        {
-            f"{name}/{git_path}"
-            for name, paths in files.items()
-            for git_path in map(dot_git_path, paths)
-            if git_path
-        }
-    )
-
-
 def escaped(text):
     # A name can hold a character that does not show, such as U+200C, or look
     # like another name, such as its NFD form. Escaping shows each character.
@@ -370,23 +332,6 @@ def print_unreadable(unreadable):
         print(f'  "{quoted}": {error.strerror}')
 
 
-def print_dot_git_names(git_names):
-    if not git_names:
-        return
-    print(
-        "Error: A file or folder name in src/shared, src/client, or src/server is "
-        ".git, in any case."
-    )
-    print(
-        "  Git does not record a path that holds that name. Where git finds a "
-        "repository in it, git add -A in a release clone can also record the folder "
-        "that holds it as one gitlink entry, with none of its files, or fail."
-    )
-    print("  Remove the .git, or move the repository out of the source folders.")
-    for path in git_names:
-        print_escaped(f"  src/{path}")
-
-
 def print_git_control_files(paths):
     if not paths:
         return
@@ -419,10 +364,6 @@ def check_source_paths(written):
     written_names = written_path_names(found, dirs, written)
     dot_names = root_dot_names(found, dirs)
     git_control = nested_git_control_files(found)
-    git_names = dot_git_names(files)
-
-    # Other reports can also list files inside a .git, so print its cause first.
-    print_dot_git_names(git_names)
 
     if unreadable:
         print_unreadable(unreadable)
@@ -521,7 +462,6 @@ def check_source_paths(written):
         or written_names
         or dot_names
         or git_control
-        or git_names
     ):
         input()
         sys.exit(1)
