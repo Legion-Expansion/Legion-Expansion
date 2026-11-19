@@ -115,10 +115,11 @@ SHIELD_ENTRY_MISSING = (
     "entry in "
     f"src/server{SHIELD_TARGETS}, and each other reference to it."
 )
-WRONG_CASE = (
-    "matches a file only in a different case, which PA on Linux does not find. "
-    "Use the case of the file on disk."
+WRONG_NAME = (
+    "matches a file only because Windows ignores case and a trailing dot or "
+    "space, and PA on Linux does not find it."
 )
+MOUNT_ROOTS = (path.abspath("server"), path.abspath(paths.PA_MEDIA_DIR))
 
 
 @functools.lru_cache(maxsize=None)
@@ -126,24 +127,24 @@ def folder_names(folder):
     return frozenset(os.listdir(folder))
 
 
-# NTFS and the default macOS file system find a file in any case, so check the
-# case of each name below the mount root against the names on disk.
-def wrong_case(resolved):
-    resolved = path.abspath(resolved)
-    for root in (path.abspath("server"), path.abspath(paths.PA_MEDIA_DIR)):
-        try:
-            relative = path.relpath(resolved, root)
-        except ValueError:
-            continue
-        if relative == ".." or relative.startswith(".." + os.sep):
+# NTFS and the default macOS file system find a file in any case, and Windows
+# also drops a trailing dot or space, so compare each name below the mount root
+# with the names on disk. abspath() would drop the trailing dot or space too.
+def wrong_name(resolved):
+    resolved = path.normpath(path.join(os.getcwd(), resolved))
+    for root in MOUNT_ROOTS:
+        prefix = root + os.sep
+        if not path.normcase(resolved).startswith(path.normcase(prefix)):
             continue
         folder = root
-        for name in relative.split(os.sep):
-            if name not in folder_names(folder):
-                return True
+        for name in resolved[len(prefix):].split(os.sep):
+            names = folder_names(folder)
+            if name not in names:
+                on_disk = [n for n in names if n.casefold() == name.casefold()]
+                return name, on_disk[0] if on_disk else None
             folder = path.join(folder, name)
-        return False
-    return False
+        return None
+    return None
 
 
 # A caller that resolves a Legion file, or a path read from one, passes its own
@@ -153,8 +154,14 @@ def resolve(file_path, missing=VANILLA_MISSING):
     if resolved is None:
         loader.resolveFile(file_path, True)
         raise FileNotFoundError(f"{file_path} {missing}")
-    if wrong_case(resolved):
-        raise FileNotFoundError(f"{file_path} {WRONG_CASE}")
+    mismatch = wrong_name(resolved)
+    if mismatch:
+        name, on_disk = mismatch
+        if on_disk:
+            detail = f" On disk, {name!r} is {on_disk!r}."
+        else:
+            detail = f" No name on disk is exactly {name!r}."
+        raise FileNotFoundError(f"{file_path} {WRONG_NAME}{detail}")
 
     return resolved
 
