@@ -240,7 +240,8 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - Below that root, no file that the build copies is named `.gitignore` or `.gitattributes`,
   compared after NFD and a full Unicode case fold. The build ships the file, and git reads such a
   file in any folder, so in a release clone `git add -A` applies it: a `.gitignore` there leaves
-  files that the build ships out of the release commit.
+  files that the build ships out of the release commit, and a `.gitattributes` changes the bytes
+  that git records for them, for example with `eol=crlf`.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).

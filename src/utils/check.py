@@ -568,9 +568,9 @@ def check_source_paths(written):
             "holds a .gitignore or .gitattributes file."
         )
         print(
-            "  The build ships the file, and git add -A in a release clone applies it, "
-            "so a .gitignore there leaves files that the build ships out of the "
-            "release commit."
+            "  The build ships the file, and git add -A in a release clone applies it: "
+            "a .gitignore there leaves files that the build ships out of the release "
+            "commit, and a .gitattributes changes the bytes that git records for them."
         )
         print(
             "  Remove the file. A pattern for these folders goes in the repository's "
