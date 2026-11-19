@@ -18,13 +18,14 @@ import os
 import os.path as path
 import posixpath
 import copy
-import functools
 
 
 from pa_tools.pa import spec
 from pa_tools.pa import pajson
 from pa_tools.pa import pafs
 from pa_tools.pa import paths
+
+from utils.check import wrong_name
 
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = pafs("server")
@@ -122,31 +123,6 @@ WRONG_NAME = (
 MOUNT_ROOTS = (path.abspath("server"), path.abspath(paths.PA_MEDIA_DIR))
 
 
-@functools.lru_cache(maxsize=None)
-def folder_names(folder):
-    return frozenset(os.listdir(folder))
-
-
-# NTFS and the default macOS file system find a file in any case, and Windows
-# also drops a trailing dot or space, so compare each name below the mount root
-# with the names on disk. abspath() would drop the trailing dot or space too.
-def wrong_name(resolved):
-    resolved = path.normpath(path.join(os.getcwd(), resolved))
-    for root in MOUNT_ROOTS:
-        prefix = root + os.sep
-        if not path.normcase(resolved).startswith(path.normcase(prefix)):
-            continue
-        folder = root
-        for name in resolved[len(prefix):].split(os.sep):
-            names = folder_names(folder)
-            if name not in names:
-                on_disk = [n for n in names if n.casefold() == name.casefold()]
-                return name, on_disk[0] if on_disk else None
-            folder = path.join(folder, name)
-        return None
-    return None
-
-
 # A caller that resolves a Legion file, or a path read from one, passes its own
 # message.
 def resolve(file_path, missing=VANILLA_MISSING):
@@ -154,7 +130,7 @@ def resolve(file_path, missing=VANILLA_MISSING):
     if resolved is None:
         loader.resolveFile(file_path, True)
         raise FileNotFoundError(f"{file_path} {missing}")
-    mismatch = wrong_name(resolved)
+    mismatch = wrong_name(resolved, MOUNT_ROOTS)
     if mismatch:
         name, on_disk = mismatch
         if on_disk:

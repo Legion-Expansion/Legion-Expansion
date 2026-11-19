@@ -150,7 +150,7 @@ def generate_mods(is_dev_mode):
     write_shadows(shadows, client_output_dir, server_output_dir)
 
     print("CHECK MOD")
-    check_mod(client_output_dir, server_output_dir)
+    check_mod(client_output_dir, server_output_dir, source_files)
 
     # check_mod reads these from the output, and PA never does.
     for build_input in LEGION_LIST_INPUTS:

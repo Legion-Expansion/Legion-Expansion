@@ -1,3 +1,4 @@
+import functools
 import itertools
 import sys
 import os
@@ -603,12 +604,74 @@ def check_source_paths(written):
     return files
 
 
-def check_mod(client_output_dir, server_output_dir):
+@functools.lru_cache(maxsize=None)
+def folder_names(folder):
+    return frozenset(os.listdir(folder))
+
+
+# NTFS and the default macOS file system find a file in any case, and Windows
+# also drops a trailing dot or space, so compare each name below the mount root
+# with the names on disk. abspath() would drop the trailing dot or space too.
+def wrong_name(resolved, roots):
+    resolved = os.path.normpath(os.path.join(os.getcwd(), resolved))
+    for root in roots:
+        prefix = os.path.join(root, "")
+        if not os.path.normcase(resolved).startswith(os.path.normcase(prefix)):
+            continue
+        folder = root
+        for name in resolved[len(prefix):].split(os.sep):
+            names = folder_names(folder)
+            if name not in names:
+                on_disk = [n for n in names if n.casefold() == name.casefold()]
+                return name, on_disk[0] if on_disk else None
+            folder = os.path.join(folder, name)
+        return None
+    return None
+
+
+# Only the references in Legion's own files: some base-game files name a file
+# in the wrong case too, and Legion cannot change them.
+def wrong_case_references(source_files, fs, roots):
+    from pa_tools.mod import checker
+    from pa_tools.pa import pajson
+
+    found = []
+    for tree, files in source_files.items():
+        for file in files:
+            if not file.endswith((".json", ".pfx")):
+                continue
+            obj, _ = pajson.loadf(os.path.join(tree, file))
+            for reference in sorted(checker._walk_obj(obj)):
+                resolved = fs.resolveFile(reference)
+                mismatch = resolved and wrong_name(resolved, roots)
+                if mismatch:
+                    found.append((f"{tree}/{file}", reference, *mismatch))
+    return found
+
+
+def print_wrong_case_references(found):
+    print(
+        "Error: A file in src/shared, src/client, or src/server names a file in a "
+        "different case, or with a trailing dot or space, than the file on disk."
+    )
+    print(
+        "  Windows and the default macOS file system find the file, so the missing "
+        "file check passes there, but PA on Linux does not find it."
+    )
+    for source, reference, name, on_disk in found:
+        if on_disk:
+            detail = f"{name!r} is {on_disk!r} on disk"
+        else:
+            detail = f"no name on disk is exactly {name!r}"
+        print_escaped(f"  src/{source}: {reference} ({detail})")
+
+
+def check_mod(client_output_dir, server_output_dir, source_files):
     # Importing checker or create_pafs looks for a PA install (pa_tools.pa.paths).
     # Import pa_tools here, so that the source-path gate runs without PA, as in CI.
     from pa_tools.mod import checker
     from pa_tools.mod.utils import create_pafs
-    from pa_tools.pa import spec
+    from pa_tools.pa import paths, spec
 
     # legion works with pa titans only, so mount that as well
     fs = create_pafs()
@@ -653,6 +716,15 @@ def check_mod(client_output_dir, server_output_dir):
         print(report.printDetailsReport())
         print(report.printJsonIssueReport())
         print(report.printFileIssueReport())
+        input()
+        sys.exit(1)
+
+    roots = tuple(
+        map(os.path.abspath, (server_output_dir, client_output_dir, paths.PA_MEDIA_DIR))
+    )
+    wrong_case = wrong_case_references(source_files, fs, roots)
+    if wrong_case:
+        print_wrong_case_references(wrong_case)
         input()
         sys.exit(1)
 
