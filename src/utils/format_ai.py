@@ -6,10 +6,14 @@ import sys
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="backslashreplace")
 
+import json
+import math
 import os
+import re
 import subprocess
+from json import decoder, scanner
 from pathlib import Path
-from typing import OrderedDict
+from collections import OrderedDict
 
 SRC_DIR = Path(os.path.abspath(__file__)).parent.parent
 REPO_DIR = SRC_DIR.parent
@@ -99,6 +103,82 @@ def line_ending(raw):
     return "\r\n" if raw[cr + 1 : cr + 2] == b"\n" else "\r"
 
 
+class RepeatedKey(ValueError):
+    pass
+
+
+def unique_keys(pairs):
+    obj = OrderedDict()
+    for key, value in pairs:
+        if key in obj:
+            raise RepeatedKey(f"repeated key {json.dumps(key, ensure_ascii=False)} in an object")
+        obj[key] = value
+    return obj
+
+
+def located_object(s_and_end, *args):
+    try:
+        return decoder.JSONObject(s_and_end, *args)
+    except RepeatedKey as error:
+        text, end = s_and_end
+        raise json.JSONDecodeError(f"{error} that starts at", text, end - 1) from None
+
+
+def reject_constant(name):
+    raise ValueError(f"{name} is not JSON")
+
+
+def finite_float(text):
+    value = float(text)
+    if not math.isfinite(value):
+        raise ValueError(f"{text} is too large for a float")
+    return value
+
+
+STRICT = {
+    "object_pairs_hook": unique_keys,
+    "parse_constant": reject_constant,
+    "parse_float": finite_float,
+}
+
+
+class LocatingDecoder(json.JSONDecoder):
+    def __init__(self):
+        super().__init__(**STRICT)
+        # The C scanner tells no hook where an object starts; the Python one
+        # calls parse_object with the offset, so a repeated key gets a line
+        self.parse_object = located_object
+        self.scan_once = scanner.py_make_scanner(self)
+
+
+def located_error(text):
+    try:
+        json.loads(text, cls=LocatingDecoder)
+    except json.JSONDecodeError as error:
+        return error
+    except RecursionError:
+        # The Python scanner nests less deeply than the C one
+        return None
+    return None
+
+
+# Strict JSON only: the rewrite would drop comments and all but the last value of a
+# repeated key, and turn a fraction or exponent too large for a float into Infinity
+def read_strict_json(file, raw):
+    try:
+        # JSONDecodeError counts lines at LF only, so a lone CR becomes LF, one for
+        # one; strict JSON allows a CR only as whitespace, so the data is unchanged
+        text = re.sub("\r(?!\n)", "\n", raw.decode("utf-8"))
+        try:
+            return json.loads(text, **STRICT)
+        except RepeatedKey as error:
+            raise (located_error(text) or error) from None
+    except ValueError as error:
+        sys.exit(
+            f"{file}: {error}. format_ai.py reads strict JSON only. No file was written."
+        )
+
+
 def find_node():
     name = "node.exe" if sys.platform == "win32" else "node"
     # Only node.exe from an absolute PATH folder: a node.cmd shim would run through cmd.exe,
@@ -138,8 +218,7 @@ if not PRETTIER.is_file():
 formatted = []
 for file in AI_DIR.glob("**/*.json"):
     raw = file.read_bytes()
-    data, warnings = pajson.loadf(file)
-    list(map(print, warnings))
+    data = read_strict_json(file, raw)
 
     text = pajson.dumps(reorder_keys(data), indent=2, ensure_ascii=False) + "\n"
     text = text.replace("\n", line_ending(raw))
