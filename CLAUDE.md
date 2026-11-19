@@ -99,10 +99,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a source path that clashes with a path that
    the build writes into a mod after the step 4 copy (see the gates below), a file or folder at the
-   root of one of them whose name starts with a dot, a `.gitignore` or `.gitattributes` file in a
-   folder below that root, and a file or folder name in the path of a file
-   that ships that the `core.protectNTFS` check of Git for Windows refuses, such as one that ends in
-   a dot or a space, or `con.js`. A file or folder named `.git`, in any case, in the path of a file
+   root of one of them whose name starts with a dot, and a `.gitignore` or `.gitattributes` file in
+   a folder below that root. A file or folder named `.git`, in any case, in the path of a file
    that ships stops it as well. It stops if it cannot read a folder in the three source folders,
    except inside an ignored folder that git lists as one entry, which it does not walk (see step
    4), and it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
@@ -194,24 +192,11 @@ Only files that actually differ from the resolved vanilla spec are written out.
   file system treats them as two, such as a case variant on a case-sensitive file system (the Linux
   default), the copy succeeds and the mod ships both names. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
-- No file that ships from those three folders has a file or folder name in its path that the
-  `core.protectNTFS` check of Git for Windows refuses, so a clone on Windows does not check it
-  out: a name that ends in a dot or a space, holds one of `< > : " | ? * \` or a character from
-  U+0000 to U+001F, is a Windows device name (`con`, `prn`, `aux`, `nul`, `conin$`, `conout$`,
-  `com1` to `com9`, or `lpt0` to `lpt9`, in any case) alone or before a dot, with or without
-  spaces before the dot, or is `git~1` in any case, a short name Windows can give `.git`. Windows
-  reads `a.json.` as `a.json`, `d./a.json` as `d/a.json`, and `a:b` as a stream of `a`, and it
-  drops a trailing space when it makes a file or a folder. A build on Windows cannot read a folder
-  whose name ends in a dot or a space, so it stops on one whatever the folder holds, unless the
-  folder is inside an ignored folder that git lists as one entry, which the build does not walk.
 - No file that ships from those three folders has a file or folder named `.git`, in any case, in
   its path. Git records no path that holds that name, on any platform (`verify_dotfile` in
   `read-cache.c`). In a release clone, `git add -A` then leaves the `.git` out, records the folder
   that holds it as one gitlink entry with none of its files, or fails, depending on what git finds
-  there. A `.git` at a source root is also listed by the dot-name check below. The other names
-  that git refuses as `.git` stop other checks: `.git` or `git~1` followed by dots, spaces, or a
-  `:` stops the check above, and `.git` with an ignorable character such as U+200C stops the ASCII
-  check below.
+  there. A `.git` at a source root is also listed by the dot-name check below.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH

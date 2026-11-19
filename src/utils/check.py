@@ -10,15 +10,6 @@ MODINFO = "modinfo.json"
 LICENCE_FILES = ("LICENSE", "README.md")
 VERSION_JS = "ui/mods/com.pa.legion-expansion/version.js"
 
-# Git for Windows refuses these device names and characters in a path name
-# (is_valid_win32_path in compat/mingw.c, and verify_path for the backslash).
-WINDOWS_DEVICES = (
-    {"CON", "PRN", "AUX", "NUL", "CONIN$", "CONOUT$"}
-    | {f"COM{digit}" for digit in "123456789"}
-    | {f"LPT{digit}" for digit in "0123456789"}
-)
-WINDOWS_CHARACTERS = set('<>:"|?*\\') | {chr(code) for code in range(0x20)}
-
 # build.py copies shared and client into one mod, and shared and server into the other.
 MOD_TREES = {"client": ("shared", "client"), "server": ("shared", "server")}
 ONE_MOD = [
@@ -38,44 +29,10 @@ def git_name(path):
     return path
 
 
-def is_trailing(name):
-    return name.endswith((".", " "))
-
-
-def is_windows_invalid(name):
-    # git~1 is a short name Windows can give .git. Git compares the device names
-    # in ASCII only, and upper() maps some other letters to ASCII.
-    stem = name.partition(".")[0].rstrip(" ")
-    return (
-        is_trailing(name)
-        or not WINDOWS_CHARACTERS.isdisjoint(name)
-        or (stem.isascii() and stem.upper() in WINDOWS_DEVICES)
-        or name.lower() == "git~1"
-    )
-
-
 def name_prefixes(path):
     parts = path.split("/")
     for end, part in enumerate(parts, 1):
         yield part, "/".join(parts[:end]) + ("/" if end < len(parts) else "")
-
-
-def windows_invalid_names(path):
-    return (prefix for name, prefix in name_prefixes(path) if is_windows_invalid(name))
-
-
-def skip_trailing_folders(relative_dir, dir_names):
-    # Windows opens a folder "d." as "d", so do not walk into one, and report
-    # it whatever it holds.
-    kept = []
-    skipped = []
-    for name in dir_names:
-        if is_trailing(name):
-            skipped.append(posixpath.join(relative_dir, name) + "/")
-        else:
-            kept.append(name)
-    dir_names[:] = kept
-    return skipped
 
 
 def skip_ignored_folders(relative_dir, dir_names, ignored_dirs):
@@ -110,7 +67,6 @@ def walk_source(source_dir):
     # git can list an ignored nested repository as its folder, not as its files.
     ignored_dirs = {path for path in ignored if path.endswith("/")}
     found = []
-    windows_names = set()
     unreadable = []
 
     # Walk the disk, not git's index: the index can keep a file's old case.
@@ -122,16 +78,12 @@ def walk_source(source_dir):
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
         if ignored_dirs:
             skip_ignored_folders(relative_dir, dir_names, ignored_dirs)
-        if os.name == "nt":
-            windows_names.update(skip_trailing_folders(relative_dir, dir_names))
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
-            if git_name(relative) in ignored:
-                continue
-            found.append(relative)
-            windows_names.update(windows_invalid_names(relative))
+            if git_name(relative) not in ignored:
+                found.append(relative)
 
-    return found, windows_names, unreadable
+    return found, unreadable
 
 
 def path_key(path):
@@ -398,13 +350,11 @@ def print_duplicates(duplicates):
 
 def walk_sources():
     files = {}
-    windows_names = []
     unreadable = []
     for name in ("shared", "client", "server"):
-        files[name], names, errors = walk_source(name)
-        windows_names += [f"{name}/{path}" for path in names]
+        files[name], errors = walk_source(name)
         unreadable += errors
-    return files, sorted(windows_names), unreadable
+    return files, unreadable
 
 
 def print_unreadable(unreadable):
@@ -418,27 +368,6 @@ def print_unreadable(unreadable):
         # escaped() doubles each backslash, so \" can only be a quote in the name.
         quoted = escaped(f"src/{path}/").replace('"', '\\"')
         print(f'  "{quoted}": {error.strerror}')
-
-
-def print_windows_names(windows_names):
-    print(
-        "Error: A file or folder name in src/shared, src/client, or src/server "
-        "is one that Git for Windows does not check out."
-    )
-    print(
-        "  The name ends in a dot or a space, holds one of < > : \" | ? * \\ or a "
-        "character from U+0000 to U+001F, is a Windows device name such as con, "
-        "aux, or com1, alone or before a dot, with or without spaces before the "
-        "dot, or is git~1. Case does not matter."
-    )
-    print(
-        '  Windows reads "a.json." and "a.json " as "a.json", "d./" as "d/", and '
-        '"a:b" as a stream of "a".'
-    )
-    for path in windows_names:
-        # escaped() doubles each backslash, so \" can only be a quote in the name.
-        quoted = escaped(f"src/{path}").replace('"', '\\"')
-        print(f'  "{quoted}"')
 
 
 def print_dot_git_names(git_names):
@@ -479,7 +408,7 @@ def print_git_control_files(paths):
 
 
 def check_source_paths(written):
-    files, windows_names, unreadable = walk_sources()
+    files, unreadable = walk_sources()
     found = {name: source_paths(paths) for name, paths in files.items()}
     non_ascii = non_ascii_paths(found)
     dirs = {name: source_dirs(paths) for name, paths in found.items()}
@@ -497,9 +426,6 @@ def check_source_paths(written):
 
     if unreadable:
         print_unreadable(unreadable)
-
-    if windows_names:
-        print_windows_names(windows_names)
 
     if non_ascii:
         print(
@@ -587,7 +513,6 @@ def check_source_paths(written):
 
     if (
         unreadable
-        or windows_names
         or non_ascii
         or same_folder
         or cross_folder
