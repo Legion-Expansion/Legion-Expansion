@@ -152,9 +152,8 @@ class LocatingDecoder(json.JSONDecoder):
 
 
 def located_error(text):
-    # JSONDecodeError counts lines at LF only, so a lone CR becomes LF, one for one
     try:
-        json.loads(re.sub("\r(?!\n)", "\n", text), cls=LocatingDecoder)
+        json.loads(text, cls=LocatingDecoder)
     except json.JSONDecodeError as error:
         return error
     except RecursionError:
@@ -167,7 +166,9 @@ def located_error(text):
 # repeated key, and turn a fraction or exponent too large for a float into Infinity
 def read_strict_json(file, raw):
     try:
-        text = raw.decode("utf-8")
+        # JSONDecodeError counts lines at LF only, so a lone CR becomes LF, one for
+        # one; strict JSON allows a CR only as whitespace, so the data is unchanged
+        text = re.sub("\r(?!\n)", "\n", raw.decode("utf-8"))
         try:
             return json.loads(text, **STRICT)
         except RepeatedKey as error:
