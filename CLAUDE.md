@@ -245,6 +245,14 @@ Only files that actually differ from the resolved vanilla spec are written out.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
+- No `.json` or `.pfx` file from `src/shared`, `src/client`, or `src/server` names a file in a
+  different case, or with a trailing dot, than the file on disk. The references are the strings
+  that the missing-file check reads, such as `/pa/...` paths; a `coui://` path, and a path in a
+  `.js`, `.html` or `.css` file, are not checked. Windows and the default macOS file system find
+  such a file, so the missing-file check passes there, but PA on Linux does not. References in
+  base-game files are not checked: PA has some itself, such as `teardrop.papa` for
+  `tearDrop.papa` in `pa_ex1/units/land/tank_flak/flak_tank_explosion.pfx`. A file that `pajson`
+  cannot parse is skipped here, and step 9 reports it.
 - **Every unit in `unit_list_legion.json` with `buildable_types` must contain `Custom1`.**
 
 ### `src/pa_tools/`
