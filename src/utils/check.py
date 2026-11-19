@@ -4,7 +4,6 @@ import sys
 import os
 import posixpath
 import subprocess
-import unicodedata
 
 MODINFO = "modinfo.json"
 LICENCE_FILES = ("LICENSE", "README.md")
@@ -19,14 +18,6 @@ ONE_MOD = [
     ("shared", "client"),
     ("shared", "server"),
 ]
-
-
-def git_name(path):
-    # git on macOS prints NFC names, and the disk can hold NFD ones. A macOS
-    # volume cannot hold both forms of one name, so NFC cannot merge two files.
-    if sys.platform == "darwin":
-        return unicodedata.normalize("NFC", path)
-    return path
 
 
 def walk_source(source_dir):
@@ -48,7 +39,7 @@ def walk_source(source_dir):
         sys.exit(1)
 
     ignored = {
-        git_name(path[len(prefix) :]) for path in os.fsdecode(ignored).split("\0")
+        path[len(prefix) :] for path in os.fsdecode(ignored).split("\0")
     }
     found = []
     unreadable = []
@@ -62,16 +53,14 @@ def walk_source(source_dir):
         relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
         for file_name in file_names:
             relative = posixpath.join(relative_dir, file_name)
-            if git_name(relative) not in ignored:
+            if relative not in ignored:
                 found.append(relative)
 
     return found, unreadable
 
 
 def path_key(path):
-    # Case-insensitive APFS compares names after NFD and a full case fold. NFD goes
-    # first: casefold() can split a letter, moving a later mark to the new letter.
-    return unicodedata.normalize("NFC", unicodedata.normalize("NFD", path).casefold())
+    return path.lower()
 
 
 def source_paths(files):
@@ -241,8 +230,8 @@ def written_path_names(found, dirs, written):
 def print_written_paths(written_names):
     print(
         "Error: A file or folder in src/shared, src/client, or src/server compares "
-        "equal, after NFD and a full Unicode case fold, to a path that the build "
-        "writes into a mod after the copy."
+        "equal, without case, to a path that the build writes into a mod after the "
+        "copy."
     )
     print(
         "  written_paths in src/utils/check.py lists those paths. This report leaves "
@@ -296,8 +285,8 @@ def nested_git_control_files(found):
 
 
 def escaped(text):
-    # A name can hold a character that does not show, such as U+200C, or look
-    # like another name, such as its NFD form. Escaping shows each character.
+    # A name that is not ASCII can hold a character that does not show, or that a
+    # redirected stdout cannot encode. Escaping shows each character.
     return text.encode("unicode_escape").decode("ascii")
 
 
@@ -383,7 +372,7 @@ def check_source_paths(written):
     if same_folder:
         print(
             "Error: Two file paths in one of src/shared, src/client, and src/server "
-            "compare equal after NFD and a full Unicode case fold."
+            "compare equal without case."
         )
         print(
             "  The default file systems of macOS, and of Windows for a pair such as "
@@ -406,7 +395,7 @@ def check_source_paths(written):
         print(
             "Error: A file name and a directory name in one of src/shared, src/client, "
             "and src/server, or in src/shared and one of the other two, compare equal "
-            "after NFD and a full Unicode case fold."
+            "without case."
         )
         print(
             "  No folder can hold a file and a directory of one name, and the default "
@@ -419,7 +408,7 @@ def check_source_paths(written):
         print(
             "Error: Two directory names in one of src/shared, src/client, and "
             "src/server, or in src/shared and one of the other two, are spelled "
-            "differently and compare equal after NFD and a full Unicode case fold."
+            "differently and compare equal without case."
         )
         print(
             "  The default file systems of macOS, and of Windows for a pair such as "

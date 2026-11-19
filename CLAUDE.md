@@ -94,7 +94,7 @@ Worth understanding because **a large part of what ships is generated, not commi
 1. `plan_shadows` (`update_shadows.py`) works out the step 6 shadow files in memory. Then
    `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
    path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
-   in one of them that compare equal after NFD and a full Unicode case fold. It also stops on a
+   in one of them that compare equal without case. It also stops on a
    file and a directory, or two spellings of one directory, that compare equal in that way in one
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a source path that clashes with a path that
@@ -167,8 +167,7 @@ Only files that actually differ from the resolved vanilla spec are written out.
 ### `check.py` gates
 
 - Each file path that the build copies from `src/shared`, `src/client`, and `src/server`, compared
-  after NFD and a full Unicode case fold (case-insensitive APFS, the macOS default, treats `ß` and
-  `ss` as one name), is in only one of them. Only the exact name `modinfo.json` may be in both
+  without case, is in only one of them. Only the exact name `modinfo.json` may be in both
   `src/client` and `src/server`: the build reads each half's copy to make that mod's own. The two
   outputs mount at the same root, so a path in both mods ships twice: PA loads the server mod's
   copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need in
@@ -190,11 +189,9 @@ Only files that actually differ from the resolved vanilla spec are written out.
   default), the copy succeeds and the mod ships both names. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
-  other characters in different ways, so the comparison above cannot find every pair that one of
-  them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
-  NON-JOINER when it compares names.
+  other characters in different ways, so the case comparison above covers ASCII names only.
 - No file that the build copies from `src/shared`, `src/client`, or `src/server`, and no folder
-  that holds one at any depth, compares equal, after NFD and a full Unicode case fold, to a path
+  that holds one at any depth, compares equal, without case, to a path
   that the build writes into a mod after the step 4 copy. `written_paths` in `check.py` lists
   those paths: the repository's `LICENSE` and `README.md` (both mods),
   `ui/mods/com.pa.legion-expansion/version.js` (client), and the shadows that `update_shadows.py`
@@ -215,7 +212,7 @@ Only files that actually differ from the resolved vanilla spec are written out.
   folders goes in the repository's root `.gitattributes` or `.gitignore`, with a path that starts
   at `src/`.
 - Below that root, no file that the build copies is named `.gitignore` or `.gitattributes`,
-  compared after NFD and a full Unicode case fold. The build ships the file, and git reads such a
+  compared without case. The build ships the file, and git reads such a
   file in any folder, so in a release clone `git add -A` applies it: a `.gitignore` there leaves
   files that the build ships out of the release commit, and a `.gitattributes` changes the bytes
   that git records for them, for example with `eol=crlf`.
