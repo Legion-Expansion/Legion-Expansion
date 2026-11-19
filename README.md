@@ -71,6 +71,10 @@ A full breakdown of all unit stats can be found at the [Planetary Annihilation T
 
 The repo is structured with all the source files - including unit specs, effects, and art assets - in the `src` folder.
 
+A file both mods need goes in `src/shared`, and a file for one mod goes in `src/client` or `src/server` only. The build (`src/install_devel.py` and `src/install_prod.py`) stops on a file path that is in more than one of them, except `modinfo.json` in `src/client` and `src/server`.
+
+The build does not copy an untracked file that git ignores, such as `.DS_Store` or `Thumbs.db`. A new file that git does not ignore ships before you run `git add` on it.
+
 Please remove all unnecessary files from the pa and ui directories.
 
 Only server mod files that will be uploaded to the server belong in the pa and ui directories (everything else should go into art)
@@ -88,6 +92,7 @@ Latest Python 3.x is required. Please do not use Python 2.x as whitespace format
 5. Keep commit subjects concise, use the body to include details.
 6. Make small, single-purpose commits.
 7. Large files not required for the mod to run should be stored using [Git Large File Storage](https://git-lfs.github.com/)
+8. Use only ASCII characters in file and folder names under `src/shared`, `src/client`, and `src/server`. The build stops if a path that it copies holds any other character.
 
 Our branch structure is based on the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model:
 
@@ -125,8 +130,14 @@ The script in `src/install_prod.py` depends on those locations.
 1. Create release from master and tag with version number
 1. Run `src/install_prod.py`
 1. Inspect output and check for errors or warnings
+1. Check that the output has a `CHECK CASE` line for each release repo. The `RENAME` lines under
+   it are case-only renames that the script staged with `git mv -f`. Keep them staged, because
+   `git add .` cannot record them. After a `git reset`, run the script again to restage them. If
+   the script stops on a git error, fix the cause and run it again: it skips the renames already
+   staged
 1. cd into `../com.pa.legion-expansion-client`
-1. Check all changes are as expected using `git diff`
+1. Check all changes are as expected using `git status`, which lists new files, and `git diff HEAD`,
+   which includes the staged renames
 1. Add all the changes `git add .`
 1. Create a commit that describes the update
 1. Repeat those steps for `../com.pa.legion-expansion-server`

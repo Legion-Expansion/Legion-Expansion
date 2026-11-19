@@ -27,14 +27,22 @@ so `npm install` gets the lot. Node >= 22 (markdownlint-cli's floor).
 ```sh
 python src/install_devel.py   # build + install into %LOCALAPPDATA%\...\{client,server}_mods as *-dev
 python src/install_prod.py    # build into the sibling release repos (see Releases)
-python src/utils/format_ai.py # reformat + key-reorder everything under src/server/pa/ai
+python src/utils/format_ai.py # key-reorder everything under src/server/pa/ai, then run prettier on it
 ```
+
+`format_ai.py` needs `npm install` first, because it formats its output with the repo's prettier.
+It reads each file as strict JSON: a file that does not parse, or that holds a comment, a trailing
+comma, a repeated key, `NaN`, `Infinity`, or a number with a fraction or an exponent that is too
+large for a float, stops it before it writes any file.
 
 `install_devel.py` appends `-dev` to both identifiers and a `[DEVELOPMENT]` tag to the display
 names, so the dev build coexists with a Community Mods install. Enable the `[DEVELOPMENT]` entry in-game.
 
-Both scripts locate the PA install by **reading the newest PA log file** for the Coherent host dir
-(`src/pa_tools/pa/paths.py`). PA must have been run at least once or the build aborts.
+Both scripts locate the PA install by **reading the PA client logs, newest first**, for the
+directory PA mounts as `/` (`src/pa_tools/pa/paths.py`). Both UI backends log that mount. The
+script also still reads the `Coherent host dir` line, which CEF does not log. The first match
+decides. The build aborts if no log has a match, or if the directory the match names no longer
+exists (for example, after the install moved). Run PA once from the current install, then build.
 
 Lint — `npm run lint` runs all four in turn, or one at a time:
 
@@ -72,28 +80,67 @@ Loading PA with the dev build enabled and starting a skirmish is the only real v
 clean `install_devel.py` run (no warnings, no missing files) is the pre-commit gate — see the PR
 template checklist.
 
+Each pull request to `develop` or `master` runs `.github/workflows/checks.yml` on Linux: the
+`check_source_paths` gate (with stdin from `/dev/null`, so a failure ends in `EOFError`) and
+`npm run lint`. The rest of the build reads the PA install, so CI cannot run it. `check.py`
+imports `pa_tools` inside `check_mod` for that reason: importing `pa_tools.pa.paths` looks for
+a PA install. For the same reason CI cannot plan the shadows, so its gate checks the source paths
+against the other paths that the build writes (`written_paths({})`), not against the shadows.
+
 ## Build pipeline (`src/utils/build.py`)
 
 Worth understanding because **a large part of what ships is generated, not committed**:
 
-1. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
-2. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>`, sets `build`, and keeps
-   the previous `date` if the PA build has not changed.
-3. Wipe the two output dirs, then copy `shared` → both, `server` → server, `client` → client.
-4. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
-5. **`update_shadows.py`** — generates the base-game shadow files (see below).
-6. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
+1. `plan_shadows` (`update_shadows.py`) works out the step 6 shadow files in memory. Then
+   `check_source_paths` (`check.py`) stops the build, before the outputs are touched, on a file
+   path that is in more than one of `src/shared`, `src/client`, and `src/server`, and on two paths
+   in one of them that compare equal without case. It also stops on a
+   file and a directory, or two spellings of one directory, that compare equal in that way in one
+   of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
+   character that is not ASCII stops it too, and so does a source path that clashes with a path that
+   the build writes into a mod after the step 4 copy (see the gates below), a file or folder at the
+   root of one of them whose name starts with a dot, and a `.gitignore` or `.gitattributes` file in
+   a folder below that root. It stops if it cannot read a folder in the three source folders, and
+   it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
+   does, so it also calls `input()` and blocks on stdin.
+2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
+3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
+   `build.py` sets `date` in both modinfos to the current date on every build.
+4. Wipe the two output dirs, except their dot entries (the release clones keep `.git`), then copy
+   `shared` → both, `server` → server, `client` → client. A file that cannot be deleted, such as
+   one another program holds open, stops the build with an error. The copy takes the file lists
+   that step 1 checked, so a file added after step 1 does not ship, and a listed file that is
+   removed before the copy stops the build with an error after the wipe. The copy skips each
+   untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
+   file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
+   on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
+   inside a symlinked directory, or inside a nested repository in a folder where git tracks no
+   file, so every file in one ships, as before. Step 1 stops on a `.git` at a source root, unless it
+   is a folder that holds no file, which the copy skips. The build needs git on the `PATH` and runs
+   only in a clone.
+5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
+6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
+7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
    `sys.exit(1)`. That `input()` **blocks on stdin**, so never run these scripts non-interactively
    without expecting a hang on failure.
-7. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
+8. Remove the `_legion` unit and commander lists from the server output; `check.py` was their last
    reader there.
-8. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
+9. `format_json.py` reformats every `.json`/`.pfx` in both outputs with `pajson` (2-space indent;
    `.pfx` uses the effect-specific dumper).
+
+`pajson` raises `ParseError` on a `.json` or `.pfx` file whose UTF-8 text has an error that even
+its comment-tolerant parser rejects. The build stops at the first step that reads such a file:
+`install_devel.py` and `install_prod.py` print the error, call `input()` as the step 7 gate does,
+and exit with code 1. Step 7 lists the file as a JSON issue in its report instead. A stop after
+the step 4 wipe leaves the outputs part-built until a clean run.
 
 ### Generated shadows — do not hand-author
 
 `src/utils/update_shadows.py` mounts the real PA install (`pa_ex1` over `pa`) and writes shadowed
-copies of vanilla files into the **output** dirs. It is the only place these belong:
+copies of vanilla files into the **output** dirs. It is the only place these belong, and the
+step 1 gate stops on a source path that clashes with a shadow's path (see the `check.py` gates).
+It reads only the PA install and `src/server`, so it works the shadows out before the wipe and
+writes them at step 6:
 
 - **Unit and commander lists** — `unit_list.json` / `commander_list.json` are produced by appending
   `src/server/pa/units/unit_list_legion.json` and
@@ -119,9 +166,67 @@ Only files that actually differ from the resolved vanilla spec are written out.
 
 ### `check.py` gates
 
+- Each file path that the build copies from `src/shared`, `src/client`, and `src/server`, compared
+  without case, is in only one of them. Only the exact name `modinfo.json` may be in both
+  `src/client` and `src/server`: the build reads each half's copy to make that mod's own. The two
+  outputs mount at the same root, so a path in both mods ships twice: PA loads the server mod's
+  copy in a lobby or a game, and the client mod's copy elsewhere. Put a file both mods need in
+  `src/shared`. This gate reads the sources, not the outputs, where every `src/shared` file is in
+  both mods.
+- No two file paths that the build copies from one of those three folders compare equal in that
+  way. The default file systems of macOS, and of Windows for a pair such as `A.json` and `a.json`,
+  hold only one of the two files: a git clone there keeps one and warns.
+- Among the file paths that the build copies from one of those folders, or from `src/shared` and
+  one of the other two (the sources of one mod), no file and directory, and no two spellings of
+  one directory, compare equal in that way. A directory's name is each folder prefix of one of
+  those paths. No folder holds a file and a directory of one name. Where the file system that holds
+  the outputs treats the two names as one (the same name, or a case variant such as `data` and
+  `Data/` on a case-insensitive file system), the step 4 copy stops part-way, after the wipe, if it
+  writes the file first. If it makes the directory first, it copies the file into the directory
+  under its own name with no message, writing over a file of that name there; a folder of that name
+  there stops the copy. The copy writes `src/shared` before `src/client` and `src/server`. Where the
+  file system treats them as two, such as a case variant on a case-sensitive file system (the Linux
+  default), the copy succeeds and the mod ships both names. A build on Windows puts a directory
+  spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
+- Every file path that the build copies from those three folders is ASCII. File systems compare
+  other characters in different ways, so the case comparison above covers ASCII names only.
+- No file that the build copies from `src/shared`, `src/client`, or `src/server`, and no folder
+  that holds one at any depth, compares equal, without case, to a path
+  that the build writes into a mod after the step 4 copy. `written_paths` in `check.py` lists
+  those paths: the repository's `LICENSE` and `README.md` (both mods),
+  `ui/mods/com.pa.legion-expansion/version.js` (client), and the shadows that `update_shadows.py`
+  plans (specs and lists in the server, `.pfx` copies in the client). At a written file path the
+  build writes over a file and fails on a folder; at a written folder path it fails on a file.
+  Where the name is spelled another way, such as `license`, or a folder `Land_Scout/` for a shadow
+  in `land_scout/`, the default file systems of macOS and Windows keep that spelling, and a
+  case-sensitive one ships the name beside the written one. A source folder with the same spelling
+  as a folder that the build writes into is not reported. A file at a path that the build writes
+  into one mod only makes both mods ship that path if it is in `src/shared` or in the other mod's
+  folder. Folders are compared only within one mod's sources. `modinfo.json` is not listed: the
+  build reads each half's copy.
+- At the root of `src/shared`, `src/client`, or `src/server`, no file that the build copies, and no
+  folder that holds one at any depth, has a name that starts with a dot, such as `.git` or
+  `.gitattributes`. Step 4 keeps the dot entries at the root of each mod, so a later build does not
+  remove the copy. In a release clone, the files of a `.git` folder go into the clone's own `.git`,
+  and a `.gitignore` or `.gitattributes` changes what `git add -A` records. A pattern for those
+  folders goes in the repository's root `.gitattributes` or `.gitignore`, with a path that starts
+  at `src/`.
+- Below that root, no file that the build copies is named `.gitignore` or `.gitattributes`,
+  compared without case. The build ships the file, and git reads such a
+  file in any folder, so in a release clone `git add -A` applies it: a `.gitignore` there leaves
+  files that the build ships out of the release commit, and a `.gitattributes` changes the bytes
+  that git records for them, for example with `eol=crlf`.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
+- No `.json` or `.pfx` file from `src/shared`, `src/client`, or `src/server` names a file in a
+  different case, or with a trailing dot, than the file on disk. The references are the strings
+  that the missing-file check reads, such as `/pa/...` paths; a `coui://` path, and a path in a
+  `.js`, `.html` or `.css` file, are not checked. Windows and the default macOS file system find
+  such a file, so the missing-file check passes there, but PA on Linux does not. References in
+  base-game files are not checked: PA has some itself, such as `teardrop.papa` for
+  `tearDrop.papa` in `pa_ex1/units/land/tank_flak/flak_tank_explosion.pfx`. A file that `pajson`
+  cannot parse is skipped here, and step 9 reports it.
 - **Every unit in `unit_list_legion.json` with `buildable_types` must contain `Custom1`.**
 
 ### `src/pa_tools/`
@@ -192,18 +297,29 @@ Key pieces:
 - **Theming is opt-out**: gate theme work on
   `api.settings.isSet("ui", "legionThemeFunction", true)` in game and `legionMenuThemeFunction` in
   menus, both defaulting to `"ON"`; the settings are registered in `settings.js`.
+- **Legion CSS loads before stock CSS.** `loadCSS` appends to `<head>`, but every stock scene Legion
+  styles has a `<noloc>` element before its first `<link>`. `<noloc>` ends the head, so the stock
+  `<link>`s are parsed into `<body>` and come after Legion's. A Legion rule must outrank the stock
+  selector it overrides (the theme class usually does it); one of equal specificity silently loses.
+  The in-game sheets load whatever the commanders are, so every selector in them needs a Legion
+  theme class. `npm run lint:css` enforces this with `legion/theme-class`, a rule defined in
+  `stylelint.config.mjs`, on every sheet in `src/client/.../css/` except `legion_buttons.css` and
+  `start.css`, which `start.js` loads in the main menu.
 - **Build bar**: `live_game_build_bar.js` appends `L_`-prefixed tab groups to
-  `model.BuildSet.tabsTemplate` and remaps labels/hotkeys back to the vanilla group name;
+  `model.BuildSet.tabsTemplate` with the vanilla labels, and adds a `tab_L_<group>` copy of each
+  vanilla `tab_<group>` key to `model.hotkeys()`, which stock reads for every tab's hotkey;
   `shared_build.js` registers every Legion spec's grid position in
   `Build.HotkeyModel.SpecIdToGridMap` under those `L_` groups. A new buildable unit needs an entry
   in both, plus `icon_atlas.js`.
 - `new_game.js` (shared) detects the server mod via `model.gameModIdentifiers()` — always checking
   **both** the plain and `-dev` identifiers — and colours Legion commanders in the picker.
 
-Engine constraints: Coherent UI on Chromium 40, ES5 plus a little ES6 — no `let`, arrow functions,
-template literals or `class`; a parse error kills the whole shared scene scope. lodash is **3.9.3**
-(`_.pluck`, `_.forOwn` exist; v4 names do not). `curly: all` and `lodash/prefer-lodash-method` are
-enforced as errors.
+Engine constraints: PA renders the UI with CEF (Chromium 150) by default, but it can fall back to
+Coherent UI on Chrome 40, and the launch option `--ui-backend coherent` also selects it. So shipped
+code targets Chrome 40: ES5 plus a little ES6 — no `let`, arrow functions, template literals or
+`class`; a parse error kills the whole shared scene scope. lodash is **3.9.3** (`_.pluck`,
+`_.forOwn` exist; v4 names do not). `curly: all` and `lodash/prefer-lodash-method` are enforced as
+errors.
 
 ## Assets and conventions
 
@@ -211,9 +327,10 @@ enforced as errors.
 (strategic icons, build-bar images, commander UI renders, unit directory prefixes), and its "Units"
 checklist enumerates every registry a new or renamed unit has to touch.
 
-- Everything in `src/client` and `src/server` ships. Anything not needed at runtime — source
-  models, working textures — belongs in `src/art/` (~169 MB, excluded from the build). Large binary
-  sources use Git LFS (`.blend`, `.blend1`, `.xcf`).
+- Every file in `src/client` and `src/server` ships, except an untracked file that git ignores.
+  Anything not needed at runtime — source models, working textures — belongs in `src/art/`
+  (~169 MB, excluded from the build). Large binary sources use Git LFS (`.blend`, `.blend1`,
+  `.xcf`).
 - Legion units and files are prefixed `l_`, otherwise following Uber's naming (`l_type_unit_adv`).
 - When replacing a vanilla unit, set `base_spec` to the vanilla spec and list **only** the changed
   properties.
@@ -274,3 +391,8 @@ only what the request needs — no drive-by reformatting or clean-up.
 `../com.pa.legion-expansion-server` — sibling clones of this repo's directory, which must exist
 first. Order: bump the `src/base_modinfo.json` version → merge `develop` into `master` → tag the
 release → run `install_prod.py` → review, commit and push each of the two repos separately.
+
+The release clones have `core.ignorecase` on, so `git add` records nothing when a built file
+changes only the case of its name, and the old name ships. After the build, `install_prod.py`
+(`src/utils/release_case.py`) prints a `CHECK CASE` line for each release repo, then records each
+such rename with `git mv -f` and prints a `RENAME` line for it.

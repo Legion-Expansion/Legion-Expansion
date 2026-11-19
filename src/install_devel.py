@@ -3,7 +3,23 @@
 # Generates and installs the development version of the mod. This will show up
 # in PA as 'Legion Expansion [DEVELOPMENT]'
 
-from utils.build import generate_mods
+import sys
 
-# Installs directly to the server_mods and client_mods directories
-generate_mods(is_dev_mode=True)
+# On Windows, Python before 3.15 writes a redirected stdout in the ANSI code
+# page, and print() stops on a character that the code page does not have.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="backslashreplace")
+
+from pa_tools.pa.pajson import ParseError
+
+try:
+    # utils.common parses the modinfos when it is imported
+    from utils.build import generate_mods
+
+    # Installs directly to the server_mods and client_mods directories
+    generate_mods(is_dev_mode=True)
+except ParseError as error:
+    print("Error: pajson cannot parse a .json or .pfx file, so the build stopped.")
+    print(*error.warnings, error, sep="\n")
+    input()
+    sys.exit(1)

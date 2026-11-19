@@ -1,24 +1,79 @@
-// PA renders its UI with Coherent UI, which embeds Chrome 40. Shipped CSS is not
-// built, bundled or autoprefixed, and the engine drops what it cannot parse
-// silently - no error, no console warning, just a declaration that never applies.
+// PA renders its UI with CEF (Chromium 150) by default, but it can fall back to
+// Coherent UI, which embeds Chrome 40, and a launch option also selects it.
+// So shipped CSS targets Chrome 40, and "the engine" below means Chrome 40.
+// Shipped CSS is not built, bundled or autoprefixed, and the engine drops what
+// it cannot parse silently - no error, no console warning, just a declaration
+// that never applies.
 //
-// Two nets catch that. The plugin below checks every declaration against caniuse
-// for .browserslistrc's `chrome 40`. The hand-written rules cover what it cannot
-// see: at-rules, selectors, and the notation rules stylelint-config-standard
-// otherwise *forces* into syntax the engine rejects.
+// Two nets catch that. The stylelint-no-unsupported-browser-features plugin
+// checks every declaration against caniuse for .browserslistrc's `chrome 40`.
+// The hand-written rules cover what it cannot see: at-rules, selectors, and the
+// notation rules stylelint-config-standard otherwise *forces* into syntax the
+// engine rejects.
 //
 // Unlike eslint.config.mjs's ES5 whitelist, these lists are curated rather than
-// exhaustive - CSS-since-2015 is not a finite gap. The plugin is the exhaustive
-// half. See docs/constraints.md.
+// exhaustive - CSS-since-2015 is not a finite gap. That plugin is the exhaustive
+// half.
 //
 // Every `Chrome NN` below is the release that shipped the unprefixed feature, so
-// an entry qualifies when NN > 40. All CSS in this repo is shipped to the engine,
-// so there is no `overrides` block; Node-side CSS, if it ever appears, would need
-// one.
+// an entry qualifies when NN > 40. All CSS in this repo is shipped to PA, so
+// every file gets these rules; Node-side CSS, if it ever appears, would need
+// an `overrides` entry. The `overrides` block at the end turns the
+// legion/theme-class rule, defined below, on for the in-game sheets and off
+// for the two main menu sheets.
+
+import stylelint from "stylelint";
+
+const themeClassRule = "legion/theme-class";
+const themeClasses = [
+  "legionui",
+  "mixedui",
+  "legion",
+  "mixed",
+  "legcom",
+  "mixcom",
+];
+const themeClass = new RegExp(
+  String.raw`\.(?:${themeClasses.join("|")})(?![\w-])`
+);
+const themeClassMessages = stylelint.utils.ruleMessages(themeClassRule, {
+  rejected: (selector) =>
+    `Expected selector "${selector}" to include a Legion theme class (${themeClasses.map((name) => "." + name).join(", ")})`,
+});
+
+// The in-game sheets load in every game, whatever the commanders are, so a
+// selector without a Legion theme class restyles vanilla games too.
+const themeClassPlugin = stylelint.createPlugin(
+  themeClassRule,
+  () => (root, result) => {
+    root.walkRules((rule) => {
+      if (
+        rule.parent.type === "atrule" &&
+        /keyframes$/i.test(rule.parent.name)
+      ) {
+        return;
+      }
+      for (const selector of rule.selectors) {
+        const counted = selector
+          .replace(/\[[^\]]*\]?/g, "")
+          .replace(/:not\([^)]*\)?/gi, "");
+        if (!themeClass.test(counted)) {
+          stylelint.utils.report({
+            result,
+            ruleName: themeClassRule,
+            message: themeClassMessages.rejected(selector),
+            node: rule,
+            word: selector,
+          });
+        }
+      }
+    });
+  }
+);
 
 export default {
   extends: ["stylelint-config-standard"],
-  plugins: ["stylelint-no-unsupported-browser-features"],
+  plugins: ["stylelint-no-unsupported-browser-features", themeClassPlugin],
   rules: {
     // The automatic net. severity is "error" against the plugin's own advice:
     // there is no fallback tier here, and stylelint exits 0 on warnings, which
@@ -492,4 +547,24 @@ export default {
       },
     ],
   },
+
+  overrides: [
+    {
+      files: ["src/client/ui/mods/com.pa.legion-expansion/css/**/*.css"],
+      rules: {
+        [themeClassRule]: true,
+      },
+    },
+    // The main menu sheets: start.js loads them only when it also adds .legion
+    // to the body, so their selectors cannot apply without the theme.
+    {
+      files: [
+        "src/client/ui/mods/com.pa.legion-expansion/css/legion_buttons.css",
+        "src/client/ui/mods/com.pa.legion-expansion/css/start.css",
+      ],
+      rules: {
+        [themeClassRule]: null,
+      },
+    },
+  ],
 };

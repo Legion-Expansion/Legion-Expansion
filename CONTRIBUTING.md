@@ -23,6 +23,10 @@ wires it to this project in connected mode.
 
 The build itself is Python and has no npm involvement; see [installation](README.md#installation).
 
+Each pull request to `develop` or `master` runs `npm run lint` and the build's source-path check
+(`.github/workflows/checks.yml`). The rest of the build reads the PA install, so it runs only
+on your computer.
+
 ## Submissions
 
 Any pull request must only modify code necessary for the request, for example, a new feature should not be accompanied by additional clean-up or reformatting. Any such changes should be submitted separately.

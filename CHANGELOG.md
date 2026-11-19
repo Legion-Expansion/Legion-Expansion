@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.34.1 - 2026-11-19
 
 ### General
 
@@ -8,7 +8,13 @@
 
 ### Bugfix
 
-- Fixed the Radar showing a model with textures that do not fit it
+- Clicking a Legion build bar tab now opens it, as does clicking a Bugs Faction tab while Legion is enabled
+- Game menu items keep their normal colours when you are not playing a Legion commander
+- Fixed three Investigator files still named in the wrong case, which could break its shot effects and sounds on Linux
+- Fixed the Radar showing a model with textures that do not fit it, a v1.32.1 fault that v1.34.0 brought back
+- Deployed Investigator counts as a radar unit for AIs and other mods
+- Starcannon description gives its capacity as 9 units, not 14
+- Legion build bar tabs keep their hotkey letters after you open a tab
 
 ## v1.34.0 - 2026-11-15
 
@@ -76,6 +82,7 @@
 - Legion nuke launcher and its missile are flagged as interplanetary again
 - Fabber build effect no longer depends on a shader include shipped in the wrong mod
 - Legion lobby greeting no longer appears in games without the Legion server mod
+- Radar shows its previous model again, which v1.32.1 had left with textures that do not fit it
 
 ## v1.32.1 - 2025-07-06
 
@@ -85,7 +92,14 @@
 
 ### Bugfix
 
-- Revert unintended unit changes
+- Reverted the unintended changes that v1.31.0 shipped. The ones a player sees are listed under v1.31.0:
+  - Removed the Liberator
+  - Restored the previous models of the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Hive, Necromancer, Osprey, Panzer, Scorpion, Scythe, Shank, and Stoke
+  - Restored the previous build bar images of the same units, except the Hive, Necromancer, and Stoke
+  - Restored the Radar's previous textures, build bar image, and radar wave effect, but not its previous model, so it showed the v1.31.0 model with textures that do not fit it
+  - Restored the previous strategic icons of the Corsair and the Marauder
+  - Restored the Theodor's previous shell trail
+  - Restored the previous values of the Advanced Armour Fabricator, Advanced Armour Foundry, Advanced Fabrication Walker, Advanced Flyer Foundry, Advanced Ship Foundry, Advanced Walker Foundry, Armour Fabricator, Armour Foundry, Comet, Corsair, Deathmark, Fabrication Walker, Firebird, Guardian, Havoc, Infiltrator, Investigator, Jackal, Lockheed, Maul, Meteor, Miniman, Monstrosity, Necromancer, Nova, Osprey, Paladin, Purger, Radar, Rampart, Scythe, Shank, Shredder, Starcannon, Stoke, Viper, and Walker Foundry
 
 ## v1.32.0 - 2025-07-04
 
@@ -104,6 +118,18 @@
 ### General
 
 - Updated file shadows
+- Shipped by mistake, and reverted in v1.32.1:
+  - New unit: Liberator, a defence turret that the Guardian builds
+    - Cost: 75 metal
+    - Health: 150
+    - Vision: 230
+    - Weapon: 90 range, two shots of 20 damage, 1 rate of fire
+  - New models for the Armour Fabricator, Corsair, Dauntless, Deathmark, Fabrication Flyer, Fabrication Walker, Guardian, Havoc, Osprey, Panzer, Radar, Scorpion, Scythe, Shank, and Stoke
+  - New build bar images for the same units, except the Stoke
+  - Changed model files for the Hive and the Necromancer
+  - New radar wave effect for the Radar
+  - New shell trail for the Theodor
+  - New strategic icons for the Corsair and the Marauder
 
 ### Balance
 
@@ -137,6 +163,149 @@
     - Health increased from 180 to 270
     - Speed increased from 9 to 10
     - Turn speed increased from 90 to 120
+- Shipped by mistake, and reverted in v1.32.1:
+  - Air
+    - Advanced Flyer Foundry
+      - Metal build rate decreased from 50 to 45
+      - Energy build rate decreased from 1650 to 1500
+    - Comet
+      - Built by the Advanced Flyer Foundry instead of advanced fabricators
+      - Lost its special move command
+    - Firebird
+      - Rocket range decreased from 180 to 160
+      - Rocket rate of fire decreased from 0.33 to 0.25
+    - Infiltrator
+      - Counts as an offensive unit
+    - Lockheed
+      - Gun range decreased from 80 to 60
+      - Gun rate of fire decreased from 4 to 2
+      - Rocket range decreased from 100 to 75
+      - Rockets per volley increased from 2 to 3
+      - Time between rocket volleys increased from 5 to 7.5 seconds
+    - Meteor
+      - Health decreased from 2000 to 750
+      - Circles its target when attacking
+      - Meteoroid health decreased from 60 to 30
+      - Meteoroids no longer take orders
+    - Nova
+      - Speed decreased from 95 to 75
+      - Splash radius decreased from 80 to 50
+      - Death splash radius decreased from 70 to 40
+      - Cannot be targeted once triggered
+      - Vision once triggered decreased from 150 to 10, with 80 radar added
+      - Self-destructs 5 seconds after it is triggered, down from 20
+    - Osprey
+      - Metal cost increased from 100 to 140
+      - Braking increased from 40 to 80
+      - Vision increased from 70 to 120
+    - Scythe
+      - Damage increased from 29 to 35
+      - Firing arc decreased from 70 to 45 degrees
+  - Land
+    - Advanced Armour Fabricator
+      - Health decreased from 500 to 200
+      - Speed increased from 10 to 18
+      - Metal build rate decreased from 70 to 60
+    - Advanced Armour Foundry
+      - Metal build rate decreased from 50 to 45
+      - Energy build rate decreased from 1650 to 1500
+    - Advanced Fabrication Walker
+      - Health increased from 150 to 400
+      - Speed decreased from 14 to 12
+      - Metal cost decreased from 2000 to 1900
+      - Energy build rate decreased from 2200 to 1900
+    - Advanced Walker Foundry
+      - Metal build rate decreased from 50 to 45
+      - Energy build rate decreased from 1650 to 1500
+    - Armour Fabricator
+      - Health decreased from 185 to 75
+      - Speed increased from 11 to 18
+      - Metal build rate decreased from 13 to 10
+      - Energy build rate decreased from 850 to 750
+    - Armour Foundry
+      - Metal build rate decreased from 17 to 15
+      - Energy build rate decreased from 765 to 675
+    - Corsair
+      - Health decreased from 175 to 100
+      - Damage decreased from 60 to 40
+      - Range increased from 160 to 240
+      - Targets defences first, then commanders, then units, then other structures
+    - Deathmark
+      - Shell launch speed decreased from 200 to 100
+      - Shell top speed decreased from 500 to 300
+      - Shell gravity decreased from 26 to 20
+      - Targets advanced units first, then tanks, then other units, then structures
+    - Fabrication Walker
+      - Health increased from 65 to 200
+      - Speed decreased from 14 to 12
+      - Metal build rate increased from 9 to 10
+      - Energy build rate decreased from 650 to 635
+    - Guardian
+      - Metal cost decreased from 350 to 300
+      - Can build the Liberator and the Shredder
+    - Havoc
+      - Anti-missile beam rate of fire increased from 0.25 to 0.333
+      - Anti-missile beam range decreased from 140 to 115
+      - Anti-missile beam no longer shoots down Panzer shells
+    - Investigator
+      - Vision increased from 150 to 200
+      - Deployed vision increased from 0 to 100
+      - No muzzle flash or sound when it fires
+    - Jackal
+      - Health increased from 750 to 1000
+    - Maul
+      - Health increased from 1150 to 1250
+    - Miniman
+      - Ammo capacity increased from 7 to 8
+      - Bomb damage against structures decreased from 3x to 1x
+    - Monstrosity
+      - Targets advanced units first, then tanks, then other units, then structures
+    - Necromancer
+      - Purgers per volley increased from 7 to 12
+      - Metal per volley increased from 420 to 750
+      - Metal reload rate increased from 35 to 45
+      - Can be carried by transports
+    - Purger
+      - Shots track their target
+      - Attacks targets in range while it moves
+      - Jump attack fires automatically
+      - Attacks from 80% of its range instead of full range
+    - Radar
+      - Health increased from 500 to 750
+      - Vision increased from 100 to 200
+    - Rampart
+      - Health increased from 750 to 1500
+      - Shield energy capacity increased from 36000 to 60000
+      - Shield energy recharge rate increased from 1000 to 1200
+    - Shank
+      - Splash damage decreased from 20 to 0
+      - Shell gravity changed from the engine default to 5
+    - Shredder
+      - Range decreased from 150 to 110
+    - Stoke
+      - Metal cost decreased from 210 to 180
+      - Speed increased from 14 to 16
+    - Walker Foundry
+      - Metal build rate decreased from 17 to 15
+      - Energy build rate decreased from 765 to 675
+  - Orbital
+    - Paladin
+      - Attacks from 90% of its range instead of full range
+    - Starcannon
+      - Description says it holds up to 9 units, not 14
+      - Strategic icon shows below the units it builds
+    - Viper
+      - Damage increased from 40 to 50
+      - Range decreased from 200 to 100
+      - Attacks from 75% of its range instead of full range
+  - Sea
+    - Advanced Ship Foundry
+      - Metal build rate decreased from 65 to 60
+      - Energy build rate decreased from 1900 to 1750
+
+### AI
+
+- Restored the AI's metal extractor hints for Legion commanders
 
 ## v1.30.3 - 2024-08-23
 

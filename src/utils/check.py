@@ -1,12 +1,546 @@
+import functools
+import itertools
 import sys
 import os
+import posixpath
+import subprocess
 
-from pa_tools.mod import checker
-from pa_tools.mod.utils import create_pafs
-from pa_tools.pa import spec
+MODINFO = "modinfo.json"
+LICENCE_FILES = ("LICENSE", "README.md")
+VERSION_JS = "ui/mods/com.pa.legion-expansion/version.js"
+
+# build.py copies shared and client into one mod, and shared and server into the other.
+MOD_TREES = {"client": ("shared", "client"), "server": ("shared", "server")}
+ONE_MOD = [
+    ("shared", "shared"),
+    ("client", "client"),
+    ("server", "server"),
+    ("shared", "client"),
+    ("shared", "server"),
+]
 
 
-def check_mod(client_output_dir, server_output_dir):
+def walk_source(source_dir):
+    prefix = f"src/{source_dir}/"
+    try:
+        # Run from the repository's root, so that a .git in src cannot make git
+        # read another repository.
+        ignored = subprocess.run(
+            ["git", "ls-files", "-z", "--others", "--ignored", "--exclude-standard"]
+            + ["--", prefix],
+            cwd="..",
+            stdout=subprocess.PIPE,
+            check=True,
+        ).stdout
+    except (OSError, subprocess.CalledProcessError) as error:
+        print(f"Error: git could not list the ignored files in src/{source_dir}.")
+        print(f"  The build needs git on the PATH and runs only in a clone. {error}")
+        input()
+        sys.exit(1)
+
+    ignored = {
+        path[len(prefix) :] for path in os.fsdecode(ignored).split("\0")
+    }
+    found = []
+    unreadable = []
+
+    # Walk the disk, not git's index: the index can keep a file's old case.
+    for dir_path, dir_names, file_names in os.walk(
+        source_dir, onerror=unreadable.append, followlinks=True
+    ):
+        # Keep each name as os.walk lists it: on Windows, path functions such
+        # as relpath drop a trailing dot or space.
+        relative_dir = dir_path[len(source_dir) + 1 :].replace(os.sep, "/")
+        for file_name in file_names:
+            relative = posixpath.join(relative_dir, file_name)
+            if relative not in ignored:
+                found.append(relative)
+
+    return found, unreadable
+
+
+def path_key(path):
+    return path.lower()
+
+
+def source_paths(files):
+    paths = {}
+    for path in files:
+        paths.setdefault(path_key(path), []).append(path)
+    return paths
+
+
+def folder_prefixes(path):
+    parts = path.split("/")
+    return ["/".join(parts[:end]) for end in range(1, len(parts))]
+
+
+def source_dirs(paths):
+    dirs = {}
+    for path in itertools.chain.from_iterable(paths.values()):
+        for prefix in folder_prefixes(path):
+            dirs.setdefault(path_key(prefix), set()).add(prefix)
+    return dirs
+
+
+def same_folder_duplicates(found):
+    duplicates = []
+    for name, paths in found.items():
+        for key in sorted(paths):
+            for first, second in itertools.combinations(sorted(paths[key]), 2):
+                duplicates.append((f"{name}/{first}", f"{name}/{second}"))
+    return duplicates
+
+
+def cross_folder_duplicates(found):
+    pairs = [
+        # build.py reads each half's modinfo.json to make that mod's own. Only
+        # that exact name is exempt: a variant ships as or beside the real one.
+        ("client", "server", {MODINFO}),
+        ("shared", "client", set()),
+        ("shared", "server", set()),
+    ]
+    duplicates = []
+
+    for first, second, allowed in pairs:
+        for folded in sorted(found[first].keys() & found[second].keys()):
+            for first_path, second_path in itertools.product(
+                sorted(found[first][folded]), sorted(found[second][folded])
+            ):
+                if {first_path, second_path} <= allowed:
+                    continue
+                duplicates.append(
+                    (f"{first}/{first_path}", f"{second}/{second_path}")
+                )
+    return duplicates
+
+
+def file_dir_duplicates(found, dirs):
+    duplicates = []
+    reverse = [(second, first) for first, second in ONE_MOD if first != second]
+    for file_tree, dir_tree in ONE_MOD + reverse:
+        for key in sorted(found[file_tree].keys() & dirs[dir_tree].keys()):
+            for file_path, dir_path in itertools.product(
+                sorted(found[file_tree][key]), sorted(dirs[dir_tree][key])
+            ):
+                duplicates.append(
+                    (f"{file_tree}/{file_path}", f"{dir_tree}/{dir_path}/")
+                )
+    return duplicates
+
+
+def dir_spelling_duplicates(dirs):
+    duplicates = []
+    for first, second in ONE_MOD:
+        for key in sorted(dirs[first].keys() & dirs[second].keys()):
+            if first == second:
+                pairs = itertools.combinations(sorted(dirs[first][key]), 2)
+            else:
+                pairs = itertools.product(
+                    sorted(dirs[first][key]), sorted(dirs[second][key])
+                )
+            for first_path, second_path in pairs:
+                # Equal last names mean that a parent differs. It has its own pair.
+                if first_path.rsplit("/", 1)[-1] != second_path.rsplit("/", 1)[-1]:
+                    duplicates.append(
+                        (f"{first}/{first_path}/", f"{second}/{second_path}/")
+                    )
+    return duplicates
+
+
+def non_ascii_paths(found):
+    return [
+        f"{name}/{path}"
+        for name, paths in found.items()
+        for path in sorted(itertools.chain.from_iterable(paths.values()))
+        if not path.isascii()
+    ]
+
+
+# CI has no PA install to plan the shadows, so it passes none. modinfo.json is not
+# listed: the build reads each half's copy.
+def written_paths(shadows):
+    written = {name: {"client", "server"} for name in LICENCE_FILES}
+    written[VERSION_JS] = {"client"}
+    for mod, files in shadows.items():
+        for path in files:
+            written.setdefault(path.lstrip("/"), set()).add(mod)
+    return written
+
+
+def written_dirs(written):
+    dirs = {}
+    for path, mods in written.items():
+        for prefix in folder_prefixes(path):
+            dirs.setdefault(prefix, set()).update(mods)
+    return dirs
+
+
+def last_name(path):
+    return path.rsplit("/", 1)[-1]
+
+
+def mod_trees(mods):
+    return sorted({tree for mod in mods for tree in MOD_TREES[mod]})
+
+
+def written_file_clashes(found, dirs, written):
+    clashes = []
+    for path, mods in written.items():
+        key = path_key(path)
+        # A file at the path ships even from the other mod's source folder.
+        for tree in found:
+            clashes += [
+                (f"{tree}/{name}", path, mods) for name in found[tree].get(key, ())
+            ]
+        for tree in mod_trees(mods):
+            clashes += [
+                (f"{tree}/{name}/", path, mods) for name in dirs[tree].get(key, ())
+            ]
+    return clashes
+
+
+def written_dir_clashes(found, dirs, written):
+    clashes = []
+    for path, mods in written_dirs(written).items():
+        key = path_key(path)
+        for tree in mod_trees(mods):
+            clashes += [
+                (f"{tree}/{name}", path + "/", mods)
+                for name in found[tree].get(key, ())
+            ]
+            # Equal last names mean the same folder, or a parent spelled another
+            # way, which has its own line.
+            clashes += [
+                (f"{tree}/{name}/", path + "/", mods)
+                for name in dirs[tree].get(key, ())
+                if last_name(name) != last_name(path)
+            ]
+    return clashes
+
+
+def written_path_names(found, dirs, written):
+    return sorted(
+        written_file_clashes(found, dirs, written)
+        + written_dir_clashes(found, dirs, written),
+        key=lambda clash: clash[:2],
+    )
+
+
+def print_written_paths(written_names):
+    print(
+        "Error: A file or folder in src/shared, src/client, or src/server compares "
+        "equal, without case, to a path that the build writes into a mod after the "
+        "copy."
+    )
+    print(
+        "  written_paths in src/utils/check.py lists those paths. This report leaves "
+        "out a source folder with the same spelling as a folder that the build "
+        "writes into."
+    )
+    print(
+        "  At a file path that it writes, the build writes over a file and fails on "
+        "a folder. At a folder path that it writes, it fails on a file. Where a name "
+        "is spelled another way, the default file systems of macOS and Windows keep "
+        "that spelling, and a case-sensitive one ships the name beside the written "
+        "one."
+    )
+    print(
+        "  Where the build writes a path into one mod only, a file at that path in "
+        "src/shared or in the other mod's folder makes both mods ship the path. PA "
+        "loads the server mod's copy in a lobby or a game."
+    )
+    for source, path, mods in written_names:
+        where = "both mods" if len(mods) > 1 else f"the {min(mods)} mod"
+        print_escaped(f"  src/{source} and {path}, which the build writes into {where}")
+
+
+def is_root_dot(key):
+    return key.startswith(".") and "/" not in key
+
+
+def root_dot_names(found, dirs):
+    names = []
+    for name in found:
+        for key in sorted(filter(is_root_dot, found[name])):
+            names.extend(f"{name}/{path}" for path in sorted(found[name][key]))
+        for key in sorted(filter(is_root_dot, dirs[name])):
+            names.extend(f"{name}/{path}/" for path in sorted(dirs[name][key]))
+    return names
+
+
+# Git reads these files in any folder of a working tree, so in a release clone
+# they change what git add -A records.
+GIT_CONTROL_FILES = {".gitignore", ".gitattributes"}
+
+
+def nested_git_control_files(found):
+    return sorted(
+        f"{name}/{path}"
+        for name in found
+        for key, paths in found[name].items()
+        if "/" in key and last_name(key) in GIT_CONTROL_FILES
+        for path in paths
+    )
+
+
+def escaped(text):
+    # A name that is not ASCII can hold a character that does not show, or that a
+    # redirected stdout cannot encode. Escaping shows each character.
+    return text.encode("unicode_escape").decode("ascii")
+
+
+def print_escaped(line):
+    print(escaped(line))
+
+
+def print_duplicates(duplicates):
+    for first, second in duplicates:
+        print_escaped(f"  src/{first} and src/{second}")
+
+
+def walk_sources():
+    files = {}
+    unreadable = []
+    for name in ("shared", "client", "server"):
+        files[name], errors = walk_source(name)
+        unreadable += errors
+    return files, unreadable
+
+
+def print_unreadable(unreadable):
+    print(
+        "Error: The build could not read a folder in src/shared, src/client, or "
+        "src/server."
+    )
+    print("  The build would ship without the files in it.")
+    for error in unreadable:
+        path = os.fsdecode(error.filename).replace(os.sep, "/")
+        # escaped() doubles each backslash, so \" can only be a quote in the name.
+        quoted = escaped(f"src/{path}/").replace('"', '\\"')
+        print(f'  "{quoted}": {error.strerror}')
+
+
+def print_git_control_files(paths):
+    if not paths:
+        return
+    print(
+        "Error: A folder below the root of src/shared, src/client, or src/server "
+        "holds a .gitignore or .gitattributes file."
+    )
+    print(
+        "  The build ships the file, and git add -A in a release clone applies it: "
+        "a .gitignore there leaves files that the build ships out of the release "
+        "commit, and a .gitattributes changes the bytes that git records for them."
+    )
+    print(
+        "  Remove the file. A pattern for these folders goes in the repository's "
+        "root file, with a path that starts at src/."
+    )
+    for path in paths:
+        print_escaped(f"  src/{path}")
+
+
+def check_source_paths(written):
+    files, unreadable = walk_sources()
+    found = {name: source_paths(paths) for name, paths in files.items()}
+    non_ascii = non_ascii_paths(found)
+    dirs = {name: source_dirs(paths) for name, paths in found.items()}
+    same_folder = same_folder_duplicates(found)
+    cross_folder = cross_folder_duplicates(found)
+    file_dir = file_dir_duplicates(found, dirs)
+    dir_spelling = dir_spelling_duplicates(dirs)
+    written_names = written_path_names(found, dirs, written)
+    dot_names = root_dot_names(found, dirs)
+    git_control = nested_git_control_files(found)
+
+    if unreadable:
+        print_unreadable(unreadable)
+
+    if non_ascii:
+        print(
+            "Error: A file path in src/shared, src/client, or src/server holds a "
+            "character that is not ASCII."
+        )
+        print(
+            "  File systems compare such names in different ways, so the build "
+            "cannot find every pair of names that one of them treats as one."
+        )
+        for path in non_ascii:
+            print_escaped(f"  src/{path}")
+
+    if same_folder:
+        print(
+            "Error: Two file paths in one of src/shared, src/client, and src/server "
+            "compare equal without case."
+        )
+        print(
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "A.json and a.json, hold only one of the two files."
+        )
+        print_duplicates(same_folder)
+
+    if cross_folder:
+        print(
+            "Error: A file path is in more than one of src/shared, src/client, "
+            "and src/server."
+        )
+        print(
+            "  Both mods ship the path. PA loads the server mod's copy in a lobby "
+            "or a game, and the client mod's copy elsewhere."
+        )
+        print_duplicates(cross_folder)
+
+    if file_dir:
+        print(
+            "Error: A file name and a directory name in one of src/shared, src/client, "
+            "and src/server, or in src/shared and one of the other two, compare equal "
+            "without case."
+        )
+        print(
+            "  No folder can hold a file and a directory of one name, and the default "
+            "file systems of macOS, and of Windows for a pair such as a and A, treat "
+            "the two as one name."
+        )
+        print_duplicates(file_dir)
+
+    if dir_spelling:
+        print(
+            "Error: Two directory names in one of src/shared, src/client, and "
+            "src/server, or in src/shared and one of the other two, are spelled "
+            "differently and compare equal without case."
+        )
+        print(
+            "  The default file systems of macOS, and of Windows for a pair such as "
+            "L_bot and l_bot, treat the two as one name, so a build there ships one "
+            "folder and a Linux build ships two."
+        )
+        print_duplicates(dir_spelling)
+
+    if written_names:
+        print_written_paths(written_names)
+
+    if dot_names:
+        print(
+            "Error: A file or folder at the root of src/shared, src/client, or "
+            "src/server has a name that starts with a dot."
+        )
+        print(
+            "  The build keeps the dot entries at the root of each mod, so a later "
+            "build does not remove the copy. In a release clone, the files of a .git "
+            "folder go into the clone's own .git, and a .gitignore or .gitattributes "
+            "changes what git records."
+        )
+        print(
+            "  Move or remove the entry. A .gitignore or .gitattributes pattern for "
+            "these folders goes in the repository's root file, with a path that "
+            "starts at src/."
+        )
+        for path in dot_names:
+            print_escaped(f"  src/{path}")
+
+    print_git_control_files(git_control)
+
+    if (
+        unreadable
+        or non_ascii
+        or same_folder
+        or cross_folder
+        or file_dir
+        or dir_spelling
+        or written_names
+        or dot_names
+        or git_control
+    ):
+        input()
+        sys.exit(1)
+
+    return files
+
+
+@functools.lru_cache(maxsize=None)
+def folder_names(folder):
+    return frozenset(os.listdir(folder))
+
+
+# NTFS and the default macOS file system find a file in any case, and Windows
+# also drops a trailing dot or space, so compare each name below the mount root
+# with the names on disk. abspath() would drop the trailing dot or space too.
+def wrong_name(resolved, roots):
+    resolved = os.path.normpath(os.path.join(os.getcwd(), resolved))
+    for root in roots:
+        prefix = os.path.join(root, "")
+        if not os.path.normcase(resolved).startswith(os.path.normcase(prefix)):
+            continue
+        folder = root
+        for name in resolved[len(prefix):].split(os.sep):
+            names = folder_names(folder)
+            if name not in names:
+                on_disk = [n for n in names if n.casefold() == name.casefold()]
+                return name, on_disk[0] if on_disk else None
+            folder = os.path.join(folder, name)
+        return None
+    return None
+
+
+def source_references(source_files):
+    from pa_tools.mod import checker
+    from pa_tools.pa import pajson
+
+    sources = [
+        f"{tree}/{file}"
+        for tree, files in source_files.items()
+        for file in files
+        if file.endswith((".json", ".pfx"))
+    ]
+    for source in sources:
+        try:
+            obj, _ = pajson.loadf(source)
+        except pajson.ParseError:
+            # format_files reports it at step 9, as before this check.
+            continue
+        yield source, sorted(checker._walk_obj(obj))
+
+
+# Only the references in Legion's own files: some base-game files name a file
+# in the wrong case too, and Legion cannot change them.
+def wrong_case_references(source_files, fs, roots):
+    mismatches = {}
+    found = []
+    for source, references in source_references(source_files):
+        for reference in references:
+            if reference not in mismatches:
+                resolved = fs.resolveFile(reference)
+                mismatches[reference] = resolved and wrong_name(resolved, roots)
+            if mismatches[reference]:
+                found.append((source, reference, *mismatches[reference]))
+    return found
+
+
+def print_wrong_case_references(found):
+    print(
+        "Error: A .json or .pfx file in src/shared, src/client, or src/server names "
+        "a file in a different case, or with a trailing dot, than the file on disk."
+    )
+    print(
+        "  Windows and the default macOS file system find the file, so the missing "
+        "file check passes there, but PA on Linux does not find it."
+    )
+    for source, reference, name, on_disk in found:
+        if on_disk:
+            detail = f"{name!r} is {on_disk!r} on disk"
+        else:
+            detail = f"no name on disk is exactly {name!r}"
+        print_escaped(f"  src/{source}: {reference} ({detail})")
+
+
+def check_mod(client_output_dir, server_output_dir, source_files):
+    # Importing checker or create_pafs looks for a PA install (pa_tools.pa.paths).
+    # Import pa_tools here, so that the source-path gate runs without PA, as in CI.
+    from pa_tools.mod import checker
+    from pa_tools.mod.utils import create_pafs
+    from pa_tools.pa import paths, spec
+
     # legion works with pa titans only, so mount that as well
     fs = create_pafs()
 
@@ -19,7 +553,7 @@ def check_mod(client_output_dir, server_output_dir):
     report = checker.ModReport(server_output_dir)
 
     # Check the server modinfo
-    checker.check_modinfo(report, os.path.join(server_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(server_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
@@ -28,7 +562,7 @@ def check_mod(client_output_dir, server_output_dir):
 
     report = checker.ModReport(client_output_dir)
     # Check the client mod info
-    checker.check_modinfo(report, os.path.join(client_output_dir, "modinfo.json"), fs)
+    checker.check_modinfo(report, os.path.join(client_output_dir, MODINFO), fs)
     if report.getIssueCount() > 0:
         print(report.printDetailsReport())
         print(report.printInfoIssueReport())
@@ -50,6 +584,15 @@ def check_mod(client_output_dir, server_output_dir):
         print(report.printDetailsReport())
         print(report.printJsonIssueReport())
         print(report.printFileIssueReport())
+        input()
+        sys.exit(1)
+
+    roots = tuple(
+        map(os.path.abspath, (server_output_dir, client_output_dir, paths.PA_MEDIA_DIR))
+    )
+    wrong_case = wrong_case_references(source_files, fs, roots)
+    if wrong_case:
+        print_wrong_case_references(wrong_case)
         input()
         sys.exit(1)
 

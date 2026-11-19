@@ -25,6 +25,8 @@ from pa_tools.pa import pajson
 from pa_tools.pa import pafs
 from pa_tools.pa import paths
 
+from utils.check import wrong_name
+
 # create file resolution mappings (handles the mounting of pa_ex1 on pa and fallback etc.)
 loader = pafs("server")
 loader.mount("/", paths.PA_MEDIA_DIR)
@@ -41,6 +43,7 @@ SHADOWED_SHADERS = {
 }
 
 UNIT_LIST = "/pa/units/unit_list.json"
+SHIELD_TARGETS = "/pa/units/land/l_shield_gen/anti_entity_targets.json"
 
 L_HOVER_TANK_ADV_AMMO = "/pa/units/land/l_hover_tank_adv/l_hover_tank_adv_ammo.json"
 L_NUKE_AMMO = "/pa/units/land/l_nuke_launcher/l_nuke_launcher_ammo.json"
@@ -100,23 +103,48 @@ PATCH_TABLES = {
 file_cache = {}
 
 
-# Every vanilla path below is hardcoded, so a PA patch that renames or removes
-# one would otherwise skip the edit and take the interaction with it.
-def resolve(file_path):
+VANILLA_MISSING = (
+    "is not in the PA install; a patch has renamed or removed it. Update "
+    "src/utils/update_shadows.py."
+)
+LEGION_MISSING = (
+    "is not in src/server. Restore the file, or update each file that refers to it."
+)
+SHIELD_ENTRY_MISSING = (
+    "is not in src/server or the PA install: the entry is wrong, or a Legion "
+    "change or a PA patch has renamed or removed the file. Correct or remove its "
+    "entry in "
+    f"src/server{SHIELD_TARGETS}, and each other reference to it."
+)
+WRONG_NAME = (
+    "matches a file only because Windows ignores case and a trailing dot or "
+    "space, and PA on Linux does not find it."
+)
+MOUNT_ROOTS = (path.abspath("server"), path.abspath(paths.PA_MEDIA_DIR))
+
+
+# A caller that resolves a Legion file, or a path read from one, passes its own
+# message.
+def resolve(file_path, missing=VANILLA_MISSING):
     resolved = loader.resolveFile(file_path)
     if resolved is None:
         loader.resolveFile(file_path, True)
-        raise FileNotFoundError(
-            f"{file_path} is not in the PA install; a patch has renamed or "
-            "removed it. Update src/utils/update_shadows.py."
-        )
+        raise FileNotFoundError(f"{file_path} {missing}")
+    mismatch = wrong_name(resolved, MOUNT_ROOTS)
+    if mismatch:
+        name, on_disk = mismatch
+        if on_disk:
+            detail = f" On disk, {name!r} is {on_disk!r}."
+        else:
+            detail = f" No name on disk is exactly {name!r}."
+        raise FileNotFoundError(f"{file_path} {WRONG_NAME}{detail}")
 
     return resolved
 
 
-def load(file_path):
+def load(file_path, missing=VANILLA_MISSING):
     if file_path not in file_cache:
-        resolve(file_path)
+        resolve(file_path, missing)
         file_cache[file_path] = spec.load_spec(loader, file_path)
 
     return file_cache[file_path]
@@ -217,15 +245,17 @@ def patch_anti_entity_targets():
 
 
 def patch_unit_and_commander_lists():
-    load(UNIT_LIST)["units"] += load("/pa/units/unit_list_legion.json")["units"]
+    load(UNIT_LIST)["units"] += load(
+        "/pa/units/unit_list_legion.json", LEGION_MISSING
+    )["units"]
     load("/pa/units/commanders/commander_list.json")["commanders"] += load(
-        "/pa/units/commanders/commander_list_legion.json"
+        "/pa/units/commanders/commander_list_legion.json", LEGION_MISSING
     )["commanders"]
 
 
 # A vanilla ammo can already point at its own per-ammo path, and a copy onto
 # that path would ship an unchanged shadow of the vanilla effect.
-def copy_effect(src_file, dst_file, client_out_dir):
+def copy_effect(src_file, dst_file, effects):
     if src_file == dst_file:
         return
 
@@ -241,24 +271,23 @@ def copy_effect(src_file, dst_file, client_out_dir):
             emitter.clear()
             emitter.update(renamed)
 
-    pajson.dumpf(effect, client_out_dir + dst_file)
+    effects[dst_file] = effect
 
 
-def patch_shield_blocked_ammo(client_out_dir):
+def patch_shield_blocked_ammo():
+    effects = {}
+
     ## Get the list of ammo entities that are targeted by the shield
-    resolve("/pa/units/land/l_shield_gen/anti_entity_targets.json")
-    legion_shield = spec.parse_spec(
-        loader, "/pa/units/land/l_shield_gen/anti_entity_targets.json"
-    )
+    resolve(SHIELD_TARGETS, LEGION_MISSING)
+    legion_shield = spec.parse_spec(loader, SHIELD_TARGETS)
 
     for target in legion_shield["anti_entity_targets"]:
         ammo_dir = path.dirname(target)
         ammo_name = path.splitext(path.basename(target))[0]
 
         # get the spec
-        resolve(target)
+        ammo = load(target, SHIELD_ENTRY_MISSING)
         full_ammo_spec = spec.parse_spec(loader, target)
-        ammo = load(target)
         original_spec = copy.deepcopy(ammo)
 
         if "Projectile" not in full_ammo_spec["ammo_type"]:
@@ -303,29 +332,39 @@ def patch_shield_blocked_ammo(client_out_dir):
         if ammo == original_spec:
             continue
 
-        # prepare files:
-        os.makedirs(client_out_dir + ammo_dir, exist_ok=True)
+        copy_effect(src_hit_file, dst_hit_file, effects)
+        copy_effect(src_trail_file, dst_trail_file, effects)
 
-        copy_effect(src_hit_file, dst_hit_file, client_out_dir)
-        copy_effect(src_trail_file, dst_trail_file, client_out_dir)
-
-
-def write_changed_specs(server_out_dir):
-    # Write out all changes to the mod server directory
-    for file_path, unit in file_cache.items():
-        # If we have made no changes, ignore them
-        if unit == spec.load_spec(loader, file_path):
-            continue
-
-        os.makedirs(server_out_dir + os.path.dirname(file_path), exist_ok=True)
-        pajson.dumpf(unit, server_out_dir + file_path, separators=(",", ": "))
+    return effects
 
 
-def update_shadows(client_out_dir, server_out_dir):
+def changed_specs():
+    return {
+        file_path: unit
+        for file_path, unit in file_cache.items()
+        if unit != spec.load_spec(loader, file_path)
+    }
+
+
+# Reads only the PA install and src/server, so the build can check the paths
+# against the sources before it wipes the outputs.
+def plan_shadows():
     check_shadowed_shaders()
     check_patch_coverage()
     patch_mine_sight_layers()
     patch_anti_entity_targets()
     patch_unit_and_commander_lists()
-    patch_shield_blocked_ammo(client_out_dir)
-    write_changed_specs(server_out_dir)
+    effects = patch_shield_blocked_ammo()
+    return {"client": effects, "server": changed_specs()}
+
+
+def write_shadow(output_dir, file_path, data, **kwargs):
+    os.makedirs(output_dir + os.path.dirname(file_path), exist_ok=True)
+    pajson.dumpf(data, output_dir + file_path, **kwargs)
+
+
+def write_shadows(shadows, client_out_dir, server_out_dir):
+    for file_path, effect in shadows["client"].items():
+        write_shadow(client_out_dir, file_path, effect)
+    for file_path, unit in shadows["server"].items():
+        write_shadow(server_out_dir, file_path, unit, separators=(",", ": "))

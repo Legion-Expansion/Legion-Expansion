@@ -20,8 +20,13 @@ from utils.common import PROD_SERVER_OUTPUT_DIR
 from utils.common import DEV_IDENTIFIER_SUFFIX
 from utils.common import DEV_CLIENT_OUTPUT_DIR
 from utils.common import DEV_SERVER_OUTPUT_DIR
-from utils.update_shadows import update_shadows
+from utils.update_shadows import plan_shadows
+from utils.update_shadows import write_shadows
 from utils.check import check_mod
+from utils.check import check_source_paths
+from utils.check import LICENCE_FILES
+from utils.check import VERSION_JS
+from utils.check import written_paths
 from utils.format_json import format_files
 
 LEGION_LIST_INPUTS = [
@@ -31,8 +36,20 @@ LEGION_LIST_INPUTS = [
 
 
 def clean_output(output_dir):
-    for file in glob.glob(join(output_dir, "*")):
-        shutil.rmtree(file, ignore_errors=True)
+    # "*" skips dot entries, which keeps the release clones' .git.
+    for path in glob.glob(join(glob.escape(output_dir), "*")):
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+        else:
+            os.remove(path)
+
+
+def copy_source(files, source_dir, output_dir):
+    print(f"COPY {source_dir} to {output_dir}")
+    for path in files:
+        target = join(output_dir, path)
+        os.makedirs(os.path.dirname(target), exist_ok=True)
+        shutil.copy2(join(source_dir, path), target)
 
 
 def load_json(loader, path):
@@ -60,6 +77,12 @@ def change_to_develop(modinfo, client_id, server_id):
 
 
 def generate_mods(is_dev_mode):
+    print("PLAN SHADOWS")
+    shadows = plan_shadows()
+
+    print("CHECK SOURCES")
+    source_files = check_source_paths(written_paths(shadows))
+
     fs = create_pafs(True)
     fs.mount("/src", ".")
 
@@ -85,14 +108,10 @@ def generate_mods(is_dev_mode):
         server_output_dir = PROD_SERVER_OUTPUT_DIR
         client_output_dir = PROD_CLIENT_OUTPUT_DIR
 
-    fs.mount("/mod", client_output_dir)
-    fs.mount("/mod", server_output_dir)
-
-    old_modinfo = load_json(fs, "/mod/modinfo.json")
-
-    # Update build version
-    server_modinfo = update_modinfo(server_modinfo, old_modinfo)
-    client_modinfo = update_modinfo(client_modinfo, old_modinfo)
+    # Update build version. update_modinfo uses an old modinfo only to keep
+    # its date, which the next lines set.
+    server_modinfo = update_modinfo(server_modinfo, None)
+    client_modinfo = update_modinfo(client_modinfo, None)
     # Update dates
     server_modinfo["date"] = date.today().strftime("%Y-%m-%d")
     client_modinfo["date"] = date.today().strftime("%Y-%m-%d")
@@ -104,42 +123,34 @@ def generate_mods(is_dev_mode):
     clean_output(client_output_dir)
 
     # Copy shared stuff to both mods
-    print(f"COPY shared to {server_output_dir}")
-    shutil.copytree("shared", server_output_dir, dirs_exist_ok=True)
-    print(f"COPY shared to {client_output_dir}")
-    shutil.copytree("shared", client_output_dir, dirs_exist_ok=True)
+    copy_source(source_files["shared"], "shared", server_output_dir)
+    copy_source(source_files["shared"], "shared", client_output_dir)
 
     # Copy server and client specific files
-    print(f"COPY server to {server_output_dir}")
-    shutil.copytree("server", server_output_dir, dirs_exist_ok=True)
-    print(f"COPY client to {client_output_dir}")
-    shutil.copytree("client", client_output_dir, dirs_exist_ok=True)
+    copy_source(source_files["server"], "server", server_output_dir)
+    copy_source(source_files["client"], "client", client_output_dir)
 
     # CC BY-NC-SA and MIT both require the licence to travel with the
     # distributed copy; README.md carries the dual-licence statement and the
     # credits the LICENSE text does not.
     for output_dir in (server_output_dir, client_output_dir):
         print(f"COPY licence to {output_dir}")
-        shutil.copyfile(join("..", "LICENSE"), join(output_dir, "LICENSE"))
-        shutil.copyfile(join("..", "README.md"), join(output_dir, "README.md"))
+        for name in LICENCE_FILES:
+            shutil.copyfile(join("..", name), join(output_dir, name))
 
     # Update the modinfos
     pajson.dumpf(server_modinfo, join(server_output_dir, "modinfo.json"), indent=2)
     pajson.dumpf(client_modinfo, join(client_output_dir, "modinfo.json"), indent=2)
 
     print("UPDATE ui version.js")
-    with open(
-        join(client_output_dir, "ui/mods/com.pa.legion-expansion/version.js"),
-        "w",
-        newline="\n",
-    ) as version_file:
+    with open(join(client_output_dir, VERSION_JS), "w", newline="\n") as version_file:
         print(f'var version = "{server_modinfo["version"]}";\n', file=version_file)
 
     print("UPDATE SHADOWS")
-    update_shadows(client_output_dir, server_output_dir)
+    write_shadows(shadows, client_output_dir, server_output_dir)
 
     print("CHECK MOD")
-    check_mod(client_output_dir, server_output_dir)
+    check_mod(client_output_dir, server_output_dir, source_files)
 
     # check_mod reads these from the output, and PA never does.
     for build_input in LEGION_LIST_INPUTS:
