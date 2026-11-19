@@ -345,6 +345,21 @@ def root_dot_names(found, dirs):
     return names
 
 
+# Git reads these files in any folder of a working tree, so in a release clone
+# they change what git add -A records.
+GIT_CONTROL_FILES = {".gitignore", ".gitattributes"}
+
+
+def nested_git_control_files(found):
+    return sorted(
+        f"{name}/{path}"
+        for name in found
+        for key, paths in found[name].items()
+        if "/" in key and last_name(key) in GIT_CONTROL_FILES
+        for path in paths
+    )
+
+
 def dot_git_path(path):
     # Git records no path with a .git name, in any case, on any platform
     # (verify_dotfile in read-cache.c).
@@ -453,6 +468,7 @@ def check_source_paths(written):
     dir_spelling = dir_spelling_duplicates(dirs)
     written_names = written_path_names(found, dirs, written)
     dot_names = root_dot_names(found, dirs)
+    git_control = nested_git_control_files(found)
     git_names = dot_git_names(files)
 
     # Other reports can also list files inside a .git, so print its cause first.
@@ -546,6 +562,23 @@ def check_source_paths(written):
         for path in dot_names:
             print_escaped(f"  src/{path}")
 
+    if git_control:
+        print(
+            "Error: A folder below the root of src/shared, src/client, or src/server "
+            "holds a .gitignore or .gitattributes file."
+        )
+        print(
+            "  The build ships the file, and git add -A in a release clone applies it, "
+            "so a .gitignore there leaves files that the build ships out of the "
+            "release commit."
+        )
+        print(
+            "  Remove the file. A pattern for these folders goes in the repository's "
+            "root file, with a path that starts at src/."
+        )
+        for path in git_control:
+            print_escaped(f"  src/{path}")
+
     if (
         unreadable
         or windows_names
@@ -556,6 +589,7 @@ def check_source_paths(written):
         or dir_spelling
         or written_names
         or dot_names
+        or git_control
         or git_names
     ):
         input()

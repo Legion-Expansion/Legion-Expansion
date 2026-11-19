@@ -99,7 +99,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    of them, or in `src/shared` and one of the other two. A path in any of the three that holds a
    character that is not ASCII stops it too, and so does a source path that clashes with a path that
    the build writes into a mod after the step 4 copy (see the gates below), a file or folder at the
-   root of one of them whose name starts with a dot, and a file or folder name in the path of a file
+   root of one of them whose name starts with a dot, a `.gitignore` or `.gitattributes` file in a
+   folder below that root, and a file or folder name in the path of a file
    that ships that the `core.protectNTFS` check of Git for Windows refuses, such as one that ends in
    a dot or a space, or `con.js`. A file or folder named `.git`, in any case, in the path of a file
    that ships stops it as well. It stops if it cannot read a folder in the three source folders,
@@ -236,6 +237,10 @@ Only files that actually differ from the resolved vanilla spec are written out.
   and a `.gitignore` or `.gitattributes` changes what `git add -A` records. A pattern for those
   folders goes in the repository's root `.gitattributes` or `.gitignore`, with a path that starts
   at `src/`.
+- Below that root, no file that the build copies is named `.gitignore` or `.gitattributes`,
+  compared after NFD and a full Unicode case fold. The build ships the file, and git reads such a
+  file in any folder, so in a release clone `git add -A` applies it: a `.gitignore` there leaves
+  files that the build ships out of the release commit.
 - Both modinfos pass `pa_tools.mod.checker.check_modinfo`.
 - No missing referenced files, except the `ALLOW_MISSING_FILES` allowlist (currently Bugs Faction
   extractors, referenced for cross-mod compatibility without requiring that mod be installed).
