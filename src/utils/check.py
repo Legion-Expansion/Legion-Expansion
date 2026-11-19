@@ -457,6 +457,26 @@ def print_dot_git_names(git_names):
         print_escaped(f"  src/{path}")
 
 
+def print_git_control_files(paths):
+    if not paths:
+        return
+    print(
+        "Error: A folder below the root of src/shared, src/client, or src/server "
+        "holds a .gitignore or .gitattributes file."
+    )
+    print(
+        "  The build ships the file, and git add -A in a release clone applies it: "
+        "a .gitignore there leaves files that the build ships out of the release "
+        "commit, and a .gitattributes changes the bytes that git records for them."
+    )
+    print(
+        "  Remove the file. A pattern for these folders goes in the repository's "
+        "root file, with a path that starts at src/."
+    )
+    for path in paths:
+        print_escaped(f"  src/{path}")
+
+
 def check_source_paths(written):
     files, windows_names, unreadable = walk_sources()
     found = {name: source_paths(paths) for name, paths in files.items()}
@@ -562,22 +582,7 @@ def check_source_paths(written):
         for path in dot_names:
             print_escaped(f"  src/{path}")
 
-    if git_control:
-        print(
-            "Error: A folder below the root of src/shared, src/client, or src/server "
-            "holds a .gitignore or .gitattributes file."
-        )
-        print(
-            "  The build ships the file, and git add -A in a release clone applies it: "
-            "a .gitignore there leaves files that the build ships out of the release "
-            "commit, and a .gitattributes changes the bytes that git records for them."
-        )
-        print(
-            "  Remove the file. A pattern for these folders goes in the repository's "
-            "root file, with a path that starts at src/."
-        )
-        for path in git_control:
-            print_escaped(f"  src/{path}")
+    print_git_control_files(git_control)
 
     if (
         unreadable
