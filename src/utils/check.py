@@ -629,29 +629,37 @@ def wrong_name(resolved, roots):
     return None
 
 
-# Only the references in Legion's own files: some base-game files name a file
-# in the wrong case too, and Legion cannot change them.
-def wrong_case_references(source_files, fs, roots):
+def source_references(source_files):
     from pa_tools.mod import checker
     from pa_tools.pa import pajson
 
+    sources = [
+        f"{tree}/{file}"
+        for tree, files in source_files.items()
+        for file in files
+        if file.endswith((".json", ".pfx"))
+    ]
+    for source in sources:
+        try:
+            obj, _ = pajson.loadf(source)
+        except pajson.ParseError:
+            # format_files reports it at step 9, as before this check.
+            continue
+        yield source, sorted(checker._walk_obj(obj))
+
+
+# Only the references in Legion's own files: some base-game files name a file
+# in the wrong case too, and Legion cannot change them.
+def wrong_case_references(source_files, fs, roots):
     mismatches = {}
     found = []
-    for tree, files in source_files.items():
-        for file in files:
-            if not file.endswith((".json", ".pfx")):
-                continue
-            try:
-                obj, _ = pajson.loadf(os.path.join(tree, file))
-            except pajson.ParseError:
-                # format_files reports it at step 9, as before this check.
-                continue
-            for reference in sorted(checker._walk_obj(obj)):
-                if reference not in mismatches:
-                    resolved = fs.resolveFile(reference)
-                    mismatches[reference] = resolved and wrong_name(resolved, roots)
-                if mismatches[reference]:
-                    found.append((f"{tree}/{file}", reference, *mismatches[reference]))
+    for source, references in source_references(source_files):
+        for reference in references:
+            if reference not in mismatches:
+                resolved = fs.resolveFile(reference)
+                mismatches[reference] = resolved and wrong_name(resolved, roots)
+            if mismatches[reference]:
+                found.append((source, reference, *mismatches[reference]))
     return found
 
 
