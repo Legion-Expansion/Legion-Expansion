@@ -635,24 +635,30 @@ def wrong_case_references(source_files, fs, roots):
     from pa_tools.mod import checker
     from pa_tools.pa import pajson
 
+    mismatches = {}
     found = []
     for tree, files in source_files.items():
         for file in files:
             if not file.endswith((".json", ".pfx")):
                 continue
-            obj, _ = pajson.loadf(os.path.join(tree, file))
+            try:
+                obj, _ = pajson.loadf(os.path.join(tree, file))
+            except pajson.ParseError:
+                # format_files reports it at step 9, as before this check.
+                continue
             for reference in sorted(checker._walk_obj(obj)):
-                resolved = fs.resolveFile(reference)
-                mismatch = resolved and wrong_name(resolved, roots)
-                if mismatch:
-                    found.append((f"{tree}/{file}", reference, *mismatch))
+                if reference not in mismatches:
+                    resolved = fs.resolveFile(reference)
+                    mismatches[reference] = resolved and wrong_name(resolved, roots)
+                if mismatches[reference]:
+                    found.append((f"{tree}/{file}", reference, *mismatches[reference]))
     return found
 
 
 def print_wrong_case_references(found):
     print(
-        "Error: A file in src/shared, src/client, or src/server names a file in a "
-        "different case, or with a trailing dot or space, than the file on disk."
+        "Error: A .json or .pfx file in src/shared, src/client, or src/server names "
+        "a file in a different case, or with a trailing dot, than the file on disk."
     )
     print(
         "  Windows and the default macOS file system find the file, so the missing "
