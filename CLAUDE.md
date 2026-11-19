@@ -100,10 +100,8 @@ Worth understanding because **a large part of what ships is generated, not commi
    character that is not ASCII stops it too, and so does a source path that clashes with a path that
    the build writes into a mod after the step 4 copy (see the gates below), a file or folder at the
    root of one of them whose name starts with a dot, and a `.gitignore` or `.gitattributes` file in
-   a folder below that root. A file or folder named `.git`, in any case, in the path of a file
-   that ships stops it as well. It stops if it cannot read a folder in the three source folders,
-   except inside an ignored folder that git lists as one entry, which it does not walk (see step
-   4), and it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
+   a folder below that root. It stops if it cannot read a folder in the three source folders, and
+   it gives the step 4 copy the file lists that it checked. It stops the way the step 7 gate
    does, so it also calls `input()` and blocks on stdin.
 2. Merge modinfos; in dev mode rewrite identifiers/dependencies/companions with the `-dev` suffix.
 3. `update_modinfo` (pa_tools) stamps `version` as `<version>-<PA build>` and sets `build`. Then
@@ -116,11 +114,10 @@ Worth understanding because **a large part of what ships is generated, not commi
    untracked file that git ignores (`.gitignore`, `.git/info/exclude`, or the global excludes
    file), so an untracked operating system file such as `.DS_Store` does not ship. Every other file
    on disk at step 1 ships under its case at step 1, a new file before `git add`. Git does not look
-   inside a symlinked directory, so every file in one ships, as before. A nested repository stops
-   step 1, because its `.git` would ship too. Where git lists an ignored nested repository as one
-   folder entry, step 1 leaves that whole folder out, and nothing in it ships. A `.git` folder that
-   holds no file ships nothing, so it passes. The build needs git on the `PATH` and runs only in a
-   clone.
+   inside a symlinked directory, or inside a nested repository in a folder where git tracks no
+   file, so every file in one ships, as before. Step 1 stops on a `.git` at a source root, unless it
+   is a folder that holds no file, which the copy skips. The build needs git on the `PATH` and runs
+   only in a clone.
 5. Write `ui/mods/com.pa.legion-expansion/version.js` into the client from the version string.
 6. **`update_shadows.py`** — writes the base-game shadow files that step 1 planned (see below).
 7. **`check.py`** — validation gate; on any issue it prints a report, calls `input()`, then
@@ -192,11 +189,6 @@ Only files that actually differ from the resolved vanilla spec are written out.
   file system treats them as two, such as a case variant on a case-sensitive file system (the Linux
   default), the copy succeeds and the mod ships both names. A build on Windows puts a directory
   spelled two ways, such as `L_bot` and `l_bot`, in one folder named after the first one written.
-- No file that ships from those three folders has a file or folder named `.git`, in any case, in
-  its path. Git records no path that holds that name, on any platform (`verify_dotfile` in
-  `read-cache.c`). In a release clone, `git add -A` then leaves the `.git` out, records the folder
-  that holds it as one gitlink entry with none of its files, or fails, depending on what git finds
-  there. A `.git` at a source root is also listed by the dot-name check below.
 - Every file path that the build copies from those three folders is ASCII. File systems compare
   other characters in different ways, so the comparison above cannot find every pair that one of
   them treats as one name. For example, case-insensitive HFS Plus skips U+200C ZERO WIDTH
