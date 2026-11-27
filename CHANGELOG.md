@@ -16,6 +16,7 @@
 - Vanilla AI armies no longer use Legion platoons
 - Raid platoons no longer take AA bots, artillery bots, Purgers, the Necromancer or the Thor
 - Legion bomber platoons now count Salamanders and Meteors
+- Legion amphibious platoons now take Necromancers
 
 ## v1.34.1 - 2026-11-19
 
