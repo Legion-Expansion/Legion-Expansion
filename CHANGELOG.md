@@ -4,7 +4,11 @@
 
 ### Bugfix
 
-- Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
+### AI
+
+- Vanilla AI armies no longer use Legion platoons
+- Raid platoons no longer take AA bots, artillery bots, Purgers, the Necromancer or the Thor
+- Legion bomber platoons now count Salamanders and Meteors
 
 ## v1.34.1 - 2026-11-19
 
