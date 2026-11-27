@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
+
 ## v1.34.1 - 2026-11-19
 
 ### General
