@@ -13,7 +13,7 @@
         {
           "min_count": 1,
           "max_count": 3,
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot & Mobile) | (Tank & Amphibious & Custom1)) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -23,7 +23,7 @@
         {
           "min_count": 4,
           "max_count": 9,
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot & Mobile) | (Tank & Amphibious & Custom1)) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -33,7 +33,7 @@
         {
           "min_count": 10,
           "max_count": 19,
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot & Mobile) | (Tank & Amphibious & Custom1)) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -43,7 +43,7 @@
         {
           "min_count": 20,
           "max_count": 39,
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot & Mobile) | (Tank & Amphibious & Custom1)) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]
@@ -53,7 +53,7 @@
         {
           "min_count": 40,
           "max_count": -1,
-          "unit_types": "(Bot & Mobile) | (Tank & Amphibious & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
+          "unit_types": "((Bot & Mobile) | (Tank & Amphibious & Custom1)) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - SelfDestruct - Deconstruction - Titan",
           "squad": "Fast"
         }
       ]

@@ -5,6 +5,7 @@
 ### AI
 
 - Vanilla AI armies no longer use Legion platoons
+- Raid platoons no longer take AA bots, artillery bots, Purgers, the Necromancer or the Thor
 
 ## v1.34.1 - 2026-11-19
 
