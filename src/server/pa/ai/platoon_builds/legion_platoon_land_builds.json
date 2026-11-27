@@ -44,7 +44,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot | Hover) & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction",
+            "unit_type_string0": "((Tank | Bot | Hover) & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 5
           }
@@ -74,7 +74,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "((Tank | Bot | Hover) & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction",
+            "unit_type_string0": "((Tank | Bot | Hover) & Mobile & Custom1) - Fabber - AirDefense - OrbitalDefense - Construction - Titan",
             "compare0": ">=",
             "value0": 5
           }
