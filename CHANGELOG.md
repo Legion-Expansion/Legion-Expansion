@@ -17,6 +17,7 @@
 - Raid platoons no longer take AA bots, artillery bots, Purgers, the Necromancer or the Thor
 - Legion bomber platoons now count Salamanders and Meteors
 - Legion amphibious platoons now take Necromancers
+- The AI no longer counts titans when it decides to send land units to another planet
 
 ## v1.34.1 - 2026-11-19
 
