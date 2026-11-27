@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Balance
+
+- Gil-E and Havoc now shoot down Manta missiles, as they do Stingray missiles
+
 ### Bugfix
 
 - Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
