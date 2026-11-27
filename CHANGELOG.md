@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Bugfix
+
+- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
+
 ### AI
 
 - Vanilla AI armies no longer use Legion platoons
