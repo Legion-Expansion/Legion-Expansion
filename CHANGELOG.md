@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Bugfix
+
+- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
+
 ## v1.34.1 - 2026-11-19
 
 ### General
