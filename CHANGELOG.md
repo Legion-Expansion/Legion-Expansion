@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### Balance
+
+- Gil-E and Havoc now shoot down Manta missiles, as they do Stingray missiles
+
 ## v1.34.1 - 2026-11-19
 
 ### General
