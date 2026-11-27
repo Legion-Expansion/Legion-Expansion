@@ -13,7 +13,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) & Mobile - Titan",
+            "unit_type_string0": "(Air & ((Bomber & Basic) | Gunship) & Mobile & Custom1) - Titan",
             "compare0": ">=",
             "value0": 1
           },
@@ -40,7 +40,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) & Mobile - Titan",
+            "unit_type_string0": "(Air & ((Bomber & Basic) | Gunship) & Mobile & Custom1) - Titan",
             "compare0": ">=",
             "value0": 4
           },
@@ -67,7 +67,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) & Mobile - Titan",
+            "unit_type_string0": "(Air & ((Bomber & Basic) | Gunship) & Mobile & Custom1) - Titan",
             "compare0": ">=",
             "value0": 10
           },
@@ -94,7 +94,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) & Mobile - Titan",
+            "unit_type_string0": "(Air & ((Bomber & Basic) | Gunship) & Mobile & Custom1) - Titan",
             "compare0": ">=",
             "value0": 20
           },
@@ -121,7 +121,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & ((Bomber & Basic) | Gunship) & Mobile - Titan",
+            "unit_type_string0": "(Air & ((Bomber & Basic) | Gunship) & Mobile & Custom1) - Titan",
             "compare0": ">=",
             "value0": 40
           },
@@ -148,7 +148,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan & Mobile",
+            "unit_type_string0": "Air & Titan & Mobile & Custom1",
             "compare0": ">=",
             "value0": 1
           },
@@ -166,7 +166,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Titan & Mobile",
+            "unit_type_string0": "Air & Titan & Mobile & Custom1",
             "compare0": ">=",
             "value0": 1
           },
@@ -193,7 +193,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 1
           },
@@ -211,7 +211,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 1
           },
@@ -239,7 +239,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 4
           },
@@ -257,7 +257,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 4
           },
@@ -285,7 +285,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 10
           },
@@ -303,7 +303,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 10
           },
@@ -331,7 +331,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 20
           },
@@ -349,7 +349,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 20
           },
@@ -377,7 +377,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 40
           },
@@ -395,7 +395,7 @@
           },
           {
             "test_type": "UnitPoolCount",
-            "unit_type_string0": "Air & Fighter & Mobile",
+            "unit_type_string0": "Air & Fighter & Mobile & Custom1",
             "compare0": ">=",
             "value0": 40
           },

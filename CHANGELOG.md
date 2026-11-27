@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+### AI
+
+- Vanilla AI armies no longer use Legion platoons
+
 ## v1.34.1 - 2026-11-19
 
 ### General
