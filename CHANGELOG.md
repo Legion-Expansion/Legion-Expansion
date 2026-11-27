@@ -4,6 +4,9 @@
 
 ### Bugfix
 
+- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
+- Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
+
 ### AI
 
 - Vanilla AI armies no longer use Legion platoons
