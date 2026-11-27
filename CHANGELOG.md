@@ -18,6 +18,7 @@
 - Legion bomber platoons now count Salamanders and Meteors
 - Legion amphibious platoons now take Necromancers
 - The AI no longer counts titans when it decides to send land units to another planet
+- Purgers now go with the land units the AI sends to another planet
 
 ## v1.34.1 - 2026-11-19
 
