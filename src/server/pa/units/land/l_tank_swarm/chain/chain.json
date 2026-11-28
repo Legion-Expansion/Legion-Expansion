@@ -51,7 +51,6 @@
       ]
     }
   },
-  "si_name": "l_chain",
   "tools": [
     {
       "aim_bone": "bone_root",

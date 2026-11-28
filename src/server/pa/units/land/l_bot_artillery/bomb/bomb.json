@@ -70,7 +70,6 @@
   "selection_icon": {
     "diameter": -9
   },
-  "si_name": "l_bomb",
   "tools": [
     {
       "aim_bone": "bone_root",
