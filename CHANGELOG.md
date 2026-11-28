@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v1.34.2 - 2026-11-28
+
+### Balance
+
+- Gil-E and Havoc now shoot down Manta missiles, as they do Stingray missiles
+
+### AI
+
+- Vanilla AI armies no longer use Legion platoons
+- Raid platoons no longer take AA bots, artillery bots, Purgers, the Necromancer or the Thor
+- Legion bomber platoons now count Salamanders and Meteors
+- Legion amphibious platoons now take Necromancers
+- The AI no longer counts titans when it decides to send land units to another planet
+- Purgers now go with the land units the AI sends to another planet
+
+### Bugfix
+
+- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
+
 ## v1.34.1 - 2026-11-19
 
 ### General
