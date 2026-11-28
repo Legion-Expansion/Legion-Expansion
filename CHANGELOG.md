@@ -19,7 +19,6 @@
 
 - Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
 - Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
-- Purifier turret and Investigator radar helper units no longer show a fallback strategic icon
 
 ## v1.34.1 - 2026-11-19
 
