@@ -6,12 +6,6 @@
 
 - Gil-E and Havoc now shoot down Manta missiles, as they do Stingray missiles
 
-### Bugfix
-
-- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
-- Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
-- Purifier turret and Investigator radar helper units no longer show a fallback strategic icon
-
 ### AI
 
 - Vanilla AI armies no longer use Legion platoons
@@ -20,6 +14,12 @@
 - Legion amphibious platoons now take Necromancers
 - The AI no longer counts titans when it decides to send land units to another planet
 - Purgers now go with the land units the AI sends to another planet
+
+### Bugfix
+
+- Lockheed, Gustav and Fabrication Starship descriptions now match what they can attack or build
+- Miniman time delay bombs and Havoc chain lightning no longer show a fallback strategic icon
+- Purifier turret and Investigator radar helper units no longer show a fallback strategic icon
 
 ## v1.34.1 - 2026-11-19
 
